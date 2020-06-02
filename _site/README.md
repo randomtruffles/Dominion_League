@@ -74,6 +74,8 @@ The site is generated using [Jekyll](https://jekyllrb.com/docs/), which is a sta
 - This contains all the things that can be included in each page of the site. For example, the `header.html`, `footer.html`, `sidebar.html` etc.
 
 
+
+
 ### Development Set-up Instructions
 To run and test the site locally
 1. Install Jekyll using the instructions [here](https://jekyllrb.com/docs/installation/).
