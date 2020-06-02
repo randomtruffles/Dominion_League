@@ -42,7 +42,7 @@ This was last updated by: `truffles` on `2020-06-01`
 #### `/_data` Subdirectory
 
 - This contains all overall "information" and "settings" of the site (ie. the moderators, the template settings, etc.) to be used by pages and must be in `.yml` format.
-  - `moderators.yaml`
+  - `moderators.yml`
     - Contains a list of moderators and information regarding name, discord handle, etc. to be used. Eg.
     ```
     - name: truffles
@@ -64,7 +64,7 @@ This was last updated by: `truffles` on `2020-06-01`
     - name: Matches
       ...
     ```
-  - `template.yaml`
+  - `template.yml`
     - Contains the template settings to be used across the site, including font, colors etc.
 
 #### `/_layouts` Subdirectory
