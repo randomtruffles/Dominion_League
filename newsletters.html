@@ -1,0 +1,35 @@
+---
+layout: newsletters
+---
+
+  <div>
+      <h3>Newsletters</h3>
+      {% for post in site.categories.newsletters %}
+        {% if forloop.index > 6 %}
+          {% break %}
+        {% endif %}
+        <div class="content">
+          <p>
+            <span>{{post.date | date: "%B %d, %Y" }}</span>
+            /
+            <span>
+            by
+            {{post.author}}
+            </span>
+            /
+            <span>
+          </p>
+          <h4><a href="{{post.url}}">{{post.title}}</a></h4>
+          <h5>{{post.subtitle}}</h5>
+          <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+          <div class='spacing'></div>
+          <a class="button" href="{{post.url}}">Read more...</a>
+
+        </div>
+      {% endfor %}
+
+
+  </div>
+
+
+<div class='four spacing'></div>

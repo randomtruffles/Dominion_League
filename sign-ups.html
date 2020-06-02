@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="section">
+    <h3>Sign-ups</h3>
+    {% for post in site.categories.signups %}
+      <p>
+        {{ post.content }}
+      </p>
+    {% endfor %}
+  <h4>Sign-up using this Google Form:</h4>
+    <div align="center">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfI_OwSQz1Zxf4VeVBwnuC5imjJ-XzlW-gxmMepAaIAF45BsQ/viewform?embedded=true" width="700" height="1200">Loading…</iframe>
+    </div>
+    <h5>Sign-ups and Counts</h5>
+    <p> Signups and Counts are listed below. Tiers are tentative. Counts for returning players may be a bit off before the season ends. </p>
+    <div align="center">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQK6cX-08Ju8UlRId90-EE0_rae2vReMX7i3vrnNVnxmgNnbbpQ3I3iqW92_gheoSWnxfWLR3P2VaN_/pubhtml?gid=947503377&amp;headers=false" height="500" width="800">Loading...</iframe>
+    </div>
+  </div>

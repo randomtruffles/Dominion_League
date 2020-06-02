@@ -1,0 +1,58 @@
+<!--
+<a href="https://discord.gg/666Upcq">
+  <img src="img/buttons/discord.png" class="discordButton" alt="Dominion Discord" style="width:120px;border:0">
+</a>
+-->
+<!-- Header -->
+<div class="container site-header">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!--
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          -->
+          <p class="site-title">
+            <a href="{{site.url}}/index.html">{{site.title}}</a>
+          </p>
+          <p class="site-description">{{site.description}}
+        </p>
+</div>
+<!-- Navigation -->
+<nav class="navbar navbar-default">
+    <div class="container" style="padding-bottom: 0px">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav justify-content-center">
+              {% for item in site.data.nav %}
+                {% if item.children %}
+                <li class="dropdown nav-item">
+                  <a href="{{site.url}}/{{ item.path }}">{{ item.name }}
+                    <i class="fa fa-caret-down"></i>
+                  </a>
+                  <ul class='dropdown-content'>
+                    {% for child in item.children %}
+                      <li>
+                        <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <li class="nav-item">
+                    <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<!--
+    {% for page in site.pages %}
+      {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+    {% endfor %}
+-->

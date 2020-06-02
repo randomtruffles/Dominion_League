@@ -1,0 +1,33 @@
+#- name: Home
+#  path: index.html
+#  section_id: home
+- name: Sign up
+  path: sign-ups.html
+- name: About
+  path: rules.html
+  section_id: about
+  children:
+    - name: Rules
+      path: rules.html
+    - name: F.A.Q.
+      path: faq.html
+    - name: Moderators
+      path: moderators.html
+- name: Matches
+  path: matches.html
+- name: Standings
+  path: current_standings.html
+  section_id: standings
+  #children:
+  #  - name: Current Season
+  #    path: current_standings.html
+  #  - name: Past Seasons
+  #    path: path_seasons.html
+- name: Newsletters
+  path: newsletters.html
+  section_id: newsletters
+#- name: Past Seasons
+#  path: past_seasons.html
+#  section_id: past_seasons
+- name: Contact
+  path: contact.html

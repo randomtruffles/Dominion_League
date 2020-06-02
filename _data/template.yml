@@ -1,0 +1,17 @@
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  default: ca2017
+  primary: "000"
+  secondary: ca2017
+  button: 0066CC
+  description: 666
+  secondary-dark: 333
+  muted: 777
+  grey-section: E8E8E8
+
+# Font Families
+font:
+  primary: 'Merriweather, "Source Serif Pro", "Roboto Slab", "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: '"Merriweather", "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  text: '"Open Sans", "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  button: '"Source Sans Pro", "Helvetica Neue",Helvetica,Arial,sans-serif'

@@ -1,2 +1,320 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4001/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/" rel="alternate" type="text/html" /><updated>2020-06-01T21:04:39-04:00</updated><id>http://localhost:4001/feed.xml</id><title type="html">Dominion League</title><subtitle>The Dominion League is an online, round-robin tournament that began in 2014
-</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4001/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/" rel="alternate" type="text/html" /><updated>2020-06-01T21:09:05-04:00</updated><id>http://localhost:4001/feed.xml</id><title type="html">Dominion League</title><subtitle>The Dominion League is an online, round-robin tournament that began in 2014
+</subtitle><entry><title type="html">Season 40 Moderators</title><link href="http://localhost:4001/moderators/2020/05/30/Season-40-Moderators.html" rel="alternate" type="text/html" title="Season 40 Moderators" /><published>2020-05-30T00:00:00-04:00</published><updated>2020-05-30T00:00:00-04:00</updated><id>http://localhost:4001/moderators/2020/05/30/Season-40-Moderators</id><content type="html" xml:base="http://localhost:4001/moderators/2020/05/30/Season-40-Moderators.html">&lt;p&gt;&lt;strong&gt;A1:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;B1:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;B2:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C1:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C2:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C3:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C4:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;D1:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;D2:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;D3:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;D4:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E1:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E2:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E3:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E4:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E5:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E6:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E7:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;E8:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F1:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F2:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F3:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F4:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F5:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F6:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F7:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F8:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F9:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F10:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F11:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F12:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F13:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F14:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F15:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;F16:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G1:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G2:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G3:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G4:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G5:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G6:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G7:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G8:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G9:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G10:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G11:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G12:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G13:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G14:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G15:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G16:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G17:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G18:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G19:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G20:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G21:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G22:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G23:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G24:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G25:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G26:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G27:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G28:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G29:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G30:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G31:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;G32:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H1:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H2:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H3:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H4:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H5:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H6:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H7:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H8:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H9:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H10:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H11:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H12:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H13:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H14:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H15:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H16:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H17:&lt;/strong&gt; truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H18:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H19:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H20:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H21:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H22:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H23:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H24:&lt;/strong&gt; nottoobad&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H25:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H26:&lt;/strong&gt; Earl&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H27:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H28:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H29:&lt;/strong&gt; volfied&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H30:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H31:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H32:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H33:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H34:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H35:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H36:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H37:&lt;/strong&gt; singletee&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H38:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H39:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H40:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H41:&lt;/strong&gt; wharf_rat&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H42:&lt;/strong&gt; alibby1152&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H43:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H44:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H45:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H46:&lt;/strong&gt; Cave-o-sapien&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H47:&lt;/strong&gt; crlundy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H48:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H49:&lt;/strong&gt; H.exe&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H50:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H51:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H52:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H53:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H54:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H55:&lt;/strong&gt; Lemonspawn&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H56:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H57:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H58:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H59:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H60:&lt;/strong&gt; Gazbag&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H61:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H62:&lt;/strong&gt; Apostolosoruler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H63:&lt;/strong&gt; eh1414&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H64:&lt;/strong&gt; eh1414&lt;/p&gt;</content><author><name>truffles</name></author><summary type="html">A1: volfied</summary></entry><entry><title type="html">Sign-ups</title><link href="http://localhost:4001/signups/2020/05/30/Sign-ups.html" rel="alternate" type="text/html" title="Sign-ups" /><published>2020-05-30T00:00:00-04:00</published><updated>2020-05-30T00:00:00-04:00</updated><id>http://localhost:4001/signups/2020/05/30/Sign-ups</id><content type="html" xml:base="http://localhost:4001/signups/2020/05/30/Sign-ups.html">&lt;p&gt;&lt;strong&gt;Season 40&lt;/strong&gt; will run from Monday, May 25 until Sunday, July 5 and &lt;del&gt;you can sign up until Monday, May 18 at 15:00 UTC&lt;/del&gt;. &lt;strong&gt;Signups are now officially closed&lt;/strong&gt;, but you can still sign up below to join the waiting list until &lt;strong&gt;Monday, June 1 at 15:00 UTC&lt;/strong&gt;. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.&lt;/p&gt;
+
+&lt;p&gt;You will need the following in order to sign up:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;An account on the &lt;a href=&quot;https://dominion.games&quot;&gt;Dominion Online&lt;/a&gt; client. In order to place you appropriately, we highly recommend playing at least 20 rated 2-player games through the automatch system before Friday, May 22.&lt;/li&gt;
+  &lt;li&gt;An account on the &lt;a href=&quot;https://discord.gg/vMmmMBu&quot;&gt;Dominion Discord&lt;/a&gt;. All League communications will take place by default over Discord.&lt;/li&gt;
+  &lt;li&gt;(Optional) An account on these forums. This gives the moderators a second means of contacting you should you become unresponsive on Discord.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After you fill out the form, please check back in about 5 minutes for the table of signups to update with your signup. If any of the entries are highlighted in red, this indicates that we have detected a problem with that entry. Please remedy this right away, or otherwise reach out to the moderators on Discord or by using the &lt;a href=&quot;http://tinyurl.com/dominion-league-hotline&quot;&gt;Dominion League Hotline&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A moderator will contact you on Discord to confirm your participation. You must reply to this message within 4-7 days depending on how close your signup is to the deadline. In addition, we require all players to “check in” during the first week of the season or forfeit their place. This consists of filling out a very short form to confirm that you plan to play the season that will be sent at the start of the season. If you fail to check in promptly, you could be removed.&lt;/p&gt;
+
+&lt;p&gt;Season 39 players should not use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.&lt;/p&gt;</content><author><name></name></author><summary type="html">Season 40 will run from Monday, May 25 until Sunday, July 5 and you can sign up until Monday, May 18 at 15:00 UTC. Signups are now officially closed, but you can still sign up below to join the waiting list until Monday, June 1 at 15:00 UTC. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.</summary></entry><entry><title type="html">Season 40 - Newsletter</title><link href="http://localhost:4001/newsletters/2020/05/12/Season-40-Newsletter.html" rel="alternate" type="text/html" title="Season 40 - Newsletter" /><published>2020-05-12T00:00:00-04:00</published><updated>2020-05-12T00:00:00-04:00</updated><id>http://localhost:4001/newsletters/2020/05/12/Season-40-Newsletter</id><content type="html" xml:base="http://localhost:4001/newsletters/2020/05/12/Season-40-Newsletter.html">&lt;p&gt;Hello everyone,&lt;/p&gt;
+
+&lt;p&gt;Season 39 started in mid-March, as lockdowns around the world were coming into effect. It was, unsurprisingly, our biggest season ever. But that was apparently just the beginning.&lt;/p&gt;
+
+&lt;p&gt;This last Friday, the first day that we advertised in the client for Season 40, we got a total of 181 new signups. For reference, we got only 140 new signups for the entirety of Season 39, with just 30 of those on the day of the client advertisement. We immediately knew we were in for another big ballooning of numbers in the League. Just four days later, we’re up to 360 total signups, an even bigger number than we saw in Season 27, the first season we advertised in the client. (On a log scale, though, we probably won’t exceed that 344% growth.)&lt;/p&gt;
+
+&lt;p&gt;It seems clear that there’s actually been an increase in interest in playing Dominion Online, as they’ve also experienced growth in new user accounts and games during this time, in part due to some nice &lt;a href=&quot;https://www.vox.com/2020/4/3/21197399/dominion-online-board-games&quot;&gt;publicity&lt;/a&gt; from Vox writer and League player dylanmatthews. Thanks for getting the word out, Dylan!&lt;/p&gt;
+
+&lt;p&gt;As such, we will need to grow, starting with the moderator crew. We’re excited to welcome back H.exe (formerly known as Seprix) and welcome new moderators Cave-o-sapien, Earl, eh1414, and truffles. With the 10 of us all remaining on from Season 39, this 50% boost should help everyone keep their division workloads manageable.&lt;/p&gt;
+
+&lt;p&gt;We will also need to expand the sizes of some of the tiers of the League. In last season’s newsletter, I had anticipated doubling G to 16 divisions, but it’s now clear that won’t go far enough. If some back-of-the-envelope estimates I made come true, we will also need to double F to 16 divisions, double H to 32 divisions, and then double G again to 32 divisions.&lt;/p&gt;
+
+&lt;p&gt;The signups firehose is still running, though, and the moderators are already engaged in a vigorous debate over whether those tier-doubling plans are enough. Given this disagreement, we’ve decided to announce the Season 40 Town Hall, which will take place on the weekend of June 13-14, on the topic of Scaling: How should the League deal with large-scale growth and contraction? Thanks to everyone who suggested other topics; we’ll file those away for discussion at future town halls.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Other Changes&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The scaling issues aside, we have also resolved some smaller questions:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Moderator Churn&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Remaining from Season 39: alibby1152, Apostolosoruler, crlundy, Gazbag, Lemonspawn, nottoobad, SamE, singletee, volfied, wharf_rat&lt;/p&gt;
+
+&lt;p&gt;Leaving: None!&lt;/p&gt;
+
+&lt;p&gt;Joining in Season 40: Cave-o-sapien, Earl, eh1414, H.exe, truffles&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Suggestions?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As a reminder, you can reply to this forum post with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of July 4-5, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)&lt;/p&gt;</content><author><name>SamE</name></author><category term="growth" /><summary type="html">Hello everyone,</summary></entry><entry><title type="html">Season 39 - Newsletter</title><link href="http://localhost:4001/newsletters/2020/03/17/Season-39-Newsletter.html" rel="alternate" type="text/html" title="Season 39 - Newsletter" /><published>2020-03-17T00:00:00-04:00</published><updated>2020-03-17T00:00:00-04:00</updated><id>http://localhost:4001/newsletters/2020/03/17/Season-39-Newsletter</id><content type="html" xml:base="http://localhost:4001/newsletters/2020/03/17/Season-39-Newsletter.html">&lt;p&gt;Hello everyone,&lt;/p&gt;
+
+&lt;p&gt;Season 39 will be the first Dominion League season with eight tiers. As I’ve been explaining to people, the easiest way to think about it is that we’ve added tiers D/E and E/F, and then renamed all of the tiers to just the letters A through H. In fact, the E and F transition schemes from Season 38 are the exact same as the F and H transition schemes going forward, so it’s really as if E and F players were already in F and H, respectively. Here are those transition schemes again:
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/245275391344771072/669402457377603584/unknown.png&quot; alt=&quot;https://cdn.discordapp.com/attachments/245275391344771072/669402457377603584/unknown.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Other Changes&lt;/strong&gt;
+Apart from this big change, we only have a few small changes (see the minutes below for full details):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This will be the first season with Menagerie! The default rules will be to include the new cards. However, we ask that all playtesters identify themselves to their League opponents and offer their opponents flexibility to play without them if they desire.&lt;/li&gt;
+  &lt;li&gt;The moderators have more flexibility to address inequities around dropped players with extra “tiebreaker” matches.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Moderator Churn&lt;/strong&gt;
+While there is a lot of change going on, it helps to have a steady set of leaders. We will have the exact same moderator crew for the fourth consecutive season!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Suggestions?&lt;/strong&gt;
+As a reminder, you can reply to this forum post with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of May 9-10, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)&lt;/p&gt;</content><author><name>SamE</name></author><category term="tiers" /><summary type="html">Hello everyone,</summary></entry></feed>
