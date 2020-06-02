@@ -2,7 +2,7 @@
 title: Season 41 - Sign-ups
 subtitle: Sign-ups Open
 author: truffles
-layout: post
+layout: simple_post
 date: 2020-06-01
 categories: signups #TODO: WHEN SIGNUPS CLOSE FOR THIS POST, REPLACE WITH CATEGORY archive
 description:
