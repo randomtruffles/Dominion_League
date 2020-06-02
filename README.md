@@ -18,6 +18,7 @@ This was last updated by: `truffles` on `2020-06-01`
 4. [How to change/add/remove a moderator](#how-to-change-moderator-information)
 5. (Devs) [Development Set-Up Instructions](#development-setup-instructions)
 6. (Devs) [Why use Jekyll?](#why-use-jekyll?)
+7. (Devs) [Editing the design of the website](#edit-website-layout)
 
 ### How the repository is organized
 
@@ -78,7 +79,7 @@ This was last updated by: `truffles` on `2020-06-01`
 
 ### How to edit or write a post or newsletter
 1. Copy the template post `1000-01-01-DEFAULT_TEMPLATE.markdown` inside the `/_posts` subdirectory
-2. Edit the file name so it matches the template `YYYY-MM-DD-NEWSLETTER_TITLE.markdown`
+2. Edit the file name so it matches the template `YYYY-MM-DD-NEWSLETTER_TITLE.markdown`, separating words in the title with `_` underscores.
 3. Fill in the fields and write your post.
 It will automatically generate this page in newsletters.
 
@@ -123,3 +124,25 @@ To run and test the site locally
   - This means that moderators with limited dev experience, can contribute to the site with only knowing markdown.
 - Jekyll has built in design control, meaning that it is easy to make a few templates and use pre-created templates for multiple pages.
 - Can be used with Github, which means that we don't need to pay for hosting (as you can host it on Github!)
+
+### Editing the Website Layout
+- All layout templates are found inside `_layouts.html`
+- Each page in the site (eg. `index.html`) contains an information header at the top, which specifies what type of layout the page will use.
+    ```
+    ---
+    layout: default_index
+    ---
+    ```
+#### Editing Templates of Pages
+
+1. Navigate to the `/_layouts.html` subdirectory and directly edit templates there.
+2. Layout templates may 'include' certain shared elements (such as a navigation bar), which are found in the `/_includes` subdirectory.
+
+##### Editing elements specific to pages**
+
+1. Edit directly in the page (eg. `site.html`)
+
+##### Editing overall design elements
+
+- `style.css` is located in `/_includes/css/style.css`
+- Overall font/colors is located in `/_data/template.yml`
