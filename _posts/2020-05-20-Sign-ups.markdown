@@ -24,6 +24,7 @@ Season 39 players should not use this signup form and should instead fill out th
 <div align="center">
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfI_OwSQz1Zxf4VeVBwnuC5imjJ-XzlW-gxmMepAaIAF45BsQ/viewform?embedded=true" width="700" height="1200">Loading…</iframe>
 </div>
+
 #### Sign-ups and Counts
 Signups and Counts are listed below. Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 <div align="center">
