@@ -83,7 +83,8 @@ p.large {
 
 /* iframes */
 .sheets {
-  width: 100%;
+  max-width: 100%;
+  align: center;
 }
 
 iframe {
