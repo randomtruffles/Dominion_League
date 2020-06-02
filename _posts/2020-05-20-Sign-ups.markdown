@@ -1,13 +1,13 @@
 ---
-title: Sign-ups
-subtitle: Season 40
+title: Season 40 - Sign-ups
+subtitle: Sign-ups Open
 layout: default
-date: 2020-05-30
+date: 2020-05-11
 categories: signups
 description:
 
 ---
-**Season 40** will run from Monday, May 25 until Sunday, July 5 and ~~you can sign up until Monday, May 18 at 15:00 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Monday, June 1 at 15:00 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
+**Season 40** will run from Monday, May 25 until Sunday, July 5 and ~~you can sign up until Monday, May 18 at 15:00 UTC~~. **Signups are now officially closed**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 1. An account on the [Dominion Online](https://dominion.games) client. In order to place you appropriately, we highly recommend playing at least 20 rated 2-player games through the automatch system before Friday, May 22.
@@ -19,3 +19,13 @@ After you fill out the form, please check back in about 5 minutes for the table 
 A moderator will contact you on Discord to confirm your participation. You must reply to this message within 4-7 days depending on how close your signup is to the deadline. In addition, we require all players to "check in" during the first week of the season or forfeit their place. This consists of filling out a very short form to confirm that you plan to play the season that will be sent at the start of the season. If you fail to check in promptly, you could be removed.
 
 Season 39 players should not use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+
+#### Sign-up using this Google Form:
+<div align="center">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfI_OwSQz1Zxf4VeVBwnuC5imjJ-XzlW-gxmMepAaIAF45BsQ/viewform?embedded=true" width="700" height="1200">Loading…</iframe>
+</div>
+#### Sign-ups and Counts
+Signups and Counts are listed below. Tiers are tentative. Counts for returning players may be a bit off before the season ends.
+<div align="center">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQK6cX-08Ju8UlRId90-EE0_rae2vReMX7i3vrnNVnxmgNnbbpQ3I3iqW92_gheoSWnxfWLR3P2VaN_/pubhtml?gid=947503377&amp;headers=false" height="500" width="800">Loading...</iframe>
+</div>
