@@ -515,6 +515,12 @@ fieldset[disabled] .btn-xl.active {
   display: block;
 }
 
+@media (max-width: 500px) {
+    img {
+         width: 400px;
+    }
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border: 0;
@@ -569,6 +575,7 @@ header .intro-text .intro-description {
     background: rgba(0,0,0,0.4);
 }
 
+
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     /*text-transform: uppercase;*/
@@ -576,6 +583,16 @@ header .intro-text .intro-heading {
     font-size: 300px;
     font-weight: 400;
     line-height: 20px;
+}
+
+header .intro-text .intro-heading img {
+    width: 550px;
+}
+
+@media(max-width: 480px) {
+  header .intro-text .intro-heading img {
+      width: 400px;
+  }
 }
 
 @media(min-width:768px) {
@@ -593,13 +610,14 @@ header .intro-text .intro-heading {
         font-weight: 400;
         line-height: 40px;
     }
-        header .intro-text .intro-description {
-            margin-bottom: 35px;
-            font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
-            font-size: 22px;
-            /*font-style: italic;*/
-            line-height: 40px;
-        }
+
+    header .intro-text .intro-description {
+        margin-bottom: 35px;
+        font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
+        font-size: 22px;
+        /*font-style: italic;*/
+        line-height: 40px;
+    }
 }
 
 section {
