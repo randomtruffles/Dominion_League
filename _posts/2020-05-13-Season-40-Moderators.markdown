@@ -1,17 +1,11 @@
 ---
 
 title: Season 40 Moderators
-
 author: truffles
-
 layout: post
-
 date: 2020-05-30
-
 categories: moderators
-
 description:
-
 published: false
 
 
