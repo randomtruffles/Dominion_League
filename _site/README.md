@@ -4,18 +4,18 @@ This website is a static site dedicated to the Dominion League.
 The site is generated using [Jekyll](https://jekyllrb.com/docs/), which is a static site generator.
 
 ## Table of Contents
-1. How the repository is organized
-  - Main Directory
-  - `/_posts` Subdirectory
-  - `/_data` Subdirectory
-  - `/img` Subdirectory
-  - `/_layouts` Subdirectory
-  - `/_includes` Subdirectory
-2. How to write a post/newsletter
-3. How to update a page
-4. How to change a moderator picture
-5. (Devs) Development Set-Up Instructions
-6. (Devs) Why use Jekyll?
+1. [How the repository is organized](#how-the-repoistory-is-organized)
+    - Main Directory
+    - `/_posts` Subdirectory
+    - `/_data` Subdirectory
+    - `/img` Subdirectory
+    - `/_layouts` Subdirectory
+    - `/_includes` Subdirectory
+2. [How to edit/write a post/newsletter](#how-to-edit-or-write-a-post-or-newsletter)
+3. [How to update a page](#how-to-update-a-page) (eg. sign-ups, rules, FAQ)
+4. [How to change/add/remove a moderator](#how-to-change-moderator-information)
+5. (Devs) [Development Set-Up Instructions](#development-setup-instructions)
+6. (Devs) [Why use Jekyll?](#why-use-jekyll?)
 
 ### How the repository is organized
 
@@ -74,9 +74,41 @@ The site is generated using [Jekyll](https://jekyllrb.com/docs/), which is a sta
 - This contains all the things that can be included in each page of the site. For example, the `header.html`, `footer.html`, `sidebar.html` etc.
 
 
+#### How to edit or write a post or newsletter
+1. Create a new file inside `/_posts`.
+2. Copy the template of `1000-01-01-DEFAULT_TEMPLATE.markdown`
+3. Fill in the fields and write your post.
+It will automatically generate this page in newsletters.
 
+#### How to update a page
+##### Example: `sign-ups.html`
+1. Navigate to `/posts/YYYY-MM-DD-Sign-ups.markdown`
+2. Edit the document with the content you want change. **CHANGE THE DATE OF THE FILE**
+  - Eg. if today is 2020/05/20, the file should be renamed `/2020/05/20-Sign-ups.markdown`
+3. Navigate to `sign-ups.html`
+4. Edit the `<iframes....>` Google Sheets embeddings with the ones for the new season.
+##### Example: `rules.markdown` or `faq.markdown`
+1. Navigate to the appropriate document. (eg. `rules.markdown`)
+2. Modify it.
+3. Save and you're done!
 
-### Development Set-up Instructions
+#### How to change moderator information
+**Change/remove/add moderator details**
+1. Navigate to `_data/moderators.yml`.
+2. Add/remove/change the moderator with the right information. (Instructions are provided at the top)
+Eg.
+```
+- name: Lemonspawn
+  discord: Lemonspawn#2571
+  description:
+  image: lemonspawn
+```
+**Change/remove/add moderator picture**
+1. Navigate to the `/img/moderators/` directory. Replace/add your picture in
+  - **Note:** It must be in .png`
+  - **Note 2:** The suffix (`suffix.png`) should match what is provided in `moderators.yml` as per instructions in `How to change/remove/add a moderator.`
+
+### Development Setup Instructions
 To run and test the site locally
 1. Install Jekyll using the instructions [here](https://jekyllrb.com/docs/installation/).
 2. Install Ruby using the instructions [here](https://www.ruby-lang.org/en/documentation/installation/)
