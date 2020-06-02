@@ -82,6 +82,10 @@ p.large {
 }
 
 /* iframes */
+.sheets {
+  width: 100%;
+}
+
 iframe {
   align: center;
 }
