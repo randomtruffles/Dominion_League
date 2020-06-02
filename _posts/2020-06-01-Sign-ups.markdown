@@ -25,8 +25,8 @@ Season 40 players should not use this signup form and should instead fill out th
 #### Sign-up using this Google Form:
 
 [comment]: # (TODO: Replace Sign-ups Form google embed below)
-<div align="center">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVgqbaYIA3ElkCF29cBsdjwbp06PdyPwXxurPl1-IyesEgbw/viewform?embedded=true" width="800" height="500">Loading…</iframe>
+<div class="sheets">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVgqbaYIA3ElkCF29cBsdjwbp06PdyPwXxurPl1-IyesEgbw/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
 </div>
 
 
@@ -36,5 +36,5 @@ Signups and Counts are listed below. Tiers are tentative. Counts for returning p
 
 [comment]: # (TODO: Replace Sign-ups and Counts google embed below)
 <div class="sheets">
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7pNFwPE7dLvu9Qp35s9tCNqHQjkiUKNLe2pRPlrU93uPrP91A0Po227xwbnWwwnZFwcMCYhVAlqNl/pubhtml?gid=947503377" height="500" width="80">Loading...</iframe>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7pNFwPE7dLvu9Qp35s9tCNqHQjkiUKNLe2pRPlrU93uPrP91A0Po227xwbnWwwnZFwcMCYhVAlqNl/pubhtml?gid=947503377" height="500" width="100%">Loading...</iframe>
 </div>

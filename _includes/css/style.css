@@ -136,10 +136,11 @@ h6 {
 }
 .links ul {
   margin: 0;
+  padding: 0 0 0 18px;
 }
 .links li {
   list-style: none;
-  line-height: 1.8em;
+  line-height: 2em;
 }
 .links a {
   color: #999;
@@ -159,11 +160,11 @@ h6 {
 }
 
 .left {
-  width: 75%;
+  width: 70%;
 }
 
 .right {
-  width: 25%;
+  width: 30%;
 }
 
 .content {
@@ -230,6 +231,9 @@ h6 {
   display: none;
 }
 
+.filterDiv iframe {
+  width: 620px;
+}
 .show {
   display: block;
 }
@@ -513,6 +517,18 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media (max-width: 500px) {
+    .filterDiv iframe {
+      width: 100%;
+    }
+
+    .left {
+      width: 100%
+    }
+
+    .sidebar {
+      display: none;
+    }
+
     img {
          width: 400px;
     }
@@ -942,7 +958,7 @@ section h3.moderator-subheading {
 }
 
 .team-member {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
 }
 

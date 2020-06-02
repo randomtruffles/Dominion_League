@@ -3,12 +3,17 @@ layout: default
 ---
 
 <div class="full container">
-  <div class="row">
-    <div class="column left">
-      {{content}}
-    </div>
-    <div class="column right" id="sidebar">
-      {% include sidebar.html %}
+  <div class="section">
+    <div class="row">
+      <div class="column left">
+        {{content}}
+      </div>
+      <!-- hide sidebar when mobile -->
+      <div class='sidebar'>
+        <div class="column right" id="sidebar">
+          {% include sidebar.html %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
