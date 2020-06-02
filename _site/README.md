@@ -3,6 +3,8 @@
 This website is a static site dedicated to the Dominion League.
 The site is generated using [Jekyll](https://jekyllrb.com/docs/), which is a static site generator.
 
+This was last updated by: `truffles` on `2020-06-01`
+
 ## Table of Contents
 1. [How the repository is organized](#how-the-repoistory-is-organized)
     - Main Directory
