@@ -77,8 +77,8 @@ This was last updated by: `truffles` on `2020-06-01`
 
 
 ### How to edit or write a post or newsletter
-1. Create a new file inside `/_posts`.
-2. Copy the template of `1000-01-01-DEFAULT_TEMPLATE.markdown`
+1. Copy the template post `1000-01-01-DEFAULT_TEMPLATE.markdown` inside the `/_posts` subdirectory
+2. Edit the file name so it matches the template `YYYY-MM-DD-NEWSLETTER_TITLE.markdown`
 3. Fill in the fields and write your post.
 It will automatically generate this page in newsletters.
 
