@@ -1,0 +1,36 @@
+---
+title: Season 41 - Sign-ups
+subtitle: Sign-ups Open
+layout: default
+date: 2020-06-01
+categories: signups #TODO: WHEN SIGNUPS CLOSE FOR THIS POST, REPLACE WITH CATEGORY archive
+description:
+
+---
+**Season 41** will run from Monday, July 20 until Sunday, August 30 and you can sign up until **Monday, July 13 at 15:00 UTC** by filling out the Google form in the next message.
+
+You will need the following in order to sign up:
+
+1. An account on the [Dominion Online](https://dominion.games) client. In order to place you appropriately, we highly recommend playing at least 20 rated 2-player games through the automatch system before Friday, July 17.[/li]
+2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu). All League communications will take place by default over Discord.[/li]
+3. (Optional) An account on these forums. This gives the moderators a second means of contacting you should you become unresponsive on Discord.
+
+After you fill out the form, please check back in about 5 minutes for the table of signups to update with your signup. If any of the entries are highlighted in red, this indicates that we have detected a problem with that entry. Please remedy this right away, or otherwise reach out to the moderators on Discord or by using the [Dominion League Hotline](http://tinyurl.com/dominion-league-hotline).
+
+A moderator will contact you on Discord to confirm your participation. You must reply to this message within 4-7 days depending on how close your signup is to the deadline. In addition, we require all players to "check in" during the first week of the season or forfeit their place. This consists of filling out a very short form to confirm that you plan to play the season that will be sent at the start of the season. If you fail to check in promptly, you could be removed.
+
+Season 40 players should not use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+
+#### Sign-up using this Google Form:
+[comment]: # (TODO: Replace Sign-ups Form google embed below)
+<div align="center">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVgqbaYIA3ElkCF29cBsdjwbp06PdyPwXxurPl1-IyesEgbw/viewform?embedded=true" width="500" height="800">Loading…</iframe>
+</div>
+
+
+#### Sign-ups and Counts
+Signups and Counts are listed below. Tiers are tentative. Counts for returning players may be a bit off before the season ends.
+<div align="center">
+[comment]: # (TODO: Replace Sign-ups and Counts google embed below)
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7pNFwPE7dLvu9Qp35s9tCNqHQjkiUKNLe2pRPlrU93uPrP91A0Po227xwbnWwwnZFwcMCYhVAlqNl/pubhtml?gid=947503377" height="500" width="800">Loading...</iframe>
+</div>

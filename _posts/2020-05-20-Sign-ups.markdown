@@ -3,7 +3,7 @@ title: Season 40 - Sign-ups
 subtitle: Sign-ups Open
 layout: default
 date: 2020-05-11
-categories: signups
+categories: signups # TODO: WHEN SIGNUPS CLOSE FOR THIS POST, REMOVE THIS CATEGORY.
 description:
 
 ---
@@ -21,12 +21,15 @@ A moderator will contact you on Discord to confirm your participation. You must 
 Season 39 players should not use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
 
 #### Sign-up using this Google Form:
+[comment]: # (TODO: Replace Sign-ups Form google embed below)
 <div align="center">
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfI_OwSQz1Zxf4VeVBwnuC5imjJ-XzlW-gxmMepAaIAF45BsQ/viewform?embedded=true" width="700" height="1200">Loading…</iframe>
 </div>
 
+
 #### Sign-ups and Counts
 Signups and Counts are listed below. Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 <div align="center">
+[comment]: # (TODO: Replace Sign-ups and Counts google embed below)
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQK6cX-08Ju8UlRId90-EE0_rae2vReMX7i3vrnNVnxmgNnbbpQ3I3iqW92_gheoSWnxfWLR3P2VaN_/pubhtml?gid=947503377&amp;headers=false" height="500" width="800">Loading...</iframe>
 </div>
