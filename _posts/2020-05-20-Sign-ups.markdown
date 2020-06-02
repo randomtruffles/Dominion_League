@@ -3,7 +3,7 @@ title: Season 40 - Sign-ups
 subtitle: Sign-ups Open
 layout: default
 date: 2020-05-11
-categories: signups # TODO: WHEN SIGNUPS CLOSE FOR THIS POST, REMOVE THIS CATEGORY.
+categories: archive # TODO: WHEN SIGNUPS CLOSE FOR THIS POST, REPLACE WITH CATEGORY archive
 description:
 
 ---
