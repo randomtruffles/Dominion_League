@@ -76,13 +76,13 @@ This was last updated by: `truffles` on `2020-06-01`
 - This contains all the things that can be included in each page of the site. For example, the `header.html`, `footer.html`, `sidebar.html` etc.
 
 
-#### How to edit or write a post or newsletter
+### How to edit or write a post or newsletter
 1. Create a new file inside `/_posts`.
 2. Copy the template of `1000-01-01-DEFAULT_TEMPLATE.markdown`
 3. Fill in the fields and write your post.
 It will automatically generate this page in newsletters.
 
-#### How to update a page
+### How to update a page
 ##### Example: `sign-ups.html`
 1. Navigate to `/posts/YYYY-MM-DD-Sign-ups.markdown`
 2. Edit the document with the content you want change. **CHANGE THE DATE OF THE FILE**
@@ -94,7 +94,7 @@ It will automatically generate this page in newsletters.
 2. Modify it.
 3. Save and you're done!
 
-#### How to change moderator information
+### How to change moderator information
 **Change/remove/add moderator details**
 1. Navigate to `_data/moderators.yml`.
 2. Add/remove/change the moderator with the right information. (Instructions are provided at the top)
