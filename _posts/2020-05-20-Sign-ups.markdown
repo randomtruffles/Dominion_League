@@ -1,6 +1,7 @@
 ---
 title: Season 40 - Sign-ups
 subtitle: Sign-ups Open
+author: nottoobad
 layout: default
 date: 2020-05-11
 categories: archive # TODO: WHEN SIGNUPS CLOSE FOR THIS POST, REPLACE WITH CATEGORY archive
