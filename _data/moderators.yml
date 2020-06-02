@@ -1,3 +1,8 @@
+# TEMPLATE OF NEW MODERATOR
+# name: <the name you want to appear on the site>
+# discord: <the discord handle>
+# description: (optional) <description about yourself>
+# image: <the prefix of the image, eg. if it's same.png, it should be same>
 - name: alibby1152
   discord: alibby1152#4103
   description:
