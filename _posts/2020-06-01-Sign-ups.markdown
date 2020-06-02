@@ -36,5 +36,5 @@ Signups and Counts are listed below. Tiers are tentative. Counts for returning p
 
 [comment]: # (TODO: Replace Sign-ups and Counts google embed below)
 <div class="sheets">
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7pNFwPE7dLvu9Qp35s9tCNqHQjkiUKNLe2pRPlrU93uPrP91A0Po227xwbnWwwnZFwcMCYhVAlqNl/pubhtml?gid=947503377" height="500" width="800">Loading...</iframe>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7pNFwPE7dLvu9Qp35s9tCNqHQjkiUKNLe2pRPlrU93uPrP91A0Po227xwbnWwwnZFwcMCYhVAlqNl/pubhtml?gid=947503377" height="500" width="80">Loading...</iframe>
 </div>
