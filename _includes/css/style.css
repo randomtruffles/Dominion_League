@@ -379,7 +379,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #{{ site.data.template.color.navbar }};
 }
 
 .navbar-default:hover,
@@ -530,7 +530,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     img {
-         width: 400px;
+         width: 90%x;
     }
 }
 
@@ -604,7 +604,7 @@ header .intro-text .intro-heading img {
 
 @media(max-width: 480px) {
   header .intro-text .intro-heading img {
-      width: 400px;
+      width: 80%;
   }
 }
 

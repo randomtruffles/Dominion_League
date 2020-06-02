@@ -8,6 +8,7 @@ color:
   secondary-dark: 333
   muted: 777
   grey-section: E8E8E8
+  navbar: B0B0B0
 
 # Font Families
 font:
