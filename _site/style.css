@@ -477,10 +477,9 @@ fieldset[disabled] .btn-xl.active {
     background-color: #ca2017;
 }
 
-/* Dropdown */
+/* Dropdown
 .dropdown {
-  float: left;
-}
+}*/
 
 .dropdown .dropbtn {
   font-size: 16px;

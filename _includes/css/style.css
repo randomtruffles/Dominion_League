@@ -469,10 +469,9 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
-/* Dropdown */
+/* Dropdown
 .dropdown {
-  float: left;
-}
+}*/
 
 .dropdown .dropbtn {
   font-size: 16px;
