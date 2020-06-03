@@ -1,4 +1,4 @@
-- name: Sign up
+- name: Sign Up
   path: sign-ups.html
 - name: About
   path: rules.html
