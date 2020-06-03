@@ -27,10 +27,10 @@
               {% for item in site.data.nav %}
                 {% if item.children %}
                 <li class="dropdown nav-item">
-                  <a class="dropdown-toggle" href="{{site.url}}/{{ item.path }}">{{ item.name }}
+                  <a href="{{site.url}}/{{ item.path }}">{{ item.name }}
                     <i class="fa fa-caret-down"></i>
                   </a>
-                  <ul class='dropdown-toggle dropdown-content'>
+                  <ul class='dropdown-content'>
                     {% for child in item.children %}
                       <li>
                         <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
