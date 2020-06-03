@@ -447,19 +447,19 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
+@media (min-width:768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
 }
-
-.navbar .navbar-collapse {
-  text-align: left;
-}
-
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
