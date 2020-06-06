@@ -27,9 +27,9 @@
               {% for item in site.data.nav %}
                 {% if item.children %}
                 <li class="dropdown nav-item">
-                  <a href="{{site.url}}/{{ item.path }}">{{ item.name }}
-                    <i class="fa fa-caret-down"></i>
-                  </a>
+                    <a href="{{site.url}}/{{ item.path }}">{{ item.name }}
+                      <i class="fa fa-caret-down"></i>
+                    </a>
                   <ul class='dropdown-content'>
                     {% for child in item.children %}
                       <li>
