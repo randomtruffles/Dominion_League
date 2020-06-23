@@ -20,7 +20,7 @@
       path: current_standings.html
     - name: Past Seasons
       path: past_standings.html
-- name: Newsletters
+- name: Posts
   path: newsletters.html
   section_id: newsletters
 - name: Contact

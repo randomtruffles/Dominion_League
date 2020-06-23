@@ -9,11 +9,11 @@ with open('../_data/leagueHistory_20200602.json') as file:
 def pad_text(text, padding):
     return " " * padding + text + "\n"
 
-def th(text, cl=""):
-    return "<th{}>{}</th>".format(cl, text)
+def th(text, attr=""):
+    return "<th{}>{}</th>".format(attr, text)
 
-def td(text, cl=""):
-    return "<td{}>{}</td>".format(cl, text)
+def td(text, attr=""):
+    return "<td{}>{}</td>".format(attr, text)
 
 def fpct(pct):
     return "{0:.0%}".format(pct)
@@ -28,8 +28,8 @@ def create_header(season):
         nonlocal header
         header += pad_text(text, padding)
 
-    past_season = "<a style=\"text-decoration: none\" href=\"season{}_past_standings.html\"> {} </a>".format(int_season-1, "<") if int_season > 1 else "  "
-    next_season = "<a style=\"text-decoration: none\" href=\"season{}_past_standings.html\"> {} </a>".format(int_season+1, ">") if int_season < current_season - 1 else "  "
+    past_season = "<a style=\"text-decoration: none\" href=\"season{}_past_standings.html\">&nbsp;{}&nbsp;</a>".format(int_season-1, "<b><</b>") if int_season > 1 else "&nbsp;&nbsp;&nbsp;"
+    next_season = "<a style=\"text-decoration: none\" href=\"season{}_past_standings.html\">&nbsp;{}&nbsp;</a>".format(int_season+1, "<b>></b>") if int_season < current_season - 1 else "&nbsp;&nbsp;&nbsp;"
 
     # define layout
     top = """---
@@ -38,6 +38,7 @@ layout: {}
 <div class="home">
   <div class="container-centered">
     <h3>{}Season {} Standings{}</h3>
+    <h5><a href="{{site.baseurl}}past_standings.html">All Past Season Standings</a></h5>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
 """.format(layout, past_season, season, next_season)
@@ -78,7 +79,7 @@ for (var i = 0; i < btns.length; i++) {
     return footer
 
 
-def create_table(division, padding):
+def create_table(division, padding, champion):
     global largest_division
     def p_add():
         nonlocal padding
@@ -107,11 +108,11 @@ def create_table(division, padding):
     # generate table headings
     table += p("<tr>")
     p_add()
-    table += p(th("Rank"))
-    table += p(th("Player"))
-    table += p(th("Wins"))
-    table += p(th("Losses"))
-    table += p(th("Win %"))
+    table += p(th("Rank", " width=\"10%\""))
+    table += p(th("Player", " width=\"45%\""))
+    table += p(th("Wins", " width=\"15%\""))
+    table += p(th("Losses", " width=\"15%\""))
+    table += p(th("Win %", " width=\"15%\""))
     p_sub()
     table += p("</tr>")
 
@@ -131,7 +132,10 @@ def create_table(division, padding):
 
         # get rows
         mrow += p(td(m["rank"]+1 if zero_index else m["rank"]))
-        mrow += p(td(m["name"]))
+        if m["name"] == champion:
+            mrow += p(td(m["name"] + " " + "<i class=\"fas fa-crown\"></i>"))
+        else:
+            mrow += p(td(m["name"]))
         mrow += p(td(m["wins"]))
         mrow += p(td(m["losses"]))
         mrow += p(td(fpct(m["pct"])))
@@ -162,9 +166,10 @@ def create_season_page(season):
     # add tables for each division
     # page_add("<h3>Season {} Standings</h3>".format(season["season"]))
     divisions = season["divisions"]
+    champion = season["champion"] if "champion" in season else None
 
     for d in divisions:
-        page += create_table(d, padding)
+        page += create_table(d, padding, champion)
 
     # clean up
     padding -= 2

@@ -3,8 +3,7 @@ title: Season 39 - Newsletter
 subtitle: The First Eight-Tier Season
 layout: post
 date: 2020-03-17
-categories: newsletters
-tags: tiers
+categories: 
 author: SamE
 description:
 

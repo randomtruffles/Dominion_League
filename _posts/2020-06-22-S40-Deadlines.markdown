@@ -2,9 +2,11 @@
 title: Season 40 - End of Season Deadlines
 subtitle:
 author: alibby1152
-layout: simple_post
+layout: post
 date: 2020-06-22
-categories: newsletters #TODO: WHEN SIGNUPS CLOSE FOR THIS POST, REPLACE WITH CATEGORY archive
+categories:
+- newsletters
+- pinned
 description:
 
 ---

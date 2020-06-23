@@ -43,6 +43,9 @@ body {
 }
 
 /* Contact Page */
+.contact {
+  padding: 20px 0 20px 0
+}
 .contact > div {
   margin: 0 auto;
   max-width: 800px
@@ -54,7 +57,7 @@ body {
 }
 
 .container {
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 20px;
   max-width: 900px;
 }
 
@@ -209,6 +212,7 @@ h6 {
 /*Sidebar */
 .links {
   margin-bottom: 40px;
+  padding: 10px;
 }
 .links ul {
   margin: 0;

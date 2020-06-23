@@ -13,7 +13,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-filterSelection("divA")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");

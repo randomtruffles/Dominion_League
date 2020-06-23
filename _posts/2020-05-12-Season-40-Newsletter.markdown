@@ -3,8 +3,7 @@ title: Season 40 - Newsletter
 subtitle: Quarantines Lead to Explosive Growth
 layout: post
 date: 2020-05-12
-categories: newsletters
-tags: growth
+categories: 
 author: SamE
 
 ---
