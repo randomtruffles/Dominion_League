@@ -138,7 +138,6 @@ a.active {
 a {
     color: #{{ site.data.template.color.secondary }};
     text-decoration: underline;
-    width: 100%;
 }
 
 a:hover,
