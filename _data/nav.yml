@@ -15,11 +15,11 @@
 - name: Standings
   path: current_standings.html
   section_id: standings
-  #children:
-  #  - name: Current Season
-  #    path: current_standings.html
-  #  - name: Past Seasons
-  #    path: path_seasons.html
+  children:
+    - name: Current Season
+      path: current_standings.html
+    - name: Past Seasons
+      path: past_standings.html
 - name: Newsletters
   path: newsletters.html
   section_id: newsletters

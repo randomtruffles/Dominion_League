@@ -130,6 +130,11 @@ iframe {
   width: 100%;
 }
 
+/* Dominion Games */
+.dominion-games {
+  width: 40px;
+}
+
 /* Links */
 a,
 a:hover,
@@ -144,15 +149,51 @@ a {
     text-decoration: underline;
 }
 
+a.past-standings {
+  font-size: 18px;
+}
+
 .fixed {
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 15px;
 }
 a:hover,
 a:focus,
 a:active {
     color: #{{ site.data.template.color.primary }};
+}
+
+/* Past Standings Tables */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: table;
+}
+
+tbody {
+  display: table;
+  width: 100%;
+}
+
+.table-past-standings {
+  border: 2px solid grey;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.division-header {
+  font-weight: 700;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
 }
 
 h1,
@@ -259,14 +300,17 @@ h6 {
   color: white;
 }
 
-.filterDiv {
+.current-standings {
   color: #ffffff;
   text-align: center;
   margin: 2px;
+}
+
+.filterDiv {
   display: none;
 }
 
-.filterDiv iframe {
+.current-standings iframe {
   width: 620px;
 }
 .show {
@@ -382,7 +426,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .site-header {
-  padding-top: 32px;
+  padding-top: 35px;
   padding-bottom: 5px;
   text-align: center;
 }
@@ -543,6 +587,8 @@ fieldset[disabled] .btn-xl.active {
   text-decoration: none;
   display: block;
   text-align: left;
+  width: 175px;
+  background: #edebeb;
 }
 
 .dropdown-content a:hover {
@@ -555,7 +601,15 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media (max-width: 500px) {
-    .filterDiv iframe {
+    .dominion-games {
+      width: 30px;
+    }
+
+    a.fixed {
+      top: 15px;
+      right: 20px;
+    }
+    .current-standings iframe {
       width: 100%;
     }
 

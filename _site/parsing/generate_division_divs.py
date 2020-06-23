@@ -22,7 +22,7 @@ def figure_div (idx):
 
 for idx, iframe in enumerate(iframes):
     print(iframe)
-    iframes[idx] = "<div class=\"filterDiv " + figure_div(idx) + "\">" + iframe + "</div>\n"
+    iframes[idx] = "<div class=\"current-standings filterDiv " + figure_div(idx) + "\">" + iframe + "</div>\n"
 
 # writing divisions to file
 file1 = open('div_with_div.txt', 'w')
