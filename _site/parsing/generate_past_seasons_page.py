@@ -9,14 +9,27 @@ with open('../_data/leagueHistory_20200602.json') as file:
 def pad_text(text, padding):
     return " " * padding + text + "\n"
 
-def th(text, attr=""):
+def create_th(text, attr=""):
     return "<th{}>{}</th>".format(attr, text)
 
-def td(text, attr=""):
+def create_td(text, attr=""):
     return "<td{}>{}</td>".format(attr, text)
 
 def fpct(pct):
     return "{0:.0%}".format(pct)
+
+"""
+Value is between 0 and 100.
+"""
+def assign_color(value):
+    gradient = ["15AC60","16AF4F","18B33E","1AB72C","1EBB1C","35BF1E","4CC320","64C722","7CCB24","94CF26","ADD329","C7D72B","DBD52D","DFC230","E3AF32","E79C35","EB8937","EF753A","F3613D","F74C40"]
+    gradient.reverse()
+    steps = len(gradient)
+    range = 101
+    def bgcolor(color):
+        return " style=\"background-color:#{}\"".format(color)
+
+    return bgcolor(gradient[(value*steps)//101])
 
 def create_header(season):
     global largest_division
@@ -38,7 +51,7 @@ layout: {}
 <div class="home">
   <div class="container-centered">
     <h3>{}Season {} Standings{}</h3>
-    <h5><a href="{{site.baseurl}}past_standings.html">All Past Season Standings</a></h5>
+    <h5><a href="{{{{site.baseurl}}}}/past_standings.html">All Past Season Standings</a></h5>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
 """.format(layout, past_season, season, next_season)
@@ -90,6 +103,12 @@ def create_table(division, padding, champion):
     def p(text):
         return pad_text(text, padding)
 
+    cell_class = " class=\"cells-past-standings\""
+    def th(text, attr=""):
+        return create_th(text, attr+cell_class)
+    def td(text, attr=""):
+        return create_td(text, attr+cell_class)
+
     # update tier counter
     if division["tier"] > largest_division:
         largest_division = division["tier"]
@@ -106,15 +125,18 @@ def create_table(division, padding, champion):
     table += p("</tr>")
 
     # generate table headings
-    table += p("<tr>")
+    table += p("<tr class=\"rows-past-standings\">")
     p_add()
-    table += p(th("Rank", " width=\"10%\""))
-    table += p(th("Player", " width=\"45%\""))
-    table += p(th("Wins", " width=\"15%\""))
-    table += p(th("Losses", " width=\"15%\""))
+    table += p(create_th("Rank", " width=\"10%\""))
+    table += p(th("Player", " width=\"55%\""))
+    table += p(th("W", " width=\"10%\""))
+    table += p(th("L", " width=\"10%\""))
     table += p(th("Win %", " width=\"15%\""))
     p_sub()
     table += p("</tr>")
+
+    # champion icon hover text
+    champion_icon = " <i class=\" fas fa-crown\" title=\"Winner of championship match between top 2 A players\"></i>"
 
     # generate rows for division members
     members = division["members"]
@@ -127,18 +149,18 @@ def create_table(division, padding, champion):
 
     for m in members:
         mrow = ""
-        mrow += p("<tr>")
+        mrow += p("<tr class=\"rows-past-standings\">")
         p_add()
 
         # get rows
-        mrow += p(td(m["rank"]+1 if zero_index else m["rank"]))
+        mrow += p(create_td(m["rank"]+1 if zero_index else m["rank"]))
         if m["name"] == champion:
-            mrow += p(td(m["name"] + " " + "<i class=\"fas fa-crown\"></i>"))
+            mrow += p(td(m["name"] + champion_icon))
         else:
             mrow += p(td(m["name"]))
         mrow += p(td(m["wins"]))
         mrow += p(td(m["losses"]))
-        mrow += p(td(fpct(m["pct"])))
+        mrow += p(td(fpct(m["pct"]), assign_color(int(m["pct"]*100))))
 
         p_sub()
         mrow += p("</tr>")
