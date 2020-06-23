@@ -14,7 +14,6 @@ description:
 
 Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A; 2 divisions in tier B; 4 divisions in each of tiers C and D; 8 divisions in each of tiers E, F, and G; and 16 divisions in tier H. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D and below) and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
 
-
 #### II. Match Structure and Policies
 
 Each player will play one match with each other player in their division. Matches consist of 6 games, with each player going first 3 times. The League recommends playing the first game with random starting players, and then alternating starting players manually. Each player receives 1 point for each game they won, and 0.5 points for each tie for that match.

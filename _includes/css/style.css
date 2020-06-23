@@ -101,6 +101,32 @@ iframe {
   margin: 15px
 }
 
+/* Pages */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.rules {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+
 a,
 a:hover,
 a:focus,
@@ -112,6 +138,7 @@ a.active {
 a {
     color: #{{ site.data.template.color.secondary }};
     text-decoration: underline;
+    width: 100%;
 }
 
 a:hover,
