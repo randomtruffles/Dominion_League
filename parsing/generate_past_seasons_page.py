@@ -9,11 +9,11 @@ with open('../_data/leagueHistory_20200602.json') as file:
 def pad_text(text, padding):
     return " " * padding + text + "\n"
 
-def th(text, cl=""):
-    return "<th{}>{}</th>".format(cl, text)
+def th(text, attr=""):
+    return "<th{}>{}</th>".format(attr, text)
 
-def td(text, cl=""):
-    return "<td{}>{}</td>".format(cl, text)
+def td(text, attr=""):
+    return "<td{}>{}</td>".format(attr, text)
 
 def fpct(pct):
     return "{0:.0%}".format(pct)
@@ -107,11 +107,11 @@ def create_table(division, padding):
     # generate table headings
     table += p("<tr>")
     p_add()
-    table += p(th("Rank"))
-    table += p(th("Player"))
-    table += p(th("Wins"))
-    table += p(th("Losses"))
-    table += p(th("Win %"))
+    table += p(th("Rank", " width=\"10%\""))
+    table += p(th("Player", " width=\"45%\""))
+    table += p(th("Wins", " width=\"15%\""))
+    table += p(th("Losses", " width=\"15%\""))
+    table += p(th("Win %", " width=\"15%\""))
     p_sub()
     table += p("</tr>")
 
