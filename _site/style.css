@@ -280,6 +280,23 @@ h6 {
 .spacing {
   height: 20px;
 }
+
+/* Grids */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+  grid-gap:1px;
+}
+.grid-item {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
 /* Newsletters*/
 .column {
   float: left;
@@ -652,6 +669,13 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media (max-width: 500px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      grid-gap:1px;
+    }
+
     .introduction {
       padding-top: 40px
     }

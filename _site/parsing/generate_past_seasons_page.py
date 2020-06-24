@@ -140,34 +140,46 @@ def create_table(division, padding, champion):
 
     # generate rows for division members
     members = division["members"]
-    member_rows = [""] * len(members)
+    member_rows = {}
 
-    zero_index = False
+    zero_index = 0
     for m in members:
         if m["rank"] == 0:
-            zero_index = True
+            zero_index = 1
 
     for m in members:
         mrow = ""
         mrow += p("<tr class=\"rows-past-standings\">")
         p_add()
-
         # get rows
-        mrow += p(create_td(m["rank"]+1 if zero_index else m["rank"]))
-        if m["name"] == champion:
-            mrow += p(td(m["name"] + champion_icon))
-        else:
-            mrow += p(td(m["name"]))
-        mrow += p(td(m["wins"]))
-        mrow += p(td(m["losses"]))
-        mrow += p(td(fpct(m["pct"]), assign_color(int(m["pct"]*100))))
+        rank = m["rank"] + zero_index
+        name = m["name"]
+        wins = m["wins"]
+        losses = m["losses"]
+        pct = m["pct"]
 
+        mrow += p(create_td(rank))
+        if name == champion:
+            mrow += p(td(name + champion_icon))
+        else:
+            mrow += p(td(name))
+        mrow += p(td(wins))
+        mrow += p(td(losses))
+        mrow += p(td(fpct(pct), assign_color(int(pct*100))))
         p_sub()
         mrow += p("</tr>")
-        member_rows[m["rank"] if zero_index else m["rank"] - 1] = mrow
 
-    for m in member_rows:
-        table += m
+        # store information
+        if rank in member_rows:
+            member_rows[rank] = member_rows[rank] + [mrow]
+        else:
+            member_rows[rank] = [mrow]
+
+    # add member rows to table
+    for rank in range(1, len(members)+1):
+        if rank in member_rows:
+            for m in member_rows[rank]:
+                table += m
 
     p_sub()
     table += p("</table>\n\n")
