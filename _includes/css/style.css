@@ -13,6 +13,10 @@ body {
 
 /**Landing page **/
 
+.introduction {
+  padding-top: 80px
+}
+
 .introduction > div {
   margin: 0 auto;
   max-width: 700px;
@@ -640,6 +644,10 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media (max-width: 500px) {
+    .introduction {
+      padding-top: 40px
+    }
+    
     .mobile {
       padding-top: 0px;
     }
