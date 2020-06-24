@@ -655,7 +655,7 @@ fieldset[disabled] .btn-xl.active {
     .introduction {
       padding-top: 40px
     }
-    
+
     .mobile {
       padding-top: 0px;
     }
@@ -1257,16 +1257,6 @@ ul.social-buttons li a:active {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #000;
-}
-
-::selection {
-    text-shadow: none;
-    background: #000;
 }
 
 img::selection {
