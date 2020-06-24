@@ -3,9 +3,13 @@ import json
 largest_division = "A"
 current_season = 40
 
+# Open file containing all league history
 with open('../_data/leagueHistory_20200602.json') as file:
     data = json.load(file)
 
+"""
+Helper functions
+"""
 def pad_text(text, padding):
     return " " * padding + text + "\n"
 
@@ -18,9 +22,7 @@ def create_td(text, attr=""):
 def fpct(pct):
     return "{0:.0%}".format(pct)
 
-"""
-Value is between 0 and 100.
-"""
+# Value is between 0 and 100.
 def assign_color(value):
     gradient = ["15AC60","16AF4F","18B33E","1AB72C","1EBB1C","35BF1E","4CC320","64C722","7CCB24","94CF26","ADD329","C7D72B","DBD52D","DFC230","E3AF32","E79C35","EB8937","EF753A","F3613D","F74C40"]
     gradient.reverse()
@@ -31,6 +33,56 @@ def assign_color(value):
 
     return bgcolor(gradient[(value*steps)//101])
 
+"""
+Creating elements of page
+"""
+# Create modal
+def create_modal(division, padding):
+    pad = "  " * padding
+    def td(info):
+        return "{}<td class=\"cells-division-modal\">{}</td>\n".format(pad, info)
+
+    # create results rows
+    pad += "  "
+    results = division["results"]
+    rows = ""
+    new_row = "{pad}<tr class=\"rows-results-modal\">\n".format(pad=pad)
+    for result in results:
+        rows += new_row
+        pad += "  "
+        rows += td("{} <b>vs.</b> {}".format(result["player1"], result["player2"]))
+        rows += td("{} - {}".format(result["wins1"], result["wins2"]))
+        pad = pad[:-2]
+        rows += "{pad}</tr>\n".format(pad=pad)
+    pad = pad[:-2]
+
+    # create results table
+    results_table = """
+{pad}<table class="division-modal-table">
+  {pad}<tr class="rows-results-modal">
+    {pad}<th class="cells-division-modal">Match</th>
+    {pad}<th class="cells-division-modal">Score</th>
+  {pad}</tr>
+  {rows}
+{pad}</table>
+""".format(pad=pad,rows=rows)
+
+    # create modal
+    modal = """
+<!-- Modal content for Division {name}-->
+<div class="myModal modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h4>Division {name} Match Results</h4>
+    {results_table}
+  </div>
+</div>
+""".format(name=division["name"], results_table=results_table)
+
+    return modal
+
+
+# Create header
 def create_header(season):
     global largest_division
     layout = "default"
@@ -72,28 +124,19 @@ layout: {}
     h_add("<div class=\"spacing\"></div>")
     return header
 
+# Create Footer
 def create_footer():
-    footer = """
-<script>
-filterSelection("all")
 
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");\n
-    this.className += " active";
-    });
-}
-</script>
-"""
-
+    # Include modal JS
+    footer="""
+    <script src="{{site.url}}/js/past-standings.js"></script>
+    """
     return footer
 
 
 def create_table(division, padding, champion):
     global largest_division
+    modal_btn = " <button class=\"results-button\">Match Results</button>"
     def p_add():
         nonlocal padding
         padding += 2
@@ -114,13 +157,14 @@ def create_table(division, padding, champion):
         largest_division = division["tier"]
 
     # initialize table
-    table = p("<table class=\"table-past-standings filterDiv div{}\">".format(division["tier"]))
+    table = "<!-- Table for Division {}-->\n".format(division["name"])
+    table += p("<table class=\"table-past-standings filterDiv div{}\">".format(division["tier"]))
     p_add()
 
     # create table name
     table += p("<tr>")
     p_add()
-    table += p(td("{} Division".format(division["name"]), " colspan=\"5\" class=\"division-header\""))
+    table += p(td("{} Division".format(division["name"]) + modal_btn, " colspan=\"5\" class=\"division-header\""))
     p_sub()
     table += p("</tr>")
 
@@ -182,10 +226,13 @@ def create_table(division, padding, champion):
                 table += m
 
     p_sub()
-    table += p("</table>\n\n")
+    table += p("</table>\n")
+
+    table += create_modal(division, padding)
 
     return table
 
+# Create season page
 def create_season_page(season):
     page = ""
     padding = 4
@@ -213,6 +260,7 @@ def create_season_page(season):
 
     return page
 
+# Generate pages
 data = data["seasons"]
 
 for season in data:
