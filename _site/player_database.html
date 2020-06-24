@@ -251,16 +251,101 @@
     <hr>
     <div class="container grey-section" id='main' role='main'>
       <div class="home">
-  <div class="container-centered">
+  <div id="player-database" class="container-centered">
     <h3>Player Database</h3>
     <h5><a href="/past_standings.html">View All Past Season Standings</a></h5>
     <p> Search for a player (eg. Mic Qsenoch) and view their league history for all seasons they've participated in. </p>
     <div class="spacing"> </div>
+
+    <input class="input-player" type="text" id="player_search" placeholder="Search for player name" />
+    <button onclick="searchPlayerHistory()">Search</button>
+
   </div>
 </div>
 
-
 <script>
+var myContacts = [
+	  { "name": "Parvez Ansari", "email": "ansariparvez@gmai.com", "mobile":"9998979695" },
+	  { "name": "Tayyeb Shaikh", "email": "tshaikh1981@gmai.com", "mobile":"9091929394" },
+	  { "name": "Ashfaque Shaikh", "email": "ashly786@gmai.com", "mobile":"8081828384" }
+	];
+
+let first_search = true;
+
+function searchPlayerHistory(){
+    var player_name = document.getElementById("player_search").value;
+    console.log(player_name);
+
+		var noOfContacts = myContacts.length;
+
+		if(noOfContacts>0){
+
+
+			// CREATE DYNAMIC TABLE.
+			var table = document.createElement("table");
+			table.style.width = '50%';
+
+
+			//table.setAttribute('border', '1');
+			//table.setAttribute('cellspacing', '0');
+			//table.setAttribute('cellpadding', '5');
+      table.setAttribute('align', 'center');
+
+			// retrieve column header ('Name', 'Email', and 'Mobile')
+
+			var col = []; // define an empty array
+			for (var i = 0; i < noOfContacts; i++) {
+				for (var key in myContacts[i]) {
+					if (col.indexOf(key) === -1) {
+						col.push(key);
+					}
+				}
+			}
+
+			// CREATE TABLE HEAD .
+			//var tHead = document.createElement("thead");
+
+			// CREATE ROW FOR TABLE HEAD .
+			var hRow = document.createElement("tr");
+
+			// ADD COLUMN HEADER TO ROW OF TABLE HEAD.
+			for (var i = 0; i < col.length; i++) {
+					var th = document.createElement("th");
+					th.innerHTML = col[i];
+					hRow.appendChild(th);
+			}
+			table.appendChild(hRow);
+
+			// CREATE TABLE BODY .
+			//var tBody = document.createElement("tbody");
+
+			// ADD COLUMN HEADER TO ROW OF TABLE HEAD.
+			for (var i = 0; i < noOfContacts; i++) {
+
+					var bRow = document.createElement("tr"); // CREATE ROW FOR EACH RECORD .
+
+
+					for (var j = 0; j < col.length; j++) {
+						var td = document.createElement("td");
+						td.innerHTML = myContacts[i][col[j]];
+						bRow.appendChild(td);
+					}
+					table.appendChild(bRow)
+
+			}
+			//table.appendChild(tBody);
+
+
+			// FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+			var divContainer = document.getElementById("player-database");
+      if (!(first_search)){
+        divContainer.removeChild(divContainer.lastChild);
+      }
+			divContainer.appendChild(table);
+      first_search = false;
+
+		}
+	}
 
 </script>
 

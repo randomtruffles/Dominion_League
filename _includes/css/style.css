@@ -1288,6 +1288,14 @@ ul.social-buttons li a:active {
   cursor: pointer;
 }
 
+/* Player database */
+.input-player {
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
 img::selection {
     background: 0 0;
 }

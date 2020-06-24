@@ -206,7 +206,7 @@ def create_table(division, padding, champion):
           else:
             return num
         wins = formatNumber(round(m["wins"],1))
-        losses = formatNumber(round(m["wins"],1))
+        losses = formatNumber(round(m["losses"],1))
         pct = m["pct"]
 
         mrow += p(create_td(rank))
