@@ -65,7 +65,7 @@ body {
 }
 
 .container {
-  padding: 20px 40px 20px 40px;
+  padding: 20px 20px;
   max-width: 1000px;
 }
 
@@ -648,6 +648,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media (max-width: 500px) {
+    .mobile {
+      padding-top: 0px;
+    }
     .dominion-games {
       width: 30px;
     }
