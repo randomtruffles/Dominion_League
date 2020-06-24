@@ -198,8 +198,15 @@ def create_table(division, padding, champion):
         # get rows
         rank = m["rank"] + zero_index
         name = m["name"]
-        wins = m["wins"]
-        losses = m["losses"]
+
+        # For formating simulated results
+        def formatNumber(num):
+          if num % 1 == 0:
+            return int(num)
+          else:
+            return num
+        wins = formatNumber(round(m["wins"],1))
+        losses = formatNumber(round(m["wins"],1))
         pct = m["pct"]
 
         mrow += p(create_td(rank))
