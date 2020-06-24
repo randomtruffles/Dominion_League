@@ -164,7 +164,8 @@ def create_table(division, padding, champion):
     # create table name
     table += p("<tr>")
     p_add()
-    table += p(td("{} Division".format(division["name"]) + modal_btn, " colspan=\"5\" class=\"division-header\""))
+    table += p(td("{} Division".format(division["name"]), " colspan=\"3\" class=\"division-header\""))
+    table += p(td(modal_btn, " colspan=\"2\"))
     p_sub()
     table += p("</tr>")
 
