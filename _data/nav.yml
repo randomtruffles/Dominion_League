@@ -21,7 +21,7 @@
     - name: Past Seasons
       path: past_standings.html
 - name: Matches
-  path: matcses.html
+  path: matches.html
 - name: Posts
   path: newsletters.html
   section_id: newsletters
