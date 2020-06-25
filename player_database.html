@@ -62,7 +62,7 @@ function searchPlayerHistory(){
       cache_children = cache_children + 2;
 
     // No data exists for player
-    } else if (!players_and_seasons[entered_player_name]) {
+    } else if (!players_and_seasons[player_name]) {
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: Do not make up fake players";
