@@ -5,6 +5,30 @@ with open('../_data/leagueHistory_20200602.json') as file:
     data = json.load(file)
 
 """
+Helper functions
+"""
+def assign_color(value):
+    gradient = ["15AC60","16AF4F","18B33E","1AB72C","1EBB1C","35BF1E","4CC320","64C722","7CCB24","94CF26","ADD329","C7D72B","DBD52D","DFC230","E3AF32","E79C35","EB8937","EF753A","F3613D","F74C40"]
+    gradient.reverse()
+    steps = len(gradient)
+    range = 101
+    def bgcolor(color):
+        return "#{}".format(color)
+
+    return bgcolor(gradient[(value*steps)//101])
+
+def formatNumber(num):
+  if num % 1 == 0:
+    return int(num)
+  else:
+    return num
+
+def fpct(pct):
+    return "{0:.0%}".format(pct)
+
+
+
+"""
 Generate friendly json for database querying
 
 {
@@ -74,9 +98,33 @@ for s in data:
         - tb2 : (type float) // Eg. 270.5
         """
         members = {}
+        zero_index = 0
+
         for m in d["members"]:
-            members[m["name"]] = m
-        division_data["members"] = members
+            if m["rank"] == 0:
+                zero_index = 1
+
+        for m in d["members"]:
+            member_data = {}
+            member_data["name"] = m["name"]
+            member_data["wins"] = "{0:g}".format(round(m["wins"],2))
+            member_data["losses"] = "{0:g}".format(round(m["losses"],2))
+            member_data["rank"] = m["rank"] + zero_index
+            member_data["pct"] = fpct(m["pct"])
+            member_data["color"] = assign_color(int(m["pct"]*100))
+
+            members[m["name"]] = member_data
+
+        # order by rank
+        sorted_members_by_rank = {}
+        i = 1
+        for m in members:
+            for m in members:
+                if members[m]["rank"] == i:
+                    sorted_members_by_rank[m] = members[m]
+            i += 1
+
+        division_data["members"] = sorted_members_by_rank
         division_data["results"] = d["results"]
 
         # store division_data in divisions dictionary
@@ -87,8 +135,5 @@ for s in data:
 
 file = "../_data/friendly_league_history.json"
 with open(file, 'w') as filetowrite:
-    # convert python dictionary to json
-    friendly_json = json.dump(friendly_json, filetowrite)
-
-    """loaded_friendly_json = json.loads(friendly_json)
-    filetowrite.write(loaded_friendly_json)"""
+    # convert python dictionary to json and write it
+    json.dump(friendly_json, filetowrite)

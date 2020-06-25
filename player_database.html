@@ -10,8 +10,10 @@ layout: default
     <div class="spacing"> </div>
 
     <input class="input-player" type="text" id="player_search" placeholder="Search for player name" />
+    <br>
     <button onclick="searchPlayerHistory()">Search</button>
-
+    <br>
+    <br>
   </div>
 </div>
 
@@ -22,81 +24,114 @@ var myContacts = [
 	  { "name": "Ashfaque Shaikh", "email": "ashly786@gmai.com", "mobile":"8081828384" }
 	];
 
+// Data for tables
+var players_and_seasons = {{ site.data.player_and_seasons_played | jsonify }};
+var friendly_league_history = {{ site.data.friendly_league_history | jsonify }};
+var league_history = friendly_league_history["seasons"];
+
 let first_search = true;
+let cache_children = 0;
 
+// Generate search results
 function searchPlayerHistory(){
+
+    var divContainer = document.getElementById("player-database");
+    for (var k = 0; k < cache_children; k++){
+      divContainer.removeChild(divContainer.lastChild);
+    }
+    cache_children = 0;
+
     var player_name = document.getElementById("player_search").value;
-    console.log(player_name);
+    var player_seasons = players_and_seasons[player_name];
+    console.log(player_seasons);
 
-		var noOfContacts = myContacts.length;
+    var num_seasons = player_seasons.length;
 
-		if(noOfContacts>0){
-
-
-			// CREATE DYNAMIC TABLE.
-			var table = document.createElement("table");
-			table.style.width = '50%';
+    // No data exists for player
+    if (num_seasons < 1) {
+      // Do something "No data exists for this player"
 
 
-			//table.setAttribute('border', '1');
-			//table.setAttribute('cellspacing', '0');
-			//table.setAttribute('cellpadding', '5');
-      table.setAttribute('align', 'center');
 
-			// retrieve column header ('Name', 'Email', and 'Mobile')
+    // Generate table for each season played
+    } else {
+      // Iterate through all seasons the player has played
+      console.log(num_seasons);
+      for (let i = 0; i < num_seasons; i++) {
+        var season = player_seasons[i]["season"]; // Eg. "1"
+        var division = player_seasons[i]["division"]; // Eg. "A1"
+        console.log(season + " " + division);
 
-			var col = []; // define an empty array
-			for (var i = 0; i < noOfContacts; i++) {
-				for (var key in myContacts[i]) {
-					if (col.indexOf(key) === -1) {
-						col.push(key);
-					}
-				}
-			}
+        // Get Table Information
+        var division_data = league_history[season][division];
+        var division_members = division_data["members"];
+        var num_members = Object.keys(division_members).length
+        // TODO: add champion information
 
-			// CREATE TABLE HEAD .
-			//var tHead = document.createElement("thead");
+        // Create table
+        var table = document.createElement("table");
+        table.style.width = '70%';
+        table.style.marginBottom = "10px";
+        table.setAttribute('align', 'center');
+        table.setAttribute('border', '1px solid black');
 
-			// CREATE ROW FOR TABLE HEAD .
-			var hRow = document.createElement("tr");
-
-			// ADD COLUMN HEADER TO ROW OF TABLE HEAD.
-			for (var i = 0; i < col.length; i++) {
-					var th = document.createElement("th");
-					th.innerHTML = col[i];
-					hRow.appendChild(th);
-			}
-			table.appendChild(hRow);
-
-			// CREATE TABLE BODY .
-			//var tBody = document.createElement("tbody");
-
-			// ADD COLUMN HEADER TO ROW OF TABLE HEAD.
-			for (var i = 0; i < noOfContacts; i++) {
-
-					var bRow = document.createElement("tr"); // CREATE ROW FOR EACH RECORD .
+        // Create division heading
+        var division_row = document.createElement("tr");
+        var division_heading = document.createElement("td");
+        division_heading.setAttribute('colspan', 5);
+        division_heading.classList.add('division-header');
+        division_heading.innerHTML = "S" + season + " " + division+ " Division";
+        division_row.appendChild(division_heading);
+        table.appendChild(division_row);
 
 
-					for (var j = 0; j < col.length; j++) {
-						var td = document.createElement("td");
-						td.innerHTML = myContacts[i][col[j]];
-						bRow.appendChild(td);
-					}
-					table.appendChild(bRow)
+        // Create table heading
+        var col = ["Rank", "Player", "W", "L", "Win %"];
+        var h_row = document.createElement("tr");
+        for (let j = 0; j < col.length; j++) {
+            var th = document.createElement("th");
+            th.innerHTML = col[j];
+            h_row.appendChild(th);
+        }
+        table.appendChild(h_row);
 
-			}
-			//table.appendChild(tBody);
+        // Create table body
+        // ADD COLUMN HEADER TO ROW OF TABLE HEAD.
+        for (var key in division_members) {
+            var row_info = division_members[key];
 
+            var d_row = document.createElement("tr");
 
-			// FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-			var divContainer = document.getElementById("player-database");
-      if (!(first_search)){
-        divContainer.removeChild(divContainer.lastChild);
+            // Add data for each member
+            var rank = document.createElement("td");
+            rank.innerHTML = row_info["rank"];
+            d_row.appendChild(rank);
+            var player = document.createElement("td");
+            if (row_info["name"] == player_name) {
+              player.innerHTML = "<b>" + row_info["name"] + "</b>";
+            } else {
+              player.innerHTML = row_info["name"];
+            }
+            d_row.appendChild(player);
+            var wins = document.createElement("td");
+            wins.innerHTML = row_info["wins"];
+            d_row.appendChild(wins);
+            var losses = document.createElement("td");
+            losses.innerHTML = row_info["losses"];
+            d_row.appendChild(losses);
+            var pct = document.createElement("td");
+            pct.innerHTML = row_info["pct"];
+            d_row.appendChild(pct);
+
+            table.appendChild(d_row)
+
+        }
+
+        // Add table to container
+        divContainer.appendChild(table);
+        cache_children = cache_children + 1;
       }
-			divContainer.appendChild(table);
-      first_search = false;
-
-		}
-	}
+    }
+}
 
 </script>
