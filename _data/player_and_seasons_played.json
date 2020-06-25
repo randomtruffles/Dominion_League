@@ -1,222 +1,4 @@
 {
-  "Mic Qsenoch": [{
-    "season": "1",
-    "division": "A1"
-  }, {
-    "season": "2",
-    "division": "A1"
-  }, {
-    "season": "3",
-    "division": "A1"
-  }, {
-    "season": "4",
-    "division": "A1"
-  }, {
-    "season": "5",
-    "division": "A1"
-  }, {
-    "season": "6",
-    "division": "A1"
-  }, {
-    "season": "7",
-    "division": "A1"
-  }, {
-    "season": "8",
-    "division": "A1"
-  }, {
-    "season": "9",
-    "division": "A1"
-  }, {
-    "season": "10",
-    "division": "A1"
-  }, {
-    "season": "11",
-    "division": "A1"
-  }, {
-    "season": "12",
-    "division": "A1"
-  }, {
-    "season": "13",
-    "division": "A1"
-  }, {
-    "season": "14",
-    "division": "A1"
-  }, {
-    "season": "15",
-    "division": "A1"
-  }, {
-    "season": "16",
-    "division": "A1"
-  }, {
-    "season": "17",
-    "division": "B2"
-  }, {
-    "season": "18",
-    "division": "A1"
-  }, {
-    "season": "19",
-    "division": "A1"
-  }, {
-    "season": "20",
-    "division": "A1"
-  }, {
-    "season": "22",
-    "division": "B1"
-  }, {
-    "season": "23",
-    "division": "A1"
-  }, {
-    "season": "24",
-    "division": "B1"
-  }, {
-    "season": "25",
-    "division": "A1"
-  }, {
-    "season": "26",
-    "division": "A1"
-  }, {
-    "season": "27",
-    "division": "A1"
-  }, {
-    "season": "28",
-    "division": "A1"
-  }, {
-    "season": "29",
-    "division": "A1"
-  }, {
-    "season": "30",
-    "division": "A1"
-  }, {
-    "season": "35",
-    "division": "B2"
-  }, {
-    "season": "36",
-    "division": "B1"
-  }, {
-    "season": "37",
-    "division": "A1"
-  }, {
-    "season": "38",
-    "division": "A1"
-  }, {
-    "season": "39",
-    "division": "A1"
-  }],
-  "Rabid": [{
-    "season": "1",
-    "division": "B1"
-  }, {
-    "season": "2",
-    "division": "A1"
-  }, {
-    "season": "3",
-    "division": "A1"
-  }, {
-    "season": "4",
-    "division": "B1"
-  }, {
-    "season": "5",
-    "division": "A1"
-  }, {
-    "season": "6",
-    "division": "A1"
-  }, {
-    "season": "7",
-    "division": "B2"
-  }, {
-    "season": "8",
-    "division": "B1"
-  }, {
-    "season": "9",
-    "division": "B1"
-  }, {
-    "season": "10",
-    "division": "B1"
-  }, {
-    "season": "11",
-    "division": "A1"
-  }, {
-    "season": "12",
-    "division": "B1"
-  }, {
-    "season": "13",
-    "division": "B1"
-  }, {
-    "season": "14",
-    "division": "A1"
-  }, {
-    "season": "15",
-    "division": "B2"
-  }, {
-    "season": "16",
-    "division": "B2"
-  }, {
-    "season": "17",
-    "division": "B1"
-  }, {
-    "season": "18",
-    "division": "B2"
-  }, {
-    "season": "19",
-    "division": "B2"
-  }, {
-    "season": "20",
-    "division": "B2"
-  }, {
-    "season": "21",
-    "division": "A1"
-  }, {
-    "season": "22",
-    "division": "A1"
-  }, {
-    "season": "23",
-    "division": "A1"
-  }, {
-    "season": "24",
-    "division": "A1"
-  }, {
-    "season": "25",
-    "division": "A1"
-  }, {
-    "season": "26",
-    "division": "A1"
-  }, {
-    "season": "27",
-    "division": "A1"
-  }, {
-    "season": "28",
-    "division": "B2"
-  }, {
-    "season": "29",
-    "division": "C2"
-  }, {
-    "season": "30",
-    "division": "C4"
-  }, {
-    "season": "31",
-    "division": "B2"
-  }, {
-    "season": "32",
-    "division": "C4"
-  }, {
-    "season": "33",
-    "division": "C4"
-  }, {
-    "season": "34",
-    "division": "C2"
-  }, {
-    "season": "35",
-    "division": "C1"
-  }, {
-    "season": "36",
-    "division": "C4"
-  }, {
-    "season": "37",
-    "division": "C4"
-  }, {
-    "season": "38",
-    "division": "C1"
-  }],
   "markus": [{
     "season": "11",
     "division": "D4"
@@ -305,7 +87,110 @@
     "season": "39",
     "division": "A1"
   }],
-  "E.Honda": [{
+  "mic qsenoch": [{
+    "season": "1",
+    "division": "A1"
+  }, {
+    "season": "2",
+    "division": "A1"
+  }, {
+    "season": "3",
+    "division": "A1"
+  }, {
+    "season": "4",
+    "division": "A1"
+  }, {
+    "season": "5",
+    "division": "A1"
+  }, {
+    "season": "6",
+    "division": "A1"
+  }, {
+    "season": "7",
+    "division": "A1"
+  }, {
+    "season": "8",
+    "division": "A1"
+  }, {
+    "season": "9",
+    "division": "A1"
+  }, {
+    "season": "10",
+    "division": "A1"
+  }, {
+    "season": "11",
+    "division": "A1"
+  }, {
+    "season": "12",
+    "division": "A1"
+  }, {
+    "season": "13",
+    "division": "A1"
+  }, {
+    "season": "14",
+    "division": "A1"
+  }, {
+    "season": "15",
+    "division": "A1"
+  }, {
+    "season": "16",
+    "division": "A1"
+  }, {
+    "season": "17",
+    "division": "B2"
+  }, {
+    "season": "18",
+    "division": "A1"
+  }, {
+    "season": "19",
+    "division": "A1"
+  }, {
+    "season": "20",
+    "division": "A1"
+  }, {
+    "season": "22",
+    "division": "B1"
+  }, {
+    "season": "23",
+    "division": "A1"
+  }, {
+    "season": "24",
+    "division": "B1"
+  }, {
+    "season": "25",
+    "division": "A1"
+  }, {
+    "season": "26",
+    "division": "A1"
+  }, {
+    "season": "27",
+    "division": "A1"
+  }, {
+    "season": "28",
+    "division": "A1"
+  }, {
+    "season": "29",
+    "division": "A1"
+  }, {
+    "season": "30",
+    "division": "A1"
+  }, {
+    "season": "35",
+    "division": "B2"
+  }, {
+    "season": "36",
+    "division": "B1"
+  }, {
+    "season": "37",
+    "division": "A1"
+  }, {
+    "season": "38",
+    "division": "A1"
+  }, {
+    "season": "39",
+    "division": "A1"
+  }],
+  "e.honda": [{
     "season": "13",
     "division": "C3"
   }, {
@@ -381,7 +266,135 @@
     "season": "39",
     "division": "A1"
   }],
-  "Burning Skull": [{
+  "perrygreen": [{
+    "season": "1",
+    "division": "A1"
+  }, {
+    "season": "25",
+    "division": "B1"
+  }, {
+    "season": "26",
+    "division": "A1"
+  }, {
+    "season": "27",
+    "division": "A1"
+  }],
+  "rabid": [{
+    "season": "1",
+    "division": "B1"
+  }, {
+    "season": "2",
+    "division": "A1"
+  }, {
+    "season": "3",
+    "division": "A1"
+  }, {
+    "season": "4",
+    "division": "B1"
+  }, {
+    "season": "5",
+    "division": "A1"
+  }, {
+    "season": "6",
+    "division": "A1"
+  }, {
+    "season": "7",
+    "division": "B2"
+  }, {
+    "season": "8",
+    "division": "B1"
+  }, {
+    "season": "9",
+    "division": "B1"
+  }, {
+    "season": "10",
+    "division": "B1"
+  }, {
+    "season": "11",
+    "division": "A1"
+  }, {
+    "season": "12",
+    "division": "B1"
+  }, {
+    "season": "13",
+    "division": "B1"
+  }, {
+    "season": "14",
+    "division": "A1"
+  }, {
+    "season": "15",
+    "division": "B2"
+  }, {
+    "season": "16",
+    "division": "B2"
+  }, {
+    "season": "17",
+    "division": "B1"
+  }, {
+    "season": "18",
+    "division": "B2"
+  }, {
+    "season": "19",
+    "division": "B2"
+  }, {
+    "season": "20",
+    "division": "B2"
+  }, {
+    "season": "21",
+    "division": "A1"
+  }, {
+    "season": "22",
+    "division": "A1"
+  }, {
+    "season": "23",
+    "division": "A1"
+  }, {
+    "season": "24",
+    "division": "A1"
+  }, {
+    "season": "25",
+    "division": "A1"
+  }, {
+    "season": "26",
+    "division": "A1"
+  }, {
+    "season": "27",
+    "division": "A1"
+  }, {
+    "season": "28",
+    "division": "B2"
+  }, {
+    "season": "29",
+    "division": "C2"
+  }, {
+    "season": "30",
+    "division": "C4"
+  }, {
+    "season": "31",
+    "division": "B2"
+  }, {
+    "season": "32",
+    "division": "C4"
+  }, {
+    "season": "33",
+    "division": "C4"
+  }, {
+    "season": "34",
+    "division": "C2"
+  }, {
+    "season": "35",
+    "division": "C1"
+  }, {
+    "season": "36",
+    "division": "C4"
+  }, {
+    "season": "37",
+    "division": "C4"
+  }, {
+    "season": "38",
+    "division": "C1"
+  }],
+  "burning skull": [{
     "season": "1",
     "division": "C4"
   }, {
@@ -490,17 +503,7 @@
     "season": "39",
     "division": "B2"
   }],
-  "PerryGreen": [{
-    "season": "25",
-    "division": "B1"
-  }, {
-    "season": "26",
-    "division": "A1"
-  }, {
-    "season": "27",
-    "division": "A1"
-  }],
-  "Sicomatic": [{
+  "sicomatic": [{
     "season": "24",
     "division": "B1"
   }, {
@@ -545,6 +548,104 @@
   }, {
     "season": "39",
     "division": "A1"
+  }],
+  "bryan": [{
+    "season": "21",
+    "division": "B2"
+  }, {
+    "season": "23",
+    "division": "B2"
+  }, {
+    "season": "24",
+    "division": "A1"
+  }, {
+    "season": "25",
+    "division": "A1"
+  }, {
+    "season": "26",
+    "division": "B2"
+  }, {
+    "season": "27",
+    "division": "B1"
+  }, {
+    "season": "28",
+    "division": "B2"
+  }, {
+    "season": "29",
+    "division": "B1"
+  }, {
+    "season": "30",
+    "division": "B1"
+  }, {
+    "season": "31",
+    "division": "A1"
+  }, {
+    "season": "32",
+    "division": "B2"
+  }, {
+    "season": "33",
+    "division": "B1"
+  }, {
+    "season": "34",
+    "division": "B2"
+  }, {
+    "season": "35",
+    "division": "B2"
+  }, {
+    "season": "36",
+    "division": "A1"
+  }, {
+    "season": "37",
+    "division": "A1"
+  }, {
+    "season": "38",
+    "division": "A1"
+  }, {
+    "season": "39",
+    "division": "B1"
+  }],
+  "topher1588": [{
+    "season": "20",
+    "division": "E2"
+  }, {
+    "season": "21",
+    "division": "D2"
+  }, {
+    "season": "26",
+    "division": "C2"
+  }, {
+    "season": "27",
+    "division": "B1"
+  }, {
+    "season": "28",
+    "division": "B2"
+  }, {
+    "season": "29",
+    "division": "C1"
+  }, {
+    "season": "31",
+    "division": "B1"
+  }, {
+    "season": "32",
+    "division": "B2"
+  }, {
+    "season": "33",
+    "division": "A1"
+  }, {
+    "season": "34",
+    "division": "B1"
+  }, {
+    "season": "36",
+    "division": "C3"
+  }, {
+    "season": "37",
+    "division": "D4"
+  }, {
+    "season": "38",
+    "division": "C1"
+  }, {
+    "season": "39",
+    "division": "B2"
   }],
   "gloures": [{
     "season": "13",
@@ -613,7 +714,7 @@
     "season": "37",
     "division": "C3"
   }],
-  "GreyEK": [{
+  "greyek": [{
     "season": "21",
     "division": "E1"
   }, {
@@ -653,50 +754,7 @@
     "season": "36",
     "division": "D4"
   }],
-  "topher1588": [{
-    "season": "20",
-    "division": "E2"
-  }, {
-    "season": "21",
-    "division": "D2"
-  }, {
-    "season": "26",
-    "division": "C2"
-  }, {
-    "season": "27",
-    "division": "B1"
-  }, {
-    "season": "28",
-    "division": "B2"
-  }, {
-    "season": "29",
-    "division": "C1"
-  }, {
-    "season": "31",
-    "division": "B1"
-  }, {
-    "season": "32",
-    "division": "B2"
-  }, {
-    "season": "33",
-    "division": "A1"
-  }, {
-    "season": "34",
-    "division": "B1"
-  }, {
-    "season": "36",
-    "division": "C3"
-  }, {
-    "season": "37",
-    "division": "D4"
-  }, {
-    "season": "38",
-    "division": "C1"
-  }, {
-    "season": "39",
-    "division": "B2"
-  }],
-  "Jimmmy": [{
+  "jimmmy": [{
     "season": "22",
     "division": "D3"
   }, {
@@ -726,61 +784,6 @@
   }, {
     "season": "39",
     "division": "E2"
-  }],
-  "Bryan": [{
-    "season": "21",
-    "division": "B2"
-  }, {
-    "season": "23",
-    "division": "B2"
-  }, {
-    "season": "24",
-    "division": "A1"
-  }, {
-    "season": "25",
-    "division": "A1"
-  }, {
-    "season": "26",
-    "division": "B2"
-  }, {
-    "season": "27",
-    "division": "B1"
-  }, {
-    "season": "28",
-    "division": "B2"
-  }, {
-    "season": "29",
-    "division": "B1"
-  }, {
-    "season": "30",
-    "division": "B1"
-  }, {
-    "season": "31",
-    "division": "A1"
-  }, {
-    "season": "32",
-    "division": "B2"
-  }, {
-    "season": "33",
-    "division": "B1"
-  }, {
-    "season": "34",
-    "division": "B2"
-  }, {
-    "season": "35",
-    "division": "B2"
-  }, {
-    "season": "36",
-    "division": "A1"
-  }, {
-    "season": "37",
-    "division": "A1"
-  }, {
-    "season": "38",
-    "division": "A1"
-  }, {
-    "season": "39",
-    "division": "B1"
   }],
   "tracer": [{
     "season": "15",
@@ -843,7 +846,7 @@
     "season": "38",
     "division": "B2"
   }],
-  "H.exe": [{
+  "h.exe": [{
     "season": "6",
     "division": "E2"
   }, {
@@ -913,91 +916,6 @@
     "season": "39",
     "division": "B2"
   }],
-  "aku chi": [{
-    "season": "12",
-    "division": "E1"
-  }, {
-    "season": "13",
-    "division": "D2"
-  }, {
-    "season": "14",
-    "division": "C2"
-  }, {
-    "season": "15",
-    "division": "C2"
-  }, {
-    "season": "16",
-    "division": "C2"
-  }, {
-    "season": "17",
-    "division": "B2"
-  }, {
-    "season": "18",
-    "division": "B1"
-  }, {
-    "season": "19",
-    "division": "A1"
-  }, {
-    "season": "20",
-    "division": "A1"
-  }, {
-    "season": "21",
-    "division": "A1"
-  }, {
-    "season": "22",
-    "division": "A1"
-  }, {
-    "season": "23",
-    "division": "A1"
-  }, {
-    "season": "24",
-    "division": "A1"
-  }, {
-    "season": "25",
-    "division": "A1"
-  }, {
-    "season": "26",
-    "division": "A1"
-  }, {
-    "season": "27",
-    "division": "B2"
-  }, {
-    "season": "28",
-    "division": "C4"
-  }, {
-    "season": "29",
-    "division": "B2"
-  }, {
-    "season": "30",
-    "division": "B1"
-  }, {
-    "season": "31",
-    "division": "B2"
-  }, {
-    "season": "32",
-    "division": "B2"
-  }, {
-    "season": "33",
-    "division": "B2"
-  }, {
-    "season": "34",
-    "division": "A1"
-  }, {
-    "season": "35",
-    "division": "A1"
-  }, {
-    "season": "36",
-    "division": "B2"
-  }, {
-    "season": "37",
-    "division": "A1"
-  }, {
-    "season": "38",
-    "division": "B2"
-  }, {
-    "season": "39",
-    "division": "C4"
-  }],
   "jonts": [{
     "season": "25",
     "division": "C3"
@@ -1034,64 +952,6 @@
   }, {
     "season": "39",
     "division": "C4"
-  }],
-  "skumpy": [{
-    "season": "21",
-    "division": "D1"
-  }, {
-    "season": "22",
-    "division": "C1"
-  }, {
-    "season": "23",
-    "division": "C3"
-  }, {
-    "season": "24",
-    "division": "B2"
-  }, {
-    "season": "25",
-    "division": "C3"
-  }, {
-    "season": "26",
-    "division": "B2"
-  }, {
-    "season": "27",
-    "division": "B2"
-  }, {
-    "season": "28",
-    "division": "C2"
-  }, {
-    "season": "29",
-    "division": "C3"
-  }, {
-    "season": "30",
-    "division": "C3"
-  }, {
-    "season": "31",
-    "division": "C3"
-  }, {
-    "season": "32",
-    "division": "B2"
-  }, {
-    "season": "33",
-    "division": "C2"
-  }, {
-    "season": "34",
-    "division": "C4"
-  }, {
-    "season": "35",
-    "division": "C4"
-  }, {
-    "season": "36",
-    "division": "C2"
-  }, {
-    "season": "37",
-    "division": "C3"
-  }, {
-    "season": "38",
-    "division": "B2"
-  }, {
-    "season": "39",
-    "division": "C1"
   }],
   "drsteelhammer": [{
     "season": "7",
@@ -1178,249 +1038,197 @@
     "season": "39",
     "division": "B1"
   }],
-  "RTT": [{
-    "season": "18",
-    "division": "C3"
-  }, {
-    "season": "19",
-    "division": "B2"
-  }, {
-    "season": "20",
-    "division": "B1"
-  }, {
-    "season": "27",
-    "division": "C1"
-  }, {
-    "season": "28",
-    "division": "B1"
-  }, {
-    "season": "29",
-    "division": "A1"
-  }, {
-    "season": "30",
-    "division": "A1"
-  }, {
-    "season": "31",
-    "division": "A1"
-  }, {
-    "season": "32",
-    "division": "A1"
-  }, {
-    "season": "33",
-    "division": "A1"
-  }, {
-    "season": "34",
-    "division": "A1"
-  }, {
-    "season": "35",
-    "division": "A1"
-  }, {
-    "season": "36",
-    "division": "A1"
-  }, {
-    "season": "37",
-    "division": "A1"
-  }, {
-    "season": "38",
-    "division": "A1"
-  }, {
-    "season": "39",
-    "division": "A1"
-  }],
-  "xyrix": [{
-    "season": "25",
-    "division": "C1"
-  }, {
-    "season": "26",
-    "division": "C1"
-  }, {
-    "season": "27",
-    "division": "C1"
-  }, {
-    "season": "28",
-    "division": "C1"
-  }, {
-    "season": "29",
-    "division": "C3"
-  }, {
-    "season": "30",
-    "division": "C3"
-  }, {
-    "season": "31",
-    "division": "B1"
-  }, {
-    "season": "32",
-    "division": "B1"
-  }, {
-    "season": "33",
-    "division": "B2"
-  }, {
-    "season": "34",
-    "division": "C1"
-  }, {
-    "season": "35",
-    "division": "C3"
-  }, {
-    "season": "36",
-    "division": "B1"
-  }, {
-    "season": "37",
-    "division": "B2"
-  }, {
-    "season": "38",
-    "division": "A1"
-  }, {
-    "season": "39",
-    "division": "B2"
-  }],
-  "Sharur": [{
-    "season": "23",
-    "division": "D3"
-  }, {
-    "season": "24",
-    "division": "D4"
-  }, {
-    "season": "25",
-    "division": "C3"
-  }, {
-    "season": "26",
-    "division": "D4"
-  }, {
-    "season": "27",
-    "division": "C1"
-  }, {
-    "season": "28",
-    "division": "D4"
-  }, {
-    "season": "29",
-    "division": "E1"
-  }, {
-    "season": "30",
-    "division": "D3"
-  }, {
-    "season": "31",
-    "division": "C2"
-  }, {
-    "season": "32",
-    "division": "C1"
-  }, {
-    "season": "33",
-    "division": "D8"
-  }, {
-    "season": "34",
-    "division": "D4"
-  }, {
-    "season": "35",
-    "division": "C3"
-  }, {
-    "season": "36",
-    "division": "C4"
-  }, {
-    "season": "37",
-    "division": "D6"
-  }, {
-    "season": "38",
-    "division": "C2"
-  }, {
-    "season": "39",
-    "division": "C4"
-  }],
-  "tufftaeh": [{
-    "season": "8",
-    "division": "E5"
-  }, {
-    "season": "9",
-    "division": "D1"
-  }, {
-    "season": "10",
-    "division": "C3"
-  }, {
-    "season": "11",
-    "division": "C3"
-  }, {
-    "season": "12",
-    "division": "C3"
-  }, {
-    "season": "13",
-    "division": "D5"
-  }, {
-    "season": "14",
-    "division": "C3"
-  }, {
-    "season": "15",
-    "division": "C3"
-  }, {
-    "season": "16",
-    "division": "C3"
-  }, {
-    "season": "17",
-    "division": "C3"
-  }, {
-    "season": "18",
-    "division": "D4"
-  }, {
-    "season": "19",
-    "division": "D4"
-  }, {
-    "season": "20",
-    "division": "D4"
-  }, {
+  "skumpy": [{
     "season": "21",
-    "division": "D4"
+    "division": "D1"
   }, {
     "season": "22",
-    "division": "D3"
+    "division": "C1"
   }, {
     "season": "23",
-    "division": "D4"
+    "division": "C3"
   }, {
     "season": "24",
-    "division": "D2"
+    "division": "B2"
   }, {
     "season": "25",
     "division": "C3"
   }, {
     "season": "26",
-    "division": "C2"
+    "division": "B2"
   }, {
     "season": "27",
+    "division": "B2"
+  }, {
+    "season": "28",
+    "division": "C2"
+  }, {
+    "season": "29",
+    "division": "C3"
+  }, {
+    "season": "30",
+    "division": "C3"
+  }, {
+    "season": "31",
+    "division": "C3"
+  }, {
+    "season": "32",
+    "division": "B2"
+  }, {
+    "season": "33",
+    "division": "C2"
+  }, {
+    "season": "34",
+    "division": "C4"
+  }, {
+    "season": "35",
+    "division": "C4"
+  }, {
+    "season": "36",
+    "division": "C2"
+  }, {
+    "season": "37",
+    "division": "C3"
+  }, {
+    "season": "38",
+    "division": "B2"
+  }, {
+    "season": "39",
     "division": "C1"
+  }],
+  "aku chi": [{
+    "season": "12",
+    "division": "E1"
+  }, {
+    "season": "13",
+    "division": "D2"
+  }, {
+    "season": "14",
+    "division": "C2"
+  }, {
+    "season": "15",
+    "division": "C2"
+  }, {
+    "season": "16",
+    "division": "C2"
+  }, {
+    "season": "17",
+    "division": "B2"
+  }, {
+    "season": "18",
+    "division": "B1"
+  }, {
+    "season": "19",
+    "division": "A1"
+  }, {
+    "season": "20",
+    "division": "A1"
+  }, {
+    "season": "21",
+    "division": "A1"
+  }, {
+    "season": "22",
+    "division": "A1"
+  }, {
+    "season": "23",
+    "division": "A1"
+  }, {
+    "season": "24",
+    "division": "A1"
+  }, {
+    "season": "25",
+    "division": "A1"
+  }, {
+    "season": "26",
+    "division": "A1"
+  }, {
+    "season": "27",
+    "division": "B2"
   }, {
     "season": "28",
     "division": "C4"
   }, {
     "season": "29",
-    "division": "B1"
-  }, {
-    "season": "30",
     "division": "B2"
   }, {
-    "season": "31",
-    "division": "C1"
-  }, {
-    "season": "32",
-    "division": "C2"
-  }, {
-    "season": "33",
-    "division": "D1"
-  }, {
-    "season": "34",
-    "division": "D6"
-  }, {
-    "season": "35",
-    "division": "C3"
-  }, {
-    "season": "36",
-    "division": "C1"
-  }, {
-    "season": "37",
+    "season": "30",
     "division": "B1"
   }, {
+    "season": "31",
+    "division": "B2"
+  }, {
+    "season": "32",
+    "division": "B2"
+  }, {
+    "season": "33",
+    "division": "B2"
+  }, {
+    "season": "34",
+    "division": "A1"
+  }, {
+    "season": "35",
+    "division": "A1"
+  }, {
+    "season": "36",
+    "division": "B2"
+  }, {
+    "season": "37",
+    "division": "A1"
+  }, {
     "season": "38",
-    "division": "C4"
+    "division": "B2"
   }, {
     "season": "39",
-    "division": "C2"
+    "division": "C4"
+  }],
+  "rtt": [{
+    "season": "18",
+    "division": "C3"
+  }, {
+    "season": "19",
+    "division": "B2"
+  }, {
+    "season": "20",
+    "division": "B1"
+  }, {
+    "season": "27",
+    "division": "C1"
+  }, {
+    "season": "28",
+    "division": "B1"
+  }, {
+    "season": "29",
+    "division": "A1"
+  }, {
+    "season": "30",
+    "division": "A1"
+  }, {
+    "season": "31",
+    "division": "A1"
+  }, {
+    "season": "32",
+    "division": "A1"
+  }, {
+    "season": "33",
+    "division": "A1"
+  }, {
+    "season": "34",
+    "division": "A1"
+  }, {
+    "season": "35",
+    "division": "A1"
+  }, {
+    "season": "36",
+    "division": "A1"
+  }, {
+    "season": "37",
+    "division": "A1"
+  }, {
+    "season": "38",
+    "division": "A1"
+  }, {
+    "season": "39",
+    "division": "A1"
   }],
   "gamesou": [{
     "season": "1",
@@ -1540,6 +1348,201 @@
     "season": "39",
     "division": "C1"
   }],
+  "xyrix": [{
+    "season": "25",
+    "division": "C1"
+  }, {
+    "season": "26",
+    "division": "C1"
+  }, {
+    "season": "27",
+    "division": "C1"
+  }, {
+    "season": "28",
+    "division": "C1"
+  }, {
+    "season": "29",
+    "division": "C3"
+  }, {
+    "season": "30",
+    "division": "C3"
+  }, {
+    "season": "31",
+    "division": "B1"
+  }, {
+    "season": "32",
+    "division": "B1"
+  }, {
+    "season": "33",
+    "division": "B2"
+  }, {
+    "season": "34",
+    "division": "C1"
+  }, {
+    "season": "35",
+    "division": "C3"
+  }, {
+    "season": "36",
+    "division": "B1"
+  }, {
+    "season": "37",
+    "division": "B2"
+  }, {
+    "season": "38",
+    "division": "A1"
+  }, {
+    "season": "39",
+    "division": "B2"
+  }],
+  "tufftaeh": [{
+    "season": "8",
+    "division": "E5"
+  }, {
+    "season": "9",
+    "division": "D1"
+  }, {
+    "season": "10",
+    "division": "C3"
+  }, {
+    "season": "11",
+    "division": "C3"
+  }, {
+    "season": "12",
+    "division": "C3"
+  }, {
+    "season": "13",
+    "division": "D5"
+  }, {
+    "season": "14",
+    "division": "C3"
+  }, {
+    "season": "15",
+    "division": "C3"
+  }, {
+    "season": "16",
+    "division": "C3"
+  }, {
+    "season": "17",
+    "division": "C3"
+  }, {
+    "season": "18",
+    "division": "D4"
+  }, {
+    "season": "19",
+    "division": "D4"
+  }, {
+    "season": "20",
+    "division": "D4"
+  }, {
+    "season": "21",
+    "division": "D4"
+  }, {
+    "season": "22",
+    "division": "D3"
+  }, {
+    "season": "23",
+    "division": "D4"
+  }, {
+    "season": "24",
+    "division": "D2"
+  }, {
+    "season": "25",
+    "division": "C3"
+  }, {
+    "season": "26",
+    "division": "C2"
+  }, {
+    "season": "27",
+    "division": "C1"
+  }, {
+    "season": "28",
+    "division": "C4"
+  }, {
+    "season": "29",
+    "division": "B1"
+  }, {
+    "season": "30",
+    "division": "B2"
+  }, {
+    "season": "31",
+    "division": "C1"
+  }, {
+    "season": "32",
+    "division": "C2"
+  }, {
+    "season": "33",
+    "division": "D1"
+  }, {
+    "season": "34",
+    "division": "D6"
+  }, {
+    "season": "35",
+    "division": "C3"
+  }, {
+    "season": "36",
+    "division": "C1"
+  }, {
+    "season": "37",
+    "division": "B1"
+  }, {
+    "season": "38",
+    "division": "C4"
+  }, {
+    "season": "39",
+    "division": "C2"
+  }],
+  "sharur": [{
+    "season": "23",
+    "division": "D3"
+  }, {
+    "season": "24",
+    "division": "D4"
+  }, {
+    "season": "25",
+    "division": "C3"
+  }, {
+    "season": "26",
+    "division": "D4"
+  }, {
+    "season": "27",
+    "division": "C1"
+  }, {
+    "season": "28",
+    "division": "D4"
+  }, {
+    "season": "29",
+    "division": "E1"
+  }, {
+    "season": "30",
+    "division": "D3"
+  }, {
+    "season": "31",
+    "division": "C2"
+  }, {
+    "season": "32",
+    "division": "C1"
+  }, {
+    "season": "33",
+    "division": "D8"
+  }, {
+    "season": "34",
+    "division": "D4"
+  }, {
+    "season": "35",
+    "division": "C3"
+  }, {
+    "season": "36",
+    "division": "C4"
+  }, {
+    "season": "37",
+    "division": "D6"
+  }, {
+    "season": "38",
+    "division": "C2"
+  }, {
+    "season": "39",
+    "division": "C4"
+  }],
   "bouchon": [{
     "season": "20",
     "division": "E3"
@@ -1574,7 +1577,7 @@
     "season": "30",
     "division": "C2"
   }],
-  "Anders": [{
+  "anders": [{
     "season": "24",
     "division": "C1"
   }, {
@@ -1620,32 +1623,6 @@
     "season": "39",
     "division": "D2"
   }],
-  "markusin": [{
-    "season": "1",
-    "division": "C2"
-  }, {
-    "season": "10",
-    "division": "C2"
-  }, {
-    "season": "27",
-    "division": "C2"
-  }],
-  "Robz888": [{
-    "season": "7",
-    "division": "C1"
-  }, {
-    "season": "8",
-    "division": "B1"
-  }, {
-    "season": "9",
-    "division": "B2"
-  }, {
-    "season": "27",
-    "division": "C2"
-  }, {
-    "season": "28",
-    "division": "D7"
-  }],
   "swordfishtrombone": [{
     "season": "27",
     "division": "C2"
@@ -1680,7 +1657,42 @@
     "season": "39",
     "division": "C1"
   }],
-  "MVP": [{
+  "puzzle box": [{
+    "season": "26",
+    "division": "C2"
+  }, {
+    "season": "27",
+    "division": "C2"
+  }, {
+    "season": "34",
+    "division": "C2"
+  }, {
+    "season": "35",
+    "division": "B1"
+  }, {
+    "season": "36",
+    "division": "B2"
+  }, {
+    "season": "37",
+    "division": "B2"
+  }, {
+    "season": "38",
+    "division": "C3"
+  }, {
+    "season": "39",
+    "division": "C3"
+  }],
+  "markusin": [{
+    "season": "1",
+    "division": "C2"
+  }, {
+    "season": "10",
+    "division": "C2"
+  }, {
+    "season": "27",
+    "division": "C2"
+  }],
+  "mvp": [{
     "season": "13",
     "division": "C3"
   }, {
@@ -1735,109 +1747,23 @@
     "season": "39",
     "division": "E3"
   }],
-  "Puzzle Box": [{
-    "season": "26",
-    "division": "C2"
+  "robz888": [{
+    "season": "7",
+    "division": "C1"
   }, {
-    "season": "27",
-    "division": "C2"
-  }, {
-    "season": "34",
-    "division": "C2"
-  }, {
-    "season": "35",
+    "season": "8",
     "division": "B1"
   }, {
-    "season": "36",
+    "season": "9",
     "division": "B2"
-  }, {
-    "season": "37",
-    "division": "B2"
-  }, {
-    "season": "38",
-    "division": "C3"
-  }, {
-    "season": "39",
-    "division": "C3"
-  }],
-  "Lemonspawn": [{
-    "season": "25",
-    "division": "D1"
-  }, {
-    "season": "26",
-    "division": "D2"
   }, {
     "season": "27",
-    "division": "C3"
+    "division": "C2"
   }, {
     "season": "28",
-    "division": "C3"
-  }, {
-    "season": "29",
-    "division": "B2"
-  }, {
-    "season": "30",
-    "division": "C1"
-  }, {
-    "season": "31",
-    "division": "D2"
-  }, {
-    "season": "32",
-    "division": "C4"
-  }, {
-    "season": "33",
-    "division": "C2"
-  }, {
-    "season": "34",
-    "division": "C2"
-  }, {
-    "season": "35",
-    "division": "C4"
-  }, {
-    "season": "36",
-    "division": "D3"
-  }, {
-    "season": "37",
-    "division": "C1"
-  }, {
-    "season": "38",
-    "division": "C4"
-  }, {
-    "season": "39",
-    "division": "C2"
+    "division": "D7"
   }],
-  "Cave-o-sapien": [{
-    "season": "26",
-    "division": "D1"
-  }, {
-    "season": "27",
-    "division": "C3"
-  }, {
-    "season": "29",
-    "division": "C1"
-  }, {
-    "season": "30",
-    "division": "D5"
-  }, {
-    "season": "31",
-    "division": "C2"
-  }, {
-    "season": "32",
-    "division": "C1"
-  }, {
-    "season": "33",
-    "division": "D4"
-  }, {
-    "season": "34",
-    "division": "D4"
-  }, {
-    "season": "38",
-    "division": "D2"
-  }, {
-    "season": "39",
-    "division": "C4"
-  }],
-  "Gazbag": [{
+  "gazbag": [{
     "season": "24",
     "division": "C1"
   }, {
@@ -1871,9 +1797,82 @@
     "season": "39",
     "division": "D3"
   }],
-  "Mike Thicke": [{
+  "lemonspawn": [{
+    "season": "25",
+    "division": "D1"
+  }, {
+    "season": "26",
+    "division": "D2"
+  }, {
     "season": "27",
     "division": "C3"
+  }, {
+    "season": "28",
+    "division": "C3"
+  }, {
+    "season": "29",
+    "division": "B2"
+  }, {
+    "season": "30",
+    "division": "C1"
+  }, {
+    "season": "31",
+    "division": "D2"
+  }, {
+    "season": "32",
+    "division": "C4"
+  }, {
+    "season": "33",
+    "division": "C2"
+  }, {
+    "season": "34",
+    "division": "C2"
+  }, {
+    "season": "35",
+    "division": "C4"
+  }, {
+    "season": "36",
+    "division": "D3"
+  }, {
+    "season": "37",
+    "division": "C1"
+  }, {
+    "season": "38",
+    "division": "C4"
+  }, {
+    "season": "39",
+    "division": "C2"
+  }],
+  "cave-o-sapien": [{
+    "season": "26",
+    "division": "D1"
+  }, {
+    "season": "27",
+    "division": "C3"
+  }, {
+    "season": "29",
+    "division": "C1"
+  }, {
+    "season": "30",
+    "division": "D5"
+  }, {
+    "season": "31",
+    "division": "C2"
+  }, {
+    "season": "32",
+    "division": "C1"
+  }, {
+    "season": "33",
+    "division": "D4"
+  }, {
+    "season": "34",
+    "division": "D4"
+  }, {
+    "season": "38",
+    "division": "D2"
+  }, {
+    "season": "39",
+    "division": "C4"
   }],
   "amoffett11": [{
     "season": "13",
@@ -1957,7 +1956,11 @@
     "season": "39",
     "division": "D4"
   }],
-  "Huevos Locos": [{
+  "mike thicke": [{
+    "season": "27",
+    "division": "C3"
+  }],
+  "huevos locos": [{
     "season": "24",
     "division": "D2"
   }, {
@@ -1977,112 +1980,6 @@
     "division": "C4"
   }, {
     "season": "30",
-    "division": "C3"
-  }],
-  "Awaclus": [{
-    "season": "27",
-    "division": "C4"
-  }, {
-    "season": "28",
-    "division": "C2"
-  }],
-  "Skies": [{
-    "season": "27",
-    "division": "C4"
-  }],
-  "michaeljb": [{
-    "season": "1",
-    "division": "D2"
-  }, {
-    "season": "2",
-    "division": "D1"
-  }, {
-    "season": "3",
-    "division": "C1"
-  }, {
-    "season": "4",
-    "division": "C1"
-  }, {
-    "season": "10",
-    "division": "C1"
-  }, {
-    "season": "11",
-    "division": "C1"
-  }, {
-    "season": "12",
-    "division": "C1"
-  }, {
-    "season": "26",
-    "division": "D3"
-  }, {
-    "season": "27",
-    "division": "C4"
-  }, {
-    "season": "28",
-    "division": "D6"
-  }],
-  "mikechike": [{
-    "season": "19",
-    "division": "D1"
-  }, {
-    "season": "20",
-    "division": "C2"
-  }, {
-    "season": "21",
-    "division": "B2"
-  }, {
-    "season": "22",
-    "division": "B1"
-  }, {
-    "season": "23",
-    "division": "B1"
-  }, {
-    "season": "24",
-    "division": "B2"
-  }, {
-    "season": "25",
-    "division": "C2"
-  }, {
-    "season": "26",
-    "division": "D1"
-  }, {
-    "season": "27",
-    "division": "C4"
-  }, {
-    "season": "28",
-    "division": "C3"
-  }, {
-    "season": "29",
-    "division": "C2"
-  }, {
-    "season": "30",
-    "division": "B2"
-  }, {
-    "season": "31",
-    "division": "B2"
-  }, {
-    "season": "32",
-    "division": "B1"
-  }, {
-    "season": "33",
-    "division": "C4"
-  }, {
-    "season": "34",
-    "division": "B2"
-  }, {
-    "season": "35",
-    "division": "B1"
-  }, {
-    "season": "36",
-    "division": "A1"
-  }, {
-    "season": "37",
-    "division": "A1"
-  }, {
-    "season": "38",
-    "division": "B1"
-  }, {
-    "season": "39",
     "division": "C3"
   }],
   "singletee": [{
@@ -2173,7 +2070,47 @@
     "season": "39",
     "division": "C4"
   }],
-  "DG": [{
+  "awaclus": [{
+    "season": "1",
+    "division": "C4"
+  }, {
+    "season": "2",
+    "division": "B2"
+  }, {
+    "season": "3",
+    "division": "C4"
+  }, {
+    "season": "4",
+    "division": "C4"
+  }, {
+    "season": "5",
+    "division": "C3"
+  }, {
+    "season": "6",
+    "division": "C2"
+  }, {
+    "season": "7",
+    "division": "C3"
+  }, {
+    "season": "9",
+    "division": "B1"
+  }, {
+    "season": "10",
+    "division": "B2"
+  }, {
+    "season": "11",
+    "division": "C3"
+  }, {
+    "season": "12",
+    "division": "C3"
+  }, {
+    "season": "27",
+    "division": "C4"
+  }, {
+    "season": "28",
+    "division": "C2"
+  }],
+  "dg": [{
     "season": "1",
     "division": "D6"
   }, {
@@ -2279,15 +2216,106 @@
     "season": "35",
     "division": "C4"
   }],
-  "ItsDLawSon": [{
-    "season": "27",
+  "mikechike": [{
+    "season": "19",
     "division": "D1"
-  }],
-  "afielbaum": [{
-    "season": "27",
+  }, {
+    "season": "20",
+    "division": "C2"
+  }, {
+    "season": "21",
+    "division": "B2"
+  }, {
+    "season": "22",
+    "division": "B1"
+  }, {
+    "season": "23",
+    "division": "B1"
+  }, {
+    "season": "24",
+    "division": "B2"
+  }, {
+    "season": "25",
+    "division": "C2"
+  }, {
+    "season": "26",
     "division": "D1"
+  }, {
+    "season": "27",
+    "division": "C4"
+  }, {
+    "season": "28",
+    "division": "C3"
+  }, {
+    "season": "29",
+    "division": "C2"
+  }, {
+    "season": "30",
+    "division": "B2"
+  }, {
+    "season": "31",
+    "division": "B2"
+  }, {
+    "season": "32",
+    "division": "B1"
+  }, {
+    "season": "33",
+    "division": "C4"
+  }, {
+    "season": "34",
+    "division": "B2"
+  }, {
+    "season": "35",
+    "division": "B1"
+  }, {
+    "season": "36",
+    "division": "A1"
+  }, {
+    "season": "37",
+    "division": "A1"
+  }, {
+    "season": "38",
+    "division": "B1"
+  }, {
+    "season": "39",
+    "division": "C3"
   }],
-  "Memories": [{
+  "michaeljb": [{
+    "season": "1",
+    "division": "D2"
+  }, {
+    "season": "2",
+    "division": "D1"
+  }, {
+    "season": "3",
+    "division": "C1"
+  }, {
+    "season": "4",
+    "division": "C1"
+  }, {
+    "season": "10",
+    "division": "C1"
+  }, {
+    "season": "11",
+    "division": "C1"
+  }, {
+    "season": "12",
+    "division": "C1"
+  }, {
+    "season": "26",
+    "division": "D3"
+  }, {
+    "season": "27",
+    "division": "C4"
+  }, {
+    "season": "28",
+    "division": "D6"
+  }],
+  "skies": [{
+    "season": "27",
+    "division": "C4"
+  }],
+  "memories": [{
     "season": "27",
     "division": "D1"
   }, {
@@ -2343,7 +2371,11 @@
     "season": "39",
     "division": "A1"
   }],
-  "MtMagus": [{
+  "itsdlawson": [{
+    "season": "27",
+    "division": "D1"
+  }],
+  "mtmagus": [{
     "season": "1",
     "division": "D2"
   }, {
@@ -2455,7 +2487,27 @@
     "season": "39",
     "division": "F3"
   }],
+  "afielbaum": [{
+    "season": "27",
+    "division": "D1"
+  }],
+  "obi wan bonogi": [{
+    "season": "2",
+    "division": "B1"
+  }, {
+    "season": "3",
+    "division": "B1"
+  }, {
+    "season": "27",
+    "division": "D2"
+  }],
   "turtlegods": [{
+    "season": "1",
+    "division": "D6"
+  }, {
+    "season": "2",
+    "division": "D3"
+  }, {
     "season": "27",
     "division": "D2"
   }],
@@ -2466,16 +2518,6 @@
     "season": "30",
     "division": "D8"
   }],
-  "Obi Wan Bonogi": [{
-    "season": "2",
-    "division": "B1"
-  }, {
-    "season": "3",
-    "division": "B1"
-  }, {
-    "season": "27",
-    "division": "D2"
-  }],
   "phoenix9797": [{
     "season": "27",
     "division": "D2"
@@ -2485,6 +2527,74 @@
   }, {
     "season": "29",
     "division": "D1"
+  }],
+  "engagewolverine": [{
+    "season": "27",
+    "division": "D3"
+  }, {
+    "season": "28",
+    "division": "C1"
+  }],
+  "adoliner": [{
+    "season": "27",
+    "division": "D3"
+  }, {
+    "season": "28",
+    "division": "D5"
+  }, {
+    "season": "29",
+    "division": "C2"
+  }, {
+    "season": "30",
+    "division": "D6"
+  }],
+  "geeday": [{
+    "season": "27",
+    "division": "D3"
+  }, {
+    "season": "28",
+    "division": "D7"
+  }, {
+    "season": "29",
+    "division": "C3"
+  }, {
+    "season": "30",
+    "division": "D7"
+  }],
+  "walrusrunner": [{
+    "season": "27",
+    "division": "D3"
+  }, {
+    "season": "28",
+    "division": "D5"
+  }],
+  "nzacharias": [{
+    "season": "19",
+    "division": "E1"
+  }, {
+    "season": "20",
+    "division": "D1"
+  }, {
+    "season": "21",
+    "division": "C1"
+  }, {
+    "season": "22",
+    "division": "D1"
+  }, {
+    "season": "23",
+    "division": "D2"
+  }, {
+    "season": "24",
+    "division": "D3"
+  }, {
+    "season": "25",
+    "division": "D4"
+  }, {
+    "season": "26",
+    "division": "D1"
+  }, {
+    "season": "27",
+    "division": "D3"
   }],
   "missouriben": [{
     "season": "27",
@@ -2526,93 +2636,17 @@
     "season": "39",
     "division": "D3"
   }],
-  "geeday": [{
+  "uwmonk": [{
     "season": "27",
-    "division": "D3"
-  }, {
-    "season": "28",
-    "division": "D7"
-  }, {
-    "season": "29",
-    "division": "C3"
-  }, {
-    "season": "30",
-    "division": "D7"
-  }],
-  "NZacharias": [{
-    "season": "19",
-    "division": "E1"
-  }, {
-    "season": "20",
-    "division": "D1"
-  }, {
-    "season": "21",
-    "division": "C1"
-  }, {
-    "season": "22",
-    "division": "D1"
-  }, {
-    "season": "23",
-    "division": "D2"
-  }, {
-    "season": "24",
-    "division": "D3"
-  }, {
-    "season": "25",
     "division": "D4"
-  }, {
-    "season": "26",
-    "division": "D1"
-  }, {
-    "season": "27",
-    "division": "D3"
-  }],
-  "WalrusRunner": [{
-    "season": "27",
-    "division": "D3"
-  }, {
-    "season": "28",
-    "division": "D5"
-  }],
-  "EngageWolverine": [{
-    "season": "27",
-    "division": "D3"
-  }, {
-    "season": "28",
-    "division": "C1"
-  }],
-  "adoliner": [{
-    "season": "27",
-    "division": "D3"
   }, {
     "season": "28",
     "division": "D5"
   }, {
     "season": "29",
-    "division": "C2"
-  }, {
-    "season": "30",
-    "division": "D6"
-  }],
-  "jcuster": [{
-    "season": "27",
-    "division": "D4"
-  }],
-  "Gender": [{
-    "season": "8",
-    "division": "D3"
-  }, {
-    "season": "27",
-    "division": "D4"
-  }],
-  "AceOf86": [{
-    "season": "26",
     "division": "D1"
-  }, {
-    "season": "27",
-    "division": "D4"
   }],
-  "Chris is me": [{
+  "chris is me": [{
     "season": "7",
     "division": "D3"
   }, {
@@ -2694,41 +2728,43 @@
     "season": "34",
     "division": "D2"
   }],
-  "uwmonk": [{
+  "gender": [{
+    "season": "8",
+    "division": "D3"
+  }, {
     "season": "27",
     "division": "D4"
-  }, {
-    "season": "28",
-    "division": "D5"
-  }, {
-    "season": "29",
-    "division": "D1"
   }],
-  "St0ve": [{
+  "jcuster": [{
+    "season": "27",
+    "division": "D4"
+  }],
+  "aceof86": [{
     "season": "26",
-    "division": "E1"
+    "division": "D1"
   }, {
+    "season": "27",
+    "division": "D4"
+  }],
+  "kingdedede777": [{
     "season": "27",
     "division": "D5"
   }, {
     "season": "28",
-    "division": "E12"
-  }, {
-    "season": "29",
-    "division": "D4"
-  }, {
-    "season": "30",
-    "division": "D7"
+    "division": "C2"
+  }],
+  "eradicators": [{
+    "season": "27",
+    "division": "D5"
   }],
   "squirezucco": [{
+    "season": "18",
+    "division": "D2"
+  }, {
     "season": "27",
     "division": "D5"
   }],
-  "Eradicators": [{
-    "season": "27",
-    "division": "D5"
-  }],
-  "Hertz Doughnut": [{
+  "hertz doughnut": [{
     "season": "18",
     "division": "D1"
   }, {
@@ -2759,12 +2795,21 @@
     "season": "27",
     "division": "D5"
   }],
-  "kingdedede777": [{
+  "st0ve": [{
+    "season": "26",
+    "division": "E1"
+  }, {
     "season": "27",
     "division": "D5"
   }, {
     "season": "28",
-    "division": "C2"
+    "division": "E12"
+  }, {
+    "season": "29",
+    "division": "D4"
+  }, {
+    "season": "30",
+    "division": "D7"
   }],
   "mglagrla": [{
     "season": "24",
@@ -2788,14 +2833,171 @@
     "season": "30",
     "division": "E15"
   }],
-  "BlueGreen": [{
+  "bluegreen": [{
     "season": "27",
     "division": "D6"
   }, {
     "season": "28",
     "division": "C2"
   }],
-  "Joseph2302": [{
+  "nessuno": [{
+    "season": "27",
+    "division": "D6"
+  }, {
+    "season": "28",
+    "division": "D1"
+  }, {
+    "season": "29",
+    "division": "D6"
+  }, {
+    "season": "30",
+    "division": "D2"
+  }, {
+    "season": "31",
+    "division": "D8"
+  }, {
+    "season": "32",
+    "division": "C4"
+  }, {
+    "season": "33",
+    "division": "D2"
+  }, {
+    "season": "34",
+    "division": "D8"
+  }, {
+    "season": "36",
+    "division": "D6"
+  }, {
+    "season": "37",
+    "division": "D1"
+  }, {
+    "season": "39",
+    "division": "C2"
+  }],
+  "micha1980": [{
+    "season": "6",
+    "division": "D1"
+  }, {
+    "season": "7",
+    "division": "D5"
+  }, {
+    "season": "8",
+    "division": "D5"
+  }, {
+    "season": "9",
+    "division": "D1"
+  }, {
+    "season": "10",
+    "division": "D3"
+  }, {
+    "season": "11",
+    "division": "D5"
+  }, {
+    "season": "12",
+    "division": "D4"
+  }, {
+    "season": "13",
+    "division": "D5"
+  }, {
+    "season": "14",
+    "division": "D3"
+  }, {
+    "season": "15",
+    "division": "D4"
+  }, {
+    "season": "16",
+    "division": "D4"
+  }, {
+    "season": "17",
+    "division": "C2"
+  }, {
+    "season": "18",
+    "division": "D4"
+  }, {
+    "season": "19",
+    "division": "D3"
+  }, {
+    "season": "20",
+    "division": "C3"
+  }, {
+    "season": "21",
+    "division": "C2"
+  }, {
+    "season": "22",
+    "division": "C2"
+  }, {
+    "season": "23",
+    "division": "C1"
+  }, {
+    "season": "24",
+    "division": "C1"
+  }, {
+    "season": "25",
+    "division": "C2"
+  }, {
+    "season": "26",
+    "division": "C3"
+  }, {
+    "season": "27",
+    "division": "D6"
+  }, {
+    "season": "28",
+    "division": "D2"
+  }, {
+    "season": "29",
+    "division": "D8"
+  }, {
+    "season": "30",
+    "division": "C1"
+  }, {
+    "season": "31",
+    "division": "C2"
+  }, {
+    "season": "32",
+    "division": "D8"
+  }, {
+    "season": "33",
+    "division": "D3"
+  }, {
+    "season": "34",
+    "division": "C2"
+  }, {
+    "season": "35",
+    "division": "D4"
+  }, {
+    "season": "36",
+    "division": "C2"
+  }, {
+    "season": "37",
+    "division": "D2"
+  }, {
+    "season": "38",
+    "division": "D6"
+  }, {
+    "season": "39",
+    "division": "E1"
+  }],
+  "puk": [{
+    "season": "24",
+    "division": "D4"
+  }, {
+    "season": "27",
+    "division": "D6"
+  }, {
+    "season": "28",
+    "division": "D3"
+  }],
+  "luciferousperidot": [{
+    "season": "20",
+    "division": "D3"
+  }, {
+    "season": "25",
+    "division": "D4"
+  }, {
+    "season": "27",
+    "division": "D6"
+  }],
+  "joseph2302": [{
     "season": "1",
     "division": "D6"
   }, {
@@ -2835,162 +3037,22 @@
     "season": "27",
     "division": "D6"
   }],
-  "Puk": [{
-    "season": "24",
-    "division": "D4"
-  }, {
-    "season": "27",
-    "division": "D6"
-  }, {
-    "season": "28",
-    "division": "D3"
-  }],
-  "nessuno": [{
-    "season": "27",
-    "division": "D6"
-  }, {
-    "season": "28",
-    "division": "D1"
-  }, {
-    "season": "29",
-    "division": "D6"
-  }, {
-    "season": "30",
-    "division": "D2"
-  }, {
-    "season": "31",
-    "division": "D8"
-  }, {
-    "season": "32",
-    "division": "C4"
-  }, {
-    "season": "33",
-    "division": "D2"
-  }, {
-    "season": "34",
-    "division": "D8"
-  }, {
-    "season": "36",
-    "division": "D6"
-  }, {
-    "season": "37",
-    "division": "D1"
-  }, {
-    "season": "39",
-    "division": "C2"
-  }],
-  "Micha1980": [{
-    "season": "6",
-    "division": "D1"
-  }, {
-    "season": "7",
-    "division": "D5"
-  }, {
-    "season": "8",
-    "division": "D5"
-  }, {
-    "season": "9",
-    "division": "D1"
-  }, {
-    "season": "10",
-    "division": "D3"
-  }, {
-    "season": "11",
-    "division": "D5"
-  }, {
-    "season": "12",
-    "division": "D4"
-  }, {
-    "season": "13",
-    "division": "D5"
-  }, {
-    "season": "14",
-    "division": "D3"
-  }, {
-    "season": "15",
-    "division": "D4"
-  }, {
-    "season": "16",
-    "division": "D4"
-  }, {
-    "season": "17",
-    "division": "C2"
-  }, {
-    "season": "18",
-    "division": "D4"
-  }, {
-    "season": "19",
-    "division": "D3"
-  }, {
-    "season": "20",
-    "division": "C3"
-  }, {
-    "season": "21",
-    "division": "C2"
-  }, {
-    "season": "22",
-    "division": "C2"
-  }, {
-    "season": "23",
-    "division": "C1"
-  }, {
-    "season": "24",
-    "division": "C1"
-  }, {
-    "season": "25",
-    "division": "C2"
-  }, {
+  "wqb": [{
     "season": "26",
-    "division": "C3"
+    "division": "D4"
   }, {
     "season": "27",
-    "division": "D6"
+    "division": "D7"
+  }],
+  "fiordos": [{
+    "season": "27",
+    "division": "D7"
   }, {
     "season": "28",
-    "division": "D2"
+    "division": "D1"
   }, {
     "season": "29",
-    "division": "D8"
-  }, {
-    "season": "30",
-    "division": "C1"
-  }, {
-    "season": "31",
-    "division": "C2"
-  }, {
-    "season": "32",
-    "division": "D8"
-  }, {
-    "season": "33",
-    "division": "D3"
-  }, {
-    "season": "34",
-    "division": "C2"
-  }, {
-    "season": "35",
-    "division": "D4"
-  }, {
-    "season": "36",
-    "division": "C2"
-  }, {
-    "season": "37",
-    "division": "D2"
-  }, {
-    "season": "38",
-    "division": "D6"
-  }, {
-    "season": "39",
-    "division": "E1"
-  }],
-  "LuciferousPeridot": [{
-    "season": "20",
-    "division": "D3"
-  }, {
-    "season": "25",
-    "division": "D4"
-  }, {
-    "season": "27",
-    "division": "D6"
+    "division": "D7"
   }],
   "coinflip": [{
     "season": "25",
@@ -3026,25 +3088,12 @@
     "season": "35",
     "division": "D3"
   }],
-  "fiordos": [{
+  "cay": [{
     "season": "27",
     "division": "D7"
   }, {
     "season": "28",
-    "division": "D1"
-  }, {
-    "season": "29",
-    "division": "D7"
-  }],
-  "TehLemur": [{
-    "season": "27",
-    "division": "D7"
-  }, {
-    "season": "28",
-    "division": "E3"
-  }, {
-    "season": "29",
-    "division": "D6"
+    "division": "D2"
   }],
   "yahas": [{
     "season": "26",
@@ -3068,101 +3117,17 @@
     "season": "37",
     "division": "E15"
   }],
-  "cay": [{
+  "tehlemur": [{
     "season": "27",
     "division": "D7"
   }, {
     "season": "28",
-    "division": "D2"
-  }],
-  "WQB": [{
-    "season": "26",
-    "division": "D4"
-  }, {
-    "season": "27",
-    "division": "D7"
-  }],
-  "Klaus": [{
-    "season": "25",
-    "division": "D2"
-  }, {
-    "season": "26",
-    "division": "D2"
-  }, {
-    "season": "27",
-    "division": "D8"
-  }],
-  "jakey": [{
-    "season": "27",
-    "division": "D8"
-  }, {
-    "season": "28",
-    "division": "E10"
-  }],
-  "RoundTower": [{
-    "season": "27",
-    "division": "D8"
-  }],
-  "fiercelord": [{
-    "season": "27",
-    "division": "D8"
-  }, {
-    "season": "28",
-    "division": "D8"
+    "division": "E3"
   }, {
     "season": "29",
-    "division": "D4"
-  }, {
-    "season": "30",
-    "division": "C3"
-  }, {
-    "season": "31",
-    "division": "D5"
-  }, {
-    "season": "32",
-    "division": "D1"
-  }, {
-    "season": "33",
-    "division": "D7"
-  }, {
-    "season": "34",
-    "division": "D3"
-  }, {
-    "season": "36",
-    "division": "D2"
-  }, {
-    "season": "37",
-    "division": "E10"
-  }, {
-    "season": "38",
-    "division": "D4"
-  }, {
-    "season": "39",
-    "division": "D1"
-  }],
-  "hissingfauna": [{
-    "season": "27",
-    "division": "D8"
-  }, {
-    "season": "28",
-    "division": "D5"
-  }, {
-    "season": "29",
-    "division": "D3"
-  }, {
-    "season": "30",
-    "division": "D5"
-  }, {
-    "season": "31",
-    "division": "E1"
-  }, {
-    "season": "32",
-    "division": "D1"
-  }, {
-    "season": "33",
     "division": "D6"
   }],
-  "Qvist": [{
+  "qvist": [{
     "season": "1",
     "division": "C3"
   }, {
@@ -3259,33 +3224,100 @@
     "season": "35",
     "division": "D2"
   }],
-  "schnaigs": [{
+  "klaus": [{
     "season": "25",
-    "division": "E1"
+    "division": "D2"
   }, {
     "season": "26",
-    "division": "E1"
+    "division": "D2"
   }, {
     "season": "27",
-    "division": "E1"
+    "division": "D8"
+  }],
+  "hissingfauna": [{
+    "season": "27",
+    "division": "D8"
   }, {
     "season": "28",
-    "division": "E13"
+    "division": "D5"
   }, {
     "season": "29",
-    "division": "E9"
+    "division": "D3"
   }, {
     "season": "30",
-    "division": "F13"
+    "division": "D5"
   }, {
     "season": "31",
     "division": "E1"
   }, {
     "season": "32",
-    "division": "E2"
+    "division": "D1"
   }, {
     "season": "33",
-    "division": "E13"
+    "division": "D6"
+  }],
+  "fiercelord": [{
+    "season": "27",
+    "division": "D8"
+  }, {
+    "season": "28",
+    "division": "D8"
+  }, {
+    "season": "29",
+    "division": "D4"
+  }, {
+    "season": "30",
+    "division": "C3"
+  }, {
+    "season": "31",
+    "division": "D5"
+  }, {
+    "season": "32",
+    "division": "D1"
+  }, {
+    "season": "33",
+    "division": "D7"
+  }, {
+    "season": "34",
+    "division": "D3"
+  }, {
+    "season": "36",
+    "division": "D2"
+  }, {
+    "season": "37",
+    "division": "E10"
+  }, {
+    "season": "38",
+    "division": "D4"
+  }, {
+    "season": "39",
+    "division": "D1"
+  }],
+  "roundtower": [{
+    "season": "27",
+    "division": "D8"
+  }],
+  "jakey": [{
+    "season": "27",
+    "division": "D8"
+  }, {
+    "season": "28",
+    "division": "E10"
+  }],
+  "ghost weasel": [{
+    "season": "27",
+    "division": "E1"
+  }],
+  "bobkrier": [{
+    "season": "23",
+    "division": "E1"
+  }, {
+    "season": "27",
+    "division": "E1"
+  }],
+  "chiefcheese": [{
+    "season": "27",
+    "division": "E1"
   }],
   "supernick": [{
     "season": "27",
@@ -3327,20 +3359,40 @@
     "season": "39",
     "division": "G7"
   }],
-  "BobKrier": [{
-    "season": "23",
+  "schnaigs": [{
+    "season": "25",
+    "division": "E1"
+  }, {
+    "season": "26",
     "division": "E1"
   }, {
     "season": "27",
     "division": "E1"
-  }],
-  "chiefcheese": [{
-    "season": "27",
+  }, {
+    "season": "28",
+    "division": "E13"
+  }, {
+    "season": "29",
+    "division": "E9"
+  }, {
+    "season": "30",
+    "division": "F13"
+  }, {
+    "season": "31",
     "division": "E1"
+  }, {
+    "season": "32",
+    "division": "E2"
+  }, {
+    "season": "33",
+    "division": "E13"
   }],
-  "Ghost Weasel": [{
+  "ackem": [{
     "season": "27",
-    "division": "E1"
+    "division": "E2"
+  }, {
+    "season": "28",
+    "division": "D4"
   }],
   "sameep": [{
     "season": "27",
@@ -3355,6 +3407,14 @@
     "season": "30",
     "division": "D3"
   }],
+  "arrnie the pirate": [{
+    "season": "27",
+    "division": "E2"
+  }],
+  "lehrfje": [{
+    "season": "27",
+    "division": "E2"
+  }],
   "martin_dalpe": [{
     "season": "27",
     "division": "E2"
@@ -3362,81 +3422,7 @@
     "season": "28",
     "division": "E14"
   }],
-  "Arrnie The Pirate": [{
-    "season": "27",
-    "division": "E2"
-  }],
-  "Lehrfje": [{
-    "season": "27",
-    "division": "E2"
-  }],
-  "Ackem": [{
-    "season": "27",
-    "division": "E2"
-  }, {
-    "season": "28",
-    "division": "D4"
-  }],
-  "volfied": [{
-    "season": "27",
-    "division": "E3"
-  }, {
-    "season": "28",
-    "division": "E10"
-  }, {
-    "season": "29",
-    "division": "E6"
-  }, {
-    "season": "30",
-    "division": "D5"
-  }, {
-    "season": "31",
-    "division": "E2"
-  }],
-  "theballgame": [{
-    "season": "27",
-    "division": "E3"
-  }, {
-    "season": "29",
-    "division": "F2"
-  }, {
-    "season": "30",
-    "division": "E13"
-  }, {
-    "season": "31",
-    "division": "D3"
-  }, {
-    "season": "32",
-    "division": "D4"
-  }, {
-    "season": "35",
-    "division": "E10"
-  }, {
-    "season": "36",
-    "division": "D2"
-  }, {
-    "season": "37",
-    "division": "D7"
-  }],
-  "Klaghills": [{
-    "season": "27",
-    "division": "E3"
-  }, {
-    "season": "28",
-    "division": "E11"
-  }, {
-    "season": "29",
-    "division": "E4"
-  }],
-  "UsanaDiamond": [{
-    "season": "27",
-    "division": "E3"
-  }],
-  "Androssthegreat": [{
-    "season": "27",
-    "division": "E3"
-  }],
-  "UltimateGeek": [{
+  "ultimategeek": [{
     "season": "27",
     "division": "E3"
   }, {
@@ -3476,30 +3462,64 @@
     "season": "39",
     "division": "F3"
   }],
-  "Rainsquad": [{
+  "usanadiamond": [{
     "season": "27",
-    "division": "E4"
+    "division": "E3"
+  }],
+  "klaghills": [{
+    "season": "27",
+    "division": "E3"
   }, {
     "season": "28",
-    "division": "E16"
-  }],
-  "elliottjf": [{
-    "season": "27",
+    "division": "E11"
+  }, {
+    "season": "29",
     "division": "E4"
+  }],
+  "volfied": [{
+    "season": "27",
+    "division": "E3"
   }, {
     "season": "28",
-    "division": "E9"
-  }],
-  "Eduard": [{
-    "season": "27",
-    "division": "E4"
-  }],
-  "juicyreign": [{
-    "season": "27",
-    "division": "E4"
+    "division": "E10"
+  }, {
+    "season": "29",
+    "division": "E6"
+  }, {
+    "season": "30",
+    "division": "D5"
   }, {
     "season": "31",
+    "division": "E2"
+  }],
+  "androssthegreat": [{
+    "season": "27",
+    "division": "E3"
+  }],
+  "theballgame": [{
+    "season": "27",
+    "division": "E3"
+  }, {
+    "season": "29",
+    "division": "F2"
+  }, {
+    "season": "30",
     "division": "E13"
+  }, {
+    "season": "31",
+    "division": "D3"
+  }, {
+    "season": "32",
+    "division": "D4"
+  }, {
+    "season": "35",
+    "division": "E10"
+  }, {
+    "season": "36",
+    "division": "D2"
+  }, {
+    "season": "37",
+    "division": "D7"
   }],
   "tdantino33": [{
     "season": "27",
@@ -3508,15 +3528,36 @@
     "season": "28",
     "division": "D4"
   }],
+  "eduard": [{
+    "season": "27",
+    "division": "E4"
+  }],
+  "rainsquad": [{
+    "season": "27",
+    "division": "E4"
+  }, {
+    "season": "28",
+    "division": "E16"
+  }],
   "saggle": [{
     "season": "27",
     "division": "E4"
   }],
-  "Mordio3": [{
+  "elliottjf": [{
     "season": "27",
-    "division": "E5"
+    "division": "E4"
+  }, {
+    "season": "28",
+    "division": "E9"
   }],
-  "TrinaCat": [{
+  "juicyreign": [{
+    "season": "27",
+    "division": "E4"
+  }, {
+    "season": "31",
+    "division": "E13"
+  }],
+  "trinacat": [{
     "season": "25",
     "division": "E1"
   }, {
@@ -3562,11 +3603,15 @@
     "season": "39",
     "division": "E7"
   }],
-  "Chief Many Sons": [{
+  "crabring18": [{
     "season": "27",
     "division": "E5"
   }],
-  "JudeanPeoplesFront": [{
+  "chief many sons": [{
+    "season": "27",
+    "division": "E5"
+  }],
+  "judeanpeoplesfront": [{
     "season": "27",
     "division": "E5"
   }, {
@@ -3594,9 +3639,13 @@
     "season": "35",
     "division": "E6"
   }],
-  "Crabring18": [{
+  "mordio3": [{
     "season": "27",
     "division": "E5"
+  }],
+  "withhelde": [{
+    "season": "27",
+    "division": "E6"
   }],
   "nholden212": [{
     "season": "27",
@@ -3617,35 +3666,6 @@
   }, {
     "season": "28",
     "division": "E9"
-  }],
-  "Withhelde": [{
-    "season": "27",
-    "division": "E6"
-  }],
-  "Flipside": [{
-    "season": "27",
-    "division": "E7"
-  }],
-  "ltj": [{
-    "season": "27",
-    "division": "E7"
-  }],
-  "Mr. Catawba": [{
-    "season": "27",
-    "division": "E7"
-  }, {
-    "season": "28",
-    "division": "E13"
-  }],
-  "Wavyhill": [{
-    "season": "27",
-    "division": "E7"
-  }, {
-    "season": "28",
-    "division": "E11"
-  }, {
-    "season": "29",
-    "division": "E1"
   }],
   "real77": [{
     "season": "27",
@@ -3687,9 +3707,54 @@
     "season": "39",
     "division": "F5"
   }],
+  "mr. catawba": [{
+    "season": "27",
+    "division": "E7"
+  }, {
+    "season": "28",
+    "division": "E13"
+  }],
+  "flipside": [{
+    "season": "27",
+    "division": "E7"
+  }],
+  "wavyhill": [{
+    "season": "27",
+    "division": "E7"
+  }, {
+    "season": "28",
+    "division": "E11"
+  }, {
+    "season": "29",
+    "division": "E1"
+  }],
+  "ltj": [{
+    "season": "27",
+    "division": "E7"
+  }],
   "octelium": [{
     "season": "27",
     "division": "E7"
+  }],
+  "jridds": [{
+    "season": "27",
+    "division": "E8"
+  }],
+  "nbschlueter": [{
+    "season": "27",
+    "division": "E8"
+  }, {
+    "season": "28",
+    "division": "E9"
+  }, {
+    "season": "30",
+    "division": "E8"
+  }, {
+    "season": "34",
+    "division": "E9"
+  }, {
+    "season": "39",
+    "division": "E8"
   }],
   "dornado": [{
     "season": "27",
@@ -3713,33 +3778,6 @@
     "season": "33",
     "division": "E10"
   }],
-  "dugrless": [{
-    "season": "27",
-    "division": "E8"
-  }],
-  "NBSchlueter": [{
-    "season": "27",
-    "division": "E8"
-  }, {
-    "season": "28",
-    "division": "E9"
-  }, {
-    "season": "30",
-    "division": "E8"
-  }, {
-    "season": "34",
-    "division": "E9"
-  }, {
-    "season": "39",
-    "division": "E8"
-  }],
-  "The Little Prince": [{
-    "season": "27",
-    "division": "E8"
-  }, {
-    "season": "28",
-    "division": "F4"
-  }],
   "ruinmysleep": [{
     "season": "27",
     "division": "E8"
@@ -3747,9 +3785,16 @@
     "season": "28",
     "division": "E12"
   }],
-  "jridds": [{
+  "dugrless": [{
     "season": "27",
     "division": "E8"
+  }],
+  "the little prince": [{
+    "season": "27",
+    "division": "E8"
+  }, {
+    "season": "28",
+    "division": "F4"
   }],
   "mskap": [{
     "season": "27",
@@ -3758,7 +3803,24 @@
     "season": "28",
     "division": "D7"
   }],
-  "Filbert66": [{
+  "leslie knope": [{
+    "season": "27",
+    "division": "E9"
+  }, {
+    "season": "28",
+    "division": "E12"
+  }, {
+    "season": "29",
+    "division": "E4"
+  }],
+  "baumdz": [{
+    "season": "27",
+    "division": "E9"
+  }, {
+    "season": "28",
+    "division": "E15"
+  }],
+  "filbert66": [{
     "season": "27",
     "division": "E9"
   }, {
@@ -3777,29 +3839,44 @@
     "season": "33",
     "division": "E8"
   }],
-  "Leslie Knope": [{
-    "season": "27",
-    "division": "E9"
-  }, {
-    "season": "28",
-    "division": "E12"
-  }, {
-    "season": "29",
-    "division": "E4"
-  }],
-  "BaumDZ": [{
-    "season": "27",
-    "division": "E9"
-  }, {
-    "season": "28",
-    "division": "E15"
-  }],
   "6000j": [{
     "season": "27",
     "division": "E10"
   }, {
     "season": "28",
     "division": "D1"
+  }],
+  "pie05041008": [{
+    "season": "27",
+    "division": "E10"
+  }],
+  "faeael": [{
+    "season": "27",
+    "division": "E10"
+  }, {
+    "season": "28",
+    "division": "E6"
+  }, {
+    "season": "29",
+    "division": "E11"
+  }, {
+    "season": "30",
+    "division": "E7"
+  }, {
+    "season": "31",
+    "division": "E11"
+  }, {
+    "season": "32",
+    "division": "F12"
+  }, {
+    "season": "33",
+    "division": "F4"
+  }, {
+    "season": "34",
+    "division": "F11"
+  }, {
+    "season": "35",
+    "division": "F3"
   }],
   "andc": [{
     "season": "27",
@@ -3835,44 +3912,12 @@
     "season": "37",
     "division": "E6"
   }],
-  "Deaks": [{
+  "deaks": [{
     "season": "27",
     "division": "E10"
   }, {
     "season": "28",
     "division": "E6"
-  }],
-  "Faeael": [{
-    "season": "27",
-    "division": "E10"
-  }, {
-    "season": "28",
-    "division": "E6"
-  }, {
-    "season": "29",
-    "division": "E11"
-  }, {
-    "season": "30",
-    "division": "E7"
-  }, {
-    "season": "31",
-    "division": "E11"
-  }, {
-    "season": "32",
-    "division": "F12"
-  }, {
-    "season": "33",
-    "division": "F4"
-  }, {
-    "season": "34",
-    "division": "F11"
-  }, {
-    "season": "35",
-    "division": "F3"
-  }],
-  "pie05041008": [{
-    "season": "27",
-    "division": "E10"
   }],
   "marfik57": [{
     "season": "27",
@@ -3914,79 +3959,6 @@
     "season": "39",
     "division": "C1"
   }],
-  "v_alfano": [{
-    "season": "27",
-    "division": "E11"
-  }],
-  "fraglin": [{
-    "season": "27",
-    "division": "E11"
-  }],
-  "belov": [{
-    "season": "27",
-    "division": "E11"
-  }, {
-    "season": "28",
-    "division": "E1"
-  }, {
-    "season": "29",
-    "division": "E14"
-  }, {
-    "season": "30",
-    "division": "D1"
-  }, {
-    "season": "31",
-    "division": "D7"
-  }, {
-    "season": "32",
-    "division": "E15"
-  }, {
-    "season": "33",
-    "division": "D2"
-  }, {
-    "season": "35",
-    "division": "E4"
-  }, {
-    "season": "36",
-    "division": "E15"
-  }],
-  "eselka": [{
-    "season": "19",
-    "division": "E1"
-  }, {
-    "season": "20",
-    "division": "E3"
-  }, {
-    "season": "21",
-    "division": "E2"
-  }, {
-    "season": "22",
-    "division": "E1"
-  }, {
-    "season": "23",
-    "division": "E1"
-  }, {
-    "season": "26",
-    "division": "E1"
-  }, {
-    "season": "27",
-    "division": "E11"
-  }, {
-    "season": "28",
-    "division": "F2"
-  }, {
-    "season": "29",
-    "division": "F10"
-  }, {
-    "season": "30",
-    "division": "F1"
-  }, {
-    "season": "31",
-    "division": "F13"
-  }, {
-    "season": "32",
-    "division": "F14"
-  }],
   "della": [{
     "season": "27",
     "division": "E11"
@@ -4027,6 +3999,93 @@
     "season": "39",
     "division": "E1"
   }],
+  "fraglin": [{
+    "season": "27",
+    "division": "E11"
+  }],
+  "belov": [{
+    "season": "27",
+    "division": "E11"
+  }, {
+    "season": "28",
+    "division": "E1"
+  }, {
+    "season": "29",
+    "division": "E14"
+  }, {
+    "season": "30",
+    "division": "D1"
+  }, {
+    "season": "31",
+    "division": "D7"
+  }, {
+    "season": "32",
+    "division": "E15"
+  }, {
+    "season": "33",
+    "division": "D2"
+  }, {
+    "season": "35",
+    "division": "E4"
+  }, {
+    "season": "36",
+    "division": "E15"
+  }],
+  "v_alfano": [{
+    "season": "27",
+    "division": "E11"
+  }],
+  "eselka": [{
+    "season": "19",
+    "division": "E1"
+  }, {
+    "season": "20",
+    "division": "E3"
+  }, {
+    "season": "21",
+    "division": "E2"
+  }, {
+    "season": "22",
+    "division": "E1"
+  }, {
+    "season": "23",
+    "division": "E1"
+  }, {
+    "season": "26",
+    "division": "E1"
+  }, {
+    "season": "27",
+    "division": "E11"
+  }, {
+    "season": "28",
+    "division": "F2"
+  }, {
+    "season": "29",
+    "division": "F10"
+  }, {
+    "season": "30",
+    "division": "F1"
+  }, {
+    "season": "31",
+    "division": "F13"
+  }, {
+    "season": "32",
+    "division": "F14"
+  }],
+  "tommy_g": [{
+    "season": "27",
+    "division": "E12"
+  }, {
+    "season": "28",
+    "division": "D1"
+  }, {
+    "season": "29",
+    "division": "E13"
+  }],
+  "afromen7": [{
+    "season": "27",
+    "division": "E12"
+  }],
   "ipofanes": [{
     "season": "27",
     "division": "E12"
@@ -4039,10 +4098,6 @@
   }, {
     "season": "30",
     "division": "D3"
-  }],
-  "soniabella": [{
-    "season": "27",
-    "division": "E12"
   }],
   "yakfox": [{
     "season": "27",
@@ -4060,25 +4115,18 @@
     "season": "32",
     "division": "E13"
   }],
-  "Tommy_G": [{
+  "soniabella": [{
     "season": "27",
     "division": "E12"
-  }, {
-    "season": "28",
-    "division": "D1"
-  }, {
-    "season": "29",
-    "division": "E13"
-  }],
-  "afromen7": [{
-    "season": "27",
-    "division": "E12"
-  }],
-  "Boe": [{
-    "season": "27",
-    "division": "E13"
   }],
   "inconspicuouspanda": [{
+    "season": "27",
+    "division": "E13"
+  }, {
+    "season": "33",
+    "division": "D1"
+  }],
+  "donminion": [{
     "season": "27",
     "division": "E13"
   }],
@@ -4092,7 +4140,7 @@
     "season": "29",
     "division": "D7"
   }],
-  "pega001": [{
+  "boe": [{
     "season": "27",
     "division": "E13"
   }],
@@ -4106,9 +4154,50 @@
     "season": "27",
     "division": "E13"
   }],
-  "DonMinion": [{
+  "pega001": [{
     "season": "27",
     "division": "E13"
+  }],
+  "darkness": [{
+    "season": "27",
+    "division": "E14"
+  }, {
+    "season": "28",
+    "division": "D3"
+  }, {
+    "season": "29",
+    "division": "C1"
+  }, {
+    "season": "30",
+    "division": "C1"
+  }],
+  "broh": [{
+    "season": "27",
+    "division": "E14"
+  }, {
+    "season": "28",
+    "division": "D3"
+  }, {
+    "season": "29",
+    "division": "D7"
+  }, {
+    "season": "30",
+    "division": "D2"
+  }, {
+    "season": "31",
+    "division": "D6"
+  }, {
+    "season": "32",
+    "division": "C3"
+  }, {
+    "season": "33",
+    "division": "D2"
+  }, {
+    "season": "34",
+    "division": "D6"
+  }, {
+    "season": "35",
+    "division": "D1"
   }],
   "christensendrg": [{
     "season": "27",
@@ -4132,7 +4221,7 @@
     "season": "33",
     "division": "D3"
   }],
-  "Ingix": [{
+  "ingix": [{
     "season": "27",
     "division": "E14"
   }, {
@@ -4165,63 +4254,6 @@
   }, {
     "season": "39",
     "division": "F2"
-  }],
-  "Darkness": [{
-    "season": "27",
-    "division": "E14"
-  }, {
-    "season": "28",
-    "division": "D3"
-  }, {
-    "season": "29",
-    "division": "C1"
-  }, {
-    "season": "30",
-    "division": "C1"
-  }],
-  "cyberlady": [{
-    "season": "27",
-    "division": "E14"
-  }, {
-    "season": "28",
-    "division": "F1"
-  }, {
-    "season": "29",
-    "division": "F10"
-  }, {
-    "season": "30",
-    "division": "E4"
-  }, {
-    "season": "31",
-    "division": "E15"
-  }],
-  "BRoh": [{
-    "season": "27",
-    "division": "E14"
-  }, {
-    "season": "28",
-    "division": "D3"
-  }, {
-    "season": "29",
-    "division": "D7"
-  }, {
-    "season": "30",
-    "division": "D2"
-  }, {
-    "season": "31",
-    "division": "D6"
-  }, {
-    "season": "32",
-    "division": "C3"
-  }, {
-    "season": "33",
-    "division": "D2"
-  }, {
-    "season": "34",
-    "division": "D6"
-  }, {
-    "season": "35",
-    "division": "D1"
   }],
   "noisenow42": [{
     "season": "27",
@@ -4263,7 +4295,30 @@
     "season": "39",
     "division": "G1"
   }],
-  "Linvoysblues": [{
+  "cyberlady": [{
+    "season": "27",
+    "division": "E14"
+  }, {
+    "season": "28",
+    "division": "F1"
+  }, {
+    "season": "29",
+    "division": "F10"
+  }, {
+    "season": "30",
+    "division": "E4"
+  }, {
+    "season": "31",
+    "division": "E15"
+  }],
+  "delord8000": [{
+    "season": "27",
+    "division": "E15"
+  }, {
+    "season": "28",
+    "division": "D2"
+  }],
+  "linvoysblues": [{
     "season": "27",
     "division": "E15"
   }, {
@@ -4273,14 +4328,7 @@
     "season": "29",
     "division": "E15"
   }],
-  "deLord8000": [{
-    "season": "27",
-    "division": "E15"
-  }, {
-    "season": "28",
-    "division": "D2"
-  }],
-  "Malta": [{
+  "malta": [{
     "season": "27",
     "division": "E15"
   }, {
@@ -4320,15 +4368,7 @@
     "season": "39",
     "division": "E3"
   }],
-  "Kumajka": [{
-    "season": "27",
-    "division": "E16"
-  }],
-  "Ianar": [{
-    "season": "27",
-    "division": "E16"
-  }],
-  "Cytryn": [{
+  "cytryn": [{
     "season": "27",
     "division": "E16"
   }, {
@@ -4341,14 +4381,18 @@
     "season": "31",
     "division": "E15"
   }],
-  "King Julian 90": [{
+  "king julian 90": [{
     "season": "27",
     "division": "E16"
   }, {
     "season": "28",
     "division": "E1"
   }],
-  "Honkeyfresh": [{
+  "ianar": [{
+    "season": "27",
+    "division": "E16"
+  }],
+  "honkeyfresh": [{
     "season": "27",
     "division": "E16"
   }, {
@@ -4358,11 +4402,31 @@
     "season": "29",
     "division": "E5"
   }],
-  "RonnieBoy": [{
+  "ronnieboy": [{
     "season": "27",
     "division": "E16"
   }],
-  "G.L. Morrison": [{
+  "kumajka": [{
+    "season": "27",
+    "division": "E16"
+  }],
+  "necroblood": [{
+    "season": "27",
+    "division": "F1"
+  }],
+  "bawb_saget": [{
+    "season": "27",
+    "division": "F1"
+  }],
+  "niquill": [{
+    "season": "27",
+    "division": "F1"
+  }],
+  "jmac": [{
+    "season": "27",
+    "division": "F1"
+  }],
+  "g.l. morrison": [{
     "season": "27",
     "division": "F1"
   }, {
@@ -4372,10 +4436,6 @@
     "season": "29",
     "division": "F8"
   }],
-  "Niquill": [{
-    "season": "27",
-    "division": "F1"
-  }],
   "kmp5040": [{
     "season": "27",
     "division": "F1"
@@ -4383,23 +4443,11 @@
     "season": "28",
     "division": "F8"
   }],
-  "Jmac": [{
-    "season": "27",
-    "division": "F1"
-  }],
-  "bawb_saget": [{
-    "season": "27",
-    "division": "F1"
-  }],
-  "necroblood": [{
-    "season": "27",
-    "division": "F1"
-  }],
-  "Jacktrades8": [{
+  "jacktrades8": [{
     "season": "27",
     "division": "F2"
   }],
-  "BostonQuad": [{
+  "bostonquad": [{
     "season": "27",
     "division": "F2"
   }, {
@@ -4486,7 +4534,31 @@
     "season": "39",
     "division": "H16"
   }],
-  "AbigailAdams": [{
+  "arkyguy13": [{
+    "season": "27",
+    "division": "F3"
+  }, {
+    "season": "28",
+    "division": "E16"
+  }],
+  "looneygoons": [{
+    "season": "27",
+    "division": "F3"
+  }, {
+    "season": "28",
+    "division": "F8"
+  }],
+  "tokosertok": [{
+    "season": "27",
+    "division": "F3"
+  }, {
+    "season": "28",
+    "division": "F10"
+  }, {
+    "season": "29",
+    "division": "E2"
+  }],
+  "abigailadams": [{
     "season": "27",
     "division": "F3"
   }, {
@@ -4502,31 +4574,27 @@
     "season": "33",
     "division": "F9"
   }],
-  "tokosertok": [{
+  "sapphirestarfish": [{
     "season": "27",
-    "division": "F3"
+    "division": "F4"
   }, {
     "season": "28",
-    "division": "F10"
+    "division": "E8"
   }, {
     "season": "29",
-    "division": "E2"
+    "division": "E11"
   }],
-  "Arkyguy13": [{
+  "nemesis101": [{
     "season": "27",
-    "division": "F3"
+    "division": "F4"
   }, {
     "season": "28",
-    "division": "E16"
-  }],
-  "Looneygoons": [{
-    "season": "27",
-    "division": "F3"
+    "division": "E12"
   }, {
-    "season": "28",
-    "division": "F8"
+    "season": "29",
+    "division": "E7"
   }],
-  "Guynexdoor": [{
+  "guynexdoor": [{
     "season": "27",
     "division": "F4"
   }, {
@@ -4557,27 +4625,7 @@
     "season": "36",
     "division": "F4"
   }],
-  "kingskid2002": [{
-    "season": "27",
-    "division": "F4"
-  }, {
-    "season": "28",
-    "division": "F10"
-  }, {
-    "season": "29",
-    "division": "F2"
-  }],
-  "sapphirestarfish": [{
-    "season": "27",
-    "division": "F4"
-  }, {
-    "season": "28",
-    "division": "E8"
-  }, {
-    "season": "29",
-    "division": "E11"
-  }],
-  "Nomnomicon": [{
+  "nomnomicon": [{
     "season": "27",
     "division": "F4"
   }],
@@ -4612,32 +4660,15 @@
     "season": "36",
     "division": "F7"
   }],
-  "Nemesis101": [{
+  "kingskid2002": [{
     "season": "27",
     "division": "F4"
   }, {
     "season": "28",
-    "division": "E12"
+    "division": "F10"
   }, {
     "season": "29",
-    "division": "E7"
-  }],
-  "TheForeverMan": [{
-    "season": "27",
-    "division": "F5"
-  }, {
-    "season": "28",
-    "division": "F5"
-  }, {
-    "season": "29",
-    "division": "F7"
-  }],
-  "kimcase": [{
-    "season": "27",
-    "division": "F5"
-  }, {
-    "season": "28",
-    "division": "F8"
+    "division": "F2"
   }],
   "monomandan": [{
     "season": "27",
@@ -4655,14 +4686,31 @@
     "season": "31",
     "division": "E2"
   }],
-  "Calcifer437": [{
+  "theforeverman": [{
+    "season": "27",
+    "division": "F5"
+  }, {
+    "season": "28",
+    "division": "F5"
+  }, {
+    "season": "29",
+    "division": "F7"
+  }],
+  "calcifer437": [{
     "season": "27",
     "division": "F5"
   }, {
     "season": "28",
     "division": "F5"
   }],
-  "Hamlet the Dane": [{
+  "kimcase": [{
+    "season": "27",
+    "division": "F5"
+  }, {
+    "season": "28",
+    "division": "F8"
+  }],
+  "hamlet the dane": [{
     "season": "27",
     "division": "F6"
   }, {
@@ -4702,14 +4750,6 @@
     "season": "39",
     "division": "G6"
   }],
-  "dennisnich": [{
-    "season": "27",
-    "division": "F6"
-  }],
-  "Cones": [{
-    "season": "27",
-    "division": "F6"
-  }],
   "frankenclunker": [{
     "season": "27",
     "division": "F6"
@@ -4723,17 +4763,17 @@
     "season": "30",
     "division": "F7"
   }],
-  "Sassy_globetrotter": [{
+  "cones": [{
     "season": "27",
     "division": "F6"
   }],
-  "Aberlin72": [{
+  "sassy_globetrotter": [{
     "season": "27",
-    "division": "F7"
+    "division": "F6"
   }],
-  "DanTheManGeld": [{
+  "dennisnich": [{
     "season": "27",
-    "division": "F7"
+    "division": "F6"
   }],
   "jshirles06": [{
     "season": "27",
@@ -4748,7 +4788,20 @@
     "season": "30",
     "division": "E11"
   }],
-  "Chambeco": [{
+  "islandwonder": [{
+    "season": "27",
+    "division": "F7"
+  }, {
+    "season": "28",
+    "division": "F5"
+  }, {
+    "season": "29",
+    "division": "E10"
+  }, {
+    "season": "30",
+    "division": "E9"
+  }],
+  "chambeco": [{
     "season": "27",
     "division": "F7"
   }, {
@@ -4770,20 +4823,15 @@
     "season": "33",
     "division": "E11"
   }],
-  "islandwonder": [{
+  "aberlin72": [{
     "season": "27",
     "division": "F7"
-  }, {
-    "season": "28",
-    "division": "F5"
-  }, {
-    "season": "29",
-    "division": "E10"
-  }, {
-    "season": "30",
-    "division": "E9"
   }],
-  "PeasantKing": [{
+  "danthemangeld": [{
+    "season": "27",
+    "division": "F7"
+  }],
+  "peasantking": [{
     "season": "27",
     "division": "F8"
   }, {
@@ -4796,16 +4844,16 @@
     "season": "31",
     "division": "F7"
   }],
-  "muhwareturns": [{
-    "season": "27",
-    "division": "F8"
-  }],
-  "ClouduHieh": [{
+  "clouduhieh": [{
     "season": "27",
     "division": "F8"
   }, {
     "season": "28",
     "division": "F4"
+  }],
+  "muhwareturns": [{
+    "season": "27",
+    "division": "F8"
   }],
   "mmmariah23": [{
     "season": "27",
@@ -4814,7 +4862,7 @@
     "season": "28",
     "division": "F11"
   }],
-  "Treebeard13": [{
+  "treebeard13": [{
     "season": "27",
     "division": "F8"
   }],
@@ -4825,6 +4873,10 @@
     "season": "28",
     "division": "E15"
   }],
+  "ckbonne": [{
+    "season": "27",
+    "division": "F9"
+  }],
   "aahmad02": [{
     "season": "27",
     "division": "F9"
@@ -4832,11 +4884,7 @@
     "season": "28",
     "division": "F9"
   }],
-  "nwkansasgirl": [{
-    "season": "27",
-    "division": "F9"
-  }],
-  "ckbonne": [{
+  "me000w": [{
     "season": "27",
     "division": "F9"
   }],
@@ -4853,13 +4901,9 @@
     "season": "30",
     "division": "F7"
   }],
-  "Me000w": [{
+  "nwkansasgirl": [{
     "season": "27",
     "division": "F9"
-  }],
-  "Dopamine23": [{
-    "season": "27",
-    "division": "F10"
   }],
   "littlestdube": [{
     "season": "27",
@@ -4911,7 +4955,7 @@
     "season": "39",
     "division": "E4"
   }],
-  "Nikkicola11": [{
+  "nikkicola11": [{
     "season": "27",
     "division": "F10"
   }, {
@@ -4959,6 +5003,10 @@
     "season": "27",
     "division": "F10"
   }],
+  "dopamine23": [{
+    "season": "27",
+    "division": "F10"
+  }],
   "drenfrew": [{
     "season": "27",
     "division": "F11"
@@ -4966,11 +5014,38 @@
     "season": "28",
     "division": "E1"
   }],
-  "Lkockler24": [{
+  "westcoastdidds": [{
+    "season": "27",
+    "division": "F11"
+  }, {
+    "season": "28",
+    "division": "E12"
+  }, {
+    "season": "29",
+    "division": "F3"
+  }],
+  "slamradio": [{
+    "season": "27",
+    "division": "F11"
+  }, {
+    "season": "28",
+    "division": "F7"
+  }, {
+    "season": "29",
+    "division": "E9"
+  }, {
+    "season": "30",
+    "division": "E13"
+  }],
+  "natwmp2": [{
     "season": "27",
     "division": "F11"
   }],
-  "Witz": [{
+  "lkockler24": [{
+    "season": "27",
+    "division": "F11"
+  }],
+  "witz": [{
     "season": "27",
     "division": "F11"
   }, {
@@ -5010,63 +5085,6 @@
     "season": "39",
     "division": "G7"
   }],
-  "WestCoastDidds": [{
-    "season": "27",
-    "division": "F11"
-  }, {
-    "season": "28",
-    "division": "E12"
-  }, {
-    "season": "29",
-    "division": "F3"
-  }],
-  "slamradio": [{
-    "season": "27",
-    "division": "F11"
-  }, {
-    "season": "28",
-    "division": "F7"
-  }, {
-    "season": "29",
-    "division": "E9"
-  }, {
-    "season": "30",
-    "division": "E13"
-  }],
-  "natwmp2": [{
-    "season": "27",
-    "division": "F11"
-  }],
-  "Vali1987": [{
-    "season": "27",
-    "division": "F12"
-  }, {
-    "season": "28",
-    "division": "F3"
-  }, {
-    "season": "29",
-    "division": "F11"
-  }, {
-    "season": "30",
-    "division": "F2"
-  }],
-  "Pharom": [{
-    "season": "27",
-    "division": "F12"
-  }],
-  "jonvs": [{
-    "season": "27",
-    "division": "F12"
-  }, {
-    "season": "28",
-    "division": "F2"
-  }, {
-    "season": "29",
-    "division": "F11"
-  }, {
-    "season": "33",
-    "division": "E1"
-  }],
   "mojohn83": [{
     "season": "27",
     "division": "F12"
@@ -5087,7 +5105,33 @@
     "season": "30",
     "division": "F2"
   }],
-  "Jampee": [{
+  "jonvs": [{
+    "season": "27",
+    "division": "F12"
+  }, {
+    "season": "28",
+    "division": "F2"
+  }, {
+    "season": "29",
+    "division": "F11"
+  }, {
+    "season": "33",
+    "division": "E1"
+  }],
+  "vali1987": [{
+    "season": "27",
+    "division": "F12"
+  }, {
+    "season": "28",
+    "division": "F3"
+  }, {
+    "season": "29",
+    "division": "F11"
+  }, {
+    "season": "30",
+    "division": "F2"
+  }],
+  "jampee": [{
     "season": "27",
     "division": "F12"
   }, {
@@ -5111,6 +5155,14 @@
   }, {
     "season": "38",
     "division": "E11"
+  }],
+  "pharom": [{
+    "season": "27",
+    "division": "F12"
+  }],
+  "takenbythesea": [{
+    "season": "27",
+    "division": "F13"
   }],
   "chrismertens": [{
     "season": "27",
@@ -5152,10 +5204,6 @@
     "season": "39",
     "division": "G2"
   }],
-  "pezz": [{
-    "season": "27",
-    "division": "F13"
-  }],
   "cruiskeen": [{
     "season": "27",
     "division": "F13"
@@ -5196,6 +5244,10 @@
     "season": "39",
     "division": "G3"
   }],
+  "burbot": [{
+    "season": "27",
+    "division": "F13"
+  }],
   "chramm": [{
     "season": "27",
     "division": "F13"
@@ -5203,11 +5255,7 @@
     "season": "28",
     "division": "F1"
   }],
-  "TakenbytheSea": [{
-    "season": "27",
-    "division": "F13"
-  }],
-  "burbot": [{
+  "pezz": [{
     "season": "27",
     "division": "F13"
   }],
@@ -5268,7 +5316,14 @@
     "season": "29",
     "division": "E16"
   }],
-  "TintinS3D": [{
+  "little dj": [{
+    "season": "27",
+    "division": "F14"
+  }, {
+    "season": "28",
+    "division": "F3"
+  }],
+  "tintins3d": [{
     "season": "27",
     "division": "F14"
   }, {
@@ -5280,13 +5335,6 @@
   }, {
     "season": "30",
     "division": "F6"
-  }],
-  "Little DJ": [{
-    "season": "27",
-    "division": "F14"
-  }, {
-    "season": "28",
-    "division": "F3"
   }],
   "ehunt": [{
     "season": "19",
@@ -5313,7 +5361,7 @@
     "season": "26",
     "division": "B1"
   }],
-  "Tarecky": [{
+  "tarecky": [{
     "season": "26",
     "division": "D1"
   }, {
@@ -5323,7 +5371,7 @@
     "season": "37",
     "division": "D3"
   }],
-  "Launchywiggin": [{
+  "launchywiggin": [{
     "season": "19",
     "division": "C2"
   }, {
@@ -5358,7 +5406,10 @@
     "season": "29",
     "division": "D4"
   }],
-  "Hugovj": [{
+  "hugovj": [{
+    "season": "1",
+    "division": "D8"
+  }, {
     "season": "3",
     "division": "D4"
   }, {
@@ -5377,7 +5428,7 @@
     "season": "26",
     "division": "D2"
   }],
-  "RICHARDNIXON": [{
+  "richardnixon": [{
     "season": "22",
     "division": "E1"
   }, {
@@ -5414,7 +5465,7 @@
     "season": "36",
     "division": "E10"
   }],
-  "Agbag": [{
+  "agbag": [{
     "season": "26",
     "division": "D4"
   }],
@@ -5425,7 +5476,7 @@
     "season": "26",
     "division": "E1"
   }],
-  "SamE": [{
+  "same": [{
     "season": "25",
     "division": "B2"
   }, {
@@ -5462,7 +5513,7 @@
     "season": "39",
     "division": "B1"
   }],
-  "COYS": [{
+  "coys": [{
     "season": "25",
     "division": "C1"
   }],
@@ -5485,7 +5536,7 @@
     "season": "25",
     "division": "C1"
   }],
-  "SmokeyRivers": [{
+  "smokeyrivers": [{
     "season": "23",
     "division": "C2"
   }, {
@@ -5508,7 +5559,7 @@
     "season": "25",
     "division": "C3"
   }],
-  "Dunduks": [{
+  "dunduks": [{
     "season": "1",
     "division": "C4"
   }, {
@@ -5578,7 +5629,7 @@
     "season": "25",
     "division": "D1"
   }],
-  "Diedre": [{
+  "diedre": [{
     "season": "14",
     "division": "E1"
   }, {
@@ -5617,7 +5668,7 @@
     "season": "25",
     "division": "D2"
   }],
-  "CPiGuy": [{
+  "cpiguy": [{
     "season": "25",
     "division": "D2"
   }],
@@ -5689,7 +5740,7 @@
     "season": "25",
     "division": "D3"
   }],
-  "Wrobbe": [{
+  "wrobbe": [{
     "season": "23",
     "division": "E1"
   }, {
@@ -5706,11 +5757,11 @@
     "season": "25",
     "division": "D4"
   }],
-  "Souleater": [{
+  "souleater": [{
     "season": "25",
     "division": "E1"
   }],
-  "AB Witty": [{
+  "ab witty": [{
     "season": "25",
     "division": "E1"
   }],
@@ -5754,7 +5805,13 @@
     "season": "24",
     "division": "A1"
   }],
-  "LimeTime": [{
+  "limetime": [{
+    "season": "13",
+    "division": "C2"
+  }, {
+    "season": "18",
+    "division": "D1"
+  }, {
     "season": "22",
     "division": "C1"
   }, {
@@ -5764,21 +5821,21 @@
     "season": "31",
     "division": "B2"
   }],
-  "MP52": [{
+  "mp52": [{
     "season": "23",
     "division": "D3"
   }, {
     "season": "24",
     "division": "C1"
   }],
-  "SSLY": [{
+  "ssly": [{
     "season": "23",
     "division": "C1"
   }, {
     "season": "24",
     "division": "C2"
   }],
-  "Jean-Michel": [{
+  "jean-michel": [{
     "season": "1",
     "division": "B2"
   }, {
@@ -5885,7 +5942,16 @@
     "season": "24",
     "division": "C2"
   }],
-  "LaLight": [{
+  "lalight": [{
+    "season": "18",
+    "division": "D4"
+  }, {
+    "season": "19",
+    "division": "C3"
+  }, {
+    "season": "20",
+    "division": "D4"
+  }, {
     "season": "21",
     "division": "C3"
   }, {
@@ -5907,7 +5973,7 @@
     "season": "39",
     "division": "D3"
   }],
-  "Sirusc": [{
+  "sirusc": [{
     "season": "1",
     "division": "D8"
   }, {
@@ -5977,7 +6043,7 @@
     "season": "24",
     "division": "C3"
   }],
-  "Severian-666": [{
+  "severian-666": [{
     "season": "23",
     "division": "D2"
   }, {
@@ -5994,7 +6060,7 @@
     "season": "24",
     "division": "D2"
   }],
-  "Bounceyboy": [{
+  "bounceyboy": [{
     "season": "24",
     "division": "D2"
   }, {
@@ -6014,7 +6080,13 @@
     "season": "24",
     "division": "D3"
   }],
-  "IDontPlayThisGame": [{
+  "idontplaythisgame": [{
+    "season": "17",
+    "division": "E1"
+  }, {
+    "season": "18",
+    "division": "E1"
+  }, {
     "season": "21",
     "division": "D3"
   }, {
@@ -6069,7 +6141,7 @@
     "season": "24",
     "division": "E1"
   }],
-  "Courtney": [{
+  "courtney": [{
     "season": "23",
     "division": "E1"
   }, {
@@ -6080,7 +6152,7 @@
     "season": "24",
     "division": "E1"
   }],
-  "GregDC": [{
+  "gregdc": [{
     "season": "24",
     "division": "E1"
   }],
@@ -6124,11 +6196,11 @@
     "season": "39",
     "division": "E5"
   }],
-  "Felendis": [{
+  "felendis": [{
     "season": "23",
     "division": "C1"
   }],
-  "Saaket": [{
+  "saaket": [{
     "season": "17",
     "division": "C3"
   }, {
@@ -6138,11 +6210,11 @@
     "season": "39",
     "division": "E5"
   }],
-  "Valkeer": [{
+  "valkeer": [{
     "season": "23",
     "division": "C2"
   }],
-  "Dylan32": [{
+  "dylan32": [{
     "season": "18",
     "division": "E1"
   }, {
@@ -6167,15 +6239,15 @@
     "season": "32",
     "division": "D4"
   }],
-  "Stifler77": [{
+  "stifler77": [{
     "season": "23",
     "division": "D1"
   }],
-  "CASmnl42": [{
+  "casmnl42": [{
     "season": "23",
     "division": "D1"
   }],
-  "Cuzz": [{
+  "cuzz": [{
     "season": "9",
     "division": "D4"
   }, {
@@ -6186,7 +6258,7 @@
     "season": "23",
     "division": "D3"
   }],
-  "Chaos": [{
+  "chaos": [{
     "season": "23",
     "division": "D4"
   }],
@@ -6234,7 +6306,7 @@
     "season": "37",
     "division": "F11"
   }],
-  "Jeb": [{
+  "jeb": [{
     "season": "5",
     "division": "E1"
   }, {
@@ -6289,14 +6361,14 @@
     "season": "22",
     "division": "B1"
   }],
-  "Nala": [{
+  "nala": [{
     "season": "21",
     "division": "E1"
   }, {
     "season": "22",
     "division": "D1"
   }],
-  "AlexJRStone": [{
+  "alexjrstone": [{
     "season": "20",
     "division": "E3"
   }, {
@@ -6306,7 +6378,7 @@
     "season": "22",
     "division": "D2"
   }],
-  "Haddock": [{
+  "haddock": [{
     "season": "14",
     "division": "E1"
   }, {
@@ -6331,15 +6403,15 @@
     "season": "22",
     "division": "D2"
   }],
-  "Buttsniffer205": [{
+  "buttsniffer205": [{
     "season": "22",
     "division": "E1"
   }],
-  "Roshavi4ak": [{
+  "roshavi4ak": [{
     "season": "22",
     "division": "E1"
   }],
-  "A Drowned Kernel": [{
+  "a drowned kernel": [{
     "season": "1",
     "division": "C1"
   }, {
@@ -6418,7 +6490,7 @@
     "season": "36",
     "division": "C2"
   }],
-  "Watno": [{
+  "watno": [{
     "season": "1",
     "division": "C4"
   }, {
@@ -6468,7 +6540,7 @@
     "season": "21",
     "division": "B2"
   }],
-  "Beyond Awesome": [{
+  "beyond awesome": [{
     "season": "5",
     "division": "C1"
   }, {
@@ -6493,25 +6565,31 @@
     "season": "21",
     "division": "C1"
   }],
-  "Hackibacki": [{
+  "hackibacki": [{
+    "season": "19",
+    "division": "D3"
+  }, {
+    "season": "20",
+    "division": "D3"
+  }, {
     "season": "21",
     "division": "C2"
   }],
-  "Funhaver": [{
+  "funhaver": [{
     "season": "20",
     "division": "D2"
   }, {
     "season": "21",
     "division": "D1"
   }],
-  "McGarnacle": [{
+  "mcgarnacle": [{
     "season": "19",
     "division": "E1"
   }, {
     "season": "21",
     "division": "D1"
   }],
-  "Water Polo DMo": [{
+  "water polo dmo": [{
     "season": "14",
     "division": "E1"
   }, {
@@ -6536,11 +6614,11 @@
     "season": "21",
     "division": "D1"
   }],
-  "SinisterHologram": [{
+  "sinisterhologram": [{
     "season": "21",
     "division": "D2"
   }],
-  "The Do-Operator": [{
+  "the do-operator": [{
     "season": "14",
     "division": "D1"
   }, {
@@ -6566,7 +6644,7 @@
     "season": "21",
     "division": "D3"
   }],
-  "Cascadestyler": [{
+  "cascadestyler": [{
     "season": "18",
     "division": "D3"
   }, {
@@ -6579,11 +6657,11 @@
     "season": "21",
     "division": "D4"
   }],
-  "ROGAVKA": [{
+  "rogavka": [{
     "season": "21",
     "division": "D4"
   }],
-  "Nicholas Galauxy": [{
+  "nicholas galauxy": [{
     "season": "20",
     "division": "E1"
   }, {
@@ -6601,19 +6679,28 @@
     "season": "21",
     "division": "E1"
   }],
-  "Alchemist38": [{
+  "makqvist": [{
+    "season": "18",
+    "division": "E1"
+  }, {
+    "season": "19",
+    "division": "E1"
+  }, {
     "season": "20",
     "division": "E3"
   }, {
     "season": "21",
     "division": "E2"
-  }],
-  "Makqvist": [{
-    "season": "21",
-    "division": "E2"
   }, {
     "season": "28",
     "division": "F1"
+  }],
+  "alchemist38": [{
+    "season": "20",
+    "division": "E3"
+  }, {
+    "season": "21",
+    "division": "E2"
   }],
   "breppert": [{
     "season": "17",
@@ -6628,7 +6715,7 @@
     "season": "20",
     "division": "B1"
   }],
-  "Dingan": [{
+  "dingan": [{
     "season": "5",
     "division": "D2"
   }, {
@@ -6674,14 +6761,14 @@
     "season": "20",
     "division": "B1"
   }],
-  "Marin": [{
+  "marin": [{
     "season": "8",
     "division": "B2"
   }, {
     "season": "20",
     "division": "B2"
   }],
-  "Mikey the great": [{
+  "mikey the great": [{
     "season": "11",
     "division": "B1"
   }, {
@@ -6801,13 +6888,6 @@
     "season": "20",
     "division": "D2"
   }],
-  "hackibacki": [{
-    "season": "19",
-    "division": "D3"
-  }, {
-    "season": "20",
-    "division": "D3"
-  }],
   "sorawotobu": [{
     "season": "19",
     "division": "D4"
@@ -6815,17 +6895,7 @@
     "season": "20",
     "division": "D4"
   }],
-  "Lalight": [{
-    "season": "18",
-    "division": "D4"
-  }, {
-    "season": "19",
-    "division": "C3"
-  }, {
-    "season": "20",
-    "division": "D4"
-  }],
-  "Ravi Vasudevan": [{
+  "ravi vasudevan": [{
     "season": "11",
     "division": "E2"
   }, {
@@ -6854,29 +6924,19 @@
     "season": "20",
     "division": "E1"
   }],
-  "Octopode": [{
+  "octopode": [{
     "season": "20",
     "division": "E2"
   }],
-  "oneELECTRIC": [{
+  "oneelectric": [{
     "season": "20",
     "division": "E2"
   }],
-  "Timethief": [{
+  "timethief": [{
     "season": "20",
     "division": "E3"
   }],
-  "makqvist": [{
-    "season": "18",
-    "division": "E1"
-  }, {
-    "season": "19",
-    "division": "E1"
-  }, {
-    "season": "20",
-    "division": "E3"
-  }],
-  "Derg17": [{
+  "derg17": [{
     "season": "7",
     "division": "D2"
   }, {
@@ -6938,7 +6998,7 @@
     "season": "19",
     "division": "C1"
   }],
-  "Horist": [{
+  "horist": [{
     "season": "8",
     "division": "D1"
   }, {
@@ -6975,7 +7035,7 @@
     "season": "19",
     "division": "C1"
   }],
-  "Jimmmmm": [{
+  "jimmmmm": [{
     "season": "8",
     "division": "D6"
   }, {
@@ -7003,7 +7063,7 @@
     "season": "19",
     "division": "C1"
   }],
-  "Orange": [{
+  "orange": [{
     "season": "15",
     "division": "E2"
   }, {
@@ -7019,7 +7079,7 @@
     "season": "19",
     "division": "D2"
   }],
-  "Calamitas": [{
+  "calamitas": [{
     "season": "9",
     "division": "D2"
   }, {
@@ -7048,7 +7108,7 @@
     "season": "19",
     "division": "D3"
   }],
-  "MVoltaire": [{
+  "mvoltaire": [{
     "season": "19",
     "division": "E1"
   }, {
@@ -7064,7 +7124,7 @@
     "season": "39",
     "division": "D2"
   }],
-  "Aleimon Thimble": [{
+  "aleimon thimble": [{
     "season": "11",
     "division": "D4"
   }, {
@@ -7080,7 +7140,7 @@
     "season": "18",
     "division": "B2"
   }],
-  "Petrovic": [{
+  "petrovic": [{
     "season": "13",
     "division": "E1"
   }, {
@@ -7099,7 +7159,7 @@
     "season": "18",
     "division": "C1"
   }],
-  "Emeric": [{
+  "emeric": [{
     "season": "1",
     "division": "C4"
   }, {
@@ -7142,26 +7202,27 @@
     "season": "18",
     "division": "C2"
   }],
-  "Ceviri": [{
-    "season": "18",
+  "ceviri": [{
+    "season": "6",
     "division": "C3"
-  }],
-  "Limetime": [{
-    "season": "13",
-    "division": "C2"
+  }, {
+    "season": "8",
+    "division": "C4"
   }, {
     "season": "18",
-    "division": "D1"
+    "division": "C3"
+  }, {
+    "season": "30",
+    "division": "C1"
+  }, {
+    "season": "32",
+    "division": "B1"
   }],
-  "Left Market": [{
+  "left market": [{
     "season": "18",
     "division": "D1"
   }],
-  "Squirezucco": [{
-    "season": "18",
-    "division": "D2"
-  }],
-  "SearingSpear92": [{
+  "searingspear92": [{
     "season": "16",
     "division": "D2"
   }, {
@@ -7175,7 +7236,7 @@
     "season": "18",
     "division": "D3"
   }],
-  "Harley_Beckett": [{
+  "harley_beckett": [{
     "season": "15",
     "division": "C3"
   }, {
@@ -7188,26 +7249,19 @@
     "season": "18",
     "division": "D4"
   }],
-  "idontplaythisgame": [{
-    "season": "17",
-    "division": "E1"
-  }, {
-    "season": "18",
-    "division": "E1"
-  }],
-  "TerrorVan": [{
-    "season": "18",
-    "division": "E1"
-  }],
-  "Domninoin": [{
-    "season": "18",
-    "division": "E1"
-  }],
   "bubblovat": [{
     "season": "18",
     "division": "E1"
   }],
-  "Stef": [{
+  "terrorvan": [{
+    "season": "18",
+    "division": "E1"
+  }],
+  "domninoin": [{
+    "season": "18",
+    "division": "E1"
+  }],
+  "stef": [{
     "season": "1",
     "division": "A1"
   }, {
@@ -7259,7 +7313,7 @@
     "season": "17",
     "division": "A1"
   }],
-  "Philip": [{
+  "philip": [{
     "season": "1",
     "division": "A1"
   }, {
@@ -7314,7 +7368,7 @@
     "season": "35",
     "division": "C2"
   }],
-  "Polk5440": [{
+  "polk5440": [{
     "season": "15",
     "division": "C1"
   }, {
@@ -7446,7 +7500,7 @@
     "season": "39",
     "division": "E2"
   }],
-  "irrationalE": [{
+  "irrationale": [{
     "season": "2",
     "division": "B1"
   }, {
@@ -7537,7 +7591,7 @@
     "season": "16",
     "division": "D2"
   }],
-  "Infthitbox": [{
+  "infthitbox": [{
     "season": "12",
     "division": "D3"
   }, {
@@ -7553,7 +7607,7 @@
     "season": "16",
     "division": "D2"
   }],
-  "Sciserr": [{
+  "sciserr": [{
     "season": "14",
     "division": "E2"
   }, {
@@ -7563,7 +7617,7 @@
     "season": "16",
     "division": "D4"
   }],
-  "Mort": [{
+  "mort": [{
     "season": "14",
     "division": "E2"
   }, {
@@ -7581,11 +7635,11 @@
     "season": "16",
     "division": "E2"
   }],
-  "KkuririnN": [{
+  "kkuririnn": [{
     "season": "16",
     "division": "E2"
   }],
-  "Wachsmuth": [{
+  "wachsmuth": [{
     "season": "13",
     "division": "C4"
   }, {
@@ -7595,7 +7649,7 @@
     "season": "15",
     "division": "A1"
   }],
-  "Geronimoo": [{
+  "geronimoo": [{
     "season": "10",
     "division": "B2"
   }, {
@@ -7614,7 +7668,7 @@
     "season": "15",
     "division": "B2"
   }],
-  "Iguana Iguana": [{
+  "iguana iguana": [{
     "season": "7",
     "division": "D4"
   }, {
@@ -7627,14 +7681,14 @@
     "season": "15",
     "division": "C1"
   }],
-  "TadyBoy": [{
+  "tadyboy": [{
     "season": "13",
     "division": "D4"
   }, {
     "season": "15",
     "division": "C2"
   }],
-  "Tomush": [{
+  "tomush": [{
     "season": "13",
     "division": "D5"
   }, {
@@ -7648,11 +7702,14 @@
     "season": "15",
     "division": "D1"
   }],
-  "OvertAnglerfish": [{
+  "overtanglerfish": [{
     "season": "15",
     "division": "D2"
   }],
   "ephesos": [{
+    "season": "5",
+    "division": "D3"
+  }, {
     "season": "6",
     "division": "D2"
   }, {
@@ -7671,7 +7728,7 @@
     "season": "15",
     "division": "D2"
   }],
-  "Nara": [{
+  "nara": [{
     "season": "15",
     "division": "D4"
   }],
@@ -7691,9 +7748,13 @@
     "season": "15",
     "division": "D5"
   }],
-  "SnakeEater": [{
+  "snakeeater": [{
     "season": "15",
     "division": "D5"
+  }],
+  "traldan": [{
+    "season": "15",
+    "division": "E1"
   }],
   "kungapa": [{
     "season": "15",
@@ -7706,23 +7767,19 @@
     "season": "15",
     "division": "E1"
   }],
-  "ErinJ": [{
+  "erinj": [{
     "season": "15",
     "division": "E1"
   }],
-  "traldan": [{
-    "season": "15",
-    "division": "E1"
-  }],
-  "Michael Jay": [{
+  "michael jay": [{
     "season": "15",
     "division": "E2"
   }],
-  "Adroman": [{
+  "adroman": [{
     "season": "15",
     "division": "E2"
   }],
-  "AHoppy": [{
+  "ahoppy": [{
     "season": "1",
     "division": "D5"
   }, {
@@ -7751,7 +7808,7 @@
     "season": "14",
     "division": "B2"
   }],
-  "MdLC": [{
+  "mdlc": [{
     "season": "12",
     "division": "C1"
   }, {
@@ -7761,14 +7818,14 @@
     "season": "14",
     "division": "C1"
   }],
-  "TheRightStuff": [{
+  "therightstuff": [{
     "season": "13",
     "division": "D1"
   }, {
     "season": "14",
     "division": "D1"
   }],
-  "SaintO": [{
+  "sainto": [{
     "season": "11",
     "division": "D3"
   }, {
@@ -7790,7 +7847,7 @@
     "season": "30",
     "division": "D3"
   }],
-  "SenseiCAY": [{
+  "senseicay": [{
     "season": "13",
     "division": "D4"
   }, {
@@ -7810,14 +7867,14 @@
     "season": "14",
     "division": "D3"
   }],
-  "LibraryAdventurer": [{
+  "libraryadventurer": [{
     "season": "8",
     "division": "E2"
   }, {
     "season": "14",
     "division": "D3"
   }],
-  "lilayZee": [{
+  "lilayzee": [{
     "season": "12",
     "division": "D1"
   }, {
@@ -7827,11 +7884,11 @@
     "season": "14",
     "division": "D4"
   }],
-  "Deal": [{
+  "deal": [{
     "season": "14",
     "division": "E1"
   }],
-  "Sunmaster14": [{
+  "sunmaster14": [{
     "season": "11",
     "division": "E2"
   }, {
@@ -7850,8 +7907,11 @@
   }, {
     "season": "13",
     "division": "A1"
+  }, {
+    "season": "28",
+    "division": "A1"
   }],
-  "Deadlock39": [{
+  "deadlock39": [{
     "season": "7",
     "division": "D2"
   }, {
@@ -7886,7 +7946,7 @@
     "season": "13",
     "division": "B1"
   }],
-  "Fergesser": [{
+  "fergesser": [{
     "season": "1",
     "division": "C3"
   }, {
@@ -7914,7 +7974,7 @@
     "season": "13",
     "division": "B2"
   }],
-  "Psyduck": [{
+  "psyduck": [{
     "season": "11",
     "division": "B2"
   }, {
@@ -7965,7 +8025,7 @@
     "season": "13",
     "division": "C4"
   }],
-  "Morghas": [{
+  "morghas": [{
     "season": "10",
     "division": "E2"
   }, {
@@ -7978,7 +8038,7 @@
     "season": "13",
     "division": "D1"
   }],
-  "Asher Howarth": [{
+  "asher howarth": [{
     "season": "8",
     "division": "E2"
   }, {
@@ -7994,7 +8054,7 @@
     "season": "13",
     "division": "D2"
   }],
-  "JP Gerber": [{
+  "jp gerber": [{
     "season": "3",
     "division": "E1"
   }, {
@@ -8012,8 +8072,20 @@
   }, {
     "season": "13",
     "division": "D3"
+  }, {
+    "season": "28",
+    "division": "D2"
+  }, {
+    "season": "29",
+    "division": "E2"
+  }, {
+    "season": "31",
+    "division": "D3"
+  }, {
+    "season": "32",
+    "division": "C4"
   }],
-  "J Reggie": [{
+  "j reggie": [{
     "season": "13",
     "division": "D3"
   }],
@@ -8031,18 +8103,18 @@
     "season": "13",
     "division": "D4"
   }],
-  "Mavy2k": [{
+  "mavy2k": [{
     "season": "13",
     "division": "E1"
   }],
-  "AdrianHealey": [{
+  "adrianhealey": [{
     "season": "12",
     "division": "E2"
   }, {
     "season": "13",
     "division": "E1"
   }],
-  "XD9": [{
+  "xd9": [{
     "season": "12",
     "division": "E1"
   }, {
@@ -8125,40 +8197,6 @@
     "season": "12",
     "division": "C2"
   }],
-  "awaclus": [{
-    "season": "1",
-    "division": "C4"
-  }, {
-    "season": "2",
-    "division": "B2"
-  }, {
-    "season": "3",
-    "division": "C4"
-  }, {
-    "season": "4",
-    "division": "C4"
-  }, {
-    "season": "5",
-    "division": "C3"
-  }, {
-    "season": "6",
-    "division": "C2"
-  }, {
-    "season": "7",
-    "division": "C3"
-  }, {
-    "season": "9",
-    "division": "B1"
-  }, {
-    "season": "10",
-    "division": "B2"
-  }, {
-    "season": "11",
-    "division": "C3"
-  }, {
-    "season": "12",
-    "division": "C3"
-  }],
   "noey21": [{
     "season": "6",
     "division": "D1"
@@ -8181,7 +8219,7 @@
     "season": "12",
     "division": "D2"
   }],
-  "Voltaire": [{
+  "voltaire": [{
     "season": "1",
     "division": "D3"
   }, {
@@ -8210,11 +8248,11 @@
     "season": "12",
     "division": "D4"
   }],
-  "Dlesar": [{
+  "dlesar": [{
     "season": "12",
     "division": "E1"
   }],
-  "Ampharos": [{
+  "ampharos": [{
     "season": "11",
     "division": "E1"
   }, {
@@ -8235,7 +8273,7 @@
     "season": "11",
     "division": "C1"
   }],
-  "Pizowned": [{
+  "pizowned": [{
     "season": "8",
     "division": "E2"
   }, {
@@ -8294,21 +8332,21 @@
     "season": "11",
     "division": "C3"
   }],
-  "Elanchana": [{
+  "elanchana": [{
     "season": "5",
     "division": "E1"
   }, {
     "season": "11",
     "division": "D2"
   }],
-  "BraveBear": [{
+  "bravebear": [{
     "season": "1",
     "division": "D4"
   }, {
     "season": "11",
     "division": "D2"
   }],
-  "Mike Koeman": [{
+  "mike koeman": [{
     "season": "11",
     "division": "D5"
   }],
@@ -8322,7 +8360,7 @@
     "season": "11",
     "division": "E1"
   }],
-  "LESPEUTERE": [{
+  "lespeutere": [{
     "season": "7",
     "division": "C2"
   }, {
@@ -8335,7 +8373,7 @@
     "season": "10",
     "division": "A1"
   }],
-  "Adam Horton": [{
+  "adam horton": [{
     "season": "1",
     "division": "C1"
   }, {
@@ -8386,11 +8424,11 @@
     "season": "10",
     "division": "B2"
   }],
-  "Lotoreo": [{
+  "lotoreo": [{
     "season": "10",
     "division": "B2"
   }],
-  "Eevee": [{
+  "eevee": [{
     "season": "1",
     "division": "C4"
   }, {
@@ -8451,7 +8489,7 @@
     "season": "10",
     "division": "D2"
   }],
-  "Master88": [{
+  "master88": [{
     "season": "8",
     "division": "D6"
   }, {
@@ -8477,14 +8515,14 @@
     "season": "10",
     "division": "D3"
   }],
-  "Ravalanche": [{
+  "ravalanche": [{
     "season": "9",
     "division": "E2"
   }, {
     "season": "10",
     "division": "E1"
   }],
-  "Black Dagger": [{
+  "black dagger": [{
     "season": "8",
     "division": "E1"
   }, {
@@ -8507,7 +8545,7 @@
     "season": "10",
     "division": "E1"
   }],
-  "Umbrageofsnow": [{
+  "umbrageofsnow": [{
     "season": "10",
     "division": "E2"
   }],
@@ -8549,7 +8587,7 @@
     "season": "9",
     "division": "A1"
   }],
-  "Malmerung": [{
+  "malmerung": [{
     "season": "7",
     "division": "D5"
   }, {
@@ -8558,12 +8596,18 @@
   }, {
     "season": "9",
     "division": "C2"
+  }, {
+    "season": "38",
+    "division": "E5"
+  }, {
+    "season": "39",
+    "division": "E3"
   }],
-  "SM.SM": [{
+  "sm.sm": [{
     "season": "9",
     "division": "C3"
   }],
-  "Titandrake": [{
+  "titandrake": [{
     "season": "2",
     "division": "B1"
   }, {
@@ -8576,25 +8620,25 @@
     "season": "9",
     "division": "C3"
   }],
-  "EgorK": [{
+  "egork": [{
     "season": "9",
     "division": "D1"
   }],
-  "DoesItGoBoom": [{
+  "doesitgoboom": [{
     "season": "8",
     "division": "E3"
   }, {
     "season": "9",
     "division": "D3"
   }],
-  "Qbrick": [{
+  "qbrick": [{
     "season": "8",
     "division": "D2"
   }, {
     "season": "9",
     "division": "D4"
   }],
-  "Rubby": [{
+  "rubby": [{
     "season": "5",
     "division": "D2"
   }, {
@@ -8621,11 +8665,11 @@
     "season": "9",
     "division": "E1"
   }],
-  "Nrrden": [{
+  "nrrden": [{
     "season": "9",
     "division": "E1"
   }],
-  "C_Roy8": [{
+  "c_roy8": [{
     "season": "8",
     "division": "E3"
   }, {
@@ -8648,7 +8692,7 @@
     "season": "9",
     "division": "E3"
   }],
-  "Tao Chen": [{
+  "tao chen": [{
     "season": "1",
     "division": "B1"
   }, {
@@ -8692,11 +8736,11 @@
     "season": "8",
     "division": "B1"
   }],
-  "Svenisntb": [{
+  "svenisntb": [{
     "season": "8",
     "division": "C1"
   }],
-  "Hyphen-ated": [{
+  "hyphen-ated": [{
     "season": "6",
     "division": "C3"
   }, {
@@ -8719,7 +8763,7 @@
     "season": "8",
     "division": "C2"
   }],
-  "Eras": [{
+  "eras": [{
     "season": "6",
     "division": "D2"
   }, {
@@ -8729,7 +8773,7 @@
     "season": "8",
     "division": "C2"
   }],
-  "HvBoedefeld": [{
+  "hvboedefeld": [{
     "season": "1",
     "division": "A1"
   }, {
@@ -8745,7 +8789,7 @@
     "season": "34",
     "division": "B2"
   }],
-  "M0G3L": [{
+  "m0g3l": [{
     "season": "5",
     "division": "D3"
   }, {
@@ -8758,27 +8802,20 @@
     "season": "8",
     "division": "C3"
   }],
-  "ceviri": [{
-    "season": "6",
+  "markowkette": [{
+    "season": "1",
+    "division": "B2"
+  }, {
+    "season": "2",
+    "division": "C3"
+  }, {
+    "season": "3",
     "division": "C3"
   }, {
     "season": "8",
     "division": "C4"
-  }, {
-    "season": "30",
-    "division": "C1"
-  }, {
-    "season": "32",
-    "division": "B1"
   }],
-  "MarkowKette": [{
-    "season": "1",
-    "division": "B2"
-  }, {
-    "season": "8",
-    "division": "C4"
-  }],
-  "Heisenberg": [{
+  "heisenberg": [{
     "season": "5",
     "division": "D1"
   }, {
@@ -8802,7 +8839,7 @@
     "season": "8",
     "division": "D3"
   }],
-  "ThaddeusB": [{
+  "thaddeusb": [{
     "season": "4",
     "division": "C1"
   }, {
@@ -8818,11 +8855,17 @@
     "season": "8",
     "division": "D4"
   }],
-  "Hockeysemlan": [{
+  "hockeysemlan": [{
     "season": "8",
     "division": "D5"
+  }, {
+    "season": "30",
+    "division": "D2"
+  }, {
+    "season": "37",
+    "division": "E1"
   }],
-  "Egor Kulikov": [{
+  "egor kulikov": [{
     "season": "1",
     "division": "D8"
   }, {
@@ -8847,7 +8890,7 @@
     "season": "8",
     "division": "D6"
   }],
-  "Evilpirate": [{
+  "evilpirate": [{
     "season": "8",
     "division": "E1"
   }],
@@ -8855,11 +8898,15 @@
     "season": "8",
     "division": "E3"
   }],
+  "cat girl": [{
+    "season": "8",
+    "division": "E3"
+  }],
   "critchie": [{
     "season": "8",
     "division": "E3"
   }],
-  "EFHW": [{
+  "efhw": [{
     "season": "3",
     "division": "E1"
   }, {
@@ -8869,10 +8916,6 @@
     "season": "7",
     "division": "E1"
   }, {
-    "season": "8",
-    "division": "E3"
-  }],
-  "CAT GIRL": [{
     "season": "8",
     "division": "E3"
   }],
@@ -8894,7 +8937,7 @@
     "season": "8",
     "division": "E5"
   }],
-  "Monsieur X": [{
+  "monsieur x": [{
     "season": "1",
     "division": "B2"
   }, {
@@ -8916,7 +8959,7 @@
     "season": "7",
     "division": "A1"
   }],
-  "Wandering Winder": [{
+  "wandering winder": [{
     "season": "5",
     "division": "B2"
   }, {
@@ -8936,7 +8979,7 @@
     "season": "7",
     "division": "B1"
   }],
-  "RedWing": [{
+  "redwing": [{
     "season": "6",
     "division": "C1"
   }, {
@@ -8954,18 +8997,18 @@
     "season": "7",
     "division": "C2"
   }],
-  "Flip5ide": [{
+  "flip5ide": [{
     "season": "7",
     "division": "D1"
   }],
-  "SXTLHGaiden": [{
+  "sxtlhgaiden": [{
     "season": "6",
     "division": "E2"
   }, {
     "season": "7",
     "division": "D1"
   }],
-  "CavJes": [{
+  "cavjes": [{
     "season": "7",
     "division": "D2"
   }],
@@ -8984,7 +9027,7 @@
     "season": "7",
     "division": "D3"
   }],
-  "Sebifreak": [{
+  "sebifreak": [{
     "season": "7",
     "division": "D5"
   }],
@@ -8992,19 +9035,19 @@
     "season": "7",
     "division": "E1"
   }],
-  "No one": [{
+  "no one": [{
     "season": "7",
     "division": "E2"
   }],
-  "Money Spender": [{
+  "money spender": [{
     "season": "6",
     "division": "B1"
   }],
-  "Matisyahu": [{
+  "matisyahu": [{
     "season": "6",
     "division": "B1"
   }],
-  "HarryPeteur": [{
+  "harrypeteur": [{
     "season": "1",
     "division": "D7"
   }, {
@@ -9023,11 +9066,11 @@
     "season": "6",
     "division": "B2"
   }],
-  "TheExpressicist": [{
+  "theexpressicist": [{
     "season": "6",
     "division": "C2"
   }],
-  "theright555J": [{
+  "theright555j": [{
     "season": "3",
     "division": "D1"
   }, {
@@ -9041,7 +9084,7 @@
     "season": "6",
     "division": "D3"
   }],
-  "ChessWhiz": [{
+  "chesswhiz": [{
     "season": "6",
     "division": "D3"
   }],
@@ -9049,11 +9092,11 @@
     "season": "6",
     "division": "E1"
   }],
-  "Aetheros": [{
+  "aetheros": [{
     "season": "6",
     "division": "E1"
   }],
-  "Juice2403": [{
+  "juice2403": [{
     "season": "6",
     "division": "E2"
   }],
@@ -9073,7 +9116,7 @@
     "season": "5",
     "division": "B1"
   }],
-  "Mr Anderson": [{
+  "mr anderson": [{
     "season": "1",
     "division": "B2"
   }, {
@@ -9089,7 +9132,7 @@
     "season": "5",
     "division": "B1"
   }],
-  "QwertZuiop": [{
+  "qwertzuiop": [{
     "season": "1",
     "division": "D8"
   }, {
@@ -9144,42 +9187,45 @@
     "season": "5",
     "division": "C2"
   }],
-  "Joseph2302 ": [{
+  "joseph2302 ": [{
     "season": "4",
     "division": "D2"
   }, {
     "season": "5",
     "division": "C2"
   }],
-  "Dunduks ": [{
+  "dunduks ": [{
     "season": "4",
     "division": "D4"
   }, {
     "season": "5",
     "division": "C3"
   }],
-  "MtMagus ": [{
+  "mtmagus ": [{
     "season": "4",
     "division": "D1"
   }, {
     "season": "5",
     "division": "D1"
   }],
-  "Twistedarcher ": [{
+  "twistedarcher ": [{
     "season": "4",
     "division": "D1"
   }, {
     "season": "5",
     "division": "D1"
   }],
-  "GeoLib": [{
+  "geolib": [{
     "season": "1",
     "division": "D2"
   }, {
+    "season": "2",
+    "division": "D1"
+  }, {
     "season": "5",
     "division": "D1"
   }],
-  "Hydrad": [{
+  "hydrad": [{
     "season": "3",
     "division": "E1"
   }, {
@@ -9200,7 +9246,7 @@
     "season": "5",
     "division": "D2"
   }],
-  "Temron": [{
+  "temron": [{
     "season": "1",
     "division": "C2"
   }, {
@@ -9223,11 +9269,7 @@
     "season": "5",
     "division": "D3"
   }],
-  "Ephesos": [{
-    "season": "5",
-    "division": "D3"
-  }],
-  "First World Problems": [{
+  "first world problems": [{
     "season": "5",
     "division": "D3"
   }],
@@ -9238,18 +9280,18 @@
     "season": "5",
     "division": "D4"
   }],
-  "Hugovj ": [{
+  "hugovj ": [{
     "season": "4",
     "division": "D3"
   }, {
     "season": "5",
     "division": "D4"
   }],
-  "Archetype": [{
+  "archetype": [{
     "season": "5",
     "division": "E1"
   }],
-  "EFHW ": [{
+  "efhw ": [{
     "season": "4",
     "division": "D2"
   }, {
@@ -9269,14 +9311,14 @@
     "season": "4",
     "division": "A1"
   }],
-  "Andrew Iannaconne": [{
+  "andrew iannaconne": [{
     "season": "1",
     "division": "A1"
   }, {
     "season": "4",
     "division": "C1"
   }],
-  "TomConerly": [{
+  "tomconerly": [{
     "season": "2",
     "division": "D1"
   }, {
@@ -9296,7 +9338,7 @@
     "season": "4",
     "division": "C2"
   }],
-  "Tables": [{
+  "tables": [{
     "season": "3",
     "division": "D3"
   }, {
@@ -9342,15 +9384,15 @@
     "season": "4",
     "division": "C4"
   }],
-  "Meguchan": [{
+  "meguchan": [{
     "season": "4",
     "division": "C4"
   }],
-  "Voltaire ": [{
+  "voltaire ": [{
     "season": "4",
     "division": "D1"
   }],
-  "Victor Savenije": [{
+  "victor savenije": [{
     "season": "2",
     "division": "D5"
   }, {
@@ -9368,11 +9410,11 @@
     "season": "4",
     "division": "D3"
   }],
-  "LaLight ": [{
+  "lalight ": [{
     "season": "4",
     "division": "D4"
   }],
-  "Slyfox": [{
+  "slyfox": [{
     "season": "1",
     "division": "C1"
   }, {
@@ -9382,7 +9424,7 @@
     "season": "3",
     "division": "C1"
   }],
-  "KingZog3": [{
+  "kingzog3": [{
     "season": "1",
     "division": "D4"
   }, {
@@ -9392,7 +9434,7 @@
     "season": "3",
     "division": "C2"
   }],
-  "Breezy": [{
+  "breezy": [{
     "season": "1",
     "division": "D3"
   }, {
@@ -9401,13 +9443,6 @@
   }, {
     "season": "3",
     "division": "C2"
-  }],
-  "Markowkette": [{
-    "season": "2",
-    "division": "C3"
-  }, {
-    "season": "3",
-    "division": "C3"
   }],
   "qmech": [{
     "season": "1",
@@ -9422,14 +9457,17 @@
     "season": "32",
     "division": "D7"
   }],
-  "Pitrpicko": [{
+  "pitrpicko": [{
+    "season": "1",
+    "division": "C3"
+  }, {
     "season": "2",
     "division": "D4"
   }, {
     "season": "3",
     "division": "C4"
   }],
-  "Twistedarcher": [{
+  "twistedarcher": [{
     "season": "3",
     "division": "D1"
   }],
@@ -9478,7 +9516,7 @@
     "season": "3",
     "division": "D4"
   }],
-  "Aidan Millow": [{
+  "aidan millow": [{
     "season": "1",
     "division": "D1"
   }, {
@@ -9498,34 +9536,30 @@
     "season": "3",
     "division": "E1"
   }],
-  "HiveMindEmulator": [{
+  "hivemindemulator": [{
     "season": "1",
     "division": "C1"
   }, {
     "season": "2",
     "division": "B1"
   }],
-  "Jdaki": [{
+  "jdaki": [{
     "season": "1",
     "division": "B1"
   }, {
     "season": "2",
     "division": "B2"
   }],
-  "Warrior": [{
+  "warrior": [{
     "season": "2",
     "division": "C1"
   }],
-  "Alan Malloy": [{
+  "alan malloy": [{
     "season": "1",
     "division": "D2"
   }, {
     "season": "2",
     "division": "C1"
-  }],
-  "Geolib": [{
-    "season": "2",
-    "division": "D1"
   }],
   "bama": [{
     "season": "1",
@@ -9534,21 +9568,14 @@
     "season": "2",
     "division": "D2"
   }],
-  "Turtlegods": [{
-    "season": "1",
-    "division": "D6"
-  }, {
-    "season": "2",
-    "division": "D3"
-  }],
-  "Lekkit": [{
+  "lekkit": [{
     "season": "1",
     "division": "C3"
   }, {
     "season": "2",
     "division": "D4"
   }],
-  "TheMirrorMan": [{
+  "themirrorman": [{
     "season": "1",
     "division": "D8"
   }, {
@@ -9566,25 +9593,17 @@
     "season": "2",
     "division": "E1"
   }],
-  "perrygreen": [{
-    "season": "1",
-    "division": "A1"
-  }],
   "jog": [{
     "season": "1",
     "division": "B1"
   }],
-  "Destierro": [{
+  "destierro": [{
     "season": "1",
     "division": "B1"
   }],
-  "Chan Kuan Rong": [{
+  "chan kuan rong": [{
     "season": "1",
     "division": "C1"
-  }],
-  "PitrPicko": [{
-    "season": "1",
-    "division": "C3"
   }],
   "a mad mongoose marvelously": [{
     "season": "1",
@@ -9598,7 +9617,7 @@
     "season": "1",
     "division": "D1"
   }],
-  "ConMan": [{
+  "conman": [{
     "season": "1",
     "division": "D1"
   }],
@@ -9606,15 +9625,15 @@
     "season": "1",
     "division": "D3"
   }],
-  "Havilah": [{
+  "havilah": [{
     "season": "1",
     "division": "D3"
   }],
-  "The Imp": [{
+  "the imp": [{
     "season": "1",
     "division": "D4"
   }],
-  "StrongRhino": [{
+  "strongrhino": [{
     "season": "1",
     "division": "D4"
   }],
@@ -9630,7 +9649,7 @@
     "season": "1",
     "division": "D5"
   }],
-  "Soratar": [{
+  "soratar": [{
     "season": "1",
     "division": "D5"
   }],
@@ -9638,11 +9657,11 @@
     "season": "1",
     "division": "D6"
   }],
-  "Loes U": [{
+  "loes u": [{
     "season": "1",
     "division": "D6"
   }],
-  "DerErkl\u00e4rb\u00e4r": [{
+  "dererkl\u00e4rb\u00e4r": [{
     "season": "1",
     "division": "D7"
   }],
@@ -9654,17 +9673,9 @@
     "season": "1",
     "division": "D7"
   }],
-  "Sir Elamo": [{
+  "sir elamo": [{
     "season": "1",
     "division": "D7"
-  }],
-  "hugovj": [{
-    "season": "1",
-    "division": "D8"
-  }],
-  "Dan Brooks": [{
-    "season": "28",
-    "division": "A1"
   }],
   "elementmario222": [{
     "season": "28",
@@ -9688,11 +9699,11 @@
     "season": "39",
     "division": "C2"
   }],
-  "Mediocre": [{
+  "mediocre": [{
     "season": "28",
     "division": "C1"
   }],
-  "Freaky": [{
+  "freaky": [{
     "season": "28",
     "division": "C3"
   }, {
@@ -9709,24 +9720,11 @@
     "season": "29",
     "division": "C1"
   }],
-  "jp gerber": [{
-    "season": "28",
-    "division": "D2"
-  }, {
-    "season": "29",
-    "division": "E2"
-  }, {
-    "season": "31",
-    "division": "D3"
-  }, {
-    "season": "32",
-    "division": "C4"
-  }],
-  "Mykonian": [{
+  "mykonian": [{
     "season": "28",
     "division": "D3"
   }],
-  "JakeTheZipper": [{
+  "jakethezipper": [{
     "season": "28",
     "division": "D4"
   }, {
@@ -9783,7 +9781,7 @@
     "season": "28",
     "division": "D7"
   }],
-  "AJ": [{
+  "aj": [{
     "season": "28",
     "division": "D8"
   }],
@@ -9794,11 +9792,11 @@
     "season": "29",
     "division": "D8"
   }],
-  "Combo1": [{
+  "combo1": [{
     "season": "28",
     "division": "E1"
   }],
-  "Simboubou": [{
+  "simboubou": [{
     "season": "28",
     "division": "E2"
   }, {
@@ -9818,7 +9816,7 @@
     "season": "31",
     "division": "D6"
   }],
-  "Freerk": [{
+  "freerk": [{
     "season": "28",
     "division": "E2"
   }, {
@@ -9831,7 +9829,7 @@
     "season": "35",
     "division": "D3"
   }],
-  "BaniD": [{
+  "banid": [{
     "season": "28",
     "division": "E3"
   }, {
@@ -9852,11 +9850,11 @@
     "season": "28",
     "division": "E4"
   }],
-  "BexB": [{
+  "bexb": [{
     "season": "28",
     "division": "E5"
   }],
-  "Ares": [{
+  "ares": [{
     "season": "28",
     "division": "E5"
   }, {
@@ -9968,7 +9966,7 @@
     "season": "34",
     "division": "E8"
   }],
-  "Quickrick": [{
+  "quickrick": [{
     "season": "28",
     "division": "E9"
   }, {
@@ -9981,7 +9979,7 @@
     "season": "31",
     "division": "D4"
   }],
-  "Pilot5266": [{
+  "pilot5266": [{
     "season": "28",
     "division": "E10"
   }],
@@ -10015,11 +10013,11 @@
     "season": "30",
     "division": "E15"
   }],
-  "Samneuman": [{
+  "samneuman": [{
     "season": "28",
     "division": "E13"
   }],
-  "Kupe": [{
+  "kupe": [{
     "season": "28",
     "division": "E14"
   }],
@@ -10052,14 +10050,14 @@
     "season": "28",
     "division": "E14"
   }],
-  "Hannibal6": [{
+  "hannibal6": [{
     "season": "28",
     "division": "E15"
   }, {
     "season": "29",
     "division": "D1"
   }],
-  "Elegant_chaos": [{
+  "elegant_chaos": [{
     "season": "28",
     "division": "E15"
   }, {
@@ -10073,7 +10071,7 @@
     "season": "28",
     "division": "E15"
   }],
-  "Cartwheelman": [{
+  "cartwheelman": [{
     "season": "28",
     "division": "E16"
   }, {
@@ -10117,7 +10115,7 @@
     "season": "39",
     "division": "F5"
   }],
-  "Beth": [{
+  "beth": [{
     "season": "28",
     "division": "F1"
   }, {
@@ -10161,14 +10159,14 @@
     "season": "29",
     "division": "F12"
   }],
-  "Dihan.eira": [{
+  "dihan.eira": [{
     "season": "28",
     "division": "F2"
   }, {
     "season": "29",
     "division": "F10"
   }],
-  "Haypon": [{
+  "haypon": [{
     "season": "28",
     "division": "F3"
   }, {
@@ -10192,7 +10190,7 @@
     "season": "31",
     "division": "E11"
   }],
-  "StormCrow42": [{
+  "stormcrow42": [{
     "season": "28",
     "division": "F7"
   }, {
@@ -10202,19 +10200,19 @@
     "season": "30",
     "division": "E14"
   }],
-  "Jsmo10": [{
+  "jsmo10": [{
     "season": "28",
     "division": "F7"
   }],
-  "Nodyar": [{
+  "nodyar": [{
     "season": "28",
     "division": "F7"
   }],
-  "TJ_Moose": [{
+  "tj_moose": [{
     "season": "28",
     "division": "F7"
   }],
-  "Book Baker": [{
+  "book baker": [{
     "season": "28",
     "division": "F8"
   }, {
@@ -10275,7 +10273,7 @@
     "season": "38",
     "division": "E3"
   }],
-  "Snowdrop": [{
+  "snowdrop": [{
     "season": "28",
     "division": "F10"
   }, {
@@ -10316,7 +10314,7 @@
     "season": "28",
     "division": "F11"
   }],
-  "Y_U_DU_DIS": [{
+  "y_u_du_dis": [{
     "season": "28",
     "division": "F11"
   }],
@@ -10331,7 +10329,7 @@
     "season": "30",
     "division": "D6"
   }],
-  "Earl": [{
+  "earl": [{
     "season": "29",
     "division": "D2"
   }, {
@@ -10441,7 +10439,7 @@
     "season": "39",
     "division": "D3"
   }],
-  "MastahMan": [{
+  "mastahman": [{
     "season": "29",
     "division": "D5"
   }, {
@@ -10451,7 +10449,7 @@
     "season": "31",
     "division": "D4"
   }],
-  "Adler": [{
+  "adler": [{
     "season": "29",
     "division": "D7"
   }],
@@ -10531,7 +10529,7 @@
     "season": "29",
     "division": "E2"
   }],
-  "Malkoir": [{
+  "malkoir": [{
     "season": "29",
     "division": "E3"
   }],
@@ -10555,7 +10553,7 @@
     "season": "33",
     "division": "E14"
   }],
-  "McSenn": [{
+  "mcsenn": [{
     "season": "29",
     "division": "E5"
   }],
@@ -10626,7 +10624,7 @@
     "season": "37",
     "division": "E10"
   }],
-  "CoweringCow": [{
+  "coweringcow": [{
     "season": "29",
     "division": "E7"
   }, {
@@ -10689,7 +10687,7 @@
     "season": "36",
     "division": "E7"
   }],
-  "Sunsfan69420": [{
+  "sunsfan69420": [{
     "season": "29",
     "division": "E8"
   }, {
@@ -10712,7 +10710,7 @@
     "season": "31",
     "division": "D1"
   }],
-  "Boon2": [{
+  "boon2": [{
     "season": "29",
     "division": "E9"
   }, {
@@ -10722,34 +10720,34 @@
     "season": "31",
     "division": "E3"
   }],
-  "Werlix": [{
+  "werlix": [{
     "season": "29",
     "division": "E11"
   }, {
     "season": "30",
     "division": "E7"
   }],
-  "U1": [{
+  "u1": [{
     "season": "29",
     "division": "E12"
   }],
-  "U2": [{
+  "u2": [{
     "season": "29",
     "division": "E12"
   }],
-  "U3": [{
+  "u3": [{
     "season": "29",
     "division": "E12"
   }],
-  "U4": [{
+  "u4": [{
     "season": "29",
     "division": "E12"
   }],
-  "U6": [{
+  "u6": [{
     "season": "29",
     "division": "E12"
   }],
-  "U5": [{
+  "u5": [{
     "season": "29",
     "division": "E12"
   }],
@@ -10764,7 +10762,7 @@
     "season": "30",
     "division": "E3"
   }],
-  "Apostolosoruler": [{
+  "apostolosoruler": [{
     "season": "29",
     "division": "E14"
   }, {
@@ -10802,7 +10800,7 @@
     "season": "29",
     "division": "E14"
   }],
-  "Dr.Kondor": [{
+  "dr.kondor": [{
     "season": "29",
     "division": "E15"
   }, {
@@ -10815,7 +10813,7 @@
     "season": "32",
     "division": "D6"
   }],
-  "MamWidelec": [{
+  "mamwidelec": [{
     "season": "29",
     "division": "E15"
   }],
@@ -10864,7 +10862,7 @@
     "season": "30",
     "division": "E9"
   }],
-  "Grunkzzz": [{
+  "grunkzzz": [{
     "season": "29",
     "division": "F1"
   }],
@@ -10872,7 +10870,7 @@
     "season": "29",
     "division": "F1"
   }],
-  "Nerdochaos": [{
+  "nerdochaos": [{
     "season": "29",
     "division": "F1"
   }, {
@@ -10904,7 +10902,7 @@
     "season": "36",
     "division": "D4"
   }],
-  "AJay887": [{
+  "ajay887": [{
     "season": "29",
     "division": "F3"
   }, {
@@ -10948,11 +10946,11 @@
     "season": "31",
     "division": "F5"
   }],
-  "Adg89": [{
+  "adg89": [{
     "season": "29",
     "division": "F3"
   }],
-  "Durgle": [{
+  "durgle": [{
     "season": "29",
     "division": "F3"
   }, {
@@ -10971,7 +10969,7 @@
     "season": "39",
     "division": "H5"
   }],
-  "Lo4dpeebl": [{
+  "lo4dpeebl": [{
     "season": "29",
     "division": "F4"
   }],
@@ -11019,7 +11017,7 @@
     "season": "29",
     "division": "F6"
   }],
-  "Supernova888": [{
+  "supernova888": [{
     "season": "29",
     "division": "F6"
   }],
@@ -11027,11 +11025,11 @@
     "season": "29",
     "division": "F6"
   }],
-  "Malanosaurus": [{
+  "malanosaurus": [{
     "season": "29",
     "division": "F6"
   }],
-  "Benvolio87": [{
+  "benvolio87": [{
     "season": "29",
     "division": "F6"
   }, {
@@ -11042,7 +11040,7 @@
     "season": "29",
     "division": "F7"
   }],
-  "JulzoftheGlen": [{
+  "julzoftheglen": [{
     "season": "29",
     "division": "F7"
   }],
@@ -11088,7 +11086,7 @@
     "season": "39",
     "division": "E5"
   }],
-  "JerTheVillageSmithy": [{
+  "jerthevillagesmithy": [{
     "season": "29",
     "division": "F8"
   }, {
@@ -11135,7 +11133,7 @@
     "season": "39",
     "division": "E4"
   }],
-  "Gwen45": [{
+  "gwen45": [{
     "season": "29",
     "division": "F9"
   }, {
@@ -11154,11 +11152,11 @@
     "season": "37",
     "division": "E6"
   }],
-  "WilburDes": [{
+  "wilburdes": [{
     "season": "29",
     "division": "F9"
   }],
-  "LovesTha": [{
+  "lovestha": [{
     "season": "29",
     "division": "F9"
   }, {
@@ -11210,7 +11208,7 @@
     "season": "29",
     "division": "F11"
   }],
-  "Xylos": [{
+  "xylos": [{
     "season": "29",
     "division": "F12"
   }],
@@ -11224,7 +11222,7 @@
     "season": "31",
     "division": "D8"
   }],
-  "MadTVFan": [{
+  "madtvfan": [{
     "season": "29",
     "division": "F13"
   }, {
@@ -11262,11 +11260,11 @@
     "season": "37",
     "division": "F1"
   }],
-  "Pythagorwalrus": [{
+  "pythagorwalrus": [{
     "season": "29",
     "division": "F13"
   }],
-  "Smutje": [{
+  "smutje": [{
     "season": "29",
     "division": "F13"
   }],
@@ -11301,7 +11299,7 @@
     "season": "39",
     "division": "A1"
   }],
-  "Sharapopovamaria": [{
+  "sharapopovamaria": [{
     "season": "30",
     "division": "D1"
   }, {
@@ -11331,13 +11329,6 @@
   }, {
     "season": "39",
     "division": "D3"
-  }],
-  "hockeysemlan": [{
-    "season": "30",
-    "division": "D2"
-  }, {
-    "season": "37",
-    "division": "E1"
   }],
   "ricardo.thaler": [{
     "season": "30",
@@ -11409,7 +11400,7 @@
     "season": "31",
     "division": "D1"
   }],
-  "Personman": [{
+  "personman": [{
     "season": "30",
     "division": "D8"
   }, {
@@ -11475,7 +11466,7 @@
     "season": "30",
     "division": "E1"
   }],
-  "Joe Cool": [{
+  "joe cool": [{
     "season": "30",
     "division": "E2"
   }, {
@@ -11502,7 +11493,7 @@
     "season": "31",
     "division": "D7"
   }],
-  "Schlafi": [{
+  "schlafi": [{
     "season": "30",
     "division": "E3"
   }, {
@@ -11541,14 +11532,14 @@
     "season": "30",
     "division": "E4"
   }],
-  "Thwart": [{
+  "thwart": [{
     "season": "30",
     "division": "E5"
   }, {
     "season": "31",
     "division": "D8"
   }],
-  "Quantumhover": [{
+  "quantumhover": [{
     "season": "30",
     "division": "E6"
   }],
@@ -11556,7 +11547,7 @@
     "season": "30",
     "division": "E6"
   }],
-  "Bonxie": [{
+  "bonxie": [{
     "season": "30",
     "division": "E6"
   }, {
@@ -11571,6 +11562,18 @@
   }, {
     "season": "34",
     "division": "E16"
+  }, {
+    "season": "36",
+    "division": "E14"
+  }, {
+    "season": "37",
+    "division": "F2"
+  }, {
+    "season": "38",
+    "division": "F13"
+  }, {
+    "season": "39",
+    "division": "H2"
   }],
   "k1511asd": [{
     "season": "30",
@@ -11595,7 +11598,7 @@
     "season": "39",
     "division": "C3"
   }],
-  "secretCaveDweller": [{
+  "secretcavedweller": [{
     "season": "30",
     "division": "E9"
   }, {
@@ -11618,7 +11621,7 @@
     "season": "39",
     "division": "E6"
   }],
-  "Lectorslunchable": [{
+  "lectorslunchable": [{
     "season": "30",
     "division": "E10"
   }, {
@@ -11638,7 +11641,7 @@
     "season": "31",
     "division": "E4"
   }],
-  "ThousandDerps": [{
+  "thousandderps": [{
     "season": "30",
     "division": "E10"
   }],
@@ -11739,7 +11742,7 @@
     "season": "33",
     "division": "E16"
   }],
-  "Denise": [{
+  "denise": [{
     "season": "30",
     "division": "F1"
   }, {
@@ -11815,7 +11818,7 @@
     "season": "30",
     "division": "F3"
   }],
-  "Pinschi": [{
+  "pinschi": [{
     "season": "30",
     "division": "F3"
   }, {
@@ -11866,11 +11869,11 @@
     "season": "36",
     "division": "D3"
   }],
-  "ILLegaL_UA": [{
+  "illegal_ua": [{
     "season": "30",
     "division": "F4"
   }],
-  "Ronbon": [{
+  "ronbon": [{
     "season": "30",
     "division": "F5"
   }],
@@ -11905,11 +11908,11 @@
     "season": "39",
     "division": "E3"
   }],
-  "Augie279": [{
+  "augie279": [{
     "season": "30",
     "division": "F6"
   }],
-  "Ravenshard": [{
+  "ravenshard": [{
     "season": "30",
     "division": "F7"
   }, {
@@ -11934,18 +11937,18 @@
     "season": "39",
     "division": "D1"
   }],
-  "Chakary": [{
+  "chakary": [{
     "season": "30",
     "division": "F7"
   }, {
     "season": "31",
     "division": "F8"
   }],
-  "Skanina": [{
+  "skanina": [{
     "season": "30",
     "division": "F7"
   }],
-  "SpicyAvocado": [{
+  "spicyavocado": [{
     "season": "30",
     "division": "F9"
   }],
@@ -11957,11 +11960,11 @@
     "season": "30",
     "division": "F9"
   }],
-  "Prismatic70": [{
+  "prismatic70": [{
     "season": "30",
     "division": "F9"
   }],
-  "GaryOfPgh2": [{
+  "garyofpgh2": [{
     "season": "30",
     "division": "F10"
   }, {
@@ -11992,7 +11995,7 @@
     "season": "39",
     "division": "E8"
   }],
-  "TheAgileBeast": [{
+  "theagilebeast": [{
     "season": "30",
     "division": "F10"
   }, {
@@ -12009,7 +12012,7 @@
     "season": "30",
     "division": "F10"
   }],
-  "Robear": [{
+  "robear": [{
     "season": "30",
     "division": "F10"
   }, {
@@ -12086,7 +12089,7 @@
     "season": "32",
     "division": "E3"
   }],
-  "Savaahn": [{
+  "savaahn": [{
     "season": "30",
     "division": "F12"
   }, {
@@ -12117,7 +12120,7 @@
     "season": "39",
     "division": "F4"
   }],
-  "FrenziedHavoc": [{
+  "frenziedhavoc": [{
     "season": "30",
     "division": "F13"
   }, {
@@ -12127,7 +12130,7 @@
     "season": "32",
     "division": "F1"
   }],
-  "Luther": [{
+  "luther": [{
     "season": "30",
     "division": "F13"
   }, {
@@ -12146,15 +12149,15 @@
     "season": "39",
     "division": "E5"
   }],
-  "Billy Bigalow": [{
+  "billy bigalow": [{
     "season": "30",
     "division": "F13"
   }],
-  "SaturnNation": [{
+  "saturnnation": [{
     "season": "30",
     "division": "F13"
   }],
-  "Jhaev": [{
+  "jhaev": [{
     "season": "31",
     "division": "D2"
   }],
@@ -12227,7 +12230,7 @@
     "season": "39",
     "division": "D2"
   }],
-  "Magyi": [{
+  "magyi": [{
     "season": "31",
     "division": "D8"
   }, {
@@ -12262,7 +12265,7 @@
     "season": "32",
     "division": "E9"
   }],
-  "MeNowDealWithIt": [{
+  "menowdealwithit": [{
     "season": "31",
     "division": "E3"
   }, {
@@ -12278,7 +12281,7 @@
     "season": "35",
     "division": "D8"
   }],
-  "Diggler7": [{
+  "diggler7": [{
     "season": "31",
     "division": "E4"
   }, {
@@ -12313,7 +12316,7 @@
     "season": "38",
     "division": "E2"
   }],
-  "MusicalRose": [{
+  "musicalrose": [{
     "season": "31",
     "division": "E4"
   }],
@@ -12336,11 +12339,11 @@
     "season": "36",
     "division": "D3"
   }],
-  "Mithrandir37": [{
+  "mithrandir37": [{
     "season": "31",
     "division": "E5"
   }],
-  "Stadiumite": [{
+  "stadiumite": [{
     "season": "31",
     "division": "E5"
   }, {
@@ -12363,7 +12366,7 @@
     "season": "32",
     "division": "D1"
   }],
-  "Pizzaelemblast": [{
+  "pizzaelemblast": [{
     "season": "31",
     "division": "E6"
   }, {
@@ -12412,7 +12415,7 @@
     "season": "33",
     "division": "D8"
   }],
-  "Aqlcut": [{
+  "aqlcut": [{
     "season": "31",
     "division": "E8"
   }],
@@ -12423,14 +12426,26 @@
     "season": "32",
     "division": "E7"
   }],
-  "The Jesters Girl": [{
+  "the jesters girl": [{
     "season": "31",
     "division": "E9"
   }, {
     "season": "32",
     "division": "E10"
+  }, {
+    "season": "36",
+    "division": "E9"
+  }, {
+    "season": "37",
+    "division": "E8"
+  }, {
+    "season": "38",
+    "division": "E9"
+  }, {
+    "season": "39",
+    "division": "F5"
   }],
-  "Miaww": [{
+  "miaww": [{
     "season": "31",
     "division": "E10"
   }, {
@@ -12440,7 +12455,7 @@
     "season": "33",
     "division": "D4"
   }],
-  "CNDGrrl": [{
+  "cndgrrl": [{
     "season": "31",
     "division": "E10"
   }],
@@ -12460,7 +12475,7 @@
     "season": "39",
     "division": "G6"
   }],
-  "PacificBlackDuck": [{
+  "pacificblackduck": [{
     "season": "31",
     "division": "E11"
   }],
@@ -12533,11 +12548,11 @@
     "season": "36",
     "division": "F3"
   }],
-  "PatchMag576": [{
+  "patchmag576": [{
     "season": "31",
     "division": "F2"
   }],
-  "Bandit_Boi": [{
+  "bandit_boi": [{
     "season": "31",
     "division": "F2"
   }],
@@ -12545,7 +12560,7 @@
     "season": "31",
     "division": "F2"
   }],
-  "Squonk2": [{
+  "squonk2": [{
     "season": "31",
     "division": "F3"
   }, {
@@ -12641,7 +12656,7 @@
     "season": "39",
     "division": "G6"
   }],
-  "Xristidis": [{
+  "xristidis": [{
     "season": "31",
     "division": "F4"
   }],
@@ -12671,7 +12686,7 @@
     "season": "32",
     "division": "F4"
   }],
-  "SageJude": [{
+  "sagejude": [{
     "season": "31",
     "division": "F5"
   }, {
@@ -12684,7 +12699,7 @@
     "season": "34",
     "division": "F7"
   }],
-  "Malthran": [{
+  "malthran": [{
     "season": "31",
     "division": "F6"
   }],
@@ -12702,7 +12717,7 @@
     "season": "33",
     "division": "E8"
   }],
-  "FN2187": [{
+  "fn2187": [{
     "season": "31",
     "division": "F7"
   }],
@@ -12710,7 +12725,7 @@
     "season": "31",
     "division": "F8"
   }],
-  "Shump": [{
+  "shump": [{
     "season": "31",
     "division": "F9"
   }, {
@@ -12733,7 +12748,7 @@
     "season": "39",
     "division": "H2"
   }],
-  "TonyWild": [{
+  "tonywild": [{
     "season": "31",
     "division": "F10"
   }, {
@@ -12759,7 +12774,7 @@
     "season": "31",
     "division": "F10"
   }],
-  "Gasku": [{
+  "gasku": [{
     "season": "31",
     "division": "F11"
   }, {
@@ -12815,14 +12830,14 @@
     "season": "39",
     "division": "H1"
   }],
-  "Elsebel": [{
+  "elsebel": [{
     "season": "31",
     "division": "F11"
   }, {
     "season": "32",
     "division": "F15"
   }],
-  "InspiringLeader": [{
+  "inspiringleader": [{
     "season": "31",
     "division": "F11"
   }, {
@@ -12869,7 +12884,7 @@
     "season": "36",
     "division": "F11"
   }],
-  "Constantine": [{
+  "constantine": [{
     "season": "31",
     "division": "F12"
   }],
@@ -12901,11 +12916,11 @@
     "season": "39",
     "division": "E3"
   }],
-  "Nieuwjaar": [{
+  "nieuwjaar": [{
     "season": "31",
     "division": "F12"
   }],
-  "Kaleostro": [{
+  "kaleostro": [{
     "season": "31",
     "division": "F13"
   }],
@@ -12919,7 +12934,7 @@
     "season": "33",
     "division": "F3"
   }],
-  "Tathibel": [{
+  "tathibel": [{
     "season": "32",
     "division": "C2"
   }, {
@@ -12950,7 +12965,7 @@
     "season": "33",
     "division": "D6"
   }],
-  "Harmar": [{
+  "harmar": [{
     "season": "32",
     "division": "D3"
   }],
@@ -12972,7 +12987,7 @@
     "season": "32",
     "division": "D5"
   }],
-  "Terry Pearce": [{
+  "terry pearce": [{
     "season": "32",
     "division": "D7"
   }],
@@ -12998,7 +13013,7 @@
     "season": "38",
     "division": "E11"
   }],
-  "GMY": [{
+  "gmy": [{
     "season": "32",
     "division": "E3"
   }],
@@ -13012,11 +13027,11 @@
     "season": "34",
     "division": "E7"
   }],
-  "Ixul": [{
+  "ixul": [{
     "season": "32",
     "division": "E5"
   }],
-  "Shootthemoon": [{
+  "shootthemoon": [{
     "season": "32",
     "division": "E5"
   }],
@@ -13109,11 +13124,11 @@
     "season": "35",
     "division": "E8"
   }],
-  "T Diddys Revenge": [{
+  "t diddys revenge": [{
     "season": "32",
     "division": "E9"
   }],
-  "Fircoal": [{
+  "fircoal": [{
     "season": "32",
     "division": "E10"
   }, {
@@ -13157,7 +13172,7 @@
     "season": "32",
     "division": "E13"
   }],
-  "Hubblebub": [{
+  "hubblebub": [{
     "season": "32",
     "division": "E14"
   }],
@@ -13190,7 +13205,7 @@
     "season": "32",
     "division": "F1"
   }],
-  "UNBR34K4BL3": [{
+  "unbr34k4bl3": [{
     "season": "32",
     "division": "F1"
   }, {
@@ -13240,7 +13255,7 @@
     "season": "33",
     "division": "E10"
   }],
-  "Battleslash": [{
+  "battleslash": [{
     "season": "32",
     "division": "F3"
   }, {
@@ -13311,7 +13326,7 @@
     "season": "39",
     "division": "H10"
   }],
-  "Jimbuck": [{
+  "jimbuck": [{
     "season": "32",
     "division": "F5"
   }, {
@@ -13406,7 +13421,7 @@
     "season": "32",
     "division": "F7"
   }],
-  "Schucity": [{
+  "schucity": [{
     "season": "32",
     "division": "F7"
   }, {
@@ -13416,7 +13431,7 @@
     "season": "34",
     "division": "F8"
   }],
-  "TamaraDorn": [{
+  "tamaradorn": [{
     "season": "32",
     "division": "F8"
   }, {
@@ -13468,7 +13483,7 @@
     "season": "32",
     "division": "F9"
   }],
-  "GabrielHansberry": [{
+  "gabrielhansberry": [{
     "season": "32",
     "division": "F9"
   }, {
@@ -13486,7 +13501,7 @@
     "season": "32",
     "division": "F10"
   }],
-  "MrF": [{
+  "mrf": [{
     "season": "32",
     "division": "F11"
   }],
@@ -13501,23 +13516,23 @@
     "season": "33",
     "division": "F5"
   }],
-  "Good reader": [{
+  "good reader": [{
     "season": "32",
     "division": "F11"
   }],
-  "Stevequinn123456": [{
+  "stevequinn123456": [{
     "season": "32",
     "division": "F12"
   }],
-  "LordZedd": [{
+  "lordzedd": [{
     "season": "32",
     "division": "F12"
   }],
-  "Lisa_Lou": [{
+  "lisa_lou": [{
     "season": "32",
     "division": "F12"
   }],
-  "Steinways": [{
+  "steinways": [{
     "season": "32",
     "division": "F13"
   }, {
@@ -13527,7 +13542,7 @@
     "season": "34",
     "division": "D8"
   }],
-  "Usernamegottaken": [{
+  "usernamegottaken": [{
     "season": "32",
     "division": "F13"
   }, {
@@ -13552,7 +13567,7 @@
     "season": "39",
     "division": "H1"
   }],
-  "Ray-am83": [{
+  "ray-am83": [{
     "season": "32",
     "division": "F13"
   }, {
@@ -13585,7 +13600,7 @@
     "season": "32",
     "division": "F15"
   }],
-  "Huxin": [{
+  "huxin": [{
     "season": "32",
     "division": "F15"
   }, {
@@ -13595,11 +13610,11 @@
     "season": "34",
     "division": "F12"
   }],
-  "Everdream": [{
+  "everdream": [{
     "season": "32",
     "division": "F15"
   }],
-  "Hrubio": [{
+  "hrubio": [{
     "season": "32",
     "division": "F16"
   }, {
@@ -13613,48 +13628,44 @@
     "season": "33",
     "division": "C2"
   }],
-  "Inconspicuouspanda": [{
-    "season": "33",
-    "division": "D1"
-  }],
   "benten": [{
     "season": "33",
     "division": "D2"
   }],
-  "Eckbert": [{
+  "eckbert": [{
     "season": "33",
     "division": "D3"
   }],
-  "Jzahl0301": [{
+  "jzahl0301": [{
     "season": "33",
     "division": "D4"
   }, {
     "season": "34",
     "division": "C4"
   }],
-  "MooooCow": [{
+  "moooocow": [{
     "season": "33",
     "division": "D5"
   }],
-  "Jake Abdalla": [{
+  "jake abdalla": [{
     "season": "33",
     "division": "D7"
   }, {
     "season": "34",
     "division": "C1"
   }],
-  "DividedSpy": [{
+  "dividedspy": [{
     "season": "33",
     "division": "D8"
   }, {
     "season": "39",
     "division": "E5"
   }],
-  "Therapist": [{
+  "therapist": [{
     "season": "33",
     "division": "E1"
   }],
-  "Indidindi": [{
+  "indidindi": [{
     "season": "33",
     "division": "E2"
   }, {
@@ -13675,7 +13686,7 @@
     "season": "33",
     "division": "E2"
   }],
-  "LuzC": [{
+  "luzc": [{
     "season": "33",
     "division": "E2"
   }, {
@@ -13689,7 +13700,7 @@
     "season": "34",
     "division": "E4"
   }],
-  "Cattallia": [{
+  "cattallia": [{
     "season": "33",
     "division": "E5"
   }, {
@@ -13735,14 +13746,14 @@
     "season": "33",
     "division": "E6"
   }],
-  "Briguy__": [{
+  "briguy__": [{
     "season": "33",
     "division": "E7"
   }, {
     "season": "34",
     "division": "D3"
   }],
-  "Briawna": [{
+  "briawna": [{
     "season": "33",
     "division": "E7"
   }, {
@@ -13806,7 +13817,7 @@
     "season": "39",
     "division": "H5"
   }],
-  "DDL": [{
+  "ddl": [{
     "season": "33",
     "division": "E10"
   }, {
@@ -13819,11 +13830,11 @@
     "season": "39",
     "division": "E7"
   }],
-  "Kya": [{
+  "kya": [{
     "season": "33",
     "division": "E11"
   }],
-  "iMAGO": [{
+  "imago": [{
     "season": "33",
     "division": "E12"
   }, {
@@ -13843,7 +13854,7 @@
     "season": "35",
     "division": "D5"
   }],
-  "Theta.Chi": [{
+  "theta.chi": [{
     "season": "33",
     "division": "E14"
   }, {
@@ -13917,7 +13928,7 @@
     "season": "37",
     "division": "E2"
   }],
-  "GMoney597": [{
+  "gmoney597": [{
     "season": "33",
     "division": "F2"
   }],
@@ -13925,7 +13936,7 @@
     "season": "33",
     "division": "F3"
   }],
-  "G.Xi.Wan": [{
+  "g.xi.wan": [{
     "season": "33",
     "division": "F3"
   }],
@@ -13964,17 +13975,20 @@
     "season": "39",
     "division": "H9"
   }],
-  "Eldrich": [{
+  "eldrich": [{
     "season": "33",
     "division": "F5"
   }],
-  "ValenarS": [{
+  "valenars": [{
     "season": "33",
     "division": "F6"
   }],
-  "Crazyjok3r": [{
+  "crazyjok3r": [{
     "season": "33",
     "division": "F6"
+  }, {
+    "season": "39",
+    "division": "H7"
   }],
   "blackknight1": [{
     "season": "33",
@@ -13992,7 +14006,7 @@
     "season": "37",
     "division": "E8"
   }],
-  "UrielGR": [{
+  "urielgr": [{
     "season": "33",
     "division": "F7"
   }, {
@@ -14021,7 +14035,7 @@
     "season": "39",
     "division": "H8"
   }],
-  "MelbaToast": [{
+  "melbatoast": [{
     "season": "33",
     "division": "F9"
   }, {
@@ -14036,7 +14050,7 @@
     "season": "33",
     "division": "F10"
   }],
-  "Moonshadow70": [{
+  "moonshadow70": [{
     "season": "33",
     "division": "F11"
   }, {
@@ -14068,11 +14082,11 @@
     "season": "33",
     "division": "F12"
   }],
-  "Carduelis28": [{
+  "carduelis28": [{
     "season": "33",
     "division": "F12"
   }],
-  "Aharow21": [{
+  "aharow21": [{
     "season": "33",
     "division": "F14"
   }, {
@@ -14085,7 +14099,7 @@
     "season": "39",
     "division": "H15"
   }],
-  "JNails": [{
+  "jnails": [{
     "season": "34",
     "division": "C1"
   }, {
@@ -14105,7 +14119,7 @@
     "season": "36",
     "division": "D5"
   }],
-  "ConradThePug": [{
+  "conradthepug": [{
     "season": "34",
     "division": "D2"
   }],
@@ -14113,7 +14127,7 @@
     "season": "34",
     "division": "D5"
   }],
-  "Vault Big Money": [{
+  "vault big money": [{
     "season": "34",
     "division": "D5"
   }],
@@ -14144,7 +14158,7 @@
     "season": "39",
     "division": "F3"
   }],
-  "iBuyOldGames": [{
+  "ibuyoldgames": [{
     "season": "34",
     "division": "E4"
   }, {
@@ -14161,7 +14175,7 @@
     "season": "36",
     "division": "E7"
   }],
-  "Billygoatscruff": [{
+  "billygoatscruff": [{
     "season": "34",
     "division": "E7"
   }, {
@@ -14194,14 +14208,14 @@
     "season": "39",
     "division": "F7"
   }],
-  "Pseudo-ku": [{
+  "pseudo-ku": [{
     "season": "34",
     "division": "E11"
   }, {
     "season": "35",
     "division": "D4"
   }],
-  "3_2_Sky_Dive": [{
+  "3_2_sky_dive": [{
     "season": "34",
     "division": "E12"
   }],
@@ -14215,7 +14229,7 @@
     "season": "36",
     "division": "E13"
   }],
-  "Dominionplayer10": [{
+  "dominionplayer10": [{
     "season": "34",
     "division": "E13"
   }, {
@@ -14252,7 +14266,7 @@
     "season": "36",
     "division": "D7"
   }],
-  "Masumaro": [{
+  "masumaro": [{
     "season": "34",
     "division": "E16"
   }, {
@@ -14265,7 +14279,7 @@
     "season": "37",
     "division": "D3"
   }],
-  "Cyniverve": [{
+  "cyniverve": [{
     "season": "34",
     "division": "E16"
   }],
@@ -14291,7 +14305,7 @@
     "season": "34",
     "division": "F2"
   }],
-  "Redly": [{
+  "redly": [{
     "season": "34",
     "division": "F2"
   }, {
@@ -14310,7 +14324,7 @@
     "season": "39",
     "division": "E8"
   }],
-  "RainbowChalice": [{
+  "rainbowchalice": [{
     "season": "34",
     "division": "F2"
   }, {
@@ -14333,14 +14347,14 @@
     "season": "34",
     "division": "F2"
   }],
-  "Richelieu": [{
+  "richelieu": [{
     "season": "34",
     "division": "F3"
   }, {
     "season": "35",
     "division": "F11"
   }],
-  "Sydyk": [{
+  "sydyk": [{
     "season": "34",
     "division": "F3"
   }, {
@@ -14383,29 +14397,29 @@
     "season": "37",
     "division": "E12"
   }],
-  "PrimitivePainter": [{
+  "primitivepainter": [{
     "season": "34",
     "division": "F5"
   }],
-  "Drimple": [{
+  "drimple": [{
     "season": "34",
     "division": "F5"
   }, {
     "season": "35",
     "division": "F8"
   }],
-  "BBQ_Nutt": [{
+  "bbq_nutt": [{
     "season": "34",
     "division": "F8"
   }],
-  "BuffaloBill19": [{
+  "buffalobill19": [{
     "season": "34",
     "division": "F8"
   }, {
     "season": "35",
     "division": "F10"
   }],
-  "helpIhearSomone": [{
+  "helpihearsomone": [{
     "season": "34",
     "division": "F9"
   }],
@@ -14416,7 +14430,7 @@
     "season": "35",
     "division": "F9"
   }],
-  "Greta_X": [{
+  "greta_x": [{
     "season": "34",
     "division": "F9"
   }, {
@@ -14426,32 +14440,32 @@
     "season": "39",
     "division": "H6"
   }],
-  "Shiloh88": [{
+  "shiloh88": [{
     "season": "34",
     "division": "F10"
   }, {
     "season": "35",
     "division": "F11"
   }],
-  "Darantius": [{
+  "darantius": [{
     "season": "34",
     "division": "F11"
   }, {
     "season": "35",
     "division": "E5"
   }],
-  "Sarcyn": [{
+  "sarcyn": [{
     "season": "34",
     "division": "F12"
   }],
-  "NoDaLie": [{
+  "nodalie": [{
     "season": "34",
     "division": "F12"
   }, {
     "season": "35",
     "division": "F1"
   }],
-  "OG Patrik": [{
+  "og patrik": [{
     "season": "34",
     "division": "F13"
   }, {
@@ -14464,7 +14478,7 @@
     "season": "39",
     "division": "G3"
   }],
-  "Josh287": [{
+  "josh287": [{
     "season": "34",
     "division": "F13"
   }],
@@ -14472,20 +14486,26 @@
     "season": "34",
     "division": "F14"
   }],
-  "Kokoszkabut": [{
+  "kokoszkabut": [{
     "season": "34",
     "division": "F14"
   }, {
     "season": "35",
     "division": "F2"
   }],
-  "SmashUrComputrz": [{
+  "smashurcomputrz": [{
     "season": "34",
     "division": "F14"
   }],
   "napoleon1805": [{
     "season": "34",
     "division": "F15"
+  }, {
+    "season": "37",
+    "division": "E3"
+  }, {
+    "season": "39",
+    "division": "E2"
   }],
   "math": [{
     "season": "35",
@@ -14539,11 +14559,11 @@
     "season": "39",
     "division": "D2"
   }],
-  "Timmeeh": [{
+  "timmeeh": [{
     "season": "35",
     "division": "E2"
   }],
-  "LoffeKarlsson": [{
+  "loffekarlsson": [{
     "season": "35",
     "division": "E3"
   }, {
@@ -14556,14 +14576,14 @@
     "season": "38",
     "division": "E16"
   }],
-  "ThomasK": [{
+  "thomask": [{
     "season": "35",
     "division": "E4"
   }, {
     "season": "36",
     "division": "E12"
   }],
-  "Chimera": [{
+  "chimera": [{
     "season": "35",
     "division": "E7"
   }, {
@@ -14596,11 +14616,11 @@
     "season": "39",
     "division": "C1"
   }],
-  "DougWalker": [{
+  "dougwalker": [{
     "season": "35",
     "division": "E11"
   }],
-  "Hagbard": [{
+  "hagbard": [{
     "season": "35",
     "division": "E12"
   }],
@@ -14608,11 +14628,11 @@
     "season": "35",
     "division": "E14"
   }],
-  "Trumplestiltskin": [{
+  "trumplestiltskin": [{
     "season": "35",
     "division": "E14"
   }],
-  "Nez477": [{
+  "nez477": [{
     "season": "35",
     "division": "E15"
   }, {
@@ -14638,7 +14658,7 @@
     "season": "37",
     "division": "E2"
   }],
-  "Host": [{
+  "host": [{
     "season": "35",
     "division": "F2"
   }, {
@@ -14654,7 +14674,7 @@
     "season": "39",
     "division": "E3"
   }],
-  "NewFan": [{
+  "newfan": [{
     "season": "35",
     "division": "F2"
   }],
@@ -14665,14 +14685,14 @@
     "season": "36",
     "division": "F10"
   }],
-  "MYTFYN": [{
+  "mytfyn": [{
     "season": "35",
     "division": "F3"
   }, {
     "season": "36",
     "division": "F9"
   }],
-  "Mikebones404": [{
+  "mikebones404": [{
     "season": "35",
     "division": "F3"
   }, {
@@ -14712,7 +14732,7 @@
     "season": "37",
     "division": "E10"
   }],
-  "TenneseeJed": [{
+  "tenneseejed": [{
     "season": "35",
     "division": "F6"
   }],
@@ -14736,11 +14756,11 @@
     "season": "37",
     "division": "E14"
   }],
-  "Texurepack": [{
+  "texurepack": [{
     "season": "35",
     "division": "F7"
   }],
-  "Gold22": [{
+  "gold22": [{
     "season": "35",
     "division": "F7"
   }, {
@@ -14756,7 +14776,7 @@
     "season": "39",
     "division": "E8"
   }],
-  "Alayne": [{
+  "alayne": [{
     "season": "35",
     "division": "F7"
   }],
@@ -14786,7 +14806,7 @@
     "season": "37",
     "division": "F10"
   }],
-  "Provinceable": [{
+  "provinceable": [{
     "season": "35",
     "division": "F9"
   }, {
@@ -14860,7 +14880,7 @@
     "season": "38",
     "division": "C2"
   }],
-  "Shakalaki": [{
+  "shakalaki": [{
     "season": "36",
     "division": "D7"
   }, {
@@ -14873,7 +14893,7 @@
     "season": "39",
     "division": "B2"
   }],
-  "DEGwer": [{
+  "degwer": [{
     "season": "36",
     "division": "D7"
   }],
@@ -14903,7 +14923,7 @@
     "season": "39",
     "division": "F8"
   }],
-  "Hazelrah": [{
+  "hazelrah": [{
     "season": "36",
     "division": "E2"
   }, {
@@ -14914,7 +14934,7 @@
     "season": "36",
     "division": "E2"
   }],
-  "Epicurus": [{
+  "epicurus": [{
     "season": "36",
     "division": "E3"
   }],
@@ -14925,11 +14945,11 @@
     "season": "37",
     "division": "E14"
   }],
-  "DawgDawgDawgDog": [{
+  "dawgdawgdawgdog": [{
     "season": "36",
     "division": "E4"
   }],
-  "Spiraler": [{
+  "spiraler": [{
     "season": "36",
     "division": "E5"
   }, {
@@ -14955,15 +14975,15 @@
     "season": "39",
     "division": "G4"
   }],
-  "Zarakava": [{
+  "zarakava": [{
     "season": "36",
     "division": "E7"
   }],
-  "Benab": [{
+  "benab": [{
     "season": "36",
     "division": "E7"
   }],
-  "DaveDave": [{
+  "davedave": [{
     "season": "36",
     "division": "E8"
   }, {
@@ -14976,28 +14996,15 @@
     "season": "39",
     "division": "E7"
   }],
-  "Madman Mike": [{
+  "madman mike": [{
     "season": "36",
     "division": "E9"
   }],
-  "WinkingOwl123": [{
+  "winkingowl123": [{
     "season": "36",
     "division": "E9"
   }],
-  "the jesters girl": [{
-    "season": "36",
-    "division": "E9"
-  }, {
-    "season": "37",
-    "division": "E8"
-  }, {
-    "season": "38",
-    "division": "E9"
-  }, {
-    "season": "39",
-    "division": "F5"
-  }],
-  "TeakPitkin": [{
+  "teakpitkin": [{
     "season": "36",
     "division": "E10"
   }, {
@@ -15010,26 +15017,13 @@
     "season": "39",
     "division": "F8"
   }],
-  "Jakel309": [{
+  "jakel309": [{
     "season": "36",
     "division": "E10"
   }],
   "fujinamisatoru": [{
     "season": "36",
     "division": "E11"
-  }],
-  "bonxie": [{
-    "season": "36",
-    "division": "E14"
-  }, {
-    "season": "37",
-    "division": "F2"
-  }, {
-    "season": "38",
-    "division": "F13"
-  }, {
-    "season": "39",
-    "division": "H2"
   }],
   "catoftheyear": [{
     "season": "36",
@@ -15044,11 +15038,11 @@
     "season": "39",
     "division": "C3"
   }],
-  "Whovillage": [{
+  "whovillage": [{
     "season": "36",
     "division": "E15"
   }],
-  "Araline": [{
+  "araline": [{
     "season": "36",
     "division": "F1"
   }],
@@ -15069,7 +15063,7 @@
     "season": "39",
     "division": "G5"
   }],
-  "ACuriousParadox": [{
+  "acuriousparadox": [{
     "season": "36",
     "division": "F2"
   }, {
@@ -15086,7 +15080,7 @@
     "season": "36",
     "division": "F3"
   }],
-  "Giga13": [{
+  "giga13": [{
     "season": "36",
     "division": "F4"
   }, {
@@ -15096,7 +15090,7 @@
     "season": "38",
     "division": "E7"
   }],
-  "HobbesTheCat": [{
+  "hobbesthecat": [{
     "season": "36",
     "division": "F5"
   }],
@@ -15113,7 +15107,7 @@
     "season": "39",
     "division": "H13"
   }],
-  "Doctor Futurity": [{
+  "doctor futurity": [{
     "season": "36",
     "division": "F6"
   }],
@@ -15132,7 +15126,7 @@
     "season": "36",
     "division": "F7"
   }],
-  "FrezTane": [{
+  "freztane": [{
     "season": "36",
     "division": "F8"
   }, {
@@ -15153,7 +15147,7 @@
     "season": "39",
     "division": "C3"
   }],
-  "JPreto": [{
+  "jpreto": [{
     "season": "37",
     "division": "E2"
   }, {
@@ -15163,14 +15157,7 @@
     "season": "39",
     "division": "E4"
   }],
-  "Napoleon1805": [{
-    "season": "37",
-    "division": "E3"
-  }, {
-    "season": "39",
-    "division": "E2"
-  }],
-  "34Witches": [{
+  "34witches": [{
     "season": "37",
     "division": "E3"
   }, {
@@ -15190,7 +15177,7 @@
     "season": "39",
     "division": "E2"
   }],
-  "Shiz": [{
+  "shiz": [{
     "season": "37",
     "division": "E4"
   }, {
@@ -15200,7 +15187,7 @@
     "season": "39",
     "division": "E1"
   }],
-  "SimonWyeJR": [{
+  "simonwyejr": [{
     "season": "37",
     "division": "E5"
   }, {
@@ -15210,7 +15197,7 @@
     "season": "39",
     "division": "E2"
   }],
-  "Livo": [{
+  "livo": [{
     "season": "37",
     "division": "E5"
   }, {
@@ -15224,7 +15211,7 @@
     "season": "37",
     "division": "E7"
   }],
-  "JoeBot": [{
+  "joebot": [{
     "season": "37",
     "division": "E10"
   }],
@@ -15258,7 +15245,7 @@
     "season": "39",
     "division": "G5"
   }],
-  "BobMathrotus": [{
+  "bobmathrotus": [{
     "season": "37",
     "division": "E14"
   }, {
@@ -15268,11 +15255,11 @@
     "season": "39",
     "division": "F6"
   }],
-  "Morph": [{
+  "morph": [{
     "season": "37",
     "division": "E15"
   }],
-  "Copparking": [{
+  "copparking": [{
     "season": "37",
     "division": "F1"
   }, {
@@ -15290,7 +15277,7 @@
     "season": "37",
     "division": "F1"
   }],
-  "Cyber28": [{
+  "cyber28": [{
     "season": "37",
     "division": "F2"
   }, {
@@ -15300,18 +15287,18 @@
     "season": "39",
     "division": "G2"
   }],
-  "Littleducky": [{
+  "littleducky": [{
     "season": "37",
     "division": "F2"
   }],
-  "Luin Gor": [{
+  "luin gor": [{
     "season": "37",
     "division": "F3"
   }, {
     "season": "38",
     "division": "F11"
   }],
-  "Flatirons": [{
+  "flatirons": [{
     "season": "37",
     "division": "F4"
   }, {
@@ -15321,7 +15308,7 @@
     "season": "39",
     "division": "H11"
   }],
-  "Makpak": [{
+  "makpak": [{
     "season": "37",
     "division": "F4"
   }],
@@ -15349,11 +15336,11 @@
     "season": "37",
     "division": "F5"
   }],
-  "Iridium": [{
+  "iridium": [{
     "season": "37",
     "division": "F6"
   }],
-  "Bob1": [{
+  "bob1": [{
     "season": "37",
     "division": "F6"
   }, {
@@ -15363,7 +15350,7 @@
     "season": "39",
     "division": "H12"
   }],
-  "Rexdeanrds": [{
+  "rexdeanrds": [{
     "season": "37",
     "division": "F7"
   }],
@@ -15371,11 +15358,11 @@
     "season": "37",
     "division": "F8"
   }],
-  "Prempehj": [{
+  "prempehj": [{
     "season": "37",
     "division": "F8"
   }],
-  "RedCube7": [{
+  "redcube7": [{
     "season": "37",
     "division": "F9"
   }],
@@ -15442,28 +15429,21 @@
     "season": "39",
     "division": "E4"
   }],
-  "malmerung": [{
-    "season": "38",
-    "division": "E5"
-  }, {
-    "season": "39",
-    "division": "E3"
-  }],
-  "DumpTruck82": [{
+  "dumptruck82": [{
     "season": "38",
     "division": "E6"
   }, {
     "season": "39",
     "division": "E6"
   }],
-  "Yodzeity": [{
+  "yodzeity": [{
     "season": "38",
     "division": "E6"
   }, {
     "season": "39",
     "division": "E7"
   }],
-  "DaveDude": [{
+  "davedude": [{
     "season": "38",
     "division": "E6"
   }, {
@@ -15481,14 +15461,14 @@
     "season": "39",
     "division": "E7"
   }],
-  "AurellHarmonics": [{
+  "aurellharmonics": [{
     "season": "38",
     "division": "E8"
   }, {
     "season": "39",
     "division": "F7"
   }],
-  "FlaverMe": [{
+  "flaverme": [{
     "season": "38",
     "division": "E8"
   }],
@@ -15506,7 +15486,7 @@
     "season": "39",
     "division": "E3"
   }],
-  "Cobun13": [{
+  "cobun13": [{
     "season": "38",
     "division": "E9"
   }],
@@ -15514,7 +15494,7 @@
     "season": "38",
     "division": "E10"
   }],
-  "Thabo": [{
+  "thabo": [{
     "season": "38",
     "division": "E10"
   }, {
@@ -15553,50 +15533,50 @@
     "season": "39",
     "division": "F3"
   }],
-  "RoSaLuN": [{
+  "rosalun": [{
     "season": "38",
     "division": "E14"
   }],
-  "topAAs": [{
+  "topaas": [{
     "season": "38",
     "division": "E15"
   }, {
     "season": "39",
     "division": "E4"
   }],
-  "Jackblack": [{
+  "jackblack": [{
     "season": "38",
     "division": "E15"
   }, {
     "season": "39",
     "division": "F3"
   }],
-  "PreddY": [{
+  "preddy": [{
     "season": "38",
     "division": "E16"
   }],
-  "Katrin90": [{
+  "katrin90": [{
     "season": "38",
     "division": "E16"
   }, {
     "season": "39",
     "division": "G3"
   }],
-  "Swoosh": [{
+  "swoosh": [{
     "season": "38",
     "division": "F1"
   }, {
     "season": "39",
     "division": "G5"
   }],
-  "Alphy": [{
+  "alphy": [{
     "season": "38",
     "division": "F1"
   }, {
     "season": "39",
     "division": "G5"
   }],
-  "Rozyroz": [{
+  "rozyroz": [{
     "season": "38",
     "division": "F2"
   }, {
@@ -15610,14 +15590,14 @@
     "season": "39",
     "division": "G8"
   }],
-  "SilverSmith": [{
+  "silversmith": [{
     "season": "38",
     "division": "F3"
   }, {
     "season": "39",
     "division": "H15"
   }],
-  "Dominion Beast": [{
+  "dominion beast": [{
     "season": "38",
     "division": "F4"
   }, {
@@ -15631,7 +15611,7 @@
     "season": "39",
     "division": "G4"
   }],
-  "Melkordom": [{
+  "melkordom": [{
     "season": "38",
     "division": "F4"
   }, {
@@ -15663,18 +15643,18 @@
     "season": "39",
     "division": "H12"
   }],
-  "SuperGraceless": [{
+  "supergraceless": [{
     "season": "38",
     "division": "F6"
   }, {
     "season": "39",
     "division": "H14"
   }],
-  "DuchyDancer": [{
+  "duchydancer": [{
     "season": "38",
     "division": "F6"
   }],
-  "_DumbOnion_": [{
+  "_dumbonion_": [{
     "season": "38",
     "division": "F7"
   }, {
@@ -15688,14 +15668,14 @@
     "season": "39",
     "division": "H15"
   }],
-  "YodWisdom": [{
+  "yodwisdom": [{
     "season": "38",
     "division": "F7"
   }, {
     "season": "39",
     "division": "H9"
   }],
-  "BloodPlum": [{
+  "bloodplum": [{
     "season": "38",
     "division": "F8"
   }, {
@@ -15713,21 +15693,21 @@
     "season": "38",
     "division": "F9"
   }],
-  "Alipata": [{
+  "alipata": [{
     "season": "38",
     "division": "F10"
   }, {
     "season": "39",
     "division": "G3"
   }],
-  "Hackybaby": [{
+  "hackybaby": [{
     "season": "38",
     "division": "F11"
   }, {
     "season": "39",
     "division": "G1"
   }],
-  "Marliz3e": [{
+  "marliz3e": [{
     "season": "38",
     "division": "F11"
   }, {
@@ -15745,7 +15725,7 @@
     "season": "39",
     "division": "G1"
   }],
-  "Hyogaah": [{
+  "hyogaah": [{
     "season": "38",
     "division": "F12"
   }, {
@@ -15763,23 +15743,23 @@
     "season": "38",
     "division": "F13"
   }],
-  "La-Ya": [{
+  "la-ya": [{
     "season": "39",
     "division": "D1"
   }],
-  "Card Master": [{
+  "card master": [{
     "season": "39",
     "division": "E1"
   }],
-  "S_Smart": [{
+  "s_smart": [{
     "season": "39",
     "division": "E6"
   }],
-  "FarmerBen": [{
+  "farmerben": [{
     "season": "39",
     "division": "E6"
   }],
-  "EyeVanMaliceSon": [{
+  "eyevanmaliceson": [{
     "season": "39",
     "division": "E7"
   }],
@@ -15791,7 +15771,7 @@
     "season": "39",
     "division": "F1"
   }],
-  "Acalc79": [{
+  "acalc79": [{
     "season": "39",
     "division": "F1"
   }],
@@ -15799,7 +15779,7 @@
     "season": "39",
     "division": "F2"
   }],
-  "Iras42": [{
+  "iras42": [{
     "season": "39",
     "division": "F2"
   }],
@@ -15807,11 +15787,11 @@
     "season": "39",
     "division": "F2"
   }],
-  "Jonas92": [{
+  "jonas92": [{
     "season": "39",
     "division": "F2"
   }],
-  "Risolan": [{
+  "risolan": [{
     "season": "39",
     "division": "F2"
   }],
@@ -15835,19 +15815,19 @@
     "season": "39",
     "division": "F6"
   }],
-  "DerpKaiser": [{
+  "derpkaiser": [{
     "season": "39",
     "division": "F6"
   }],
-  "HRoll": [{
+  "hroll": [{
     "season": "39",
     "division": "F7"
   }],
-  "ScoopyPls": [{
+  "scoopypls": [{
     "season": "39",
     "division": "F7"
   }],
-  "Fullwagon": [{
+  "fullwagon": [{
     "season": "39",
     "division": "F7"
   }],
@@ -15859,11 +15839,11 @@
     "season": "39",
     "division": "F8"
   }],
-  "Plazek": [{
+  "plazek": [{
     "season": "39",
     "division": "G1"
   }],
-  "Absurdicus": [{
+  "absurdicus": [{
     "season": "39",
     "division": "G1"
   }],
@@ -15871,11 +15851,11 @@
     "season": "39",
     "division": "G2"
   }],
-  "AcceptableBunny": [{
+  "acceptablebunny": [{
     "season": "39",
     "division": "G2"
   }],
-  "Zodians": [{
+  "zodians": [{
     "season": "39",
     "division": "G3"
   }],
@@ -15883,7 +15863,7 @@
     "season": "39",
     "division": "G4"
   }],
-  "DesertWhale": [{
+  "desertwhale": [{
     "season": "39",
     "division": "G5"
   }],
@@ -15891,7 +15871,7 @@
     "season": "39",
     "division": "G6"
   }],
-  "ReedBros": [{
+  "reedbros": [{
     "season": "39",
     "division": "G6"
   }],
@@ -15899,15 +15879,15 @@
     "season": "39",
     "division": "G7"
   }],
-  "NotAVan": [{
+  "notavan": [{
     "season": "39",
     "division": "G8"
   }],
-  "StrongBelwas": [{
+  "strongbelwas": [{
     "season": "39",
     "division": "G8"
   }],
-  "xCaivio": [{
+  "xcaivio": [{
     "season": "39",
     "division": "H1"
   }],
@@ -15915,7 +15895,7 @@
     "season": "39",
     "division": "H1"
   }],
-  "Whomanist": [{
+  "whomanist": [{
     "season": "39",
     "division": "H1"
   }],
@@ -15927,11 +15907,11 @@
     "season": "39",
     "division": "H2"
   }],
-  "Pyruet": [{
+  "pyruet": [{
     "season": "39",
     "division": "H2"
   }],
-  "Hankiepankie": [{
+  "hankiepankie": [{
     "season": "39",
     "division": "H3"
   }],
@@ -15943,27 +15923,27 @@
     "season": "39",
     "division": "H3"
   }],
-  "Elviernestocajugar": [{
+  "elviernestocajugar": [{
     "season": "39",
     "division": "H3"
   }],
-  "Osti92": [{
+  "osti92": [{
     "season": "39",
     "division": "H4"
   }],
-  "Drkschneider": [{
+  "drkschneider": [{
     "season": "39",
     "division": "H4"
   }],
-  "Das B13st": [{
+  "das b13st": [{
     "season": "39",
     "division": "H4"
   }],
-  "Nomis Retep": [{
+  "nomis retep": [{
     "season": "39",
     "division": "H4"
   }],
-  "Kuo Chong Chin": [{
+  "kuo chong chin": [{
     "season": "39",
     "division": "H5"
   }],
@@ -15983,7 +15963,7 @@
     "season": "39",
     "division": "H6"
   }],
-  "AAsmiles": [{
+  "aasmiles": [{
     "season": "39",
     "division": "H6"
   }],
@@ -15995,11 +15975,7 @@
     "season": "39",
     "division": "H7"
   }],
-  "SamSmith2505": [{
-    "season": "39",
-    "division": "H7"
-  }],
-  "crazyjok3r": [{
+  "samsmith2505": [{
     "season": "39",
     "division": "H7"
   }],
@@ -16019,7 +15995,7 @@
     "season": "39",
     "division": "H8"
   }],
-  "Darklight": [{
+  "darklight": [{
     "season": "39",
     "division": "H8"
   }],
@@ -16027,7 +16003,7 @@
     "season": "39",
     "division": "H9"
   }],
-  "Smogilski": [{
+  "smogilski": [{
     "season": "39",
     "division": "H9"
   }],
@@ -16035,7 +16011,7 @@
     "season": "39",
     "division": "H9"
   }],
-  "IamAnoob1": [{
+  "iamanoob1": [{
     "season": "39",
     "division": "H10"
   }],
@@ -16063,11 +16039,11 @@
     "season": "39",
     "division": "H12"
   }],
-  "Ok play saboteur": [{
+  "ok play saboteur": [{
     "season": "39",
     "division": "H12"
   }],
-  "Dbloslim": [{
+  "dbloslim": [{
     "season": "39",
     "division": "H12"
   }],
@@ -16083,7 +16059,7 @@
     "season": "39",
     "division": "H13"
   }],
-  "KarratKake": [{
+  "karratkake": [{
     "season": "39",
     "division": "H14"
   }],
@@ -16099,7 +16075,7 @@
     "season": "39",
     "division": "H15"
   }],
-  "DefMike": [{
+  "defmike": [{
     "season": "39",
     "division": "H15"
   }],
@@ -16111,11 +16087,11 @@
     "season": "39",
     "division": "H16"
   }],
-  "McWaffle": [{
+  "mcwaffle": [{
     "season": "39",
     "division": "H16"
   }],
-  "Lorettamm": [{
+  "lorettamm": [{
     "season": "39",
     "division": "H16"
   }]

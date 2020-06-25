@@ -8,7 +8,12 @@ layout: default
     <h5><a href="{{site.baseurl}}/past_standings.html">View All Past Season Standings</a></h5>
     <p> Search for a player (eg. Mic Qsenoch) and view their league history for all seasons they've participated in. </p>
     <div class="spacing"> </div>
-
+    <!--
+    <select name="order" id="order">
+      <option value="desc">Descending</option>
+      <option value="asc">Ascending</option>
+    </select>
+    -->
     <input class="input-player" type="text" id="player_search" placeholder="Search for player name" />
     <br>
     <button onclick="searchPlayerHistory()">Search</button>
@@ -42,7 +47,10 @@ function searchPlayerHistory(){
     cache_children = 0;
 
     var player_name = document.getElementById("player_search").value;
-    var player_seasons = players_and_seasons[player_name];
+    //var order = document.getElementById("order").value;
+    player_name = player_name.toLowerCase();
+    let player_seasons = players_and_seasons[player_name];
+    player_seasons = player_seasons.slice().reverse();
     console.log(player_seasons);
 
     var num_seasons = player_seasons.length;
@@ -70,10 +78,10 @@ function searchPlayerHistory(){
 
         // Create table
         var table = document.createElement("table");
-        table.style.width = '70%';
-        table.style.marginBottom = "10px";
+        table.classList.add('table-player-database');
+        //table.style.marginBottom = "10px";
         table.setAttribute('align', 'center');
-        table.setAttribute('border', '1px solid black');
+        table.setAttribute('border', '2px solid grey');
 
         // Create division heading
         var division_row = document.createElement("tr");
@@ -87,10 +95,12 @@ function searchPlayerHistory(){
 
         // Create table heading
         var col = ["Rank", "Player", "W", "L", "Win %"];
+        var col_width = ["10%", "55%", "10%", "10%", "15%"];
         var h_row = document.createElement("tr");
         for (let j = 0; j < col.length; j++) {
             var th = document.createElement("th");
             th.innerHTML = col[j];
+            th.style.width = col_width[j];
             h_row.appendChild(th);
         }
         table.appendChild(h_row);
@@ -107,7 +117,7 @@ function searchPlayerHistory(){
             rank.innerHTML = row_info["rank"];
             d_row.appendChild(rank);
             var player = document.createElement("td");
-            if (row_info["name"] == player_name) {
+            if (row_info["name"].toLowerCase() == player_name) {
               player.innerHTML = "<b>" + row_info["name"] + "</b>";
             } else {
               player.innerHTML = row_info["name"];

@@ -219,6 +219,20 @@ tbody {
   width: 100%;
 }
 
+/* Table Player Database */
+.table-player-database {
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  align: center;
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .table-player-database {
+    width: 100%;
+  }
+}
+
 .table-past-standings {
   border: 2px solid grey;
   border-collapse: collapse;

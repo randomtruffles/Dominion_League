@@ -30,7 +30,8 @@ for s_key in seasons.keys():
         members_data = season_data[division]["members"]
 
         # Add member data
-        for member in members_data.keys():
+        for m in members_data.keys():
+            member = m.lower()
             if member in players:
                 players[member] = players[member] + [{"season": season, "division" : division}]
             else:
