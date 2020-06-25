@@ -15,9 +15,9 @@ layout: default
       <option value="asc">Ascending</option>
     </select>
     -->
-    <input class="input-player" onfocus="this.value=''" type="text" id="player_search" placeholder="Search for player name" />
+    <input class="input-player" onfocus="this.value=''" type="text" id="input_player_search" placeholder="Search for player name" />
     <br>
-    <button data-title="hello!" onclick="searchPlayerHistory()">Search</button>
+    <button id="search_player_history_btn" title="search" onclick="searchPlayerHistory()">Search</button>
     <br>
     <br>
     <p id="url_param_tutorial"> You can also search by adding the <code>player</code> param to this url, using <code>%20</code> to represent spaces between names.
@@ -41,6 +41,17 @@ let cache_children = 0;
 // Get URL parameter
 searchPlayerHistory(true);
 
+// Execute a function when the user releases a key on the keyboard
+input_player_search.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("search_player_history_btn").click();
+  }
+});
+
 function getPlayerParam() {
   var urlParam = function(name, w){
       w = w || window;
@@ -58,7 +69,7 @@ function getPlayerParam() {
 // Generate search results
 function searchPlayerHistory(param=false){
 
-    var entered_player_name = document.getElementById("player_search").value;
+    var entered_player_name = document.getElementById("input_player_search").value;
 
     //var order = document.getElementById("order").value;
     player_name = entered_player_name.toLowerCase();
