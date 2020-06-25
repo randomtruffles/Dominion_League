@@ -140,6 +140,8 @@
     <!-- /.container-fluid -->
 </nav>
 
+<button onclick="toTopFunction()" id="scrollToTopBtn" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
+
 <!--
     
       
@@ -1653,37 +1655,59 @@
     
     </div>
     <hr>
-      <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Dominion League 2020</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                      <a href="https://dominion.games">
-                        <img src="/img/icons/vp_token.png" alt="Dominion Games Client" style="width:40px;border:0">
-                      </a>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                      <a href="https://discord.gg/666Upcq">
-                        <img src="/img/buttons/discord.png" alt="Dominion Discord" style="width:160px;border:0">
-                      </a>
-                    </ul>
-                </div>
-                <!--
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="sign-ups.html">Sign-up!</a>
-                        </li>
-                    </ul>
-                </div>
-                -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Dominion League 2020</span>
             </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                  <a href="https://dominion.games">
+                    <img src="/img/icons/vp_token.png" alt="Dominion Games Client" style="width:40px;border:0">
+                  </a>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                  <a href="https://discord.gg/666Upcq">
+                    <img src="/img/buttons/discord.png" alt="Dominion Discord" style="width:160px;border:0">
+                  </a>
+                </ul>
+            </div>
+            <!--
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li><a href="sign-ups.html">Sign-up!</a>
+                    </li>
+                </ul>
+            </div>
+            -->
         </div>
-    </footer>
+    </div>
+</footer>
+
+<script>
+  //Scroll to top button
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function toTopFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 
      <!-- jQuery Version 1.11.0 -->
     <script src="/js/jquery-1.11.0.js"></script>
