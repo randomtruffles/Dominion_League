@@ -8,7 +8,7 @@ with open('../_data/leagueHistory_20200602.json') as file:
 Helper functions
 """
 def assign_color(value):
-    gradient = ["F2585C", "F06154", "EE6E50", "EC7C4D", "EA8A4A", "E79846", "E5A743", "E3B540", "E1C43C", "DFD439", "D6DC36", "C2DA33", "ADD830", "99D62D", "85D42A", "70D127", "5BCF25", "46CD22", "31CB1F", "1DC91D"]
+    gradient = ["E77B72", "E88372", "EA8C71", "EC956F", "EF9E6E", "F2A76D", "F4B06B", "F7B96B", "F9C269", "FCCB67", "FED467", "F2D467", "E2D26B", "D0CF6F", "C0CC73", "AFCA76", "9EC77A", "8CC47E", "7CC181", "6DBF84", "5BBC88"]
     gradient.reverse()
     steps = len(gradient)
     range = 101
