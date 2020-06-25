@@ -50,7 +50,6 @@ def fpct(pct):
 # Value is between 0 and 100.
 def assign_color(value):
     gradient = ["E77B72", "E88372", "EA8C71", "EC956F", "EF9E6E", "F2A76D", "F4B06B", "F7B96B", "F9C269", "FCCB67", "FED467", "F2D467", "E2D26B", "D0CF6F", "C0CC73", "AFCA76", "9EC77A", "8CC47E", "7CC181", "6DBF84", "5BBC88"]
-    gradient.reverse()
     steps = len(gradient)
     range = 101
     def bgcolor(color):
