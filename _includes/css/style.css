@@ -218,10 +218,10 @@ tbody {
   font-family: {{ site.data.template.font.secondary }};
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .table-player-database {
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -232,13 +232,16 @@ tbody {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  font-size: 17px;
 }
 
-@media (max-width: 800px) {
-  .table-player-standings {
+@media (max-width: 700px) {
+  .table-past-standings {
     width: 100%;
+    font-size: 14px;
   }
 }
+
 .database-division-header {
   font-weight: 700;
   font-family: {{ site.data.template.font.primary }};
