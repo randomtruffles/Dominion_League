@@ -3,7 +3,7 @@ title: Season 39 - Newsletter
 subtitle: The First Eight-Tier Season
 layout: post
 date: 2020-03-17
-categories: 
+categories:
 author: SamE
 description:
 
@@ -24,4 +24,4 @@ Apart from this big change, we only have a few small changes (see the minutes be
 While there is a lot of change going on, it helps to have a steady set of leaders. We will have the exact same moderator crew for the fourth consecutive season!
 
 **Suggestions?**
-As a reminder, you can reply to this forum post with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of May 9-10, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)
+As a reminder, you can reply to [the forum post](http://forum.dominionstrategy.com/index.php?topic=20176.0) with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of May 9-10, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)

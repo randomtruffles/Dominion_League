@@ -3,7 +3,7 @@ title: Season 40 - Newsletter
 subtitle: Quarantines Lead to Explosive Growth
 layout: post
 date: 2020-05-12
-categories: 
+categories:
 author: SamE
 
 ---
@@ -35,4 +35,4 @@ Joining in Season 40: Cave-o-sapien, Earl, eh1414, H.exe, truffles
 
 _Suggestions?_
 
-As a reminder, you can reply to this forum post with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of July 4-5, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)
+As a reminder, you can reply to [the forum post](http://forum.dominionstrategy.com/index.php?topic=20349.0) with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of July 4-5, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)

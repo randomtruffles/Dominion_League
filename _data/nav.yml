@@ -23,7 +23,7 @@
 - name: Matches
   path: matches.html
 - name: Posts
-  path: newsletters.html
+  path: posts.html
   section_id: newsletters
 - name: Contact
   path: contact.html
