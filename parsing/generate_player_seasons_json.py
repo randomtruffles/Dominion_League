@@ -17,7 +17,7 @@ players is a dictionary mapping player name to player information
 }
 """
 players = {}
-
+players_to_case_sensitive_name = {}
 # Load seasons
 seasons = data["seasons"]
 
@@ -31,10 +31,12 @@ for s_key in seasons.keys():
 
         # Add member data
         for member in members_data.keys():
-            if member in players:
-                players[member] = players[member] + [{"season": season, "division" : division}]
+            case_insensitive_member = member.lower()
+            if case_insensitive_member in players:
+                players[case_insensitive_member] = players[case_insensitive_member] + [{"season": season, "division" : division}]
             else:
-                players[member] = [{"season": season, "division" : division}]
+                players[case_insensitive_member] = [{"season": season, "division" : division}]
+            players_to_case_sensitive_name[case_insensitive_member] = member
 
 sorted_players = {}
 # Sort player data
@@ -42,8 +44,7 @@ for player in players.keys():
     player_data = players[player]
     # Sort by season
     player_data.sort(key=lambda x: int(x["season"]))
-    player_case_insensitive = player.lower()
-    sorted_players[player_case_insensitive] = {"name" : player, "seasons" : player_data}
+    sorted_players[player] = {"name" : players_to_case_sensitive_name[player], "seasons" : player_data}
 
 file = "../_data/player_and_seasons_played.json"
 with open(file, 'w') as filetowrite:

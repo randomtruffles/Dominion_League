@@ -34013,8 +34013,8 @@
         "name": "C1",
         "tier": "C",
         "members": {
-          "kylar ": {
-            "name": "kylar ",
+          "kylar": {
+            "name": "kylar",
             "wins": "14",
             "losses": "10",
             "rank": 1,
@@ -34064,7 +34064,7 @@
         },
         "results": [{
           "player1": "liopoil",
-          "player2": "kylar ",
+          "player2": "kylar",
           "wins1": "2",
           "wins2": "4"
         }, {
@@ -34088,17 +34088,17 @@
           "wins1": "4.5",
           "wins2": "1.5"
         }, {
-          "player1": "kylar ",
+          "player1": "kylar",
           "player2": "Beyond Awesome",
           "wins1": "2",
           "wins2": "4"
         }, {
-          "player1": "kylar ",
+          "player1": "kylar",
           "player2": "jaybeez",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "kylar ",
+          "player1": "kylar",
           "player2": "theblankman",
           "wins1": "5",
           "wins2": "1"
@@ -34178,8 +34178,8 @@
             "pct": "48%",
             "color": "#ADD329"
           },
-          "Joseph2302 ": {
-            "name": "Joseph2302 ",
+          "Joseph2302": {
+            "name": "Joseph2302",
             "wins": "10",
             "losses": "20",
             "rank": 6,
@@ -34209,7 +34209,7 @@
           "wins2": "2.5"
         }, {
           "player1": "soulnet",
-          "player2": "Joseph2302 ",
+          "player2": "Joseph2302",
           "wins1": "6",
           "wins2": "0"
         }, {
@@ -34229,7 +34229,7 @@
           "wins2": "2"
         }, {
           "player1": "mpsprs",
-          "player2": "Joseph2302 ",
+          "player2": "Joseph2302",
           "wins1": "4",
           "wins2": "2"
         }, {
@@ -34244,7 +34244,7 @@
           "wins2": "4"
         }, {
           "player1": "Eevee",
-          "player2": "Joseph2302 ",
+          "player2": "Joseph2302",
           "wins1": "2",
           "wins2": "4"
         }, {
@@ -34254,12 +34254,12 @@
           "wins2": "2"
         }, {
           "player1": "gamesou",
-          "player2": "Joseph2302 ",
+          "player2": "Joseph2302",
           "wins1": "4",
           "wins2": "2"
         }, {
           "player1": "Qvist",
-          "player2": "Joseph2302 ",
+          "player2": "Joseph2302",
           "wins1": "4",
           "wins2": "2"
         }]
@@ -34292,8 +34292,8 @@
             "pct": "48%",
             "color": "#ADD329"
           },
-          "Dunduks ": {
-            "name": "Dunduks ",
+          "Dunduks": {
+            "name": "Dunduks",
             "wins": "14.5",
             "losses": "15.5",
             "rank": 4,
@@ -34329,7 +34329,7 @@
           "wins2": "1"
         }, {
           "player1": "Emeric",
-          "player2": "Dunduks ",
+          "player2": "Dunduks",
           "wins1": "3",
           "wins2": "3"
         }, {
@@ -34349,7 +34349,7 @@
           "wins2": "3"
         }, {
           "player1": "Burning Skull",
-          "player2": "Dunduks ",
+          "player2": "Dunduks",
           "wins1": "4",
           "wins2": "2"
         }, {
@@ -34364,7 +34364,7 @@
           "wins2": "2.5"
         }, {
           "player1": "awaclus",
-          "player2": "Dunduks ",
+          "player2": "Dunduks",
           "wins1": "3.5",
           "wins2": "2.5"
         }, {
@@ -34378,12 +34378,12 @@
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "Dunduks ",
+          "player1": "Dunduks",
           "player2": "faust",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "Dunduks ",
+          "player1": "Dunduks",
           "player2": "assemble me",
           "wins1": "4",
           "wins2": "2"
@@ -34406,16 +34406,16 @@
             "pct": "62%",
             "color": "#64C722"
           },
-          "MtMagus ": {
-            "name": "MtMagus ",
+          "MtMagus": {
+            "name": "MtMagus",
             "wins": "17",
             "losses": "13",
             "rank": 2,
             "pct": "57%",
             "color": "#7CCB24"
           },
-          "Twistedarcher ": {
-            "name": "Twistedarcher ",
+          "Twistedarcher": {
+            "name": "Twistedarcher",
             "wins": "14.5",
             "losses": "15.5",
             "rank": 3,
@@ -34449,12 +34449,12 @@
         },
         "results": [{
           "player1": "Heisenberg",
-          "player2": "MtMagus ",
+          "player2": "MtMagus",
           "wins1": "2",
           "wins2": "4"
         }, {
           "player1": "Heisenberg",
-          "player2": "Twistedarcher ",
+          "player2": "Twistedarcher",
           "wins1": "4.5",
           "wins2": "1.5"
         }, {
@@ -34473,37 +34473,37 @@
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "MtMagus ",
-          "player2": "Twistedarcher ",
+          "player1": "MtMagus",
+          "player2": "Twistedarcher",
           "wins1": "2",
           "wins2": "4"
         }, {
-          "player1": "MtMagus ",
+          "player1": "MtMagus",
           "player2": "GeoLib",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "MtMagus ",
+          "player1": "MtMagus",
           "player2": "anmo555",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "MtMagus ",
+          "player1": "MtMagus",
           "player2": "Hydrad",
           "wins1": "5",
           "wins2": "1"
         }, {
-          "player1": "Twistedarcher ",
+          "player1": "Twistedarcher",
           "player2": "GeoLib",
           "wins1": "2",
           "wins2": "4"
         }, {
-          "player1": "Twistedarcher ",
+          "player1": "Twistedarcher",
           "player2": "anmo555",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "Twistedarcher ",
+          "player1": "Twistedarcher",
           "player2": "Hydrad",
           "wins1": "3",
           "wins2": "3"
@@ -34528,8 +34528,8 @@
         "name": "D2",
         "tier": "D",
         "members": {
-          "andwilk ": {
-            "name": "andwilk ",
+          "andwilk": {
+            "name": "andwilk",
             "wins": "15.5",
             "losses": "8.5",
             "rank": 1,
@@ -34560,8 +34560,8 @@
             "pct": "46%",
             "color": "#C7D72B"
           },
-          "jerni ": {
-            "name": "jerni ",
+          "jerni": {
+            "name": "jerni",
             "wins": "6",
             "losses": "18",
             "rank": 5,
@@ -34570,23 +34570,23 @@
           }
         },
         "results": [{
-          "player1": "andwilk ",
+          "player1": "andwilk",
           "player2": "ThaddeusB",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "andwilk ",
+          "player1": "andwilk",
           "player2": "Rubby",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "andwilk ",
+          "player1": "andwilk",
           "player2": "Dingan",
           "wins1": "5",
           "wins2": "1"
         }, {
-          "player1": "andwilk ",
-          "player2": "jerni ",
+          "player1": "andwilk",
+          "player2": "jerni",
           "wins1": "3.5",
           "wins2": "2.5"
         }, {
@@ -34601,7 +34601,7 @@
           "wins2": "2"
         }, {
           "player1": "ThaddeusB",
-          "player2": "jerni ",
+          "player2": "jerni",
           "wins1": "5",
           "wins2": "1"
         }, {
@@ -34611,12 +34611,12 @@
           "wins2": "3"
         }, {
           "player1": "Rubby",
-          "player2": "jerni ",
+          "player2": "jerni",
           "wins1": "4.5",
           "wins2": "1.5"
         }, {
           "player1": "Dingan",
-          "player2": "jerni ",
+          "player2": "jerni",
           "wins1": "5",
           "wins2": "1"
         }]
@@ -34641,8 +34641,8 @@
             "pct": "57%",
             "color": "#7CCB24"
           },
-          "kfm ": {
-            "name": "kfm ",
+          "kfm": {
+            "name": "kfm",
             "wins": "13.5",
             "losses": "16.5",
             "rank": 3,
@@ -34681,7 +34681,7 @@
           "wins2": "3"
         }, {
           "player1": "Temron",
-          "player2": "kfm ",
+          "player2": "kfm",
           "wins1": "6",
           "wins2": "0"
         }, {
@@ -34696,7 +34696,7 @@
           "wins2": "1"
         }, {
           "player1": "Sirusc",
-          "player2": "kfm ",
+          "player2": "kfm",
           "wins1": "2.5",
           "wins2": "3.5"
         }, {
@@ -34715,17 +34715,17 @@
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "kfm ",
+          "player1": "kfm",
           "player2": "M0G3L",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "kfm ",
+          "player1": "kfm",
           "player2": "First World Problems",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "kfm ",
+          "player1": "kfm",
           "player2": "Ephesos",
           "wins1": "4",
           "wins2": "2"
@@ -34748,8 +34748,8 @@
             "pct": "67%",
             "color": "#4CC320"
           },
-          "rogavka ": {
-            "name": "rogavka ",
+          "rogavka": {
+            "name": "rogavka",
             "wins": "9.5",
             "losses": "8.5",
             "rank": 2,
@@ -34764,8 +34764,8 @@
             "pct": "47%",
             "color": "#ADD329"
           },
-          "Hugovj ": {
-            "name": "Hugovj ",
+          "Hugovj": {
+            "name": "Hugovj",
             "wins": "6",
             "losses": "12",
             "rank": 4,
@@ -34775,7 +34775,7 @@
         },
         "results": [{
           "player1": "Egor Kulikov",
-          "player2": "rogavka ",
+          "player2": "rogavka",
           "wins1": "5",
           "wins2": "1"
         }, {
@@ -34785,22 +34785,22 @@
           "wins2": "2.5"
         }, {
           "player1": "Egor Kulikov",
-          "player2": "Hugovj ",
+          "player2": "Hugovj",
           "wins1": "3.5",
           "wins2": "2.5"
         }, {
-          "player1": "rogavka ",
+          "player1": "rogavka",
           "player2": "Jean-Michel",
           "wins1": "5",
           "wins2": "1"
         }, {
-          "player1": "rogavka ",
-          "player2": "Hugovj ",
+          "player1": "rogavka",
+          "player2": "Hugovj",
           "wins1": "3.5",
           "wins2": "2.5"
         }, {
           "player1": "Jean-Michel",
-          "player2": "Hugovj ",
+          "player2": "Hugovj",
           "wins1": "5",
           "wins2": "1"
         }]
@@ -34849,8 +34849,8 @@
             "pct": "40%",
             "color": "#DBD52D"
           },
-          "EFHW ": {
-            "name": "EFHW ",
+          "EFHW": {
+            "name": "EFHW",
             "wins": "9",
             "losses": "21",
             "rank": 6,
@@ -34875,7 +34875,7 @@
           "wins2": "2"
         }, {
           "player1": "ryan.echternacht",
-          "player2": "EFHW ",
+          "player2": "EFHW",
           "wins1": "5",
           "wins2": "1"
         }, {
@@ -34890,7 +34890,7 @@
           "wins2": "1"
         }, {
           "player1": "Jeb",
-          "player2": "EFHW ",
+          "player2": "EFHW",
           "wins1": "3",
           "wins2": "3"
         }, {
@@ -34905,7 +34905,7 @@
           "wins2": "3"
         }, {
           "player1": "Archetype",
-          "player2": "EFHW ",
+          "player2": "EFHW",
           "wins1": "5",
           "wins2": "1"
         }, {
@@ -34915,12 +34915,12 @@
           "wins2": "2"
         }, {
           "player1": "Elanchana",
-          "player2": "EFHW ",
+          "player2": "EFHW",
           "wins1": "4",
           "wins2": "2"
         }, {
           "player1": "jamfamsam",
-          "player2": "EFHW ",
+          "player2": "EFHW",
           "wins1": "4",
           "wins2": "2"
         }]
@@ -35804,40 +35804,40 @@
         "name": "D1",
         "tier": "D",
         "members": {
-          "kylar ": {
-            "name": "kylar ",
+          "kylar": {
+            "name": "kylar",
             "wins": "18.5",
             "losses": "5.5",
             "rank": 1,
             "pct": "77%",
             "color": "#1EBB1C"
           },
-          "Twistedarcher ": {
-            "name": "Twistedarcher ",
+          "Twistedarcher": {
+            "name": "Twistedarcher",
             "wins": "12",
             "losses": "12",
             "rank": 2,
             "pct": "50%",
             "color": "#ADD329"
           },
-          "MtMagus ": {
-            "name": "MtMagus ",
+          "MtMagus": {
+            "name": "MtMagus",
             "wins": "12",
             "losses": "12",
             "rank": 3,
             "pct": "50%",
             "color": "#ADD329"
           },
-          "jerni ": {
-            "name": "jerni ",
+          "jerni": {
+            "name": "jerni",
             "wins": "9",
             "losses": "15",
             "rank": 4,
             "pct": "38%",
             "color": "#DBD52D"
           },
-          "Voltaire ": {
-            "name": "Voltaire ",
+          "Voltaire": {
+            "name": "Voltaire",
             "wins": "8.5",
             "losses": "15.5",
             "rank": 5,
@@ -35846,53 +35846,53 @@
           }
         },
         "results": [{
-          "player1": "kylar ",
-          "player2": "Twistedarcher ",
+          "player1": "kylar",
+          "player2": "Twistedarcher",
           "wins1": "5",
           "wins2": "1"
         }, {
-          "player1": "kylar ",
-          "player2": "MtMagus ",
+          "player1": "kylar",
+          "player2": "MtMagus",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "kylar ",
-          "player2": "jerni ",
+          "player1": "kylar",
+          "player2": "jerni",
           "wins1": "5.5",
           "wins2": "0.5"
         }, {
-          "player1": "kylar ",
-          "player2": "Voltaire ",
+          "player1": "kylar",
+          "player2": "Voltaire",
           "wins1": "5",
           "wins2": "1"
         }, {
-          "player1": "Twistedarcher ",
-          "player2": "MtMagus ",
+          "player1": "Twistedarcher",
+          "player2": "MtMagus",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "Twistedarcher ",
-          "player2": "jerni ",
+          "player1": "Twistedarcher",
+          "player2": "jerni",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "Twistedarcher ",
-          "player2": "Voltaire ",
+          "player1": "Twistedarcher",
+          "player2": "Voltaire",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "MtMagus ",
-          "player2": "jerni ",
+          "player1": "MtMagus",
+          "player2": "jerni",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "MtMagus ",
-          "player2": "Voltaire ",
+          "player1": "MtMagus",
+          "player2": "Voltaire",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "jerni ",
-          "player2": "Voltaire ",
+          "player1": "jerni",
+          "player2": "Voltaire",
           "wins1": "3.5",
           "wins2": "2.5"
         }]
@@ -35901,32 +35901,32 @@
         "name": "D2",
         "tier": "D",
         "members": {
-          "Joseph2302 ": {
-            "name": "Joseph2302 ",
+          "Joseph2302": {
+            "name": "Joseph2302",
             "wins": "13.5",
             "losses": "4.5",
             "rank": 1,
             "pct": "75%",
             "color": "#35BF1E"
           },
-          "kfm ": {
-            "name": "kfm ",
+          "kfm": {
+            "name": "kfm",
             "wins": "11.5",
             "losses": "6.5",
             "rank": 2,
             "pct": "64%",
             "color": "#64C722"
           },
-          "andwilk ": {
-            "name": "andwilk ",
+          "andwilk": {
+            "name": "andwilk",
             "wins": "5",
             "losses": "7",
             "rank": 3,
             "pct": "42%",
             "color": "#C7D72B"
           },
-          "EFHW ": {
-            "name": "EFHW ",
+          "EFHW": {
+            "name": "EFHW",
             "wins": "0",
             "losses": "12",
             "rank": 4,
@@ -35935,28 +35935,28 @@
           }
         },
         "results": [{
-          "player1": "Joseph2302 ",
-          "player2": "kfm ",
+          "player1": "Joseph2302",
+          "player2": "kfm",
           "wins1": "4.5",
           "wins2": "1.5"
         }, {
-          "player1": "Joseph2302 ",
-          "player2": "andwilk ",
+          "player1": "Joseph2302",
+          "player2": "andwilk",
           "wins1": "3",
           "wins2": "3"
         }, {
-          "player1": "Joseph2302 ",
-          "player2": "EFHW ",
+          "player1": "Joseph2302",
+          "player2": "EFHW",
           "wins1": "6",
           "wins2": "0"
         }, {
-          "player1": "kfm ",
-          "player2": "andwilk ",
+          "player1": "kfm",
+          "player2": "andwilk",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "kfm ",
-          "player2": "EFHW ",
+          "player1": "kfm",
+          "player2": "EFHW",
           "wins1": "6",
           "wins2": "0"
         }]
@@ -35981,8 +35981,8 @@
             "pct": "60%",
             "color": "#7CCB24"
           },
-          "Hugovj ": {
-            "name": "Hugovj ",
+          "Hugovj": {
+            "name": "Hugovj",
             "wins": "18",
             "losses": "12",
             "rank": 3,
@@ -35997,16 +35997,16 @@
             "pct": "52%",
             "color": "#94CF26"
           },
-          "matildha ": {
-            "name": "matildha ",
+          "matildha": {
+            "name": "matildha",
             "wins": "12",
             "losses": "18",
             "rank": 5,
             "pct": "40%",
             "color": "#DBD52D"
           },
-          "pst ": {
-            "name": "pst ",
+          "pst": {
+            "name": "pst",
             "wins": "7.5",
             "losses": "22.5",
             "rank": 6,
@@ -36021,7 +36021,7 @@
           "wins2": "4"
         }, {
           "player1": "assemble me",
-          "player2": "Hugovj ",
+          "player2": "Hugovj",
           "wins1": "3",
           "wins2": "3"
         }, {
@@ -36031,17 +36031,17 @@
           "wins2": "2"
         }, {
           "player1": "assemble me",
-          "player2": "matildha ",
+          "player2": "matildha",
           "wins1": "5",
           "wins2": "1"
         }, {
           "player1": "assemble me",
-          "player2": "pst ",
+          "player2": "pst",
           "wins1": "5",
           "wins2": "1"
         }, {
           "player1": "Victor Savenije",
-          "player2": "Hugovj ",
+          "player2": "Hugovj",
           "wins1": "3",
           "wins2": "3"
         }, {
@@ -36051,42 +36051,42 @@
           "wins2": "2"
         }, {
           "player1": "Victor Savenije",
-          "player2": "matildha ",
+          "player2": "matildha",
           "wins1": "2",
           "wins2": "4"
         }, {
           "player1": "Victor Savenije",
-          "player2": "pst ",
+          "player2": "pst",
           "wins1": "5",
           "wins2": "1"
         }, {
-          "player1": "Hugovj ",
+          "player1": "Hugovj",
           "player2": "Sirusc",
           "wins1": "2",
           "wins2": "4"
         }, {
-          "player1": "Hugovj ",
-          "player2": "matildha ",
+          "player1": "Hugovj",
+          "player2": "matildha",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "Hugovj ",
-          "player2": "pst ",
+          "player1": "Hugovj",
+          "player2": "pst",
           "wins1": "6",
           "wins2": "0"
         }, {
           "player1": "Sirusc",
-          "player2": "matildha ",
+          "player2": "matildha",
           "wins1": "4",
           "wins2": "2"
         }, {
           "player1": "Sirusc",
-          "player2": "pst ",
+          "player2": "pst",
           "wins1": "3.5",
           "wins2": "2.5"
         }, {
-          "player1": "matildha ",
-          "player2": "pst ",
+          "player1": "matildha",
+          "player2": "pst",
           "wins1": "3",
           "wins2": "3"
         }]
@@ -36095,8 +36095,8 @@
         "name": "D4",
         "tier": "D",
         "members": {
-          "Dunduks ": {
-            "name": "Dunduks ",
+          "Dunduks": {
+            "name": "Dunduks",
             "wins": "14",
             "losses": "10",
             "rank": 1,
@@ -36111,8 +36111,8 @@
             "pct": "54%",
             "color": "#94CF26"
           },
-          "rogavka ": {
-            "name": "rogavka ",
+          "rogavka": {
+            "name": "rogavka",
             "wins": "11.5",
             "losses": "12.5",
             "rank": 3,
@@ -36127,8 +36127,8 @@
             "pct": "47%",
             "color": "#ADD329"
           },
-          "LaLight ": {
-            "name": "LaLight ",
+          "LaLight": {
+            "name": "LaLight",
             "wins": "7",
             "losses": "11",
             "rank": 5,
@@ -36137,28 +36137,28 @@
           }
         },
         "results": [{
-          "player1": "Dunduks ",
+          "player1": "Dunduks",
           "player2": "Egor Kulikov",
           "wins1": "5",
           "wins2": "1"
         }, {
-          "player1": "Dunduks ",
-          "player2": "rogavka ",
+          "player1": "Dunduks",
+          "player2": "rogavka",
           "wins1": "2",
           "wins2": "4"
         }, {
-          "player1": "Dunduks ",
+          "player1": "Dunduks",
           "player2": "JP Gerber",
           "wins1": "2",
           "wins2": "4"
         }, {
-          "player1": "Dunduks ",
-          "player2": "LaLight ",
+          "player1": "Dunduks",
+          "player2": "LaLight",
           "wins1": "5",
           "wins2": "1"
         }, {
           "player1": "Egor Kulikov",
-          "player2": "rogavka ",
+          "player2": "rogavka",
           "wins1": "5",
           "wins2": "1"
         }, {
@@ -36168,17 +36168,17 @@
           "wins2": "3"
         }, {
           "player1": "Egor Kulikov",
-          "player2": "LaLight ",
+          "player2": "LaLight",
           "wins1": "4",
           "wins2": "2"
         }, {
-          "player1": "rogavka ",
+          "player1": "rogavka",
           "player2": "JP Gerber",
           "wins1": "4.5",
           "wins2": "1.5"
         }, {
-          "player1": "rogavka ",
-          "player2": "LaLight ",
+          "player1": "rogavka",
+          "player2": "LaLight",
           "wins1": "2",
           "wins2": "4"
         }]
@@ -95378,7 +95378,7 @@
       }
     },
     "39": {
-      "champion" : "Mic Qsenoch",
+      "champion": "Mic Qsenoch",
       "A1": {
         "name": "A1",
         "tier": "A",

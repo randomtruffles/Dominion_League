@@ -106,14 +106,18 @@ for s in data:
 
         for m in d["members"]:
             member_data = {}
-            member_data["name"] = m["name"]
+            name = m["name"].strip()
+            if name == "Voltaire " :
+                print("strip failed")
+
+            member_data["name"] = name
             member_data["wins"] = "{0:g}".format(round(m["wins"],2))
             member_data["losses"] = "{0:g}".format(round(m["losses"],2))
             member_data["rank"] = m["rank"] + zero_index
             member_data["pct"] = fpct(m["pct"])
             member_data["color"] = assign_color(int(m["pct"]*100))
 
-            members[m["name"]] = member_data
+            members[name] = member_data
 
         # order by rank
         sorted_members_by_rank = {}
@@ -125,7 +129,18 @@ for s in data:
             i += 1
 
         division_data["members"] = sorted_members_by_rank
-        division_data["results"] = d["results"]
+
+        results = []
+        for r in d["results"]:
+            results_data = {}
+            results_data["player1"] = r["player1"].strip()
+            results_data["player2"] = r["player2"].strip()
+            results_data["wins1"] = r["wins1"]
+            results_data["wins2"] = r["wins2"]
+
+            results.append(results_data)
+
+        division_data["results"] = results
 
         # store division_data in divisions dictionary
         divisions[division] = division_data

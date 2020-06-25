@@ -280,6 +280,15 @@
     "seasons": [{
       "season": "1",
       "division": "A1"
+    }, {
+      "season": "25",
+      "division": "B1"
+    }, {
+      "season": "26",
+      "division": "A1"
+    }, {
+      "season": "27",
+      "division": "A1"
     }]
   },
   "rabid": {
@@ -2173,7 +2182,7 @@
     }]
   },
   "awaclus": {
-    "name": "awaclus",
+    "name": "Awaclus",
     "seasons": [{
       "season": "1",
       "division": "C4"
@@ -2207,6 +2216,12 @@
     }, {
       "season": "12",
       "division": "C3"
+    }, {
+      "season": "27",
+      "division": "C4"
+    }, {
+      "season": "28",
+      "division": "C2"
     }]
   },
   "dg": {
@@ -2507,6 +2522,12 @@
       "season": "3",
       "division": "D1"
     }, {
+      "season": "4",
+      "division": "D1"
+    }, {
+      "season": "5",
+      "division": "D1"
+    }, {
       "season": "6",
       "division": "D3"
     }, {
@@ -2638,6 +2659,9 @@
     }, {
       "season": "2",
       "division": "D3"
+    }, {
+      "season": "27",
+      "division": "D2"
     }]
   },
   "thepilferer": {
@@ -2936,6 +2960,9 @@
     "seasons": [{
       "season": "18",
       "division": "D2"
+    }, {
+      "season": "27",
+      "division": "D5"
     }]
   },
   "hertz doughnut": {
@@ -3206,6 +3233,12 @@
     }, {
       "season": "3",
       "division": "D3"
+    }, {
+      "season": "4",
+      "division": "D2"
+    }, {
+      "season": "5",
+      "division": "C2"
     }, {
       "season": "6",
       "division": "D1"
@@ -4545,6 +4578,9 @@
   "inconspicuouspanda": {
     "name": "Inconspicuouspanda",
     "seasons": [{
+      "season": "27",
+      "division": "E13"
+    }, {
       "season": "33",
       "division": "D1"
     }]
@@ -6128,6 +6164,30 @@
     "seasons": [{
       "season": "1",
       "division": "D8"
+    }, {
+      "season": "3",
+      "division": "D4"
+    }, {
+      "season": "4",
+      "division": "D3"
+    }, {
+      "season": "5",
+      "division": "D4"
+    }, {
+      "season": "10",
+      "division": "D3"
+    }, {
+      "season": "13",
+      "division": "D4"
+    }, {
+      "season": "15",
+      "division": "D3"
+    }, {
+      "season": "25",
+      "division": "D2"
+    }, {
+      "season": "26",
+      "division": "D2"
     }]
   },
   "richardnixon": {
@@ -6296,6 +6356,12 @@
     }, {
       "season": "3",
       "division": "C4"
+    }, {
+      "season": "4",
+      "division": "D4"
+    }, {
+      "season": "5",
+      "division": "C3"
     }, {
       "season": "6",
       "division": "C1"
@@ -6568,13 +6634,22 @@
     }]
   },
   "limetime": {
-    "name": "Limetime",
+    "name": "LimeTime",
     "seasons": [{
       "season": "13",
       "division": "C2"
     }, {
       "season": "18",
       "division": "D1"
+    }, {
+      "season": "22",
+      "division": "C1"
+    }, {
+      "season": "24",
+      "division": "B2"
+    }, {
+      "season": "31",
+      "division": "B2"
     }]
   },
   "mp52": {
@@ -6711,8 +6786,11 @@
     }]
   },
   "lalight": {
-    "name": "Lalight",
+    "name": "LaLight",
     "seasons": [{
+      "season": "4",
+      "division": "D4"
+    }, {
       "season": "18",
       "division": "D4"
     }, {
@@ -6721,6 +6799,27 @@
     }, {
       "season": "20",
       "division": "D4"
+    }, {
+      "season": "21",
+      "division": "C3"
+    }, {
+      "season": "22",
+      "division": "B2"
+    }, {
+      "season": "23",
+      "division": "C3"
+    }, {
+      "season": "24",
+      "division": "C2"
+    }, {
+      "season": "32",
+      "division": "E15"
+    }, {
+      "season": "33",
+      "division": "D2"
+    }, {
+      "season": "39",
+      "division": "D3"
     }]
   },
   "sirusc": {
@@ -6853,6 +6952,18 @@
     }, {
       "season": "18",
       "division": "E1"
+    }, {
+      "season": "21",
+      "division": "D3"
+    }, {
+      "season": "22",
+      "division": "D2"
+    }, {
+      "season": "23",
+      "division": "C3"
+    }, {
+      "season": "24",
+      "division": "D3"
     }]
   },
   "ryan.echternacht": {
@@ -7413,6 +7524,9 @@
     }, {
       "season": "20",
       "division": "D3"
+    }, {
+      "season": "21",
+      "division": "C2"
     }]
   },
   "funhaver": {
@@ -7519,8 +7633,14 @@
     }]
   },
   "rogavka": {
-    "name": "ROGAVKA",
+    "name": "rogavka",
     "seasons": [{
+      "season": "4",
+      "division": "D4"
+    }, {
+      "season": "5",
+      "division": "D4"
+    }, {
       "season": "21",
       "division": "D4"
     }]
@@ -7553,7 +7673,7 @@
     }]
   },
   "makqvist": {
-    "name": "makqvist",
+    "name": "Makqvist",
     "seasons": [{
       "season": "18",
       "division": "E1"
@@ -7563,6 +7683,12 @@
     }, {
       "season": "20",
       "division": "E3"
+    }, {
+      "season": "21",
+      "division": "E2"
+    }, {
+      "season": "28",
+      "division": "F1"
     }]
   },
   "alchemist38": {
@@ -8162,6 +8288,9 @@
       "season": "8",
       "division": "C4"
     }, {
+      "season": "18",
+      "division": "C3"
+    }, {
       "season": "30",
       "division": "C1"
     }, {
@@ -8758,6 +8887,24 @@
     "seasons": [{
       "season": "5",
       "division": "D3"
+    }, {
+      "season": "6",
+      "division": "D2"
+    }, {
+      "season": "7",
+      "division": "D3"
+    }, {
+      "season": "8",
+      "division": "C2"
+    }, {
+      "season": "9",
+      "division": "B2"
+    }, {
+      "season": "10",
+      "division": "C2"
+    }, {
+      "season": "15",
+      "division": "D2"
     }]
   },
   "nara": {
@@ -8996,6 +9143,12 @@
   "dan brooks": {
     "name": "Dan Brooks",
     "seasons": [{
+      "season": "12",
+      "division": "B1"
+    }, {
+      "season": "13",
+      "division": "A1"
+    }, {
       "season": "28",
       "division": "A1"
     }]
@@ -9170,6 +9323,24 @@
   "jp gerber": {
     "name": "jp gerber",
     "seasons": [{
+      "season": "3",
+      "division": "E1"
+    }, {
+      "season": "4",
+      "division": "D4"
+    }, {
+      "season": "10",
+      "division": "D2"
+    }, {
+      "season": "11",
+      "division": "C2"
+    }, {
+      "season": "12",
+      "division": "D3"
+    }, {
+      "season": "13",
+      "division": "D3"
+    }, {
       "season": "28",
       "division": "D2"
     }, {
@@ -9360,6 +9531,9 @@
       "division": "D2"
     }, {
       "season": "3",
+      "division": "D1"
+    }, {
+      "season": "4",
       "division": "D1"
     }, {
       "season": "8",
@@ -9717,6 +9891,12 @@
       "season": "3",
       "division": "E1"
     }, {
+      "season": "4",
+      "division": "D1"
+    }, {
+      "season": "5",
+      "division": "D2"
+    }, {
       "season": "9",
       "division": "D3"
     }, {
@@ -9801,6 +9981,12 @@
       "season": "3",
       "division": "D1"
     }, {
+      "season": "4",
+      "division": "D1"
+    }, {
+      "season": "5",
+      "division": "C1"
+    }, {
       "season": "6",
       "division": "B1"
     }, {
@@ -9817,6 +10003,15 @@
   "malmerung": {
     "name": "malmerung",
     "seasons": [{
+      "season": "7",
+      "division": "D5"
+    }, {
+      "season": "8",
+      "division": "D3"
+    }, {
+      "season": "9",
+      "division": "C2"
+    }, {
       "season": "38",
       "division": "E5"
     }, {
@@ -10022,6 +10217,12 @@
       "season": "3",
       "division": "D2"
     }, {
+      "season": "4",
+      "division": "D2"
+    }, {
+      "season": "5",
+      "division": "D2"
+    }, {
       "season": "6",
       "division": "C2"
     }, {
@@ -10081,13 +10282,19 @@
     }]
   },
   "markowkette": {
-    "name": "Markowkette",
+    "name": "MarkowKette",
     "seasons": [{
+      "season": "1",
+      "division": "B2"
+    }, {
       "season": "2",
       "division": "C3"
     }, {
       "season": "3",
       "division": "C3"
+    }, {
+      "season": "8",
+      "division": "C4"
     }]
   },
   "heisenberg": {
@@ -10145,6 +10352,9 @@
   "hockeysemlan": {
     "name": "hockeysemlan",
     "seasons": [{
+      "season": "8",
+      "division": "D5"
+    }, {
       "season": "30",
       "division": "D2"
     }, {
@@ -10212,6 +10422,12 @@
     "name": "EFHW",
     "seasons": [{
       "season": "3",
+      "division": "E1"
+    }, {
+      "season": "4",
+      "division": "D2"
+    }, {
+      "season": "5",
       "division": "E1"
     }, {
       "season": "6",
@@ -10546,16 +10762,6 @@
       "division": "B1"
     }]
   },
-  "kylar ": {
-    "name": "kylar ",
-    "seasons": [{
-      "season": "4",
-      "division": "D1"
-    }, {
-      "season": "5",
-      "division": "C1"
-    }]
-  },
   "theblankman": {
     "name": "theblankman",
     "seasons": [{
@@ -10594,39 +10800,12 @@
       "division": "C2"
     }]
   },
-  "joseph2302 ": {
-    "name": "Joseph2302 ",
+  "twistedarcher": {
+    "name": "Twistedarcher",
     "seasons": [{
-      "season": "4",
-      "division": "D2"
-    }, {
-      "season": "5",
-      "division": "C2"
-    }]
-  },
-  "dunduks ": {
-    "name": "Dunduks ",
-    "seasons": [{
-      "season": "4",
-      "division": "D4"
-    }, {
-      "season": "5",
-      "division": "C3"
-    }]
-  },
-  "mtmagus ": {
-    "name": "MtMagus ",
-    "seasons": [{
-      "season": "4",
+      "season": "3",
       "division": "D1"
     }, {
-      "season": "5",
-      "division": "D1"
-    }]
-  },
-  "twistedarcher ": {
-    "name": "Twistedarcher ",
-    "seasons": [{
       "season": "4",
       "division": "D1"
     }, {
@@ -10635,9 +10814,15 @@
     }]
   },
   "geolib": {
-    "name": "Geolib",
+    "name": "GeoLib",
     "seasons": [{
+      "season": "1",
+      "division": "D2"
+    }, {
       "season": "2",
+      "division": "D1"
+    }, {
+      "season": "5",
       "division": "D1"
     }]
   },
@@ -10649,26 +10834,6 @@
     }, {
       "season": "5",
       "division": "D1"
-    }]
-  },
-  "andwilk ": {
-    "name": "andwilk ",
-    "seasons": [{
-      "season": "4",
-      "division": "D2"
-    }, {
-      "season": "5",
-      "division": "D2"
-    }]
-  },
-  "jerni ": {
-    "name": "jerni ",
-    "seasons": [{
-      "season": "4",
-      "division": "D1"
-    }, {
-      "season": "5",
-      "division": "D2"
     }]
   },
   "temron": {
@@ -10690,9 +10855,18 @@
       "division": "D3"
     }]
   },
-  "kfm ": {
-    "name": "kfm ",
+  "kfm": {
+    "name": "kfm",
     "seasons": [{
+      "season": "1",
+      "division": "D4"
+    }, {
+      "season": "2",
+      "division": "C2"
+    }, {
+      "season": "3",
+      "division": "D2"
+    }, {
       "season": "4",
       "division": "D2"
     }, {
@@ -10707,39 +10881,9 @@
       "division": "D3"
     }]
   },
-  "rogavka ": {
-    "name": "rogavka ",
-    "seasons": [{
-      "season": "4",
-      "division": "D4"
-    }, {
-      "season": "5",
-      "division": "D4"
-    }]
-  },
-  "hugovj ": {
-    "name": "Hugovj ",
-    "seasons": [{
-      "season": "4",
-      "division": "D3"
-    }, {
-      "season": "5",
-      "division": "D4"
-    }]
-  },
   "archetype": {
     "name": "Archetype",
     "seasons": [{
-      "season": "5",
-      "division": "E1"
-    }]
-  },
-  "efhw ": {
-    "name": "EFHW ",
-    "seasons": [{
-      "season": "4",
-      "division": "D2"
-    }, {
       "season": "5",
       "division": "E1"
     }]
@@ -10861,13 +11005,6 @@
       "division": "C4"
     }]
   },
-  "voltaire ": {
-    "name": "Voltaire ",
-    "seasons": [{
-      "season": "4",
-      "division": "D1"
-    }]
-  },
   "victor savenije": {
     "name": "Victor Savenije",
     "seasons": [{
@@ -10881,25 +11018,36 @@
       "division": "D3"
     }]
   },
-  "matildha ": {
-    "name": "matildha ",
+  "matildha": {
+    "name": "matildha",
     "seasons": [{
-      "season": "4",
-      "division": "D3"
-    }]
-  },
-  "pst ": {
-    "name": "pst ",
-    "seasons": [{
-      "season": "4",
-      "division": "D3"
-    }]
-  },
-  "lalight ": {
-    "name": "LaLight ",
-    "seasons": [{
-      "season": "4",
+      "season": "1",
+      "division": "D6"
+    }, {
+      "season": "2",
+      "division": "E1"
+    }, {
+      "season": "3",
       "division": "D4"
+    }, {
+      "season": "4",
+      "division": "D3"
+    }]
+  },
+  "pst": {
+    "name": "pst",
+    "seasons": [{
+      "season": "1",
+      "division": "D7"
+    }, {
+      "season": "2",
+      "division": "E1"
+    }, {
+      "season": "3",
+      "division": "E1"
+    }, {
+      "season": "4",
+      "division": "D3"
     }]
   },
   "slyfox": {
@@ -10962,13 +11110,12 @@
     "seasons": [{
       "season": "1",
       "division": "C3"
-    }]
-  },
-  "twistedarcher": {
-    "name": "Twistedarcher",
-    "seasons": [{
+    }, {
+      "season": "2",
+      "division": "D4"
+    }, {
       "season": "3",
-      "division": "D1"
+      "division": "C4"
     }]
   },
   "kipkoan": {
@@ -10982,19 +11129,6 @@
     }, {
       "season": "3",
       "division": "D1"
-    }]
-  },
-  "kfm": {
-    "name": "kfm",
-    "seasons": [{
-      "season": "1",
-      "division": "D4"
-    }, {
-      "season": "2",
-      "division": "C2"
-    }, {
-      "season": "3",
-      "division": "D2"
     }]
   },
   "jothemieden": {
@@ -11021,19 +11155,6 @@
       "division": "D4"
     }]
   },
-  "matildha": {
-    "name": "matildha",
-    "seasons": [{
-      "season": "1",
-      "division": "D6"
-    }, {
-      "season": "2",
-      "division": "E1"
-    }, {
-      "season": "3",
-      "division": "D4"
-    }]
-  },
   "aidan millow": {
     "name": "Aidan Millow",
     "seasons": [{
@@ -11045,19 +11166,6 @@
     }, {
       "season": "3",
       "division": "D5"
-    }]
-  },
-  "pst": {
-    "name": "pst",
-    "seasons": [{
-      "season": "1",
-      "division": "D7"
-    }, {
-      "season": "2",
-      "division": "E1"
-    }, {
-      "season": "3",
-      "division": "E1"
     }]
   },
   "hivemindemulator": {
@@ -13644,6 +13752,21 @@
   "bonxie": {
     "name": "bonxie",
     "seasons": [{
+      "season": "30",
+      "division": "E6"
+    }, {
+      "season": "31",
+      "division": "E14"
+    }, {
+      "season": "32",
+      "division": "E15"
+    }, {
+      "season": "33",
+      "division": "E1"
+    }, {
+      "season": "34",
+      "division": "E16"
+    }, {
       "season": "36",
       "division": "E14"
     }, {
@@ -14706,6 +14829,12 @@
   "the jesters girl": {
     "name": "the jesters girl",
     "seasons": [{
+      "season": "31",
+      "division": "E9"
+    }, {
+      "season": "32",
+      "division": "E10"
+    }, {
       "season": "36",
       "division": "E9"
     }, {
@@ -16716,6 +16845,9 @@
   "crazyjok3r": {
     "name": "crazyjok3r",
     "seasons": [{
+      "season": "33",
+      "division": "F6"
+    }, {
       "season": "39",
       "division": "H7"
     }]
@@ -17419,6 +17551,9 @@
   "napoleon1805": {
     "name": "Napoleon1805",
     "seasons": [{
+      "season": "34",
+      "division": "F15"
+    }, {
       "season": "37",
       "division": "E3"
     }, {
