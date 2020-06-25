@@ -111,6 +111,7 @@ function searchPlayerHistory(param=false){
 
     // Generate table for each season played
     }  else {
+      history.pushState({}, null, "https://dominionleague.org/player_database.html?player=tracer");
       // Newest season first
       let player_seasons = players_and_seasons[player_name];
       player_seasons = player_seasons.slice().reverse();
