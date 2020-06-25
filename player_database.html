@@ -128,7 +128,7 @@ function searchPlayerHistory(param=false){
       divContainer.appendChild(player_heading);
       cache_children += 1;
 
-      // Newest season first
+      // Sort by newest season first
       let player_seasons = players_and_seasons[player_name]["seasons"];
       player_seasons = player_seasons.slice().reverse();
       console.log(player_seasons);
@@ -139,11 +139,11 @@ function searchPlayerHistory(param=false){
       for (let i = 0; i < num_seasons; i++) {
         var season = player_seasons[i]["season"]; // Eg. "1"
         var division = player_seasons[i]["division"]; // Eg. "A1"
-        console.log(season + " " + division);
 
         // Get Table Information
         var division_data = league_history[season][division];
-        var champion = league_history[season][champion];
+        var champion = league_history[season]["champion"];
+        var champion_sym = " <i class=\" fas fa-crown\" title=\"Winner of championship match between top 2 A players\"></i>";
         var division_members = division_data["members"];
         var num_members = Object.keys(division_members).length
 
@@ -158,7 +158,7 @@ function searchPlayerHistory(param=false){
         var division_row = document.createElement("tr");
         var division_heading = document.createElement("td");
         division_heading.setAttribute('colspan', 5);
-        division_heading.classList.add('division-header');
+        division_heading.classList.add('database-division-header');
         var season_url = "<a href=\"past_standings/season" + season + "_past_standings.html\">Season " + season + "</a>";
         division_heading.innerHTML = season_url + " " + division+ " Division";
         division_heading.style.backgroundColor = "lightgrey";
@@ -190,23 +190,32 @@ function searchPlayerHistory(param=false){
             var rank = document.createElement("td");
             rank.innerHTML = row_info["rank"];
             d_row.appendChild(rank);
+
             var player = document.createElement("td");
-            if (row_info["name"].toLowerCase() == player_name) {
-              player.innerHTML = "<b>" + row_info["name"] + "</b>";
+            var row_info_name = row_info["name"];
+            var if_champion = "";
+            // figure out if champion
+            console.log("champion is: " + champion);
+            if (division == "A1") {
+              if (champion && row_info_name == champion) {
+                if_champion = champion_sym;
+              }
+            }
+            if (row_info_name.toLowerCase() == player_name) {
+              player.innerHTML = "<b>" + row_info_name + "</b>" + if_champion;
             } else {
-              player.innerHTML = row_info["name"];
+              player.innerHTML = row_info_name + if_champion;
             }
             d_row.appendChild(player);
-            var wins = document.createElement("td");
-            // figure out if champion
-            if (division == "A1") {
 
-            }
+            var wins = document.createElement("td");
             wins.innerHTML = row_info["wins"];
             d_row.appendChild(wins);
+
             var losses = document.createElement("td");
             losses.innerHTML = row_info["losses"];
             d_row.appendChild(losses);
+
             var pct = document.createElement("td");
             pct.innerHTML = row_info["pct"];
             pct.style.backgroundColor = row_info["color"];

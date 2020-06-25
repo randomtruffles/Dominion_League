@@ -222,11 +222,14 @@ tbody {
   align: center;
   width: 80%;
   background-color: #ebeced;
+  font-size: 17px;
+  font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
 
 @media (max-width: 800px) {
   .table-player-database {
     width: 100%;
+    font-size: 15px;
   }
 }
 
@@ -234,6 +237,20 @@ tbody {
   border: 2px solid grey;
   border-collapse: collapse;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .table-player-database {
+    width: 100%;
+  }
+}
+.database-division-header {
+  font-weight: 700;
+  font-family: Merriweather, "Source Serif Pro", "Roboto Slab", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
 }
 
 .division-header {
@@ -544,6 +561,13 @@ fieldset[disabled] .btn-xl.active {
     color: #ca2017;
     text-decoration: underline;
 }
+
+@media (max-width: 500px) {
+  .site-title {
+    font-size: 35px;
+  }
+}
+
 .site-description {
   font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
   color: #666;

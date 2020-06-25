@@ -104,6 +104,7 @@ layout: {}
   <div class="container-centered">
     <h3>{}Season {} Standings{}</h3>
     <h5><a href="{{{{site.baseurl}}}}/past_standings.html">All Past Season Standings</a></h5>
+    <h5><a href="{{{{site.baseurl}}}}/player_database.html">Player Database</a></h5>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
 """.format(layout, past_season, season, next_season)

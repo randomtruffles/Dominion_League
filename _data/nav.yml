@@ -18,6 +18,8 @@
   children:
     - name: Current Season
       path: current_standings.html
+    - name: Player Database
+      path: player_database.html
     - name: Past Seasons
       path: past_standings.html
 - name: Posts

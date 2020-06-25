@@ -214,11 +214,14 @@ tbody {
   align: center;
   width: 80%;
   background-color: #ebeced;
+  font-size: 17px;
+  font-family: {{ site.data.template.font.secondary }};
 }
 
 @media (max-width: 800px) {
   .table-player-database {
     width: 100%;
+    font-size: 15px;
   }
 }
 
@@ -226,6 +229,20 @@ tbody {
   border: 2px solid grey;
   border-collapse: collapse;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .table-player-database {
+    width: 100%;
+  }
+}
+.database-division-header {
+  font-weight: 700;
+  font-family: {{ site.data.template.font.primary }};
+  font-size: 17px;
 }
 
 .division-header {
@@ -536,6 +553,13 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.data.template.color.secondary }};
     text-decoration: underline;
 }
+
+@media (max-width: 500px) {
+  .site-title {
+    font-size: 35px;
+  }
+}
+
 .site-description {
   font-family: {{ site.data.template.font.secondary }};
   color: #{{ site.data.template.color.description }};
