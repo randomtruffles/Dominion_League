@@ -225,6 +225,7 @@ tbody {
   margin-bottom: 15px;
   align: center;
   width: 80%;
+  background-color: #ebeced;
 }
 
 @media (max-width: 800px) {

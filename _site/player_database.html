@@ -336,7 +336,9 @@ function searchPlayerHistory(){
         var division_heading = document.createElement("td");
         division_heading.setAttribute('colspan', 5);
         division_heading.classList.add('division-header');
-        division_heading.innerHTML = "S" + season + " " + division+ " Division";
+        var season_url = "<a href=\"past_standings/season" + season + "_past_standings.html\">Season " + season + "</a>";
+        division_heading.innerHTML = season_url + " " + division+ " Division";
+        division_heading.style.backgroundColor = "lightgrey";
         division_row.appendChild(division_heading);
         table.appendChild(division_row);
 
@@ -351,6 +353,7 @@ function searchPlayerHistory(){
             th.style.width = col_width[j];
             h_row.appendChild(th);
         }
+        h_row.style.backgroundColor = "#e0e0e0";
         table.appendChild(h_row);
 
         // Create table body
@@ -379,6 +382,7 @@ function searchPlayerHistory(){
             d_row.appendChild(losses);
             var pct = document.createElement("td");
             pct.innerHTML = row_info["pct"];
+            pct.style.backgroundColor = row_info["color"];
             d_row.appendChild(pct);
 
             table.appendChild(d_row)
