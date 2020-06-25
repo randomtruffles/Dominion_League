@@ -446,9 +446,17 @@ function searchPlayerHistory(param=false){
         h_row.style.backgroundColor = "#e0e0e0";
         table.appendChild(h_row);
 
+        var sorted_members_by_rank = Object.keys(division_members).map(function(key) {
+            return [key, division_members[key]];
+        });
+        sorted_members_by_rank.sort(function(x, y) {
+            return x[1]["rank"] - y[1]["rank"];
+        });
+
         // Create table body
         // ADD COLUMN HEADER TO ROW OF TABLE HEAD.
-        for (var key in division_members) {
+        for (var keypair of sorted_members_by_rank) {
+            let key = keypair[0];
             var row_info = division_members[key];
 
             var d_row = document.createElement("tr");
@@ -462,7 +470,6 @@ function searchPlayerHistory(param=false){
             var row_info_name = row_info["name"];
             var if_champion = "";
             // figure out if champion
-            console.log("champion is: " + champion);
             if (division == "A1") {
               if (champion && row_info_name == champion) {
                 if_champion = champion_sym;
