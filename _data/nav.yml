@@ -10,8 +10,6 @@
       path: faq.html
     - name: Moderators
       path: moderators.html
-- name: Matches
-  path: matches.html
 - name: Standings
   path: current_standings.html
   section_id: standings
@@ -22,6 +20,8 @@
       path: player_database.html
     - name: Past Seasons
       path: past_standings.html
+- name: Matches
+  path: matcses.html
 - name: Posts
   path: newsletters.html
   section_id: newsletters

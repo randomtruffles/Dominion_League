@@ -1346,3 +1346,49 @@ body {
 .secondary-font {
   font-family: {{ site.data.template.font.secondary }};
 }
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete  {
+  width: 350px;
+  height: 40px;
+  padding: 0px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  align: center;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  text-align: left;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: red !important;
+  color: #ffffff;
+}
+
+#search_player_history_btn {
+  height: 40px;
+  width: 80px;
+}
