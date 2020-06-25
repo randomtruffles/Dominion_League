@@ -111,8 +111,14 @@ function searchPlayerHistory(param=false){
 
     // Generate table for each season played
     }  else {
+      // Player heading
+      var player_heading = document.createElement("h4");
+      player_heading.innerHTML = "Player: " + players_and_seasons[player_name]["name"];
+      divContainer.appendChild(player_heading);
+      cache_children += 1;
+
       // Newest season first
-      let player_seasons = players_and_seasons[player_name];
+      let player_seasons = players_and_seasons[player_name]["seasons"];
       player_seasons = player_seasons.slice().reverse();
       console.log(player_seasons);
 
@@ -126,9 +132,9 @@ function searchPlayerHistory(param=false){
 
         // Get Table Information
         var division_data = league_history[season][division];
+        var champion = league_history[season][champion];
         var division_members = division_data["members"];
         var num_members = Object.keys(division_members).length
-        // TODO: add champion information
 
         // Create table
         var table = document.createElement("table");
@@ -181,6 +187,10 @@ function searchPlayerHistory(param=false){
             }
             d_row.appendChild(player);
             var wins = document.createElement("td");
+            // figure out if champion
+            if (division == "A1") {
+
+            }
             wins.innerHTML = row_info["wins"];
             d_row.appendChild(wins);
             var losses = document.createElement("td");

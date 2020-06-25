@@ -30,21 +30,22 @@ for s_key in seasons.keys():
         members_data = season_data[division]["members"]
 
         # Add member data
-        for m in members_data.keys():
-            member = m.lower()
+        for member in members_data.keys():
             if member in players:
                 players[member] = players[member] + [{"season": season, "division" : division}]
             else:
                 players[member] = [{"season": season, "division" : division}]
 
+sorted_players = {}
 # Sort player data
 for player in players.keys():
     player_data = players[player]
     # Sort by season
     player_data.sort(key=lambda x: int(x["season"]))
-    players[player] = player_data
+    player_case_insensitive = player.lower()
+    sorted_players[player_case_insensitive] = {"name" : player, "seasons" : player_data}
 
 file = "../_data/player_and_seasons_played.json"
 with open(file, 'w') as filetowrite:
     # convert python dictionary to json and write it
-    json.dump(players, filetowrite)
+    json.dump(sorted_players, filetowrite)
