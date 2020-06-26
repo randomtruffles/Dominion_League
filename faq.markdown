@@ -25,7 +25,6 @@ Credit: Thanks to gloures, who onboarded hundreds of new players and compiled mo
 
 
 #### 1. Signing up
-- - - -
 
 ##### How do I sign up?
 First join the Dominion Discord server (<https://discord.gg/jeN2sAB>). Second go to the [Dominion League board](http://forum.dominionstrategy.com/index.php?board=60.0), look for a pinned post with the name “Season XX - Signups” and complete the Google form embedded there. A moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
@@ -59,7 +58,6 @@ The introductory message in your division’s Discord channel will say who your 
 
 
 #### 2. Discord and the online community
-- - - -
 
 ##### What is Discord? How does it work?
 Discord is an instant messaging app. In the Dominion server you can discuss Dominion topics with players all over the world. These discussions are organized into different channels (denoted by #). There are channels for Dominion strategy, the Dominion League, and your specific division.
@@ -84,7 +82,6 @@ The moderators host Town Halls to gather feedback on a specific topic that doesn
 
 
 #### 3. Scheduling matches
-- - - -
 
 ##### How do I schedule matches?
 You will need to coordinate with your opponent via Discord. You can send messages in your division’s channel, or send direct messages to an opponent. It is very beneficial to schedule matches in advance, instead of hoping someone is available to play impromptu.
@@ -118,7 +115,6 @@ Notify your moderator as soon as possible and explain your situation. The modera
 
 
 #### 4. Playing matches
-- - - -
 
 ##### What is a match? Is it the same as a game?
 A match comprises 6 games of Dominion played against a single opponent. Each season, players play 1 match against each other player in their division.
@@ -170,7 +166,6 @@ As a spectator, you can comment on the players’ decisions and discuss strategi
 
 
 #### 5. Dominion Online (<http://dominion.games>)
-- - - -
 
 ##### How do I add someone from my division as a friend on Dominion Online?
 Click the "Friend List" tab in the lobby, enter your opponent’s username, and click "Add".
@@ -208,7 +203,6 @@ We encourage you to uncheck "Players can see spectator chat" so that spectators 
 
 
 #### 6. Details and backend
-- - - -
 
 ##### How do the moderators determine the players’ tiers (A, B, C, etc)?
 For a new player, their starting tier is decided shortly before the season starts, based on the available spots in the tiers and their Dominion Online (<http://dominion.games>) level. For a returning player, their tier is based on how they placed in their last season.
@@ -270,8 +264,6 @@ No, these are temporary placeholders while the Google sheets update some complic
 
 
 #### 7. Miscellaneous
-- - - -
-
 ##### What are the rules on etiquette?
 There are no rules on etiquette, but we encourage you to be friendly and courteous, and we do not tolerate offensive behavior. Saying “good luck” or “have fun” at the start of a match and “good game” at the end of a game are always positive behaviors. Notify the moderators of any offensive behavior. Offensive behavior may result in suspension from the League.
 
