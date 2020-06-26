@@ -27,7 +27,7 @@ Credit: Thanks to gloures, who onboarded hundreds of new players and compiled mo
 #### 1. Signing up
 
 ##### How do I sign up?
-Navigate to the [Signups page](https://dominionleague.org/sign-ups.html) and fill out your details by completing the Google form embedded there.
+Navigate to [Sign up](https://dominionleague.org/sign-ups.html) and fill out your details by completing the Google form embedded there.
 
 Make sure you join the Dominion Discord server (<https://discord.gg/jeN2sAB>) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
 
