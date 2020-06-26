@@ -226,6 +226,10 @@ def create_table(season, division, padding, champion):
     # champion icon hover text
     champion_icon = " <i class=\" fas fa-crown\" title=\"Winner of championship match between top 2 A players\"></i>"
 
+    # Get championship video
+    if division["name"] == "A1" and len(videos[str(season)]) >= 1 :
+        youtube_video = videos[str(season)][0]
+        champion_icon = " <a href=\"{}\">{}</a>".format(youtube_video, champion_icon)
     # generate rows for division members
     members = division["members"]
     member_rows = {}

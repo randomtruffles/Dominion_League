@@ -35,6 +35,7 @@ layout: default
 // Data for tables
 var players_and_seasons = {{ site.data.player_and_seasons_played | jsonify }};
 var friendly_league_history = {{ site.data.friendly_league_history | jsonify }};
+var championship_videos = {{ site.data.championship_videos | jsonify }};
 var league_history = friendly_league_history["seasons"];
 
 let cache_children = 0;
@@ -154,6 +155,7 @@ function searchPlayerHistory(param=false){
         // Get Table Information
         var division_data = league_history[season][division];
         var champion = league_history[season]["champion"];
+
         var champion_sym = " <i class=\" fas fa-crown\" title=\"Winner of championship match between top 2 A players\"></i>";
         var division_members = division_data["members"];
         var num_members = Object.keys(division_members).length
@@ -216,7 +218,12 @@ function searchPlayerHistory(param=false){
             // figure out if champion
             if (division == "A1") {
               if (champion && row_info_name == champion) {
-                if_champion = champion_sym;
+                console.log("Video length: " + championship_videos[season].length);
+                if (championship_videos[season].length > 0) {
+                  if_champion = " <a href=\"" + championship_videos[season][0] + "\">" + champion_sym + "</a>";
+                } else {
+                  if_champion = champion_sym;
+                }
               }
             }
             if (row_info_name.toLowerCase() == player_name) {
