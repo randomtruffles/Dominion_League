@@ -42,6 +42,7 @@ layout: default
 var players_and_seasons = {{ site.data.player_and_seasons_played | jsonify }};
 var friendly_league_history = {{ site.data.friendly_league_history | jsonify }};
 var championship_videos = {{ site.data.championship_videos | jsonify }};
+var youtube_channels = {{ site.data.youtube_channels | jsonify }};
 var league_history = friendly_league_history["seasons"];
 
 // Get URL parameter
@@ -98,7 +99,7 @@ function searchPlayerHistory(param=false){
     }
     var divContainer = document.getElementById("player-database");
 
-    // Easter egg
+    // Easter eggs
     if (player_name == "truffles") {
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
@@ -123,12 +124,14 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "MuensterCheese has not completed a league season yet, but is awesome so I manually added them here. <br> <a href=\"https://www.youtube.com/channel/UCcZUxA0BK-6QFP9Q6Mg6Krg\">MuensterCheese's Youtube Channel</a>";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
+
   // No input detected
   } else if (player_name == ""){
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: no input detected";
       divContainer.appendChild(h_dne);
+
   // No data exists for player
   } else if (!players_and_seasons[player_name]) {
       console.log(entered_player_name);
@@ -148,9 +151,9 @@ function searchPlayerHistory(param=false){
       divContainer.appendChild(player_heading);
 
       // Youtube heading
-      if (players_and_seasons[player_name]["channel"].length > 0 ) {
+      if (player_name in youtube_channels ) {
         var player_heading = document.createElement("h5");
-        player_heading.innerHTML = "<a href=\"" + players_and_seasons[player_name]["channel"] +"\">Youtube Channel</a>";
+        player_heading.innerHTML = "<a href=\"" + youtube_channels[player_name]["channel"] +"\">Youtube Channel</a>";
         divContainer.appendChild(player_heading);
       }
 
