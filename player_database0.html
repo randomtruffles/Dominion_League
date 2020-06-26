@@ -88,6 +88,7 @@ function searchPlayerHistory(param=false){
       if (player_param == '') {
         return;
       }
+      document.getElementById("url_param_tutorial").style.display = "none";
       player_name = player_param.toLowerCase();
     } else {
       document.getElementById("url_param_tutorial").style.display = "none";
@@ -96,7 +97,6 @@ function searchPlayerHistory(param=false){
       return;
     }
     var divContainer = document.getElementById("player-database");
-    document.getElementById("url_param_tutorial").style.display = "none";
 
     // Easter egg
     if (player_name == "truffles") {
