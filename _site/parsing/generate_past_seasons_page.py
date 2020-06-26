@@ -4,6 +4,9 @@ import json
 # Open file containing all league history
 with open('../_data/leagueHistory_20200602.json') as file:
     data = json.load(file)
+# Open file containing championship videos
+with open('../_data/championship_videos.json') as file:
+    videos = json.load(file)
 
 largest_division = "A"
 current_season = 40
@@ -61,7 +64,7 @@ def assign_color(value):
 Creating elements of page
 """
 # Create modal
-def create_modal(division, padding):
+def create_modal(season, division, padding):
     pad = "  " * padding
     def td(info):
         return "{}<td class=\"cells-division-modal\">{}</td>\n".format(pad, info)
@@ -91,6 +94,20 @@ def create_modal(division, padding):
 {pad}</table>
 """.format(pad=pad,rows=rows)
 
+    youtube_video = ""
+    # Get championship video
+    if division["name"] == "A1":
+        video = videos[str(season)]
+        if len(video) == 1:
+            youtube_video = "<p><a href=\"{}\">Championship Match Video</a></p>".format(video[0])
+        elif len(video) > 1:
+            youtube_video += "<p>Championship Match Videos: "
+            for v in range(len(video)):
+                comma = ", " if v < len(video) else ""
+                youtube_video += "<a href=\"{}\">Part {}</a>{}".format(video[v], v+1, comma)
+
+            youtube_video += "</p>"
+
     # create modal
     modal = """
 <!-- Modal content for Division {name}-->
@@ -98,10 +115,11 @@ def create_modal(division, padding):
   <div class="modal-content">
     <span class="close">&times;</span>
     <h4>Division {name} Match Results</h4>
+    {youtube_video}
     {results_table}
   </div>
 </div>
-""".format(name=division["name"], results_table=results_table)
+""".format(name=division["name"], youtube_video=youtube_video, results_table=results_table)
 
     return modal
 
@@ -160,7 +178,7 @@ def create_footer():
     return footer
 
 
-def create_table(division, padding, champion):
+def create_table(season, division, padding, champion):
     global largest_division
     modal_btn = " <button class=\"results-button\">Match Results</button>"
     def p_add():
@@ -261,7 +279,7 @@ def create_table(division, padding, champion):
     p_sub()
     table += p("</table>\n")
 
-    table += create_modal(division, padding)
+    table += create_modal(season, division, padding)
 
     return table
 
@@ -283,7 +301,7 @@ def create_season_page(season):
     champion = season["champion"] if "champion" in season else None
 
     for d in divisions:
-        page += create_table(d, padding, champion)
+        page += create_table(season["season"], d, padding, champion)
 
     # clean up
     padding -= 2
