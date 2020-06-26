@@ -168,6 +168,16 @@ a.past-standings {
   font-size: 18px;
 }
 
+a.player-past-standings {
+  text-decoration: none;
+  color: #000
+}
+
+a.player-past-standings:hover {
+  text-decoration: underline;
+  color: #ca2017
+}
+
 .fixed {
   position: absolute;
   right: 30px;
@@ -241,6 +251,7 @@ tbody {
   margin-right: auto;
   width: 80%;
   font-size: 17px;
+  font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif
 }
 
 @media (max-width: 700px) {

@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 current_season = 40
 page = ""
 page_style = "default"

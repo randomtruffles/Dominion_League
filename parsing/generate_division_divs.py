@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 
 div_id = ["divA", "divB", "divC", "divD", "divE", "divF", "divG", "divH"]
 div_count = [1, 2, 4, 4, 8, 16, 32, 64]

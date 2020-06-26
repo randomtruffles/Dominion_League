@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import json
 
 # Open file containing all league history

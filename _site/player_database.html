@@ -487,6 +487,13 @@ function searchPlayerHistory(param=false){
 
             var player = document.createElement("td");
             var row_info_name = row_info["name"];
+
+            // Generate URL for database
+            var row_class = "player-past-standings"
+            var row_info_name_param = row_info_name.replace(/ /g, "%20")
+            var row_info_url_name = `<a class="${row_class}" href="/player_database.html?player=${row_info_name_param}">${row_info_name}</a>`;
+            console.log(row_info_url_name);
+
             var if_champion = "";
             // figure out if champion
             if (division == "A1") {
@@ -500,9 +507,9 @@ function searchPlayerHistory(param=false){
               }
             }
             if (row_info_name.toLowerCase() == player_name) {
-              player.innerHTML = "<b>" + row_info_name + "</b>" + if_champion;
+              player.innerHTML = "<b>" + row_info_url_name + "</b>" + if_champion;
             } else {
-              player.innerHTML = row_info_name + if_champion;
+              player.innerHTML = row_info_url_name + if_champion;
             }
             d_row.appendChild(player);
 

@@ -1,5 +1,6 @@
-import json
+#!/usr/local/bin/python3
 
+import json
 
 # Open file containing all league history
 with open('../_data/leagueHistory_20200602.json') as file:
@@ -59,6 +60,12 @@ def assign_color(value):
         return " style=\"background-color:#{}\"".format(color)
 
     return bgcolor(gradient[(value*steps)//101])
+
+def get_player_database_url(player):
+    player_param = player.replace(" ", "%20")
+    player_class = "player-past-standings"
+    return "<a href=\"{{{{site.baseurl}}}}/player_database.html?player={}\"\
+            class=\"{}\">{}</a>".format(player_param, player_class, player)
 
 """
 Creating elements of page
@@ -246,6 +253,7 @@ def create_table(season, division, padding, champion):
         # get rows
         rank = m["rank"] + zero_index
         name = m["name"]
+        url_name = get_player_database_url(name)
 
         # For formating simulated results
         def formatNumber(num):
@@ -259,9 +267,9 @@ def create_table(season, division, padding, champion):
 
         mrow += p(create_td(rank))
         if name == champion:
-            mrow += p(td(name + champion_icon))
+            mrow += p(td(url_name + champion_icon))
         else:
-            mrow += p(td(name))
+            mrow += p(td(url_name))
         mrow += p(td(wins))
         mrow += p(td(losses))
         mrow += p(td(fpct(pct), assign_color(int(pct*100))))
