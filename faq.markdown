@@ -8,7 +8,7 @@ tags: rules
 author: SamE
 
 ---
-*This FAQ concerns the [Rules & Regulations](http://forum.dominionstrategy.com/index.php?topic=15509.0) of the Dominion League. It is intended as a reference, and does not cover all the rules.*
+*This FAQ concerns the [Rules & Regulations](https://dominionleague.org/rules.html) of the Dominion League. It is intended as a reference, and does not cover all the rules.*
 
 #### Contents
 1. <a href="#1-signing-up">Signing up</a>
