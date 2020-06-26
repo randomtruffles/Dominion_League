@@ -28,7 +28,7 @@ layout: default
       <h5> URL Searching </h5>
       <p> You can also search by adding the <code>player</code> param to this page's url, using <code>%20</code> to represent spaces between names.
           <br>
-          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="https://dominionleague.org/player_database.html?player=mic%20qsenoch">this page's url.</a>.
+          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="{{site.baseurl}}/player_database.html?player=mic%20qsenoch">this page's url.</a>.
           <br>
           <br>
       </p>
@@ -94,7 +94,7 @@ function searchPlayerHistory(param=false){
       }
     } else {
       url_param_name = player_name.replace(" ", "%20");
-      location.replace("https://dominionleague.org/player_database.html?player="+url_param_name);
+      location.replace("{{site.baseurl}}/player_database.html?player="+url_param_name);
     }
     var divContainer = document.getElementById("player-database");
     for (var k = 0; k < cache_children; k++){

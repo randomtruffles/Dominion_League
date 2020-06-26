@@ -28,7 +28,7 @@ layout: default
       <h5> URL Searching </h5>
       <p> You can also search by adding the <code>player</code> param to this page's url, using <code>%20</code> to represent spaces between names.
           <br>
-          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="https://dominionleague.org/player_database.html?player=mic%20qsenoch">this page's url.</a>.
+          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="{{site.baseurl}}/player_database.html?player=mic%20qsenoch">this page's url.</a>.
           <br>
           <br>
       </p>
@@ -89,11 +89,14 @@ function searchPlayerHistory(param=false){
         return;
       }
       document.getElementById("url_param_tutorial").style.display = "none";
+      if (entered_player_name == "") {
+        entered_player_name = player_param;
+      }
       player_name = player_param.toLowerCase();
     } else {
       document.getElementById("url_param_tutorial").style.display = "none";
-      url_param_name = player_name.replace(" ", "%20");
-      location.replace("https://dominionleague.org/player_database0.html?player="+url_param_name);
+      url_param_name = entered_player_name.replace(" ", "%20");
+      location.replace("{{site.baseurl}}/player_database0.html?player="+url_param_name);
       return;
     }
     var divContainer = document.getElementById("player-database");
@@ -131,6 +134,7 @@ function searchPlayerHistory(param=false){
       divContainer.appendChild(h_dne);
   // No data exists for player
   } else if (!players_and_seasons[player_name]) {
+      console.log(entered_player_name);
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: Player Does Not Exist";
