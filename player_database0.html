@@ -82,6 +82,8 @@ function searchPlayerHistory(param=false){
     //var order = document.getElementById("order").value;
     player_name = entered_player_name.toLowerCase().trim();
 
+    document.getElementById("url_param_tutorial").style.display = "none";
+
     // check if URL has data
     if (param) {
       var player_param = getPlayerParam();
@@ -96,8 +98,6 @@ function searchPlayerHistory(param=false){
       return;
     }
     var divContainer = document.getElementById("player-database");
-
-    document.getElementById("url_param_tutorial").style.display = "none";
 
     // Easter egg
     if (player_name == "truffles") {
