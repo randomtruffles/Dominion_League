@@ -11,13 +11,13 @@ author: SamE
 *This FAQ concerns the [Rules & Regulations](http://forum.dominionstrategy.com/index.php?topic=15509.0) of the Dominion League. It is intended as a reference, and does not cover all the rules.*
 
 #### Contents
-1. Signing up
-2. Discord and the online community
-3. Scheduling matches
-4. Playing matches
-5. Dominion Online (<http://dominion.games>)
-6. Details and backend
-7. Miscellaneous
+1. <a href="#1-signing-up">Signing up</a>
+2. <a href="#2-discord-and-the-online-community">Discord and the online community</a>
+3. <a href="#3-scheduling-matches">Scheduling matches</a>
+4. <a href="#4-playing-matches">Playing matches</a>
+5. <a href="#5-dominion-online-httpdominiongames">Dominion Online</a> (<http://dominion.games>)
+6. <a href="#6-details-and-backend">Details and backend</a>
+7. <a href="#7-miscellaneous">Miscellaneous</a>
 
 If you have a question that is not answered here, please reach out to any moderator. You can find a moderator who is online by looking at the League Mod section of users on Discord.
 
