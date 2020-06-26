@@ -44,8 +44,6 @@ var friendly_league_history = {{ site.data.friendly_league_history | jsonify }};
 var championship_videos = {{ site.data.championship_videos | jsonify }};
 var league_history = friendly_league_history["seasons"];
 
-let cache_children = 0;
-
 // Get URL parameter
 searchPlayerHistory(true);
 
@@ -89,20 +87,19 @@ function searchPlayerHistory(param=false){
       var player_param = getPlayerParam();
       if (player_param == '') {
         return;
-      } else {
-        player_name = player_param.toLowerCase();
       }
+      document.getElementById("url_param_tutorial").style.display = "none";
+      if (entered_player_name == "") {
+        entered_player_name = player_param;
+      }
+      player_name = player_param.toLowerCase();
     } else {
-      url_param_name = player_name.replace(" ", "%20");
-      location.replace("{{site.baseurl}}/player_database.html?player="+url_param_name);
+      document.getElementById("url_param_tutorial").style.display = "none";
+      url_param_name = entered_player_name.replace(" ", "%20");
+      location.replace("{{site.baseurl}}/player_database0.html?player="+url_param_name);
+      return;
     }
     var divContainer = document.getElementById("player-database");
-    for (var k = 0; k < cache_children; k++){
-      divContainer.removeChild(divContainer.lastChild);
-    }
-    cache_children = 0;
-
-    document.getElementById("url_param_tutorial").style.display = "none";
 
     // Easter egg
     if (player_name == "truffles") {
@@ -113,7 +110,6 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "More seriously: try searching for <b>xtruffles</b>.";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
 
   } else if (player_name == "kuroba") {
       var h_dne = document.createElement("h4");
@@ -122,7 +118,6 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "He is too bad to be in league.";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
 
   } else if (player_name == "muenstercheese") {
       var h_dne = document.createElement("h4");
@@ -131,16 +126,15 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "MuensterCheese has not completed a league season yet, but is awesome so I manually added them here. <br> <a href=\"https://www.youtube.com/channel/UCcZUxA0BK-6QFP9Q6Mg6Krg\">MuensterCheese's Youtube Channel</a>";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
   // No input detected
   } else if (player_name == ""){
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: no input detected";
       divContainer.appendChild(h_dne);
-      cache_children = cache_children + 1;
   // No data exists for player
   } else if (!players_and_seasons[player_name]) {
+      console.log(entered_player_name);
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: Player Does Not Exist";
@@ -148,7 +142,6 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "<b>" + entered_player_name + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
 
     // Generate table for each season played
     }  else {
@@ -156,14 +149,12 @@ function searchPlayerHistory(param=false){
       var player_heading = document.createElement("h4");
       player_heading.innerHTML = "Player: " + players_and_seasons[player_name]["name"];
       divContainer.appendChild(player_heading);
-      cache_children += 1;
 
       // Youtube heading
       if (players_and_seasons[player_name]["channel"].length > 0 ) {
         var player_heading = document.createElement("h5");
         player_heading.innerHTML = "<a href=\"" + players_and_seasons[player_name]["channel"] +"\">Youtube Channel</a>";
         divContainer.appendChild(player_heading);
-        cache_children += 1;
       }
 
       // Sort by newest season first
@@ -278,7 +269,6 @@ function searchPlayerHistory(param=false){
 
         // Add table to container
         divContainer.appendChild(table);
-        cache_children = cache_children + 1;
       }
     }
 }
