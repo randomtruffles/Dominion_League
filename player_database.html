@@ -21,12 +21,18 @@ layout: default
     <button id="search_player_history_btn" title="search" onclick="searchPlayerHistory()">Search</button>
     <br>
     <br>
-    <p id="url_param_tutorial"> You can also search by adding the <code>player</code> param to this url, using <code>%20</code> to represent spaces between names.
-        <br>
-        Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="https://dominionleague.org/player_database.html?player=mic%20qsenoch">this url</a>.
-        <br>
-        <br>
-    </p>
+    <div id="url_param_tutorial">
+      <h5> Adding a Youtube Channel to Your Player Page</h5>
+      <p> Fill out <a href="https://forms.gle/7vowtRMP7nYEMjkE9">this form</a> and the Dominion League will add it. </p>
+      <br>
+      <h5> URL Searching </h5>
+      <p> You can also search by adding the <code>player</code> param to this page's url, using <code>%20</code> to represent spaces between names.
+          <br>
+          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="https://dominionleague.org/player_database.html?player=mic%20qsenoch">this page's url.</a>.
+          <br>
+          <br>
+      </p>
+      </div>
   </div>
 </div>
 
@@ -113,7 +119,14 @@ function searchPlayerHistory(param=false){
       divContainer.appendChild(dne);
       cache_children = cache_children + 2;
 
-
+  } else if (player_name == "muenstercheese") {
+      var h_dne = document.createElement("h4");
+      h_dne.innerHTML = "You've found an easter egg!";
+      var dne = document.createElement("p");
+      dne.innerHTML = "MuensterCheese has not completed a league season yet, but is awesome so I manually added them here. <br> <a href=\"https://www.youtube.com/channel/UCcZUxA0BK-6QFP9Q6Mg6Krg\">MuensterCheese's Youtube Channel</a>";
+      divContainer.appendChild(h_dne);
+      divContainer.appendChild(dne);
+      cache_children = cache_children + 2;
   // No input detected
   } else if (player_name == ""){
       // Do something "No data exists for this player"
@@ -125,9 +138,9 @@ function searchPlayerHistory(param=false){
   } else if (!players_and_seasons[player_name]) {
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
-      h_dne.innerHTML = "Error: Do not make up fake players";
+      h_dne.innerHTML = "Error: Player Does Not Exist";
       var dne = document.createElement("p");
-      dne.innerHTML = "<b>" + entered_player_name + "</b>" + " does not exist. <br> Enter another name (eg. 'kaplane').";
+      dne.innerHTML = "<b>" + entered_player_name + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
       cache_children = cache_children + 2;
@@ -139,6 +152,14 @@ function searchPlayerHistory(param=false){
       player_heading.innerHTML = "Player: " + players_and_seasons[player_name]["name"];
       divContainer.appendChild(player_heading);
       cache_children += 1;
+
+      // Youtube heading
+      if (players_and_seasons[player_name]["channel"].length > 0 ) {
+        var player_heading = document.createElement("h5");
+        player_heading.innerHTML = "<a href=\"" + players_and_seasons[player_name]["channel"] +"\">Youtube Channel</a>";
+        divContainer.appendChild(player_heading);
+        cache_children += 1;
+      }
 
       // Sort by newest season first
       let player_seasons = players_and_seasons[player_name]["seasons"];

@@ -3,7 +3,8 @@ import json
 # Open file containing all (pretty) league history
 with open('../_data/friendly_league_history.json') as file:
     data = json.load(file)
-
+with open('../_data/youtube_channels.json') as file:
+    channels = json.load(file)
 """
 players is a dictionary mapping player name to player information
 {
@@ -44,7 +45,8 @@ for player in players.keys():
     player_data = players[player]
     # Sort by season
     player_data.sort(key=lambda x: int(x["season"]))
-    sorted_players[player] = {"name" : players_to_case_sensitive_name[player], "seasons" : player_data}
+    channel = channels[player]["channel"] if player in channels else ""
+    sorted_players[player] = {"name" : players_to_case_sensitive_name[player], "channel" : channel, "seasons" : player_data}
 
 file = "../_data/player_and_seasons_played.json"
 with open(file, 'w') as filetowrite:
