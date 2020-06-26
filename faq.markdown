@@ -27,7 +27,9 @@ Credit: Thanks to gloures, who onboarded hundreds of new players and compiled mo
 #### 1. Signing up
 
 ##### How do I sign up?
-First join the Dominion Discord server (<https://discord.gg/jeN2sAB>). Second go to the [Dominion League board](http://forum.dominionstrategy.com/index.php?board=60.0), look for a pinned post with the name “Season XX - Signups” and complete the Google form embedded there. A moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
+Navigate to the [Signups page](https://dominionleague.org/sign-ups.html) and fill out your details by completing the Google form embedded there.
+
+Make sure you join the Dominion Discord server (<https://discord.gg/jeN2sAB>) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
 
 ##### What is required to sign up?
 You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/jeN2sAB>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
