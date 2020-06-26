@@ -327,6 +327,8 @@ function getPlayerParam() {
   console.log(typeof player);
   console.log("url param: " + player);
   player = player.replace("%20", " ");
+  player = player.trim();
+  console.log(player);
   return player;
 }
 
@@ -336,7 +338,7 @@ function searchPlayerHistory(param=false){
     var entered_player_name = document.getElementById("input_player_search").value;
 
     //var order = document.getElementById("order").value;
-    player_name = entered_player_name.toLowerCase();
+    player_name = entered_player_name.toLowerCase().trim();
 
     // check if URL has data
     if (param) {
@@ -346,6 +348,9 @@ function searchPlayerHistory(param=false){
       } else {
         player_name = player_param.toLowerCase();
       }
+    } else {
+      url_param_name = player_name.replace(" ", "%20");
+      location.replace("https://dominionleague.org/player_database.html?player="+url_param_name);
     }
     var divContainer = document.getElementById("player-database");
     for (var k = 0; k < cache_children; k++){
