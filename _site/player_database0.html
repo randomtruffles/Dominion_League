@@ -349,6 +349,7 @@ function searchPlayerHistory(param=false){
     } else {
       url_param_name = player_name.replace(" ", "%20");
       location.replace("https://dominionleague.org/player_database.html?player="+url_param_name);
+      return;
     }
     var divContainer = document.getElementById("player-database");
 
