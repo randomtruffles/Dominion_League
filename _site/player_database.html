@@ -322,11 +322,8 @@ function getPlayerParam() {
       return !val ? '':val[1];
   }
   var player = urlParam('player');
-  console.log(typeof player);
-  console.log("url param: " + player);
-  player = player.replace("%20", " ");
+  player = player.replace(/%20/g, " ");
   player = player.trim();
-  console.log(player);
   return player;
 }
 
@@ -351,7 +348,7 @@ function searchPlayerHistory(param=false){
       player_name = player_param.toLowerCase();
     } else {
       document.getElementById("url_param_tutorial").style.display = "none";
-      url_param_name = entered_player_name.replace(" ", "%20");
+      url_param_name = entered_player_name.replace(/ /g, "%20");
       location.replace("/player_database.html?player="+url_param_name);
       return;
     }
