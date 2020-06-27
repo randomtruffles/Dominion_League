@@ -17,7 +17,7 @@ This page serves as a guide for league moderators navigating the website.
 4. <a href="#4-deleting-posts">Deleting Posts</a>
 5. <a href="#5-editing-moderator-list">Editing Moderator List</a> - and moderator pictures
 6. <a href="#6-adding-youtube-channel-to-database">Adding Player Youtube Channel to Player Database</a>
-7. How the Website Repository Works (in progress)
+7. <a href="https://github.com/randomtruffles/Dominion_League/blob/master/README.md">How the Website Repository Works</a> (in progress)
 <hr style="border-top: 1px solid darkgray">
 
 ### 1. Prerequisites
@@ -256,4 +256,4 @@ Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> befo
 </div>
 
 ### 7. How the Website Works
-* In progress.
+* In progress, but you can read the [README.md](https://github.com/randomtruffles/Dominion_League/blob/master/README.md) for a good idea.
