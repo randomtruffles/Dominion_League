@@ -15,7 +15,7 @@
 body {
     overflow-x: hidden;
     font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     color: #333;
 }
 
@@ -365,6 +365,7 @@ h6 {
 
 .left {
   width: 70%;
+  padding: 20px 20px 10px 5px;
 }
 
 .right {

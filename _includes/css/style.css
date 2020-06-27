@@ -7,7 +7,7 @@
 body {
     overflow-x: hidden;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 16px;
+    font-size: 17px;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -357,6 +357,7 @@ h6 {
 
 .left {
   width: 70%;
+  padding: 20px 20px 10px 5px;
 }
 
 .right {
