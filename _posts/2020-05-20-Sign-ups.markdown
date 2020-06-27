@@ -4,7 +4,7 @@ subtitle: Sign-ups Open
 author: nottoobad
 layout: simple_post
 date: 2020-05-11
-categories: 
+categories: signups
 description:
 
 ---

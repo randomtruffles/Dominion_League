@@ -3,8 +3,11 @@ layout: default
 ---
 
 <div class="section">
-  <h3>Sign-ups</h3>
+  <h3>Dominion League Sign Ups</h3>
   {% for post in site.categories.signups %}
+    {% if forloop.index > 1 %}
+      {% break %}
+    {% endif %}
     <p>
       {{ post.content }}
     </p>

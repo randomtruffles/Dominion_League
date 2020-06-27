@@ -1,13 +1,10 @@
 ---
 title: League Rules
-subtitle:
+subtitle: Official Rules of the Dominion League
 layout: post
 date: 2020-05-29
-categories: rules
-tags: rules
+categories: pinned rules
 author: SamE
-description:
-
 ---
 
 #### I. League Structure

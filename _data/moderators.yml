@@ -1,69 +1,52 @@
 # TEMPLATE OF NEW MODERATOR
-# name: <the name you want to appear on the site>
-# discord: <the discord handle>
-# description: (optional) <description about yourself>
-# image: <the prefix of the image, eg. if it's same.png, it should be same>
+#- name: truffles
+#  discord: truffles#1234
+#  image: truffles_picture_file_prefix
 - name: alibby1152
   discord: alibby1152#4103
-  description: "great at organizing, top tier mod"
   image: alibby
 - name: apostolosgr
   discord: apostolosgr#4103
-  description: "but his in-client name apostolosruler"
   image: apostolosgr
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
-  description: DomBot Master
   image: cave
 - name: crlundy
   discord: crlundy#0018
-  description: "emoji master, art expert"
   image: crlundy
 - name: DomBot
   discord: DomBot#0234
-  description: ahhhhhhh robots taking over the world
   image: dombot
 - name: Earl
   discord: Earl#3402
-  description: friendly canadian
   image: earl
 - name: eh1414
   discord: eh1414#5517
-  description: "eh? but not canadian!"
   image: eh1414
 - name: Gazbag
   discord: Gazbag#6485
-  description:
   image: gazbag
 - name: H.exe
   discord: H.exe#3232
-  description: "h.exe or seprix"
   image: hexe
 - name: Lemonspawn
   discord: Lemonspawn#2571
-  description: "rumors have it that he eliminated limespawn from the server"
   image: lemonspawn
 - name: nottoobad
   discord: nottoobad#9595
-  description: "not bad, not bad at all"
   image: nottoobad
 - name: SamE
   discord: SamE#8793
-  description: "supreme leader"
   image: same
 - name: singletee
   discord: singletee#0905
-  description: "supreme discord leader"
   image: singletee
 - name: truffles
   discord: truffles#9374
-  description: truffles likes truffles
   image: truffles
 - name: volfied
   discord: volfied#8122
-  description:
   image: volfied
 - name: wharf_rat
   discord: wharf_rat#8971
-  description: "+2 cards, + buy, trash a card, gain a rats"
   image: wharf_rat

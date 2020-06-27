@@ -260,166 +260,328 @@
 
     <hr>
     <div class="container grey-section" id='main' role='main'>
-      <h3 id="league-moderator-guide">League Moderator Guide</h3>
+      <h2 id="league-moderator-guide">League Moderator Guide</h2>
 
 <p>This page serves as a guide for league moderators navigating the website.</p>
 
-<h4 id="contents">Contents</h4>
+<h3 id="contents">Contents</h3>
 <ol>
-  <li>Prerequisites (Getting Set Up)</li>
-  <li>Writing a Post (Signups, Newsletters, Deadlines..)</li>
-  <li>Editing a Post (Rules, FAQ..)</li>
-  <li>Deleting a Post</li>
-  <li>Editing Moderator List (and pictures)</li>
-  <li>How the Website Repository Works</li>
+  <li><a href="#1-prerequisites">Prerequisites</a> - Getting Set Up</li>
+  <li><a href="#2-writing-a-post">Writing a Post</a> - Signups, Newsletters, Deadlines…</li>
+  <li><a href="#3-editing-a-post">Editing a Post</a> - Rules, FAQ..</li>
+  <li><a href="#4-deleting-posts">Deleting Posts</a></li>
+  <li><a href="#5-editing-moderator-list">Editing Moderator List</a> - and moderator pictures</li>
+  <li><a href="#6-adding-youtube-channel-to-database">Adding Player Youtube Channel to Player Database</a></li>
+  <li>How the Website Repository Works (in progress)</li>
 </ol>
+<hr style="border-top: 1px solid darkgray" />
+
+<h3 id="1-prerequisites">1. Prerequisites</h3>
+<div class="instructions-div">
+  <ol>
+    <li>Create a <a href="https://github.com/">Github</a> account.</li>
+    <li>Message <code class="language-plaintext highlighter-rouge">@truffles#9347</code> on discord to give you access to edit the website.</li>
+    <li>The repository is located here: <a href="https://github.com/randomtruffles/Dominion_League">https://github.com/randomtruffles/Dominion_League</a></li>
+  </ol>
+
+  <p>Once you have access, you will be good to go to make changes!</p>
+</div>
 
 <hr style="border-top: 1px solid darkgray" />
 
-<h4 id="1-prerequisites">1. Prerequisites</h4>
-<ol>
-  <li>Create a <a href="https://github.com/">Github</a> account.</li>
-  <li>Message <code class="language-plaintext highlighter-rouge">@truffles#9347</code> on discord to give you access to edit the website.</li>
-  <li>The repository is located here: <a href="https://github.com/randomtruffles/Dominion_League">https://github.com/randomtruffles/Dominion_League</a></li>
-</ol>
+<h3 id="2-writing-a-post">2. Writing a Post</h3>
 
-<p>Once you have access, you will be good to go to make changes!</p>
+<h4 id="type-of-posts">Type of Posts</h4>
+<div class="instructions-div">
+  <ul>
+    <li><a href="#generic-type">Generic Post</a> - Newsletters, interesting thoughts</li>
+    <li><a href="#sign-up-post">Sign Up Post</a> - Sign-up post</li>
+  </ul>
+</div>
 
-<h4 id="2-writing-a-post">2. Writing a Post</h4>
-
-<h5 id="type-of-posts">Type of Posts</h5>
-<ul>
-  <li><a href="#generic-type">Generic Post</a></li>
-  <li><a href="#signups-post">Signups Post</a></li>
-</ul>
-
-<h5 id="generic-type">Generic Type</h5>
-<ol>
-  <li>Navigate to where posts are created: <a href="https://github.com/randomtruffles/Dominion_League/tree/master/_posts">Github Repository</a>
-    <ul>
-      <li>(Optional) There is a <code class="language-plaintext highlighter-rouge">README.md</code> about the <code class="language-plaintext highlighter-rouge">_posts</code> directory you can read.</li>
-    </ul>
-  </li>
-  <li>
-    <p>Click the <strong>Add file &gt; Create new file</strong> button, on the right above the file directory.
+<h4 id="generic-type">Generic Type</h4>
+<p>Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> before attempting to make a post.
+<br />
+Example can be found here: <a href="https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-05-12-Season-40-Newsletter.markdown">example of newsletter post</a></p>
+<div class="instructions-div">
+  <ol>
+    <li>
+      <p>Navigate to where posts are created: <a href="https://github.com/randomtruffles/Dominion_League/tree/master/_posts">Github Repository</a></p>
+    </li>
+    <li>
+      <p>Click the <strong>Add file &gt; Create new file</strong> button, on the right above the file directory.
 <img src="img/league_mod_guide/add_file.png" width="500" /></p>
-  </li>
-  <li>It will prompt you to enter a name for the file.
-<img src="img/league_mod_guide/edit_file_name.png" width="500" />
-    <ul>
-      <li>Format of file name must be: <code class="language-plaintext highlighter-rouge">yyyy-mm-dd-PAGE_NAME.markdown</code></li>
-      <li><code class="language-plaintext highlighter-rouge">PAGE_NAME</code> is what will appear in the URL. You can name it anything, just make sure it does not contain spaces.</li>
-      <li>Examples:
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  2020-06-22-S40-Deadlines.markdown
-  2020-06-01-Sign-ups.markdown
-  2020-06-03-Welcome.markdown
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-  <li>Edit the file with the contents of the post (it must be in markdown).
-    <ul>
-      <li>Include a <strong>mandatory</strong> header (this will configure the layout of the page, the title, date etc.) -  see example below.
-        <ul>
-          <li>(Mandatory) means you must include something</li>
-          <li>(Optional) means you can leave it blank</li>
-          <li>(Copy Exact) Copy this line exactly and do not change.</li>
-        </ul>
-      </li>
-      <li>Header (for you to copy and edit). Text after <code class="language-plaintext highlighter-rouge">#</code> are comments and will be ignored.
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: post #(Copy Exact) Do not change
-title: Season 41 - Sign-ups #(Mandatory) Should be a short
-subtitle: Sign-ups Open #(Optional) Can leave blank
-author: truffles #(Mandatory) Your name!
-date: 2020-06-01 #(Mandatory) Today's date
-categories: pinned #(Optional) See types of categories below
+    </li>
+    <li>It will prompt you to enter a name for the file.
+<br /><img src="img/league_mod_guide/edit_file_name_generic.png" width="500" />
+      <ul>
+        <li>Format of file name must be: <code class="language-plaintext highlighter-rouge">yyyy-mm-dd-TITLE.markdown</code></li>
+        <li>Replace <code class="language-plaintext highlighter-rouge">TITLE</code> with something relevant to the post. It will become the URL of the page. <br /><em>Do not include spaces in the title</em></li>
+        <li>Examples:
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2017-04-22-Season40-Newsletter.markdown
+2020-06-01-Championship-Match-Summary.markdown
+</code></pre></div>          </div>
+        </li>
+      </ul>
+    </li>
+    <li>Edit the file by first including a header (see below) and then with the contents of the post (it must be in markdown).
+      <ul>
+        <li>Include a <strong>mandatory</strong> header (this will configure the layout of the page, the title, date etc.) -  see example below and a <a href="https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-05-12-Season-40-Newsletter.markdown">previous Newsletter post</a>.</li>
+        <li>Header for you to copy/edit/add to the top of your file. Text after <code class="language-plaintext highlighter-rouge">#</code> are comments and will be ignored.
+          <ul>
+            <li><strong>Important:</strong> Lines with <code class="language-plaintext highlighter-rouge">(CHANGE)</code> require you to make changes.</li>
+            <li>Lines with <code class="language-plaintext highlighter-rouge">(OPTIONAL)</code> can be deleted, ie. deleting <code class="language-plaintext highlighter-rouge">categories: pinned</code> will remove it from the pinned section in the <a href="https://dominionleague.org/posts.html">Posts page</a>
+              <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: Season 40 - Newsletter #(CHANGE) Keep it short!
+subtitle: Quarantines Lead to Explosive Growth #(CHANGE) Keep it short!
+author: truffles #(CHANGE) Your name!
+date: 2020-06-01 #(CHANGE) Today's date YYYY-MM-DD
+categories: pinned #(OPTIONAL) Delete this line if you don't want it pinned.
 ---
-</code></pre></div>        </div>
-      </li>
-      <li>Types of header categories
-        <ul>
-          <li>You can have multiple categories. Separate them with a space.
-            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>categories: pinned signups archive
-</code></pre></div>            </div>
-          </li>
-          <li><strong>pinned</strong>: This will add the post to the “pinned” section of the <a href="/posts.html">Posts</a> page.</li>
-          <li><strong>signups</strong>: Only <strong>one</strong> post should have this tag. It will change the <a href="/signups.html">Signups</a> page.</li>
-          <li><strong>archive</strong>: It will not be displayed in the <a href="/posts.html">Posts</a> page</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Commit the post! Scroll to the bottom of the page to <strong>Commit New File</strong>.
-    <ul>
-      <li>Add a description to let league mod contributors know what you did. Something short will suffice.
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create season 40 sign-up
-</code></pre></div>        </div>
-      </li>
-      <li>Click the <strong>Commit New File</strong> button. Wait a few seconds, and it should be live!
+</code></pre></div>              </div>
+            </li>
+          </ul>
+        </li>
+        <li>Add the content (in markdown) below the header.
+<br /><img src="img/league_mod_guide/edit_file_signups.png" width="500" /></li>
+      </ul>
+    </li>
+    <li>Commit the post! Scroll to the bottom of the page to <strong>Commit New File</strong>.
+      <ul>
+        <li>Add a description to let league mod contributors know what you did. Something short will suffice.
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create season 40 sign-ups
+</code></pre></div>          </div>
+        </li>
+        <li>Click the <strong>Commit New File</strong> button. Wait a few seconds, and it should be live!
 <img src="img/league_mod_guide/commit_file.png" width="500" /></li>
-    </ul>
-  </li>
-</ol>
+      </ul>
+    </li>
+  </ol>
+</div>
+<hr style="border-top: 1px solid darkgray" />
 
-<h5 id="signups-post">Signups Post</h5>
-<ol>
-  <li>Navigate to where posts are created: <a href="https://github.com/randomtruffles/Dominion_League/tree/master/_posts">Github Repository</a>
-    <ul>
-      <li>(Optional) There is a <code class="language-plaintext highlighter-rouge">README.md</code> about the <code class="language-plaintext highlighter-rouge">_posts</code> directory you can read.</li>
-    </ul>
-  </li>
-  <li>
-    <p>Click the <strong>Add file &gt; Create new file</strong> button, on the right above the file directory.
+<h4 id="sign-up-post">Sign Up Post</h4>
+<div class="instructions-div">
+  <p>Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> before attempting to make a sign up post.
+<br />
+Example can be found here: <a href="https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-06-01-Sign-ups.markdown">example of signup post</a></p>
+  <ol>
+    <li>
+      <p>Navigate to where posts are created: <a href="https://github.com/randomtruffles/Dominion_League/tree/master/_posts">Github Repository</a></p>
+    </li>
+    <li>
+      <p>Click the <strong>Add file &gt; Create new file</strong> button, on the right above the file directory.
 <img src="img/league_mod_guide/add_file.png" width="500" /></p>
-  </li>
-  <li>It will prompt you to enter a name for the file.
-<img src="img/league_mod_guide/edit_file_name.png" width="500" />
-    <ul>
-      <li>Format of file name must be: <code class="language-plaintext highlighter-rouge">yyyy-mm-dd-PAGE_NAME.markdown</code></li>
-      <li><code class="language-plaintext highlighter-rouge">PAGE_NAME</code> is what will appear in the URL. You can name it anything, just make sure it does not contain spaces.</li>
-      <li>Examples:
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  2020-06-22-S40-Deadlines.markdown
-  2020-06-01-Sign-ups.markdown
-  2020-06-03-Welcome.markdown
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-  <li>Edit the file with the contents of the post (it must be in markdown).
-    <ul>
-      <li>Include a <strong>mandatory</strong> header (this will configure the layout of the page, the title, date etc.) -  see example below.
-        <ul>
-          <li>(Mandatory) means you must include something</li>
-          <li>(Optional) means you can leave it blank</li>
-          <li>(Copy Exact) Copy this line exactly and do not change.</li>
-        </ul>
-      </li>
-      <li>Header (for you to copy and edit). Text after <code class="language-plaintext highlighter-rouge">#</code> are comments and will be ignored.
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: post #(Copy Exact) Do not change
-title: Season 41 - Sign-ups #(Mandatory) Should be a short
-subtitle: Sign-ups Open #(Optional) Can leave blank
-author: truffles #(Mandatory) Your name!
-date: 2020-06-01 #(Mandatory) Today's date
-categories: pinned #(Optional) See types of categories below
+    </li>
+    <li>It will prompt you to enter a name for the file.
+<br /><img src="img/league_mod_guide/edit_file_name_signups.png" width="500" />
+      <ul>
+        <li>Format of file name must be: <code class="language-plaintext highlighter-rouge">yyyy-mm-dd-Sign-ups.markdown</code></li>
+        <li>Examples:
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2017-04-22-Sign-ups.markdown
+2020-06-01-Sign-ups.markdown
+</code></pre></div>          </div>
+        </li>
+      </ul>
+    </li>
+    <li>Edit the file by first including a header (see below) and then with the contents of the post (it must be in markdown).
+      <ul>
+        <li>Include a <strong>mandatory</strong> header (this will configure the layout of the page, the title, date etc.) -  see example below and a <a href="https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-06-01-Sign-ups.markdown">previous post</a>.</li>
+        <li>Header for you to copy/edit/add to the top of your file. Text after <code class="language-plaintext highlighter-rouge">#</code> are comments and will be ignored.
+          <ul>
+            <li><strong>Important:</strong> Lines with <code class="language-plaintext highlighter-rouge">(CHANGE)</code> require you to make changes.
+              <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: simple_post
+title: Season 40 - Sign-ups #(CHANGE) Replace 40 with correct season
+subtitle: Sign-ups Open
+author: truffles #(CHANGE) Your name!
+date: 2020-06-01 #(CHANGE) Today's date YYYY-MM-DD
+categories: signups
 ---
-</code></pre></div>        </div>
-      </li>
-      <li>Types of header categories
-        <ul>
-          <li>You can have multiple categories. Separate them with a space.
-            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>categories: pinned signups archive
-</code></pre></div>            </div>
-          </li>
-          <li><strong>pinned</strong>: This will add the post to the “pinned” section of the <a href="/posts.html">Posts</a> page.</li>
-          <li><strong>signups</strong>: Only <strong>one</strong> post should have this tag. It will change the <a href="/signups.html">Signups</a> page.</li>
-          <li><strong>archive</strong>: It will not be displayed in the <a href="/posts.html">Posts</a> page</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ol>
+</code></pre></div>              </div>
+            </li>
+          </ul>
+        </li>
+        <li>Add the content (in markdown) below the header.
+<br /><img src="img/league_mod_guide/edit_file_signups.png" width="500" /></li>
+      </ul>
+    </li>
+    <li>Commit the post! Scroll to the bottom of the page to <strong>Commit New File</strong>.
+      <ul>
+        <li>Add a description to let league mod contributors know what you did. Something short will suffice.
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create season 40 sign-ups
+</code></pre></div>          </div>
+        </li>
+        <li>Click the <strong>Commit New File</strong> button. Wait a few seconds, and it should be live!
+<img src="img/league_mod_guide/commit_file.png" width="500" /></li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<hr style="border-top: 1px solid darkgray" />
+
+<h3 id="3-editing-a-post">3. Editing a Post</h3>
+<div class="instructions-div">
+  <p>Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> before attempting.
+<br /></p>
+  <h4 id="types-of-posts-to-edit">Types of Posts to Edit</h4>
+  <ul>
+    <li><a href="#edit-rules-page">Rules and Regulations</a></li>
+    <li><a href="#edit-faq-page">F.A.Q.</a></li>
+    <li><a href="#edit-other-posts">Other Posts</a> - Newsletters, Signups, etc.</li>
+  </ul>
+
+  <h4 id="edit-rules-page">Edit Rules Page</h4>
+  <ol>
+    <li>Navigate here: <a href="https://github.com/randomtruffles/Dominion_League/edit/master/rules.markdown">Rules Page</a></li>
+    <li>Edit the <code class="language-plaintext highlighter-rouge">name</code> (to your own name) and the <code class="language-plaintext highlighter-rouge">date</code> (to today’s date in yyyy-mm-dd format) in the header if you are making major changes.
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: League Rules
+subtitle: Official Rules of the Dominion League
+layout: post
+date: 2020-05-29 # CHANGE
+categories: pinned rules
+author: SamE # CHANGE
+---
+</code></pre></div>      </div>
+    </li>
+    <li>Edit the content in the file directly (make sure you are writing in markdown).</li>
+    <li>Scroll to bottom and click the <code class="language-plaintext highlighter-rouge">Commit changes</code> button.</li>
+    <li>Wait a few seconds for your changes to be live!</li>
+  </ol>
+
+  <h4 id="edit-faq-page">Edit FAQ Page</h4>
+
+  <ol>
+    <li>Navigate here: <a href="https://github.com/randomtruffles/Dominion_League/edit/master/faq.markdown">FAQ Page</a></li>
+    <li>Edit the <code class="language-plaintext highlighter-rouge">name</code> (to your own name) and the <code class="language-plaintext highlighter-rouge">date</code> (to today’s date in yyyy-mm-dd format) in the header if you are making major changes.
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Dominion League FAQ
+subtitle: Frequently Asked Questions for the Dominion League
+layout: post
+date: 2020-05-20 # CHANGE
+categories: pinned faq
+author: SamE # CHANGE
+---
+</code></pre></div>      </div>
+    </li>
+    <li>Edit the content in the file directly (make sure you are writing in markdown).</li>
+    <li>Scroll to bottom and click the <code class="language-plaintext highlighter-rouge">Commit changes</code> button.</li>
+    <li>Wait a few seconds for your changes to be live!</li>
+  </ol>
+
+  <h4 id="edit-other-posts">Edit Other Posts</h4>
+
+  <ol>
+    <li>Navigate to the <a href="https://github.com/randomtruffles/Dominion_League/tree/master/_posts">posts directory</a> on Github.</li>
+    <li>Look for the relevant post you want to edit.
+      <ul>
+        <li>Posts are named <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-TITLE.markdown</code> to give you insight on what the post is.</li>
+      </ul>
+    </li>
+    <li>Click on the relevant file for the post.</li>
+    <li>In the relevant post, click the edit symbol on the right of the header to go into edit mode.
+<img src="img/league_mod_guide/edit-post.png" width="500" /></li>
+    <li>Edit the post directly (make sure you are writing in markdown)</li>
+    <li>Scroll down the to bottom of the page and then click the <code class="language-plaintext highlighter-rouge">Commit changes</code> button.
+Wait a few seconds and your changes will be live!</li>
+  </ol>
+</div>
+<hr style="border-top: 1px solid darkgray" />
+
+<h3 id="4-deleting-posts">4. Deleting Posts</h3>
+<div class="instructions-div">
+  <p>Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> before attempting to delete a post.</p>
+  <ol>
+    <li>Navigate to the <a href="https://github.com/randomtruffles/Dominion_League/tree/master/_posts">posts directory</a> on Github.</li>
+    <li>Click on the relevant post file that you want to delete.</li>
+    <li>Once in the relevant post file, click on the delete button.
+<img src="img/league_mod_guide/delete_post.png" width="500" /></li>
+    <li>Clicking on the delete button will redirect you to confirm the post you are deleting. Scroll to the bottom of that page and click the <code class="language-plaintext highlighter-rouge">Commit Changes</code> button.
+<br />
+<img src="img/league_mod_guide/commit_delete.png" width="500" /></li>
+  </ol>
+</div>
+
+<hr style="border-top: 1px solid darkgray" />
+
+<h3 id="5-editing-moderator-list">5. Editing Moderator List</h3>
+<div class="instructions-div">
+  <p>Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> before attempting.</p>
+  <ol>
+    <li>Navigate to the <a href="https://github.com/randomtruffles/Dominion_League/edit/master/_data/moderators.yml">moderator list file</a> on Github.</li>
+    <li>Template of adding a new moderator
+      <ul>
+        <li><code class="language-plaintext highlighter-rouge">name</code>: the name of the moderator</li>
+        <li><code class="language-plaintext highlighter-rouge">discord</code>: the discord handle id (eg. <code class="language-plaintext highlighter-rouge">truffles#1234</code>)</li>
+        <li><code class="language-plaintext highlighter-rouge">image</code> : the name of the image file that <strong>must</strong> end in <code class="language-plaintext highlighter-rouge">.png</code>
+          <ul>
+            <li>If the file is <code class="language-plaintext highlighter-rouge">truffles_picture.png</code>, fill in <code class="language-plaintext highlighter-rouge">truffles_picture</code></li>
+            <li>If the file is <code class="language-plaintext highlighter-rouge">screenshot_1234.png</code> fill in <code class="language-plaintext highlighter-rouge">screenshot_1234</code></li>
+            <li>Instructions on where to add the image file begins in step 5.
+```
+              <h1 id="template-of-new-moderator">TEMPLATE OF NEW MODERATOR</h1>
+            </li>
+          </ul>
+        </li>
+        <li>name: truffles
+discord: truffles#1234
+image: truffles_picture_png_file_prefix
+```</li>
+      </ul>
+    </li>
+    <li>Insert the moderator in the correct position alphabetically.
+      <ul>
+        <li>To <strong>remove a moderator</strong>, simply delete the lines from the file (name, discord, image.</li>
+      </ul>
+    </li>
+    <li>Scroll to the bottom of the page and click the <code class="language-plaintext highlighter-rouge">Commit changes</code> button.</li>
+    <li>Navigate here to where moderator images are stored: <a href="https://github.com/randomtruffles/Dominion_League/tree/master/img/moderators">moderator images</a></li>
+    <li>Click the <strong>Add File &gt; Upload Files</strong> on the right on the page.
+<img src="img/league_mod_guide/add_file_mod.png" width="500" /></li>
+    <li>Upload the file by following the instructions on the page.
+      <ul>
+        <li>Note: The file name should be in the format <code class="language-plaintext highlighter-rouge">.png</code>, with the prefix being the same that you entered in step 2.</li>
+      </ul>
+    </li>
+    <li>Scroll to the bottom of the page and click <code class="language-plaintext highlighter-rouge">Commit changes</code>.</li>
+  </ol>
+
+  <p>Wait a few moments and it should be updated on the site!</p>
+</div>
+
+<h3 id="6-adding-youtube-channel-to-database">6. Adding Youtube Channel To Database</h3>
+<div class="instructions-div">
+  <p>Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> before attempting.</p>
+  <ol>
+    <li>Navigate to the <a href="https://github.com/randomtruffles/Dominion_League/edit/master/_data/youtube_channels.json">file storing youtube channels</a> on Github.</li>
+    <li>Edit and add the relevant channel information to the file.
+      <ul>
+        <li><strong>Important:</strong> Don’t forget adding a <code class="language-plaintext highlighter-rouge">,</code> after where you inserted.</li>
+        <li>Make sure you don’t have any “comments” in the file. Anything from <code class="language-plaintext highlighter-rouge">#</code> and afterwards is a comment (eg. <code class="language-plaintext highlighter-rouge"># DON'T FORGET THIS COMMA</code>)
+          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+},
+"last_old_player_in_file" : {
+ "channel" : "https://www.youtube.com/channel/UCAgje77cB9YRmo7ASNojn2Q?view_as=subscriber"
+}, # DON'T FORGET THIS COMMA
+"new_player_to_add_in_file" : {
+ "channel" : "https://www.youtube.com/channel/UCAgje77cB9YRmo7ASNojn2Q?view_as=subscriber"
+}
+} # end of file
+</code></pre></div>          </div>
+        </li>
+      </ul>
+    </li>
+    <li>Scroll to the bottom of that page and click the <code class="language-plaintext highlighter-rouge">Commit Changes</code> button.</li>
+    <li>Check that it’s been updated when you search for the player in the database.</li>
+  </ol>
+</div>
+
+<h3 id="7-how-the-website-works">7. How the Website Works</h3>
+<ul>
+  <li>In progress.</li>
+</ul>
 
     </div>
     <hr>

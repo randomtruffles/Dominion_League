@@ -3,10 +3,8 @@ title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the Dominion League
 layout: post
 date: 2020-05-20
-categories: rules
-tags: rules
+categories: pinned faq
 author: SamE
-
 ---
 *This FAQ concerns the [Rules & Regulations](https://dominionleague.org/rules.html) of the Dominion League. It is intended as a reference, and does not cover all the rules.*
 
