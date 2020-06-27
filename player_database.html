@@ -21,6 +21,9 @@ layout: default
     <button id="search_player_history_btn" title="search" onclick="searchPlayerHistory()">Search</button>
     <br>
     <br>
+    <div id="loading" >
+      <i style="color:grey" class="fa fa-spinner fa-spin fa-3x"></i>
+    </div>
     <div id="url_param_tutorial" style="display: none">
       <h5> Adding a Youtube Channel to Your Player Page</h5>
       <p> Fill out <a href="https://forms.gle/7vowtRMP7nYEMjkE9">this form</a> and the Dominion League will add it. </p>
@@ -76,15 +79,15 @@ function getPlayerParam() {
 function searchPlayerHistory(param=false){
 
     var entered_player_name = document.getElementById("input_player_search").value;
-
-    //var order = document.getElementById("order").value;
-    player_name = entered_player_name.toLowerCase().trim();
+    var player_name = entered_player_name.toLowerCase().trim();
+    var divContainer = document.getElementById("player-database");
 
     // check if URL has data
     if (param) {
       var player_param = getPlayerParam();
-      if (player_param == '') {
+      if (player_param.length == 0) {
         document.getElementById("url_param_tutorial").style = "";
+        document.getElementById("loading").style.display = "none"
         return;
       }
       if (entered_player_name == "") {
@@ -96,8 +99,8 @@ function searchPlayerHistory(param=false){
       location.replace("{{site.baseurl}}/player_database.html?player="+url_param_name);
       return;
     }
-    var divContainer = document.getElementById("player-database");
 
+    document.getElementById("loading").style.display = "none"
     // Easter eggs
     if (player_name == "truffles") {
       // Do something "No data exists for this player"
@@ -160,11 +163,9 @@ function searchPlayerHistory(param=false){
       // Sort by newest season first
       let player_seasons = players_and_seasons[player_name]["seasons"];
       player_seasons = player_seasons.slice().reverse();
-      console.log(player_seasons);
 
       // Iterate through all seasons the player has played
       var num_seasons = player_seasons.length;
-      console.log(num_seasons);
       for (let i = 0; i < num_seasons; i++) {
         var season = player_seasons[i]["season"]; // Eg. "1"
         var division = player_seasons[i]["division"]; // Eg. "A1"
@@ -236,13 +237,11 @@ function searchPlayerHistory(param=false){
             var row_class = "player-past-standings"
             var row_info_name_param = row_info_name.replace(/ /g, "%20")
             var row_info_url_name = `<a class="${row_class}" href="{{site.baseurl}}/player_database.html?player=${row_info_name_param}">${row_info_name}</a>`;
-            console.log(row_info_url_name);
 
             var if_champion = "";
             // figure out if champion
             if (division == "A1") {
               if (champion && row_info_name == champion) {
-                console.log("Video length: " + championship_videos[season].length);
                 if (championship_videos[season].length > 0) {
                   if_champion = " <a href=\"" + championship_videos[season][0] + "\">" + champion_sym + "</a>";
                 } else {
@@ -397,7 +396,6 @@ var players_and_seasons = {{ site.data.player_and_seasons_played | jsonify }};
 for (var player in players_and_seasons) {
   players.push(players_and_seasons[player]["name"]);
 }
-console.log(players);
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("input_player_search"), players);
 </script>
