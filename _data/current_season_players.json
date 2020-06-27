@@ -1,0 +1,4053 @@
+{
+  "seasons": 40,
+  "e.honda": {
+    "name": "E.Honda",
+    "tier": "A",
+    "division": "A1"
+  },
+  "jnails": {
+    "name": "JNails",
+    "tier": "A",
+    "division": "A1"
+  },
+  "mic qsenoch": {
+    "name": "Mic Qsenoch",
+    "tier": "A",
+    "division": "A1"
+  },
+  "nasmith99": {
+    "name": "nasmith99",
+    "tier": "A",
+    "division": "A1"
+  },
+  "wharf_rat": {
+    "name": "wharf_rat",
+    "tier": "A",
+    "division": "A1"
+  },
+  "xyrix": {
+    "name": "xyrix",
+    "tier": "A",
+    "division": "A1"
+  },
+  "707090": {
+    "name": "707090",
+    "tier": "B",
+    "division": "B1"
+  },
+  "apostolosoruler": {
+    "name": "Apostolosoruler",
+    "tier": "B",
+    "division": "B2"
+  },
+  "bryan": {
+    "name": "Bryan",
+    "tier": "B",
+    "division": "B1"
+  },
+  "burning skull": {
+    "name": "Burning Skull",
+    "tier": "B",
+    "division": "B2"
+  },
+  "drsteelhammer": {
+    "name": "drsteelhammer",
+    "tier": "B",
+    "division": "B1"
+  },
+  "h.exe": {
+    "name": "H.exe",
+    "tier": "B",
+    "division": "B2"
+  },
+  "markus": {
+    "name": "markus",
+    "tier": "B",
+    "division": "B1"
+  },
+  "nerdbound": {
+    "name": "nerdbound",
+    "tier": "B",
+    "division": "B1"
+  },
+  "same": {
+    "name": "SamE",
+    "tier": "B",
+    "division": "B1"
+  },
+  "sicomatic": {
+    "name": "Sicomatic",
+    "tier": "B",
+    "division": "B2"
+  },
+  "singletee": {
+    "name": "singletee",
+    "tier": "B",
+    "division": "B2"
+  },
+  "swordfishtrombone": {
+    "name": "swordfishtrombone",
+    "tier": "B",
+    "division": "B2"
+  },
+  "tracer": {
+    "name": "tracer",
+    "tier": "B",
+    "division": "B1"
+  },
+  "aku chi": {
+    "name": "aku chi",
+    "tier": "C",
+    "division": "C4"
+  },
+  "amoffett11": {
+    "name": "amoffett11",
+    "tier": "C",
+    "division": "C4"
+  },
+  "bluey_the_bear": {
+    "name": "bluey_the_bear",
+    "tier": "C",
+    "division": "C1"
+  },
+  "bobbydj18": {
+    "name": "bobbydj18",
+    "tier": "C",
+    "division": "C3"
+  },
+  "catoftheyear": {
+    "name": "catoftheyear",
+    "tier": "C",
+    "division": "C3"
+  },
+  "crabcat2": {
+    "name": "crabcat2",
+    "tier": "C",
+    "division": "C1"
+  },
+  "dagron": {
+    "name": "dagron",
+    "tier": "C",
+    "division": "C4"
+  },
+  "dan brooks": {
+    "name": "Dan Brooks",
+    "tier": "C",
+    "division": "C3"
+  },
+  "earl": {
+    "name": "Earl",
+    "tier": "C",
+    "division": "C2"
+  },
+  "fircoal": {
+    "name": "Fircoal",
+    "tier": "C",
+    "division": "C2"
+  },
+  "gamesou": {
+    "name": "gamesou",
+    "tier": "C",
+    "division": "C2"
+  },
+  "heron": {
+    "name": "heron",
+    "tier": "C",
+    "division": "C4"
+  },
+  "jean-michel": {
+    "name": "Jean-Michel",
+    "tier": "C",
+    "division": "C2"
+  },
+  "jonts": {
+    "name": "jonts",
+    "tier": "C",
+    "division": "C3"
+  },
+  "lalight": {
+    "name": "LaLight",
+    "tier": "C",
+    "division": "C3"
+  },
+  "lemonspawn": {
+    "name": "Lemonspawn",
+    "tier": "C",
+    "division": "C2"
+  },
+  "mikechike": {
+    "name": "mikechike",
+    "tier": "C",
+    "division": "C1"
+  },
+  "personman": {
+    "name": "Personman",
+    "tier": "C",
+    "division": "C4"
+  },
+  "pppppppppp": {
+    "name": "pppppppppp",
+    "tier": "C",
+    "division": "C1"
+  },
+  "pqr4": {
+    "name": "pqr4",
+    "tier": "C",
+    "division": "C3"
+  },
+  "puzzle box": {
+    "name": "Puzzle Box",
+    "tier": "C",
+    "division": "C1"
+  },
+  "rsilverstein12": {
+    "name": "rsilverstein12",
+    "tier": "C",
+    "division": "C4"
+  },
+  "sharur": {
+    "name": "Sharur",
+    "tier": "C",
+    "division": "C2"
+  },
+  "topher1588": {
+    "name": "topher1588",
+    "tier": "C",
+    "division": "C1"
+  },
+  "anders": {
+    "name": "Anders",
+    "tier": "D",
+    "division": "D2"
+  },
+  "cave-o-sapien": {
+    "name": "Cave-o-sapien",
+    "tier": "D",
+    "division": "D3"
+  },
+  "chris is me": {
+    "name": "Chris is me",
+    "tier": "D",
+    "division": "D1"
+  },
+  "crlundy": {
+    "name": "crlundy",
+    "tier": "D",
+    "division": "D3"
+  },
+  "eh1414": {
+    "name": "eh1414",
+    "tier": "D",
+    "division": "D1"
+  },
+  "gazbag": {
+    "name": "Gazbag",
+    "tier": "D",
+    "division": "D1"
+  },
+  "jppbkm": {
+    "name": "jppbkm",
+    "tier": "D",
+    "division": "D4"
+  },
+  "knaacku": {
+    "name": "knaacku",
+    "tier": "D",
+    "division": "D"
+  },
+  "lrlusher": {
+    "name": "lrlusher",
+    "tier": "D",
+    "division": "D3"
+  },
+  "marfik57": {
+    "name": "marfik57",
+    "tier": "D",
+    "division": "D4"
+  },
+  "micha1980": {
+    "name": "Micha1980",
+    "tier": "D",
+    "division": "D2"
+  },
+  "missouriben": {
+    "name": "missouriben",
+    "tier": "D",
+    "division": "D1"
+  },
+  "nessuno": {
+    "name": "nessuno",
+    "tier": "D",
+    "division": "D4"
+  },
+  "ravenshard": {
+    "name": "Ravenshard",
+    "tier": "D",
+    "division": "D4"
+  },
+  "s_smart": {
+    "name": "S_Smart",
+    "tier": "D",
+    "division": "D3"
+  },
+  "sab4005": {
+    "name": "sab4005",
+    "tier": "D",
+    "division": "D3"
+  },
+  "schadd": {
+    "name": "schadd",
+    "tier": "D",
+    "division": "D1"
+  },
+  "sdrawkcab": {
+    "name": "sdrawkcab",
+    "tier": "D",
+    "division": "D2"
+  },
+  "skizelo": {
+    "name": "skizelo",
+    "tier": "D",
+    "division": "D4"
+  },
+  "skumpy": {
+    "name": "skumpy",
+    "tier": "D",
+    "division": "D1"
+  },
+  "sweetjohn33": {
+    "name": "sweetjohn33",
+    "tier": "D",
+    "division": "D3"
+  },
+  "thewatchtower": {
+    "name": "TheWatchtower",
+    "tier": "D",
+    "division": "D2"
+  },
+  "tonywild": {
+    "name": "TonyWild",
+    "tier": "D",
+    "division": "D4"
+  },
+  "tufftaeh": {
+    "name": "tufftaeh",
+    "tier": "D",
+    "division": "D2"
+  },
+  "alexconga": {
+    "name": "alexconga",
+    "tier": "E",
+    "division": "E3"
+  },
+  "alibby1152": {
+    "name": "alibby1152",
+    "tier": "E",
+    "division": "E4"
+  },
+  "anovis": {
+    "name": "anovis",
+    "tier": "E",
+    "division": "E5"
+  },
+  "billdacat": {
+    "name": "billdacat",
+    "tier": "E",
+    "division": "E3"
+  },
+  "bladebandit": {
+    "name": "bladebandit",
+    "tier": "E",
+    "division": "E4"
+  },
+  "bumbugler": {
+    "name": "bumbugler",
+    "tier": "E",
+    "division": "E5"
+  },
+  "card master": {
+    "name": "Card Master",
+    "tier": "E",
+    "division": "E7"
+  },
+  "catstealer419": {
+    "name": "catstealer419",
+    "tier": "E",
+    "division": "E2"
+  },
+  "ced": {
+    "name": "ced",
+    "tier": "E",
+    "division": "E8"
+  },
+  "counto": {
+    "name": "counto",
+    "tier": "E",
+    "division": "E1"
+  },
+  "davedave": {
+    "name": "DaveDave",
+    "tier": "E",
+    "division": "E1"
+  },
+  "ddl": {
+    "name": "DDL",
+    "tier": "E",
+    "division": "E4"
+  },
+  "dividedspy": {
+    "name": "DividedSpy",
+    "tier": "E",
+    "division": "E2"
+  },
+  "epicurus": {
+    "name": "Epicurus",
+    "tier": "E",
+    "division": "E5"
+  },
+  "farmerben": {
+    "name": "FarmerBen",
+    "tier": "E",
+    "division": "E3"
+  },
+  "fiercelord": {
+    "name": "fiercelord",
+    "tier": "E",
+    "division": "E2"
+  },
+  "folivora": {
+    "name": "folivora",
+    "tier": "E",
+    "division": "E1"
+  },
+  "garyofpgh2": {
+    "name": "GaryOfPgh2",
+    "tier": "E",
+    "division": "E3"
+  },
+  "gasku": {
+    "name": "Gasku",
+    "tier": "E",
+    "division": "E7"
+  },
+  "harkne": {
+    "name": "harkne",
+    "tier": "E",
+    "division": "E8"
+  },
+  "hierarch": {
+    "name": "hierarch",
+    "tier": "E",
+    "division": "E6"
+  },
+  "hoget10": {
+    "name": "hoget10",
+    "tier": "E",
+    "division": "E2"
+  },
+  "hroll": {
+    "name": "HRoll",
+    "tier": "E",
+    "division": "E1"
+  },
+  "jimmmy": {
+    "name": "Jimmmy",
+    "tier": "E",
+    "division": "E8"
+  },
+  "jpreto": {
+    "name": "JPreto",
+    "tier": "E",
+    "division": "E6"
+  },
+  "jxcn17": {
+    "name": "jxcn17",
+    "tier": "E",
+    "division": "E1"
+  },
+  "khz": {
+    "name": "khz",
+    "tier": "E",
+    "division": "E4"
+  },
+  "magyi": {
+    "name": "Magyi",
+    "tier": "E",
+    "division": "E6"
+  },
+  "mistgun": {
+    "name": "mistgun",
+    "tier": "E",
+    "division": "E8"
+  },
+  "moonshadow70": {
+    "name": "Moonshadow70",
+    "tier": "E",
+    "division": "E2"
+  },
+  "mvp": {
+    "name": "MVP",
+    "tier": "E",
+    "division": "E5"
+  },
+  "namek": {
+    "name": "namek",
+    "tier": "E",
+    "division": "E7"
+  },
+  "nbschlueter": {
+    "name": "NBSchlueter",
+    "tier": "E",
+    "division": "E5"
+  },
+  "nottoobad": {
+    "name": "nottoobad",
+    "tier": "E",
+    "division": "E3"
+  },
+  "oemel09": {
+    "name": "oemel09",
+    "tier": "E",
+    "division": "E8"
+  },
+  "ravivas": {
+    "name": "ravivas",
+    "tier": "E",
+    "division": "E7"
+  },
+  "real77": {
+    "name": "real77",
+    "tier": "E",
+    "division": "E6"
+  },
+  "scolapasta": {
+    "name": "scolapasta",
+    "tier": "E",
+    "division": "E2"
+  },
+  "seanahan": {
+    "name": "seanahan",
+    "tier": "E",
+    "division": "E1"
+  },
+  "searingspear92": {
+    "name": "SearingSpear92",
+    "tier": "E",
+    "division": "E4"
+  },
+  "sharapopovamaria": {
+    "name": "Sharapopovamaria",
+    "tier": "E",
+    "division": "E8"
+  },
+  "sparrowhawk73": {
+    "name": "sparrowhawk73",
+    "tier": "E",
+    "division": "E6"
+  },
+  "spiraler": {
+    "name": "Spiraler",
+    "tier": "E",
+    "division": "E6"
+  },
+  "squirezucco": {
+    "name": "squirezucco",
+    "tier": "E",
+    "division": "E5"
+  },
+  "thabo": {
+    "name": "Thabo",
+    "tier": "E",
+    "division": "E7"
+  },
+  "thepilferer": {
+    "name": "thepilferer",
+    "tier": "E",
+    "division": "E3"
+  },
+  "topaas": {
+    "name": "topAAs",
+    "tier": "E",
+    "division": "E7"
+  },
+  "yahas": {
+    "name": "yahas",
+    "tier": "E",
+    "division": "E4"
+  },
+  "_dumbonion_": {
+    "name": "_DumbOnion_",
+    "tier": "F",
+    "division": "F"
+  },
+  "34witches": {
+    "name": "34Witches",
+    "tier": "F",
+    "division": "F15"
+  },
+  "abjectpermanence": {
+    "name": "AbjectPermanence",
+    "tier": "F",
+    "division": "F11"
+  },
+  "acceptablebunny": {
+    "name": "AcceptableBunny",
+    "tier": "F",
+    "division": "F13"
+  },
+  "adthor": {
+    "name": "Adthor",
+    "tier": "F",
+    "division": "F1"
+  },
+  "aesthephile": {
+    "name": "aesthephile",
+    "tier": "F",
+    "division": "F10"
+  },
+  "alion8me": {
+    "name": "alion8me",
+    "tier": "F",
+    "division": "F4"
+  },
+  "amankdr": {
+    "name": "amankdr",
+    "tier": "F",
+    "division": "F7"
+  },
+  "andylatto": {
+    "name": "andylatto",
+    "tier": "F",
+    "division": ""
+  },
+  "appie459": {
+    "name": "Appie459",
+    "tier": "F",
+    "division": "F16"
+  },
+  "ares": {
+    "name": "Ares",
+    "tier": "F",
+    "division": "F14"
+  },
+  "asmajlaton": {
+    "name": "asmajlaton",
+    "tier": "F",
+    "division": "F5"
+  },
+  "assemble me": {
+    "name": "assemble me",
+    "tier": "F",
+    "division": "F14"
+  },
+  "bcoli": {
+    "name": "bcoli",
+    "tier": "F",
+    "division": "F2"
+  },
+  "beachcomber": {
+    "name": "Beachcomber",
+    "tier": "F",
+    "division": "F15"
+  },
+  "bexxsor": {
+    "name": "BeXXsoR",
+    "tier": "F",
+    "division": "F15"
+  },
+  "bizaff": {
+    "name": "bizaff",
+    "tier": "F",
+    "division": "F9"
+  },
+  "blablablabla": {
+    "name": "blablablabla",
+    "tier": "F",
+    "division": "F11"
+  },
+  "bobkrier": {
+    "name": "BobKrier",
+    "tier": "F",
+    "division": "F10"
+  },
+  "bobmathrotus": {
+    "name": "BobMathrotus",
+    "tier": "F",
+    "division": "F6"
+  },
+  "briawna": {
+    "name": "Briawna",
+    "tier": "F",
+    "division": "F8"
+  },
+  "britchken": {
+    "name": "britchken",
+    "tier": "F",
+    "division": "F5"
+  },
+  "britishsensation": {
+    "name": "britishsensation",
+    "tier": "F",
+    "division": "F"
+  },
+  "caetra": {
+    "name": "Caetra",
+    "tier": "F",
+    "division": "F2"
+  },
+  "casualxmajestic": {
+    "name": "CasualxMajestic",
+    "tier": "F",
+    "division": "F15"
+  },
+  "cferens": {
+    "name": "cferens",
+    "tier": "F",
+    "division": "F12"
+  },
+  "chocojoe": {
+    "name": "chocojoe",
+    "tier": "F",
+    "division": "F11"
+  },
+  "col_dax": {
+    "name": "col_dax",
+    "tier": "F",
+    "division": ""
+  },
+  "coweringcow": {
+    "name": "CoweringCow",
+    "tier": "F",
+    "division": "F3"
+  },
+  "della": {
+    "name": "della",
+    "tier": "F",
+    "division": "F14"
+  },
+  "dghunter79": {
+    "name": "dghunter79",
+    "tier": "F",
+    "division": "F9"
+  },
+  "dominanz": {
+    "name": "Dominanz",
+    "tier": "F",
+    "division": "F16"
+  },
+  "dominion beast": {
+    "name": "Dominion Beast",
+    "tier": "F",
+    "division": "F5"
+  },
+  "dylanmatthews": {
+    "name": "dylanmatthews",
+    "tier": "F",
+    "division": "F3"
+  },
+  "emeric": {
+    "name": "Emeric",
+    "tier": "F",
+    "division": "F15"
+  },
+  "erinblack": {
+    "name": "erinblack",
+    "tier": "F",
+    "division": "F10"
+  },
+  "eskoglund": {
+    "name": "eskoglund",
+    "tier": "F",
+    "division": "F2"
+  },
+  "flel": {
+    "name": "flel",
+    "tier": "F",
+    "division": "F6"
+  },
+  "gordoo": {
+    "name": "Gordoo",
+    "tier": "F",
+    "division": "F10"
+  },
+  "graceg": {
+    "name": "graceg",
+    "tier": "F",
+    "division": "F11"
+  },
+  "grafpaper": {
+    "name": "Grafpaper",
+    "tier": "F",
+    "division": "F1"
+  },
+  "hackybaby": {
+    "name": "Hackybaby",
+    "tier": "F",
+    "division": "F"
+  },
+  "hamlet the dane": {
+    "name": "Hamlet the Dane",
+    "tier": "F",
+    "division": "F2"
+  },
+  "hannibal6": {
+    "name": "hannibal6",
+    "tier": "F",
+    "division": "F1"
+  },
+  "hwquidfwqhbcw": {
+    "name": "hwquidfwqhbcw",
+    "tier": "F",
+    "division": "F8"
+  },
+  "ibnsina": {
+    "name": "IbnSina",
+    "tier": "F",
+    "division": "F6"
+  },
+  "ilikus": {
+    "name": "ilikus",
+    "tier": "F",
+    "division": "F14"
+  },
+  "ingix": {
+    "name": "Ingix",
+    "tier": "F",
+    "division": "F15"
+  },
+  "iras42": {
+    "name": "Iras42",
+    "tier": "F",
+    "division": "F13"
+  },
+  "jared_rockenstein": {
+    "name": "jared_rockenstein",
+    "tier": "F",
+    "division": "F3"
+  },
+  "jerrydot": {
+    "name": "Jerrydot",
+    "tier": "F",
+    "division": "F14"
+  },
+  "jgoyes": {
+    "name": "jgoyes",
+    "tier": "F",
+    "division": "F5"
+  },
+  "jmjjmj": {
+    "name": "jmjjmj",
+    "tier": "F",
+    "division": "F1"
+  },
+  "jtim1013": {
+    "name": "jtim1013",
+    "tier": "F",
+    "division": "F4"
+  },
+  "karenttrouble": {
+    "name": "karenttrouble",
+    "tier": "F",
+    "division": "F2"
+  },
+  "kennytbk": {
+    "name": "KennyTBK",
+    "tier": "F",
+    "division": "F"
+  },
+  "koemanmike": {
+    "name": "koemanmike",
+    "tier": "F",
+    "division": "F16"
+  },
+  "kubar": {
+    "name": "kubar",
+    "tier": "F",
+    "division": "F5"
+  },
+  "lard rattington": {
+    "name": "Lard Rattington",
+    "tier": "F",
+    "division": "F4"
+  },
+  "malmerung": {
+    "name": "malmerung",
+    "tier": "F",
+    "division": "F4"
+  },
+  "malta": {
+    "name": "Malta",
+    "tier": "F",
+    "division": "F12"
+  },
+  "maltman": {
+    "name": "maltman",
+    "tier": "F",
+    "division": "F7"
+  },
+  "maxw1717": {
+    "name": "maxw1717",
+    "tier": "F",
+    "division": "F6"
+  },
+  "mazegeek999": {
+    "name": "mazegeek999",
+    "tier": "F",
+    "division": "F10"
+  },
+  "memories": {
+    "name": "Memories",
+    "tier": "F",
+    "division": "F3"
+  },
+  "miaww": {
+    "name": "Miaww",
+    "tier": "F",
+    "division": "F"
+  },
+  "micahthedebater": {
+    "name": "MicahTheDebater",
+    "tier": "F",
+    "division": "F3"
+  },
+  "mikaelsson": {
+    "name": "mikaelsson",
+    "tier": "F",
+    "division": "F12"
+  },
+  "mort": {
+    "name": "Mort",
+    "tier": "F",
+    "division": "F13"
+  },
+  "nez477": {
+    "name": "Nez477",
+    "tier": "F",
+    "division": "F8"
+  },
+  "noi waters": {
+    "name": "Noi Waters",
+    "tier": "F",
+    "division": "F4"
+  },
+  "og patrik": {
+    "name": "OG Patrik",
+    "tier": "F",
+    "division": "F16"
+  },
+  "oshiimine": {
+    "name": "oshiimine",
+    "tier": "F",
+    "division": "F5"
+  },
+  "p4ddy0d00rs": {
+    "name": "p4ddy0d00rs",
+    "tier": "F",
+    "division": "F7"
+  },
+  "paul christiano": {
+    "name": "Paul Christiano",
+    "tier": "F",
+    "division": "F10"
+  },
+  "pianovince": {
+    "name": "pianovince",
+    "tier": "F",
+    "division": "F11"
+  },
+  "plazek": {
+    "name": "Plazek",
+    "tier": "F",
+    "division": "F14"
+  },
+  "pregnantbird": {
+    "name": "pregnantbird",
+    "tier": "F",
+    "division": "F13"
+  },
+  "riverpatron": {
+    "name": "RiverPatron",
+    "tier": "F",
+    "division": "F"
+  },
+  "robertox": {
+    "name": "robertox",
+    "tier": "F",
+    "division": "F13"
+  },
+  "schlafi": {
+    "name": "Schlafi",
+    "tier": "F",
+    "division": "F12"
+  },
+  "scoopypls": {
+    "name": "ScoopyPls",
+    "tier": "F",
+    "division": "F12"
+  },
+  "shiz": {
+    "name": "Shiz",
+    "tier": "F",
+    "division": "F16"
+  },
+  "spineflu": {
+    "name": "spineflu",
+    "tier": "F",
+    "division": "F4"
+  },
+  "stonedmason": {
+    "name": "stonedmason",
+    "tier": "F",
+    "division": "F12"
+  },
+  "teakpitkin": {
+    "name": "TeakPitkin",
+    "tier": "F",
+    "division": "F9"
+  },
+  "terracubist": {
+    "name": "terracubist",
+    "tier": "F",
+    "division": "F8"
+  },
+  "tgtaft": {
+    "name": "tgtaft",
+    "tier": "F",
+    "division": "F1"
+  },
+  "thebergster": {
+    "name": "TheBergster",
+    "tier": "F",
+    "division": "F9"
+  },
+  "theschnitz": {
+    "name": "theschnitz",
+    "tier": "F",
+    "division": "F9"
+  },
+  "thetruequ": {
+    "name": "thetruequ",
+    "tier": "F",
+    "division": "F8"
+  },
+  "trinacat": {
+    "name": "TrinaCat",
+    "tier": "F",
+    "division": "F8"
+  },
+  "trippy": {
+    "name": "trippy",
+    "tier": "F",
+    "division": "F7"
+  },
+  "troth20": {
+    "name": "troth20",
+    "tier": "F",
+    "division": "F7"
+  },
+  "ultimategeek": {
+    "name": "UltimateGeek",
+    "tier": "F",
+    "division": "F7"
+  },
+  "unagi.don": {
+    "name": "unagi.don",
+    "tier": "F",
+    "division": "F3"
+  },
+  "universalflamez": {
+    "name": "universalflamez",
+    "tier": "F",
+    "division": "F1"
+  },
+  "vmaria22": {
+    "name": "vmaria22",
+    "tier": "F",
+    "division": "F6"
+  },
+  "voiceofthewind": {
+    "name": "VoiceoftheWind",
+    "tier": "F",
+    "division": "F13"
+  },
+  "wmorgan": {
+    "name": "wmorgan",
+    "tier": "F",
+    "division": "F9"
+  },
+  "22jonhunt": {
+    "name": "22jonhunt",
+    "tier": "G",
+    "division": "G11"
+  },
+  "absurdicus": {
+    "name": "Absurdicus",
+    "tier": "G",
+    "division": "G31"
+  },
+  "aciddominion": {
+    "name": "AcidDominion",
+    "tier": "G",
+    "division": "G30"
+  },
+  "acocle": {
+    "name": "acocle",
+    "tier": "G",
+    "division": "G13"
+  },
+  "aharow21": {
+    "name": "Aharow21",
+    "tier": "G",
+    "division": "G5"
+  },
+  "ahnorris21": {
+    "name": "AHNorris21",
+    "tier": "G",
+    "division": "G7"
+  },
+  "ajay887": {
+    "name": "AJay887",
+    "tier": "G",
+    "division": "G15"
+  },
+  "alexgor23": {
+    "name": "alexgor23",
+    "tier": "G",
+    "division": "G11"
+  },
+  "alice_in_dystopia": {
+    "name": "Alice_in_Dystopia",
+    "tier": "G",
+    "division": "G32"
+  },
+  "alipata": {
+    "name": "Alipata",
+    "tier": "G",
+    "division": "G24"
+  },
+  "annab492": {
+    "name": "Annab492",
+    "tier": "G",
+    "division": "G13"
+  },
+  "avsparry": {
+    "name": "avsparry",
+    "tier": "G",
+    "division": "G26"
+  },
+  "bigbootyboi": {
+    "name": "bigbootyboi",
+    "tier": "G",
+    "division": "G19"
+  },
+  "bigfarm": {
+    "name": "BigFarm",
+    "tier": "G",
+    "division": "G16"
+  },
+  "bigmoose": {
+    "name": "bigmoose",
+    "tier": "G",
+    "division": "G2"
+  },
+  "billchu13": {
+    "name": "billchu13",
+    "tier": "G",
+    "division": "G19"
+  },
+  "blakewain": {
+    "name": "blakewain",
+    "tier": "G",
+    "division": "G16"
+  },
+  "blublable": {
+    "name": "blublable",
+    "tier": "G",
+    "division": "G30"
+  },
+  "bonxie": {
+    "name": "bonxie",
+    "tier": "G",
+    "division": "G27"
+  },
+  "bostonquad": {
+    "name": "BostonQuad",
+    "tier": "G",
+    "division": "G20"
+  },
+  "bparty": {
+    "name": "BParty",
+    "tier": "G",
+    "division": "G23"
+  },
+  "braintwister": {
+    "name": "BrainTwister",
+    "tier": "G",
+    "division": "G18"
+  },
+  "branbles": {
+    "name": "Branbles",
+    "tier": "G",
+    "division": "G24"
+  },
+  "bubblovat": {
+    "name": "bubblovat",
+    "tier": "G",
+    "division": "G8"
+  },
+  "byrne": {
+    "name": "byrne",
+    "tier": "G",
+    "division": "G10"
+  },
+  "catdontbark": {
+    "name": "catdontbark",
+    "tier": "G",
+    "division": "G18"
+  },
+  "chamoose": {
+    "name": "Chamoose",
+    "tier": "G",
+    "division": "G10"
+  },
+  "charlesvane": {
+    "name": "CharlesVane",
+    "tier": "G",
+    "division": "G25"
+  },
+  "charstar5": {
+    "name": "charstar5",
+    "tier": "G",
+    "division": "G6"
+  },
+  "chattateo": {
+    "name": "chattateo",
+    "tier": "G",
+    "division": "G15"
+  },
+  "chesstick": {
+    "name": "chesstick",
+    "tier": "G",
+    "division": "G28"
+  },
+  "chocochip": {
+    "name": "ChocoChip",
+    "tier": "G",
+    "division": "G21"
+  },
+  "chrismertens": {
+    "name": "chrismertens",
+    "tier": "G",
+    "division": "G32"
+  },
+  "ciparo": {
+    "name": "Ciparo",
+    "tier": "G",
+    "division": "G32"
+  },
+  "clemdog69": {
+    "name": "clemdog69",
+    "tier": "G",
+    "division": "G20"
+  },
+  "cofa": {
+    "name": "cofa",
+    "tier": "G",
+    "division": "G30"
+  },
+  "cruiskeen": {
+    "name": "cruiskeen",
+    "tier": "G",
+    "division": "G32"
+  },
+  "dajjans4": {
+    "name": "dajjans4",
+    "tier": "G",
+    "division": "G2"
+  },
+  "darkwrath": {
+    "name": "Darkwrath",
+    "tier": "G",
+    "division": "G22"
+  },
+  "darthsensitive": {
+    "name": "DarthSensitive",
+    "tier": "G",
+    "division": "G14"
+  },
+  "darthshikago": {
+    "name": "darthshikago",
+    "tier": "G",
+    "division": "G"
+  },
+  "davedude": {
+    "name": "DaveDude",
+    "tier": "G",
+    "division": "G23"
+  },
+  "dendanskemand": {
+    "name": "dendanskemand",
+    "tier": "G",
+    "division": "G3"
+  },
+  "derpkaiser": {
+    "name": "DerpKaiser",
+    "tier": "G",
+    "division": "G1"
+  },
+  "desertwhale": {
+    "name": "DesertWhale",
+    "tier": "G",
+    "division": "G16"
+  },
+  "dexterslab": {
+    "name": "dexterslab",
+    "tier": "G",
+    "division": "G24"
+  },
+  "dfodavid": {
+    "name": "dfodavid",
+    "tier": "G",
+    "division": "G4"
+  },
+  "dk88": {
+    "name": "DK88",
+    "tier": "G",
+    "division": "G21"
+  },
+  "dominicw": {
+    "name": "dominicw",
+    "tier": "G",
+    "division": "G29"
+  },
+  "drkschneider": {
+    "name": "Drkschneider",
+    "tier": "G",
+    "division": "G25"
+  },
+  "drog": {
+    "name": "drog",
+    "tier": "G",
+    "division": "G18"
+  },
+  "durotan97": {
+    "name": "Durotan97",
+    "tier": "G",
+    "division": "G26"
+  },
+  "ecreed": {
+    "name": "ECreed",
+    "tier": "G",
+    "division": "G25"
+  },
+  "eereid": {
+    "name": "eereid",
+    "tier": "G",
+    "division": "G3"
+  },
+  "elazarus": {
+    "name": "elazarus",
+    "tier": "G",
+    "division": "G"
+  },
+  "emperormattxiv": {
+    "name": "EmperorMattXIV",
+    "tier": "G",
+    "division": "G26"
+  },
+  "eppob": {
+    "name": "Eppob",
+    "tier": "G",
+    "division": "G31"
+  },
+  "eraa": {
+    "name": "Eraa",
+    "tier": "G",
+    "division": "G7"
+  },
+  "erikmoyer": {
+    "name": "erikmoyer",
+    "tier": "G",
+    "division": "G21"
+  },
+  "erndiggity": {
+    "name": "erndiggity",
+    "tier": "G",
+    "division": "G20"
+  },
+  "farrmich": {
+    "name": "farrmich",
+    "tier": "G",
+    "division": "G3"
+  },
+  "flatirons": {
+    "name": "Flatirons",
+    "tier": "G",
+    "division": "G18"
+  },
+  "frownland": {
+    "name": "frownland",
+    "tier": "G",
+    "division": "G3"
+  },
+  "fullwagon": {
+    "name": "Fullwagon",
+    "tier": "G",
+    "division": "G5"
+  },
+  "garrettargenna": {
+    "name": "garrettargenna",
+    "tier": "G",
+    "division": "G17"
+  },
+  "geal77": {
+    "name": "geal77",
+    "tier": "G",
+    "division": "G8"
+  },
+  "go1964": {
+    "name": "go1964",
+    "tier": "G",
+    "division": "G31"
+  },
+  "gpitsakis": {
+    "name": "gpitsakis",
+    "tier": "G",
+    "division": "G"
+  },
+  "gregsucks": {
+    "name": "gregsucks",
+    "tier": "G",
+    "division": "G9"
+  },
+  "grimace": {
+    "name": "grimace",
+    "tier": "G",
+    "division": "G12"
+  },
+  "gugucool": {
+    "name": "gugucool",
+    "tier": "G",
+    "division": "G9"
+  },
+  "gustav17": {
+    "name": "gustav17",
+    "tier": "G",
+    "division": "G11"
+  },
+  "habeasporpoise": {
+    "name": "habeasporpoise",
+    "tier": "G",
+    "division": "G20"
+  },
+  "hammer12": {
+    "name": "Hammer12",
+    "tier": "G",
+    "division": "G23"
+  },
+  "hankiepankie": {
+    "name": "Hankiepankie",
+    "tier": "G",
+    "division": "G30"
+  },
+  "hannigan2020": {
+    "name": "Hannigan2020",
+    "tier": "G",
+    "division": "G"
+  },
+  "hezeheze": {
+    "name": "hezeheze",
+    "tier": "G",
+    "division": "G14"
+  },
+  "hoffi1210": {
+    "name": "Hoffi1210",
+    "tier": "G",
+    "division": "G28"
+  },
+  "iamanoob1": {
+    "name": "IamAnoob1",
+    "tier": "G",
+    "division": "G17"
+  },
+  "icul": {
+    "name": "icul",
+    "tier": "G",
+    "division": "G8"
+  },
+  "ineffabilliken": {
+    "name": "ineffabilliken",
+    "tier": "G",
+    "division": "G6"
+  },
+  "jdizzle": {
+    "name": "jdizzle",
+    "tier": "G",
+    "division": "G22"
+  },
+  "jdizzle111": {
+    "name": "jdizzle111",
+    "tier": "G",
+    "division": "G14"
+  },
+  "jerrod": {
+    "name": "jerrod",
+    "tier": "G",
+    "division": "G9"
+  },
+  "jimbobrady": {
+    "name": "jimbobrady",
+    "tier": "G",
+    "division": "G19"
+  },
+  "jimbuck": {
+    "name": "Jimbuck",
+    "tier": "G",
+    "division": "G6"
+  },
+  "jpople": {
+    "name": "jpople",
+    "tier": "G",
+    "division": "G"
+  },
+  "jqsh": {
+    "name": "jQsh",
+    "tier": "G",
+    "division": "G17"
+  },
+  "jtoeman": {
+    "name": "jtoeman",
+    "tier": "G",
+    "division": "G5"
+  },
+  "jtran4418": {
+    "name": "jtran4418",
+    "tier": "G",
+    "division": "G9"
+  },
+  "jtrupiano": {
+    "name": "jtrupiano",
+    "tier": "G",
+    "division": "G20"
+  },
+  "julu": {
+    "name": "Julu",
+    "tier": "G",
+    "division": "G27"
+  },
+  "kamsc88": {
+    "name": "kamsc88",
+    "tier": "G",
+    "division": "G1"
+  },
+  "karratkake": {
+    "name": "KarratKake",
+    "tier": "G",
+    "division": "G15"
+  },
+  "khalnayak": {
+    "name": "khalnayak",
+    "tier": "G",
+    "division": "G21"
+  },
+  "king julian 90": {
+    "name": "King Julian 90",
+    "tier": "G",
+    "division": "G26"
+  },
+  "kingmeseus": {
+    "name": "KingMeseus",
+    "tier": "G",
+    "division": "G4"
+  },
+  "kitchen42": {
+    "name": "kitchen42",
+    "tier": "G",
+    "division": "G22"
+  },
+  "kska133": {
+    "name": "kska133",
+    "tier": "G",
+    "division": "G2"
+  },
+  "landonstryker": {
+    "name": "landonstryker",
+    "tier": "G",
+    "division": "G1"
+  },
+  "lar1138": {
+    "name": "lar1138",
+    "tier": "G",
+    "division": "G21"
+  },
+  "leapoffaith24": {
+    "name": "leapoffaith24",
+    "tier": "G",
+    "division": "G13"
+  },
+  "lewisisgood": {
+    "name": "lewisisgood",
+    "tier": "G",
+    "division": "G7"
+  },
+  "littlestdube": {
+    "name": "littlestdube",
+    "tier": "G",
+    "division": "G9"
+  },
+  "livo": {
+    "name": "Livo",
+    "tier": "G",
+    "division": "G"
+  },
+  "louda": {
+    "name": "louda",
+    "tier": "G",
+    "division": "G30"
+  },
+  "madronefive": {
+    "name": "madronefive",
+    "tier": "G",
+    "division": "G7"
+  },
+  "maksbondarenko": {
+    "name": "maksbondarenko",
+    "tier": "G",
+    "division": "G"
+  },
+  "malgorza": {
+    "name": "malgorza",
+    "tier": "G",
+    "division": "G28"
+  },
+  "mariopawty": {
+    "name": "MarioPawty",
+    "tier": "G",
+    "division": "G4"
+  },
+  "martin redsport": {
+    "name": "Martin Redsport",
+    "tier": "G",
+    "division": "G32"
+  },
+  "mccannification": {
+    "name": "mccannification",
+    "tier": "G",
+    "division": "G15"
+  },
+  "mcicrs": {
+    "name": "mcicrs",
+    "tier": "G",
+    "division": "G18"
+  },
+  "mcpep4b05": {
+    "name": "mcpep4b05",
+    "tier": "G",
+    "division": "G8"
+  },
+  "mdh804": {
+    "name": "mdh804",
+    "tier": "G",
+    "division": "G26"
+  },
+  "melkordom": {
+    "name": "Melkordom",
+    "tier": "G",
+    "division": "G11"
+  },
+  "mglagrla": {
+    "name": "mglagrla",
+    "tier": "G",
+    "division": "G5"
+  },
+  "mikedolph": {
+    "name": "mikedolph",
+    "tier": "G",
+    "division": "G27"
+  },
+  "militiamatt": {
+    "name": "militiamatt",
+    "tier": "G",
+    "division": "G19"
+  },
+  "mizbeth": {
+    "name": "mizbeth",
+    "tier": "G",
+    "division": "G7"
+  },
+  "mondainai2": {
+    "name": "mondainai2",
+    "tier": "G",
+    "division": "G31"
+  },
+  "mountcleverest": {
+    "name": "mountcleverest",
+    "tier": "G",
+    "division": "G24"
+  },
+  "mpjohns": {
+    "name": "mpjohns",
+    "tier": "G",
+    "division": "G16"
+  },
+  "mtmagus": {
+    "name": "MtMagus",
+    "tier": "G",
+    "division": "G1"
+  },
+  "nepstein": {
+    "name": "nepstein",
+    "tier": "G",
+    "division": "G13"
+  },
+  "noisenow42": {
+    "name": "noisenow42",
+    "tier": "G",
+    "division": "G29"
+  },
+  "nono13": {
+    "name": "Nono13",
+    "tier": "G",
+    "division": "G29"
+  },
+  "notavan": {
+    "name": "NotAVan",
+    "tier": "G",
+    "division": "G12"
+  },
+  "odddity111": {
+    "name": "odddity111",
+    "tier": "G",
+    "division": "G2"
+  },
+  "oktazooka": {
+    "name": "Oktazooka",
+    "tier": "G",
+    "division": "G32"
+  },
+  "ord1n": {
+    "name": "Ord1n",
+    "tier": "G",
+    "division": "G26"
+  },
+  "osti92": {
+    "name": "Osti92",
+    "tier": "G",
+    "division": "G29"
+  },
+  "ostrander17": {
+    "name": "Ostrander17",
+    "tier": "G",
+    "division": "G21"
+  },
+  "pansarin": {
+    "name": "PanSarin",
+    "tier": "G",
+    "division": "G30"
+  },
+  "penwitharm": {
+    "name": "PenWithArm",
+    "tier": "G",
+    "division": "G12"
+  },
+  "phyphor": {
+    "name": "phyphor",
+    "tier": "G",
+    "division": "G24"
+  },
+  "pwu55": {
+    "name": "pwu55",
+    "tier": "G",
+    "division": "G27"
+  },
+  "queerly_awesome": {
+    "name": "queerly_awesome",
+    "tier": "G",
+    "division": "G10"
+  },
+  "ramyad": {
+    "name": "ramyad",
+    "tier": "G",
+    "division": "G13"
+  },
+  "raphaelr": {
+    "name": "RaphaelR",
+    "tier": "G",
+    "division": "G28"
+  },
+  "redvelvet": {
+    "name": "redvelvet",
+    "tier": "G",
+    "division": "G19"
+  },
+  "reedbros": {
+    "name": "ReedBros",
+    "tier": "G",
+    "division": "G14"
+  },
+  "reiderrabbit": {
+    "name": "Reiderrabbit",
+    "tier": "G",
+    "division": "G11"
+  },
+  "rioderbi": {
+    "name": "rioderbi",
+    "tier": "G",
+    "division": "G13"
+  },
+  "rohanthewarrior": {
+    "name": "rohanthewarrior",
+    "tier": "G",
+    "division": "G17"
+  },
+  "rohanz7": {
+    "name": "rohanz7",
+    "tier": "G",
+    "division": "G17"
+  },
+  "rostipyr": {
+    "name": "Rostipyr",
+    "tier": "G",
+    "division": "G29"
+  },
+  "rotkaeppchen": {
+    "name": "Rotkaeppchen",
+    "tier": "G",
+    "division": "G29"
+  },
+  "santacruzcool": {
+    "name": "SantaCruzCool",
+    "tier": "G",
+    "division": "G23"
+  },
+  "savaahn": {
+    "name": "Savaahn",
+    "tier": "G",
+    "division": "G3"
+  },
+  "schaka": {
+    "name": "Schaka",
+    "tier": "G",
+    "division": "G25"
+  },
+  "schorn": {
+    "name": "schorn",
+    "tier": "G",
+    "division": "G6"
+  },
+  "scobud27": {
+    "name": "Scobud27",
+    "tier": "G",
+    "division": "G3"
+  },
+  "scottc": {
+    "name": "scottc",
+    "tier": "G",
+    "division": "G24"
+  },
+  "serpounce": {
+    "name": "SerPounce",
+    "tier": "G",
+    "division": "G31"
+  },
+  "shacharizard": {
+    "name": "Shacharizard",
+    "tier": "G",
+    "division": "G4"
+  },
+  "shakeyjake": {
+    "name": "ShakeyJake",
+    "tier": "G",
+    "division": "G10"
+  },
+  "shmuelic": {
+    "name": "shmuelic",
+    "tier": "G",
+    "division": "G8"
+  },
+  "smelly4_4": {
+    "name": "Smelly4_4",
+    "tier": "G",
+    "division": "G14"
+  },
+  "speedyjohn": {
+    "name": "speedyjohn",
+    "tier": "G",
+    "division": "G22"
+  },
+  "spikeswire": {
+    "name": "SpikesWire",
+    "tier": "G",
+    "division": "G2"
+  },
+  "sportingelijah": {
+    "name": "sportingelijah",
+    "tier": "G",
+    "division": "G1"
+  },
+  "stephen2": {
+    "name": "stephen2",
+    "tier": "G",
+    "division": "G"
+  },
+  "supernova888": {
+    "name": "Supernova888",
+    "tier": "G",
+    "division": "G3"
+  },
+  "swoosh": {
+    "name": "Swoosh",
+    "tier": "G",
+    "division": "G10"
+  },
+  "takaron": {
+    "name": "Takaron",
+    "tier": "G",
+    "division": "G15"
+  },
+  "talinkorb": {
+    "name": "TalinkorB",
+    "tier": "G",
+    "division": "G9"
+  },
+  "tateishi": {
+    "name": "Tateishi",
+    "tier": "G",
+    "division": "G6"
+  },
+  "tectheenemy": {
+    "name": "TECtheEnemy",
+    "tier": "G",
+    "division": ""
+  },
+  "tedmosby12": {
+    "name": "TedMosby12",
+    "tier": "G",
+    "division": "G6"
+  },
+  "temidayo1234": {
+    "name": "temidayo1234",
+    "tier": "G",
+    "division": "G4"
+  },
+  "terbium65": {
+    "name": "Terbium65",
+    "tier": "G",
+    "division": "G19"
+  },
+  "the jesters girl": {
+    "name": "the jesters girl",
+    "tier": "G",
+    "division": "G18"
+  },
+  "thinpaddy": {
+    "name": "Thinpaddy",
+    "tier": "G",
+    "division": "G28"
+  },
+  "thomask": {
+    "name": "ThomasK",
+    "tier": "G",
+    "division": "G25"
+  },
+  "tiegerstochter": {
+    "name": "tiegerstochter",
+    "tier": "G",
+    "division": "G25"
+  },
+  "tmoneywatson": {
+    "name": "tmoneywatson",
+    "tier": "G",
+    "division": "G5"
+  },
+  "tnarg44": {
+    "name": "tnarg44",
+    "tier": "G",
+    "division": "G17"
+  },
+  "tonyfig": {
+    "name": "tonyfig",
+    "tier": "G",
+    "division": "G22"
+  },
+  "toomzor": {
+    "name": "Toomzor",
+    "tier": "G",
+    "division": "G27"
+  },
+  "trollolol": {
+    "name": "trollolol",
+    "tier": "G",
+    "division": "G23"
+  },
+  "turbobaseball": {
+    "name": "turbobaseball",
+    "tier": "G",
+    "division": "G16"
+  },
+  "typewriter23": {
+    "name": "typewriter23",
+    "tier": "G",
+    "division": ""
+  },
+  "unbr34k4bl3": {
+    "name": "UNBR34K4BL3",
+    "tier": "G",
+    "division": "G1"
+  },
+  "vi3tv1nk": {
+    "name": "vi3tv1nk",
+    "tier": "G",
+    "division": "G8"
+  },
+  "vidawg77": {
+    "name": "vidawg77",
+    "tier": "G",
+    "division": "G28"
+  },
+  "viersen": {
+    "name": "Viersen",
+    "tier": "G",
+    "division": "G27"
+  },
+  "watermeloen": {
+    "name": "watermeloen",
+    "tier": "G",
+    "division": "G31"
+  },
+  "whatsupdawg": {
+    "name": "whatsupdawg",
+    "tier": "G",
+    "division": "G23"
+  },
+  "wickedcurves": {
+    "name": "WickedCurves",
+    "tier": "G",
+    "division": "G16"
+  },
+  "wmckemey": {
+    "name": "wmckemey",
+    "tier": "G",
+    "division": "G"
+  },
+  "wwwdotwww": {
+    "name": "wwwdotwww",
+    "tier": "G",
+    "division": "G12"
+  },
+  "zert": {
+    "name": "Zert",
+    "tier": "G",
+    "division": "G11"
+  },
+  "zmonny": {
+    "name": "zmonny",
+    "tier": "G",
+    "division": "G15"
+  },
+  "zomshow": {
+    "name": "zomshow",
+    "tier": "G",
+    "division": "G10"
+  },
+  "zsaffir": {
+    "name": "zsaffir",
+    "tier": "H",
+    "division": "G4"
+  },
+  "zwade": {
+    "name": "ZWade",
+    "tier": "H",
+    "division": "G5"
+  },
+  "-ali-": {
+    "name": "-Ali-",
+    "tier": "H",
+    "division": "H54"
+  },
+  "aadim2006": {
+    "name": "aadim2006",
+    "tier": "H",
+    "division": "H5"
+  },
+  "aasmiles": {
+    "name": "AAsmiles",
+    "tier": "H",
+    "division": "H32"
+  },
+  "acourt01": {
+    "name": "acourt01",
+    "tier": "H",
+    "division": "H36"
+  },
+  "acuriousparadox": {
+    "name": "ACuriousParadox",
+    "tier": "H",
+    "division": "H1"
+  },
+  "adambyars": {
+    "name": "adambyars",
+    "tier": "H",
+    "division": "H15"
+  },
+  "altar keane": {
+    "name": "Altar Keane",
+    "tier": "H",
+    "division": "H57"
+  },
+  "amrutha": {
+    "name": "amrutha",
+    "tier": "H",
+    "division": "H39"
+  },
+  "ancamirela": {
+    "name": "ancamirela",
+    "tier": "H",
+    "division": "H44"
+  },
+  "androidfanman": {
+    "name": "androidfanman",
+    "tier": "H",
+    "division": "H41"
+  },
+  "annagret": {
+    "name": "Annagret",
+    "tier": "H",
+    "division": "H29"
+  },
+  "antcnnected": {
+    "name": "antcnnected",
+    "tier": "H",
+    "division": "H15"
+  },
+  "anuncivilengineer": {
+    "name": "AnUncivilEngineer",
+    "tier": "H",
+    "division": "H3"
+  },
+  "areeder808": {
+    "name": "areeder808",
+    "tier": "H",
+    "division": "H4"
+  },
+  "arusmahen": {
+    "name": "arusmahen",
+    "tier": "H",
+    "division": "H1"
+  },
+  "astrodog93": {
+    "name": "astrodog93",
+    "tier": "H",
+    "division": "H"
+  },
+  "aud14": {
+    "name": "AuD14",
+    "tier": "H",
+    "division": "H5"
+  },
+  "avinaashanand": {
+    "name": "AvinaashAnand",
+    "tier": "H",
+    "division": "H47"
+  },
+  "b00b3rt": {
+    "name": "b00b3rt",
+    "tier": "H",
+    "division": "H10"
+  },
+  "badashbhalu": {
+    "name": "badashbhalu",
+    "tier": "H",
+    "division": "H45"
+  },
+  "barksideofthemoon": {
+    "name": "barksideofthemoon",
+    "tier": "H",
+    "division": "H28"
+  },
+  "bartharleyjarvis": {
+    "name": "BartHarleyJarvis",
+    "tier": "H",
+    "division": "H27"
+  },
+  "batmanthehorse": {
+    "name": "batmanthehorse",
+    "tier": "H",
+    "division": "H8"
+  },
+  "bcraig9713": {
+    "name": "bcraig9713",
+    "tier": "H",
+    "division": "H24"
+  },
+  "beckycapp": {
+    "name": "Beckycapp",
+    "tier": "H",
+    "division": "H2"
+  },
+  "beeronis": {
+    "name": "Beeronis",
+    "tier": "H",
+    "division": "H12"
+  },
+  "bell22": {
+    "name": "bell22",
+    "tier": "H",
+    "division": "H24"
+  },
+  "berger77": {
+    "name": "Berger77",
+    "tier": "H",
+    "division": "H49"
+  },
+  "beth": {
+    "name": "Beth",
+    "tier": "H",
+    "division": "H54"
+  },
+  "betira": {
+    "name": "Betira",
+    "tier": "H",
+    "division": "H58"
+  },
+  "bigwynner": {
+    "name": "bigwynner",
+    "tier": "H",
+    "division": "H"
+  },
+  "billbarnes1972": {
+    "name": "billbarnes1972",
+    "tier": "H",
+    "division": "H20"
+  },
+  "birgit98": {
+    "name": "Birgit98",
+    "tier": "H",
+    "division": "H59"
+  },
+  "bjtait15": {
+    "name": "bjtait15",
+    "tier": "H",
+    "division": "H16"
+  },
+  "bloodplum": {
+    "name": "BloodPlum",
+    "tier": "H",
+    "division": "H3"
+  },
+  "blossomdb": {
+    "name": "blossomdb",
+    "tier": "H",
+    "division": "H37"
+  },
+  "bob1": {
+    "name": "Bob1",
+    "tier": "H",
+    "division": "H13"
+  },
+  "bomani88": {
+    "name": "Bomani88",
+    "tier": "H",
+    "division": "H40"
+  },
+  "boneydanza": {
+    "name": "BoneyDanza",
+    "tier": "H",
+    "division": "H37"
+  },
+  "bongoboi5000": {
+    "name": "bongoboi5000",
+    "tier": "H",
+    "division": "H33"
+  },
+  "boydd": {
+    "name": "Boydd",
+    "tier": "H",
+    "division": "H48"
+  },
+  "bozu69": {
+    "name": "bozu69",
+    "tier": "H",
+    "division": "H"
+  },
+  "bradchoosefi": {
+    "name": "bradchoosefi",
+    "tier": "H",
+    "division": "H8"
+  },
+  "brev100": {
+    "name": "brev100",
+    "tier": "H",
+    "division": "H14"
+  },
+  "bricks2020": {
+    "name": "Bricks2020",
+    "tier": "H",
+    "division": "H17"
+  },
+  "bsplitt": {
+    "name": "BSplitt",
+    "tier": "H",
+    "division": "H12"
+  },
+  "bubs4": {
+    "name": "bubs4",
+    "tier": "H",
+    "division": "H41"
+  },
+  "burly_steve": {
+    "name": "Burly_Steve",
+    "tier": "H",
+    "division": "H55"
+  },
+  "bz1": {
+    "name": "bz1",
+    "tier": "H",
+    "division": "H28"
+  },
+  "cabelhigh": {
+    "name": "cabelhigh",
+    "tier": "H",
+    "division": "H43"
+  },
+  "cait2244": {
+    "name": "Cait2244",
+    "tier": "H",
+    "division": "H20"
+  },
+  "captainhorizons": {
+    "name": "CaptainHorizons",
+    "tier": "H",
+    "division": "H62"
+  },
+  "carmensandiego": {
+    "name": "CarmenSanDiego",
+    "tier": "H",
+    "division": "H2"
+  },
+  "castlelivery": {
+    "name": "CastleLivery",
+    "tier": "H",
+    "division": "H22"
+  },
+  "catiemichelle": {
+    "name": "catiemichelle",
+    "tier": "H",
+    "division": "H4"
+  },
+  "cattallia": {
+    "name": "Cattallia",
+    "tier": "H",
+    "division": "H51"
+  },
+  "cavedweller": {
+    "name": "Cavedweller",
+    "tier": "H",
+    "division": "H59"
+  },
+  "cavemanrot": {
+    "name": "cavemanrot",
+    "tier": "H",
+    "division": "H64"
+  },
+  "ceciliadoan": {
+    "name": "ceciliadoan",
+    "tier": "H",
+    "division": "H31"
+  },
+  "cestwho": {
+    "name": "cestwho",
+    "tier": "H",
+    "division": "H22"
+  },
+  "cevan917": {
+    "name": "cevan917",
+    "tier": "H",
+    "division": "H10"
+  },
+  "cf6": {
+    "name": "CF6",
+    "tier": "H",
+    "division": "H53"
+  },
+  "cfred": {
+    "name": "cfred",
+    "tier": "H",
+    "division": "H25"
+  },
+  "chadnov": {
+    "name": "chadnov",
+    "tier": "H",
+    "division": "H35"
+  },
+  "chancellorbillups": {
+    "name": "ChancellorBillups",
+    "tier": "H",
+    "division": "H21"
+  },
+  "charlieh92": {
+    "name": "charlieh92",
+    "tier": "H",
+    "division": "H60"
+  },
+  "charmama": {
+    "name": "CharMama",
+    "tier": "H",
+    "division": "H24"
+  },
+  "chiefconstable": {
+    "name": "ChiefConstable",
+    "tier": "H",
+    "division": "H12"
+  },
+  "chiefminister": {
+    "name": "ChiefMinister",
+    "tier": "H",
+    "division": "H26"
+  },
+  "chopalot3": {
+    "name": "Chopalot3",
+    "tier": "H",
+    "division": "H29"
+  },
+  "cj_punzalan": {
+    "name": "cj_punzalan",
+    "tier": "H",
+    "division": "H34"
+  },
+  "clischer": {
+    "name": "clischer",
+    "tier": "H",
+    "division": "H5"
+  },
+  "cmhagen83": {
+    "name": "cmhagen83",
+    "tier": "H",
+    "division": "H18"
+  },
+  "coldbloodprince": {
+    "name": "ColdBloodPrince",
+    "tier": "H",
+    "division": "H21"
+  },
+  "colin_loves_hunter": {
+    "name": "colin_loves_hunter",
+    "tier": "H",
+    "division": "H46"
+  },
+  "condu": {
+    "name": "Condu",
+    "tier": "H",
+    "division": "H60"
+  },
+  "cougars28": {
+    "name": "cougars28",
+    "tier": "H",
+    "division": "H"
+  },
+  "cr1mson3lbow": {
+    "name": "Cr1mson3lbow",
+    "tier": "H",
+    "division": "H7"
+  },
+  "crazyjok3r": {
+    "name": "crazyjok3r",
+    "tier": "H",
+    "division": "H33"
+  },
+  "crazymoose": {
+    "name": "CrazyMoose",
+    "tier": "H",
+    "division": "H26"
+  },
+  "cyber28": {
+    "name": "Cyber28",
+    "tier": "H",
+    "division": "H53"
+  },
+  "dangerking": {
+    "name": "DangerKing",
+    "tier": "H",
+    "division": "H6"
+  },
+  "daniel bo": {
+    "name": "Daniel Bo",
+    "tier": "H",
+    "division": "H63"
+  },
+  "davidbebawy": {
+    "name": "davidbebawy",
+    "tier": "H",
+    "division": "H"
+  },
+  "dawg111": {
+    "name": "Dawg111",
+    "tier": "H",
+    "division": "H62"
+  },
+  "dawgi": {
+    "name": "Dawgi",
+    "tier": "H",
+    "division": "H46"
+  },
+  "dbloslim": {
+    "name": "Dbloslim",
+    "tier": "H",
+    "division": "H18"
+  },
+  "defmike": {
+    "name": "DefMike",
+    "tier": "H",
+    "division": "H49"
+  },
+  "denise": {
+    "name": "Denise",
+    "tier": "H",
+    "division": "H56"
+  },
+  "doctoramk": {
+    "name": "doctoramk",
+    "tier": "H",
+    "division": "H26"
+  },
+  "doldendude": {
+    "name": "doldendude",
+    "tier": "H",
+    "division": "H57"
+  },
+  "dollarbill": {
+    "name": "dollarbill",
+    "tier": "H",
+    "division": "H15"
+  },
+  "dollopofmoney": {
+    "name": "dollopofmoney",
+    "tier": "H",
+    "division": "H27"
+  },
+  "dominationnation": {
+    "name": "dominationnation",
+    "tier": "H",
+    "division": "H49"
+  },
+  "dominiondave": {
+    "name": "DominionDave",
+    "tier": "H",
+    "division": "H14"
+  },
+  "domocobra": {
+    "name": "Domocobra",
+    "tier": "H",
+    "division": "H58"
+  },
+  "domplopper": {
+    "name": "domplopper",
+    "tier": "H",
+    "division": "H22"
+  },
+  "donkey-dude": {
+    "name": "Donkey-Dude",
+    "tier": "H",
+    "division": "H61"
+  },
+  "doughminyan": {
+    "name": "doughminyan",
+    "tier": "H",
+    "division": "H10"
+  },
+  "dr_phibes": {
+    "name": "Dr_Phibes",
+    "tier": "H",
+    "division": "H61"
+  },
+  "driftskate": {
+    "name": "driftskate",
+    "tier": "H",
+    "division": "H44"
+  },
+  "drmantistoboggan16": {
+    "name": "DrMantisToboggan16",
+    "tier": "H",
+    "division": "H13"
+  },
+  "druidas": {
+    "name": "Druidas",
+    "tier": "H",
+    "division": "H60"
+  },
+  "duhetyrone2": {
+    "name": "Duhetyrone2",
+    "tier": "H",
+    "division": "H"
+  },
+  "durgle": {
+    "name": "Durgle",
+    "tier": "H",
+    "division": "H36"
+  },
+  "eaterpoosack": {
+    "name": "Eaterpoosack",
+    "tier": "H",
+    "division": "H10"
+  },
+  "eddwhite1": {
+    "name": "eddwhite1",
+    "tier": "H",
+    "division": "H63"
+  },
+  "edred": {
+    "name": "edred",
+    "tier": "H",
+    "division": "H43"
+  },
+  "eeps": {
+    "name": "eeps",
+    "tier": "H",
+    "division": "H42"
+  },
+  "elviernestocajugar": {
+    "name": "Elviernestocajugar",
+    "tier": "H",
+    "division": "H51"
+  },
+  "emmiplays2000": {
+    "name": "EmmiPlays2000",
+    "tier": "H",
+    "division": "H51"
+  },
+  "epiccswagg": {
+    "name": "epiccswagg",
+    "tier": "H",
+    "division": "H38"
+  },
+  "esteban03": {
+    "name": "Esteban03",
+    "tier": "H",
+    "division": "H23"
+  },
+  "favlab": {
+    "name": "FavLab",
+    "tier": "H",
+    "division": "H44"
+  },
+  "fika monster": {
+    "name": "fika monster",
+    "tier": "H",
+    "division": "H55"
+  },
+  "filodendron": {
+    "name": "Filodendron",
+    "tier": "H",
+    "division": "H7"
+  },
+  "final_thoughts": {
+    "name": "Final_Thoughts",
+    "tier": "H",
+    "division": "H11"
+  },
+  "findcongwang": {
+    "name": "findcongwang",
+    "tier": "H",
+    "division": "H11"
+  },
+  "frack9": {
+    "name": "Frack9",
+    "tier": "H",
+    "division": "H32"
+  },
+  "friartuck": {
+    "name": "Friartuck",
+    "tier": "H",
+    "division": "H33"
+  },
+  "friethead": {
+    "name": "FRIETHEAD",
+    "tier": "H",
+    "division": "H53"
+  },
+  "froco93": {
+    "name": "froco93",
+    "tier": "H",
+    "division": "H42"
+  },
+  "frogdogs": {
+    "name": "frogdogs",
+    "tier": "H",
+    "division": "H21"
+  },
+  "fwood": {
+    "name": "FWood",
+    "tier": "H",
+    "division": "H58"
+  },
+  "fzzzzzzzt": {
+    "name": "fzzzzzzzt",
+    "tier": "H",
+    "division": "H39"
+  },
+  "gayandsebastian": {
+    "name": "GayAndSebastian",
+    "tier": "H",
+    "division": "H56"
+  },
+  "gfroese": {
+    "name": "gfroese",
+    "tier": "H",
+    "division": "H23"
+  },
+  "girlwndr": {
+    "name": "Girlwndr",
+    "tier": "H",
+    "division": "H33"
+  },
+  "gomez70": {
+    "name": "gomez70",
+    "tier": "H",
+    "division": "H11"
+  },
+  "goody2shoes15": {
+    "name": "Goody2shoes15",
+    "tier": "H",
+    "division": "H63"
+  },
+  "goose7": {
+    "name": "goose7",
+    "tier": "H",
+    "division": "H9"
+  },
+  "grb11": {
+    "name": "GRB11",
+    "tier": "H",
+    "division": "H6"
+  },
+  "grebst": {
+    "name": "grebst",
+    "tier": "H",
+    "division": "H59"
+  },
+  "greta_x": {
+    "name": "Greta_X",
+    "tier": "H",
+    "division": "H30"
+  },
+  "gronkbrady": {
+    "name": "GronkBrady",
+    "tier": "H",
+    "division": "H32"
+  },
+  "gsusie1": {
+    "name": "gsusie1",
+    "tier": "H",
+    "division": "H22"
+  },
+  "gubump": {
+    "name": "Gubump",
+    "tier": "H",
+    "division": "H33"
+  },
+  "guyonabuffalo": {
+    "name": "GuyOnABuffalo",
+    "tier": "H",
+    "division": "H21"
+  },
+  "hal_incandenza96": {
+    "name": "hal_incandenza96",
+    "tier": "H",
+    "division": "H40"
+  },
+  "hannap": {
+    "name": "HannaP",
+    "tier": "H",
+    "division": "H53"
+  },
+  "hnydw": {
+    "name": "HNYDW",
+    "tier": "H",
+    "division": "H1"
+  },
+  "hobitermes": {
+    "name": "hobitermes",
+    "tier": "H",
+    "division": "H52"
+  },
+  "hobojon9000": {
+    "name": "HoboJon9000",
+    "tier": "H",
+    "division": "H45"
+  },
+  "hoffnung": {
+    "name": "Hoffnung",
+    "tier": "H",
+    "division": "H64"
+  },
+  "hollyharlow": {
+    "name": "hollyharlow",
+    "tier": "H",
+    "division": "H11"
+  },
+  "hughythegreat": {
+    "name": "hughythegreat",
+    "tier": "H",
+    "division": "H41"
+  },
+  "huzzah4sara": {
+    "name": "huzzah4sara",
+    "tier": "H",
+    "division": "H28"
+  },
+  "hyogaah": {
+    "name": "Hyogaah",
+    "tier": "H",
+    "division": "H60"
+  },
+  "iainyoung": {
+    "name": "iainyoung",
+    "tier": "H",
+    "division": "H47"
+  },
+  "imonster": {
+    "name": "iMonster",
+    "tier": "H",
+    "division": "H26"
+  },
+  "inspiringleader": {
+    "name": "InspiringLeader",
+    "tier": "H",
+    "division": "H57"
+  },
+  "instaham": {
+    "name": "instaham",
+    "tier": "H",
+    "division": "H13"
+  },
+  "instock_item": {
+    "name": "instock_item",
+    "tier": "H",
+    "division": "H45"
+  },
+  "intelcheff": {
+    "name": "Intelcheff",
+    "tier": "H",
+    "division": "H9"
+  },
+  "iparres": {
+    "name": "iparres",
+    "tier": "H",
+    "division": "H"
+  },
+  "ireth": {
+    "name": "Ireth",
+    "tier": "H",
+    "division": "H57"
+  },
+  "irgendwasmitmond": {
+    "name": "IrgendwasmitMond",
+    "tier": "H",
+    "division": "H"
+  },
+  "iricilaure": {
+    "name": "Iricilaure",
+    "tier": "H",
+    "division": "H4"
+  },
+  "isiahw1": {
+    "name": "isiahw1",
+    "tier": "H",
+    "division": "H26"
+  },
+  "islandrae": {
+    "name": "IslandRae",
+    "tier": "H",
+    "division": "H"
+  },
+  "itsyee": {
+    "name": "Itsyee",
+    "tier": "H",
+    "division": "H24"
+  },
+  "j22jabs": {
+    "name": "J22Jabs",
+    "tier": "H",
+    "division": "H43"
+  },
+  "j3ss3": {
+    "name": "j3ss3",
+    "tier": "H",
+    "division": "H37"
+  },
+  "jackass": {
+    "name": "Jackass",
+    "tier": "H",
+    "division": "H60"
+  },
+  "jackjoab": {
+    "name": "Jackjoab",
+    "tier": "H",
+    "division": "H50"
+  },
+  "jacobpb": {
+    "name": "jacobpb",
+    "tier": "H",
+    "division": "H35"
+  },
+  "janlasse": {
+    "name": "janlasse",
+    "tier": "H",
+    "division": "H53"
+  },
+  "janwafel": {
+    "name": "JanWafel",
+    "tier": "H",
+    "division": "H61"
+  },
+  "jaywood98": {
+    "name": "jaywood98",
+    "tier": "H",
+    "division": "H59"
+  },
+  "jaz92": {
+    "name": "jaz92",
+    "tier": "H",
+    "division": "H56"
+  },
+  "jdawg475": {
+    "name": "jdawg475",
+    "tier": "H",
+    "division": "H23"
+  },
+  "jenelos": {
+    "name": "Jenelos",
+    "tier": "H",
+    "division": "H7"
+  },
+  "jennjin01": {
+    "name": "jennjin01",
+    "tier": "H",
+    "division": "H"
+  },
+  "jenny festival": {
+    "name": "Jenny Festival",
+    "tier": "H",
+    "division": "H20"
+  },
+  "jeroenr": {
+    "name": "JeroenR",
+    "tier": "H",
+    "division": "H58"
+  },
+  "jev989": {
+    "name": "Jev989",
+    "tier": "H",
+    "division": "H49"
+  },
+  "jewelsphraner": {
+    "name": "jewelsphraner",
+    "tier": "H",
+    "division": "H12"
+  },
+  "jg457": {
+    "name": "jg457",
+    "tier": "H",
+    "division": "H28"
+  },
+  "jillybillygirl": {
+    "name": "jillybillygirl",
+    "tier": "H",
+    "division": "H23"
+  },
+  "joemar194": {
+    "name": "joemar194",
+    "tier": "H",
+    "division": "H40"
+  },
+  "johnny midnight": {
+    "name": "Johnny Midnight",
+    "tier": "H",
+    "division": "H44"
+  },
+  "jolinar of malkshur": {
+    "name": "Jolinar of Malkshur",
+    "tier": "H",
+    "division": "H21"
+  },
+  "joshml82": {
+    "name": "joshml82",
+    "tier": "H",
+    "division": "H23"
+  },
+  "jrh150482": {
+    "name": "jrh150482",
+    "tier": "H",
+    "division": "H31"
+  },
+  "k1ron": {
+    "name": "K1RON",
+    "tier": "H",
+    "division": "H39"
+  },
+  "kahaanboom": {
+    "name": "kahaanboom",
+    "tier": "H",
+    "division": "H2"
+  },
+  "kangawu": {
+    "name": "Kangawu",
+    "tier": "H",
+    "division": "H15"
+  },
+  "karinnl": {
+    "name": "karinnl",
+    "tier": "H",
+    "division": "H61"
+  },
+  "katrin90": {
+    "name": "Katrin90",
+    "tier": "H",
+    "division": "H50"
+  },
+  "ketriel": {
+    "name": "ketriel",
+    "tier": "H",
+    "division": "H"
+  },
+  "kevinmpeterson": {
+    "name": "kevinmpeterson",
+    "tier": "H",
+    "division": "H35"
+  },
+  "kingskid2002": {
+    "name": "kingskid2002",
+    "tier": "H",
+    "division": "H57"
+  },
+  "kpecina": {
+    "name": "Kpecina",
+    "tier": "H",
+    "division": "H19"
+  },
+  "kpk": {
+    "name": "kpk",
+    "tier": "H",
+    "division": "H49"
+  },
+  "kretchde": {
+    "name": "kretchde",
+    "tier": "H",
+    "division": "H34"
+  },
+  "kroupmastaflex ": {
+    "name": "Kroupmastaflex ",
+    "tier": "H",
+    "division": "H7"
+  },
+  "ksoccerstar": {
+    "name": "ksoccerstar",
+    "tier": "H",
+    "division": "H32"
+  },
+  "kuo chong chin": {
+    "name": "Kuo Chong Chin",
+    "tier": "H",
+    "division": "H48"
+  },
+  "labaguette": {
+    "name": "LaBaguette",
+    "tier": "H",
+    "division": "H50"
+  },
+  "lancero95": {
+    "name": "Lancero95",
+    "tier": "H",
+    "division": "H5"
+  },
+  "lasombra": {
+    "name": "Lasombra",
+    "tier": "H",
+    "division": "H"
+  },
+  "lauram283": {
+    "name": "lauram283",
+    "tier": "H",
+    "division": "H9"
+  },
+  "lionfever22": {
+    "name": "lionfever22",
+    "tier": "H",
+    "division": "H63"
+  },
+  "lionfever23": {
+    "name": "lionfever23",
+    "tier": "H",
+    "division": "H"
+  },
+  "loewenheim_swolem": {
+    "name": "loewenheim_swolem",
+    "tier": "H",
+    "division": "H38"
+  },
+  "lorderu": {
+    "name": "lorderu",
+    "tier": "H",
+    "division": "H40"
+  },
+  "lorettamm": {
+    "name": "Lorettamm",
+    "tier": "H",
+    "division": "H6"
+  },
+  "lucho": {
+    "name": "lucho",
+    "tier": "H",
+    "division": "H19"
+  },
+  "luckyfawn": {
+    "name": "Luckyfawn",
+    "tier": "H",
+    "division": "H42"
+  },
+  "lukas567": {
+    "name": "Lukas567",
+    "tier": "H",
+    "division": "H51"
+  },
+  "m.o.a.t.": {
+    "name": "M.O.A.T.",
+    "tier": "H",
+    "division": "H36"
+  },
+  "mabuza": {
+    "name": "mabuza",
+    "tier": "H",
+    "division": "H43"
+  },
+  "madammadcap81": {
+    "name": "MadamMadcap81",
+    "tier": "H",
+    "division": "H20"
+  },
+  "madeinchina": {
+    "name": "MadeinChina",
+    "tier": "H",
+    "division": "H8"
+  },
+  "madjs": {
+    "name": "madjs",
+    "tier": "H",
+    "division": "H3"
+  },
+  "makshay": {
+    "name": "makshay",
+    "tier": "H",
+    "division": "H31"
+  },
+  "maleficent6": {
+    "name": "Maleficent6",
+    "tier": "H",
+    "division": "H43"
+  },
+  "mamar": {
+    "name": "MamaR",
+    "tier": "H",
+    "division": "H62"
+  },
+  "manfredmouthbot": {
+    "name": "Manfredmouthbot",
+    "tier": "H",
+    "division": "H3"
+  },
+  "manson": {
+    "name": "Manson",
+    "tier": "H",
+    "division": "H19"
+  },
+  "maomaster51": {
+    "name": "MaoMaster51",
+    "tier": "H",
+    "division": "H23"
+  },
+  "marcivan": {
+    "name": "marcivan",
+    "tier": "H",
+    "division": "H3"
+  },
+  "marliz3e": {
+    "name": "Marliz3e",
+    "tier": "H",
+    "division": "H58"
+  },
+  "marva613": {
+    "name": "marva613",
+    "tier": "H",
+    "division": "H37"
+  },
+  "masedoggy": {
+    "name": "masedoggy",
+    "tier": "H",
+    "division": "H39"
+  },
+  "matlock72": {
+    "name": "Matlock72",
+    "tier": "H",
+    "division": "H44"
+  },
+  "mattmm": {
+    "name": "mattmm",
+    "tier": "H",
+    "division": "H4"
+  },
+  "mbp": {
+    "name": "mbp",
+    "tier": "H",
+    "division": "H31"
+  },
+  "mc3037": {
+    "name": "mc3037",
+    "tier": "H",
+    "division": "H30"
+  },
+  "mcduggan33": {
+    "name": "McDuggan33",
+    "tier": "H",
+    "division": "H60"
+  },
+  "mcwaffle": {
+    "name": "McWaffle",
+    "tier": "H",
+    "division": "H15"
+  },
+  "mdeac": {
+    "name": "mdeac",
+    "tier": "H",
+    "division": "H29"
+  },
+  "megzuccato": {
+    "name": "Megzuccato",
+    "tier": "H",
+    "division": "H6"
+  },
+  "merrburr": {
+    "name": "merrburr",
+    "tier": "H",
+    "division": "H42"
+  },
+  "miguelb": {
+    "name": "miguelb",
+    "tier": "H",
+    "division": "H46"
+  },
+  "mike11481": {
+    "name": "mike11481",
+    "tier": "H",
+    "division": "H33"
+  },
+  "mikemcgeezy": {
+    "name": "mikemcgeezy",
+    "tier": "H",
+    "division": "H18"
+  },
+  "milodo": {
+    "name": "Milodo",
+    "tier": "H",
+    "division": "H13"
+  },
+  "misakimi": {
+    "name": "misakimi",
+    "tier": "H",
+    "division": "H59"
+  },
+  "miso70": {
+    "name": "miso70",
+    "tier": "H",
+    "division": "H61"
+  },
+  "missvictoriang": {
+    "name": "missvictoriang",
+    "tier": "H",
+    "division": "H56"
+  },
+  "mnessmonster": {
+    "name": "mnessmonster",
+    "tier": "H",
+    "division": "H14"
+  },
+  "mochan": {
+    "name": "mochan",
+    "tier": "H",
+    "division": "H41"
+  },
+  "mollo8": {
+    "name": "Mollo8",
+    "tier": "H",
+    "division": "H2"
+  },
+  "mollyb386": {
+    "name": "Mollyb386",
+    "tier": "H",
+    "division": "H19"
+  },
+  "molowillwin": {
+    "name": "molowillwin",
+    "tier": "H",
+    "division": "H40"
+  },
+  "moncoponco": {
+    "name": "Moncoponco",
+    "tier": "H",
+    "division": "H30"
+  },
+  "mortesar": {
+    "name": "Mortesar",
+    "tier": "H",
+    "division": "H63"
+  },
+  "mtjoos": {
+    "name": "mtjoos",
+    "tier": "H",
+    "division": "H46"
+  },
+  "mudbeast": {
+    "name": "MudBeast",
+    "tier": "H",
+    "division": "H16"
+  },
+  "muenstercheese": {
+    "name": "MuensterCheese",
+    "tier": "H",
+    "division": "H15"
+  },
+  "mugglemutts": {
+    "name": "mugglemutts",
+    "tier": "H",
+    "division": "H25"
+  },
+  "mythrix": {
+    "name": "Mythrix",
+    "tier": "H",
+    "division": "H54"
+  },
+  "natep1098": {
+    "name": "natep1098",
+    "tier": "H",
+    "division": "H19"
+  },
+  "nekome512": {
+    "name": "Nekome512",
+    "tier": "H",
+    "division": "H30"
+  },
+  "neti3d": {
+    "name": "neti3d",
+    "tier": "H",
+    "division": "H1"
+  },
+  "nikhil532": {
+    "name": "nikhil532",
+    "tier": "H",
+    "division": "H48"
+  },
+  "nikkicola11": {
+    "name": "Nikkicola11",
+    "tier": "H",
+    "division": "H62"
+  },
+  "ninjacreeper47": {
+    "name": "ninjacreeper47",
+    "tier": "H",
+    "division": "H14"
+  },
+  "niramsor": {
+    "name": "niramsor",
+    "tier": "H",
+    "division": "H64"
+  },
+  "nomi": {
+    "name": "nomi",
+    "tier": "H",
+    "division": "H52"
+  },
+  "nomis retep": {
+    "name": "Nomis Retep",
+    "tier": "H",
+    "division": "H54"
+  },
+  "nrivero": {
+    "name": "nrivero",
+    "tier": "H",
+    "division": "H27"
+  },
+  "nutsofwrath": {
+    "name": "NutsofWrath",
+    "tier": "H",
+    "division": "H29"
+  },
+  "nvrwhere42": {
+    "name": "nvrwhere42",
+    "tier": "H",
+    "division": "H18"
+  },
+  "oddwaller": {
+    "name": "OddWaller",
+    "tier": "H",
+    "division": "H39"
+  },
+  "ohnora": {
+    "name": "Ohnora",
+    "tier": "H",
+    "division": "H46"
+  },
+  "oldmandennis": {
+    "name": "oldmandennis",
+    "tier": "H",
+    "division": "H30"
+  },
+  "ossan": {
+    "name": "ossan",
+    "tier": "H",
+    "division": "H48"
+  },
+  "otrucol717": {
+    "name": "Otrucol717",
+    "tier": "H",
+    "division": "H34"
+  },
+  "pacman1837": {
+    "name": "pacman1837",
+    "tier": "H",
+    "division": "H1"
+  },
+  "pandaface.": {
+    "name": "pandaface.",
+    "tier": "H",
+    "division": "H51"
+  },
+  "pankpeter": {
+    "name": "PankPeter",
+    "tier": "H",
+    "division": "H31"
+  },
+  "peasantking": {
+    "name": "PeasantKing",
+    "tier": "H",
+    "division": "H48"
+  },
+  "peeky_blinders54": {
+    "name": "peeky_blinders54",
+    "tier": "H",
+    "division": "H45"
+  },
+  "peppapig": {
+    "name": "peppapig",
+    "tier": "H",
+    "division": "H11"
+  },
+  "petraarkanian18": {
+    "name": "petraarkanian18",
+    "tier": "H",
+    "division": "H8"
+  },
+  "phillipvn1": {
+    "name": "phillipvn1",
+    "tier": "H",
+    "division": "H12"
+  },
+  "pierpants": {
+    "name": "PierPants",
+    "tier": "H",
+    "division": "H"
+  },
+  "pinkman": {
+    "name": "Pinkman",
+    "tier": "H",
+    "division": "H7"
+  },
+  "pixelsnbits": {
+    "name": "pixelsnbits",
+    "tier": "H",
+    "division": "H27"
+  },
+  "plantlady88": {
+    "name": "PlantLady88",
+    "tier": "H",
+    "division": "H9"
+  },
+  "poetje": {
+    "name": "Poetje",
+    "tier": "H",
+    "division": "H54"
+  },
+  "potscutney": {
+    "name": "potscutney",
+    "tier": "H",
+    "division": "H19"
+  },
+  "prismatic70": {
+    "name": "Prismatic70",
+    "tier": "H",
+    "division": "H12"
+  },
+  "provinceable": {
+    "name": "Provinceable",
+    "tier": "H",
+    "division": "H"
+  },
+  "proxynick": {
+    "name": "proxynick",
+    "tier": "H",
+    "division": "H52"
+  },
+  "purple_bag": {
+    "name": "purple_bag",
+    "tier": "H",
+    "division": "H62"
+  },
+  "pyruet": {
+    "name": "Pyruet",
+    "tier": "H",
+    "division": "H53"
+  },
+  "quarantinewitch": {
+    "name": "QuarantineWitch",
+    "tier": "H",
+    "division": "H40"
+  },
+  "queenkhaleesi": {
+    "name": "QueenKhaleesi",
+    "tier": "H",
+    "division": "H36"
+  },
+  "raghu": {
+    "name": "raghu",
+    "tier": "H",
+    "division": "H8"
+  },
+  "rainbowchalice": {
+    "name": "RainbowChalice",
+    "tier": "H",
+    "division": "H9"
+  },
+  "rannulphjunuh": {
+    "name": "RannulphJunuh",
+    "tier": "H",
+    "division": "H"
+  },
+  "ray-am83": {
+    "name": "Ray-am83",
+    "tier": "H",
+    "division": "H64"
+  },
+  "redburger": {
+    "name": "redburger",
+    "tier": "H",
+    "division": "H42"
+  },
+  "rinacolada": {
+    "name": "rinacolada",
+    "tier": "H",
+    "division": "H17"
+  },
+  "ripchancellor2016": {
+    "name": "RipChancellor2016",
+    "tier": "H",
+    "division": "H44"
+  },
+  "rla841": {
+    "name": "rla841",
+    "tier": "H",
+    "division": "H17"
+  },
+  "robert_of": {
+    "name": "Robert_OF",
+    "tier": "H",
+    "division": "H64"
+  },
+  "robert7": {
+    "name": "robert7",
+    "tier": "H",
+    "division": "H37"
+  },
+  "rockitman": {
+    "name": "rockitman",
+    "tier": "H",
+    "division": "H3"
+  },
+  "ronbon": {
+    "name": "Ronbon",
+    "tier": "H",
+    "division": "H47"
+  },
+  "rosewater": {
+    "name": "rosewater",
+    "tier": "H",
+    "division": "H43"
+  },
+  "rotte": {
+    "name": "Rotte",
+    "tier": "H",
+    "division": "H58"
+  },
+  "rozyroz": {
+    "name": "Rozyroz",
+    "tier": "H",
+    "division": "H20"
+  },
+  "saidso85": {
+    "name": "Saidso85",
+    "tier": "H",
+    "division": "H36"
+  },
+  "samothy": {
+    "name": "Samothy",
+    "tier": "H",
+    "division": "H47"
+  },
+  "samsmith2505": {
+    "name": "SamSmith2505",
+    "tier": "H",
+    "division": "H38"
+  },
+  "sauceyguy": {
+    "name": "SauceyGuy",
+    "tier": "H",
+    "division": "H42"
+  },
+  "scarbu": {
+    "name": "scarbu",
+    "tier": "H",
+    "division": "H34"
+  },
+  "schipje": {
+    "name": "schipje",
+    "tier": "H",
+    "division": "H50"
+  },
+  "schorschi92": {
+    "name": "Schorschi92",
+    "tier": "H",
+    "division": "H"
+  },
+  "scwhite3": {
+    "name": "Scwhite3",
+    "tier": "H",
+    "division": "H38"
+  },
+  "seakaygeez": {
+    "name": "seakaygeez",
+    "tier": "H",
+    "division": "H52"
+  },
+  "sebasregalado": {
+    "name": "SebasRegalado",
+    "tier": "H",
+    "division": "H16"
+  },
+  "seereelen": {
+    "name": "Seereelen",
+    "tier": "H",
+    "division": "H35"
+  },
+  "sentedavid": {
+    "name": "sentedavid",
+    "tier": "H",
+    "division": "H17"
+  },
+  "sequoiac": {
+    "name": "sequoiac",
+    "tier": "H",
+    "division": "H32"
+  },
+  "severly": {
+    "name": "severly",
+    "tier": "H",
+    "division": "H17"
+  },
+  "sgbern": {
+    "name": "sgbern",
+    "tier": "H",
+    "division": "H25"
+  },
+  "sgraaf": {
+    "name": "sgraaf",
+    "tier": "H",
+    "division": "H62"
+  },
+  "shmooly375": {
+    "name": "shmooly375",
+    "tier": "H",
+    "division": "H28"
+  },
+  "siggydootch": {
+    "name": "SiggyDootch",
+    "tier": "H",
+    "division": "H37"
+  },
+  "slimharpo": {
+    "name": "slimharpo",
+    "tier": "H",
+    "division": "H24"
+  },
+  "slojo": {
+    "name": "SloJo",
+    "tier": "H",
+    "division": "H11"
+  },
+  "smogilski": {
+    "name": "Smogilski",
+    "tier": "H",
+    "division": "H21"
+  },
+  "snharrison66": {
+    "name": "snharrison66",
+    "tier": "H",
+    "division": "H56"
+  },
+  "snipetious": {
+    "name": "Snipetious",
+    "tier": "H",
+    "division": "H"
+  },
+  "snowdrop": {
+    "name": "Snowdrop",
+    "tier": "H",
+    "division": "H5"
+  },
+  "snyderman67": {
+    "name": "Snyderman67",
+    "tier": "H",
+    "division": "H29"
+  },
+  "socally": {
+    "name": "socally",
+    "tier": "H",
+    "division": "H7"
+  },
+  "sovereignator": {
+    "name": "sovereignator",
+    "tier": "H",
+    "division": "H46"
+  },
+  "spaceman2020": {
+    "name": "spaceman2020",
+    "tier": "H",
+    "division": "H14"
+  },
+  "splashfalkon": {
+    "name": "splashfalkon",
+    "tier": "H",
+    "division": "H10"
+  },
+  "squonk2": {
+    "name": "Squonk2",
+    "tier": "H",
+    "division": "H6"
+  },
+  "srimeruva": {
+    "name": "srimeruva",
+    "tier": "H",
+    "division": "H35"
+  },
+  "stavrox": {
+    "name": "StavroX",
+    "tier": "H",
+    "division": "H61"
+  },
+  "stingraycommander1": {
+    "name": "StingrayCommander1",
+    "tier": "H",
+    "division": "H56"
+  },
+  "storminscot": {
+    "name": "StorminScot",
+    "tier": "H",
+    "division": "H41"
+  },
+  "supdawg": {
+    "name": "supdawg",
+    "tier": "H",
+    "division": "H38"
+  },
+  "supergraceless": {
+    "name": "SuperGraceless",
+    "tier": "H",
+    "division": "H50"
+  },
+  "supernick": {
+    "name": "supernick",
+    "tier": "H",
+    "division": "H2"
+  },
+  "superor": {
+    "name": "Superor",
+    "tier": "H",
+    "division": "H8"
+  },
+  "swantje": {
+    "name": "Swantje",
+    "tier": "H",
+    "division": "H55"
+  },
+  "tastehumanity": {
+    "name": "tastehumanity",
+    "tier": "H",
+    "division": "H4"
+  },
+  "tattema": {
+    "name": "tattema",
+    "tier": "H",
+    "division": "H35"
+  },
+  "tdpf103": {
+    "name": "tdpf103",
+    "tier": "H",
+    "division": "H55"
+  },
+  "tgtruth23": {
+    "name": "tgtruth23",
+    "tier": "H",
+    "division": "H45"
+  },
+  "the educator": {
+    "name": "The Educator",
+    "tier": "H",
+    "division": "H26"
+  },
+  "the neuroscientist": {
+    "name": "The Neuroscientist",
+    "tier": "H",
+    "division": "H28"
+  },
+  "theadtraylor": {
+    "name": "Theadtraylor",
+    "tier": "H",
+    "division": "H45"
+  },
+  "thedilfslayer": {
+    "name": "TheDILFslayer",
+    "tier": "H",
+    "division": "H"
+  },
+  "thedinnerman": {
+    "name": "thedinnerman",
+    "tier": "H",
+    "division": "H1"
+  },
+  "themooche": {
+    "name": "TheMooche",
+    "tier": "H",
+    "division": "H50"
+  },
+  "theshampooguy": {
+    "name": "theshampooguy",
+    "tier": "H",
+    "division": "H30"
+  },
+  "thetexan": {
+    "name": "thetexan",
+    "tier": "H",
+    "division": "H25"
+  },
+  "thetreuqu": {
+    "name": "thetreuqu",
+    "tier": "H",
+    "division": "H"
+  },
+  "thisisjustin": {
+    "name": "ThisIsJustin",
+    "tier": "H",
+    "division": "H36"
+  },
+  "thommyp": {
+    "name": "thommyp",
+    "tier": "H",
+    "division": "H63"
+  },
+  "tommygecko": {
+    "name": "tommygecko",
+    "tier": "H",
+    "division": "H48"
+  },
+  "torenx": {
+    "name": "torenx",
+    "tier": "H",
+    "division": "H22"
+  },
+  "travelhacker": {
+    "name": "travelhacker",
+    "tier": "H",
+    "division": "H13"
+  },
+  "tungsten_dioxide": {
+    "name": "Tungsten_Dioxide",
+    "tier": "H",
+    "division": "H"
+  },
+  "turbalence": {
+    "name": "Turbalence",
+    "tier": "H",
+    "division": "H16"
+  },
+  "tuscanb": {
+    "name": "tuscanb",
+    "tier": "H",
+    "division": "H16"
+  },
+  "umamidaddy": {
+    "name": "umamidaddy",
+    "tier": "H",
+    "division": "H13"
+  },
+  "umamilicious": {
+    "name": "Umamilicious",
+    "tier": "H",
+    "division": "H38"
+  },
+  "uncle vernon": {
+    "name": "Uncle Vernon",
+    "tier": "H",
+    "division": "H6"
+  },
+  "uncleboonmee": {
+    "name": "UncleBoonmee",
+    "tier": "H",
+    "division": "H32"
+  },
+  "usernamegottaken": {
+    "name": "Usernamegottaken",
+    "tier": "H",
+    "division": "H64"
+  },
+  "usnoberger": {
+    "name": "usnoberger",
+    "tier": "H",
+    "division": "H4"
+  },
+  "vaavdor": {
+    "name": "vaavdor",
+    "tier": "H",
+    "division": "H55"
+  },
+  "valspar888": {
+    "name": "Valspar888",
+    "tier": "H",
+    "division": "H24"
+  },
+  "victor lum": {
+    "name": "Victor Lum",
+    "tier": "H",
+    "division": "H27"
+  },
+  "vietca": {
+    "name": "vietca",
+    "tier": "H",
+    "division": "H34"
+  },
+  "violaninja": {
+    "name": "violaninja",
+    "tier": "H",
+    "division": "H25"
+  },
+  "wa1mer": {
+    "name": "wa1mer",
+    "tier": "H",
+    "division": "H29"
+  },
+  "walesfourever": {
+    "name": "walesfourever",
+    "tier": "H",
+    "division": "H22"
+  },
+  "warryx": {
+    "name": "Warryx",
+    "tier": "H",
+    "division": "H54"
+  },
+  "weredrakon": {
+    "name": "WereDrakon",
+    "tier": "H",
+    "division": "H16"
+  },
+  "wesspice": {
+    "name": "WesSpice",
+    "tier": "H",
+    "division": "H14"
+  },
+  "wfuller92": {
+    "name": "wfuller92",
+    "tier": "H",
+    "division": "H31"
+  },
+  "whapperson": {
+    "name": "Whapperson",
+    "tier": "H",
+    "division": "H18"
+  },
+  "whiteyoshi": {
+    "name": "whiteyoshi",
+    "tier": "H",
+    "division": "H9"
+  },
+  "whomanist": {
+    "name": "Whomanist",
+    "tier": "H",
+    "division": "H55"
+  },
+  "wilkotek": {
+    "name": "Wilkotek",
+    "tier": "H",
+    "division": "H57"
+  },
+  "witz": {
+    "name": "Witz",
+    "tier": "H",
+    "division": "H5"
+  },
+  "woundedsatelite": {
+    "name": "woundedsatelite",
+    "tier": "H",
+    "division": "H27"
+  },
+  "yetimangoku": {
+    "name": "yetimangoku",
+    "tier": "H",
+    "division": "H39"
+  },
+  "yodwisdom": {
+    "name": "YodWisdom",
+    "tier": "H",
+    "division": "H49"
+  },
+  "yoyomann": {
+    "name": "Yoyomann",
+    "tier": "H",
+    "division": "H10"
+  },
+  "zeej96": {
+    "name": "Zeej96",
+    "tier": "H",
+    "division": "H51"
+  },
+  "zingaro": {
+    "name": "Zingaro",
+    "tier": "H",
+    "division": "H47"
+  },
+  "zodians": {
+    "name": "Zodians",
+    "tier": "H",
+    "division": "H47"
+  },
+  "zoe123": {
+    "name": "Zoe123",
+    "tier": "H",
+    "division": "H17"
+  },
+  "zonnestraal": {
+    "name": "zonnestraal",
+    "tier": "H",
+    "division": "H52"
+  },
+  "zwiebacke": {
+    "name": "zwiebacke",
+    "tier": "H",
+    "division": "H52"
+  }
+}

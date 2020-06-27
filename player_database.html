@@ -47,6 +47,8 @@ var friendly_league_history = {{ site.data.friendly_league_history | jsonify }};
 var championship_videos = {{ site.data.championship_videos | jsonify }};
 var youtube_channels = {{ site.data.youtube_channels | jsonify }};
 var league_history = friendly_league_history["seasons"];
+var current_season = {{ site.data.current_season_players | jsonify }};
+var current_season_iframes = {{ site.data.current_season_iframes | jsonify }};
 
 // Get URL parameter
 searchPlayerHistory(true);
@@ -119,23 +121,8 @@ function searchPlayerHistory(param=false){
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
 
-  } else if (player_name == "muenstercheese") {
-      var h_dne = document.createElement("h4");
-      h_dne.innerHTML = "You've found an easter egg!";
-      var dne = document.createElement("p");
-      dne.innerHTML = "MuensterCheese has not completed a league season yet, but is awesome so I manually added them here. <br> <a href=\"https://www.youtube.com/channel/UCcZUxA0BK-6QFP9Q6Mg6Krg\">MuensterCheese's Youtube Channel</a>";
-      divContainer.appendChild(h_dne);
-      divContainer.appendChild(dne);
-
-  /* No input detected
-  } else if (player_name == ""){
-      // Do something "No data exists for this player"
-      var h_dne = document.createElement("h4");
-      h_dne.innerHTML = "Error: no input detected";
-      divContainer.appendChild(h_dne);
-  */
   // No data exists for player
-  } else if (!players_and_seasons[player_name]) {
+  } else if (!players_and_seasons[player_name] && !current_season[player_name]) {
       console.log(entered_player_name);
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
@@ -149,7 +136,15 @@ function searchPlayerHistory(param=false){
     }  else {
       // Player heading
       var player_heading = document.createElement("h4");
-      player_heading.innerHTML = "Player: " + players_and_seasons[player_name]["name"];
+      var name = player_name;
+
+      if (players_and_seasons[player_name]) {
+        name = players_and_seasons[player_name]["name"];
+      } else {
+        name = current_season[player_name]["name"];
+      }
+
+      player_heading.innerHTML = "Player: " + name;
       divContainer.appendChild(player_heading);
 
       // Youtube heading
@@ -157,6 +152,19 @@ function searchPlayerHistory(param=false){
         var player_heading = document.createElement("h5");
         player_heading.innerHTML = "<a href=\"" + youtube_channels[player_name]["channel"] +"\">Youtube Channel</a>";
         divContainer.appendChild(player_heading);
+      }
+
+      // Load current season data
+      if (current_season[player_name]) {
+        var current_season_table = document.createElement("p");
+        current_season_table.setAttribute('align', 'center');
+        current_season_table.innerHTML = current_season_iframes[current_season[player_name]["division"]];
+        divContainer.appendChild(current_season_table);
+
+        // Check if they have other league history
+        if(!players_and_seasons[player_name]) {
+          return;
+        }
       }
 
 
@@ -396,6 +404,15 @@ var players_and_seasons = {{ site.data.player_and_seasons_played | jsonify }};
 for (var player in players_and_seasons) {
   players.push(players_and_seasons[player]["name"]);
 }
+var current_season = {{ site.data.current_season_players | jsonify }};
+for (var player in current_season) {
+  if (player != "seasons") {
+    players.push(current_season[player]["name"]);
+  }
+}
+
+var players=players.filter((a, b) => players.indexOf(a) === b)
+
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("input_player_search"), players);
 </script>

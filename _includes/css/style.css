@@ -94,8 +94,21 @@ p.large {
   align: center;
 }
 
+.standings-sheets {
+  max-width: 80%;
+  display: block;
+  align: center;
+}
+
+@media (max-width: 600px) {
+  .standings-sheets {
+    width: 100%;
+  }
+}
+
 iframe {
   align: center;
+  display: block;
 }
 /* Sections */
 .grey-section {

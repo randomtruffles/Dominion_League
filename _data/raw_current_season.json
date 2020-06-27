@@ -1,0 +1,4065 @@
+{
+  "season": 40,
+  "players" : [{
+      "Name": "E.Honda",
+      "Tier": "A",
+      "Division": "A1"
+    },
+    {
+      "Name": "JNails",
+      "Tier": "A",
+      "Division": "A1"
+    },
+    {
+      "Name": "Mic Qsenoch",
+      "Tier": "A",
+      "Division": "A1"
+    },
+    {
+      "Name": "nasmith99",
+      "Tier": "A",
+      "Division": "A1"
+    },
+    {
+      "Name": "wharf_rat",
+      "Tier": "A",
+      "Division": "A1"
+    },
+    {
+      "Name": "xyrix",
+      "Tier": "A",
+      "Division": "A1"
+    },
+    {
+      "Name": "707090",
+      "Tier": "B",
+      "Division": "B1"
+    },
+    {
+      "Name": "Apostolosoruler",
+      "Tier": "B",
+      "Division": "B2"
+    },
+    {
+      "Name": "Bryan",
+      "Tier": "B",
+      "Division": "B1"
+    },
+    {
+      "Name": "Burning Skull",
+      "Tier": "B",
+      "Division": "B2"
+    },
+    {
+      "Name": "drsteelhammer",
+      "Tier": "B",
+      "Division": "B1"
+    },
+    {
+      "Name": "H.exe",
+      "Tier": "B",
+      "Division": "B2"
+    },
+    {
+      "Name": "markus",
+      "Tier": "B",
+      "Division": "B1"
+    },
+    {
+      "Name": "nerdbound",
+      "Tier": "B",
+      "Division": "B1"
+    },
+    {
+      "Name": "SamE",
+      "Tier": "B",
+      "Division": "B1"
+    },
+    {
+      "Name": "Sicomatic",
+      "Tier": "B",
+      "Division": "B2"
+    },
+    {
+      "Name": "singletee",
+      "Tier": "B",
+      "Division": "B2"
+    },
+    {
+      "Name": "swordfishtrombone",
+      "Tier": "B",
+      "Division": "B2"
+    },
+    {
+      "Name": "tracer",
+      "Tier": "B",
+      "Division": "B1"
+    },
+    {
+      "Name": "aku chi",
+      "Tier": "C",
+      "Division": "C4"
+    },
+    {
+      "Name": "amoffett11",
+      "Tier": "C",
+      "Division": "C4"
+    },
+    {
+      "Name": "bluey_the_bear",
+      "Tier": "C",
+      "Division": "C1"
+    },
+    {
+      "Name": "bobbydj18",
+      "Tier": "C",
+      "Division": "C3"
+    },
+    {
+      "Name": "catoftheyear",
+      "Tier": "C",
+      "Division": "C3"
+    },
+    {
+      "Name": "crabcat2",
+      "Tier": "C",
+      "Division": "C1"
+    },
+    {
+      "Name": "dagron",
+      "Tier": "C",
+      "Division": "C4"
+    },
+    {
+      "Name": "Dan Brooks",
+      "Tier": "C",
+      "Division": "C3"
+    },
+    {
+      "Name": "Earl",
+      "Tier": "C",
+      "Division": "C2"
+    },
+    {
+      "Name": "Fircoal",
+      "Tier": "C",
+      "Division": "C2"
+    },
+    {
+      "Name": "gamesou",
+      "Tier": "C",
+      "Division": "C2"
+    },
+    {
+      "Name": "heron",
+      "Tier": "C",
+      "Division": "C4"
+    },
+    {
+      "Name": "Jean-Michel",
+      "Tier": "C",
+      "Division": "C2"
+    },
+    {
+      "Name": "jonts",
+      "Tier": "C",
+      "Division": "C3"
+    },
+    {
+      "Name": "LaLight",
+      "Tier": "C",
+      "Division": "C3"
+    },
+    {
+      "Name": "Lemonspawn",
+      "Tier": "C",
+      "Division": "C2"
+    },
+    {
+      "Name": "mikechike",
+      "Tier": "C",
+      "Division": "C1"
+    },
+    {
+      "Name": "Personman",
+      "Tier": "C",
+      "Division": "C4"
+    },
+    {
+      "Name": "pppppppppp",
+      "Tier": "C",
+      "Division": "C1"
+    },
+    {
+      "Name": "pqr4",
+      "Tier": "C",
+      "Division": "C3"
+    },
+    {
+      "Name": "Puzzle Box",
+      "Tier": "C",
+      "Division": "C1"
+    },
+    {
+      "Name": "rsilverstein12",
+      "Tier": "C",
+      "Division": "C4"
+    },
+    {
+      "Name": "Sharur",
+      "Tier": "C",
+      "Division": "C2"
+    },
+    {
+      "Name": "topher1588",
+      "Tier": "C",
+      "Division": "C1"
+    },
+    {
+      "Name": "Anders",
+      "Tier": "D",
+      "Division": "D2"
+    },
+    {
+      "Name": "Cave-o-sapien",
+      "Tier": "D",
+      "Division": "D3"
+    },
+    {
+      "Name": "Chris is me",
+      "Tier": "D",
+      "Division": "D1"
+    },
+    {
+      "Name": "crlundy",
+      "Tier": "D",
+      "Division": "D3"
+    },
+    {
+      "Name": "eh1414",
+      "Tier": "D",
+      "Division": "D1"
+    },
+    {
+      "Name": "Gazbag",
+      "Tier": "D",
+      "Division": "D1"
+    },
+    {
+      "Name": "jppbkm",
+      "Tier": "D",
+      "Division": "D4"
+    },
+    {
+      "Name": "knaacku",
+      "Tier": "D",
+      "Division": "D"
+    },
+    {
+      "Name": "lrlusher",
+      "Tier": "D",
+      "Division": "D3"
+    },
+    {
+      "Name": "marfik57",
+      "Tier": "D",
+      "Division": "D4"
+    },
+    {
+      "Name": "Micha1980",
+      "Tier": "D",
+      "Division": "D2"
+    },
+    {
+      "Name": "missouriben",
+      "Tier": "D",
+      "Division": "D1"
+    },
+    {
+      "Name": "nessuno",
+      "Tier": "D",
+      "Division": "D4"
+    },
+    {
+      "Name": "Ravenshard",
+      "Tier": "D",
+      "Division": "D4"
+    },
+    {
+      "Name": "S_Smart",
+      "Tier": "D",
+      "Division": "D3"
+    },
+    {
+      "Name": "sab4005",
+      "Tier": "D",
+      "Division": "D3"
+    },
+    {
+      "Name": "schadd",
+      "Tier": "D",
+      "Division": "D1"
+    },
+    {
+      "Name": "sdrawkcab",
+      "Tier": "D",
+      "Division": "D2"
+    },
+    {
+      "Name": "skizelo",
+      "Tier": "D",
+      "Division": "D4"
+    },
+    {
+      "Name": "skumpy",
+      "Tier": "D",
+      "Division": "D1"
+    },
+    {
+      "Name": "sweetjohn33",
+      "Tier": "D",
+      "Division": "D3"
+    },
+    {
+      "Name": "TheWatchtower",
+      "Tier": "D",
+      "Division": "D2"
+    },
+    {
+      "Name": "TonyWild",
+      "Tier": "D",
+      "Division": "D4"
+    },
+    {
+      "Name": "tufftaeh",
+      "Tier": "D",
+      "Division": "D2"
+    },
+    {
+      "Name": "alexconga",
+      "Tier": "E",
+      "Division": "E3"
+    },
+    {
+      "Name": "alibby1152",
+      "Tier": "E",
+      "Division": "E4"
+    },
+    {
+      "Name": "anovis",
+      "Tier": "E",
+      "Division": "E5"
+    },
+    {
+      "Name": "billdacat",
+      "Tier": "E",
+      "Division": "E3"
+    },
+    {
+      "Name": "bladebandit",
+      "Tier": "E",
+      "Division": "E4"
+    },
+    {
+      "Name": "bumbugler",
+      "Tier": "E",
+      "Division": "E5"
+    },
+    {
+      "Name": "Card Master",
+      "Tier": "E",
+      "Division": "E7"
+    },
+    {
+      "Name": "catstealer419",
+      "Tier": "E",
+      "Division": "E2"
+    },
+    {
+      "Name": "ced",
+      "Tier": "E",
+      "Division": "E8"
+    },
+    {
+      "Name": "counto",
+      "Tier": "E",
+      "Division": "E1"
+    },
+    {
+      "Name": "DaveDave",
+      "Tier": "E",
+      "Division": "E1"
+    },
+    {
+      "Name": "DDL",
+      "Tier": "E",
+      "Division": "E4"
+    },
+    {
+      "Name": "DividedSpy",
+      "Tier": "E",
+      "Division": "E2"
+    },
+    {
+      "Name": "Epicurus",
+      "Tier": "E",
+      "Division": "E5"
+    },
+    {
+      "Name": "FarmerBen",
+      "Tier": "E",
+      "Division": "E3"
+    },
+    {
+      "Name": "fiercelord",
+      "Tier": "E",
+      "Division": "E2"
+    },
+    {
+      "Name": "folivora",
+      "Tier": "E",
+      "Division": "E1"
+    },
+    {
+      "Name": "GaryOfPgh2",
+      "Tier": "E",
+      "Division": "E3"
+    },
+    {
+      "Name": "Gasku",
+      "Tier": "E",
+      "Division": "E7"
+    },
+    {
+      "Name": "harkne",
+      "Tier": "E",
+      "Division": "E8"
+    },
+    {
+      "Name": "hierarch",
+      "Tier": "E",
+      "Division": "E6"
+    },
+    {
+      "Name": "hoget10",
+      "Tier": "E",
+      "Division": "E2"
+    },
+    {
+      "Name": "HRoll",
+      "Tier": "E",
+      "Division": "E1"
+    },
+    {
+      "Name": "Jimmmy",
+      "Tier": "E",
+      "Division": "E8"
+    },
+    {
+      "Name": "JPreto",
+      "Tier": "E",
+      "Division": "E6"
+    },
+    {
+      "Name": "jxcn17",
+      "Tier": "E",
+      "Division": "E1"
+    },
+    {
+      "Name": "khz",
+      "Tier": "E",
+      "Division": "E4"
+    },
+    {
+      "Name": "Magyi",
+      "Tier": "E",
+      "Division": "E6"
+    },
+    {
+      "Name": "mistgun",
+      "Tier": "E",
+      "Division": "E8"
+    },
+    {
+      "Name": "Moonshadow70",
+      "Tier": "E",
+      "Division": "E2"
+    },
+    {
+      "Name": "MVP",
+      "Tier": "E",
+      "Division": "E5"
+    },
+    {
+      "Name": "namek",
+      "Tier": "E",
+      "Division": "E7"
+    },
+    {
+      "Name": "NBSchlueter",
+      "Tier": "E",
+      "Division": "E5"
+    },
+    {
+      "Name": "nottoobad",
+      "Tier": "E",
+      "Division": "E3"
+    },
+    {
+      "Name": "oemel09",
+      "Tier": "E",
+      "Division": "E8"
+    },
+    {
+      "Name": "ravivas",
+      "Tier": "E",
+      "Division": "E7"
+    },
+    {
+      "Name": "real77",
+      "Tier": "E",
+      "Division": "E6"
+    },
+    {
+      "Name": "scolapasta",
+      "Tier": "E",
+      "Division": "E2"
+    },
+    {
+      "Name": "seanahan",
+      "Tier": "E",
+      "Division": "E1"
+    },
+    {
+      "Name": "SearingSpear92",
+      "Tier": "E",
+      "Division": "E4"
+    },
+    {
+      "Name": "Sharapopovamaria",
+      "Tier": "E",
+      "Division": "E8"
+    },
+    {
+      "Name": "sparrowhawk73",
+      "Tier": "E",
+      "Division": "E6"
+    },
+    {
+      "Name": "Spiraler",
+      "Tier": "E",
+      "Division": "E6"
+    },
+    {
+      "Name": "squirezucco",
+      "Tier": "E",
+      "Division": "E5"
+    },
+    {
+      "Name": "Thabo",
+      "Tier": "E",
+      "Division": "E7"
+    },
+    {
+      "Name": "thepilferer",
+      "Tier": "E",
+      "Division": "E3"
+    },
+    {
+      "Name": "topAAs",
+      "Tier": "E",
+      "Division": "E7"
+    },
+    {
+      "Name": "yahas",
+      "Tier": "E",
+      "Division": "E4"
+    },
+    {
+      "Name": "_DumbOnion_",
+      "Tier": "F",
+      "Division": "F"
+    },
+    {
+      "Name": "34Witches",
+      "Tier": "F",
+      "Division": "F15"
+    },
+    {
+      "Name": "AbjectPermanence",
+      "Tier": "F",
+      "Division": "F11"
+    },
+    {
+      "Name": "AcceptableBunny",
+      "Tier": "F",
+      "Division": "F13"
+    },
+    {
+      "Name": "Adthor",
+      "Tier": "F",
+      "Division": "F1"
+    },
+    {
+      "Name": "aesthephile",
+      "Tier": "F",
+      "Division": "F10"
+    },
+    {
+      "Name": "alion8me",
+      "Tier": "F",
+      "Division": "F4"
+    },
+    {
+      "Name": "amankdr",
+      "Tier": "F",
+      "Division": "F7"
+    },
+    {
+      "Name": "andylatto",
+      "Tier": "F",
+      "Division": ""
+    },
+    {
+      "Name": "Appie459",
+      "Tier": "F",
+      "Division": "F16"
+    },
+    {
+      "Name": "Ares",
+      "Tier": "F",
+      "Division": "F14"
+    },
+    {
+      "Name": "asmajlaton",
+      "Tier": "F",
+      "Division": "F5"
+    },
+    {
+      "Name": "assemble me",
+      "Tier": "F",
+      "Division": "F14"
+    },
+    {
+      "Name": "bcoli",
+      "Tier": "F",
+      "Division": "F2"
+    },
+    {
+      "Name": "Beachcomber",
+      "Tier": "F",
+      "Division": "F15"
+    },
+    {
+      "Name": "BeXXsoR",
+      "Tier": "F",
+      "Division": "F15"
+    },
+    {
+      "Name": "bizaff",
+      "Tier": "F",
+      "Division": "F9"
+    },
+    {
+      "Name": "blablablabla",
+      "Tier": "F",
+      "Division": "F11"
+    },
+    {
+      "Name": "BobKrier",
+      "Tier": "F",
+      "Division": "F10"
+    },
+    {
+      "Name": "BobMathrotus",
+      "Tier": "F",
+      "Division": "F6"
+    },
+    {
+      "Name": "Briawna",
+      "Tier": "F",
+      "Division": "F8"
+    },
+    {
+      "Name": "britchken",
+      "Tier": "F",
+      "Division": "F5"
+    },
+    {
+      "Name": "britishsensation",
+      "Tier": "F",
+      "Division": "F"
+    },
+    {
+      "Name": "Caetra",
+      "Tier": "F",
+      "Division": "F2"
+    },
+    {
+      "Name": "CasualxMajestic",
+      "Tier": "F",
+      "Division": "F15"
+    },
+    {
+      "Name": "cferens",
+      "Tier": "F",
+      "Division": "F12"
+    },
+    {
+      "Name": "chocojoe",
+      "Tier": "F",
+      "Division": "F11"
+    },
+    {
+      "Name": "col_dax",
+      "Tier": "F",
+      "Division": ""
+    },
+    {
+      "Name": "CoweringCow",
+      "Tier": "F",
+      "Division": "F3"
+    },
+    {
+      "Name": "della",
+      "Tier": "F",
+      "Division": "F14"
+    },
+    {
+      "Name": "dghunter79",
+      "Tier": "F",
+      "Division": "F9"
+    },
+    {
+      "Name": "Dominanz",
+      "Tier": "F",
+      "Division": "F16"
+    },
+    {
+      "Name": "Dominion Beast",
+      "Tier": "F",
+      "Division": "F5"
+    },
+    {
+      "Name": "dylanmatthews",
+      "Tier": "F",
+      "Division": "F3"
+    },
+    {
+      "Name": "Emeric",
+      "Tier": "F",
+      "Division": "F15"
+    },
+    {
+      "Name": "erinblack",
+      "Tier": "F",
+      "Division": "F10"
+    },
+    {
+      "Name": "eskoglund",
+      "Tier": "F",
+      "Division": "F2"
+    },
+    {
+      "Name": "flel",
+      "Tier": "F",
+      "Division": "F6"
+    },
+    {
+      "Name": "Gordoo",
+      "Tier": "F",
+      "Division": "F10"
+    },
+    {
+      "Name": "graceg",
+      "Tier": "F",
+      "Division": "F11"
+    },
+    {
+      "Name": "Grafpaper",
+      "Tier": "F",
+      "Division": "F1"
+    },
+    {
+      "Name": "Hackybaby",
+      "Tier": "F",
+      "Division": "F"
+    },
+    {
+      "Name": "Hamlet the Dane",
+      "Tier": "F",
+      "Division": "F2"
+    },
+    {
+      "Name": "hannibal6",
+      "Tier": "F",
+      "Division": "F1"
+    },
+    {
+      "Name": "hwquidfwqhbcw",
+      "Tier": "F",
+      "Division": "F8"
+    },
+    {
+      "Name": "IbnSina",
+      "Tier": "F",
+      "Division": "F6"
+    },
+    {
+      "Name": "ilikus",
+      "Tier": "F",
+      "Division": "F14"
+    },
+    {
+      "Name": "Ingix",
+      "Tier": "F",
+      "Division": "F15"
+    },
+    {
+      "Name": "Iras42",
+      "Tier": "F",
+      "Division": "F13"
+    },
+    {
+      "Name": "jared_rockenstein",
+      "Tier": "F",
+      "Division": "F3"
+    },
+    {
+      "Name": "Jerrydot",
+      "Tier": "F",
+      "Division": "F14"
+    },
+    {
+      "Name": "jgoyes",
+      "Tier": "F",
+      "Division": "F5"
+    },
+    {
+      "Name": "jmjjmj",
+      "Tier": "F",
+      "Division": "F1"
+    },
+    {
+      "Name": "jtim1013",
+      "Tier": "F",
+      "Division": "F4"
+    },
+    {
+      "Name": "karenttrouble",
+      "Tier": "F",
+      "Division": "F2"
+    },
+    {
+      "Name": "KennyTBK",
+      "Tier": "F",
+      "Division": "F"
+    },
+    {
+      "Name": "koemanmike",
+      "Tier": "F",
+      "Division": "F16"
+    },
+    {
+      "Name": "kubar",
+      "Tier": "F",
+      "Division": "F5"
+    },
+    {
+      "Name": "Lard Rattington",
+      "Tier": "F",
+      "Division": "F4"
+    },
+    {
+      "Name": "malmerung",
+      "Tier": "F",
+      "Division": "F4"
+    },
+    {
+      "Name": "Malta",
+      "Tier": "F",
+      "Division": "F12"
+    },
+    {
+      "Name": "maltman",
+      "Tier": "F",
+      "Division": "F7"
+    },
+    {
+      "Name": "maxw1717",
+      "Tier": "F",
+      "Division": "F6"
+    },
+    {
+      "Name": "mazegeek999",
+      "Tier": "F",
+      "Division": "F10"
+    },
+    {
+      "Name": "Memories",
+      "Tier": "F",
+      "Division": "F3"
+    },
+    {
+      "Name": "Miaww",
+      "Tier": "F",
+      "Division": "F"
+    },
+    {
+      "Name": "MicahTheDebater",
+      "Tier": "F",
+      "Division": "F3"
+    },
+    {
+      "Name": "mikaelsson",
+      "Tier": "F",
+      "Division": "F12"
+    },
+    {
+      "Name": "Mort",
+      "Tier": "F",
+      "Division": "F13"
+    },
+    {
+      "Name": "Nez477",
+      "Tier": "F",
+      "Division": "F8"
+    },
+    {
+      "Name": "Noi Waters",
+      "Tier": "F",
+      "Division": "F4"
+    },
+    {
+      "Name": "OG Patrik",
+      "Tier": "F",
+      "Division": "F16"
+    },
+    {
+      "Name": "oshiimine",
+      "Tier": "F",
+      "Division": "F5"
+    },
+    {
+      "Name": "p4ddy0d00rs",
+      "Tier": "F",
+      "Division": "F7"
+    },
+    {
+      "Name": "Paul Christiano",
+      "Tier": "F",
+      "Division": "F10"
+    },
+    {
+      "Name": "pianovince",
+      "Tier": "F",
+      "Division": "F11"
+    },
+    {
+      "Name": "Plazek",
+      "Tier": "F",
+      "Division": "F14"
+    },
+    {
+      "Name": "pregnantbird",
+      "Tier": "F",
+      "Division": "F13"
+    },
+    {
+      "Name": "RiverPatron",
+      "Tier": "F",
+      "Division": "F"
+    },
+    {
+      "Name": "robertox",
+      "Tier": "F",
+      "Division": "F13"
+    },
+    {
+      "Name": "Schlafi",
+      "Tier": "F",
+      "Division": "F12"
+    },
+    {
+      "Name": "ScoopyPls",
+      "Tier": "F",
+      "Division": "F12"
+    },
+    {
+      "Name": "Shiz",
+      "Tier": "F",
+      "Division": "F16"
+    },
+    {
+      "Name": "spineflu",
+      "Tier": "F",
+      "Division": "F4"
+    },
+    {
+      "Name": "stonedmason",
+      "Tier": "F",
+      "Division": "F12"
+    },
+    {
+      "Name": "TeakPitkin",
+      "Tier": "F",
+      "Division": "F9"
+    },
+    {
+      "Name": "terracubist",
+      "Tier": "F",
+      "Division": "F8"
+    },
+    {
+      "Name": "tgtaft",
+      "Tier": "F",
+      "Division": "F1"
+    },
+    {
+      "Name": "TheBergster",
+      "Tier": "F",
+      "Division": "F9"
+    },
+    {
+      "Name": "theschnitz",
+      "Tier": "F",
+      "Division": "F9"
+    },
+    {
+      "Name": "thetruequ",
+      "Tier": "F",
+      "Division": "F8"
+    },
+    {
+      "Name": "TrinaCat",
+      "Tier": "F",
+      "Division": "F8"
+    },
+    {
+      "Name": "trippy",
+      "Tier": "F",
+      "Division": "F7"
+    },
+    {
+      "Name": "troth20",
+      "Tier": "F",
+      "Division": "F7"
+    },
+    {
+      "Name": "UltimateGeek",
+      "Tier": "F",
+      "Division": "F7"
+    },
+    {
+      "Name": "unagi.don",
+      "Tier": "F",
+      "Division": "F3"
+    },
+    {
+      "Name": "universalflamez",
+      "Tier": "F",
+      "Division": "F1"
+    },
+    {
+      "Name": "vmaria22",
+      "Tier": "F",
+      "Division": "F6"
+    },
+    {
+      "Name": "VoiceoftheWind",
+      "Tier": "F",
+      "Division": "F13"
+    },
+    {
+      "Name": "wmorgan",
+      "Tier": "F",
+      "Division": "F9"
+    },
+    {
+      "Name": "22jonhunt",
+      "Tier": "G",
+      "Division": "G11"
+    },
+    {
+      "Name": "Absurdicus",
+      "Tier": "G",
+      "Division": "G31"
+    },
+    {
+      "Name": "AcidDominion",
+      "Tier": "G",
+      "Division": "G30"
+    },
+    {
+      "Name": "acocle",
+      "Tier": "G",
+      "Division": "G13"
+    },
+    {
+      "Name": "Aharow21",
+      "Tier": "G",
+      "Division": "G5"
+    },
+    {
+      "Name": "AHNorris21",
+      "Tier": "G",
+      "Division": "G7"
+    },
+    {
+      "Name": "AJay887",
+      "Tier": "G",
+      "Division": "G15"
+    },
+    {
+      "Name": "alexgor23",
+      "Tier": "G",
+      "Division": "G11"
+    },
+    {
+      "Name": "Alice_in_Dystopia",
+      "Tier": "G",
+      "Division": "G32"
+    },
+    {
+      "Name": "Alipata",
+      "Tier": "G",
+      "Division": "G24"
+    },
+    {
+      "Name": "Annab492",
+      "Tier": "G",
+      "Division": "G13"
+    },
+    {
+      "Name": "avsparry",
+      "Tier": "G",
+      "Division": "G26"
+    },
+    {
+      "Name": "bigbootyboi",
+      "Tier": "G",
+      "Division": "G19"
+    },
+    {
+      "Name": "BigFarm",
+      "Tier": "G",
+      "Division": "G16"
+    },
+    {
+      "Name": "bigmoose",
+      "Tier": "G",
+      "Division": "G2"
+    },
+    {
+      "Name": "billchu13",
+      "Tier": "G",
+      "Division": "G19"
+    },
+    {
+      "Name": "blakewain",
+      "Tier": "G",
+      "Division": "G16"
+    },
+    {
+      "Name": "blublable",
+      "Tier": "G",
+      "Division": "G30"
+    },
+    {
+      "Name": "bonxie",
+      "Tier": "G",
+      "Division": "G27"
+    },
+    {
+      "Name": "BostonQuad",
+      "Tier": "G",
+      "Division": "G20"
+    },
+    {
+      "Name": "BParty",
+      "Tier": "G",
+      "Division": "G23"
+    },
+    {
+      "Name": "BrainTwister",
+      "Tier": "G",
+      "Division": "G18"
+    },
+    {
+      "Name": "Branbles",
+      "Tier": "G",
+      "Division": "G24"
+    },
+    {
+      "Name": "bubblovat",
+      "Tier": "G",
+      "Division": "G8"
+    },
+    {
+      "Name": "byrne",
+      "Tier": "G",
+      "Division": "G10"
+    },
+    {
+      "Name": "catdontbark",
+      "Tier": "G",
+      "Division": "G18"
+    },
+    {
+      "Name": "Chamoose",
+      "Tier": "G",
+      "Division": "G10"
+    },
+    {
+      "Name": "CharlesVane",
+      "Tier": "G",
+      "Division": "G25"
+    },
+    {
+      "Name": "charstar5",
+      "Tier": "G",
+      "Division": "G6"
+    },
+    {
+      "Name": "chattateo",
+      "Tier": "G",
+      "Division": "G15"
+    },
+    {
+      "Name": "chesstick",
+      "Tier": "G",
+      "Division": "G28"
+    },
+    {
+      "Name": "ChocoChip",
+      "Tier": "G",
+      "Division": "G21"
+    },
+    {
+      "Name": "chrismertens",
+      "Tier": "G",
+      "Division": "G32"
+    },
+    {
+      "Name": "Ciparo",
+      "Tier": "G",
+      "Division": "G32"
+    },
+    {
+      "Name": "clemdog69",
+      "Tier": "G",
+      "Division": "G20"
+    },
+    {
+      "Name": "cofa",
+      "Tier": "G",
+      "Division": "G30"
+    },
+    {
+      "Name": "cruiskeen",
+      "Tier": "G",
+      "Division": "G32"
+    },
+    {
+      "Name": "dajjans4",
+      "Tier": "G",
+      "Division": "G2"
+    },
+    {
+      "Name": "Darkwrath",
+      "Tier": "G",
+      "Division": "G22"
+    },
+    {
+      "Name": "DarthSensitive",
+      "Tier": "G",
+      "Division": "G14"
+    },
+    {
+      "Name": "darthshikago",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "DaveDude",
+      "Tier": "G",
+      "Division": "G23"
+    },
+    {
+      "Name": "dendanskemand",
+      "Tier": "G",
+      "Division": "G3"
+    },
+    {
+      "Name": "DerpKaiser",
+      "Tier": "G",
+      "Division": "G1"
+    },
+    {
+      "Name": "DesertWhale",
+      "Tier": "G",
+      "Division": "G16"
+    },
+    {
+      "Name": "dexterslab",
+      "Tier": "G",
+      "Division": "G24"
+    },
+    {
+      "Name": "dfodavid",
+      "Tier": "G",
+      "Division": "G4"
+    },
+    {
+      "Name": "DK88",
+      "Tier": "G",
+      "Division": "G21"
+    },
+    {
+      "Name": "dominicw",
+      "Tier": "G",
+      "Division": "G29"
+    },
+    {
+      "Name": "Drkschneider",
+      "Tier": "G",
+      "Division": "G25"
+    },
+    {
+      "Name": "drog",
+      "Tier": "G",
+      "Division": "G18"
+    },
+    {
+      "Name": "Durotan97",
+      "Tier": "G",
+      "Division": "G26"
+    },
+    {
+      "Name": "ECreed",
+      "Tier": "G",
+      "Division": "G25"
+    },
+    {
+      "Name": "eereid",
+      "Tier": "G",
+      "Division": "G3"
+    },
+    {
+      "Name": "elazarus",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "EmperorMattXIV",
+      "Tier": "G",
+      "Division": "G26"
+    },
+    {
+      "Name": "Eppob",
+      "Tier": "G",
+      "Division": "G31"
+    },
+    {
+      "Name": "Eraa",
+      "Tier": "G",
+      "Division": "G7"
+    },
+    {
+      "Name": "erikmoyer",
+      "Tier": "G",
+      "Division": "G21"
+    },
+    {
+      "Name": "erndiggity",
+      "Tier": "G",
+      "Division": "G20"
+    },
+    {
+      "Name": "farrmich",
+      "Tier": "G",
+      "Division": "G3"
+    },
+    {
+      "Name": "Flatirons",
+      "Tier": "G",
+      "Division": "G18"
+    },
+    {
+      "Name": "frownland",
+      "Tier": "G",
+      "Division": "G3"
+    },
+    {
+      "Name": "Fullwagon",
+      "Tier": "G",
+      "Division": "G5"
+    },
+    {
+      "Name": "garrettargenna",
+      "Tier": "G",
+      "Division": "G17"
+    },
+    {
+      "Name": "geal77",
+      "Tier": "G",
+      "Division": "G8"
+    },
+    {
+      "Name": "go1964",
+      "Tier": "G",
+      "Division": "G31"
+    },
+    {
+      "Name": "gpitsakis",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "gregsucks",
+      "Tier": "G",
+      "Division": "G9"
+    },
+    {
+      "Name": "grimace",
+      "Tier": "G",
+      "Division": "G12"
+    },
+    {
+      "Name": "gugucool",
+      "Tier": "G",
+      "Division": "G9"
+    },
+    {
+      "Name": "gustav17",
+      "Tier": "G",
+      "Division": "G11"
+    },
+    {
+      "Name": "habeasporpoise",
+      "Tier": "G",
+      "Division": "G20"
+    },
+    {
+      "Name": "Hammer12",
+      "Tier": "G",
+      "Division": "G23"
+    },
+    {
+      "Name": "Hankiepankie",
+      "Tier": "G",
+      "Division": "G30"
+    },
+    {
+      "Name": "Hannigan2020",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "hezeheze",
+      "Tier": "G",
+      "Division": "G14"
+    },
+    {
+      "Name": "Hoffi1210",
+      "Tier": "G",
+      "Division": "G28"
+    },
+    {
+      "Name": "IamAnoob1",
+      "Tier": "G",
+      "Division": "G17"
+    },
+    {
+      "Name": "icul",
+      "Tier": "G",
+      "Division": "G8"
+    },
+    {
+      "Name": "ineffabilliken",
+      "Tier": "G",
+      "Division": "G6"
+    },
+    {
+      "Name": "jdizzle",
+      "Tier": "G",
+      "Division": "G22"
+    },
+    {
+      "Name": "jdizzle111",
+      "Tier": "G",
+      "Division": "G14"
+    },
+    {
+      "Name": "jerrod",
+      "Tier": "G",
+      "Division": "G9"
+    },
+    {
+      "Name": "jimbobrady",
+      "Tier": "G",
+      "Division": "G19"
+    },
+    {
+      "Name": "Jimbuck",
+      "Tier": "G",
+      "Division": "G6"
+    },
+    {
+      "Name": "jpople",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "jQsh",
+      "Tier": "G",
+      "Division": "G17"
+    },
+    {
+      "Name": "jtoeman",
+      "Tier": "G",
+      "Division": "G5"
+    },
+    {
+      "Name": "jtran4418",
+      "Tier": "G",
+      "Division": "G9"
+    },
+    {
+      "Name": "jtrupiano",
+      "Tier": "G",
+      "Division": "G20"
+    },
+    {
+      "Name": "Julu",
+      "Tier": "G",
+      "Division": "G27"
+    },
+    {
+      "Name": "kamsc88",
+      "Tier": "G",
+      "Division": "G1"
+    },
+    {
+      "Name": "KarratKake",
+      "Tier": "G",
+      "Division": "G15"
+    },
+    {
+      "Name": "khalnayak",
+      "Tier": "G",
+      "Division": "G21"
+    },
+    {
+      "Name": "King Julian 90",
+      "Tier": "G",
+      "Division": "G26"
+    },
+    {
+      "Name": "KingMeseus",
+      "Tier": "G",
+      "Division": "G4"
+    },
+    {
+      "Name": "kitchen42",
+      "Tier": "G",
+      "Division": "G22"
+    },
+    {
+      "Name": "kska133",
+      "Tier": "G",
+      "Division": "G2"
+    },
+    {
+      "Name": "landonstryker",
+      "Tier": "G",
+      "Division": "G1"
+    },
+    {
+      "Name": "lar1138",
+      "Tier": "G",
+      "Division": "G21"
+    },
+    {
+      "Name": "leapoffaith24",
+      "Tier": "G",
+      "Division": "G13"
+    },
+    {
+      "Name": "lewisisgood",
+      "Tier": "G",
+      "Division": "G7"
+    },
+    {
+      "Name": "littlestdube",
+      "Tier": "G",
+      "Division": "G9"
+    },
+    {
+      "Name": "Livo",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "louda",
+      "Tier": "G",
+      "Division": "G30"
+    },
+    {
+      "Name": "madronefive",
+      "Tier": "G",
+      "Division": "G7"
+    },
+    {
+      "Name": "maksbondarenko",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "malgorza",
+      "Tier": "G",
+      "Division": "G28"
+    },
+    {
+      "Name": "MarioPawty",
+      "Tier": "G",
+      "Division": "G4"
+    },
+    {
+      "Name": "Martin Redsport",
+      "Tier": "G",
+      "Division": "G32"
+    },
+    {
+      "Name": "mccannification",
+      "Tier": "G",
+      "Division": "G15"
+    },
+    {
+      "Name": "mcicrs",
+      "Tier": "G",
+      "Division": "G18"
+    },
+    {
+      "Name": "mcpep4b05",
+      "Tier": "G",
+      "Division": "G8"
+    },
+    {
+      "Name": "mdh804",
+      "Tier": "G",
+      "Division": "G26"
+    },
+    {
+      "Name": "Melkordom",
+      "Tier": "G",
+      "Division": "G11"
+    },
+    {
+      "Name": "mglagrla",
+      "Tier": "G",
+      "Division": "G5"
+    },
+    {
+      "Name": "mikedolph",
+      "Tier": "G",
+      "Division": "G27"
+    },
+    {
+      "Name": "militiamatt",
+      "Tier": "G",
+      "Division": "G19"
+    },
+    {
+      "Name": "mizbeth",
+      "Tier": "G",
+      "Division": "G7"
+    },
+    {
+      "Name": "mondainai2",
+      "Tier": "G",
+      "Division": "G31"
+    },
+    {
+      "Name": "mountcleverest",
+      "Tier": "G",
+      "Division": "G24"
+    },
+    {
+      "Name": "mpjohns",
+      "Tier": "G",
+      "Division": "G16"
+    },
+    {
+      "Name": "MtMagus",
+      "Tier": "G",
+      "Division": "G1"
+    },
+    {
+      "Name": "nepstein",
+      "Tier": "G",
+      "Division": "G13"
+    },
+    {
+      "Name": "noisenow42",
+      "Tier": "G",
+      "Division": "G29"
+    },
+    {
+      "Name": "Nono13",
+      "Tier": "G",
+      "Division": "G29"
+    },
+    {
+      "Name": "NotAVan",
+      "Tier": "G",
+      "Division": "G12"
+    },
+    {
+      "Name": "odddity111",
+      "Tier": "G",
+      "Division": "G2"
+    },
+    {
+      "Name": "Oktazooka",
+      "Tier": "G",
+      "Division": "G32"
+    },
+    {
+      "Name": "Ord1n",
+      "Tier": "G",
+      "Division": "G26"
+    },
+    {
+      "Name": "Osti92",
+      "Tier": "G",
+      "Division": "G29"
+    },
+    {
+      "Name": "Ostrander17",
+      "Tier": "G",
+      "Division": "G21"
+    },
+    {
+      "Name": "PanSarin",
+      "Tier": "G",
+      "Division": "G30"
+    },
+    {
+      "Name": "PenWithArm",
+      "Tier": "G",
+      "Division": "G12"
+    },
+    {
+      "Name": "phyphor",
+      "Tier": "G",
+      "Division": "G24"
+    },
+    {
+      "Name": "pwu55",
+      "Tier": "G",
+      "Division": "G27"
+    },
+    {
+      "Name": "queerly_awesome",
+      "Tier": "G",
+      "Division": "G10"
+    },
+    {
+      "Name": "ramyad",
+      "Tier": "G",
+      "Division": "G13"
+    },
+    {
+      "Name": "RaphaelR",
+      "Tier": "G",
+      "Division": "G28"
+    },
+    {
+      "Name": "redvelvet",
+      "Tier": "G",
+      "Division": "G19"
+    },
+    {
+      "Name": "ReedBros",
+      "Tier": "G",
+      "Division": "G14"
+    },
+    {
+      "Name": "Reiderrabbit",
+      "Tier": "G",
+      "Division": "G11"
+    },
+    {
+      "Name": "rioderbi",
+      "Tier": "G",
+      "Division": "G13"
+    },
+    {
+      "Name": "rohanthewarrior",
+      "Tier": "G",
+      "Division": "G17"
+    },
+    {
+      "Name": "rohanz7",
+      "Tier": "G",
+      "Division": "G17"
+    },
+    {
+      "Name": "Rostipyr",
+      "Tier": "G",
+      "Division": "G29"
+    },
+    {
+      "Name": "Rotkaeppchen",
+      "Tier": "G",
+      "Division": "G29"
+    },
+    {
+      "Name": "SantaCruzCool",
+      "Tier": "G",
+      "Division": "G23"
+    },
+    {
+      "Name": "Savaahn",
+      "Tier": "G",
+      "Division": "G3"
+    },
+    {
+      "Name": "Schaka",
+      "Tier": "G",
+      "Division": "G25"
+    },
+    {
+      "Name": "schorn",
+      "Tier": "G",
+      "Division": "G6"
+    },
+    {
+      "Name": "Scobud27",
+      "Tier": "G",
+      "Division": "G3"
+    },
+    {
+      "Name": "scottc",
+      "Tier": "G",
+      "Division": "G24"
+    },
+    {
+      "Name": "SerPounce",
+      "Tier": "G",
+      "Division": "G31"
+    },
+    {
+      "Name": "Shacharizard",
+      "Tier": "G",
+      "Division": "G4"
+    },
+    {
+      "Name": "ShakeyJake",
+      "Tier": "G",
+      "Division": "G10"
+    },
+    {
+      "Name": "shmuelic",
+      "Tier": "G",
+      "Division": "G8"
+    },
+    {
+      "Name": "Smelly4_4",
+      "Tier": "G",
+      "Division": "G14"
+    },
+    {
+      "Name": "speedyjohn",
+      "Tier": "G",
+      "Division": "G22"
+    },
+    {
+      "Name": "SpikesWire",
+      "Tier": "G",
+      "Division": "G2"
+    },
+    {
+      "Name": "sportingelijah",
+      "Tier": "G",
+      "Division": "G1"
+    },
+    {
+      "Name": "stephen2",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "Supernova888",
+      "Tier": "G",
+      "Division": "G3"
+    },
+    {
+      "Name": "Swoosh",
+      "Tier": "G",
+      "Division": "G10"
+    },
+    {
+      "Name": "Takaron",
+      "Tier": "G",
+      "Division": "G15"
+    },
+    {
+      "Name": "TalinkorB",
+      "Tier": "G",
+      "Division": "G9"
+    },
+    {
+      "Name": "Tateishi",
+      "Tier": "G",
+      "Division": "G6"
+    },
+    {
+      "Name": "TECtheEnemy",
+      "Tier": "G",
+      "Division": ""
+    },
+    {
+      "Name": "TedMosby12",
+      "Tier": "G",
+      "Division": "G6"
+    },
+    {
+      "Name": "temidayo1234",
+      "Tier": "G",
+      "Division": "G4"
+    },
+    {
+      "Name": "Terbium65",
+      "Tier": "G",
+      "Division": "G19"
+    },
+    {
+      "Name": "the jesters girl",
+      "Tier": "G",
+      "Division": "G18"
+    },
+    {
+      "Name": "Thinpaddy",
+      "Tier": "G",
+      "Division": "G28"
+    },
+    {
+      "Name": "ThomasK",
+      "Tier": "G",
+      "Division": "G25"
+    },
+    {
+      "Name": "tiegerstochter",
+      "Tier": "G",
+      "Division": "G25"
+    },
+    {
+      "Name": "tmoneywatson",
+      "Tier": "G",
+      "Division": "G5"
+    },
+    {
+      "Name": "tnarg44",
+      "Tier": "G",
+      "Division": "G17"
+    },
+    {
+      "Name": "tonyfig",
+      "Tier": "G",
+      "Division": "G22"
+    },
+    {
+      "Name": "Toomzor",
+      "Tier": "G",
+      "Division": "G27"
+    },
+    {
+      "Name": "trollolol",
+      "Tier": "G",
+      "Division": "G23"
+    },
+    {
+      "Name": "turbobaseball",
+      "Tier": "G",
+      "Division": "G16"
+    },
+    {
+      "Name": "typewriter23",
+      "Tier": "G",
+      "Division": ""
+    },
+    {
+      "Name": "UNBR34K4BL3",
+      "Tier": "G",
+      "Division": "G1"
+    },
+    {
+      "Name": "vi3tv1nk",
+      "Tier": "G",
+      "Division": "G8"
+    },
+    {
+      "Name": "vidawg77",
+      "Tier": "G",
+      "Division": "G28"
+    },
+    {
+      "Name": "Viersen",
+      "Tier": "G",
+      "Division": "G27"
+    },
+    {
+      "Name": "watermeloen",
+      "Tier": "G",
+      "Division": "G31"
+    },
+    {
+      "Name": "whatsupdawg",
+      "Tier": "G",
+      "Division": "G23"
+    },
+    {
+      "Name": "WickedCurves",
+      "Tier": "G",
+      "Division": "G16"
+    },
+    {
+      "Name": "wmckemey",
+      "Tier": "G",
+      "Division": "G"
+    },
+    {
+      "Name": "wwwdotwww",
+      "Tier": "G",
+      "Division": "G12"
+    },
+    {
+      "Name": "Zert",
+      "Tier": "G",
+      "Division": "G11"
+    },
+    {
+      "Name": "zmonny",
+      "Tier": "G",
+      "Division": "G15"
+    },
+    {
+      "Name": "zomshow",
+      "Tier": "G",
+      "Division": "G10"
+    },
+    {
+      "Name": "zsaffir",
+      "Tier": "G",
+      "Division": "G4"
+    },
+    {
+      "Name": "ZWade",
+      "Tier": "G",
+      "Division": "G5"
+    },
+    {
+      "Name": "-Ali-",
+      "Tier": "H",
+      "Division": "H54"
+    },
+    {
+      "Name": "aadim2006",
+      "Tier": "H",
+      "Division": "H5"
+    },
+    {
+      "Name": "AAsmiles",
+      "Tier": "H",
+      "Division": "H32"
+    },
+    {
+      "Name": "acourt01",
+      "Tier": "H",
+      "Division": "H36"
+    },
+    {
+      "Name": "ACuriousParadox",
+      "Tier": "H",
+      "Division": "H1"
+    },
+    {
+      "Name": "adambyars",
+      "Tier": "H",
+      "Division": "H15"
+    },
+    {
+      "Name": "Altar Keane",
+      "Tier": "H",
+      "Division": "H57"
+    },
+    {
+      "Name": "amrutha",
+      "Tier": "H",
+      "Division": "H39"
+    },
+    {
+      "Name": "ancamirela",
+      "Tier": "H",
+      "Division": "H44"
+    },
+    {
+      "Name": "androidfanman",
+      "Tier": "H",
+      "Division": "H41"
+    },
+    {
+      "Name": "Annagret",
+      "Tier": "H",
+      "Division": "H29"
+    },
+    {
+      "Name": "antcnnected",
+      "Tier": "H",
+      "Division": "H15"
+    },
+    {
+      "Name": "AnUncivilEngineer",
+      "Tier": "H",
+      "Division": "H3"
+    },
+    {
+      "Name": "areeder808",
+      "Tier": "H",
+      "Division": "H4"
+    },
+    {
+      "Name": "arusmahen",
+      "Tier": "H",
+      "Division": "H1"
+    },
+    {
+      "Name": "astrodog93",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "AuD14",
+      "Tier": "H",
+      "Division": "H5"
+    },
+    {
+      "Name": "AvinaashAnand",
+      "Tier": "H",
+      "Division": "H47"
+    },
+    {
+      "Name": "b00b3rt",
+      "Tier": "H",
+      "Division": "H10"
+    },
+    {
+      "Name": "badashbhalu",
+      "Tier": "H",
+      "Division": "H45"
+    },
+    {
+      "Name": "barksideofthemoon",
+      "Tier": "H",
+      "Division": "H28"
+    },
+    {
+      "Name": "BartHarleyJarvis",
+      "Tier": "H",
+      "Division": "H27"
+    },
+    {
+      "Name": "batmanthehorse",
+      "Tier": "H",
+      "Division": "H8"
+    },
+    {
+      "Name": "bcraig9713",
+      "Tier": "H",
+      "Division": "H24"
+    },
+    {
+      "Name": "Beckycapp",
+      "Tier": "H",
+      "Division": "H2"
+    },
+    {
+      "Name": "Beeronis",
+      "Tier": "H",
+      "Division": "H12"
+    },
+    {
+      "Name": "bell22",
+      "Tier": "H",
+      "Division": "H24"
+    },
+    {
+      "Name": "Berger77",
+      "Tier": "H",
+      "Division": "H49"
+    },
+    {
+      "Name": "Beth",
+      "Tier": "H",
+      "Division": "H54"
+    },
+    {
+      "Name": "Betira",
+      "Tier": "H",
+      "Division": "H58"
+    },
+    {
+      "Name": "bigwynner",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "billbarnes1972",
+      "Tier": "H",
+      "Division": "H20"
+    },
+    {
+      "Name": "Birgit98",
+      "Tier": "H",
+      "Division": "H59"
+    },
+    {
+      "Name": "bjtait15",
+      "Tier": "H",
+      "Division": "H16"
+    },
+    {
+      "Name": "BloodPlum",
+      "Tier": "H",
+      "Division": "H3"
+    },
+    {
+      "Name": "blossomdb",
+      "Tier": "H",
+      "Division": "H37"
+    },
+    {
+      "Name": "Bob1",
+      "Tier": "H",
+      "Division": "H13"
+    },
+    {
+      "Name": "Bomani88",
+      "Tier": "H",
+      "Division": "H40"
+    },
+    {
+      "Name": "BoneyDanza",
+      "Tier": "H",
+      "Division": "H37"
+    },
+    {
+      "Name": "bongoboi5000",
+      "Tier": "H",
+      "Division": "H33"
+    },
+    {
+      "Name": "Boydd",
+      "Tier": "H",
+      "Division": "H48"
+    },
+    {
+      "Name": "bozu69",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "bradchoosefi",
+      "Tier": "H",
+      "Division": "H8"
+    },
+    {
+      "Name": "brev100",
+      "Tier": "H",
+      "Division": "H14"
+    },
+    {
+      "Name": "Bricks2020",
+      "Tier": "H",
+      "Division": "H17"
+    },
+    {
+      "Name": "BSplitt",
+      "Tier": "H",
+      "Division": "H12"
+    },
+    {
+      "Name": "bubs4",
+      "Tier": "H",
+      "Division": "H41"
+    },
+    {
+      "Name": "Burly_Steve",
+      "Tier": "H",
+      "Division": "H55"
+    },
+    {
+      "Name": "bz1",
+      "Tier": "H",
+      "Division": "H28"
+    },
+    {
+      "Name": "cabelhigh",
+      "Tier": "H",
+      "Division": "H43"
+    },
+    {
+      "Name": "Cait2244",
+      "Tier": "H",
+      "Division": "H20"
+    },
+    {
+      "Name": "CaptainHorizons",
+      "Tier": "H",
+      "Division": "H62"
+    },
+    {
+      "Name": "CarmenSanDiego",
+      "Tier": "H",
+      "Division": "H2"
+    },
+    {
+      "Name": "CastleLivery",
+      "Tier": "H",
+      "Division": "H22"
+    },
+    {
+      "Name": "catiemichelle",
+      "Tier": "H",
+      "Division": "H4"
+    },
+    {
+      "Name": "Cattallia",
+      "Tier": "H",
+      "Division": "H51"
+    },
+    {
+      "Name": "Cavedweller",
+      "Tier": "H",
+      "Division": "H59"
+    },
+    {
+      "Name": "cavemanrot",
+      "Tier": "H",
+      "Division": "H64"
+    },
+    {
+      "Name": "ceciliadoan",
+      "Tier": "H",
+      "Division": "H31"
+    },
+    {
+      "Name": "cestwho",
+      "Tier": "H",
+      "Division": "H22"
+    },
+    {
+      "Name": "cevan917",
+      "Tier": "H",
+      "Division": "H10"
+    },
+    {
+      "Name": "CF6",
+      "Tier": "H",
+      "Division": "H53"
+    },
+    {
+      "Name": "cfred",
+      "Tier": "H",
+      "Division": "H25"
+    },
+    {
+      "Name": "chadnov",
+      "Tier": "H",
+      "Division": "H35"
+    },
+    {
+      "Name": "ChancellorBillups",
+      "Tier": "H",
+      "Division": "H21"
+    },
+    {
+      "Name": "charlieh92",
+      "Tier": "H",
+      "Division": "H60"
+    },
+    {
+      "Name": "CharMama",
+      "Tier": "H",
+      "Division": "H24"
+    },
+    {
+      "Name": "ChiefConstable",
+      "Tier": "H",
+      "Division": "H12"
+    },
+    {
+      "Name": "ChiefMinister",
+      "Tier": "H",
+      "Division": "H26"
+    },
+    {
+      "Name": "Chopalot3",
+      "Tier": "H",
+      "Division": "H29"
+    },
+    {
+      "Name": "cj_punzalan",
+      "Tier": "H",
+      "Division": "H34"
+    },
+    {
+      "Name": "clischer",
+      "Tier": "H",
+      "Division": "H5"
+    },
+    {
+      "Name": "cmhagen83",
+      "Tier": "H",
+      "Division": "H18"
+    },
+    {
+      "Name": "ColdBloodPrince",
+      "Tier": "H",
+      "Division": "H21"
+    },
+    {
+      "Name": "colin_loves_hunter",
+      "Tier": "H",
+      "Division": "H46"
+    },
+    {
+      "Name": "Condu",
+      "Tier": "H",
+      "Division": "H60"
+    },
+    {
+      "Name": "cougars28",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Cr1mson3lbow",
+      "Tier": "H",
+      "Division": "H7"
+    },
+    {
+      "Name": "crazyjok3r",
+      "Tier": "H",
+      "Division": "H33"
+    },
+    {
+      "Name": "CrazyMoose",
+      "Tier": "H",
+      "Division": "H26"
+    },
+    {
+      "Name": "Cyber28",
+      "Tier": "H",
+      "Division": "H53"
+    },
+    {
+      "Name": "DangerKing",
+      "Tier": "H",
+      "Division": "H6"
+    },
+    {
+      "Name": "Daniel Bo",
+      "Tier": "H",
+      "Division": "H63"
+    },
+    {
+      "Name": "davidbebawy",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Dawg111",
+      "Tier": "H",
+      "Division": "H62"
+    },
+    {
+      "Name": "Dawgi",
+      "Tier": "H",
+      "Division": "H46"
+    },
+    {
+      "Name": "Dbloslim",
+      "Tier": "H",
+      "Division": "H18"
+    },
+    {
+      "Name": "DefMike",
+      "Tier": "H",
+      "Division": "H49"
+    },
+    {
+      "Name": "Denise",
+      "Tier": "H",
+      "Division": "H56"
+    },
+    {
+      "Name": "doctoramk",
+      "Tier": "H",
+      "Division": "H26"
+    },
+    {
+      "Name": "doldendude",
+      "Tier": "H",
+      "Division": "H57"
+    },
+    {
+      "Name": "dollarbill",
+      "Tier": "H",
+      "Division": "H15"
+    },
+    {
+      "Name": "dollopofmoney",
+      "Tier": "H",
+      "Division": "H27"
+    },
+    {
+      "Name": "dominationnation",
+      "Tier": "H",
+      "Division": "H49"
+    },
+    {
+      "Name": "DominionDave",
+      "Tier": "H",
+      "Division": "H14"
+    },
+    {
+      "Name": "Domocobra",
+      "Tier": "H",
+      "Division": "H58"
+    },
+    {
+      "Name": "domplopper",
+      "Tier": "H",
+      "Division": "H22"
+    },
+    {
+      "Name": "Donkey-Dude",
+      "Tier": "H",
+      "Division": "H61"
+    },
+    {
+      "Name": "doughminyan",
+      "Tier": "H",
+      "Division": "H10"
+    },
+    {
+      "Name": "Dr_Phibes",
+      "Tier": "H",
+      "Division": "H61"
+    },
+    {
+      "Name": "driftskate",
+      "Tier": "H",
+      "Division": "H44"
+    },
+    {
+      "Name": "DrMantisToboggan16",
+      "Tier": "H",
+      "Division": "H13"
+    },
+    {
+      "Name": "Druidas",
+      "Tier": "H",
+      "Division": "H60"
+    },
+    {
+      "Name": "Duhetyrone2",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Durgle",
+      "Tier": "H",
+      "Division": "H36"
+    },
+    {
+      "Name": "Eaterpoosack",
+      "Tier": "H",
+      "Division": "H10"
+    },
+    {
+      "Name": "eddwhite1",
+      "Tier": "H",
+      "Division": "H63"
+    },
+    {
+      "Name": "edred",
+      "Tier": "H",
+      "Division": "H43"
+    },
+    {
+      "Name": "eeps",
+      "Tier": "H",
+      "Division": "H42"
+    },
+    {
+      "Name": "Elviernestocajugar",
+      "Tier": "H",
+      "Division": "H51"
+    },
+    {
+      "Name": "EmmiPlays2000",
+      "Tier": "H",
+      "Division": "H51"
+    },
+    {
+      "Name": "epiccswagg",
+      "Tier": "H",
+      "Division": "H38"
+    },
+    {
+      "Name": "Esteban03",
+      "Tier": "H",
+      "Division": "H23"
+    },
+    {
+      "Name": "FavLab",
+      "Tier": "H",
+      "Division": "H44"
+    },
+    {
+      "Name": "fika monster",
+      "Tier": "H",
+      "Division": "H55"
+    },
+    {
+      "Name": "Filodendron",
+      "Tier": "H",
+      "Division": "H7"
+    },
+    {
+      "Name": "Final_Thoughts",
+      "Tier": "H",
+      "Division": "H11"
+    },
+    {
+      "Name": "findcongwang",
+      "Tier": "H",
+      "Division": "H11"
+    },
+    {
+      "Name": "Frack9",
+      "Tier": "H",
+      "Division": "H32"
+    },
+    {
+      "Name": "Friartuck",
+      "Tier": "H",
+      "Division": "H33"
+    },
+    {
+      "Name": "FRIETHEAD",
+      "Tier": "H",
+      "Division": "H53"
+    },
+    {
+      "Name": "froco93",
+      "Tier": "H",
+      "Division": "H42"
+    },
+    {
+      "Name": "frogdogs",
+      "Tier": "H",
+      "Division": "H21"
+    },
+    {
+      "Name": "FWood",
+      "Tier": "H",
+      "Division": "H58"
+    },
+    {
+      "Name": "fzzzzzzzt",
+      "Tier": "H",
+      "Division": "H39"
+    },
+    {
+      "Name": "GayAndSebastian",
+      "Tier": "H",
+      "Division": "H56"
+    },
+    {
+      "Name": "gfroese",
+      "Tier": "H",
+      "Division": "H23"
+    },
+    {
+      "Name": "Girlwndr",
+      "Tier": "H",
+      "Division": "H33"
+    },
+    {
+      "Name": "gomez70",
+      "Tier": "H",
+      "Division": "H11"
+    },
+    {
+      "Name": "Goody2shoes15",
+      "Tier": "H",
+      "Division": "H63"
+    },
+    {
+      "Name": "goose7",
+      "Tier": "H",
+      "Division": "H9"
+    },
+    {
+      "Name": "GRB11",
+      "Tier": "H",
+      "Division": "H6"
+    },
+    {
+      "Name": "grebst",
+      "Tier": "H",
+      "Division": "H59"
+    },
+    {
+      "Name": "Greta_X",
+      "Tier": "H",
+      "Division": "H30"
+    },
+    {
+      "Name": "GronkBrady",
+      "Tier": "H",
+      "Division": "H32"
+    },
+    {
+      "Name": "gsusie1",
+      "Tier": "H",
+      "Division": "H22"
+    },
+    {
+      "Name": "Gubump",
+      "Tier": "H",
+      "Division": "H33"
+    },
+    {
+      "Name": "GuyOnABuffalo",
+      "Tier": "H",
+      "Division": "H21"
+    },
+    {
+      "Name": "hal_incandenza96",
+      "Tier": "H",
+      "Division": "H40"
+    },
+    {
+      "Name": "HannaP",
+      "Tier": "H",
+      "Division": "H53"
+    },
+    {
+      "Name": "HNYDW",
+      "Tier": "H",
+      "Division": "H1"
+    },
+    {
+      "Name": "hobitermes",
+      "Tier": "H",
+      "Division": "H52"
+    },
+    {
+      "Name": "HoboJon9000",
+      "Tier": "H",
+      "Division": "H45"
+    },
+    {
+      "Name": "Hoffnung",
+      "Tier": "H",
+      "Division": "H64"
+    },
+    {
+      "Name": "hollyharlow",
+      "Tier": "H",
+      "Division": "H11"
+    },
+    {
+      "Name": "hughythegreat",
+      "Tier": "H",
+      "Division": "H41"
+    },
+    {
+      "Name": "huzzah4sara",
+      "Tier": "H",
+      "Division": "H28"
+    },
+    {
+      "Name": "Hyogaah",
+      "Tier": "H",
+      "Division": "H60"
+    },
+    {
+      "Name": "iainyoung",
+      "Tier": "H",
+      "Division": "H47"
+    },
+    {
+      "Name": "iMonster",
+      "Tier": "H",
+      "Division": "H26"
+    },
+    {
+      "Name": "InspiringLeader",
+      "Tier": "H",
+      "Division": "H57"
+    },
+    {
+      "Name": "instaham",
+      "Tier": "H",
+      "Division": "H13"
+    },
+    {
+      "Name": "instock_item",
+      "Tier": "H",
+      "Division": "H45"
+    },
+    {
+      "Name": "Intelcheff",
+      "Tier": "H",
+      "Division": "H9"
+    },
+    {
+      "Name": "iparres",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Ireth",
+      "Tier": "H",
+      "Division": "H57"
+    },
+    {
+      "Name": "IrgendwasmitMond",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Iricilaure",
+      "Tier": "H",
+      "Division": "H4"
+    },
+    {
+      "Name": "isiahw1",
+      "Tier": "H",
+      "Division": "H26"
+    },
+    {
+      "Name": "IslandRae",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Itsyee",
+      "Tier": "H",
+      "Division": "H24"
+    },
+    {
+      "Name": "J22Jabs",
+      "Tier": "H",
+      "Division": "H43"
+    },
+    {
+      "Name": "j3ss3",
+      "Tier": "H",
+      "Division": "H37"
+    },
+    {
+      "Name": "Jackass",
+      "Tier": "H",
+      "Division": "H60"
+    },
+    {
+      "Name": "Jackjoab",
+      "Tier": "H",
+      "Division": "H50"
+    },
+    {
+      "Name": "jacobpb",
+      "Tier": "H",
+      "Division": "H35"
+    },
+    {
+      "Name": "janlasse",
+      "Tier": "H",
+      "Division": "H53"
+    },
+    {
+      "Name": "JanWafel",
+      "Tier": "H",
+      "Division": "H61"
+    },
+    {
+      "Name": "jaywood98",
+      "Tier": "H",
+      "Division": "H59"
+    },
+    {
+      "Name": "jaz92",
+      "Tier": "H",
+      "Division": "H56"
+    },
+    {
+      "Name": "jdawg475",
+      "Tier": "H",
+      "Division": "H23"
+    },
+    {
+      "Name": "Jenelos",
+      "Tier": "H",
+      "Division": "H7"
+    },
+    {
+      "Name": "jennjin01",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Jenny Festival",
+      "Tier": "H",
+      "Division": "H20"
+    },
+    {
+      "Name": "JeroenR",
+      "Tier": "H",
+      "Division": "H58"
+    },
+    {
+      "Name": "Jev989",
+      "Tier": "H",
+      "Division": "H49"
+    },
+    {
+      "Name": "jewelsphraner",
+      "Tier": "H",
+      "Division": "H12"
+    },
+    {
+      "Name": "jg457",
+      "Tier": "H",
+      "Division": "H28"
+    },
+    {
+      "Name": "jillybillygirl",
+      "Tier": "H",
+      "Division": "H23"
+    },
+    {
+      "Name": "joemar194",
+      "Tier": "H",
+      "Division": "H40"
+    },
+    {
+      "Name": "Johnny Midnight",
+      "Tier": "H",
+      "Division": "H44"
+    },
+    {
+      "Name": "Jolinar of Malkshur",
+      "Tier": "H",
+      "Division": "H21"
+    },
+    {
+      "Name": "joshml82",
+      "Tier": "H",
+      "Division": "H23"
+    },
+    {
+      "Name": "jrh150482",
+      "Tier": "H",
+      "Division": "H31"
+    },
+    {
+      "Name": "K1RON",
+      "Tier": "H",
+      "Division": "H39"
+    },
+    {
+      "Name": "kahaanboom",
+      "Tier": "H",
+      "Division": "H2"
+    },
+    {
+      "Name": "Kangawu",
+      "Tier": "H",
+      "Division": "H15"
+    },
+    {
+      "Name": "karinnl",
+      "Tier": "H",
+      "Division": "H61"
+    },
+    {
+      "Name": "Katrin90",
+      "Tier": "H",
+      "Division": "H50"
+    },
+    {
+      "Name": "ketriel",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "kevinmpeterson",
+      "Tier": "H",
+      "Division": "H35"
+    },
+    {
+      "Name": "kingskid2002",
+      "Tier": "H",
+      "Division": "H57"
+    },
+    {
+      "Name": "Kpecina",
+      "Tier": "H",
+      "Division": "H19"
+    },
+    {
+      "Name": "kpk",
+      "Tier": "H",
+      "Division": "H49"
+    },
+    {
+      "Name": "kretchde",
+      "Tier": "H",
+      "Division": "H34"
+    },
+    {
+      "Name": "Kroupmastaflex ",
+      "Tier": "H",
+      "Division": "H7"
+    },
+    {
+      "Name": "ksoccerstar",
+      "Tier": "H",
+      "Division": "H32"
+    },
+    {
+      "Name": "Kuo Chong Chin",
+      "Tier": "H",
+      "Division": "H48"
+    },
+    {
+      "Name": "LaBaguette",
+      "Tier": "H",
+      "Division": "H50"
+    },
+    {
+      "Name": "Lancero95",
+      "Tier": "H",
+      "Division": "H5"
+    },
+    {
+      "Name": "Lasombra",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "lauram283",
+      "Tier": "H",
+      "Division": "H9"
+    },
+    {
+      "Name": "lionfever22",
+      "Tier": "H",
+      "Division": "H63"
+    },
+    {
+      "Name": "lionfever23",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "loewenheim_swolem",
+      "Tier": "H",
+      "Division": "H38"
+    },
+    {
+      "Name": "lorderu",
+      "Tier": "H",
+      "Division": "H40"
+    },
+    {
+      "Name": "Lorettamm",
+      "Tier": "H",
+      "Division": "H6"
+    },
+    {
+      "Name": "lucho",
+      "Tier": "H",
+      "Division": "H19"
+    },
+    {
+      "Name": "Luckyfawn",
+      "Tier": "H",
+      "Division": "H42"
+    },
+    {
+      "Name": "Lukas567",
+      "Tier": "H",
+      "Division": "H51"
+    },
+    {
+      "Name": "M.O.A.T.",
+      "Tier": "H",
+      "Division": "H36"
+    },
+    {
+      "Name": "mabuza",
+      "Tier": "H",
+      "Division": "H43"
+    },
+    {
+      "Name": "MadamMadcap81",
+      "Tier": "H",
+      "Division": "H20"
+    },
+    {
+      "Name": "MadeinChina",
+      "Tier": "H",
+      "Division": "H8"
+    },
+    {
+      "Name": "madjs",
+      "Tier": "H",
+      "Division": "H3"
+    },
+    {
+      "Name": "makshay",
+      "Tier": "H",
+      "Division": "H31"
+    },
+    {
+      "Name": "Maleficent6",
+      "Tier": "H",
+      "Division": "H43"
+    },
+    {
+      "Name": "MamaR",
+      "Tier": "H",
+      "Division": "H62"
+    },
+    {
+      "Name": "Manfredmouthbot",
+      "Tier": "H",
+      "Division": "H3"
+    },
+    {
+      "Name": "Manson",
+      "Tier": "H",
+      "Division": "H19"
+    },
+    {
+      "Name": "MaoMaster51",
+      "Tier": "H",
+      "Division": "H23"
+    },
+    {
+      "Name": "marcivan",
+      "Tier": "H",
+      "Division": "H3"
+    },
+    {
+      "Name": "Marliz3e",
+      "Tier": "H",
+      "Division": "H58"
+    },
+    {
+      "Name": "marva613",
+      "Tier": "H",
+      "Division": "H37"
+    },
+    {
+      "Name": "masedoggy",
+      "Tier": "H",
+      "Division": "H39"
+    },
+    {
+      "Name": "Matlock72",
+      "Tier": "H",
+      "Division": "H44"
+    },
+    {
+      "Name": "mattmm",
+      "Tier": "H",
+      "Division": "H4"
+    },
+    {
+      "Name": "mbp",
+      "Tier": "H",
+      "Division": "H31"
+    },
+    {
+      "Name": "mc3037",
+      "Tier": "H",
+      "Division": "H30"
+    },
+    {
+      "Name": "McDuggan33",
+      "Tier": "H",
+      "Division": "H60"
+    },
+    {
+      "Name": "McWaffle",
+      "Tier": "H",
+      "Division": "H15"
+    },
+    {
+      "Name": "mdeac",
+      "Tier": "H",
+      "Division": "H29"
+    },
+    {
+      "Name": "Megzuccato",
+      "Tier": "H",
+      "Division": "H6"
+    },
+    {
+      "Name": "merrburr",
+      "Tier": "H",
+      "Division": "H42"
+    },
+    {
+      "Name": "miguelb",
+      "Tier": "H",
+      "Division": "H46"
+    },
+    {
+      "Name": "mike11481",
+      "Tier": "H",
+      "Division": "H33"
+    },
+    {
+      "Name": "mikemcgeezy",
+      "Tier": "H",
+      "Division": "H18"
+    },
+    {
+      "Name": "Milodo",
+      "Tier": "H",
+      "Division": "H13"
+    },
+    {
+      "Name": "misakimi",
+      "Tier": "H",
+      "Division": "H59"
+    },
+    {
+      "Name": "miso70",
+      "Tier": "H",
+      "Division": "H61"
+    },
+    {
+      "Name": "missvictoriang",
+      "Tier": "H",
+      "Division": "H56"
+    },
+    {
+      "Name": "mnessmonster",
+      "Tier": "H",
+      "Division": "H14"
+    },
+    {
+      "Name": "mochan",
+      "Tier": "H",
+      "Division": "H41"
+    },
+    {
+      "Name": "Mollo8",
+      "Tier": "H",
+      "Division": "H2"
+    },
+    {
+      "Name": "Mollyb386",
+      "Tier": "H",
+      "Division": "H19"
+    },
+    {
+      "Name": "molowillwin",
+      "Tier": "H",
+      "Division": "H40"
+    },
+    {
+      "Name": "Moncoponco",
+      "Tier": "H",
+      "Division": "H30"
+    },
+    {
+      "Name": "Mortesar",
+      "Tier": "H",
+      "Division": "H63"
+    },
+    {
+      "Name": "mtjoos",
+      "Tier": "H",
+      "Division": "H46"
+    },
+    {
+      "Name": "MudBeast",
+      "Tier": "H",
+      "Division": "H16"
+    },
+    {
+      "Name": "MuensterCheese",
+      "Tier": "H",
+      "Division": "H15"
+    },
+    {
+      "Name": "mugglemutts",
+      "Tier": "H",
+      "Division": "H25"
+    },
+    {
+      "Name": "Mythrix",
+      "Tier": "H",
+      "Division": "H54"
+    },
+    {
+      "Name": "natep1098",
+      "Tier": "H",
+      "Division": "H19"
+    },
+    {
+      "Name": "Nekome512",
+      "Tier": "H",
+      "Division": "H30"
+    },
+    {
+      "Name": "neti3d",
+      "Tier": "H",
+      "Division": "H1"
+    },
+    {
+      "Name": "nikhil532",
+      "Tier": "H",
+      "Division": "H48"
+    },
+    {
+      "Name": "Nikkicola11",
+      "Tier": "H",
+      "Division": "H62"
+    },
+    {
+      "Name": "ninjacreeper47",
+      "Tier": "H",
+      "Division": "H14"
+    },
+    {
+      "Name": "niramsor",
+      "Tier": "H",
+      "Division": "H64"
+    },
+    {
+      "Name": "nomi",
+      "Tier": "H",
+      "Division": "H52"
+    },
+    {
+      "Name": "Nomis Retep",
+      "Tier": "H",
+      "Division": "H54"
+    },
+    {
+      "Name": "nrivero",
+      "Tier": "H",
+      "Division": "H27"
+    },
+    {
+      "Name": "NutsofWrath",
+      "Tier": "H",
+      "Division": "H29"
+    },
+    {
+      "Name": "nvrwhere42",
+      "Tier": "H",
+      "Division": "H18"
+    },
+    {
+      "Name": "OddWaller",
+      "Tier": "H",
+      "Division": "H39"
+    },
+    {
+      "Name": "Ohnora",
+      "Tier": "H",
+      "Division": "H46"
+    },
+    {
+      "Name": "oldmandennis",
+      "Tier": "H",
+      "Division": "H30"
+    },
+    {
+      "Name": "ossan",
+      "Tier": "H",
+      "Division": "H48"
+    },
+    {
+      "Name": "Otrucol717",
+      "Tier": "H",
+      "Division": "H34"
+    },
+    {
+      "Name": "pacman1837",
+      "Tier": "H",
+      "Division": "H1"
+    },
+    {
+      "Name": "pandaface.",
+      "Tier": "H",
+      "Division": "H51"
+    },
+    {
+      "Name": "PankPeter",
+      "Tier": "H",
+      "Division": "H31"
+    },
+    {
+      "Name": "PeasantKing",
+      "Tier": "H",
+      "Division": "H48"
+    },
+    {
+      "Name": "peeky_blinders54",
+      "Tier": "H",
+      "Division": "H45"
+    },
+    {
+      "Name": "peppapig",
+      "Tier": "H",
+      "Division": "H11"
+    },
+    {
+      "Name": "petraarkanian18",
+      "Tier": "H",
+      "Division": "H8"
+    },
+    {
+      "Name": "phillipvn1",
+      "Tier": "H",
+      "Division": "H12"
+    },
+    {
+      "Name": "PierPants",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Pinkman",
+      "Tier": "H",
+      "Division": "H7"
+    },
+    {
+      "Name": "pixelsnbits",
+      "Tier": "H",
+      "Division": "H27"
+    },
+    {
+      "Name": "PlantLady88",
+      "Tier": "H",
+      "Division": "H9"
+    },
+    {
+      "Name": "Poetje",
+      "Tier": "H",
+      "Division": "H54"
+    },
+    {
+      "Name": "potscutney",
+      "Tier": "H",
+      "Division": "H19"
+    },
+    {
+      "Name": "Prismatic70",
+      "Tier": "H",
+      "Division": "H12"
+    },
+    {
+      "Name": "Provinceable",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "proxynick",
+      "Tier": "H",
+      "Division": "H52"
+    },
+    {
+      "Name": "purple_bag",
+      "Tier": "H",
+      "Division": "H62"
+    },
+    {
+      "Name": "Pyruet",
+      "Tier": "H",
+      "Division": "H53"
+    },
+    {
+      "Name": "QuarantineWitch",
+      "Tier": "H",
+      "Division": "H40"
+    },
+    {
+      "Name": "QueenKhaleesi",
+      "Tier": "H",
+      "Division": "H36"
+    },
+    {
+      "Name": "raghu",
+      "Tier": "H",
+      "Division": "H8"
+    },
+    {
+      "Name": "RainbowChalice",
+      "Tier": "H",
+      "Division": "H9"
+    },
+    {
+      "Name": "RannulphJunuh",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Ray-am83",
+      "Tier": "H",
+      "Division": "H64"
+    },
+    {
+      "Name": "redburger",
+      "Tier": "H",
+      "Division": "H42"
+    },
+    {
+      "Name": "rinacolada",
+      "Tier": "H",
+      "Division": "H17"
+    },
+    {
+      "Name": "RipChancellor2016",
+      "Tier": "H",
+      "Division": "H44"
+    },
+    {
+      "Name": "rla841",
+      "Tier": "H",
+      "Division": "H17"
+    },
+    {
+      "Name": "Robert_OF",
+      "Tier": "H",
+      "Division": "H64"
+    },
+    {
+      "Name": "robert7",
+      "Tier": "H",
+      "Division": "H37"
+    },
+    {
+      "Name": "rockitman",
+      "Tier": "H",
+      "Division": "H3"
+    },
+    {
+      "Name": "Ronbon",
+      "Tier": "H",
+      "Division": "H47"
+    },
+    {
+      "Name": "rosewater",
+      "Tier": "H",
+      "Division": "H43"
+    },
+    {
+      "Name": "Rotte",
+      "Tier": "H",
+      "Division": "H58"
+    },
+    {
+      "Name": "Rozyroz",
+      "Tier": "H",
+      "Division": "H20"
+    },
+    {
+      "Name": "Saidso85",
+      "Tier": "H",
+      "Division": "H36"
+    },
+    {
+      "Name": "Samothy",
+      "Tier": "H",
+      "Division": "H47"
+    },
+    {
+      "Name": "SamSmith2505",
+      "Tier": "H",
+      "Division": "H38"
+    },
+    {
+      "Name": "SauceyGuy",
+      "Tier": "H",
+      "Division": "H42"
+    },
+    {
+      "Name": "scarbu",
+      "Tier": "H",
+      "Division": "H34"
+    },
+    {
+      "Name": "schipje",
+      "Tier": "H",
+      "Division": "H50"
+    },
+    {
+      "Name": "Schorschi92",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Scwhite3",
+      "Tier": "H",
+      "Division": "H38"
+    },
+    {
+      "Name": "seakaygeez",
+      "Tier": "H",
+      "Division": "H52"
+    },
+    {
+      "Name": "SebasRegalado",
+      "Tier": "H",
+      "Division": "H16"
+    },
+    {
+      "Name": "Seereelen",
+      "Tier": "H",
+      "Division": "H35"
+    },
+    {
+      "Name": "sentedavid",
+      "Tier": "H",
+      "Division": "H17"
+    },
+    {
+      "Name": "sequoiac",
+      "Tier": "H",
+      "Division": "H32"
+    },
+    {
+      "Name": "severly",
+      "Tier": "H",
+      "Division": "H17"
+    },
+    {
+      "Name": "sgbern",
+      "Tier": "H",
+      "Division": "H25"
+    },
+    {
+      "Name": "sgraaf",
+      "Tier": "H",
+      "Division": "H62"
+    },
+    {
+      "Name": "shmooly375",
+      "Tier": "H",
+      "Division": "H28"
+    },
+    {
+      "Name": "SiggyDootch",
+      "Tier": "H",
+      "Division": "H37"
+    },
+    {
+      "Name": "slimharpo",
+      "Tier": "H",
+      "Division": "H24"
+    },
+    {
+      "Name": "SloJo",
+      "Tier": "H",
+      "Division": "H11"
+    },
+    {
+      "Name": "Smogilski",
+      "Tier": "H",
+      "Division": "H21"
+    },
+    {
+      "Name": "snharrison66",
+      "Tier": "H",
+      "Division": "H56"
+    },
+    {
+      "Name": "Snipetious",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Snowdrop",
+      "Tier": "H",
+      "Division": "H5"
+    },
+    {
+      "Name": "Snyderman67",
+      "Tier": "H",
+      "Division": "H29"
+    },
+    {
+      "Name": "socally",
+      "Tier": "H",
+      "Division": "H7"
+    },
+    {
+      "Name": "sovereignator",
+      "Tier": "H",
+      "Division": "H46"
+    },
+    {
+      "Name": "spaceman2020",
+      "Tier": "H",
+      "Division": "H14"
+    },
+    {
+      "Name": "splashfalkon",
+      "Tier": "H",
+      "Division": "H10"
+    },
+    {
+      "Name": "Squonk2",
+      "Tier": "H",
+      "Division": "H6"
+    },
+    {
+      "Name": "srimeruva",
+      "Tier": "H",
+      "Division": "H35"
+    },
+    {
+      "Name": "StavroX",
+      "Tier": "H",
+      "Division": "H61"
+    },
+    {
+      "Name": "StingrayCommander1",
+      "Tier": "H",
+      "Division": "H56"
+    },
+    {
+      "Name": "StorminScot",
+      "Tier": "H",
+      "Division": "H41"
+    },
+    {
+      "Name": "supdawg",
+      "Tier": "H",
+      "Division": "H38"
+    },
+    {
+      "Name": "SuperGraceless",
+      "Tier": "H",
+      "Division": "H50"
+    },
+    {
+      "Name": "supernick",
+      "Tier": "H",
+      "Division": "H2"
+    },
+    {
+      "Name": "Superor",
+      "Tier": "H",
+      "Division": "H8"
+    },
+    {
+      "Name": "Swantje",
+      "Tier": "H",
+      "Division": "H55"
+    },
+    {
+      "Name": "tastehumanity",
+      "Tier": "H",
+      "Division": "H4"
+    },
+    {
+      "Name": "tattema",
+      "Tier": "H",
+      "Division": "H35"
+    },
+    {
+      "Name": "tdpf103",
+      "Tier": "H",
+      "Division": "H55"
+    },
+    {
+      "Name": "tgtruth23",
+      "Tier": "H",
+      "Division": "H45"
+    },
+    {
+      "Name": "The Educator",
+      "Tier": "H",
+      "Division": "H26"
+    },
+    {
+      "Name": "The Neuroscientist",
+      "Tier": "H",
+      "Division": "H28"
+    },
+    {
+      "Name": "Theadtraylor",
+      "Tier": "H",
+      "Division": "H45"
+    },
+    {
+      "Name": "TheDILFslayer",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "thedinnerman",
+      "Tier": "H",
+      "Division": "H1"
+    },
+    {
+      "Name": "TheMooche",
+      "Tier": "H",
+      "Division": "H50"
+    },
+    {
+      "Name": "theshampooguy",
+      "Tier": "H",
+      "Division": "H30"
+    },
+    {
+      "Name": "thetexan",
+      "Tier": "H",
+      "Division": "H25"
+    },
+    {
+      "Name": "thetreuqu",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "ThisIsJustin",
+      "Tier": "H",
+      "Division": "H36"
+    },
+    {
+      "Name": "thommyp",
+      "Tier": "H",
+      "Division": "H63"
+    },
+    {
+      "Name": "tommygecko",
+      "Tier": "H",
+      "Division": "H48"
+    },
+    {
+      "Name": "torenx",
+      "Tier": "H",
+      "Division": "H22"
+    },
+    {
+      "Name": "travelhacker",
+      "Tier": "H",
+      "Division": "H13"
+    },
+    {
+      "Name": "Tungsten_Dioxide",
+      "Tier": "H",
+      "Division": "H"
+    },
+    {
+      "Name": "Turbalence",
+      "Tier": "H",
+      "Division": "H16"
+    },
+    {
+      "Name": "tuscanb",
+      "Tier": "H",
+      "Division": "H16"
+    },
+    {
+      "Name": "umamidaddy",
+      "Tier": "H",
+      "Division": "H13"
+    },
+    {
+      "Name": "Umamilicious",
+      "Tier": "H",
+      "Division": "H38"
+    },
+    {
+      "Name": "Uncle Vernon",
+      "Tier": "H",
+      "Division": "H6"
+    },
+    {
+      "Name": "UncleBoonmee",
+      "Tier": "H",
+      "Division": "H32"
+    },
+    {
+      "Name": "Usernamegottaken",
+      "Tier": "H",
+      "Division": "H64"
+    },
+    {
+      "Name": "usnoberger",
+      "Tier": "H",
+      "Division": "H4"
+    },
+    {
+      "Name": "vaavdor",
+      "Tier": "H",
+      "Division": "H55"
+    },
+    {
+      "Name": "Valspar888",
+      "Tier": "H",
+      "Division": "H24"
+    },
+    {
+      "Name": "Victor Lum",
+      "Tier": "H",
+      "Division": "H27"
+    },
+    {
+      "Name": "vietca",
+      "Tier": "H",
+      "Division": "H34"
+    },
+    {
+      "Name": "violaninja",
+      "Tier": "H",
+      "Division": "H25"
+    },
+    {
+      "Name": "wa1mer",
+      "Tier": "H",
+      "Division": "H29"
+    },
+    {
+      "Name": "walesfourever",
+      "Tier": "H",
+      "Division": "H22"
+    },
+    {
+      "Name": "Warryx",
+      "Tier": "H",
+      "Division": "H54"
+    },
+    {
+      "Name": "WereDrakon",
+      "Tier": "H",
+      "Division": "H16"
+    },
+    {
+      "Name": "WesSpice",
+      "Tier": "H",
+      "Division": "H14"
+    },
+    {
+      "Name": "wfuller92",
+      "Tier": "H",
+      "Division": "H31"
+    },
+    {
+      "Name": "Whapperson",
+      "Tier": "H",
+      "Division": "H18"
+    },
+    {
+      "Name": "whiteyoshi",
+      "Tier": "H",
+      "Division": "H9"
+    },
+    {
+      "Name": "Whomanist",
+      "Tier": "H",
+      "Division": "H55"
+    },
+    {
+      "Name": "Wilkotek",
+      "Tier": "H",
+      "Division": "H57"
+    },
+    {
+      "Name": "Witz",
+      "Tier": "H",
+      "Division": "H5"
+    },
+    {
+      "Name": "woundedsatelite",
+      "Tier": "H",
+      "Division": "H27"
+    },
+    {
+      "Name": "yetimangoku",
+      "Tier": "H",
+      "Division": "H39"
+    },
+    {
+      "Name": "YodWisdom",
+      "Tier": "H",
+      "Division": "H49"
+    },
+    {
+      "Name": "Yoyomann",
+      "Tier": "H",
+      "Division": "H10"
+    },
+    {
+      "Name": "Zeej96",
+      "Tier": "H",
+      "Division": "H51"
+    },
+    {
+      "Name": "Zingaro",
+      "Tier": "H",
+      "Division": "H47"
+    },
+    {
+      "Name": "Zodians",
+      "Tier": "H",
+      "Division": "H47"
+    },
+    {
+      "Name": "Zoe123",
+      "Tier": "H",
+      "Division": "H17"
+    },
+    {
+      "Name": "zonnestraal",
+      "Tier": "H",
+      "Division": "H52"
+    },
+    {
+      "Name": "zsaffir",
+      "Tier": "H",
+      "Division": "G4"
+    },
+    {
+      "Name": "ZWade",
+      "Tier": "H",
+      "Division": "G5"
+    },
+    {
+      "Name": "zwiebacke",
+      "Tier": "H",
+      "Division": "H52"
+
+    }
+  ]
+}
