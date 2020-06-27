@@ -152,6 +152,7 @@ iframe {
 @media (max-width: 600px) {
   .standings-sheets {
     width: 100%;
+    margin-left: -18px;
   }
 }
 
