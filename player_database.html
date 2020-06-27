@@ -21,7 +21,7 @@ layout: default
     <button id="search_player_history_btn" title="search" onclick="searchPlayerHistory()">Search</button>
     <br>
     <br>
-    <div id="url_param_tutorial">
+    <div id="url_param_tutorial" style="display: none">
       <h5> Adding a Youtube Channel to Your Player Page</h5>
       <p> Fill out <a href="https://forms.gle/7vowtRMP7nYEMjkE9">this form</a> and the Dominion League will add it. </p>
       <br>
@@ -84,15 +84,14 @@ function searchPlayerHistory(param=false){
     if (param) {
       var player_param = getPlayerParam();
       if (player_param == '') {
+        document.getElementById("url_param_tutorial").style = "";
         return;
       }
-      document.getElementById("url_param_tutorial").style.display = "none";
       if (entered_player_name == "") {
         entered_player_name = player_param;
       }
       player_name = player_param.toLowerCase();
     } else {
-      document.getElementById("url_param_tutorial").style.display = "none";
       url_param_name = entered_player_name.replace(/ /g, "%20");
       location.replace("{{site.baseurl}}/player_database.html?player="+url_param_name);
       return;
@@ -125,13 +124,13 @@ function searchPlayerHistory(param=false){
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
 
-  // No input detected
+  /* No input detected
   } else if (player_name == ""){
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: no input detected";
       divContainer.appendChild(h_dne);
-
+  */
   // No data exists for player
   } else if (!players_and_seasons[player_name]) {
       console.log(entered_player_name);
