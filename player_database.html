@@ -7,7 +7,7 @@ layout: default
     <h3>Player Database</h3>
     <h5><a href="{{site.baseurl}}/past_standings.html">View All Past Season Standings</a></h5>
     <div class="spacing"> </div>
-    <p> Search for a player (eg. Mic Qsenoch) and view their current season results and league history for all seasons they've participated in. </p>
+    <p> Search for a player (eg. Mic Qsenoch) and view their current season results (if they are playing) <br> and league history for all seasons they've participated in. </p>
     <div class="spacing"> </div>
     <!--
     <select name="order" id="order">
@@ -137,6 +137,7 @@ function searchPlayerHistory(param=false){
       // Player heading
       var player_heading = document.createElement("h4");
       var name = player_name;
+      var row_class = "player-past-standings"
 
       if (players_and_seasons[player_name]) {
         name = players_and_seasons[player_name]["name"];
@@ -156,9 +157,25 @@ function searchPlayerHistory(param=false){
 
       // Load current season data
       if (current_season[player_name]) {
-        var current_season_table = document.createElement("p");
+        // Current season div
+        var current_season_table = document.createElement("div");
+        var current_season_num = current_season["seasons"];
+        var current_season_div = current_season[player_name]["division"];
+        current_season_table.id = "current-season"
         current_season_table.setAttribute('align', 'center');
-        current_season_table.innerHTML = current_season_iframes[current_season[player_name]["division"]];
+
+        // Heading
+        var current_season_btn = document.createElement("button");
+        current_season_btn.classList.add('current-season-collapsible');
+        current_season_btn.innerHTML = "<a href=\"{{site.baseurl}}/current_standings.html\"> Season " + current_season_num.toString() + "</a> " + current_season_div + " Division - (ongoing)";
+        current_season_table.appendChild(current_season_btn);
+
+        // Current season iframe
+        var current_season_iframe_div = document.createElement("div");
+        current_season_iframe_div.id = "current-season-content";
+        current_season_iframe_div.innerHTML = current_season_iframes[current_season_div];
+        current_season_table.appendChild(current_season_iframe_div);
+
         divContainer.appendChild(current_season_table);
 
         // Check if they have other league history
@@ -242,7 +259,6 @@ function searchPlayerHistory(param=false){
             var row_info_name = row_info["name"];
 
             // Generate URL for database
-            var row_class = "player-past-standings"
             var row_info_name_param = row_info_name.replace(/ /g, "%20")
             var row_info_url_name = `<a class="${row_class}" href="{{site.baseurl}}/player_database.html?player=${row_info_name_param}">${row_info_name}</a>`;
 
@@ -286,7 +302,6 @@ function searchPlayerHistory(param=false){
       }
     }
 }
-
 </script>
 
 <!-- Autocomplete script starts here -->
