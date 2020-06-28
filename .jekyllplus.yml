@@ -58,7 +58,6 @@ collections:
         label: Layout
         type: checkbox
         options: [ { value: 'simple_post', label: 'with_sidebar' }, { value: 'post', label: 'without_sidebar' }]
-        default: post
       - name: body
         label: Body
         type: markdown
