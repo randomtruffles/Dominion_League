@@ -1,7 +1,10 @@
 ---
-published: true
 title: League Rules
+subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: post
+date: 2020-05-29 # CHANGE
+categories: pinned rules
+author: SamE # CHANGE
 ---
 
 #### I. League Structure
