@@ -148,6 +148,7 @@ def create_header(season):
     # define layout
     top = """---
 layout: {}
+title: Dominion League Season {} Standings
 ---
 <div class="home">
   <div class="container-centered">
@@ -157,7 +158,7 @@ layout: {}
     <h5><a href="{{{{site.baseurl}}}}/player_database.html">Player Database</a></h5>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
-""".format(layout, past_season, season, next_season, season_starts[int_season-1], season_ends[int_season-1])
+""".format(layout, season, past_season, season, next_season, season_starts[int_season-1], season_ends[int_season-1])
     header += top
     padding += 6
 
