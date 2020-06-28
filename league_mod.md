@@ -63,11 +63,7 @@ Example can be found here: [example of newsletter post](https://raw.githubuserco
   2020-06-01-Championship-Match-Summary.md
   ```
 
-4. Edit the file by first including a header (see below) and then with the contents of the post (it must be in markdown).
-* Include a **mandatory** header (this will configure the layout of the page, the title, date etc.) -  see example below and a [previous Newsletter post](https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-05-12-Season-40-Newsletter.md).
-* Header for you to copy/edit/add to the top of your file. Text after `#` are comments and will be ignored.
-  * **Important:** Lines with `(CHANGE)` require you to make changes.
-  * Lines with `(OPTIONAL)` can be deleted, ie. deleting `categories: pinned` will remove it from the pinned section in the <a href="https://dominionleague.org/posts.html">Posts page</a>
+3. Edit the file by first adding a mandatory header (see example below). **If you are copying over text with a header already, skip to Step 4.**
 ```
 ---
 layout: post
@@ -78,7 +74,13 @@ date: 2020-06-01 #(CHANGE) Today's date YYYY-MM-DD
 categories: pinned #(OPTIONAL) Delete this line if you don't want it pinned.
 ---
 ```
-* Add the content (in markdown) below the header.
+* **Important:** Lines with `(CHANGE)` require you to make changes.
+* Lines with `(OPTIONAL)` can be deleted, ie. deleting `categories: pinned` will remove it from the pinned section in the <a href="https://dominionleague.org/posts.html">Posts page</a>
+* Text in the header after `#` are __comments__ and will be ignored by the website generator.
+* The header configures how the page will look (the layout, the title, date etc.)
+* Example of a [previous Newsletter post](https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-05-12-Season-40-Newsletter.md) with a header and contents.
+
+4. Add the full content (written in markdown) below the header.
 <br><img src="img/league_mod_guide/edit_file_signups.png" width="500">
 5. Commit the post! Scroll to the bottom of the page to __Commit New File__.
 * Add a description to let league mod contributors know what you did. Something short will suffice.

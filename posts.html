@@ -8,13 +8,13 @@ layout: newsletters
         {% if forloop.index > 6 %}
           {% break %}
         {% endif %}
-        <div class="content">
+        <div class="content instructions-div">
           <p>
             <span>{{post.date | date: "%B %d, %Y" }}</span>
             /
             <span>
             by
-            {{post.author}}
+            <a href="{{site.baseurl}}/moderators.html">{{post.author}}</a>
             </span>
             /
             <span>

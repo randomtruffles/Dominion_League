@@ -335,14 +335,8 @@ Example can be found here: <a href="https://raw.githubusercontent.com/randomtruf
         </li>
       </ul>
     </li>
-    <li>Edit the file by first including a header (see below) and then with the contents of the post (it must be in markdown).
-      <ul>
-        <li>Include a <strong>mandatory</strong> header (this will configure the layout of the page, the title, date etc.) -  see example below and a <a href="https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-05-12-Season-40-Newsletter.md">previous Newsletter post</a>.</li>
-        <li>Header for you to copy/edit/add to the top of your file. Text after <code class="language-plaintext highlighter-rouge">#</code> are comments and will be ignored.
-          <ul>
-            <li><strong>Important:</strong> Lines with <code class="language-plaintext highlighter-rouge">(CHANGE)</code> require you to make changes.</li>
-            <li>Lines with <code class="language-plaintext highlighter-rouge">(OPTIONAL)</code> can be deleted, ie. deleting <code class="language-plaintext highlighter-rouge">categories: pinned</code> will remove it from the pinned section in the <a href="https://dominionleague.org/posts.html">Posts page</a>
-              <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+    <li>Edit the file by first adding a mandatory header (see example below). <strong>If you are copying over text with a header already, skip to Step 4.</strong>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: post
 title: Season 40 - Newsletter #(CHANGE) Keep it short!
 subtitle: Quarantines Lead to Explosive Growth #(CHANGE) Keep it short!
@@ -350,14 +344,17 @@ author: truffles #(CHANGE) Your name!
 date: 2020-06-01 #(CHANGE) Today's date YYYY-MM-DD
 categories: pinned #(OPTIONAL) Delete this line if you don't want it pinned.
 ---
-</code></pre></div>              </div>
-            </li>
-          </ul>
-        </li>
-        <li>Add the content (in markdown) below the header.
-<br /><img src="img/league_mod_guide/edit_file_signups.png" width="500" /></li>
+</code></pre></div>      </div>
+      <ul>
+        <li><strong>Important:</strong> Lines with <code class="language-plaintext highlighter-rouge">(CHANGE)</code> require you to make changes.</li>
+        <li>Lines with <code class="language-plaintext highlighter-rouge">(OPTIONAL)</code> can be deleted, ie. deleting <code class="language-plaintext highlighter-rouge">categories: pinned</code> will remove it from the pinned section in the <a href="https://dominionleague.org/posts.html">Posts page</a></li>
+        <li>Text in the header after <code class="language-plaintext highlighter-rouge">#</code> are <strong>comments</strong> and will be ignored by the website generator.</li>
+        <li>The header configures how the page will look (the layout, the title, date etc.)</li>
+        <li>Example of a <a href="https://raw.githubusercontent.com/randomtruffles/Dominion_League/master/_posts/2020-05-12-Season-40-Newsletter.md">previous Newsletter post</a> with a header and contents.</li>
       </ul>
     </li>
+    <li>Add the full content (written in markdown) below the header.
+<br /><img src="img/league_mod_guide/edit_file_signups.png" width="500" /></li>
     <li>Commit the post! Scroll to the bottom of the page to <strong>Commit New File</strong>.
       <ul>
         <li>Add a description to let league mod contributors know what you did. Something short will suffice.

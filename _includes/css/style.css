@@ -1073,8 +1073,6 @@ section h3.moderator-subheading {
     font-size: 20px;
 }
 
-}
-
 @media(min-width:768px) {
     section {
         padding: 150px 0;
@@ -1293,4 +1291,11 @@ body {
   line-height: 30px;
   padding: 15px 10px;
   margin: 20px;
+}
+
+@media(max-width:600px) {
+    .instructions-div {
+        padding: 15px 5px 15px 0px;
+        margin: 10px;
+    }
 }
