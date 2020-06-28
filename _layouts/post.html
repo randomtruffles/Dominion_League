@@ -3,6 +3,8 @@ layout: newsletters
 ---
 
 <div class='content'>
+    <h3>{{page.title}}</h3>
+    <h5> {{page.subtitle}} </h5>
     <p class='info'>
       <span>{{page.date | date: "%B %d, %Y" }}</span>
       /
@@ -21,7 +23,5 @@ layout: newsletters
       </span>
       -->
     </p>
-    <h3>{{page.title}}</h3>
-    <h5> {{page.subtitle}} </h5>
     {{content}}
   </div>

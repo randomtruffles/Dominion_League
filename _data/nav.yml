@@ -1,7 +1,7 @@
 - name: Sign Up
   path: sign-ups.html
 - name: About
-  path: rules.html
+  path: about.html
   section_id: about
   children:
     - name: Rules
