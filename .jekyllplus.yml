@@ -1,0 +1,65 @@
+# folders:
+#   file: files
+#   image: images
+
+collections:
+  signups:
+    name: Sign Up Post
+    fields:
+      - name: published
+        label: Published
+        type: switch
+        default: true
+        description: Published means it will appear in the Posts page.
+      - name: title
+        label: Title
+        type: string
+        description: Title should be short (eg. Season 40 - Sign-ups)
+      - name: subtitle
+        label: subtitle
+        type: string
+        description: Eg. Sign-ups Open
+      - name: category
+        label: Signups Post
+        type: select
+        options: switch
+        default: true
+      - name: layout
+        label: Layout
+        type: checkbox
+        options: [ { value: 'simple_post', label: 'with_sidebar' }, { value: 'post', label: 'without_sidebar' }]
+        default: simple_post
+      - name: body
+        label: Body
+        type: markdown
+        autoresize: true
+  posts:
+    name: Regular Post
+    fields:
+      - name: published
+        label: Published
+        type: switch
+        default: true
+        description: Published means it will appear in the Posts page.
+      - name: title
+        label: Title
+        type: string
+        description: Title should be short (eg. "Season 40 Newsletter")
+      - name: subtitle
+        label: subtitle
+        type: string
+        description: Eg. The First Eight-Tier Season
+      - name: category
+        label: Pinned
+        type: switch
+        description: Turning on Pinned will add it to the Pinned section of the Posts page.
+        default: false
+      - name: layout
+        label: Layout
+        type: checkbox
+        options: [ { value: 'simple_post', label: 'with_sidebar' }, { value: 'post', label: 'without_sidebar' }]
+        default: post
+      - name: body
+        label: Body
+        type: markdown
+        autoresize: true
