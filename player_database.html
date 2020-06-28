@@ -164,11 +164,17 @@ function searchPlayerHistory(param=false){
         current_season_table.id = "current-season"
         current_season_table.setAttribute('align', 'center');
 
-        // Heading
         var current_season_btn = document.createElement("button");
         current_season_btn.classList.add('current-season-collapsible');
         current_season_btn.innerHTML = "<a href=\"{{site.baseurl}}/current_standings.html\"> Season " + current_season_num.toString() + "</a> " + current_season_div + " Division - (ongoing)";
         current_season_table.appendChild(current_season_btn);
+
+        // Add loading symbol
+        var current_season_iframe_loading = document.createElement("div");
+        current_season_iframe_loading.id = "spinner";
+        current_season_iframe_loading.innerHTML = "<i style=\"color:grey\" class=\"fa fa-spinner fa-spin fa-2x\"></i> <br> Loading current season..."
+        current_season_table.appendChild(current_season_iframe_loading);
+
 
         // Current season iframe
         var current_season_iframe_div = document.createElement("div");

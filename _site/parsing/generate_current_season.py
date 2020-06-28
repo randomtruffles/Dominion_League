@@ -12,18 +12,20 @@ with open('raw_divs.txt') as raw_divs:
 
 """
 Generate iframes embed for database:
-
+"""
 # Store division to iframe
 divisions = {}
 current_iframe_idx = 1
 for idx, div in enumerate(div_id):
     for c in range(div_count[idx]):
-        divisions[div+str(c+1)] = iframes[current_iframe_idx]
+        attr = """class="standings-sheets" onload="document.getElementById('spinner').style.display='none';" """
+        iframe = iframes[current_iframe_idx]
+        divisions[div+str(c+1)] = iframe[:8] + attr + iframe[8:]
         current_iframe_idx += 1
 
 with open('../_data/current_season_iframes.json', 'w') as fp:
     json.dump(divisions, fp)
-"""
+
 """
 Generate current season json
 """
