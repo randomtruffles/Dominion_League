@@ -1076,12 +1076,9 @@ section h2.moderator-heading {
     font-size: 30px;
 }
 section h3.moderator-subheading {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     text-transform: none;
-    font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
+    font-size: 20px;
 }
 
 }
@@ -1092,7 +1089,10 @@ section h3.moderator-subheading {
     }
 }
 
-
+/* Moderators */
+.col-sm-3 {
+  height: 200px;
+}
 .team-member {
     margin-bottom: 40px;
     text-align: center;
