@@ -19,15 +19,19 @@ collections:
         label: subtitle
         type: string
         description: Eg. Sign-ups Open
-      - name: category
+      - name: author
+        label: author
+        type: string
+        description: Eg. SamE
+      - name: categories
         label: Signups Post
-        type: select
-        options: switch
-        default: true
+        type: tags
+        default: signups
+        description: No need to change.
       - name: layout
         label: Layout
         type: checkbox
-        options: [ { value: 'simple_post', label: 'with_sidebar' }, { value: 'post', label: 'without_sidebar' }]
+        options: ['post', 'simple_post']
         default: simple_post
       - name: body
         label: Body
@@ -49,15 +53,18 @@ collections:
         label: subtitle
         type: string
         description: Eg. The First Eight-Tier Season
-      - name: category
+      - name: author
+        label: author
+        type: string
+        description: Eg. SamE
+      - name: categories
         label: Pinned
-        type: switch
+        type: tags
         description: Turning on Pinned will add it to the Pinned section of the Posts page.
-        default: false
       - name: layout
         label: Layout
         type: checkbox
-        options: [ { value: 'simple_post', label: 'with_sidebar' }, { value: 'post', label: 'without_sidebar' }]
+        options: ['post', 'simple_post']
       - name: body
         label: Body
         type: markdown
