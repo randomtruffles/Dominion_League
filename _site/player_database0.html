@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Dominion League is a free online tournament for competitive Dominion at all skill levels.
 ">
-    <link rel="canonical" href="http://localhost:4000/player_database_og.html">
+    <link rel="canonical" href="http://localhost:4000/player_database0.html">
     <link rel="shortcut icon" type="image/png" href="/img/icons/vp_with_trophy.png"/>
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <script src="/js/functions.js"></script>
@@ -322,8 +322,6 @@ var friendly_league_history = {"seasons":{"27":{"champion":"Mic Qsenoch","A1":{"
 var championship_videos = {"1":[],"2":[],"3":["https://www.youtube.com/watch?v=xrtEzBneoao&list=PLHV1uVDYN5Y_UiaFvMRvCw3M_Ik3Zi7Eu"],"4":["https://www.youtube.com/watch?v=9hB4qDmcfZk&list=PLHV1uVDYN5Y-vOh8TLPZeCRLNMc2M-TIt"],"5":["https://www.youtube.com/watch?v=c2jKAahdVak&list=PLHV1uVDYN5Y9Eg9jfk3wgLZbMXkM3PBWH"],"6":["https://youtu.be/19P_gYTYTvU"],"7":[],"8":["https://www.youtube.com/watch?v=Q4nQydiQm8c&list=PLHV1uVDYN5Y8H6hXU5KV5UjDxJZFakgFU"],"9":["https://www.youtube.com/watch?v=QKazXSLwTj4&list=PLHV1uVDYN5Y80IF1TL_ZZ162wQgKpvIfT"],"10":["https://youtu.be/kzNJHn9ekbM"],"11":[],"12":["https://youtu.be/idXSqSmJfig"],"13":["https://youtu.be/1BUdm10FXPk"],"14":["https://www.youtube.com/watch?v=Ys80vlxpys8"],"15":["https://www.youtube.com/watch?v=uMU-BLwmVro"],"16":["https://youtu.be/yc4CC3FBQ0g"],"17":["https://www.youtube.com/watch?v=DpTEPK-87rQ"],"18":["https://www.youtube.com/watch?v=Qc4-qCaZDG4"],"19":["https://youtu.be/1P3ErL3TfZA"],"20":["https://youtu.be/u97xitauk5U"],"21":["https://www.youtube.com/watch?v=PDrBwpToPm8"],"22":["https://www.youtube.com/watch?v=XpjjGnjY4Fk"],"23":["https://www.youtube.com/watch?v=0kHzM0-AKtM"],"24":["https://www.youtube.com/watch?v=kBznjXy4OBA"],"25":["https://www.youtube.com/watch?v=13nTx5EyASA"],"26":["https://youtu.be/p4s4B0ADrkQ"],"27":["https://www.youtube.com/watch?v=TU-MiaNjM38"],"28":["https://www.youtube.com/watch?v=YOKo2Xd0P3M"],"29":["https://youtu.be/OBeAv-HsCEM"],"30":["https://youtu.be/UzPmuSUztig"],"31":["https://www.youtube.com/watch?v=JcutJ0BRF1Q"],"32":["https://www.youtube.com/watch?v=01yAMj4AMqc"],"33":["https://www.youtube.com/watch?v=63D9pWwR7_o"],"34":["https://www.youtube.com/watch?v=LAyhTEcONik"],"35":["https://www.youtube.com/watch?v=VHFlh7oiEGM"],"36":["https://youtu.be/GeOwaFOwO9M"],"37":["https://www.youtube.com/watch?v=KwZptP5OneA"],"38":["https://www.youtube.com/watch?v=l2HHqd_xAIM"],"39":["https://www.youtube.com/watch?v=QimCrY84LzQ"]};
 var league_history = friendly_league_history["seasons"];
 
-let cache_children = 0;
-
 // Get URL parameter
 searchPlayerHistory(true);
 
@@ -367,20 +365,19 @@ function searchPlayerHistory(param=false){
       var player_param = getPlayerParam();
       if (player_param == '') {
         return;
-      } else {
-        player_name = player_param.toLowerCase();
       }
+      document.getElementById("url_param_tutorial").style.display = "none";
+      if (entered_player_name == "") {
+        entered_player_name = player_param;
+      }
+      player_name = player_param.toLowerCase();
     } else {
-      url_param_name = player_name.replace(" ", "%20");
-      location.replace("/player_database.html?player="+url_param_name);
+      document.getElementById("url_param_tutorial").style.display = "none";
+      url_param_name = entered_player_name.replace(" ", "%20");
+      location.replace("/player_database0.html?player="+url_param_name);
+      return;
     }
     var divContainer = document.getElementById("player-database");
-    for (var k = 0; k < cache_children; k++){
-      divContainer.removeChild(divContainer.lastChild);
-    }
-    cache_children = 0;
-
-    document.getElementById("url_param_tutorial").style.display = "none";
 
     // Easter egg
     if (player_name == "truffles") {
@@ -391,7 +388,6 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "More seriously: try searching for <b>xtruffles</b>.";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
 
   } else if (player_name == "kuroba") {
       var h_dne = document.createElement("h4");
@@ -400,7 +396,6 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "He is too bad to be in league.";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
 
   } else if (player_name == "muenstercheese") {
       var h_dne = document.createElement("h4");
@@ -409,16 +404,15 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "MuensterCheese has not completed a league season yet, but is awesome so I manually added them here. <br> <a href=\"https://www.youtube.com/channel/UCcZUxA0BK-6QFP9Q6Mg6Krg\">MuensterCheese's Youtube Channel</a>";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
   // No input detected
   } else if (player_name == ""){
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: no input detected";
       divContainer.appendChild(h_dne);
-      cache_children = cache_children + 1;
   // No data exists for player
   } else if (!players_and_seasons[player_name]) {
+      console.log(entered_player_name);
       // Do something "No data exists for this player"
       var h_dne = document.createElement("h4");
       h_dne.innerHTML = "Error: Player Does Not Exist";
@@ -426,7 +420,6 @@ function searchPlayerHistory(param=false){
       dne.innerHTML = "<b>" + entered_player_name + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').";
       divContainer.appendChild(h_dne);
       divContainer.appendChild(dne);
-      cache_children = cache_children + 2;
 
     // Generate table for each season played
     }  else {
@@ -434,14 +427,12 @@ function searchPlayerHistory(param=false){
       var player_heading = document.createElement("h4");
       player_heading.innerHTML = "Player: " + players_and_seasons[player_name]["name"];
       divContainer.appendChild(player_heading);
-      cache_children += 1;
 
       // Youtube heading
       if (players_and_seasons[player_name]["channel"].length > 0 ) {
         var player_heading = document.createElement("h5");
         player_heading.innerHTML = "<a href=\"" + players_and_seasons[player_name]["channel"] +"\">Youtube Channel</a>";
         divContainer.appendChild(player_heading);
-        cache_children += 1;
       }
 
       // Sort by newest season first
@@ -556,7 +547,6 @@ function searchPlayerHistory(param=false){
 
         // Add table to container
         divContainer.appendChild(table);
-        cache_children = cache_children + 1;
       }
     }
 }
