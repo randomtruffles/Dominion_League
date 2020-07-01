@@ -26,10 +26,6 @@ This page serves as a guide for league moderators navigating the website.
 2. Message `@truffles#9347` on discord to give you access to edit the website.
 3. The repository is located here: <https://github.com/randomtruffles/Dominion_League>
 
-**OR**
-1. Use the following Github credentials:
-* Username:
-
 Once you have access, you will be good to go to make changes!
 </div>
 
@@ -220,8 +216,9 @@ Make sure you have completed the <a href="#1-prerequisites">Prequisites</a> befo
   * If the file is `truffles_picture.png`, fill in `truffles_picture`
   * If the file is `screenshot_1234.png` fill in `screenshot_1234`
   * Instructions on where to add the image file begins in step 5.
+
 ```
-# TEMPLATE OF NEW MODERATOR
+# Template of adding new moderator
 - name: truffles
   discord: truffles#1234
   image: truffles_picture_png_file_prefix
