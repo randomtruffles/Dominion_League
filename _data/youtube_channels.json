@@ -26,13 +26,13 @@
   "xtruffles" : {
     "channel" : "https://www.youtube.com/channel/UCAgje77cB9YRmo7ASNojn2Q?view_as=subscriber"
   },
-  "RTT" : {
+  "rtt" : {
     "channel" : "https://www.youtube.com/channel/UCx303c_ujMRy-6OrqccmlRQ"
   },
   "xyrix" : {
     "channel" : "https://www.youtube.com/channel/UCkj-UR2k0x7HkXRVeM6aAKg"
   },
-  "E.Honda" : {
+  "e.honda" : {
     "channel" : "https://www.youtube.com/channel/UCZ1p2gKEOeElTqdExFvIyQg"
   }
 }
