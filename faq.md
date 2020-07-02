@@ -27,10 +27,10 @@ Credit: Thanks to gloures, who onboarded hundreds of new players and compiled mo
 ##### How do I sign up?
 Navigate to [Sign up](https://dominionleague.org/sign-ups.html) and fill out your details by completing the Google form embedded there.
 
-Make sure you join the Dominion Discord server (<https://discord.gg/jeN2sAB>) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
+Make sure you join the Dominion Discord server (<https://discord.gg/vMmmMBu>) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
 
 ##### What is required to sign up?
-You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/jeN2sAB>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
+You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/vMmmMBu>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
 
 ##### I didn’t respond in time to Discord message to confirm my signup. Can sign up again?
 If the deadline hasn't passed, you are encouraged to re-sign up by filling out the Google form again.
@@ -63,7 +63,7 @@ The introductory message in your division’s Discord channel will say who your 
 Discord is an instant messaging app. In the Dominion server you can discuss Dominion topics with players all over the world. These discussions are organized into different channels (denoted by #). There are channels for Dominion strategy, the Dominion League, and your specific division.
 
 ##### Do I need to use Discord?
-Yes, you are required to have a Discord account and join the Dominion server (<https://discord.gg/jeN2sAB>).
+Yes, you are required to have a Discord account and join the Dominion server (<https://discord.gg/vMmmMBu>).
 
 ##### Why do I need to use Discord?
 Discord is where you will message opponents to schedule matches and receive important announcements.
