@@ -4,7 +4,7 @@ subtitle:
 author: SamE
 layout: post
 date: 2020-07-01
-categories: pinned
+categories:
 description:
 
 ---
@@ -27,4 +27,4 @@ Moderator responsibilities consist of the following:
 In general, the moderator role tends to be a reactive responsibility. Accordingly, we expect moderators to be responsive within 24 hours on Discord throughout the season. We also require new moderators to have played at least two full League seasons (which can include Season 40).
 
 
-To apply, send the current mods a [PM on the forum](http://forum.dominionstrategy.com/index.php?action=pm;sa=send;u=459,725,1739,2778,2847,5346,5439,5475,5568,5592,6090,6315,6415,6506,6612) by clicking this link some time in the next 48 hours from this post.
+To apply, send the current mods a ~~[PM on the forum](http://forum.dominionstrategy.com/index.php?action=pm;sa=send;u=459,725,1739,2778,2847,5346,5439,5475,5568,5592,6090,6315,6415,6506,6612)~~ **Applications are closed** by clicking this link some time in the next 48 hours from this post.
