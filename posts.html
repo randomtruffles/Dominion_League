@@ -24,7 +24,7 @@ title: Dominion League Posts
 
         </div>
 
-        {% endif %}
+        {% else %}
         <div class="content instructions-div">
           <p>
             <span>{{post.date | date: "%B %d, %Y" }}</span>
@@ -43,6 +43,7 @@ title: Dominion League Posts
           <a class="button" href="{{post.url}}">Read more...</a>
 
         </div>
+        {% endif %}
       {% endfor %}
 
 
