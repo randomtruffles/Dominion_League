@@ -1,10 +1,9 @@
 ---
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
-layout: simple_post
+layout: fixed_post
 date: 2020-05-29 # CHANGE
 categories: pinned rules
-author: SamE # CHANGE
 ---
 Changelog for Rules and Regulations can be found [here](/rules-changelog)
 
