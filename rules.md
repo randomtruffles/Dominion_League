@@ -6,6 +6,7 @@ date: 2020-05-29 # CHANGE
 categories: pinned rules
 author: SamE # CHANGE
 ---
+Changelog for Rules and Regulations can be found [here](/rules-changelog)
 
 #### I. League Structure
 

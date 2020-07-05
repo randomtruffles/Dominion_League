@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-01T18:58:54-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dominion League</title><subtitle>The Dominion League is a free online tournament for competitive Dominion at all skill levels.
-</subtitle><entry><title type="html">Season 41 - Call for new mods</title><link href="http://localhost:4000/pinned/2020/07/01/S41-Call-For-New_Mods.html" rel="alternate" type="text/html" title="Season 41 - Call for new mods" /><published>2020-07-01T00:00:00-04:00</published><updated>2020-07-01T00:00:00-04:00</updated><id>http://localhost:4000/pinned/2020/07/01/S41-Call-For-New_Mods</id><content type="html" xml:base="http://localhost:4000/pinned/2020/07/01/S41-Call-For-New_Mods.html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-05T17:40:41-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dominion League</title><subtitle>The Dominion League is a free online tournament for competitive Dominion at all skill levels.
+</subtitle><entry><title type="html">Changelog</title><link href="http://localhost:4000/changelog/2020/07/05/Changelog.html" rel="alternate" type="text/html" title="Changelog" /><published>2020-07-05T00:00:00-04:00</published><updated>2020-07-05T00:00:00-04:00</updated><id>http://localhost:4000/changelog/2020/07/05/Changelog</id><content type="html" xml:base="http://localhost:4000/changelog/2020/07/05/Changelog.html">&lt;p&gt;Presence of website!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Changes to Rules and Regulations&lt;/strong&gt;&lt;br /&gt;
+Replaced all instances of:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;in the latest Signups post: http://forum.dominionstrategy.com/index.php?board=60.0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;to:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;in the latest Signups post: https://dominionleague.org/sign-ups.html`&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>truffles</name></author><summary type="html">Presence of website!</summary></entry><entry><title type="html">Season 41 - Call for new mods</title><link href="http://localhost:4000/2020/07/01/S41-Call-For-New_Mods.html" rel="alternate" type="text/html" title="Season 41 - Call for new mods" /><published>2020-07-01T00:00:00-04:00</published><updated>2020-07-01T00:00:00-04:00</updated><id>http://localhost:4000/2020/07/01/S41-Call-For-New_Mods</id><content type="html" xml:base="http://localhost:4000/2020/07/01/S41-Call-For-New_Mods.html">&lt;p&gt;Hello everyone!&lt;/p&gt;
 
 &lt;p&gt;The League is run by a team of volunteer moderators, and due to the growth of the League in the last few seasons, we’re looking for more!&lt;/p&gt;
 
@@ -23,7 +35,7 @@
 
 &lt;p&gt;In general, the moderator role tends to be a reactive responsibility. Accordingly, we expect moderators to be responsive within 24 hours on Discord throughout the season. We also require new moderators to have played at least two full League seasons (which can include Season 40).&lt;/p&gt;
 
-&lt;p&gt;To apply, send the current mods a &lt;a href=&quot;http://forum.dominionstrategy.com/index.php?action=pm;sa=send;u=459,725,1739,2778,2847,5346,5439,5475,5568,5592,6090,6315,6415,6506,6612&quot;&gt;PM on the forum&lt;/a&gt; by clicking this link some time in the next 48 hours from this post.&lt;/p&gt;</content><author><name>SamE</name></author><summary type="html">Hello everyone!</summary></entry><entry><title type="html">Season 40 - End of Season Deadlines</title><link href="http://localhost:4000/newsletters/pinned/2020/06/22/S40-Deadlines.html" rel="alternate" type="text/html" title="Season 40 - End of Season Deadlines" /><published>2020-06-22T00:00:00-04:00</published><updated>2020-06-22T00:00:00-04:00</updated><id>http://localhost:4000/newsletters/pinned/2020/06/22/S40-Deadlines</id><content type="html" xml:base="http://localhost:4000/newsletters/pinned/2020/06/22/S40-Deadlines.html">&lt;p&gt;Season 40 officially ends on Sunday, July 5. To account for the westernmost timezones, &lt;strong&gt;the deadline for reporting matches is Monday, July 6, at 15:00 UTC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To apply, send the current mods a &lt;del&gt;&lt;a href=&quot;http://forum.dominionstrategy.com/index.php?action=pm;sa=send;u=459,725,1739,2778,2847,5346,5439,5475,5568,5592,6090,6315,6415,6506,6612&quot;&gt;PM on the forum&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;Applications are closed&lt;/strong&gt; by clicking this link some time in the next 48 hours from this post.&lt;/p&gt;</content><author><name>SamE</name></author><summary type="html">Hello everyone!</summary></entry><entry><title type="html">Season 40 - End of Season Deadlines</title><link href="http://localhost:4000/newsletters/pinned/2020/06/22/S40-Deadlines.html" rel="alternate" type="text/html" title="Season 40 - End of Season Deadlines" /><published>2020-06-22T00:00:00-04:00</published><updated>2020-06-22T00:00:00-04:00</updated><id>http://localhost:4000/newsletters/pinned/2020/06/22/S40-Deadlines</id><content type="html" xml:base="http://localhost:4000/newsletters/pinned/2020/06/22/S40-Deadlines.html">&lt;p&gt;Season 40 officially ends on Sunday, July 5. To account for the westernmost timezones, &lt;strong&gt;the deadline for reporting matches is Monday, July 6, at 15:00 UTC.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;If you need extra time to finish, &lt;strong&gt;you must contact your group moderator&lt;/strong&gt; to request an extension of up to one week. &lt;strong&gt;All late finish matches must be reported by Monday, July 13, at 15:00 UTC.&lt;/strong&gt;&lt;/p&gt;
 
@@ -53,26 +65,37 @@
   &lt;/ol&gt;
 &lt;/div&gt;
 
-&lt;p&gt;After you fill out the form, please check back in about 5 minutes for the &lt;a href=&quot;#sign-ups-and-counts&quot;&gt;table of signups&lt;/a&gt; to update with your signup. If any of the entries are highlighted in red, this indicates that we have detected a problem with that entry. Please remedy this right away, or otherwise reach out to the moderators on Discord or by using the &lt;a href=&quot;http://tinyurl.com/dominion-league-hotline&quot;&gt;Dominion League Hotline&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After you fill out the form, please check back in about 5 minutes for the &lt;a href=&quot;#sign-ups-and-counts&quot;&gt;table of sign-ups&lt;/a&gt; to update with your sign-up. If any of the entries are highlighted in red, this indicates that we have detected a problem with that entry. Please remedy this right away, or otherwise reach out to the moderators on Discord or by using the &lt;a href=&quot;http://tinyurl.com/dominion-league-hotline&quot;&gt;Dominion League Hotline&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;A moderator will contact you on Discord to confirm your participation. You must reply to this message within 4-7 days depending on how close your signup is to the deadline. In addition, we require all players to “check in” during the first week of the season or forfeit their place. This consists of filling out a very short form to confirm that you plan to play the season that will be sent at the start of the season. If you fail to check in promptly, you could be removed.&lt;/p&gt;
+&lt;p&gt;A moderator will contact you on Discord to confirm your participation. You must reply to this message within 4-7 days depending on how close your sign-up is to the deadline. In addition, we require all players to “check in” during the first week of the season or forfeit their place. This consists of filling out a very short form to confirm that you plan to play the season that will be sent at the start of the season. If you fail to check in promptly, you could be removed.&lt;/p&gt;
 
 &lt;h4 id=&quot;sign-up-using-this-google-form&quot;&gt;Sign up using this Google Form:&lt;/h4&gt;
 
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Season 40 players should &lt;strong&gt;not&lt;/strong&gt; use this signup form and should instead fill out the Returning Form which is pinned in their division channel on Discord.
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Season 40 players should &lt;strong&gt;not&lt;/strong&gt; use this sign-up form and should instead fill out the Returning Form which is pinned in their division channel on Discord.
 &lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;sheets&quot;&gt;
   &lt;iframe src=&quot;https://docs.google.com/forms/d/e/1FAIpQLSfVgqbaYIA3ElkCF29cBsdjwbp06PdyPwXxurPl1-IyesEgbw/viewform?embedded=true&quot; width=&quot;100%&quot; height=&quot;600&quot;&gt;Loading…&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h4 id=&quot;sign-ups-and-counts&quot;&gt;Sign-ups and Counts&lt;/h4&gt;
-&lt;p&gt;Signups and Counts are listed below (it may take a few seconds to load).
+&lt;p&gt;Sign-ups and Counts are listed below (it may take a few seconds to load).
 &lt;br /&gt;
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.&lt;/p&gt;
 
 &lt;div class=&quot;sheets&quot;&gt;
   &lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7pNFwPE7dLvu9Qp35s9tCNqHQjkiUKNLe2pRPlrU93uPrP91A0Po227xwbnWwwnZFwcMCYhVAlqNl/pubhtml?gid=947503377&quot; height=&quot;500&quot; width=&quot;100%&quot;&gt;Loading...&lt;/iframe&gt;
-&lt;/div&gt;</content><author><name>truffles</name></author><summary type="html">Season 41 will run from Monday, July 20 until Sunday, August 30 and you can sign up until Monday, July 13 at 15:00 UTC by filling out the Google form below.</summary></entry><entry><title type="html">Season 40 - Newsletter</title><link href="http://localhost:4000/pinned/2020/05/12/Season-40-Newsletter.html" rel="alternate" type="text/html" title="Season 40 - Newsletter" /><published>2020-05-12T00:00:00-04:00</published><updated>2020-05-12T00:00:00-04:00</updated><id>http://localhost:4000/pinned/2020/05/12/Season-40-Newsletter</id><content type="html" xml:base="http://localhost:4000/pinned/2020/05/12/Season-40-Newsletter.html">&lt;p&gt;&lt;strong&gt;Hello everyone&lt;/strong&gt;,&lt;/p&gt;
+&lt;/div&gt;</content><author><name>truffles</name></author><summary type="html">Season 41 will run from Monday, July 20 until Sunday, August 30 and you can sign up until Monday, July 13 at 15:00 UTC by filling out the Google form below.</summary></entry><entry><title type="html">Changelog</title><link href="http://localhost:4000/changelog/2020/05/13/Changelog.html" rel="alternate" type="text/html" title="Changelog" /><published>2020-05-13T00:00:00-04:00</published><updated>2020-05-13T00:00:00-04:00</updated><id>http://localhost:4000/changelog/2020/05/13/Changelog</id><content type="html" xml:base="http://localhost:4000/changelog/2020/05/13/Changelog.html">&lt;p&gt;&lt;strong&gt;Changes to IV. Joining and Leaving&lt;/strong&gt;&lt;br /&gt;
+Old:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Once you have joined the Discord Server you may sign up to join the League by replying to the latest Signups post: http://forum.dominionstrategy.com/index.php?board=60.0.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;New:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Once you have joined the Discord Server you may sign up to join the League by filling out the Google form embedded in the latest Signups post: http://forum.dominionstrategy.com/index.php?board=60.0. You may only participate in the League once per season. You may switch your Dominion Online or Discord account at any time by letting your moderator know, but you may not join the League additional times using other accounts.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>crlundy</name></author><summary type="html">Changes to IV. Joining and Leaving Old: Quote Once you have joined the Discord Server you may sign up to join the League by replying to the latest Signups post: http://forum.dominionstrategy.com/index.php?board=60.0.</summary></entry><entry><title type="html">Season 40 - Newsletter</title><link href="http://localhost:4000/pinned/2020/05/12/Season-40-Newsletter.html" rel="alternate" type="text/html" title="Season 40 - Newsletter" /><published>2020-05-12T00:00:00-04:00</published><updated>2020-05-12T00:00:00-04:00</updated><id>http://localhost:4000/pinned/2020/05/12/Season-40-Newsletter</id><content type="html" xml:base="http://localhost:4000/pinned/2020/05/12/Season-40-Newsletter.html">&lt;p&gt;&lt;strong&gt;Hello everyone&lt;/strong&gt;,&lt;/p&gt;
 
 &lt;p&gt;Season 39 started in mid-March, as lockdowns around the world were coming into effect. It was, unsurprisingly, our biggest season ever. But that was apparently just the beginning.&lt;/p&gt;
 
@@ -144,4 +167,108 @@ Apart from this big change, we only have a few small changes (see the minutes be
 While there is a lot of change going on, it helps to have a steady set of leaders. We will have the exact same moderator crew for the fourth consecutive season!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Suggestions?&lt;/strong&gt;
-As a reminder, you can reply to &lt;a href=&quot;http://forum.dominionstrategy.com/index.php?topic=20176.0&quot;&gt;the forum post&lt;/a&gt; with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of May 9-10, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)&lt;/p&gt;</content><author><name>SamE</name></author><summary type="html">Hello everyone,</summary></entry></feed>
+As a reminder, you can reply to &lt;a href=&quot;http://forum.dominionstrategy.com/index.php?topic=20176.0&quot;&gt;the forum post&lt;/a&gt; with any reasonably-complete suggestions you would like the moderators to discuss at their next rules meeting, tentatively scheduled for the weekend of May 9-10, and we guarantee we will discuss and vote on your suggestion. (You can also still give feedback in the Returning Forms and through Town Halls as usual.)&lt;/p&gt;</content><author><name>SamE</name></author><summary type="html">Hello everyone,</summary></entry><entry><title type="html">Changelog</title><link href="http://localhost:4000/changelog/2020/03/16/Changelog.html" rel="alternate" type="text/html" title="Changelog" /><published>2020-03-16T00:00:00-04:00</published><updated>2020-03-16T00:00:00-04:00</updated><id>http://localhost:4000/changelog/2020/03/16/Changelog</id><content type="html" xml:base="http://localhost:4000/changelog/2020/03/16/Changelog.html">&lt;p&gt;&lt;strong&gt;Changes to I. League Structure&lt;/strong&gt;&lt;br /&gt;
+Old:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Each League season lasts for 6 weeks, and is followed by a 2 week break. Players are divided into groups of at most 6 players. Groups are arranged in tiered divisions. There is a single A division, 2 B divisions, 4 C divisions, 8 D divisions, up to 16 E divisions, and up to 32 F divisions. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D, E, and F) and Dominion Online level for new players.&lt;/p&gt;
+
+  &lt;p&gt;At the end of the season the players with 1st place ranks promote to the next level, while players ranked 5th or 6th place demote. E division demotions (to F) will possibly be more lenient depending on the number of players.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;New:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A; 2 divisions in tier B; 4 divisions in each of tiers C and D; 8 divisions in each of tiers E, F, and G; and 16 divisions in tier H. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D and below) and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Changes to III. Standings&lt;/strong&gt;&lt;br /&gt;
+Old:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Players who finish in first place in tiers B, C, D, E, and F promote.&lt;/li&gt;
+    &lt;li&gt;Players who finish in fifth place or sixth place in tiers A, B, C, and D demote.&lt;/li&gt;
+    &lt;li&gt;Players who finish in sixth place in tier E demote.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;New:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Players who finish in first place in tiers B, C, and E promote.&lt;/li&gt;
+    &lt;li&gt;Players who finish in first or second place in tiers D, F, G, and H promote.&lt;/li&gt;
+    &lt;li&gt;Players who finish in fifth or sixth place in tiers A, B, C, D, E, F, and G demote.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;</content><author><name>crlundy</name></author><summary type="html">Changes to I. League Structure Old: Quote Each League season lasts for 6 weeks, and is followed by a 2 week break. Players are divided into groups of at most 6 players. Groups are arranged in tiered divisions. There is a single A division, 2 B divisions, 4 C divisions, 8 D divisions, up to 16 E divisions, and up to 32 F divisions. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D, E, and F) and Dominion Online level for new players. At the end of the season the players with 1st place ranks promote to the next level, while players ranked 5th or 6th place demote. E division demotions (to F) will possibly be more lenient depending on the number of players.</summary></entry><entry><title type="html">Changelog</title><link href="http://localhost:4000/changelog/2019/12/08/Changelog.html" rel="alternate" type="text/html" title="Changelog" /><published>2019-12-08T00:00:00-05:00</published><updated>2019-12-08T00:00:00-05:00</updated><id>http://localhost:4000/changelog/2019/12/08/Changelog</id><content type="html" xml:base="http://localhost:4000/changelog/2019/12/08/Changelog.html">&lt;p&gt;&lt;strong&gt;Changes to III. Standings&lt;/strong&gt;&lt;br /&gt;
+Old:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Ties are broken in the following order.&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Number of total points from matches between the tied players&lt;/li&gt;
+    &lt;li&gt;The sum of the number of points received in each match multiplied by the total score of the opponent from that match.&lt;/li&gt;
+    &lt;li&gt;If 2 players are still tied after the 2nd tiebreaker in a position with promotion or demotion consequences, they play a playoff match of 2 games. Each player starts once. If the players are tied after 2 games, they play one final game with random starting player in which player 2 wins ties. A player may choose not to play the playoff match, and thereby concede. If one player fails to respond promptly or is unable to play, that player will demote or not promote. If neither player responds promptly or both players respond but cannot arrange a match in the required time, moderators will flip a coin. If more than 2 players are tied after the 2nd tiebreaker, moderators will randomly order them.&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;At the end of the season, players who place 1st in their groups will promote to the next higher division, and players who place 5th and 6th will demote to the next lower division. For instance, the players who place 5th and 6th in the A group will demote to the B division, and the players who place first in B1 and B2 groups will promote to the A division to take their places. We might possibly be more lenient in the lower divisions depending on overall numbers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;New:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;In the case of a tie within a division, the player with the total number of points from the matches between the tied players wins. If there is still a tie:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;If the tie is between two players, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.&lt;/li&gt;
+    &lt;li&gt;If the tie is between three or more players, the moderators will randomly break the tie.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Players who finish in first place in tiers B, C, D, E, and F promote.&lt;/li&gt;
+    &lt;li&gt;Players who finish in fifth place or sixth place in tiers A, B, C, and D demote.&lt;/li&gt;
+    &lt;li&gt;Players who finish in sixth place in tier E demote.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Changes to IV. Joining and Leaving&lt;/strong&gt;&lt;br /&gt;
+Old:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;To join the League, you must join the Dominion (Card Game) Discord server. To join the Dominion Discord server follow this link: https://discord.gg/jeN2sAB&lt;/p&gt;
+
+  &lt;p&gt;Once you have joined the Discord Server you may sign up to join the League here: http://forum.dominionstrategy.com/index.php?board=60.0&lt;/p&gt;
+
+  &lt;p&gt;You’re not required to own any cards in order to sign up, and who owns what will not have any influence on how players are placed into groups.
+When a player joins for the first time, they are placed in a division based on the availability of spots and their level on the Dominion Online Leaderboard.
+At the end of each season, players must indicate if they intend to stay in the League, or leave for the next season. You will not automatically re-enter the next season without specifying your preference. Please indicate whether you intend to return for the next season or not in your division’s scheduling thread before the end of the season.&lt;/p&gt;
+
+  &lt;p&gt;Available spots that are created when players leave the League will be filled with players in the following order:&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Players who left the League after a prior season within the last year (up to six seasons before the new one) are inserted at the level they previously earned.&lt;/li&gt;
+    &lt;li&gt;Players who are joining for the first time, or who we were unable to place based on criteria #1 will be inserted into remaining openings by their rating on the Dominion Online leaderboard.&lt;/li&gt;
+    &lt;li&gt;The player or players who had the best score(s) in their division among those who placed 2nd are promoted.&lt;/li&gt;
+    &lt;li&gt;The player or players who had the best score(s) in their division among those who placed 5th skip demotion.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;New:&lt;br /&gt;
+&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;To join the League, you must join the Dominion (Card Game) Discord server: https://discord.gg/jeN2sAB. Once you have joined the Discord Server you may sign up to join the League by replying to the latest Signups post: http://forum.dominionstrategy.com/index.php?board=60.0. You do not need to purchase a subscription to Dominion Online, and Dominion Online subscriptions have no bearing on players’ tiers, divisions, or seeding.&lt;/p&gt;
+
+  &lt;p&gt;At the end of each season, players who want to return for the following season must fill out the Returning form linked in their division’s Discord channel, otherwise by default they will leave the League. The following priorities are used, in order, to fill the open spots created by players who leave:&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Players returning to the League after playing in one of the past 6 seasons are placed into the tiers they would have most recently returned to, starting with the players that played most recently and with ties broken by seeding. For purposes of this priority only, divisions may have up to 7 players each.&lt;/li&gt;
+    &lt;li&gt;Players returning from before the past 6 seasons, or joining for the first time, are placed into tiers based on their Dominion Online level.&lt;/li&gt;
+    &lt;li&gt;Players who finished in second place with a high score in the previous season are offered a free promotion up to the next higher tier.&lt;/li&gt;
+    &lt;li&gt;Players who finished in fifth place with a high score in the previous season are offered a free promotion to not demote to the next lower tier.&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;When multiple players are offered free promotions (as described above) to a tier with not enough open spots for all of them, that tier determines how players are chosen: For tiers A, B, and C, the moderators arrange play-in matches between those players. For all other tiers, the moderators choose the players at their discretion, taking into account time zones.&lt;/p&gt;
+
+  &lt;p&gt;During a season, the moderators may, at their discretion, fill new open spots from a waiting list.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>crlundy</name></author><summary type="html">Changes to III. Standings Old: Quote Ties are broken in the following order. Number of total points from matches between the tied players The sum of the number of points received in each match multiplied by the total score of the opponent from that match. If 2 players are still tied after the 2nd tiebreaker in a position with promotion or demotion consequences, they play a playoff match of 2 games. Each player starts once. If the players are tied after 2 games, they play one final game with random starting player in which player 2 wins ties. A player may choose not to play the playoff match, and thereby concede. If one player fails to respond promptly or is unable to play, that player will demote or not promote. If neither player responds promptly or both players respond but cannot arrange a match in the required time, moderators will flip a coin. If more than 2 players are tied after the 2nd tiebreaker, moderators will randomly order them. At the end of the season, players who place 1st in their groups will promote to the next higher division, and players who place 5th and 6th will demote to the next lower division. For instance, the players who place 5th and 6th in the A group will demote to the B division, and the players who place first in B1 and B2 groups will promote to the A division to take their places. We might possibly be more lenient in the lower divisions depending on overall numbers.</summary></entry></feed>

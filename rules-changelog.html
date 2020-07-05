@@ -1,0 +1,30 @@
+---
+layout: default
+title: Rules and Regulations Changelog
+---
+
+<div class="section">
+  <h3>Rules and Regulations Changelog</h3>
+  This thread is used by League Moderators to record changes to the <a href="/rules">rules and regulations</a>, starting in Season 27.
+  <br>
+  The original changelog was started on the Dominion Strategy Forum found <a href="http://forum.dominionstrategy.com/index.php?topic=18438.0">here</a>
+  <hr style="border-top: 2px solid darkgray">
+  {% for post in site.posts %}
+    {% if post.path contains 'rules-changelog' %}
+      <div class="content">
+        <h5 style="color: gray">
+          {{post.date | date: "%B %d, %Y" }}
+          -
+          Updated by: {{post.author}}
+        </h5>
+        <h4 style="text-decoration: underline"> Rules and Regulations Changelog Update </h4>
+        <p>
+          {{ post.content }}
+        </p>
+      </div>
+      <br>
+      <hr style="border-top: 2px solid darkgray">
+    {% endif %}
+  {% endfor %}
+</div>
+<div class='four spacing'></div>

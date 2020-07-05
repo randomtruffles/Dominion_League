@@ -11,6 +11,10 @@ markdown: kramdown
 # permalink: pretty
 plugins:
   - jekyll-paginate
+# for rules changelog
+collections:
+  rules:
+    output: true
 
 # paginate: 4
 # paginate_path: "blog/page:num"

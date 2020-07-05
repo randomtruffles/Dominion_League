@@ -3,17 +3,17 @@
       <h3>Pinned Posts</h3>
       <ul class="fa-ul">
 
+        {% for post in site.categories.signups %}
+          <li><i class="fa-li fa fa-angle-double-right"></i><a href="{{post.url}}">{{post.title}}</a></li>
+          {% break %}
+        {% endfor %}
+
         <li><i class="fa-li fa fa-angle-double-right"></i><a href="{{site.baseurl}}/rules.html">League Rules</a></li>
+
+        <li><i class="fa-li fa fa-angle-double-right"></i><a href="{{post.url}}/faq.html">League Rules Changelog</a></li>
 
         <li><i class="fa-li fa fa-angle-double-right"></i><a href="{{post.url}}/faq.html">Dominion League FAQ</a></li>
 
-
-        {% for post in site.categories.signups %}
-          {% if forloop.index > 1 %}
-            {% break %}
-          {% endif %}
-          <li><i class="fa-li fa fa-angle-double-right"></i><a href="{{post.url}}">{{post.title}}</a></li>
-        {% endfor %}
 
         {% for post in site.categories.pinned %}
           {% if forloop.index > 6 %}
@@ -26,10 +26,13 @@
     <h3>Recent Posts</h3>
     <ul class="fa-ul">
       {% for post in site.posts %}
-        {% if forloop.index > 6 %}
-          {% break %}
+        {% if post.path contains 'rules-changelog' %}
+        {% else %}
+          {% if forloop.index > 6 %}
+            {% break %}
+          {% endif %}
+          <li><i class="fa-li fa fa-angle-double-right"></i> <a href="{{post.url}}">{{post.title}}</a></li>
         {% endif %}
-        <li><i class="fa-li fa fa-angle-double-right"></i> <a href="{{post.url}}">{{post.title}}</a></li>
       {% endfor %}
     </ul>
   </div>
