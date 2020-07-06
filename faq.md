@@ -26,10 +26,10 @@ Credit: Thanks to gloures, who onboarded hundreds of new players and compiled mo
 ##### How do I sign up?
 Navigate to [Sign up](https://dominionleague.org/sign-ups.html) and fill out your details by completing the Google form embedded there.
 
-Make sure you join the Dominion Discord server (<https://discord.gg/vMmmMBu>) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
+Make sure you join the Dominion Discord server <a href="https://discord.gg/vMmmMBu" target="\_PARENT">https://discord.gg/vMmmMBu </a> as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
 
 ##### What is required to sign up?
-You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/vMmmMBu>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
+You are required to have a Dominion Online (<a href="http://dominion.games" target="\_PARENT">http://dominion.games</a>) account and join the Dominion Discord server (<a href="https://discord.gg/vMmmMBu" target="\_PARENT">https://discord.gg/vMmmMBu</a>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
 
 ##### I didn’t respond in time to Discord message to confirm my signup. Can sign up again?
 If the deadline hasn't passed, you are encouraged to re-sign up by filling out the Google form again.
