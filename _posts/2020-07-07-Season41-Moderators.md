@@ -4,7 +4,7 @@ title: Season 41 - New Moderators #(CHANGE) Keep it short!
 subtitle: We are excited to add more moderators! #(CHANGE)
 author: truffles #(CHANGE) Your name!
 date: 2020-07-07 #(CHANGE) Today's date YYYY-MM-DD
-categories: pinned #(OPTIONAL) Delete to not pin post.
+categories: #(OPTIONAL) Delete to not pin post.
 published: false
 ---
 
