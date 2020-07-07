@@ -5,9 +5,15 @@
 - name: alibby1152
   discord: alibby1152#4103
   image: alibby
+- name: amoffett11
+  discord: amoffett11#8778
+  image: amoffett11
 - name: apostolosgr
   discord: apostolosgr#4103
   image: apostolosgr
+- name: catmom
+  discord: catmom#9085
+  image: catmom
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -35,12 +41,18 @@
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
+- name: Rozyroz
+  discord: Rozyroz#7547
+  image: Rozyroz
 - name: SamE
   discord: SamE#8793
   image: same
 - name: singletee
   discord: singletee#0905
   image: singletee
+- name: tracer
+  discord: tracer#2575
+  image: tracer
 - name: truffles
   discord: truffles#9374
   image: truffles
