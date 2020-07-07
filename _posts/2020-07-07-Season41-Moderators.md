@@ -9,12 +9,11 @@ categories: pinned #(OPTIONAL) Delete to not pin post.
 
 **Hello everyone!**
 
-The Dominion League is excited to welcome 4 new moderators to our team for Season 41!
+The Dominion League is excited to welcome 4 new moderators to our team for Season 41:
 
 * amoffett11
 * catmom
 * Rozyroz
 * tracer
 
-We are expecting another wave of growth in membership, so we are excited to add more members to our team!
-
+We are expecting another wave of growth in membership this upcoming season, so we are excited to add more members to our team!

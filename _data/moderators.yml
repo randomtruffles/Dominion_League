@@ -32,9 +32,6 @@
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-- name: H.exe
-  discord: H.exe#3232
-  image: hexe
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn

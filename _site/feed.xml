@@ -1,5 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-07T12:41:05-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dominion League</title><subtitle>The Dominion League is a free online tournament for competitive Dominion at all skill levels.
-</subtitle><entry><title type="html">Changelog</title><link href="http://localhost:4000/changelog/2020/07/05/Changelog.html" rel="alternate" type="text/html" title="Changelog" /><published>2020-07-05T00:00:00-04:00</published><updated>2020-07-05T00:00:00-04:00</updated><id>http://localhost:4000/changelog/2020/07/05/Changelog</id><content type="html" xml:base="http://localhost:4000/changelog/2020/07/05/Changelog.html">&lt;p&gt;Presence of website!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-07T15:28:05-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dominion League</title><subtitle>The Dominion League is a free online tournament for competitive Dominion at all skill levels.
+</subtitle><entry><title type="html">Season 41 - New Moderators</title><link href="http://localhost:4000/pinned/2020/07/07/Season41-Moderators.html" rel="alternate" type="text/html" title="Season 41 - New Moderators" /><published>2020-07-07T00:00:00-04:00</published><updated>2020-07-07T00:00:00-04:00</updated><id>http://localhost:4000/pinned/2020/07/07/Season41-Moderators</id><content type="html" xml:base="http://localhost:4000/pinned/2020/07/07/Season41-Moderators.html">&lt;p&gt;&lt;strong&gt;Hello everyone!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The Dominion League is excited to welcome 4 new moderators to our team for Season 41:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;amoffett11&lt;/li&gt;
+  &lt;li&gt;catmom&lt;/li&gt;
+  &lt;li&gt;Rozyroz&lt;/li&gt;
+  &lt;li&gt;tracer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We are expecting another wave of growth in membership this upcoming season, so we are excited to add more members to our team!&lt;/p&gt;</content><author><name>truffles</name></author><summary type="html">Hello everyone!</summary></entry><entry><title type="html">Changelog</title><link href="http://localhost:4000/changelog/2020/07/05/Changelog.html" rel="alternate" type="text/html" title="Changelog" /><published>2020-07-05T00:00:00-04:00</published><updated>2020-07-05T00:00:00-04:00</updated><id>http://localhost:4000/changelog/2020/07/05/Changelog</id><content type="html" xml:base="http://localhost:4000/changelog/2020/07/05/Changelog.html">&lt;p&gt;Presence of website!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Changes to Rules and Regulations&lt;/strong&gt;&lt;br /&gt;
 Replaced all instances of:&lt;/p&gt;
@@ -203,72 +214,4 @@ Old:&lt;br /&gt;
     &lt;li&gt;Players who finish in first or second place in tiers D, F, G, and H promote.&lt;/li&gt;
     &lt;li&gt;Players who finish in fifth or sixth place in tiers A, B, C, D, E, F, and G demote.&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>crlundy</name></author><summary type="html">Changes to I. League Structure Old: Quote Each League season lasts for 6 weeks, and is followed by a 2 week break. Players are divided into groups of at most 6 players. Groups are arranged in tiered divisions. There is a single A division, 2 B divisions, 4 C divisions, 8 D divisions, up to 16 E divisions, and up to 32 F divisions. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D, E, and F) and Dominion Online level for new players. At the end of the season the players with 1st place ranks promote to the next level, while players ranked 5th or 6th place demote. E division demotions (to F) will possibly be more lenient depending on the number of players.</summary></entry><entry><title type="html">Changelog</title><link href="http://localhost:4000/changelog/2019/12/08/Changelog.html" rel="alternate" type="text/html" title="Changelog" /><published>2019-12-08T00:00:00-05:00</published><updated>2019-12-08T00:00:00-05:00</updated><id>http://localhost:4000/changelog/2019/12/08/Changelog</id><content type="html" xml:base="http://localhost:4000/changelog/2019/12/08/Changelog.html">&lt;p&gt;&lt;strong&gt;Changes to III. Standings&lt;/strong&gt;&lt;br /&gt;
-Old:&lt;br /&gt;
-&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Ties are broken in the following order.&lt;/p&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Number of total points from matches between the tied players&lt;/li&gt;
-    &lt;li&gt;The sum of the number of points received in each match multiplied by the total score of the opponent from that match.&lt;/li&gt;
-    &lt;li&gt;If 2 players are still tied after the 2nd tiebreaker in a position with promotion or demotion consequences, they play a playoff match of 2 games. Each player starts once. If the players are tied after 2 games, they play one final game with random starting player in which player 2 wins ties. A player may choose not to play the playoff match, and thereby concede. If one player fails to respond promptly or is unable to play, that player will demote or not promote. If neither player responds promptly or both players respond but cannot arrange a match in the required time, moderators will flip a coin. If more than 2 players are tied after the 2nd tiebreaker, moderators will randomly order them.&lt;/li&gt;
-  &lt;/ol&gt;
-
-  &lt;p&gt;At the end of the season, players who place 1st in their groups will promote to the next higher division, and players who place 5th and 6th will demote to the next lower division. For instance, the players who place 5th and 6th in the A group will demote to the B division, and the players who place first in B1 and B2 groups will promote to the A division to take their places. We might possibly be more lenient in the lower divisions depending on overall numbers.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;New:&lt;br /&gt;
-&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;In the case of a tie within a division, the player with the total number of points from the matches between the tied players wins. If there is still a tie:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;If the tie is between two players, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.&lt;/li&gt;
-    &lt;li&gt;If the tie is between three or more players, the moderators will randomly break the tie.&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Players who finish in first place in tiers B, C, D, E, and F promote.&lt;/li&gt;
-    &lt;li&gt;Players who finish in fifth place or sixth place in tiers A, B, C, and D demote.&lt;/li&gt;
-    &lt;li&gt;Players who finish in sixth place in tier E demote.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Changes to IV. Joining and Leaving&lt;/strong&gt;&lt;br /&gt;
-Old:&lt;br /&gt;
-&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;To join the League, you must join the Dominion (Card Game) Discord server. To join the Dominion Discord server follow this link: https://discord.gg/jeN2sAB&lt;/p&gt;
-
-  &lt;p&gt;Once you have joined the Discord Server you may sign up to join the League here: http://forum.dominionstrategy.com/index.php?board=60.0&lt;/p&gt;
-
-  &lt;p&gt;You’re not required to own any cards in order to sign up, and who owns what will not have any influence on how players are placed into groups.
-When a player joins for the first time, they are placed in a division based on the availability of spots and their level on the Dominion Online Leaderboard.
-At the end of each season, players must indicate if they intend to stay in the League, or leave for the next season. You will not automatically re-enter the next season without specifying your preference. Please indicate whether you intend to return for the next season or not in your division’s scheduling thread before the end of the season.&lt;/p&gt;
-
-  &lt;p&gt;Available spots that are created when players leave the League will be filled with players in the following order:&lt;/p&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Players who left the League after a prior season within the last year (up to six seasons before the new one) are inserted at the level they previously earned.&lt;/li&gt;
-    &lt;li&gt;Players who are joining for the first time, or who we were unable to place based on criteria #1 will be inserted into remaining openings by their rating on the Dominion Online leaderboard.&lt;/li&gt;
-    &lt;li&gt;The player or players who had the best score(s) in their division among those who placed 2nd are promoted.&lt;/li&gt;
-    &lt;li&gt;The player or players who had the best score(s) in their division among those who placed 5th skip demotion.&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;New:&lt;br /&gt;
-&lt;strong&gt;Quote&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;To join the League, you must join the Dominion (Card Game) Discord server: https://discord.gg/jeN2sAB. Once you have joined the Discord Server you may sign up to join the League by replying to the latest Signups post: http://forum.dominionstrategy.com/index.php?board=60.0. You do not need to purchase a subscription to Dominion Online, and Dominion Online subscriptions have no bearing on players’ tiers, divisions, or seeding.&lt;/p&gt;
-
-  &lt;p&gt;At the end of each season, players who want to return for the following season must fill out the Returning form linked in their division’s Discord channel, otherwise by default they will leave the League. The following priorities are used, in order, to fill the open spots created by players who leave:&lt;/p&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Players returning to the League after playing in one of the past 6 seasons are placed into the tiers they would have most recently returned to, starting with the players that played most recently and with ties broken by seeding. For purposes of this priority only, divisions may have up to 7 players each.&lt;/li&gt;
-    &lt;li&gt;Players returning from before the past 6 seasons, or joining for the first time, are placed into tiers based on their Dominion Online level.&lt;/li&gt;
-    &lt;li&gt;Players who finished in second place with a high score in the previous season are offered a free promotion up to the next higher tier.&lt;/li&gt;
-    &lt;li&gt;Players who finished in fifth place with a high score in the previous season are offered a free promotion to not demote to the next lower tier.&lt;/li&gt;
-  &lt;/ol&gt;
-
-  &lt;p&gt;When multiple players are offered free promotions (as described above) to a tier with not enough open spots for all of them, that tier determines how players are chosen: For tiers A, B, and C, the moderators arrange play-in matches between those players. For all other tiers, the moderators choose the players at their discretion, taking into account time zones.&lt;/p&gt;
-
-  &lt;p&gt;During a season, the moderators may, at their discretion, fill new open spots from a waiting list.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>crlundy</name></author><summary type="html">Changes to III. Standings Old: Quote Ties are broken in the following order. Number of total points from matches between the tied players The sum of the number of points received in each match multiplied by the total score of the opponent from that match. If 2 players are still tied after the 2nd tiebreaker in a position with promotion or demotion consequences, they play a playoff match of 2 games. Each player starts once. If the players are tied after 2 games, they play one final game with random starting player in which player 2 wins ties. A player may choose not to play the playoff match, and thereby concede. If one player fails to respond promptly or is unable to play, that player will demote or not promote. If neither player responds promptly or both players respond but cannot arrange a match in the required time, moderators will flip a coin. If more than 2 players are tied after the 2nd tiebreaker, moderators will randomly order them. At the end of the season, players who place 1st in their groups will promote to the next higher division, and players who place 5th and 6th will demote to the next lower division. For instance, the players who place 5th and 6th in the A group will demote to the B division, and the players who place first in B1 and B2 groups will promote to the A division to take their places. We might possibly be more lenient in the lower divisions depending on overall numbers.</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>crlundy</name></author><summary type="html">Changes to I. League Structure Old: Quote Each League season lasts for 6 weeks, and is followed by a 2 week break. Players are divided into groups of at most 6 players. Groups are arranged in tiered divisions. There is a single A division, 2 B divisions, 4 C divisions, 8 D divisions, up to 16 E divisions, and up to 32 F divisions. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D, E, and F) and Dominion Online level for new players. At the end of the season the players with 1st place ranks promote to the next level, while players ranked 5th or 6th place demote. E division demotions (to F) will possibly be more lenient depending on the number of players.</summary></entry></feed>
