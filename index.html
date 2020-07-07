@@ -18,10 +18,12 @@ layout: default_index
   <div class="container">
 
     <section class="introduction">
+      <div class="spacing-50"></div>
+      <!-- Text Introduction -->
       <div class="text">
-          <p>
-            Each season of the <a href="about.html">Dominion League</a> is a round robin tournament that lasts 6 weeks and is open to players of all levels. Competitors are placed into tiers based on their level and compete within the tiers to promote to a higher tier, or demote to a lower tier. The tournament is hosted on the <a href="https://discord.gg/vMmmMBu">Dominion Discord server</a>. It is a fun and friendly competition where you can learn more about the game, play competitive Dominion and make friends.
-          </p>
+        <p style="line-height:1.5">
+          Each season of the <a href="about.html">Dominion League</a> is a round robin tournament that lasts 6 weeks and is open to players of all levels. Competitors are placed into tiers based on their level and compete within the tiers to promote to a higher tier, or demote to a lower tier. The tournament is hosted on the <a href="https://discord.gg/vMmmMBu">Dominion Discord server</a>. It is a fun and friendly competition where you can learn more about the game, play competitive Dominion and make friends. <a href="sign-ups">Sign up</a> today!
+        </p>
         <br>
         <div class="reason group">
           <p>Get matched with a group of 5 other players at your same skill level</p>
@@ -35,21 +37,58 @@ layout: default_index
           <p>Advance up the League tiers by winning in your group!</p>
           <div></div>
         </div>
-        <br>
+      </div>
 
+      <hr class="hr-home">
+
+      <!--Latest Posts-->
+      <h3>Check out our latest posts!</h3>
+      <h4><a href="/posts" style="text-decoration:none">-  &nbsp&nbsp View more posts &nbsp&nbsp -</a></h4>
+      <section class="flex">
+          {% assign i = 0 %}
+          {% for post in site.posts %}
+
+            {% if i >= 3 %}
+              {% break %}
+            {% endif %}
+
+            {% if post.path contains 'rules-changelog' %}
+            {% else %}
+
+              {% assign i = i | plus:1 %}
+              <div class="thirds">
+                <h4>{{post.title}}</h4>
+                <h5>{{post.subtitle}}</h5>
+                <p class="info" style="font-size: 14px">
+                  <span>{{post.date | date: "%B %d, %Y" }}</span>
+                  <span>
+                  by
+                  {{post.author}}
+                  </span>
+                </p>
+                <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+                <a class="read-more-home" href="{{post.url}}">Read more...</a>
+              </div>
+
+            {% endif %}
+          {% endfor %}
+      </section>
+
+      <hr class="hr-home">
+
+      <!-- New to Dominion?-->
+      <div class="text">
         <h4>New to Dominion?</h4>
         <p>Play Dominion using its official online client: <a href="http://dominion.games">dominion.games</a>
         <br>
         <a href="http://wiki.dominionstrategy.com/index.php/Dominion"> Learn more about the game &#8594 </a></p>
       </div>
-    </section>
 
-    <hr>
-    <div class="container-centered">
-    <h3>Upcoming Dominion League Matches</h3>
-      <br>
-      <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=UTC&amp;src=ZzdkcWxiazNrZ2o2MnNnb2JxNXMxa2lzbm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Nms3amk2cXU2Zm9qcHFwb2E3Y2dmYmM1MmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=M2VhaTU1czY1Zzg2ZG40dDVsY2hob29mcjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=MmUyMG1sZDV2OHM5dWhoOGQ0dXZtbGp1ZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=cXMxNGhzZDUyanR0bjRsMWxub2JiM2ptZzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZnE2aTZoY3AwY2ZvMnBvMmJqNWEyaHVtZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWd2MHBkMDhyMjA2NGI0N2c3aTBuczFuYmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZGY3MzY3bTdwcGxicjQxNGhnZjU1ajFjb2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;mode=AGENDA&amp;title=Dominion%20League%20Matches" style="border-width:0" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
-      <!--<iframe width="100%" src="https://calendar.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uqcdmdhc12mjis1sa0iv5e072c%40group.calendar.google.com&amp;color=%23333333&amp;ctz=UTC" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
-    </div>
+      <!-- Match Calendar -->
+      <hr class="hr-home">
+      <h3>Upcoming Dominion League Matches</h3>
+        <br>
+        <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=UTC&amp;src=ZzdkcWxiazNrZ2o2MnNnb2JxNXMxa2lzbm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Nms3amk2cXU2Zm9qcHFwb2E3Y2dmYmM1MmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=M2VhaTU1czY1Zzg2ZG40dDVsY2hob29mcjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=MmUyMG1sZDV2OHM5dWhoOGQ0dXZtbGp1ZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=cXMxNGhzZDUyanR0bjRsMWxub2JiM2ptZzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZnE2aTZoY3AwY2ZvMnBvMmJqNWEyaHVtZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWd2MHBkMDhyMjA2NGI0N2c3aTBuczFuYmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZGY3MzY3bTdwcGxicjQxNGhnZjU1ajFjb2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;mode=AGENDA&amp;title=Dominion%20League%20Matches" style="border-width:0" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>
   </div>
 </div>

@@ -28,8 +28,10 @@ blockquote {
   border-left: 5px solid gray;
   background: lightgrey;
 }
+
 .introduction {
-  padding-top: 80px
+  padding-top: 80px;
+  text-align: center;
 }
 
 .introduction > div {
@@ -53,11 +55,18 @@ blockquote {
   font-size: 18px;
 }
 
-.text hr {
+.hr-about {
   align: center;
   border-top: 1px solid darkgray;
   margin: 40px 100px;
 }
+
+.hr-home {
+  align: center;
+  border-top: 1px solid lightgrey;
+  margin: 80px 8%;
+}
+
 .text p {
   font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
   font-size: 20px;
@@ -73,7 +82,7 @@ blockquote {
   .text {
     margin: 0px 0px;
   }
-  .text hr {
+  .hr-about {
     margin: 40px 30px;
   }
 }
@@ -483,15 +492,26 @@ h6 {
   line-height: 2em;
 }
 .links a {
-  color: #999;
+  color: #6b6a6a;
+  text-decoration: none;
+  font-size: 18.5px;
 }
 .links a:hover {
-  color: #333;
+  color: #ca2017;
+  text-decoration: underline;
 }
 
 /* Div Spacings */
 .spacing {
   height: 20px;
+}
+
+.spacing-40 {
+  height: 40px;
+}
+
+.spacing-50 {
+  height: 50px;
 }
 
 /* Grids */
@@ -565,7 +585,7 @@ h6 {
 
 /* Filters */
 .btn {
-  border: none;
+  border: 1px solid lightgray;
   outline: none;
   padding: 12px 16px;
   background-color: #f1f1f1;
@@ -603,7 +623,7 @@ h6 {
 #scrollToTopBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
+  bottom: 35px; /* Place the button at the bottom of the page */
   right: 10%; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -922,6 +942,7 @@ fieldset[disabled] .btn-xl.active {
 
     .introduction {
       padding-top: 40px
+      text-align: center;
     }
 
     .mobile {
@@ -1058,7 +1079,7 @@ header .intro-text .intro-heading img {
 }
 
 section {
-    padding: 100px 0 50px 0;
+    padding: 50px 0 40px 0;
 }
 
 section h2.section-heading {
@@ -1089,7 +1110,7 @@ section h3.moderator-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0 50px 0;
+        padding: 100px 0 50px 0;
     }
 }
 
@@ -1303,9 +1324,58 @@ body {
 .instructions-div {
   background-color: #f5f3f2;
   line-height: 30px;
-  padding: 15px 10px;
+  padding: 15px 20px 20px 15px;
   margin: 20px;
 }
+
+.instructions-div {
+  text-decoration: none;
+}
+
+/* Newsletter Posts */
+.posts-div {
+  background-color: #f5f3f2;
+  line-height: 30px;
+  padding: 15px 20px 20px 15px;
+  margin: 20px;
+}
+
+.posts-div {
+  text-decoration: none;
+}
+
+.posts-div h4 {
+  font-size: 21px;
+  padding: 8px 0px;
+}
+
+.posts-div a {
+  text-decoration: none;
+
+}
+
+.posts-info {
+  font-size: 1.38571rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.read-more {
+  background-color: #ca1027;
+  color: white;
+  opacity: 80%;
+  padding: 8px 15px;
+}
+
+.read-more-home {
+  background-color: #ca1027;
+  color: white;
+  opacity: 80%;
+  padding: 8px 15px;
+  position: absolute;
+  bottom: 15px;
+}
+
 
 @media(max-width:600px) {
     .instructions-div {
@@ -1323,7 +1393,45 @@ body {
   left: 0;
   right: 0;
   margin-top: 75px;
+}
 
+/* Index Posts */
+.flex {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.thirds {
+  padding: 20px 20px 55px 20px;
+  width: 33%;
+  text-align:left;
+  background-color: #E8E8E8;
+  margin: 10px 10px;
+  position: relative;
+}
+
+@media(max-width:600px) {
+  .flex {
+    display: block;
+  }
+
+  .thirds {
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+  }
+}
+
+/* FAQ Images */
+img[alt=faq_images] {
+  margin: 5px 0px 10px 0px;
+  width: 60%;
+}
+
+@media(max-width:500px) {
+  img[alt=faq_images] {
+    width: 90%;
+  }
 }
 
 

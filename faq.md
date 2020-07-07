@@ -26,10 +26,15 @@ Credit: Thanks to gloures, who onboarded hundreds of new players and compiled mo
 ##### How do I sign up?
 Navigate to [Sign up](https://dominionleague.org/sign-ups.html) and fill out your details by completing the Google form embedded there.
 
-Make sure you join the Dominion Discord server (https://discord.gg/vMmmMBu) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
+Make sure you join the Dominion Discord server (<https://discord.gg/vMmmMBu>) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
 
 ##### What is required to sign up?
-You are required to have a Dominion Online (http://dominion.games) account and join the Dominion Discord server (https://discord.gg/vMmmMBu). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
+You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/vMmmMBu>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
+
+##### How do I play a rated game?
+On the online Dominion client (<http://dominion.games>), click on the tab **Matching**. From there, make sure that from the Automatch options provided, you have selected `Player Count: 2P` and `Rated Games: Rated` .
+![faq_images](/img/faq/Capture_Ranked.PNG)
+
 
 ##### I didn’t respond in time to Discord message to confirm my signup. Can sign up again?
 If the deadline hasn't passed, you are encouraged to re-sign up by filling out the Google form again.
@@ -199,7 +204,7 @@ The default is to use the VP tracker. This is also the default setting for a tab
 
 ##### What other settings should I be aware of?
 We encourage you to uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
-
+![faq_images](/img/faq/table_settings.PNG)
 
 #### 6. Details and backend
 
