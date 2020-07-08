@@ -7,7 +7,7 @@
     - name: Rules
       path: rules
     - name: F.A.Q.
-      path: faq.html
+      path: faq
     - name: Moderators
       path: moderators
 - name: Standings
@@ -15,7 +15,7 @@
   section_id: standings
   children:
     - name: Current Season
-      path: current_standings.html
+      path: current_standings
     - name: Player Database
       path: player_database
     - name: Past Seasons
