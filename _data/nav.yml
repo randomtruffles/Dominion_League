@@ -22,8 +22,8 @@
       path: past_standings
 - name: Matches
   path: matches
-- name: Posts
-  path: posts
+- name: News
+  path: news
   section_id: newsletters
 - name: Contact
   path: contact
