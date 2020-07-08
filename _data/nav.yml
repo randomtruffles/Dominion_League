@@ -1,29 +1,29 @@
 - name: Sign Up
-  path: sign-ups.html
+  path: sign-ups
 - name: About
-  path: about.html
+  path: about
   section_id: about
   children:
     - name: Rules
-      path: rules.html
+      path: rules
     - name: F.A.Q.
       path: faq.html
     - name: Moderators
-      path: moderators.html
+      path: moderators
 - name: Standings
-  path: current_standings.html
+  path: current_standings
   section_id: standings
   children:
     - name: Current Season
       path: current_standings.html
     - name: Player Database
-      path: player_database.html
+      path: player_database
     - name: Past Seasons
-      path: past_standings.html
+      path: past_standings
 - name: Matches
-  path: matches.html
+  path: matches
 - name: Posts
-  path: posts.html
+  path: posts
   section_id: newsletters
 - name: Contact
-  path: contact.html
+  path: contact
