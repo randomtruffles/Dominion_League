@@ -4,16 +4,19 @@ backend:
   branch: master
   site_domain: wizardly-pike-5c1623.netlify.com
 
-media_folder: "images/uploads"
+media_folder: "img/uploads"
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
     folder: "_posts/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Post Layout", name: "layout", widget: "select", options: ["post", "no_sidebar_post"], default: ["post"]}
+      - {label: "Categories", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
