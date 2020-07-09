@@ -1,7 +1,7 @@
 ---
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
-layout: fixed_post
+layout: no_sidebar_post
 date: 2020-05-20
 categories: pinned faq
 ---
