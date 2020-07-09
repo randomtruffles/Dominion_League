@@ -5,8 +5,8 @@ layout: post
 date: 2020-05-12
 categories: pinned
 author: SamE
-
 ---
+
 **Hello everyone**,
 
 Season 39 started in mid-March, as lockdowns around the world were coming into effect. It was, unsurprisingly, our biggest season ever. But that was apparently just the beginning.

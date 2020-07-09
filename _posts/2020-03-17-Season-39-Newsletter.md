@@ -6,8 +6,8 @@ date: 2020-03-17
 categories:
 author: SamE
 description:
-
 ---
+
 Hello everyone,
 
 Season 39 will be the first Dominion League season with eight tiers. As I've been explaining to people, the easiest way to think about it is that we've added tiers D/E and E/F, and then renamed all of the tiers to just the letters A through H. In fact, the E and F transition schemes from Season 38 are the exact same as the F and H transition schemes going forward, so it's really as if E and F players were already in F and H, respectively. Here are those transition schemes again:
