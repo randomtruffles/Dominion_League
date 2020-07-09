@@ -6,11 +6,9 @@ title: Dominion League Sign-ups
 <div class="section">
   <h3>Dominion League Sign-ups</h3>
   {% for post in site.categories.signups %}
-    {% if forloop.index > 1 %}
-      {% break %}
-    {% endif %}
     <p>
       {{ post.content }}
     </p>
+    {% break %}
   {% endfor %}
 </div>
