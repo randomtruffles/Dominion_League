@@ -1,9 +1,9 @@
 ---
-layout: post # Do not change
-date: 2020-07-05 # Date goes here in YYYY-MM-DD
-categories: changelog
-author: truffles # Your name here
 title: 2020-07-05 Changelog
+date: 2020-07-05
+author: truffles
+layout: post
+categories: changelog
 ---
 Presence of website!
 
@@ -13,4 +13,4 @@ Replaced all instances of:
 
 to:
 
-> in the latest Signups post: https://dominionleague.org/sign-ups.html`
+> in the latest Signups post: https://dominionleague.org/sign-ups.html
