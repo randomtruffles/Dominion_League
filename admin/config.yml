@@ -45,16 +45,16 @@ collections:
       - {label: "Post Layout", name: "layout", widget: "hidden", default: "simple_post"}
       - {label: "Categories", name: "categories", widget: "hidden", default: "changelog"}
       - {label: "Body", name: "body", widget: "markdown"}
-- name: "rules"
-  label: "Rules"
-  files:
-    - label: "Rules and Regulations"
-      name: "rules"
-      file: "rules.md"
-      fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Subtitle", name: "subtitle", widget: "string"}
-        - {label: "Layout", name: "layout", widget: "hidden"}
-        - {label: "Date", name: "date", format: "YYYY-MM-DD", widget: "datetime"}
-        - {label: "Categories", name: "subtitle", widget: "hidden"}
-        - {label: "Body", name: "body", widget: "markdown"}
+  - name: "rules"
+    label: "Rules"
+    files:
+      - label: "Rules and Regulations"
+        name: "rules"
+        file: "rules.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Date", name: "date", format: "YYYY-MM-DD", widget: "datetime"}
+          - {label: "Categories", name: "categories", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
