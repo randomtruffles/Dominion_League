@@ -2,20 +2,9 @@
 layout: default
 ---
 
-<div class='content'>
+<div class="posts-content">
     <p class='info'>
       <span>Last updated: {{ page.date | date: "%B %d, %Y" }}</span>
-      <!--
-      <span>
-        In
-        {% for cat in page.categories %}
-          <a href="#">{{cat}}</a>
-          {% unless forloop.last %}
-              ,
-          {% endunless %}
-        {% endfor %}
-      </span>
-      -->
     </p>
     <h3>{{page.title}}</h3>
     <h5> {{page.subtitle}} </h5>

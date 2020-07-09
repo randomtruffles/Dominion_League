@@ -548,6 +548,18 @@ h6 {
   padding: 0px 20px;
 }
 
+.posts-content {
+  padding: 0px 20px;
+}
+
+.posts-content img {
+  max-width: 100%;
+}
+
+.posts-content hr {
+  border-top: 2px solid gray;
+}
+
 .info {
   font-size: 1.18571rem;
   text-transform: uppercase;

@@ -2,7 +2,7 @@
 layout: newsletters
 ---
 
-<div class='content'>
+<div class="posts-content">
     <h3>{{page.title}}</h3>
     <h5> {{page.subtitle}} </h5>
     <p class='info'>
@@ -11,17 +11,6 @@ layout: newsletters
       <span>
         by {{page.author}}
       </span>
-      <!--
-      <span>
-        In
-        {% for cat in page.categories %}
-          <a href="#">{{cat}}</a>
-          {% unless forloop.last %}
-              ,
-          {% endunless %}
-        {% endfor %}
-      </span>
-      -->
     </p>
     {{content}}
   </div>
