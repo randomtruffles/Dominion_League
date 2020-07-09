@@ -5,7 +5,7 @@ title: Dominion League Player Database
 <div class="home">
   <div id="player-database" class="container-centered">
     <h3>Player Database</h3>
-    <h5><a href="{{site.baseurl}}/past_standings.html">View All Past Season Standings</a></h5>
+    <h5><a href="{{site.baseurl}}/past_standings">View All Past Season Standings</a></h5>
     <div class="spacing"> </div>
     <p> Search for a player (eg. Mic Qsenoch) and view their current season results (if they are playing) <br> and league history for all seasons they've participated in. </p>
     <div class="spacing"> </div>
@@ -31,7 +31,7 @@ title: Dominion League Player Database
       <h5> URL Searching </h5>
       <p> You can also search by adding the <code>player</code> param to this page's url, using <code>%20</code> to represent spaces between names.
           <br>
-          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="{{site.baseurl}}/player_database.html?player=mic%20qsenoch">this page's url.</a>.
+          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="{{site.baseurl}}/player_database?player=mic%20qsenoch">this page's url.</a>.
           <br>
           <br>
       </p>
@@ -98,7 +98,7 @@ function searchPlayerHistory(param=false){
       player_name = player_param.toLowerCase();
     } else {
       url_param_name = entered_player_name.replace(/ /g, "%20");
-      location.replace("{{site.baseurl}}/player_database.html?player="+url_param_name);
+      location.replace("{{site.baseurl}}/player_database?player="+url_param_name);
       return;
     }
 
@@ -166,7 +166,7 @@ function searchPlayerHistory(param=false){
 
         var current_season_btn = document.createElement("button");
         current_season_btn.classList.add('current-season-collapsible');
-        current_season_btn.innerHTML = "<a href=\"{{site.baseurl}}/current_standings.html\"> Season " + current_season_num.toString() + "</a> " + current_season_div + " Division - (ongoing)";
+        current_season_btn.innerHTML = "<a href=\"{{site.baseurl}}/current_standings\"> Season " + current_season_num.toString() + "</a> " + current_season_div + " Division - (ongoing)";
         current_season_table.appendChild(current_season_btn);
 
         // Add loading symbol
@@ -221,7 +221,7 @@ function searchPlayerHistory(param=false){
         var division_heading = document.createElement("td");
         division_heading.setAttribute('colspan', 5);
         division_heading.classList.add('database-division-header');
-        var season_url = "<a href=\"past_standings/season" + season + "_past_standings.html\">Season " + season + "</a>";
+        var season_url = "<a href=\"past_standings/season" + season + "_past_standings\">Season " + season + "</a>";
         division_heading.innerHTML = season_url + " " + division+ " Division";
         division_heading.style.backgroundColor = "lightgrey";
         division_row.appendChild(division_heading);
@@ -266,7 +266,7 @@ function searchPlayerHistory(param=false){
 
             // Generate URL for database
             var row_info_name_param = row_info_name.replace(/ /g, "%20")
-            var row_info_url_name = `<a class="${row_class}" href="{{site.baseurl}}/player_database.html?player=${row_info_name_param}">${row_info_name}</a>`;
+            var row_info_url_name = `<a class="${row_class}" href="{{site.baseurl}}/player_database?player=${row_info_name_param}">${row_info_name}</a>`;
 
             var if_champion = "";
             // figure out if champion
