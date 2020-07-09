@@ -53,7 +53,7 @@ collections:
         file: "rules.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string", widget: "hidden"}
+          - {label: "Subtitle", name: "subtitle", widget: "hidden"}
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Updated Date", name: "date", format: "YYYY-MM-DD", widget: "datetime"}
           - {label: "Categories", name: "categories", widget: "hidden"}
@@ -63,7 +63,7 @@ collections:
         file: "faq.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string", widget: "hidden"}
+          - {label: "Subtitle", name: "subtitle", widget: "hidden"}
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Updated Date", name: "date", format: "YYYY-MM-DD", widget: "datetime"}
           - {label: "Categories", name: "categories", widget: "hidden"}
