@@ -66,6 +66,13 @@ blockquote {
   margin: 80px 8%;
 }
 
+.hr-navbar{
+  margin-top: 0px;
+  margin-bottom: 21px;
+  border: 0;
+  border-top: 1px solid #e8e8e8;
+}
+
 .text p {
   font-family: {{site.data.template.font.secondary }};
   font-size: 20px;
