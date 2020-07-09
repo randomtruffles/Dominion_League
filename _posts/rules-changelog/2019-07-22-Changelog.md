@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2019-07-22 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: crlundy # Your name here
+title: 2019-07-22 Changelog
 ---
 **Changes to II. Match Structure and Policies**  
 Old:  

@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2020-03-16 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: crlundy # Your name here
+title: 2020-03-16 Changelog
 ---
 **Changes to I. League Structure**  
 Old:  

@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2020-05-13 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: crlundy # Your name here
+title: 2020-05-13 Changelog
 ---
 **Changes to IV. Joining and Leaving**  
 Old:  

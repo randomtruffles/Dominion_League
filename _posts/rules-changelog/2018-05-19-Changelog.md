@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2018-05-19 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: SamE # Your name here
+title: 2018-05-19 Changelog
 ---
 
 Fixed mistaken wording regarding the way expansions work on Dominion Online:

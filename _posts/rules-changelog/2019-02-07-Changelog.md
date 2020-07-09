@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2019-02-07 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: Gazbag # Your name here
+title: 2019-02-07 Changelog
 ---
 
 Remove the bolded is

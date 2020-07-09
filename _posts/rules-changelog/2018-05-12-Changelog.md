@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2018-05-12 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: SamE # Your name here
+title: 2018-05-12 Changelog
 ---
 
 Updated the rules on old players returning: Now they have to be returning from a season in the past year.

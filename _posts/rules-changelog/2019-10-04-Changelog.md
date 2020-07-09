@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2019-10-04 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: crlundy # Your name here
+title: 2019-10-04 Changelog
 ---
 **Changes to**  
 Old:  

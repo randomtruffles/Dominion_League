@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2018-04-02 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: SamE # Your name here
+title: 2018-04-02 Changelog
 ---
 
 Changes for Season 27:

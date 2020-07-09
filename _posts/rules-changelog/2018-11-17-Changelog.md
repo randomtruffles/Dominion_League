@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2018-11-17 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: SamE # Your name here
+title: 2018-11-17 Changelog
 ---
 
 Based on something that actually happened (and affected the winner of a division!), we've decided to clarify the rule about when players' remaining matches are "simulated." Three complete matches are not directly necessary, just the corresponding number of games.

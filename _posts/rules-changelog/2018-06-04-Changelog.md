@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2018-06-04 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: SamE # Your name here
+title: 2018-06-04 Changelog
 ---
 
 I finally got around to updating the rules on dropping players mid-season as we voted on last week.

@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2018-05-27 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: SamE # Your name here
+title: 2018-05-27 Changelog
 ---
 
 volfied caught a part of the rules that was under the old "F is the new E" thinking... there is still demotion and promotion between E and F like any other pair. (We might want to consider creating a beginners G division at some point...)

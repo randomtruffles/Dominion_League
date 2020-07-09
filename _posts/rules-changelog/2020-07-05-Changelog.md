@@ -3,6 +3,7 @@ layout: post # Do not change
 date: 2020-07-05 # Date goes here in YYYY-MM-DD
 categories: changelog
 author: truffles # Your name here
+title: 2020-07-05 Changelog
 ---
 Presence of website!
 
