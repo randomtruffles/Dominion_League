@@ -565,6 +565,7 @@ h6 {
 
 .posts-content hr {
   border-top: 2px solid gray;
+  border-radius: 7px 7px 7px 7px;
 }
 
 .info {
