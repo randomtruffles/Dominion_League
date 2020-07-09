@@ -18,7 +18,7 @@ collections:
       - {label: "Publish Date", hint: "Press the Now button", name: "date", format: "YYYY-MM-DD", widget: "datetime"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Post Layout", name: "layout", widget: "select", options: ["post", "no_sidebar_post"], default: "post"}
-      - {label: "Categories (Optional)", name: "categories", hint: "You may select multiple categories. Select pinned if you want to pin the post", required: false, widget: "select", multiple: true, options: ["pinned", "newsletters"]}
+      - {label: "Categories", name: "categories", hint: "You may select multiple categories. Select pinned if you want to pin the post", required: false, widget: "select", multiple: true, options: ["pinned", "newsletters"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "signups" # Used in routes, e.g., /admin/collections/blog
     label: "Sign-ups" # Used in the UI

@@ -5,7 +5,6 @@ date: 2020-07-09
 author: tracer
 layout: post
 categories:
-  - pinned
 ---
 The Season 40 Championship Match is coming up this Sunday at 18 UTC between [Mic Qsenoch](http://dominionleague.org/player_database?player=Mic%20Qsenoch), playing for his 3rd consecutive championship and 16th overall, and [nasmith99](http://dominionleague.org/player_database?player=nasmith99), last season's runner up. Commentary on the match will be provided by former champion tracer and xyrix, this season's 3rd place finisher in A. You can watch by spectating on [dominion.games](https://dominion.games/), and listen to the commentary in one of the voice channels in the Dominion Discord.
 
