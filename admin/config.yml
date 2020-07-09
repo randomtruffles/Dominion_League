@@ -37,7 +37,7 @@ collections:
     label: "Rules Changelog" # Used in the UI
     folder: "_posts/rules-changelog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-Changelog" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-Changelog" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string", default: "YYYY-MM-DD Changelog"}
       - {label: "Publish Date", name: "date", format: "YYYY-MM-DD", widget: "datetime"}
