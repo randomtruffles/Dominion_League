@@ -568,6 +568,29 @@ h6 {
   border-radius: 7px 7px 7px 7px;
 }
 
+.posts-content-text {
+  background-color: #f7f6f5;
+  height: 100%;
+  border: 1px solid rgb(201, 201, 201, 0.7);
+  padding: 15px 20px;
+  box-shadow: 5px 8px darkgrey;
+}
+
+.posts-content-text img {
+  max-width: 100%;
+}
+
+.posts-content-text iframe {
+  max-width: 100%;
+}
+
+
+.posts-content-text hr {
+  border-top: 2px solid gray;
+  border-radius: 7px 7px 7px 7px;
+}
+
+
 .info {
   font-size: 1.18571rem;
   text-transform: uppercase;
@@ -1353,10 +1376,12 @@ body {
 
 /* Newsletter Posts */
 .posts-div {
-  background-color: #f5f3f2;
+  background-color: #f7f6f5;
   line-height: 30px;
   padding: 15px 20px 20px 15px;
   margin: 20px;
+  border: 1px solid rgb(201, 201, 201, 0.7);
+  box-shadow: 6px 6px darkgrey;
 }
 
 .posts-div {

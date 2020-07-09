@@ -6,7 +6,6 @@ layout: post
 date: 2020-07-01
 categories:
 description:
-
 ---
 Hello everyone!
 
