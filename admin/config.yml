@@ -2,7 +2,7 @@ backend:
   name: github
   repo: randomtruffles/Dominion_League
   branch: master
-  site_domain: wizardly-pike-5c1623
+  site_domain: wizardly-pike-5c1623.netlify.com
 
 media_folder: "images/uploads"
 
