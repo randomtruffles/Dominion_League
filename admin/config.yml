@@ -6,6 +6,8 @@ backend:
 
 media_folder: "img/uploads"
 
+publish_mode: editorial_workflow
+
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI
