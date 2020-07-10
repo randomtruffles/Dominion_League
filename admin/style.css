@@ -53,8 +53,11 @@ iframe {
 
 blockquote {
   padding: 10.5px 21px;
-  margin: 0 0 21px;
+  margin: 0 0 21px 15px;
   font-size: 14px;
   border-left: 5px solid gray;
   background: lightgrey;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
 }
