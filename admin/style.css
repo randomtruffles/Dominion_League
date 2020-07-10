@@ -1,13 +1,13 @@
 body {
     overflow-x: hidden;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif
     font-size: 17px;
     /*line-height: 175%;*/
-    color: #{{ site.data.template.color.secondary-dark }};
+    color: #333;
 }
 
 p {
-    font-family: {{ site.data.template.font.secondary }}
+    font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
 
 p.large {
@@ -25,11 +25,11 @@ a.active {
 a:hover,
 a:focus,
 a:active {
-    color: #{{ site.data.template.color.primary }};
+    color: #000;
 }
 
 a {
-    color: #{{ site.data.template.color.secondary }};
+    color: #ca2017;
     text-decoration: underline;
 }
 
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: {{ site.data.template.font.primary }};
+    font-family: Merriweather, "Source Serif Pro", "Roboto Slab", "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
