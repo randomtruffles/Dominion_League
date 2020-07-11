@@ -3,8 +3,8 @@
 import json
 
 # Open file containing all league history
-with open('../_data/leagueHistory_20200602.json') as file:
-    data = json.load(file)
+with open('../_data/friendly_league_history.json') as file:
+    data = json.load(file)["seasons"]
 # Open file containing championship videos
 with open('../_data/championship_videos.json') as file:
     videos = json.load(file)
@@ -48,23 +48,13 @@ def create_th(text, attr=""):
 def create_td(text, attr=""):
     return "<td{}>{}</td>".format(attr, text)
 
-def fpct(pct):
-    return "{0:.0%}".format(pct)
-
-# Value is between 0 and 100.
-def assign_color(value):
-    gradient = ["E77B72", "E88372", "EA8C71", "EC956F", "EF9E6E", "F2A76D", "F4B06B", "F7B96B", "F9C269", "FCCB67", "FED467", "F2D467", "E2D26B", "D0CF6F", "C0CC73", "AFCA76", "9EC77A", "8CC47E", "7CC181", "6DBF84", "5BBC88"]
-    steps = len(gradient)
-    range = 101
-    def bgcolor(color):
-        return " style=\"background-color:#{}\"".format(color)
-
-    return bgcolor(gradient[(value*steps)//101])
+def bgcolor(color):
+    return " style=\"background-color:{}\"".format(color)
 
 def get_player_database_url(player):
     player_param = player.replace(" ", "%20")
     player_class = "player-past-standings"
-    return "<a href=\"{{{{site.baseurl}}}}/player_database.html?player={}\"\
+    return "<a href=\"{{{{site.baseurl}}}}/player_database?player={}\"\
             class=\"{}\">{}</a>".format(player_param, player_class, player)
 
 """
@@ -104,7 +94,7 @@ def create_modal(season, division, padding):
     youtube_video = ""
     # Get championship video
     if division["name"] == "A1":
-        video = videos[str(season)]
+        video = videos[season]
         if len(video) == 1:
             youtube_video = "<p><a href=\"{}\">Championship Match Video</a></p>".format(video[0])
         elif len(video) > 1:
@@ -142,8 +132,8 @@ def create_header(season):
         nonlocal header
         header += pad_text(text, padding)
 
-    past_season = "<a style=\"text-decoration: none\" href=\"season{}_past_standings.html\">&nbsp;{}&nbsp;</a>".format(int_season-1, "<b><</b>") if int_season > 1 else "&nbsp;&nbsp;&nbsp;"
-    next_season = "<a style=\"text-decoration: none\" href=\"season{}_past_standings.html\">&nbsp;{}&nbsp;</a>".format(int_season+1, "<b>></b>") if int_season < current_season - 1 else "&nbsp;&nbsp;&nbsp;"
+    past_season = "<a style=\"text-decoration: none\" href=\"season{}.html\">&nbsp;{}&nbsp;</a>".format(int_season-1, "<b><</b>") if int_season > 1 else "&nbsp;&nbsp;&nbsp;"
+    next_season = "<a style=\"text-decoration: none\" href=\"season{}.html\">&nbsp;{}&nbsp;</a>".format(int_season+1, "<b>></b>") if int_season < current_season - 1 else "&nbsp;&nbsp;&nbsp;"
 
     # define layout
     top = """---
@@ -186,8 +176,10 @@ def create_footer():
     return footer
 
 
-def create_table(season, division, padding, champion):
+def create_table(season, division_name, padding, champion):
     global largest_division
+    division = data[season][division_name] # data for current division
+
     modal_btn = " <button class=\"results-button\">Match Results</button>"
     def p_add():
         nonlocal padding
@@ -232,7 +224,7 @@ def create_table(season, division, padding, champion):
     table += p("</tr>")
 
     # champion icon hover text
-    champion_icon = " <i class=\" fas fa-crown\" title=\"Winner of championship match between top 2 A players\"></i>"
+    champion_icon = """ <img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="champion-trophy" title="Championship Match between top 2 A division finishers">"""
 
     # Get championship video
     if division["name"] == "A1" and len(videos[str(season)]) >= 1 :
@@ -242,17 +234,14 @@ def create_table(season, division, padding, champion):
     members = division["members"]
     member_rows = {}
 
-    zero_index = 0
-    for m in members:
-        if m["rank"] == 0:
-            zero_index = 1
+    for mem in members:
+        m = members[mem] #m represents member data
 
-    for m in members:
         mrow = ""
         mrow += p("<tr class=\"rows-past-standings\">")
         p_add()
         # get rows
-        rank = m["rank"] + zero_index
+        rank = m["rank"]
         name = m["name"]
         url_name = get_player_database_url(name)
 
@@ -262,18 +251,18 @@ def create_table(season, division, padding, champion):
             return int(num)
           else:
             return num
-        wins = "{0:g}".format(round(m["wins"],2))
-        losses = "{0:g}".format(round(m["losses"],2))
+        wins = m["wins"]
+        losses = m["losses"]
         pct = m["pct"]
 
         mrow += p(create_td(rank))
-        if name == champion:
+        if name.lower() == champion:
             mrow += p(td(url_name + champion_icon))
         else:
             mrow += p(td(url_name))
         mrow += p(td(wins))
         mrow += p(td(losses))
-        mrow += p(td(fpct(pct), assign_color(int(pct*100))))
+        mrow += p(td(pct, bgcolor(m["color"])))
         p_sub()
         mrow += p("</tr>")
 
@@ -298,6 +287,7 @@ def create_table(season, division, padding, champion):
 
 # Create season page
 def create_season_page(season):
+    season_data = data[season]
     page = ""
     padding = 4
 
@@ -309,12 +299,10 @@ def create_season_page(season):
         page += pad(text)
 
     # add tables for each division
-    # page_add("<h3>Season {} Standings</h3>".format(season["season"]))
-    divisions = season["divisions"]
-    champion = season["champion"] if "champion" in season else None
-
-    for d in divisions:
-        page += create_table(season["season"], d, padding, champion)
+    champion = season_data["champion"]
+    for division in season_data:
+        if division != "champion":
+            page += create_table(season, division, padding, champion)
 
     # clean up
     padding -= 2
@@ -325,13 +313,11 @@ def create_season_page(season):
     return page
 
 # Generate pages
-data = data["seasons"]
-
 for season in data:
-    file = "../past_standings/season{}_past_standings.html".format(season["season"])
+    file = "../past_standings/season{}.html".format(season)
     with open(file, 'w') as filetowrite:
         season_page = create_season_page(season)
-        header = create_header(season["season"])
+        header = create_header(season)
         footer = create_footer()
         filetowrite.write(header+season_page+footer)
     largest_division = "A"

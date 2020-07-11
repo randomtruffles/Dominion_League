@@ -1,10 +1,15 @@
 #!/usr/local/bin/python3
-
 import json
 
 # Open file containing all league history
 with open('../_data/leagueHistory_20200602.json') as file:
     data = json.load(file)
+# Open file containing all aliases
+with open('../_data/aliases.json') as file:
+    aliases = json.load(file)
+# Open file containing all champions by season
+with open('../_data/champions.json') as file:
+    champions = json.load(file)["seasons"]
 
 """
 Helper functions
@@ -27,7 +32,11 @@ def formatNumber(num):
 def fpct(pct):
     return "{0:.0%}".format(pct)
 
-
+def alias(name):
+    global aliases
+    if name in aliases:
+        return aliases[name]
+    return name
 
 """
 Generate friendly json for database querying
@@ -67,7 +76,6 @@ data = data["seasons"]
 for s in data:
     season = s["season"] # type int
 
-
     """
     Generate map of division to division data
     division data:
@@ -77,8 +85,7 @@ for s in data:
     - results : (type list of dict) // Eg. [{ match_results }]
     """
     divisions = {}
-    if "champion" in s:
-        divisions["champion"] = s["champion"] # store season champion
+    divisions["champion"] = champions[str(season)] # store season champion
 
     for d in s["divisions"]:
         division = d["name"] # type str
@@ -107,9 +114,7 @@ for s in data:
 
         for m in d["members"]:
             member_data = {}
-            name = m["name"].strip()
-            if name == "Voltaire " :
-                print("strip failed")
+            name = alias(m["name"].strip())
 
             member_data["name"] = name
             member_data["wins"] = "{0:g}".format(round(m["wins"],2))
@@ -134,8 +139,8 @@ for s in data:
         results = []
         for r in d["results"]:
             results_data = {}
-            results_data["player1"] = r["player1"].strip()
-            results_data["player2"] = r["player2"].strip()
+            results_data["player1"] = alias(r["player1"].strip())
+            results_data["player2"] = alias(r["player2"].strip())
             results_data["wins1"] = r["wins1"]
             results_data["wins2"] = r["wins2"]
 

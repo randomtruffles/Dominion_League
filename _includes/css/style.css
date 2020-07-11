@@ -76,6 +76,20 @@ blockquote {
   border-top: 1px solid #e8e8e8;
 }
 
+.hr-database {
+  border-top: 1px solid grey;
+  width: 85%;
+  border-radius: 7px 7px 7px 7px;
+  opacity: 70%;
+}
+
+.stats-p {
+  font-family: {{site.data.template.font.primary }};
+  font-size: 15px;
+  line-height: 1.8em;
+  margin: 0px
+}
+
 .text p {
   font-family: {{site.data.template.font.secondary }};
   font-size: 20px;
@@ -627,6 +641,29 @@ h6 {
     overflow: hidden;
     border-radius: 50%;
 }
+
+
+img.champion-trophy {
+  height: 22px;
+  width: 24px;
+}
+
+img.champion-trophy:hover {
+  filter: opacity(50%)
+}
+
+p.champion-information {
+    margin: 0;
+    background-color: #62f05d;
+    display: inline-block;
+    padding: 0 10px;
+    border: 1.2px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
 
 /* Filters */
 .btn {
