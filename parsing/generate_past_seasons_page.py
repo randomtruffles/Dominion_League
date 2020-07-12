@@ -133,7 +133,7 @@ def create_header(season):
         header += pad_text(text, padding)
 
     past_season = "<a style=\"text-decoration: none\" href=\"season{}.html\">&nbsp;{}&nbsp;</a>".format(int_season-1, "<b><</b>") if int_season > 1 else "&nbsp;&nbsp;&nbsp;"
-    next_season = "<a style=\"text-decoration: none\" href=\"season{}.html\">&nbsp;{}&nbsp;</a>".format(int_season+1, "<b>></b>") if int_season < current_season - 1 else "&nbsp;&nbsp;&nbsp;"
+    next_season = "<a style=\"text-decoration: none\" href=\"season{}.html\">&nbsp;{}&nbsp;</a>".format(int_season+1, "<b>></b>") #if int_season < current_season - 1 else "&nbsp;&nbsp;&nbsp;"
 
     # define layout
     top = """---
@@ -321,3 +321,17 @@ for season in data:
         footer = create_footer()
         filetowrite.write(header+season_page+footer)
     largest_division = "A"
+
+# Current Season
+file = "../past_standings/season{}.html".format(current_season)
+redirect = """---
+layout: default
+title: Current Season
+---
+<script>
+  let url = "{{site.baseurl}}/current_standings.html";
+  window.location.href = url;
+</script>
+"""
+with open(file, 'w') as filetowrite:
+    filetowrite.write(redirect)

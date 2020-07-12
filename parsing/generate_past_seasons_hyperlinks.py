@@ -27,7 +27,7 @@ Create Grid
 page_add("<div class=\"grid-container\">")
 padding +=2
 for i in range(current_season-1):
-    link = "{{{{site.baseurl}}}}/past_standings/season{}.html".format(i+1)
+    link = "{{{{site.baseurl}}}}/past_standings/season{}".format(i+1)
     title = "Season {}".format(i+1)
     href = "<a href=\"{}\" class=\"{}\">{}</a>".format(link, class_style, title)
     grid_element = "<div class=\"grid-item\">{}</div>".format(href)
