@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: no_sidebar_post
-date: 2020-05-29
+date: 2020-07-11
 categories: pinned rules
 ---
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
@@ -11,23 +11,41 @@ Changelog for Rules and Regulations can be found [here](/rules-changelog).
 
 Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A; 2 divisions in tier B; 4 divisions in each of tiers C and D; 8 divisions in each of tiers E, F, and G; and 16 divisions in tier H. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D and below) and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
 
+In Seasons 42 and 43, there shall also be a practice tier, separate from all other tiers, for players who have played 29 or fewer rated 2-player games online. Players in the practice tier will be similarly grouped and seeded.
+
 #### II. Match Structure and Policies
 
-Each player will play one match with each other player in their division. Matches consist of 6 games, with each player going first 3 times. The League recommends playing the first game with random starting players, and then alternating starting players manually. Each player receives 1 point for each game they won, and 0.5 points for each tie for that match.
+Each player plays one match against each other player in their division. A match is 6 games with each player going first 3 times. The League recommends playing the first game with a random starting player, and then alternating the starting player.
 
-The League standard is to play matches on Dominion Online, though you may play in-person. For games played online, spectators must be allowed for matches in tiers A, B, C, and D, and players cannot request to disallow spectators. Spectators are encouraged in other tiers, but a request by any player to disallow spectators must be honored. Players in all tiers are encouraged to turn the option to allow spectators to see their cards on and the option for players to see spectator chat off.
+Matches may be played over one or more playing sessions. A playing session is a series of one or more games between the same two players. For the purpose of this rule, any consecutive games played between the same two players with less than 24 hours between them are considered to be part of the same session. The League suggests completing all 6 games of a match on the same day in a single playing session, but this is not required.
 
-For games played online, the table should have the following settings by default, any of which both players can mutually agree to change before the game:
+The League also has the following general rules for games by default:
 
-* The disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be. Except for the foregoing, Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required.
-* The game should be unrated.
+* Games should be played on Dominion Online.
+* There is no official timer in Dominion Online, and games should not use a timer.
+* During a game, players may not consult outside resources, such as strategy articles, or otherwise attempt to gain a competitive advantage.
+
+For games played online, players should set the following Advanced Options by default:
+
+* Spectators should be allowed.
+* “Players can see spectator chat” should be off.
+* The disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be.
+* The game should not use extra Menagerie cards.
+* The game should be unrated. For Seasons 42 and 43, games in the practice tier must be rated.
 * The victory point counter should be used.
+* Except for cardlists, Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required. No particular cards, landscapes, or expansions should be selected.
 
-A playing session is a series of one or more games between the same two players. A match may be played over one or more playing sessions. During an individual session, players may not adjust their cardlists unless mutually agreed upon. For the purpose of this rule, any consecutive games played between the same two players with less than 24 hours between them are considered to be part of the same session.
+All these defaults may be changed between games by mutual agreement of the players except:
 
-The League suggests completing all 6 games of a match on the same day, but this is not required. When scheduling, keep in mind that a matches typically take 1.5–2 hours. After completing a match one of the players should post the result (via Google forms sent to each player at the start of the season) as soon as possible. If less than 6 games are played, the result of those games just played should be submitted in the same fashion. Multiple reports between the same two players will add to the full score.
+* Players in the practice tier may not play games in-person or on any platform other than Dominion Online.
+* Players in tiers A, B, C, and D may not agree to disallow spectators.
+* Cardlists may only be changed between playing sessions.
+* Players in the practice tier may not agree for games to be unrated.
+* Players agreeing to use an unofficial timer must agree on all timer settings and how to handle any glitches or lag.
 
-We recognize that players from different backgrounds have different opinions on which undos, if any, should be allowed when playing Dominion. Therefore, players can choose any policy on what undos they will allow, as long as they announce it to their opponent ahead of time. In the absence of such an announcement, they will be expected to follow the default policy for the League, which is to grant undos of small numbers of non-information-revealing steps.
+The League recognizes players from different backgrounds may have different opinions on which undos, if any, should be allowed during a game. The League’s default is to grant undos of small numbers of non-information-revealing steps. A player can choose a different policy regarding which undos they will allow, so long as they announce it to their opponent before the game.
+
+After each playing session, one of the players should submit the result of that playing session as soon as possible using the Results form linked in their division’s Discord channel. Players receive 1 point for each game they win and 0.5 points for each game they tie (note that, per Dominion rules, a player wins a game with tied VP scores if they took fewer turns). If the match is played across multiple sessions, only submit the games just played, and the system will add the multiple submissions together.
 
 #### III. Standings
 
@@ -38,11 +56,14 @@ In the case of a tie within a division, the player with the total number of poin
 * If the tie is between two players, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
 * If the tie is between three or more players, the moderators will randomly break the tie.
 
-At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division:
+At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division.
 
-* Players who finish in first place in tiers B, C, and E promote.
-* Players who finish in first or second place in tiers D, F, G, and H promote.
-* Players who finish in fifth or sixth place in tiers A, B, C, D, E, F, and G demote.
+* Players who finish in first place promote if the tier directly above has fewer divisions than the tier they are currently in.
+* Players who finish in first or second place promote if the tier directly above has exactly the same number of divisions of the tier they are currently in.
+* Players who finish in fifth or sixth place in any tier demote unless they are in the bottom tier, in which case they will stay in that tier.
+* Players in the practice tier do not promote or demote automatically. Instead, these players are placed as new players in the next season.
+
+Additionally, players who are placed as New Players in the current season and promoted from their tier can request to be re-placed in the upcoming season as a new player, using the same stricter cutoffs used for guaranteed new player tier placements. This allows players to promote across multiple tiers, known as “superpromotions”, if a player can improve their rating significantly across a season.
 
 In addition, the top two finishers in the A1 division will play a second 6-game match to determine the Champion for the Dominion League for that season. For the purposes of determining the Champion (and only those purposes), the results of this match will be added to the results of the season, including updates to tiebreakers. The match date and time should be determined by the two players well in advance to allow for the moderator team to find a commentator team. Even if the outcome of the match is settled before the sixth game, all six should be played out for the purpose of spectator entertainment.
 
@@ -50,10 +71,12 @@ In addition, the top two finishers in the A1 division will play a second 6-game 
 
 To join the League, you must join the Dominion (Card Game) Discord server: <https://discord.gg/vMmmMBu>. Once you have joined the Discord Server you may sign up to join the League by filling out the Google form embedded in [Sign up](https://dominionleague.org/sign-ups.html). You may only participate in the League once per season. You may switch your Dominion Online or Discord account at any time by letting your moderator know, but you may not join the League additional times using other accounts. You do not need to purchase a subscription to Dominion Online, and Dominion Online subscriptions have no bearing on players’ tiers, divisions, or seeding.
 
+For Seasons 42 and 43, players who join and have not played in one of the past 6 seasons and have played 29 or fewer rated 2-player games shall be placed into the practice tier.
+
 At the end of each season, players who want to return for the following season must fill out the Returning form linked in their division’s Discord channel, otherwise by default they will leave the League. The following priorities are used, in order, to fill the open spots created by players who leave:
 
-1. Players returning to the League after playing in one of the past 6 seasons are placed into the tiers they would have most recently returned to, starting with the players that played most recently and with ties broken by seeding. For purposes of this priority only, divisions may have up to 7 players each.
-2. Players returning from before the past 6 seasons, or joining for the first time, are placed into tiers based on their Dominion Online level.
+1. Players returning to the League after playing in one of the past 6 seasons are placed into the tiers they would have most recently returned to, starting with the players that played most recently and with ties broken by seeding. For purposes of this priority, divisions may have up to 7 players each.
+2. Players returning from before the past 6 seasons, or joining for the first time with 30 or more rated 2-player games, are placed into tiers based on their Dominion Online level. For particularly highly-rated players, divisions may have up to 7 players each. Level thresholds that would trigger this will be published in the previous season’s Newsletter.
 3. Players who finished in second place with a high score in the previous season are offered a free promotion up to the next higher tier.
 4. Players who finished in fifth place with a high score in the previous season are offered a free promotion to not demote to the next lower tier.
 
@@ -97,7 +120,7 @@ Players dropping out during the season have a significant negative impact on the
 
 #### X. League Moderation
 
-The League is moderated by a group of players whose role is to ensure the League runs smoothly. Moderators are allowed, but not required, to play in the League. Moderators are assigned divisions (never a division in the same tier they play in) to be the primary point of contact for those divisions. Their responsibilities include checking up on players who have fallen behind and removing those who are non-responsive for a considerable period of time. However, all moderators are able to assist players with any issues they face. When new or additional moderators are needed, there will be an open call posted to the forum. New moderators are chosen by a vote of the current moderator team.
+The League is moderated by a group of players whose role is to ensure the League runs smoothly. Moderators are allowed, but not required, to play in the League. Moderators are assigned divisions (never a division in the same tier they play in) to be the primary point of contact for those divisions. Their responsibilities include checking up on players who have fallen behind and removing those who are non-responsive for a considerable period of time. Players should notify their moderator via Discord direct message of issues they have. Direct messages with a moderator about League matters may be shared with the other moderators for the team to resolve together. When new or additional moderators are needed, there will be an open call posted to the forum. New moderators are chosen by a vote of the current moderator team.
 
 League moderators are also responsible for adjudicating any disputed rules infractions. If a moderator decision needs to be made that affects the outcome of a game, the players should finish the game and the player who requested the decision may protest the game by contacting their moderator with a description of what occurred and the game number. The moderator team will review the game and make a ruling by a majority vote whether the game results stand or that the game must be replayed.
 
