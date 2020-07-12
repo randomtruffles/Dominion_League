@@ -534,12 +534,13 @@ h6 {
 }
 .links li {
   list-style: none;
-  line-height: 2em;
+  line-height: 1.4em;
+  padding-bottom: 6px;
 }
 .links a {
   color: #6b6a6a;
   text-decoration: none;
-  font-size: 18.5px;
+  font-size: 17px;
 }
 .links a:hover {
   color: #ca2017;
@@ -582,12 +583,12 @@ h6 {
 }
 
 .left {
-  width: 70%;
+  width: 74%;
   padding: 20px 20px 10px 5px;
 }
 
 .right {
-  width: 30%;
+  width: 26%;
 }
 
 .content {
