@@ -23,7 +23,7 @@ We also have several other, more minor changes to make:
 
 * Unofficial timers, like the browser extension made by League player Gasku, are now explicitly allowed, if both players agree on appropriate settings and settle how to handle glitches and lag between them.
 * Players are now officially not allowed to consult outside resources such as strategy guides during a match. (Many players will find this rule obvious, but it wasn’t explicitly in the rules before this.)
-  Head-to-head tiebreakers are now applied iteratively. In other words, as before, if more than two players are tied head-to-head, all results between them are compared to order them. But if two or more (but not all) players are tied among that subset, then the tiebreakers among that subset are compared.
+* Head-to-head tiebreakers are now applied iteratively. In other words, as before, if more than two players are tied head-to-head, all results between them are compared to order them. But if two or more (but not all) players are tied among that subset, then the tiebreakers among that subset are compared.
 * Play-in matches will be conducted slightly differently, with up to a 48-hour delay between contacting the players and giving them their opponents, in order to give the top-seeded players any byes resulting from a lack of responsiveness.
 * We will be polling a few suggestions from players in the Returning Form for Season 42, on the topics of 4-game matches, requests for expansion restrictions, and the VP counter. These may result in tier-specific rules if we notice a large trend in players’ opinions at different tiers, most obviously for the expansion question.
 
