@@ -7,8 +7,6 @@ layout: post
 ---
 The **Season 40 Championship** featured the top 2 A division players [Mic Qsenoch](https://dominionleague.org/player_database?player=Mic%20Qsenoch) and [nasmith99](https://dominionleague.org/player_database?player=nasmith99). Mic Qsenoch had just finished a dominant regular season, going 21-9 against five of the strongest players in the League. nasmith99 also had a winning season, going 16-14 and barely sneaking into the Championship match based on a tiebreaker over xyrix, who finished with the same record. As such, nasmith could only afford to tie one of the six games, while Mic just needed to win one (or tie two). That said, neither of them let these circumstances drastically affect their mindsets, mostly taking each game one at a time.
 
-(embed their standings)
-
 The match was commentated in real time by xyrix and tracer:
 
 <iframe src="https://www.youtube.com/embed/LzCQvDBgNMM"></iframe>
