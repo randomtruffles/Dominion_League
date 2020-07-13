@@ -28,7 +28,12 @@ We also have several other, more minor changes to make:
 * We will be polling a few suggestions from players in the Returning Form for Season 42, on the topics of 4-game matches, requests for expansion restrictions, and the VP counter. These may result in tier-specific rules if we notice a large trend in players’ opinions at different tiers, most obviously for the expansion question.
 
 *Moderator Churn*
-With the continued growth of the League, we have recruited four new moderators for Season 41: **amoffett11**, **catmom** (formerly known as sequoiac), **Rozyroz**, and **tracer**. This will be the first season moderating for the first three; tracer moderated previously from Seasons 28 to 34. We also would like to thank **H.exe**, who has become too busy to moderate for Season 41. With one departure and the four newcomers, we now have a robust team of 18 moderators! It’s become a big enough group that we currently have split our discussions into no fewer than 10 mods-only Discord channels to focus on different aspects of the League, like our [new website](https://dominionleague.org)!
+
+With the continued growth of the League, we have recruited four new moderators for Season 41: 
+
+**amoffett11**, **catmom** (formerly known as sequoiac), **Rozyroz**, and **tracer**. 
+
+This will be the first season moderating for the first three; tracer moderated previously from Seasons 28 to 34. We also would like to thank **H.exe**, who has become too busy to moderate for Season 41. With one departure and the four newcomers, we now have a robust team of 18 moderators! It’s become a big enough group that we currently have split our discussions into no fewer than 10 mods-only Discord channels to focus on different aspects of the League, like our [new website](https://dominionleague.org)!
 
 *Rules Meeting Minutes*
 
