@@ -19,7 +19,7 @@ As the underdog, nasmith went first in the first game. On the 4/3, he opened Mon
 
 Meanwhile, Mic opened Rats/Scrap, but had a tougher time colliding them and fell a bit behind, taking a few more Rats and a second Scrap to clean them up. nasmith was able to grab the first Worker’s Village and Goons, steadily building up his draw engine with Cavalries and the Villages to support them. Mic instead opted for Barracks, which he would later say he regretted because he could have gained two Worker’s Villages that turn instead.
 
-nasmith continued to press his advantage, getting an early point lead from his Goons and finishing his turns with a steadily increasing number of Cavalry plays to accumulate Horses. When piles got low, he added two Rats, allowing him to get his treasures in play to buy a Cavalry, then win by playing the Rats pileout the following turn.
+nasmith continued to press his advantage, getting an early point lead from his Goons and finishing his turns with a steadily increasing number of Cavalry plays to accumulate Horses. When piles got low, he added two Rats, which let him finish off the Cavalry and Border Guard piles and then automatically pile the Rats by trashing what remained of his deck.
 
 **Game 2** featured a kingdom with an interesting dilemma: Do you build a draw-to-X engine with Cursed Village, Merchant Ship and Tormentor, or a regular Farming Village / Ranger engine with treasure payload?
 
