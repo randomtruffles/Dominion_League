@@ -45,9 +45,9 @@ nasmith similarly picked up a Courtier on his first purchase after cashing in th
 
 Then, a dud turn saw nasmith missing $5 one Duchy into the dance, drawing just one Gold and his Humble Castle leaving him only 5 points up, while Mic sat waiting with three Golds, and the win in hand. 
 
-Mic: “I was just very very surprised that nasmith could only afford an estate. Metally, I was completely done with the game assuming a loss.” “Then I felt the relief from being able to relax the concentration.”
+Mic commented after the match that he “was just very very surprised that nasmith could only afford an estate. Mentally, I was completely done with the game assuming a loss. Then I felt the relief from being able to relax the concentration.”
 
-For his part, nasmith explained that although he was a little frustrated, “it didn't feel like nearly as much of a heartbreaker as it would have if that were game 5 or 6.” 
+For his part, nasmith explained that although he was a little frustrated, “it didn't feel like nearly as much of a heartbreaker as it would have if that were game 5 or 6.”
 
 This win secured the championship for Mic, so they played the last three games very quickly.
 
