@@ -11,7 +11,7 @@ The match was commentated in real time by xyrix and tracer:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LzCQvDBgNMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Game 1** featured Goons and a somewhat weak drawing engine with Worker’s Village, (Barracks) and Cavalry. As is common in weak draw boards with Goons, it’s very important to trash your starting cards quickly. With a few options available, *how* to trash became an important question, deciding how to mix together the Rats, Monastery, and Scrap.
+**Game 1** featured Goons and a somewhat weak drawing engine with Worker’s Village, Barracks and Cavalry. As is common in weak draw boards with Goons, it’s very important to trash your starting cards quickly. With a few options available, *how* to trash became an important question, deciding how to mix together the Rats, Monastery, and Scrap.
 
 ![Border Guard, Cavalry, Farmers’ Market, Goons, Messenger, Monastery, Rats, Scrap, Vineyard, Worker’s Village, Barracks, Battlefield](/img/uploads/kingdom1.png)
 
