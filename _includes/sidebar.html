@@ -1,29 +1,27 @@
   <div class='links'>
-    <div class='links'>
-      <h3>Pinned Posts</h3>
-      <hr style="border-top: 2px solid darkgray">
-      <ul class="fa-ul">
+    <h3>Pinned Posts</h3>
+    <hr style="border-top: 2px solid darkgray">
+    <ul class="fa-ul">
 
-        {% for post in site.categories.signups %}
-          <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}">{{post.title}}</a></li>
+      {% for post in site.categories.signups %}
+        <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}">{{post.title}}</a></li>
+        {% break %}
+      {% endfor %}
+
+      <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{site.baseurl}}/rules.html">League Rules</a></li>
+
+      <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}/rules-changelog.html">League Rules Changelog</a></li>
+
+      <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}/faq.html">Dominion League FAQ</a></li>
+
+
+      {% for post in site.categories.pinned %}
+        {% if forloop.index > 6 %}
           {% break %}
-        {% endfor %}
-
-        <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{site.baseurl}}/rules.html">League Rules</a></li>
-
-        <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}/rules-changelog.html">League Rules Changelog</a></li>
-
-        <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}/faq.html">Dominion League FAQ</a></li>
-
-
-        {% for post in site.categories.pinned %}
-          {% if forloop.index > 6 %}
-            {% break %}
-          {% endif %}
-          <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}">{{post.title}}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+        {% endif %}
+        <li><i class="fa-li fa fa-thumb-tack"></i><a href="{{post.url}}">{{post.title}}</a></li>
+      {% endfor %}
+    </ul>
     <h3>Recent Posts</h3>
     <hr style="border-top: 2px solid darkgray">
     <ul class="fa-ul">
