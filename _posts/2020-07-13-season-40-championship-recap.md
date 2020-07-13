@@ -29,7 +29,7 @@ Both players opened Urchin with another attack, Mic getting a Cutpurse and nasmi
 
 As Mic explained, “You can't play pure CV / draw-to-x stuff, you have to have some buys, early game you are going to want CVs and some of the terminal silvers actions, so I think you always end up playing \[a hybrid deck]. The actual deck composition as you build has a lot of things to consider about it that don't really split cleanly between the two abstractions.” 
 
-With Ranger as the only source of +Buy, both players aimed toward the more hybrid deck, incorporating Rangers and Farming Villages alongside economy. They also both trashed thoroughly, enabling them to overdraw quite a bit. nasmith’s extra Golds gave him a bit more payload for the price of less consistency, though Mic would eventually added a couple of Golds of his own, as well as a Silver.
+With Ranger as the only source of +Buy, both players aimed toward the more hybrid deck, incorporating Rangers and Farming Villages alongside economy. They also both trashed thoroughly, enabling them to overdraw quite a bit. nasmith’s extra Golds gave him a bit more payload for the price of less consistency, though Mic would eventually add a couple of Golds of his own, as well as a Silver.
 
 The scoring was quite tricky given how Wolf Den punishes uniques. nasmith started greening first, picking up a couple of provinces and clearing out almost all of his uniques, although the hexes occasionally gave one player or the other an extra Copper or Curse. They both kept uniques in mind given both Wolf Den and Fairgrounds, naturally avoiding the all-uniques Castles pile. Mic took one 4-point Fairgrounds while nasmith went straight for Provinces. Due in part to his earlier greening, nasmith had an extra dud hand, allowing Mic to catch up.
 
@@ -63,6 +63,6 @@ Similarly, **Game 6** saw both players open Hunting Party / Peasant, and continu
 
 ![Cardinal, Contraband, Crown, Hunting Party, Mystic, Peasant, Quarry, Secret Passage, Temple, Witch, Baths, Pathfinding](/img/uploads/kingdom6.png)
 
-The final result was **4-2** in nasmith99’s favor, a strong performance but not enough to overcome Mic’s big lead from the regular season. This is the **16th championship for Mic Qsenoch** as well as his third in a row, his third streak of at least three championships, also having accomplished the feat in Seasons 13-15 and 26-29. Stef is the only other player to have accomplished this, having won four seasons in a row in Season 9-12. It is **nasmith99's second runner-up** in just his second season in the A tier.
+The final result was **4-2** in nasmith99’s favor, a strong performance but not enough to overcome Mic’s big lead from the regular season. This is the **16th championship for Mic Qsenoch** as well as his third in a row, his third streak of at least three championships, also having accomplished the feat in Seasons 13-15 and 26-29. Stef and Rabid are the only other players to have accomplished this, having won four seasons in a row in Season 9-12 and 23-25. It is **nasmith99's second runner-up** in just his second season in the A tier.
 
 Both players will return to the A division in Season 41, which will also feature 3rd and 4th place finishers xyrix and E.Honda, as well as A tier veteran Sicomatic and newcomer nerdbound, who each won their respective B divisions.
