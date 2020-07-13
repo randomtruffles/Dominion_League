@@ -1,5 +1,5 @@
 ---
-title: Season 40 - Newsletter Part 1
+title: Season 41 - Newsletter Part 1
 subtitle: Rules Update
 date: 2020-07-13
 author: SamE
