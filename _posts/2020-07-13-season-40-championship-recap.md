@@ -35,17 +35,17 @@ The scoring was quite tricky given how Wolf Den punishes uniques. nasmith starte
 
 With two Provinces left, a crucial Envy hex kept nasmith to within one coin of the pileout. He took a Province and a 20-3 point lead with one Province left. Mic drew his deck and could buy Province, his second Fairgrounds and unpair his Copper, leaving him one point short. He chose instead to trash his unique Silver and pick up two Fairgrounds, but nasmith was able to hit $8 on his next turn for the Province and the win.
 
-With nasmith’s win as P2 and a 2-0 lead, excitement started to build among the spectators. **Game 3** featured incredibly strong Turn 1 Donate opens by both players:
+With nasmith’s win going second and a 2-0 lead, excitement started to build among the spectators. **Game 3** featured incredibly strong Turn 1 Donate opens by both players:
 
 ![Border Village, Castles, Courtier, Crown, Engineer, Farmers’ Market, Pillage, Recruiter, Tracker, Treasure Map, Donate, Invest](/img/uploads/kingdom3.png)
 
-nasmith, going first, had $4 with Pouch in hand, letting him open Engineer / Donate down to just the Engineer and the Pouch. He then trashed Engineer for two Treasure Maps for a quick 4 Golds. Mic, going second, had $5 with Pouch, letting him open Courtier/Donate. After some mental math, Mic decided to keep one Copper and Pouch, allowing him to buy Crown, another multi-type, as his first purchase after paying off debt. Both Pouch and Crown having two types allowed Courtier to gain Gold and give $3, helping ramp up buying power quickly.
+nasmith, going first, had $4 with Pouch in hand, letting him open Engineer / Donate down to just the Engineer and the Pouch. He then trashed Engineer for two Treasure Maps for a quick 4 Golds. Mic, going second, had $5 with Pouch, letting him open Courtier/Donate. After some mental math, Mic decided to keep one Copper and Pouch, allowing him to buy Crown as his first purchase after paying off debt. Both Pouch and Crown having two types allowed Courtier to gain Gold and give $3, helping ramp up buying power quickly.
 
 nasmith similarly picked up a Courtier on his first purchase after cashing in the Treasure Maps and repaying Debt, giving the two players similar deck compositions. From there, it was already time to score, with Mic buying Provinces on Turns 4 through 8. Meanwhile, nasmith pivoted to Castles, buying the first three on Turn 5, buying Haunted Castle and Investing to get the Opulent Castle for just $4 on Turn 6 (which Mic described as “cute”), and trashing the Small Castle to get Sprawling and Grand Castle on Turn 7. This sequence put nasmith in the lead as they continued lowering the Provinces. He took the penultimate Province, going up 8 points as they started to trade Duchies.
 
-Then, a dud turn saw nasmith missing $5 one Duchy into the dance, drawing just one Gold and his Humble Castle leaving him only 5 points up, while Mic sat waiting with three Golds, and the win in hand. 
+Then, a dud turn saw nasmith missing $5 one Duchy into the dance, drawing just one Gold and his Humble Castle off a clean shuffle. Buying Estate left him only 5 points up, with Mic waiting with three Golds, and the win in hand.
 
-Mic commented after the match that he “was just very very surprised that nasmith could only afford an estate. Mentally, I was completely done with the game assuming a loss. Then I felt the relief from being able to relax the concentration.”
+Mic commented after the match that he “was just very very surprised that nasmith could only afford an Estate. Mentally, I was completely done with the game assuming a loss. Then I felt the relief from being able to relax the concentration.”
 
 For his part, nasmith explained that although he was a little frustrated, “it didn't feel like nearly as much of a heartbreaker as it would have if that were game 5 or 6.”
 
