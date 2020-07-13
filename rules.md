@@ -1,7 +1,7 @@
 ---
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
-layout: no_sidebar_post
+layout: rules_faq
 date: 2020-07-11
 categories: pinned rules
 ---

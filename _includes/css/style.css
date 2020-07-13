@@ -627,18 +627,39 @@ h6 {
 
 .posts-content-text img {
   max-width: 100%;
+  border: 2px solid lightgray;
+  display: block;
+  margin: 0 auto;
 }
 
 .posts-content-text iframe {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
-
 
 .posts-content-text hr {
   border-top: 2px solid gray;
   border-radius: 7px 7px 7px 7px;
 }
 
+.posts-content-text h1 {
+  font-size: 18.5px;
+}
+
+.posts-content-text h2 {
+  font-size: 17px;
+}
+
+.posts-content-text h3 {
+  font-size: 15.5px;
+}
+
+.posts-content-text h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: darkgrey;
+}
 
 .info {
   font-size: 1.25571rem;
