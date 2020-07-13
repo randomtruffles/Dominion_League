@@ -1,5 +1,5 @@
 ---
-title: Season 40 Championship Recap
+title: Season 40 - Championship Recap
 subtitle: Mic Qsenoch vs. nasmith99
 date: 2020-07-13
 author: SamE
