@@ -63,4 +63,6 @@ Similarly, **Game 6** saw both players open Hunting Party / Peasant, and continu
 
 ![Cardinal, Contraband, Crown, Hunting Party, Mystic, Peasant, Quarry, Secret Passage, Temple, Witch, Baths, Pathfinding](/img/uploads/kingdom6.png)
 
-The final result was **4-2** in nasmith99’s favor, a strong performance but not enough to overcome Mic’s big lead from the regular season. Both players will return to the A division next season, which will also feature 3rd and 4th place finishers xyrix and E.Honda, as well as A tier veteran Sicomatic and newcomer nerdbound, who each won their respective B divisions.
+The final result was **4-2** in nasmith99’s favor, a strong performance but not enough to overcome Mic’s big lead from the regular season. This is the **16th championship for Mic Qsenoch** as well as his third in a row, his third streak of at least three championships, also having accomplished the feat in Seasons 13-15 and 26-29. Stef is the only other player to have accomplished this, having won four seasons in a row in Season 9-12. It is **nasmith99's second runner-up** in just his second season in the A tier.
+
+Both players will return to the A division in Season 41, which will also feature 3rd and 4th place finishers xyrix and E.Honda, as well as A tier veteran Sicomatic and newcomer nerdbound, who each won their respective B divisions.
