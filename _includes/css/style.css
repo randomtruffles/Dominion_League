@@ -1113,7 +1113,6 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .current-standings-tracer iframe {
-      width: 100%
       width: 135%;
       transform: scale(0.75);
       transform-origin: 0 0;
