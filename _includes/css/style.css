@@ -742,12 +742,20 @@ p.champion-information {
   margin: 2px;
 }
 
+
+.current-standings-tracer {
+  color: #ffffff;
+  text-align: center;
+  margin: 2px;
+}
+
 .filterDiv {
   display: none;
 }
 
 .current-standings iframe {
   width: 620px;
+  height: 290px;
 }
 .show {
   display: block;
@@ -1097,7 +1105,18 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .current-standings iframe {
-      width: 100%;
+      width: 100%
+      /*
+      width: 135%;
+      transform: scale(0.75);
+      transform-origin: 0 0;*/
+    }
+
+    .current-standings-tracer iframe {
+      width: 100%
+      width: 135%;
+      transform: scale(0.75);
+      transform-origin: 0 0;
     }
 
     .left {
@@ -1614,7 +1633,10 @@ img[alt=faq_images] {
 }
 
 @media (max-width: 700px) {
-  .hof-champions {
+  .hall-of-fame {
+    display: block;
+  }
+  .achievement {
     width: 100%;
   }
   .achievement-header {
