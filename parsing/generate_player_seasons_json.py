@@ -34,9 +34,10 @@ for s_key in seasons.keys():
         # Add member data
         for member in members_data.keys():
             case_insensitive_member = member.lower()
+            rank = members_data[member]["rank"]
             if case_insensitive_member in players:
                 players[case_insensitive_member] = players[case_insensitive_member] + \
-                    [{"season": season, "division": division}]
+                    [{"season": season, "division": division, "rank": rank}]
             else:
                 players[case_insensitive_member] = [
                     {"season": season, "division": division}]

@@ -1571,3 +1571,21 @@ img[alt=faq_images] {
     width: 90%;
   }
 }
+
+/* Hall of Fame */
+.hall-of-fame {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.achievement {
+  background-color: #fafafa;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+  padding: 20px 20px 10px 20px;
+  width: 33%;
+  text-align: center;
+  margin: 10px 10px;
+  position: relative;
+}
