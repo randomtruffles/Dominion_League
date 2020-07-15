@@ -27,7 +27,7 @@ for s in range(current_season-1):
     members = a1["members"]
     champion = champions[season]
     for m in members:
-        if members[m]["rank"] <= 2 and m.lower() != m:
+        if members[m]["rank"] <= 2 and m.lower() != champion:
             runner_ups[season] = m.lower()
             pass
 

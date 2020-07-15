@@ -57,15 +57,18 @@ with open('../_data/player_and_seasons_played.json') as file:
 
 hall_of_fame += "<!-- All League Champions -->\n"
 
+hall_of_fame += """<div class="achievement-header"><h4>All League Champions</h4>"""
 # Create table
 champions_table = p("""<table class="hof-champions">""")
 p_add()
 
+"""
 champions_table += p("<tr>")
 p_add()
 champions_table += p(td("All League Champions",  " colspan=\"5\""))
 p_sub()
 champions_table += p("</tr>")
+"""
 
 # Generate headings
 champions_table += p("<tr>")
@@ -97,6 +100,8 @@ for player, li in sorted_players:
     champions_table += p("</tr>")
 p_sub()
 champions_table += p("</table>")
+p_sub()
+champions_table += p("</div>")
 
 hall_of_fame += champions_table
 
@@ -145,45 +150,29 @@ hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()
 
 most_a_div = sorted(div_a_counter.items(), key=lambda x: -x[1])
-achievement_1 = p("<div class=\"achievement\">")
-p_add()
-achievement_1 += "<h4> Most Divisions in A </h4>"
-p_add()
-for rank in range(3):
-    achievement_1 += "<p>{}. {}, {} </p>".format(str(rank+1), most_a_div[rank][0], most_a_div[rank][1])
-p_sub()
-p_sub()
-achievement_1 += p("</div>")
-
 most_a_streak = sorted(best_streak_div_a_counter.items(), key=lambda x: -x[1])
-achievement_2 = p("<div class=\"achievement\">")
-p_add()
-achievement_2 += "<h4> Longest Streak of Being in A </h4>"
-p_add()
-for rank in range(3):
-    achievement_2 += "<p>{}. {}, {} </p>".format(str(rank+1), most_a_streak[rank][0], most_a_streak[rank][1])
-p_sub()
-p_sub()
-achievement_2 += p("</div>")
-
 runner_ups = champions["players_runner_ups"]
 sorted_runner_ups = sorted(runner_ups.items(), key=lambda x: (-len(x[1]), -max(map(int, x[1]))))
-print(sorted_runner_ups)
-achievement_3 = p("<div class=\"achievement\">")
-p_add()
-achievement_3 += "<h4> Most Runner-Ups in A </h4>"
-p_add()
-for rank in range(3):
-    achievement_3 += "<p>{}. {}, {} </p>".format(str(rank+1), sorted_runner_ups[rank][0], len(sorted_runner_ups[rank][1]))
-p_sub()
-p_sub()
-achievement_3 += p("</div>")
-p_sub()
 
-hall_of_fame += achievement_1
-hall_of_fame += achievement_2
-hall_of_fame += achievement_3
-hall_of_fame += "</section>"
+stats = [most_a_div, most_a_streak, sorted_runner_ups]
+stat_headings = ["Most Divisions in A", "Longest Consecutive Streak in A", "Most Runner-Ups in A"]
+for i in range(3):
+    stat = stats[i]
+    heading = stat_headings[i]
+
+    achievement = p("<div class=\"achievement\">")
+    p_add()
+    achievement += "<h4> {} </h4>".format(heading)
+    p_add()
+    for rank in range(5):
+        achievement += "<p>{}. {}, {} </p>".format(str(rank+1), pseasons[stat[rank][0].lower()]["name"], stat[rank][1])
+    p_sub()
+    p_sub()
+    achievement += p("</div>")
+    hall_of_fame += achievement
+
+p_sub()
+hall_of_fame += p("</section>")
 
 
 """
@@ -193,18 +182,212 @@ Group:
 3. Most Unique Tiers Played
 """
 
+all_consecutive_fp = {}
+all_consecutive_sp = {}
+all_unique_tiers = {}
+for player in pseasons:
+    name = pseasons[player]["name"]
+    seasons = pseasons[player]["seasons"]
+
+    # streak, start, end
+    longest_cfp = [-1, -1, -1]
+    longest_csp = [-1, -1, -1]
+    cur_cfp = [-1, -1, -1]
+    cur_csp = [-1, -1, -1]
+    unique_tiers = set()
+
+    for season_data in seasons:
+        season = int(season_data["season"])
+        tier = season_data["division"][0]
+        rank = int(season_data["rank"])
+
+        if rank == 1:
+            if season - cur_cfp[2] != 1:
+                if cur_cfp[0] >= longest_cfp[0]:
+                    longest_cfp[0] = cur_cfp[0]
+                    longest_cfp[1] = cur_cfp[1]
+                    longest_cfp[2] = cur_cfp[2]
+                cur_cfp = [1, season, season]
+            else:
+                cur_cfp[0] = cur_cfp[0] + 1
+                cur_cfp[2] = cur_cfp[2] + 1
+                if cur_cfp[0] >= longest_cfp[0]:
+                    longest_cfp[0] = cur_cfp[0]
+                    longest_cfp[1] = cur_cfp[1]
+                    longest_cfp[2] = cur_cfp[2]
+
+        if rank == 2:
+            if season - cur_csp[2] != 1:
+                if cur_csp[0] >= longest_csp[0]:
+                    longest_csp[0] = cur_csp[0]
+                    longest_csp[1] = cur_csp[1]
+                    longest_csp[2] = cur_csp[2]
+                cur_csp = [1, season, season]
+            else:
+                cur_csp[0] = cur_csp[0] + 1
+                cur_csp[2] = cur_csp[2] + 1
+                if cur_csp[0] >= longest_csp[0]:
+                    longest_csp[0] = cur_csp[0]
+                    longest_csp[1] = cur_csp[1]
+                    longest_csp[2] = cur_csp[2]
+
+        unique_tiers.add(tier)
+
+    all_consecutive_fp[name] = longest_cfp
+    all_consecutive_sp[name]  = longest_csp
+    all_unique_tiers[name] = unique_tiers
+
+
+sorted_cfp = sorted(all_consecutive_fp.items(), key=lambda x: (-x[1][0], -x[1][2]))
+sorted_csp = sorted(all_consecutive_sp.items(), key=lambda x: (-x[1][0], -x[1][2]))
+sorted_unique_tiers = sorted(all_unique_tiers.items(), key=lambda x: -len(x[1]))
+
+hall_of_fame += "<section class=\"hall-of-fame\">"
+p_add()
+
+stats = [sorted_cfp, sorted_csp, sorted_unique_tiers]
+stat_headings = ["Most Consecutive First Place Finishes", "Most Consecutive Second Place Finishes", "Most Unique Tiers Played"]
+for i in range(3):
+    stat = stats[i]
+    heading = stat_headings[i]
+
+    achievement = p("<div class=\"achievement\">")
+    p_add()
+    achievement += "<h4> {} </h4>".format(heading)
+    p_add()
+    for rank in range(10):
+        achievement += "<p>{}. {}, {} </p>".format(str(rank+1), pseasons[stat[rank][0].lower()]["name"], stat[rank][1])
+    p_sub()
+    p_sub()
+    achievement += p("</div>")
+    hall_of_fame += achievement
+
+p_sub()
+hall_of_fame += p("</section>")
+
+
 """
 Group:
-1. Most Seasons Played in League (top 3)
-2. Most Consecutive Seasons Played in League (top 3)
-3. Longest Active Streak (top 3)
+1. Most Seasons Played in League (top 5)
+2. Most Consecutive Seasons Played in League (top 5)
+3. Longest Active Streak (top 5)
 """
+with open('../_data/current_season_players.json') as file:
+    current_season_players = json.load(file)
+
+all_most_seasons_pl = {}
+all_consecutive_pl = {}
+all_active_streak = {}
+
+for player in pseasons:
+    name = pseasons[player]["name"]
+    seasons = pseasons[player]["seasons"]
+    stats = pseasons[player]["stats"]
+    tsp = stats["Total Seasons Played"]
+    ls = stats["Longest Streak"]
+
+    if name.lower() in current_season_players and ls[2] == 39:
+        ls = [ls[0]+1, ls[1], ls[2]+1]
+        all_active_streak[name] = ls
+
+    if name.lower() in current_season_players:
+        tsp += 1
+
+    all_most_seasons_pl[name] = tsp
+    all_consecutive_pl[name] = ls
+
+sorted_mspl = sorted(all_most_seasons_pl.items(), key=lambda x: -x[1])
+sorted_cpl = sorted(all_consecutive_pl.items(), key=lambda x: (-x[1][0]))
+sorted_as = sorted(all_active_streak.items(), key=lambda x: (-x[1][0]))
+
+hall_of_fame += "<section class=\"hall-of-fame\">"
+p_add()
+
+stats = [sorted_mspl, sorted_cpl, sorted_as]
+stat_headings = ["Most Seasons Played in League", " Most Consecutive Seasons Played in League", "Longest Active Consecutive Streak"]
+for i in range(3):
+    stat = stats[i]
+    heading = stat_headings[i]
+
+    achievement = p("<div class=\"achievement\">")
+    p_add()
+    achievement += "<h4> {} </h4>".format(heading)
+    p_add()
+    for rank in range(10):
+        achievement += "<p>{}. {}, {} </p>".format(str(rank+1), pseasons[stat[rank][0].lower()]["name"], stat[rank][1])
+    p_sub()
+    p_sub()
+    achievement += p("</div>")
+    hall_of_fame += achievement
+
+p_sub()
+hall_of_fame += p("</section>")
+
 
 """
 Highest Win Percentage
 Table (A-H) [Tier | Names | Percentage]
 """
+hwp = {}
 
+for season in range(current_season):
+    season_data = league[str(season+1)]
+    for division in season_data:
+        if division.lower() == "champion":
+            pass
+        else:
+            tier = division[0]
+            for member in season_data[division]["members"]:
+                wp = int(season_data[division]["members"][member]["pct"][:-1])
+                if tier in hwp:
+                    if wp > hwp[tier][0]:
+                        hwp[tier]=[wp, [(member, season)]]
+                    elif wp == hwp[tier][0]:
+                        hwp[tier] = [hwp[tier][0], hwp[tier][1] + [(member, season)]]
+                else:
+                    hwp[tier]=[wp, [(member, season)]]
+
+
+hall_of_fame += "<!-- Highest Win Percentage -->\n"
+hall_of_fame += """<div class="achievement-header"><h4>Highest Win Percentage by Division</h4>"""
+p_add()
+wp_table = p("""<table class="hof-champions">""")
+p_add()
+
+# Generate headings
+wp_table += p("<tr>")
+p_add()
+wp_table += p(th("Tier", " width=\"15%\""))
+wp_table += p(th("Win Percentage", " width=\"30%\""))
+wp_table += p(th("Player(s)", " width=\"55%\""))
+p_sub()
+wp_table += p("</tr>")
+
+for i in range(len(hwp)):
+    wp_table += p("<tr>")
+    p_add()
+
+    tier = chr(ord("A")+i)
+    tier_wp = hwp[tier][0]
+    tier_wp_players = hwp[tier][1]
+
+    # tier
+    wp_table += p(td(tier))
+    # win %
+    wp_table += p(td(tier_wp))
+    # players
+    wp_table += p(td(tier_wp_players))
+
+    p_sub()
+    wp_table += p("</tr>")
+
+p_sub()
+wp_table += p("</table>")
+p_sub()
+wp_table += p("</div>")
+
+
+hall_of_fame += wp_table
 
 """
 Footer

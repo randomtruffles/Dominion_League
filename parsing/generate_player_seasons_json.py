@@ -40,7 +40,7 @@ for s_key in seasons.keys():
                     [{"season": season, "division": division, "rank": rank}]
             else:
                 players[case_insensitive_member] = [
-                    {"season": season, "division": division}]
+                    {"season": season, "division": division, "rank": rank}]
             players_to_case_sensitive_name[case_insensitive_member] = member
 
 sorted_players = {}
@@ -66,10 +66,6 @@ for player in players.keys():
 
     for p in player_data:
         cur_season = int(p["season"])
-        if player == "mic qsenoch":
-            print("Current season: " + str(cur_season))
-            print(longest_streak)
-            print(cur_streak)
 
         if cur_season - cur_streak[2] != 1:
             if cur_streak[0] >= longest_streak[0]:
