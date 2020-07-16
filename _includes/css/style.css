@@ -386,7 +386,8 @@ a.past-standings {
 
 a.player-past-standings {
   text-decoration: none;
-  color: #{{ site.data.template.color.primary }}
+  color: #{{ site.data.template.color.primary }};
+  border-bottom: 1px dotted gray;
 }
 
 a.player-past-standings:hover {
@@ -1657,7 +1658,7 @@ img[alt=faq_images] {
   border:1px;
   border-style:solid;
   border-width:1px;
-  padding:2px;
+  padding:2px 3px;
   top: 100%;
   left: 50%;
   text-align: center;
@@ -1681,6 +1682,12 @@ img[alt=faq_images] {
 
 .CellWithComment:hover span.CellComment{
   display:block;
+}
+
+
+img.hof-champion-trophy {
+  height: 48px;
+  width: 50px;
 }
 
 .link-secondary {

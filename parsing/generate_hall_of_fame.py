@@ -46,8 +46,8 @@ title: Dominion League Hall of Fame
 ---
 <div class="container-centered">
   <h3>Dominion League Hall of Fame</h3>
-  <img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="champion-trophy" title="Championship Match between top 2 A division finishers">
-  <h5> This page contains various achievements reached by league players. <br> <br> Ties are broken by seniority (ie. who reached it first). <br> <br> Hover over player names for details regarding their achievement.</h5>
+  <img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="hof-champion-trophy" title="Championship Match between top 2 A division finishers">
+  <p> This page contains various achievements reached by league players. <br> Ties are broken by seniority (ie. who reached it first). <br> Hover over player names for details regarding their achievement.</p>
   <div class=spacing></div>
 """
 hall_of_fame += header
@@ -129,9 +129,12 @@ league = None
 with open('../_data/friendly_league_history.json') as file:
     league = json.load(file)["seasons"]
 
-div_a_counter = {}
+div_a_seasons = {}
+
 consecutive_div_a_counter = {}
+consecutive_div_a_start = {}
 best_streak_div_a_counter = {}
+best_streak_div_a_start = {}
 
 for season in range(current_season):
     a1 = league[str(season+1)]["A1"]
@@ -139,37 +142,71 @@ for season in range(current_season):
     for member in a1["members"]:
 
         # Most A Divisions
-        if member not in div_a_counter:
-            div_a_counter[member] = 0
-        div_a_counter[member] += 1
+        if member not in div_a_seasons:
+            div_a_seasons[member] = []
+        div_a_seasons[member].append(season)
 
         # Most Consecutive A divisions
         if member not in consecutive_div_a_counter:
             consecutive_div_a_counter[member] = 0
+            consecutive_div_a_start[member] = 0
         if member not in best_streak_div_a_counter:
             best_streak_div_a_counter[member] = 0
+            best_streak_div_a_start[member] = 0
 
         if member in last_season_a1_members:
             consecutive_div_a_counter[member] += 1
         else:
             consecutive_div_a_counter[member] = 1
+            consecutive_div_a_start[member] = season
 
-        best_streak_div_a_counter[member] = max(
-            best_streak_div_a_counter[member],
-            consecutive_div_a_counter[member])
+        if consecutive_div_a_counter[member] > best_streak_div_a_counter[member]:
+            best_streak_div_a_counter[member] = consecutive_div_a_counter[member]
+            best_streak_div_a_start[member] = consecutive_div_a_start[member]
 
 hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()
 
 def list_to_str(li):
-    li = sorted(li)
+    li = sorted(map(int, li))
     strout = ""
     for l in li:
         strout += str(l) + ", "
     return "Seasons " + strout[:-2]
 
-most_a_div = sorted(div_a_counter.items(), key=lambda x: -x[1])
+def condense_list_to_str(li, zero_index=True):
+    zero_index_adjuster = 1 if zero_index else 0
+    strout = ""
+    last_season = int(li[0]) + zero_index_adjuster
+    start_consecutive = int(li[0]) + zero_index_adjuster
+    for l in li:
+        l = int(l) + zero_index_adjuster
+        if l - last_season > 1:
+            if start_consecutive == last_season:
+                strout += str(start_consecutive) + ", "
+                start_consecutive = l
+                last_season = l
+            else:
+                strout += str(start_consecutive)+"-"+str(last_season)+", "
+                start_consecutive = l
+                last_season = l
+        elif l - last_season == 1:
+            last_season += 1
+    if last_season != start_consecutive:
+        strout += str(start_consecutive) + "-" + str(last_season)
+    else:
+        strout += str(last_season)
+
+    return strout
+
+
+
+most_a_div = sorted(div_a_seasons.items(), key=lambda x: -len(x[1]))
+most_a_div = list(map(lambda x: (x[0], len(x[1]), "Seasons "+condense_list_to_str(x[1])), most_a_div))
+
 most_a_streak = sorted(best_streak_div_a_counter.items(), key=lambda x: -x[1])
+most_a_streak = list(map(lambda x: (x[0], x[1], f"From Season {best_streak_div_a_start[x[0]] + 1} to {best_streak_div_a_start[x[0]] + x[1]}"), most_a_streak))
+
 runner_ups = champions["players_runner_ups"]
 sorted_runner_ups = sorted(runner_ups.items(), key=lambda x: (-len(x[1]), max(map(int, x[1]))))
 sorted_runner_ups = list(map(lambda x: (x[0], len(x[1]), list_to_str(x[1])), sorted_runner_ups))
@@ -347,17 +384,23 @@ for player in pseasons:
     tsp = stats["Total Seasons Played"]
     ls = stats["Longest Streak"]
 
+    seasons_played = []
+    for sea in seasons:
+        seasons_played.append(sea["season"])
+
     if name.lower() in current_season_players and ls[2] == 39:
         ls = [ls[0]+1, ls[1], ls[2]+1]
         all_active_streak[name] = ls
 
     if name.lower() in current_season_players:
-        tsp += 1
+        seasons_played.append(str(current_season+1))
 
-    all_most_seasons_pl[name] = tsp
+    all_most_seasons_pl[name] = seasons_played
     all_consecutive_pl[name] = ls
 
-sorted_mspl = sorted(all_most_seasons_pl.items(), key=lambda x: -x[1])
+sorted_mspl = sorted(all_most_seasons_pl.items(), key=lambda x: -len(x[1]))
+sorted_mspl = list(map(lambda x: (x[0], len(x[1]), f"Seasons {condense_list_to_str(x[1], False)}"), sorted_mspl))
+
 sorted_cpl = sorted(all_consecutive_pl.items(), key=lambda x: (-x[1][0]))
 sorted_cpl = list(map(lambda x: (x[0], x[1][0], f"From Season {x[1][1]} to {x[1][2]}"), sorted_cpl))
 sorted_as = sorted(all_active_streak.items(), key=lambda x: (-x[1][0]))
@@ -382,7 +425,7 @@ for i in range(3):
     p_add()
     for rank in range(10):
         achievement += p("<tr>")
-        achievement += p(f"<td> {str(rank+1)} </td>")
+        achievement += p(f"<td> {str(rank+1)}. </td>")
         player_name = url_player(pseasons[stat[rank][0].lower()]["name"])
         if (len(stat[rank]) >= 3):
             achievement += p("<td class=\"CellWithComment\"> {} <span class=\"CellComment\"> {} </span> </td>".format(player_name, stat[rank][2]))
