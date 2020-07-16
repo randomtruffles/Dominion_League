@@ -28,7 +28,7 @@ def td(text, attr=""):
     return "<td {}>{}</td>".format(attr, text)
 
 def url_player(player):
-    param = player.replace(" ", "%")
+    param = player.replace(" ", "%20")
     return """<a href="{{{{site.baseurl}}}}/player_database?player={}">{}</a>""".format(param, player)
 
 def url_past(season, secondary, prefix=""):
