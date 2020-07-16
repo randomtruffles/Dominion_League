@@ -171,7 +171,7 @@ def list_to_str(li):
 most_a_div = sorted(div_a_counter.items(), key=lambda x: -x[1])
 most_a_streak = sorted(best_streak_div_a_counter.items(), key=lambda x: -x[1])
 runner_ups = champions["players_runner_ups"]
-sorted_runner_ups = sorted(runner_ups.items(), key=lambda x: (-len(x[1]), -max(map(int, x[1]))))
+sorted_runner_ups = sorted(runner_ups.items(), key=lambda x: (-len(x[1]), max(map(int, x[1]))))
 sorted_runner_ups = list(map(lambda x: (x[0], len(x[1]), list_to_str(x[1])), sorted_runner_ups))
 stats = [most_a_div, most_a_streak, sorted_runner_ups]
 stat_headings = ["Most Seasons Played in A", "Longest Consecutive Streak in A", "Most Championship Runner-Ups in A"]
