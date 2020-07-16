@@ -1600,7 +1600,7 @@ img[alt=faq_images] {
   margin: 0px auto;
   padding: 20px 20px 20px 20px;
   position: relative;
-  font-family: {{ site.data.template.font.primary }}
+  font-family: {{ site.data.template.font.primary }};
   font-size: 20px;
   width: 80%;
 }
@@ -1615,20 +1615,31 @@ img[alt=faq_images] {
   font-family: {{site.data.template.font.secondary}}
 }
 
+
+.hof-table {
+  font-family: {{ site.data.template.font.secondary }};
+  font-size: 17.5px;
+}
+
 @media (max-width: 700px) {
   .hall-of-fame {
     display: block;
   }
   .achievement {
-    width: 100%;
+    width: 95%;
   }
-  .achievement-header {
-    width: 100%;
-  }
-}
 
-.hof-table {
-  font-family: {{ site.data.template.font.secondary }};
+  .achievement-header {
+    width: 95%;
+  }
+
+  .hof-table {
+    font-size: 17px;
+  }
+
+  .hof-table td {
+    font-size: 17px;
+  }
 }
 
 .hof-table tr:hover {

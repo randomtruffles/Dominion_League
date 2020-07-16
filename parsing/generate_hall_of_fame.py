@@ -42,6 +42,7 @@ Italics: Updated up to Season 40
 """
 header = """---
 layout: default
+title: Dominion League Hall of Fame
 ---
 <div class="container-centered">
   <h3>Dominion League Hall of Fame</h3>
@@ -173,7 +174,7 @@ runner_ups = champions["players_runner_ups"]
 sorted_runner_ups = sorted(runner_ups.items(), key=lambda x: (-len(x[1]), -max(map(int, x[1]))))
 sorted_runner_ups = list(map(lambda x: (x[0], len(x[1]), list_to_str(x[1])), sorted_runner_ups))
 stats = [most_a_div, most_a_streak, sorted_runner_ups]
-stat_headings = ["Most Divisions in A", "Longest Consecutive Streak in A", "Most Runner-Ups in A"]
+stat_headings = ["Most Seasons Played in A", "Longest Consecutive Streak in A", "Most Championship Runner-Ups in A"]
 for i in range(3):
     stat = stats[i]
     heading = stat_headings[i]
@@ -434,8 +435,8 @@ p_add()
 # Generate headings
 wp_table += p("<tr>")
 p_add()
-wp_table += p(th("Tier", " width=\"25%\" style=\"text-align:center\""))
-wp_table += p(th("Player(s)", " width=\"50%\" style=\"text-align:center\""))
+wp_table += p(th("Tier", " width=\"20%\" style=\"text-align:center\""))
+wp_table += p(th("Player(s)", " width=\"55%\" style=\"text-align:center\""))
 wp_table += p(th("Win %", " width=\"25%\" style=\"text-align:center\""))
 p_sub()
 wp_table += p("</tr>")
