@@ -405,29 +405,6 @@ a:active {
     color: #{{ site.data.template.color.primary }};
 }
 
-/* Tooltip container */
-.tooltip {
-   position: relative;
-}
-.tooltip::before {
-   background-color: white;
-   border: 1px solid #888;
-   border-radius: 2px;
-   color: #444;
-   content: attr(data-title);
-   display: none;
-   font-family: sans-serif;
-   font-size: 14px;
-   padding: 2px 5px;
-   position: absolute;
-   top: 20px;
-   left: 5px;
-   z-index: 1;
-}
-.tooltip:hover::before {
-   display: block;
-}
-
 /* Past Standings Tables */
 table {
   font-family: arial, sans-serif;
@@ -1599,6 +1576,10 @@ img[alt=faq_images] {
   padding: 0px;
 }
 
+.hall-of-fame:first-of-type {
+  margin-top: 25px;
+}
+
 .achievement {
   background-color: #fafafa;
   border-radius: 25px;
@@ -1617,6 +1598,7 @@ img[alt=faq_images] {
   text-align: center;
   margin-bottom: 30px;
   margin: 0px auto;
+  padding: 20px 20px 20px 20px;
   position: relative;
   font-family: {{ site.data.template.font.primary }}
   font-size: 20px;
@@ -1643,4 +1625,62 @@ img[alt=faq_images] {
   .achievement-header {
     width: 100%;
   }
+}
+
+.hof-table {
+  font-family: {{ site.data.template.font.secondary }};
+}
+
+.hof-table tr:hover {
+  background-color: lightgrey
+}
+
+.CellWithComment{
+  position:relative;
+}
+
+.CellComment{
+  display:none;
+  position:absolute;
+  z-index:100;
+  border:1px;
+  border-style:solid;
+  border-width:1px;
+  padding:2px;
+  top: 100%;
+  left: 50%;
+  text-align: center;
+  background-color: #ca2017;
+  color: white;
+  width: 180px;
+  margin-left: -90px;
+  border-radius: 15px;
+}
+
+.CellComment::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ca2017 transparent;
+}
+
+.CellWithComment:hover span.CellComment{
+  display:block;
+}
+
+.link-secondary {
+  color: #474747;
+  border-bottom: 1px dotted gray;
+  text-decoration: none;
+}
+
+
+.link-secondary:hover {
+  color: gray;
+  border-bottom: 1px dotted gray;
+  text-decoration: none;
 }

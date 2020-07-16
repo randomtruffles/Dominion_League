@@ -22,10 +22,19 @@ def p_sub():
     padding -= 1
 
 def th(text, attr=""):
-    return "<th{}>{}</th>".format(attr, text)
+    return "<th {}>{}</th>".format(attr, text)
 
 def td(text, attr=""):
-    return "<td{}>{}</td>".format(attr, text)
+    return "<td {}>{}</td>".format(attr, text)
+
+def url_player(player):
+    param = player.replace(" ", "%")
+    return """<a href="{{{{site.baseurl}}}}/player_database?player={}">{}</a>""".format(param, player)
+
+def url_past(season, secondary, prefix=""):
+    season = str(season)
+    cls = """class="link-secondary" """ if secondary else ""
+    return """<a {}href="{{{{site.baseurl}}}}/past_standings/season{}">{}</a>""".format(cls, season, prefix+season)
 
 """
 Header
@@ -37,7 +46,8 @@ layout: default
 <div class="container-centered">
   <h3>Dominion League Hall of Fame</h3>
   <img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="champion-trophy" title="Championship Match between top 2 A division finishers">
-
+  <h5> This page contains various achievements reached by league players. Tiebreakers are broken by seniority (ie. who reached it first)</h5>
+  <p> Hover over player names for details regarding their achievement</p>
   <div class=spacing></div>
 """
 hall_of_fame += header
@@ -59,7 +69,7 @@ hall_of_fame += "<!-- All League Champions -->\n"
 
 hall_of_fame += """<div class="achievement-header"><h4>All League Champions</h4>"""
 # Create table
-champions_table = p("""<table class="hof-champions">""")
+champions_table = p("""<table class="hof-table">""")
 p_add()
 
 """
@@ -75,26 +85,28 @@ champions_table += p("<tr>")
 p_add()
 champions_table += p(th("""<img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="champion-trophy" title="Championship Match between top 2 A division finishers">""", " width=\"15%\""))
 champions_table += p(th("Player", " width=\"30%\""))
-champions_table += p(th("Seasons", " width=\"55%\""))
+champions_table += p(th("Seasons", " width=\"55%\" style=\"text-align:center\""))
 p_sub()
 champions_table += p("</tr>")
 
 # Generate Rows
 champions_players = champions["players"].copy().items()
-sorted_players = sorted(champions_players, key=lambda x: (-len(x[1]), -max(map(int, x[1]))))
+sorted_players = sorted(champions_players, key=lambda x: (-len(x[1]), max(map(int, x[1]))))
 for player, li in sorted_players:
     champions_table += p("<tr>")
     p_add()
     # Championships
     champions_table += p(td(str(len(li))))
     # Name
-    champions_table += p(td(pseasons[player]["name"]))
+    player_name = url_player(pseasons[player]["name"])
+    champions_table += p(td(player_name))
     # Seasons
     seasons = ""
     for s in li:
-        seasons += "S" + s + ", "
+        season_url = url_past(s, True, "S")
+        seasons += season_url + ", "
     seasons = seasons[:-2]
-    champions_table += p(td(seasons))
+    champions_table += p(td(seasons, "style=\"text-align:center\""))
 
     p_sub()
     champions_table += p("</tr>")
@@ -149,11 +161,18 @@ for season in range(current_season):
 hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()
 
+def list_to_str(li):
+    li = sorted(li)
+    strout = ""
+    for l in li:
+        strout += str(l) + ", "
+    return "Seasons " + strout[:-2]
+
 most_a_div = sorted(div_a_counter.items(), key=lambda x: -x[1])
 most_a_streak = sorted(best_streak_div_a_counter.items(), key=lambda x: -x[1])
 runner_ups = champions["players_runner_ups"]
 sorted_runner_ups = sorted(runner_ups.items(), key=lambda x: (-len(x[1]), -max(map(int, x[1]))))
-
+sorted_runner_ups = list(map(lambda x: (x[0], len(x[1]), list_to_str(x[1])), sorted_runner_ups))
 stats = [most_a_div, most_a_streak, sorted_runner_ups]
 stat_headings = ["Most Divisions in A", "Longest Consecutive Streak in A", "Most Runner-Ups in A"]
 for i in range(3):
@@ -162,10 +181,20 @@ for i in range(3):
 
     achievement = p("<div class=\"achievement\">")
     p_add()
-    achievement += "<h4> {} </h4>".format(heading)
+    achievement += p("<h4> {} </h4>".format(heading))
     p_add()
+    achievement += p("<table class=\"hof-table\">")
     for rank in range(5):
-        achievement += "<p>{}. {}, {} </p>".format(str(rank+1), pseasons[stat[rank][0].lower()]["name"], stat[rank][1])
+        achievement += p("<tr>")
+        player_name = url_player(pseasons[stat[rank][0].lower()]["name"])
+        achievement += p("<td>{}.</td>".format(str(rank+1)))
+        if (len(stat[rank]) >= 3):
+            achievement += p("<td class=\"CellWithComment\"> {} <span class=\"CellComment\"> {} </span> </td>".format(player_name, stat[rank][2]))
+        else:
+            achievement += p("<td> {} </td>".format(player_name))
+        achievement += p("<td> {} </td>".format(stat[rank][1]))
+        achievement += p("</tr>")
+    achievement += "</table>"
     p_sub()
     p_sub()
     achievement += p("</div>")
@@ -195,11 +224,18 @@ for player in pseasons:
     cur_cfp = [-1, -1, -1]
     cur_csp = [-1, -1, -1]
     unique_tiers = set()
+    unique_tiers_complete = 1000
 
     for season_data in seasons:
         season = int(season_data["season"])
         tier = season_data["division"][0]
         rank = int(season_data["rank"])
+
+        if tier == "A":
+            if champions["seasons"][str(season)] == name.lower():
+                rank = 1
+            elif champions["runner_ups"][str(season)] == name.lower():
+                rank = 2
 
         if rank == 1:
             if season - cur_cfp[2] != 1:
@@ -231,16 +267,29 @@ for player in pseasons:
                     longest_csp[1] = cur_csp[1]
                     longest_csp[2] = cur_csp[2]
 
+        if tier not in unique_tiers:
+            unique_tiers_complete = season
         unique_tiers.add(tier)
 
     all_consecutive_fp[name] = longest_cfp
     all_consecutive_sp[name]  = longest_csp
-    all_unique_tiers[name] = unique_tiers
+    all_unique_tiers[name] = [unique_tiers, unique_tiers_complete]
 
+def list_to_string(li):
+    li = sorted(li)
+    str = ""
+    for l in li:
+        str += l + ", "
+    return "{"+str[:-2]+"}"
 
-sorted_cfp = sorted(all_consecutive_fp.items(), key=lambda x: (-x[1][0], -x[1][2]))
-sorted_csp = sorted(all_consecutive_sp.items(), key=lambda x: (-x[1][0], -x[1][2]))
-sorted_unique_tiers = sorted(all_unique_tiers.items(), key=lambda x: -len(x[1]))
+sorted_cfp = sorted(all_consecutive_fp.items(), key=lambda x: (-x[1][0], x[1][2]))
+sorted_cfp = list(map(lambda x: (x[0], x[1][0], f"Seasons {x[1][1]} to {x[1][2]}"), sorted_cfp))
+
+sorted_csp = sorted(all_consecutive_sp.items(), key=lambda x: (-x[1][0], x[1][2]))
+sorted_csp = list(map(lambda x: (x[0], x[1][0], f"Seasons {x[1][1]} to {x[1][2]}"), sorted_csp))
+
+sorted_unique_tiers = sorted(all_unique_tiers.items(), key=lambda x: (-len(x[1][0]), x[1][1]))
+sorted_unique_tiers = list(map(lambda x: (x[0], len(x[1][0]), f"{list_to_string(x[1][0])} by S{x[1][1]}"), sorted_unique_tiers))
 
 hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()
@@ -253,10 +302,22 @@ for i in range(3):
 
     achievement = p("<div class=\"achievement\">")
     p_add()
-    achievement += "<h4> {} </h4>".format(heading)
+    achievement += p("<h4> {} </h4>".format(heading))
+    p_add()
+    achievement += p("<table class=\"hof-table\">")
     p_add()
     for rank in range(10):
-        achievement += "<p>{}. {}, {} </p>".format(str(rank+1), pseasons[stat[rank][0].lower()]["name"], stat[rank][1])
+        achievement += p("<tr>")
+        player_name = url_player(pseasons[stat[rank][0].lower()]["name"])
+        achievement += p(f"<td>{str(rank+1)}. </td>")
+        if (len(stat[rank]) >= 3):
+            achievement += p("<td class=\"CellWithComment\"> {} <span class=\"CellComment\"> {} </span> </td>".format(player_name, stat[rank][2]))
+        else:
+            achievement += p("<td> {} </td>".format(player_name))
+        achievement += p(f"<td> {stat[rank][1]} </td>")
+        achievement += p("</tr>")
+    p_sub()
+    achievement += p("</table>")
     p_sub()
     p_sub()
     achievement += p("</div>")
@@ -298,23 +359,39 @@ for player in pseasons:
 
 sorted_mspl = sorted(all_most_seasons_pl.items(), key=lambda x: -x[1])
 sorted_cpl = sorted(all_consecutive_pl.items(), key=lambda x: (-x[1][0]))
+sorted_cpl = list(map(lambda x: (x[0], x[1][0], f"From Season {x[1][1]} to {x[1][2]}"), sorted_cpl))
 sorted_as = sorted(all_active_streak.items(), key=lambda x: (-x[1][0]))
+sorted_as = list(map(lambda x: (x[0], x[1][0], f"Since Season {x[1][1]}"), sorted_as))
+
 
 hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()
 
 stats = [sorted_mspl, sorted_cpl, sorted_as]
 stat_headings = ["Most Seasons Played in League", " Most Consecutive Seasons Played in League", "Longest Active Consecutive Streak"]
+
 for i in range(3):
     stat = stats[i]
     heading = stat_headings[i]
 
     achievement = p("<div class=\"achievement\">")
     p_add()
-    achievement += "<h4> {} </h4>".format(heading)
+    achievement += p("<h4> {} </h4>".format(heading))
+    p_add()
+    achievement += p("<table class=\"hof-table\">")
     p_add()
     for rank in range(10):
-        achievement += "<p>{}. {}, {} </p>".format(str(rank+1), pseasons[stat[rank][0].lower()]["name"], stat[rank][1])
+        achievement += p("<tr>")
+        achievement += p(f"<td> {str(rank+1)} </td>")
+        player_name = url_player(pseasons[stat[rank][0].lower()]["name"])
+        if (len(stat[rank]) >= 3):
+            achievement += p("<td class=\"CellWithComment\"> {} <span class=\"CellComment\"> {} </span> </td>".format(player_name, stat[rank][2]))
+        else:
+            achievement += p("<td> {} </td>".format(player_name))
+        achievement += p(f"<td> {stat[rank][1]} </td>")
+        achievement += p("</tr>")
+    p_sub()
+    achievement += p("</table>")
     p_sub()
     p_sub()
     achievement += p("</div>")
@@ -331,7 +408,8 @@ Table (A-H) [Tier | Names | Percentage]
 hwp = {}
 
 for season in range(current_season):
-    season_data = league[str(season+1)]
+    season = season+1
+    season_data = league[str(season)]
     for division in season_data:
         if division.lower() == "champion":
             pass
@@ -349,17 +427,17 @@ for season in range(current_season):
 
 
 hall_of_fame += "<!-- Highest Win Percentage -->\n"
-hall_of_fame += """<div class="achievement-header"><h4>Highest Win Percentage by Division</h4>"""
+hall_of_fame += """<div class="achievement-header"><h4>Highest Win Percentage by Tier</h4>"""
 p_add()
-wp_table = p("""<table class="hof-champions">""")
+wp_table = p("""<table class="hof-table" style=\"text-align:center\">""")
 p_add()
 
 # Generate headings
 wp_table += p("<tr>")
 p_add()
-wp_table += p(th("Tier", " width=\"15%\""))
-wp_table += p(th("Win Percentage", " width=\"30%\""))
-wp_table += p(th("Player(s)", " width=\"55%\""))
+wp_table += p(th("Tier", " width=\"25%\" style=\"text-align:center\""))
+wp_table += p(th("Player(s)", " width=\"50%\" style=\"text-align:center\""))
+wp_table += p(th("Win %", " width=\"25%\" style=\"text-align:center\""))
 p_sub()
 wp_table += p("</tr>")
 
@@ -372,11 +450,19 @@ for i in range(len(hwp)):
     tier_wp_players = hwp[tier][1]
 
     # tier
-    wp_table += p(td(tier))
-    # win %
-    wp_table += p(td(tier_wp))
+    wp_table += p(td(tier, "style=\"text-align:center\""))
     # players
-    wp_table += p(td(tier_wp_players))
+    players_string = ""
+    for player in tier_wp_players:
+        wp_player = url_player(player[0])
+        wp_season = str(player[1])
+        season_url = url_past(wp_season, True, "Season ")
+        players_string += f"{wp_player} ({season_url}), "
+    players_string = players_string[:-2]
+
+    wp_table += p(td(players_string, "style=\"text-align:center\""))
+    # win %
+    wp_table += p(td(str(tier_wp) + "%", "style=\"text-align:center\""))
 
     p_sub()
     wp_table += p("</tr>")
