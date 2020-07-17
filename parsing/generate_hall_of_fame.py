@@ -464,10 +464,13 @@ for season in league:
             for member in member_data:
                 for member_to_add in member_data:
                     if member != member_to_add:
-                        if member not in pl_uniqueopp:
-                            pl_uniqueopp[member] = set(member_to_add)
+                        member_lower = member.lower()
+                        member_to_add_lower = member_to_add.lower()
+                        if member_lower not in pl_uniqueopp:
+                            pl_uniqueopp[member_lower] = {member_to_add_lower}
                         else:
-                            pl_uniqueopp[member].add(member_to_add)
+                            pl_uniqueopp[member_lower].add(member_to_add_lower)
+
             # calculate 6-0 results
             results_data = division_data["results"]
             for result in results_data:
@@ -485,6 +488,7 @@ for season in league:
                         pl_six_ohs[player2] = [(int_season, player1)]
                     else:
                         pl_six_ohs[player2] = pl_six_ohs[player2] + [(int_season, player1)]
+
 
 for pl in pl_six_ohs:
     opps = pl_six_ohs[pl]
@@ -545,6 +549,13 @@ for aut in all_unique_tiers:
 case_insensitive_all_most_seasons_pl = {}
 for aut in all_most_seasons_pl:
     case_insensitive_all_most_seasons_pl[aut.lower()] = all_most_seasons_pl[aut]
+
+print("amoffett11")
+print(pl_uniqueopp["amoffett11"])
+print("sharur")
+print(pl_uniqueopp["sharur"])
+print("fircoal")
+print(pl_uniqueopp["fircoal"])
 
 sorted_uniqueopp = sorted(pl_uniqueopp.items(), key=lambda x: -len(x[1]))
 sorted_uniqueopp = list(map(lambda x: (x[0], len(x[1]), f"Tiers played: {set_to_string(case_insensitive_all_unique_tiers[x[0].lower()])}, Seasons played: {len(case_insensitive_all_most_seasons_pl[x[0].lower()])}"), sorted_uniqueopp))
