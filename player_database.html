@@ -46,6 +46,7 @@ var league_history = friendly_league_history["seasons"];
 var current_season = {{ site.data.current_season_players | jsonify }};
 var current_season_iframes = {{ site.data.current_season_iframes | jsonify }};
 var temp_season = {{ site.data.season_41_players | jsonify }};
+var unique_opponents = {{ site.data.players_unique_opponents | jsonify }};
 
 // Get URL parameter
 searchPlayerHistory(true);
@@ -189,6 +190,10 @@ function searchPlayerHistory(param=false){
         stats3.innerHTML = "<b>Longest Streak:</b> " + longest_streak[0].toString() + " (S"+longest_streak[1].toString()+"-S"+longest_streak[2].toString()+")";
         stats3.classList.add('stats-p');
         divContainer.appendChild(stats3);
+        var stats4 = document.createElement("p");
+        stats4.innerHTML = "<b>Unique Opponents Faced:</b> " + (unique_opponents[player_name.toLowerCase()].length).toString();
+        stats4.classList.add('stats-p');
+        divContainer.appendChild(stats4);
       }
 
 

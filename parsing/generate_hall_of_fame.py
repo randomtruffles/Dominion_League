@@ -505,6 +505,7 @@ for player in pseasons:
     for season_data in seasons:
         season = int(season_data["season"])
         rank = int(season_data["rank"])
+        tier = season_data["division"][0]
 
         if tier == "A":
             if champions["seasons"][str(season)] == name.lower():
@@ -550,12 +551,14 @@ case_insensitive_all_most_seasons_pl = {}
 for aut in all_most_seasons_pl:
     case_insensitive_all_most_seasons_pl[aut.lower()] = all_most_seasons_pl[aut]
 
-print("amoffett11")
-print(pl_uniqueopp["amoffett11"])
-print("sharur")
-print(pl_uniqueopp["sharur"])
-print("fircoal")
-print(pl_uniqueopp["fircoal"])
+to_store_uniqueopp = {}
+for player in pl_uniqueopp:
+    to_store_uniqueopp[player] = list(pl_uniqueopp[player])
+
+
+with open("../_data/players_unique_opponents.json", 'w') as filetowrite:
+    # convert python dictionary to json and write it
+    json.dump(to_store_uniqueopp, filetowrite)
 
 sorted_uniqueopp = sorted(pl_uniqueopp.items(), key=lambda x: -len(x[1]))
 sorted_uniqueopp = list(map(lambda x: (x[0], len(x[1]), f"Tiers played: {set_to_string(case_insensitive_all_unique_tiers[x[0].lower()])}, Seasons played: {len(case_insensitive_all_most_seasons_pl[x[0].lower()])}"), sorted_uniqueopp))
