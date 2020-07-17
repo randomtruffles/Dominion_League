@@ -1,5 +1,5 @@
 #!/usr/local/bin/python3
-current_season = 40
+current_season = 41
 page = ""
 page_style = "default"
 padding = 0

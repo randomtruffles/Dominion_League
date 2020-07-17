@@ -3,7 +3,7 @@ import json
 
 hall_of_fame = ""
 padding = 0
-current_season = 39
+current_season = 40
 
 # Helper functions
 def pad(text, padding):
@@ -370,7 +370,7 @@ Group:
 2. Most Consecutive Seasons Played in League (top 5)
 3. Longest Active Streak (top 5)
 """
-with open('../_data/current_season_players.json') as file:
+with open(f"../_data/season_{current_season+1}_players.json") as file:
     current_season_players = json.load(file)
 
 all_most_seasons_pl = {}
@@ -388,7 +388,7 @@ for player in pseasons:
     for sea in seasons:
         seasons_played.append(sea["season"])
 
-    if name.lower() in current_season_players and ls[2] == 39:
+    if name.lower() in current_season_players and ls[2] == current_season:
         ls = [ls[0]+1, ls[1], ls[2]+1]
         all_active_streak[name] = ls
 
@@ -405,7 +405,6 @@ sorted_cpl = sorted(all_consecutive_pl.items(), key=lambda x: (-x[1][0]))
 sorted_cpl = list(map(lambda x: (x[0], x[1][0], f"From Season {x[1][1]} to {x[1][2]}"), sorted_cpl))
 sorted_as = sorted(all_active_streak.items(), key=lambda x: (-x[1][0]))
 sorted_as = list(map(lambda x: (x[0], x[1][0], f"Since Season {x[1][1]}"), sorted_as))
-
 
 hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()

@@ -2,7 +2,7 @@
 import json
 
 # Open file containing all league history
-with open('../_data/leagueHistory_20200602.json') as file:
+with open('../_data/leagueHistory20200714.json') as file:
     data = json.load(file)
 # Open file containing all aliases
 with open('../_data/aliases.json') as file:

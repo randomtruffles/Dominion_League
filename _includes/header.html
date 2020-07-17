@@ -11,28 +11,23 @@
 <nav class="navbar navbar-default">
     <div class="navbar-container mobile" style="padding-bottom: 0px">
       <!-- Brand and toggle get grouped for better mobile display -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+        <button type="button" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
         </button>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="nav-collapse collapse" id="navbarNavDropdown">
             <ul class="nav navbar-nav">
               {% for item in site.data.nav %}
                 {% if item.children %}
                 <li class="dropdown nav-item">
-                    <a href="{{site.url}}/{{ item.path }}">{{ item.name }}
-                      <i class="fa fa-caret-down"></i>
-                    </a>
-                  <ul class='dropdown-content'>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ item.name }} <i class="fa fa-caret-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     {% for child in item.children %}
-                      <li>
-                        <a class="fillDiv" href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
-                      </li>
+                      <a class="dropdown-item fillDiv" href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
                     {% endfor %}
-                  </ul>
+                  </div>
                 {% else %}
                   <li class="nav-item">
                     <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
@@ -45,5 +40,6 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+
 
 <button onclick="toTopFunction()" id="scrollToTopBtn" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>

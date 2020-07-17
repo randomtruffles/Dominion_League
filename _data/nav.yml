@@ -4,6 +4,8 @@
   path: about
   section_id: about
   children:
+    - name: About
+      path: about
     - name: Rules
       path: rules
     - name: F.A.Q.
@@ -20,6 +22,8 @@
       path: player_database
     - name: Past Seasons
       path: past_standings
+    - name: Hall of Fame
+      path: hall_of_fame
 - name: Matches
   path: matches
 - name: News

@@ -287,8 +287,31 @@ iframe {
 }
 
 /* Dropdown Nav Menu */
-.fillDiv {
-  width: 100%;
+a.fillDiv {
+  width: 180px;
+  padding: 8px 8px;
+}
+
+a.fillDiv:hover {
+  background-color: #E8E8E8 !important;
+  color: #{{site.data.template.color.primary}} !important;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  margin-top: -3px !important;
+  padding: 0px;
+  background-color: lightgray;
+  max-width: 200px;
+  min-width: 160px;
+  font-size: 17px;
+  margin-left: 5px !important;
+}
+
+@media (min-width:768px) {
+  .dropdown-menu {
+    margin-left: 2px !important;
+  }
 }
 
 /* Dominion Games */
@@ -934,22 +957,35 @@ fieldset[disabled] .btn-xl.active {
     border-color: rgba(255,255,255,.02);
 }
 
-.navbar-default .navbar-toggle {
-    border-color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.primary }};
+.navbar-default .navbar-toggler {
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: black;
+    z-index: 1 !important;
+    position: relative;
+    color: white;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-container.mobile {
+  padding-top:10px;
+}
+
+.navbar-container svg {
+  margin-bottom: -3px;
+}
+.navbar-default .navbar-toggler .icon-bar {
     background-color: #fff;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.data.template.color.primary }};
+.navbar-toggler-right {
+  float:right;
+  display: inline-block;
+}
+.navbar-default .navbar-toggler:hover {
+    background-color: #ca2017;
 }
 
 .navbar-default .nav li a {
-    /* text-transform: uppercase; */
     font-family: {{ site.data.template.font.primary }};
     font-weight: 400;
     letter-spacing: 1px;
@@ -982,8 +1018,13 @@ fieldset[disabled] .btn-xl.active {
     vertical-align: top;
   }
 
-  .navbar .navbar-collapse {
+  .navbar .collapse{
     text-align: center;
+    display: block !important;
+  }
+
+  .navbar-toggler {
+    display: none;
   }
 }
 
@@ -1003,9 +1044,10 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
-/* Dropdown
+
 .dropdown {
-}*/
+  display: block
+}
 
 .dropdown .dropbtn {
   font-size: 16px;
@@ -1084,10 +1126,6 @@ fieldset[disabled] .btn-xl.active {
 
     .current-standings iframe {
       width: 100%
-      /*
-      width: 135%;
-      transform: scale(0.75);
-      transform-origin: 0 0;*/
     }
 
     .current-standings-tracer iframe {
