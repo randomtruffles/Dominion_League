@@ -1696,15 +1696,16 @@ img[alt=faq_images] {
   border:1px;
   border-style:solid;
   border-width:1px;
-  padding:2px 3px;
+  padding:2px 4px;
   top: 100%;
   left: 50%;
   text-align: center;
   background-color: #ca2017;
   color: white;
-  width: 180px;
-  margin-left: -90px;
+  width: 200px;
+  margin-left: -100px;
   border-radius: 15px;
+  font-size: 16px;
 }
 
 .CellComment::after{

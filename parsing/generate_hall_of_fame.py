@@ -167,8 +167,11 @@ for season in range(current_season):
 hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()
 
-def list_to_str(li):
-    li = sorted(map(int, li))
+def list_to_str(li, integer=False):
+    if not integer:
+        li = sorted(map(int, li))
+    else:
+        li = sorted(li)
     strout = ""
     for l in li:
         strout += str(l) + ", "
@@ -442,6 +445,148 @@ for i in range(3):
 p_sub()
 hall_of_fame += p("</section>")
 
+"""
+Group:
+1. Most 6-0s
+2. Most Unique Opponents
+3. Most First Place Finishes
+"""
+pl_six_ohs = {} # 6-0s
+pl_uniqueopp = {} # unique opps
+
+for season in league:
+    season_data = league[season]
+    for division in season_data:
+        division_data = season_data[division]
+        if division != "champion":
+            # calculate unique opponents
+            member_data = division_data["members"]
+            for member in member_data:
+                for member_to_add in member_data:
+                    if member != member_to_add:
+                        if member not in pl_uniqueopp:
+                            pl_uniqueopp[member] = set(member_to_add)
+                        else:
+                            pl_uniqueopp[member].add(member_to_add)
+            # calculate 6-0 results
+            results_data = division_data["results"]
+            for result in results_data:
+                player1 = result["player1"]
+                player2 = result["player2"]
+
+                int_season = int(season)
+                if result["wins1"] == "6":
+                    if player1 not in pl_six_ohs:
+                        pl_six_ohs[player1] = [(int_season, player2)]
+                    else:
+                        pl_six_ohs[player1] = pl_six_ohs[player1] + [(int_season, player2)]
+                elif result["wins2"] == "6":
+                    if player2 not in pl_six_ohs:
+                        pl_six_ohs[player2] = [(int_season, player1)]
+                    else:
+                        pl_six_ohs[player2] = pl_six_ohs[player2] + [(int_season, player1)]
+
+for pl in pl_six_ohs:
+    opps = pl_six_ohs[pl]
+    opps = sorted(opps)
+    pl_six_ohs[pl] = opps
+
+pl_mfp = {} # most first place finishes
+pl_msp = {} # most second place finishes
+
+for player in pseasons:
+    name = pseasons[player]["name"]
+    seasons = pseasons[player]["seasons"]
+
+    for season_data in seasons:
+        season = int(season_data["season"])
+        rank = int(season_data["rank"])
+
+        if tier == "A":
+            if champions["seasons"][str(season)] == name.lower():
+                rank = 1
+            elif champions["runner_ups"][str(season)] == name.lower():
+                rank = 2
+
+        if rank == 1:
+            if name not in pl_mfp:
+                pl_mfp[name] = [season]
+            else:
+                pl_mfp[name] = pl_mfp[name] + [season]
+
+        if rank == 2:
+            if name not in pl_msp:
+                pl_msp[name] = [season]
+            else:
+                pl_msp[name] = pl_msp[name] + [season]
+
+
+def pairs_to_str(li):
+    strout = ""
+    for l in li:
+        strout += f"{l[1]} (S{l[0]}), "
+    return strout[:-2]
+
+
+def set_to_string(set_to_convert):
+    li = sorted(list(set_to_convert[0]))
+    strout = ""
+    for l in li:
+        strout += l + ", "
+    return "{" + strout[:-2] + "}"
+
+sorted_pl_six_ohs = sorted(pl_six_ohs.items(), key=lambda x: (-len(x[1]), x[1][-1][0]))
+sorted_pl_six_ohs = list(map(lambda x: (x[0], len(x[1]), pairs_to_str(x[1])), sorted_pl_six_ohs))
+
+case_insensitive_all_unique_tiers = {}
+for aut in all_unique_tiers:
+    case_insensitive_all_unique_tiers[aut.lower()] = all_unique_tiers[aut]
+
+case_insensitive_all_most_seasons_pl = {}
+for aut in all_most_seasons_pl:
+    case_insensitive_all_most_seasons_pl[aut.lower()] = all_most_seasons_pl[aut]
+
+sorted_uniqueopp = sorted(pl_uniqueopp.items(), key=lambda x: -len(x[1]))
+sorted_uniqueopp = list(map(lambda x: (x[0], len(x[1]), f"Tiers played: {set_to_string(case_insensitive_all_unique_tiers[x[0].lower()])}, Seasons played: {len(case_insensitive_all_most_seasons_pl[x[0].lower()])}"), sorted_uniqueopp))
+
+sorted_pl_mfp = sorted(pl_mfp.items(), key=lambda x: -len(x[1]))
+sorted_pl_mfp = list(map(lambda x: (x[0], len(x[1]), condense_list_to_str(x[1])), sorted_pl_mfp))
+
+hall_of_fame += "<section class=\"hall-of-fame\">"
+p_add()
+
+stats = [sorted_pl_six_ohs, sorted_uniqueopp, sorted_pl_mfp]
+stat_headings = ["Most 6-0 Matches", "Most Unique Opponents Faced", "Most First Place Finishes"]
+
+for i in range(3):
+    stat = stats[i]
+    heading = stat_headings[i]
+
+    achievement = p("<div class=\"achievement\">")
+    p_add()
+    achievement += p("<h4> {} </h4>".format(heading))
+    p_add()
+    achievement += p("<table class=\"hof-table\">")
+    p_add()
+    for rank in range(10):
+        achievement += p("<tr>")
+        achievement += p(f"<td> {str(rank+1)}. </td>")
+        player_name = url_player(pseasons[stat[rank][0].lower()]["name"])
+        if (len(stat[rank]) >= 3):
+            achievement += p("<td class=\"CellWithComment\"> {} <span class=\"CellComment\"> {} </span> </td>".format(player_name, stat[rank][2]))
+        else:
+            achievement += p("<td> {} </td>".format(player_name))
+        achievement += p(f"<td> {stat[rank][1]} </td>")
+        achievement += p("</tr>")
+    p_sub()
+    achievement += p("</table>")
+    p_sub()
+    p_sub()
+    achievement += p("</div>")
+    hall_of_fame += achievement
+
+p_sub()
+hall_of_fame += p("</section>")
 
 """
 Highest Win Percentage
@@ -514,8 +659,8 @@ wp_table += p("</table>")
 p_sub()
 wp_table += p("</div>")
 
-
 hall_of_fame += wp_table
+
 
 """
 Footer
