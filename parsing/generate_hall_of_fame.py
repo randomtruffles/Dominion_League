@@ -549,7 +549,7 @@ for aut in all_most_seasons_pl:
 sorted_uniqueopp = sorted(pl_uniqueopp.items(), key=lambda x: -len(x[1]))
 sorted_uniqueopp = list(map(lambda x: (x[0], len(x[1]), f"Tiers played: {set_to_string(case_insensitive_all_unique_tiers[x[0].lower()])}, Seasons played: {len(case_insensitive_all_most_seasons_pl[x[0].lower()])}"), sorted_uniqueopp))
 
-sorted_pl_mfp = sorted(pl_mfp.items(), key=lambda x: -len(x[1]))
+sorted_pl_mfp = sorted(pl_mfp.items(), key=lambda x: (-len(x[1]), x[1][-1]))
 sorted_pl_mfp = list(map(lambda x: (x[0], len(x[1]), condense_list_to_str(x[1], False)), sorted_pl_mfp))
 
 hall_of_fame += "<section class=\"hall-of-fame\">"
