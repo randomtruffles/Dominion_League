@@ -47,7 +47,7 @@ title: Dominion League Hall of Fame
 <div class="container-centered">
   <h3>Dominion League Hall of Fame</h3>
   <img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="hof-champion-trophy" title="Championship Match between top 2 A division finishers">
-  <p> This page contains various achievements reached by league players. <br> Ties are broken by seniority (ie. who reached it first). <br> Hover over player names for details regarding their achievement.</p>
+  <p> This page contains various achievements reached by league players. <br> Ties are broken by seniority (i.e. who reached it first). <br> Hover over player names for details regarding their achievement.</p>
   <div class=spacing></div>
 """
 hall_of_fame += header
@@ -85,7 +85,7 @@ champions_table += p("<tr>")
 p_add()
 champions_table += p(th("""<img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="champion-trophy" title="Championship Match between top 2 A division finishers">""", " width=\"15%\""))
 champions_table += p(th("Player", " width=\"30%\""))
-champions_table += p(th("Seasons", " width=\"55%\" style=\"text-align:center\""))
+champions_table += p(th("Season(s)", " width=\"55%\" style=\"text-align:center\""))
 p_sub()
 champions_table += p("</tr>")
 
