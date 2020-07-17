@@ -556,7 +556,7 @@ hall_of_fame += "<section class=\"hall-of-fame\">"
 p_add()
 
 stats = [sorted_pl_six_ohs, sorted_uniqueopp, sorted_pl_mfp]
-stat_headings = ["Most 6-0 Matches", "Most Unique Opponents Faced", "Most First Place Finishes"]
+stat_headings = ["Most 6-0 Matches", "Most Unique Number of Opponents Faced", "Most First Place Finishes"]
 
 for i in range(3):
     stat = stats[i]
