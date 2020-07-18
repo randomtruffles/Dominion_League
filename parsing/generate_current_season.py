@@ -4,8 +4,8 @@ import json
 """
 Season information
 """
-tier_counts = [1, 2, 4, 4, 8, 16, 32, 64]
-current_season = 40
+tier_counts = [1, 2, 4, 4, 8, 15, 15, 31, 31, 31]
+current_season = 41
 # Get iframes for current season
 with open('raw_divs.txt') as raw_divs:
     iframes = [iframe.rstrip('\n') for iframe in raw_divs]
@@ -29,7 +29,7 @@ def curr_iframes_json():
             current_iframe_idx += 1
         current_tier = chr(ord(current_tier) + 1)
 
-    with open('../_data/current_season_iframes_test.json', 'w') as fp:
+    with open('../_data/current_season_iframes.json', 'w') as fp:
         json.dump(divisions, fp)
 
     return
@@ -38,18 +38,19 @@ def curr_iframes_json():
 Generate current season json
 """
 def curr_season_json():
+    global current_season
     # Open file containing all current season players
     with open('../_data/raw_current_season.json') as file:
         data = json.load(file)
-    current_season = {"seasons" : data["season"]}
+    curr_season = {"seasons" : current_season}
 
-    for p in data["players"]:
+    for p in data:
         name = p["Name"]
         tier = p["Tier"]
         division = p["Division"]
-        current_season[name.lower()] = {"name":name, "tier":tier, "division":division}
+        curr_season[name.lower()] = {"name":name, "tier":tier, "division":division}
     with open('../_data/current_season_players.json', 'w') as fp:
-        json.dump(current_season, fp)
+        json.dump(curr_season, fp)
 
     return
 

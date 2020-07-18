@@ -239,6 +239,7 @@ iframe {
 .standings-sheets {
   width: 80%;
   align: center;
+  height: 250px;
 }
 
 @media (max-width: 600px) {

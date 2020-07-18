@@ -162,15 +162,6 @@ function searchPlayerHistory(param=false){
         var first_season = player_stats["First Season"];
         var longest_streak = player_stats["Longest Streak"];
 
-        console.log(name);
-        if(temp_season[name.toLowerCase()]) {
-          total_played += 1;
-          if (longest_streak[2] == current_season["seasons"] - 1){
-            longest_streak[2] += 1;
-            longest_streak[0] += 1;
-          }
-        }
-
         if (current_season[player_name] && current_season_iframes[current_season[player_name]["division"]]) {
             total_played += 1;
             if (longest_streak[2] == current_season["seasons"] - 1){
