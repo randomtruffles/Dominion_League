@@ -9,7 +9,11 @@ Changelog for Rules and Regulations can be found [here](/rules-changelog).
 
 #### I. League Structure
 
-Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A; 2 divisions in tier B; 4 divisions in each of tiers C and D; 8 divisions in each of tiers E, F, and G; and 16 divisions in tier H. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D and below) and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
+Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A. Starting with tier B, two rules govern the size of a tier:
+* The maximum number of divisions in a tier is twice the maximum for the tier above it, except every third tier which has the same number as the one above it.
+* The lowest two tiers have approximately the same number of divisions.
+
+Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in tiers E and below, and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
 
 In Seasons 42 and 43, there shall also be a practice tier, separate from all other tiers, for players who have played 29 or fewer rated 2-player games online. Players in the practice tier will be similarly grouped and seeded.
 
