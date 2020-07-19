@@ -256,9 +256,9 @@ The default is to use the VP tracker. This is also the default setting for a tab
 We encourage you to uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 ![faq_images](/img/faq/table_settings.PNG)
 
-##### How do I know if my game will be base only?
+##### Some settings depend on whether my game is base only. How can I tell?
 
-One of the introductory posts in your division channel lists the subscription status of the players in your division. You can also see your subscription information on the Account tab of the Dominion Online website. If neither player owns any expansions, the game will be base-only.
+One of the introductory posts in your division channel lists the subscription status of the players in your division. You can also see your subscription information on the Account tab of the Dominion Online website. If neither player owns any expansions, the game will be base-only. Otherwise, all expansions either player owns will be used.
 
 #### 6. Details and backend
 
