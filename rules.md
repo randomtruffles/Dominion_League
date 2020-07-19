@@ -9,7 +9,11 @@ Changelog for Rules and Regulations can be found [here](/rules-changelog).
 
 #### I. League Structure
 
-Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A; 2 divisions in tier B; 4 divisions in each of tiers C and D; 8 divisions in each of tiers E, F, and G; and 16 divisions in tier H. Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in the lower tiers (D and below) and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
+Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A. Starting with tier B, two rules govern the size of a tier:
+* The maximum number of divisions in a tier is twice the maximum for the tier above it, except every third tier which has the same number as the one above it.
+* The lowest two tiers have approximately the same number of divisions.
+
+Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in tiers E and below, and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
 
 In Seasons 42 and 43, there shall also be a practice tier, separate from all other tiers, for players who have played 29 or fewer rated 2-player games online. Players in the practice tier will be similarly grouped and seeded.
 
@@ -23,13 +27,14 @@ The League also has the following general rules for games by default:
 
 * Games should be played on Dominion Online.
 * There is no official timer in Dominion Online, and games should not use a timer.
-* During a game, players may not consult outside resources, such as strategy articles, or otherwise attempt to gain a competitive advantage.
+* During a game, players may not consult resources outside those maintained by the League, such as strategy articles, or otherwise attempt to gain a competitive advantage. The League hosts a list of Dominion rules and information that may be consulted privately or publicly at anytime.
 
 For games played online, players should set the following Advanced Options by default:
 
 * Spectators should be allowed.
 * “Players can see spectator chat” should be off.
-* The disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be.
+* For games without expansions, Familiar cards should not be respected.
+* For games using expansions, the disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be. For games without expansions, no cardlists should be respected.
 * The game should not use extra Menagerie cards.
 * The game should be unrated. For Seasons 42 and 43, games in the practice tier must be rated.
 * The victory point counter should be used.
@@ -38,7 +43,8 @@ For games played online, players should set the following Advanced Options by de
 All these defaults may be changed between games by mutual agreement of the players except:
 
 * Players in the practice tier may not play games in-person or on any platform other than Dominion Online.
-* Players in tiers A, B, C, and D may not agree to disallow spectators.
+* Players in tiers A, B, C, D, and E may not agree to disallow spectators.
+* Games without expansions may not use Familiar cards or any cardlists.
 * Cardlists may only be changed between playing sessions.
 * Players in the practice tier may not agree for games to be unrated.
 * Players agreeing to use an unofficial timer must agree on all timer settings and how to handle any glitches or lag.
@@ -120,11 +126,13 @@ Players dropping out during the season have a significant negative impact on the
 
 #### X. League Moderation
 
-The League is moderated by a group of players whose role is to ensure the League runs smoothly. Moderators are allowed, but not required, to play in the League. Moderators are assigned divisions (never a division in the same tier they play in) to be the primary point of contact for those divisions. Their responsibilities include checking up on players who have fallen behind and removing those who are non-responsive for a considerable period of time. Players should notify their moderator via Discord direct message of issues they have. Direct messages with a moderator about League matters may be shared with the other moderators for the team to resolve together. When new or additional moderators are needed, there will be an open call posted to the forum. New moderators are chosen by a vote of the current moderator team.
+The League is moderated by a group of players whose role is to ensure the League runs smoothly. Moderators are allowed, but not required, to play in the League. Moderators are assigned divisions (never a division in the same tier they play in) to be the primary point of contact for those divisions. Their responsibilities include checking up on players who have fallen behind and removing those who are non-responsive for a considerable period of time. Players should notify their moderator via Discord direct message of issues they have. Direct messages with a moderator about League matters may be shared with the other moderators for the team to resolve together.
 
 League moderators are also responsible for adjudicating any disputed rules infractions. If a moderator decision needs to be made that affects the outcome of a game, the players should finish the game and the player who requested the decision may protest the game by contacting their moderator with a description of what occurred and the game number. The moderator team will review the game and make a ruling by a majority vote whether the game results stand or that the game must be replayed.
 
 Whenever the moderators gather for an official meeting at which rules may change (at least once per season), the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting.
+
+When new moderators are needed, there will be an open call posted to the Discord server the Dominion Strategy forum. Players will have at least 48 hours to submit their applications to be moderators. Once the application deadline transpires, the current moderators will have up to 48 hours to discuss the candidates and vote to choose new moderators from the applicants.
 
 #### XI. Amendments
 
