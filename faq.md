@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2020-07-14
+date: 2020-07-19
 categories: pinned faq
 ---
 *This FAQ concerns the [Rules & Regulations](https://dominionleague.org/rules.html) of the [Dominion League](https://dominionleague.org/about.html). It is intended as a reference, and does not cover all the rules.*
@@ -208,6 +208,10 @@ Allowing spectators offers League members an opportunity to watch competitive ga
 
 As a spectator, you can comment on the players’ decisions and discuss strategies with the other spectators. Please refrain from making inappropriate remarks, and be courteous in any critiques. A transcript of the commentary is often given to the players after the game, so they can evaluate their performance and areas for improvement. You may not discuss a game with the players until the game is over; trying to give a competitive advantage to any player is against the Dominion Online terms and conditions, and could result in your account being suspended.
 
+##### What resources can I use during a game?
+
+In general, you are limited to using your own brain and the features provided by the Dominion Online website. Don't consult strategy guides or other people or software. Consulting the Dominion rules is allowed (for example, looking up how a particular pair of cards interact from a rules perspective). A list of allowed resources can be found in the [League Rules](/rules).
+
 #### 5. Dominion Online (<http://dominion.games>)
 
 ##### How do I add someone from my division as a friend on Dominion Online?
@@ -381,4 +385,4 @@ You can choose any of these methods you prefer:
 
 ##### How are moderators chosen?
 
-If the current team of moderators decides more moderators are needed, a recruitment message is posted to the #announcements channel of the Discord server as well as the [News](https://dominionleague.org/news) page. Candidates apply by sending a message on the Dominion Strategy Forum. Moderators discuss and vote to determine which candidates are accepted.
+If the current team of moderators decides more moderators are needed, a recruitment message is posted to the #announcements channel of the Discord server as well as the [News](/news) page. Candidates apply by sending a message on the Dominion Strategy Forum. Moderators discuss and vote to determine which candidates are accepted.
