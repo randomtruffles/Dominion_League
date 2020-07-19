@@ -256,6 +256,10 @@ The default is to use the VP tracker. This is also the default setting for a tab
 We encourage you to uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 ![faq_images](/img/faq/table_settings.PNG)
 
+##### Some settings depend on whether my game is base only. How can I tell?
+
+One of the introductory posts in your division channel lists the subscription status of the players in your division. You can also see your subscription information on the Account tab of the Dominion Online website. If neither player owns any expansions, the game will be base-only. Otherwise, all expansions either player owns will be used.
+
 #### 6. Details and backend
 
 ##### How do the moderators determine the players’ tiers (A, B, C, etc)?
@@ -374,3 +378,7 @@ You can choose any of these methods you prefer:
 * Participate in a Town Hall on Discord.
 * Use the [Dominion League Hotline](http://tinyurl.com/dominion-league-hotline) for urgent matters.
 * You are also encouraged to develop your idea by discussing it on Discord.
+
+##### How are moderators chosen?
+
+If the current team of moderators decides more moderators are needed, a recruitment message is posted to the #announcements channel of the Discord server as well as the [News](https://dominionleague.org/news) page. Candidates apply by sending a message on the Dominion Strategy Forum. Moderators discuss and vote to determine which candidates are accepted.
