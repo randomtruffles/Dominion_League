@@ -1,5 +1,5 @@
 ---
-title: Season 42 - Newsletter Part 2
+title: Season 41 - Newsletter Part 2
 date: 2020-07-20
 author: SamE
 layout: post
