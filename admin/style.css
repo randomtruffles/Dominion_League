@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif
+    font-family: "Source Sans Pro", "Roboto Slab", "Helvetica Neue", Helvetica,Arial,sans-serif;
     font-size: 17px;
     /*line-height: 175%;*/
     color: #333;
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Merriweather, "Source Serif Pro", "Roboto Slab", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Merriweather", "Source Serif Pro", "Roboto Slab", "Helvetica Neue",Helvetica;
     font-weight: 700;
 }
 
