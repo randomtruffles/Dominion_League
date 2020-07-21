@@ -5,14 +5,14 @@ date: 2020-07-20
 author: SamE
 layout: post
 categories:
-  - pinned
   - newsletters
+  - pinned
 ---
 Season 41 has started! This is **the first ten-tier season**, just two seasons after the first eight-tier season. To illustrate how big of a change this has been, in just six months, the F tier has gone from the bottom third of the League all the way to the top quarter!
 
 While those changes will still take some getting used to, the cause is pretty obvious, albeit grim. This major growth of the League is just a tiny ripple effect of the coronavirus pandemic, which has forced many people in the countries players live in to seek online entertainment and competition. On top of that growth, we have intentionally expanded the tiers beyond the absolute necessity in order to increase the competitiveness of the typical League match. The average levels of the tiers are now fairly evenly distributed, with **about a 3-level gap between consecutive tiers**.
 
-![Players by Season, showing a distinct rise in Seasons 39-41 after holding steady in Seasons 27-38.](/img/uploads/players.png "Players By Season")
+![Players by Season, showing a distinct rise in Seasons 39-41 after holding steady in Seasons 27-38.](/img/uploads/players.png "Players by Season")
 
 In all, Season 41 has yet again broken the record for the number of players and divisions, albeit less spectacularly than Season 40 did. At the start of the season, we have an even **850 players in the League**, with more to be added off the waiting list as needed. While this is obviously reflective of the ongoing pandemic, we're pleased that so many players who were trying the League out for the first time in Season 40 have returned for another season. :) And while this is nowhere near the more-than-doubling growth that Season 40 saw, in absolute terms, it's still 11 extra divisions, our third-biggest increase ever (after Seasons 27 and 40), and larger the entire 7-division range that Seasons 27-38 saw. We still live in tumultous times!
 
@@ -31,7 +31,7 @@ The moderators retain the right to change this scheme if the size of the League 
 Every year, the League goes on hiatus for (essentially) the month of September for several reasons:
 
 * To give the moderators a break from the grind of season after season
-* To give everyone a chance to participate in the yearly championship
+* To give everyone a chance to participate in the yearly Shuffle iT championship
 * To align the calendar and avoid major holidays at crucial moments
 
 As such, Season 42 will begin six weeks after Season 41 ends, on October 12.
