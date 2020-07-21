@@ -132,7 +132,7 @@ League moderators are also responsible for adjudicating any disputed rules infra
 
 Whenever the moderators gather for an official meeting at which rules may change (at least once per season), the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting.
 
-When new moderators are needed, there will be an open call posted to the Discord server the Dominion Strategy forum. Players will have at least 48 hours to submit their applications to be moderators. Once the application deadline transpires, the current moderators will have up to 48 hours to discuss the candidates and vote to choose new moderators from the applicants.
+When new moderators are needed, there will be an open call posted to the Discord server the Dominion Strategy forum. Players will have at least 48 hours to submit their applications to be moderators. Once the application deadline transpires, the current moderators will have at least 48 hours to discuss the candidates before voting to choose new moderators from the applicants.
 
 #### XI. Amendments
 
