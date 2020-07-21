@@ -31,7 +31,7 @@ The moderators retain the right to change this scheme if the size of the League 
 Every year, the League goes on hiatus for (essentially) the month of September for several reasons:
 
 * To give the moderators a break from the grind of season after season
-* To give everyone a chance to participate in the yearly championship
+* To give everyone a chance to participate in the yearly Shuffle iT championship
 * To align the calendar and avoid major holidays at crucial moments
 
 As such, Season 42 will begin six weeks after Season 41 ends, on October 12.
