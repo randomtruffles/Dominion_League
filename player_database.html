@@ -45,7 +45,7 @@ var youtube_channels = {{ site.data.youtube_channels | jsonify }};
 var league_history = friendly_league_history["seasons"];
 var current_season = {{ site.data.current_season_players | jsonify }};
 var current_season_iframes = {{ site.data.current_season_iframes | jsonify }};
-var temp_season = {{ site.data.season_41_players | jsonify }};
+// var temp_season = {{ site.data.season_41_players | jsonify }};
 var unique_opponents = {{ site.data.players_unique_opponents | jsonify }};
 
 // Get URL parameter
@@ -269,7 +269,8 @@ function searchPlayerHistory(param=false){
         division_heading.setAttribute('colspan', 5);
         division_heading.classList.add('database-division-header');
         var season_url = "<a href=\"past_standings/season" + season + "\">Season " + season + "</a>";
-        division_heading.innerHTML = season_url + " " + division+ " Division";
+        var matches_button = "<button class=\"database-results-button\">Match Results</button>"
+        division_heading.innerHTML = season_url + " " + division+ " Division" + matches_button;
         division_heading.style.backgroundColor = "lightgrey";
         division_row.appendChild(division_heading);
         table.appendChild(division_row);
@@ -352,9 +353,113 @@ function searchPlayerHistory(param=false){
 
         // Add table to container
         divContainer.appendChild(table);
+
+        // Generate modal
+        modal_div = document.createElement("div");
+        modal_div.classList.add("myModal");
+        modal_div.classList.add("modal");
+
+        modal = document.createElement("div");
+        modal.classList.add("modal-content");
+
+        close_button = document.createElement("span");
+        close_button.classList.add("close");
+        close_button.innerHTML = "&times;";
+        modal.appendChild(close_button);
+
+        modal_title = document.createElement("h4");
+        modal_title.innerHTML = "Season " + season + " " + division + " Match Results";
+        modal.appendChild(modal_title);
+        if (division == "A1" && championship_videos[season].length > 0) {
+          modal_video = document.createElement("h4");
+          modal_video.innerHTML = "<a href=\"" + championship_videos[season][0] + "\"> Championship Video </a>";
+          modal.appendChild(modal_video);
+        }
+
+        // Create modal table
+        var modal_table = document.createElement("table");
+        modal_table.classList.add("division-modal-table");
+
+        // Create modal heading
+        var modal_heading_row = document.createElement("tr");
+        // Matches column
+        var modal_heading_matches = document.createElement("th");
+        modal_heading_matches.classList.add("cells-division-modal");
+        modal_heading_matches.innerHTML = "Match";
+        modal_heading_row.appendChild(modal_heading_matches);
+        // Results column
+        var modal_heading_scores = document.createElement("th");
+        modal_heading_scores.classList.add("cells-division-modal");
+        modal_heading_scores.innerHTML = "Score";
+        modal_heading_row.appendChild(modal_heading_scores);
+        modal_table.appendChild(modal_heading_row);
+
+        var results = division_data["results"];
+
+        // Get each game result:
+        for (let r = 0; r < results.length; r++) {
+          var result = results[r];
+          var player1 = result["player1"];
+          var player2 = result["player2"];
+          var wins1 = result["wins1"];
+          var wins2 = result["wins2"];
+
+          var modal_row_data = document.createElement("tr");
+          modal_row_data.classList.add("rows-results-modal");
+
+          var modal_match_data = document.createElement("td");
+          modal_match_data.classList.add("cells-division-modal");
+          modal_match_data.innerHTML = player1 + " <b>vs.</b> " + player2;
+          modal_row_data.appendChild(modal_match_data);
+
+          var modal_score_data = document.createElement("td");
+          modal_score_data.classList.add("cells-division-modal");
+          modal_score_data.innerHTML = wins1 + " - " + wins2;
+          modal_row_data.appendChild(modal_score_data);
+
+          modal_table.appendChild(modal_row_data);
+        }
+
+
+        modal.appendChild(modal_table);
+        modal_div.appendChild(modal);
+        // Add table to container
+        divContainer.appendChild(modal_div);
+
       }
     }
+
+    // Modals for table results within a division
+    // Get the modal
+    var modal = document.getElementsByClassName('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("database-results-button");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+
+    window.onclick = function(event) {
+        for (let j = 0; j < btn.length; j++) {
+            if (event.target == modal[j]) {
+                modal[j].style.display = "none";
+            }
+        }
+    }
+
+    for (let j = 0; j < btn.length; j++) {
+        // When the user clicks the button, open the modal
+        btn[j].onclick = function() {
+            modal[j].style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span[j].onclick = function() {
+            modal[j].style.display = "none";
+        }
+    }
 }
+
 </script>
 
 <!-- Autocomplete script starts here -->
