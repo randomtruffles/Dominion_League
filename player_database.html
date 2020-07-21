@@ -371,7 +371,7 @@ function searchPlayerHistory(param=false){
         modal_title.innerHTML = "Season " + season + " " + division + " Match Results";
         modal.appendChild(modal_title);
         if (division == "A1" && championship_videos[season].length > 0) {
-          modal_video = document.createElement("h4");
+          modal_video = document.createElement("h5");
           modal_video.innerHTML = "<a href=\"" + championship_videos[season][0] + "\"> Championship Video </a>";
           modal.appendChild(modal_video);
         }
@@ -386,11 +386,13 @@ function searchPlayerHistory(param=false){
         var modal_heading_matches = document.createElement("th");
         modal_heading_matches.classList.add("cells-division-modal");
         modal_heading_matches.innerHTML = "Match";
+        modal_heading_matches.style.backgroundColor = "lightgrey";
         modal_heading_row.appendChild(modal_heading_matches);
         // Results column
         var modal_heading_scores = document.createElement("th");
         modal_heading_scores.classList.add("cells-division-modal");
         modal_heading_scores.innerHTML = "Score";
+        modal_heading_scores.style.backgroundColor = "lightgrey";
         modal_heading_row.appendChild(modal_heading_scores);
         modal_table.appendChild(modal_heading_row);
 
