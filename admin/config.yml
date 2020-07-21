@@ -70,3 +70,16 @@ collections:
           - {label: "Updated Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
           - {label: "Categories", name: "categories", widget: "hidden"}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "league_resources"
+    label: "League Resources"
+    files:
+      - label: "League Resources Page"
+        name: "league_resources_page"
+        file: "resources.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Updated Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
+          - {label: "Categories", name: "categories", widget: "hidden"}
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
