@@ -1,11 +1,12 @@
 ---
 title: Season 41 - Newsletter Part 2
 subtitle: Setup Details and Minor Rules Changes
-date: 2020-07-20
+date: 2020-07-19
 author: SamE
 layout: post
 categories:
   - pinned
+  - newsletters
 ---
 Season 41 has started! This is **the first ten-tier season**, just two seasons after the first eight-tier season. To illustrate how big of a change this has been, in just six months, the F tier has gone from the bottom third of the League all the way to the top quarter!
 
