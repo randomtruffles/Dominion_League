@@ -1,7 +1,7 @@
 ---
 title: Season 41 - Newsletter Part 2
 subtitle: Setup Details and Minor Rules Changes
-date: 2020-07-19
+date: 2020-07-20
 author: SamE
 layout: post
 categories:
