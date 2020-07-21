@@ -16,7 +16,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Public", hint: "Set it to be false if it is a draft", name : "published", default: "true", widget:"boolean"}
+      - {label: "Public", hint: "Set it to be false if it is a draft", name : "published", widget:"boolean", default: true}
       - {label: "Title", hint: "Title should be short. Eg. Season 40 - Newsletter", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", required: false, widget: "string"}
       - {label: "Publish Date", hint: "Press the Now button on the right to set it to the current date.", name: "date", timeFormat: false, format: "YYYY-MM-DD", widget: "datetime"}
