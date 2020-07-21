@@ -26,7 +26,7 @@ The moderators retain the right to change this scheme if the size of the League 
 
 \*Season 42, for the first time since Season 26, will feature a practice tier specifically for players with fewer than 30 rated games. These counts (of tiers and players) exclude the practice tier. For reference, in Season 41, there were 57 new players with fewer than 30 rated games.
 
-**September Hiatus: Season 42 starts in October (taking September off)**
+**September Hiatus: Season 42 starts in October**
 
 Every year, the League goes on hiatus for (essentially) the month of September for several reasons:
 
