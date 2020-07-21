@@ -1,9 +1,14 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-layout: resources
+layout: rules_faq
 date: 2020-07-21
 categories: pinned
 ---
 
-# Rulebooks
+This page has a bunch of resources
+
+#### Rulebooks
+
+
+#### Bugs
