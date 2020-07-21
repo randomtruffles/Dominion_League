@@ -18,7 +18,7 @@ In all, Season 41 has yet again broken the record for the number of players and 
 
 These 142 divisions are distributed across all 10 tiers as follows: **1 A, 2 B, 4 C, 4 D, 8 E, 15 F, 15 G, 31 H, 31 I, 31 J**. You'll notice that these are pretty close to powers of two, with the final five tiers coming one division short. Our default promotion scheme will therefore be fairly predictable:
 
-![Bottom two demote; top one promotes in BCEFH; top two promote in DGIJ.](/img/uploads/promotions.png "Season 41 -> 42 Default Promotion Rules")
+![Bottom two demote; top one promotes in BCEFH; top two promote in DGIJ.](/img/uploads/season-41-promotion-demotion-chart.png "Season 41 -> 42 Default Promotion Rules")
 
 As before, the default promotion rules are as follows: Between consecutive tiers of the same size (C/D, F/G, H/I, I/J), two players from each division in the higher tier demote and two players from each division in the lower tier promote. Between consecutive tiers where the lower tier is (roughly) double the size of the higher tier (A/B, B/C, D/E, E/F, G/H), two players from each division in the higher tier demote and only one player from each division in the lower tier promotes. Rather than hardcoding these tier sizes into the rules, we've written this general rule there.
 
