@@ -70,8 +70,8 @@ title: Dominion League Current Season Standings
 <div class="home">
   <div class="container-centered">
     <h3>Season {} Standings</h3>
-    <h5><a href="{{site.baseurl}}/past_standings.html">All Past Season Standings</a></h5>
-    <h5><a href="{{site.baseurl}}/player_database.html">Player Database</a></h5>
+    <h5><a href="{{{{site.baseurl}}}}/past_standings.html">All Past Season Standings</a></h5>
+    <h5><a href="{{{{site.baseurl}}}}/player_database.html">Player Database</a></h5>
     <p> Standings for the current season. Predictions by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
