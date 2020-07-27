@@ -7,6 +7,12 @@ layout: rules_faq
 ---
 These resources can be consulted at any time, including during a League game.
 
+#### Contents
+* [Rulebooks](/#rulebooks)
+* [New errata](/#new-errata)
+* [Previous errata](/#previous-errata)
+* [Dominion Online bugs](/#dominion-online-bugs)
+
 #### Rulebooks
 
 The current rulebooks for each Dominion set are linked below. See below for some changes that were made but not yet incorporated into the official rulebooks.
@@ -24,7 +30,9 @@ The current rulebooks for each Dominion set are linked below. See below for some
 * [Dominion: Renaissance](/img/uploads/12-renaissance-rulebook.pdf)
 * [Dominion: Menagerie](/img/uploads/13-menagerie-rulebook.pdf)
 
-#### Errata
+There is no official rulebook for the promo cards.
+
+#### New errata
 
 These errata are not included in the rulebooks linked above, but are official rules and are used in Dominion Online.
 
@@ -38,10 +46,14 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Embargo**: Action, $2 *(Dominion: Seaside)*<br>**+$2**<br>Trash this. If you did, add an Embargo token to a Supply pile. (For the rest of the game, when a player buys a card from that pile, they gain a Curse.)
 * **Inheritance**: Event, $7 *(Dominion: Adventures)*<br>Once per game: Set aside a non-Command Action card from the Supply costing up to $4. Move your Estate token to it. (During your turns, Estates are also Actions with "Play the card with your Estate token, leaving it there.")
 * **Lantern**: Artifact *(Dominion: Renaissance)*<br>Border Guards you play reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
+* **Oracle**: Action - Attack, $3 *(Dominion: Hinterlands)*<br>Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice. They choose the order to return them. Afterwards, **+2 Cards**.
 * **Overlord**: Action - Command, 8D *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
 * **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<hr style="max-width: 200px; margin-left: 0;">When you discard this other than during Clean-up, you may reveal it to play it.
+
+Additionally, one card intentionally works differently online than what the card text says:
+* **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 
 ##### Tracking rules
 
@@ -51,7 +63,7 @@ These rules apply to all of the cards that play cards without putting them into 
 
 ##### Stop-Moving rule
 
-*Note: This replaces the Lose-Track rule, and is largely the same as it.*
+*Note: This replaces the Lose-Track rule (which was introduced in the Dominion: Dark Ages rulebook), and is largely the same as it.*
 
 An effect can move a card if it specifies where the card is coming from, or if the effect put the card where it is now. If a card isn't where the effect would expect it to be, or has moved away from there and then back, it can't move the card. Played cards expect to be in play; they can't move themselves if they aren't. Gained cards are expected to be where they were gained to, even if this isn't the discard pile. Cards in discard piles can be moved even if covered up by other cards; cards on top of a deck can't be moved once covered up.
 
@@ -64,6 +76,46 @@ When a card tells you to gain a non-Supply card by name, you can gain it from it
 ##### Reducing costs
 
 The cost in Coins of a card can't go below 0 Coins. The cost in Potion of a card can't go below 0 Potion; the cost in Debt of a card can't go below 0 Debt.
+
+#### Previous errata
+
+These errata are included in the rulebooks linked above, but may be useful if you are only familiar with older copies of the rulebooks and cards.
+
+##### Updated cards
+
+Cards with the same abilities but new wordings are not listed here.
+
+* Dominion
+  * **Adventurer**, **Chancellor**, **Feast**, **Spy**, **Thief**, and **Woodcutter** were removed. **Artisan**, **Bandit**, **Harbinger**, **Merchant**, **Poacher**, **Sentry**, and **Vassal** were added.
+  * **Cellar**: You draw cards instead of getting +Cards.
+  * **Mine**: Trashing a Treasure is optional.
+  * **Moneylender**: Trashing a Copper is optional.
+  * **Throne Room**: Playing a card from your hand twice is optional.
+* Dominion: Intrigue
+  * **Coppersmith**, **Great Hall**, **Saboteur**, **Secret Chamber**, **Scout**, and **Tribute** were removed. **Courtier**, **Diplomat**, **Lurker**, **Mill**, **Patrol**, **Replace**, and **Secret Passage** were added.
+  * **Masquerade**: Players with no cards in hand do not participate in passing cards.
+* Dominion: Seaside
+  * **Embargo**: You gain Curses one at a time.
+  * **Outpost**: The conditions for getting an extra turn are now that it's the first time you played an Outpost that turn and that the previous turn wasn't yours.
+* Dominion: Alchemy
+  * **Possession**: Any Debt tokens the player to your left would take during their extra turn you take instead.
+* Dominion: Prosperity
+  * **Trade Route**: You trash a card from your hand before you get +$1 per token on the Trade Route mat.
+* Dominion: Hinterlands
+  * **Scheme**: You can only choose cards that will be discarded from play this turn to put onto your deck.
+* Dominion: Adventures
+  * **Storyteller**: You draw cards instead of getting +Cards.
+* Promo cards
+  * **Black Market**: It is clarified that you can play any number of Treasures from your hand before buying a card from the Black Market deck.
+  * **Envoy**: It is clarified that you put the cards into your hand instead of drawing them.
+
+#### Playing Durations multiple times
+
+* If a card such as Throne Room plays a Duration card multiple times, that card also stays in play until the player discards the Duration card. If a card such as Throne Room plays a non-Duration card multiple times — even if the card it plays then plays a Duration card — it is always discarded from play the turn it is played.
+
+##### Shuffling
+
+If you have to do anything with your deck — for example draw, look at, reveal, set aside, discard,or trash cards — and you need more cards than are left in your deck, first shuffle your discard pile and put it under your deck, then do the thing. If there are still not enough cards, you do the thing with however many cards you can. If when shuffling there are no cards in your deck, the shuffled discard pile simply becomes your new deck.
 
 #### Dominion Online bugs
 
