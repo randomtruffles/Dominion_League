@@ -75,7 +75,7 @@ When a card tells you to gain a non-Supply card by name, you can gain it from it
 
 ##### Reducing costs
 
-The cost in Coins of a card can't go below 0 Coins. The cost in Potion of a card can't go below 0 Potion; the cost in Debt of a card can't go below 0 Debt.
+The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion; the cost in Debt of a card can't go below 0 Debt.
 
 #### Previous errata
 
@@ -109,7 +109,7 @@ Cards with the same abilities but new wordings are not listed here.
   * **Black Market**: It is clarified that you can play any number of Treasures from your hand before buying a card from the Black Market deck.
   * **Envoy**: It is clarified that you put the cards into your hand instead of drawing them.
 
-#### Playing Durations multiple times
+##### Playing Durations multiple times
 
 * If a card such as Throne Room plays a Duration card multiple times, that card also stays in play until the player discards the Duration card. If a card such as Throne Room plays a non-Duration card multiple times — even if the card it plays then plays a Duration card — it is always discarded from play the turn it is played.
 
@@ -125,8 +125,8 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Blessed Village**: When you gain a Blessed Village during another player's turn, take The Field's Gift, The Forest's Gift, or The River's Gift, and choose to receive it now, the Boon is discarded during your next Clean-up phase instead of the very next Clean-up phase.
 * **Capitalism + Black Market/Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
-* **Crown + Scepter**: The game will freeze if you Crown a Scepter and choose to replay that Crown.
-* **Defiled Shrine**: When gaining a card (except for Temple), you cannot choose to resolve other "when you gain" abilities before moving the 1 VP from its pile to Defiled Shrine.
+* **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
+* **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt that you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
 * **Fleet**: Fleet turns in multiplayer games can happen in the wrong order.
 * **Fleet + Star Chart**: When you shuffle your deck during your Clean-up phase, if the next turn is a Fleet turn, you don't get to use Star Chart.
@@ -138,8 +138,8 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
-* **Villa**: You do not return to your Action phase until any other "when you gain" abilities due to gaining Villa are all resolved.
-* **Way of the Mouser**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded the same turn.
+* **Villa**: When gaining multiple cards at once, such as when overpaying for Stonemason, you return to your Action phase after gaining both, even if the first one was a Villa.
+* **Way of the Mouser**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
 
