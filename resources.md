@@ -69,29 +69,26 @@ The cost in Coins of a card can't go below 0 Coins. The cost in Potion of a card
 
 Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI.
 
-* **Basilica, Colonnade, Defiled Shrine**: When buying a card triggers a Landmark, you cannot choose to resolve other "when you buy" abilities before the Landmark.
+* **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
 * **Blessed Village**: When you gain a Blessed Village during another player's turn, take The Field's Gift, The Forest's Gift, or The River's Gift, and choose to receive it now, the Boon is discarded during your next Clean-up phase instead of the very next Clean-up phase.
 * **Capitalism + Black Market/Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
 * **Crown + Scepter**: The game will freeze if you Crown a Scepter and choose to replay that Crown.
+* **Defiled Shrine**: When gaining a card (except for Temple), you cannot choose to resolve other "when you gain" abilities before moving the 1 VP from its pile to Defiled Shrine.
+* **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt that you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
 * **Fleet**: Fleet turns in multiplayer games can happen in the wrong order.
 * **Fleet + Star Chart**: When you shuffle your deck during your Clean-up phase, if the next turn is a Fleet turn, you don't get to use Star Chart.
 * **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
-* **Hamlet**: If you have cards in hand when you play Hamlet, but have no cards in hand when you're asked to discard for +1 Buy, you can get +1 Buy without discarding anything.
+* **Hamlet**: If you discard a card for +1 Action and then have no cards in hand, you can choose to discard for +1 Buy, discard nothing, and still get +1 Buy.
 * **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Inn + Possession**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
-* **Magic Lamp**: When you play a Magic Lamp twice (such as via Crown), if you have at least 6 differently named cards with exactly 1 copy in play when you play it the second time, the game freezes.
-* **Mint**: When you buy a Mint with Haggler in play or with another player's Swamp Hag affecting you, the game freezes.
-* **Prince + Scheme**: If you put Princed card onto your deck, at the start of your next turn, it will be played from your hand.
-* **Prince + Traveller**: If you exchange the Princed card, at the start of each of your turns, it will be played from its pile.
-* **Royal Carriage**: Sometimes you can call Royal Carriage to replay a card that is no longer in play.
-* **Scheme**: The client allows you to choose cards that are not being discarded from play, so those ones will fail to move onto your deck.
+* **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
-* **Urchin + Adventures tokens**: You cannot choose to resolve Urchin's "when you play another Attack card" ability before any vanilla bonus tokens on the other Attack card's pile.
 * **Villa**: You do not return to your Action phase until any other "when you gain" abilities due to gaining Villa are all resolved.
-* **Way of the Squirrel**: The current player gets +2 Cards, even if that was not the player who played an Action using Way of the Squirrel.
+* **Way of the Mouser**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded the same turn.
+* **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (Card Game) Discord server, and then tag a League moderator.
