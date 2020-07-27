@@ -8,10 +8,10 @@ layout: rules_faq
 These resources can be consulted at any time, including during a League game.
 
 #### Contents
-* [Rulebooks](/#rulebooks)
-* [New errata](/#new-errata)
-* [Previous errata](/#previous-errata)
-* [Dominion Online bugs](/#dominion-online-bugs)
+* [Rulebooks](/resources#rulebooks)
+* [New errata](/resources#new-errata)
+* [Previous errata](/resources#previous-errata)
+* [Dominion Online bugs](/resources#dominion-online-bugs)
 
 #### Rulebooks
 
