@@ -7,12 +7,6 @@ layout: rules_faq
 ---
 These resources can be consulted at any time, including during a League game.
 
-#### Contents
-* [Rulebooks](/resources#rulebooks)
-* [New errata](/resources#new-errata)
-* [Previous errata](/resources#previous-errata)
-* [Dominion Online bugs](/resources#dominion-online-bugs)
-
 #### Rulebooks
 
 The current rulebooks for each Dominion set are linked below. See below for some changes that were made but not yet incorporated into the official rulebooks.
