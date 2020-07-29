@@ -42,7 +42,7 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Inheritance**: Event, $7 *(Dominion: Adventures)*<br>Once per game: Set aside a non-Command Action card from the Supply costing up to $4. Move your Estate token to it. (During your turns, Estates are also Actions with "Play the card with your Estate token, leaving it there.")
 * **Lantern**: Artifact *(Dominion: Renaissance)*<br>Border Guards you play reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
 * **Oracle**: Action - Attack, $3 *(Dominion: Hinterlands)*<br>Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice. They choose the order to return them. Afterwards, **+2 Cards**.
-* **Overlord**: Action - Command, 8D *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
+* **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
 * **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<br>––––––––––––––––––––<br>When you discard this other than during Clean-up, you may reveal it to play it.
