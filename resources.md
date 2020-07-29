@@ -115,7 +115,7 @@ Cards with the same abilities but new wordings are not listed here.
 
 ##### Playing Durations multiple times
 
-* If a card such as Throne Room plays a Duration card multiple times, that card also stays in play until the player discards the Duration card. If a card such as Throne Room plays a non-Duration card multiple times — even if the card it plays then plays a Duration card — it is always discarded from play the turn it is played.
+If a card such as Throne Room plays a Duration card multiple times, that card also stays in play until the player discards the Duration card. If a card such as Throne Room plays a non-Duration card multiple times — even if the card it plays then plays a Duration card — it is always discarded from play the turn it is played.
 
 ##### Shuffling
 
