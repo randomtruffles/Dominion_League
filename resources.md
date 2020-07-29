@@ -10,6 +10,7 @@ These resources can be consulted at any time, including during a League game.
 #### Rulebooks
 
 The current rulebooks for each Dominion set are linked below. See below for some changes that were made but not yet incorporated into the official rulebooks.
+
 * [Dominion (2nd Edition)](/img/uploads/00-dominion-rulebook.pdf)
 * [Dominion: Intrigue (2nd Edition)](/img/uploads/01-intrigue-rulebook.pdf)
 * [Dominion: Seaside](/img/uploads/02-seaside-rulebook.pdf)
@@ -36,7 +37,7 @@ The abilities of these cards have changed since the rulebooks were last printed.
 
 * **Band of Misfits**: Action - Command, $5 *(Dominion: Dark Ages)*<br>Play a non-Command Action card from the Supply that costs less than this, leaving it there.
 * **Captain**: Action - Duration - Command, $6 *(promo card)*<br>Now and at the start of your next turn: Play a non-Duration non-Command Action card from the Supply costing up to $4, leaving it there.
-* **Death Cart**: Action - Looter, $4 *(Dominion: Dark Ages)*<br>You may trash this or an Action card from your hand, for **+$5**.<hr style="max-width: 200px; margin-left: 0;">When you gain this, gain 2 Ruins.
+* **Death Cart**: Action - Looter, $4 *(Dominion: Dark Ages)*<br>You may trash this or an Action card from your hand, for **+$5**.<br>––––––––––––––––––––<br>When you gain this, gain 2 Ruins.
 * **Embargo**: Action, $2 *(Dominion: Seaside)*<br>**+$2**<br>Trash this. If you did, add an Embargo token to a Supply pile. (For the rest of the game, when a player buys a card from that pile, they gain a Curse.)
 * **Inheritance**: Event, $7 *(Dominion: Adventures)*<br>Once per game: Set aside a non-Command Action card from the Supply costing up to $4. Move your Estate token to it. (During your turns, Estates are also Actions with "Play the card with your Estate token, leaving it there.")
 * **Lantern**: Artifact *(Dominion: Renaissance)*<br>Border Guards you play reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
@@ -44,9 +45,10 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Overlord**: Action - Command, 8D *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
-* **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<hr style="max-width: 200px; margin-left: 0;">When you discard this other than during Clean-up, you may reveal it to play it.
+* **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<br>––––––––––––––––––––<br>When you discard this other than during Clean-up, you may reveal it to play it.
 
 Additionally, one card intentionally works differently online than what the card text says:
+
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 
 ##### Tracking rules
@@ -80,26 +82,34 @@ These errata are included in the rulebooks linked above, but may be useful if yo
 Cards with the same abilities but new wordings are not listed here.
 
 * Dominion
+
   * **Adventurer**, **Chancellor**, **Feast**, **Spy**, **Thief**, and **Woodcutter** were removed. **Artisan**, **Bandit**, **Harbinger**, **Merchant**, **Poacher**, **Sentry**, and **Vassal** were added.
   * **Cellar**: You draw cards instead of getting +Cards.
   * **Mine**: Trashing a Treasure is optional.
   * **Moneylender**: Trashing a Copper is optional.
   * **Throne Room**: Playing a card from your hand twice is optional.
 * Dominion: Intrigue
+
   * **Coppersmith**, **Great Hall**, **Saboteur**, **Secret Chamber**, **Scout**, and **Tribute** were removed. **Courtier**, **Diplomat**, **Lurker**, **Mill**, **Patrol**, **Replace**, and **Secret Passage** were added.
   * **Masquerade**: Players with no cards in hand do not participate in passing cards.
 * Dominion: Seaside
+
   * **Embargo**: You gain Curses one at a time.
   * **Outpost**: The conditions for getting an extra turn are now that it's the first time you played an Outpost that turn and that the previous turn wasn't yours.
 * Dominion: Alchemy
+
   * **Possession**: Any Debt tokens the player to your left would take during their extra turn you take instead.
 * Dominion: Prosperity
+
   * **Trade Route**: You trash a card from your hand before you get +$1 per token on the Trade Route mat.
 * Dominion: Hinterlands
+
   * **Scheme**: You can only choose cards that will be discarded from play this turn to put onto your deck.
 * Dominion: Adventures
+
   * **Storyteller**: You draw cards instead of getting +Cards.
 * Promo cards
+
   * **Black Market**: It is clarified that you can play any number of Treasures from your hand before buying a card from the Black Market deck.
   * **Envoy**: It is clarified that you put the cards into your hand instead of drawing them.
 
