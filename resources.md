@@ -44,7 +44,7 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Overlord**: Action - Command, 8D *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
-* **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<hr style="max-width: 200px; margin-left: 0;">When you discard this other than during Clean-up, you may reveal it to play it.
+* **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**. <hr style="max-width: 200px; margin-left: 0;"> When you discard this other than during Clean-up, you may reveal it to play it.
 
 Additionally, one card intentionally works differently online than what the card text says:
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
