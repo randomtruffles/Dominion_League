@@ -79,14 +79,14 @@ These errata are included in the rulebooks linked above, but may be useful if yo
 
 ##### Updated cards
 
-Cards with the same abilities but new wordings are not listed here.
+Cards which have new wordings but function identically in all situations are not listed here.
 
 * Dominion
 
   * **Adventurer**, **Chancellor**, **Feast**, **Spy**, **Thief**, and **Woodcutter** were removed. **Artisan**, **Bandit**, **Harbinger**, **Merchant**, **Poacher**, **Sentry**, and **Vassal** were added.
   * **Cellar**: You draw cards instead of getting +Cards.
-  * **Mine**: Trashing a Treasure is optional.
-  * **Moneylender**: Trashing a Copper is optional.
+  * **Mine**: Trashing a Treasure from your hand is optional.
+  * **Moneylender**: Trashing a Copper from your hand is optional.
   * **Throne Room**: Playing a card from your hand twice is optional.
 * Dominion: Intrigue
 
