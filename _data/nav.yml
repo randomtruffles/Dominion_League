@@ -10,6 +10,8 @@
       path: rules
     - name: F.A.Q.
       path: faq
+    - name: Resources
+      path: resources
     - name: Moderators
       path: moderators
 - name: Standings
