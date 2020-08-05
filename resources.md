@@ -139,11 +139,13 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Inn + Possession**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
+* **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
+* **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a Treasure Hunter from the stack that you wanted to exchange.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
 * **Villa**: When gaining multiple cards at once, such as when overpaying for Stonemason, you return to your Action phase after gaining both, even if the first one was a Villa.
-* **Way of the Mouser**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
+* **Way of the Mouse**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
 
