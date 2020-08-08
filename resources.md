@@ -141,6 +141,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Herbalist**: See **Capitalism** above.
 * **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
+* **Invest + Transport**: See **Transport** below.
 * **Possession**
   * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
@@ -151,8 +152,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Star Chart**: See **Fleet* above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
-* **Transport**: You cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
-  * Also see **Possession** above.
+* **Transport**
+  * **Invest**: When putting a card onto your deck, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
+  * **Possession:: see **Possession** above.
 * **Villa**: When gaining multiple cards at once, such as when overpaying for Stonemason, you return to your Action phase after gaining both, even if the first one was a Villa.
 * **Way of the Mouse**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
