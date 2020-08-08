@@ -126,9 +126,11 @@ If you have to do anything with your deck — for example draw, look at, reveal,
 Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI.
 
 * **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
+* **Black Market**: See **Capitalism** below.
 * **Blessed Village**: When you gain a Blessed Village during another player's turn, take The Field's Gift, The Forest's Gift, or The River's Gift, and choose to receive it now, the Boon is discarded during your next Clean-up phase instead of the very next Clean-up phase.
 * **Capitalism + Black Market/Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
+* **Colonnade**: See **Basilica** above.
 * **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt that you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
@@ -136,14 +138,21 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Fleet + Star Chart**: When you shuffle your deck during your Clean-up phase, if the next turn is a Fleet turn, you don't get to use Star Chart.
 * **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
 * **Hamlet**: If you discard a card for +1 Action and then have no cards in hand, you can choose to discard for +1 Buy, discard nothing, and still get +1 Buy.
+* **Herbalist**: See **Capitalism** above.
 * **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
-* **Inn + Possession**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
+* **Possession**
+  * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
+  * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
+* **Scepter**: See **Crown** above.
 * **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a Treasure Hunter from the stack that you wanted to exchange.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
+* **Star Chart**: See **Fleet* above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
+* **Transport**: You cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
+  * Also see **Possession** above.
 * **Villa**: When gaining multiple cards at once, such as when overpaying for Stonemason, you return to your Action phase after gaining both, even if the first one was a Villa.
 * **Way of the Mouse**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
