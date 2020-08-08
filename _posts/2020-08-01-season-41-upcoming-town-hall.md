@@ -4,8 +4,7 @@ subtitle: Saturday, August 8th at 1700 UTC
 date: 2020-07-31
 author: volfied
 layout: post
-categories:
-  - pinned
+categories: null
 ---
 Announcing the Season 41 Smorgasbord Town Hall on Saturday, August 8th at 1700 UTC! The floor will be open for suggested topics of discussion. We submit the following for your consideration:
 
