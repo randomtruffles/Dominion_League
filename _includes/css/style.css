@@ -1396,7 +1396,7 @@ ul.social-buttons li a {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 5; /* Sit on top */
   padding-top: 40px; /* Location of the box */
   left: 0;
   top: 0;
@@ -1770,4 +1770,64 @@ img.hof-champion-trophy {
   color: gray;
   border-bottom: 1px dotted gray;
   text-decoration: none;
+}
+
+/* Chart Controls*/
+.control-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.control-container {
+	margin: 4px;
+	float: left;
+}
+
+.slidePiece {
+	margin: 4px;
+}
+
+.doubleslider-container {
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 34px;
+	padding-top: 11px;
+}
+
+.dslider {
+	position: absolute;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 11px;
+	background: #d3d3d3;
+}
+
+.dslider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	position: relative;
+	z-index: 3;
+	background: #888;
+	height: 34px;
+	width: 17px;
+}
+
+.dslider::-moz-range-thumb {
+	position: relative;
+	z-index: 3;
+	background: #888;
+	height: 34px;
+	width: 17px;
+}
+
+.slidertext {
+	float: left;
+	width: 34px;
+}
+
+.reset {
+	float: left;
 }

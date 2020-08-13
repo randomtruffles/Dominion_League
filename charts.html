@@ -1,0 +1,506 @@
+---
+layout: default
+title: Charts
+---
+
+<div class="home">
+	<div class="control-row">
+		<div class="control-container">
+			Player: 
+			<input type="text" id="player-input" class="chartInput">
+			<button id="playerchange">Make Chart</button>
+			<button id="clearplayer">Clear</button>
+		</div>
+			<div class="control-container">
+			<input type="radio" id="count" class="chartInput" name="prop" checked="checked">
+			<label for="count" class="chartInput">Counts</label>
+			<input type="radio" id="prop" class="chartInput" name="prop">
+			<label for="prop" class="chartInput">Proportions</label>
+		</div>
+		<div class="control-container">
+			<input type="checkbox" id="allTiers" class="chartInput">
+			<label for="allTiers" class="chartInput">Show all tiers</label>
+		</div>
+	</div>
+	
+	<div class="control-row">
+		<p style="float:left" class="slidePiece">Seasons:</p>
+		<input type="text" id="seasontextmin" class="slidertext slidePiece" value="1">
+		<div class="doubleslider-container slidePiece">
+			<input type="range" id="seasonslide1" class="dslider" min="1" max="41" value="1">
+			<input type="range" id="seasonslide2" class="dslider" min="1" max="1">
+		</div>
+		<input type="text" id="seasontextmax" class="slidertext slidePiece">
+		<button id="rangereset" class="reset slidePiece">Reset Range</button> 
+	</div>
+	
+	<div id="widthcheck"><!-- maybe put player not founds in here - I need it for determining render width --></div>
+	<div id="visual"></div>
+	
+	<div id="standings-modal" class="modal">
+		<div class="modal-content" style="text-align:center">
+			<span id="closemodal" class="close">&times;</span>
+			<h5 id="standings-info"></h5>
+			<table class="table-past-standings">
+				<tbody id="standings-table">
+					<tr class="rows-past-standings">
+						<th width="10%">Rank</th>
+						<th width="55%" class="cells-past-standings">Player</th>
+						<th width="10%" class="cells-past-standings">W</th>
+						<th width="10%" class="cells-past-standings">L</th>
+						<th width="15%" class="cells-past-standings">Win %</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+	<script>
+	var currentSeason = 41;
+	var counts = {{ site.data.chart_counts | jsonify }};
+	var countsLength = counts.length;
+	var placeHistory = {{ site.data.chart_history | jsonify }};
+	var placeHistoryLength = placeHistory.length;
+	var proportion = false;
+	var allTiers = true;
+	var player = null;
+	var seasonRange = [1,currentSeason];
+	var userSetRange = false;
+	var plot = null;
+
+	document.getElementById('visual').style.padding = 0;
+	makePlot();
+	window.onresize = function () {
+		plot.width(document.getElementById('widthcheck').clientWidth - 94);
+		plot.height(0.6 * document.getElementById('widthcheck').clientWidth - 94);
+		plot.runAsync();
+	};
+
+
+	var seasonslide1 = document.getElementById("seasonslide1");
+	var seasonslide2 = document.getElementById("seasonslide2");
+	var seasontextmin = document.getElementById("seasontextmin");
+	var seasontextmax = document.getElementById("seasontextmax");
+
+	seasonslide1.max = currentSeason;
+	seasonslide2.max = currentSeason;
+	seasonslide2.value = currentSeason;
+	seasontextmax.value = currentSeason;
+
+	seasonslide1.oninput = slideinput;
+	seasonslide2.oninput = slideinput;
+	seasontextmax.oninput = textinput;
+	seasontextmin.oninput = textinput;
+	seasontextmax.onblur = slideinput;
+	seasontextmin.onblur = slideinput;
+
+	function slideinput() {
+		if (Number(seasonslide1.value) <= Number(seasonslide2.value)) {
+			seasontextmin.value = seasonslide1.value;
+			seasontextmax.value = seasonslide2.value;
+		} else {
+			seasontextmin.value = seasonslide2.value;
+			seasontextmax.value = seasonslide1.value;
+		}
+		
+		seasonRange = [Number(seasontextmin.value), Number(seasontextmax.value)];
+		userSetRange = true;
+		makePlot();
+	}
+
+	function textinput() {
+		if ((Number(seasontextmin.value) <= Number(seasontextmax.value)) && (Number(seasontextmin.value) >= Number(seasonslide1.min)) && (Number(seasontextmax.value) <= Number(seasonslide1.max))) {
+			if (Number(seasonslide1.value) <= Number(seasonslide2.value)) {
+				seasonslide1.value = seasontextmin.value;
+				seasonslide2.value = seasontextmax.value;
+			} else {
+				seasonslide1.value = seasontextmax.value;
+				seasonslide2.value = seasontextmin.value;
+			}
+			
+			seasonRange = [Number(seasontextmin.value), Number(seasontextmax.value)];
+			userSetRange = true;
+			makePlot();
+		}
+	}
+
+	document.getElementById('rangereset').onclick = resetRange;
+	function resetRange() {
+		seasonRange = [1,currentSeason];
+		userSetRange = false;
+		seasontextmin.value = 1;
+		seasontextmax.value = currentSeason;
+		seasonslide1.value = 1;
+		seasonslide2.value = currentSeason;
+		makePlot();
+	}
+
+
+	document.getElementById('playerchange').onclick = function() {
+		player = document.getElementById('player-input').value;
+		allTiers = proportion ? true : document.getElementById('allTiers').checked;
+		makePlot();
+	};
+
+	document.getElementById('clearplayer').onclick = function() {
+		document.getElementById('player-input').value = "";
+		player = null;
+		if (userSetRange) {makePlot();} else {resetRange();};
+	};
+
+	document.getElementById('count').onclick = function() {
+		if (proportion) {
+			proportion = false;
+			allTiers = document.getElementById('allTiers').checked;
+			makePlot();
+		}
+	};
+
+	document.getElementById('prop').onclick = function() {
+		if (!proportion) {
+			proportion = true;
+			allTiers = true;
+			makePlot();
+		}					
+	};
+
+	document.getElementById('allTiers').onclick = function() {
+		allTiers = proportion ? true : document.getElementById('allTiers').checked;						
+		makePlot();
+	};
+
+	function makePlot() {
+		var pHist = [];
+		var tiers = [];
+		var seasons = [];
+		var fCounts = [];
+		
+		if (player) {
+			//data slicing
+			//isolate records for relevant player
+			let lowerplayer = player.toLowerCase();
+			for (let i = 0; i < placeHistoryLength; i++) {
+				if ((placeHistory[i].player.toLowerCase() == lowerplayer) && (Number(placeHistory[i].season) >= seasonRange[0]) && (Number(placeHistory[i].season) <= seasonRange[1])) {
+					pHist.push(placeHistory[i]);
+					seasons.push(placeHistory[i].season);
+					tiers.push(placeHistory[i].tier);
+				}
+			}
+			
+			var played2MostRecent = (seasons[seasons.length - 1] == currentSeason) && (seasons[seasons.length - 2] == currentSeason - 1);
+			
+			if (pHist.length) {
+				//find missing seasons and insert nulls
+				let start = userSetRange ? seasonRange[0] : Number(seasons[0]);
+				let end = userSetRange ? seasonRange[1] : Number(seasons[seasons.length-1]);
+				var toadd = [];
+				for (let s = start; s <= end; s++) {
+					if (!(seasons.includes(String(s)))) {
+						pHist.push({"player":player, "tier":null, "division":null, "place":null, "season":String(s), "countPlacement":null, "propPlacement":null, "champ":null});
+						toadd.push(String(s));
+					}
+				}
+				pHist.sort(function(a,b){return a.season - b.season});
+				seasons = seasons.concat(toadd).sort(function(a,b){return a - b});
+				
+				//show range on sliders if it changes upon plot making
+				if (!userSetRange) {
+					seasontextmin.value = seasons[0];
+					seasontextmax.value = seasons[seasons.length - 1];
+					seasonslide1.value = seasons[0];
+					seasonslide2.value = seasons[seasons.length - 1];
+				}
+				
+				//find needed tiers
+				if (allTiers) {
+					tiers = ["A","B","C","D","E","F","G","H","I","J"];
+				} else {
+					let potTiers = ["A","B","C","D","E","F","G","H","I","J"];
+					let minTier = tiers.sort()[tiers.length - 1]
+					let tempTiers = [];
+					for (let i = 0; i < potTiers.length; i++) {
+						if (potTiers[i] <= minTier) {tempTiers.push(potTiers[i]);} else {break;}
+					}
+					tiers = tempTiers;
+				}
+				
+				var colors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000"];
+				//cut colors because layers with same encoding annoyingly union their domains
+				colors = colors.slice(0,tiers.length).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
+				
+				//filter counts to desired 
+				if (allTiers) {
+					for (let i = 0; i < countsLength; i++) {
+						if (seasons.includes(counts[i].season)) {fCounts.push(counts[i]);}
+					}
+				} else {
+					for (let i = 0; i < countsLength; i++) {
+						if (seasons.includes(counts[i].season) && tiers.includes(counts[i].tier)) {fCounts.push(counts[i]);}
+					}
+				}
+				
+				//filter out later E seasons if player was in E before season 27
+				if (tiers[tiers.length - 1] == "E") {
+					let oldOnly = true;
+					for (let i = pHist.length - 1; i >= 0; i--) {
+						if (pHist[i].tier == "E" && Number(pHist[i].season > 26)) {
+							oldOnly = false;
+							break;
+						}
+					}
+					if (oldOnly) {
+						for (let i = fCounts.length - 1; i >= 0; i--) {
+							if ((Number(fCounts[i].season) > 26) && (fCounts[i].tier == "E")) {
+								fCounts.splice(i,1);
+							}
+						}
+					}
+				}
+				
+				//make row for lines if played last two seasons
+				if (played2MostRecent) {
+					repeatlastplayed = Object.assign({}, pHist[pHist.length - 2]);
+					repeatlastplayed.champ = "in progress";
+				}
+				
+				var layers = [
+					{
+						"data": {"values": fCounts},
+						"mark": "bar",
+						"encoding": {
+							"x": {
+								"field": "season",
+								"type": "ordinal",
+								"scale": {
+									"domain": seasons
+								},
+								"axis": {"title": "Season"}
+							},
+							"y": {
+								"field": proportion ? "lfrac" : "players",
+								"type": "quantitative",
+								"scale": {
+									"reverse": true,
+									"domain": proportion ? [0,1] : null
+								},
+								"axis": {"title": "Position"}
+							},
+							"color": {
+								"field": "tier",
+								"type": "nominal",
+								"scale": {
+									"domain": tiers,
+									"range": colors
+								},
+								"legend": {
+									"title": "Tier",
+									"values": tiers,
+									"symbolType": "square",
+									"symbolStrokeWidth": 0,
+									"symbolSize": 200
+								}
+							},
+							"order": {"field":"tier", "sort":"ascending"}
+						}
+					},
+					{
+						"data": {"values": played2MostRecent ? pHist.concat(repeatlastplayed) : pHist},
+						"transform": [
+							{"calculate": "if(datum.season.length == 1, '0' + datum.season, datum.season)", "as": "order"},
+							{"calculate": "if(datum.champ == 'in progress', 'yes', 'no')", "as": "future"}
+						],
+						"mark": {"type": "line", "stroke": "#000000"},
+						"encoding" : {
+							"x": {"field": "season", "type": "ordinal"},
+							"y": {
+								"field": proportion ? "propPlacement" : "countPlacement",
+								"type": "quantitative"
+							},
+							"strokeDash": {
+								"field": "future",
+								"type": "nominal",
+								"scale": {
+									"domain": ["no", "yes"],
+									"range": [[1,0], [8,8]]
+								},
+								legend: null
+							},
+							"order": {"field": "order", "type": "ordinal"}
+						}
+					},
+					{
+						"data": {"values": pHist},
+						"selection": {
+							"hovered": {"type": "single", "on": "mouseover", "empty": "none"},
+							"clicked": {"type": "single", "on": "click", "empty": "none"}
+						},
+						"mark": {
+							"type": "point",
+							"filled": true,
+							"opacity": "1",
+							"stroke": "#000000",
+							"strokeWidth": "1"
+						},
+						"encoding": {
+							"x": {"field": "season", "type": "ordinal"},
+							"y": {
+								"field": proportion ? "propPlacement" : "countPlacement",
+								"type": "quantitative"
+							},
+							"color": {
+								"field": "champ",
+								"type": "nominal",
+								"scale": {
+									"domain": ["no", "division", "league", "in progress"]
+								}
+							},
+							"shape": {
+								"field": "champ",
+								"type": "nominal",
+								"scale": {
+									"domain": ["no", "division", "league", "in progress"],
+									"range": [
+										"M 0 -1 A 1 1 0 1 1 0 1 A 1 1 0 1 1 0 -1", 
+										"M 0 -2 L -0.36327126400268 -0.5 L -1.90211303259031 -0.618033988749895 L -0.587785252292473 0.190983005625053 L -1.17557050458495 1.61803398874989 L -7.56848349501309e-17 0.618033988749895 L 1.17557050458495 1.6180339887499 L 0.587785252292473 0.190983005625053 L 1.90211303259031 -0.618033988749894 L 0.363271264002681 -0.5 L 4.89842541528951e-16 -2 L -0.36327126400268 -0.5",
+										"M 0 -2.4 L -0.435925516803217 -0.6 L -2.28253563910837 -0.741640786499874 L -0.705342302750968 0.229179606750063 L -1.41068460550194 1.94164078649987 L -9.0821801940157e-17 0.741640786499874 L 1.41068460550194 1.94164078649987 L 0.705342302750968 0.229179606750063 L 2.28253563910837 -0.741640786499873 L 0.435925516803217 -0.6 L 5.87811049834741e-16 -2.4 L -0.435925516803216 -0.600000000000001",
+										"M 0 -1 A 1 1 0 1 1 0 1 A 1 1 0 1 1 0 -1"
+									]
+								},
+								"legend": null
+							},
+							"size": {"condition": {"selection": "hovered", "value": "60"}, "value": "40"},
+							"tooltip": [
+								{"field": "season", "type": "nominal", "title": "Season"},
+								{"field": "division", "type": "nominal", "title": "Division"},
+								{"field": "place", "type": "nominal", "title": "Finish"}
+							]
+						}
+					}
+				];
+			} else {
+				//add message saying not found at some point
+				var layers = nullPlotLayer();
+			}
+		} else {
+			var layers = nullPlotLayer();
+		}
+		
+		const spec = {
+			"title": player ? ("League History: " + player) : "League History",
+			"width": document.getElementById('widthcheck').clientWidth - 94, //little bit off with scrollbar, worry when doing resizing for window
+			"height": 0.6 * (document.getElementById('widthcheck').clientWidth - 94),
+			"layer": layers				
+		};
+		vegaEmbed("#visual", spec, {"actions": false}).then(function(res) {
+			plot = res.view;
+			if (pHist.length) {
+				plot.addDataListener('clicked_store', function(name, value){
+					if (value.length) {
+						if (played2MostRecent) {
+							var roi = pHist[value[0].values[0] - fCounts.length - pHist.length - 2];
+						} else {
+							var roi = pHist[value[0].values[0] - fCounts.length - 1];
+						}
+						
+						showStandingsModal(roi.season, roi.division);
+					}
+				})
+			}
+		});
+	}
+
+	function nullPlotLayer() {
+		let seasons = [];
+		let fCounts = [];
+		let start = userSetRange ? seasonRange[0] : 1;
+		let end = userSetRange ? seasonRange[1] : currentSeason;
+		for (let s = start; s <= end; s++) {seasons.push(String(s));}
+		if (userSetRange) {
+			for (let i = 0; i < countsLength; i++) {
+				if ((Number(counts[i].season) >= start) && (Number(counts[i].season) <= end)) {fCounts.push(counts[i]);}
+			}
+		}
+		
+		return [{
+			"data": {"values": userSetRange ? fCounts : counts},
+			"mark": "bar",
+			"encoding": {
+				"x": {
+					"field": "season",
+					"type": "ordinal",
+					"scale": {
+						"domain": seasons
+					},
+					"axis": {"title": "Season"}
+				},
+				"y": {
+					"field": proportion ? "lfrac" : "players",
+					"type": "quantitative",
+					"scale": {
+						"reverse": true,
+						"domain": proportion ? [0,1] : null
+					},
+					"axis": {"title": proportion ? "Proportion" : "Position"}
+				},
+				"color": {
+					"field": "tier",
+					"type": "nominal",
+					"scale": {
+						"domain": ["A","B","C","D","E","F","G","H","I","J"],
+						"range": ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000"]
+					},
+					"legend": {
+						"title": "Tier",
+						"values": ["A","B","C","D","E","F","G","H","I","J"],
+						"symbolType": "square",
+						"symbolStrokeWidth": 0,
+						"symbolSize": 200
+					}
+				},
+				"order": {"field":"tier", "sort":"ascending"}
+			}
+		}];
+	}
+
+	var currentiframes = {{ site.data.current_season_iframes | jsonify }}
+
+	function showStandingsModal(season, division) {
+		document.getElementById('standings-info').innerHTML = "Season " + season + " Division " + division + " Standings";
+		var table = document.getElementById('standings-table');
+		table.innerHTML = '';
+		if (season == currentSeason) {
+			table.innerHTML = currentiframes[division];
+		} else {
+			for (let i=0; i < placeHistoryLength; i++) {
+				if ((placeHistory[i].season == season) && (placeHistory[i].division == division)) {
+					let row = document.createElement('tr');
+					row.classList.add('rows-past-standings')
+					let names = ['place', 'player', 'wins', 'losses']
+					for (let j = 0; j < 4; j++) {
+						let cell = document.createElement('td');
+						cell.classList.add('cells-past-standings');
+						cell.appendChild(document.createTextNode(placeHistory[i][names[j]]));
+						row.appendChild(cell);
+					}
+					//handle pct separately to add background color
+					let cell = document.createElement('td');
+					cell.classList.add('cells-past-standings');
+					cell.style.cssText = 'background-color:' + placeHistory[i].standingsColor;
+					cell.appendChild(document.createTextNode(placeHistory[i].pct));
+					row.appendChild(cell);
+					table.appendChild(row);
+				}
+			}
+		}
+		document.getElementById("standings-modal").style.display = "block";
+	}
+	
+	document.getElementById('closemodal').onclick = closemodal;
+	window.onclick = function(ev) {if (event.target == document.getElementById('standings-modal')) {closemodal()}};
+	
+	function closemodal() {document.getElementById("standings-modal").style.display = "none";}
+	</script>
+</div>
