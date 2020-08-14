@@ -1784,8 +1784,77 @@ img.hof-champion-trophy {
 	float: left;
 }
 
+.control-container label input {
+	vertical-align: middle;
+}
+
+.control-container label span {
+	font-weight: normal;
+	vertical-align: middle;
+	position: relative;
+	top: 2px;
+}
+
+.chartRadio {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #d3d3d3;
+	background-color: #ffffff;
+}
+
+.chartRadio:hover {
+	border-color: #888;
+	background-color: #d3d3d3;
+}
+
+.chartRadio:checked {
+	border: 7px solid #888;
+}
+
+.chartCheck {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	width: 20px;
+	height: 20px;
+	border: 2px solid #d3d3d3;
+	background-color: #ffffff;
+}
+
+.chartCheck:hover {
+	border-color: #888;
+	background-color: #d3d3d3;
+}
+
+.chartCheck:checked {
+	border-color: #888;
+	background-color: #888;
+}
+
+.chartCheck:checked:after {
+	content: "\2713";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
+.chartCheck:checked:hover:after {
+    color: #d3d3d3;
+}
+
 .slidePiece {
 	margin: 4px;
+	float: left;
 }
 
 .doubleslider-container {
@@ -1793,7 +1862,7 @@ img.hof-champion-trophy {
 	position: relative;
 	width: 50%;
 	height: 34px;
-	padding-top: 11px;
+	top: 12px;
 }
 
 .dslider {
@@ -1827,8 +1896,4 @@ img.hof-champion-trophy {
 .slidertext {
 	float: left;
 	width: 34px;
-}
-
-.reset {
-	float: left;
 }

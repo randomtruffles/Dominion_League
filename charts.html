@@ -11,25 +11,31 @@ title: Charts
 	
 	<div class="control-row">
 		<div class="control-container">
-			Player: 
+			Player:
 			<input type="text" id="player-input" class="chartInput">
 			<button id="playerchange">Make Chart</button>
 			<button id="clearplayer">Clear</button>
 		</div>
-			<div class="control-container">
-			<input type="radio" id="count" class="chartInput" name="prop" checked="checked">
-			<label for="count" class="chartInput">Counts</label>
-			<input type="radio" id="prop" class="chartInput" name="prop">
-			<label for="prop" class="chartInput">Proportions</label>
+		<div class="control-container">
+			<label for="count" class="chartInput">
+				<input type="radio" id="count" class="chartInput chartRadio" name="prop" checked="checked">
+				<span>Counts</span>
+			</label>
+			<label for="prop" class="chartInput">
+				<input type="radio" id="prop" class="chartInput chartRadio" name="prop">
+				<span>Proportions</span>
+			</label>
 		</div>
 		<div class="control-container">
-			<input type="checkbox" id="allTiers" class="chartInput">
-			<label for="allTiers" class="chartInput">Show all tiers</label>
+			<label for="allTiers" class="chartInput">
+				<input type="checkbox" id="allTiers" class="chartInput chartCheck">
+				<span>Show all tiers</span>
+			</label>
 		</div>
 	</div>
 	
 	<div class="control-row">
-		<p style="float:left" class="slidePiece">Seasons:</p>
+		<p class="slidePiece">Seasons:</p>
 		<input type="text" id="seasontextmin" class="slidertext slidePiece" value="1">
 		<div class="doubleslider-container slidePiece">
 			<input type="range" id="seasonslide1" class="dslider" min="1" max="41" value="1">
@@ -157,6 +163,7 @@ title: Charts
 	};
 
 	document.getElementById('count').onclick = function() {
+		document.getElementById('count').blur();
 		if (proportion) {
 			proportion = false;
 			allTiers = document.getElementById('allTiers').checked;
@@ -165,6 +172,7 @@ title: Charts
 	};
 
 	document.getElementById('prop').onclick = function() {
+		document.getElementById('prop').blur();
 		if (!proportion) {
 			proportion = true;
 			allTiers = true;
@@ -173,6 +181,7 @@ title: Charts
 	};
 
 	document.getElementById('allTiers').onclick = function() {
+		document.getElementById('allTiers').blur();
 		allTiers = proportion ? true : document.getElementById('allTiers').checked;						
 		makePlot();
 	};
