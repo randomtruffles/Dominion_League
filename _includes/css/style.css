@@ -1396,7 +1396,7 @@ ul.social-buttons li a {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 5; /* Sit on top */
   padding-top: 40px; /* Location of the box */
   left: 0;
   top: 0;
@@ -1770,4 +1770,130 @@ img.hof-champion-trophy {
   color: gray;
   border-bottom: 1px dotted gray;
   text-decoration: none;
+}
+
+/* Chart Controls*/
+.control-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.control-container {
+	margin: 4px;
+	float: left;
+}
+
+.control-container label input {
+	vertical-align: middle;
+}
+
+.control-container label span {
+	font-weight: normal;
+	vertical-align: middle;
+	position: relative;
+	top: 2px;
+}
+
+.chartRadio {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #d3d3d3;
+	background-color: #ffffff;
+}
+
+.chartRadio:hover {
+	border-color: #888;
+	background-color: #d3d3d3;
+}
+
+.chartRadio:checked {
+	border: 7px solid #888;
+}
+
+.chartCheck {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	width: 20px;
+	height: 20px;
+	border: 2px solid #d3d3d3;
+	background-color: #ffffff;
+}
+
+.chartCheck:hover {
+	border-color: #888;
+	background-color: #d3d3d3;
+}
+
+.chartCheck:checked {
+	border-color: #888;
+	background-color: #888;
+}
+
+.chartCheck:checked:after {
+	content: "\2713";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
+.chartCheck:checked:hover:after {
+    color: #d3d3d3;
+}
+
+.slidePiece {
+	margin: 4px;
+	float: left;
+}
+
+.doubleslider-container {
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 34px;
+	top: 12px;
+}
+
+.dslider {
+	position: absolute;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 11px;
+	background: #d3d3d3;
+	outline: none;
+}
+
+.dslider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	position: relative;
+	z-index: 3;
+	background: #888;
+	height: 34px;
+	width: 17px;
+}
+
+.dslider::-moz-range-thumb {
+	position: relative;
+	z-index: 3;
+	background: #888;
+	height: 34px;
+	width: 17px;
+}
+
+.slidertext {
+	float: left;
+	width: 34px;
 }
