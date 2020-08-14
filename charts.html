@@ -204,7 +204,7 @@ title: Charts
 				}
 			}
 			
-			var played2MostRecent = (seasons[seasons.length - 1] == currentSeason) && (seasons[seasons.length - 2] == currentSeason - 1);
+			var played2MostRecent = (seasons[seasons.length - 1] == currentSeason) && (seasons[seasons.length - 2] == currentSeason - 1) && (pHist[pHist.length - 1].champ == "in progress");
 			
 			if (pHist.length) {
 				//correct capitalization
