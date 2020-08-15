@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Charts
+title: Visual History
 ---
 
 <div class="home">
 	<div class="container-centered">
-		<h3>Charts</h3>
+		<h3>Visual History</h3>
 		<p>Visual representations of Dominion League history - take a look at players' performance over time, with more coming soon.</p>
 	</div>
 	
@@ -70,27 +70,41 @@ title: Charts
 	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 	<script>
+	//setup variables
 	var counts = {{ site.data.chart_counts | jsonify }};
 	var countsLength = counts.length;
 	var currentSeason = Number(counts[countsLength - 1].season);
 	var placeHistory = {{ site.data.chart_history | jsonify }};
 	var placeHistoryLength = placeHistory.length;
 	var proportion = false;
-	var allTiers = true;
+	var allTiers = false;
 	var player = null;
 	var seasonRange = [1,currentSeason];
 	var userSetRange = false;
 	var plot = null;
 
-	document.getElementById('visual').style.padding = 0;
-	makePlot();
-	window.onresize = function () {
-		plot.width(document.getElementById('widthcheck').clientWidth - 94);
-		plot.height(0.6 * document.getElementById('widthcheck').clientWidth - 94);
-		plot.runAsync();
-	};
-
-
+	//url parameters handling
+	getURLparams();
+	function getURLparams() {
+		if (window.location.search) {
+			let params = new URLSearchParams(window.location.search);
+			player = params.get('player');
+			proportion = Boolean(params.get('prop') == 'true');
+			if (proportion) {document.getElementById('prop').checked = "checked";}
+		}
+	}
+	function setURLparams() {
+		let searchString = "?"
+		if (player) {
+			searchString += "player=" + player.replace(" ", "%20");
+		}
+		if (proportion) {
+			searchString += "&".repeat(searchString.length > 1) + "prop=true";
+		}
+		window.history.replaceState(null, null, searchString);
+	}
+	
+	//setup season range controls
 	var seasonslide1 = document.getElementById("seasonslide1");
 	var seasonslide2 = document.getElementById("seasonslide2");
 	var seasontextmin = document.getElementById("seasontextmin");
@@ -107,6 +121,16 @@ title: Charts
 	seasontextmin.oninput = textinput;
 	seasontextmax.onblur = slideinput;
 	seasontextmin.onblur = slideinput;
+	
+	//make plot and have it resize with window
+	document.getElementById('visual').style.padding = 0;
+	widthcheck = document.getElementById('widthcheck');
+	makePlot();
+	window.onresize = function() {
+		plot.width(widthcheck.clientWidth - 94);
+		plot.height(0.6 * (widthcheck.clientWidth - 94));
+		plot.runAsync();
+	};
 
 	function slideinput() {
 		if (Number(seasonslide1.value) <= Number(seasonslide2.value)) {
@@ -152,13 +176,15 @@ title: Charts
 
 	document.getElementById('playerchange').onclick = function() {
 		player = document.getElementById('player-input').value;
-		allTiers = proportion ? true : document.getElementById('allTiers').checked;
+		allTiers = document.getElementById('allTiers').checked;
+		setURLparams();
 		makePlot();
 	};
 
 	document.getElementById('clearplayer').onclick = function() {
 		document.getElementById('player-input').value = "";
 		player = null;
+		setURLparams();
 		if (userSetRange) {makePlot();} else {resetRange();};
 	};
 
@@ -167,6 +193,7 @@ title: Charts
 		if (proportion) {
 			proportion = false;
 			allTiers = document.getElementById('allTiers').checked;
+			setURLparams();
 			makePlot();
 		}
 	};
@@ -175,14 +202,14 @@ title: Charts
 		document.getElementById('prop').blur();
 		if (!proportion) {
 			proportion = true;
-			allTiers = true;
+			setURLparams();
 			makePlot();
 		}					
 	};
 
 	document.getElementById('allTiers').onclick = function() {
 		document.getElementById('allTiers').blur();
-		allTiers = proportion ? true : document.getElementById('allTiers').checked;						
+		allTiers = document.getElementById('allTiers').checked;						
 		makePlot();
 	};
 
@@ -210,6 +237,9 @@ title: Charts
 				//correct capitalization
 				player = pHist[0].player;
 				document.getElementById('player-input').value = player;
+				
+				//set allTiers to true if proportion is true
+				if (proportion) {allTiers = true;}
 			
 				//find missing seasons and insert nulls
 				let start = userSetRange ? seasonRange[0] : Number(seasons[0]);
@@ -390,7 +420,7 @@ title: Charts
 								"legend": null
 							},
 							"size": {"condition": {"selection": "hovered", "value": "60"}, "value": "40"},
-							"tooltip": [
+							"tooltip": (widthcheck.clientWidth < 540) ? null : [
 								{"field": "season", "type": "nominal", "title": "Season"},
 								{"field": "division", "type": "nominal", "title": "Division"},
 								{"field": "place", "type": "nominal", "title": "Finish"}
@@ -408,8 +438,8 @@ title: Charts
 		
 		const spec = {
 			"title": player ? ("League History: " + player) : "League History",
-			"width": document.getElementById('widthcheck').clientWidth - 94, //little bit off with scrollbar, worry when doing resizing for window
-			"height": 0.6 * (document.getElementById('widthcheck').clientWidth - 94),
+			"width": widthcheck.clientWidth - 94, //little bit off with scrollbar, worry when doing resizing for window
+			"height": 0.6 * (widthcheck.clientWidth - 94),
 			"layer": layers				
 		};
 		vegaEmbed("#visual", spec, {"actions": false}).then(function(res) {
