@@ -87,9 +87,10 @@ title: Visual History
 	getURLparams();
 	function getURLparams() {
 		if (window.location.search) {
-			let params = new URLSearchParams(window.location.search)
-			player = params.get('player')	
-			proportion = Boolean(params.get('prop') == 'true')
+			let params = new URLSearchParams(window.location.search);
+			player = params.get('player');
+			proportion = Boolean(params.get('prop') == 'true');
+			if (proportion) {document.getElementById('prop').checked = "checked";}
 		}
 	}
 	function setURLparams() {
@@ -125,7 +126,11 @@ title: Visual History
 	document.getElementById('visual').style.padding = 0;
 	widthcheck = document.getElementById('widthcheck');
 	makePlot();
-	window.onresize = makePlot;
+	window.onresize = function() {
+		plot.width(document.getElementById('widthcheck').clientWidth - 94);
+		plot.height(0.6 * document.getElementById('widthcheck').clientWidth - 94);
+		plot.runAsync();
+	};
 
 	function slideinput() {
 		if (Number(seasonslide1.value) <= Number(seasonslide2.value)) {
@@ -343,8 +348,7 @@ title: Visual History
 									"values": tiers,
 									"symbolType": "square",
 									"symbolStrokeWidth": 0,
-									"symbolSize": 200,
-									"orient": (widthcheck.clientWidth < 540) ? "bottom" : "right"
+									"symbolSize": 200
 								}
 							},
 							"order": {"field":"tier", "sort":"ascending"}
@@ -434,8 +438,8 @@ title: Visual History
 		
 		const spec = {
 			"title": player ? ("League History: " + player) : "League History",
-			"width": (widthcheck.clientWidth < 540) ? (widthcheck.clientWidth - 62) : (widthcheck.clientWidth - 94), //little bit off with scrollbar, worry when doing resizing for window
-			"height": 0.6 * ((widthcheck.clientWidth < 540) ? (widthcheck.clientWidth - 62) : (widthcheck.clientWidth - 94)),
+			"width": widthcheck.clientWidth - 94, //little bit off with scrollbar, worry when doing resizing for window
+			"height": 0.6 * (widthcheck.clientWidth - 94),
 			"layer": layers				
 		};
 		vegaEmbed("#visual", spec, {"actions": false}).then(function(res) {
@@ -501,8 +505,7 @@ title: Visual History
 						"values": ["A","B","C","D","E","F","G","H","I","J"],
 						"symbolType": "square",
 						"symbolStrokeWidth": 0,
-						"symbolSize": 200,
-						"orient": (widthcheck.clientWidth < 540) ? "bottom" : "right"
+						"symbolSize": 200
 					}
 				},
 				"order": {"field":"tier", "sort":"ascending"}

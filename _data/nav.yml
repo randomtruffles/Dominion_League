@@ -24,6 +24,8 @@
       path: player_database
     - name: Past Seasons
       path: past_standings
+    - name: Visual History
+      path: charts
     - name: Hall of Fame
       path: hall_of_fame
 - name: Matches
