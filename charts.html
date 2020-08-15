@@ -127,8 +127,8 @@ title: Visual History
 	widthcheck = document.getElementById('widthcheck');
 	makePlot();
 	window.onresize = function() {
-		plot.width(document.getElementById('widthcheck').clientWidth - 94);
-		plot.height(0.6 * document.getElementById('widthcheck').clientWidth - 94);
+		plot.width(widthcheck.clientWidth - 94);
+		plot.height(0.6 * (widthcheck.clientWidth - 94));
 		plot.runAsync();
 	};
 
