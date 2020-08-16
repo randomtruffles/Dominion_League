@@ -128,8 +128,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
 * **Black Market**: See **Capitalism** below.
 * **Blessed Village**: When you gain a Blessed Village during another player's turn, take The Field's Gift, The Forest's Gift, or The River's Gift, and choose to receive it now, the Boon is discarded during your next Clean-up phase instead of the very next Clean-up phase.
-* **Capitalism + Black Market/Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
-* **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
+* **Capitalism**
+  * **Black Market/Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
+  * **Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
 * **Colonnade**: See **Basilica** above.
 * **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
@@ -153,11 +154,14 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Sleigh**: You can react with Sleighs even if they have left your hand and moved back. For example, if you have a Sleigh in hand and gain a Sleigh, you can react with them both in an infinite loop.
 * **Star Chart**: See **Fleet* above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
+* **Storyteller**: See **Capitalism** above.
 * **Transport**
   * **Invest**: See **Invest** above.
   * **Possession**: See **Possession** above.
 * **Villa**: When gaining multiple cards at once, such as when overpaying for Stonemason, you return to your Action phase after gaining both, even if the first one was a Villa.
-* **Way of the Mouse**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
+* **Way of the Mouse**
+  * **Cargo Ship**: If Way of the Mouse sets aside Cargo Ship, and you play multiple differently named cards using Way of the Mouse, then when you gain a card you cannot choose which played card to set aside the gained card on.
+  * **Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
 
