@@ -194,7 +194,7 @@ The rules of Dominion say that if both players finish with the same score, the p
 
 ##### How does the League count games that end in a tie?
 
-If a game ends in a tie, both players get 0.5 wins for that game. For example, if during your match you won 3 games, lost 2 games, and tied 1 game, you get 3.5 wins and your opponent gets 2.5 wins. Note the rule above for games where players have the same VP.
+If a game ends in a tie, both players get 0.5 wins for that game. For example, if during your match you won 3 games, lost 2 games, and tied 1 game, you get 3.5 wins and your opponent gets 2.5 wins. Note that games where both players finish with the same score but took different numbers of turns are not ties (see the rule above).
 
 ##### Do I need to record proof of my game results (screenshots, game IDs, etc)?
 
