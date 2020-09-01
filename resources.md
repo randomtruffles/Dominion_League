@@ -5,7 +5,7 @@ date: 2020-08-08
 categories: pinned
 layout: rules_faq
 ---
-These resources can be consulted at any time, including during a League game.
+These resources may be consulted at any time, including during a League game.
 
 #### Rulebooks
 
@@ -25,7 +25,7 @@ The current rulebooks for each Dominion set are linked below. See below for some
 * [Dominion: Renaissance](/img/uploads/12-renaissance-rulebook.pdf)
 * [Dominion: Menagerie](/img/uploads/13-menagerie-rulebook.pdf)
 
-There is no official rulebook for the promo cards.
+There is no official rulebook for the promo cards (Envoy, Black Market, Stash, Walled Village, Governor, Prince, Summon, Sauna/Avanto, Dismantle, Church, and Captain).
 
 #### New errata
 
@@ -67,11 +67,13 @@ Additionally, when you are told to get a card from your discard pile and that ca
 
 ##### Gaining non-Supply cards
 
-When a card tells you to gain a non-Supply card by name, you can gain it from its pile, even though it's not in the Supply (e.g. "Gain a Spoils.").
+When a card tells you to gain a non-Supply card by name, you can gain it from its pile, even though it's not in the Supply.
+
+For example, Marauder can gain Spoils because Marauder uses the words "gain a Spoils", but Changeling cannot gain an Imp because Changeling does not use the word "Imp" and instead says "gain a copy".
 
 ##### Reducing costs
 
-The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion; the cost in Debt of a card can't go below 0 Debt.
+The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion. The cost in Debt of a card can't go below 0 Debt.
 
 #### Previous errata
 
@@ -98,7 +100,7 @@ Cards which have new wordings but function identically in all situations are not
   * **Outpost**: The conditions for getting an extra turn are now that it's the first time you played an Outpost that turn and that the previous turn wasn't yours.
 * Dominion: Alchemy
 
-  * **Possession**: Any Debt tokens the player to your left would take during their extra turn you take instead.
+  * **Possession**: Any Debt tokens (and no other kinds of tokens) that the player to your left would take during their extra turn you take instead.
 * Dominion: Prosperity
 
   * **Trade Route**: You trash a card from your hand before you get +$1 per token on the Trade Route mat.
@@ -126,11 +128,10 @@ If you have to do anything with your deck — for example draw, look at, reveal,
 Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI.
 
 * **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
-* **Black Market**: See **Capitalism** below.
+* **Black Market, Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
 * **Blessed Village**: When you gain a Blessed Village during another player's turn, take The Field's Gift, The Forest's Gift, or The River's Gift, and choose to receive it now, the Boon is discarded during your next Clean-up phase instead of the very next Clean-up phase.
-* **Capitalism**
-  * **Black Market/Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
-  * **Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
+* **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
+* **Cavalry**: If you gain a Cavalry while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining the cards.
 * **Colonnade**: See **Basilica** above.
 * **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
@@ -149,16 +150,16 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
 * **Scepter**: See **Crown** above.
-* **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a Treasure Hunter from the stack that you wanted to exchange.
+* **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you wanted to exchange for a Warrior.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**: You can react with Sleighs even if they have left your hand and moved back. For example, if you have a Sleigh in hand and gain a Sleigh, you can react with them both in an infinite loop.
-* **Star Chart**: See **Fleet* above.
+* **Star Chart**: See **Fleet** above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
-* **Storyteller**: See **Capitalism** above.
+* **Storyteller**: See **Black Market** above.
 * **Transport**
   * **Invest**: See **Invest** above.
   * **Possession**: See **Possession** above.
-* **Villa**: When gaining multiple cards at once, such as when overpaying for Stonemason, you return to your Action phase after gaining both, even if the first one was a Villa.
+* **Villa**: See **Cavalry** above.
 * **Way of the Mouse**
   * **Cargo Ship**: If Way of the Mouse sets aside Cargo Ship, and you play multiple differently named cards using Way of the Mouse, then when you gain a card you cannot choose which played card to set aside the gained card on.
   * **Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
