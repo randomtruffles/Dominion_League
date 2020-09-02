@@ -212,6 +212,9 @@ As a spectator, you can comment on the players’ decisions and discuss strategi
 
 In general, you are limited to using your own brain and the features provided by the Dominion Online website. Don't consult strategy guides or other people or software. Consulting the Dominion rules is allowed (for example, looking up how a particular pair of cards interact from a rules perspective). A list of allowed resources can be found in the [League Rules](/rules).
 
+##### Can I resign or forfeit a match?
+All players in the League are expected to complete all of their matches as competitively as possible. It is possible for the result of any match to determine the fate of you or another player by way of the tiebreaker points. However, resigning a game while playing to the best of your ability (like when you are way behind and feel there is a 0% or a very low chance to comeback) is allowed. Forfeiting a game (which is like resigning turn 1, 2 or not playing at all)  is not allowed as it is unfair to other players in your group if you do not complete your matches properly.
+
 #### 5. Dominion Online (<http://dominion.games>)
 
 ##### How do I add someone from my division as a friend on Dominion Online?
