@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2020-07-19
+date: 2020-09-03
 categories: pinned faq
 ---
 *This FAQ concerns the [Rules & Regulations](https://dominionleague.org/rules.html) of the [Dominion League](https://dominionleague.org/about.html). It is intended as a reference, and does not cover all the rules.*
@@ -65,6 +65,10 @@ You will be put in a division with up to 5 other similarly skilled players.
 ##### How do I know who is in my division?
 
 The introductory message in your division’s Discord channel will say who is playing in your division. You can also see which players are in every division in the Standings post, pinned in the Dominion League board.
+
+##### What is the role of my moderator in my division?
+
+Your moderator’s role is to make sure players stay on schedule, and resolve any disputes between players. You can feel free to reach out to them at any time, either in your division channel or a direct message if you have any questions or concerns about the league. They can help resolve any conflicts between players such as scheduling issues or rules violations. Your moderator may also check in with you throughout the season for various reasons such as if you fall behind the one match per week pace, or if your opponent is having trouble reaching you. Please respond promptly to any messages your moderator may send you.
 
 ##### How do I know who my moderator is?
 
