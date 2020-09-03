@@ -66,13 +66,13 @@ You will be put in a division with up to 5 other similarly skilled players.
 
 The introductory message in your division’s Discord channel will say who is playing in your division. You can also see which players are in every division in the Standings post, pinned in the Dominion League board.
 
-##### What is the role of my moderator in my division?
-
-Your moderator’s role is to make sure players stay on schedule, and resolve any disputes between players. You can feel free to reach out to them at any time, either in your division channel or a direct message if you have any questions or concerns about the league. They can help resolve any conflicts between players such as scheduling issues or rules violations. Your moderator may also check in with you throughout the season for various reasons such as if you fall behind the one match per week pace, or if your opponent is having trouble reaching you. Please respond promptly to any messages your moderator may send you.
-
 ##### How do I know who my moderator is?
 
 The introductory message in your division’s Discord channel will say who your moderator is.
+
+##### What is the role of my moderator in my division?
+
+Your moderator’s role is to make sure players stay on schedule, and resolve any disputes between players. You can feel free to reach out to them at any time, either in your division channel or a direct message if you have any questions or concerns about the league. They can help resolve any conflicts between players such as scheduling issues or rules violations. Your moderator may also check in with you throughout the season for various reasons such as if you fall behind the one match per week pace, or if your opponent is having trouble reaching you. Please respond promptly to any messages your moderator may send you.
 
 #### 2. Discord and the online community
 
