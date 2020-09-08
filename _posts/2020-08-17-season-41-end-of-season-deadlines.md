@@ -3,6 +3,7 @@ title: Season 41 - End of Season Deadlines
 date: 2020-08-17
 author: alibby1152
 layout: post
+categories: null
 ---
 Season 41 officially ends on Sunday, August 30. To account for the westernmost timezones, **the deadline for reporting matches is Monday, August 31, at 15:00 UTC.**
 If you need extra time to finish, **you must contact your group moderator** to request an extension of up to one week. **All late finish matches must be reported by Monday, September 7, at 15:00 UTC.**
