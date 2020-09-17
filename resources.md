@@ -132,6 +132,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Blessed Village**: When you gain a Blessed Village during another player's turn, take The Field's Gift, The Forest's Gift, or The River's Gift, and choose to receive it now, the Boon is discarded during your next Clean-up phase instead of the very next Clean-up phase.
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
 * **Cavalry**: If you gain a Cavalry while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining the cards.
+* **Coin of the Realm**: See **Snowy Village** below.
 * **Colonnade**: See **Basilica** above.
 * **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
@@ -149,10 +150,12 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
+* **Royal Carriage**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
 * **Scepter**: See **Crown** above.
 * **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you wanted to exchange for a Warrior.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**: You can react with Sleighs even if they have left your hand and moved back. For example, if you have a Sleigh in hand and gain a Sleigh, you can react with them both in an infinite loop.
+* **Snowy Village**: If you played a Snowy Village this turn, have a Coin of the Realm on your Tavern mat, have Villagers, and have 0 Actions remaining, you may play an Action card from your hand, automatically using a Villager to do so. Note that you cannot spend the Villagers manually for +Actions, and in all cases you correctly do not actually get +Actions from spending any.
 * **Star Chart**: See **Fleet** above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
 * **Storyteller**: See **Black Market** above.
