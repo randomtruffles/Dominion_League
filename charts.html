@@ -67,7 +67,7 @@ title: Visual History
 	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.14"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 	<script>
 	//setup variables
@@ -519,9 +519,10 @@ title: Visual History
 		document.getElementById('standings-info').innerHTML = "Season " + season + " Division " + division + " Standings";
 		var table = document.getElementById('standings-table');
 		table.innerHTML = '';
-		if (season == currentSeason) {
+		//temporary removal for season 41 to 42 gap
+		/*if (season == currentSeason) {
 			table.innerHTML = currentiframes[division];
-		} else {
+		} else {*/
 			table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
 			for (let i=0; i < placeHistoryLength; i++) {
 				if ((placeHistory[i].season == season) && (placeHistory[i].division == division)) {
@@ -543,7 +544,7 @@ title: Visual History
 					table.appendChild(row);
 				}
 			}
-		}
+		//}
 		document.getElementById("standings-modal").style.display = "block";
 	}
 	
