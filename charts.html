@@ -67,7 +67,7 @@ title: Visual History
 	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.14"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 	<script>
 	//setup variables
@@ -212,9 +212,10 @@ title: Visual History
 		allTiers = document.getElementById('allTiers').checked;						
 		makePlot();
 	};
-
+		
 	function makePlot() {
 		var pHist = [];
+		var lHist = [];
 		var tiers = [];
 		var seasons = [];
 		var fCounts = [];
@@ -226,6 +227,7 @@ title: Visual History
 			for (let i = 0; i < placeHistoryLength; i++) {
 				if ((placeHistory[i].player.toLowerCase() == lowerplayer) && (Number(placeHistory[i].season) >= seasonRange[0]) && (Number(placeHistory[i].season) <= seasonRange[1])) {
 					pHist.push(placeHistory[i]);
+					pHist[pHist.length-1].chart = 'point';
 					seasons.push(placeHistory[i].season);
 					tiers.push(placeHistory[i].tier);
 				}
@@ -282,11 +284,17 @@ title: Visual History
 				//filter counts to desired 
 				if (allTiers) {
 					for (let i = 0; i < countsLength; i++) {
-						if (seasons.includes(counts[i].season)) {fCounts.push(counts[i]);}
+						if (seasons.includes(counts[i].season)) {
+							fCounts.push(counts[i]);
+							fCounts[fCounts.length - 1].chart = "bar";
+						}
 					}
 				} else {
 					for (let i = 0; i < countsLength; i++) {
-						if (seasons.includes(counts[i].season) && tiers.includes(counts[i].tier)) {fCounts.push(counts[i]);}
+						if (seasons.includes(counts[i].season) && tiers.includes(counts[i].tier)) {
+							fCounts.push(counts[i]);
+							fCounts[fCounts.length - 1].chart = "bar";
+						}
 					}
 				}
 				
@@ -308,15 +316,20 @@ title: Visual History
 					}
 				}
 				
+				//duplicate player history for line chart
+				lHist = JSON.parse(JSON.stringify(pHist));
+				for (let i=0; i<lHist.length; i++) {
+					lHist[i].chart = "line";
+				}
 				//make row for lines if played last two seasons
 				if (played2MostRecent) {
-					repeatlastplayed = Object.assign({}, pHist[pHist.length - 2]);
-					repeatlastplayed.champ = "in progress";
+					lHist.push(JSON.parse(JSON.stringify(lHist[lHist.length - 2])));
+					lHist[lHist.length - 1].champ = "in progress";
 				}
 				
 				var layers = [
 					{
-						"data": {"values": fCounts},
+						"transform": [{"filter": "datum.chart == 'bar'"}],
 						"mark": "bar",
 						"encoding": {
 							"x": {
@@ -355,8 +368,8 @@ title: Visual History
 						}
 					},
 					{
-						"data": {"values": played2MostRecent ? pHist.concat(repeatlastplayed) : pHist},
 						"transform": [
+							{"filter": "datum.chart == 'line'"},
 							{"calculate": "if(datum.season.length == 1, '0' + datum.season, datum.season)", "as": "order"},
 							{"calculate": "if(datum.champ == 'in progress', 'yes', 'no')", "as": "future"}
 						],
@@ -374,13 +387,13 @@ title: Visual History
 									"domain": ["no", "yes"],
 									"range": [[1,0], [8,8]]
 								},
-								legend: null
+								"legend": null
 							},
 							"order": {"field": "order", "type": "ordinal"}
 						}
 					},
 					{
-						"data": {"values": pHist},
+						"transform": [{"filter": "datum.chart == 'point'"}],
 						"selection": {
 							"hovered": {"type": "single", "on": "mouseover", "empty": "none"},
 							"clicked": {"type": "single", "on": "click", "empty": "none"}
@@ -430,29 +443,25 @@ title: Visual History
 				];
 			} else {
 				//add message saying not found at some point
-				var layers = nullPlotLayer();
+				var layers = nullPlotLayer(fCounts);
 			}
 		} else {
-			var layers = nullPlotLayer();
+			var layers = nullPlotLayer(fCounts);
 		}
 		
 		const spec = {
 			"title": player ? ("League History: " + player) : "League History",
 			"width": widthcheck.clientWidth - 94, //little bit off with scrollbar, worry when doing resizing for window
 			"height": 0.6 * (widthcheck.clientWidth - 94),
-			"layer": layers				
+			"data": {"values": pHist.concat(lHist, fCounts)},
+			"layer": layers
 		};
 		vegaEmbed("#visual", spec, {"actions": false}).then(function(res) {
 			plot = res.view;
 			if (pHist.length) {
 				plot.addDataListener('clicked_store', function(name, value){
 					if (value.length) {
-						if (played2MostRecent) {
-							var roi = pHist[value[0].values[0] - fCounts.length - pHist.length - 2];
-						} else {
-							var roi = pHist[value[0].values[0] - fCounts.length - 1];
-						}
-						
+						let roi = pHist[value[0].values[0]-1];						
 						showStandingsModal(roi.season, roi.division);
 					}
 				})
@@ -460,20 +469,20 @@ title: Visual History
 		});
 	}
 
-	function nullPlotLayer() {
+	function nullPlotLayer(fCounts) {
 		let seasons = [];
-		let fCounts = [];
 		let start = userSetRange ? seasonRange[0] : 1;
 		let end = userSetRange ? seasonRange[1] : currentSeason;
 		for (let s = start; s <= end; s++) {seasons.push(String(s));}
-		if (userSetRange) {
-			for (let i = 0; i < countsLength; i++) {
-				if ((Number(counts[i].season) >= start) && (Number(counts[i].season) <= end)) {fCounts.push(counts[i]);}
+		for (let i = 0; i < countsLength; i++) {
+			if ((Number(counts[i].season) >= start) && (Number(counts[i].season) <= end)) {
+				fCounts.push(counts[i]);
+				fCounts[fCounts.length - 1].chart = "bar";
 			}
 		}
 		
 		return [{
-			"data": {"values": userSetRange ? fCounts : counts},
+			"transform": [{"filter": "datum.chart == 'bar'"}],
 			"mark": "bar",
 			"encoding": {
 				"x": {
