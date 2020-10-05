@@ -15,7 +15,7 @@ Each League season lasts 6 weeks, and is followed by a 2-week break. Players are
 
 Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in tiers E and below, and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
 
-In Seasons 42 and 43, there shall also be a practice tier, separate from all other tiers, for players who have played 29 or fewer rated 2-player games online. Players in the practice tier will be similarly grouped and seeded.
+In Seasons 42 and 43, there shall also be a practice tier, separate from all other tiers, for players who have played less than 30 rated 2-player games online. Players in the practice tier will be similarly grouped and seeded.
 
 #### II. Match Structure and Policies
 
