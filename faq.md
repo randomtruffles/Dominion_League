@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2020-09-03
+date: 2020-10-05
 categories: pinned faq
 ---
 *This FAQ concerns the [Rules & Regulations](https://dominionleague.org/rules.html) of the [Dominion League](https://dominionleague.org/about.html). It is intended as a reference, and does not cover all the rules.*
@@ -31,7 +31,7 @@ Make sure you join the Dominion Discord server (<https://discord.gg/vMmmMBu>) as
 
 ##### What is required to sign up?
 
-You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/vMmmMBu>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. Note you are also encouraged to play at least 20 rated 2-player games on Dominion Online so the moderators can place you in a tier appropriate for your skill.
+You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/vMmmMBu>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. To be placed in the League’s tier system, you must play 30 ranked two-player games. If you do not reach 30 games, you will be placed in the Practice Tier, where all games will be rated by default. This will guarantee that you have the appropriate number of rated games to be accurately placed in the following season.
 
 ##### How do I play a rated game?
 
@@ -48,7 +48,7 @@ You do not need to buy a subscription, but you do need to create a free account.
 
 ##### Am I required to play matches on Dominion Online (<http://dominion.games>)?
 
-No, but this may be the only way to play games against the vast majority of your opponents. Note you are required to have a Dominion Online account and you are encouraged to play at least 20 rated 2-player games there so the moderators can place you in a tier appropriate for your skill.
+No, but this may be the only way to play games against the vast majority of your opponents. Note you are required to have a Dominion Online account and you must play 30 ranked two-player games. If you do not reach 30 games, you will be placed in the Practice Tier, where all games will be rated by default. This will guarantee that you have the appropriate number of rated games to be accurately placed in the following season.
 
 ##### How good do I need to be at Dominion to sign up?
 
