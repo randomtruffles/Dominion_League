@@ -4,7 +4,7 @@ import json
 hall_of_fame = ""
 padding = 0
 current_season = 41
-ongoing = False # is the season currently in progress?
+ongoing = True # is the season currently in progress?
 
 # Helper functions
 def pad(text, padding):
