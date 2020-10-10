@@ -381,6 +381,7 @@ all_consecutive_pl = {}
 all_active_streak = {}
 
 if ongoing:
+    print("hello")
     with open(f"../_data/season_{current_season+1}_players.json") as file:
         current_season_players = json.load(file)
     for player in pseasons:
@@ -402,6 +403,8 @@ if ongoing:
             seasons_played.append(str(current_season+1))
 
         all_most_seasons_pl[name] = seasons_played
+        if name == "gamesou":
+            print(all_most_seasons_pl[name])
         all_consecutive_pl[name] = ls
 else:
     for player in pseasons:
