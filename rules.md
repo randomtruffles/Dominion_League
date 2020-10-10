@@ -57,9 +57,9 @@ After each playing session, one of the players should submit the result of that 
 
 During the season, the standings for each group will be automatically updated as players complete matches. The players in each group will be ranked based on the average number of points they have received in each match.
 
-In the case of a tie within a division, the player with the total number of points from the matches between the tied players wins. If there is still a tie:
-
-* If the tie is between two players, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
+In the case of a tie within a division, the player with the higher total number of points from the matches between the tied players wins. If there is still a tie:
+* If the tie is between two players and affects promotions, demotions, or entry into the Championship Match, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
+* If the tie is between two players and does not affect promotions, demotions, or entry into the Championship Match, the player with the higher sum of the number of points received in each match multiplied by the total score of the opponent from that match wins.
 * If the tie is between three or more players, the moderators will randomly break the tie.
 
 At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division.
@@ -71,7 +71,7 @@ At the end of the season, players may earn a spot in a different tier by promoti
 
 Additionally, players may be re-placed using the rules for placing new players. This allows returning players to promote across multiple tiers, known as superpromotions, if a player can improve their rating significantly across a season. Players who would be superpromoted into tiers A, B, C, or D are instead placed into tier E.
 
-In addition, the top two finishers in the A1 division will play a second 6-game match to determine the Champion for the Dominion League for that season. For the purposes of determining the Champion (and only those purposes), the results of this match will be added to the results of the season, including updates to tiebreakers. The match date and time should be determined by the two players well in advance to allow for the moderator team to find a commentator team. Even if the outcome of the match is settled before the sixth game, all six should be played out for the purpose of spectator entertainment.
+In addition, the top two finishers in the A1 division will play a second 6-game match to determine the Champion for the Dominion League for that season. For the purposes of determining the Champion (and only those purposes), the results of this match will be added to the results of the season, including updates to tiebreakers. The match date and time should be determined by the two players well in advance to allow for the moderator team to find a commentator team. Even if the outcome of the match is settled before the sixth game, all six should be played out for the purpose of spectator entertainment. In the event of a tie, the players play one more game to decide the winner.
 
 #### IV. Joining and Leaving
 
