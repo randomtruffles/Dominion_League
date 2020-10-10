@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2020-07-11
+date: 2020-10-10
 categories: pinned rules
 ---
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
@@ -38,7 +38,7 @@ For games played online, players should set the following Advanced Options by de
 * The game should not use extra Menagerie cards.
 * The game should be unrated. For Seasons 42 and 43, games in the practice tier must be rated.
 * The victory point counter should be used.
-* Except for cardlists, Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required. No particular cards, landscapes, or expansions should be selected.
+* Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required. No particular cards, landscapes, or expansions should be selected. For Seasons 42 and 43, in the Practice Tier, the players pick one expansion each, and Kingdoms are generated with only cards from those expansions and the base set.
 
 All these defaults may be changed between games by mutual agreement of the players except:
 
@@ -66,7 +66,7 @@ At the end of the season, players may earn a spot in a different tier by promoti
 
 * Players who finish in first place promote if the tier directly above has fewer divisions than the tier they are currently in.
 * Players who finish in first or second place promote if the tier directly above has exactly the same number of divisions of the tier they are currently in.
-* Players who finish in fifth or sixth place in any tier demote unless they are in the bottom tier, in which case they will stay in that tier.
+* In any tier, players who finish in sixth or seventh place in a seven-player division, or fifth or sixth place in any other division, demote unless they are in the bottom tier, in which case they will stay in that tier.
 * Players in the practice tier do not promote or demote automatically. Instead, these players are placed as new players in the next season.
 
 Additionally, players who are placed as New Players in the current season and promoted from their tier can request to be re-placed in the upcoming season as a new player, using the same stricter cutoffs used for guaranteed new player tier placements. This allows players to promote across multiple tiers, known as “superpromotions”, if a player can improve their rating significantly across a season.
@@ -92,7 +92,7 @@ During a season, the moderators may, at their discretion, fill new open spots fr
 
 #### V. Scheduling
 
-A suggested schedule will be posted in your group's Discord channel with a specific player to play each week. There is no requirement to follow the suggested schedule, but it is recommended not to fall behind the one match per week pace. Each group will be assigned a League moderator. If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator.
+A suggested schedule will be posted in your group's Discord channel with a specific player to play each week. There is no requirement to follow the suggested schedule, but it is recommended not to fall behind the one match per week pace. Each group will be assigned a League moderator. If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator. To communicate with league moderators and your opponents, basic English proficiency is required.
 
 If you are placed in a group with a player you are close friends with, please schedule your match as early as possible in the season to eliminate any temptation for collusion. You can also inform a League moderator if you anticipate this type of issue and the League will make an effort to place you in separate groups.
 
@@ -132,7 +132,9 @@ League moderators are also responsible for adjudicating any disputed rules infra
 
 Whenever the moderators gather for an official meeting at which rules may change (at least once per season), the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting.
 
-When new moderators are needed, there will be an open call posted to the Discord server the Dominion Strategy forum. Players will have at least 48 hours to submit their applications to be moderators. Once the application deadline transpires, the current moderators will have at least 48 hours to discuss the candidates before voting to choose new moderators from the applicants.
+League Moderators are eligible for 1-season breaks, during which they retain voting privileges and access to league mod channels to stay up-to-date with information. If more moderators want to take breaks that the moderator team can afford, priority will be given to moderators that have least recently taken breaks.
+
+Each active moderator shall moderate at least 5 divisions per season. If the following season is anticipated to have more than 10 divisions per moderator, then the League shall recruit additional moderators. New moderator applications will open week 2 of each season, allow review by the existing moderator team during week 3, and onboarding/shadowing of new moderators beginning week 4.
 
 #### XI. Amendments
 
