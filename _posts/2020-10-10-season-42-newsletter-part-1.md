@@ -13,8 +13,12 @@ Thank you to everyone who attended our two town halls during the long break for 
 
 * Snake seeding was replaced with random seeding, as presented at the second Town Hall.
 * 5th place will never demote from a 7-player flex division.
+* Returning players are also eligible for superpromotions.
+* Player cannot superpromote to a tier above E.
 * As an experiment in the practice tier, players will use the expansion restriction that we polled in the Returning Form.
 * We will use the systematic algorithm presented at the second Town Hall to give consideration to match results that were previously voided when one of the players drops.
+* Ties 2nd place in Division A1 will be broken by a 2-game match.
+* A tie in the championship match is broken by a 1-game match.
 
 We also have several other, more minor changes to make:
 
