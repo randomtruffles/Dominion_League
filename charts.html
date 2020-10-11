@@ -9,6 +9,11 @@ title: Visual History
 		<p>Visual representations of Dominion League history - take a look at players' performance over time, with more coming soon.</p>
 	</div>
 	
+	<div class="container-centered">
+		<h4>League Players</h4>
+		<p>See how the league has evolved over time, or the journey of a specific player</p>
+	</div>
+	
 	<div class="control-row">
 		<div class="control-container">
 			Player:
@@ -48,6 +53,11 @@ title: Visual History
 	<div id="widthcheck"><!-- maybe put player not founds in here - I need it for determining render width --></div>
 	<div id="player-history"></div>
 	</br>
+	
+	<div class="container-centered">
+		<h4>A Division Power</h4>
+		<p>How the top tier has evolved. Each player gets an area corresponding to their standing in the past few seasons. Click on a player's area to see their history in the chart above.</p>
+	</div>
 	
 	<div class="control-row">
 		<p class="slidePiece">Zoom:</p>
@@ -97,7 +107,7 @@ title: Visual History
 	var power = {{ site.data.chart_power | jsonify }};
 	var powerLength = power.length;
 	var APlayers = [];
-	for (let i=0; i<powerLength; i+=currentSeason+1) {
+	for (let i=0; i<powerLength; i+=currentSeason) {
 		APlayers.push(power[i].player);
 	}
 	APlayers.sort(function(a,b) {
@@ -306,9 +316,9 @@ title: Visual History
 				
 				//find needed tiers
 				if (allTiers) {
-					tiers = ["A","B","C","D","E","F","G","H","I","J"];
+					tiers = ["A","B","C","D","E","F","G","H","I","J","P"];
 				} else {
-					let potTiers = ["A","B","C","D","E","F","G","H","I","J"];
+					let potTiers = ["A","B","C","D","E","F","G","H","I","J","P"];
 					let minTier = tiers.sort()[tiers.length - 1]
 					let tempTiers = [];
 					for (let i = 0; i < potTiers.length; i++) {
@@ -317,7 +327,7 @@ title: Visual History
 					tiers = tempTiers;
 				}
 				
-				var colors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000"];
+				var colors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000","#B7B7B7"];
 				//cut colors because layers with same encoding annoyingly union their domains
 				colors = colors.slice(0,tiers.length).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
 				
@@ -546,12 +556,12 @@ title: Visual History
 					"field": "tier",
 					"type": "nominal",
 					"scale": {
-						"domain": ["A","B","C","D","E","F","G","H","I","J"],
-						"range": ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000"]
+						"domain": ["A","B","C","D","E","F","G","H","I","J","P"],
+						"range": ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"]
 					},
 					"legend": {
 						"title": "Tier",
-						"values": ["A","B","C","D","E","F","G","H","I","J"],
+						"values": ["A","B","C","D","E","F","G","H","I","J","P"],
 						"symbolType": "square",
 						"symbolStrokeWidth": 0,
 						"symbolSize": 200
@@ -568,10 +578,9 @@ title: Visual History
 		document.getElementById('standings-info').innerHTML = "Season " + season + " Division " + division + " Standings";
 		var table = document.getElementById('standings-table');
 		table.innerHTML = '';
-		//temporary removal for season 41 to 42 gap
-		/*if (season == currentSeason) {
+		if (season == currentSeason) {
 			table.innerHTML = currentiframes[division];
-		} else {*/
+		} else {
 			table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
 			for (let i=0; i < placeHistoryLength; i++) {
 				if ((placeHistory[i].season == season) && (placeHistory[i].division == division)) {
@@ -593,7 +602,7 @@ title: Visual History
 					table.appendChild(row);
 				}
 			}
-		//}
+		}
 		document.getElementById("standings-modal").style.display = "block";
 	}
 	
