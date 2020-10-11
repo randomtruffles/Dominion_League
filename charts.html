@@ -9,6 +9,11 @@ title: Visual History
 		<p>Visual representations of Dominion League history - take a look at players' performance over time, with more coming soon.</p>
 	</div>
 	
+	<div class="container-centered">
+		<h4>League Players</h4>
+		<p>See how the league has evolved over time, or the journey of a specific player</p>
+	</div>
+	
 	<div class="control-row">
 		<div class="control-container">
 			Player:
@@ -46,7 +51,25 @@ title: Visual History
 	</div>
 	
 	<div id="widthcheck"><!-- maybe put player not founds in here - I need it for determining render width --></div>
-	<div id="visual"></div>
+	<div id="player-history"></div>
+	</br>
+	
+	<div class="container-centered">
+		<h4>A Division Power</h4>
+		<p>How the top tier has evolved. Each player gets an area corresponding to their standing in the past few seasons. Click on a player's area to see their history in the chart above.</p>
+	</div>
+	
+	<div class="control-row">
+		<p class="slidePiece">Zoom:</p>
+		<div class="slidePiece">
+			<label class="checkslider">
+				<input type="checkbox" id="powerzoom" checked="checked">
+				<span class="checkslider-button" id="powerzoom-button"></span>
+			</label>
+		</div>
+	</div>
+	
+	<div id="ADiv-power"></div>
 	
 	<div id="standings-modal" class="modal">
 		<div class="modal-content" style="text-align:center">
@@ -67,7 +90,7 @@ title: Visual History
 	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.14"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 	<script>
 	//setup variables
@@ -81,7 +104,24 @@ title: Visual History
 	var player = null;
 	var seasonRange = [1,currentSeason];
 	var userSetRange = false;
-	var plot = null;
+	var power = {{ site.data.chart_power | jsonify }};
+	var powerLength = power.length;
+	var APlayers = [];
+	for (let i=0; i<powerLength; i+=currentSeason) {
+		APlayers.push(power[i].player);
+	}
+	APlayers.sort(function(a,b) {
+		if (a.toLowerCase() < b.toLowerCase()) {
+			return -1;
+		} else if (a.toLowerCase() > b.toLowerCase()) {
+			return 1;
+		} else if (a.toLowerCase() == b.toLowerCase()) {
+			return 0;
+		}  
+	});
+	var powerPlotZoom = true;
+	var playerPlot = null;
+	var powerPlot = null;
 
 	//url parameters handling
 	getURLparams();
@@ -122,14 +162,18 @@ title: Visual History
 	seasontextmax.onblur = slideinput;
 	seasontextmin.onblur = slideinput;
 	
-	//make plot and have it resize with window
-	document.getElementById('visual').style.padding = 0;
+	//make plots and have them resize with window
+	document.getElementById('player-history').style.padding = 0;
 	widthcheck = document.getElementById('widthcheck');
-	makePlot();
+	makePlayerPlot();
+	makePowerPlot();
 	window.onresize = function() {
-		plot.width(widthcheck.clientWidth - 94);
-		plot.height(0.6 * (widthcheck.clientWidth - 94));
-		plot.runAsync();
+		playerPlot.width(widthcheck.clientWidth - 94);
+		playerPlot.height(0.6 * (widthcheck.clientWidth - 94));
+		playerPlot.runAsync();
+		powerPlot.width(widthcheck.clientWidth - 78);
+		powerPlot.height((powerPlotZoom ? 3 : 1) * (widthcheck.clientWidth - 78));
+		powerPlot.runAsync();
 	};
 
 	function slideinput() {
@@ -143,7 +187,7 @@ title: Visual History
 		
 		seasonRange = [Number(seasontextmin.value), Number(seasontextmax.value)];
 		userSetRange = true;
-		makePlot();
+		makePlayerPlot();
 	}
 
 	function textinput() {
@@ -158,7 +202,7 @@ title: Visual History
 			
 			seasonRange = [Number(seasontextmin.value), Number(seasontextmax.value)];
 			userSetRange = true;
-			makePlot();
+			makePlayerPlot();
 		}
 	}
 
@@ -170,7 +214,7 @@ title: Visual History
 		seasontextmax.value = currentSeason;
 		seasonslide1.value = 1;
 		seasonslide2.value = currentSeason;
-		makePlot();
+		makePlayerPlot();
 	}
 
 
@@ -178,14 +222,14 @@ title: Visual History
 		player = document.getElementById('player-input').value;
 		allTiers = document.getElementById('allTiers').checked;
 		setURLparams();
-		makePlot();
+		makePlayerPlot();
 	};
 
 	document.getElementById('clearplayer').onclick = function() {
 		document.getElementById('player-input').value = "";
 		player = null;
 		setURLparams();
-		if (userSetRange) {makePlot();} else {resetRange();};
+		if (userSetRange) {makePlayerPlot();} else {resetRange();};
 	};
 
 	document.getElementById('count').onclick = function() {
@@ -194,7 +238,7 @@ title: Visual History
 			proportion = false;
 			allTiers = document.getElementById('allTiers').checked;
 			setURLparams();
-			makePlot();
+			makePlayerPlot();
 		}
 	};
 
@@ -203,18 +247,25 @@ title: Visual History
 		if (!proportion) {
 			proportion = true;
 			setURLparams();
-			makePlot();
+			makePlayerPlot();
 		}					
 	};
 
 	document.getElementById('allTiers').onclick = function() {
 		document.getElementById('allTiers').blur();
 		allTiers = document.getElementById('allTiers').checked;						
-		makePlot();
+		makePlayerPlot();
 	};
-
-	function makePlot() {
+	
+	//power chart zoom control	
+	document.getElementById('powerzoom').onclick = function() {
+		powerPlotZoom = powerPlotZoom ? false : true;
+		makePowerPlot();
+	};
+	
+	function makePlayerPlot() {
 		var pHist = [];
+		var lHist = [];
 		var tiers = [];
 		var seasons = [];
 		var fCounts = [];
@@ -226,6 +277,7 @@ title: Visual History
 			for (let i = 0; i < placeHistoryLength; i++) {
 				if ((placeHistory[i].player.toLowerCase() == lowerplayer) && (Number(placeHistory[i].season) >= seasonRange[0]) && (Number(placeHistory[i].season) <= seasonRange[1])) {
 					pHist.push(placeHistory[i]);
+					pHist[pHist.length-1].chart = 'point';
 					seasons.push(placeHistory[i].season);
 					tiers.push(placeHistory[i].tier);
 				}
@@ -264,9 +316,9 @@ title: Visual History
 				
 				//find needed tiers
 				if (allTiers) {
-					tiers = ["A","B","C","D","E","F","G","H","I","J"];
+					tiers = ["A","B","C","D","E","F","G","H","I","J","P"];
 				} else {
-					let potTiers = ["A","B","C","D","E","F","G","H","I","J"];
+					let potTiers = ["A","B","C","D","E","F","G","H","I","J","P"];
 					let minTier = tiers.sort()[tiers.length - 1]
 					let tempTiers = [];
 					for (let i = 0; i < potTiers.length; i++) {
@@ -275,18 +327,24 @@ title: Visual History
 					tiers = tempTiers;
 				}
 				
-				var colors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000"];
+				var colors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000","#B7B7B7"];
 				//cut colors because layers with same encoding annoyingly union their domains
 				colors = colors.slice(0,tiers.length).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
 				
 				//filter counts to desired 
 				if (allTiers) {
 					for (let i = 0; i < countsLength; i++) {
-						if (seasons.includes(counts[i].season)) {fCounts.push(counts[i]);}
+						if (seasons.includes(counts[i].season)) {
+							fCounts.push(counts[i]);
+							fCounts[fCounts.length - 1].chart = "bar";
+						}
 					}
 				} else {
 					for (let i = 0; i < countsLength; i++) {
-						if (seasons.includes(counts[i].season) && tiers.includes(counts[i].tier)) {fCounts.push(counts[i]);}
+						if (seasons.includes(counts[i].season) && tiers.includes(counts[i].tier)) {
+							fCounts.push(counts[i]);
+							fCounts[fCounts.length - 1].chart = "bar";
+						}
 					}
 				}
 				
@@ -308,15 +366,20 @@ title: Visual History
 					}
 				}
 				
+				//duplicate player history for line chart
+				lHist = JSON.parse(JSON.stringify(pHist));
+				for (let i=0; i<lHist.length; i++) {
+					lHist[i].chart = "line";
+				}
 				//make row for lines if played last two seasons
 				if (played2MostRecent) {
-					repeatlastplayed = Object.assign({}, pHist[pHist.length - 2]);
-					repeatlastplayed.champ = "in progress";
+					lHist.push(JSON.parse(JSON.stringify(lHist[lHist.length - 2])));
+					lHist[lHist.length - 1].champ = "in progress";
 				}
 				
 				var layers = [
 					{
-						"data": {"values": fCounts},
+						"transform": [{"filter": "datum.chart == 'bar'"}],
 						"mark": "bar",
 						"encoding": {
 							"x": {
@@ -355,8 +418,8 @@ title: Visual History
 						}
 					},
 					{
-						"data": {"values": played2MostRecent ? pHist.concat(repeatlastplayed) : pHist},
 						"transform": [
+							{"filter": "datum.chart == 'line'"},
 							{"calculate": "if(datum.season.length == 1, '0' + datum.season, datum.season)", "as": "order"},
 							{"calculate": "if(datum.champ == 'in progress', 'yes', 'no')", "as": "future"}
 						],
@@ -374,13 +437,13 @@ title: Visual History
 									"domain": ["no", "yes"],
 									"range": [[1,0], [8,8]]
 								},
-								legend: null
+								"legend": null
 							},
 							"order": {"field": "order", "type": "ordinal"}
 						}
 					},
 					{
-						"data": {"values": pHist},
+						"transform": [{"filter": "datum.chart == 'point'"}],
 						"selection": {
 							"hovered": {"type": "single", "on": "mouseover", "empty": "none"},
 							"clicked": {"type": "single", "on": "click", "empty": "none"}
@@ -430,29 +493,25 @@ title: Visual History
 				];
 			} else {
 				//add message saying not found at some point
-				var layers = nullPlotLayer();
+				var layers = nullPlotLayer(fCounts);
 			}
 		} else {
-			var layers = nullPlotLayer();
+			var layers = nullPlotLayer(fCounts);
 		}
 		
-		const spec = {
+		const playerSpec = {
 			"title": player ? ("League History: " + player) : "League History",
 			"width": widthcheck.clientWidth - 94, //little bit off with scrollbar, worry when doing resizing for window
 			"height": 0.6 * (widthcheck.clientWidth - 94),
-			"layer": layers				
+			"data": {"values": pHist.concat(lHist, fCounts)},
+			"layer": layers
 		};
-		vegaEmbed("#visual", spec, {"actions": false}).then(function(res) {
-			plot = res.view;
+		vegaEmbed("#player-history", playerSpec, {"actions": false}).then(function(res) {
+			playerPlot = res.view;
 			if (pHist.length) {
-				plot.addDataListener('clicked_store', function(name, value){
+				playerPlot.addDataListener('clicked_store', function(name, value){
 					if (value.length) {
-						if (played2MostRecent) {
-							var roi = pHist[value[0].values[0] - fCounts.length - pHist.length - 2];
-						} else {
-							var roi = pHist[value[0].values[0] - fCounts.length - 1];
-						}
-						
+						let roi = pHist[value[0].values[0]-1];						
 						showStandingsModal(roi.season, roi.division);
 					}
 				})
@@ -460,20 +519,20 @@ title: Visual History
 		});
 	}
 
-	function nullPlotLayer() {
+	function nullPlotLayer(fCounts) {
 		let seasons = [];
-		let fCounts = [];
 		let start = userSetRange ? seasonRange[0] : 1;
 		let end = userSetRange ? seasonRange[1] : currentSeason;
 		for (let s = start; s <= end; s++) {seasons.push(String(s));}
-		if (userSetRange) {
-			for (let i = 0; i < countsLength; i++) {
-				if ((Number(counts[i].season) >= start) && (Number(counts[i].season) <= end)) {fCounts.push(counts[i]);}
+		for (let i = 0; i < countsLength; i++) {
+			if ((Number(counts[i].season) >= start) && (Number(counts[i].season) <= end)) {
+				fCounts.push(counts[i]);
+				fCounts[fCounts.length - 1].chart = "bar";
 			}
 		}
 		
 		return [{
-			"data": {"values": userSetRange ? fCounts : counts},
+			"transform": [{"filter": "datum.chart == 'bar'"}],
 			"mark": "bar",
 			"encoding": {
 				"x": {
@@ -497,12 +556,12 @@ title: Visual History
 					"field": "tier",
 					"type": "nominal",
 					"scale": {
-						"domain": ["A","B","C","D","E","F","G","H","I","J"],
-						"range": ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000"]
+						"domain": ["A","B","C","D","E","F","G","H","I","J","P"],
+						"range": ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"]
 					},
 					"legend": {
 						"title": "Tier",
-						"values": ["A","B","C","D","E","F","G","H","I","J"],
+						"values": ["A","B","C","D","E","F","G","H","I","J","P"],
 						"symbolType": "square",
 						"symbolStrokeWidth": 0,
 						"symbolSize": 200
@@ -519,10 +578,9 @@ title: Visual History
 		document.getElementById('standings-info').innerHTML = "Season " + season + " Division " + division + " Standings";
 		var table = document.getElementById('standings-table');
 		table.innerHTML = '';
-		//temporary removal for season 41 to 42 gap
-		/*if (season == currentSeason) {
+		if (season == currentSeason) {
 			table.innerHTML = currentiframes[division];
-		} else {*/
+		} else {
 			table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
 			for (let i=0; i < placeHistoryLength; i++) {
 				if ((placeHistory[i].season == season) && (placeHistory[i].division == division)) {
@@ -544,7 +602,7 @@ title: Visual History
 					table.appendChild(row);
 				}
 			}
-		//}
+		}
 		document.getElementById("standings-modal").style.display = "block";
 	}
 	
@@ -552,5 +610,78 @@ title: Visual History
 	window.onclick = function(ev) {if (event.target == document.getElementById('standings-modal')) {closemodal()}};
 	
 	function closemodal() {document.getElementById("standings-modal").style.display = "none";}
+	
+	function makePowerPlot() {
+		var widthOffset = powerPlotZoom ? 0.1 : 0.61;
+	
+		var colors = ['#019268','#E4FB04','#9D132D','#3DBD78','#000000','#A3C65F','#912121','#000000','#11B3C6','#FCF038','#1CC24B','#7C6FC5','#5211B3','#3910DC','#1C5D5D','#593521','#697217','#AC04C0','#000000','#820683','#9F581F','#D60B5D','#66521B','#A33D2F','#DD5C54','#17B277','#C65FD3','#000000','#46E5A3','#DE2622','#0E136E','#BC1FC7','#642146','#DA538A','#AEA501','#BF559F','#6798C9','#78C160','#2A7024','#3D87D2','#FE5313','#0F6419','#911CFD','#BB792D','#50DB69','#295E6D','#BC9FFC','#E61AF1','#6A1192','#60CCCA','#284F8F','#6EA822','#000000','#2C9429','#00FFFF','#4A900F'];
+		
+		const powerSpec = {
+			"title": "A Division History",
+			"width": widthcheck.clientWidth - 78, //little bit off with scrollbar, worry when doing resizing for window
+			"height": (powerPlotZoom ? 3 : 1) * (widthcheck.clientWidth - 78),
+			"data": {"values": power},
+			"layer": [
+				{
+					"mark": {"type": "area"},
+					"transform": [{"calculate": "indexof(" + JSON.stringify(APlayers) + ", datum.player)", "as": "order"}],
+					"selection": {
+						"hovered": {"type": "single", "on": "mouseover", "empty": "all"},
+						"clicked": {"type": "single", "on": "click", "empty": "none"}
+					},
+					"encoding": {
+						"y": {
+							"field": "season",
+							"type": "ordinal",
+							"axis": {
+								"grid": true,
+								"orient": "left"
+							}
+						},
+						"x": {
+							"field": "prop",
+							"type": "quantitative",
+							"scale": {
+								"domain": [0-widthOffset,1+widthOffset]
+							},
+							"axis": {
+								"title": null,
+								"grid": false,
+								"ticks": false,
+								"values": []
+							}
+						},
+						"color": {
+							"field": "player",
+							"type": "nominal",
+							"scale": {
+								"domain": APlayers,
+								"range": colors
+							},
+							"legend": null
+						},
+						"order": {"field": "order", "type": "quantitative"},
+						"opacity": {"condition": {"selection": "hovered", "value": 1}, "value": 0.3},
+						"tooltip": [{"field": "player", "type": "nominal"}]
+					}
+				},
+				{
+					"mark": {"type": "point", "strokeWidth": 0},
+					"encoding": {"y": {"field": "season", "axis": {"orient": "right"}}}
+				}
+			]
+		};
+		vegaEmbed("#ADiv-power", powerSpec, {"actions": false}).then(function(res) {
+			powerPlot = res.view;
+			powerPlot.addDataListener('clicked_store', function(name, value){
+				if (value.length) {
+					player = power[value[0].values[0]-1].player;
+					allTiers = document.getElementById('allTiers').checked;
+					setURLparams();
+					makePlayerPlot();
+				}
+			})
+		});
+	}
 	</script>
 </div>

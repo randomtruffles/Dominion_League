@@ -1897,3 +1897,60 @@ img.hof-champion-trophy {
 	float: left;
 	width: 34px;
 }
+
+.checkslider {
+	position: relative;
+	display: inline-block;
+	width: 64px;
+	height: 34px;
+}
+
+.checkslider input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.checkslider-button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 2px solid #d3d3d3;
+	background: #ffffff;
+}
+
+.checkslider-button:hover {
+	background: #d3d3d3;
+}
+
+.checkslider-button:before {
+	position: absolute;
+	content: "\2212";
+	height: 30px;
+	width: 30px;
+	font-size: 24px;
+    text-indent: 9px;
+	color: #ffffff;
+	background-color: #888;
+}
+
+.checkslider-button:after {
+	position: absolute;
+	content: "+";
+	font-size: 24px;
+	color: #888;
+    left: 39px;
+}
+
+.checkslider input:checked + .checkslider-button:before {
+	content: "+";
+	transform: translateX(30px);
+}
+
+.checkslider input:checked + .checkslider-button:after {
+	position: absolute;
+	content: "\2212";
+    transform: translateX(-30px);
+}
