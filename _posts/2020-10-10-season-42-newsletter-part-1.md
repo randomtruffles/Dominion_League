@@ -18,7 +18,7 @@ Thank you to everyone who attended our two town halls during the long break for 
 * As an experiment in the practice tier, players will use the expansion restriction that we polled in the Returning Form.
 * We will use the systematic algorithm presented at the second Town Hall to give consideration to match results that were previously voided when one of the players drops.
 * Ties 2nd place in Division A1 will be broken by a 2-game match.
-* A tie in the championship match is broken by a 1-game match.
+* A tie in the championship match is broken by a 1-game match, with a tie in that match going to P2.
 
 We also have several other, more minor changes to make:
 
@@ -29,9 +29,11 @@ We also have several other, more minor changes to make:
 
 *Moderator Churn*
 
-Staying from Season 41: alibby1152, amoffett11, catmom, Cave-o-sapien, crlundy, Earl, eh1414, Gazbag, Lemonspawn, nottoobad, Rozyroz, SamE, singletee, tracer, truffles, volfied, wharf_rat
+Returning for Season 42: alibby1152, amoffett11, catmom, Cave-o-sapien, crlundy, Earl, eh1414, Gazbag, Lemonspawn, nottoobad, Rozyroz, SamE, singletee, tracer, truffles, volfied, wharf_rat
 
-Leaving: apostolosoruler — thank you for your service as a moderator!
+Leaving: apostolosoruler — thank you for your 7 seasons of service as a moderator!
+
+<hr>
 
 *Rules Meeting Minutes*
 
@@ -51,7 +53,7 @@ Leaving: apostolosoruler — thank you for your service as a moderator!
 		<li>Dissent (Rozyroz): I think that a league this big should do everything in a systematic way. If we had random seeding, that could make it easier for players to complain about their division assignment our rules don't say exactly who will be in what division which is just wrong.<ul>		</ul></li>			
 		<li>Adopt SamE's random snake seeding proposal. (If this passes, it supersedes the previous motion.)<ul>	<li>NO (3 dissenting)</li>	</ul></li>			
 		<li>The random seeding proposal from the preceding motion was vetted at the town hall, and polling showed that a majority of players supported that system instead.<ul>		</ul></li>			
-		<li>Dissent (SamE): Town Hall participants clearly wanted positioning to matter, and this is a way to deliver it to them. My modified snake would randomize order within previous season tier/positions, and (starting from the top) skip divisions that already had someone of that type, except if that was not possible.<ul>		</ul></li>	</ul></li>		
+		<li>Dissent (SamE): Town Hall participants clearly wanted positioning to matter, and this is a way to deliver it to them. My modified snake would randomize order within previous season tier/positions, and (starting from the top) skip divisions that already had someone of that type, except if that was not possible. - SamE<ul>		</ul></li>	</ul></li>		
 	<li>Timers<ul>	<li>Ask Stef to implement a timer.<ul>	<li>NO (1 dissenting)</li>	</ul></li>			
 		<li>The League will respond to any official timers implemented in Dominion Online, but the League is not responsible for lobbying on behalf of any new features.<ul>		</ul></li>			
 		<li>Dissent (Lemonspawn): A timer is a feature that has been requested for a long time, and in the long run it's something that could benefit league.  Before it would ever be incorporated in league, it would have to be well-tested and widely used, and client integration would be instrumental in making this happen.<ul>		</ul></li>	</ul></li>		
