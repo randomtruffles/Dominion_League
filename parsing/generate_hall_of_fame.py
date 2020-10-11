@@ -4,7 +4,7 @@ import json
 hall_of_fame = ""
 padding = 0
 current_season = 41
-ongoing = False # is the season currently in progress?
+ongoing = True # is the season currently in progress?
 
 # Helper functions
 def pad(text, padding):
@@ -380,30 +380,31 @@ all_most_seasons_pl = {}
 all_consecutive_pl = {}
 all_active_streak = {}
 
-if ongoing:
-    with open(f"../_data/season_{current_season+1}_players.json") as file:
-        current_season_players = json.load(file)
-    for player in pseasons:
-        name = pseasons[player]["name"]
-        seasons = pseasons[player]["seasons"]
-        stats = pseasons[player]["stats"]
-        tsp = stats["Total Seasons Played"]
-        ls = stats["Longest Streak"]
+with open(f"../_data/season_{current_season+1}_players.json") as file:
+    current_season_players = json.load(file)
+for player in pseasons:
+    name = pseasons[player]["name"]
+    seasons = pseasons[player]["seasons"]
+    stats = pseasons[player]["stats"]
+    tsp = stats["Total Seasons Played"]
+    ls = stats["Longest Streak"]
 
-        seasons_played = []
-        for sea in seasons:
-            seasons_played.append(sea["season"])
+    seasons_played = []
+    for sea in seasons:
+        seasons_played.append(sea["season"])
 
-        if name.lower() in current_season_players and ls[2] == current_season:
-            ls = [ls[0]+1, ls[1], ls[2]+1]
-            all_active_streak[name] = ls
+    if name.lower() in current_season_players and ls[2] == current_season:
+        ls = [ls[0]+1, ls[1], ls[2]+1]
+        all_active_streak[name] = ls
 
-        if name.lower() in current_season_players:
-            seasons_played.append(str(current_season+1))
+    if name.lower() in current_season_players:
+        seasons_played.append(str(current_season+1))
 
-        all_most_seasons_pl[name] = seasons_played
-        all_consecutive_pl[name] = ls
-else:
+    all_most_seasons_pl[name] = seasons_played
+    if name == "gamesou":
+        print(all_most_seasons_pl[name])
+    all_consecutive_pl[name] = ls
+""" else:
     for player in pseasons:
         name = pseasons[player]["name"]
         seasons = pseasons[player]["seasons"]
@@ -419,7 +420,7 @@ else:
             all_active_streak[name] = ls
 
         all_most_seasons_pl[name] = seasons_played
-        all_consecutive_pl[name] = ls
+        all_consecutive_pl[name] = ls"""
 
 sorted_mspl = sorted(all_most_seasons_pl.items(), key=lambda x: -len(x[1]))
 sorted_mspl = list(map(lambda x: (x[0], len(x[1]), f"Seasons {condense_list_to_str(x[1], False)}"), sorted_mspl))

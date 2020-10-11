@@ -4,7 +4,8 @@ import json
 """
 Season information
 """
-tier_counts = [1, 2, 4, 4, 8, 15, 15, 31, 31, 31]
+tier_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "P"]
+tier_counts = [1, 2, 4, 4, 8, 14, 13, 26, 28, 27, 3]
 current_season = 41
 # Get iframes for current season
 with open('raw_divs.txt') as raw_divs:
@@ -20,14 +21,13 @@ def curr_iframes_json():
     # Store division to iframe
     divisions = {}
     current_iframe_idx = 1
-    current_tier = "A"
     for idx, tier_count in enumerate(tier_counts):
+        current_tier = tier_names[idx];
         for division in range(tier_count):
             attr = """class="standings-sheets" onload="document.getElementById('spinner').style.display='none';" """
             iframe = iframes[current_iframe_idx]
             divisions[current_tier+str(division+1)] = iframe[:8] + attr + iframe[8:]
             current_iframe_idx += 1
-        current_tier = chr(ord(current_tier) + 1)
 
     with open('../_data/current_season_iframes.json', 'w') as fp:
         json.dump(divisions, fp)

@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2020-07-11
+date: 2020-10-10
 categories: pinned rules
 ---
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
@@ -38,7 +38,7 @@ For games played online, players should set the following Advanced Options by de
 * The game should not use extra Menagerie cards.
 * The game should be unrated. For Seasons 42 and 43, games in the practice tier must be rated.
 * The victory point counter should be used.
-* Except for cardlists, Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required. No particular cards, landscapes, or expansions should be selected.
+* Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required. No particular cards, landscapes, or expansions should be selected. For Seasons 42 and 43, in the Practice Tier, the players pick one expansion each, and Kingdoms are generated with only cards from those expansions and the base set.
 
 All these defaults may be changed between games by mutual agreement of the players except:
 
@@ -57,21 +57,21 @@ After each playing session, one of the players should submit the result of that 
 
 During the season, the standings for each group will be automatically updated as players complete matches. The players in each group will be ranked based on the average number of points they have received in each match.
 
-In the case of a tie within a division, the player with the total number of points from the matches between the tied players wins. If there is still a tie:
-
-* If the tie is between two players, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
+In the case of a tie within a division, the player with the higher total number of points from the matches between the tied players wins. If there is still a tie:
+* If the tie is between two players and affects promotions, demotions, or entry into the Championship Match, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
+* If the tie is between two players and does not affect promotions, demotions, or entry into the Championship Match, the player with the higher sum of the number of points received in each match multiplied by the total score of the opponent from that match wins.
 * If the tie is between three or more players, the moderators will randomly break the tie.
 
 At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division.
 
 * Players who finish in first place promote if the tier directly above has fewer divisions than the tier they are currently in.
 * Players who finish in first or second place promote if the tier directly above has exactly the same number of divisions of the tier they are currently in.
-* Players who finish in fifth or sixth place in any tier demote unless they are in the bottom tier, in which case they will stay in that tier.
+* In any tier, players who finish in sixth or seventh place in a seven-player division, or fifth or sixth place in any other division, demote unless they are in the bottom tier, in which case they will stay in that tier.
 * Players in the practice tier do not promote or demote automatically. Instead, these players are placed as new players in the next season.
 
-Additionally, players who are placed as New Players in the current season and promoted from their tier can request to be re-placed in the upcoming season as a new player, using the same stricter cutoffs used for guaranteed new player tier placements. This allows players to promote across multiple tiers, known as “superpromotions”, if a player can improve their rating significantly across a season.
+Additionally, players may be re-placed using the rules for placing new players. This allows returning players to promote across multiple tiers, known as superpromotions, if a player can improve their rating significantly across a season. Players who would be superpromoted into tiers A, B, C, or D are instead placed into tier E.
 
-In addition, the top two finishers in the A1 division will play a second 6-game match to determine the Champion for the Dominion League for that season. For the purposes of determining the Champion (and only those purposes), the results of this match will be added to the results of the season, including updates to tiebreakers. The match date and time should be determined by the two players well in advance to allow for the moderator team to find a commentator team. Even if the outcome of the match is settled before the sixth game, all six should be played out for the purpose of spectator entertainment.
+In addition, the top two finishers in the A1 division will play a second 6-game match to determine the Champion for the Dominion League for that season. For the purposes of determining the Champion (and only those purposes), the results of this match will be added to the results of the season, including updates to tiebreakers. The match date and time should be determined by the two players well in advance to allow for the moderator team to find a commentator team. Even if the outcome of the match is settled before the sixth game, all six should be played out for the purpose of spectator entertainment. In the event of a tie, the players play one final game to decide the winner. If that final game results in a tie, the player who went second wins.
 
 #### IV. Joining and Leaving
 
@@ -92,7 +92,7 @@ During a season, the moderators may, at their discretion, fill new open spots fr
 
 #### V. Scheduling
 
-A suggested schedule will be posted in your group's Discord channel with a specific player to play each week. There is no requirement to follow the suggested schedule, but it is recommended not to fall behind the one match per week pace. Each group will be assigned a League moderator. If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator.
+A suggested schedule will be posted in your group's Discord channel with a specific player to play each week. There is no requirement to follow the suggested schedule, but it is recommended not to fall behind the one match per week pace. Each group will be assigned a League moderator. If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator. To communicate with league moderators and your opponents, basic English proficiency is required.
 
 If you are placed in a group with a player you are close friends with, please schedule your match as early as possible in the season to eliminate any temptation for collusion. You can also inform a League moderator if you anticipate this type of issue and the League will make an effort to place you in separate groups.
 
@@ -132,7 +132,9 @@ League moderators are also responsible for adjudicating any disputed rules infra
 
 Whenever the moderators gather for an official meeting at which rules may change (at least once per season), the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting.
 
-When new moderators are needed, there will be an open call posted to the Discord server the Dominion Strategy forum. Players will have at least 48 hours to submit their applications to be moderators. Once the application deadline transpires, the current moderators will have at least 48 hours to discuss the candidates before voting to choose new moderators from the applicants.
+League Moderators are eligible for 1-season breaks, during which they retain voting privileges and access to league mod channels to stay up-to-date with information. If more moderators want to take breaks that the moderator team can afford, priority will be given to moderators that have least recently taken breaks.
+
+Each active moderator shall moderate at least 5 divisions per season. If the following season is anticipated to have more than 10 divisions per moderator, then the League shall recruit additional moderators. New moderator applications will open week 2 of each season, allow review by the existing moderator team during week 3, and onboarding/shadowing of new moderators beginning week 4.
 
 #### XI. Amendments
 
