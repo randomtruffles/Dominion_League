@@ -9,7 +9,7 @@ categories:
 ---
 Hello,
 
-Thank you to everyone who attended our two town halls during the long break for the Championship, and to everyone who provided feedback on the Returning Form. All your suggestions and input have lead to several rules changes. You can see the exact rules changes and rewordings in our [Rules Changelog](https://dominionleague.org/rules-changelog), but I’ll also summarize them here.
+Thank you to everyone who attended our two town halls during the long break for the Shuffle iT Championship, and to everyone who provided feedback on the Returning Form. All your suggestions and input have lead to several rules changes. You can see the exact rules changes and rewordings in our [Rules Changelog](https://dominionleague.org/rules-changelog), but I’ll also summarize them here.
 
 * Snake seeding was replaced with random seeding, as presented at the second Town Hall.
 * 5th place will never demote from a 7-player flex division.
