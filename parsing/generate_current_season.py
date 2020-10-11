@@ -91,7 +91,7 @@ title: Dominion League Current Season Standings
     curr_iframe = 1
     for idx, count in enumerate(tier_counts):
         for c in range(count):
-            page += """    <div class="current-standings filterDiv div{}">{}</div>\n""".format(chr(ord("A") + idx),iframes[curr_iframe])
+            page += """    <div class="current-standings filterDiv div{}">{}</div>\n""".format(tier_names[idx],iframes[curr_iframe])
             curr_iframe += 1
     page +="""    <div class="spacing"> </div>
   </div>
