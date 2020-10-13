@@ -1,5 +1,5 @@
 ---
-title: Season 42 Newsletter - Part 1
+title: Season 42 - Newsletter Part 1
 date: 2020-10-10
 author: crlundy
 layout: post
