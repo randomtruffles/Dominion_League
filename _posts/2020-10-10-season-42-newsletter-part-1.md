@@ -80,9 +80,8 @@ Leaving: apostolosoruler — thank you for your 7 seasons of service as a modera
 		<li>tracer proposed this option, which can allow moderators to take a break for personal reasons without risking their moderator status. This prevents moderators staying on when they may actually be too busy, just so they don't have to reapply as a moderator.<ul>		</ul></li>			
 		<li>Call for new moderator applications during week 2 and discuss the applicants during week 3 (with the intent of beginning moderator onboarding week 4).<ul>	<li>YES (unanimous)</li>	</ul></li>			
 		<li>Lengthening the moderator application process ensures that all players have the chance to apply if they wish. Lengthing the moderator training process means that we can be more thorough in explaining our many processes and spreadsheets. Allowing for a shadowing period means moderators will be more prepared before moderating their first division.<ul>		</ul></li>	</ul></li>		
-	<li>Superpromotions<ul>	<li>Limit superpromotions such that you can only superpromote to tiers E or lower<ul>	<li>YES (2 dissenting)</li>	</ul></li>			
-		<li>Dissent (RozyRoz):<ul>		</ul></li>			
-		<li>Remove new player eligibility restriction for superpromotions<ul>		</ul></li>			
+	<li>Superpromotions<ul>	<li>Limit superpromotions such that you can only superpromote to tiers E or lower<ul>	<li>YES (2 dissenting)</li>	</ul></li>						
+		<li>Remove new player eligibility restriction for superpromotions<ul>	<li>YES (7 dissenting)</li>	</ul></li>			
 		<li>All players, including players returning from breaks, can show marked improvement and should be entitled to superpromotions as well.<ul>		</ul></li>			
 		<li>Dissent (Cave-o-sapien): I would like a compromise where the player must be within their first 3 seasons of league to be eligible for superpromoting. Tier restrictions seem messy given how much those change. League should be League, and ladder should be ladder.<ul>		</ul></li>			
 		<li>Dissent (nottoobad): Consider this situation: a player has a ladder rating of 53 or greater and is in G (there are 5 such players this season). They have a bad season and demote to H. Next season, they win their H division. Should they automatically promote to F? To me the clear answer is no. This rule as proposed can lead to some situations like this with unfair results.<ul>		</ul></li>	</ul></li>		
