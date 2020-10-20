@@ -6,7 +6,6 @@ author: SamE
 layout: post
 categories:
   - newsletters
-  - pinned
 ---
 Hello everyone,
 
