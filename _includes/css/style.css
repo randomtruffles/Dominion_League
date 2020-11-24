@@ -805,7 +805,7 @@ p.champion-information {
   height: 281px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .current-standings iframe {
     width: 95%;
   }
