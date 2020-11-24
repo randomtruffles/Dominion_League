@@ -204,7 +204,7 @@ If a game ends in a tie, both players get 0.5 wins for that game. For example, i
 
 No, we operate on an honor system. You can also use DomBot on Discord to retrieve the results of recent games. If you disagree about who won a game, notify your moderator.
 
-##### Why are players in tiers A, B, C, and D required to allow spectators?
+##### Why are players in tiers A, B, C, D, and E required to allow spectators?
 
 Allowing spectators offers League members an opportunity to watch competitive games between some of the top Dominion players. It also allows those players to get feedback after the games. Having spectators at your games can provide you constructive comments to help your future play.
 
@@ -217,6 +217,7 @@ As a spectator, you can comment on the players’ decisions and discuss strategi
 In general, you are limited to using your own brain and the features provided by the Dominion Online website. Don't consult strategy guides or other people or software. Consulting the Dominion rules is allowed (for example, looking up how a particular pair of cards interact from a rules perspective). A list of allowed resources can be found in the [League Rules](/rules).
 
 ##### Can I resign or forfeit a match?
+
 All players in the League are expected to complete all of their matches as competitively as possible. It is possible for the result of any match to determine the fate of you or another player by way of the tiebreaker points. However, resigning a game while playing to the best of your ability (like when you are way behind and feel there is a 0% or a very low chance to comeback) is allowed. Forfeiting a game (which is like resigning turn 1, 2 or not playing at all)  is not allowed as it is unfair to other players in your group if you do not complete your matches properly.
 
 #### 5. Dominion Online (<http://dominion.games>)
@@ -330,7 +331,6 @@ Here is a visual representation of the season 36–39 rules:
 Here is a visual representation of the season 40 rules:
 
 ![Transition Scheme 2](https://media.discordapp.net/attachments/426794220720750594/732439868147236939/unknown.png)
-
 
 ##### At the end of the season, my division has fewer than 6 players. How does this affect promotion and demotion?
 

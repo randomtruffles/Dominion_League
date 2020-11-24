@@ -7,33 +7,31 @@ categories:
   - newsletters
   - pinned
 ---
-Hello everyone,
-
-Thank you to everyone who attended our two town halls during the long break for the Championship, and to everyone who provided feedback on the Returning Form. All your suggestions and input have lead to several rules changes. You can see the exact rules changes and rewordings in our [Rules Changelog](https://dominionleague.org/rules-changelog), but I’ll also summarize them here.
+Thank you to everyone who attended our two town halls during the long break for the Shuffle iT Championship, and to everyone who provided feedback on the Returning Form. All your suggestions and input have lead to several rules changes. You can see the exact rules changes and rewordings in our [Rules Changelog](https://dominionleague.org/rules-changelog), but I’ll also summarize them here.
 
 * Snake seeding was replaced with random seeding, as presented at the second Town Hall.
 * 5th place will never demote from a 7-player flex division.
 * Returning players are also eligible for superpromotions.
 * Player cannot superpromote to a tier above E.
-* As an experiment in the practice tier, players will use the expansion restriction that we polled in the Returning Form.
-* We will use the systematic algorithm presented at the second Town Hall to give consideration to match results that were previously voided when one of the players drops.
-* Ties 2nd place in Division A1 will be broken by a 2-game match.
-* A tie in the championship match is broken by a 1-game match.
+* As an experiment in the Practice Tier, players will use the expansion restriction that we polled in the Returning Form.
+* We will use the systematic algorithm presented at the second Town Hall to give consideration to match results that were previously voided when one of the players dropped.
+* Ties for 2nd place in Division A1 will be broken by a 2-game match.
+* A tie in the championship match will be broken by a 1-game match (so they just play a 7th game), and if there's still a tie, P2 wins.
 
 We also have several other, more minor changes to make:
 
 * Moderators will be allowed to take single-season breaks while maintaining their status as a moderator.
-* The selection process for new moderators will be longer, so that more people may apply, and more consideration may be given to the applicants.
+* The selection process for new moderators will be longer, so that more people may apply, and more consideration may be given to the applications.
 * The congratulatory messages (the ones with the clapping emoji in the #results channel) will now be sent in a dedicated #congratulations channel, as well as in the division channels.
-* We will have a dedicated "stenographer" at future town halls (as we did for the most recent one) to make sure that they are accessible to text-only participants.
+* We will have a dedicated "stenographer" at Town Halls (as we did for the most recent one) to make sure that they are accessible to text-only participants.
 
-*Moderator Churn*
+**Moderator churn**
 
-Staying from Season 41: alibby1152, amoffett11, catmom, Cave-o-sapien, crlundy, Earl, eh1414, Gazbag, Lemonspawn, nottoobad, Rozyroz, SamE, singletee, tracer, truffles, volfied, wharf_rat
+Returning: alibby1152, amoffett11, catmom, Cave-o-sapien, crlundy, Earl, eh1414, Gazbag, Lemonspawn, nottoobad, Rozyroz, SamE, singletee, tracer, truffles, volfied, wharf_rat
 
-Leaving: apostolosoruler — thank you for your service as a moderator!
+Leaving: apostolosoruler — thank you for your 7 seasons of service as a moderator!
 
-*Rules Meeting Minutes*
+**Rules meeting minutes**
 
 <ol>							
 <li>Town Hall: Smorgasbord<ol type='a'>	<li>Suggested schedules<ul>	<li>Add back suggested schedules to tiers A–E.<ul>	<li>NO (4 dissenting)</li>	</ul></li>			
@@ -82,9 +80,8 @@ Leaving: apostolosoruler — thank you for your service as a moderator!
 		<li>tracer proposed this option, which can allow moderators to take a break for personal reasons without risking their moderator status. This prevents moderators staying on when they may actually be too busy, just so they don't have to reapply as a moderator.<ul>		</ul></li>			
 		<li>Call for new moderator applications during week 2 and discuss the applicants during week 3 (with the intent of beginning moderator onboarding week 4).<ul>	<li>YES (unanimous)</li>	</ul></li>			
 		<li>Lengthening the moderator application process ensures that all players have the chance to apply if they wish. Lengthing the moderator training process means that we can be more thorough in explaining our many processes and spreadsheets. Allowing for a shadowing period means moderators will be more prepared before moderating their first division.<ul>		</ul></li>	</ul></li>		
-	<li>Superpromotions<ul>	<li>Limit superpromotions such that you can only superpromote to tiers E or lower<ul>	<li>YES (2 dissenting)</li>	</ul></li>			
-		<li>Dissent (RozyRoz):<ul>		</ul></li>			
-		<li>Remove new player eligibility restriction for superpromotions<ul>		</ul></li>			
+	<li>Superpromotions<ul>	<li>Limit superpromotions such that you can only superpromote to tiers E or lower<ul>	<li>YES (2 dissenting)</li>	</ul></li>						
+		<li>Remove new player eligibility restriction for superpromotions<ul>	<li>YES (7 dissenting)</li>	</ul></li>			
 		<li>All players, including players returning from breaks, can show marked improvement and should be entitled to superpromotions as well.<ul>		</ul></li>			
 		<li>Dissent (Cave-o-sapien): I would like a compromise where the player must be within their first 3 seasons of league to be eligible for superpromoting. Tier restrictions seem messy given how much those change. League should be League, and ladder should be ladder.<ul>		</ul></li>			
 		<li>Dissent (nottoobad): Consider this situation: a player has a ladder rating of 53 or greater and is in G (there are 5 such players this season). They have a bad season and demote to H. Next season, they win their H division. Should they automatically promote to F? To me the clear answer is no. This rule as proposed can lead to some situations like this with unfair results.<ul>		</ul></li>	</ul></li>		
