@@ -243,9 +243,9 @@ iframe {
 }
 
 .single-iframe {
-  width: 100%;
+  width: 95%;
   align: center;
-  height: 280px;
+  height: 300px;
 }
 
 @media (max-width: 600px) {
