@@ -169,7 +169,7 @@ function searchPlayerHistory(param=false){
       }
 
       // ---Links heading
-      var player_chart_link = "<a href=\"" + "{{site.baseurl}}/player_database?player="+ player_name.replace(" ", /%20/g) +"\">Player Chart</a> "
+      var player_chart_link = "<a href=\"" + "{{site.baseurl}}/charts?player="+ player_name.replace(" ", /%20/g) +"\">Player Chart</a> "
       if (player_name in youtube_channels ) {
         addToDiv("<a href=\"" + youtube_channels[player_name]["channel"] +"\">Youtube Channel</a> | " + player_chart_link, "h5");
       } else {
