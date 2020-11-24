@@ -245,7 +245,7 @@ iframe {
 .single-iframe {
   width: 95%;
   align: center;
-  height: 300px;
+  height: 350px;
 }
 
 @media (max-width: 600px) {
