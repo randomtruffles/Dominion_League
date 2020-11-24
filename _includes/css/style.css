@@ -400,8 +400,18 @@ a.active {
 }
 
 a {
-    color: #{{ site.data.template.color.secondary }};
-    text-decoration: underline;
+  color: #{{ site.data.template.color.secondary }};
+  text-decoration: underline;
+}
+
+a.current-standings {
+  color: #{{ site.data.template.color.primary }};
+  text-decoration: none;
+}
+
+a.current-standings:hover {
+  color: #{{ site.data.template.color.primary }};
+  text-decoration: none;
 }
 
 a.past-standings {
@@ -786,7 +796,7 @@ p.champion-information {
 
 .current-standings iframe {
   width: 600px;
-  height: 245px;
+  height: 265px;
 }
 .show {
   display: block;
@@ -1799,8 +1809,8 @@ img.hof-champion-trophy {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	
-	
+
+
 	border-radius: 50%;
 	width: 20px;
 	height: 20px;
@@ -1821,7 +1831,7 @@ img.hof-champion-trophy {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	
+
 	width: 20px;
 	height: 20px;
 	border: 2px solid #d3d3d3;

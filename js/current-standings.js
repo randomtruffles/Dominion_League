@@ -1,4 +1,14 @@
-filterSelection("divA")
+function getParam(paramName) {
+  var urlParam = function(name, w){
+      w = w || window;
+      var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+          val = w.location.search.match(rx);
+      return !val ? '':val[1];
+  }
+  var paramData = urlParam(paramName).replace(/%20/g, " ").trim();
+  return paramData;
+}
+
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("current-standings filterDiv");
