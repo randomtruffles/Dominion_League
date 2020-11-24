@@ -16,7 +16,9 @@ title: Dominion League Moderators
                     <div class="team-member">
                         <img src="img/moderators/{{ mod.image }}.png" class="img-mod img-responsive img-circle" alt="">
                         <h4>{{ mod.name }}</h4>
-                        <p class="text-muted">@{{ mod.discord }}</p>
+                        {% if mod.chair %}
+                        <p class="text-muted"><b>{{ mod.chair }} Chair</b></p>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
@@ -49,7 +51,6 @@ title: Dominion League Moderators
                     Anders,
                     GreyEK,
                     irrationalE,
-                    Apostolosoruler,
                     Stef,
                     AdamH,
                     A Drowned Kernel,
