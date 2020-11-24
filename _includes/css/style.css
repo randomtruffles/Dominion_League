@@ -242,6 +242,12 @@ iframe {
   height: 245px;
 }
 
+.single-iframe {
+  width: 100%;
+  align: center;
+  height: 280px;
+}
+
 @media (max-width: 600px) {
   .standings-sheets {
     width: 100%;
