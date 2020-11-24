@@ -804,6 +804,15 @@ p.champion-information {
   width: 750px;
   height: 265px;
 }
+
+
+@media (max-width: 600px) {
+  .current-standings {
+    width: 95%;
+    margin-left: -18px;
+  }
+}
+
 .show {
   display: block;
 }
