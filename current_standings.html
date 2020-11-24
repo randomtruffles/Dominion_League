@@ -68,9 +68,9 @@ title: Dominion League Current Season Standings
       currIdx += 1;
       currentTier = tierNames[currIdx]
       divisionsLeft = tierSizes[currIdx];
-    } else {
-      divisionsLeft -= 1;
-    }
+    } 
+    divisionsLeft -= 1;
+ 
     var iframeDiv = document.createElement("div");
     var classes = ['current-standings', 'filterDiv', `div${currentTier}`];
     for (var c=0; c<classes.length; c++){
