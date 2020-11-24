@@ -239,7 +239,7 @@ iframe {
 .standings-sheets {
   width: 80%;
   align: center;
-  height: 245px;
+  height: 281px;
 }
 
 .single-iframe {
@@ -801,7 +801,7 @@ p.champion-information {
 }
 
 .current-standings iframe {
-  width: 600px;
+  width: 750px;
   height: 265px;
 }
 .show {
