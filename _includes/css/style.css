@@ -802,14 +802,12 @@ p.champion-information {
 
 .current-standings iframe {
   width: 750px;
-  height: 265px;
+  height: 281px;
 }
 
-
 @media (max-width: 600px) {
-  .current-standings {
+  .current-standings iframe {
     width: 95%;
-    margin-left: -18px;
   }
 }
 
