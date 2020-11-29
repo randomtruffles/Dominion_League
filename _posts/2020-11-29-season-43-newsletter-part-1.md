@@ -21,7 +21,7 @@ Another small, somewhat related change is on the horizon: Now that we have our m
 
 Otherwise, we also made some additional small clarifications around tiebreaker rules. Normally, we only break true ties (same number of wins and an even head-to-head) when they matter for promotions, but this ignores the fact that in some particular circumstances those exact placements do end up mattering: Eligibilty for free promotions / play-in matches, superpromotions from tiers with two promoters, and the possibility of a transition scheme to a different number of tiers. In all of these cases, we've decided that such ties will simply be interpreted favorably for all parties. In other words, if you tie for 3rd, you'll both be considered to have gotten 3rd.
 
-FInally, with the welcoming of two more moderators -- Sharur and sweetjohn33 -- we are now up to a team of 19. To make everyone's lives easier, we've explicitly designated 10 moderator committee chairs, revolving around ten different components to the League:
+FInally, with the welcoming of two more moderators — Sharur and sweetjohn33 — we are now up to a team of 19. To make everyone's lives easier, we've explicitly designated 10 moderator committee chairs, revolving around ten different components to the League:
 
 * Admin: Facilitating meetings, managing communication, and funcitoning as the ultimate backup.
 * Bot: Management of League-related functions on DomBot and friends.
