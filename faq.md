@@ -280,12 +280,12 @@ For a new player, their starting tier is decided shortly before the season start
 
 ##### How many tiers (A, B, C, etc) and divisions (C1, C2, C3, etc) are there each season?
 
-The number of tiers and divisions depends on the number of players. Each division has 6 players by default, and the general pattern for making divisions is that there is 1 division in tier A and 2 divisions in tier B, and starting with tier B, every other tier doubles in size, except the bottom 2 tiers will be made to be roughly equal in size.
+The number of tiers and divisions depends on the number of players. Each division has 6 players by default, and divisions are filled from the top down. The general pattern for making divisions is that there is 1 division in tier A and 2 divisions in tier B, and starting with tier B, every other tier doubles in size, except the bottom 2 tiers will be made to be roughly equal in size.
 
 Here are some examples for different numbers of players:
 * 402 players = 8 tiers = 67 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 16 H
 * 690 players = 9 tiers = 115 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 32 I
-* 1,266 players = 10 tiers = 211 divisionss:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 64 I + 64 J
+* 1,266 players = 10 tiers = 211 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 64 I + 64 J
 * 1,650 players = 11 tiers = 275 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 64 I + 64 J + 64 K
 
 ##### How do the moderators group divisions by time zone?
