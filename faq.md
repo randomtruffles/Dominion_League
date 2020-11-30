@@ -294,7 +294,7 @@ As much as possible, players are grouped by their time zones in tiers D and belo
 
 ##### How are players seeded?
 
-For all divisions in the same tier (and in the same time zone region, for tiers D and below), players split into 4 groups: new players, players who demoted from the tier above, players returning to the same tier, and players who promoted from the tier below. Within each group, players are seeded randomly.
+For all divisions in the same tier (and in the same time zone region, for tiers E and below), players split into 4 groups: new players, players who demoted from the tier above, players returning to the same tier, and players who promoted from the tier below. Within each group, players are randomly placed into divisions such that players from each group are as evenly distributed as possible.
 
 ##### What do I do if my regular schedule makes it difficult to play with people from my own time zone?
 
