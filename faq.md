@@ -274,9 +274,19 @@ One of the introductory posts in your division channel lists the subscription st
 
 #### 6. Details and backend
 
-##### How do the moderators determine the players’ tiers (A, B, C, etc)?
+##### How do the moderators determine players’ tiers (A, B, C, etc)?
 
-For a new player, their starting tier is decided shortly before the season starts, based on the available spots in the tiers and their Dominion Online (<http://dominion.games>) level. For a returning player, their tier is based on how they placed in their last season.
+For a new player, their starting tier is decided shortly before the season starts, based on the available spots in the tiers and their <a href="http://dominion.games">Dominion Online</a> level. For a returning player, their tier is based on how they placed in their last season.
+
+##### How many tiers (A, B, C, etc) and divisions (C1, C2, C3, etc) are there each season?
+
+The number of tiers and divisions depends on the number of players. Each division has 6 players by default, and the general pattern for making divisions is that there is 1 division in tier A and 2 divisions in tier B, and starting with tier B, every other tier doubles in size, except the bottom 2 tiers will be made to be roughly equal in size.
+
+Here are some examples for different numbers of players:
+* 402 players = 8 tiers = 67 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 16 H
+* 690 players = 9 tiers = 115 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 32 I
+* 1,266 players = 10 tiers = 211 divisionss:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 64 I + 64 J
+* 1,650 players = 11 tiers = 275 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 64 I + 64 J + 64 K
 
 ##### How do the moderators group divisions by time zone?
 
@@ -284,7 +294,7 @@ As much as possible, players are grouped by their time zones in tiers D and belo
 
 ##### How are players seeded?
 
-For all divisions in the same tier (and in the same time zone region, for tiers D and below), players are seeded using a modified snake draft based on previous League performance. New players are seeded above players who are returning to the same tier but below players who are demoting from a higher tier.
+For all divisions in the same tier (and in the same time zone region, for tiers D and below), players split into 4 groups: new players, players who demoted from the tier above, players returning to the same tier, and players who promoted from the tier below. Within each group, players are seeded randomly.
 
 ##### What do I do if my regular schedule makes it difficult to play with people from my own time zone?
 
@@ -292,45 +302,12 @@ The easiest way to indicate this is to sign up with the time zone you can most e
 
 ##### What are promotions and demotions, and how do they work?
 
-Players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division. Note the structure of the League changed starting with season 39, so how promotions and demotions work depends on the season you most recently played:
+Players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division. There were different rules about how promotions and demotions worked as the League changed sizes from Season 39 to Season 41. The Season 43 rules are:
 
-For players who last played in season 36, 37, or 38:
-
-* Players who finished in 1st, 2nd, 3rd, or 4th place in tier A or in 1st place in tier B, are put into tier A.
-* Players who finished in 5th or 6th place in tier A; in 2nd, 3rd, or 4th place in tier B; or in 1st place in tier C, are put into tier B.
-* Players who finished in 5th or 6th place in tier B; in 2nd, 3rd, or 4th place in tier C; or in 1st place in tier D, are put into tier C.
-* Players who finished in 5th or 6th place in tier C or in 2nd or 3rd place in tier D, are put into tier D.
-* Players who finished in 4th or 5th place in tier D or in 1st or 2nd place in tier E, are put into tier E.
-* Players who finished in 6th place in tier D or in 3rd or 4th place in tier E, are put into tier F.
-* Players who finished in 5th or 6th place in tier E or in 1st or 2nd place in tier F, are put into tier G.
-* The remaining places in tier F are put into tier H.
-
-For players currently in season 39:
-
-* Players who finished in 1st place in tiers B, C, and E promote.
-* Players who finished in 1st or 2nd place in tiers D, F, G, and H promote.
-* Players who finished in 5th or 6th place in tiers A, B, C, D, E, F, and G demote.
-
-For players who last played in season 40:
-
-* Players who finished in 1st, 2nd, 3rd, or 4th place in tier A or in 1st place in tier B, are put into tier A.
-* Players who finished in 5th or 6th place in tier A; in 2nd, 3rd, or 4th place in tier B; or in 1st place in tier C, are put into tier B.
-* Players who finished in 5th or 6th place in tier B; in 2nd, 3rd, or 4th place in tier C; or in 1st place in tier D, are put into tier C.
-* Players who finished in 5th or 6th place in tier C; in 3rd or 4th place in tier D; or 1st place in tier E, are put into tier D.
-* Players who finished in 4th or 5th place in tier D; in 2nd, 3rd, or 4th place in tier; or in 1st place in tier F, are put into tier E.
-* Players who finished in 5th or 6th place in tier E; in 2nd, 3rd, or 4th place in tier F; or in 1st place in tier G, are put into tier F.
-* Players who finished in 5th or 6th place in tier F or in 2nd or 3rd place in tier G, are put into tier G.
-* Players who finished in 4th or 5th place in tier G or in 1st or 2nd place in tier H, are put into tier H.
-* Players who finished in 6th place in tier G or in 3rd or 4th place in tier H, are put into tier I.
-* The remaining places in tier H are put into tier J.
-
-Here is a visual representation of the season 36–39 rules:
-
-![Transition Scheme 1](https://cdn.discordapp.com/attachments/245275391344771072/669402457377603584/unknown.png)
-
-Here is a visual representation of the season 40 rules:
-
-![Transition Scheme 2](https://media.discordapp.net/attachments/426794220720750594/732439868147236939/unknown.png)
+* Players who finish in first place in tiers B, C, E, F, and H promote.
+* Players who finish in first or second place in tiers D, G, I, and J promote.
+* In all tiers except J, players who finish in sixth or seventh place in a seven-player division, or fifth or sixth place in any other division, demote.
+* Players in the practice tier do not promote or demote automatically, and are instead placed as new players in Season 44.
 
 ##### At the end of the season, my division has fewer than 6 players. How does this affect promotion and demotion?
 
@@ -375,16 +352,6 @@ There are no rules on etiquette, but we encourage you to be friendly and courteo
 
 Notify the moderators, and we may help them change their username.
 
-##### How many divisions and tiers will there be in any given season?
-
-The general pattern is that there is 1 division in tier A and 2 divisions in tier B, and starting with tier B, every other tier doubles in size. However, then bottom 2 tiers will be made to be roughly equal in size.
-
-Here are some examples for different numbers of players:
-* 402 players = 67 divisions = 8 tiers:<br><div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#D5A6BD">1 A</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B4A6D5">2 B</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#9FC5E8">4 C</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A4C2F4">4 D</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A2C4C8">8 E</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B6D7A8">16 F</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: black;background:#FFE598">16 G</div>
-* 690 players = 115 divisions = 9 tiers:<br><div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#D5A6BD">1 A</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B4A6D5">2 B</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#9FC5E8">4 C</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A4C2F4">4 D</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A2C4C8">8 E</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B6D7A8">16 F</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: black;background:#FFE598">16 G</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: black;background:#F9CB9C">32 H</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#EA9999">32 I</div>
-* 1,266 players = 211 divisions = 10 tiers:<br><div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#D5A6BD">1 A</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B4A6D5">2 B</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#9FC5E8">4 C</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A4C2F4">4 D</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A2C4C8">8 E</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B6D7A8">16 F</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: black;background:#FFE598">16 G</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: black;background:#F9CB9C">32 H</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#EA9999">64 I</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#DD7E6B">64 J</div>
-* 1,650 players = 275 divisions = 11 tiers:<br><div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#D5A6BD">1 A</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B4A6D5">2 B</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#9FC5E8">4 C</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A4C2F4">4 D</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#A2C4C8">8 E</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B6D7A8">16 F</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: black;background:#FFE598">16 G</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: black;background:#F9CB9C">32 H</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#EA9999">64 I</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#DD7E6B">64 J</div> + <div style="display:inline-block;padding:0 0.5em;border-radius:0.7em;color: white;background:#B7B7B7">64 K</div>
-
 ##### Are there ever matches with 3 or players?
 
 No, all matches are played with 2 players.
@@ -402,4 +369,4 @@ You can choose any of these methods you prefer:
 
 ##### How are moderators chosen?
 
-If the current team of moderators decides more moderators are needed, a recruitment message is posted to the #announcements channel of the Discord server as well as the [News](/news) page. Candidates apply by sending a message on the Dominion Strategy Forum. Moderators discuss and vote to determine which candidates are accepted.
+If the current team of moderators decides more moderators are needed, a recruitment form is posted to the #announcements channel of the Discord server as well as the [News](/news) page. Candidates apply by filling out the form. Moderators discuss and vote to determine which candidates are accepted.
