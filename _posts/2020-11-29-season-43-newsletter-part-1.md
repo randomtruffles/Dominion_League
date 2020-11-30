@@ -80,7 +80,7 @@ For full explanations and to see various even more minor changes I haven't liste
 :no_entry_sign: 1 vote</li>	</ul></li>			
 		<li>SamE: In Week 3, the lists will often be too long to be useful. Week 4 serves as a nice warning for Week 5's tagging.<ul>		</ul></li>			
 		<li>DISSENT (catmom): I think it'd be great to do this every week. I think it's helpful to see the entire divisions progress and the tag is a good reminder. <ul>		</ul></li>			
-		<li>DISSENT (Sharur, tracee): This is a good change. I think it would also be useful to extend it to Week 3, but I don't hold that opinion strongly.<ul>		</ul></li>			
+		<li>DISSENT (Sharur, tracer): This is a good change. I think it would also be useful to extend it to Week 3, but I don't hold that opinion strongly.<ul>		</ul></li>			
 		<li>DISSENT (volfied): They seem like they'd be too long even in week 4. <ul>		</ul></li>	</ul></li>		
 	<li>Removal of players<ul>	<li>Make the messaging of when a player will be removed for not playing matches more explicit<ul>		</ul></li>			
 		<li>Motion to change language in various messages to make it clear that moderators should remove any players with no games reported or calendar-scheduled at all after 4 weeks.<ul>	<li>YES (1 dissenting)</li>	</ul></li>			
