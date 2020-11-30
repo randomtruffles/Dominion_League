@@ -11,12 +11,11 @@ tracer needed 2.5 wins to secure his 4th League title, and E.Honda needed 4 wins
 
 After an exhilarating match, tracer emerged victorious with an impressive 5-1 score. 
 
-[hr]
-
 Congratulations to tracer!
+
+<hr>
 
 **Commentary**:
 
-Neutral: https://www.youtube.com/watch?v=2MzgKmvY0ts
-tracer: https://www.youtube.com/watch?v=NZnwhK1RN68
-
+Neutral: <https://www.youtube.com/watch?v=2MzgKmvY0ts>
+tracer: <https://www.youtube.com/watch?v=NZnwhK1RN68>
