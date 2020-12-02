@@ -45,6 +45,7 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
+* **Trader**: Action, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
 * **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<br>––––––––––––––––––––<br>When you discard this other than during Clean-up, you may reveal it to play it.
 
 Additionally, one card intentionally works differently online than what the card text says:
@@ -74,6 +75,10 @@ For example, Marauder can gain Spoils because Marauder uses the words "gain a Sp
 ##### Reducing costs
 
 The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion. The cost in Debt of a card can't go below 0 Debt.
+
+##### Kingdom Treasure cards
+
+New printings of Treasure cards that do special things when played will no longer say "when you play this", and will give +$ instead of saying they are "worth" an amount of $.
 
 #### Previous errata
 
@@ -106,6 +111,7 @@ Cards which have new wordings but function identically in all situations are not
   * **Trade Route**: You trash a card from your hand before you get +$1 per token on the Trade Route mat.
 * Dominion: Hinterlands
 
+  * **Oracle**: You get +2 Cards instead of drawing 2 cards.
   * **Scheme**: You can only choose cards that will be discarded from play this turn to put onto your deck.
 * Dominion: Adventures
 
@@ -146,11 +152,13 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
 * **Possession**
+
   * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
 * **Royal Carriage**:
+
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
   * **Various cards/landscapes**: If you play a card multiple times, and it doesn't leave play at least once but does leave play a later time, you may be able to call a Royal Carriage on it.
 * **Scepter**: See **Crown** above.
@@ -162,10 +170,12 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
 * **Storyteller**: See **Black Market** above.
 * **Transport**
+
   * **Invest**: See **Invest** above.
   * **Possession**: See **Possession** above.
 * **Villa**: See **Cavalry** above.
 * **Way of the Mouse**
+
   * **Cargo Ship**: If Way of the Mouse sets aside Cargo Ship, and you play multiple differently named cards using Way of the Mouse, then when you gain a card you cannot choose which played card to set aside the gained card on.
   * **Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.

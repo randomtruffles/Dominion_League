@@ -38,11 +38,11 @@ title: Dominion League Player Database
 // Data for tables
 var players_and_seasons = {{ site.data.player_and_seasons_played | jsonify }};
 var friendly_league_history = {{ site.data.friendly_league_history | jsonify }};
+var league_history = friendly_league_history["seasons"];
 var champions = {{ site.data.champions | jsonify }};
 champions = champions["players"]
 var championship_videos = {{ site.data.championship_videos | jsonify }};
 var youtube_channels = {{ site.data.youtube_channels | jsonify }};
-var league_history = friendly_league_history["seasons"];
 var current_season = {{ site.data.current_season_players | jsonify }};
 var current_season_iframes = {{ site.data.current_season_iframes | jsonify }};
 // var temp_season = {{ site.data.season_41_players | jsonify }};
@@ -78,12 +78,29 @@ function getPlayerParam() {
 
 // Generate search results
 function searchPlayerHistory(param=false){
-
+    // ---Get information entered
     var entered_player_name = document.getElementById("input_player_search").value;
     var player_name = entered_player_name.toLowerCase().trim();
     var divContainer = document.getElementById("player-database");
 
-    // check if URL has data
+
+    // ---Helper functions for display
+    function addToDiv(info, elementType, className="") {
+      var divContent = document.createElement(elementType);
+      divContent.innerHTML = info;
+      if (className != "") divContent.classList.add(className);
+      divContainer.appendChild(divContent);
+      return;
+    }
+
+    function custom_display(headerInfo, bodyInfo) {
+      addToDiv(headerInfo, "h4");
+      addToDiv(bodyInfo, "p");
+      return;
+    }
+
+
+    // ---Check if URL has data
     if (param) {
       var player_param = getPlayerParam();
       if (player_param.length == 0) {
@@ -100,69 +117,42 @@ function searchPlayerHistory(param=false){
       location.replace("{{site.baseurl}}/player_database?player="+url_param_name);
       return;
     }
-
     document.getElementById("loading").style.display = "none"
-    // Easter eggs
+
+
+    // ---Parsing player information.
+    // First check for easter eggs, then validity.
     if (player_name == "truffles") {
-      // Do something "No data exists for this player"
-      var h_dne = document.createElement("h4");
-      h_dne.innerHTML = "You've found an easter egg!";
-      var dne = document.createElement("p");
-      dne.innerHTML = "I'm like Stef hiding himself from the leaderboard!";
-      divContainer.appendChild(h_dne);
-      divContainer.appendChild(dne);
-
-  } else if (player_name == "kuroba") {
-      var h_dne = document.createElement("h4");
-      h_dne.innerHTML = "You've found an easter egg!";
-      var dne = document.createElement("p");
-      dne.innerHTML = "He is too bad to be in league.";
-      divContainer.appendChild(h_dne);
-      divContainer.appendChild(dne);
-
-  // No data exists for player
-  } else if (!players_and_seasons[player_name] && !current_season[player_name]) {
+      custom_display("You've found an easter egg!", "I'm like Stef hiding himself from the leaderboard!");
+    } else if (player_name == "kuroba") {
+      custom_display("You've found an easter egg!", "He is too bad to be in league.");
+    } else if (!players_and_seasons[player_name] && !current_season[player_name]) {
+      // Non-existent player or player not found
       console.log(entered_player_name);
-      // Do something "No data exists for this player"
-      var h_dne = document.createElement("h4");
-      h_dne.innerHTML = "Error: Player Does Not Exist";
-      var dne = document.createElement("p");
-      dne.innerHTML = "<b>" + entered_player_name + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').";
-      divContainer.appendChild(h_dne);
-      divContainer.appendChild(dne);
+      custom_display("Error: Player Does Not Exist", "<b>" + entered_player_name + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').");
+    } else {
+      // Valid input - display player information
 
-    // Generate table for each season played
-    }  else {
-      // Player heading
-      var player_heading = document.createElement("h4");
-      var name = player_name;
-      var row_class = "player-past-standings"
-
+      // ---Player heading
       if (players_and_seasons[player_name]) {
-        name = players_and_seasons[player_name]["name"];
+        addToDiv(`Player: ${players_and_seasons[player_name]["name"]}`, "h4");
       } else {
-        name = current_season[player_name]["name"];
+        addToDiv(`Player: ${current_season[player_name]["name"]}`, "h4");
       }
 
-      player_heading.innerHTML = "Player: " + name;
-      divContainer.appendChild(player_heading);
 
-      //League Champion Heading
+      // ---League Champion Heading
       if (player_name in champions) {
-        var champion_heading = document.createElement("p");
-        champion_heading.classList.add('champion-information');
-        var num_champion = (champions[player_name].length).toString();
-        champion_heading.innerHTML = num_champion + " x League Champion"
-        divContainer.appendChild(champion_heading);
+        addToDiv(`${(champions[player_name].length).toString()} x League Champion`, "p", "champion-information");
       }
 
-      //Stats History Heading
+      // ---Information about Stats
+      // 1) Compute Stats Values
       if (players_and_seasons[player_name]) {
         var player_stats = players_and_seasons[player_name]["stats"];
         var total_played = player_stats["Total Seasons Played"];
         var first_season = player_stats["First Season"];
         var longest_streak = player_stats["Longest Streak"];
-
         if (current_season[player_name] && current_season_iframes[current_season[player_name]["division"]]) {
             total_played += 1;
             if (longest_streak[2] == current_season["seasons"] - 1){
@@ -170,42 +160,32 @@ function searchPlayerHistory(param=false){
               longest_streak[0] += 1;
             }
         }
-        var stats1 = document.createElement("p");
-        stats1.innerHTML = "<b>Total Seasons Played:</b> " + total_played.toString();
-        stats1.classList.add('stats-p');
-        divContainer.appendChild(stats1);
-        var stats2 = document.createElement("p");
-        stats2.innerHTML = "<b>First Season Played:</b> S" + first_season.toString();
-        stats2.classList.add('stats-p');
-        divContainer.appendChild(stats2);
-        var stats3 = document.createElement("p");
-        stats3.innerHTML = "<b>Longest Streak:</b> " + longest_streak[0].toString() + " (S"+longest_streak[1].toString()+"-S"+longest_streak[2].toString()+")";
-        stats3.classList.add('stats-p');
-        divContainer.appendChild(stats3);
-        var stats4 = document.createElement("p");
-        stats4.innerHTML = "<b>Unique Opponents Faced:</b> " + (unique_opponents[player_name.toLowerCase()].length).toString();
-        stats4.classList.add('stats-p');
-        divContainer.appendChild(stats4);
+        // 2) Make headings
+        var stats_headings = ["Total Seasons Played", "First Season Played", "Longest Streak", "Unique Opponents Faced"];
+        var stats_values = [total_played.toString(), first_season.toString(), longest_streak[0].toString() + " (S"+longest_streak[1].toString()+"-S"+longest_streak[2].toString()+")", (unique_opponents[player_name.toLowerCase()].length).toString()];
+        for (var s = 0; s < stats_headings.length; s++) {
+          addToDiv(`<b>${stats_headings[s]}:</b> ${stats_values[s]}`, "p", "stats-p");
+        }
       }
 
-
-      // Youtube heading
+      // ---Links heading
+      var player_chart_link = "<a href=\"" + "{{site.baseurl}}/charts?player="+ player_name.replace(" ", /%20/g) +"\">Player Chart</a> "
       if (player_name in youtube_channels ) {
-        var player_heading = document.createElement("h5");
-        player_heading.innerHTML = "<a href=\"" + youtube_channels[player_name]["channel"] +"\">Youtube Channel</a>";
-        divContainer.appendChild(player_heading);
+        addToDiv("<a href=\"" + youtube_channels[player_name]["channel"] +"\">Youtube Channel</a> | " + player_chart_link, "h5");
+      } else {
+        addToDiv(player_chart_link, "h5");
       }
 
-      var hr = document.createElement("hr");
-      hr.classList.add('hr-database');
-      divContainer.appendChild(hr);
 
-      // Load current season data
+      // ---Aesthetic Line Break
+      addToDiv("", "hr", "hr-database");
+
+
+      // --- Load current season data
       if (current_season[player_name]) {
           var current_season_num = current_season["seasons"];
           var current_season_div = current_season[player_name]["division"];
           if(current_season_iframes[current_season_div]) {
-
           // Current season div
           var current_season_table = document.createElement("div");
           current_season_table.id = "current-season"
@@ -222,7 +202,6 @@ function searchPlayerHistory(param=false){
           current_season_iframe_loading.innerHTML = "<i style=\"color:grey\" class=\"fa fa-spinner fa-spin fa-2x\"></i> <br> Loading current season..."
           current_season_table.appendChild(current_season_iframe_loading);
 
-
           // Current season iframe
           var current_season_iframe_div = document.createElement("div");
           current_season_iframe_div.id = "current-season-content";
@@ -232,18 +211,18 @@ function searchPlayerHistory(param=false){
           divContainer.appendChild(current_season_table);
         }
 
-        // Check if they have other league history
+        // ---Check if they have other league history
         if(!players_and_seasons[player_name]) {
           return;
         }
       }
 
-
-      // Sort by newest season first
+      // ---Sort by newest season first
       let player_seasons = players_and_seasons[player_name]["seasons"];
       player_seasons = player_seasons.slice().reverse();
 
-      // Iterate through all seasons the player has played
+
+      // ---Iterate through all seasons the player has played
       var num_seasons = player_seasons.length;
       for (let i = 0; i < num_seasons; i++) {
         var season = player_seasons[i]["season"]; // Eg. "1"
@@ -315,6 +294,7 @@ function searchPlayerHistory(param=false){
 
             // Generate URL for database
             var row_info_name_param = row_info_name.replace(/ /g, "%20")
+            var row_class = "player-past-standings"
             var row_info_url_name = `<a class="${row_class}" href="{{site.baseurl}}/player_database?player=${row_info_name_param}">${row_info_name}</a>`;
 
             var if_champion = "";
@@ -574,7 +554,7 @@ function autocomplete(inp, arr) {
   });
 }
 
-/*An array containing all the country names in the world:*/
+/*An array containing all the player names*/
 var players = [];
 var players_and_seasons = {{ site.data.player_and_seasons_played | jsonify }};
 for (var player in players_and_seasons) {
@@ -586,7 +566,6 @@ for (var player in current_season) {
     players.push(current_season[player]["name"]);
   }
 }
-
 var players=players.filter((a, b) => players.indexOf(a) === b)
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/

@@ -5,50 +5,11 @@ layout: default
 <div class="container-centered">
 
   <h3>Past Standings</h3>
-  <p>This page contains links to the pages of past season results.</p>
+  <p>This page contains links to the pages of past season results. <br> Click <a href="{{site.baseurl}}/current_standings}}"">here</a> for current season standings.</p>
   <div class="grid-container">
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season1" class="past-standings">Season 1</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season2" class="past-standings">Season 2</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season3" class="past-standings">Season 3</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season4" class="past-standings">Season 4</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season5" class="past-standings">Season 5</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season6" class="past-standings">Season 6</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season7" class="past-standings">Season 7</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season8" class="past-standings">Season 8</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season9" class="past-standings">Season 9</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season10" class="past-standings">Season 10</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season11" class="past-standings">Season 11</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season12" class="past-standings">Season 12</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season13" class="past-standings">Season 13</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season14" class="past-standings">Season 14</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season15" class="past-standings">Season 15</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season16" class="past-standings">Season 16</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season17" class="past-standings">Season 17</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season18" class="past-standings">Season 18</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season19" class="past-standings">Season 19</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season20" class="past-standings">Season 20</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season21" class="past-standings">Season 21</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season22" class="past-standings">Season 22</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season23" class="past-standings">Season 23</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season24" class="past-standings">Season 24</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season25" class="past-standings">Season 25</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season26" class="past-standings">Season 26</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season27" class="past-standings">Season 27</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season28" class="past-standings">Season 28</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season29" class="past-standings">Season 29</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season30" class="past-standings">Season 30</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season31" class="past-standings">Season 31</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season32" class="past-standings">Season 32</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season33" class="past-standings">Season 33</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season34" class="past-standings">Season 34</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season35" class="past-standings">Season 35</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season36" class="past-standings">Season 36</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season37" class="past-standings">Season 37</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season38" class="past-standings">Season 38</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season39" class="past-standings">Season 39</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season40" class="past-standings">Season 40</a></div>
-    <div class="grid-item"><a href="{{site.baseurl}}/past_standings/season41" class="past-standings">Season 41</a></div>
+    {% assign seasons = site.data.season.number | minus: 1 %}
+    {% for season in (1..seasons) %}
+    <div class="grid-item"><a href="{{ site.baseurl }}/past_standings/season{{ season }}" class="past-standings">Season {{ season }}</a></div>
+    {% endfor %}
     </div>
-
   </div>
-

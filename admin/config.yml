@@ -35,18 +35,6 @@ collections:
       - {label: "Post Layout", name: "layout", widget: "hidden", default: "simple_post"}
       - {label: "Categories", name: "categories", widget: "hidden", default: "signups"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "changelog" # Used in routes, e.g., /admin/collections/blog
-    label: "Rules Changelog" # Used in the UI
-    folder: "_posts/rules-changelog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-Changelog" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", hint: "Replace with the correct date. Example: 2020-01-09 Changelog", name: "title", widget: "string", default: "YYYY-MM-DD Changelog"}
-      - {label: "Publish Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
-      - {label: "Author",  hint: "Example: truffles", name: "author", widget: "string"}
-      - {label: "Post Layout", name: "layout", widget: "hidden", default: "simple_post"}
-      - {label: "Categories", name: "categories", widget: "hidden", default: "changelog"}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "rules_and_faq"
     label: "Rules and FAQ"
     files:
@@ -70,6 +58,31 @@ collections:
           - {label: "Updated Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
           - {label: "Categories", name: "categories", widget: "hidden"}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "changelog" # Used in routes, e.g., /admin/collections/blog
+    label: "Rules Changelog" # Used in the UI
+    folder: "_posts/rules-changelog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-Changelog" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", hint: "Replace with the correct date. Example: 2020-01-09 Changelog", name: "title", widget: "string", default: "YYYY-MM-DD Changelog"}
+      - {label: "Publish Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
+      - {label: "Author",  hint: "Example: truffles", name: "author", widget: "string"}
+      - {label: "Post Layout", name: "layout", widget: "hidden", default: "simple_post"}
+      - {label: "Categories", name: "categories", widget: "hidden", default: "changelog"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "townhall" # Used in routes, e.g., /admin/collections/blog
+    label: "Townhall" # Used in the UI
+    folder: "_posts/townhall" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", hint: "Replace with the correct date. Example: 2020-01-09 Changelog", name: "title", widget: "string", default: "YYYY-MM-DD Changelog"}
+      - {label: "Publish Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
+      - {label: "Author",  hint: "Example: truffles", name: "author", widget: "string"}
+      - {label: "Post Layout", name: "layout", widget: "hidden", default: "townhall"}
+      - {label: "Categories", name: "categories", widget: "hidden"}
+      - {label: "Tags", name: "tags", hint: "Use tags to indicate topics (eg. scheduling, superpromotions). This allows townhalls to be filtered. Comma separated.", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "league_resources"
     label: "League Resources"
     files:

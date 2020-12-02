@@ -7,7 +7,7 @@ title: Dominion League Moderators
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="moderator-heading">Dominion League Moderator Team</h2>
-                    <h3 class="moderator-subheading text-muted">Season 41</h3>
+                    <h3 class="moderator-subheading text-muted">Season 42</h3>
                 </div>
             </div>
             <div class="row mods-centered">
@@ -16,7 +16,9 @@ title: Dominion League Moderators
                     <div class="team-member">
                         <img src="img/moderators/{{ mod.image }}.png" class="img-mod img-responsive img-circle" alt="">
                         <h4>{{ mod.name }}</h4>
-                        <p class="text-muted">@{{ mod.discord }}</p>
+                        {% if mod.chair %}
+                        <p class="text-muted"><b>{{ mod.chair }} Chair</b></p>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
@@ -30,14 +32,32 @@ title: Dominion League Moderators
                     Visit our <a href="{{site.baseurl}}/contact.html">contact page</a> for ways to contact the moderators.
                 </div>
             </div>
-            <!--
-            <div class="section">
-              <h5> Season 40 Division Moderators </h5>
-              {% for post in site.categories.moderators %}
-                <p>
-                  {{ post.content }}
-                </p>
-              {% endfor %}
+
+            <div class="spacing-40"></div>
+
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h4> Previous Moderators </h4>
+                Below is a list of all previous League moderators. We thank them for their dedication and contribution in helping make the Dominion League what it is today!
+                <div class="spacing"></div>
+                  <p>
+                    Apostolosoruler,
+                    Burning Skull,
+                    gloures,
+                    assemble me,
+                    drsteelhammer,
+                    LaLight,
+                    Seprix,
+                    Anders,
+                    GreyEK,
+                    irrationalE,
+                    Stef,
+                    AdamH,
+                    A Drowned Kernel,
+                    mpsprs,
+                    Deadlock39,
+                    funkdoc
+                  </p>
+                </div>
             </div>
-            -->
     </section>

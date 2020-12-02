@@ -57,9 +57,17 @@ After each playing session, one of the players should submit the result of that 
 
 During the season, the standings for each group will be automatically updated as players complete matches. The players in each group will be ranked based on the average number of points they have received in each match.
 
-In the case of a tie within a division, the player with the higher total number of points from the matches between the tied players wins. If there is still a tie:
-* If the tie is between two players and affects promotions, demotions, or entry into the Championship Match, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
-* If the tie is between two players and does not affect promotions, demotions, or entry into the Championship Match, the player with the higher sum of the number of points received in each match multiplied by the total score of the opponent from that match wins.
+If there is a tie within a division, apply these steps:
+1. Head-to-head
+* Compare the total wins earned by each player from the matches involving only the tied players.
+* If one player has more wins than each other player, they win the tie.
+* If all players have the same number of wins, move to step 2.
+* Otherwise, repeat this step 1 with just the players who tied for most wins.
+2. Promotion/demotion implications
+* If the tie affects promotions, demotions, or entry into the Championship Match, move to step 3.
+* Otherwise, all players share the rank of the best tied place.
+3. Tiebreaker match
+* If the tie is between 2 players, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
 * If the tie is between three or more players, the moderators will randomly break the tie.
 
 At the end of the season, players may earn a spot in a different tier by promoting to the next higher tier or demoting to the next lower tier, based on their place in their division.
@@ -69,7 +77,7 @@ At the end of the season, players may earn a spot in a different tier by promoti
 * In any tier, players who finish in sixth or seventh place in a seven-player division, or fifth or sixth place in any other division, demote unless they are in the bottom tier, in which case they will stay in that tier.
 * Players in the practice tier do not promote or demote automatically. Instead, these players are placed as new players in the next season.
 
-Additionally, players may be re-placed using the rules for placing new players. This allows returning players to promote across multiple tiers, known as superpromotions, if a player can improve their rating significantly across a season. Players who would be superpromoted into tiers A, B, C, or D are instead placed into tier E.
+Additionally, players who finish in first place, or tied for first place, may be re-placed using the rules for placing new players. This allows returning players to promote across multiple tiers, known as superpromotions, if a player can improve their rating significantly across a season. Players who would be superpromoted into tiers A, B, C, or D are instead placed into tier E.
 
 In addition, the top two finishers in the A1 division will play a second 6-game match to determine the Champion for the Dominion League for that season. For the purposes of determining the Champion (and only those purposes), the results of this match will be added to the results of the season, including updates to tiebreakers. The match date and time should be determined by the two players well in advance to allow for the moderator team to find a commentator team. Even if the outcome of the match is settled before the sixth game, all six should be played out for the purpose of spectator entertainment. In the event of a tie, the players play one final game to decide the winner. If that final game results in a tie, the player who went second wins.
 
@@ -83,10 +91,10 @@ At the end of each season, players who want to return for the following season m
 
 1. Players returning to the League after playing in one of the past 6 seasons are placed into the tiers they would have most recently returned to, starting with the players that played most recently and with ties broken by seeding. For purposes of this priority, divisions may have up to 7 players each.
 2. Players returning from before the past 6 seasons, or joining for the first time with 30 or more rated 2-player games, are placed into tiers based on their Dominion Online level. For particularly highly-rated players, divisions may have up to 7 players each. Level thresholds that would trigger this will be published in the previous season’s Newsletter.
-3. Players who finished in second place with a high score in the previous season are offered a free promotion up to the next higher tier.
-4. Players who finished in fifth place with a high score in the previous season are offered a free promotion to not demote to the next lower tier.
+3. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) second place in the tier below with a high score in the previous season are offered a free promotion.
+4. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
 
-When multiple players are offered free promotions (as described above) to a tier with not enough open spots for all of them, that tier determines how players are chosen: For tiers A, B, and C, the moderators arrange play-in matches between those players. For all other tiers, the moderators choose the players at their discretion, taking into account time zones.
+When multiple players would be offered free promotions (as described above) to a tier with not enough open spots for all of them, that tier determines how players are chosen: For tiers A, B, C, D, and E the moderators arrange play-in matches between those players. For all other tiers, the moderators choose the players at their discretion, taking into account time zones.
 
 During a season, the moderators may, at their discretion, fill new open spots from a waiting list.
 
