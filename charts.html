@@ -315,11 +315,11 @@ title: Visual History
 				}
 				
 				//find needed tiers
+				var minTier = tiers.sort()[tiers.length - 1]
 				if (allTiers) {
 					tiers = ["A","B","C","D","E","F","G","H","I","J","P"];
 				} else {
 					let potTiers = ["A","B","C","D","E","F","G","H","I","J","P"];
-					let minTier = tiers.sort()[tiers.length - 1]
 					let tempTiers = [];
 					for (let i = 0; i < potTiers.length; i++) {
 						if (potTiers[i] <= minTier) {tempTiers.push(potTiers[i]);} else {break;}
@@ -368,7 +368,10 @@ title: Visual History
 				
 				//duplicate player history for line chart
 				lHist = JSON.parse(JSON.stringify(pHist));
-				for (let i=0; i<lHist.length; i++) {
+				if (minTier == "P") {
+					lHist.splice(0,1);
+				}
+				for (let i=lHist.length-1; i>=0; i--) {
 					lHist[i].chart = "line";
 				}
 				//make row for lines if played last two seasons
@@ -614,7 +617,7 @@ title: Visual History
 	function makePowerPlot() {
 		var widthOffset = powerPlotZoom ? 0.1 : 0.61;
 	
-		var colors = ['#019268','#E4FB04','#9D132D','#3DBD78','#000000','#A3C65F','#912121','#000000','#11B3C6','#FCF038','#1CC24B','#7C6FC5','#5211B3','#3910DC','#1C5D5D','#593521','#697217','#AC04C0','#000000','#820683','#9F581F','#D60B5D','#66521B','#A33D2F','#DD5C54','#17B277','#C65FD3','#000000','#46E5A3','#DE2622','#0E136E','#BC1FC7','#642146','#DA538A','#AEA501','#BF559F','#6798C9','#78C160','#2A7024','#3D87D2','#FE5313','#0F6419','#911CFD','#BB792D','#50DB69','#295E6D','#BC9FFC','#E61AF1','#6A1192','#60CCCA','#284F8F','#6EA822','#000000','#2C9429','#00FFFF','#4A900F'];
+		var colors = ['#A931A0','#5BB85D','#15784B','#844E0D','#000000','#010AAE','#2BD9C4','#D702D3','#A8326A','#B76720','#EB248E','#B68C57','#4B43A0','#674A20','#918A1B','#0F9FAF','#377E3B','#0474D1','#000000','#24E93B','#01BE56','#0DFD99','#4E7F02','#432C69','#C070BA','#C8D36A','#C7D301','#000000','#2FD697','#DE2226','#3B146F','#FFF82D','#5BADE1','#E6031A','#B9006C','#48989F','#7C1743','#2D6546','#4E56DE','#93BA5A','#6ABD22','#0F6419','#911CFD','#86038B','#D35303','#58295E','#BC9FFC','#602A31','#467817','#6F1615','#284F8F','#684396','#000000','#470185','#00FFFF','#5641FD'];
 		
 		const powerSpec = {
 			"title": "A Division History",
