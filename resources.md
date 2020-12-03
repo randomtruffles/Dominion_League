@@ -157,10 +157,11 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
+* **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Royal Carriage**:
 
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
-  * **Various cards/landscapes**: If you play a card multiple times, and it doesn't leave play at least once but does leave play a later time, you may be able to call a Royal Carriage on it.
+  * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage on it.
 * **Scepter**: See **Crown** above.
 * **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you wanted to exchange for a Warrior.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
@@ -174,6 +175,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Invest**: See **Invest** above.
   * **Possession**: See **Possession** above.
 * **Villa**: See **Cavalry** above.
+* **Way of the Chameleon**: See **Priest** above.
 * **Way of the Mouse**
 
   * **Cargo Ship**: If Way of the Mouse sets aside Cargo Ship, and you play multiple differently named cards using Way of the Mouse, then when you gain a card you cannot choose which played card to set aside the gained card on.
