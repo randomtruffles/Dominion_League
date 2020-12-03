@@ -80,6 +80,10 @@ The cost in $ of a card can't go below $0. The cost in Potion of a card can't go
 
 New printings of Treasure cards that do special things when played will no longer say "when you play this", and will give +$ instead of saying they are "worth" an amount of $.
 
+##### "While this is in play" abilities
+
+New printings of cards with "while this is in play" abilities that only affect the card's player (such as Hoard's) now say "while you have this in play". Abilities that affect all players (such as Highway's) are unchanged.
+
 #### Previous errata
 
 These errata are included in the rulebooks linked above, but may be useful if you are only familiar with older copies of the rulebooks and cards.
