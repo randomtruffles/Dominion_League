@@ -40,6 +40,7 @@ title: Dominion League Current Season Standings
     }
     var iframe = current_season_iframes[division].replace("standings-sheets", "single-iframe");
     if (iframe) {
+      window.scrollTo(0,document.body.scrollHeight);
       var divContainer = document.getElementById("single-division");
       var current_season_iframe_div = document.createElement("div");
       current_season_iframe_div.id = "current-season-content";
@@ -68,9 +69,9 @@ title: Dominion League Current Season Standings
       currIdx += 1;
       currentTier = tierNames[currIdx]
       divisionsLeft = tierSizes[currIdx];
-    } 
+    }
     divisionsLeft -= 1;
- 
+
     var iframeDiv = document.createElement("div");
     var classes = ['current-standings', 'filterDiv', `div${currentTier}`];
     for (var c=0; c<classes.length; c++){

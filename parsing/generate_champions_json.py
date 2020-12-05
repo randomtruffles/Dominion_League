@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 import json
 
-current_season = 42
+current_season = 43
 # Open file containing all (pretty) league history
 with open('../_data/champions.json') as file:
     champions = json.load(file)["seasons"]
