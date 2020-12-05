@@ -3,8 +3,8 @@ import json
 
 hall_of_fame = ""
 padding = 0
-current_season = 41
-ongoing = True # is the season currently in progress?
+current_season = 42
+ongoing = False # is the season currently in progress?
 
 # Helper functions
 def pad(text, padding):
@@ -668,6 +668,8 @@ for i in range(len(hwp)):
     p_add()
 
     tier = chr(ord("A")+i)
+    if (tier == "K"):
+        tier = "P"
     tier_wp = hwp[tier][0]
     tier_wp_players = hwp[tier][1]
 

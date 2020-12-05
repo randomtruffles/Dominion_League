@@ -808,6 +808,7 @@ p.champion-information {
 @media (max-width: 800px) {
   .current-standings iframe {
     width: 95%;
+    height: 281px;
   }
 }
 
