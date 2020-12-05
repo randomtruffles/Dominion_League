@@ -11,11 +11,11 @@ categories: signups
 You will need the following in order to sign up:
 
 <div class="instructions-div" markdown="1">
-1. An account on the \[Dominion Online](https://dominion.games) client.
+1. An account on the [Dominion Online](https://dominion.games) client.
 - To be placed in the League's tier system, you must play 30 ranked two-player games before Thursday, January 14. If you do not reach 30 games, you will be placed in the Practice Tier, where all games will be rated by default. This will guarantee that you have the appropriate number of rated games to be accurately placed in the following season.
-2. An account on the \[Dominion Discord](https://discord.gg/vMmmMBu).
+2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu).
 - All League communications will take place by default over Discord.
-3. \*(Optional)\* An account on the \[Dominion Strategy Forum](http://forum.dominionstrategy.com/index.php).
+3. *(Optional)* An account on the [Dominion Strategy Forum](http://forum.dominionstrategy.com/index.php).
 - This gives the moderators a second means of contacting you should you become unresponsive on Discord.
 </div>
 
