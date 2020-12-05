@@ -3,8 +3,7 @@ title: Season 42 - End of Season Deadlines
 date: 2020-11-09
 author: Rozyroz
 layout: post
-categories:
-  - pinned
+categories: null
 ---
 Season 42 officially ends on Sunday, November 22. To account for the westernmost timezones, **the deadline for reporting matches is Monday, November 23, at 15:00 UTC.**
 If you need extra time to finish, **you must contact your group moderator** to request an extension of up to one week. **All late finish matches must be reported by Monday, November 30, at 15:00 UTC.**
