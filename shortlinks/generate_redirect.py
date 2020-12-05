@@ -4,8 +4,8 @@ import json
 """
 Season information
 """
-tier_counts = [1, 2, 4, 4, 8, 14, 13, 26, 28, 27]
-current_season="42"
+tier_counts = [1, 2, 4, 4, 8, 14, 13, 25, 25, 26]
+current_season="43"
 for idx, division in enumerate(tier_counts):
     tier = chr(ord("a") + idx)
     for div in range(division):
@@ -19,7 +19,7 @@ owner: truffles
         with open(f"s{current_season}/{tier}{div+1}.md", "w") as filetowrite:
             filetowrite.write(content)
 
-practier_tier_counts = 3;
+practier_tier_counts = 4;
 # practice tier
 for division in range(practier_tier_counts):
     tier = "p"
