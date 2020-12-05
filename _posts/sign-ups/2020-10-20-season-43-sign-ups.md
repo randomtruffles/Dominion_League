@@ -1,7 +1,7 @@
 ---
 title: Season 43 - Sign-ups
 subtitle: Sign-ups Open
-date: 2020-10-20
+date: 2020-12-05
 author: truffles
 layout: simple_post
 categories: signups
