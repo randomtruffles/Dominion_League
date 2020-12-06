@@ -234,4 +234,15 @@
 {"season":"42", "tier":"H", "divisions":"26", "players":"144", "lfrac":"0.196990424076607"},
 {"season":"42", "tier":"I", "divisions":"28", "players":"159", "lfrac":"0.217510259917921"},
 {"season":"42", "tier":"J", "divisions":"27", "players":"146", "lfrac":"0.199726402188782"},
-{"season":"42", "tier":"P", "divisions":"3", "players":"16", "lfrac":"0.0218878248974008"}]
+{"season":"42", "tier":"P", "divisions":"3", "players":"16", "lfrac":"0.0218878248974008"},
+{"season":"43", "tier":"A", "divisions":"1", "players":"7", "lfrac":"0.00933333333333333"},
+{"season":"43", "tier":"B", "divisions":"2", "players":"12", "lfrac":"0.016"},
+{"season":"43", "tier":"C", "divisions":"4", "players":"24", "lfrac":"0.032"},
+{"season":"43", "tier":"D", "divisions":"4", "players":"24", "lfrac":"0.032"},
+{"season":"43", "tier":"E", "divisions":"8", "players":"48", "lfrac":"0.064"},
+{"season":"43", "tier":"F", "divisions":"14", "players":"84", "lfrac":"0.112"},
+{"season":"43", "tier":"G", "divisions":"13", "players":"78", "lfrac":"0.104"},
+{"season":"43", "tier":"H", "divisions":"25", "players":"149", "lfrac":"0.198666666666667"},
+{"season":"43", "tier":"I", "divisions":"25", "players":"149", "lfrac":"0.198666666666667"},
+{"season":"43", "tier":"J", "divisions":"26", "players":"153", "lfrac":"0.204"},
+{"season":"43", "tier":"P", "divisions":"4", "players":"22", "lfrac":"0.0293333333333333"}]
