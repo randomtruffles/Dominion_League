@@ -7,7 +7,9 @@ layout: post
 categories:
   - newsletters
 ---
-Season 43 has now started! If you're playing in the season, say hello and make sure to check in, where now also you'll be asked to give a description of when you'll be available to play your matches.
+Season 43 has now started! If you're playing in the season, say hello and make sure to check in, where now also you'll be asked to give a description of when you'll be available to play your matches. Here's what the League looks like overall this season:
+
+![](/img/uploads/season-43-promotion-demotion-chart.png "Season 43 Division Chart")
 
 While the exact number of players will continue to fluctuate with late signups over the next week, we can also look at the number of divisions for a good sense of the size of the League. Here's what our pandemic-fueled growth has looked like:
 
