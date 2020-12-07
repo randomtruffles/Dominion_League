@@ -25,7 +25,7 @@ With the vaccine rollout on the horizon, many are turning their eyes to the futu
 
 1. We are removing the practice tier in Season 44. All players will be placed into the standard A-J tiers.
 2. However, **all new players will now need to play a minimum of 10 rated games before joining**. This should ensure a minimum level of commitment to and familiarity with the game, as well as providing us with some calibration of your ability.
-3. As [previously announced](https://dominionleague.org/2020/11/26/season-43-newsletter-part-1.html), players who sign up for the League next season can now offer their e-mail address as a backup means of communication. We will only e-mail you, from [the League mod e-mail account](dominionleaguemoderator@gmail.com), if you do not respond to messages on Discord.
+3. As [previously announced](https://dominionleague.org/2020/11/26/season-43-newsletter-part-1.html), players who sign up for the League next season can now offer their e-mail address as a backup means of communication. We will only e-mail you, from [the League mod e-mail account](mailto:dominionleaguemoderator@gmail.com), if you do not respond to messages on Discord.
 
 In part due to the holidays and the lack of urgent topics, we will not be holding a town hall this season. Feel free to continue to give us actionable feedback in the Returning Form!
 
