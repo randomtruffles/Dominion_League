@@ -6,7 +6,7 @@ author: truffles
 layout: simple_post
 categories: signups
 ---
-**Season 44** will run from Monday, February 1 until Sunday, March 14 and you can sign up until **Monday, January 25 at 15:00 UTC** by filling out [Google form](#sign-up-using-this-google-form) below.
+**Season 44** will run from Monday, February 1, until Sunday, March 14, and you can sign up until **Monday, January 25, at 15:00 UTC** by filling out [Google form](#sign-up-using-this-google-form) below.
 
 You will need the following in order to sign up:
 
@@ -16,7 +16,7 @@ You will need the following in order to sign up:
 2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu).
 - All League communications will take place by default over Discord.
 3. *(Optional)* An email address.
-- This gives the moderators a second means of contacting you should you become unresponsive on Discord.
+- This gives the moderators a second means of contacting you should you become unresponsive on Discord. *The Dominion League is committed to keeping your email address confidential. We do not sell or provide your personal information to any third party individual.*
 </div>
 
 After you fill out the form, please check back in about 5 minutes for the [table of sign-ups](#sign-ups-and-counts) to update with your sign-up. If any of the entries are highlighted in red, this indicates that we have detected a problem with that entry. Please remedy this right away, or otherwise reach out to the moderators on Discord or by using the [Dominion League Hotline](http://dominionleague.org/hotline).
