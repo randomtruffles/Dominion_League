@@ -12,7 +12,7 @@ You will need the following in order to sign up:
 
 <div class="instructions-div" markdown="1">
 1. A [Dominion Online](https://dominion.games) account with 10 or more rated 2-player games.
-- These rated games need to be played by Thursday, March 11. If you do not reach 10 rated games by the deadline, your sign up will be removed.
+- These rated games need to be played by Thursday, January 28. If you do not reach 10 rated games by the deadline, your sign up will be removed.
 2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu).
 - All League communications will take place by default over Discord.
 3. *(Optional)* An email address.
