@@ -6,7 +6,7 @@ author: truffles
 layout: simple_post
 categories: signups
 ---
-**Season 44** will run from Monday, February 1 until Sunday, March 14 and you can sign up until **Monday, January 25 at 15:00 UTC** by filling out [Google form](#sign-up-using-this-google-form) below.
+**Season 44** will run from Monday, February 1, until Sunday, March 14, and you can sign up until **Monday, January 25, at 15:00 UTC** by filling out [Google form](#sign-up-using-this-google-form) below.
 
 You will need the following in order to sign up:
 
