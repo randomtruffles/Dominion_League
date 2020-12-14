@@ -6,7 +6,7 @@ author: truffles
 layout: simple_post
 categories: signups
 ---
-**Season 43** will run from Monday, December 7 until Sunday, January 17 and you can ~~sign up until Monday, November 30 at 15:00 UTC~~. **Sign-ups are officially closed,** , but you can still sign up below to join the waiting list until **Monday, December 14 at 15:00 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each. Fill out the [Google form](#sign-up-using-this-google-form) below.
+**Season 43** will run from Monday, December 7 until Sunday, January 17 and you can ~~sign up until Monday, November 30 at 15:00 UTC~~. **Signups are now officially closed**. If you would like to sign up for next season, you can do so [here](https://dominionleague.org/sign-ups). 
 
 You will need the following in order to sign up:
 
