@@ -21,4 +21,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run script
-        run: python3 ./scripts/google-sheets.py && git add . && git commit -m "AutoCommit: updating sheets" && git push
+        run: |
+          python3 ./scripts/google-sheets.py
+          git add .
+          git commit -m "AutoCommit: updating sheets"
+          git push
