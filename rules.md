@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2020-10-10
+date: 2020-12-13
 categories: pinned rules
 ---
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
@@ -27,13 +27,13 @@ The League also has the following general rules for games by default:
 
 * Games should be played on Dominion Online.
 * There is no official timer in Dominion Online, and games should not use a timer.
-* During a game, players may not consult resources outside those maintained by the League, such as strategy articles, or otherwise attempt to gain a competitive advantage. The League hosts a list of Dominion rules and information that may be consulted privately or publicly at anytime.
+* During games, players may not attempt to gain a competitive advantage by consulting resources other than those maintained by League. For example, getting advice from Dominion Strategy articles or from spectators is not allowed. The allowed resources maintained by the League are available on the <a href="https://dominionleague.org/resources">Dominion League Resources page</a> and may be consulted privately or publicly at anytime.
 
 For games played online, players should set the following Advanced Options by default:
 
 * Spectators should be allowed.
 * “Players can see spectator chat” should be off.
-* For games without expansions, Familiar cards should not be respected.
+* Familiar cards should not be respected.
 * For games using expansions, the disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be. For games without expansions, no cardlists should be respected.
 * The game should not use extra Menagerie cards.
 * The game should be unrated. For Seasons 42 and 43, games in the practice tier must be rated.
@@ -83,7 +83,12 @@ In addition, the top two finishers in the A1 division will play a second 6-game 
 
 #### IV. Joining and Leaving
 
-To join the League, you must join the Dominion (Card Game) Discord server: <https://discord.gg/vMmmMBu>. Once you have joined the Discord Server you may sign up to join the League by filling out the Google form embedded in [Sign up](https://dominionleague.org/sign-ups.html). You may only participate in the League once per season. You may switch your Dominion Online or Discord account at any time by letting your moderator know, but you may not join the League additional times using other accounts. You do not need to purchase a subscription to Dominion Online, and Dominion Online subscriptions have no bearing on players’ tiers, divisions, or seeding.
+To join the Dominion League, new players must complete the following steps:
+1. Have a <a href="http://dominion.games">Dominion Online</a> account with 10 or more rated 2-player games.
+2. Join the <a href="https://discord.gg/vMmmMBu">Dominion (Card Game)</a> Discord server.
+3. Fill out the <a href="http://dominionleague.org/sign-ups">sign-up form</a> for the upcoming season.
+
+You may only participate in the League once per season. You may switch your Dominion Online or Discord account at any time by letting your moderator know, but you may not join the League additional times using other accounts. You do not need to purchase a subscription to Dominion Online, and Dominion Online subscriptions have no bearing on players’ tiers, divisions, or seeding.
 
 For Seasons 42 and 43, players who join and have not played in one of the past 6 seasons and have played 29 or fewer rated 2-player games shall be placed into the practice tier.
 
@@ -126,9 +131,8 @@ If players are unable to finish their matches by the deadline, they must contact
 
 Players dropping out during the season have a significant negative impact on their group. Unfortunately, some must drop out, or become inactive and have to be removed by the moderators. It is difficult to deal with matches that have been played by a player who has dropped because the matches they played and failed to play can have a significant impact on the group standings. The following rules are used for dropped players:
 
-* If the removed player played no games, they are simply removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
-* If the removed player played fewer than 3 complete matches (each match being 6 games), the games they played are voided, and the remaining players play one fewer match.
-* If the removed player played 3 or more complete matches (each match being 6 games), the games they played are retained and the games they did not play are simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play.
+* If the removed player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
+* If the removed player played any games, their match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play, and then scaling these results by the percentage of their games they actually played. Additionally, if scaling these simulations to 0% and 100% would yield different promoters or demoters, an adjustment match is needed to better decide the standings between the affected players. In an adjustment match, the players play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins.
 
 **Players who drop mid-season will be banned from participation in the next 2 League seasons.** Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to. If a player drops out within the first week of the season or is in good standing with the League (i.e. has played in prior seasons without drops or late finishes), the ban period and demotion penalty may be reduced or eliminated at the moderators’ discretion.
 
