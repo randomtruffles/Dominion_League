@@ -40,6 +40,7 @@ with open('../_data/champions.json') as file:
     champions = json.load(file)["seasons"]
 # Open file contain standing information
 with open('../_data/raw_standings.csv', 'r') as read_obj:
+    global seasons
     # pass the file object to reader() to get the reader object
     csv_reader = reader(read_obj)
     # Iterate over each row in the csv using reader object
@@ -57,9 +58,16 @@ with open('../_data/raw_standings.csv', 'r') as read_obj:
         player_info = {}
         player_info["name"] = player
         player_info["rank"] = position
-        player_info["pct"] = win_pct
+        player_info["pct"] = win_pct #formatted somehow
+        #player_info["color"] = assign_color(win_pct)
 
         if season in seasons:
+            if division not in seasons[season]:
+                seasons[season][division] = {}
+                seasons[season][division]["name"] = division
+                seasons[season][division]["tier"] = tier
+                seasons[season][division]["member"] = {}
+                seasons[season][division]["results"] = {}
             seasons[season][division]["members"][player]=player_info
         else:
             seasons[season] = {}
@@ -68,4 +76,34 @@ with open('../_data/raw_standings.csv', 'r') as read_obj:
             seasons[season][division]["name"] = division
             seasons[season][division]["tier"] = tier
             seasons[season][division]["member"] = {}
-            seasons[season][division]["results"] = {}
+            seasons[season][division]["results"] = []
+
+with open('../_data/raw_matches.csv', 'r') as read_obj:
+    global seasons
+    # pass the file object to reader() to get the reader object
+    csv_reader = reader(read_obj)
+    # Iterate over each row in the csv using reader object
+    for row in csv_reader:
+        #score, season, players, score, p1, p2, p1 wins, p2 wins, tier
+        season = row[1]
+        p1 = row[4]
+        p2 = row[5]
+        p1wins = row[6]
+        p2wins = row[7]
+        division = row[8]
+
+        if season == "Season":
+            pass # headers
+
+        results = {}
+        results["player1"] = p1
+        results["player2"] = p2
+        results["wins1"] = p1wins
+        results["wins2"] = p2wins
+
+        seasons[season][division]["results"] = seasons[season][division]["results"].append(results)
+
+for season in seasons:
+    for division in season:
+        if division == "champion":
+            pass

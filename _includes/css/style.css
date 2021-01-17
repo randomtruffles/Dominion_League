@@ -201,6 +201,15 @@ iframe {
   margin: 15px
 }
 
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  align: center;
+  text-align: center;
+  width: 50%
+}
+
 /* Pages */
 .collapsible {
   background-color: #eee;
@@ -1477,6 +1486,14 @@ ul.social-buttons li a {
 /* Player database */
 .input-player {
   width: 350px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Text-input */
+.input {
+  width: 400px;
   height: 40px;
   padding: 10px;
   margin-bottom: 10px;
