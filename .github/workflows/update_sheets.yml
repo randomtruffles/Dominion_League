@@ -1,0 +1,24 @@
+name: PullSheets
+
+# Controls when the action will run. 
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "build"
+  update_sheets:
+    
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run script
+        run: python3 ./scripts/google-sheets.py && git add . && git commit -m "AutoCommit: updating sheets" && git push
