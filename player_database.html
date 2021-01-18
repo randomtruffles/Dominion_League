@@ -182,7 +182,7 @@ function searchPlayerHistory(param=false){
           // Get Table Information
           var division_data = current_season_standings[division];
 
-          createTable(divContainer, season, division, division_data, player_name);
+          createCurrentSeasonTable(divContainer, season, division, division_data, player_name);
           // ---Check if they have other league history
           if(!players_and_seasons[player_name]) {
             return;
