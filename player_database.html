@@ -254,7 +254,7 @@ function createCurrentSeasonTable(divContainer, season, division, division_data,
   var division_heading = document.createElement("td");
   division_heading.setAttribute('colspan', 5);
   division_heading.classList.add('database-division-header');
-  var season_url = "<a href=\"current_standings?div=" + division + "\">Season " + season + "</a>";
+  var season_url = "<a href=\"current_standings?div=" + division + "\">S" + season + "</a>";
   var matches_button = "<button class=\"database-results-button\">Match Results</button>"
   division_heading.innerHTML = season_url + " " + division+ " Division (ongoing)" + matches_button;
   division_heading.style.backgroundColor = "lightgrey";
@@ -410,7 +410,7 @@ function createTable(divContainer, season, division, division_data, player_name,
   var division_heading = document.createElement("td");
   division_heading.setAttribute('colspan', 5);
   division_heading.classList.add('database-division-header');
-  var season_url = "<a href=\"past_standings/season" + season + "\">Season " + season + "</a>";
+  var season_url = "<a href=\"past_standings/season" + season + "\">S" + season + "</a>";
   var matches_button = "<button class=\"database-results-button\">Match Results</button>"
   division_heading.innerHTML = season_url + " " + division+ " Division" + matches_button;
   division_heading.style.backgroundColor = "lightgrey";
