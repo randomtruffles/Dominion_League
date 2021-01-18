@@ -3,7 +3,7 @@ name: PullSheets
 # Controls when the action will run. 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "* * * * *"
 
   workflow_dispatch:
 
