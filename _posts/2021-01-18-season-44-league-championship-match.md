@@ -1,5 +1,5 @@
 ---
-title: Season 44 - League Championship Match
+title: Season 43 - League Championship Match
 subtitle: Sunday, January 24th at 20:00 UTC
 date: 2021-01-18
 author: alibby1152
