@@ -303,17 +303,6 @@ function createCurrentSeasonTable(divContainer, season, division, division_data,
       var row_class = "player-past-standings"
       var row_info_url_name = `<a class="${row_class}" href="{{site.baseurl}}/player_database?player=${row_info_name_param}">${row_info_name}</a>`;
 
-      var if_champion = "";
-      // figure out if champion
-      if (division == "A1" && champion != "") {
-        if (champion && row_info_name.toLowerCase() == champion) {
-          if (championship_videos[season].length > 0) {
-            if_champion = " <a href=\"" + championship_videos[season][0] + "\">" + champion_sym + "</a>";
-          } else {
-            if_champion = champion_sym;
-          }
-        }
-      }
       if (row_info_name.toLowerCase() == player_name) {
         player.innerHTML = "<b>" + row_info_url_name + "</b>" + if_champion;
       } else {
@@ -345,15 +334,12 @@ function createCurrentSeasonTable(divContainer, season, division, division_data,
   modal_div = document.createElement("div");
   modal_div.classList.add("myModal");
   modal_div.classList.add("modal");
-
   modal = document.createElement("div");
   modal.classList.add("modal-content");
-
   close_button = document.createElement("span");
   close_button.classList.add("close");
   close_button.innerHTML = "&times;";
   modal.appendChild(close_button);
-
   modal_title = document.createElement("h4");
   modal_title.innerHTML = "Season " + season + " " + division + " Match Results";
   modal.appendChild(modal_title);
@@ -384,7 +370,6 @@ function createCurrentSeasonTable(divContainer, season, division, division_data,
   modal_table.appendChild(modal_heading_row);
 
   var results = division_data["results"];
-
   // Get each game result:
   for (let r = 0; r < results.length; r++) {
     var result = results[r];
@@ -408,8 +393,7 @@ function createCurrentSeasonTable(divContainer, season, division, division_data,
 
     modal_table.appendChild(modal_row_data);
   }
-
-
+  
   modal.appendChild(modal_table);
   modal_div.appendChild(modal);
   // Add table to container
