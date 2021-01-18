@@ -238,6 +238,184 @@ function searchPlayerHistory(param=false){
     }
 }
 
+function createCurrentSeasonTable(divContainer, season, division, division_data, player_name){
+  var division_members = division_data["members"];
+  var num_members = Object.keys(division_members).length
+
+  // Create table
+  var table = document.createElement("table");
+  table.classList.add('table-player-database');
+  //table.style.marginBottom = "10px";
+  table.setAttribute('align', 'center');
+  table.setAttribute('border', '2px solid grey');
+
+  // Create division heading
+  var division_row = document.createElement("tr");
+  var division_heading = document.createElement("td");
+  division_heading.setAttribute('colspan', 5);
+  division_heading.classList.add('database-division-header');
+  var season_url = "<a href=\"current_standings?div=" + division + "\">Season " + season + "</a>";
+  var matches_button = "<button class=\"database-results-button\">Match Results</button>"
+  division_heading.innerHTML = season_url + " " + division+ " Division (ongoing)" + matches_button;
+  division_heading.style.backgroundColor = "lightgrey";
+  division_row.appendChild(division_heading);
+  table.appendChild(division_row);
+
+
+  // Create table heading
+  var col = ["Rank", "Player", "W", "L", "Win %"];
+  var col_width = ["10%", "49%", "13%", "13%", "15%"];
+  var h_row = document.createElement("tr");
+  for (let j = 0; j < col.length; j++) {
+      var th = document.createElement("th");
+      th.innerHTML = col[j];
+      th.style.width = col_width[j];
+      h_row.appendChild(th);
+  }
+  h_row.style.backgroundColor = "#e0e0e0";
+  table.appendChild(h_row);
+
+  var sorted_members_by_rank = Object.keys(division_members).map(function(key) {
+      return [key, division_members[key]];
+  });
+  sorted_members_by_rank.sort(function(x, y) {
+      return x[1]["rank"] - y[1]["rank"];
+  });
+
+  // Create table body
+  // ADD COLUMN HEADER TO ROW OF TABLE HEAD.
+  for (var keypair of sorted_members_by_rank) {
+      let key = keypair[0];
+      var row_info = division_members[key];
+
+      var d_row = document.createElement("tr");
+
+      // Add data for each member
+      var rank = document.createElement("td");
+      rank.innerHTML = row_info["rank"];
+      d_row.appendChild(rank);
+
+      var player = document.createElement("td");
+      var row_info_name = row_info["name"];
+
+      // Generate URL for database
+      var row_info_name_param = row_info_name.replace(/ /g, "%20")
+      var row_class = "player-past-standings"
+      var row_info_url_name = `<a class="${row_class}" href="{{site.baseurl}}/player_database?player=${row_info_name_param}">${row_info_name}</a>`;
+
+      var if_champion = "";
+      // figure out if champion
+      if (division == "A1" && champion != "") {
+        if (champion && row_info_name.toLowerCase() == champion) {
+          if (championship_videos[season].length > 0) {
+            if_champion = " <a href=\"" + championship_videos[season][0] + "\">" + champion_sym + "</a>";
+          } else {
+            if_champion = champion_sym;
+          }
+        }
+      }
+      if (row_info_name.toLowerCase() == player_name) {
+        player.innerHTML = "<b>" + row_info_url_name + "</b>" + if_champion;
+      } else {
+        player.innerHTML = row_info_url_name + if_champion;
+      }
+      d_row.appendChild(player);
+
+      var wins = document.createElement("td");
+      wins.innerHTML = row_info["wins"];
+      d_row.appendChild(wins);
+
+      var losses = document.createElement("td");
+      losses.innerHTML = row_info["losses"];
+      d_row.appendChild(losses);
+
+      var pct = document.createElement("td");
+      pct.innerHTML = row_info["pct"];
+      pct.style.backgroundColor = row_info["color"];
+      d_row.appendChild(pct);
+
+      table.appendChild(d_row)
+
+  }
+
+  // Add table to container
+  divContainer.appendChild(table);
+
+  // Generate modal
+  modal_div = document.createElement("div");
+  modal_div.classList.add("myModal");
+  modal_div.classList.add("modal");
+
+  modal = document.createElement("div");
+  modal.classList.add("modal-content");
+
+  close_button = document.createElement("span");
+  close_button.classList.add("close");
+  close_button.innerHTML = "&times;";
+  modal.appendChild(close_button);
+
+  modal_title = document.createElement("h4");
+  modal_title.innerHTML = "Season " + season + " " + division + " Match Results";
+  modal.appendChild(modal_title);
+  if (division == "A1" && champion != "" && championship_videos[season].length > 0) {
+    modal_video = document.createElement("h5");
+    modal_video.innerHTML = "<a href=\"" + championship_videos[season][0] + "\"> Championship Video </a>";
+    modal.appendChild(modal_video);
+  }
+
+  // Create modal table
+  var modal_table = document.createElement("table");
+  modal_table.classList.add("division-modal-table");
+
+  // Create modal heading
+  var modal_heading_row = document.createElement("tr");
+  // Matches column
+  var modal_heading_matches = document.createElement("th");
+  modal_heading_matches.classList.add("cells-division-modal");
+  modal_heading_matches.innerHTML = "Match";
+  modal_heading_matches.style.backgroundColor = "lightgrey";
+  modal_heading_row.appendChild(modal_heading_matches);
+  // Results column
+  var modal_heading_scores = document.createElement("th");
+  modal_heading_scores.classList.add("cells-division-modal");
+  modal_heading_scores.innerHTML = "Score";
+  modal_heading_scores.style.backgroundColor = "lightgrey";
+  modal_heading_row.appendChild(modal_heading_scores);
+  modal_table.appendChild(modal_heading_row);
+
+  var results = division_data["results"];
+
+  // Get each game result:
+  for (let r = 0; r < results.length; r++) {
+    var result = results[r];
+    var player1 = result["player1"];
+    var player2 = result["player2"];
+    var wins1 = result["wins1"];
+    var wins2 = result["wins2"];
+
+    var modal_row_data = document.createElement("tr");
+    modal_row_data.classList.add("rows-results-modal");
+
+    var modal_match_data = document.createElement("td");
+    modal_match_data.classList.add("cells-division-modal");
+    modal_match_data.innerHTML = player1 + " <b>vs.</b> " + player2;
+    modal_row_data.appendChild(modal_match_data);
+
+    var modal_score_data = document.createElement("td");
+    modal_score_data.classList.add("cells-division-modal");
+    modal_score_data.innerHTML = wins1 + " - " + wins2;
+    modal_row_data.appendChild(modal_score_data);
+
+    modal_table.appendChild(modal_row_data);
+  }
+
+
+  modal.appendChild(modal_table);
+  modal_div.appendChild(modal);
+  // Add table to container
+  divContainer.appendChild(modal_div);
+}
+
 function createTable(divContainer, season, division, division_data, player_name, champion=""){
   var champion_sym = " <img src=\"{{site.baseurl}}/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
   var division_members = division_data["members"];
