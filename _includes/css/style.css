@@ -513,6 +513,12 @@ tbody {
   padding: 0 0 0 10px;
 }
 
+@media (max-width: 700px) {
+  .database-division-header {
+    font-size: 15px;
+  }
+}
+
 .division-header {
   font-weight: 700;
 }
