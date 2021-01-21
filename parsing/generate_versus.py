@@ -29,19 +29,22 @@ for season in seasons.keys():
 
             for player in [player1, player2]:
                 opponent = player2 if player == player1 else player1
+                key = player.lower().strip()
+
                 wins = wins1 if player == player1 else wins2
                 losses = wins2 if player == player1 else wins1
-                if player not in versus_dict:
-                    versus_dict[player] = {"opponents":{}, "wins": 0, "losses":0, "count":0}
-                if opponent not in versus_dict[player]["opponents"]:
-                    versus_dict[player]["opponents"][opponent] = {"wins":0, "losses":0, "by_season":{}}
-                    versus_dict[player]["count"] += 1
+                if key not in versus_dict:
+                    versus_dict[key] = {"name": player, "opponents":{}, "wins": 0, "losses":0, "count":0}
+                if opponent not in versus_dict[key]["opponents"]:
 
-                versus_dict[player]["wins"] += wins
-                versus_dict[player]["losses"] += losses
-                versus_dict[player]["opponents"][opponent]["wins"] += wins
-                versus_dict[player]["opponents"][opponent]["losses"] += losses
-                versus_dict[player]["opponents"][opponent]["by_season"][season] = {"wins":wins,"losses":losses}
+                    versus_dict[key]["opponents"][opponent] = {"wins":0, "losses":0, "by_season":{}}
+                    versus_dict[key]["count"] += 1
+
+                versus_dict[key]["wins"] += wins
+                versus_dict[key]["losses"] += losses
+                versus_dict[key]["opponents"][opponent]["wins"] += wins
+                versus_dict[key]["opponents"][opponent]["losses"] += losses
+                versus_dict[key]["opponents"][opponent]["by_season"][season] = {"wins":wins,"losses":losses}
 
 file = "./_data/versus.json"
 with open(file, 'w') as filetowrite:
