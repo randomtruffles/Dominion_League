@@ -6,13 +6,26 @@ title: Dominion League Player Database
   <div id="player-database" class="container-centered">
     <h3>Player Database</h3>
     <h5><a href="{{site.baseurl}}/past_standings">View All Past Season Standings</a></h5>
-    <div id="spacing-for-instructions" class="spacing"> </div>
+    <div id="spacing-for-instructions" class="spacing" style="display: none"> </div>
     <p id="search-instructions" style="display: none"> Search for a player (eg. Mic Qsenoch) and view their current season results (if they are playing) <br> and league history for all seasons they've participated in. </p>
     <div class="spacing"> </div>
-    <div class="autocomplete">
-      <input class="input-player" onfocus="this.value=''" type="text" id="input_player_search" placeholder="Search for player name" />
+    <div class="database-search-wrapper">
+      <div class="database-search-box">
+          <!--<div class="database-search-dropdown">
+              <div id="default-option"  onclick="openDropdown()" class="default-option">Standings <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+              <ul id="search-dropdown">
+                <li class="search-dropdown-selection" onclick="selectDropdown(this)">Standings</li>
+                <li class="search-dropdown-selection" onclick="selectDropdown(this)">Versus</li>
+              </ul>
+          </div> -->
+          <div class="database-search-field">
+            <div class="autocomplete">
+              <input type="text" onfocus="this.value=''" class="input" id="input_player_search" placeholder="Search for player name">
+            </div>
+            <i id="search_player_history_btn" onclick="searchPlayerHistory()" class="fas fa-search"></i>
+          </div>
+        </div>
     </div>
-    <button id="search_player_history_btn" title="search" onclick="searchPlayerHistory()">Search</button>
     <br>
     <br>
     <div id="loading" >
@@ -29,12 +42,21 @@ title: Dominion League Player Database
           <br>
           <br>
       </p>
+    </div>
+    <div id="player-heading" class="database-div">
+    </div>
+    <div class="database-wrapper">
+      <div id="standings" class="database-div">
       </div>
+      <div id="stats" class="database-div" style="display: none">
+      </div>
+      <div id="versus" class="database-div" style="display: none">
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
-
 // Data for tables
 var playersTable = {{ site.data.player_and_seasons_played | jsonify }};
 var friendly_league_history = {{ site.data.friendly_league_history | jsonify }};
@@ -50,6 +72,24 @@ var currentSeasonIframesTable = {{ site.data.current_season_iframes | jsonify }}
 var uniqueOpponents = {{ site.data.players_unique_opponents | jsonify }};
 var ongoing = true;
 
+
+// Get dropdown selection
+function openDropdown() {
+  console.log("opening dropdown");
+  // Get the modal, button and close button
+  var dropdown = document.getElementById('search-dropdown');
+  dropdown.style.display = "block";
+}
+
+function selectDropdown(choice) {
+  var selection = choice.innerHTML;
+  console.log("select dropdown");
+  console.log(selection);
+  var dropdown = document.getElementById('search-dropdown');
+  dropdown.style.display = "none";
+  var defaultOption = document.getElementById('default-option');
+  defaultOption.innerHTML = selection + ` <i class="fa fa-caret-down" aria-hidden="true"></i>`;
+}
 // Get URL parameter
 searchPlayerHistory(true);
 
@@ -83,7 +123,11 @@ function searchPlayerHistory(param=false){
   // *********
   // Load Data
   // *********
-  var dbContainer = document.getElementById("player-database");
+  var databaseDiv = document.getElementById("player-database");
+  var playerDiv = document.getElementById("player-heading");
+  var standingsDiv = document.getElementById("standings");
+  var statsDiv = document.getElementById("stats");
+  var versusDiv = document.getElementById("versus");
   var enteredPlayerName = document.getElementById("input_player_search").value;
   var playerNameKey = enteredPlayerName.toLowerCase().trim();
 
@@ -91,17 +135,17 @@ function searchPlayerHistory(param=false){
   // ****************
   // Helper Functions
   // ****************
-  // ---addToDiv adds elements to the main div container
-  function addToDiv(info, elementType, className="") {
+  // ---addToDiv adds elements to a specificied div
+  function addToDiv(div, info, elementType, className="") {
     var divContent = document.createElement(elementType);
     divContent.innerHTML = info;
     if (className != "") divContent.classList.add(className);
-    dbContainer.appendChild(divContent);
+    div.appendChild(divContent);
     return;
   }
   function customDisplay(headerInfo, bodyInfo) {
-    addToDiv(headerInfo, "h4");
-    addToDiv(bodyInfo, "p");
+    addToDiv(playerDiv, headerInfo, "h4");
+    addToDiv(playerDiv, bodyInfo, "p");
     return;
   }
   function computeStats(playerNameKey) {
@@ -168,30 +212,31 @@ function searchPlayerHistory(param=false){
   // **************
   // ---Player heading
   if (playersTable[playerNameKey]) {
-    addToDiv(`Player: ${playersTable[playerNameKey]["name"]}`, "h4");
+    addToDiv(playerDiv, `Player: ${playersTable[playerNameKey]["name"]}`, "h4");
   } else {
-    addToDiv(`Player: ${currentSeasonPlayers[playerNameKey]["name"]}`, "h4");
+    addToDiv(playerDiv, `Player: ${currentSeasonPlayers[playerNameKey]["name"]}`, "h4");
   }
   // ---League Champion Heading
   if (playerNameKey in champions) {
-    addToDiv(`${(champions[playerNameKey].length).toString()} x League Champion`, "p", "champion-information");
+    addToDiv(playerDiv, `${(champions[playerNameKey].length).toString()} x League Champion`, "p", "champion-information");
   }
   // ---Stats Heading
   if (playersTable[playerNameKey]) {
     var stats = computeStats(playerNameKey);
     for (var stat in stats){
-      addToDiv(`<b>${stat}:</b> ${stats[stat]}`, "p", "stats-p");
+      addToDiv(playerDiv, `<b>${stat}:</b> ${stats[stat]}`, "p", "stats-p");
     }
   }
   // ---Links heading
   var player_chart_link = "<a href=\"" + "{{site.baseurl}}/charts?player="+ playerNameKey.replace(/ /g, "%20") +"\">Player Chart</a> "
   if (playerNameKey in youtubeChannels ) {
-    addToDiv("<a href=\"" + youtubeChannels[playerNameKey]["channel"] +"\">Youtube Channel</a> | " + player_chart_link, "h5");
+    addToDiv(playerDiv, "<a href=\"" + youtubeChannels[playerNameKey]["channel"] +"\">Youtube Channel</a> | " + player_chart_link, "h5");
   } else {
-    addToDiv(player_chart_link, "h5");
+    addToDiv(playerDiv, player_chart_link, "h5");
   }
   // ---Aesthetic Line Break
-  addToDiv("", "hr", "hr-database");
+  addToDiv(playerDiv, "", "hr", "hr-database");
+
 
   // ************************
   // Current Season Standings
@@ -200,7 +245,7 @@ function searchPlayerHistory(param=false){
     var season = currentSeasonPlayers["seasons"];
     var division = currentSeasonPlayers[playerNameKey]["division"];
     var divisionData = currentSeasonStandings[division];
-    createCurrentSeasonTable(dbContainer, season, division, divisionData, playerNameKey);
+    createCurrentSeasonTable(standingsDiv, season, division, divisionData, playerNameKey);
     // ---Check if they have other league history
     if(!playersTable[playerNameKey]) {
       return;
@@ -219,7 +264,7 @@ function searchPlayerHistory(param=false){
     // Get Table Information
     var divisionData = leagueHistory[season][division];
     var champion = leagueHistory[season]["champion"];
-    createTable(dbContainer, season, division, divisionData, playerNameKey, champion);
+    createTable(standingsDiv, season, division, divisionData, playerNameKey, champion);
   }
 
   // ******************************************
@@ -248,7 +293,7 @@ function searchPlayerHistory(param=false){
   }
 }
 
-function createCurrentSeasonTable(dbContainer, season, division, divisionData, playerNameKey){
+function createCurrentSeasonTable(divContainer, season, division, divisionData, playerNameKey){
   var divisionMembers = divisionData["members"];
   var numMembers = Object.keys(divisionMembers).length
 
@@ -309,13 +354,10 @@ function createCurrentSeasonTable(dbContainer, season, division, divisionData, p
       // Generate URL for database
       var rowInfoNameParam = rowInfoName.replace(/ /g, "%20")
       var rowClass = "player-past-standings"
-      var rowInfoNameHyperlink = `<a class="${rowClass}" href="{{site.baseurl}}/player_database?player=${rowInfoNameParam}">${rowInfoName}</a>`;
+      player.innerHTML = `<a class="${rowClass}" href="{{site.baseurl}}/player_database?player=${rowInfoNameParam}">${rowInfoName}</a>`;
+      if (rowInfoName.toLowerCase() == playerNameKey) player.innerHTML = "<b>" + player.innerHTML + "</b>";
+      if (rowInfo["drop"] == "Yes") player.innerHTML = "<s>" + player.innerHTML + "</s>";
 
-      if (rowInfoName.toLowerCase() == playerNameKey) {
-        player.innerHTML = "<b>" + rowInfoNameHyperlink + "</b>";
-      } else {
-        player.innerHTML = rowInfoNameHyperlink;
-      }
       dRow.appendChild(player);
 
       var wins = document.createElement("td");
@@ -334,7 +376,7 @@ function createCurrentSeasonTable(dbContainer, season, division, divisionData, p
       table.appendChild(dRow)
   }
   // Add table to container
-  dbContainer.appendChild(table);
+  divContainer.appendChild(table);
 
   // Generate modal
   modal_div = document.createElement("div");
@@ -376,6 +418,8 @@ function createCurrentSeasonTable(dbContainer, season, division, divisionData, p
     var result = results[r];
     var player1 = result["player1"];
     var player2 = result["player2"];
+    if (divisionData["members"][player1]["drop"] == "Yes") player1 = `<s>${player1}</s>`;
+    if (divisionData["members"][player2]["drop"] == "Yes") player2 = `<s>${player2}</s>`;
     var wins1 = result["wins1"];
     var wins2 = result["wins2"];
 
@@ -398,9 +442,10 @@ function createCurrentSeasonTable(dbContainer, season, division, divisionData, p
   modal.appendChild(modal_table);
   modal_div.appendChild(modal);
   // Add table to container
-  dbContainer.appendChild(modal_div);
+  divContainer.appendChild(modal_div);
 }
-function createTable(dbContainer, season, division, divisionData, playerNameKey, champion=""){
+
+function createTable(divContainer, season, division, divisionData, playerNameKey, champion=""){
   var champion_sym = " <img src=\"{{site.baseurl}}/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
   var divisionMembers = divisionData["members"];
   var numMembers = Object.keys(divisionMembers).length
@@ -501,7 +546,7 @@ function createTable(dbContainer, season, division, divisionData, playerNameKey,
   }
 
   // Add table to container
-  dbContainer.appendChild(table);
+  divContainer.appendChild(table);
 
   // Generate modal
   modal_div = document.createElement("div");
@@ -572,9 +617,8 @@ function createTable(dbContainer, season, division, divisionData, playerNameKey,
   modal.appendChild(modal_table);
   modal_div.appendChild(modal);
   // Add table to container
-  dbContainer.appendChild(modal_div);
+  divContainer.appendChild(modal_div);
 }
-
 </script>
 
 <!-- Autocomplete script starts here -->

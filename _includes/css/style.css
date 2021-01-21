@@ -151,8 +151,13 @@ blockquote {
 }
 
 .container {
-  padding: 20px 20px 40px 20px;
-  max-width: 1150px;
+  padding: 20px 18px 40px 18px;
+  max-width: 1200px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 10px 30px 10px;
+  }
 }
 
 .text-muted {
@@ -546,8 +551,93 @@ tbody {
   background-color: grey
 }
 
+/* Database search bar */
+.database-search-wrapper{
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  width: 75%
+}
+@media (max-width:600px) {
+  .database-search-wrapper{
+    width: 90%;
+  }
+}
 
+.database-search-wrapper .database-search-box{
+  background: #fff;
+  border-radius: 5px;
+  height: 57px;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 8px 6px -10px black;
+}
 
+.database-search-wrapper .database-search-box .database-search-dropdown{
+  width: 150px;
+  border-right: 2px solid #dde2f1;
+  color: #9fa3b1;
+  position: relative;
+  cursor: pointer;
+}
+
+.database-search-wrapper .database-search-box .database-search-dropdown .default-option{
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.database-search-wrapper .database-search-box .database-search-dropdown ul{
+  position: absolute;
+  top: 60px;
+  left: -10px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  display: none;
+  box-shadow: 8px 8px 6px -10px black;
+  list-style: none;
+}
+
+.database-search-wrapper .database-search-box .database-search-dropdown ul.database-active{
+  display: block;
+}
+
+.database-search-wrapper .database-search-box .database-search-dropdown ul li{
+  padding-bottom: 20px;
+}
+
+.database-search-wrapper .database-search-box .database-search-dropdown ul li:last-child{
+  padding-bottom: 0;
+}
+
+.database-search-wrapper .database-search-box .database-search-dropdown ul li:hover{
+  color: #6f768d;
+}
+
+.database-search-wrapper .database-search-box .database-search-field{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.database-search-wrapper .database-search-box .database-search-field .input{
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-right: 38px;
+  color: #6f768d;
+}
+
+.database-search-wrapper .database-search-box .database-search-field .fas{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  color: #CA2017;
+  cursor: pointer;
+}
 
 td, th {
   text-align: left;
@@ -1534,7 +1624,7 @@ body {
   right: 0;
 }
 
-.autocomplete  {
+/*.autocomplete  {
   width: 350px;
   height: 40px;
   padding: 0px;
@@ -1542,7 +1632,7 @@ body {
   position: relative;
   display: inline-block;
   align: center;
-}
+}*/
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
@@ -1560,11 +1650,6 @@ body {
 .autocomplete-active {
   background-color: red !important;
   color: #ffffff;
-}
-
-#search_player_history_btn {
-  height: 40px;
-  width: 80px;
 }
 
 /* League mod */
