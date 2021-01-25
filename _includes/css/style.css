@@ -335,14 +335,14 @@ td.crossed:after
 }
 
 .verticalTableHeader {
-    text-align:center;
+    /* text-align:center; */
     white-space:nowrap;
     g-origin:50% 50%;
-    -webkit-transform: rotate(-78deg);
-    -moz-transform: rotate(-78deg);
-    -ms-transform: rotate(-78deg);
-    -o-transform: rotate(-78deg);
-    transform: rotate(-78deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 
 }
 .verticalTableHeader p {
@@ -354,12 +354,6 @@ td.crossed:after
     width:0;
     padding-top:110%;/* takes width as reference, + 10% for faking some extra padding */
     display:inline-block;
-    vertical-align:middle;
-}
-table {
-    text-align:center;
-    table-layout : fixed;
-    width:150px
 }
 
 a.db-link {
