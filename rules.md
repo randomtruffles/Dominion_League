@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2020-12-13
+date: 2021-01-25
 categories: pinned rules
 ---
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
@@ -14,8 +14,6 @@ Each League season lasts 6 weeks, and is followed by a 2-week break. Players are
 * The lowest two tiers have approximately the same number of divisions.
 
 Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in tiers E and below, and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
-
-In Seasons 42 and 43, there shall also be a practice tier, separate from all other tiers, for players who have played less than 30 rated 2-player games online. Players in the practice tier will be similarly grouped and seeded.
 
 #### II. Match Structure and Policies
 
@@ -36,20 +34,18 @@ For games played online, players should set the following Advanced Options by de
 * Familiar cards should not be respected.
 * For games using expansions, the disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be. For games without expansions, no cardlists should be respected.
 * The game should not use extra Menagerie cards.
-* The game should be unrated. For Seasons 42 and 43, games in the practice tier must be rated.
+* The game should be unrated.
 * The victory point counter should be used.
-* Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required. No particular cards, landscapes, or expansions should be selected. For Seasons 42 and 43, in the Practice Tier, the players pick one expansion each, and Kingdoms are generated with only cards from those expansions and the base set.
+* Kingdoms should be generated randomly with all cards either player owns, from zero to two landscapes, and no specific cards or landscapes required. No particular cards, landscapes, or expansions should be selected.
 
 All these defaults may be changed between games by mutual agreement of the players except:
 
-* Players in the practice tier may not play games in-person or on any platform other than Dominion Online.
 * Players in tiers A, B, C, D, and E may not agree to disallow spectators.
 * Games without expansions may not use Familiar cards or any cardlists.
 * Cardlists may only be changed between playing sessions.
-* Players in the practice tier may not agree for games to be unrated.
 * Players agreeing to use an unofficial timer must agree on all timer settings and how to handle any glitches or lag.
 
-The League recognizes players from different backgrounds may have different opinions on which undos, if any, should be allowed during a game. The League’s default is to grant undos of small numbers of non-information-revealing steps. A player can choose a different policy regarding which undos they will allow, so long as they announce it to their opponent before the game.
+The League recognizes players from different backgrounds may have different opinions on which undos, if any, should be allowed during a game. The League’s default is to at least grant all undos that are for small numbers of steps that did not reveal new game information. A player can choose a different policy regarding which undos they will allow, so long as they announce it to their opponent before the game.
 
 After each playing session, one of the players should submit the result of that playing session as soon as possible using the Results form linked in their division’s Discord channel. Players receive 1 point for each game they win and 0.5 points for each game they tie (note that, per Dominion rules, a player wins a game with tied VP scores if they took fewer turns). If the match is played across multiple sessions, only submit the games just played, and the system will add the multiple submissions together.
 
@@ -57,12 +53,10 @@ After each playing session, one of the players should submit the result of that 
 
 During the season, the standings for each group will be automatically updated as players complete matches. The players in each group will be ranked based on the average number of points they have received in each match.
 
-If there is a tie within a division, apply these steps:
+If there is a tie within a division, apply these steps with the group of tied players:
 1. Head-to-head
-* Compare the total wins earned by each player from the matches involving only the tied players.
-* If one player has more wins than each other player, they win the tie.
-* If all players have the same number of wins, move to step 2.
-* Otherwise, repeat this step 1 with just the players who tied for most wins.
+* Order the players by the total head-to-head wins each player earned from the matches involving only the group of tied players.
+* Break any ties in total head-to-head wins by the total head-to-head wins each player earned from the matches involving only this new group of tied players.
 2. Promotion/demotion implications
 * If the tie affects promotions, demotions, or entry into the Championship Match, move to step 3.
 * Otherwise, all players share the rank of the best tied place.
@@ -75,7 +69,6 @@ At the end of the season, players may earn a spot in a different tier by promoti
 * Players who finish in first place promote if the tier directly above has fewer divisions than the tier they are currently in.
 * Players who finish in first or second place promote if the tier directly above has exactly the same number of divisions of the tier they are currently in.
 * In any tier, players who finish in sixth or seventh place in a seven-player division, or fifth or sixth place in any other division, demote unless they are in the bottom tier, in which case they will stay in that tier.
-* Players in the practice tier do not promote or demote automatically. Instead, these players are placed as new players in the next season.
 
 Additionally, players who finish in first place, or tied for first place, may be re-placed using the rules for placing new players. This allows returning players to promote across multiple tiers, known as superpromotions, if a player can improve their rating significantly across a season. Players who would be superpromoted into tiers A, B, C, or D are instead placed into tier E.
 
@@ -89,8 +82,6 @@ To join the Dominion League, new players must complete the following steps:
 3. Fill out the <a href="http://dominionleague.org/sign-ups">sign-up form</a> for the upcoming season.
 
 You may only participate in the League once per season. You may switch your Dominion Online or Discord account at any time by letting your moderator know, but you may not join the League additional times using other accounts. You do not need to purchase a subscription to Dominion Online, and Dominion Online subscriptions have no bearing on players’ tiers, divisions, or seeding.
-
-For Seasons 42 and 43, players who join and have not played in one of the past 6 seasons and have played 29 or fewer rated 2-player games shall be placed into the practice tier.
 
 At the end of each season, players who want to return for the following season must fill out the Returning form linked in their division’s Discord channel, otherwise by default they will leave the League. The following priorities are used, in order, to fill the open spots created by players who leave:
 
@@ -132,15 +123,15 @@ If players are unable to finish their matches by the deadline, they must contact
 Players dropping out during the season have a significant negative impact on their group. Unfortunately, some must drop out, or become inactive and have to be removed by the moderators. It is difficult to deal with matches that have been played by a player who has dropped because the matches they played and failed to play can have a significant impact on the group standings. The following rules are used for dropped players:
 
 * If the removed player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
-* If the removed player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play, and then scaling these results by the percentage of their games they actually played.
+* If the removed player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play. Afterward, all the match results involving the dropped player are scaled by the percentage of their games they actually played.
 
 At the end of the season, to account for the approximations inherent in simulated results, adjustment matches may be required to better decide the standings between players straddling a promotion or demotion boundary. To determine if an adjustment match is needed, 4 scenarios are compared:
-* Scale the simulated results by the percentage of the games the first player actually played against all dropped players.
-* Scale the simulated results by the percentage of the games the first player actually played against all dropped players, and round all results to the nearest 0.5.
-* Scale the simulated results by the percentage of the games the second player actually played against all dropped players.
-* Scale the simulated results by the percentage of the games the second player actually played against all dropped players, and round all results to the nearest 0.5.
+* Scale all the dropped player's match results by the percentage of the games the first player actually played against all dropped players.
+* Round all unscaled results to the nearest 0.5, then scale all the dropped player's match results by the percentage of the games the first player actually played against all dropped players.
+* Scale all the dropped player's match results by the percentage of the games the second player actually played against all dropped players.
+* Round all unscaled results to the nearest 0.5, then scale all the dropped player's match results by the percentage of the games the second player actually played against all dropped players.
 
-If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. In an adjustment match, the players play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. The winner is placed ahead of the loser in the final standings.
+If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. In an adjustment match, the players play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. The winner is placed ahead of the loser in the final standings. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly decide the standings.
 
 **Players who drop mid-season will be banned from participation in the next 2 League seasons.** Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to. If a player drops out within the first week of the season or is in good standing with the League (i.e. has played in prior seasons without drops or late finishes), the ban period and demotion penalty may be reduced or eliminated at the moderators’ discretion.
 
