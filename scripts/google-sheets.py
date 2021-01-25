@@ -12,6 +12,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 # Various sheets pages
 MONITORING_SHEET = '1CIvRxhLL2XrwR0eQDt2FWhEgN1twtl6_r7BmHdFQeEE'
 RESULTS = 'Condensed Results!A2:K'
+
 def assign_color(value):
     value = int(value)
     gradient = ["E77B72", "E88372", "EA8C71", "EC956F", "EF9E6E", "F2A76D", "F4B06B", "F7B96B", "F9C269", "FCCB67", "FED467", "F2D467", "E2D26B", "D0CF6F", "C0CC73", "AFCA76", "9EC77A", "8CC47E", "7CC181", "6DBF84", "5BBC88"]
@@ -25,11 +26,12 @@ def assign_color(value):
 def fpct(pct):
     return "{0:.0%}".format(pct)
 
-def main():
+def getCurrentSeasonResults():
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
     curr_season = {}
+    file = './_data/current_season.json'
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
@@ -91,10 +93,12 @@ def main():
                     result = {"player1":p1, "player2":p2, "wins1":wins1, "wins2":wins2}
                     if division not in curr_season:
                         curr_season[division]={}
-                        curr_season["name"] = division
-                        curr_season["tier"] = division[0]
+                        curr_season[division]["name"] = division
+                        curr_season[division]["tier"] = division[0]
                         curr_season[division]["results"] = []
                         curr_season[division]["by_player"] = {}
+                        curr_season[division]["late drops"] = late_drops
+                        print(curr_season[division]["late drops"])
                     if p1 not in curr_season[division]["by_player"]:
                         curr_season[division]["by_player"][p1] = {}
                     if p2 not in curr_season[division]["by_player"]:
@@ -126,11 +130,11 @@ def main():
                                     curr_season[division]["members"][player]["tiebreaker"] += curr_season[division]["by_player"][player][opponent]["wins"]
                                 else:
                                     curr_season[division]["members"][player]["tiebreaker"] = curr_season[division]["by_player"][player][opponent]["wins"]
-    print("writing to file")
-    file = './_data/current_season.json'
+
+    print(f"Retrieved {len(curr_season)} divisions...")
+    print(f"Writing to {file}...")
     with open(file, 'w') as filetowrite:
         json.dump(curr_season, filetowrite)
 
-
 if __name__ == '__main__':
-    main()
+    getCurrentSeasonResults()

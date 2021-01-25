@@ -1,0 +1,393 @@
+---
+layout: default
+title: Dominion League Current Season Standings
+---
+
+<div class="home">
+  <div class="container-centered">
+
+    <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
+    <h5><a href="{{site.baseurl}}/past_standings">Past Season Standings</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
+
+    <div id="single-division"></div>
+
+    <div id="all-divisions" style="display:none">
+      <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
+      <!-- Filter buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('divA')"> A </button>
+        {% for tier in site.data.season.tiers %}
+        {% if tier.name != "A" %}
+        <button class="btn" onclick="filterSelection('div{{tier.name}}')"> {{tier.name}} </button>
+        {% endif %}
+        {% endfor %}
+        <button class="btn" onclick="filterSelection('all')"> Show all</button>
+      </div>
+      <div class="spacing"></div>
+      <div id="division-iframes"></div>
+      <div class="spacing"></div>
+    </div>
+  </div>
+</div>
+<script>
+// Load data
+var divisions = {{ site.data.current_season | jsonify }};
+var returning = {{ site.data.current_season_returning | jsonify }};
+var curr_season = 43;
+loadPage();
+
+function formatDbLink(playerName, className, drop="No"){
+  var link = `<a class="${className}" href="{{site.baseurl}}/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
+  link = drop == "Yes" ? `<s>${link}</s>` : link;
+  return link;
+}
+
+function matchColor(score, upper) {
+  var score = parseFloat(score);
+  var colors = ["E77B72", "E88372", "EA8C71", "EC956F", "EF9E6E", "F2A76D", "F4B06B", "F7B96B", "F9C269", "FCCB67", "FED467", "F2D467", "E2D26B", "D0CF6F", "C0CC73", "AFCA76", "9EC77A", "8CC47E", "7CC181", "6DBF84", "5BBC88"];
+  var normalized = Math.floor((100/101)*colors.length*score/upper);
+  var color = colors[normalized];
+  return `#${color}`;
+}
+
+function selectTab(btn, division) {
+  var tab = btn.innerHTML;
+  var tabToOpen = btn;
+  var parent = document.getElementById(`${division}-standings`);
+  console.log(`Opening ${division.toUpperCase()}'s ${tab} button`);
+
+  // Open the right table and hide others
+  var children = parent.children;
+  for (var i = 0; i < children.length; i++) {
+    var child = children[i];
+    if (child.className == `${tab.toLowerCase()}-table`) {
+      child.style.display = "";
+    } else if (child.className != 'header-table') {
+      child.style.display = "none";
+    }
+  }
+
+  // Remove active from button siblings
+  var curTab = tabToOpen;
+  while (curTab = curTab.nextSibling) {
+    curTab.classList.remove('active');
+  }
+  curTab = tabToOpen;
+  while (curTab = curTab.previousSibling) {
+    curTab.classList.remove('active');
+  }
+  tabToOpen.classList.add('active');
+}
+
+function genHeader(division){
+  var table = document.createElement("table");
+  table.classList.add('header-table');
+
+  var seasonRow = document.createElement("tr");
+  var seasonHeader = document.createElement("td");
+  table.appendChild(seasonRow);
+  seasonRow.appendChild(seasonHeader);
+  seasonHeader.innerHTML = `<p>Division ${division} Standings</p>`;
+  seasonHeader.style.backgroundColor = "lightgrey";
+  seasonHeader.setAttribute('colspan', 10);
+  seasonHeader.classList.add('division-header');
+
+  var buttons = ["Standings", "Grid", "Matches"];
+  for (var b=0; b < buttons.length; b++){
+    var button = document.createElement("button");
+    button.innerHTML = buttons[b];
+    button.setAttribute("onclick", `selectTab(this, '${division.toLowerCase()}')`);
+    if (buttons[b] == "Standings") {
+      button.classList.add("active");
+    }
+    seasonHeader.appendChild(button);
+  }
+  return table;
+}
+
+function genStandings(data, tiebreaker) {
+  console.log("Generating standings...");
+  var table = document.createElement("table");
+  table.classList.add('standings-table');
+
+  var sortedRankedMembers = Object.keys(data).map(function(key) {
+    return [key, data[key]];
+  });
+  sortedRankedMembers.sort(function(x, y) {
+    return x[1]["rank"] - y[1]["rank"];
+  });
+
+  var tableHeadings, headingWidths;
+  tableHeadings = ["#", "Player", "W%", "W", "L", "S44?"];
+  headingWidths = ["10%", "41%", "13%", "13%", "13%", "10%"];
+  var tbValues = {};
+
+  // Figure out tiebreakers
+  for (var member in data) {
+    for (var opponent in data) {
+      memberData = data[member];
+      opponentData = data[opponent];
+      if (
+        member == opponent
+        || memberData["drop"] == "Yes"
+        || memberData["pct"] == "0%"
+        || !(member in tiebreaker)
+      ) { continue;}
+
+      if (memberData["pct"] == opponentData["pct"]) {
+          if (!(member in tbValues)) {
+            tbValues[member] = 0;
+          }
+          if (opponent in tiebreaker[member]) {
+            tbValues[member] += parseFloat(tiebreaker[member][opponent]["wins"]);
+          }
+      }
+    }
+  }
+
+  if (Object.keys(tbValues).length > 0) {
+    tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "S44?"];
+    headingWidths = ["9%", "42%", "10%", "10%", "10%", "9%","10%"];
+  }
+
+  var headingRow = document.createElement("tr");
+  headingRow.style.backgroundColor = "rgb(224, 224, 224)";
+  for (let j = 0; j < headingWidths.length; j++) {
+      var th = document.createElement("th");
+      th.innerHTML = tableHeadings[j];
+      th.style.width = headingWidths[j];
+      headingRow.appendChild(th);
+  }
+  table.appendChild(headingRow);
+
+  function isReturning(name){
+    if (data[name]["drop"] == "Yes") {
+      return "N";
+    } else if (name in returning) {
+      switch (returning[name]) {
+        case "Y":
+          return "Y";
+        case "N":
+          return "N";
+        default:
+          return "Err";
+      }
+    }
+    return "?"
+  }
+
+  for (var keypair of sortedRankedMembers) {
+    var playerData = data[keypair[0]];
+    var name = playerData["name"];
+    var rowInfo = {
+      "rank" : playerData["rank"],
+      "name" : formatDbLink(name, "db-link", playerData["drop"]),
+      "pct" : playerData["pct"],
+      "wins" : playerData["wins"],
+      "losses" : playerData["losses"],
+      "returning" : isReturning(name)
+    }
+
+    var row = document.createElement("tr");
+    for (var info in rowInfo) {
+      var cell = document.createElement("td");
+      cell.innerHTML = rowInfo[info];
+      switch (info) {
+        case "name":
+          if (playerData["drop"] == "Yes") {
+            cell.classList.add("crossed");
+          }
+          break;
+        case "pct" :
+          cell.style.backgroundColor = playerData["color"];
+          break;
+        case "returning":
+          if (Object.keys(tbValues).length > 0) {
+            var tbCell = document.createElement("td");
+            tbCell.style.color = "darkgray";
+            if (name in tbValues) {
+              tbCell.innerHTML = tbValues[name].toString();
+            } else {
+              tbCell.innerHTML = "0";
+            }
+            row.append(tbCell);
+          }
+      }
+      row.append(cell);
+    }
+    table.append(row);
+  }
+  return table;
+}
+
+function genGrid(data, drops) {
+  console.log("Generating grid...");
+  var table = document.createElement("table");
+  table.classList.add('grid-table');
+  table.style.display = "none";
+
+  var sorted = [];
+  for (var key in data) {
+    sorted[sorted.length] = key;
+  }
+  sorted.sort();
+
+  var tableHeadings = ["Player"];
+  for (var m=0; m < sorted.length; m++) {
+    tableHeadings[tableHeadings.length] = sorted[m];
+  }
+  var widths = {1: "50%", 2:"33%", 3:"25%", 4:"19%", 5:"15%", 6:"13%", 7:"11%"};
+  var firstWidths = {1: "50%", 2:"34%", 3:"25%", 4:"24%", 5:"25%", 6:"22%", 7:"23%"};
+  var numPlayers = tableHeadings.length - 1;
+  var headingRow = document.createElement("tr");
+  for (let j = 0; j < tableHeadings.length; j++) {
+      var th = document.createElement("th");
+      if (j == 0) {
+        th.innerHTML = tableHeadings[j];
+        th.style.width = firstWidths[numPlayers];
+      } else {
+        th.innerHTML = formatDbLink(tableHeadings[j], "db-link");
+        th.innerHTML = "<p>" + th.innerHTML + "</p>"
+        th.style.width = widths[numPlayers];
+        th.classList.add("verticalTableHeader");
+      }
+      headingRow.appendChild(th);
+  }
+  table.appendChild(headingRow);
+
+  for (var m=0; m < sorted.length; m++) {
+    var playerName = sorted[m];
+    var row = document.createElement("tr");
+    var playerCell = document.createElement("td");
+    playerCell.innerHTML = formatDbLink(playerName, "db-link");
+    row.append(playerCell);
+    for (var opp=0; opp < sorted.length; opp++) {
+      var opponent = sorted[opp];
+      var cell = document.createElement("td");
+      cell.innerHTML = "";
+      cell.style.backgroundColor = "lightgrey";
+      if (playerName == opponent) {
+        cell.style.backgroundColor = "gray";
+      } else if (opponent in data[playerName]){
+        cell.innerHTML = data[playerName][opponent]["wins"];
+        cell.style.backgroundColor = matchColor(data[playerName][opponent]["wins"], 6);
+      } else if (drops.includes(opponent)) {
+        //cell.classList.add("crossed");
+      } else if (drops.includes(playerName)) {
+        //cell.classList.add("crossed");
+      } else {
+      }
+      row.append(cell);
+    }
+    table.appendChild(row);
+  }
+  return table;
+}
+
+function genMatches(data){
+  return;
+}
+
+function loadDivision(division) {
+  console.log(`Loading ${division} standings...`);
+  var divisionDiv = document.getElementById("single-division");
+
+  // Get information
+  var divisionData = divisions[division];
+  console.log(divisionData);
+  var name = divisionData["name"];
+  var tier = divisionData["tier"];
+  var results = divisionData["results"];
+  var standings = divisionData["members"];
+  var players = divisionData["by_player"];
+  var drops = divisionData["late drops"];
+
+  var standingsDiv = document.createElement("div");
+  standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
+  standingsDiv.classList.add(`div${tier}`);
+  standingsDiv.classList.add(`standings`);
+  divisionDiv.appendChild(standingsDiv);
+
+  var header = genHeader(division);
+  var standingsTable = genStandings(standings, players);
+  var gridTable = genGrid(players, drops);
+  standingsDiv.appendChild(header);
+  standingsDiv.appendChild(standingsTable);
+  standingsDiv.appendChild(gridTable);
+
+  // genGrid(players, standingsTable);
+
+}
+
+function allDivisions(){
+  return;
+}
+
+function loadPage() {
+  var division = getParam('div');
+  var tier = getParam('tier');
+  if (division.length > 0) {
+    loadDivision(division.toUpperCase());
+  } else if (tier.length == 1) {
+    allDivisions();
+    filterSelection(`div${tier}`);
+  } else {
+    allDivisions();
+  }
+}
+
+function getParam(paramName) {
+  var urlParam = function(name, w){
+      w = w || window;
+      var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+          val = w.location.search.match(rx);
+      return !val ? '':val[1];
+  }
+  var paramData = urlParam(paramName).replace(/%20/g, " ").trim();
+  return paramData;
+}
+
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("current-standings filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(x[i], "show");
+    }
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>

@@ -248,6 +248,181 @@ iframe {
   background-color: #f1f1f1;
 }
 
+.standings {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .standings {
+    width: 100%;
+  }
+}
+
+/* Current Season Standings */
+.standings-table, .header-table {
+  border-collapse: collapse;
+  margin: auto;
+  align: center;
+  width: 100%;
+  background-color: #ebeced;
+  font-size: 17px;
+  font-family: {{ site.data.template.font.secondary }};
+}
+
+@media (max-width: 600px) {
+  .standings-table, .header-table {
+    font-size: 14px;
+  }
+}
+
+.standings-table td, .standings-table th {
+  border: 1px solid grey;
+  padding: 5px 8px;
+}
+
+.header-table td, .header-table th {
+  border: 1px solid grey;
+  border-bottom: none;
+  padding: 5px 8px;
+  font-weight: normal;
+}
+
+.grid-table {
+  border-collapse: collapse;
+  margin: auto;
+  align: center;
+  width: 100%;
+  background-color: #ebeced;
+  font-size: 17px;
+  table-layout: fixed;
+  font-family: {{ site.data.template.font.secondary }};
+}
+
+@media (max-width: 600px) {
+  .grid-table {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.grid-table td {
+  border: 1px solid grey;
+  padding: 5px 8px;
+  font-weight: normal;
+}
+
+.grid-table th {
+  border: 1px solid grey;
+  font-weight: normal;
+}
+
+td.crossed
+{
+  position:   relative;
+  background: linear-gradient(to right bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 48.9%,rgba(0,0,0,1) 51%,rgba(0,0,0,1) 51%,rgba(0,0,0,0) 52.1%,rgba(0,0,0,0) 100%);
+}
+td.crossed:after
+{
+	content:     "";
+	display:     block;
+	position:    absolute;
+	width:       100%;
+	height:      100%;
+	top:         0;
+	left:        0;
+	background: linear-gradient(to right top, #ffffff00 0%,#ffffff00 49.9%,#00000000 49%,#000000 51%,#ffffff00 52.1%,#ffffff00 100%);
+}
+
+.verticalTableHeader {
+    text-align:center;
+    white-space:nowrap;
+    g-origin:50% 50%;
+    -webkit-transform: rotate(-78deg);
+    -moz-transform: rotate(-78deg);
+    -ms-transform: rotate(-78deg);
+    -o-transform: rotate(-78deg);
+    transform: rotate(-78deg);
+
+}
+.verticalTableHeader p {
+    margin:0 -100% ;
+    display:inline-block;
+}
+.verticalTableHeader p:before{
+    content:'';
+    width:0;
+    padding-top:110%;/* takes width as reference, + 10% for faking some extra padding */
+    display:inline-block;
+    vertical-align:middle;
+}
+table {
+    text-align:center;
+    table-layout : fixed;
+    width:150px
+}
+
+a.db-link {
+  text-decoration: none;
+  color: #{{ site.data.template.color.primary }};
+  border-bottom: 1px dotted gray;
+}
+
+a.db-link:hover {
+  color: #ca2017
+}
+
+.division-header p {
+  padding: 0px !important;
+  margin: 0px;
+  font-weight: 700;
+  font-family: Merriweather, "Source Serif Pro", "Roboto Slab", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+}
+
+.division-header button {
+  background-color: inherit;
+  border: 1px solid gray;
+  border-bottom: none;
+  cursor: pointer;
+  padding: 0px 10px;
+  font-size: 14px;
+  border-collapse: collapse;
+  background-color: #f9f6f6;
+  margin-right: 5px;
+}
+
+/* Change background color of buttons on hover */
+.division-header button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.division-header button.active {
+  background-color: rgb(224, 224, 224);
+  box-shadow: 2px -1px 4px 0.5px grey;
+  padding-top: 2px;
+  font-style: italic;
+}
+
+.division-header button:focus {
+  outline:0 !important;
+}
+
+.division-header {
+  font-weight: 700;
+  font-family: Merriweather, "Source Serif Pro", "Roboto Slab", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  height: 50px;
+  padding-bottom: 0px !important;
+}
+
+@media (max-width: 700px) {
+  .division-header {
+    font-size: 15px;
+  }
+}
+
 /* Current Season Collapisble */
 
 .standings-sheets {
@@ -523,11 +698,6 @@ tbody {
     font-size: 15px;
   }
 }
-
-.division-header {
-  font-weight: 700;
-}
-
 
 .database-results-button {
   background-color: #e87454;
@@ -1592,7 +1762,6 @@ ul.social-buttons li a {
   width: 400px;
   height: 40px;
   padding: 10px;
-  margin-bottom: 10px;
 }
 
 img::selection {
