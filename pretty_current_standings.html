@@ -15,7 +15,7 @@ title: Dominion League Current Season Standings
       <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
       <!-- Filter buttons -->
       <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('divA')"> A </button>
+        <button class="btn" onclick="filterSelection('divA')"> A </button>
         {% for tier in site.data.season.tiers %}
         {% if tier.name != "A" %}
         <button class="btn" onclick="filterSelection('div{{tier.name}}')"> {{tier.name}} </button>
@@ -434,14 +434,10 @@ function loadDivision(divisionDiv, division) {
 }
 
 function singleDivision(division){
-  console.log("showing single division");
-  var divisionDiv = document.getElementById("single-division");
-  divisionDiv.style.display = "";
-  divisionDiv.innerHTML = "";
-  console.log("hiding all divisions");
-  var allDivisionsDiv = document.getElementById("all-divisions");
-  allDivisionsDiv.style.display = "none";
-  loadDivision(divisionDiv, division);
+  console.log(`showing single division: ${division.toLowerCase()}-standings`);
+  var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
+  filterSelection("X"); //shows None
+  w3AddClass(divisionDiv, "show");
 }
 
 function allDivisions(){
@@ -477,13 +473,12 @@ function allDivisions(){
 function loadPage() {
   var division = getParam('div');
   var tier = getParam('tier');
+  allDivisions();
   if (division.length > 0) {
     singleDivision(division.toUpperCase());
   } else if (tier.length == 1) {
-    allDivisions();
-    filterSelection(`div${tier}`);
+    filterSelection("all");
   } else {
-    allDivisions();
     filterSelection(`divA`);
   }
 }
