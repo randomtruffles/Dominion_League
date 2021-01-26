@@ -3,8 +3,7 @@ title: Season 43 - End of Season Deadlines
 date: 2021-01-03
 author: Rozyroz
 layout: post
-categories:
-  - pinned
+categories: null
 ---
 Season 43 officially ends on Sunday, January 17. To account for the westernmost timezones, **the deadline for reporting matches is Monday, January 18, at 15:00 UTC.**
 If you need extra time to finish, **you must contact your group moderator** to request an extension of up to one week. **All late finish matches must be reported by Monday, January 25, at 15:00 UTC.**
