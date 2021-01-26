@@ -405,7 +405,7 @@ td.crossed:after
   margin: auto;
   align: center;
   width: 100%;
-  background-color: #ebeced;
+  background-color: #f1f1f1;
   font-size: 16px;
   table-layout: fixed;
   font-family: {{ site.data.template.font.secondary }};
@@ -414,6 +414,8 @@ td.crossed:after
 @media (max-width: 650px) {
   .matches-table {
     width: 100%;
+  }
+  .matches-table td{
     font-size: 14px;
   }
 }
