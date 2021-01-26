@@ -294,6 +294,11 @@ iframe {
   padding: 5px 8px;
 }
 
+
+.standings-table td:last-child {
+  text-align: center;
+}
+
 @media (max-width: 650px) {
   .standings-table, .header-table {
     font-size: 14px !important;
@@ -330,6 +335,10 @@ iframe {
   font-family: {{ site.data.template.font.secondary }};
 }
 
+.grid-table tr th:first-child{
+    width: 150px;
+ }
+
 @media (max-width: 650px) {
   .grid-table {
     width: 100%;
@@ -337,7 +346,12 @@ iframe {
   .grid-table td, th {
     font-size: 13px !important;
   }
+  .grid-table tr th:first-child{
+      width: 120px !important;
+   }
 }
+
+
 
 .grid-table td {
   border: 1px solid grey;
@@ -411,12 +425,22 @@ td.crossed:after
   font-family: {{ site.data.template.font.secondary }};
 }
 
+.matches-table tr th:first-child{
+    width: 52% !important;
+ }
+
 @media (max-width: 650px) {
   .matches-table {
     width: 100%;
   }
   .matches-table td{
     font-size: 14px;
+  }
+  .matches-table tr th:first-child{
+      width: 60% !important;
+   }
+ .matches-table tr th:nth-child(2){
+     width: 25% !important;
   }
 }
 
@@ -484,7 +508,7 @@ a.db-link:hover {
 
 /* Create an active/current tablink class */
 .division-header button.active {
-  background-color: #ff9999;
+  background-color: lightyellow;
   box-shadow: 2px -1px 4px 0.5px grey;
   padding-top: 2px;
   font-style: italic;

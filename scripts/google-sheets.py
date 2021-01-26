@@ -129,6 +129,7 @@ def getCurrentSeasonResults():
                         curr_season[division]["results"] = []
                         curr_season[division]["by_player"] = {}
                         curr_season[division]["late drops"] = late_drops
+                        curr_season[division]["complete?"] = "Yes"
                     if p1 not in curr_season[division]["by_player"]:
                         curr_season[division]["by_player"][p1] = {}
                         curr_season[division]["by_player"][p1]["games_nondrop"] = 0
@@ -161,8 +162,10 @@ def getCurrentSeasonResults():
                         break
                     color = assign_color(float(pcts[p_idx][:-1]))
                     drop = "Yes" if player in late_drops else "No"
+                    if tiers[p_idx] == "":
+                        curr_season[division]["complete?"] = "No"
 
-                    curr_season[division]["members"][player] = {"name": player, "wins":wins[p_idx], "losses":losses[p_idx], "pct": pcts[p_idx], "color": color, "tiebreaker": 0, "drop":drop, "next tier":tiers[p_idx]}
+                    curr_season[division]["members"][player] = {"name": player, "wins":wins[p_idx], "losses":losses[p_idx], "pct": pcts[p_idx], "color": color, "tiebreaker": 0, "drop":drop, "next tier":tiers[p_idx], "games_nondrop":curr_season[division]["by_player"][player]["games_nondrop"]}
                 # Tiebreaker values
                 for player in players:
                     if player == "" or player in late_drops:
