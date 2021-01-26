@@ -253,7 +253,7 @@ iframe {
   margin: auto;
   max-height: 400px;
   overflow: auto;
-  border: 1px solid gray;
+  border: 2px solid lightgray;
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -482,7 +482,7 @@ a.db-link:hover {
 
 /* Create an active/current tablink class */
 .division-header button.active {
-  background-color: rgb(224, 224, 224);
+  background-color: lightcoral;
   box-shadow: 2px -1px 4px 0.5px grey;
   padding-top: 2px;
   font-style: italic;
