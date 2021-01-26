@@ -306,6 +306,7 @@ iframe {
 
   .standings-table td, .standings-table th {
     padding: 3px 3px;
+    font-size: 14px;
   }
 }
 
