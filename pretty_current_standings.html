@@ -9,9 +9,9 @@ title: Dominion League Current Season Standings
     <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
     <h5><a href="{{site.baseurl}}/past_standings">Past Season Standings</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
 
-    <div id="single-division"></div>
+    <div id="single-division" style="display:none"></div>
 
-    <div id="all-divisions" style="display:none">
+    <div id="all-divisions">
       <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
       <!-- Filter buttons -->
       <div id="myBtnContainer">
@@ -24,7 +24,7 @@ title: Dominion League Current Season Standings
         <button class="btn" onclick="filterSelection('all')"> Show all</button>
       </div>
       <div class="spacing"></div>
-      <div id="division-iframes"></div>
+      <div id="divisions"></div>
       <div class="spacing"></div>
     </div>
   </div>
@@ -33,6 +33,19 @@ title: Dominion League Current Season Standings
 // Load data
 var divisions = {{ site.data.current_season | jsonify }};
 var returning = {{ site.data.current_season_returning | jsonify }};
+var tiers = [
+  ["A", 1],
+  ["B", 2],
+  ["C", 4],
+  ["D", 4],
+  ["E", 8],
+  ["F", 14],
+  ["G", 13],
+  ["H", 25],
+  ["I", 25],
+  ["J", 26],
+  ["P",4]
+];
 var curr_season = 43;
 loadPage();
 
@@ -41,6 +54,14 @@ function formatDbLink(playerName, className, drop="No"){
   link = drop == "Yes" ? `<s>${link}</s>` : link;
   return link;
 }
+
+function formatShortDbLink(playerName, className, drop="No"){
+  var shortend = playerName; //playerName.length <= 4 ? playerName : playerName.substring(0,4).trim() + ".";
+  var link = `<a class="${className}" href="{{site.baseurl}}/player_database?player=${playerName.replace(/ /g, "%20")}">${shortend}</a>`;
+  link = drop == "Yes" ? `<s>${link}</s>` : link;
+  return link;
+}
+
 
 function matchColor(score, upper) {
   var score = parseFloat(score);
@@ -118,8 +139,8 @@ function genStandings(data, tiebreaker) {
   });
 
   var tableHeadings, headingWidths;
-  tableHeadings = ["#", "Player", "W%", "W", "L", "S44?"];
-  headingWidths = ["10%", "41%", "13%", "13%", "13%", "10%"];
+  tableHeadings = ["#", "Player", "W%", "W", "L", "<img src='img/icons/returning.png'>", "<img src='img/icons/tier.png'>"];
+  headingWidths = ["8%", "35%", "13%", "13%", "13%", "8%", "8%"];
   var tbValues = {};
 
   // Figure out tiebreakers
@@ -146,8 +167,8 @@ function genStandings(data, tiebreaker) {
   }
 
   if (Object.keys(tbValues).length > 0) {
-    tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "S44?"];
-    headingWidths = ["9%", "42%", "10%", "10%", "10%", "9%","10%"];
+    tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "<img src='img/icons/returning.png'>", "<img src='img/icons/tier.png'>"];
+    headingWidths = ["7%", "40%", "10%", "10%", "10%", "9%", "7%","7%"];
   }
 
   var headingRow = document.createElement("tr");
@@ -156,6 +177,9 @@ function genStandings(data, tiebreaker) {
       var th = document.createElement("th");
       th.innerHTML = tableHeadings[j];
       th.style.width = headingWidths[j];
+      if (tableHeadings[j].length > 10) {
+        th.classList.add("header-icon");
+      }
       headingRow.appendChild(th);
   }
   table.appendChild(headingRow);
@@ -185,7 +209,8 @@ function genStandings(data, tiebreaker) {
       "pct" : playerData["pct"],
       "wins" : playerData["wins"],
       "losses" : playerData["losses"],
-      "returning" : isReturning(name)
+      "returning" : isReturning(name),
+      "tier" : playerData["next tier"]
     }
 
     var row = document.createElement("tr");
@@ -193,15 +218,16 @@ function genStandings(data, tiebreaker) {
       var cell = document.createElement("td");
       cell.innerHTML = rowInfo[info];
       switch (info) {
-        case "name":
+        /* case "name":
           if (playerData["drop"] == "Yes") {
             cell.classList.add("crossed");
           }
-          break;
+          break;*/
         case "pct" :
           cell.style.backgroundColor = playerData["color"];
           break;
         case "returning":
+          //cell.classList.add("center-text");
           if (Object.keys(tbValues).length > 0) {
             var tbCell = document.createElement("td");
             tbCell.style.color = "darkgray";
@@ -212,6 +238,10 @@ function genStandings(data, tiebreaker) {
             }
             row.append(tbCell);
           }
+          break;
+        case "tier":
+          //cell.classList.add("center-text");
+          break;
       }
       row.append(cell);
     }
@@ -220,33 +250,83 @@ function genStandings(data, tiebreaker) {
   return table;
 }
 
-function genGrid(data, drops) {
+function genMatches(data, drops, sorted) {
+  console.log("Generating matches table...");
+
+  var table = document.createElement("table");
+  table.classList.add('matches-table');
+  table.style.display = "none";
+
+  var numMatches = {1: 0, 2: 1, 3: 3, 4: 6, 5: 10, 6: 15, 7: 21};
+  var split = 1;//sorted.length >= 5 ? 2 : 1;
+  var matches = numMatches[sorted.length];
+
+  //var tableHeadings = ["Match", "Result", "Sessions", "Done?"];
+  //var headingWidths = ["48%", "22%", "17%", "13%"];
+  var tableHeadings = ["Match", "Result", "Fin?"];
+  var headingWidths = ["64%", "28%", "18%"];
+  //tableHeadings = split == 2 ? tableHeadings.concat(tableHeadings) : tableHeadings;
+  // headingWidths = split == 2 ? ["30%", "12%", "8%", "30%", "12%", "8%"] : headingWidths;
+  var headingRow = document.createElement("tr");
+  headingRow.style.backgroundColor = "rgb(224, 224, 224)";
+  for (let j = 0; j < headingWidths.length; j++) {
+      var th = document.createElement("th");
+      th.innerHTML = tableHeadings[j];
+      th.style.width = headingWidths[j];
+      headingRow.appendChild(th);
+  }
+  table.appendChild(headingRow);
+
+  var matches = [];
+  for (var i=0; i < sorted.length; i++) {
+    for (var j=i+1; j<sorted.length; j++){
+      var player = sorted[i];
+      var opponent = sorted[j];
+      var match = `${player} vs. ${opponent}`;
+      var result = "0 - 0";
+      var sessions = 0;
+      var completed = "No";
+      if (opponent in data[player]) {
+        result = `${data[player][opponent]["wins"].toString()} - ${data[player][opponent]["losses"].toString()}`;
+        completed = data[player][opponent]["complete"];
+        sessions = data[player][opponent]["sessions"];
+      } else if (drops.includes(opponent) || drops.includes(player)) {
+        match = `<s>${match}</s>`;
+        completed = "N/A";
+        sessions = "N/A";
+      }
+      matches.push({"match":match, "result":result, "completed":completed})
+    }
+  }
+
+  var halfpoint = matches.length //split == 2 ?  Math.ceil(matches.length/2) : matches.length;
+  console.log(`halfpoint: ${halfpoint}`);
+
+  for (var i=0; i < halfpoint; i++) {
+    var row = document.createElement("tr");
+    /*for (var s=0; s < split; s++){
+      var startingIdx = s*(halfpoint-1)+i;
+      console.log(startingIdx); */
+    var info = matches[i];
+    for (var key in info) {
+      var cell = document.createElement("td");
+      cell.innerHTML = info[key];
+      row.append(cell);
+    }
+    table.append(row)
+  }
+
+  return table;
+}
+
+function genGrid(data, drops, sorted) {
   console.log("Generating grid...");
   var table = document.createElement("table");
   table.classList.add('grid-table');
   table.style.display = "none";
 
-  var sorted = [];
-  for (var key in data) {
-    sorted[sorted.length] = key;
-  }
-  sorted.sort(
-    function(a, b) {
-      if (drops.includes(a) && !(drops.includes(b))) {
-        return -1;
-      } else if (drops.includes(b)) {
-        return 1;
-      } else {
-        if (a.toLowerCase() < b.toLowerCase()) return -1;
-        if (a.toLowerCase() > b.toLowerCase()) return 1;
-        return 0;
-      }
-    }
-  );
-  console.log(sorted);
-  console.log(sorted.sort());
 
-  var tableHeadings = ["Player"];
+  var tableHeadings = [""]; //Placeholder for match completion rate.
   for (var m=0; m < sorted.length; m++) {
     tableHeadings[tableHeadings.length] = sorted[m];
   }
@@ -260,10 +340,9 @@ function genGrid(data, drops) {
         th.innerHTML = tableHeadings[j];
         th.style.width = firstWidths[numPlayers];
       } else {
-        th.innerHTML = formatDbLink(tableHeadings[j], "db-link");
-        th.innerHTML = "<p>" + th.innerHTML + "</p>"
+        th.innerHTML = formatShortDbLink(tableHeadings[j], "db-link");
         th.style.width = widths[numPlayers];
-        th.classList.add("verticalTableHeader");
+        //th.classList.add("verticalTableHeader");
       }
       headingRow.appendChild(th);
   }
@@ -298,42 +377,100 @@ function genGrid(data, drops) {
   return table;
 }
 
-function genMatches(data){
-  return;
-}
 
-function loadDivision(division) {
+function loadDivision(divisionDiv, division) {
   console.log(`Loading ${division} standings...`);
-  var divisionDiv = document.getElementById("single-division");
 
   // Get information
   var divisionData = divisions[division];
-  console.log(divisionData);
   var name = divisionData["name"];
   var tier = divisionData["tier"];
   var results = divisionData["results"];
   var standings = divisionData["members"];
   var players = divisionData["by_player"];
   var drops = divisionData["late drops"];
+  //var tiebreaker = divisionData["tiebreaker"];
+
+  // Compute sorted player list with drops last
+  var sorted = [];
+  for (var key in players) {
+    sorted[sorted.length] = key;
+  }
+  console.log("Logging sorting");
+  sorted.sort(
+    function(a, b) {
+      if (drops.includes(a) && !(drops.includes(b))) {
+        return 1;
+      } else if (drops.includes(b)) {
+        return -1;
+      } else {
+        if (a.toLowerCase() < b.toLowerCase()) return -1;
+        if (a.toLowerCase() > b.toLowerCase()) return 1;
+        return 0;
+      }
+    }
+  );
+  console.log(sorted);
+
 
   var standingsDiv = document.createElement("div");
   standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
-  standingsDiv.classList.add(`div${tier}`);
   standingsDiv.classList.add(`standings`);
+  standingsDiv.classList.add(`filterDiv`);
+  standingsDiv.classList.add(`div${tier}`);
   divisionDiv.appendChild(standingsDiv);
 
   var header = genHeader(division);
   var standingsTable = genStandings(standings, players);
-  var gridTable = genGrid(players, drops);
+  var gridTable = genGrid(players, drops, sorted);
+  var matchesTable = genMatches(players, drops, sorted);
   standingsDiv.appendChild(header);
   standingsDiv.appendChild(standingsTable);
   standingsDiv.appendChild(gridTable);
+  standingsDiv.appendChild(matchesTable);
 
   // genGrid(players, standingsTable);
 
 }
 
+function singleDivision(division){
+  console.log("showing single division");
+  var divisionDiv = document.getElementById("single-division");
+  divisionDiv.style.display = "";
+  divisionDiv.innerHTML = "";
+  console.log("hiding all divisions");
+  var allDivisionsDiv = document.getElementById("all-divisions");
+  allDivisionsDiv.style.display = "none";
+  loadDivision(divisionDiv, division);
+}
+
 function allDivisions(){
+  var curTierIdx = 0;
+  var curDiv = 1;
+  var divisionDiv = document.getElementById("divisions");
+  console.log("showing all divisions");
+  var allDivisionsDiv = document.getElementById("all-divisions");
+  allDivisionsDiv.style.display = "";
+  console.log("hiding single division");
+  var singleDivisionDiv = document.getElementById("single-division");
+  singleDivisionDiv.style.display = "none";
+  console.log(tiers);
+  while (true) {
+    if (curTierIdx == tiers.length) {
+      break;
+    }
+    if (curDiv > tiers[curTierIdx][1]) {
+      curDiv = 1;
+      curTierIdx += 1;
+    }
+    if (curTierIdx == tiers.length) {
+      break;
+    }
+    division = `${tiers[curTierIdx][0]}${curDiv}`;
+    curDiv += 1;
+    loadDivision(divisionDiv, division);
+
+  }
   return;
 }
 
@@ -341,12 +478,13 @@ function loadPage() {
   var division = getParam('div');
   var tier = getParam('tier');
   if (division.length > 0) {
-    loadDivision(division.toUpperCase());
+    singleDivision(division.toUpperCase());
   } else if (tier.length == 1) {
     allDivisions();
     filterSelection(`div${tier}`);
   } else {
     allDivisions();
+    filterSelection(`divA`);
   }
 }
 
@@ -363,7 +501,7 @@ function getParam(paramName) {
 
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("current-standings filterDiv");
+  x = document.getElementsByClassName("standings filterDiv");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");

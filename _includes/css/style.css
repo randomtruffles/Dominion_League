@@ -251,6 +251,11 @@ iframe {
 .standings {
   width: 80%;
   margin: auto;
+  max-height: 400px;
+  overflow: auto;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 @media (max-width: 600px) {
@@ -265,16 +270,35 @@ iframe {
   margin: auto;
   align: center;
   width: 100%;
+  table-layout: fixed;
   background-color: #ebeced;
-  font-size: 17px;
+  font-size: 16px;
   font-family: {{ site.data.template.font.secondary }};
 }
 
-@media (max-width: 600px) {
+.standings-table img {
+  width: 20px;
+  height: 19px;
+  vertical-align: middle;
+}
+
+
+.header-icon {
+  text-align: center;
+  padding: 1px !important;
+}
+
+@media (max-width: 650px) {
   .standings-table, .header-table {
     font-size: 14px;
   }
+  .standings-table img {
+    width: 17px;
+    height: 16px;
+    vertical-align: middle;
+  }
 }
+
 
 .standings-table td, .standings-table th {
   border: 1px solid grey;
@@ -294,15 +318,15 @@ iframe {
   align: center;
   width: 100%;
   background-color: #ebeced;
-  font-size: 17px;
+  font-size: 15px;
   table-layout: fixed;
   font-family: {{ site.data.template.font.secondary }};
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .grid-table {
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -310,11 +334,21 @@ iframe {
   border: 1px solid grey;
   padding: 5px 8px;
   font-weight: normal;
+  text-align: left;
 }
 
 .grid-table th {
   border: 1px solid grey;
   font-weight: normal;
+  vertical-align: baseline;
+  padding: 5px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.grid-table td:first-child {
+    text-align: right;
 }
 
 td.crossed
@@ -354,6 +388,51 @@ td.crossed:after
     width:0;
     padding-top:110%;/* takes width as reference, + 10% for faking some extra padding */
     display:inline-block;
+}
+
+.matches-table {
+  border-collapse: collapse;
+  margin: auto;
+  align: center;
+  width: 100%;
+  background-color: #ebeced;
+  font-size: 16px;
+  table-layout: fixed;
+  font-family: {{ site.data.template.font.secondary }};
+}
+
+@media (max-width: 650px) {
+  .matches-table {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.matches-table td {
+  border: 1px solid grey;
+  padding: 5px 8px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 125%;
+}
+
+.matches-table td:first-child {
+    text-align: right;
+}
+
+.matches-table th {
+  border: 1px solid grey;
+  vertical-align: baseline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.matches-table th:first-child {
+    text-align: right;
 }
 
 a.db-link {

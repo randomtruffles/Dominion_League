@@ -2,6 +2,7 @@ from __future__ import print_function
 import pickle
 import os.path
 import json
+from unidecode import unidecode
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -33,6 +34,23 @@ def getCurrentSeasonResults():
     curr_season = {}
     file = './_data/current_season.json'
     creds = None
+
+
+    TIERS = [
+    ("A", 1),
+    ("B", 2),
+    ("C", 4),
+    ("D", 4),
+    ("E", 8),
+    ("F", 14),
+    ("G", 13),
+    ("H", 25),
+    ("I", 25),
+    ("J", 26),
+    ("P",4)
+    ]
+    CUR_TIER_IDX = 0
+    CUR_DIV = 1
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
     # time.
@@ -67,16 +85,23 @@ def getCurrentSeasonResults():
         for row in values:
             cols = len(row)
             if cols >= 7:
-                division = row[0]
-                players = row[1].split(',')
-                pcts = row[2].split(',')
-                wins = row[3].split(',')
-                losses = row[4].split(',')
-                ranks = row[5].split(',')
-                p1s = row[6].split(',')
-                p2s = row[7].split(',')
-                wins1s = row[8].split(',')
-                wins2s = row[9].split(',')
+                if CUR_DIV > TIERS[CUR_TIER_IDX][1]:
+                    CUR_DIV = 1
+                    CUR_TIER_IDX += 1
+                if CUR_TIER_IDX == len(TIERS):
+                    continue
+                division = f"{TIERS[CUR_TIER_IDX][0]}{CUR_DIV}"
+                CUR_DIV += 1
+                players = row[0].split(',')
+                pcts = row[1].split(',')
+                wins = row[2].split(',')
+                losses = row[3].split(',')
+                tiers = row[4].split(',')
+                p1s = row[5].split(',')
+                p2s = row[6].split(',')
+                wins1s = row[7].split(',')
+                wins2s = row[8].split(',')
+                comments = row[9].split(',')
                 late_drops = []
                 if cols >= 11:
                     late_drops = row[10].split(',')
@@ -90,7 +115,13 @@ def getCurrentSeasonResults():
                     p2 = p2s[idx]
                     wins1 = wins1s[idx]
                     wins2 = wins2s[idx]
-                    result = {"player1":p1, "player2":p2, "wins1":wins1, "wins2":wins2}
+                    comment = comments[idx].encode("ascii", "ignore")
+                    comment = comment.decode()
+                    comment = comment.replace("\n", " ")
+                    comment = comment.replace("\"", "'")
+                    print(comment)
+
+                    result = {"player1":p1, "player2":p2, "wins1":wins1, "wins2":wins2, "comments":comment}
                     if division not in curr_season:
                         curr_season[division]={}
                         curr_season[division]["name"] = division
@@ -98,14 +129,30 @@ def getCurrentSeasonResults():
                         curr_season[division]["results"] = []
                         curr_season[division]["by_player"] = {}
                         curr_season[division]["late drops"] = late_drops
-                        print(curr_season[division]["late drops"])
                     if p1 not in curr_season[division]["by_player"]:
                         curr_season[division]["by_player"][p1] = {}
+                        curr_season[division]["by_player"][p1]["games_nondrop"] = 0
                     if p2 not in curr_season[division]["by_player"]:
                         curr_season[division]["by_player"][p2] = {}
+                        curr_season[division]["by_player"][p2]["games_nondrop"] = 0
+                    if p1 not in curr_season[division]["by_player"][p2]:
+                        curr_season[division]["by_player"][p2][p1] = {"wins": 0, "losses": 0, "complete": "No", "sessions": 0}
+                    if p2 not in curr_season[division]["by_player"][p1]:
+                        curr_season[division]["by_player"][p1][p2] = {"wins": 0, "losses": 0, "complete": "No", "sessions": 0}
                     curr_season[division]["results"].append(result)
-                    curr_season[division]["by_player"][p1][p2] = {"wins": wins1, "losses": wins2}
-                    curr_season[division]["by_player"][p2][p1] = {"wins": wins2, "losses": wins1}
+                    curr_season[division]["by_player"][p1][p2]["wins"] += float(wins1)
+                    curr_season[division]["by_player"][p1][p2]["losses"] += float(wins2)
+                    curr_season[division]["by_player"][p2][p1]["wins"] += float(wins2)
+                    curr_season[division]["by_player"][p2][p1]["losses"] += float(wins1)
+                    curr_season[division]["by_player"][p1][p2]["sessions"] += 1
+                    curr_season[division]["by_player"][p2][p1]["sessions"] += 1
+                    if int(curr_season[division]["by_player"][p1][p2]["wins"] + curr_season[division]["by_player"][p1][p2]["losses"]) == 6:
+                        curr_season[division]["by_player"][p1][p2]["complete"] = "Yes"
+                        curr_season[division]["by_player"][p2][p1]["complete"] = "Yes"
+                    if p1 not in late_drops and p2 not in late_drops:
+                        curr_season[division]["by_player"][p1]["games_nondrop"] += int(float(wins1) + float(wins2))
+                        curr_season[division]["by_player"][p2]["games_nondrop"] += int(float(wins1) + float(wins2))
+
 
                 # Member standings
                 curr_season[division]["members"] = {}
@@ -114,9 +161,8 @@ def getCurrentSeasonResults():
                         break
                     color = assign_color(float(pcts[p_idx][:-1]))
                     drop = "Yes" if player in late_drops else "No"
-                    curr_season[division]["members"][player] = {"name": player, "rank":int(ranks[p_idx]), "wins":wins[p_idx], "losses":losses[p_idx], "pct": pcts[p_idx], "color": color, "drop":drop}
 
-
+                    curr_season[division]["members"][player] = {"name": player, "wins":wins[p_idx], "losses":losses[p_idx], "pct": pcts[p_idx], "color": color, "tiebreaker": 0, "drop":drop, "next tier":tiers[p_idx]}
                 # Tiebreaker values
                 for player in players:
                     if player == "" or player in late_drops:
@@ -126,10 +172,24 @@ def getCurrentSeasonResults():
                             break
                         if player != opponent and opponent not in late_drops and opponent in curr_season[division]["by_player"][player]:
                             if curr_season[division]["members"][player]["pct"] == curr_season[division]["members"][opponent]["pct"]:
-                                if "tiebreaker" in curr_season[division]["members"][player]:
                                     curr_season[division]["members"][player]["tiebreaker"] += curr_season[division]["by_player"][player][opponent]["wins"]
-                                else:
-                                    curr_season[division]["members"][player]["tiebreaker"] = curr_season[division]["by_player"][player][opponent]["wins"]
+
+
+                # Figure out ranks
+                rank = 1
+                for p_idx, player in enumerate(players):
+                    if player == "":
+                        break
+                    if p_idx == 0:
+                        curr_season[division]["members"][player]["rank"] = rank
+                        continue
+                    opponent = players[p_idx-1]
+                    if curr_season[division]["members"][player]["pct"] == curr_season[division]["members"][opponent]["pct"] and curr_season[division]["members"][opponent]["tiebreaker"] == curr_season[division]["members"][player]["tiebreaker"]:
+                        curr_season[division]["members"][player]["rank"] = rank
+                    else:
+                        rank = p_idx + 1
+                        curr_season[division]["members"][player]["rank"] = rank
+
 
     print(f"Retrieved {len(curr_season)} divisions...")
     print(f"Writing to {file}...")
