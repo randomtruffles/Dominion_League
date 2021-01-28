@@ -25,7 +25,7 @@ In Season 44, we'll mainly be adding some new features:
 * If the second place finisher also promotes in your division, they'll also get a shout-out in the #congratulations channel and your division channel in Discord.
 * Starting in the Season 44/45 break, if you fill out the Returning Form in time, you can optionally sign up to get paired with a random opponent in your tier to play a just-for-fun exhibition match during the break. Hopefully this helps those of you who have a tendency to get bored without League!
 
-In terms of rules changes, the only major change is to the deadlines. Starting with the end of Season 44, all deadlines will be moved back to 0 UTC from where they have been at 15 UTC. For players in the Americas, this will be in your evening, not your morning the next day.
+In terms of rules changes, the only major change is to the deadlines. Starting with the end of Season 44, all deadlines will be moved back to 0 UTC from where they have been at 15 UTC, in order to standardize and align with the client's daily ratings updates. For players in the Americas, this will be in your evening, not your morning the next day.
 
 This includes the end of season deadline, the signup deadline, the late signup deadline, and the deadline to fill out the returning form (which still coincides with the signup deadline). We are also moving the late signup deadline back to Saturday of Week 2, at 0 UTC. We make no guarantees for players on the waiting list, but if you have a friend interested in joining the League, they can still sign up for nearly two full weeks into the season!
 
