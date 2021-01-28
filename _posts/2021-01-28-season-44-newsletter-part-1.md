@@ -19,10 +19,10 @@ Indeed, the League seems to be in a great place right now. We're still not sure 
 
 In Season 44, we'll mainly be adding some new features:
 
-* The availabilities that you each provide us in the check-in form will now be compiled and automatically posted by a minion for ease of access. No more random scrolling!
-* If you put your match on the calendar, there will now be an automatic reminder in your division channel when the match is about to start, both as a reminder to you and so the other players of your division can watch!
+* The availabilities that you each provide us in the check-in form will now be compiled and automatically posted by a minion for ease of access. No more scrolling through a bunch of posts in the channel to find them!
+* If you put your match on the [calendar](https://dominionleague.org/matches), there will now be an automatic reminder in your division channel when the match is about to start, both as a reminder to you and so the other players of your division can watch!
 * Losing players mid-season always sucks, but if that happens in your division, the standings will be more informative about what is happening. Let's hope you don't need to see that!
-* If the second place finisher also promotes in your division, they'll also get a shout-out in the #congratulations channel.
+* If the second place finisher also promotes in your division, they'll also get a shout-out in the #congratulations channel and your division channel in Discord.
 * Starting in the Season 44/45 break, if you fill out the Returning Form in time, you can optionally sign up to get paired with a random opponent in your tier to play a just-for-fun exhibition match during the break. Hopefully this helps those of you who have a tendency to get bored without League!
 
 In terms of rules changes, the only major change is to the deadlines. Starting with the end of Season 44, all deadlines will be moved back to 0 UTC from where they have been at 15 UTC. For players in the Americas, this will be in your evening, not your morning the next day.
@@ -37,10 +37,10 @@ For the full details of these decisions, see the minutes below.
 		<li>This seemed like a nice idea to make the availiabilty more useful. We'll have to be careful with the pins but it should work<ul>		</ul></li>			
 		<li>Motion to add a league-videos channel for all League videos only.<ul>	<li>NO (3 dissenting)</li>	</ul></li>			
 		<li>The #videos channel is fairly functional as it is for surfacing League videos, among others.<ul>		</ul></li>			
-		<li>DISSENT \[Sharur, Lemonspawn, amoffett11]: <ul>		</ul></li>			
+		<li>DISSENT \\[Sharur, Lemonspawn, amoffett11]: <ul>		</ul></li>			
 		<li>Should the new league-videos channel, if it is created, allow discussion?<ul>	<li>NO (2 dissenting)</li>	</ul></li>			
 		<li>Had we created it, the main purpose would be to help people find videos to watch, while #videos could hold any needed discussion.<ul>		</ul></li>			
-		<li>DISSENT \[Sharur, amoffett11]:<ul>		</ul></li>			
+		<li>DISSENT \\[Sharur, amoffett11]:<ul>		</ul></li>			
 		<li>Motion to add "Starting Now" notifications for calendar events of League games to the players' division channel.<ul>	<li>YES (unanimous)</li>	</ul></li>			
 		<li>This seems like a nice way to tie in the calendar to the League, also giving players a chance to find out that a match in their division is taking place.<ul>		</ul></li>			
 		<li>Should we add a question to the returning form about changing the match length to an odd number of games (so that, barring ties, there's a "winner" to the match)?<ul>	<li>NO (2 dissenting)</li>	</ul></li>			
@@ -86,7 +86,7 @@ For the full details of these decisions, see the minutes below.
 		<li>Since we used to delete all players dropped with fewer than 18 games played, we didn't have easy access to those examples. With the last two seasons of data, we can now start to analyze other proposals for adjustment matches and see when they would disagree with the current, fairly complicated system.<ul>		</ul></li>			
 		<li>DISSENT (volfied): We should leave the current system in place longer to allow people to get used to it and to provide more and better data for analysis.<ul>		</ul></li>			
 		<li>Motion to change the way intermediate standings are displayed in order to make the effect of all future games played by players who did not play the dropped player a small multiplier higher.<ul>	<li>NO (4 dissenting)</li>	</ul></li>			
-		<li>\[Sharur, sweetjohn33, crlundy]<ul>		</ul></li>			
+		<li>\\[Sharur, sweetjohn33, crlundy]<ul>		</ul></li>			
 		<li>DISSENT (SamE): Because any simulated results derive from the winning percentage of players, those numbers fluctuate as additional results come in. This can lead to counterintuitive behavior such as the number of wins or losses decreasing after a (blowout) match is added to the results. To make this problem go away, we can actually only include the contribution to the simulation from the portion of the season played. This would then mean that every future game simply has a multiplier attached (e.g. 2%) corresponding to the additional effect of that win on the simulated results. Knowing that every game counts for 1.02, say, makes it easier to forecast the effect of getting various results in your remaining matches.<ul>		</ul></li>			
 		<li>Motion to add four columns to the division standings for reweighted/non-reweighted wins/losses that we only display if someone is dropped with games played.<ul>	<li>YES (unanimous)</li>	</ul></li>			
 		<li>Reweighted results can introduce unfamiliar numbers that can make it hard to compare. By also showing the reweighted games and non-reweighted games separately for divisions with drops who played games, we can help to make the standings more understandable.<ul>		</ul></li>			
