@@ -315,6 +315,7 @@ function genSimulations(players, drops, sorted){
 
 function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning, isRaw, playerNameKey="") {
   console.log("Generating standings...");
+  console.log(drops);
   var table = document.createElement("table");
   var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
   if (isRaw) table.style.display = "none";

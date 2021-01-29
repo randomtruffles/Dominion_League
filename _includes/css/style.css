@@ -681,7 +681,7 @@ input:checked + .slider:before {
 
 input:checked + .slider:after
 {
-  content:'RAW';
+  content:'OFF';
   top: 50%;
   left: 40%;
 }
