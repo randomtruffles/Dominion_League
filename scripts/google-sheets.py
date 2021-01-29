@@ -173,6 +173,9 @@ def getCurrentSeasonResults():
                         {"name": player, "wins":wins[p_idx], "losses":losses[p_idx], \
                          "pct": pcts[p_idx], "color": color, "tiebreaker": 0, \
                          "drop":drop, "next tier":tiers[p_idx], \
+                         "games_wdrop":curr_season[division]["by_player"][player]["wins"]+curr_season[division]["by_player"][player]["losses"], \
+                         "wins_wdrop":curr_season[division]["by_player"][player]["wins"], \
+                         "losses_wdrop":curr_season[division]["by_player"][player]["losses"], \
                          "games_nondrop":curr_season[division]["by_player"][player]["games_nondrop"], \
                          "wins_nondrop":curr_season[division]["by_player"][player]["wins_nondrop"], \
                          "losses_nondrop":curr_season[division]["by_player"][player]["losses_nondrop"]}

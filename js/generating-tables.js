@@ -221,7 +221,7 @@ function genIndividualMatch(player, players, scores, isRaw, drops) {
   var table = document.createElement("table");
   table.classList.add("individual-match-table");
   span.appendChild(table);
-  var tableHeadings = isRaw ? ["Match (ignore drops)", "Result"] : ["Match", "Result"];
+  var tableHeadings = ["Match", "Result"];
 
   var headingRow = document.createElement("tr");
   headingRow.style.backgroundColor = "rgb(224, 224, 224)";
@@ -238,7 +238,7 @@ function genIndividualMatch(player, players, scores, isRaw, drops) {
     var opponent = players[p];
     var match = `${player} vs. ${opponent}`;
     var strike = isRaw && (drops.includes(opponent) || drops.includes(players[p]));
-    match = strike ? `<s>${match} (drop)</s>` : match;
+    match = strike ? `${match} (drop)` : match;
     var score;
     if (player == players[p]) continue;
     if (opponent in scores[player]) {
@@ -319,84 +319,25 @@ function genSimulations(players, drops, sorted){
 
 function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning, isRaw, playerNameKey="") {
   console.log("Generating standings...");
-  console.log(drops);
   var table = document.createElement("table");
   var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
   if (isRaw) table.style.display = "none";
   table.classList.add(tableClass);
 
-  var numDrops = drops.length;
   var sortedRankedMembers = Object.keys(data).map(function(key) {
     return [key, data[key]];
   });
   sortedRankedMembers.sort(function(x, y) {
     return x[1]["rank"] - y[1]["rank"];
   });
+  var numDrops = drops.length;
+  var numPlayers = sortedRankedMembers.length;
 
-  var tableHeadings, headingWidths;
-
-  var tierIcon = "<img src='img/icons/tier.png' title='Tier next season'>";
-  var returningIcon = "<img src='img/icons/returning.png' title='Returning next season?'>";
-
-  if (complete == "Yes") {
-    tableHeadings = ["#", "Player", "W%", "W", "L", tierIcon, returningIcon];
-    headingWidths = ["7%", "35%", "14%", "14%", "13%", "8%", "8%"];
-  } else {
-    tableHeadings = ["#", "Player", "W%", "W", "L", "MP", returningIcon];
-    headingWidths = ["7%", "35%", "13%", "12%", "12%", "13%", "8%"];
-  }
   var tbValues = {};
   var promotion = "";
   var demotion = "";
 
-  // Figure out tiebreakers
-  for (var member in data) {
-    for (var opponent in data) {
-      memberData = data[member];
-      opponentData = data[opponent];
-      if (
-        member == opponent
-        || memberData["drop"] == "Yes"
-        || memberData["pct"] == "0%"
-        || !(member in tiebreaker)
-      ) { continue;}
-
-      if (memberData["pct"] == opponentData["pct"]) {
-          if (!(member in tbValues)) {
-            tbValues[member] = 0;
-          }
-          if (opponent in tiebreaker[member]) {
-            tbValues[member] += parseFloat(tiebreaker[member][opponent]["wins"]);
-          }
-      }
-    }
-  }
-
-  var tBheading = isRaw ? "+/-" : "TB";
-
-  if (Object.keys(tbValues).length > 0) {
-    if (complete == "Yes") {
-      tableHeadings = ["#", "Player", "W%", "W", "L", tBheading, tierIcon, returningIcon];
-      headingWidths = ["7%", "35%", "11%", "11%", "11%", "9%", "8%","8%"];
-    } else {
-      tableHeadings = ["#", "Player", "W%", "W", "L", tBheading, "MP", returningIcon];
-      headingWidths = ["6%", "35%", "11%", "11%", "11%", "8%", "11%","7%"];
-
-    }
-  }
-
-  var headingRow = document.createElement("tr");
-  headingRow.style.backgroundColor = "rgb(224, 224, 224)";
-  for (let j = 0; j < headingWidths.length; j++) {
-      var th = document.createElement("th");
-      th.innerHTML = tableHeadings[j];
-      th.style.width = headingWidths[j];
-      if (tableHeadings[j].length > 10) {
-        th.classList.add("header-icon");
-      }
-      headingRow.appendChild(th);
-  }
-  table.appendChild(headingRow);
+  /* helper functions*/
   function isReturning(name){
     if (data[name]["drop"] == "Yes") {
       return "N";
@@ -414,8 +355,71 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
     }
     return "?"
   }
+  function calcTiebreakers() {
+    // Figure out tiebreakers
+    for (var member in data) {
+      for (var opponent in data) {
+        memberData = data[member];
+        opponentData = data[opponent];
+        if (
+          member == opponent
+          || memberData["drop"] == "Yes"
+          || memberData["pct"] == "0%"
+          || !(member in tiebreaker)
+        ) { continue;}
 
-  var numPlayers = sortedRankedMembers.length;
+        if (memberData["pct"] == opponentData["pct"]) {
+            if (!(member in tbValues)) {
+              tbValues[member] = 0;
+            }
+            if (opponent in tiebreaker[member]) {
+              tbValues[member] += parseFloat(tiebreaker[member][opponent]["wins"]);
+            }
+        }
+      }
+    }
+  }
+
+  calcTiebreakers();
+
+  var tableHeadings, headingWidths;
+  var tierIcon = "<img src='img/icons/tier.png' title='Tier next season'>";
+  var returningIcon = "<img src='img/icons/returning.png' title='Returning next season?'>";
+  if (isRaw) {
+    tableHeadings = ["#", "Player", "Wnd%", "Wnd", "L", "Wd%", "Wd", "Ld"];
+    headingWidths = ["6%", "35%", "10%", "10%", "10%", "10%", "10%","9%"];
+  } else if (Object.keys(tbValues).length > 0) {
+    if (complete == "Yes") {
+      tableHeadings = ["#", "Player", "W%", "W", "L", "TB", tierIcon, returningIcon];
+      headingWidths = ["6%", "35%", "11%", "11%", "11%", "10%", "8%","8%"];
+    } else {
+      tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "MP", returningIcon];
+      headingWidths = ["6%", "35%", "11%", "11%", "11%", "8%", "11%","7%"];
+    }
+  } else {
+    if (complete == "Yes") {
+      tableHeadings = ["#", "Player", "W%", "W", "L", tierIcon, returningIcon];
+      headingWidths = ["6%", "35%", "14%", "14%", "14%", "8%", "8%"];
+    } else {
+      tableHeadings = ["#", "Player", "W%", "W", "L", "MP", returningIcon];
+      headingWidths = ["6%", "35%", "14%", "12%", "12%", "13%", "8%"];
+    }
+  }
+
+  var headingRow = document.createElement("tr");
+  headingRow.style.backgroundColor = "rgb(224, 224, 224)";
+  for (let j = 0; j < headingWidths.length; j++) {
+      var th = document.createElement("th");
+      th.innerHTML = tableHeadings[j];
+      th.style.width = headingWidths[j];
+      if (tableHeadings[j].length > 10) {
+        th.classList.add("header-icon");
+      }
+      headingRow.appendChild(th);
+  }
+  table.appendChild(headingRow);
+
+
   function tierOrMatches(playerData, cell) {
     if (complete == "Yes") {
       cell.innerHTML = playerData["next tier"];
@@ -454,15 +458,15 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
     var name = playerData["name"];
 
     var droppedInfo = {
-      "rank" : playerData["drop"] == "Yes" ? "X" : playerData["rank"] ,
+      "rank" : playerData["rank"] ,
       "name" : formatDbLink(name, "db-link", playerData["drop"]),
       "pct" : `${Math.round(playerData["wins_nondrop"]/(playerData["wins_nondrop"]+playerData["losses_nondrop"])*100)}%`,
       "wins" : playerData["wins_nondrop"].toFixed(1).replace(".0", ""),
       "losses" : playerData["losses_nondrop"].toFixed(1).replace(".0", ""),
-      "tierOrMatches" : "",
-      "returning" : isReturning(name)
+      "pctAll" : `${Math.round(playerData["wins_wdrop"]/(playerData["wins_wdrop"]+playerData["losses_wdrop"])*100)}%`,
+      "winsAll" : playerData["wins_wdrop"].toFixed(1).replace(".0", ""),
+      "lossesAll" : playerData["losses_wdrop"].toFixed(1).replace(".0", "")
     }
-
     var nonDroppedInfo = {
       "rank" : playerData["rank"] ,
       "name" : formatDbLink(name, "db-link", playerData["drop"]),
@@ -475,7 +479,6 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
 
     var rowInfo = isRaw ? droppedInfo : nonDroppedInfo;
     var row = document.createElement("tr");
-    if (isRaw && playerData["drop"] == "Yes") row.style.backgroundColor = "gray";
     for (var info in rowInfo) {
       var cell = document.createElement("td");
       cell.innerHTML = rowInfo[info];
@@ -484,12 +487,19 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
           if (rowInfo[info].toLowerCase() == playerNameKey) {
             cell.innerHTML = `<b>${rowInfo[info]}</b>`;
           }
-          if (!isRaw) standingsColor(cell, tier, playerData["next tier"], playerData["name"]);
+          standingsColor(cell, tier, playerData["next tier"], playerData["name"]);
           cell.classList.add("cellWithDetail");
           cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker, isRaw, drops));
           break;
         case "pct" :
-          if (!isRaw) cell.style.backgroundColor = playerData["color"];
+          if (!isRaw) {
+            cell.style.backgroundColor = playerData["color"];
+          } else {
+            cell.style.backgroundColor = matchColor(parseInt(rowInfo[info]), 100);
+          }
+          break;
+        case "pctAll":
+          cell.style.backgroundColor = matchColor(parseInt(rowInfo[info]), 100);
           break;
         case "tierOrMatches":
           tierOrMatches(playerData, cell);
