@@ -1,0 +1,51 @@
+name: PullSheets
+
+# Controls when the action will run. 
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  # This workflow contains a single job called "build"
+  update_sheets:
+    
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Lmao1
+        run: |
+          python3 -m pip install --upgrade pip
+          pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+      
+      - name: Run Script
+        run: |
+          python3 ./scripts/google-sheets.py
+    
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v7.0.0
+        with:
+          # The arguments for the `git add` command (see the paragraph below for more info)
+          # Default: '.'
+          add: '.'
+
+          # The name of the user that will be displayed as the author of the commit
+          # Default: author of the commit that triggered the run
+          author_name: randomtruffles
+
+          # The email of the user that will be displayed as the author of the commit
+          # Default: author of the commit that triggered the run
+          author_email: truffles.dominion@gmail.com
+
+          # Name of the branch to use, if different from the one that triggered the workflow
+          # Default: the branch that triggered the run
+          branch: master
+
+          # The message for the commit
+          # Default: 'Commit from GitHub Actions (name of the workflow)'
+          message: 'Update sheets'
+

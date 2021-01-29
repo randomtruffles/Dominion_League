@@ -38,7 +38,7 @@ title: Dominion League Player Database
       <h5> URL Searching </h5>
       <p> You can also search by adding the <code>player</code> param to this page's url, using <code>%20</code> to represent spaces between names.
           <br>
-          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="{{site.baseurl}}/player_database?player=mic%20qsenoch">this page's url</a>.
+          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="{{site.baseurl}}/player_versus?player=mic%20qsenoch">this page's url</a>.
           <br>
           <br>
       </p>
@@ -55,8 +55,7 @@ title: Dominion League Player Database
     </div>
   </div>
 </div>
-<script src="js/generating-tables.js"></script>
-<script src="js/tables-utils.js"></script>
+
 <script>
 // Data for tables
 var playersTable = {{ site.data.player_and_seasons_played | jsonify }};
@@ -66,36 +65,14 @@ var champions = {{ site.data.champions | jsonify }};
 champions = champions["players"]
 var championshipVideos = {{ site.data.championship_videos | jsonify }};
 var youtubeChannels = {{ site.data.youtube_channels | jsonify }};
-// var currentSeasonIframesTable = {{ site.data.current_season_iframes | jsonify }};
+var currentSeason = {{ site.data.current_season | jsonify }};
+var currentSeasonPlayers = currentSeason["players"];
 var uniqueOpponents = {{ site.data.players_unique_opponents | jsonify }};
-
-// Current season data
-var currentSeasonTable = {{ site.data.current_season | jsonify }};
-var currentSeasonPlayers = currentSeasonTable["players"];
-var sheetsLinks = {{ site.data.current_season_links | jsonify }};
-var returning = {{ site.data.current_season_returning | jsonify }};
-
+var ongoing = true;
+var playerVersus = {{ site.data.versus | jsonify }}
 
 // Get URL parameter
 searchPlayerHistory(true);
-
-// Get dropdown selection
-function openDropdown() {
-  console.log("opening dropdown");
-  // Get the modal, button and close button
-  var dropdown = document.getElementById('search-dropdown');
-  dropdown.style.display = "block";
-}
-
-function selectDropdown(choice) {
-  var selection = choice.innerHTML;
-  console.log("select dropdown");
-  console.log(selection);
-  var dropdown = document.getElementById('search-dropdown');
-  dropdown.style.display = "none";
-  var defaultOption = document.getElementById('default-option');
-  defaultOption.innerHTML = selection + ` <i class="fa fa-caret-down" aria-hidden="true"></i>`;
-}
 
 // Event listener for input
 input_player_search.addEventListener("keyup", function(event) {
@@ -135,6 +112,43 @@ function searchPlayerHistory(param=false){
   var enteredPlayerName = document.getElementById("input_player_search").value;
   var playerNameKey = enteredPlayerName.toLowerCase().trim();
 
+
+  // ****************
+  // Helper Functions
+  // ****************
+  // ---addToDiv adds elements to a specificied div
+  function addToDiv(div, info, elementType, className="") {
+    var divContent = document.createElement(elementType);
+    divContent.innerHTML = info;
+    if (className != "") divContent.classList.add(className);
+    div.appendChild(divContent);
+    return;
+  }
+  function customDisplay(headerInfo, bodyInfo) {
+    addToDiv(playerDiv, headerInfo, "h4");
+    addToDiv(playerDiv, bodyInfo, "p");
+    return;
+  }
+  function computeStats(playerNameKey) {
+    var playerStats = playersTable[playerNameKey]["stats"];
+    var totalPlayed = playerStats["Total Seasons Played"];
+    var firstSeason = playerStats["First Season"];
+    var longestStreak = playerStats["Longest Streak"];
+    if (currentSeasonPlayers[playerNameKey]) {
+      totalPlayed += 1;
+      if (longestStreak[2] == currentSeasonPlayers["seasons"] - 1){
+        longestStreak[2] += 1;
+        longestStreak[0] += 1;
+      }
+    }
+    return {
+      "Total Seasons Played": totalPlayed.toString(),
+      "First Season Played": firstSeason.toString(),
+      "Longest Streak": longestStreak[0].toString() + " (S"+longestStreak[1].toString()+"-S"+longestStreak[2].toString()+")",
+      "Unique Opponents": (uniqueOpponents[playerNameKey.toLowerCase()].length).toString()
+    };
+  }
+
   // ******************
   // Parsing URL Params
   // ******************
@@ -151,7 +165,7 @@ function searchPlayerHistory(param=false){
     playerNameKey = playerParam.toLowerCase();
   } else {
     urlParamName = enteredPlayerName.replace(/ /g, "%20");
-    location.replace("{{site.baseurl}}/player_database?player="+urlParamName);
+    location.replace("{{site.baseurl}}/player_versus?player="+urlParamName);
     return;
   }
   document.getElementById("loading").style.display = "none"
@@ -161,16 +175,18 @@ function searchPlayerHistory(param=false){
   // *************************
   // ---Easter eggs
   if (playerNameKey == "truffles") {
-    customDisplay(playerDiv, "You've found an easter egg!", "I'm like Stef hiding himself from the leaderboard!");
+    customDisplay("You've found an easter egg!", "I'm like Stef hiding himself from the leaderboard!");
     return;
   } else if (playerNameKey == "kuroba") {
-    customDisplay(playerDiv, "You've found an easter egg!", "He is too bad to be in league.");
+    customDisplay("You've found an easter egg!", "He is too bad to be in league.");
     return;
   // ---Error handling (invalid input)
   } else if (!playersTable[playerNameKey] && !currentSeasonPlayers[playerNameKey]) {
-    customDisplay(playerDiv, "Error: Player Does Not Exist", "<b>" + enteredPlayerName + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').");
+    console.log(enteredPlayerName);
+    customDisplay("Error: Player Does Not Exist", "<b>" + enteredPlayerName + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').");
     return;
   }
+
 
   // **************
   // Player Heading
@@ -187,7 +203,7 @@ function searchPlayerHistory(param=false){
   }
   // ---Stats Heading
   if (playersTable[playerNameKey]) {
-    var stats = computeStats(playerNameKey, playersTable[playerNameKey]["stats"], uniqueOpponents, currentSeasonPlayers);
+    var stats = computeStats(playerNameKey);
     for (var stat in stats){
       addToDiv(playerDiv, `<b>${stat}:</b> ${stats[stat]}`, "p", "stats-p");
     }
@@ -202,91 +218,28 @@ function searchPlayerHistory(param=false){
   // ---Aesthetic Line Break
   addToDiv(playerDiv, "", "hr", "hr-database");
 
-
-  // ************************
-  // Current Season Standings
-  // ************************
-  if (currentSeasonPlayers[playerNameKey]) {
-    var season = currentSeasonPlayers["seasons"];
-    var division = currentSeasonPlayers[playerNameKey]["division"];
-    var divisionData = currentSeasonTable[division];
-    var title = `<a href="current_standings?div=${division}"> S${currentSeasonTable["season"]}</a> ${division} Division`;
-    var params = {"headerText":title, "playerNameKey":playerNameKey}
-    loadDivision(standingsDiv, divisionData, sheetsLinks[division], division, returning, params);
-    // ---Check if they have other league history
-    if(!playersTable[playerNameKey]) {
-      return;
-    }
-  }
-
   // *************************
-  // Previous Season Standings
+  // Opponents
   // *************************
-  // ---Sort by newest season first
-  var playerSeasons = playersTable[playerNameKey]["seasons"].slice().reverse();
-  // ---Iterate through all seasons the player has played
-  for (let i = 0; i < playerSeasons.length; i++) {
-    var season = playerSeasons[i]["season"]; // Eg. "1"
-    var division = playerSeasons[i]["division"]; // Eg. "A1"
-    // Get Table Information
-    var divisionData = leagueHistory[season][division];
-    var champion = leagueHistory[season]["champion"];
-    createTable(standingsDiv, season, division, divisionData, playerNameKey, champion);
-  }
-
-  // ******************************************
-  // Modals for table results within a division
-  // ******************************************
-  // Get the modal, button and close button
-  var modal = document.getElementsByClassName('myModal');
-  var btn = document.getElementsByClassName("database-results-button");
-  var span = document.getElementsByClassName("close");
-  window.onclick = function(event) {
-    for (let j = 0; j < btn.length; j++) {
-      if (event.target == modal[j]) {
-          modal[j].style.display = "none";
-      }
-    }
-  }
-  for (let j = 0; j < btn.length; j++) {
-    // When the user clicks the button, open the modal
-    btn[j].onclick = function() {
-        modal[j].style.display = "block";
-    }
-    // When the user clicks on <span> (x), close the modal
-    span[j].onclick = function() {
-        modal[j].style.display = "none";
-    }
-  }
-}
-
-function createTable(divContainer, season, division, divisionData, playerNameKey, champion=""){
-  var champion_sym = " <img src=\"{{site.baseurl}}/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
-  var divisionMembers = divisionData["members"];
-  var numMembers = Object.keys(divisionMembers).length
-
-  // Create table
+  // ---Sort default alphabetically
   var table = document.createElement("table");
   table.classList.add('table-player-database');
-  //table.style.marginBottom = "10px";
   table.setAttribute('align', 'center');
   table.setAttribute('border', '2px solid grey');
 
   // Create division heading
-  var divisionRow = document.createElement("tr");
-  var divisionHeading = document.createElement("td");
-  divisionHeading.setAttribute('colspan', 5);
-  divisionHeading.classList.add('database-division-header');
-  var seasonUrl = "<a href=\"past_standings/season" + season + "\">S" + season + "</a>";
-  var resultsButton = "<button class=\"database-results-button\">Results</button>"
-  divisionHeading.innerHTML = seasonUrl + " " + division+ " Division" + resultsButton;
-  divisionHeading.style.backgroundColor = "lightgrey";
-  divisionRow.appendChild(divisionHeading);
-  table.appendChild(divisionRow);
+  var tableRow = document.createElement("tr");
+  var tableHeading = document.createElement("td");
+  tableHeading.setAttribute('colspan', 5);
+  tableHeading.classList.add('database-division-header');
+  tableHeading.innerHTML = "Versus Opponent List";
+  tableHeading.style.backgroundColor = "lightgrey";
+  tableRow.appendChild(tableHeading);
+  table.appendChild(tableRow);
 
   // Create table heading
-  var col = ["#", "Player", "W", "L", "Win %"];
-  var col_width = ["10%", "49%", "13%", "13%", "15%"];
+  var col = ["Opponent Name", "Net Score", "Wins", "Losses", "Seasons Played"];
+  var col_width = ["25%", "10%", "10%", "10%", "45%"];
   var h_row = document.createElement("tr");
   for (let j = 0; j < col.length; j++) {
       var th = document.createElement("th");
@@ -297,142 +250,44 @@ function createTable(divContainer, season, division, divisionData, playerNameKey
   h_row.style.backgroundColor = "#e0e0e0";
   table.appendChild(h_row);
 
-  var sortedRankedMembers = Object.keys(divisionMembers).map(function(key) {
-      return [key, divisionMembers[key]];
-  });
-  sortedRankedMembers.sort(function(x, y) {
-      return x[1]["rank"] - y[1]["rank"];
-  });
+  var opponents = playerVersus[playerNameKey]["opponents"];
+  console.log(opponents);
 
-  // Create table body
-  // ADD COLUMN HEADER TO ROW OF TABLE HEAD.
-  for (var keypair of sortedRankedMembers) {
-      let key = keypair[0];
-      var rowInfo = divisionMembers[key];
+  for (var opponent in opponents) {
+      var rowInfo = opponents[opponent];
 
       var dRow = document.createElement("tr");
 
       // Add data for each member
-      var rank = document.createElement("td");
-      rank.innerHTML = rowInfo["rank"];
-      dRow.appendChild(rank);
+      var opponentCell = document.createElement("td");
+      opponentCell.innerHTML = opponent;
+      dRow.appendChild(opponentCell);
 
-      var player = document.createElement("td");
-      var rowInfoName = rowInfo["name"];
+      var netCell = document.createElement("td");
+      netCell.innerHTML = rowInfo["wins"] - rowInfo["losses"];
+      dRow.appendChild(netCell);
 
-      // Generate URL for database
-      var rowInfoNameParam = rowInfoName.replace(/ /g, "%20")
-      var rowClass = "player-past-standings"
-      var rowInfoNameHyperlink = `<a class="${rowClass}" href="{{site.baseurl}}/player_database?player=${rowInfoNameParam}">${rowInfoName}</a>`;
+      var winsCell = document.createElement("td");
+      winsCell.innerHTML = rowInfo["wins"];
+      dRow.appendChild(winsCell);
 
-      var if_champion = "";
-      // figure out if champion
-      if (division == "A1" && champion != "") {
-        if (champion && rowInfoName.toLowerCase() == champion) {
-          if (championshipVideos[season].length > 0) {
-            if_champion = " <a href=\"" + championshipVideos[season][0] + "\">" + champion_sym + "</a>";
-          } else {
-            if_champion = champion_sym;
-          }
-        }
+      var lossesCell = document.createElement("td");
+      lossesCell.innerHTML = rowInfo["losses"];
+      dRow.appendChild(lossesCell);
+
+      var seasonsPlayedCell = document.createElement("td");
+      var seasonsPlayed = rowInfo["by_season"];
+      var seasonsPlayedStr = ""
+      for (var seasonPlayed in seasonsPlayed) {
+        seasonsPlayedStr += `S${seasonPlayed}, `;
       }
-      if (rowInfoName.toLowerCase() == playerNameKey) {
-        player.innerHTML = "<b>" + rowInfoNameHyperlink + "</b>" + if_champion;
-      } else {
-        player.innerHTML = rowInfoNameHyperlink + if_champion;
-      }
-      dRow.appendChild(player);
-
-      var wins = document.createElement("td");
-      wins.innerHTML = rowInfo["wins"];
-      dRow.appendChild(wins);
-
-      var losses = document.createElement("td");
-      losses.innerHTML = rowInfo["losses"];
-      dRow.appendChild(losses);
-
-      var pct = document.createElement("td");
-      pct.innerHTML = rowInfo["pct"];
-      pct.style.backgroundColor = rowInfo["color"];
-      dRow.appendChild(pct);
+      seasonsPlayedCell.innerHTML = seasonsPlayedStr.slice(0, -2);
+      dRow.appendChild(seasonsPlayedCell);
 
       table.appendChild(dRow)
-
   }
-
   // Add table to container
-  divContainer.appendChild(table);
-
-  // Generate modal
-  modal_div = document.createElement("div");
-  modal_div.classList.add("myModal");
-  modal_div.classList.add("modal");
-
-  modal = document.createElement("div");
-  modal.classList.add("modal-content");
-
-  close_button = document.createElement("span");
-  close_button.classList.add("close");
-  close_button.innerHTML = "&times;";
-  modal.appendChild(close_button);
-
-  modal_title = document.createElement("h4");
-  modal_title.innerHTML = "Season " + season + " " + division + " Match Results";
-  modal.appendChild(modal_title);
-  if (division == "A1" && champion != "" && championshipVideos[season].length > 0) {
-    modal_video = document.createElement("h5");
-    modal_video.innerHTML = "<a href=\"" + championshipVideos[season][0] + "\"> Championship Video </a>";
-    modal.appendChild(modal_video);
-  }
-
-  // Create modal table
-  var modal_table = document.createElement("table");
-  modal_table.classList.add("division-modal-table");
-
-  // Create modal heading
-  var modal_heading_row = document.createElement("tr");
-  // Matches column
-  var modal_heading_matches = document.createElement("th");
-  modal_heading_matches.classList.add("cells-division-modal");
-  modal_heading_matches.innerHTML = "Match";
-  modal_heading_matches.style.backgroundColor = "lightgrey";
-  modal_heading_row.appendChild(modal_heading_matches);
-  // Results column
-  var modal_heading_scores = document.createElement("th");
-  modal_heading_scores.classList.add("cells-division-modal");
-  modal_heading_scores.innerHTML = "Score";
-  modal_heading_scores.style.backgroundColor = "lightgrey";
-  modal_heading_row.appendChild(modal_heading_scores);
-  modal_table.appendChild(modal_heading_row);
-
-  var results = divisionData["results"];
-  // Get each game result:
-  for (let r = 0; r < results.length; r++) {
-    var result = results[r];
-    var player1 = result["player1"];
-    var player2 = result["player2"];
-    var wins1 = result["wins1"];
-    var wins2 = result["wins2"];
-
-    var modal_row_data = document.createElement("tr");
-    modal_row_data.classList.add("rows-results-modal");
-
-    var modal_match_data = document.createElement("td");
-    modal_match_data.classList.add("cells-division-modal");
-    modal_match_data.innerHTML = player1 + " <b>vs.</b> " + player2;
-    modal_row_data.appendChild(modal_match_data);
-
-    var modal_score_data = document.createElement("td");
-    modal_score_data.classList.add("cells-division-modal");
-    modal_score_data.innerHTML = wins1 + " - " + wins2;
-    modal_row_data.appendChild(modal_score_data);
-
-    modal_table.appendChild(modal_row_data);
-  }
-  modal.appendChild(modal_table);
-  modal_div.appendChild(modal);
-  // Add table to container
-  divContainer.appendChild(modal_div);
+  standingsDiv.appendChild(table);
 }
 </script>
 

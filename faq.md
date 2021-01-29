@@ -25,17 +25,18 @@ Credit: Thanks to gloures, who onboarded hundreds of new players and compiled mo
 
 ##### How do I sign up?
 
-Navigate to [Sign up](https://dominionleague.org/sign-ups) and fill out your details by completing the Google form embedded there.
+Navigate to [Sign up](https://dominionleague.org/sign-ups) and complete the Google form there.
 
 Make sure you join the Dominion Discord server (<https://discord.gg/vMmmMBu>) as a moderator will send you a direct message via Discord in about a day with a few question to confirm your signup, and a deadline to do so. You must answer this message to be confirmed.
 
 ##### What is required to sign up?
 
-You are required to have a Dominion Online (<http://dominion.games>) account and join the Dominion Discord server (<https://discord.gg/vMmmMBu>). You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week. To be placed in the League’s tier system, you must play 30 ranked two-player games. If you do not reach 30 games, you will be placed in the Practice Tier, where all games will be rated by default. This will guarantee that you have the appropriate number of rated games to be accurately placed in the following season.
+You are required to have a <a href="http://dominion.games">Dominion Online</a> account with 10 or more rated 2-player games and to join the <a href="https://discord.gg/vMmmMBu">Dominion (Card Game)</a> Discord server. You must also have enough time to play five 6-game matches during the 6-week season, which is usually about 2 hrs per week.
 
-##### How do I play a rated game?
+##### How do I play a rated 2-player game?
 
-On the online Dominion client (<http://dominion.games>), click on the tab **Matching**. From there, make sure that from the Automatch options provided, you have selected `Player Count: 2P` and `Rated Games: Rated` .
+In <a href="<http://dominion.games>">Dominion Online</a>, click the **Matching** tab. In the Automatch options, make sure **Player count** is set to **2P** and **Rated games** is set to **Rated** (click the yellow options to cycle through the choices).
+
 ![faq_images](/img/faq/Capture_Ranked.PNG)
 
 ##### I didn’t respond in time to Discord message to confirm my signup. Can sign up again?
@@ -48,7 +49,7 @@ You do not need to buy a subscription, but you do need to create a free account.
 
 ##### Am I required to play matches on Dominion Online (<http://dominion.games>)?
 
-No, but this may be the only way to play games against the vast majority of your opponents. Note you are required to have a Dominion Online account and you must play 30 ranked two-player games. If you do not reach 30 games, you will be placed in the Practice Tier, where all games will be rated by default. This will guarantee that you have the appropriate number of rated games to be accurately placed in the following season.
+No, but this may be the only way to play games against the vast majority of your opponents. Note you are required to have a Dominion Online account and you must play 10 or more rated 2-player games before you can play in the League.
 
 ##### How good do I need to be at Dominion to sign up?
 

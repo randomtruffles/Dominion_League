@@ -1,0 +1,154 @@
+---
+layout: default
+title: Dominion League Current Season Standings
+---
+
+<div class="home">
+  <div class="container-centered">
+
+    <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
+    <h5><a href="{{site.baseurl}}/past_standings">Past Season Standings</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
+    <div id="single-division" style="display:none">
+    </div>
+    <div id="all-divisions" style="display:none">
+      <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
+      <!-- Filter buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('divA')"> A </button>
+        {% for tier in site.data.season.tiers %}
+        {% if tier.name != "A" %}
+        <button class="btn" onclick="filterSelection('div{{tier.name}}')"> {{tier.name}} </button>
+        {% endif %}
+        {% endfor %}
+        <button class="btn" onclick="filterSelection('all')"> Show all</button>
+      </div>
+      <div class="spacing"></div>
+      <div id="division-iframes"></div>
+      <div class="spacing"></div>
+    </div>
+  </div>
+</div>
+<script>
+  var current_season_iframes = {{ site.data.current_season_iframes | jsonify }};
+  loadPage();
+
+  function singleDivision(division){
+    console.log(`Loading ${division} standings...`);
+    switch (division){
+      case "A":
+        division = "A1";
+    }
+    var iframe = current_season_iframes[division].replace("standings-sheets", "single-iframe");
+    if (iframe) {
+      window.scrollTo(0,document.body.scrollHeight);
+      var divContainer = document.getElementById("single-division");
+      var current_season_iframe_div = document.createElement("div");
+      current_season_iframe_div.id = "current-season-content";
+      current_season_iframe_div.innerHTML = iframe;
+      divContainer.appendChild(current_season_iframe_div);
+      divContainer.style.display = "";
+    } else {
+      allDivisions();
+    }
+  }
+
+  function allDivisions(){
+    var tierNames = [];
+    var tierSizes = [];
+    var divContainer = document.getElementById("division-iframes");
+    {% for tier in site.data.season.tiers %}
+      tierNames.push("{{ tier.name }}");
+      tierSizes.push({{ tier.divisions }});
+    {% endfor %}
+
+    var currIdx = 0;
+    var currentTier = tierNames[currIdx];
+    var divisionsLeft = tierSizes[currIdx];
+    {% for iframe in site.data.season.iframes %}
+    if (divisionsLeft == 0){
+      currIdx += 1;
+      currentTier = tierNames[currIdx]
+      divisionsLeft = tierSizes[currIdx];
+    }
+    divisionsLeft -= 1;
+
+    var iframeDiv = document.createElement("div");
+    var classes = ['current-standings', 'filterDiv', `div${currentTier}`];
+    for (var c=0; c<classes.length; c++){
+      iframeDiv.classList.add(classes[c]);
+    }
+    iframeDiv.innerHTML = `{{ iframe }}`;
+    divContainer.appendChild(iframeDiv);
+    {% endfor %}
+    filterSelection("divA");
+    document.getElementById("all-divisions").style.display = "";
+  }
+
+  function loadPage() {
+    var division = getParam('div');
+    var tier = getParam('tier');
+    if (division.length > 0) {
+      singleDivision(division.toUpperCase());
+    } else if (tier.length == 1) {
+      allDivisions();
+      filterSelection(`div${tier}`);
+    } else {
+      allDivisions();
+    }
+  }
+
+  function getParam(paramName) {
+    var urlParam = function(name, w){
+        w = w || window;
+        var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+            val = w.location.search.match(rx);
+        return !val ? '':val[1];
+    }
+    var paramData = urlParam(paramName).replace(/%20/g, " ").trim();
+    return paramData;
+  }
+
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("current-standings filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) {
+        w3AddClass(x[i], "show");
+      }
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
