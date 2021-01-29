@@ -24,6 +24,9 @@ blockquote {
   border-right: 1px solid gray;
 }
 
+h5 {
+  font-size: 16px
+}
 
 .navbar-container {
   padding: 0px 20px 40px 20px;
@@ -252,7 +255,7 @@ iframe {
   width: 80%;
   margin: auto;
   max-height: 400px;
-  overflow: auto;
+  overflow: visible;
   border: 2px solid lightgray;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -264,8 +267,72 @@ iframe {
   }
 }
 
+.individual-match-table {
+  line-height: 140%;
+  border-collapse: collapse;
+  margin: auto;
+  align: center;
+  width: 100%;
+  table-layout: fixed;
+  background-color: #f1f1f1;
+  font-size: 15px;
+  font-family: {{ site.data.template.font.secondary }};
+}
+
+.individual-match-table tr th:first-child{
+    width: 250px;
+ }
+
+.cellWithDetail{
+  position:relative;
+}
+
+.cellDetail{
+  display:none;
+  position:absolute;
+  z-index:100;
+  border:1px;
+  border-style:solid;
+  border-width:1px;
+  /*padding:2px 4px;*/
+  top: 100%;
+  left: 50%;
+  text-align: center;
+  background-color: white;
+  font-size: 17px;
+  width: 350px;
+  margin-top: -20px;
+  margin-left: 15px;
+  /*border-radius: 15px;*/
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .cellDetail{
+    width: 275px;
+  }
+  .individual-match-table tr th:first-child{
+      width: 200px;
+   }
+}
+
+.cellDetail::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.cellWithDetail:hover div.cellDetail{
+  display:block;
+}
+
 /* Current Season Standings */
-.standings-table, .header-table {
+.standings-table, .header-table, .raw-standings-table {
   border-collapse: collapse;
   margin: auto;
   align: center;
@@ -276,7 +343,7 @@ iframe {
   font-family: {{ site.data.template.font.secondary }};
 }
 
-.standings-table img {
+.standings-table img, .raw-standings-table img {
   width: 20px;
   height: 19px;
   vertical-align: middle;
@@ -288,6 +355,17 @@ iframe {
   padding: 1px !important;
 }
 
+.sheets-icon {
+  height: 30px;
+  float: right;
+  margin-top: 2px;
+  opacity: 0.9;
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.center-text {
+  text-align: center;
+}
 
 .standings-table td, .standings-table th {
   border: 1px solid grey;
@@ -299,11 +377,21 @@ iframe {
   text-align: center;
 }
 
+.raw-standings-table td, .raw-standings-table th {
+  border: 1px solid grey;
+  padding: 5px 8px;
+}
+
+
+.raw-standings-table td:last-child {
+  text-align: center;
+}
+
 @media (max-width: 650px) {
-  .standings-table, .header-table {
+  .standings-table, .header-table, .raw-standings-table {
     font-size: 14px !important;
   }
-  .standings-table img {
+  .standings-table img, .raw-standings-table img {
     width: 17px;
     height: 16px;
     vertical-align: middle;
@@ -313,6 +401,16 @@ iframe {
     padding: 3px 3px;
     font-size: 14px;
   }
+
+  .raw-standings-table td, .raw-standings-table th {
+    padding: 3px 3px;
+    font-size: 14px;
+  }
+
+  .sheets-icon {
+    height: 27px;
+  }
+
 }
 
 
@@ -469,6 +567,123 @@ td.crossed:after
 
 .matches-table th:first-child {
     text-align: right;
+}
+
+.sims-table {
+  border-collapse: collapse;
+  margin: auto;
+  align: center;
+  width: 100%;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: clip;
+  font-family: {{ site.data.template.font.secondary }};
+}
+
+.sims-table th:first-child {
+  width: 35%;
+}
+
+.sims-table th {
+  line-height: 100%;
+}
+
+.sims-table td, .sims-table th {
+  border: 1px solid grey;
+  padding: 5px 8px;
+}
+
+.sims-table td:last-child {
+  background-color: lightgray;
+}
+
+@media (max-width: 650px) {
+  .sims-table {
+    width: 100%;
+  }
+  .sims-table td{
+    font-size: 14px;
+  }
+}
+
+.dropped-header {
+  background-color: darkgray;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: {{ site.data.template.font.primary }};
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 22px;
+  margin-bottom: -6px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2ab934;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 23px;
+  box-shadow: 1px 1px 2px lightslategrey;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ca2222;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(34px);
+}
+
+.slider:after
+{
+ content:'SIMS';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 60%;
+ font-size: 11px;
+ font-family: {{site.data.template.font.secondary}};
+}
+
+input:checked + .slider:after
+{
+  content:'RAW';
+  top: 50%;
+  left: 40%;
 }
 
 a.db-link {
@@ -1052,8 +1267,10 @@ h6 {
   background-color: #fafafa;
   height: 100%;
   border: 1px solid rgb(201, 201, 201, 0.7);
-  padding: 15px 20px;
-  box-shadow: 5px 8px darkgrey;
+  padding: 35px 20px;
+  box-shadow: 5px 6px 3px darkgrey;
+  border-radius: 20px;
+  line-height: 190%;
 }
 
 .posts-content-text img {

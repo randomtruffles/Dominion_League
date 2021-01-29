@@ -65,9 +65,8 @@ var champions = {{ site.data.champions | jsonify }};
 champions = champions["players"]
 var championshipVideos = {{ site.data.championship_videos | jsonify }};
 var youtubeChannels = {{ site.data.youtube_channels | jsonify }};
-var currentSeasonPlayers = {{ site.data.current_season_players | jsonify }};
-var currentSeasonStandings = {{ site.data.current_season | jsonify }};
-var currentSeasonIframesTable = {{ site.data.current_season_iframes | jsonify }};
+var currentSeason = {{ site.data.current_season | jsonify }};
+var currentSeasonPlayers = currentSeasonTable["players"];
 // var temp_season = {{ site.data.season_41_players | jsonify }};
 var uniqueOpponents = {{ site.data.players_unique_opponents | jsonify }};
 var ongoing = true;
@@ -136,7 +135,7 @@ function searchPlayerHistory(param=false){
     var totalPlayed = playerStats["Total Seasons Played"];
     var firstSeason = playerStats["First Season"];
     var longestStreak = playerStats["Longest Streak"];
-    if (currentSeasonPlayers[playerNameKey] && currentSeasonIframesTable[currentSeasonPlayers[playerNameKey]["division"]]) {
+    if (currentSeasonPlayers[playerNameKey]) {
       totalPlayed += 1;
       if (longestStreak[2] == currentSeasonPlayers["seasons"] - 1){
         longestStreak[2] += 1;
@@ -288,7 +287,6 @@ function searchPlayerHistory(param=false){
 
       table.appendChild(dRow)
   }
-
   // Add table to container
   standingsDiv.appendChild(table);
 }

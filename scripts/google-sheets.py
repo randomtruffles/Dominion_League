@@ -9,7 +9,7 @@ from google.auth.transport.requests import Request
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-
+SEASON = 43
 # Various sheets pages
 MONITORING_SHEET = '1CIvRxhLL2XrwR0eQDt2FWhEgN1twtl6_r7BmHdFQeEE'
 RESULTS = 'Condensed Results!A2:K'
@@ -31,24 +31,14 @@ def getCurrentSeasonResults():
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
-    curr_season = {}
+    curr_season = {"players":{}, "season": SEASON}
     file = './_data/current_season.json'
     creds = None
 
-
-    TIERS = [
-    ("A", 1),
-    ("B", 2),
-    ("C", 4),
-    ("D", 4),
-    ("E", 8),
-    ("F", 14),
-    ("G", 13),
-    ("H", 25),
-    ("I", 25),
-    ("J", 26),
-    ("P",4)
-    ]
+    TIERS = [ ("A", 1), ("B", 2), ("C", 4),
+              ("D", 4), ("E", 8), ("F", 14),
+              ("G", 13), ("H", 25), ("I", 25),
+              ("J", 26), ("P",4)]
     CUR_TIER_IDX = 0
     CUR_DIV = 1
     # The file token.pickle stores the user's access and refresh tokens, and is
@@ -119,7 +109,6 @@ def getCurrentSeasonResults():
                     comment = comment.decode()
                     comment = comment.replace("\n", " ")
                     comment = comment.replace("\"", "'")
-                    print(comment)
 
                     result = {"player1":p1, "player2":p2, "wins1":wins1, "wins2":wins2, "comments":comment}
                     if division not in curr_season:
@@ -130,17 +119,27 @@ def getCurrentSeasonResults():
                         curr_season[division]["by_player"] = {}
                         curr_season[division]["late drops"] = late_drops
                         curr_season[division]["complete?"] = "Yes"
-                    if p1 not in curr_season[division]["by_player"]:
-                        curr_season[division]["by_player"][p1] = {}
-                        curr_season[division]["by_player"][p1]["games_nondrop"] = 0
-                    if p2 not in curr_season[division]["by_player"]:
-                        curr_season[division]["by_player"][p2] = {}
-                        curr_season[division]["by_player"][p2]["games_nondrop"] = 0
+
+                    for p in [p1, p2]:
+                        if p not in curr_season["players"]:
+                            curr_season["players"][p.lower()] = {"name":p, "tier":division[0], "division": division}
+                        if p not in curr_season[division]["by_player"]:
+                            curr_season[division]["by_player"][p] = {}
+                            curr_season[division]["by_player"][p]["games_nondrop"] = 0
+                            curr_season[division]["by_player"][p]["wins_nondrop"] = 0
+                            curr_season[division]["by_player"][p]["losses_nondrop"] = 0
+                            curr_season[division]["by_player"][p]["wins"] = 0
+                            curr_season[division]["by_player"][p]["losses"] = 0
+
                     if p1 not in curr_season[division]["by_player"][p2]:
                         curr_season[division]["by_player"][p2][p1] = {"wins": 0, "losses": 0, "complete": "No", "sessions": 0}
                     if p2 not in curr_season[division]["by_player"][p1]:
                         curr_season[division]["by_player"][p1][p2] = {"wins": 0, "losses": 0, "complete": "No", "sessions": 0}
                     curr_season[division]["results"].append(result)
+                    curr_season[division]["by_player"][p1]["wins"] += float(wins1)
+                    curr_season[division]["by_player"][p2]["wins"] += float(wins2)
+                    curr_season[division]["by_player"][p1]["losses"] += float(wins2)
+                    curr_season[division]["by_player"][p2]["losses"] += float(wins1)
                     curr_season[division]["by_player"][p1][p2]["wins"] += float(wins1)
                     curr_season[division]["by_player"][p1][p2]["losses"] += float(wins2)
                     curr_season[division]["by_player"][p2][p1]["wins"] += float(wins2)
@@ -150,9 +149,14 @@ def getCurrentSeasonResults():
                     if int(curr_season[division]["by_player"][p1][p2]["wins"] + curr_season[division]["by_player"][p1][p2]["losses"]) == 6:
                         curr_season[division]["by_player"][p1][p2]["complete"] = "Yes"
                         curr_season[division]["by_player"][p2][p1]["complete"] = "Yes"
-                    if p1 not in late_drops and p2 not in late_drops:
-                        curr_season[division]["by_player"][p1]["games_nondrop"] += int(float(wins1) + float(wins2))
+                    if p1 not in late_drops:
                         curr_season[division]["by_player"][p2]["games_nondrop"] += int(float(wins1) + float(wins2))
+                        curr_season[division]["by_player"][p2]["wins_nondrop"] += float(wins2)
+                        curr_season[division]["by_player"][p2]["losses_nondrop"] += float(wins1)
+                    if p2 not in late_drops:
+                        curr_season[division]["by_player"][p1]["games_nondrop"] += int(float(wins1) + float(wins2))
+                        curr_season[division]["by_player"][p1]["wins_nondrop"] += float(wins1)
+                        curr_season[division]["by_player"][p1]["losses_nondrop"] += float(wins2)
 
 
                 # Member standings
@@ -165,7 +169,13 @@ def getCurrentSeasonResults():
                     if tiers[p_idx] == "":
                         curr_season[division]["complete?"] = "No"
 
-                    curr_season[division]["members"][player] = {"name": player, "wins":wins[p_idx], "losses":losses[p_idx], "pct": pcts[p_idx], "color": color, "tiebreaker": 0, "drop":drop, "next tier":tiers[p_idx], "games_nondrop":curr_season[division]["by_player"][player]["games_nondrop"]}
+                    curr_season[division]["members"][player] = \
+                        {"name": player, "wins":wins[p_idx], "losses":losses[p_idx], \
+                         "pct": pcts[p_idx], "color": color, "tiebreaker": 0, \
+                         "drop":drop, "next tier":tiers[p_idx], \
+                         "games_nondrop":curr_season[division]["by_player"][player]["games_nondrop"], \
+                         "wins_nondrop":curr_season[division]["by_player"][player]["wins_nondrop"], \
+                         "losses_nondrop":curr_season[division]["by_player"][player]["losses_nondrop"]}
                 # Tiebreaker values
                 for player in players:
                     if player == "" or player in late_drops:
@@ -176,7 +186,6 @@ def getCurrentSeasonResults():
                         if player != opponent and opponent not in late_drops and opponent in curr_season[division]["by_player"][player]:
                             if curr_season[division]["members"][player]["pct"] == curr_season[division]["members"][opponent]["pct"]:
                                     curr_season[division]["members"][player]["tiebreaker"] += curr_season[division]["by_player"][player][opponent]["wins"]
-
 
                 # Figure out ranks
                 rank = 1
