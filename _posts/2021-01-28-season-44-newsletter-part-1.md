@@ -33,14 +33,16 @@ For the full details of these decisions, see the minutes below.
 
 **Rules Meeting Minutes**
 
+<ol>							
 <li>Feedback<ol type='a'>	<li>Returning Form<ul>	<li>Motion to automate compilation of the availability posting and pin the compilation (keeping the first post at the top of the pins).<ul>	<li>YES (unanimous)</li>	</ul></li>			
 		<li>This seemed like a nice idea to make the availiabilty more useful. We'll have to be careful with the pins but it should work<ul>		</ul></li>			
 		<li>Motion to add a league-videos channel for all League videos only.<ul>	<li>NO (3 dissenting)</li>	</ul></li>			
 		<li>The #videos channel is fairly functional as it is for surfacing League videos, among others.<ul>		</ul></li>			
-		<li>DISSENT \\[Sharur, Lemonspawn, amoffett11]: <ul>		</ul></li>			
+		<li>DISSENT (amoffett11):  It seemed like a requested feature from a few players (and non-playing league fans?) that wouldn't be too hard to implement; and players who hadn't requested it maybe find it more useful than #videos to find matches they want to watch (like me).<ul>		</ul></li>			
+		<li>DISSENT (Lemonspawn): I don't feel strongly about this, but I just thought it was a nice idea to make the videos channel(s) more organized/ less cluttered.<ul>		</ul></li>			
 		<li>Should the new league-videos channel, if it is created, allow discussion?<ul>	<li>NO (2 dissenting)</li>	</ul></li>			
 		<li>Had we created it, the main purpose would be to help people find videos to watch, while #videos could hold any needed discussion.<ul>		</ul></li>			
-		<li>DISSENT \\[Sharur, amoffett11]:<ul>		</ul></li>			
+		<li>DISSENT (amoffett11, Sharur):  There probably wouldn't be much discussion here, but why prevent people from tagging their opponent, or commentators tagging the players, or players just saying thank you for commentary.  Preventing all discussion would be overkill.<ul>		</ul></li>			
 		<li>Motion to add "Starting Now" notifications for calendar events of League games to the players' division channel.<ul>	<li>YES (unanimous)</li>	</ul></li>			
 		<li>This seems like a nice way to tie in the calendar to the League, also giving players a chance to find out that a match in their division is taking place.<ul>		</ul></li>			
 		<li>Should we add a question to the returning form about changing the match length to an odd number of games (so that, barring ties, there's a "winner" to the match)?<ul>	<li>NO (2 dissenting)</li>	</ul></li>			
@@ -72,7 +74,7 @@ For the full details of these decisions, see the minutes below.
 		<li>DISSENT (truffles): It is not black-and-white what "information-revealing" means. League moderators should not be defining it - this should maybe be a town hall topic.<ul>		</ul></li>			
 		<li>Motion to have the moderators of the highest tier divisions remind players who don't post their matches on the calendar or in #matches.<ul>	<li>YES (7 dissenting)</li>	</ul></li>			
 		<li>We would like to encourage every top match to make it to the calendar so we all can watch! We won't have any actual enforcement beyond your moderator reminding you after you play match that wasn't on the calendar. With the "starting now" notifications, this will be fairly easy to see for both the mods and your divisionmates.<ul>		</ul></li>			
-		<li>DISSENT (sweetjohn33): Ultimately putting matches on the calendar is a curtesy extended by the players involved, if a player doesn't want to announce their matches they shouldn't face any negative repercussions (including nagging). I would prefer only a universal emphasis on posting to the calendar and not individual prodding.<ul>		</ul></li>			
+		<li>DISSENT (sweetjohn33): Ultimately putting matches on the calendar is a courtesy extended by the players involved, if a player doesn't want to announce their matches they shouldn't face any negative repercussions (including nagging). I would prefer only a universal emphasis on posting to the calendar and not individual prodding.<ul>		</ul></li>			
 		<li>DISSENT (Rozyroz): Most players in top tiers add their matches to the calendar regardless, and if they don't, they usually just forgot to do it that match and know to do it next time, so it seems like this would just create more work of the moderators.<ul>		</ul></li>			
 		<li>If the above motion passes, which "highest tier divisions" should this apply for? A through... (Vote one, we'll take the median.)<ul>	<li>A - 3<br>B - 3<br>C - 7<br>D - 1<br>E - 3<br>OK - 0</li>	</ul></li>			
 		<li>At least for this first season, we should keep it small. It's also pretty ingrained in the habits of players in A, B and C to put matches on the calendar, so there shouldn't be too many reminders needed.<ul>		</ul></li>			
@@ -86,7 +88,7 @@ For the full details of these decisions, see the minutes below.
 		<li>Since we used to delete all players dropped with fewer than 18 games played, we didn't have easy access to those examples. With the last two seasons of data, we can now start to analyze other proposals for adjustment matches and see when they would disagree with the current, fairly complicated system.<ul>		</ul></li>			
 		<li>DISSENT (volfied): We should leave the current system in place longer to allow people to get used to it and to provide more and better data for analysis.<ul>		</ul></li>			
 		<li>Motion to change the way intermediate standings are displayed in order to make the effect of all future games played by players who did not play the dropped player a small multiplier higher.<ul>	<li>NO (4 dissenting)</li>	</ul></li>			
-		<li>\\[Sharur, sweetjohn33, crlundy]<ul>		</ul></li>			
+		<li>This doesn't improve the fact that it is difficult to read existence of adjustment matches from the standings, and may cause more confusion with simulations not being full.<ul>		</ul></li>			
 		<li>DISSENT (SamE): Because any simulated results derive from the winning percentage of players, those numbers fluctuate as additional results come in. This can lead to counterintuitive behavior such as the number of wins or losses decreasing after a (blowout) match is added to the results. To make this problem go away, we can actually only include the contribution to the simulation from the portion of the season played. This would then mean that every future game simply has a multiplier attached (e.g. 2%) corresponding to the additional effect of that win on the simulated results. Knowing that every game counts for 1.02, say, makes it easier to forecast the effect of getting various results in your remaining matches.<ul>		</ul></li>			
 		<li>Motion to add four columns to the division standings for reweighted/non-reweighted wins/losses that we only display if someone is dropped with games played.<ul>	<li>YES (unanimous)</li>	</ul></li>			
 		<li>Reweighted results can introduce unfamiliar numbers that can make it hard to compare. By also showing the reweighted games and non-reweighted games separately for divisions with drops who played games, we can help to make the standings more understandable.<ul>		</ul></li>			
