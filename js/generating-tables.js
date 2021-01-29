@@ -84,10 +84,10 @@ function calcDroppedInfo(players, drops) {
 
 /* Interactive Buttons */
 function checkSwitch(toggler){
-  console.log("checking switch parent");
+  console.log("Toggling switch");
   var parent = toggler.parentElement.parentElement.parentElement.parentElement.parentElement;
   var children = parent.children;
-  console.log(parent);
+
   if(toggler.checked) {
     for (var i = 0; i < children.length; i++) {
       var child = children[i];
@@ -108,11 +108,28 @@ function checkSwitch(toggler){
     }
   }
 }
+
 function selectTab(btn) {
   var tab = btn.innerHTML;
   var tabToOpen = btn;
   var parent = btn.parentElement.parentElement.parentElement.parentElement;
   console.log(`Opening ${tab} button`);
+
+  /*var toggler = checkSwitch(curTab.children[0]);*/
+  // Remove active from button siblings
+  var curTab = tabToOpen;
+  var toggler;
+  while (curTab = curTab.nextSibling) {
+    curTab.classList.remove('active');
+    if(curTab.className == "switch") {
+      toggler = curTab;
+    }
+  }
+  curTab = tabToOpen;
+  while (curTab = curTab.previousSibling) {
+    curTab.classList.remove('active');
+  }
+  tabToOpen.classList.add('active');
 
   // Open the right table and hide others
   var children = parent.children;
@@ -121,25 +138,31 @@ function selectTab(btn) {
   } else {
     parent.style.overflow = "visible";
   }
+
   for (var i = 0; i < children.length; i++) {
     var child = children[i];
-    if (child.className == `${tab.toLowerCase()}-table`) {
+    if (tab == "Standings" && toggler && child.className.includes(`${tab.toLowerCase()}`)) {
+      console.log("Found a toggler and class name includes standings");
+      console.log(toggler.children[0]);
+      console.log(toggler.children[0].checked);
+      console.log(child.className);
+      if (toggler.children[0].checked && child.className == `raw-standings-table`) {
+        child.style.display = "";
+      } else if (!toggler.children[0].checked && child.className == `standings-table`){
+        child.style.display = "";
+      }
+    } else if (child.className == `${tab.toLowerCase()}-table`) {
       child.style.display = "";
+      if (toggler) toggler.style.display = "none";
     } else if (child.className != 'header-table') {
       child.style.display = "none";
+      if (toggler) toggler.style.display = "none";
     }
   }
-
-  // Remove active from button siblings
-  var curTab = tabToOpen;
-  while (curTab = curTab.nextSibling) {
-    curTab.classList.remove('active');
+  if (tab == "Standings" && toggler) {
+    console.log("toggle on");
+    toggler.style.display = "";
   }
-  curTab = tabToOpen;
-  while (curTab = curTab.previousSibling) {
-    curTab.classList.remove('active');
-  }
-  tabToOpen.classList.add('active');
 }
 
 /* Generative Functions */
@@ -188,13 +211,14 @@ function genHeader(division, complete, link, drops, customText=""){
   return table;
 }
 
-function genIndividualMatch(player, players, scores) {
+function genIndividualMatch(player, players, scores, isRaw, drops) {
   var span = document.createElement("div");
   span.classList.add("cellDetail");
   var table = document.createElement("table");
   table.classList.add("individual-match-table");
   span.appendChild(table);
-  var tableHeadings = ["Match", "Result"];
+  var tableHeadings = isRaw ? ["Match (ignore drops)", "Result"] : ["Match", "Result"];
+
   var headingRow = document.createElement("tr");
   headingRow.style.backgroundColor = "rgb(224, 224, 224)";
   for (let j = 0; j < tableHeadings.length; j++) {
@@ -209,6 +233,8 @@ function genIndividualMatch(player, players, scores) {
     var row = document.createElement("tr");
     var opponent = players[p];
     var match = `${player} vs. ${opponent}`;
+    var strike = isRaw && (drops.includes(opponent) || drops.includes(players[p]));
+    match = strike ? `<s>${match} (drop)</s>` : match;
     var score;
     if (player == players[p]) continue;
     if (opponent in scores[player]) {
@@ -216,6 +242,7 @@ function genIndividualMatch(player, players, scores) {
     } else {
       score = "0 - 0";
     }
+    score = strike ? `<s>${score}</s>` : score;
     var cell1 = document.createElement("td");
     cell1.innerHTML = match;
     var cell2 = document.createElement("td");
@@ -286,13 +313,14 @@ function genSimulations(players, drops, sorted){
 }
 
 
-function genStandings(data, tier, tiebreaker, sorted, numDrops, complete, returning, isRaw, playerNameKey="") {
+function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning, isRaw, playerNameKey="") {
   console.log("Generating standings...");
   var table = document.createElement("table");
   var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
   if (isRaw) table.style.display = "none";
   table.classList.add(tableClass);
 
+  var numDrops = drops.length;
   var sortedRankedMembers = Object.keys(data).map(function(key) {
     return [key, data[key]];
   });
@@ -419,7 +447,7 @@ function genStandings(data, tier, tiebreaker, sorted, numDrops, complete, return
     var name = playerData["name"];
 
     var droppedInfo = {
-      "rank" : playerData["rank"] ,
+      "rank" : playerData["drop"] == "Yes" ? "X" : playerData["rank"] ,
       "name" : formatDbLink(name, "db-link", playerData["drop"]),
       "pct" : `${Math.round(playerData["wins_nondrop"]/(playerData["wins_nondrop"]+playerData["losses_nondrop"])*100)}%`,
       "wins" : playerData["wins_nondrop"].toFixed(1).replace(".0", ""),
@@ -440,6 +468,7 @@ function genStandings(data, tier, tiebreaker, sorted, numDrops, complete, return
 
     var rowInfo = isRaw ? droppedInfo : nonDroppedInfo;
     var row = document.createElement("tr");
+    if (isRaw && playerData["drop"] == "Yes") row.style.backgroundColor = "gray";
     for (var info in rowInfo) {
       var cell = document.createElement("td");
       cell.innerHTML = rowInfo[info];
@@ -450,7 +479,7 @@ function genStandings(data, tier, tiebreaker, sorted, numDrops, complete, return
           }
           if (!isRaw) standingsColor(cell, tier, playerData["next tier"], playerData["name"]);
           cell.classList.add("cellWithDetail");
-          cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker));
+          cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker, isRaw, drops));
           break;
         case "pct" :
           if (!isRaw) cell.style.backgroundColor = playerData["color"];
@@ -650,7 +679,7 @@ function loadDivision(divisionDiv, divisionData, link, division, returning, para
   var playerNameKey = Object.keys(params).length > 0 ? params["playerNameKey"] : "";
 
   var header = genHeader(division, complete, link, drops, headerText);
-  var standingsTable = genStandings(standings, tier, players, sorted, drops.length, complete, returning, false, playerNameKey);
+  var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, returning, false, playerNameKey);
 
   if (Object.keys(params).length == 0) {
     standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
@@ -662,7 +691,7 @@ function loadDivision(divisionDiv, divisionData, link, division, returning, para
   standingsDiv.appendChild(header);
   standingsDiv.appendChild(standingsTable);
   if (drops.length > 0 ){
-    var rawStandingsTable = genStandings(standings, tier, players, sorted, drops.length, complete, returning, true);
+    var rawStandingsTable = genStandings(standings, tier, players, sorted, drops, complete, returning, true);
     standingsDiv.appendChild(rawStandingsTable);
   }
   standingsDiv.appendChild(gridTable);
