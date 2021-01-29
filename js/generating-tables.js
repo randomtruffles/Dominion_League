@@ -386,7 +386,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
   var tierIcon = "<img src='img/icons/tier.png' title='Tier next season'>";
   var returningIcon = "<img src='img/icons/returning.png' title='Returning next season?'>";
   if (isRaw) {
-    tableHeadings = ["#", "Player", "Wnd%", "Wnd", "L", "Wd%", "Wd", "Ld"];
+    tableHeadings = ["#", "Player", "Wnd%", "Wnd", "Lnd", "Wd%", "Wd", "Ld"];
     headingWidths = ["6%", "35%", "10%", "10%", "10%", "10%", "10%","9%"];
   } else if (Object.keys(tbValues).length > 0) {
     if (complete == "Yes") {
@@ -491,9 +491,23 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
           cell.classList.add("cellWithDetail");
           cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker, isRaw, drops));
           break;
+        case "wins":
+          if (drops.includes(name) && isRaw) {
+            cell.innerHTML = "";
+            cell.style.backgroundColor = "gray";
+          }
+          break;
+        case "losses":
+          if (drops.includes(name) && isRaw) {
+            cell.innerHTML = "";
+            cell.style.backgroundColor = "gray";
+          }
         case "pct" :
           if (!isRaw) {
             cell.style.backgroundColor = playerData["color"];
+          } else if (drops.includes(name)) {
+            cell.innerHTML = "";
+            cell.style.backgroundColor = "gray";
           } else {
             cell.style.backgroundColor = matchColor(parseInt(rowInfo[info]), 100);
           }
