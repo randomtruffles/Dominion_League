@@ -502,6 +502,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
             cell.innerHTML = "";
             cell.style.backgroundColor = "gray";
           }
+          break;
         case "pct" :
           if (!isRaw) {
             cell.style.backgroundColor = playerData["color"];
