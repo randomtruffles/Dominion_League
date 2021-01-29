@@ -367,12 +367,14 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
     }
   }
 
+  var tBheading = isRaw ? "+/-" : "TB";
+
   if (Object.keys(tbValues).length > 0) {
     if (complete == "Yes") {
-      tableHeadings = ["#", "Player", "W%", "W", "L", "TB", tierIcon, returningIcon];
+      tableHeadings = ["#", "Player", "W%", "W", "L", tBheading, tierIcon, returningIcon];
       headingWidths = ["7%", "35%", "11%", "11%", "11%", "9%", "8%","8%"];
     } else {
-      tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "MP", returningIcon];
+      tableHeadings = ["#", "Player", "W%", "W", "L", tBheading, "MP", returningIcon];
       headingWidths = ["6%", "35%", "11%", "11%", "11%", "8%", "11%","7%"];
 
     }
@@ -489,7 +491,12 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
           if (Object.keys(tbValues).length > 0) {
             var tbCell = document.createElement("td");
             tbCell.style.color = "darkgray";
-            if (name in tbValues) {
+            if (isRaw) {
+              var rawWins = playerData["wins_nondrop"];
+              var rawLosses = playerData["losses_nondrop"];
+              var diff = ((rawWins - rawLosses)/2).toFixed(1).replace(".0", "");
+              tbCell.innerHTML = diff;
+            } else if (name in tbValues) {
               tbCell.innerHTML = tbValues[name].toString();
             } else {
               tbCell.innerHTML = "0";
