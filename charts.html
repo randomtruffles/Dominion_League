@@ -97,6 +97,8 @@ title: Visual History
 	var counts = {{ site.data.chart_counts | jsonify }};
 	var countsLength = counts.length;
 	var currentSeason = Number(counts[countsLength - 1].season);
+	var currentStandings = {{ site.data.current_season | jsonify }};
+	var playerCurrentStandings = null;
 	var placeHistory = {{ site.data.chart_history | jsonify }};
 	var placeHistoryLength = placeHistory.length;
 	var proportion = false;
@@ -281,6 +283,38 @@ title: Visual History
 					seasons.push(placeHistory[i].season);
 					tiers.push(placeHistory[i].tier);
 				}
+			}
+			
+			//add information for current season if player is in it
+			if ((currentSeason <= seasonRange[1]) && Object.keys(currentStandings.players).includes(lowerplayer)) {
+				var currentHistory = {"player": player, "tier": currentStandings.players[lowerplayer].tier, "division": currentStandings.players[lowerplayer].division};
+				playerCurrentStandings = Object.keys(currentStandings[currentHistory.division].members).map(key => currentStandings[currentHistory.division].members[key]);
+				playerCurrentStandings.sort((a,b) => a.rank - b.rank);
+				let rank = currentStandings[currentHistory.division].members[player].rank;
+				currentHistory.place = String(rank);
+				currentHistory.season = String(currentSeason);
+				let countBase = 0;
+				let countMult = 0;
+				let propBase = 0;
+				let propMult = 0;
+				for (let i = countsLength-1; i >= 0; i--) {
+					if (Number(counts[i].season) < currentSeason) {
+						break;
+					} else if (counts[i].tier == currentHistory.tier) {
+						countMult = Number(counts[i].players);
+						propMult = Number(counts[i].lfrac);
+					} else if (counts[i].tier < currentHistory.tier) {
+						countBase += Number(counts[i].players);
+						propBase += Number(counts[i].lfrac);
+					}
+				}
+				currentHistory.countPlacement = String(countBase + (rank-0.5)*countMult/playerCurrentStandings.length)
+				currentHistory.propPlacement = String(propBase + (rank-0.5)*propMult/playerCurrentStandings.length)
+				currentHistory.champ = "in progress";
+				currentHistory.chart = "point";
+				pHist.push(currentHistory);
+				seasons.push(currentHistory.season);
+				tiers.push(currentHistory.tier);
 			}
 			
 			var played2MostRecent = (seasons[seasons.length - 1] == currentSeason) && (seasons[seasons.length - 2] == currentSeason - 1) && (pHist[pHist.length - 1].champ == "in progress");
@@ -493,7 +527,7 @@ title: Visual History
 							"tooltip": (widthcheck.clientWidth < 540) ? null : [
 								{"field": "season", "type": "nominal", "title": "Season"},
 								{"field": "division", "type": "nominal", "title": "Division"},
-								{"field": "place", "type": "nominal", "title": "Finish"}
+								{"field": "place", "type": "nominal", "title": "Place"}
 							]
 						}
 					}
