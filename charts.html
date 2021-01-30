@@ -286,11 +286,12 @@ title: Visual History
 			}
 			
 			//add information for current season if player is in it
-			if ((currentSeason <= seasonRange[1]) && Object.keys(currentStandings.players).includes(lowerplayer)) {
-				var currentHistory = {"player": player, "tier": currentStandings.players[lowerplayer].tier, "division": currentStandings.players[lowerplayer].division};
+			if ((currentSeason <= seasonRange[1]) && Object.keys(currentStandings.players).includes(lowerplayer) && (!pHist.length || (pHist[pHist.length-1].season != currentSeason))) {
+				let pname = currentStandings.players[lowerplayer].name;
+				var currentHistory = {"player": pname, "tier": currentStandings.players[lowerplayer].tier, "division": currentStandings.players[lowerplayer].division};
 				playerCurrentStandings = Object.keys(currentStandings[currentHistory.division].members).map(key => currentStandings[currentHistory.division].members[key]);
 				playerCurrentStandings.sort((a,b) => a.rank - b.rank);
-				let rank = currentStandings[currentHistory.division].members[player].rank;
+				let rank = currentStandings[currentHistory.division].members[pname].rank;
 				currentHistory.place = String(rank);
 				currentHistory.season = String(currentSeason);
 				let countBase = 0;
@@ -618,11 +619,27 @@ title: Visual History
 	function showStandingsModal(season, division) {
 		document.getElementById('standings-info').innerHTML = "Season " + season + " Division " + division + " Standings";
 		var table = document.getElementById('standings-table');
-		table.innerHTML = '';
-		if (season == currentSeason) {
-			table.innerHTML = currentiframes[division];
+		table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
+		if ((season == currentSeason) && playerCurrentStandings) {
+			for (let i=0; i < playerCurrentStandings.length; i++) {
+				let row = document.createElement('tr');
+				row.classList.add('rows-past-standings')
+				let names = ['rank', 'name', 'wins', 'losses']
+				for (let j = 0; j < 4; j++) {
+					let cell = document.createElement('td');
+					cell.classList.add('cells-past-standings');
+					cell.appendChild(document.createTextNode(playerCurrentStandings[i][names[j]]));
+					row.appendChild(cell);
+				}
+				//handle pct separately to add background color
+				let cell = document.createElement('td');
+				cell.classList.add('cells-past-standings');
+				cell.style.cssText = 'background-color:' + playerCurrentStandings[i].color;
+				cell.appendChild(document.createTextNode(playerCurrentStandings[i].pct));
+				row.appendChild(cell);
+				table.appendChild(row);
+			}
 		} else {
-			table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
 			for (let i=0; i < placeHistoryLength; i++) {
 				if ((placeHistory[i].season == season) && (placeHistory[i].division == division)) {
 					let row = document.createElement('tr');
