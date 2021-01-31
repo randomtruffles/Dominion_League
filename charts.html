@@ -63,7 +63,7 @@ title: Visual History
 		<p class="slidePiece">Zoom:</p>
 		<div class="slidePiece">
 			<label class="checkslider">
-				<input type="checkbox" id="powerzoom" checked="checked">
+				<input type="checkbox" id="powerzoom">
 				<span class="checkslider-button" id="powerzoom-button"></span>
 			</label>
 		</div>
@@ -144,7 +144,7 @@ title: Visual History
 			return 0;
 		}  
 	});
-	var powerPlotZoom = true;
+	var powerPlotZoom = false;
 	var playerPlot = null;
 	var powerPlot = null;
 
@@ -314,8 +314,8 @@ title: Visual History
 				var currentHistory = {"player": pname, "tier": currentStandings.players[lowerplayer].tier, "division": currentStandings.players[lowerplayer].division};
 				playerCurrentStandings = Object.keys(currentStandings[currentHistory.division].members).map(key => currentStandings[currentHistory.division].members[key]);
 				playerCurrentStandings.sort((a,b) => a.rank - b.rank);
-				let rank = currentStandings[currentHistory.division].members[pname].rank;
-				currentHistory.place = String(rank);
+				let rank = (Number(currentStandings[currentHistory.division].members[pname].wins) + Number(currentStandings[currentHistory.division].members[pname].losses)) ? currentStandings[currentHistory.division].members[pname].rank : "";
+				currentHistory.place = String(rank) + " (in progress)";
 				currentHistory.season = String(currentSeason);
 				let countBase = 0;
 				let countMult = 0;
@@ -332,8 +332,8 @@ title: Visual History
 						propBase += Number(counts[i].lfrac);
 					}
 				}
-				currentHistory.countPlacement = String(countBase + (rank-0.5)*countMult/playerCurrentStandings.length)
-				currentHistory.propPlacement = String(propBase + (rank-0.5)*propMult/playerCurrentStandings.length)
+				currentHistory.countPlacement = String(rank ? countBase + (rank-0.5)*countMult/playerCurrentStandings.length : countBase + 0.5*countMult);
+				currentHistory.propPlacement = String(rank ? propBase + (rank-0.5)*propMult/playerCurrentStandings.length : propBase + 0.5*propMult);
 				currentHistory.champ = "in progress";
 				currentHistory.chart = "point";
 				pHist.push(currentHistory);
