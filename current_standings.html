@@ -25,23 +25,23 @@ title: Dominion League Current Season Standings
 <script src="js/generating-tables.js"></script>
 <script>
 // Load data
+var cur_season = {{ site.data.season.number }};
 var divisions = {{ site.data.current_season | jsonify }};
-var returning = {{ site.data.current_season_returning | jsonify }};
-var sheetsLinks = {{ site.data.current_season_links | jsonify }};
+var returning = {{ site.data.returning | jsonify }};
+var sheetsLinks = {{ site.data.sheet_links | jsonify }};
+sheetsLinks = sheetsLinks[cur_season.toString()];
 var tiers = [
   ["A", 1],
   ["B", 2],
   ["C", 4],
-  ["D", 4],
-  ["E", 8],
+  ["D", 3],
+  ["E", 7],
   ["F", 14],
-  ["G", 13],
-  ["H", 25],
-  ["I", 25],
-  ["J", 26],
-  ["P",4]
+  ["G", 14],
+  ["H", 29],
+  ["I", 32],
+  ["J", 32]
 ];
-var curr_season = 43;
 loadPage();
 
 function singleDivision(division){

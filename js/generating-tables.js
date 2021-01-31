@@ -1,4 +1,5 @@
-var champ = "nasmith99";
+var champ = "";
+var promotionStart = false
 var promoteIcon = "&#9651;";
 var demoteIcon = "&#9661;";
 
@@ -30,7 +31,7 @@ function matchGreyscaleColor(score, upper){
 }
 
 function standingsColor(cell, tier, next_tier, name){
-  if (next_tier == "") {
+  if (next_tier == "" || !promotionStart) {
     return;
   }
   var promotion = "#91eb9b";
@@ -179,7 +180,7 @@ function genHeader(division, complete, link, drops, customText=""){
   table.appendChild(seasonRow);
   seasonRow.appendChild(seasonHeader);
   var text = customText == "" ? `Division ${division} Standings` : customText;
-  text = complete == "Yes" ? text + " (complete)" : text;
+  //text = complete == "Yes" ? text + " (complete)" : text;
   var sheetsLink = `<a href="${link}" target="_blank"><img src="img/icons/sheets.png" class="sheets-icon"></a>`;
   seasonHeader.innerHTML = `<p>${text} ${sheetsLink}</p>`;
   seasonHeader.style.backgroundColor = "lightgrey";
@@ -714,7 +715,7 @@ function loadDivision(divisionDiv, divisionData, link, division, returning, para
 
   var headerText = Object.keys(params).length > 0 ? params["headerText"] : "";
   var playerNameKey = Object.keys(params).length > 0 ? params["playerNameKey"] : "";
-
+  champ = Object.keys(params).length > 0 ? params["champ"] : champ;
   var header = genHeader(division, complete, link, drops, headerText);
   var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, returning, false, playerNameKey);
 
