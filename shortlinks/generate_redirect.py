@@ -4,8 +4,8 @@ import json
 """
 Season information
 """
-tier_counts = [1, 2, 4, 4, 8, 14, 13, 25, 25, 26]
-current_season="43"
+tier_counts = [1, 2, 4, 3, 7, 14, 14, 29, 32, 32]
+current_season="44"
 for idx, division in enumerate(tier_counts):
     tier = chr(ord("a") + idx)
     for div in range(division):
