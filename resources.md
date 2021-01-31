@@ -48,9 +48,10 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Trader**: Action, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
 * **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<br>––––––––––––––––––––<br>When you discard this other than during Clean-up, you may reveal it to play it.
 
-Additionally, one card intentionally works differently online than what the card text says:
+Additionally, two cards intentionally works differently online than what the card text says:
 
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
+* **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played via Way of the Mouse would be as useful or less useful than other Ways.
 
 ##### Tracking rules
 
