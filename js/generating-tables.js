@@ -2,7 +2,7 @@ var champ = "";
 var promotionStart = false
 var promoteIcon = "&#9651;";
 var demoteIcon = "&#9661;";
-
+var playerQuery = ""
 /* Helper functions */
 function formatDbLink(playerName, className, drop="No"){
   var champion_sym = " <img src=\"img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
@@ -10,6 +10,9 @@ function formatDbLink(playerName, className, drop="No"){
   link = drop == "Yes" ? `<s>${link}</s>` : link;
   if (playerName == champ) {
     link += champion_sym;
+  }
+  if (playerName.toLowerCase() == playerQuery){
+    link = `<b>${link}</b>`;
   }
   return link;
 }
@@ -318,7 +321,7 @@ function genSimulations(players, drops, sorted){
 }
 
 
-function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning, isRaw, playerNameKey="") {
+function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning, isRaw) {
   console.log("Generating standings...");
   var table = document.createElement("table");
   var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
@@ -485,9 +488,6 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
       cell.innerHTML = rowInfo[info];
       switch (info) {
         case "name":
-          if (rowInfo[info].toLowerCase() == playerNameKey) {
-            cell.innerHTML = `<b>${rowInfo[info]}</b>`;
-          }
           standingsColor(cell, tier, playerData["next tier"], playerData["name"]);
           cell.classList.add("cellWithDetail");
           cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker, isRaw, drops));
@@ -714,10 +714,10 @@ function loadDivision(divisionDiv, divisionData, link, division, returning, para
 
 
   var headerText = Object.keys(params).length > 0 ? params["headerText"] : "";
-  var playerNameKey = Object.keys(params).length > 0 ? params["playerNameKey"] : "";
+  playerQuery = Object.keys(params).length > 0 ? params["playerNameKey"] : playerQuery;
   champ = Object.keys(params).length > 0 ? params["champ"] : champ;
   var header = genHeader(division, complete, link, drops, headerText);
-  var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, returning, false, playerNameKey);
+  var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, returning, false);
 
   if (Object.keys(params).length == 0) {
     standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
