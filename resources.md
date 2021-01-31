@@ -1,7 +1,7 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-date: 2020-12-03
+date: 2021-01-31
 categories: pinned
 layout: rules_faq
 ---
