@@ -8,7 +8,7 @@ title: Dominion League Current Season Standings
 
     <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
     <h5><a href="{{site.baseurl}}/past_standings">Past Season Standings</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
-    <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
+    <p> Standings for s43 season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
       {% for tier in site.data.season.tiers %}
@@ -25,23 +25,23 @@ title: Dominion League Current Season Standings
 <script src="js/generating-tables.js"></script>
 <script>
 // Load data
-var cur_season = {{ site.data.season.number }};
-var divisions = {{ site.data.current_season | jsonify }};
-var returning = {{ site.data.returning | jsonify }};
-var sheetsLinks = {{ site.data.sheet_links | jsonify }};
-sheetsLinks = sheetsLinks[cur_season.toString()];
+var divisions = {{ site.data.s43_season | jsonify }};
+var returning = {{ site.data.s43_returning | jsonify }};
+var sheetsLinks = {{ site.data.s43_season_links | jsonify }};
 var tiers = [
   ["A", 1],
   ["B", 2],
   ["C", 4],
-  ["D", 3],
-  ["E", 7],
+  ["D", 4],
+  ["E", 8],
   ["F", 14],
-  ["G", 14],
-  ["H", 29],
-  ["I", 32],
-  ["J", 32]
+  ["G", 13],
+  ["H", 25],
+  ["I", 25],
+  ["J", 26],
+  ["P",4]
 ];
+var curr_season = 43;
 loadPage();
 
 function singleDivision(division){

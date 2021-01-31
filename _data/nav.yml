@@ -26,8 +26,8 @@
       path: past_standings
     - name: Visual History
       path: charts
-    - name: Hall of Fame
-      path: hall_of_fame
+    #- name: Hall of Fame
+    #  path: hall_of_fame
 - name: Matches
   path: matches
 - name: News

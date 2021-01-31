@@ -9,11 +9,21 @@ from google.auth.transport.requests import Request
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-SEASON = 43
-# Various sheets pages
-MONITORING_SHEET = '1CIvRxhLL2XrwR0eQDt2FWhEgN1twtl6_r7BmHdFQeEE'
-RESULTS = 'Condensed Results!A2:K'
 
+FILE = './_data/league_history.json'
+SHEETS_IDS = './scripts/sheets_ids.json'
+
+# Open file containing all league history and sheets ids
+with open(FILE) as file_to_load:
+    league_history = json.load(file_to_load)
+with open(SHEETS_IDS) as file_to_load:
+    sheets = json.load(file_to_load)
+
+print("hi")
+print(sheets);
+
+
+# Helpful functions
 def assign_color(value):
     value = int(value)
     gradient = ["E77B72", "E88372", "EA8C71", "EC956F", "EF9E6E", "F2A76D", "F4B06B", "F7B96B", "F9C269", "FCCB67", "FED467", "F2D467", "E2D26B", "D0CF6F", "C0CC73", "AFCA76", "9EC77A", "8CC47E", "7CC181", "6DBF84", "5BBC88"]
@@ -27,23 +37,15 @@ def assign_color(value):
 def fpct(pct):
     return "{0:.0%}".format(pct)
 
-def getCurrentSeasonResults():
+
+
+def getResults(SEASON, MONITORING_SHEET, RESULTS):
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
-    curr_season = {"players":{}, "season": SEASON}
-    file = './_data/current_season.json'
+    curr_season = {"players":{}}
     creds = None
 
-    TIERS = [ ("A", 1), ("B", 2), ("C", 4),
-              ("D", 4), ("E", 8), ("F", 14),
-              ("G", 13), ("H", 25), ("I", 25),
-              ("J", 26), ("P",4)]
-    CUR_TIER_IDX = 0
-    CUR_DIV = 1
-    # The file token.pickle stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time.
     if os.path.exists('./scripts/token.pickle'):
         with open('./scripts/token.pickle', 'rb') as token:
             creds = pickle.load(token)
@@ -63,7 +65,7 @@ def getCurrentSeasonResults():
 
     # Call the Sheets API
     sheet = service.spreadsheets()
-    print(f"Getting the information standings...")
+    print(f"Season {SEASON}: Getting the information standings...")
     result = sheet.values().get(spreadsheetId=MONITORING_SHEET,
                                 range=RESULTS).execute()
     values = result.get('values', [])
@@ -74,30 +76,27 @@ def getCurrentSeasonResults():
         division_info = []
         for row in values:
             cols = len(row)
-            if cols >= 7:
-                if CUR_DIV > TIERS[CUR_TIER_IDX][1]:
-                    CUR_DIV = 1
-                    CUR_TIER_IDX += 1
-                if CUR_TIER_IDX == len(TIERS):
+            if cols >= 8:
+                division = row[0]
+                if division == "":
                     continue
-                division = f"{TIERS[CUR_TIER_IDX][0]}{CUR_DIV}"
-                CUR_DIV += 1
-                players = row[0].split(',')
-                pcts = row[1].split(',')
-                wins = row[2].split(',')
-                losses = row[3].split(',')
-                tiers = row[4].split(',')
-                p1s = row[5].split(',')
-                p2s = row[6].split(',')
-                wins1s = row[7].split(',')
-                wins2s = row[8].split(',')
-                comments = row[9].split(',')
+                players = row[1].split(',')
+                pcts = row[2].split(',')
+                wins = row[3].split(',')
+                losses = row[4].split(',')
+                tiers = row[5].split(',')
+                p1s = row[6].split(',')
+                p2s = row[7].split(',')
+                wins1s = row[8].split(',')
+                wins2s = row[9].split(',')
+                # comments = row[10].split(',')
+                returning = row[11].split(',')
                 late_drops = []
-                if cols >= 11:
-                    late_drops = row[10].split(',')
-                    print(f"Getting the results for {division} with late drops: {late_drops}...")
+                if cols >= 13:
+                    late_drops = row[12].split(',')
+                    print(f"Season {SEASON} {division}: Processing the results with late drops: {late_drops}...")
                 else:
-                    print(f"Getting the results for {division}...")
+                    print(f"Season {SEASON} {division}: Processing the results...")
 
                 # Match results
                 for idx in range(len(p1s)):
@@ -105,12 +104,14 @@ def getCurrentSeasonResults():
                     p2 = p2s[idx]
                     wins1 = wins1s[idx]
                     wins2 = wins2s[idx]
-                    comment = comments[idx].encode("ascii", "ignore")
-                    comment = comment.decode()
-                    comment = comment.replace("\n", " ")
-                    comment = comment.replace("\"", "'")
+                    wins1 = "0" if wins1 == "" else wins1
+                    wins2 = "0" if wins2 == "" else wins2
+                    #comment = comments[idx].encode("ascii", "ignore")
+                    #comment = comment.decode()
+                    #comment = comment.replace("\n", " ")
+                    #comment = comment.replace("\"", "'")
 
-                    result = {"player1":p1, "player2":p2, "wins1":wins1, "wins2":wins2, "comments":comment}
+                    result = {"player1":p1, "player2":p2, "wins1":wins1, "wins2":wins2} #, "comments":comment}
                     if division not in curr_season:
                         curr_season[division]={}
                         curr_season[division]["name"] = division
@@ -205,11 +206,19 @@ def getCurrentSeasonResults():
                         rank = p_idx + 1
                         curr_season[division]["members"][player]["rank"] = rank
 
-
-    print(f"Retrieved {len(curr_season)} divisions...")
-    print(f"Writing to {file}...")
-    with open(file, 'w') as filetowrite:
-        json.dump(curr_season, filetowrite)
+    league_history[SEASON] = curr_season
+    print(f"Season {SEASON}: Retrieved {len(curr_season)} divisions...")
+    print(f"Season {SEASON}: Writing to {FILE}...")
+    with open(FILE, 'w') as file_to_write:
+        json.dump(league_history, file_to_write)
+    print("Success!")
+    print("")
 
 if __name__ == '__main__':
-    getCurrentSeasonResults()
+    SEASON = "42"
+    # Various sheets pages
+    print(sheets);
+    MONITORING_SHEET = sheets[SEASON]
+    RESULTS = 'Condensed Results!A2:M'
+
+    getResults(SEASON, MONITORING_SHEET, RESULTS)

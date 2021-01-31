@@ -66,15 +66,19 @@ var champions = {{ site.data.champions | jsonify }};
 champions = champions["players"]
 var championshipVideos = {{ site.data.championship_videos | jsonify }};
 var youtubeChannels = {{ site.data.youtube_channels | jsonify }};
-// var currentSeasonIframesTable = {{ site.data.current_season_iframes | jsonify }};
 var uniqueOpponents = {{ site.data.players_unique_opponents | jsonify }};
+
+var sheetsLinks = {{ site.data.sheet_links | jsonify }};
 
 // Current season data
 var currentSeasonTable = {{ site.data.current_season | jsonify }};
 var currentSeasonPlayers = currentSeasonTable["players"];
-var sheetsLinks = {{ site.data.current_season_links | jsonify }};
-var returning = {{ site.data.current_season_returning | jsonify }};
+var currentSeasonReturning = {{ site.data.returning | jsonify }};
 
+// Season 43 Standings
+var s43Table = {{ site.data.s43_season | jsonify }};
+var s43Players = s43Table["players"];
+var s43Returning = {{ site.data.s43_returning | jsonify }};
 
 // Get URL parameter
 searchPlayerHistory(true);
@@ -186,12 +190,12 @@ function searchPlayerHistory(param=false){
     addToDiv(playerDiv, `${(champions[playerNameKey].length).toString()} x League Champion`, "p", "champion-information");
   }
   // ---Stats Heading
-  if (playersTable[playerNameKey]) {
-    var stats = computeStats(playerNameKey, playersTable[playerNameKey]["stats"], uniqueOpponents, currentSeasonPlayers);
+  /*if (playersTable[playerNameKey]) {
+    var stats = computeStats(playerNameKey, playersTable[playerNameKey]["stats"], uniqueOpponents, s43Players);
     for (var stat in stats){
       addToDiv(playerDiv, `<b>${stat}:</b> ${stats[stat]}`, "p", "stats-p");
     }
-  }
+  }*/
   // ---Links heading
   var player_chart_link = "<a href=\"" + "{{site.baseurl}}/charts?player="+ playerNameKey.replace(/ /g, "%20") +"\">Player Chart</a> "
   if (playerNameKey in youtubeChannels ) {
@@ -206,17 +210,32 @@ function searchPlayerHistory(param=false){
   // ************************
   // Current Season Standings
   // ************************
+  console.log(currentSeasonPlayers[playerNameKey]);
+  console.log(currentSeasonPlayers);
   if (currentSeasonPlayers[playerNameKey]) {
-    var season = currentSeasonPlayers["seasons"];
+    var season = currentSeasonTable["season"].toString();
     var division = currentSeasonPlayers[playerNameKey]["division"];
     var divisionData = currentSeasonTable[division];
     var title = `<a href="current_standings?div=${division}"> S${currentSeasonTable["season"]}</a> ${division} Division`;
-    var params = {"headerText":title, "playerNameKey":playerNameKey}
-    loadDivision(standingsDiv, divisionData, sheetsLinks[division], division, returning, params);
-    // ---Check if they have other league history
-    if(!playersTable[playerNameKey]) {
-      return;
-    }
+    var params = {"headerText":title, "playerNameKey":playerNameKey, "champ":""};
+    loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, currentSeasonReturning, params);
+  }
+
+
+  // ************************
+  // S43 Standings Standings
+  // ************************
+  if (s43Players[playerNameKey]) {
+    var season = s43Table["season"].toString();
+    var division = s43Players[playerNameKey]["division"];
+    var divisionData = s43Table[division];
+    var title = `<a href="s43_standings?div=${division}"> S${s43Table["season"]}</a> ${division} Division`;
+    var params = {"headerText":title, "playerNameKey":playerNameKey, "champ":"nasmith99"}
+    loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, s43Returning, params);
+  }
+  // ---Check if they have other league history
+  if(!playersTable[playerNameKey]) {
+    return;
   }
 
   // *************************
@@ -551,7 +570,12 @@ var playersTable = {{ site.data.player_and_seasons_played | jsonify }};
 for (var player in playersTable) {
   players.push(playersTable[player]["name"]);
 }
-var currentSeasonPlayers = {{ site.data.current_season_players | jsonify }};
+for (var player in s43Players) {
+  if (player != "seasons") {
+    players.push(s43Players[player]["name"]);
+  }
+}
+var currPlayers = {{ site.data.current_season_players | jsonify }};
 for (var player in currentSeasonPlayers) {
   if (player != "seasons") {
     players.push(currentSeasonPlayers[player]["name"]);
