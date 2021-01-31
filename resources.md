@@ -1,7 +1,7 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-date: 2020-12-03
+date: 2021-01-31
 categories: pinned
 layout: rules_faq
 ---
@@ -160,6 +160,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
+* **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Royal Carriage**:
@@ -179,7 +180,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Invest**: See **Invest** above.
   * **Possession**: See **Possession** above.
 * **Villa**: See **Cavalry** above.
-* **Way of the Chameleon**: See **Priest** above.
+* **Way of the Chameleon**:
+  * See **Oracle** above.
+  * See **Priest** above.
 * **Way of the Mouse**
 
   * **Cargo Ship**: If Way of the Mouse sets aside Cargo Ship, and you play multiple differently named cards using Way of the Mouse, then when you gain a card you cannot choose which played card to set aside the gained card on.
