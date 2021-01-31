@@ -94,11 +94,34 @@ title: Visual History
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 	<script>
 	//setup variables
-	var counts = {{ site.data.chart_counts | jsonify }};
-	var countsLength = counts.length;
-	var currentSeason = Number(counts[countsLength - 1].season);
 	var currentStandings = {{ site.data.current_season | jsonify }};
+	var currentSeason = currentStandings.season;
 	var playerCurrentStandings = null;
+	var counts = {{ site.data.chart_counts | jsonify }};
+	function getCurrentCounts() {
+		var tiers = "ABCDEFGHIJP";
+		var currentCounts = {};
+		for (let i=0; i<11; i++) {
+			currentCounts[tiers[i]] = {"season": String(currentSeason), "tier": tiers[i], "divisions": 0, "players": 0};
+		}
+		var totalPlayers = 0;
+		var divisions = Object.keys(currentStandings);
+		for (let i = divisions.length-1; i>=2; i--) {
+			currentCounts[currentStandings[divisions[i]].tier].divisions += 1;
+			let divPlayers = Object.keys(currentStandings[divisions[i]].members).length;
+			currentCounts[currentStandings[divisions[i]].tier].players += divPlayers;
+			totalPlayers += divPlayers;
+		}
+		currentCounts = Object.keys(currentCounts).map(key => currentCounts[key]);
+		for (let i=0; i<11; i++) {
+			currentCounts[i].lfrac = String(currentCounts[i].players/totalPlayers);
+			currentCounts[i].divisions = String(currentCounts[i].divisions);
+			currentCounts[i].players = String(currentCounts[i].players);
+		}
+		return currentCounts;
+	}
+	if (counts[counts.length-1].season != currentSeason) {counts = counts.concat(getCurrentCounts())};
+	var countsLength = counts.length;
 	var placeHistory = {{ site.data.chart_history | jsonify }};
 	var placeHistoryLength = placeHistory.length;
 	var proportion = false;
@@ -613,8 +636,6 @@ title: Visual History
 			}
 		}];
 	}
-
-	var currentiframes = {{ site.data.current_season_iframes | jsonify }}
 
 	function showStandingsModal(season, division) {
 		document.getElementById('standings-info').innerHTML = '<a href="/' + ((season == currentSeason) ? 'current_standings' : 'past_standings/season' + season) + '?div=' + division + '" target="_blank">Season ' + season + ' Division ' + division + ' Standings</a>';
