@@ -14,6 +14,11 @@ SEASON = 44
 MONITORING_SHEET = '12NJWadagLRgk_MtF3EnIp_0v8Db614IJTBOr_kRg1ZE'
 RESULTS = 'Results!C2:O'
 
+# Open file containing all league history and sheets ids
+FILE = './_data/current_season.json'
+with open(FILE) as file_to_load:
+    current_season_json = json.load(file_to_load)
+
 def assign_color(value):
     value = int(value)
     gradient = ["E77B72", "E88372", "EA8C71", "EC956F", "EF9E6E", "F2A76D", "F4B06B", "F7B96B", "F9C269", "FCCB67", "FED467", "F2D467", "E2D26B", "D0CF6F", "C0CC73", "AFCA76", "9EC77A", "8CC47E", "7CC181", "6DBF84", "5BBC88"]
@@ -31,8 +36,7 @@ def getCurrentSeasonResults():
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
-    curr_season = {"players":{}, "season": SEASON}
-    file = './_data/current_season.json'
+    curr_season = current_season_json
     creds = None
 
     #TIERS = [ ("A", 1), ("B", 2), ("C", 4),
@@ -77,6 +81,7 @@ def getCurrentSeasonResults():
             if cols >= 8:
                 division = row[0]
                 players = row[1].split(',')
+                if (players == ["#REF!"]): continue
                 pcts = row[2].split(',')
                 wins = row[3].split(',')
                 losses = row[4].split(',')
@@ -205,8 +210,8 @@ def getCurrentSeasonResults():
 
 
     print(f"Retrieved {len(curr_season)} divisions...")
-    print(f"Writing to {file}...")
-    with open(file, 'w') as filetowrite:
+    print(f"Writing to {FILE}...")
+    with open(FILE, 'w') as filetowrite:
         json.dump(curr_season, filetowrite)
 
 if __name__ == '__main__':
