@@ -46,5 +46,5 @@ jobs:
 
           # The message for the commit
           # Default: 'Commit from GitHub Actions (name of the workflow)'
-          message: 'Update sheets'
+          message: 'AUTO: Update current season json'
 
