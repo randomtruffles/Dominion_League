@@ -434,7 +434,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
       }
       var games = playerData["games_nondrop"];
       var matches = isRaw ? Math.floor(games/6) : numDrops + Math.floor(games/6);
-      var base, remainder;
+      var remainder;
       if (!isRaw && playerData["drop"] == "Yes") {
         remainder = "";
         games = 6*(numPlayers - numDrops - 1);
@@ -445,14 +445,15 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
         remainder = " &#189;";
       } else if (games%2 == 0 && games/2 == 1) {
         remainder = " &#8532;"
-      } else if (games%2 == 0 && games/2 == 0) {
+      } else if (games%2 == 0 && games/2 == 2) {
         remainder = " &#8531;"
       } else if (games%6 == 1) {
         remainder = " &#8537;"
       } else if (games%6 == 5) {
         remainder = " &#8538;"
       }
-      cell.innerHTML = `${matches}` + remainder;
+      var text = matches == 0 ? remainder : `${matches}` + remainder;
+      cell.innerHTML = text;
       cell.style.backgroundColor =  matchGreyscaleColor(6*numDrops + games, 6*(numPlayers-1));
     }
   }
