@@ -63,7 +63,7 @@ title: Visual History
 		<p class="slidePiece">Zoom:</p>
 		<div class="slidePiece">
 			<label class="checkslider">
-				<input type="checkbox" id="powerzoom" checked="checked">
+				<input type="checkbox" id="powerzoom">
 				<span class="checkslider-button" id="powerzoom-button"></span>
 			</label>
 		</div>
@@ -94,9 +94,34 @@ title: Visual History
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 	<script>
 	//setup variables
+	var currentStandings = {{ site.data.current_season | jsonify }};
+	var currentSeason = currentStandings.season;
+	var playerCurrentStandings = null;
 	var counts = {{ site.data.chart_counts | jsonify }};
+	function getCurrentCounts() {
+		var tiers = "ABCDEFGHIJP";
+		var currentCounts = {};
+		for (let i=0; i<11; i++) {
+			currentCounts[tiers[i]] = {"season": String(currentSeason), "tier": tiers[i], "divisions": 0, "players": 0};
+		}
+		var totalPlayers = 0;
+		var divisions = Object.keys(currentStandings);
+		for (let i = divisions.length-1; i>=2; i--) {
+			currentCounts[currentStandings[divisions[i]].tier].divisions += 1;
+			let divPlayers = Object.keys(currentStandings[divisions[i]].members).length;
+			currentCounts[currentStandings[divisions[i]].tier].players += divPlayers;
+			totalPlayers += divPlayers;
+		}
+		currentCounts = Object.keys(currentCounts).map(key => currentCounts[key]);
+		for (let i=0; i<11; i++) {
+			currentCounts[i].lfrac = String(currentCounts[i].players/totalPlayers);
+			currentCounts[i].divisions = String(currentCounts[i].divisions);
+			currentCounts[i].players = String(currentCounts[i].players);
+		}
+		return currentCounts;
+	}
+	if (counts[counts.length-1].season != currentSeason) {counts = counts.concat(getCurrentCounts())};
 	var countsLength = counts.length;
-	var currentSeason = Number(counts[countsLength - 1].season);
 	var placeHistory = {{ site.data.chart_history | jsonify }};
 	var placeHistoryLength = placeHistory.length;
 	var proportion = false;
@@ -119,7 +144,7 @@ title: Visual History
 			return 0;
 		}  
 	});
-	var powerPlotZoom = true;
+	var powerPlotZoom = false;
 	var playerPlot = null;
 	var powerPlot = null;
 
@@ -281,6 +306,39 @@ title: Visual History
 					seasons.push(placeHistory[i].season);
 					tiers.push(placeHistory[i].tier);
 				}
+			}
+			
+			//add information for current season if player is in it
+			if ((currentSeason <= seasonRange[1]) && Object.keys(currentStandings.players).includes(lowerplayer) && (!pHist.length || (pHist[pHist.length-1].season != currentSeason))) {
+				let pname = currentStandings.players[lowerplayer].name;
+				var currentHistory = {"player": pname, "tier": currentStandings.players[lowerplayer].tier, "division": currentStandings.players[lowerplayer].division};
+				playerCurrentStandings = Object.keys(currentStandings[currentHistory.division].members).map(key => currentStandings[currentHistory.division].members[key]);
+				playerCurrentStandings.sort((a,b) => a.rank - b.rank);
+				let rank = (Number(currentStandings[currentHistory.division].members[pname].wins) + Number(currentStandings[currentHistory.division].members[pname].losses)) ? currentStandings[currentHistory.division].members[pname].rank : "";
+				currentHistory.place = String(rank) + " (in progress)";
+				currentHistory.season = String(currentSeason);
+				let countBase = 0;
+				let countMult = 0;
+				let propBase = 0;
+				let propMult = 0;
+				for (let i = countsLength-1; i >= 0; i--) {
+					if (Number(counts[i].season) < currentSeason) {
+						break;
+					} else if (counts[i].tier == currentHistory.tier) {
+						countMult = Number(counts[i].players);
+						propMult = Number(counts[i].lfrac);
+					} else if (counts[i].tier < currentHistory.tier) {
+						countBase += Number(counts[i].players);
+						propBase += Number(counts[i].lfrac);
+					}
+				}
+				currentHistory.countPlacement = String(rank ? countBase + (rank-0.5)*countMult/playerCurrentStandings.length : countBase + 0.5*countMult);
+				currentHistory.propPlacement = String(rank ? propBase + (rank-0.5)*propMult/playerCurrentStandings.length : propBase + 0.5*propMult);
+				currentHistory.champ = "in progress";
+				currentHistory.chart = "point";
+				pHist.push(currentHistory);
+				seasons.push(currentHistory.season);
+				tiers.push(currentHistory.tier);
 			}
 			
 			var played2MostRecent = (seasons[seasons.length - 1] == currentSeason) && (seasons[seasons.length - 2] == currentSeason - 1) && (pHist[pHist.length - 1].champ == "in progress");
@@ -493,7 +551,7 @@ title: Visual History
 							"tooltip": (widthcheck.clientWidth < 540) ? null : [
 								{"field": "season", "type": "nominal", "title": "Season"},
 								{"field": "division", "type": "nominal", "title": "Division"},
-								{"field": "place", "type": "nominal", "title": "Finish"}
+								{"field": "place", "type": "nominal", "title": "Place"}
 							]
 						}
 					}
@@ -579,16 +637,30 @@ title: Visual History
 		}];
 	}
 
-	var currentiframes = {{ site.data.current_season_iframes | jsonify }}
-
 	function showStandingsModal(season, division) {
-		document.getElementById('standings-info').innerHTML = "Season " + season + " Division " + division + " Standings";
+		document.getElementById('standings-info').innerHTML = '<a href="/' + ((season == currentSeason) ? 'current_standings' : 'past_standings/season' + season) + '?div=' + division + '" target="_blank">Season ' + season + ' Division ' + division + ' Standings</a>';
 		var table = document.getElementById('standings-table');
-		table.innerHTML = '';
-		if (season == currentSeason) {
-			table.innerHTML = currentiframes[division];
+		table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
+		if ((season == currentSeason) && playerCurrentStandings) {
+			for (let i=0; i < playerCurrentStandings.length; i++) {
+				let row = document.createElement('tr');
+				row.classList.add('rows-past-standings')
+				let names = ['rank', 'name', 'wins', 'losses']
+				for (let j = 0; j < 4; j++) {
+					let cell = document.createElement('td');
+					cell.classList.add('cells-past-standings');
+					cell.appendChild(document.createTextNode(playerCurrentStandings[i][names[j]]));
+					row.appendChild(cell);
+				}
+				//handle pct separately to add background color
+				let cell = document.createElement('td');
+				cell.classList.add('cells-past-standings');
+				cell.style.cssText = 'background-color:' + playerCurrentStandings[i].color;
+				cell.appendChild(document.createTextNode(playerCurrentStandings[i].pct));
+				row.appendChild(cell);
+				table.appendChild(row);
+			}
 		} else {
-			table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
 			for (let i=0; i < placeHistoryLength; i++) {
 				if ((placeHistory[i].season == season) && (placeHistory[i].division == division)) {
 					let row = document.createElement('tr');
