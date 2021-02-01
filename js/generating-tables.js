@@ -433,7 +433,10 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
         games = playerData["wins"] + playerData["losses"];
       }
       var games = playerData["games_nondrop"];
+      console.log(playerData["name"]);
+      console.log(games);
       var matches = isRaw ? Math.floor(games/6) : numDrops + Math.floor(games/6);
+      console.log(matches);
       var remainder;
       if (!isRaw && playerData["drop"] == "Yes") {
         remainder = "";
@@ -521,6 +524,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
           cell.style.backgroundColor = matchColor(parseInt(rowInfo[info]), 100);
           break;
         case "tierOrMatches":
+          console.log("tierOrMatches");
           tierOrMatches(playerData, cell);
           if (Object.keys(tbValues).length > 0) {
             var tbCell = document.createElement("td");
