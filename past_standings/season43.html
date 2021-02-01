@@ -1,8 +1,162 @@
 ---
 layout: default
-title: Current Season
+title: Dominion League Season 43 Standings
 ---
+
+<div class="home">
+  <div class="container-centered">
+    <h3><a style="text-decoration: none" href="season42.html">&nbsp;<b><</b>&nbsp;</a>Season 43 Standings<a style="text-decoration: none" href="season44.html">&nbsp;<b>></b>&nbsp;</a></h3>
+    <h5>2020-12-07 to 2021-01-17</h5>
+    <h5><a href="{{site.baseurl}}/past_standings.html">All Past Season Standings</a></h5>
+    <h5><a href="{{site.baseurl}}/player_database.html">Player Database</a></h5>
+    <!-- Filter buttons -->
+    <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('divA')">A</button>
+      <button class="btn" onclick="filterSelection('divB')">B</button>
+      <button class="btn" onclick="filterSelection('divC')">C</button>
+      <button class="btn" onclick="filterSelection('divD')">D</button>
+      <button class="btn" onclick="filterSelection('divE')">E</button>
+      <button class="btn" onclick="filterSelection('divF')">F</button>
+      <button class="btn" onclick="filterSelection('divG')">G</button>
+      <button class="btn" onclick="filterSelection('divH')">H</button>
+      <button class="btn" onclick="filterSelection('divI')">I</button>
+      <button class="btn" onclick="filterSelection('divJ')">J</button>
+      <button class="btn" onclick="filterSelection('divP')">P</button>
+      <button class="btn active" onclick="filterSelection('all')">Show All</button>
+    </div>
+    <div class="spacing"></div>
+    <div id="single-division"></div>
+    <div id="all-divisions"></div>
+    <div class="spacing"></div>
+  </div>
+</div>
+<script src="/js/generating-tables.js"></script>
 <script>
-  let url = "{{site.baseurl}}/current_standings.html";
-  window.location.href = url;
+// Load data
+var divisions = {{ site.data.s43_season | jsonify }};
+var returning = {{ site.data.s43_returning | jsonify }};
+var sheetsLinks = {{ site.data.s43_season_links | jsonify }};
+var tiers = [
+  ["A", 1],
+  ["B", 2],
+  ["C", 4],
+  ["D", 4],
+  ["E", 8],
+  ["F", 14],
+  ["G", 13],
+  ["H", 25],
+  ["I", 25],
+  ["J", 26],
+  ["P",4]
+];
+var curr_season = 43;
+loadPage();
+
+function singleDivision(division){
+  var singleDivisionDiv = document.getElementById("single-division");
+  singleDivisionDiv.style.display = "";
+  singleDivisionDiv.scrollIntoView(true);
+  document.getElementById("all-divisions").style.display = "none";
+  console.log(`Showing single division: ${division.toLowerCase()}-standings`);
+  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, returning, {});
+  var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
+  w3AddClass(divisionDiv, "show");
+}
+
+function allDivisions(){
+  var curTierIdx = 0;
+  var curDiv = 1;
+  var divisionDiv = document.getElementById("all-divisions");
+  console.log("Showing all divisions");
+  document.getElementById("single-division").style.display = "none";
+  console.log(tiers);
+  while (true) {
+    if (curTierIdx == tiers.length) {
+      break;
+    }
+    if (curDiv > tiers[curTierIdx][1]) {
+      curDiv = 1;
+      curTierIdx += 1;
+    }
+    if (curTierIdx == tiers.length) {
+      break;
+    }
+    division = `${tiers[curTierIdx][0]}${curDiv}`;
+    curDiv += 1;
+    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, returning, {});
+  }
+  return;
+}
+
+function loadPage() {
+  var division = getParam('div');
+  var tier = getParam('tier');
+  if (division.length > 0) {
+    singleDivision(division.toUpperCase());
+  } else {
+    allDivisions();
+    filterSelection("all");
+  }
+}
+
+function getParam(paramName) {
+  var urlParam = function(name, w){
+      w = w || window;
+      var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+          val = w.location.search.match(rx);
+      return !val ? '':val[1];
+  }
+  var paramData = urlParam(paramName).replace(/%20/g, " ").trim();
+  return paramData;
+}
+
+
+function filterSelection(c) {
+  var x, i;
+  if(document.getElementById('all-divisions').children.length == 0) {
+    console.log(document.getElementById('all-divisions').children.length);
+    allDivisions();
+  }
+  document.getElementById('all-divisions').style.display = "";
+  x = document.getElementsByClassName("standings filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(x[i], "show");
+    }
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 </script>

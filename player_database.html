@@ -191,12 +191,12 @@ function searchPlayerHistory(param=false){
     addToDiv(playerDiv, `${(champions[playerNameKey].length).toString()} x League Champion`, "p", "champion-information");
   }
   // ---Stats Heading
-  /*if (playersTable[playerNameKey]) {
+  /* if (playersTable[playerNameKey]) {
     var stats = computeStats(playerNameKey, playersTable[playerNameKey]["stats"], uniqueOpponents, s43Players);
     for (var stat in stats){
       addToDiv(playerDiv, `<b>${stat}:</b> ${stats[stat]}`, "p", "stats-p");
     }
-  }*/
+  } */
   // ---Links heading
   var player_chart_link = "<a href=\"" + "{{site.baseurl}}/charts?player="+ playerNameKey.replace(/ /g, "%20") +"\">Player Chart</a> "
   if (playerNameKey in youtubeChannels ) {
@@ -230,7 +230,7 @@ function searchPlayerHistory(param=false){
     var season = s43Table["season"].toString();
     var division = s43Players[playerNameKey]["division"];
     var divisionData = s43Table[division];
-    var title = `<a href="s43_standings?div=${division}"> S${s43Table["season"]}</a> ${division} Division`;
+    var title = `<a href="past_standings/season43?div=${division}"> S${s43Table["season"]}</a> ${division} Division`;
     var params = {"headerText":title, "playerNameKey":playerNameKey, "champ":"nasmith99"}
     loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, s43Returning, params);
   }

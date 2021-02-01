@@ -5,7 +5,7 @@ var demoteIcon = "&#9661;";
 var playerQuery = ""
 /* Helper functions */
 function formatDbLink(playerName, className, drop="No"){
-  var champion_sym = " <img src=\"img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
+  var champion_sym = " <img src=\"/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
   var link = `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
   link = drop == "Yes" ? `<s>${link}</s>` : link;
   if (playerName == champ) {
@@ -184,7 +184,7 @@ function genHeader(division, complete, link, drops, customText=""){
   seasonRow.appendChild(seasonHeader);
   var text = customText == "" ? `Division ${division} Standings` : customText;
   //text = complete == "Yes" ? text + " (complete)" : text;
-  var sheetsLink = `<a href="${link}" target="_blank"><img src="img/icons/sheets.png" class="sheets-icon"></a>`;
+  var sheetsLink = `<a href="${link}" target="_blank"><img src="/img/icons/sheets.png" class="sheets-icon"></a>`;
   seasonHeader.innerHTML = `<p>${text} ${sheetsLink}</p>`;
   seasonHeader.style.backgroundColor = "lightgrey";
   seasonHeader.setAttribute('colspan', 10);
@@ -387,8 +387,8 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
   calcTiebreakers();
 
   var tableHeadings, headingWidths;
-  var tierIcon = "<img src='img/icons/tier.png' title='Tier next season'>";
-  var returningIcon = "<img src='img/icons/returning.png' title='Returning next season?'>";
+  var tierIcon = "<img src='/img/icons/tier.png' title='Tier next season'>";
+  var returningIcon = "<img src='/img/icons/returning.png' title='Returning next season?'>";
   if (isRaw) {
     tableHeadings = ["#", "Player", "Wnd%", "Wnd", "Lnd", "Wd%", "Wd", "Ld"];
     headingWidths = ["6%", "35%", "10%", "10%", "10%", "10%", "10%","9%"];
