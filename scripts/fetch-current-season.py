@@ -11,8 +11,8 @@ from google.auth.transport.requests import Request
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 SEASON = 44
 # Various sheets pages
-MONITORING_SHEET = '1u4D62bs5qPfD01owRjZwtlo7HVP_dp-2dwIfKB7PTGs'
-RESULTS = 'Condensed Results!A2:M'
+MONITORING_SHEET = '12NJWadagLRgk_MtF3EnIp_0v8Db614IJTBOr_kRg1ZE'
+RESULTS = 'Results!C2:O'
 
 def assign_color(value):
     value = int(value)
