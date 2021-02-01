@@ -5,7 +5,7 @@
 - name: alibby1152
   discord: alibby1152#4103
   image: alibby
-  chair: Setup
+  chair: Admin, Setup
 - name: amoffett11
   discord: amoffett11#8778
   image: amoffett11
@@ -50,7 +50,7 @@
 - name: SamE
   discord: SamE#8793
   image: same
-  chair: Admin, Sheets
+  chair: Sheets
 - name: Sharur
   discord: Sharur#7043
   image: sharur
