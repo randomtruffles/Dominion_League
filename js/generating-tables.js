@@ -452,7 +452,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
       } else if (games%6 == 5) {
         remainder = " &#8538;"
       }
-      var text = matches == 0 ? remainder : `${matches}` + remainder;
+      var text = matches == 0 && games > 0 ? remainder : `${matches}` + remainder;
       cell.innerHTML = text;
       cell.style.backgroundColor =  matchGreyscaleColor(6*numDrops + games, 6*(numPlayers-1));
     }
