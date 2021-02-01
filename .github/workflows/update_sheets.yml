@@ -3,8 +3,6 @@ name: PullSheets
 # Controls when the action will run. 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/5 * * * *'
 
 jobs:
   # This workflow contains a single job called "build"
@@ -18,12 +16,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Lmao1
+      - name: Install Dependencies
         run: |
           python3 -m pip install --upgrade pip
           pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
       
-      - name: Run Script
+      - name: Fetch Current Season Data
         run: |
           python3 ./scripts/fetch-current-season.py
     
