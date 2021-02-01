@@ -1,1 +1,1 @@
-worker: python scripts/github_action_dispatch.py
+web: python scripts/github_action_dispatch.py
