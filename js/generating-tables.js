@@ -505,7 +505,9 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
           }
           break;
         case "pct" :
-          if (!isRaw) {
+          if (playerData["wins"] + playerData["losses"] == 0) {
+            cell.style.backgroundColor = "#f1f1f1";
+          } else if (!isRaw) {
             cell.style.backgroundColor = playerData["color"];
           } else if (drops.includes(name)) {
             cell.innerHTML = "";
