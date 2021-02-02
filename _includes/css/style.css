@@ -349,11 +349,7 @@ iframe {
   vertical-align: middle;
 }
 
-.standings-table td:nth-child(2), .raw-standings-table td:nth-child(2) {
-    border-right: 2px solid slategray;
-}
-
-.standings-table th:nth-child(2), .raw-standings-table th:nth-child(2) {
+.raw-standings-table td:nth-child(2), .raw-standings-table th:nth-child(2) {
     border-right: 2px solid slategray;
 }
 
@@ -1385,7 +1381,7 @@ p.champion-information {
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: lightcoral;
 }
 
 .btn.active {
