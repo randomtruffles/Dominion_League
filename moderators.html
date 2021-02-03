@@ -38,26 +38,76 @@ title: Dominion League Moderators
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h4> Previous Moderators </h4>
-                Below is a list of all previous League moderators. We thank them for their dedication and contribution in helping make the Dominion League what it is today!
+                Below is a chart showing all former (and current) League moderators and their tenures. We thank them for their dedication and contribution in helping make the Dominion League what it is today!
                 <div class="spacing"></div>
-                  <p>
-                    Apostolosoruler,
-                    Burning Skull,
-                    gloures,
-                    assemble me,
-                    drsteelhammer,
-                    LaLight,
-                    Seprix,
-                    Anders,
-                    GreyEK,
-                    irrationalE,
-                    Stef,
-                    AdamH,
-                    A Drowned Kernel,
-                    mpsprs,
-                    Deadlock39,
-                    funkdoc
-                  </p>
                 </div>
             </div>
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+				<div id="widthcheck"><!-- I need this for determining render width --></div>
+				<div id="mod-hist-chart"></div>
+				<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+				<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+				<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+				<script type="text/javascript">
+					var mods = {{ site.data.mod_history | jsonify }};
+					var currentEnd = String({{ site.data.season.number }} + 1);
+					for (let i = mods.length-1; i >= 0; i--) {
+						if (!mods[i].end) {mods[i].end = currentEnd}
+					}
+					var widthcheck = document.getElementById("widthcheck");
+					
+					const plotSpec = {
+						"height": 600,
+						"width": widthcheck.clientWidth - 100,
+						"data": {"values": mods},
+						"transform": [
+							{"calculate":"datum.start*1", "as":"order"},
+							{"calculate":"(datum.info == 'Administrator') ? 'admin' : 'no'", "as": "admin"}
+						],
+						"layer": [
+							{
+								"mark": "bar",
+								"encoding": {
+									"y": {
+										"field": "Mod",
+										"type": "nominal",
+										"sort": {"field":"order"},
+										"axis": {"title": null, "orient": "right"}
+									},
+									"x": {
+										"field": "start",
+										"type": "quantitative",
+										"axis": {"title": "Season"}
+									},
+									"x2": {"field": "end"},
+									"color": {
+										"field": "info",
+										"legend": {
+											"title": null,
+											"orient": "bottom"
+										},
+										"scale": {
+											"domain": ["Former", "Current", "Administrator"],
+											"range": ["#4e5ab5", "#3c783d", "#e0d043"]
+										}
+									},
+									"size": {
+										"field": "admin",
+										"legend": null,
+										"scale": {
+											"domain": ["no", "admin"],
+											"range": ["15", "5"]
+										}
+									},
+									"tooltip": {"field": "Mod"}
+								}
+							}
+						]
+					};
+					
+					vegaEmbed("#mod-hist-chart", plotSpec, {"actions": false})
+				</script>
+				</div>
+			</div>
     </section>
