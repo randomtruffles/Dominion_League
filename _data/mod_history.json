@@ -27,7 +27,7 @@
 {"Mod":"Seprix", "start":"28", "end":"33", "info":"Former"},
 {"Mod":"Sharur", "start":"43", "end":"", "info":"Current"},
 {"Mod":"singletee", "start":"31", "end":"", "info":"Current"},
-{"Mod":"Stef", "start":"1", "end":"14", "info":"Former"},
+{"Mod":"Stef", "start":"0", "end":"14", "info":"Former"},
 {"Mod":"sweetjohn33", "start":"43", "end":"", "info":"Current"},
 {"Mod":"tracer", "start":"28", "end":"35", "info":"Current"},
 {"Mod":"truffles", "start":"40", "end":"", "info":"Current"},
@@ -37,7 +37,7 @@
 {"Mod":"Seprix", "start":"40", "end":"41", "info":"Former"},
 {"Mod":"tracer", "start":"41", "end":"", "info":"Current"},
 {"Mod":"volfied", "start":"36", "end":"", "info":"Current"},
-{"Mod":"Stef", "start":"1", "end":"14", "info":"Administrator"},
+{"Mod":"Stef", "start":"0", "end":"14", "info":"Administrator"},
 {"Mod":"assemble me", "start":"14", "end":"27", "info":"Administrator"},
 {"Mod":"SamE", "start":"27", "end":"44", "info":"Administrator"},
 {"Mod":"alibby1152", "start":"44", "end":"", "info":"Administrator"}

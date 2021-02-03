@@ -131,19 +131,6 @@ title: Visual History
 	var userSetRange = false;
 	var power = {{ site.data.chart_power | jsonify }};
 	var powerLength = power.length;
-	var APlayers = [];
-	for (let i=0; i<powerLength; i+=currentSeason) {
-		APlayers.push(power[i].player);
-	}
-	APlayers.sort(function(a,b) {
-		if (a.toLowerCase() < b.toLowerCase()) {
-			return -1;
-		} else if (a.toLowerCase() > b.toLowerCase()) {
-			return 1;
-		} else if (a.toLowerCase() == b.toLowerCase()) {
-			return 0;
-		}  
-	});
 	var powerPlotZoom = false;
 	var playerPlot = null;
 	var powerPlot = null;
@@ -692,18 +679,16 @@ title: Visual History
 	
 	function makePowerPlot() {
 		var widthOffset = powerPlotZoom ? 0.1 : 0.61;
-	
-		var colors = ['#944246','#7C5C34','#8E991E','#6F1448','#000000','#74C4BA','#434596','#52B75E','#FC329C','#45EF87','#701567','#6FC296','#C58D3F','#A0EE4F','#39D93A','#128802','#67A7D1','#03B76F','#000000','#D612C9','#024784','#228BEA','#22C0B3','#37FC36','#B250AC','#8A8901','#0211B0','#000000','#63302B','#DE2226','#431D64','#DED557','#46A178','#6CB300','#5AD0E1','#420288','#904301','#CD1485','#7F3FC6','#187C44','#60911B','#0F6419','#911CFD','#1B156D','#A02C1B','#C1739B','#BC9FFC','#CF7111','#517B33','#860302','#284F8F','#7A3575','#000000','#FEEC34','#00FFFF','#DE42F0'];
 		
 		const powerSpec = {
 			"title": "A Division History",
 			"width": widthcheck.clientWidth - 78, //little bit off with scrollbar, worry when doing resizing for window
 			"height": (powerPlotZoom ? 3 : 1) * (widthcheck.clientWidth - 78),
-			"data": {"values": power},
+			"data": {"values": power.data},
 			"layer": [
 				{
 					"mark": {"type": "area"},
-					"transform": [{"calculate": "indexof(" + JSON.stringify(APlayers) + ", datum.player)", "as": "order"}],
+					"transform": [{"calculate": "indexof(" + JSON.stringify(power.players) + ", datum.player)", "as": "order"}],
 					"selection": {
 						"hovered": {"type": "single", "on": "mouseover", "empty": "all"},
 						"clicked": {"type": "single", "on": "click", "empty": "none"}
@@ -734,8 +719,8 @@ title: Visual History
 							"field": "player",
 							"type": "nominal",
 							"scale": {
-								"domain": APlayers,
-								"range": colors
+								"domain": power.players,
+								"range": power.colors
 							},
 							"legend": null
 						},
@@ -754,7 +739,7 @@ title: Visual History
 			powerPlot = res.view;
 			powerPlot.addDataListener('clicked_store', function(name, value){
 				if (value.length) {
-					player = power[value[0].values[0]-1].player;
+					player = power.data[value[0].values[0]-1].player;
 					allTiers = document.getElementById('allTiers').checked;
 					setURLparams();
 					makePlayerPlot();
