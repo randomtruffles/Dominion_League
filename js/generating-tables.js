@@ -470,13 +470,16 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
       "winsAll" : playerData["wins_wdrop"].toFixed(1).replace(".0", ""),
       "lossesAll" : playerData["losses_wdrop"].toFixed(1).replace(".0", "")
     }
+
+    var err = false; //playerData["wins"] == 0 && playerData["losses_wdrop"] + playerData["wins_wdrop"] > 0 ? true : false;
+
     var nonDroppedInfo = {
       "rank" : playerData["rank"] ,
       "name" : formatDbLink(name, "db-link", playerData["drop"]),
-      "pct" : playerData["pct"],
-      "wins" : playerData["wins"],
-      "losses" : playerData["losses"],
-      "tierOrMatches" : "",
+      "pct" : err ? "Err" : ifErr(playerData["pct"]),
+      "wins" : err ? "Err" : ifErr(playerData["wins"]),
+      "losses" : err ? "Err" : ifErr(playerData["losses"]),
+      "tierOrMatches" : err ? "Err" : "",
       "returning" : isReturning(name)
     }
 
