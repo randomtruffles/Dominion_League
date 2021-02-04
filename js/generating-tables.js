@@ -438,10 +438,13 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
         remainder = "";
       } else if (games%3 == 0) {
         remainder = " &#189;";
-      } else if (games%2 == 0 && games/2 == 1) {
-        remainder = " &#8531;"
-      } else if (games%2 == 0 && games/2 == 2) {
-        remainder = " &#8532;"
+      } else if (games%2 == 0) {
+        var gamesLeft = games%6;
+        if (gamesLeft/2 == 1) {
+          remainder = " &#8531;";
+        } else { // gamesLeft/2 == 2
+          remainder = " &#8532;"
+        }
       } else if (games%6 == 1) {
         remainder = " &#8537;"
       } else if (games%6 == 5) {
