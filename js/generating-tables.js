@@ -476,9 +476,9 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
     var nonDroppedInfo = {
       "rank" : playerData["rank"] ,
       "name" : formatDbLink(name, "db-link", playerData["drop"]),
-      "pct" : err ? "Err" : ifErr(playerData["pct"]),
-      "wins" : err ? "Err" : ifErr(playerData["wins"]),
-      "losses" : err ? "Err" : ifErr(playerData["losses"]),
+      "pct" : playerData["pct"],
+      "wins" : playerData["wins"],
+      "losses" : playerData["losses"],
       "tierOrMatches" : err ? "Err" : "",
       "returning" : isReturning(name)
     }
