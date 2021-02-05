@@ -392,7 +392,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
       tableHeadings = ["#", "Player", "W%", "W", "L", "TB", tierIcon, returningIcon];
       headingWidths = ["6%", "35%", "11%", "11%", "11%", "10%", "8%","8%"];
     } else {
-      tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "MP", returningIcon];
+      tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "MC", returningIcon];
       headingWidths = ["6%", "35%", "11%", "11%", "11%", "8%", "11%","7%"];
     }
   } else {
@@ -400,7 +400,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
       tableHeadings = ["#", "Player", "W%", "W", "L", tierIcon, returningIcon];
       headingWidths = ["6%", "35%", "14%", "14%", "14%", "8%", "8%"];
     } else {
-      tableHeadings = ["#", "Player", "W%", "W", "L", "MP", returningIcon];
+      tableHeadings = ["#", "Player", "W%", "W", "L", "MC", returningIcon];
       headingWidths = ["6%", "35%", "14%", "12%", "12%", "13%", "8%"];
     }
   }
