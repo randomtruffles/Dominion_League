@@ -1,7 +1,7 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-date: 2021-01-31
+date: 2021-02-05
 categories: pinned
 layout: rules_faq
 ---
@@ -158,16 +158,18 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
 * **Possession**
 
-  * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot shuffle in any cards.
+  * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot choose any Actions to shuffle in.
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
+* **Merchant**: If you play a Silver, and that somehow triggers you playing a Merchant, you incorrectly get a retroactive +$1 from the Merchant.
 * **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
-* **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
+* **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
+* **Quarry + Wayfarer**: When the last card gained is not an Action and you have a Quarry in play, Wayfarer displays the correct price but can be bought as if it cost $2 less.
 * **Royal Carriage**:
 
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
-  * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage on it.
+  * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
 * **Scepter**: See **Crown** above.
 * **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you wanted to exchange for a Warrior.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
@@ -189,6 +191,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Cargo Ship**: If Way of the Mouse sets aside Cargo Ship, and you play multiple differently named cards using Way of the Mouse, then when you gain a card you cannot choose which played card to set aside the gained card on.
   * **Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
+* **Wayfarer**: See **Quarry** above.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (Card Game) Discord server, and then tag a League moderator.
