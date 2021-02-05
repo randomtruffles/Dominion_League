@@ -164,7 +164,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Merchant**: If you play a Silver, and that somehow triggers you playing a Merchant, you incorrectly get a retroactive +$1 from the Merchant.
 * **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
-* **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, the when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
+* **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quarry + Wayfarer**: When the last card gained is not an Action and you have a Quarry in play, Wayfarer displays the correct price but can be bought as if it cost $2 less.
 * **Royal Carriage**:
 
