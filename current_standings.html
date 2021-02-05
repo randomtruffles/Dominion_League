@@ -47,7 +47,8 @@ loadPage();
 function singleDivision(division){
   var singleDivisionDiv = document.getElementById("single-division");
   singleDivisionDiv.style.display = "";
-  singleDivisionDiv.scrollIntoView(true);
+  console.log("scroll");
+  singleDivisionDiv.scrollTop = 0;
   document.getElementById("all-divisions").style.display = "none";
   console.log(`Showing single division: ${division.toLowerCase()}-standings`);
   loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, returning, {});

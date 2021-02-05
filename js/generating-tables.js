@@ -150,10 +150,6 @@ function selectTab(btn) {
   for (var i = 0; i < children.length; i++) {
     var child = children[i];
     if (tab == "Standings" && toggler && child.className.includes(`${tab.toLowerCase()}`)) {
-      console.log("Found a toggler and class name includes standings");
-      console.log(toggler.children[0]);
-      console.log(toggler.children[0].checked);
-      console.log(child.className);
       if (toggler.children[0].checked && child.className == `raw-standings-table`) {
         child.style.display = "";
       } else if (!toggler.children[0].checked && child.className == `standings-table`){
@@ -168,7 +164,6 @@ function selectTab(btn) {
     }
   }
   if (tab == "Standings" && toggler) {
-    console.log("toggle on");
     toggler.style.display = "";
   }
 }
@@ -433,10 +428,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
         games = playerData["wins"] + playerData["losses"];
       }
       var games = playerData["games_nondrop"];
-      console.log(playerData["name"]);
-      console.log(games);
       var matches = isRaw ? Math.floor(games/6) : numDrops + Math.floor(games/6);
-      console.log(matches);
       var remainder;
       if (!isRaw && playerData["drop"] == "Yes") {
         remainder = "";
@@ -446,10 +438,13 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
         remainder = "";
       } else if (games%3 == 0) {
         remainder = " &#189;";
-      } else if (games%2 == 0 && games/2 == 1) {
-        remainder = " &#8531;"
-      } else if (games%2 == 0 && games/2 == 2) {
-        remainder = " &#8532;"
+      } else if (games%2 == 0) {
+        var gamesLeft = games%6;
+        if (gamesLeft/2 == 1) {
+          remainder = " &#8531;";
+        } else { // gamesLeft/2 == 2
+          remainder = " &#8532;"
+        }
       } else if (games%6 == 1) {
         remainder = " &#8537;"
       } else if (games%6 == 5) {
@@ -475,13 +470,16 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
       "winsAll" : playerData["wins_wdrop"].toFixed(1).replace(".0", ""),
       "lossesAll" : playerData["losses_wdrop"].toFixed(1).replace(".0", "")
     }
+
+    var err = false; //playerData["wins"] == 0 && playerData["losses_wdrop"] + playerData["wins_wdrop"] > 0 ? true : false;
+
     var nonDroppedInfo = {
       "rank" : playerData["rank"] ,
       "name" : formatDbLink(name, "db-link", playerData["drop"]),
       "pct" : playerData["pct"],
       "wins" : playerData["wins"],
       "losses" : playerData["losses"],
-      "tierOrMatches" : "",
+      "tierOrMatches" : err ? "Err" : "",
       "returning" : isReturning(name)
     }
 
@@ -524,7 +522,6 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
           cell.style.backgroundColor = matchColor(parseInt(rowInfo[info]), 100);
           break;
         case "tierOrMatches":
-          console.log("tierOrMatches");
           tierOrMatches(playerData, cell);
           if (Object.keys(tbValues).length > 0) {
             var tbCell = document.createElement("td");
@@ -609,9 +606,6 @@ function genMatches(data, drops, sorted) {
 
   for (var i=0; i < halfpoint; i++) {
     var row = document.createElement("tr");
-    /*for (var s=0; s < split; s++){
-      var startingIdx = s*(halfpoint-1)+i;
-      console.log(startingIdx); */
     var info = matches[i];
     for (var key in info) {
       var cell = document.createElement("td");
