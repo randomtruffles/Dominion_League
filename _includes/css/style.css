@@ -2586,3 +2586,8 @@ img.hof-champion-trophy {
 	content: "\2212";
     transform: translateX(-30px);
 }
+
+.clickable-name:hover {
+	cursor: pointer;
+	color: #ca2017;
+}
