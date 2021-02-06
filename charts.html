@@ -499,7 +499,10 @@ title: Visual History
 						}
 					},
 					{
-						"transform": [{"filter": "datum.chart == 'point'"}],
+						"transform": [
+							{"filter": "datum.chart == 'point'"},
+							{"calculate": "'click'", "as": "Standings"}
+						],
 						"selection": {
 							"hovered": {"type": "single", "on": "mouseover", "empty": "none"},
 							"clicked": {"type": "single", "on": "click", "empty": "none"}
@@ -542,7 +545,8 @@ title: Visual History
 							"tooltip": (widthcheck.clientWidth < 540) ? null : [
 								{"field": "season", "type": "nominal", "title": "Season"},
 								{"field": "division", "type": "nominal", "title": "Division"},
-								{"field": "place", "type": "nominal", "title": "Place"}
+								{"field": "place", "type": "nominal", "title": "Place"},
+								{"field": "Standings", "type": "nominal", "title": null}
 							]
 						}
 					}
@@ -729,7 +733,7 @@ title: Visual History
 						},
 						"order": {"field": "order", "type": "quantitative"},
 						"opacity": {"condition": {"selection": "hovered", "value": 1}, "value": 0.3},
-						"tooltip": [{"field": "player", "type": "nominal"}]
+						"tooltip": {"field": "player", "type": "nominal"}
 					}
 				},
 				{
