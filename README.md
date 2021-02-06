@@ -5,6 +5,9 @@ The site is generated using [Jekyll](https://jekyllrb.com/docs/), which is a sta
 
 This was last updated by: `truffles` on `2020-06-01`
 
+#License
+Unauthorized use or distribution of the code without the repository ownership is not allowed.
+
 ## Table of Contents
 1. [How the repository is organized](#how-the-repoistory-is-organized)
     - Main Directory
