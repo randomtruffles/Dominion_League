@@ -27,7 +27,23 @@ Three changes emerged from our recent Setup meeting. None of these impact League
 
 As many of you probably know, there is a client update on the horizon. Last weekend we were given a 48 hour preview of the new interface and the introduction of complexity levels of cards. For those who don't know about this, cards are grouped into pools from the simplest (level 1) to the most complex (level 10) and is meant to gradually introduce new mechanics. To prepare for this switch, we are planning our Season 44 Town Hall on the topic of how League will handle these complexity levels with regard to match defaults and how they will replace the current expansion restriction rules we have in place. Stay tuned for an announcement of the date of this Town Hall.
 
-** Setup Meeting Minutes **
+ **Season 44 Chairs** 
+
+The Moderator Chairs for this season are as follows:
+
+* Admin: alibby1152
+* Analysis: TBD
+* Bot: Cave-o-sapien
+* Feedback: eh1414
+* Issues: nottoobad
+* Onboarding: Rozyroz
+* Recruiting: tracer
+* Rules: crlundy
+* Setup: alibby1152
+* Sheets: SamE
+* Website: truffles
+
+ **Setup Meeting Minutes** 
 
 <ol>							
 <li>Onboarding<ol type='a'>	<li>Intro-to-League Channel<ul>	<li>Motion: create an #intro-to-league channel for New Players to ask questions prior to when the season starts.<ul>	<li>YES (2 dissenting)</li>	</ul></li>			
