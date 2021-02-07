@@ -72,20 +72,11 @@ title: Visual History
 	<div id="ADiv-power"></div>
 	
 	<div id="standings-modal" class="modal">
-		<div class="modal-content" style="text-align:center">
+		<div class="modal-content" id="inner-modal" style="text-align:center">
 			<span id="closemodal" class="close">&times;</span>
-			<h5 id="standings-info"></h5>
-			<table class="table-past-standings">
-				<tbody id="standings-table">
-					<tr class="rows-past-standings">
-						<th width="10%">Rank</th>
-						<th width="55%" class="cells-past-standings">Player</th>
-						<th width="10%" class="cells-past-standings">W</th>
-						<th width="10%" class="cells-past-standings">L</th>
-						<th width="15%" class="cells-past-standings">Win %</th>
-					</tr>
-				</tbody>
-			</table>
+			<h5 id="modal-header"></h5>
+			<div id="modal-body">
+			</div>
 		</div>
 	</div>
 	
@@ -635,9 +626,24 @@ title: Visual History
 	}
 
 	function showStandingsModal(season, division) {
-		document.getElementById('standings-info').innerHTML = '<a href="/' + ((season == currentSeason) ? 'current_standings' : 'past_standings/season' + season) + '?div=' + division + '" target="_blank">Season ' + season + ' Division ' + division + ' Standings</a>';
-		var table = document.getElementById('standings-table');
-		table.innerHTML = '<tr class="rows-past-standings"><th width="10%">Rank</th><th width="55%" class="cells-past-standings">Player</th><th width="10%" class="cells-past-standings">W</th><th width="10%" class="cells-past-standings">L</th><th width="15%" class="cells-past-standings">Win %</th></tr>';
+		document.getElementById('modal-header').innerHTML = '<a href="/' + ((season == currentSeason) ? 'current_standings' : 'past_standings/season' + season) + '?div=' + division + '" target="_blank">Season ' + season + ' Division ' + division + ' Standings</a>';
+		var modalBody = document.getElementById('modal-body');
+		modalBody.innerHTML = '';
+		var table = document.createElement('table');
+		table.classList.add('table-past-standings');
+		var tableBody = document.createElement('tbody');
+		var topRow = document.createElement('tr');
+		topRow.classList.add('rows-past-standings');
+		let names = ["Rank", "Player", "W", "L", "Win %"];
+		let pcts = ["10%", "55%", "10%", "10%", "15%"];
+		for (let j=0; j<5; j++) {
+			let cell = document.createElement('th');
+			cell.setAttribute('width', pcts[j]);
+			cell.classList.add('cells-past-standings');
+			cell.appendChild(document.createTextNode(names[j]));
+			topRow.appendChild(cell);
+		}
+		tableBody.appendChild(topRow);
 		if ((season == currentSeason) && playerCurrentStandings) {
 			for (let i=0; i < playerCurrentStandings.length; i++) {
 				let row = document.createElement('tr');
@@ -654,7 +660,7 @@ title: Visual History
 					cell.appendChild(document.createTextNode(playerCurrentStandings[i][names[j]]));
 					row.appendChild(cell);
 				}
-				table.appendChild(row);
+				tableBody.appendChild(row);
 			}
 		} else {
 			for (let i=0; i < placeHistoryLength; i++) {
@@ -673,10 +679,12 @@ title: Visual History
 						cell.appendChild(document.createTextNode(placeHistory[i][names[j]]));
 						row.appendChild(cell);
 					}
-					table.appendChild(row);
+					tableBody.appendChild(row);
 				}
 			}
 		}
+		table.appendChild(tableBody);
+		modalBody.appendChild(table);
 		setClickableNames();
 		document.getElementById("standings-modal").style.display = "block";
 	}
