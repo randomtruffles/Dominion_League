@@ -13,7 +13,7 @@ SEASON = 44
 # Various sheets pages
 MONITORING_SHEET = '12NJWadagLRgk_MtF3EnIp_0v8Db614IJTBOr_kRg1ZE'
 RESULTS = 'Results!C2:O'
-
+THRESHOLD = 10
 # Open file containing all league history and sheets ids
 FILE = './_data/current_season.json'
 with open(FILE) as file_to_load:
@@ -70,6 +70,10 @@ def getCurrentSeasonResults():
     result = sheet.values().get(spreadsheetId=MONITORING_SHEET,
                                 range=RESULTS).execute()
     values = result.get('values', [])
+
+    matches_complete = 0
+    if "matches complete" not in curr_season:
+        curr_season["matches complete"] = 0
 
     if not values:
         print('No data found.')
@@ -151,6 +155,7 @@ def getCurrentSeasonResults():
                     if int(curr_division["by_player"][p1][p2]["wins"] + curr_division["by_player"][p1][p2]["losses"]) == 6:
                         curr_division["by_player"][p1][p2]["complete"] = "Yes"
                         curr_division["by_player"][p2][p1]["complete"] = "Yes"
+                        matches_complete += 1
                     if p1 not in late_drops:
                         curr_division["by_player"][p2]["games_nondrop"] += int(float(wins1) + float(wins2))
                         curr_division["by_player"][p2]["wins_nondrop"] += float(wins2)
@@ -163,9 +168,14 @@ def getCurrentSeasonResults():
                 total_games = (len(players) - len(late_drops) - 1)*6
                 # Member standings
                 curr_division["members"] = {}
+                error = False
                 for p_idx, player in enumerate(players):
                     if player == "":
                         break
+                    p_pct = pcts[p_idx]
+                    if p_pct == "":
+                        error = True
+                        continue
                     color = assign_color(float(pcts[p_idx][:-1]))
                     drop = "Yes" if player in late_drops else "No"
                     if curr_division["by_player"][player]["games_nondrop"] < total_games:
@@ -183,6 +193,9 @@ def getCurrentSeasonResults():
                          "games_nondrop":curr_division["by_player"][player]["games_nondrop"], \
                          "wins_nondrop":curr_division["by_player"][player]["wins_nondrop"], \
                          "losses_nondrop":curr_division["by_player"][player]["losses_nondrop"]}
+
+                if error: continue
+
                 # Tiebreaker values
                 for player in players:
                     if player == "" or player in late_drops:
@@ -212,10 +225,16 @@ def getCurrentSeasonResults():
                 curr_season[division] = curr_division
 
 
-    print(f"Retrieved {len(curr_season)} divisions...")
-    print(f"Writing to {FILE}...")
-    with open(FILE, 'w') as filetowrite:
-        json.dump(curr_season, filetowrite)
+    if curr_season["matches complete"] - matches_complete > THRESHOLD:
+        print(f"Error retrieving up to date results. Did not meet THRESHOLD={THRESHOLD}")
+    else:
+        print(f"Retrieved {len(curr_season)} divisions...")
+        curr_season_matches_complete = curr_season["matches complete"]
+        print(f"Retrieved {matches_complete} matches (old = {curr_season_matches_complete})...")
+        curr_season["matches complete"] = matches_complete
+        print(f"Writing to {FILE}...")
+        with open(FILE, 'w') as filetowrite:
+            json.dump(curr_season, filetowrite)
 
 if __name__ == '__main__':
     getCurrentSeasonResults()
