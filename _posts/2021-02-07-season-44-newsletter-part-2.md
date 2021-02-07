@@ -7,7 +7,7 @@ layout: post
 categories:
   - newsletters
 ---
-Welcome to Season 44 of Dominion League! We're about a week into the season and there has already been great progress made in terms of matches played and we only have a handful of players who have neither played a match nor checked in. If you're reading this and haven't done so yet, hop on into your division channel, say hello, and start scheduling some matches. The overall structure of the league and promotion guidelines can be seen in the chart below:
+Welcome to Season 44 of Dominion League! We're about a week into the season and there has already been great progress made in terms of matches played and only a handful of players who have neither played a match nor checked in. If you're reading this and haven't done so yet, hop on into your division channel, say hello, and start scheduling some matches. The overall structure of the league and promotion guidelines can be seen in the chart below:
 
 ![](https://cdn.discordapp.com/attachments/729787166695227502/807762534886015019/season-44-promotion-demotion-chart.png "Season 44 Divisions and Promotion Scheme")
 
