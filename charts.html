@@ -107,11 +107,13 @@ title: Visual History
 		}
 		var totalPlayers = 0;
 		var divisions = Object.keys(currentStandings);
-		for (let i = divisions.length-1; i>=2; i--) {
-			currentCounts[currentStandings[divisions[i]].tier].divisions += 1;
-			let divPlayers = Object.keys(currentStandings[divisions[i]].members).length;
-			currentCounts[currentStandings[divisions[i]].tier].players += divPlayers;
-			totalPlayers += divPlayers;
+		for (let i = divisions.length-1; i>=0; i--) {
+			if (/^[A-J]\d+$/.test(divisions[i])) {
+				currentCounts[currentStandings[divisions[i]].tier].divisions += 1;
+				let divPlayers = Object.keys(currentStandings[divisions[i]].members).length;
+				currentCounts[currentStandings[divisions[i]].tier].players += divPlayers;
+				totalPlayers += divPlayers;
+			}
 		}
 		currentCounts = Object.keys(currentCounts).map(key => currentCounts[key]);
 		for (let i=0; i<10; i++) {
