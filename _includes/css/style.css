@@ -2405,6 +2405,12 @@ img.hof-champion-trophy {
 }
 
 /* Chart Controls*/
+.control-row span,select {
+	position: relative;
+	vertical-align: middle;
+	top: 2px;
+}
+
 .control-row:after {
 	content: "";
 	display: table;
@@ -2489,10 +2495,10 @@ img.hof-champion-trophy {
 	float: left;
 }
 
-.doubleslider-container {
+.slider-container {
 	float: left;
 	position: relative;
-	width: 50%;
+	width: 40%;
 	height: 34px;
 	top: 12px;
 }
@@ -2585,4 +2591,9 @@ img.hof-champion-trophy {
 	position: absolute;
 	content: "\2212";
     transform: translateX(-30px);
+}
+
+.clickable-name:hover {
+	cursor: pointer;
+	color: #ca2017;
 }
