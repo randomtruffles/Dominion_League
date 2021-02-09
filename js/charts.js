@@ -1134,7 +1134,7 @@ TransitionsPlot.showPlayersModal = function(propidx) {
 			titleInfo = "exactly " + TransitionsPlot.seasons + " seasons before"
 			break;
 	}
-	document.getElementById('modal-header').innerHTML = "Players who played in " + TransitionsPlot.startTier + " tier " + (TransitionsPlot.first ? " for the first time " : " ") + ((TransitionsPlot.seasonRange[0] == TransitionsPlot.seasonRange[1]) ? "in season " + TransitionsPlot.seasonRange[0] : "between seasons " + TransitionsPlot.seasonRange[0] + " and " + TransitionsPlot.seasonRange[1]) + " who " + (TransitionsPlot.props[propidx].tier ? "were out of the league " : "played in tier " + TransitionsPlot.props[propidx].tier) + titleInfo;
+	document.getElementById('modal-header').innerHTML = "Players who played in " + TransitionsPlot.startTier + " tier " + (TransitionsPlot.first ? " for the first time " : " ") + ((TransitionsPlot.seasonRange[0] == TransitionsPlot.seasonRange[1]) ? "in season " + TransitionsPlot.seasonRange[0] : "between seasons " + TransitionsPlot.seasonRange[0] + " and " + TransitionsPlot.seasonRange[1]) + " who " + ((TransitionsPlot.props[propidx].tier == "Out") ? "were out of the league " : "played in tier " + TransitionsPlot.props[propidx].tier) + titleInfo;
 	let idxs = TransitionsPlot.props[propidx].ids;
 	let nplayer = idxs.length;
 	var modalBody = document.getElementById('modal-body');
