@@ -123,10 +123,6 @@ def getCurrentSeasonResults():
                             curr_division["by_player"][p]["wins"] = 0
                             curr_division["by_player"][p]["losses"] = 0
 
-                    if division == "F10":
-                        print(players)
-                        print(curr_division)
-
                     # Match results
                     num_matches = 0 if p1s == [''] else len(p1s)
                     if (division == "J3"):
@@ -228,8 +224,10 @@ def getCurrentSeasonResults():
                     curr_season[division] = curr_division
 
                 except Exception as e:
+                    print("*****************")
                     print(f"ERROR with {division}")
                     print(e)
+                    print("*****************")
 
     if curr_season["matches complete"] - matches_complete > THRESHOLD:
         print(f"Error retrieving up to date results. Did not meet THRESHOLD={THRESHOLD}")
