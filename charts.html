@@ -11,12 +11,12 @@ title: Visual History
 	
 	<div class="container-centered">
 		<h4>League Players</h4>
-		<p>See how the league has evolved over time, or the journey of a specific player</p>
+		<p>How the league has evolved over time, or the journey of a specific player</p>
 	</div>
 	
 	<div class="control-row">
 		<div class="control-container">
-			Player:
+			Player: 
 			<input type="text" id="player-input" class="chartInput">
 			<button id="playerchange">Make Chart</button>
 			<button id="clearplayer">Clear</button>
@@ -40,20 +40,66 @@ title: Visual History
 	</div>
 	
 	<div class="control-row">
-		<p class="slidePiece">Seasons:</p>
-		<input type="text" id="seasontextmin" class="slidertext slidePiece" value="1">
-		<div class="doubleslider-container slidePiece">
-			<input type="range" id="seasonslide1" class="dslider" min="1" max="41" value="1">
-			<input type="range" id="seasonslide2" class="dslider" min="1" max="1">
+		<span class="slidePiece">Seasons:</span>
+		<input type="text" id="pseasontextmin" class="slidertext slidePiece" value="1">
+		<div class="slider-container slidePiece">
+			<input type="range" id="pseasonslide1" class="dslider" min=1 max=1 value=1>
+			<input type="range" id="pseasonslide2" class="dslider" min=1 max=1>
 		</div>
-		<input type="text" id="seasontextmax" class="slidertext slidePiece">
+		<input type="text" id="pseasontextmax" class="slidertext slidePiece">
 		<button id="rangereset" class="reset slidePiece">Reset Range</button> 
 	</div>
 	
 	<div id="widthcheck"><!-- maybe put player not founds in here - I need it for determining render width --></div>
 	<div id="player-history"></div>
-	</br>
 	
+	<div class="container-centered">
+		<h4>Transitions</h4>
+		<p>How players have moved between tiers. Clicking on a bar will bring up a list of players from the bar.</p>
+	</div>
+	
+	<div class="control-row">
+		<span class="slidePiece">Players who played in seasons</span>
+		<input type="text" id="tseasontextmin" class="slidertext slidePiece" value="1">
+		<div class="slider-container slidePiece">
+			<input type="range" id="tseasonslide1" class="dslider" min=1 max=1 value=1>
+			<input type="range" id="tseasonslide2" class="dslider" min=1 max=1>
+		</div>
+		<input type="text" id="tseasontextmax" class="slidertext slidePiece">
+		<div class="control-container">
+			<span>in</span>
+			<select id="tierSelect"></select>
+			<span>tier</span>
+		</div>
+		<div class="control-container">
+			<label for="firstPlayed" class="chartInput">
+				<input type="checkbox" id="firstPlayed" class="chartInput chartCheck">
+				<span>for the first time</span>
+			</label>
+		</div>
+	</div>
+	<div class="control-row">
+		<div class="control-container">
+			<span>Where they </span>
+			<select id="typeSelect">
+				<option value=0 selected>had been by a season</option>
+				<option value=1>exactly were in a season</option>
+				<option value=2>went after a season</option>
+				<option value=3>had been between then and a season</option>
+				<option value=4>had been after a number of seasons</option>
+				<option value=5>were after exactly a number of seasons</option>
+				<option value=6>had been since a number of seasons before</option>
+				<option value=7>were exactly a number of seasons before</option>
+			</select>
+			<span>: </span>
+		</div>
+		<input type="text" id="tnumberbox" class="slidertext slidePiece">
+		<div class="slider-container">
+			<input type="range" id="tnumberslider" class="dslider slidePiece" min=1 max=1>
+		</div>
+	</div>
+	<div id="transitions"></div>
+		
 	<div class="container-centered">
 		<h4>A Division Power</h4>
 		<p>How the top tier has evolved. Each player gets an area corresponding to their standing in the past few seasons. Click on a player's area to see their history in the chart above.</p>
@@ -88,11 +134,14 @@ title: Visual History
 	ChartUtils.getURLparams();
 	PlayerPlot.prepControls();
 	PlayerPlot.makePlot();
+	TransitionsPlot.prepControls();
+	TransitionsPlot.makePlot();
 	PowerPlot.prepControls();
 	PowerPlot.makePlot();
 	window.onresize = function() {
 		PlayerPlot.resize();
 		PowerPlot.resize();
+		TransitionsPlot.resize();
 	};
 	</script>
 </div>

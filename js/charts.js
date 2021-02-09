@@ -5,6 +5,7 @@
 
 var ChartUtils = {};
 
+ChartUtils.tierColors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"];
 ChartUtils.clickableNames = null;
 ChartUtils.widthcheck = document.getElementById('widthcheck');
 
@@ -91,7 +92,6 @@ if (PlayerPlot.counts[PlayerPlot.counts.length-1].season != PlayerPlot.currentSe
 PlayerPlot.countsLength = PlayerPlot.counts.length;
 PlayerPlot.placeHistory = {{ site.data.chart_history | jsonify }};
 PlayerPlot.placeHistoryLength = PlayerPlot.placeHistory.length;
-PlayerPlot.tierColors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"];
 
 PlayerPlot.proportion = false;
 PlayerPlot.allTiers = false;
@@ -101,10 +101,10 @@ PlayerPlot.userSetRange = false;
 
 PlayerPlot.plot = null;
 	
-PlayerPlot.seasonslide1 = document.getElementById("seasonslide1");
-PlayerPlot.seasonslide2 = document.getElementById("seasonslide2");
-PlayerPlot.seasontextmin = document.getElementById("seasontextmin");
-PlayerPlot.seasontextmax = document.getElementById("seasontextmax");
+PlayerPlot.seasonslide1 = document.getElementById("pseasonslide1");
+PlayerPlot.seasonslide2 = document.getElementById("pseasonslide2");
+PlayerPlot.seasontextmin = document.getElementById("pseasontextmin");
+PlayerPlot.seasontextmax = document.getElementById("pseasontextmax");
 PlayerPlot.rangeReset = document.getElementById('rangereset');
 PlayerPlot.playerChange = document.getElementById('playerchange');
 PlayerPlot.playerClear = document.getElementById('clearplayer');
@@ -125,11 +125,40 @@ PlayerPlot.prepControls = function() {
 	PlayerPlot.seasontextmin.onblur = PlayerPlot.slideinput;
 	
 	PlayerPlot.rangeReset.onclick = PlayerPlot.resetRange;
-	PlayerPlot.playerChange.onclick = PlayerPlot.changePlayer;
-	PlayerPlot.playerClear.onclick = PlayerPlot.clearPlayer;
-	PlayerPlot.countRadio.onclick = PlayerPlot.toCount;
-	PlayerPlot.propRadio.onclick = PlayerPlot.toProp;
-	PlayerPlot.allTiersCheck.onclick = PlayerPlot.toAllTiers;
+	PlayerPlot.playerChange.onclick = function() {
+		PlayerPlot.player = document.getElementById('player-input').value;
+		PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
+		ChartUtils.setURLparams();
+		PlayerPlot.makePlot();
+	};
+	PlayerPlot.playerClear.onclick = function() {
+		document.getElementById('player-input').value = "";
+		PlayerPlot.player = null;
+		ChartUtils.setURLparams();
+		if (PlayerPlot.userSetRange) {PlayerPlot.makePlot();} else {PlayerPlot.resetRange();};
+	};
+	PlayerPlot.countRadio.onclick = function() {
+		PlayerPlot.countRadio.blur();
+		if (PlayerPlot.proportion) {
+			PlayerPlot.proportion = false;
+			PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
+			ChartUtils.setURLparams();
+			PlayerPlot.makePlot();
+		}
+	};
+	PlayerPlot.propRadio.onclick = function() {
+		PlayerPlot.propRadio.blur();
+		if (!PlayerPlot.proportion) {
+			PlayerPlot.proportion = true;
+			ChartUtils.setURLparams();
+			PlayerPlot.makePlot();
+		}
+	};
+	PlayerPlot.allTiersCheck.onclick = function() {
+		PlayerPlot.allTiersCheck.blur();
+		allTiers = PlayerPlot.allTiersCheck.checked;						
+		PlayerPlot.makePlot();
+	};
 };
 PlayerPlot.slideinput = function() {
 	if (Number(PlayerPlot.seasonslide1.value) <= Number(PlayerPlot.seasonslide2.value)) {
@@ -146,7 +175,7 @@ PlayerPlot.slideinput = function() {
 };
 PlayerPlot.textinput = function() {
 	if ((Number(PlayerPlot.seasontextmin.value) <= Number(PlayerPlot.seasontextmax.value)) && (Number(PlayerPlot.seasontextmin.value) >= Number(PlayerPlot.seasonslide1.min)) && (Number(PlayerPlot.seasontextmax.value) <= Number(PlayerPlot.seasonslide1.max))) {
-		if (Number(seasonslide1.value) <= Number(seasonslide2.value)) {
+		if (Number(PlayerPlot.seasonslide1.value) <= Number(PlayerPlot.seasonslide2.value)) {
 			PlayerPlot.seasonslide1.value = PlayerPlot.seasontextmin.value;
 			PlayerPlot.seasonslide2.value = PlayerPlot.seasontextmax.value;
 		} else {
@@ -166,40 +195,6 @@ PlayerPlot.resetRange = function() {
 	PlayerPlot.seasontextmax.value = PlayerPlot.currentSeason;
 	PlayerPlot.seasonslide1.value = 1;
 	PlayerPlot.seasonslide2.value = PlayerPlot.currentSeason;
-	PlayerPlot.makePlot();
-};
-PlayerPlot.changePlayer = function() {
-	PlayerPlot.player = document.getElementById('player-input').value;
-	PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
-	ChartUtils.setURLparams();
-	PlayerPlot.makePlot();
-};
-PlayerPlot.clearPlayer = function() {
-	document.getElementById('player-input').value = "";
-	PlayerPlot.player = null;
-	ChartUtils.setURLparams();
-	if (PlayerPlot.userSetRange) {PlayerPlot.makePlot();} else {PlayerPlot.resetRange();};
-};
-PlayerPlot.toCount = function() {
-	PlayerPlot.countRadio.blur();
-	if (PlayerPlot.proportion) {
-		PlayerPlot.proportion = false;
-		PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
-		ChartUtils.setURLparams();
-		PlayerPlot.makePlot();
-	}
-};
-PlayerPlot.toProp = function() {
-	PlayerPlot.propRadio.blur();
-	if (!PlayerPlot.proportion) {
-		PlayerPlot.proportion = true;
-		ChartUtils.setURLparams();
-		PlayerPlot.makePlot();
-	}
-};
-PlayerPlot.toAllTiers = function() {
-	PlayerPlot.allTiersCheck.blur();
-	allTiers = PlayerPlot.allTiersCheck.checked;						
 	PlayerPlot.makePlot();
 };
 	
@@ -307,7 +302,7 @@ PlayerPlot.makePlot = function() {
 			}
 			
 			//cut colors because layers with same encoding annoyingly union their domains
-			var colors = PlayerPlot.tierColors.slice(0,tiers.length).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
+			var colors = ChartUtils.tierColors.slice(0,tiers.length).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
 			
 			//filter counts to desired 
 			if (PlayerPlot.allTiers) {
@@ -545,7 +540,7 @@ PlayerPlot.makePlot = function() {
 					"type": "nominal",
 					"scale": {
 						"domain": ["A","B","C","D","E","F","G","H","I","J","P"],
-						"range": PlayerPlot.tierColors
+						"range": ChartUtils.tierColors
 					},
 					"legend": {
 						"title": "Tier",
@@ -644,11 +639,10 @@ PowerPlot.resize = function() {
 
 PowerPlot.zoomControl = document.getElementById('powerzoom');
 PowerPlot.prepControls = function() {
-	PowerPlot.zoomControl.onclick = PowerPlot.toggleZoom;
-}
-PowerPlot.toggleZoom = function() {
-	PowerPlot.zoom = PowerPlot.zoom ? false : true;
-	PowerPlot.makePlot();
+	PowerPlot.zoomControl.onclick = function() {
+		PowerPlot.zoom = PowerPlot.zoom ? false : true;
+		PowerPlot.makePlot();
+	};
 }
 
 PowerPlot.makePlot = function() {
@@ -722,3 +716,463 @@ PowerPlot.makePlot = function() {
 		})
 	});
 }
+
+//transitions plot
+
+var TransitionsPlot = {};
+
+TransitionsPlot.data = {{ site.data.chart_transitions | jsonify }};
+TransitionsPlot.schemesLength = TransitionsPlot.data.schemes.length;
+TransitionsPlot.currentSeason = TransitionsPlot.data.tiers.length;
+TransitionsPlot.props = null;
+
+TransitionsPlot.seasonRange = [1, TransitionsPlot.currentSeason];
+TransitionsPlot.seasons = TransitionsPlot.currentSeason;
+TransitionsPlot.startTier = "";
+TransitionsPlot.first = false;
+TransitionsPlot.plotType = 0;
+TransitionsPlot.exact = false;
+TransitionsPlot.offset = false;
+TransitionsPlot.plus = true;
+
+TransitionsPlot.plot = null;
+
+TransitionsPlot.seasonslide1 = document.getElementById("tseasonslide1");
+TransitionsPlot.seasonslide2 = document.getElementById("tseasonslide2");
+TransitionsPlot.seasontextmin = document.getElementById("tseasontextmin");
+TransitionsPlot.seasontextmax = document.getElementById("tseasontextmax");
+TransitionsPlot.tierSelect = document.getElementById("tierSelect");
+TransitionsPlot.firstPlayed = document.getElementById("firstPlayed");
+TransitionsPlot.typeSelect = document.getElementById("typeSelect");
+TransitionsPlot.numberslide = document.getElementById("tnumberslider");
+TransitionsPlot.numbertext = document.getElementById("tnumberbox");
+TransitionsPlot.prepControls = function() {
+	TransitionsPlot.seasonslide1.max = TransitionsPlot.currentSeason;
+	TransitionsPlot.seasonslide2.max = TransitionsPlot.currentSeason;
+	TransitionsPlot.seasonslide2.value = TransitionsPlot.currentSeason;
+	TransitionsPlot.seasontextmax.value = TransitionsPlot.currentSeason;
+
+	TransitionsPlot.seasonslide1.oninput = TransitionsPlot.slideinput;
+	TransitionsPlot.seasonslide2.oninput = TransitionsPlot.slideinput;
+	TransitionsPlot.seasontextmax.oninput = TransitionsPlot.textinput;
+	TransitionsPlot.seasontextmin.oninput = TransitionsPlot.textinput;
+	TransitionsPlot.seasontextmax.onblur = TransitionsPlot.slideinput;
+	TransitionsPlot.seasontextmin.onblur = TransitionsPlot.slideinput;
+	
+	TransitionsPlot.setTierOptions();
+	TransitionsPlot.tierSelect.addEventListener('change', function (ev) {
+		TransitionsPlot.startTier = ev.target.value;
+		TransitionsPlot.makePlot();
+	});
+	
+	TransitionsPlot.firstPlayed.onclick = function() {
+		TransitionsPlot.firstPlayed.blur();
+		TransitionsPlot.first = TransitionsPlot.first ? false : true;
+		TransitionsPlot.makePlot();
+	};
+	
+	TransitionsPlot.typeSelect.addEventListener('change', function (ev) {
+		TransitionsPlot.plotType = Number(ev.target.value);
+		TransitionsPlot.typeToVars();
+		TransitionsPlot.makePlot();
+	});
+	
+	TransitionsPlot.numberslide.max = TransitionsPlot.currentSeason;
+	TransitionsPlot.numberslide.value = TransitionsPlot.currentSeason;
+	TransitionsPlot.numbertext.value = TransitionsPlot.currentSeason;
+	
+	TransitionsPlot.numberslide.oninput = function() {
+		TransitionsPlot.numbertext.value = TransitionsPlot.numberslide.value;
+		TransitionsPlot.seasons = Number(TransitionsPlot.numberslide.value);
+		TransitionsPlot.makePlot();
+	};
+	TransitionsPlot.numbertext.oninput = function() {
+		if ((Number(TransitionsPlot.numbertext.value) >= Number(TransitionsPlot.numberslide.min)) && (Number(TransitionsPlot.numbertext.value) <= Number(TransitionsPlot.numberslide.max))) {
+			TransitionsPlot.numberslide.value = TransitionsPlot.numbertext.value;
+			TransitionsPlot.seasons = Number(TransitionsPlot.numberslide.value);
+			TransitionsPlot.makePlot();
+		}
+	};
+	TransitionsPlot.numbertext.onblur = function() {
+		TransitionsPlot.numbertext.value = TransitionsPlot.numberslide.value;
+	};
+};
+TransitionsPlot.setTierOptions = function() {
+	var opts = ["any"].concat([...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasonRange[0]-1, TransitionsPlot.seasonRange[1]).join(""))]);
+	if (!opts.includes(TransitionsPlot.startTier)) {TransitionsPlot.startTier = "any";}
+	TransitionsPlot.tierSelect.innerHTML = '';
+	for (let i=0; i<opts.length; i++) {
+		let opt = document.createElement('option');
+		opt.value = opts[i];
+		opt.classList.add('tierOption');
+		if (opts[i] == TransitionsPlot.startTier) {
+			opt.selected = true;
+		}
+		opt.appendChild(document.createTextNode(opts[i]));
+		TransitionsPlot.tierSelect.appendChild(opt);
+	}
+};
+TransitionsPlot.slideinput = function() {
+	if (Number(TransitionsPlot.seasonslide1.value) <= Number(TransitionsPlot.seasonslide2.value)) {
+		TransitionsPlot.seasontextmin.value = TransitionsPlot.seasonslide1.value;
+		TransitionsPlot.seasontextmax.value = TransitionsPlot.seasonslide2.value;
+	} else {
+		TransitionsPlot.seasontextmin.value = TransitionsPlot.seasonslide2.value;
+		TransitionsPlot.seasontextmax.value = TransitionsPlot.seasonslide1.value;
+	}
+	
+	TransitionsPlot.seasonRange = [Number(TransitionsPlot.seasontextmin.value), Number(TransitionsPlot.seasontextmax.value)];
+	TransitionsPlot.setTierOptions();
+	TransitionsPlot.makePlot();
+};
+TransitionsPlot.textinput = function() {
+	if ((Number(TransitionsPlot.seasontextmin.value) <= Number(TransitionsPlot.seasontextmax.value)) && (Number(TransitionsPlot.seasontextmin.value) >= Number(TransitionsPlot.seasonslide1.min)) && (Number(TransitionsPlot.seasontextmax.value) <= Number(TransitionsPlot.seasonslide1.max))) {
+		if (Number(TransitionsPlot.seasonslide1.value) <= Number(TransitionsPlot.seasonslide2.value)) {
+			TransitionsPlot.seasonslide1.value = TransitionsPlot.seasontextmin.value;
+			TransitionsPlot.seasonslide2.value = TransitionsPlot.seasontextmax.value;
+		} else {
+			TransitionsPlot.seasonslide1.value = TransitionsPlot.seasontextmax.value;
+			TransitionsPlot.seasonslide2.value = TransitionsPlot.seasontextmin.value;
+		}
+		
+		TransitionsPlot.seasonRange = [Number(TransitionsPlot.seasontextmin.value), Number(TransitionsPlot.seasontextmax.value)];
+		TransitionsPlot.setTierOptions();
+		TransitionsPlot.makePlot();
+	}
+};
+TransitionsPlot.typeToVars = function() {
+	switch(TransitionsPlot.plotType) {
+		case 0:
+			//had been by a season
+			TransitionsPlot.exact = false;
+			TransitionsPlot.offset = false;
+			TransitionsPlot.plus = true;
+			break;
+		case 1:
+			//exactly were in a season
+			TransitionsPlot.exact = true;
+			TransitionsPlot.offset = false;
+			TransitionsPlot.plus = true; //dummy
+			break;
+		case 2:
+			//went after a season
+			TransitionsPlot.exact = false;
+			TransitionsPlot.offset = false;
+			TransitionsPlot.plus = false;
+			break;
+		case 3:
+			//had been between then and a season
+			TransitionsPlot.exact = true; //dummy
+			TransitionsPlot.offset = false;
+			TransitionsPlot.plus = false; //dummy
+			break;
+		case 4:
+			//had been after a number of seasons
+			TransitionsPlot.exact = false;
+			TransitionsPlot.offset = true;
+			TransitionsPlot.plus = true;
+			break;
+		case 5:
+			//were after exactly a number of seasons
+			TransitionsPlot.exact = true;
+			TransitionsPlot.offset = true;
+			TransitionsPlot.plus = true;
+			break;
+		case 6:
+			//had been since a number of seasons before
+			TransitionsPlot.exact = false;
+			TransitionsPlot.offset = true;
+			TransitionsPlot.plus = false;
+			break;
+		case 7:
+			//had been exactly a number of seasons before
+			TransitionsPlot.exact = true;
+			TransitionsPlot.offset = true;
+			TransitionsPlot.plus = false;
+			break;
+	}
+}
+
+TransitionsPlot.resize = function() {
+	TransitionsPlot.plot.width(ChartUtils.widthcheck.clientWidth - 52);
+	TransitionsPlot.plot.height(0.5 * (ChartUtils.widthcheck.clientWidth - 52));
+	TransitionsPlot.plot.runAsync();
+};
+
+TransitionsPlot.makePlot = function() {
+	var allTiers = (TransitionsPlot.startTier == "any");
+	var tiers = TransitionsPlot.offset ? [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasonRange[0] - 1 + ((TransitionsPlot.exact || !TransitionsPlot.plus) ? TransitionsPlot.seasons : 1), TransitionsPlot.seasonRange[1] + ((!TransitionsPlot.plus && !TransitionsPlot.exact) ? 0 : TransitionsPlot.seasons)).join(""))] : 
+		(TransitionsPlot.exact ? (TransitionsPlot.plus ? TransitionsPlot.data.tiers[TransitionsPlot.seasons-1].split('') : 
+			[...new Set(TransitionsPlot.data.tiers.slice(((TransitionsPlot.seasons < TransitionsPlot.seasonRange[0]) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[0]) - 1, (TransitionsPlot.seasonRange[1] < TransitionsPlot.seasons) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[1]).join(""))]) :
+			(TransitionsPlot.plus ? [...new Set(TransitionsPlot.data.tiers.slice(0,TransitionsPlot.seasons).join(""))] : [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasons-1,TransitionsPlot.currentSeason).join(""))]));
+	
+	TransitionsPlot.props = {};
+	for (let j=0; j<tiers.length; j++) {
+		TransitionsPlot.props[tiers[j]] = {"tier": tiers[j], "ids": [], "count": 0};
+	}
+	var colors = ChartUtils.tierColors.slice(0, tiers.length);
+	if (TransitionsPlot.exact && (TransitionsPlot.offset || TransitionsPlot.plus)) {
+		tiers.push("-");
+		TransitionsPlot.props["-"] = {"tier": "Out", "ids": [], "count": 0};
+		colors.push("#000000");
+	}
+	
+	var total = 0;
+	
+	if (TransitionsPlot.first) {
+		for (let i=0; i<TransitionsPlot.schemesLength; i++) {
+			let reg = new RegExp(allTiers ? "[^-]" : TransitionsPlot.startTier);
+			let info = reg.exec(TransitionsPlot.data.schemes[i]);
+			if (info && (info.index + 1 >= TransitionsPlot.seasonRange[0]) && (info.index +1 <= TransitionsPlot.seasonRange[1])) {
+				total += 1;
+				if (TransitionsPlot.offset) {
+					if (TransitionsPlot.exact) {
+						for (let j=tiers.length-1; j>=0; j--) {
+							if (TransitionsPlot.data.schemes[i][info.index + (TransitionsPlot.plus ? TransitionsPlot.seasons : -TransitionsPlot.seasons)] == tiers[j]) {
+								TransitionsPlot.props[tiers[j]].count += 1;
+								TransitionsPlot.props[tiers[j]].ids.push(i);
+							}
+						}
+					} else {
+						for (let j=tiers.length-1; j>=0; j--) {
+							if (TransitionsPlot.data.schemes[i].slice((TransitionsPlot.plus ? info.index + 1 : info.index + TransitionsPlot.seasons), (TransitionsPlot.plus ? info.index - TransitionsPlot.seasons + 1 : info.index)).includes(tiers[j])) {
+								TransitionsPlot.props[tiers[j]].count += 1;
+								TransitionsPlot.props[tiers[j]].ids.push(i);
+							}
+						}
+					}
+				} else {
+					for (let j=tiers.length-1; j>=0; j--) {
+						if (TransitionsPlot.exact) {
+							if (TransitionsPlot.plus) {
+								if (TransitionsPlot.data.schemes[i][TransitionsPlot.seasons - 1] == tiers[j]) {
+									TransitionsPlot.props[tiers[j]].count += 1;
+									TransitionsPlot.props[tiers[j]].ids.push(i);
+								}
+							} else {
+								let after = (TransitionsPlot.seasons > info.index);
+								if (TransitionsPlot.data.schemes[i].slice(after ? info.index : TransitionsPlot.seasons - 1, after ? TransitionsPlot.seasons : info.index + 1).includes(tiers[j])) {
+									TransitionsPlot.props[tiers[j]].count += 1;
+									TransitionsPlot.props[tiers[j]].ids.push(i);
+								}
+							}
+						} else {
+							if (TransitionsPlot.data.schemes[i].slice(TransitionsPlot.plus ? 0 : TransitionsPlot.seasons - 1, TransitionsPlot.plus ? TransitionsPlot.seasons : TransitionsPlot.currentSeason).includes(tiers[j])) {
+								TransitionsPlot.props[tiers[j]].count += 1;
+								TransitionsPlot.props[tiers[j]].ids.push(i);
+							}
+						}
+					}
+				}
+			}
+		}
+	} else {
+		if (TransitionsPlot.offset) {
+			for (let i=0; i<TransitionsPlot.schemesLength; i++) {
+				let nPossible = regExpCounter(allTiers ? "[^-]" : TransitionsPlot.startTier, TransitionsPlot.data.schemes[i], TransitionsPlot.seasonRange[0]-1, TransitionsPlot.seasonRange[1], true);
+				if (nPossible) {
+					total += nPossible;
+					for (let j=tiers.length-1; j>=0; j--) {
+						let reg = (TransitionsPlot.plus ? (allTiers ? "[^-]" : TransitionsPlot.startTier) : tiers[j]) + ".{" + (TransitionsPlot.exact ? "" : "0,") + (TransitionsPlot.seasons-1) + "}" + (TransitionsPlot.plus ? tiers[j] : (allTiers ? "[^-]" : TransitionsPlot.startTier));
+						let nMatches = regExpCounter(reg, TransitionsPlot.data.schemes[i], TransitionsPlot.seasonRange[0]-1, TransitionsPlot.seasonRange[1], TransitionsPlot.plus);
+						if (nMatches) {
+							TransitionsPlot.props[tiers[j]].count += nMatches;
+							TransitionsPlot.props[tiers[j]].ids.push(i);
+						}
+					}
+				}
+			}
+		} else {
+			for (let i=0; i<TransitionsPlot.schemesLength; i++) {
+				if (regExpChecker(allTiers ? "[^-]" : TransitionsPlot.startTier, TransitionsPlot.data.schemes[i], TransitionsPlot.seasonRange[0]-1, TransitionsPlot.seasonRange[1], true)) {
+					total += 1;
+					for (let j=tiers.length-1; j>=0; j--) {
+						if (TransitionsPlot.exact) {
+							if (TransitionsPlot.plus) {
+								if (TransitionsPlot.data.schemes[i][TransitionsPlot.seasons-1] == tiers[j]) {
+									TransitionsPlot.props[tiers[j]].count += 1;
+									TransitionsPlot.props[tiers[j]].ids.push(i);
+								}
+							} else {
+								if ((TransitionsPlot.seasons >= TransitionsPlot.seasonRange[0]) && (TransitionsPlot.seasons <= TransitionsPlot.seasonRange[1])) {
+									if (regExpChecker(tiers[j], TransitionsPlot.data.schemes[i], TransitionsPlot.seasonRange[0]-1, TransitionsPlot.seasonRange[1], true)) {
+										TransitionsPlot.props[tiers[j]].count += 1;
+										TransitionsPlot.props[tiers[j]].ids.push(i);
+									}
+								} else if (TransitionsPlot.seasons < TransitionsPlot.seasonRange[0]) {
+									if (regExpChecker(tiers[j], TransitionsPlot.data.schemes[i], TransitionsPlot.seasons-1, TransitionsPlot.seasonRange[1], true)) {
+										TransitionsPlot.props[tiers[j]].count += 1;
+										TransitionsPlot.props[tiers[j]].ids.push(i);
+									}
+								} else {
+									if (regExpChecker(tiers[j], TransitionsPlot.data.schemes[i], TransitionsPlot.seasonRange[0]-1, TransitionsPlot.seasons, false)) {
+										TransitionsPlot.props[tiers[j]].count += 1;
+										TransitionsPlot.props[tiers[j]].ids.push(i);
+									}
+								}
+							}
+						} else {
+							if (TransitionsPlot.plus) {
+								if (TransitionsPlot.data.schemes[i].slice(0, TransitionsPlot.seasons).includes(tiers[j])) {
+									TransitionsPlot.props[tiers[j]].count += 1;
+									TransitionsPlot.props[tiers[j]].ids.push(i);
+								}
+							} else {
+								if (TransitionsPlot.data.schemes[i].slice(TransitionsPlot.seasons - 1, TransitionsPlot.currentSeason).includes(tiers[j])) {
+									TransitionsPlot.props[tiers[j]].count += 1;
+									TransitionsPlot.props[tiers[j]].ids.push(i);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	TransitionsPlot.props = Object.keys(TransitionsPlot.props).map(key => TransitionsPlot.props[key]);
+	for (let i=0; i<TransitionsPlot.props.length; i++) {
+		TransitionsPlot.props[i].prop = TransitionsPlot.props[i].count/total;
+	}
+	
+	if (tiers[tiers.length-1] == "-") {tiers[tiers.length-1] = "Out";}
+	
+	var plotSpec = {
+		"width": ChartUtils.widthcheck.clientWidth - 52,
+		"height": 0.5 * (ChartUtils.widthcheck.clientWidth - 52),
+		"data": {"values": TransitionsPlot.props},
+		"transform": [{"calculate": "indexof(" + JSON.stringify(tiers) + ", datum.player)", "as": "order"}],
+		"selection": {"clicked": {"type": "single", "on": "click", "empty": "none"}},
+		"mark": {"type": "bar"},
+		"encoding": {
+			"x": {"field": "tier", "type": "ordinal", "sort": "order", "axis": {"title": "Tier", "labelAngle": 0}},
+			"y": {"field": "prop", "type": "quantitative", "axis": {"title": "Proportion"}},
+			"color": {
+				"field": "tier",
+				"type": "ordinal",
+				"scale": {
+					"domain": tiers,
+					"range": colors
+				},
+				"legend": null
+			},
+			"tooltip": [{"field": "count", "type": "quantitative", "title": (TransitionsPlot.offset && !TransitionsPlot.first) ? "Seasons" : "Players"}]
+		},
+		"config": {"axisX": {"labelAngle": 0}}
+	}
+	
+	vegaEmbed("#transitions", plotSpec, {"actions": false}).then(function(res) {
+		TransitionsPlot.plot = res.view;
+		TransitionsPlot.plot.addDataListener('clicked_store', function(name, value){
+			if (value.length) {
+				TransitionsPlot.showPlayersModal(value[0].values[0]-1);
+			}
+		})
+	});
+	
+	function regExpCounter(regex, string, start, end, forward) {
+		var r = forward ? new RegExp("^" + regex) : new RegExp(regex + "$");
+		var count = 0;
+		if (forward) {
+			for (let i=start; i<end; i++) {
+				let k = string.slice(i);
+				count += r.test(k);
+			}
+		} else {
+			for (let i=end; i>start; i--) {
+				let k = string.slice(0,i);
+				count += r.test(k);
+			}
+		}
+		return count;
+	}
+	
+	function regExpChecker(regex, string, start, end, forward) {
+		var r = forward ? new RegExp("^" + regex) : new RegExp(regex + "$");
+		if (forward) {
+			for (let i=start; i<end; i++) {
+				if (r.test(string.slice(i))) {
+					return true;
+				}
+			}
+		} else {
+			for (let i=end; i>start; i--) {
+				if (r.test(string.slice(0,i))) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+};
+
+TransitionsPlot.showPlayersModal = function(propidx) {
+	var titleInfo = null;
+	switch (TransitionsPlot.plotType) {
+		case 0:
+			titleInfo = "before season " + TransitionsPlot.seasons;
+			break;
+		case 1:
+			titleInfo = "in season " + TransitionsPlot.seasons;
+			break;
+		case 2:
+			titleInfo = "after season " + TransitionsPlot.seasons;
+			break;
+		case 3:
+			titleInfo = "between then and season " + TransitionsPlot.seasons;
+			break;
+		case 4:
+			titleInfo = "within " + TransitionsPlot.seasons + " seasons after"
+			break;
+		case 5:
+			titleInfo = "exactly " + TransitionsPlot.seasons + " seasons after"
+			break;
+		case 6:
+			titleInfo = "within " + TransitionsPlot.seasons + " seasons before"
+			break;
+		case 7:
+			titleInfo = "exactly " + TransitionsPlot.seasons + " seasons before"
+			break;
+	}
+	document.getElementById('modal-header').innerHTML = "Players who played in " + TransitionsPlot.startTier + " tier " + (TransitionsPlot.first ? " for the first time " : " ") + ((TransitionsPlot.seasonRange[0] == TransitionsPlot.seasonRange[1]) ? "in season" + TransitionsPlot.seasonRange[0] : "between seasons " + TransitionsPlot.seasonRange[0] + " and " + TransitionsPlot.seasonRange[1]) + " who " + (TransitionsPlot.props[propidx].tier ? "were out of the league " : "played in tier " + TransitionsPlot.props[propidx].tier) + titleInfo;
+	let idxs = TransitionsPlot.props[propidx].ids;
+	let nplayer = idxs.length;
+	var modalBody = document.getElementById('modal-body');
+	modalBody.innerHTML = '';
+	var table = document.createElement('table');
+	table.classList.add('table-past-standings');
+	var tableBody = document.createElement('tbody');
+	var topRow = document.createElement('tr');
+	for (let i=0; i<2; i++) {
+		let cell = document.createElement('th');
+		cell.setAttribute('width', '50%');
+		topRow.appendChild(cell);
+	}
+	tableBody.appendChild(topRow);
+	for (let i=0; i<nplayer-1; i+= 2) {
+		let row = document.createElement('tr');
+		let cell1 = document.createElement('td');
+		cell1.classList.add('clickable-name');
+		cell1.appendChild(document.createTextNode(TransitionsPlot.data.players[idxs[i]]));
+		row.appendChild(cell1);
+		let cell2 = document.createElement('td');
+		cell2.classList.add('clickable-name');
+		cell2.appendChild(document.createTextNode(TransitionsPlot.data.players[idxs[i+1]]));
+		row.appendChild(cell2);
+		tableBody.appendChild(row);
+	}
+	if (nplayer % 2) {
+		let row = document.createElement('tr');
+		let cell1 = document.createElement('td');
+		cell1.classList.add('clickable-name');
+		cell1.appendChild(document.createTextNode(TransitionsPlot.data.players[idxs[nplayer-1]]));
+		row.appendChild(cell1);
+		let cell2 = document.createElement('td');
+		row.appendChild(cell2);
+		tableBody.appendChild(row);
+	}
+	table.appendChild(tableBody);
+	modalBody.appendChild(table);
+	ChartUtils.setClickableNames();
+	ChartUtils.openModal();
+};
