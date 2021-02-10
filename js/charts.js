@@ -935,7 +935,7 @@ TransitionsPlot.makePlot = function() {
 						}
 					} else {
 						for (let j=tiers.length-1; j>=0; j--) {
-							if (TransitionsPlot.data.schemes[i].slice((TransitionsPlot.plus ? info.index + 1 : info.index + TransitionsPlot.seasons), (TransitionsPlot.plus ? info.index - TransitionsPlot.seasons + 1 : info.index)).includes(tiers[j])) {
+							if (TransitionsPlot.data.schemes[i].slice((TransitionsPlot.plus ? info.index + 1 : info.index - TransitionsPlot.seasons), (TransitionsPlot.plus ? info.index + TransitionsPlot.seasons + 1: info.index)).includes(tiers[j])) {
 								TransitionsPlot.props[tiers[j]].count += 1;
 								TransitionsPlot.props[tiers[j]].ids.push(i);
 							}
@@ -1110,28 +1110,28 @@ TransitionsPlot.showPlayersModal = function(propidx) {
 	var titleInfo = null;
 	switch (TransitionsPlot.plotType) {
 		case 0:
-			titleInfo = "before season " + TransitionsPlot.seasons;
+			titleInfo = " before season " + TransitionsPlot.seasons;
 			break;
 		case 1:
-			titleInfo = "in season " + TransitionsPlot.seasons;
+			titleInfo = " in season " + TransitionsPlot.seasons;
 			break;
 		case 2:
-			titleInfo = "after season " + TransitionsPlot.seasons;
+			titleInfo = " after season " + TransitionsPlot.seasons;
 			break;
 		case 3:
-			titleInfo = "between then and season " + TransitionsPlot.seasons;
+			titleInfo = " between then and season " + TransitionsPlot.seasons;
 			break;
 		case 4:
-			titleInfo = "within " + TransitionsPlot.seasons + " seasons after"
+			titleInfo = " within " + TransitionsPlot.seasons + " seasons after"
 			break;
 		case 5:
-			titleInfo = "exactly " + TransitionsPlot.seasons + " seasons after"
+			titleInfo = " exactly " + TransitionsPlot.seasons + " seasons after"
 			break;
 		case 6:
-			titleInfo = "within " + TransitionsPlot.seasons + " seasons before"
+			titleInfo = " within " + TransitionsPlot.seasons + " seasons before"
 			break;
 		case 7:
-			titleInfo = "exactly " + TransitionsPlot.seasons + " seasons before"
+			titleInfo = " exactly " + TransitionsPlot.seasons + " seasons before"
 			break;
 	}
 	document.getElementById('modal-header').innerHTML = "Players who played in " + TransitionsPlot.startTier + " tier " + (TransitionsPlot.first ? " for the first time " : " ") + ((TransitionsPlot.seasonRange[0] == TransitionsPlot.seasonRange[1]) ? "in season " + TransitionsPlot.seasonRange[0] : "between seasons " + TransitionsPlot.seasonRange[0] + " and " + TransitionsPlot.seasonRange[1]) + " who " + ((TransitionsPlot.props[propidx].tier == "Out") ? "were out of the league " : "played in tier " + TransitionsPlot.props[propidx].tier) + titleInfo;
