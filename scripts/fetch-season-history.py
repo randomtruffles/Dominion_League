@@ -12,6 +12,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
 FILE = './_data/league_history.json'
 SHEETS_IDS = './scripts/sheets_ids.json'
+SIMS = "Yes"
 
 # Open file containing all league history and sheets ids
 with open(FILE) as file_to_load:
@@ -36,7 +37,7 @@ def getResults(SEASON, MONITORING_SHEET, RESULTS):
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
-    curr_season = {"players":{}, "season": SEASON}
+    curr_season = {"players":{}, "season": SEASON, "sims": SIMS}
     file = './_data/current_season.json'
     creds = None
 
