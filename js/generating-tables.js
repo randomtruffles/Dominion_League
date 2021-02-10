@@ -184,7 +184,7 @@ function genHeader(division, complete, link, drops, customText=""){
   table.appendChild(seasonRow);
   seasonRow.appendChild(seasonHeader);
   var text = customText == "" ? `Division ${division} Standings` : customText;
-  //text = complete == "Yes" ? text + " (complete)" : text;
+  text = complete == "Yes" ? text + " (complete)" : text;
   var sheetsLink = `<a href="${link}" target="_blank"><img src="/img/icons/sheets.png" class="sheets-icon"></a>`;
   seasonHeader.innerHTML = `<p>${text} ${sheetsLink}</p>`;
   seasonHeader.style.backgroundColor = "lightgrey";

@@ -95,6 +95,7 @@ def getCurrentSeasonResults():
                     wins2s = row[9].split(',')
                     #comments = row[10].split(',')
                     returnings = row[11].split(',')
+
                     late_drops = []
                     if cols >= 13:
                         late_drops = row[12].split(',')
@@ -111,8 +112,15 @@ def getCurrentSeasonResults():
                     curr_division["late drops"] = late_drops
                     curr_division["complete?"] = "Yes"
 
+                    tiers_error = False
+                    if tiers == ["#N/A"]:
+                        tiers_error = True
+                        tiers == []
 
                     for p_idx, p in enumerate(players):
+                        if tiers_error:
+                            tiers.append("TBD");
+
                         if p not in curr_season["players"]:
                             curr_season["players"][p.lower()] = {"name":p, "tier":division[0], "division": division}
                         if p not in curr_division["by_player"]:
@@ -122,6 +130,7 @@ def getCurrentSeasonResults():
                             curr_division["by_player"][p]["losses_nondrop"] = 0
                             curr_division["by_player"][p]["wins"] = 0
                             curr_division["by_player"][p]["losses"] = 0
+                    print(1, end='')
 
                     # Match results
                     num_matches = 0 if p1s == [''] else len(p1s)
@@ -130,7 +139,7 @@ def getCurrentSeasonResults():
                         print(p2s)
                         print(wins1s)
                         print(wins2s)
-                        
+
                     for idx in range(num_matches):
                         p1 = p1s[idx]
                         p2 = p2s[idx]
@@ -167,6 +176,7 @@ def getCurrentSeasonResults():
                             curr_division["by_player"][p1]["wins_nondrop"] += float(wins1)
                             curr_division["by_player"][p1]["losses_nondrop"] += float(wins2)
 
+                    print(2, end='')
                     total_games = (len(players) - len(late_drops) - 1)*6
                     # Member standings
                     curr_division["members"] = {}
@@ -178,10 +188,12 @@ def getCurrentSeasonResults():
                         if p_pct == "":
                             error = True
                             continue
+                        print("2a", end='')
                         color = assign_color(float(pcts[p_idx][:-1]))
                         drop = "Yes" if player in late_drops else "No"
-                        if curr_division["by_player"][player]["games_nondrop"] < total_games:
+                        if curr_division["by_player"][player]["games_nondrop"] < total_games or "TBD" in tiers[p_idx]:
                             curr_division["complete?"] = "No"
+                        print("2b", end='')
 
                         returning = "?" if returnings[p_idx] == "" else returnings[p_idx]
                         curr_division["members"][player] = \
@@ -196,6 +208,7 @@ def getCurrentSeasonResults():
                              "wins_nondrop":curr_division["by_player"][player]["wins_nondrop"], \
                              "losses_nondrop":curr_division["by_player"][player]["losses_nondrop"]}
 
+                    print(3, end='')
                     # Tiebreaker values
                     for player in players:
                         if player == "" or player in late_drops:
@@ -206,6 +219,7 @@ def getCurrentSeasonResults():
                             if player != opponent and opponent not in late_drops and opponent in curr_division["by_player"][player]:
                                 if curr_division["members"][player]["pct"] == curr_division["members"][opponent]["pct"]:
                                         curr_division["members"][player]["tiebreaker"] += curr_division["by_player"][player][opponent]["wins"]
+                    print(4, end='')
 
                     # Figure out ranks
                     rank = 1
@@ -223,6 +237,7 @@ def getCurrentSeasonResults():
                             curr_division["members"][player]["rank"] = rank
 
                     curr_season[division] = curr_division
+                    print(5)
 
                 except Exception as e:
                     print("*****************")
