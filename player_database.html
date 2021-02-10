@@ -74,7 +74,6 @@ var sheetsLinks = {{ site.data.sheet_links | jsonify }};
 // Current season data
 var currentSeasonTable = {{ site.data.current_season | jsonify }};
 var currentSeasonPlayers = currentSeasonTable["players"];
-var currentSeasonReturning = {{ site.data.returning | jsonify }};
 
 // Season 43 Standings
 var s43Table = {{ site.data.s43_season | jsonify }};
@@ -219,7 +218,7 @@ function searchPlayerHistory(param=false){
     var divisionData = currentSeasonTable[division];
     var title = `<a href="current_standings?div=${division}"> S${currentSeasonTable["season"]}</a> ${division} Division`;
     var params = {"headerText":title, "playerNameKey":playerNameKey, "champ":""};
-    loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, currentSeasonReturning, params);
+    loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, params);
   }
 
 

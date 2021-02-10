@@ -125,11 +125,12 @@ def getCurrentSeasonResults():
 
                     # Match results
                     num_matches = 0 if p1s == [''] else len(p1s)
-                    if (division == "J3"):
+                    if (division == "A1"):
                         print(p1s)
                         print(p2s)
                         print(wins1s)
                         print(wins2s)
+                        
                     for idx in range(num_matches):
                         p1 = p1s[idx]
                         p2 = p2s[idx]

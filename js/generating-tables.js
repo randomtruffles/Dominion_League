@@ -56,7 +56,12 @@ function calcDroppedInfo(players, drops) {
     var droppedPlayerMatches = players[droppedPlayer];
     var droppedPlayerWins = droppedPlayerMatches["wins"];
     var droppedPlayerLosses = droppedPlayerMatches["losses"];
-    var droppedPlayerPct = droppedPlayerWins/(droppedPlayerWins+droppedPlayerLosses);
+    var droppedPlayerPct;
+    if (droppedPlayerWins == 0 && droppedPlayerLosses == 0) {
+      droppedPlayerPct = 0;
+    } else {
+      droppedPlayerPct = droppedPlayerWins/(droppedPlayerWins+droppedPlayerLosses)
+    }
     droppedInfo[droppedPlayer] = {}
     droppedInfo[droppedPlayer]["weight"] = (droppedPlayerWins+droppedPlayerLosses)/((numPlayers-1)*6);
 
@@ -87,6 +92,7 @@ function calcDroppedInfo(players, drops) {
       droppedInfo[droppedPlayer]["matches"][opp]["losses"]["total"] += simulatedLosses;
     }
   }
+  console.log(droppedInfo);
   return droppedInfo;
 }
 
@@ -316,7 +322,7 @@ function genSimulations(players, drops, sorted){
 }
 
 
-function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning, isRaw) {
+function genStandings(data, tier, tiebreaker, sorted, drops, complete, isRaw) {
   console.log("Generating standings...");
   var table = document.createElement("table");
   var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
@@ -340,20 +346,10 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
   function isReturning(name){
     if (data[name]["drop"] == "Yes") {
       return "N";
-    } else if (name in returning) {
-      switch (returning[name]) {
-        case "Y":
-          return "Y";
-        case "N":
-          return "N";
-        case "?":
-          return "Err";
-        default:
-          return "Err";
-      }
     }
-    return "?"
+    return data[name]["returning"];
   }
+
   function calcTiebreakers() {
     // Figure out tiebreakers
     for (var member in data) {
@@ -460,13 +456,21 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, returning
     var playerData = data[keypair[0]];
     var name = playerData["name"];
 
+    function calcPct(wins, losses) {
+      if (wins == 0 && losses == 0) {
+        return "0%";
+      } else {
+        return `${Math.round(wins/(wins + losses)*100)}%`;
+      }
+    }
+
     var droppedInfo = {
       "rank" : playerData["rank"] ,
       "name" : formatDbLink(name, "db-link", playerData["drop"]),
-      "pct" : `${Math.round(playerData["wins_nondrop"]/(playerData["wins_nondrop"]+playerData["losses_nondrop"])*100)}%`,
+      "pct" : calcPct(playerData["wins_nondrop"],playerData["losses_nondrop"]),
       "wins" : playerData["wins_nondrop"].toFixed(1).replace(".0", ""),
       "losses" : playerData["losses_nondrop"].toFixed(1).replace(".0", ""),
-      "pctAll" : `${Math.round(playerData["wins_wdrop"]/(playerData["wins_wdrop"]+playerData["losses_wdrop"])*100)}%`,
+      "pctAll" : calcPct(playerData["wins_wdrop"],playerData["losses_wdrop"]),
       "winsAll" : playerData["wins_wdrop"].toFixed(1).replace(".0", ""),
       "lossesAll" : playerData["losses_wdrop"].toFixed(1).replace(".0", "")
     }
@@ -677,7 +681,7 @@ function genGrid(data, drops, sorted) {
 }
 
 
-function loadDivision(divisionDiv, divisionData, link, division, returning, params) {
+function loadDivision(divisionDiv, divisionData, link, division, params) {
   console.log(`Loading ${division} standings...`);
 
   // Get information
@@ -718,7 +722,7 @@ function loadDivision(divisionDiv, divisionData, link, division, returning, para
   playerQuery = Object.keys(params).length > 0 ? params["playerNameKey"] : playerQuery;
   champ = Object.keys(params).length > 0 ? params["champ"] : champ;
   var header = genHeader(division, complete, link, drops, headerText);
-  var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, returning, false);
+  var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, false);
 
   if (Object.keys(params).length == 0) {
     standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
@@ -730,7 +734,7 @@ function loadDivision(divisionDiv, divisionData, link, division, returning, para
   standingsDiv.appendChild(header);
   standingsDiv.appendChild(standingsTable);
   if (drops.length > 0 ){
-    var rawStandingsTable = genStandings(standings, tier, players, sorted, drops, complete, returning, true);
+    var rawStandingsTable = genStandings(standings, tier, players, sorted, drops, complete, true);
     standingsDiv.appendChild(rawStandingsTable);
   }
   standingsDiv.appendChild(gridTable);
