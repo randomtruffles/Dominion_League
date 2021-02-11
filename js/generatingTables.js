@@ -724,7 +724,7 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   var header = genHeader(division, complete, link, drops, headerText);
   var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, false);
 
-  if (Object.keys(params).length == 0) {
+  if (!params["playerNameKey"]) {
     standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
     standingsDiv.classList.add(`filterDiv`);
     standingsDiv.classList.add(`div${tier}`);

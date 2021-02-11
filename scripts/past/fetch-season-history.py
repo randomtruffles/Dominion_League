@@ -221,7 +221,7 @@ def getResults(SEASON, MONITORING_SHEET, RESULTS):
     print("")
 
 if __name__ == '__main__':
-    SEASON = "42"
+    SEASON = "43"
     # Various sheets pages
     MONITORING_SHEET = sheets[SEASON]
     RESULTS = 'Condensed Results!A2:M'
