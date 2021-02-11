@@ -3,6 +3,7 @@ var promotionStart = false
 var promoteIcon = "&#9651;";
 var demoteIcon = "&#9661;";
 var playerQuery = ""
+var testing = false
 /* Helper functions */
 function formatDbLink(playerName, className, drop="No"){
   var champion_sym = " <img src=\"/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
@@ -92,13 +93,12 @@ function calcDroppedInfo(players, drops) {
       droppedInfo[droppedPlayer]["matches"][opp]["losses"]["total"] += simulatedLosses;
     }
   }
-  console.log(droppedInfo);
   return droppedInfo;
 }
 
 /* Interactive Buttons */
 function checkSwitch(toggler){
-  console.log("Toggling switch");
+  if (testing) console.log("Toggling switch");
   var parent = toggler.parentElement.parentElement.parentElement.parentElement.parentElement;
   var children = parent.children;
 
@@ -127,7 +127,7 @@ function selectTab(btn) {
   var tab = btn.innerHTML;
   var tabToOpen = btn;
   var parent = btn.parentElement.parentElement.parentElement.parentElement;
-  console.log(`Opening ${tab} button`);
+  if (testing) console.log(`Opening ${tab} button`);
 
   /*var toggler = checkSwitch(curTab.children[0]);*/
   // Remove active from button siblings
@@ -268,7 +268,7 @@ function genSimulations(players, drops, sorted){
   table.classList.add('sims-table');
   table.style.display = "none";
 
-  console.log("Generating Simulations table...");
+  if (testing) console.log("Generating Simulations table...");
   var droppedInfo = calcDroppedInfo(players, drops);
 
   var tableHeadings = ["Opponent", "Played", "Simmed", "Total", "W. Total"];
@@ -323,7 +323,7 @@ function genSimulations(players, drops, sorted){
 
 
 function genStandings(data, tier, tiebreaker, sorted, drops, complete, isRaw) {
-  console.log("Generating standings...");
+  if (testing) console.log("Generating standings...");
   var table = document.createElement("table");
   var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
   if (isRaw) table.style.display = "none";
@@ -558,7 +558,7 @@ function genResults(results) {
 }
 
 function genMatches(data, drops, sorted) {
-  console.log("Generating matches table...");
+  if (testing) console.log("Generating matches table...");
 
   var table = document.createElement("table");
   table.classList.add('matches-table');
@@ -623,7 +623,7 @@ function genMatches(data, drops, sorted) {
 }
 
 function genGrid(data, drops, sorted) {
-  console.log("Generating grid...");
+  if (testing) console.log("Generating grid...");
   var table = document.createElement("table");
   table.classList.add('grid-table');
   table.style.display = "none";
@@ -718,9 +718,9 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   divisionDiv.appendChild(standingsDiv);
 
 
-  var headerText = Object.keys(params).length > 0 ? params["headerText"] : "";
-  playerQuery = Object.keys(params).length > 0 ? params["playerNameKey"] : playerQuery;
-  champ = Object.keys(params).length > 0 ? params["champ"] : champ;
+  var headerText = params["headerText"] ? params["headerText"] : "";
+  playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
+  champ = params["champ"] ? params["champ"] : champ;
   var header = genHeader(division, complete, link, drops, headerText);
   var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, false);
 

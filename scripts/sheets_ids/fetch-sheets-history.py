@@ -160,6 +160,7 @@ def getResults(SEASON, MONITORING_SHEET, RESULTS):
                         curr_season[division]["by_player"][p1]["losses_nondrop"] += float(wins2)
 
 
+                total_games = (len(players) - len(late_drops) - 1)*6
                 # Member standings
                 curr_season[division]["members"] = {}
                 for p_idx, player in enumerate(players):
@@ -167,7 +168,9 @@ def getResults(SEASON, MONITORING_SHEET, RESULTS):
                         break
                     color = assign_color(float(pcts[p_idx][:-1]))
                     drop = "Yes" if player in late_drops else "No"
-                    if tiers[p_idx] == "":
+                    if tiers[p_idx] == "" || (curr_division["by_player"][player]["games_nondrop"] < total_games and player not in drops):
+                        print(player)
+                        print(division)
                         curr_season[division]["complete?"] = "No"
 
                     curr_season[division]["members"][player] = \

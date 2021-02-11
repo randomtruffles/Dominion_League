@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Dominion League Season 42 Standings
+title: Dominion League Season 43 Standings
 ---
 
 <div class="home">
   <div class="container-centered">
-    <h3><a style="text-decoration: none" href="season41.html">&nbsp;<b><</b>&nbsp;</a>Season 42 Standings<a style="text-decoration: none" href="season43.html">&nbsp;<b>></b>&nbsp;</a></h3>
-    <h5>2020-10-12 to 2020-12-07</h5>
+    <h3><a style="text-decoration: none" href="season42.html">&nbsp;<b><</b>&nbsp;</a>Season 43 Standings<a style="text-decoration: none" href="season44.html">&nbsp;<b>></b>&nbsp;</a></h3>
+    <h5>2020-12-07 to 2021-01-17</h5>
     <h5><a href="{{site.baseurl}}/past_standings.html">All Past Season Standings</a></h5>
     <h5><a href="{{site.baseurl}}/player_database.html">Player Database</a></h5>
     <!-- Filter buttons -->
@@ -30,22 +30,26 @@ title: Dominion League Season 42 Standings
     <div class="spacing"></div>
   </div>
 </div>
-
 <script src="/js/generatingTables.js"></script>
 <script src="/js/standingsUtils.js"></script>
 <script>
 // Load data
-
-var curr_season = "42";
-
-var divisions = {{ site.data.league_history | jsonify }};
-divisions = divisions[curr_season];
-var sheetLinks = {{ site.data.sheet_links | jsonify }};
-sheetLinks = sheetLinks[curr_season];
-var champions = {{ site.data.champions | jsonify }};
-champion = champions.seasons[curr_season];
-console.log(champion)
-
+var divisions = {{ site.data.s43_season | jsonify }};
+var sheetsLinks = {{ site.data.s43_season_links | jsonify }};
+var tiers = [
+  ["A", 1],
+  ["B", 2],
+  ["C", 4],
+  ["D", 4],
+  ["E", 8],
+  ["F", 14],
+  ["G", 13],
+  ["H", 25],
+  ["I", 25],
+  ["J", 26],
+  ["P",4]
+];
+var curr_season = 43;
 loadPage();
 
 function singleDivision(division){
@@ -54,7 +58,7 @@ function singleDivision(division){
   singleDivisionDiv.scrollIntoView(true);
   document.getElementById("all-divisions").style.display = "none";
   console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-  loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, {"champ":champion});
+  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, returning, {});
   var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
   w3AddClass(divisionDiv, "show");
 }
@@ -65,12 +69,21 @@ function allDivisions(){
   var divisionDiv = document.getElementById("all-divisions");
   console.log("Showing all divisions");
   document.getElementById("single-division").style.display = "none";
-  for (var division in sheetLinks) {
-    if (!divisions[division]) {
-      console.log(`${division} data not found. Continuing...`);
-      continue;
+  console.log(tiers);
+  while (true) {
+    if (curTierIdx == tiers.length) {
+      break;
     }
-    loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, {"champ":champion});
+    if (curDiv > tiers[curTierIdx][1]) {
+      curDiv = 1;
+      curTierIdx += 1;
+    }
+    if (curTierIdx == tiers.length) {
+      break;
+    }
+    division = `${tiers[curTierIdx][0]}${curDiv}`;
+    curDiv += 1;
+    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, {});
   }
   return;
 }

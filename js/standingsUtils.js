@@ -11,11 +11,18 @@ function getParam(paramName) {
 
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("current-standings filterDiv");
+  if(document.getElementById('all-divisions').children.length == 0) {
+    console.log(document.getElementById('all-divisions').children.length);
+    allDivisions();
+  }
+  document.getElementById('all-divisions').style.display = "";
+  x = document.getElementsByClassName("standings filterDiv");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(x[i], "show");
+    }
   }
 }
 

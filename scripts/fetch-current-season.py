@@ -85,6 +85,7 @@ def getCurrentSeasonResults():
                 try:
                     players = row[1].split(',')
                     if (players == ["#REF!"]): continue
+                    players = [p for p in players if p != ""]
                     pcts = row[2].split(',')
                     wins = row[3].split(',')
                     losses = row[4].split(',')
@@ -191,7 +192,8 @@ def getCurrentSeasonResults():
                         print("2a", end='')
                         color = assign_color(float(pcts[p_idx][:-1]))
                         drop = "Yes" if player in late_drops else "No"
-                        if curr_division["by_player"][player]["games_nondrop"] < total_games or "TBD" in tiers[p_idx]:
+                        if (tiers[p_idx] == "" or (curr_division["by_player"][player]["games_nondrop"] < total_games) or "TBD" in tiers[p_idx]) and player not in late_drops and curr_division["complete?"] == "Yes":
+                            print(f"     Division {division} incomplete/practice")
                             curr_division["complete?"] = "No"
                         print("2b", end='')
 

@@ -56,8 +56,8 @@ description: Database of past season histories of players
     </div>
   </div>
 </div>
-<script src="js/generating-tables.js"></script>
-<script src="js/tables-utils.js"></script>
+<script src="js/generatingTables.js"></script>
+<script src="js/tableUtils.js"></script>
 <script>
 // Data for tables
 var playersTable = {{ site.data.player_and_seasons_played | jsonify }};
@@ -217,7 +217,7 @@ function searchPlayerHistory(param=false){
     var division = currentSeasonPlayers[playerNameKey]["division"];
     var divisionData = currentSeasonTable[division];
     var title = `<a href="current_standings?div=${division}"> S${currentSeasonTable["season"]}</a> ${division} Division`;
-    var params = {"headerText":title, "playerNameKey":playerNameKey, "champ":""};
+    var params = {"headerText":title, "playerNameKey":playerNameKey};
     loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, params);
   }
 
@@ -231,7 +231,7 @@ function searchPlayerHistory(param=false){
     var divisionData = s43Table[division];
     var title = `<a href="past_standings/season43?div=${division}"> S${s43Table["season"]}</a> ${division} Division`;
     var params = {"headerText":title, "playerNameKey":playerNameKey, "champ":"nasmith99"}
-    loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, s43Returning, params);
+    loadDivision(standingsDiv, divisionData, sheetsLinks[season][division], division, params);
   }
   // ---Check if they have other league history
   if(!playersTable[playerNameKey]) {
