@@ -118,7 +118,6 @@ def getCurrentSeasonResults():
                         tiers == []
 
                     for p_idx, p in enumerate(players):
-                        if p
                         if tiers_error:
                             tiers.append("TBD");
 

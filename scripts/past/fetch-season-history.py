@@ -11,7 +11,7 @@ from google.auth.transport.requests import Request
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
 FILE = './_data/league_history.json'
-SHEETS_IDS = './scripts/sheets_ids.json'
+SHEETS_IDS = './scripts/past/sheets_ids.json'
 SIMS = "Yes"
 
 # Open file containing all league history and sheets ids
@@ -41,8 +41,8 @@ def getResults(SEASON, MONITORING_SHEET, RESULTS):
     file = './_data/current_season.json'
     creds = None
 
-    if os.path.exists('./scripts/token.pickle'):
-        with open('./scripts/token.pickle', 'rb') as token:
+    if os.path.exists('./scripts/past/token.pickle'):
+        with open('./scripts/past/token.pickle', 'rb') as token:
             creds = pickle.load(token)
     # If there are no (valid) credentials available, let the user log in.
     if not creds or not creds.valid:
@@ -50,10 +50,10 @@ def getResults(SEASON, MONITORING_SHEET, RESULTS):
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                './scripts/credentials.json', SCOPES)
+                './scripts/past/credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
-        with open('./scripts/token.pickle', 'wb') as token:
+        with open('./scripts/past/token.pickle', 'wb') as token:
             pickle.dump(creds, token)
 
     service = build('sheets', 'v4', credentials=creds)
@@ -120,9 +120,16 @@ def getResults(SEASON, MONITORING_SHEET, RESULTS):
                 for idx in range(num_matches):
                     p1 = p1s[idx]
                     p2 = p2s[idx]
+
+                    err = False
+                    for p in [p1, p2]:
+                        if p not in players and p not in late_drops:
+                            print(f"UNKNOWN PLAYER {p}")
+                            err = True
+                    if err: continue
+
                     wins1 = wins1s[idx]
                     wins2 = wins2s[idx]
-
                     result = {"player1":p1, "player2":p2, "wins1":wins1, "wins2":wins2} #, "comments":comment}
 
                     if p1 not in curr_season[division]["by_player"][p2]:
