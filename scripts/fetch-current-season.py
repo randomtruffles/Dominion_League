@@ -131,7 +131,6 @@ def getCurrentSeasonResults():
                             curr_division["by_player"][p]["losses_nondrop"] = 0
                             curr_division["by_player"][p]["wins"] = 0
                             curr_division["by_player"][p]["losses"] = 0
-                    print(1, end='')
 
                     # Match results
                     num_matches = 0 if p1s == [''] else len(p1s)
@@ -144,6 +143,16 @@ def getCurrentSeasonResults():
                     for idx in range(num_matches):
                         p1 = p1s[idx]
                         p2 = p2s[idx]
+
+                        err = False
+                        for p in [p1, p2]:
+                            if p not in players and p not in late_drops:
+                                print('        *********************')
+                                print(f"        UNKNOWN PLAYER {p}")
+                                print('        *********************')
+                                err = True
+                        if err: continue
+
                         wins1 = wins1s[idx]
                         wins2 = wins2s[idx]
 
@@ -177,7 +186,6 @@ def getCurrentSeasonResults():
                             curr_division["by_player"][p1]["wins_nondrop"] += float(wins1)
                             curr_division["by_player"][p1]["losses_nondrop"] += float(wins2)
 
-                    print(2, end='')
                     total_games = (len(players) - len(late_drops) - 1)*6
                     # Member standings
                     curr_division["members"] = {}
@@ -189,13 +197,12 @@ def getCurrentSeasonResults():
                         if p_pct == "":
                             error = True
                             continue
-                        print("2a", end='')
                         color = assign_color(float(pcts[p_idx][:-1]))
                         drop = "Yes" if player in late_drops else "No"
                         if (tiers[p_idx] == "" or (curr_division["by_player"][player]["games_nondrop"] < total_games) or "TBD" in tiers[p_idx]) and player not in late_drops and curr_division["complete?"] == "Yes":
-                            print(f"     Division {division} incomplete/practice")
+                            print(f"        Division {division} incomplete/practice")
                             curr_division["complete?"] = "No"
-                        print("2b", end='')
+
 
                         returning = "?" if returnings[p_idx] == "" else returnings[p_idx]
                         curr_division["members"][player] = \
@@ -210,7 +217,6 @@ def getCurrentSeasonResults():
                              "wins_nondrop":curr_division["by_player"][player]["wins_nondrop"], \
                              "losses_nondrop":curr_division["by_player"][player]["losses_nondrop"]}
 
-                    print(3, end='')
                     # Tiebreaker values
                     for player in players:
                         if player == "" or player in late_drops:
@@ -221,7 +227,6 @@ def getCurrentSeasonResults():
                             if player != opponent and opponent not in late_drops and opponent in curr_division["by_player"][player]:
                                 if curr_division["members"][player]["pct"] == curr_division["members"][opponent]["pct"]:
                                         curr_division["members"][player]["tiebreaker"] += curr_division["by_player"][player][opponent]["wins"]
-                    print(4, end='')
 
                     # Figure out ranks
                     rank = 1
@@ -239,15 +244,17 @@ def getCurrentSeasonResults():
                             curr_division["members"][player]["rank"] = rank
 
                     curr_season[division] = curr_division
-                    print(5)
 
                 except Exception as e:
-                    print("*****************")
-                    print(f"ERROR with {division}")
+                    print("        *****************")
+                    print(f"        ERROR with {division}")
                     print(e)
-                    print("*****************")
+                    print("        *****************")
 
     if curr_season["matches complete"] - matches_complete > THRESHOLD:
+        print("")
+        print("")
+        print("")
         print(f"Error retrieving up to date results. Did not meet THRESHOLD={THRESHOLD}")
     else:
         print(f"Retrieved {len(curr_season)} divisions...")
