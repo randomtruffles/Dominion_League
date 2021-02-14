@@ -29,7 +29,7 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 <div class="sheets">
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8Vbjv0WSkhjr_GGboaNPfBamrSTpJE_MlYFIvUNpUxVpwVg/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW-mCD3LPMdr52QH3ZUxCvdmrU1MaGqdJ7T7OF9PbENmIwJQ/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
 </div>
 
 #### Sign-ups and Counts
