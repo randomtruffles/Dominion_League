@@ -6,7 +6,7 @@ author: truffles
 layout: simple_post
 categories: signups
 ---
-**Season 44** will run from Monday, February 1, until Sunday, March 14, and you can sign up until ~~Monday, January 25, at 15:00 UTC~~. **Sign-ups are now closed**, but you can still join the waiting list until **Saturday, February 13 at 15:00 UTC** by filling out [Google form](#sign-up-using-this-google-form) below. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
+**Season 44** will run from Monday, February 1, until Sunday, March 14, and you can sign up until ~~Monday, January 25, at 15:00 UTC~~. **Sign-ups are now officially closed.** If you would like to sign up for next season, you can do so [here](https://dominionleague.org/sign-ups).
 
 You will need the following in order to sign up:
 
