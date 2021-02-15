@@ -1,18 +1,18 @@
 ---
-title: Season 44 - Sign-ups
+title: Season 45 - Sign-ups
 subtitle: Sign-ups Open
-date: 2020-12-14
+date: 2021-02-14
 author: truffles
 layout: simple_post
 categories: signups
 ---
-**Season 44** will run from Monday, February 1, until Sunday, March 14, and you can sign up until ~~Monday, January 25, at 15:00 UTC~~. **Sign-ups are now officially closed.** If you would like to sign up for next season, you can do so [here](https://dominionleague.org/sign-ups).
+**Season 45** will run from Monday, March 29, until Sunday, May 9, and you can sign up until **Sunday, March 21 at 23:59 UTC** by filling out [Google form](#sign-up-using-this-google-form) below. 
 
 You will need the following in order to sign up:
 
 <div class="instructions-div" markdown="1">
 1. A [Dominion Online](https://dominion.games) account with 10 or more rated 2-player games.
-- These rated games need to be played by Thursday, January 28. If you do not reach 10 rated games by the deadline, your sign up will be removed.
+- These rated games need to be played by Thursday, March 25th. If you do not reach 10 rated games by the deadline, your sign up will be removed.
 2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu).
 - All League communications will take place by default over Discord.
 3. *(Optional)* An email address.
@@ -25,11 +25,11 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
-**NOTE:** Season 43 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+**NOTE:** Season 44 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
 
 <div class="sheets">
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8Vbjv0WSkhjr_GGboaNPfBamrSTpJE_MlYFIvUNpUxVpwVg/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW-mCD3LPMdr52QH3ZUxCvdmrU1MaGqdJ7T7OF9PbENmIwJQ/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
 </div>
 
 #### Sign-ups and Counts
@@ -39,5 +39,5 @@ Sign-ups and Counts are listed below (it may take a few seconds to load).
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
 <div class="sheets">
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9mmGy6Rt8NV8S79C958Q4KqjxIXLYi7z_IfNxFVbQOHC1FGqjXDX7COuZhQgBBmYBnyTFv76J25Xt/pubhtml" height="500" width="100%">Loading...</iframe>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP8KrRdFGJJUNnqmW9AVpmzMx5cvywWX9ZrvU4rsEiXbEaw57juYHj0UyzOLZyRJa3lCjyaj_YuvZr/pubhtml" height="500" width="100%">Loading...</iframe>
 </div>
