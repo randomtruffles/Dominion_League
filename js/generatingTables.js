@@ -1,5 +1,4 @@
 var champ = "";
-var promotionStart = false
 var promoteIcon = "&#9651;";
 var demoteIcon = "&#9661;";
 var playerQuery = ""
@@ -28,14 +27,14 @@ function matchColor(score, upper) {
 
 function matchGreyscaleColor(score, upper){
   var score = parseFloat(score);
-  var colors = ["#ffffff", "#f4f4f5", "#eaeaeb", "#dfdfe1", "#d5d5d7", "#cacbcd", "#c0c1c3", "#b6b6ba", "#acacb0", "#a2a3a7", "#98999d", "#8e8f94", "#85868b", "#7b7c82", "#727379"];
+  var colors = ["#ffffff", "#f4f4f5", "#ebebeb", "#e1e1e1", "#d7d7d7", "#cdcdcd", "#c4c4c4", "#bababa", "#b1b1b1", "#a7a7a7", "#9e9e9e", "#959595", "#8c8c8c", "#838383", "#7a7a7a"];
   var normalized = Math.floor((100/101)*colors.length*score/upper);
   var color = colors[normalized];
   return color;
 }
 
-function standingsColor(cell, tier, next_tier, name){
-  if (next_tier == "" || !promotionStart) {
+function standingsColor(complete, cell, tier, next_tier, name){
+  if (complete == "No" || next_tier == "") {
     return;
   }
   var promotion = "#91eb9b";
@@ -494,7 +493,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, isRaw) {
       cell.innerHTML = rowInfo[info];
       switch (info) {
         case "name":
-          standingsColor(cell, tier, playerData["next tier"], playerData["name"]);
+          standingsColor(complete, cell, tier, playerData["next tier"], playerData["name"]);
           cell.classList.add("cellWithDetail");
           cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker, isRaw, drops));
           break;
