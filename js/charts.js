@@ -901,7 +901,7 @@ TransitionsPlot.resize = function() {
 
 TransitionsPlot.makePlot = function() {
 	var allTiers = (TransitionsPlot.startTier == "any");
-	var tiers = TransitionsPlot.offset ? [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasonRange[0] - 1 + ((TransitionsPlot.exact || !TransitionsPlot.plus) ? TransitionsPlot.seasons : 1), TransitionsPlot.seasonRange[1] + ((!TransitionsPlot.plus && !TransitionsPlot.exact) ? 0 : TransitionsPlot.seasons)).join(""))] : 
+	var tiers = TransitionsPlot.offset ? [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasonRange[0] - 1 + (!TransitionsPlot.plus ? -TransitionsPlot.seasons :(TransitionsPlot.exact ? TransitionsPlot.seasons : 1)), TransitionsPlot.seasonRange[1] + ((!TransitionsPlot.plus || !TransitionsPlot.exact) ? 0 : TransitionsPlot.seasons)).join(""))] : 
 		(TransitionsPlot.exact ? (TransitionsPlot.plus ? TransitionsPlot.data.tiers[TransitionsPlot.seasons-1].split('') : 
 			[...new Set(TransitionsPlot.data.tiers.slice(((TransitionsPlot.seasons < TransitionsPlot.seasonRange[0]) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[0]) - 1, (TransitionsPlot.seasonRange[1] < TransitionsPlot.seasons) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[1]).join(""))]) :
 			(TransitionsPlot.plus ? [...new Set(TransitionsPlot.data.tiers.slice(0,TransitionsPlot.seasons).join(""))] : [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasons-1,TransitionsPlot.currentSeason).join(""))]));
@@ -935,7 +935,7 @@ TransitionsPlot.makePlot = function() {
 						}
 					} else {
 						for (let j=tiers.length-1; j>=0; j--) {
-							if (TransitionsPlot.data.schemes[i].slice((TransitionsPlot.plus ? info.index + 1 : info.index - TransitionsPlot.seasons), (TransitionsPlot.plus ? info.index + TransitionsPlot.seasons + 1: info.index)).includes(tiers[j])) {
+							if (TransitionsPlot.data.schemes[i].slice((TransitionsPlot.plus ? info.index + 1 : info.index - TransitionsPlot.seasons), (TransitionsPlot.plus ? info.index + TransitionsPlot.seasons + 1 : info.index)).includes(tiers[j])) {
 								TransitionsPlot.props[tiers[j]].count += 1;
 								TransitionsPlot.props[tiers[j]].ids.push(i);
 							}
