@@ -1,94 +1,207 @@
 ---
 layout: default
-title: Current standings of divisions in Season 44
+title: Dominion League Current Season Standings
 ---
-
+<!-- MOD TODO: At the end of the season, rename this file and move it to past_standings -->
 <div class="home">
   <div class="container-centered">
-
-    <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
-    <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a> • <a href="{{site.baseurl}}/raw_current_standings">Raw Standings</a></h5>
+    <!-- MOD TODO: Change the season here!-->
+    <h3>Season 44 Standings</h3>
+    <h5><a href="{{site.baseurl}}/past_standings">All Past Season Standings</a></h5>
+    <!--<h5><a href="{{site.baseurl}}/player_database">Player Database</a></h5>-->
     <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
-      {% for tier in site.data.season.tiers %}
-      <button class="btn" onclick="filterSelection('div{{tier.name}}')"> {{tier.name}} </button>
-      {% endfor %}
+      <!-- MOD TODO: Change the tiers here, if any tier change!-->
+      <button class="btn active" onclick="filterSelection('divA')"> A </button>
+      <button class="btn" onclick="filterSelection('divB')"> B </button>
+      <button class="btn" onclick="filterSelection('divC')"> C </button>
+      <button class="btn" onclick="filterSelection('divD')"> D </button>
+      <button class="btn" onclick="filterSelection('divE')"> E </button>
+      <button class="btn" onclick="filterSelection('divF')"> F </button>
+      <button class="btn" onclick="filterSelection('divG')"> G </button>
+      <button class="btn" onclick="filterSelection('divH')"> H </button>
+      <button class="btn" onclick="filterSelection('divI')"> I </button>
+      <button class="btn" onclick="filterSelection('divJ')"> J </button>
       <button class="btn" onclick="filterSelection('all')"> Show all</button>
     </div>
     <div class="spacing"></div>
-    <div id="single-division"></div>
-    <div id="all-divisions"></div>
+    <!-- MOD TODO: Copy iframes here! (Get it from Season X Division Sheet)-->
+    <div id="A1" class="current-standings filterDiv divA"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmSFTa8PGf06pmW1wqyCDyYMVb6It_LO2uT_syAe3AT4J-vfR_kxfDnsc0uFWCDv6fd6V-AwR6AumS/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="B1" class="current-standings filterDiv divB"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJVDV7EeozXg43REGPebIIGhAGWbNc93NjNVGYklg1kosCa-NFqrlnAQVPV6f7e68qXGHUIpY-NwpP/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="B2" class="current-standings filterDiv divB"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQsi_8q9t_xgEtrhLtT6s5hZidFy7BOPDzwOG_WGaZGj28r78Mx7q3-F4QNxRqvsvDceBoDmFzK7tf/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="C1" class="current-standings filterDiv divC"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT57BODcRxre04fEfoRODIRSk6Q1FPn6LTGvhnnKgWqir0iotKB-rb7syr1UFUhszSy2dRbBrFhfswo/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="C2" class="current-standings filterDiv divC"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSuoQa_F5zog1Q9b4DQsEx4EY268hZQOFu0BriMAyFrYnYtdaaGbZu4f1U9GCbZU49imIx3Ynr5GBbK/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="C3" class="current-standings filterDiv divC"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT0PxPIos7Vm9YXMDHowbCdblBfGLKJhJOeTbUbQGm4SiDBqi1_z_FD8GEmdt144Z3uq35CjHIZm5Q_/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="C4" class="current-standings filterDiv divC"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5lDL7S4_gWcZxZXZd9s_nOgwmCo8YghdUExtOoMjxwp1ws-vyRDviiFkbBppeyuxX_y1Do2YBNy/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="D1" class="current-standings filterDiv divD"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS7g1UwINXsp7Xbh0v2CpcAkKQEh1nYSksbWwuNJmxBWKHl3t3_tdhyvBL5yMOsVxIeehGcKJ-8FYXX/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="D2" class="current-standings filterDiv divD"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTEzN5lw8AXqJ79M3KcVhrS2FcCzSJB7JV6GkfRZnng2xHpLqrpom_-STenAGnTbuMX7hVCPtfeu3nD/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="D3" class="current-standings filterDiv divD"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRa2DnO9nq_3Ufs2KbmKZydk0v3xdnN8TY3Q1-hGeXN9sJyKfoe6MGzZeph93ezv4hQpIMSOemzeNdV/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="E1" class="current-standings filterDiv divE"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTk6OpWEq2-X51iutbUmYXGG88BaEAnqbbx_FJvNz-ZaMMCUgIRUZzbUUZywwlTEXa3UNdE0atqWyaK/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="E2" class="current-standings filterDiv divE"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgzmyAhakBiXbGAsb-vXNWG1u1H--ddsNh0EcT_zZezspbml_tCcg_MMKjcIiJ1smMD61fB1D6sNJT/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="E3" class="current-standings filterDiv divE"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQFRbwpcgFJpS3fL-JqkFfioT6osotwn9FTyQzCjKdQamKUy0H1nLFofFZ0qUklKJvhcByEFwb6f_Vf/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="E4" class="current-standings filterDiv divE"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTDl8tZyxJ27s-PklrjRfBC0mAOdf-4VIR7maE-2Faeqn_7t1e4CUQkDWm6dDxQvUwnqSXlEaQqRc6/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="E5" class="current-standings filterDiv divE"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjZelwt9UWM6H5crodkhhJj9iiM_AchtjmElogEWeYhZ3FbFw8y1xQ4NAEnWScPfgJXaPR28dhe9m9/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="E6" class="current-standings filterDiv divE"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTNL-I4SENGY-hfF3foT3ehF2HmB12oXuVYFSKalwWZsyscM19_KkU1nLYLG0UmHHJTFl_ry8b-z6h3/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="E7" class="current-standings filterDiv divE"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-87GTD_1KQHjqWLtpKtaIWA_VgGRofAlr7xBmpz2ZHmbeF-p6nlUhnIZz1pLH73GbqLDUkMHrR5jQ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F1" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRk1MdqpVWcUfxZdUqJiJBAfj9-KUDXoGAFYKmJeKcCWychKgJ49zNU3i2_a96bCB_R_K5cb6VwgTe/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F2" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRVZbTvcLO52haaUYbUQNEs-N64VbVsqTfFGroMVDS7HJ-5ge8cGExg0vrx4OEmWYtswmaDBnuYrnxF/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F3" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1kww7Hz0z3u8_bVzSFXtgpz4Ldno5G8aCSbGPpAkOBwkW1fsrI0xsShX2Xg3OpLdWe_TMtR5V4P_b/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F4" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnkV15e6V_3o7OxVNB4-g2KRNIyHddpcSfOelaFuPAy5QglX_695Z1qjItHqGdptZ_UnMJkup9KGDF/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F5" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0T7uSSFdyh7fEJ69EFAlr9RHjZoTIVc9eIbyS-LuCiIJ4q04BU0mei4GFl1BVAqRyNg1vo2mwFlYT/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F6" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVBfe90ExLUB4LItCDV7qvZAJIMoCOdrvuZTce9y0LjgMSxF6Ya5Yl99tBdaZ-oCLGw40g7KGkF2-3/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F7" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqooxbYh0yHsoJ_SYpb1mkJKqcAMMuHv8a49ys8aktA1LdjAaDtyYPbaFwiekBQt2QETKBXklQaCP3/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F8" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3NJLf6AXSAOaN-DXCtsfOMNgJMe4Ac_MfsNmU0A5Zy0mSKgheJI086D90GGN-107jFhhl6ZkLNe6e/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F9" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSyRXC7flmLv3BSs6EYcnwUG67coT_E6dKH8Iz0uWyE6UKH8bNSYMkMlgdZU52VpOqiI9QtCliAFmmO/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F10" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSj2KhnnDBYIdnXTwwE4e1C0d02Rg4akyd_5hRSFcbbC1pTBw3QS-6JVGOPs_duR2ruNsEH014Kl-WT/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F11" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRFGipIPqx5YcRQ_Oox7CoYteo6uhtRZVSiVC63diLiYeOkvC9SXQf_fXn26aHg6eLeur6MCFAloEZy/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F12" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQMdq4bYumpphywH5dzMUQI1_wLmWdt5ZHckirqTYVus2YVW9zEQqOlZXMFuvjxcwclWrntVYQibl-I/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F13" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_mvYq7njLG1gwNssQVd0CEXJ4MH1gqAI0X3MkZ8I1U9McvLu21XgwUY4xhvoXMw_hpWLnX6q5Z7e0/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="F14" class="current-standings filterDiv divF"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRzUQG1yNOQADQXnlO17akXFiX8y1yBf2kBZ_ikg_IVq_gJ5f_dA-4669BDgfN2seQ6KIb165p1FNci/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G1" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQg0hjLoPuoBOdMIE5OD9UloVcSJVygfFRay7J1PmJNWPAqSfxzPQ2UNa3wBPJ7v4SpWdQKhOmokCyD/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G2" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQIy2o3o_kYc7D3OsdXwgyh3hfvpXAHBloYfIkp6zWAecYxjJNUbQZPMER778-1E-VJ6X2GgToK_IBr/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G3" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTrIHl3FmvDDGaOGKFkFTYm4lzhkk2fmsPvU1slUPPy2u8ePPKEkimuic3sGlZlNLbUyE2rYv8_P5gM/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G4" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSKUy7ghcVVV9cx4iN8gCYPpbx5zxpl60nOJAyVMrkr--jqlrIua9TxgvjX8q8NMd0GTcOgS-YA3XGR/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G5" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrtOMhtdy9Ru_4iBicGs-HG4iwZOv8TSu8mYxQiE4ZE2ACx8LAmag9pmoJEZnc4TybDw93ey9DO_vq/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G6" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRou4zVydApUdxBAS9DYYb254UKlASZJO-rtpYeRMLKdaI3ns4gU_eRhBFHQ1D8DdigEz6heEMclvYT/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G7" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTw9rJphHUelWq8cSpC8fRux20ttphluRiMW-NOtYYhE73EQeOVSkZJij7qMAKbkE8V4DDl1grSBWSo/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G8" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTh6KyOWbbau7-N5XiyQzy7iRx-ytNYoGRVMzLuPvXxAIHc1O4pOmgoHVtT3GeFgG9xNADMFh3rQVyo/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G9" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvEEZVF1EwegEJV2tDeN5_Yq0UOjQBn_PwB5CDJAilgEY83_TTI5SgsFSTnpC4fg7ogpEIUujaQT2A/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G10" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7C0fUmyNff3LHIZd9TTrVE9fnlIBASetS8a3IAQpKnIkT54YfE6ktk6mWflk31nDXbqHKXwP4W5Rg/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G11" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4y3z7oSp0GmN0qYMnugeFTJXd0a3EUFVEPs4wKVpOR_5DDsNzd8N2qeT5XblDWGfqasJdDDlUvzPa/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G12" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSt6d1d-2xygCK5ZQg7p-_vkdTw6Ay7bEl7eKmy210CablQQgKVnTZeqlRatDu2Bh_ymO-a71XLD8MG/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G13" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRjmzi7ephdIzcrWduaN66JfkoGW3ygjPp2drH400qZqYZ9jZQeL3D9Aa3GfNkQV0IhO9XBY2Tc_kAS/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="G14" class="current-standings filterDiv divG"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQIH4saApHG92PhaS1JTsxKME0iI976LBA-9z-sU36E9bRiKlrsO5u33sYa8vdOpllm2aU_CCR8dZU/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H1" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTZTsiRnQ0a2uyrHZFYwpynl5gr8OmolzMYXnqrMyI8EyYTreKiISHnrRP7c01uqr63CoL_hjudfJP/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H2" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS7BIC7s9ZYBMZrpnTn1xz-uPpXS8TYlQNvcNytw2YE8SskWRr8myDecBtBkVDKEiVn78fVNMkC-xl2/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H3" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQJH25lIGtCntRdxHywt4L6fizqCejo3s3EXyWEoCiF7xw0jEWkYIDb-sBcti8ZFsoGd3nyeqC_z_n/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H4" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTolwWpfredfVCYWkMlCMZGkgPZlMAphjuFXNDlYWp_CcQj4EQf81XJKqdJgv2-JClgTD1eBn7rYw4T/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H5" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR8M56Z57EUwPUB7uSLyftof5zi2Fx8TRi5HD4n0zumQ3tmA8oiSTACvVVJ0KF1Ml0Is3QPFTkGpQPJ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H6" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7N6qLakmbnFifStyp6vGcEAfAnBnHBXDpJp99r4wRl1lUqbzZjJGEkEFTPZRDdmIxFm227L-w3cgt/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H7" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1yHFoBQ4Vf0tde7bPNKfPPyxUHPktezYc0PTauFDgCh9KzeVAxelHzGXeO0D0HQnZ_BpmYreUAqfW/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H8" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPR7LYSCYnrnDkLTvpGiYRuxGAlvxYTQund7_AmMduVYVnBIBVbrjkOafprgPFMBhTgvJ8yq9n5ds0/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H9" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRFyI9s9IJ76adT0zd8rX7i-XsJWw1--DR1eTwj744VkBc71_ax1096sNS7zX2RsTyxe5fZ83fuBl4g/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H10" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTN70YaEvv4bWuAfEp4xVFix6z5kd_3OV_pRlr1pTDYIeLZ3ICOlC_dHfAADLaIxrsMVn4I8Gz8PQ4p/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H11" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS12rsu9yNg_o-L-Py51QUd03vJdYvUXMmQ_dJJaC3psKG84-i1IUUUAV8ZQofDPjiWWD-UqMxgoqyL/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H12" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYdPzu-DSIEqEzLDXS95i_fKhivWlSlS6fFR8x6EmycUsNhJDofxvWqvx0GEo3XTsTzADTgVEI5D-M/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H13" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoGsn0Kn9oudGOcjE_Lq2sqxOoetow9aGESHP76T6tdwDRnJ03xXs_PbVlBMDbjWn-TQiT-YVOmQPB/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H14" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_6PGI6M0g_BML7IU_2YlEai-wA-otLHF7nroY7wHw6lc12Q2zDd55wnchFZHDDdB-EbCbrFiNrPwF/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H15" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQq7nJmn77sajwYMC3uL6LcVHc27DVXvmRsbMSPDu6qKH-Uk_rTmGw-mXTs6-UhWy9mGoCuKItJ5LfF/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H16" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-ykrT143CjRcUZbpGgVgRUh6Ni5ZHZa6_1t80a4OW3IYIq7HGGj4LuzEK-w3ksaWfJ-0HFoXOtFZk/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H17" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQH-3kx8sVJH667O3O1Xncs-oovvwHLS39Uqyqe9f2El_aJlpYMJaWaLmFfUR5-F9r6lhzDRsRUppne/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H18" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBeehXMaAmPVZfK0EOv1e4fqkn4UW8YXPIGtpCvJl0qRRv5HToDEZ_OlOEFmYZB9ZGZddnh39DeE-D/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H19" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWh9djpBLptIfnIvDZHQjNFEzOm6l1uayoC5HM4Jvc-xwzWVEkiNDyEcVEs3wJ9G3oWA8X0hJzuMm5/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H20" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTXO8LOZ1UWX3O4hiQs0paPEFI4prdYy_Kwr7SGv5eRsEpSoZL422yGKxazk6PXx_L4WY3WHWj62RU8/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H21" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_V9TXT8EV2rrd68Yejr95x9Va3BKyspxVnZyGNiRe3u5K-ylga04Xt0eHSxLyvpJ3QeiiWvGmXfPJ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H22" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkOS2lVv9jhcL0ibOQfY1aZvzfa6fh2-mC7JNWW-2j9FbiBWI-uqZgnL7XFIGsRAkKzK_uUJOoOSCK/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H23" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRI9B0nHPN74WHRMDv-sy_0F_NspeKqCOJ9c2eQrf2_lgcTTM8rtiaLospsh89ymFxS6pBs-2NQKc2N/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H24" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4vIg3a80QUBUQ2pEa-serHpayVmwark3Z9Qspi5ZCbki66vRTgOqsWVFz8W4RK7OMw8F5WHTpvU-v/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H25" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlo0nmRYmzcjhyzLvKwR5YmYilohQ2Z_MW9qul8CrPd7-9kw7wXBt1cYYp3UIpjoT0FuYin2Zlzw0k/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H26" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrY7LSowXz2NG6Fw0GWS61jQ6Akptvy4v3PnPqMA5hShZpWY2p9kNtrbCP12WPTd6lt7DK-lr1xBLB/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H27" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRW3KCBSVGkGd_3L0Jq0HH-gwlARFgFHvWA7fT3ozDj0yMptaQYlEs4b2ywejZavUblbVUedmklpbLm/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H28" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAPseXuR5MIQBNAjqG1kKgtuvZLfB_fOl_Zz0-kpFN3u2H1Nr9s1tHPhNnAZntacQU9Pw8GWNaYQft/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="H29" class="current-standings filterDiv divH"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnSrFReBO8A9pINxvtQzw1TfwnmX12ghadBz4pXc3Ao3LN_4NIFxonW_28SnCgZ3szVghyFgETqmKs/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I1" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTYZOvBOZ6ALyoZbRMqlfzr79kG7GczzZ-v6abOL0Ps8fizKIV1UXzbn22oE5Wk_Ja1zU7IjB4v_eDj/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I2" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMDSO1S6T5WgB9utZuwd4H2wc1qwXrrPXcXmLFry86BQyUHz_WmNljoM_28jvyVNQ3wGkohzCK2pmz/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I3" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7X9iL-fv-xnmwyIdIyqRqNAOGl86TiwRo92OmtbqwKSzYSJuintHilkX6BuhGL4LB7Y2Ej0YgHPhx/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I4" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTfCc68-b6kQucrOTxuQVvA91K4zerQiDadHln5IUrgdrX7mRCTsqxg1VBLv0JzGEMYQ8pxRvt-49BQ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I5" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR63QtEsokGR7PpZW-V7rxuhJcUQC8f3RLwAAgT9CZ5PQByayrFKmJrwXg2yqmMNHC7Tme1miy3FQAv/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I6" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTOr6WoOTTTgTgNqV1KgKxHP3OiUYs8Im1e297iEgFv0GE9BhLaDSYF5VXpagw6_MSjcpvPAzGcRM1t/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I7" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_Kq3T7t78AsOLYNQbavYKoBx0I3xqfhhpWQvWTu21yGV5yX-DaripkGP0FLLhLQi9dxM1-zq0dTxf/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I8" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT57DsqH5tyeGxWudfl6UsPNq9yeoPRMqYE51MhKP1uIWDWa3Z5eKMkl4sMiARVWZst7MQUguB64IJO/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I9" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSo2WGaVF1cyYfRrgdC6pQ4SQgTHCeIZ5Kdqh9soz_q6ZipFhd3nqAw9jyZ3eZbeW-5PGLXnoGecKSz/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I10" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSlpDXeDU8RB0coalVd9PT4u8wRaeLb111dljcClsXJftj6J9rX5v-WX2Ya5JOEzASQ1TBDnBSXdje1/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I11" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkGWF8WixHNsEKKD_DMC8NGV65-FpixrWGhk23pMzxfHWQdbEnjLKQc9yst3pmGxjD_kUU676gYaBr/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I12" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT7t7o8GO3g-DreVsreF6orWMuxFNl6g9vpuba8jTbr7uZHhUUnu2Q-xZvd9oprnn24bv3D2rOppaMW/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I13" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSNFknHuQv7GTz8KewR1xoOResX6H7aK3t-Yrxs1Wzx73xqPV6C7rRA4olXKXEHIimkpjGgbofbZAkp/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I14" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDbtQqqC0A27O9r9BVZHQddUsvQPkr1vZKrVrJnD5ujlBZDv8sxATkGNBdYqY7T0xLqY9TcorLFW-V/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I15" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSb8Ef4aXI--aEhV5VicBidN7UoX34vwp7gNdX3FSJuWQ35XIC132f542j0-Qoi4uZdUKBN-Tcr0JhQ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I16" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRG4OKW8NzOJaNf_pQK9WwKM3qcdJVM4t59iQR3kz_0II47_UEmDbVfguynwyR92gKL2WsQWiray1fp/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I17" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6vHre0ottDUCPNvtEIrhg9cspr0HlEjzXPMDpwP40sdwVemp5QPI1r3KyZrHUmtOaEQQMIoCVeXz3/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I18" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRFM33UAxTBDcWNsifpyBrCHGrV2_w0CR0zDG58llQnG-K-v6xIsPkaHOb2R1EV35eMfiOk3djwy_Vp/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I19" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_NVYIz_YSeuGqfQyHUOK56_IyDjI-XVm67u1u_qHNpDuMA-TPC1MJWxk9qjOMih_WQhEMq24pDL3X/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I20" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7dHbn_UgxYdmShP5fglXxYHJ3V-V9LLGZQsmrkSRJPU8Gif6cPMEsfY9np7lumTV-rjlTlpiOnkEg/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I21" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQS7J2v1NEup68ggcw1NyAy5JysE9j-z96GnQgr8E3iLOJrHE8rRYtq-zYxkm2CjMnrRC4AbpXBJPko/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I22" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIdS6kjqip3o6I-T8NeNpu2Tsgnee2V0y3bpy68SOfH6O_AcYiOQu1zLZH_51fAXN794vAbItZpbeM/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I23" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVprpcfyzxkKJS5JB-EZhjqAk6rEYIfZRsBmQIMcVAdjRV7P4ljN4b9YF5lqa3pqHBko0gpfI-jfrO/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I24" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTuVuPNJdyLZFtP7BfAjWTN548x7mF2qH_tycIxAKSWJBhw-C6jkIM-OH9FLDQGAgFx_znE2wX_gycl/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I25" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsLWNV_4YYiF0L6PGLhjuWurcor5Eh9SvVmDNnHF1HrBnk8MaZTuHWSn2n_2PQvO0ghhvDVNtk0S4C/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I26" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-rqSIwYqpDe-U09Zog835_9UkotT_oPn56K37AW-4uoq3F2RhF_eyQpCee7SkZpKCHOmQKDq9N3-_/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I27" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSak3OhEnCNqJDbM5YOJmG0mWDgFl1Cq5tM3FpFkaV1Htq3h-EgoOCH_-8wITwb7HtZuDn3xAhyB2BW/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I28" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpjhDthNHdsKhjt-cEEYaOQRdncp6Zs2ot6LOzJms2MUyNUIDVlFBtQPhe2lm4K2bPvwqZY9q1QHFk/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I29" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRrvUu6sm6zkeXCAoOXqeHVvKiqu7wdidtENB31tWDTp4rwCOcjbk7F_vOrJD1vyxzNx10kX24oWa7d/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I30" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRdy5fygJ1gXw3TruPu1xaARxFMQR6Y7ZiPhz4hsz6ccK7eLYp2_UHKTn8lRI4X1uxI401G-OjkmYQs/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I31" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlVlc_fzYju617KmhmsnbEOSdSsSH-JQaFo8npBFFmZUNHZgW3-5jXYIjTa4NeYlWGHMQTPGPGSBDx/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="I32" class="current-standings filterDiv divI"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZqyDC41dVOdYnUSjgD2893FYmoN4EeeWrdvQkOpm1OkiyQfOjpWvK4urrAxfznPRnHNJU1yrXxmtL/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J1" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5qDxLJ0RAMDz3whoDc6VYMDrTIzyv7Ywbup7-AZ0zAn9Sm66Z3_zmbWKUn_E_VREMnhjIWMk62ovJ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J2" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkYBQOm-Ha6zwWJxko7SKwkq29-ZjcaTTMbIx4qOfNDFum4xZrsh7vHm4hx9L0ewlvKx1A6r2ycnWq/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J3" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSsRa3Hhqnf5s5MdqojtaywdVjHblZhgJpWDnhf_lmGwO85KJXFn6Rn0VvD2OAxDYzXxBFu23Mb0fS1/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J4" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQr2wgCxCPEcEP1tMTTBbklL94TL-2r2rb_9MCr6Hc6MqPcUi1e8s0j65yDrw35s1mUZGCzGVfQgupQ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J5" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTwTTIhkP6OWwpnhmoZFp2R-8pmqyuHokV-__3WibvNSXNSLQOHisgVHYVEPb0FWN520oqrVLxDiZYr/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J6" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTowTzvlSFZGFsd74Lx4N6LozbnFNEO08WT8HSMbppLWcwq3xGhpiRt1Hf3tpt-vXyW2y8TgSZ8xCdb/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J7" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThYIL-0Np-g-Xdqrbp0ZpvEOP4LdlbmSDxlGdwur2U9JYnbIU4UaI-iflYM87k3jO4LuV3kfzDqePV/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J8" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRaKGk9MMg2p8ZsRURiYTtPY3dNfAp4oE-3rfXOJtck_kIo3Q31_C53xlYE70dpNjTpl9--bb-uKX26/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J9" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRIGC_SNMgzNzHYUJFY8bDF8mBBy9B3kEf67cmWIvsZ06Q4lhHpSIviFmpd8km_gaV_nfULNKDJe-5H/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J10" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4J0-36hDwf3su7Ye2Ab4GLDtDquChEQvbDGsbUjySQ7XLjJbtXGaRH7uIcGDc7eBRXWw4gJgSqv3d/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J11" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-hEWVhSgUSCeZxs3yTgwMNKKockBMKCcMzIngAEPqxHFfcwSSAlMANGSdZofBFQk4D_F6dKoNK0yL/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J12" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUrWQUgCaOUftLAVlBZBqwEgYbiZ1PlBg3lpn3DHOlbOS_yIxeLu-a0owpJHAc_J_-3M3fM64KRuFk/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J13" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTcH0wUI3Yf0aL0O_Kg_9ittGLuELVO8uIe-oEytpnwMlY6ulKLKjjDIiV6xYSKAvIq3MBsPwefpOyx/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J14" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMveoyb8moQuEO5Gbw9eIkQ6RLSBhymHZ9Ln1Jb9bR48eUsbsdKNK5tcx2eShEfXSZlk0RaOxK-sKQ/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J15" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSaG__vz5KZJapiii0RwXfhWhBr6xxS7hEZCLou26iiEDipRHtPzcRqKp44ZEnujndY_V_U-WdTdiB/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J16" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkY5NSGxsmmSCIDUMrP-o_xRmTXGX7SngkOVmVyqGDJ2NhHSKiDvD3C7BrRbg1SYyQ_3KJQt6hFIAw/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J17" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQs2tSBNPxCaSzq6lE1EyCOw8JG0Mq85s60Yjjfvb2NdgHuTWbCdOGE0nvkv267nN_dU2qKBq0MIufk/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J18" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR92Q4ATDk1y8OgmkVZjgI2g5zAXVFc1eQ97e2HLOttKPzCAnGkLCnSQvFZXuj78K_tefM_1vU-EDC-/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J19" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTuSJocTEcCiJfLeV6LLFZEUopKOZ__6ar40cqn4UGOYAutt39fdWyaRA3cmDbxF7TA2i-fjq18HNKB/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J20" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCS9aSVsG4I5SR_IhRN_f_VwbzRxvI2jOyS_2pAipRyAWfJ1aoyTSIss0mcpoEt1L7QCv9agpcf3qA/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J21" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRG6NhYpnAB8AbRgjnBkVcRPrYKaayXxnK7lEXg7hCL_jOcv9mORXwm3gXoY3A6zy76vFhOaTgMDPyz/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J22" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQJUzwD9EsCo8D6VBxXU9SVVZA4uzrvD7T-GI-oN9bhmyE1x4xE7v9yUmR1HuWRMLD9N1TCASayHX-s/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J23" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgUVMBi8o0tOhoveJMFk7EtRoI9P_4G4y2zGdkWM_FkQmDSeDv0TEwnSVGjK-ng8B4LgbjQz4EBqoO/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J24" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpQRA2IrvPi-MuGxHvD1qHiD6spEHN6lG-4pSdfgmGJMHKQX8xhuY9enMuzFUnVF2Q7xeK9YYE9IIC/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J25" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQMNO-uF-u5DMMHGPN4XN7C74L9FzvJkjO8WWi9cN0NvJRI_mEA-1Z7naewPuiVxykhQTwJOv2566-0/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J26" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT5TWqvQDXupj0p0RyeJhiyYCDRZ4oC_xJR5DzWdEIVVzJnNpzgPfYhyscSE_QBll-ohhIb_IHPgJ_z/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J27" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3w596ZvK51CYPhVLwfGf3bdPUyZhdIsgnXPfGJu1fChB4zRB9QaD7-_22Qugw1BGEVLXyECZT3250/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J28" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS1BJima9alUx9xobZdfxXKr9ZySBtP04IvWsaUrxwvW7Z7ip_BlWLQno3f9Y7F_Pz6WTkBT7HNkWz9/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J29" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMFxwOfnCJidiLPx3t1patemWSYCdb1NOYnZn6Jz37xNcnVab2biqqFzKmBzKTYqS06wd3Lv5Ae6Cf/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J30" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVf3M7_2sKHmCIctxqOhXAzO_VqgLiAheWHhjSrJMp-TOym1BBEAaK-dBajJbcugNfAqwuBpXt1dl0/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J31" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRjQOfnalITjHZT79tisU8CW7vB0BPDviJWZFm3-05RNZyPqWTPMe7fsGV6Jw5PIAqEh7O77G1T2F-l/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
+    <div id="J32" class="current-standings filterDiv divJ"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9A4q8gXk9CdTL8PpCFTUcwqej8AXFyE7RsIlvdPz0JaEWxOwXARL3CWjQr90_Ay3KRv04Eo3PVsXc/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe></div>
     <div class="spacing"></div>
   </div>
 </div>
-<script src="js/generatingTables.js"></script>
-<script src="/js/standingsUtils.js"></script>
 <script>
-// Load data
-var cur_season = {{ site.data.season.number }};
-var divisions = {{ site.data.current_season | jsonify }};
-var sheetsLinks = {{ site.data.sheet_links | jsonify }};
-sheetsLinks = sheetsLinks[cur_season.toString()];
-var tiers = [
-  ["A", 1],
-  ["B", 2],
-  ["C", 4],
-  ["D", 3],
-  ["E", 7],
-  ["F", 14],
-  ["G", 14],
-  ["H", 29],
-  ["I", 32],
-  ["J", 32]
-];
-loadPage();
+  loadPage();
 
-function singleDivision(division){
-  var singleDivisionDiv = document.getElementById("single-division");
-  singleDivisionDiv.style.display = "";
-  console.log("scroll");
-  singleDivisionDiv.scrollTop = 0;
-  document.getElementById("all-divisions").style.display = "none";
-  console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, {});
-  var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
-  w3AddClass(divisionDiv, "show");
-}
-
-function allDivisions(){
-  var curTierIdx = 0;
-  var curDiv = 1;
-  var divisionDiv = document.getElementById("all-divisions");
-  console.log("Showing all divisions");
-  document.getElementById("single-division").style.display = "none";
-  console.log(tiers);
-  while (true) {
-    if (curTierIdx == tiers.length) {
-      break;
+  function singleDivision(division){
+    console.log(`Loading ${division} standings...`);
+    switch (division){
+      case "A":
+        division = "A1";
     }
-    if (curDiv > tiers[curTierIdx][1]) {
-      curDiv = 1;
-      curTierIdx += 1;
-    }
-    if (curTierIdx == tiers.length) {
-      break;
-    }
-    division = `${tiers[curTierIdx][0]}${curDiv}`;
-    curDiv += 1;
-    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, {});
+    filterSelection('none');
+    var element = document.getElementById(division);
+    w3AddClass(element, "show");
   }
-  return;
-}
 
-function loadPage() {
-  var division = getParam('div');
-  var tier = getParam('tier');
-  if (division.length > 0) {
-    singleDivision(division.toUpperCase());
-  } else {
-    allDivisions();
-    filterSelection("all");
+  function loadPage() {
+    var division = getParam('div');
+    var tier = getParam('tier');
+    if (division.length > 0) {
+      singleDivision(division.toUpperCase());
+    } else {
+      filterSelection('divA');
+    }
   }
-}
+
+  function getParam(paramName) {
+    var urlParam = function(name, w){
+        w = w || window;
+        var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+            val = w.location.search.match(rx);
+        return !val ? '':val[1];
+    }
+    var paramData = urlParam(paramName).replace(/%20/g, " ").trim();
+    return paramData;
+  }
+  
 </script>
+<script type="text/javascript" src="{{site.baseurl}}/js/current-standings.js"></script>

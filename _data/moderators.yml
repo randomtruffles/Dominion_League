@@ -63,11 +63,11 @@
 - name: tracer
   discord: tracer#2575
   image: tracer
-  chair: Recruiting
-- name: truffles
-  discord: truffles#9374
-  image: truffles
-  chair: Website
+  chair: Recruiting, Website
+#- name: truffles
+#  discord: truffles#9374
+#  image: truffles
+#  chair: Website
 - name: volfied
   discord: volfied#8122
   image: volfied

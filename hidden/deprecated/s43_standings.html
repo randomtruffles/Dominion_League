@@ -1,0 +1,154 @@
+---
+layout: default
+title: Dominion League Current Season Standings
+---
+
+<div class="home">
+  <div class="container-centered">
+
+    <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
+    <h5><a href="{{site.baseurl}}/past_standings">Past Season Standings</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
+    <p> Standings for s43 season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
+    <!-- Filter buttons -->
+    <div id="myBtnContainer">
+      {% for tier in site.data.season.tiers %}
+      <button class="btn" onclick="filterSelection('div{{tier.name}}')"> {{tier.name}} </button>
+      {% endfor %}
+      <button class="btn" onclick="filterSelection('all')"> Show all</button>
+    </div>
+    <div class="spacing"></div>
+    <div id="single-division"></div>
+    <div id="all-divisions"></div>
+    <div class="spacing"></div>
+  </div>
+</div>
+<script src="js/generatingTables.js"></script>
+<script>
+// Load data
+var divisions = {{ site.data.s43_season | jsonify }};
+var returning = {{ site.data.s43_returning | jsonify }};
+var sheetsLinks = {{ site.data.s43_season_links | jsonify }};
+var tiers = [
+  ["A", 1],
+  ["B", 2],
+  ["C", 4],
+  ["D", 4],
+  ["E", 8],
+  ["F", 14],
+  ["G", 13],
+  ["H", 25],
+  ["I", 25],
+  ["J", 26],
+  ["P",4]
+];
+var curr_season = 43;
+loadPage();
+
+function singleDivision(division){
+  var singleDivisionDiv = document.getElementById("single-division");
+  singleDivisionDiv.style.display = "";
+  singleDivisionDiv.scrollIntoView(true);
+  document.getElementById("all-divisions").style.display = "none";
+  console.log(`Showing single division: ${division.toLowerCase()}-standings`);
+  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, returning, {});
+  var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
+  w3AddClass(divisionDiv, "show");
+}
+
+function allDivisions(){
+  var curTierIdx = 0;
+  var curDiv = 1;
+  var divisionDiv = document.getElementById("all-divisions");
+  console.log("Showing all divisions");
+  document.getElementById("single-division").style.display = "none";
+  console.log(tiers);
+  while (true) {
+    if (curTierIdx == tiers.length) {
+      break;
+    }
+    if (curDiv > tiers[curTierIdx][1]) {
+      curDiv = 1;
+      curTierIdx += 1;
+    }
+    if (curTierIdx == tiers.length) {
+      break;
+    }
+    division = `${tiers[curTierIdx][0]}${curDiv}`;
+    curDiv += 1;
+    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, returning, {});
+  }
+  return;
+}
+
+function loadPage() {
+  var division = getParam('div');
+  var tier = getParam('tier');
+  if (division.length > 0) {
+    singleDivision(division.toUpperCase());
+  } else {
+    allDivisions();
+    filterSelection("all");
+  }
+}
+
+function getParam(paramName) {
+  var urlParam = function(name, w){
+      w = w || window;
+      var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+          val = w.location.search.match(rx);
+      return !val ? '':val[1];
+  }
+  var paramData = urlParam(paramName).replace(/%20/g, " ").trim();
+  return paramData;
+}
+
+
+function filterSelection(c) {
+  var x, i;
+  if(document.getElementById('all-divisions').children.length == 0) {
+    console.log(document.getElementById('all-divisions').children.length);
+    allDivisions();
+  }
+  document.getElementById('all-divisions').style.display = "";
+  x = document.getElementsByClassName("standings filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(x[i], "show");
+    }
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
