@@ -19,7 +19,7 @@
 - name: crlundy
   discord: crlundy#0018
   image: crlundy
-  chair: Rules
+  chair: Rules, Sheets
 #- name: DomBot
 #  discord: DomBot#0234
 #  image: dombot
@@ -33,9 +33,9 @@
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-- name: LeagueLackey
-  discord: LeagueLackey#6269
-  image: lackey
+#- name: LeagueLackey
+#  discord: LeagueLackey#6269
+#  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
@@ -47,13 +47,10 @@
   discord: Rozyroz#7547
   image: Rozyroz
   chair: Onboarding
-- name: SamE
-  discord: SamE#8793
-  image: same
-  chair: Sheets
 - name: Sharur
   discord: Sharur#7043
   image: sharur
+  chair: Recruiting
 - name: singletee
   discord: singletee#0905
   image: singletee
@@ -63,14 +60,7 @@
 - name: tracer
   discord: tracer#2575
   image: tracer
-  chair: Recruiting, Website
-#- name: truffles
-#  discord: truffles#9374
-#  image: truffles
-#  chair: Website
-- name: volfied
-  discord: volfied#8122
-  image: volfied
+  chair: Website
 - name: wharf_rat
   discord: wharf_rat#8971
   image: wharf_rat
