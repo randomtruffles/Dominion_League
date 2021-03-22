@@ -20,9 +20,9 @@
   discord: crlundy#0018
   image: crlundy
   chair: Rules
-#- name: DomBot
-#  discord: DomBot#0234
-#  image: dombot
+- name: DomBot
+  discord: DomBot#0234
+  image: dombot
 - name: Earl
   discord: Earl#3402
   image: earl
@@ -68,9 +68,9 @@
 #  discord: truffles#9374
 #  image: truffles
 #  chair: Website
-- name: volfied
-  discord: volfied#8122
-  image: volfied
+#- name: volfied
+#  discord: volfied#8122
+#  image: volfied
 - name: wharf_rat
   discord: wharf_rat#8971
   image: wharf_rat
