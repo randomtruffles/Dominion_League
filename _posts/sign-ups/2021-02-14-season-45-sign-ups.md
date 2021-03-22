@@ -6,7 +6,7 @@ author: truffles
 layout: simple_post
 categories: signups
 ---
-**Season 45** will run from Monday, March 29, until Sunday, May 9, and you can sign up until **Sunday, March 21 at 23:59 UTC** by filling out [Google form](#sign-up-using-this-google-form) below. 
+**Season 45** will run from Monday, March 29, until Sunday, May 9, ~~and you can sign up until **Sunday, March 21 at 23:59 UTC**~~. Signups are now officially closed, but you can still sign up to join the waiting list until **Friday, April 9 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below. 
 
 You will need the following in order to sign up:
 
