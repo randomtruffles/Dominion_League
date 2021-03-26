@@ -686,12 +686,12 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   // Get information
   var name = divisionData["name"];
   var tier = divisionData["tier"];
-  var results = divisionData["results"];
+  //var results = divisionData["results"];
   var standings = divisionData["members"];
   var players = divisionData["by_player"];
   var drops = divisionData["late drops"];
   var complete = divisionData["complete?"];
-  var tiebreaker = divisionData["tiebreaker"];
+  //var tiebreaker = divisionData["tiebreaker"];
 
   // Compute sorted player list with drops last
   var sorted = [];
