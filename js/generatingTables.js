@@ -8,7 +8,7 @@ function formatDbLink(playerName, className, drop="No"){
   var champion_sym = " <img src=\"/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
   var link = `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
   link = drop == "Yes" ? `<s>${link}</s>` : link;
-  if (playerName == champ) {
+  if (playerName.toLowerCase() == champ) {
     link += champion_sym;
   }
   if (playerName.toLowerCase() == playerQuery){
@@ -39,7 +39,7 @@ function standingsColor(complete, cell, tier, next_tier, name){
   }
   var promotion = "#91eb9b";
   var demotion = "#f0948d";
-  if (next_tier < tier || name == champ) {
+  if (next_tier < tier || name.toLowerCase() == champ) {
     cell.style.backgroundColor = promotion;
   } else if (next_tier > tier) {
     cell.style.backgroundColor = demotion;
@@ -174,7 +174,7 @@ function selectTab(btn) {
 }
 
 /* Generative Functions */
-function genHeader(division, complete, link, drops, customText=""){
+function genHeader(division, complete, link, drops, customText="", noSims){
   var table = document.createElement("table");
   table.classList.add('header-table');
 
@@ -191,7 +191,7 @@ function genHeader(division, complete, link, drops, customText=""){
   seasonHeader.classList.add('division-header');
 
   var buttons = ["Standings", "Grid", "Matches"];
-  if(drops.length > 0) buttons.push("Sims");
+  if((drops.length > 0) && !noSims) buttons.push("Sims");
   for (var b=0; b < buttons.length; b++){
     var button = document.createElement("button");
     button.innerHTML = buttons[b];
@@ -211,6 +211,7 @@ function genHeader(division, complete, link, drops, customText=""){
     var switchSlider = document.createElement("div");
     switchSlider.classList.add("slider");
     switchSlider.classList.add("round");
+	if (noSims) {switchSlider.classList.add("nosim");}
     switchLabel.appendChild(switchInput);
     switchLabel.appendChild(switchSlider);
 
@@ -262,15 +263,16 @@ function genIndividualMatch(player, players, scores, isRaw, drops) {
   return span;
 }
 
-function genSimulations(players, drops, sorted){
+function genSimulations(players, drops, sorted, simType){
   var table = document.createElement("table");
   table.classList.add('sims-table');
   table.style.display = "none";
 
   if (testing) console.log("Generating Simulations table...");
   var droppedInfo = calcDroppedInfo(players, drops);
+  var noWeighting = (simType == "old");
 
-  var tableHeadings = ["Opponent", "Played", "Simmed", "Total", "W. Total"];
+  var tableHeadings = noWeighting ? ["Opponent", "Played", "Simmed", "Total"] : ["Opponent", "Played", "Simmed", "Total", "W. Total"];
 
   for (var d=0; d < drops.length; d++) {
     var droppedPlayer = drops[d];
@@ -279,7 +281,7 @@ function genSimulations(players, drops, sorted){
     var droppedHeader = document.createElement("td");
     droppedHeader.setAttribute('colspan', 5);
     droppedHeader.classList.add('dropped-header');
-    droppedHeader.innerHTML = `Dropped Player: ${droppedPlayer} (weight: ${Math.round(droppedPlayerInfo["weight"]*100)}%)`;
+    droppedHeader.innerHTML = `Dropped Player: ${droppedPlayer}` + (noWeighting ? "" : ` (weight: ${Math.round(droppedPlayerInfo["weight"]*100)}%)`);
     droppedRow.appendChild(droppedHeader);
     table.appendChild(droppedRow);
     var headingRow = document.createElement("tr");
@@ -307,7 +309,7 @@ function genSimulations(players, drops, sorted){
       weightedLosses = weightedLosses.toFixed(1).replace(".0", "");
 
       var row = document.createElement("tr");
-      var info = [formatDbLink(opponent, "db-link"), `${realWins} - ${realLosses}`, `${simWins} - ${simLosses}`, `${totalWins} - ${totalLosses}`, `${weightedWins} - ${weightedLosses}`];
+      var info = noWeighting ? [formatDbLink(opponent, "db-link"), `${realWins} - ${realLosses}`, `${simWins} - ${simLosses}`, `${totalWins} - ${totalLosses}`] : [formatDbLink(opponent, "db-link"), `${realWins} - ${realLosses}`, `${simWins} - ${simLosses}`, `${totalWins} - ${totalLosses}`, `${weightedWins} - ${weightedLosses}`];
       for (i=0; i<info.length; i++) {
         var infoCell = document.createElement("td");
         infoCell.innerHTML = info[i];
@@ -720,7 +722,7 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   var headerText = params["headerText"] ? params["headerText"] : "";
   playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
   champ = params["champ"] ? params["champ"] : champ;
-  var header = genHeader(division, complete, link, drops, headerText);
+  var header = genHeader(division, complete, link, drops, headerText, params["sims"] == "none");
   var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, false);
 
   if (!params["playerNameKey"]) {
@@ -738,7 +740,7 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   }
   standingsDiv.appendChild(gridTable);
   standingsDiv.appendChild(matchesTable);
-  if(drops.length > 0) {
-    standingsDiv.appendChild(genSimulations(players, drops, sorted));
+  if((drops.length > 0) && (params["sims"] != "none")) {
+    standingsDiv.appendChild(genSimulations(players, drops, sorted, params["sims"]));
   }
 }

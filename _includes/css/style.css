@@ -682,6 +682,10 @@ input:checked + .slider:before {
  font-family: {{site.data.template.font.secondary}};
 }
 
+.nosim.slider:after {
+	content:'ALL';
+}
+
 input:checked + .slider:after
 {
   content:'SPLIT';
