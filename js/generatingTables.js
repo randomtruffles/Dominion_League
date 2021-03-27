@@ -33,13 +33,13 @@ function matchGreyscaleColor(score, upper){
   return color;
 }
 
-function standingsColor(complete, cell, tier, next_tier, name){
+function standingsColor(complete, cell, tier, next_tier, name, drop){
   if (complete == "No" || next_tier == "") {
     return;
   }
   var promotion = "#91eb9b";
   var demotion = "#f0948d";
-  if (next_tier < tier || name.toLowerCase() == champ) {
+  if ((next_tier < tier || name.toLowerCase() == champ) && !drop) {
     cell.style.backgroundColor = promotion;
   } else if (next_tier > tier) {
     cell.style.backgroundColor = demotion;
@@ -495,7 +495,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, isRaw) {
       cell.innerHTML = rowInfo[info];
       switch (info) {
         case "name":
-          standingsColor(complete, cell, tier, playerData["next tier"], playerData["name"]);
+          standingsColor(complete, cell, tier, playerData["next tier"], playerData["name"], playerData["drop"] == "Yes");
           cell.classList.add("cellWithDetail");
           cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker, isRaw, drops));
           break;
