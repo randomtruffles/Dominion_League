@@ -8,20 +8,21 @@ tiers:
   - name: C
     divisions: 4
   - name: D
-    divisions: 3
+    divisions: 4
   - name: E
     divisions: 7
   - name: F
-    divisions: 14
+    divisions: 13
   - name: G
-    divisions: 14
+    divisions: 13
   - name: H
     divisions: 29
   - name: I
-    divisions: 32
+    divisions: 30
   - name: J
-    divisions: 32
+    divisions: 29
 
+#these are old (s44), won't be using them afaik
 iframes:
   - <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmSFTa8PGf06pmW1wqyCDyYMVb6It_LO2uT_syAe3AT4J-vfR_kxfDnsc0uFWCDv6fd6V-AwR6AumS/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe>
   - <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJVDV7EeozXg43REGPebIIGhAGWbNc93NjNVGYklg1kosCa-NFqrlnAQVPV6f7e68qXGHUIpY-NwpP/pubhtml?gid=1451526726&amp;widget=true&amp;headers=false"></iframe>
