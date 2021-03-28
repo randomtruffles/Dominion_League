@@ -51,7 +51,7 @@ function singleDivision(division){
   singleDivisionDiv.scrollTop = 0;
   document.getElementById("all-divisions").style.display = "none";
   console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, {});
+  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, {"sims": "new"});
   var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
   w3AddClass(divisionDiv, "show");
 }
@@ -76,7 +76,7 @@ function allDivisions(){
     }
     division = `${tiers[curTierIdx][0]}${curDiv}`;
     curDiv += 1;
-    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, {});
+    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, {"sims": "new"});
   }
   return;
 }
