@@ -38,7 +38,7 @@ title: Dominion League Moderators
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h4> Previous Moderators </h4>
-                Below is a chart showing all former (and current) League moderators and their tenures. We thank them for their dedication and contribution in helping make the Dominion League what it is today!
+                Below is a chart showing all former (and current) League moderators and their tenures. We thank them for their dedication and contribution in helping make the Dominion League what it is today, with a special thanks to Stef for founding the league and truffles for creating this website!
                 <div class="spacing"></div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ title: Dominion League Moderators
 				<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 				<script type="text/javascript">
 					var mods = {{ site.data.mod_history | jsonify }};
-					var currentEnd = String({{ site.data.season.number }} + 1);
+					var currentEnd = {{ site.data.season.number }} + 1;
 					for (let i = mods.length-1; i >= 0; i--) {
 						if (!mods[i].end) {mods[i].end = currentEnd}
 					}
@@ -86,9 +86,19 @@ title: Dominion League Moderators
 										"x": {
 											"field": "start",
 											"type": "quantitative",
+											"scale": {
+												"domain": [1, currentEnd],
+												"nice": false
+											},
 											"axis": {"title": "Season"}
 										},
-										"x2": {"field": "end"},
+										"x2": {
+											"field": "end",
+											"scale": {
+												"domain": [1, currentEnd],
+												"nice": false
+											},
+										},
 										"color": {
 											"field": "info",
 											"legend": {

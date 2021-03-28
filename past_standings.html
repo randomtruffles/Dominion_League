@@ -5,7 +5,7 @@ layout: default
 <div class="container-centered">
 
   <h3>Past Standings</h3>
-  <p>This page contains links to the pages of past season results. <br> Click <a href="{{site.baseurl}}/current_standings}}"">here</a> for current season standings.</p>
+  <p>This page contains links to the pages of past season results. <br> Click <a href="{{site.baseurl}}/current_standings">here</a> for current season standings.</p>
   <div class="grid-container">
     {% assign seasons = site.data.season.number | minus: 1 %}
     {% for season in (1..seasons) %}
