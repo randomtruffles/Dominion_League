@@ -12,6 +12,7 @@
 - name: catmom
   discord: catmom#9085
   image: catmom
+  chair: Issues
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -42,7 +43,6 @@
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
-  chair: Issues
 - name: Rozyroz
   discord: Rozyroz#7547
   image: Rozyroz
