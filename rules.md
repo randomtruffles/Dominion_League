@@ -13,6 +13,8 @@ Each League season lasts 6 weeks, and is followed by a 2-week break. Players are
 * The maximum number of divisions in a tier is twice the maximum for the tier above it, except every third tier which has the same number as the one above it.
 * The lowest two tiers have approximately the same number of divisions.
 
+The moderators at their discretion may decide to leave empty divisions only in tiers E and below.
+
 Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in tiers E and below, and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
 
 #### II. Match Structure and Policies
