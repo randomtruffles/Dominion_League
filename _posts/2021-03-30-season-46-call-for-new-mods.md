@@ -14,7 +14,7 @@ Moderator responsibilities consist of the following:
 
   * These meetings vary in length but usually last a few hours, including post-meeting tasks.
 * Meet with fellow moderators on the final weekend of the season to discuss and vote on any necessary rules changes. For Season 45, this will be the weekend of May 8-9. These meetings also vary in length, but usually last an hour or two.
-* Answer any questions from players in your 8-12 divisions.
+* Answer any questions from players in your 7-10 divisions.
 * Resolve any disputes between players that arise in your divisions.
 * Message players in your divisions who have fallen behind and remove them if they don’t reply or can’t finish.
 * Help out with miscellaneous tasks like onboarding new players and updating our Google Sheets automation systems.
