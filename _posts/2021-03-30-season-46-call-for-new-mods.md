@@ -21,6 +21,6 @@ Moderator responsibilities consist of the following:
 
 In general, the moderator role tends to be a reactive responsibility. Accordingly, we expect moderators to be responsive within 24 hours on Discord throughout the season. We also require new moderators to have played at least two full League seasons (which can include Season 45).
 
-To apply, use this Google Form:\
-\
+To apply, use this Google Form:
+
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHYL3ZJ8ayYy6mlbiQwBAoZzyMAAzPJYDx8cBOhg4mc2gMhg/viewform?embedded=true" width="640" height="1846" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
