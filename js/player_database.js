@@ -146,6 +146,8 @@ function searchHistory() {
 		}
 	}
 	
+	selectedTiers = Object.keys(tiersPlayed).sort();
+	
 	// **************
 	// Player Heading
 	// **************
@@ -158,7 +160,7 @@ function searchHistory() {
 	}
 	// ---Seasons played
 	playedString = `Seasons played: ${players[playerKey] ? players[playerKey].seasons.length + inCurrent : 1} (`
-	for (let t of Object.keys(tiersPlayed).sort()) {
+	for (let t of selectedTiers) {
 		playedString += `${t}: ${tiersPlayed[t]}, `;
 	}
 	playedString = playedString.slice(0, -2) + ")";
@@ -177,7 +179,6 @@ function searchHistory() {
 	// Versus
 	// **************
 	
-	selectedTiers = Object.keys(tiersPlayed);
 	makeVersus(true);
 	
 	// **************
@@ -186,7 +187,7 @@ function searchHistory() {
 	
 	// tbd
 	
-	document.getElementById("content-control").style.display = "block";
+	document.getElementById("content-controls").style.display = "block";
 	loadingDiv.style.display = "none";
 }
 
@@ -194,7 +195,33 @@ function makeVersus(init = false) {
 	champ = "";
 	
 	if (init) {
-		// make controls
+		let controlDiv = document.createElement('div');
+		controlDiv.classList.add("control-row");
+		let tierChecks = document.createElement('div');
+		tierChecks.classList.add("control-container");
+		for (let t of selectedTiers) {
+			let check = document.createElement('input');
+			check.setAttribute('type', 'checkbox');
+			check.classList.add(`${t}tier`);
+			check.classList.add('versusCheck');
+			check.classList.add('singleFilter');
+			check.onclick = versusFilter;
+			tierChecks.appendChild(check);
+		}
+		// all
+		let check = document.createElement('input');
+		check.setAttribute('type', 'checkbox');
+		check.id = "versusTierReset";
+		check.classList.add('versusCheck');
+		check.checked = "checked";
+		check.onclick = versusFilter;
+		tierChecks.appendChild(check);
+		controlDiv.appendChild(tierChecks);
+		versusDiv.appendChild(controlDiv);
+		
+		let tableDiv = document.createElement('div');
+		tableDiv.id = "versusTable";
+		versusDiv.appendChild(tableDiv);
 	}
 	
 	filtVersus = [];
@@ -302,7 +329,37 @@ function makeVersus(init = false) {
 	tableBody.appendChild(totalRow);
 	
 	table.appendChild(tableBody);
-	versusDiv.appendChild(table);
+	var tableDiv = document.getElementById("versusTable");
+	tableDiv.innerHTML = "";
+	tableDiv.appendChild(table);
+}
+
+function versusFilter(ev) {
+	var allTiers = document.getElementById("versusTierReset");
+	if (ev.target.id) {
+		selectedTiers = Object.keys(tiersPlayed).sort();
+		var singles = document.getElementsByClassName('singleFilter');
+		for (let c of singles) {
+			c.checked = allTiers.checked ? null : "check";
+		}
+	} else {
+		var tier = ev.target.className.match(/[A-P]tier/)[0].charAt(0);
+		if (allTiers.checked) {
+			allTiers.checked = null;
+			selectedTiers = [tier];
+		} else {
+			if (selectedTiers.includes(tier)) {
+				selectedTiers.splice(selectedTiers.indexOf(tier), 1);
+			} else {
+				selectedTiers.push(tier);
+			}
+		}
+		if (!selectedTiers.length) {
+			allTiers.checked = "check";
+			selectedTiers = Object.keys(tiersPlayed).sort();
+		}
+	}
+	makeVersus();
 }
 
 // search box
