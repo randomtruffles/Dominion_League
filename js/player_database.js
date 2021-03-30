@@ -9,6 +9,7 @@ var sheetsLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
 //var championshipVideos = {{ site.data.championship_videos | jsonify }};
 var youtubeChannels = {{ site.data.youtube_channels | jsonify }};
+noLink = true;
 
 var loadingDiv = document.getElementById("loading");
 var databaseDiv = document.getElementById("player-database");
@@ -22,9 +23,14 @@ var playerKey = "";
 var playerVersus = null;
 var filtVersus = null;
 var versusTotal = null;
+var versusSort = {"variable": "games", "desc": true};
 var tiersPlayed = null;
 var selectedTiers = null;
 var seasonRange = [currentSeason.season, currentSeason.season];
+var textmin = null;
+var textmax = null;
+var slide1 = null;
+var slide2 = null;
 loadPage();
 
 document.getElementById("standingsSelect").onclick = function() {
@@ -192,8 +198,6 @@ function searchHistory() {
 }
 
 function makeVersus(init = false) {
-	champ = "";
-	
 	if (init) {
 		let controlDiv = document.createElement('div');
 		controlDiv.classList.add("control-row");
@@ -222,39 +226,59 @@ function makeVersus(init = false) {
 		let tableDiv = document.createElement('div');
 		tableDiv.id = "versusTable";
 		versusDiv.appendChild(tableDiv);
+		
+		textmin = document.createElement('input');
+		textmin.setAttribute('type', 'text');
+		textmin.classList.add('slidertext');
+		textmin.classList.add('slidePiece');
+		textmin.value = String(seasonRange[0]);
+		textmin.oninput = seasonTextInput;
+		controlDiv.appendChild(textmin);
+		slideContain = document.createElement('div');
+		slideContain.classList.add('slidePiece');
+		slideContain.classList.add('slider-container');
+		slide1 = document.createElement('input');
+		slide1.setAttribute('type', 'range');
+		slide1.classList.add('dslider');
+		slide1.min = seasonRange[0];
+		slide1.max = seasonRange[1];
+		slide1.value = seasonRange[0];
+		slide1.oninput = seasonSlideInput;
+		slide2 = document.createElement('input');
+		slide2.setAttribute('type', 'range');
+		slide2.classList.add('dslider');
+		slide2.min = seasonRange[0];
+		slide2.max = seasonRange[1];
+		slide2.value = seasonRange[1];
+		slide2.oninput = seasonSlideInput;
+		slideContain.appendChild(slide1);
+		slideContain.appendChild(slide2);
+		controlDiv.appendChild(slideContain);
+		textmax = document.createElement('input');
+		textmax.setAttribute('type', 'text');
+		textmax.classList.add('slidertext');
+		textmax.classList.add('slidePiece');
+		textmax.value = String(seasonRange[1]);
+		textmax.oninput = seasonTextInput;
+		controlDiv.appendChild(textmax);
 	}
 	
 	filtVersus = [];
 	var opps = Object.keys(playerVersus);
 	var nopps = opps.length;
 	
-	var table = document.createElement('table');
-	table.classList.add('table-past-standings');
-	var tableBody = document.createElement('tbody');
-	var topRow = document.createElement('tr');
-	topRow.classList.add('rows-past-standings');
-	let names = ["Opponent", "Games", "W", "L", "Win %", "Tiers"];
-	let pcts = ["50%", "10%", "10%", "10%", "10%", "10%"];
-	for (let j=0; j<6; j++) {
-		let cell = document.createElement('th');
-		cell.setAttribute('width', pcts[j]);
-		cell.classList.add('cells-past-standings');
-		cell.appendChild(document.createTextNode(names[j]));
-		topRow.appendChild(cell);
-	}
-	tableBody.appendChild(topRow);
-	
 	//get data
 	versusTotal = {"games": 0, "wins": 0, "losses": 0, "tiers": []}
 	for (let i=0; i<nopps; i++) {
 		let opp = playerVersus[opps[i]];
-		let filtered = {"player": opps[i], "games": 0, "wins": 0, "losses": 0, "tiers": []};
+		let filtered = {"player": opps[i], "games": 0, "wins": 0, "losses": 0, "tiers": [], "seasons": []};
 		for (let j=0; j<opp.length; j++) {
 			if ((opp[j].season >= seasonRange[0]) && (opp[j].season <= seasonRange[1]) && selectedTiers.includes(opp[j].tier)) {
 				filtered.games += Math.round(opp[j].wins + opp[j].losses);
 				filtered.wins += opp[j].wins;
 				filtered.losses += opp[j].losses;
 				filtered.tiers.push(opp[j].tier);
+				filtered.seasons.push(opp[j].season);
 				versusTotal.games += Math.round(opp[j].wins + opp[j].losses);
 				versusTotal.wins += opp[j].wins;
 				versusTotal.losses += opp[j].losses;
@@ -262,7 +286,7 @@ function makeVersus(init = false) {
 			}
 		}
 		if (filtered.games) {
-			filtered.pct = Math.round(100*filtered.wins/filtered.games) + "%";
+			filtered.pct = filtered.wins/filtered.games;
 			filtered.color = numericStandingsColor(filtered.wins/filtered.games);
 			filtered.tiers = [...new Set(filtered.tiers)].sort();
 			filtVersus.push(filtered);
@@ -272,15 +296,57 @@ function makeVersus(init = false) {
 	let numbers = ["games", "wins", "losses"];
 	
 	//make table
-	filtVersus.sort((a,b) => b.wins - a.wins);
-	filtVersus.sort((a,b) => b.games - a.games);
+	filtVersus.sort((a,b) => Math.max(...b.seasons) - Math.max(...a.seasons));
+	let ordering = versusSort.desc ? 1 : -1;
+	if (versusSort.variable == "player") {
+		filtVersus.sort((a,b) => ordering * a.player.localeCompare(b.player, 'en', {'sensitivity': 'base'}));
+	} else if (versusSort.variable == "tiers") {
+		filtVersus.sort((a,b) => ordering * a.tiers.toString().localeCompare(b.tiers.toString(), 'en'));
+		filtVersus.sort((a,b) => ordering * (b.tiers.length - a.tiers.length));
+	} else {
+		filtVersus.sort((a,b) => ordering * (b[versusSort.variable] - a[versusSort.variable]));
+	}
+	
+	var table = document.createElement('table');
+	table.classList.add('table-past-standings');
+	var tableBody = document.createElement('tbody');
+	var topRow = document.createElement('tr');
+	topRow.classList.add('rows-past-standings');
+	let names = ["Opponent", "Games", "W", "L", "Win %", "Tiers"];
+	let sortedName = {"player":"Opponent","games":"Games","wins":"W","losses":"L","pct":"Win %","tiers":"Tiers"}[versusSort.variable];
+	let pcts = ["50%", "10%", "10%", "10%", "10%", "10%"];
+	for (let j=0; j<6; j++) {
+		let cell = document.createElement('th');
+		cell.setAttribute('width', pcts[j]);
+		cell.classList.add('cells-past-standings');
+		cell.classList.add('sortable-header');
+		cell.onclick = sortVersus;
+		if (sortedName == names[j]) {
+			names[j] += versusSort.desc ? " ▼" : " ▲";
+		}
+		cell.appendChild(document.createTextNode(names[j]));
+		topRow.appendChild(cell);
+	}
+	tableBody.appendChild(topRow);
+	
 	nopps = filtVersus.length;
 	for (let i=0; i<nopps; i++) {
 		let row = document.createElement('tr');
 		row.classList.add('rows-past-standings')
 		let oc = document.createElement('td');
 		oc.classList.add('cells-past-standings');
-		oc.innerHTML = formatDbLink(filtVersus[i].player, "db-link");
+		oc.classList.add('cellWithDetail');
+		let playerName = document.createElement('p');
+		playerName.classList.add('db-link');
+		playerName.appendChild(document.createTextNode(filtVersus[i].player));
+		oc.appendChild(playerName)
+		let hoverer = document.createElement('div');
+		hoverer.classList.add('cellDetail');
+		hoverer.classList.add('flexWide');
+		let slist = document.createElement('p');
+		slist.appendChild(document.createTextNode("Seasons: " + filtVersus[i].seasons.reverse().toString().replace(/,/g, ", ")));
+		hoverer.appendChild(slist);
+		oc.appendChild(hoverer);
 		row.appendChild(oc);
 		for (let j=0; j<3; j++) {
 			let cell = document.createElement('td');
@@ -291,7 +357,7 @@ function makeVersus(init = false) {
 		let pct = document.createElement('td');
 		pct.classList.add('cells-past-standings');
 		pct.style.cssText = `background-color:${filtVersus[i].color}`;
-		pct.appendChild(document.createTextNode(filtVersus[i].pct));
+		pct.appendChild(document.createTextNode(Math.round(100*filtVersus[i].pct) + "%"));
 		row.appendChild(pct);
 		let trs = document.createElement('td');
 		trs.classList.add('cells-past-standings');
@@ -332,6 +398,14 @@ function makeVersus(init = false) {
 	var tableDiv = document.getElementById("versusTable");
 	tableDiv.innerHTML = "";
 	tableDiv.appendChild(table);
+	
+	setFakeLinks();
+}
+
+function setPlayer(ev) {
+	playerInput.value = ev.target.innerHTML.toLowerCase();
+	versusSort.userSet = false;
+	searchHistory();
 }
 
 function versusFilter(ev) {
@@ -360,6 +434,56 @@ function versusFilter(ev) {
 		}
 	}
 	makeVersus();
+}
+
+function sortVersus(ev) {
+	var colHeader = ev.target.innerHTML;
+	if (colHeader.includes("▼")) {
+		versusSort.desc = false;
+	} else if (colHeader.includes("▲")) {
+		versusSort.desc = true;
+	} else {
+		versusSort.variable = {"Opponent": "player", "Games": "games", "W": "wins", "L": "losses", "Win %": "pct", "Tiers": "tiers"}[colHeader];
+		versusSort.desc = true;
+	}
+	makeVersus();
+}
+
+function seasonTextInput() {
+	var minval = Number(textmin.value);
+	var maxval = Number(textmax.value);
+	if ((minval <= maxval) && (minval >= Number(slide1.min)) && (maxval <= Number(slide1.max))) {
+		if (Number(PlayerPlot.seasonslide1.value) <= Number(PlayerPlot.seasonslide2.value)) {
+			PlayerPlot.seasonslide1.value = minval;
+			PlayerPlot.seasonslide2.value = maxval;
+		} else {
+			PlayerPlot.seasonslide1.value = maxval;
+			PlayerPlot.seasonslide2.value = minval;
+		}
+		
+		seasonRange = [minval, maxval];
+		makeVersus();
+	}
+}
+
+function seasonSlideInput() {
+	if (Number(slide1.value) <= Number(slide2.value)) {
+		textmin.value = slide1.value;
+		textmax.value = slide2.value;
+	} else {
+		textmin.value = slide2.value;
+		textmax.value = slide1.value;
+	}
+	
+	seasonRange = [Number(textmin.value), Number(textmax.value)];
+	makeVersus();
+}
+
+function setFakeLinks() {
+	var fakeLinks = document.getElementsByClassName('db-link');
+	for (let li of fakeLinks) {
+		li.onclick = setPlayer;
+	}
 }
 
 // search box

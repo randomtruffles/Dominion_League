@@ -2,11 +2,12 @@ var champ = "";
 var promoteIcon = "&#9651;";
 var demoteIcon = "&#9661;";
 var playerQuery = ""
-var testing = false
+var noLink = false;
+var testing = false;
 /* Helper functions */
-function formatDbLink(playerName, className, drop="No"){
+function formatDbLink(playerName, className, drop = "No"){
   var champion_sym = " <img src=\"/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
-  var link = `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
+  var link = noLink ? `<p class = "${className}">${playerName}</p>`: `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
   link = drop == "Yes" ? `<s>${link}</s>` : link;
   if (playerName.toLowerCase() == champ) {
     link += champion_sym;

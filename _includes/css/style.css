@@ -307,10 +307,21 @@ iframe {
   font-size: 16px;
 }
 
+.cellDetail.flexWide {
+	width: auto;
+	padding: 0px 8px;
+	left: 30%;
+}
+
+.cellDetail.flexWide p {
+	margin: 0;
+}
+
 @media (max-width: 600px) {
   .cellDetail{
     width: 275px;
   }
+
   .individual-match-table tr th:first-child{
       width: 200px;
    }
@@ -699,8 +710,20 @@ a.db-link {
   border-bottom: 1px dotted gray;
 }
 
+p.db-link {
+	display: inline-block;
+	border-bottom: 1px dotted gray;
+	margin: 0;
+}
+
 a.db-link:hover {
-  color: #ca2017
+  color: #ca2017;
+}
+
+p.db-link:hover {
+	color: #ca2017;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .division-header p {
@@ -1138,6 +1161,11 @@ tbody {
   font-size: 22px;
   color: #CA2017;
   cursor: pointer;
+}
+
+.sortable-header:hover {
+	cursor: pointer;
+	color: #ca2017;
 }
 
 td, th {
