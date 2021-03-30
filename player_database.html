@@ -23,7 +23,7 @@ description: Database of past season histories of players
             <div class="autocomplete">
               <input type="text" onfocus="this.value=''" class="input" id="input_player_search" placeholder="Search for player name">
             </div>
-            <i id="search_player_history_btn" onclick="searchPlayerHistory()" class="fas fa-search"></i>
+            <i id="search_player_history_btn" onclick="searchHistory()" class="fas fa-search"></i>
           </div>
         </div>
     </div>
@@ -46,12 +46,22 @@ description: Database of past season histories of players
     </div>
     <div id="player-heading" class="database-div">
     </div>
+	<div id="content-control" class="database-div" style="display:none">
+		<label for="standingsSelect">
+			<input type="radio" id="standingsSelect" name="content" checked="checked">
+			<span>Standings</span>
+		</label>
+		<label for="versusSelect">
+			<input type="radio" id="versusSelect" name="content">
+			<span>Versus</span>
+		</label>
+	</div>
     <div class="database-wrapper">
       <div id="standings" class="database-div">
       </div>
-      <div id="stats" class="database-div" style="display: none">
+      <div id="stats" class="database-div" style="display:none">
       </div>
-      <div id="versus" class="database-div" style="display: none">
+      <div id="versus" class="database-div" style="display:none">
       </div>
     </div>
   </div>
