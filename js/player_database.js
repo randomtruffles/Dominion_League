@@ -101,7 +101,8 @@ function searchHistory() {
 		player = players[playerKey].name;
 		playerInput.value = player;
 	} else {
-		customDisplay(playerDiv, "Error: Player Does Not Exist", "<b>" + enteredPlayerName + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').");
+		customDisplay(playerDiv, "Error: Player Does Not Exist", "<b>" + (enteredPlayerName || playerKey) + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').");
+		loadingDiv.style.display = "none";
 		return;
 	}
 	
