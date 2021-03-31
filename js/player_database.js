@@ -33,12 +33,14 @@ var slide1 = null;
 var slide2 = null;
 loadPage();
 
-document.getElementById("standingsSelect").onclick = function() {
+document.getElementById("standingsSelect").onclick = function(ev) {
+	ev.target.blur();
 	standingsDiv.style.display = "block";
 	statsDiv.style.display = "none";
 	versusDiv.style.display = "none";
 };
-document.getElementById("versusSelect").onclick = function() {
+document.getElementById("versusSelect").onclick = function(ev) {
+	ev.target.blur();
 	standingsDiv.style.display = "none";
 	statsDiv.style.display = "none";
 	versusDiv.style.display = "block";
@@ -159,7 +161,7 @@ function searchHistory() {
 	// **************
 	
 	// ---Player heading
-	addToDiv(playerDiv, `Player: ${player}`, "h4");
+	addToDiv(playerDiv, player, "h4");
 	// ---League Champion Heading
 	if (champions.players[playerKey]) {
 		addToDiv(playerDiv, `${champions.players[playerKey].length} x League Champion`, "p", "champion-information");
@@ -199,15 +201,16 @@ function searchHistory() {
 
 function makeVersus(init = false) {
 	if (init) {
-		let controlDiv = document.createElement('div');
-		controlDiv.classList.add("control-row");
 		let tierChecks = document.createElement('div');
-		tierChecks.classList.add("control-container");
+		tierChecks.classList.add("db-control-container");
+		let tiersLabel = document.createElement('span');
+		tiersLabel.appendChild(document.createTextNode("Tiers: "));
+		tierChecks.appendChild(tiersLabel);
 		for (let t of selectedTiers) {
 			let check = document.createElement('input');
 			check.setAttribute('type', 'checkbox');
 			check.classList.add(`${t}tier`);
-			check.classList.add('versusCheck');
+			check.classList.add('dbSelector');
 			check.classList.add('singleFilter');
 			check.onclick = versusFilter;
 			tierChecks.appendChild(check);
@@ -216,24 +219,26 @@ function makeVersus(init = false) {
 		let check = document.createElement('input');
 		check.setAttribute('type', 'checkbox');
 		check.id = "versusTierReset";
-		check.classList.add('versusCheck');
+		check.classList.add('dbSelector');
 		check.checked = "checked";
 		check.onclick = versusFilter;
 		tierChecks.appendChild(check);
-		controlDiv.appendChild(tierChecks);
-		versusDiv.appendChild(controlDiv);
+		versusDiv.appendChild(tierChecks);
 		
-		let tableDiv = document.createElement('div');
-		tableDiv.id = "versusTable";
-		versusDiv.appendChild(tableDiv);
-		
+		let seasonSlider =  document.createElement('div');
+		seasonSlider.classList.add("db-control-container");
+		let seasonsLabel = document.createElement('span');
+		seasonsLabel.appendChild(document.createTextNode("Seasons: "));
+		seasonsLabel.style.position = "relative";
+		seasonsLabel.style.top = "-15px";
+		seasonSlider.appendChild(seasonsLabel);
 		textmin = document.createElement('input');
 		textmin.setAttribute('type', 'text');
 		textmin.classList.add('slidertext');
 		textmin.classList.add('slidePiece');
 		textmin.value = String(seasonRange[0]);
 		textmin.oninput = seasonTextInput;
-		controlDiv.appendChild(textmin);
+		seasonSlider.appendChild(textmin);
 		slideContain = document.createElement('div');
 		slideContain.classList.add('slidePiece');
 		slideContain.classList.add('slider-container');
@@ -253,14 +258,19 @@ function makeVersus(init = false) {
 		slide2.oninput = seasonSlideInput;
 		slideContain.appendChild(slide1);
 		slideContain.appendChild(slide2);
-		controlDiv.appendChild(slideContain);
+		seasonSlider.appendChild(slideContain);
 		textmax = document.createElement('input');
 		textmax.setAttribute('type', 'text');
 		textmax.classList.add('slidertext');
 		textmax.classList.add('slidePiece');
 		textmax.value = String(seasonRange[1]);
 		textmax.oninput = seasonTextInput;
-		controlDiv.appendChild(textmax);
+		seasonSlider.appendChild(textmax);
+		versusDiv.appendChild(seasonSlider)
+		
+		let tableDiv = document.createElement('div');
+		tableDiv.id = "versusTable";
+		versusDiv.appendChild(tableDiv);
 	}
 	
 	filtVersus = [];
@@ -293,10 +303,14 @@ function makeVersus(init = false) {
 		}
 	}
 	
+	//make table
+	if (init) {filtVersus.sort((a,b) => Math.max(...b.seasons) - Math.max(...a.seasons));}
+	genVersusTable();
+}
+
+function genVersusTable() {
 	let numbers = ["games", "wins", "losses"];
 	
-	//make table
-	filtVersus.sort((a,b) => Math.max(...b.seasons) - Math.max(...a.seasons));
 	let ordering = versusSort.desc ? 1 : -1;
 	if (versusSort.variable == "player") {
 		filtVersus.sort((a,b) => ordering * a.player.localeCompare(b.player, 'en', {'sensitivity': 'base'}));
@@ -344,7 +358,7 @@ function makeVersus(init = false) {
 		hoverer.classList.add('cellDetail');
 		hoverer.classList.add('flexWide');
 		let slist = document.createElement('p');
-		slist.appendChild(document.createTextNode("Seasons: " + filtVersus[i].seasons.reverse().toString().replace(/,/g, ", ")));
+		slist.appendChild(document.createTextNode("Seasons: " + filtVersus[i].seasons.sort((a,b) => a - b).toString().replace(/,/g, ", ")));
 		hoverer.appendChild(slist);
 		oc.appendChild(hoverer);
 		row.appendChild(oc);
@@ -404,11 +418,11 @@ function makeVersus(init = false) {
 
 function setPlayer(ev) {
 	playerInput.value = ev.target.innerHTML.toLowerCase();
-	versusSort.userSet = false;
 	searchHistory();
 }
 
 function versusFilter(ev) {
+	ev.target.blur();
 	var allTiers = document.getElementById("versusTierReset");
 	if (ev.target.id) {
 		selectedTiers = Object.keys(tiersPlayed).sort();
@@ -446,7 +460,7 @@ function sortVersus(ev) {
 		versusSort.variable = {"Opponent": "player", "Games": "games", "W": "wins", "L": "losses", "Win %": "pct", "Tiers": "tiers"}[colHeader];
 		versusSort.desc = true;
 	}
-	makeVersus();
+	genVersusTable();
 }
 
 function seasonTextInput() {
