@@ -20,8 +20,8 @@
   children:
     - name: Current Season
       path: current_standings
-    #- name: Player Database
-    #  path: player_database
+    - name: Player Database
+      path: player_database
     - name: Past Seasons
       path: past_standings
     - name: Visual History
