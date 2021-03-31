@@ -116,9 +116,7 @@ Violations of this rule will be adjudicated by a majority decision of the modera
 
 #### VIII. Late Finishes
 
-The official deadline to report your match results is the day after the official deadline (a Monday) at 15:00 UTC, so that people from the western-most time zones can easily finish and report matches which they started playing on Sunday night.
-
-If players are unable to finish their matches by the deadline, they must contact their moderator to request an extension for up to a week with information about when the late matches will take place. If such communication does not take place or late game results are not reported within a week of the deadline, the responsible players are considered to have dropped out mid-season, with penalties as described in the following section.
+Match results must be reported by 23:59 UTC of the last day of the season (note when this is in your time zone). If players are unable to finish their matches by the deadline, they must request an extension by contacting their moderator with information about when the late matches will take place. Players in tier A may request extensions of up to 3 days; players in all other tiers may request up to 7 days. If such communication does not take place or the late matches are not reported by the extension deadline for their tier, the responsible players are dropped with the penalties described in the following section.
 
 #### IX. Dropping Players Mid-Season
 
