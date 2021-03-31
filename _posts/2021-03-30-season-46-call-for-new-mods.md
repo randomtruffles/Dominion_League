@@ -4,7 +4,7 @@ date: 2021-03-30
 author: Sharur
 layout: post
 ---
-Hello everyone!
+Hello, everyone!
 
 The League is run by a team of volunteer moderators, and due to some recent turnover on the team, we're looking for more!
 
