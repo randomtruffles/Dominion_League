@@ -307,10 +307,21 @@ iframe {
   font-size: 16px;
 }
 
+.cellDetail.flexWide {
+	width: auto;
+	padding: 0px 8px;
+	left: 30%;
+}
+
+.cellDetail.flexWide p {
+	margin: 0;
+}
+
 @media (max-width: 600px) {
   .cellDetail{
     width: 275px;
   }
+
   .individual-match-table tr th:first-child{
       width: 200px;
    }
@@ -699,8 +710,20 @@ a.db-link {
   border-bottom: 1px dotted gray;
 }
 
+p.db-link {
+	display: inline-block;
+	border-bottom: 1px dotted gray;
+	margin: 0;
+}
+
 a.db-link:hover {
-  color: #ca2017
+  color: #ca2017;
+}
+
+p.db-link:hover {
+	color: #ca2017;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .division-header p {
@@ -1138,6 +1161,131 @@ tbody {
   font-size: 22px;
   color: #CA2017;
   cursor: pointer;
+}
+
+.db-control-container .slidertext {
+	position: relative;
+	top: -15px;
+}
+
+.sortable-header:hover {
+	cursor: pointer;
+	color: #ca2017;
+}
+
+.dbSelector {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	width: 20px;
+	height: 34px;
+	border: 2px solid #d3d3d3;
+	background-color: #ffffff;
+	margin: 0px 4px !important;
+}
+
+.dbSelector.infoSelector {
+	width: 136px;
+}
+
+.dbSelector.singleFilter {
+	width: 34px;
+}
+
+.dbSelector#versusTierReset {
+	width: 68px;
+}
+
+.dbSelector:before {
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+}
+
+.dbSelector:hover {
+	border-color: #888;
+	background-color: #d3d3d3;
+}
+
+.dbSelector:checked {
+	border-color: #888;
+	background-color: #888;
+}
+
+.dbSelector:checked:before {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dbSelector:checked:hover:before {
+    color: #d3d3d3;
+}
+
+.dbSelector.infoSelector#standingsSelect:before {
+	content: "Standings";
+	left: 22px;
+}
+
+.dbSelector.infoSelector#versusSelect:before {
+	content: "Versus";
+	left: 36px;
+}
+
+.dbSelector#versusTierReset:before {
+	content: "All";
+	left: 20px;
+}
+
+.dbSelector.singleFilter:before {
+	left: 9px;
+}
+
+.dbSelector.singleFilter.Atier:before {
+	content: "A";
+}
+
+.dbSelector.singleFilter.Btier:before {
+	content: "B";
+}
+
+.dbSelector.singleFilter.Ctier:before {
+	content: "C";
+}
+
+.dbSelector.singleFilter.Dtier:before {
+	content: "D";
+}
+
+.dbSelector.singleFilter.Etier:before {
+	content: "E";
+}
+
+.dbSelector.singleFilter.Ftier:before {
+	content: "F";
+}
+
+.dbSelector.singleFilter.Gtier:before {
+	content: "G";
+}
+
+.dbSelector.singleFilter.Htier:before {
+	content: "H";
+}
+
+.dbSelector.singleFilter.Itier:before {
+	content: "I";
+}
+
+.dbSelector.singleFilter.Jtier:before {
+	content: "J";
+}
+
+.dbSelector.singleFilter.Ptier:before {
+	content: "P";
 }
 
 td, th {
@@ -2409,6 +2557,10 @@ img.hof-champion-trophy {
 }
 
 /* Chart Controls*/
+.control-row>* {
+	float: left;
+}
+
 .control-row span,select {
 	position: relative;
 	vertical-align: middle;
@@ -2423,7 +2575,6 @@ img.hof-champion-trophy {
 
 .control-container {
 	margin: 4px;
-	float: left;
 }
 
 .control-container label input {
@@ -2496,12 +2647,11 @@ img.hof-champion-trophy {
 
 .slidePiece {
 	margin: 4px;
-	float: left;
 }
 
 .slider-container {
-	float: left;
 	position: relative;
+	display: inline-block;
 	width: 40%;
 	height: 34px;
 	top: 12px;
@@ -2536,7 +2686,6 @@ img.hof-champion-trophy {
 }
 
 .slidertext {
-	float: left;
 	width: 34px;
 }
 

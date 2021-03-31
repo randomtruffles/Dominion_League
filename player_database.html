@@ -8,7 +8,59 @@ description: Database of past season histories of players
     <h3>Player Database</h3>
     <h5><a href="{{site.baseurl}}/past_standings">View All Past Season Standings</a></h5>
     <div id="spacing-for-instructions" class="spacing" style="display: none"> </div>
-    <p id="search-instructions" style="display: block"> Temporarily unavailable. See the <a href="{{site.baseurl}}/charts.html">Visual History</a> for something similar while this page is being restored.</p>
+    <p id="search-instructions" style="display: none"> Search for a player (eg. Mic Qsenoch) and view their current season results (if they are playing) <br> and league history for all seasons they've participated in. </p>
     <div class="spacing"> </div>
+    <div class="database-search-wrapper">
+      <div class="database-search-box">
+          <!--<div class="database-search-dropdown">
+              <div id="default-option"  onclick="openDropdown()" class="default-option">Standings <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+              <ul id="search-dropdown">
+                <li class="search-dropdown-selection" onclick="selectDropdown(this)">Standings</li>
+                <li class="search-dropdown-selection" onclick="selectDropdown(this)">Versus</li>
+              </ul>
+          </div> -->
+          <div class="database-search-field">
+            <div class="autocomplete">
+              <input type="text" onfocus="this.value=''" class="input" id="input_player_search" placeholder="Search for player name">
+            </div>
+            <i id="search_player_history_btn" onclick="searchHistory()" class="fas fa-search"></i>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="loading" >
+      <i style="color:grey" class="fa fa-spinner fa-spin fa-3x"></i>
+    </div>
+    <div id="url-instructions" style="display: none">
+      <h5> Adding a Youtube Channel to Your Player Page</h5>
+      <p> Fill out <a href="https://forms.gle/83dydRjyhXRwxjYF6">this form</a> and the Dominion League will add it. </p>
+      <br>
+      <h5> URL Searching </h5>
+      <p> You can also search by adding the <code>player</code> param to this page's url, using <code>%20</code> to represent spaces between names.
+          <br>
+          Ie. To search Mic Qsenoch, append <code>?player=mic%20qsenoch</code> to <a href="{{site.baseurl}}/player_database?player=mic%20qsenoch">this page's url</a>.
+          <br>
+          <br>
+      </p>
+    </div>
+    <div id="player-heading" class="database-div">
+    </div>
+	<div id="content-controls" class="database-div" style="display:none">
+		<input type="radio" id="standingsSelect" class="dbSelector infoSelector" name="content" checked="checked">
+		<input type="radio" id="versusSelect" class="dbSelector infoSelector" name="content">
+		<hr class="hr-database">
+	</div>
+    <div class="database-wrapper">
+      <div id="standings" class="database-div">
+      </div>
+      <div id="stats" class="database-div" style="display:none">
+      </div>
+      <div id="versus" class="database-div" style="display:none">
+      </div>
+    </div>
   </div>
 </div>
+<script src="js/generatingTables.js"></script>
+<script src="js/tableUtils.js"></script>
+<script src="js/player_database.js"></script>
