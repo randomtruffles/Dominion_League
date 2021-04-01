@@ -12,12 +12,12 @@ var aliases = fs.readFileSync("namechanges.txt", 'utf8').split('\n').map(x => x.
 const aliascount = aliases.length;
 
 for (let i=1; i<aliascount; i++) {
-	oldnew = aliases[i].split('\t');
-	oldReg = new RegExp(`"${oldnew[0]}"`, "ig");
+	let oldnew = aliases[i].split('\t');
+	let oldReg = new RegExp(`"${oldnew[0]}"`, "ig");
 	hist = hist.replace(oldReg, `"${oldnew[1]}"`);
 }
 
-fs.writeFileSync("league_history.json", hist);
+fs.writeFileSync("outputs/league_history.json", hist);
 
 hist = JSON.parse(hist);
 
@@ -36,7 +36,7 @@ for (const season in hist) {
 	}
 }
 
-fs.writeFileSync("player_seasons.json", JSON.stringify(players));
+fs.writeFileSync("outputs/player_seasons.json", JSON.stringify(players));
 
 //old sims: 29
 //new sims: 42

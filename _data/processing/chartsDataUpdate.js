@@ -1,3 +1,5 @@
+//does not yet do transitions or power charts
+
 var fs = require('fs');
 
 var season = "44";
@@ -70,15 +72,15 @@ for (tier of countadd) {
 }
 
 counts = counts.concat(countadd);
-fs.writeFileSync("chart_counts.json", JSON.stringify(counts));
+fs.writeFileSync("outputs/chart_counts.json", JSON.stringify(counts));
 
 var aliases = fs.readFileSync("namechanges.txt", 'utf8').split('\n').map(x => x.replace('\r',''));
 const aliascount = aliases.length;
 
 for (let i=1; i<aliascount; i++) {
-	oldnew = aliases[i].split('\t');
-	oldReg = new RegExp(`"${oldnew[0]}"`, "ig");
+	let oldnew = aliases[i].split('\t');
+	let oldReg = new RegExp(`"${oldnew[0]}"`, "ig");
 	hist = hist.replace(oldReg, `"${oldnew[1]}"`);
 }
 
-fs.writeFileSync("chart_history.json", hist);
+fs.writeFileSync("outputs/chart_history.json", hist);
