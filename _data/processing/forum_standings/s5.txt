@@ -1,0 +1,234 @@
+A (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	Stef	3.7	15	4	0	157.5	  Yes
+2.	Mic Qsenoch	3.5	14	4	0	157	  Yes
+3.	DG	3.0	12	4	0	144	  Yes
+4.	Rabid	2.8	11.5	4	0	135	  Yes
+5.	HarryPeteur	1.8	7.5	4	0	92	  Yes
+Stef - Mic Qsenoch: 3 - 3
+Stef - DG: 3 - 3
+Stef - Rabid: 3 - 3
+Stef - HarryPeteur: 6 - 0
+Mic Qsenoch - DG: 3 - 3
+Mic Qsenoch - Rabid: 4 - 2
+Mic Qsenoch - HarryPeteur: 4 - 2
+DG - Rabid: 3 - 3
+DG - HarryPeteur: 3 - 3
+Rabid - HarryPeteur: 3.5 - 2.5
+
+B1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	SheCantSayNo	4.4	22	5	0	295	  Yes
+2.	Monsieur X	3.4	17	5	0	236	  Yes
+3.	florrat	2.8	14	5	0	211	  No
+4.	Fergesser	2.5	12.5	5	3.5	177	  Yes
+5.	Mr Anderson	2.5	12.5	5	2.5	177	  No
+6.	QwertZuiop	2.4	12	5	0	177.5	   ?
+SheCantSayNo - Monsieur X: 4 - 2
+SheCantSayNo - florrat: 3 - 3
+SheCantSayNo - Fergesser: 5 - 1
+SheCantSayNo - Mr Anderson: 5 - 1
+SheCantSayNo - QwertZuiop: 5 - 1
+Monsieur X - florrat: 4 - 2
+Monsieur X - Fergesser: 4 - 2
+Monsieur X - Mr Anderson: 4 - 2
+Monsieur X - QwertZuiop: 3 - 3
+florrat - Fergesser: 3 - 3
+florrat - Mr Anderson: 3 - 3
+florrat - QwertZuiop: 3 - 3
+Fergesser - Mr Anderson: 3.5 - 2.5
+Fergesser - QwertZuiop: 3 - 3
+Mr Anderson - QwertZuiop: 4 - 2
+
+B2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	Tao Chen	4.1	20.5	5	0	262	  Yes
+2.	Wandering Winder	4.0	20	5	0	272	  No
+3.	2.71828...	3.0	15	5	0	225.5	  Yes
+4.	Adam	2.6	13	5	0	184	  No
+5.	dudeabides	2.4	12	5	0	173	  Yes
+6.	A Drowned Kernel	1.9	9.5	5	0	133.5	  Yes
+Tao Chen - Wandering Winder: 2.5 - 3.5
+Tao Chen - 2.71828...: 2 - 4
+Tao Chen - Adam: 5 - 1
+Tao Chen - dudeabides: 5 - 1
+Tao Chen - A Drowned Kernel: 6 - 0
+Wandering Winder - 2.71828...: 4 - 2
+Wandering Winder - Adam: 3.5 - 2.5
+Wandering Winder - dudeabides: 4 - 2
+Wandering Winder - A Drowned Kernel: 5 - 1
+2.71828... - Adam: 3 - 3
+2.71828... - dudeabides: 3 - 3
+2.71828... - A Drowned Kernel: 3 - 3
+Adam - dudeabides: 3 - 3
+Adam - A Drowned Kernel: 3.5 - 2.5
+dudeabides - A Drowned Kernel: 3 - 3
+
+C1 (93%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	liopoil	3.5	17.5	5	0	228	  Yes
+2.	kylar	3.5	14	4	5	215.5	  Yes
+3.	Beyond Awesome	3.2	16	5	0	205	  Yes
+4.	jaybeez	2.9	14.5	5	0	199	  Yes
+5.	theblankman	2.8	14	5	1	190	  No
+6.	zporiri	2.0	8	4	0	121	   ?
+liopoil - kylar: 2 - 4
+liopoil - Beyond Awesome: 4 - 2
+liopoil - jaybeez: 4 - 2
+liopoil - theblankman: 3 - 3
+liopoil - zporiri: 4.5 - 1.5
+kylar - Beyond Awesome: 2 - 4
+kylar - jaybeez: 3 - 3
+kylar - theblankman: 5 - 1
+Beyond Awesome - jaybeez: 2.5 - 3.5
+Beyond Awesome - theblankman: 3 - 3
+Beyond Awesome - zporiri: 4.5 - 1.5
+jaybeez - theblankman: 3 - 3
+jaybeez - zporiri: 3 - 3
+theblankman - zporiri: 4 - 2
+
+C2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	soulnet	3.7	18.5	5	0	251	  Yes
+2.	mpsprs	3.4	17	5	0	243.5	  Yes
+3.	Eevee	3.0	15	5	3	236	  No
+4.	gamesou	3.0	15	5	3	214	  Yes
+5.	Qvist	2.9	14.5	5	0	210	  Yes
+6.	Joseph2302	2.0	10	5	0	153	  Yes
+soulnet - mpsprs: 3 - 3
+soulnet - Eevee: 2 - 4
+soulnet - gamesou: 4 - 2
+soulnet - Qvist: 3.5 - 2.5
+soulnet - Joseph2302: 6 - 0
+mpsprs - Eevee: 2 - 4
+mpsprs - gamesou: 4 - 2
+mpsprs - Qvist: 4 - 2
+mpsprs - Joseph2302: 4 - 2
+Eevee - gamesou: 3 - 3
+Eevee - Qvist: 2 - 4
+Eevee - Joseph2302: 2 - 4
+gamesou - Qvist: 4 - 2
+gamesou - Joseph2302: 4 - 2
+Qvist - Joseph2302: 4 - 2
+
+C3 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	Emeric	4.4	22	5	0	299.5	  Yes
+2.	Burning Skull	3.1	15.5	5	0	211	  Yes
+3.	awaclus	2.9	14.5	5	3.5	201	  Yes
+4.	Dunduks	2.9	14.5	5	2.5	215	  Yes
+5.	faust	2.4	12	5	0	174.5	  No
+6.	Assemble Meme	2.3	11.5	5	0	176	   ?
+Emeric - Burning Skull: 5 - 1
+Emeric - awaclus: 5 - 1
+Emeric - Dunduks: 3 - 3
+Emeric - faust: 5 - 1
+Emeric - Assemble Meme: 4 - 2
+Burning Skull - awaclus: 3 - 3
+Burning Skull - Dunduks: 4 - 2
+Burning Skull - faust: 4 - 2
+Burning Skull - Assemble Meme: 3.5 - 2.5
+awaclus - Dunduks: 3.5 - 2.5
+awaclus - faust: 3 - 3
+awaclus - Assemble Meme: 4 - 2
+Dunduks - faust: 3 - 3
+Dunduks - Assemble Meme: 4 - 2
+faust - Assemble Meme: 3 - 3
+
+D1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	Heisenberg	3.7	18.5	5	0	259	  Yes
+2.	MtMagus	3.4	17	5	0	249	  Yes
+3.	Twistedarcher	2.9	14.5	5	0	214	  No
+4.	GeoLib	2.8	14	5	0	211	  No
+5.	anmo555	2.6	13	5	3	198	  Yes
+6.	Hydrad	2.6	13	5	3	192.5	  No
+Heisenberg - MtMagus: 2 - 4
+Heisenberg - Twistedarcher: 4.5 - 1.5
+Heisenberg - GeoLib: 4 - 2
+Heisenberg - anmo555: 4 - 2
+Heisenberg - Hydrad: 4 - 2
+MtMagus - Twistedarcher: 2 - 4
+MtMagus - GeoLib: 3 - 3
+MtMagus - anmo555: 3 - 3
+MtMagus - Hydrad: 5 - 1
+Twistedarcher - GeoLib: 2 - 4
+Twistedarcher - anmo555: 4 - 2
+Twistedarcher - Hydrad: 3 - 3
+GeoLib - anmo555: 3 - 3
+GeoLib - Hydrad: 2 - 4
+anmo555 - Hydrad: 3 - 3
+
+D2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	andwilk	3.8	15.5	4	0	171	  Yes
+2.	ThaddeusB	3.7	15	4	0	158	  Yes
+3.	Rubby	3.1	12.5	4	0	136	  Yes
+4.	Dingan	2.7	11	4	0	113	  Yes
+5.	jerni	1.5	6	4	0	83.5	  No
+andwilk - ThaddeusB: 3 - 3
+andwilk - Rubby: 4 - 2
+andwilk - Dingan: 5 - 1
+andwilk - jerni: 3.5 - 2.5
+ThaddeusB - Rubby: 3 - 3
+ThaddeusB - Dingan: 4 - 2
+ThaddeusB - jerni: 5 - 1
+Rubby - Dingan: 3 - 3
+Rubby - jerni: 4.5 - 1.5
+Dingan - jerni: 5 - 1
+
+D3 (80%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	Temron	4.7	19	4	0	222	   ?
+2.	Simon (DK)	3.4	17	5	0	174.5	  Yes
+3.	kfm	2.7	13.5	5	0	135.5	  No
+4.	M0G3L	2.3	9.5	4	0	123	  Yes
+5.	First World Problems	2.2	4.5	2	0	66	  No
+6.	Ephesos	2.1	8.5	4	0	120	  Yes
+Temron - Simon (DK): 3 - 3
+Temron - kfm: 6 - 0
+Temron - M0G3L: 5 - 1
+Temron - Ephesos: 5 - 1
+Simon (DK) - kfm: 2.5 - 3.5
+Simon (DK) - M0G3L: 4 - 2
+Simon (DK) - First World Problems: 4.5 - 1.5
+Simon (DK) - Ephesos: 3 - 3
+kfm - M0G3L: 3 - 3
+kfm - First World Problems: 3 - 3
+kfm - Ephesos: 4 - 2
+M0G3L - Ephesos: 3.5 - 2.5
+
+D4 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	Egor Kulikov	4.0	12	3	0	98	  Yes
+2.	rogavka	3.1	9.5	3	0	75.5	  No
+3.	Jean-Michel	2.8	8.5	3	0	69.5	  Yes
+4.	Hugovj	2.0	6	3	0	62	  No
+Egor Kulikov - rogavka: 5 - 1
+Egor Kulikov - Jean-Michel: 3.5 - 2.5
+Egor Kulikov - Hugovj: 3.5 - 2.5
+rogavka - Jean-Michel: 5 - 1
+rogavka - Hugovj: 3.5 - 2.5
+Jean-Michel - Hugovj: 5 - 1
+
+E (86%)
+rank	name                                         	average	points	#played	2nd	3rd	Season6?
+1.	ryan.echternacht	4.0	16	4	0	203	  Yes
+2.	Jeb	3.5	14	4	0	186	  Yes
+3.	Archetype	3.4	17	5	0	195	   ?
+4.	Elanchana	3.3	10	3	0	118	  No
+5.	jamfamsam	2.4	12	5	0	153	  Yes
+6.	EFHW	1.8	9	5	0	119	  Yes
+ryan.echternacht - Jeb: 3 - 3
+ryan.echternacht - Archetype: 4 - 2
+ryan.echternacht - jamfamsam: 4 - 2
+ryan.echternacht - EFHW: 5 - 1
+Jeb - Archetype: 3 - 3
+Jeb - jamfamsam: 5 - 1
+Jeb - EFHW: 3 - 3
+Archetype - Elanchana: 4 - 2
+Archetype - jamfamsam: 3 - 3
+Archetype - EFHW: 5 - 1
+Elanchana - jamfamsam: 4 - 2
+Elanchana - EFHW: 4 - 2
+jamfamsam - EFHW: 4 - 2

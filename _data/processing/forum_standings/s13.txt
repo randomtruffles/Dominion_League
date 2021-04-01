@@ -1,0 +1,300 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	SCSN	3,6	18	5	0,0	257,5	   Yes
+2.	Mic Qsenoch	3,5	17,5	5	0,0	246,8	   Yes
+3.	Stef	3,4	17	5	0,0	241,5	    ?
+4.	dan brooks	2,9	14,5	5	0,0	206,8	   No
+5.	Geronimoo	2,6	13	5	0,0	186,0	   Yes
+6.	Burning Skull	2,0	10	5	0,0	163,0	   Yes
+SCSN - Mic Qsenoch: 3 - 3
+SCSN - Stef: 4 - 2
+SCSN - dan brooks: 4 - 2
+SCSN - Geronimoo: 3 - 3
+SCSN - Burning Skull: 4 - 2
+Mic Qsenoch - Stef: 2 - 4
+Mic Qsenoch - dan brooks: 3,5 - 2,5
+Mic Qsenoch - Geronimoo: 6 - 0
+Mic Qsenoch - Burning Skull: 3 - 3
+Stef - dan brooks: 3 - 3
+Stef - Geronimoo: 4 - 2
+Stef - Burning Skull: 4 - 2
+dan brooks - Geronimoo: 2 - 4
+dan brooks - Burning Skull: 5 - 1
+Geronimoo - Burning Skull: 4 - 2
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	Rabid	3,8	19	5	0,0	256,0	   Yes
+2.	A Drowned Kernel	3,4	17	5	0,0	257,0	   Yes
+3.	Deadlock39	3,0	15	5	3,0	219,0	   No
+4.	nate_w	3,0	15	5	3,0	218,0	   No
+5.	Mikey the great	2,6	13	5	0,0	191,0	   Yes
+6.	Jimmmmm	2,2	11	5	0,0	169,0	   No
+Rabid - A Drowned Kernel: 1,5 - 4,5
+Rabid - Deadlock39: 3 - 3
+Rabid - nate_w: 4,5 - 1,5
+Rabid - Mikey the great: 4 - 2
+Rabid - Jimmmmm: 6 - 0
+A Drowned Kernel - Deadlock39: 4 - 2
+A Drowned Kernel - nate_w: 2,5 - 3,5
+A Drowned Kernel - Mikey the great: 4 - 2
+A Drowned Kernel - Jimmmmm: 2 - 4
+Deadlock39 - nate_w: 3 - 3
+Deadlock39 - Mikey the great: 3 - 3
+Deadlock39 - Jimmmmm: 4 - 2
+nate_w - Mikey the great: 4 - 2
+nate_w - Jimmmmm: 3 - 3
+Mikey the great - Jimmmmm: 4 - 2
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	gamesou	4,1	20,3	5	0,0	276,4	   Yes
+2.	Fergesser	3,2	15,8	5	0,0	237,9	   No
+3.	Qvist	2,9	14,5	5	0,0	221,3	   Yes
+4.	Psyduck	2,8	14	5	0,0	201,0	   No
+5.	Assemble Meme	2,7	13,5	5	0,0	191,8	   Yes
+6.	drsteelhammer	2,4	12	5	0,0	181,0	   Yes
+gamesou - Fergesser: 2,3 - 3,8
+gamesou - Qvist: 3 - 3
+gamesou - Psyduck: 5 - 1
+gamesou - Assemble Meme: 5 - 1
+gamesou - drsteelhammer: 5 - 1
+Fergesser - Qvist: 3 - 3
+Fergesser - Psyduck: 3 - 3
+Fergesser - Assemble Meme: 3 - 3
+Fergesser - drsteelhammer: 3 - 3
+Qvist - Psyduck: 3 - 3
+Qvist - Assemble Meme: 3,5 - 2,5
+Qvist - drsteelhammer: 2 - 4
+Psyduck - Assemble Meme: 4 - 2
+Psyduck - drsteelhammer: 3 - 3
+Assemble Meme - drsteelhammer: 5 - 1
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	gkrieg	3,7	18,5	5	0,0	255,3	   Yes
+2.	2.71828.....	3,2	16	5	4,0	229,0	   Yes
+3.	Dingan	3,2	16	5	2,0	230,0	   Yes
+4.	Derg17	3,0	15	5	0,0	225,5	   Yes
+5.	Horist	2,9	14,5	5	0,0	216,8	   Yes
+6.	funkdoc	2,0	10	5	0,0	154,0	   Yes
+gkrieg - 2.71828.....: 3 - 3
+gkrieg - Dingan: 2 - 4
+gkrieg - Derg17: 4 - 2
+gkrieg - Horist: 4,5 - 1,5
+gkrieg - funkdoc: 5 - 1
+2.71828..... - Dingan: 4 - 2
+2.71828..... - Derg17: 3 - 3
+2.71828..... - Horist: 1 - 5
+2.71828..... - funkdoc: 5 - 1
+Dingan - Derg17: 3 - 3
+Dingan - Horist: 2 - 4
+Dingan - funkdoc: 5 - 1
+Derg17 - Horist: 5 - 1
+Derg17 - funkdoc: 2 - 4
+Horist - funkdoc: 3 - 3
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	AHoppy	3,6	14,5	4	0,0	165,0	   Yes
+2.	dudeabides	3,3	13,3	4	0,0	150,9	   Yes
+3.	schadd	3,0	12	4	0,0	131,3	   Yes
+4.	Chris is me	2,9	11,5	4	0,0	142,8	   Yes
+5.	Limetime	2,2	8,8	4	0,0	111,4	   No
+AHoppy - dudeabides: 2 - 4
+AHoppy - schadd: 6 - 0
+AHoppy - Chris is me: 3,5 - 2,5
+AHoppy - Limetime: 3 - 3
+dudeabides - schadd: 2 - 4
+dudeabides - Chris is me: 2 - 4
+dudeabides - Limetime: 5,3 - 0,8
+schadd - Chris is me: 3 - 3
+schadd - Limetime: 5 - 1
+Chris is me - Limetime: 2 - 4
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	DG	3,4	13,5	4	0,0	155,3	   Yes
+2.	scotty2hotty	3,3	13	4	0,0	154,5	   Yes
+3.	E.Honda	3,1	12,5	4	0,0	146,3	   Yes
+4.	MVP	2,8	11	4	0,0	127,0	   Yes
+5.	singletee	2,5	10	4	0,0	128,5	   Yes
+DG - scotty2hotty: 3 - 3
+DG - E.Honda: 2,5 - 3,5
+DG - MVP: 5 - 1
+DG - singletee: 3 - 3
+scotty2hotty - E.Honda: 4 - 2
+scotty2hotty - MVP: 4 - 2
+scotty2hotty - singletee: 2 - 4
+E.Honda - MVP: 3 - 3
+E.Honda - singletee: 4 - 2
+MVP - singletee: 5 - 1
+
+
+C4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	teamrocketgrunt	3,7	18,3	5	0,0	260,9	   Yes
+2.	Wachsmuth	3,6	18	5	0,0	244,5	   Yes
+3.	markus	3,3	16,5	5	0,0	233,5	   Yes
+4.	smcrtorchs	2,9	14,5	5	0,0	210,0	   No
+5.	Jean-Michel	2,7	13,3	5	0,0	197,1	   Yes
+6.	Dunduks	1,9	9,5	5	0,0	148,6	   Yes
+teamrocketgrunt - Wachsmuth: 5 - 1
+teamrocketgrunt - markus: 3 - 3
+teamrocketgrunt - smcrtorchs: 2 - 4
+teamrocketgrunt - Jean-Michel: 3,8 - 2,3
+teamrocketgrunt - Dunduks: 4,5 - 1,5
+Wachsmuth - markus: 3 - 3
+Wachsmuth - smcrtorchs: 5 - 1
+Wachsmuth - Jean-Michel: 5 - 1
+Wachsmuth - Dunduks: 4 - 2
+markus - smcrtorchs: 3,5 - 2,5
+markus - Jean-Michel: 2 - 4
+markus - Dunduks: 5 - 1
+smcrtorchs - Jean-Michel: 3 - 3
+smcrtorchs - Dunduks: 4 - 2
+Jean-Michel - Dunduks: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	MdLC	4,2	21	5	0,0	277,0	   Yes
+2.	lilayZee	3,6	18	5	0,0	247,0	   Yes
+3.	TheRightStuff	3,4	17	5	0,0	225,0	   Yes
+4.	jamfamsam	2,8	14	5	0,0	211,0	   Yes
+5.	crlundy	2,2	11	5	0,0	155,0	   Yes
+6.	Morghas	1,8	9	5	0,0	133,0	    ?
+MdLC - lilayZee: 2 - 4
+MdLC - TheRightStuff: 5 - 1
+MdLC - jamfamsam: 4 - 2
+MdLC - crlundy: 5 - 1
+MdLC - Morghas: 5 - 1
+lilayZee - TheRightStuff: 3 - 3
+lilayZee - jamfamsam: 1 - 5
+lilayZee - crlundy: 4 - 2
+lilayZee - Morghas: 6 - 0
+TheRightStuff - jamfamsam: 5 - 1
+TheRightStuff - crlundy: 4 - 2
+TheRightStuff - Morghas: 4 - 2
+jamfamsam - crlundy: 4 - 2
+jamfamsam - Morghas: 2 - 4
+crlundy - Morghas: 4 - 2
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	aku chi	3,5	14	4	0,0	159,5	   Yes
+2.	MtMagus	3,1	12,5	4	0,0	148,3	   Yes
+3.	amoffett11	2,9	11,5	4	3,0	139,3	   Yes
+4.	Asher Howarth	2,9	11,5	4	3,0	138,5	    ?
+5.	microman	2,6	10,5	4	0,0	127,5	   Yes
+aku chi - MtMagus: 3 - 3
+aku chi - amoffett11: 3 - 3
+aku chi - Asher Howarth: 3,5 - 2,5
+aku chi - microman: 4,5 - 1,5
+MtMagus - amoffett11: 3,5 - 2,5
+MtMagus - Asher Howarth: 3 - 3
+MtMagus - microman: 3 - 3
+amoffett11 - Asher Howarth: 3 - 3
+amoffett11 - microman: 3 - 3
+Asher Howarth - microman: 3 - 3
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	Infthitbox	3,9	19,5	5	0,0	254,3	   Yes
+2.	JP Gerber	3,5	17,5	5	0,0	261,8	   No
+3.	Jeb	3,3	16,5	5	0,0	224,5	   Yes
+4.	J Reggie	3,0	15	5	0,0	220,5	   No
+5.	SaintO	2,4	12	5	0,0	178,5	   Yes
+6.	mumposaur	1,9	9,5	5	0,0	142,5	   No
+Infthitbox - JP Gerber: 1,5 - 4,5
+Infthitbox - Jeb: 4 - 2
+Infthitbox - J Reggie: 3 - 3
+Infthitbox - SaintO: 5 - 1
+Infthitbox - mumposaur: 6 - 0
+JP Gerber - Jeb: 3 - 3
+JP Gerber - J Reggie: 4 - 2
+JP Gerber - SaintO: 3 - 3
+JP Gerber - mumposaur: 3 - 3
+Jeb - J Reggie: 2,5 - 3,5
+Jeb - SaintO: 4 - 2
+Jeb - mumposaur: 5 - 1
+J Reggie - SaintO: 3 - 3
+J Reggie - mumposaur: 3,5 - 2,5
+SaintO - mumposaur: 3 - 3
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	TadyBoy	3,8	19	5	0,0	257,0	   Yes
+2.	tadpole	3,6	18	5	0,0	264,0	   Yes
+3.	Ravi Vasudevan	3,2	16	5	0,0	223,0	   Yes
+4.	SenseiCAY	2,8	14	5	0,0	200,0	    ?
+5.	Hugovj	2,6	13	5	0,0	193,0	   No
+6.	adventures_of_goat	2,0	10	5	0,0	157,0	   No
+TadyBoy - tadpole: 1 - 5
+TadyBoy - Ravi Vasudevan: 4 - 2
+TadyBoy - SenseiCAY: 5 - 1
+TadyBoy - Hugovj: 5 - 1
+TadyBoy - adventures_of_goat: 4 - 2
+tadpole - Ravi Vasudevan: 3 - 3
+tadpole - SenseiCAY: 3 - 3
+tadpole - Hugovj: 3 - 3
+tadpole - adventures_of_goat: 4 - 2
+Ravi Vasudevan - SenseiCAY: 3 - 3
+Ravi Vasudevan - Hugovj: 3 - 3
+Ravi Vasudevan - adventures_of_goat: 5 - 1
+SenseiCAY - Hugovj: 3 - 3
+SenseiCAY - adventures_of_goat: 4 - 2
+Hugovj - adventures_of_goat: 3 - 3
+
+
+D5 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	tufftaeh	3,9	15,8	4	0,0	176,6	   Yes
+2.	Simon (DK)	3,6	14,5	4	0,0	153,1	   Yes
+3.	Micha1980	2,6	10,5	4	3,5	117,8	   Yes
+4.	Tomush	2,6	10,5	4	2,5	126,3	   Yes
+5.	Joseph2302	2,2	8,8	4	0,0	110,9	   No
+tufftaeh - Simon (DK): 4 - 2
+tufftaeh - Micha1980: 4 - 2
+tufftaeh - Tomush: 5 - 1
+tufftaeh - Joseph2302: 2,8 - 3,3
+Simon (DK) - Micha1980: 5 - 1
+Simon (DK) - Tomush: 2 - 4
+Simon (DK) - Joseph2302: 5,5 - 0,5
+Micha1980 - Tomush: 3,5 - 2,5
+Micha1980 - Joseph2302: 4 - 2
+Tomush - Joseph2302: 3 - 3
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	Mavy2k	4,0	16	4	0,0	161,0	   No
+2.	gloures	3,3	13	4	4,0	134,0	   Yes
+3.	Petrovic	3,3	13	4	2,0	164,0	   Yes
+4.	AdrianHealey	3,0	12	4	0,0	131,0	   Yes
+5.	XD9	1,5	6	4	0,0	76,0	    ?
+Mavy2k - gloures: 5 - 1
+Mavy2k - Petrovic: 0 - 6
+Mavy2k - AdrianHealey: 5 - 1
+Mavy2k - XD9: 6 - 0
+gloures - Petrovic: 4 - 2
+gloures - AdrianHealey: 3 - 3
+gloures - XD9: 5 - 1
+Petrovic - AdrianHealey: 2 - 4
+Petrovic - XD9: 3 - 3
+AdrianHealey - XD9: 4 - 2
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season14?
+1.	andrewzom	4,0	4	1	0,0	8,0	   Yes
+2.	Sunmaster14	2,0	2	1	0,0	8,0	   Yes
+andrewzom - Sunmaster14: 4 - 2

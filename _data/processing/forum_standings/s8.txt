@@ -1,0 +1,376 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Mic Qsenoch	4.0	20	5	0.0	278.5	52.6	   Yes
+2.	dudeabides	3.0	15	5	0.0	221.5	36.7	    ?
+3.	SheCantSayNo	2.9	14.5	5	0.0	220.5	47.0	   Yes
+4.	Stef	2.8	14	5	3.0	211.0	54.9	   Yes
+5.	2.71828.....	2.8	14	5	3.0	195.5	41.7	   Yes
+6.	Tao Chen	2.5	12.5	5	0.0	189.5	41.8	    ?
+Mic Qsenoch - dudeabides: 3 - 3
+Mic Qsenoch - SheCantSayNo: 3 - 3
+Mic Qsenoch - Stef: 4 - 2
+Mic Qsenoch - 2.71828.....: 6 - 0
+Mic Qsenoch - Tao Chen: 4 - 2
+dudeabides - SheCantSayNo: 2 - 4
+dudeabides - Stef: 3 - 3
+dudeabides - 2.71828.....: 2 - 4
+dudeabides - Tao Chen: 5 - 1
+SheCantSayNo - Stef: 1.5 - 4.5
+SheCantSayNo - 2.71828.....: 3 - 3
+SheCantSayNo - Tao Chen: 3 - 3
+Stef - 2.71828.....: 3 - 3
+Stef - Tao Chen: 1.5 - 4.5
+2.71828..... - Tao Chen: 4 - 2
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Adam Horton	3.8	19	5	0.0	262.0	43.6	   No
+2.	kylar	3.2	16	5	3.0	231.5	36.2	   Yes
+3.	Robz888	3.2	16	5	3.0	231.0	44.5	   Yes
+4.	Rabid	3.0	15	5	0.0	212.5	48.4	   Yes
+5.	liopoil	2.9	14.5	5	0.0	215.3	39.1	    ?
+6.	Titandrake	1.9	9.5	5	0.0	149.3	39.2	   Yes
+Adam Horton - kylar: 3 - 3
+Adam Horton - Robz888: 3 - 3
+Adam Horton - Rabid: 5 - 1
+Adam Horton - liopoil: 3 - 3
+Adam Horton - Titandrake: 5 - 1
+kylar - Robz888: 3 - 3
+kylar - Rabid: 3 - 3
+kylar - liopoil: 3 - 3
+kylar - Titandrake: 4 - 2
+Robz888 - Rabid: 2 - 4
+Robz888 - liopoil: 4 - 2
+Robz888 - Titandrake: 4 - 2
+Rabid - liopoil: 3 - 3
+Rabid - Titandrake: 4 - 2
+liopoil - Titandrake: 3.5 - 2.5
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	DG	3.6	18	5	0.0	252.5	49.6	   Yes
+2.	gamesou	3.5	17.5	5	0.0	243.8	41.0	   Yes
+3.	Marin	3.2	16	5	0.0	227.5	46.3	    ?
+4.	Fergesser	3.1	15.5	5	0.0	224.3	42.9	    ?
+5.	yudai214	3.0	15	5	0.0	205.0	41.3	    ?
+6.	Emeric	1.6	8	5	0.0	131.5	40.2	   Yes
+DG - gamesou: 2 - 4
+DG - Marin: 4 - 2
+DG - Fergesser: 3 - 3
+DG - yudai214: 5 - 1
+DG - Emeric: 4 - 2
+gamesou - Marin: 3 - 3
+gamesou - Fergesser: 2.5 - 3.5
+gamesou - yudai214: 3 - 3
+gamesou - Emeric: 5 - 1
+Marin - Fergesser: 4 - 2
+Marin - yudai214: 3 - 3
+Marin - Emeric: 4 - 2
+Fergesser - yudai214: 3 - 3
+Fergesser - Emeric: 4 - 2
+yudai214 - Emeric: 5 - 1
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	pubby	4.6	23	5	0.0	303.5	41.3	   Yes
+2.	nate_w	3.3	16.5	5	0.0	217.8	44.8	   Yes
+3.	Svenisntb	3.1	15.5	5	0.0	216.0	36.0	   No
+4.	A Drowned Kernel	2.9	14.5	5	0.0	202.0	36.8	   Yes
+5.	Deadlock39	2.1	10.5	5	0.0	152.3	32.6	   Yes
+6.	Hyphen-ated	2.0	10	5	0.0	146.5	33.5	   No
+pubby - nate_w: 4 - 2
+pubby - Svenisntb: 4.5 - 1.5
+pubby - A Drowned Kernel: 4.5 - 1.5
+pubby - Deadlock39: 5 - 1
+pubby - Hyphen-ated: 5 - 1
+nate_w - Svenisntb: 2 - 4
+nate_w - A Drowned Kernel: 3 - 3
+nate_w - Deadlock39: 4.5 - 1.5
+nate_w - Hyphen-ated: 5 - 1
+Svenisntb - A Drowned Kernel: 3 - 3
+Svenisntb - Deadlock39: 4 - 2
+Svenisntb - Hyphen-ated: 3 - 3
+A Drowned Kernel - Deadlock39: 3 - 3
+A Drowned Kernel - Hyphen-ated: 4 - 2
+Deadlock39 - Hyphen-ated: 3 - 3
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Dingan	4.0	20	5	0.0	284.5	39.5	   Yes
+2.	ephesos	3.7	18.5	5	0.0	228.8	19.8	   Yes
+3.	vsiewnar	3.5	17.5	5	0.0	240.8	35.7	   Yes
+4.	andwilk	2.8	14	5	0.0	203.0	31.6	   No
+5.	Eras	2.2	11	5	0.0	157.5	23.6	   No
+6.	Joseph2302	1.8	9	5	0.0	139.0	21.8	   No
+Dingan - ephesos: 5 - 1
+Dingan - vsiewnar: 4 - 2
+Dingan - andwilk: 3 - 3
+Dingan - Eras: 4 - 2
+Dingan - Joseph2302: 4 - 2
+ephesos - vsiewnar: 2.5 - 3.5
+ephesos - andwilk: 4 - 2
+ephesos - Eras: 5 - 1
+ephesos - Joseph2302: 6 - 0
+vsiewnar - andwilk: 4 - 2
+vsiewnar - Eras: 4 - 2
+vsiewnar - Joseph2302: 4 - 2
+andwilk - Eras: 4 - 2
+andwilk - Joseph2302: 3 - 3
+Eras - Joseph2302: 4 - 2
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	HvBoedefeld	3.8	15	4	4.0	159.0	35.0	   Yes
+2.	LESPEUTERE	3.8	15	4	2.0	159.0	45.8	   Yes
+3.	7MiKL7	3.5	14	4	0.0	156.0	30.2	   Yes
+4.	M0G3L	2.3	9	4	0.0	94.0	23.1	   No
+5.	calimero	1.8	7	4	0.0	96.0	25.7	   Yes
+HvBoedefeld - LESPEUTERE: 4 - 2
+HvBoedefeld - 7MiKL7: 2 - 4
+HvBoedefeld - M0G3L: 4 - 2
+HvBoedefeld - calimero: 5 - 1
+LESPEUTERE - 7MiKL7: 4 - 2
+LESPEUTERE - M0G3L: 5 - 1
+LESPEUTERE - calimero: 4 - 2
+7MiKL7 - M0G3L: 5 - 1
+7MiKL7 - calimero: 3 - 3
+M0G3L - calimero: 5 - 1
+
+
+C4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Eevee	3.3	16.5	5	0.0	242.5	32.4	   Yes
+2.	TailRed	3.2	16	5	0.0	235.5	35.9	   No
+3.	MarkowKette	3.1	15.5	5	0.0	228.0	37.5	   Yes
+4.	Jean-Michel	2.9	14.5	5	3.5	217.8	38.4	   Yes
+5.	Qvist	2.9	14.5	5	2.5	218.8	39.0	   Yes
+6.	Heisenberg	2.6	13	5	0.0	199.5	33.5	    ?
+Eevee - TailRed: 2.5 - 3.5
+Eevee - MarkowKette: 4 - 2
+Eevee - Jean-Michel: 3 - 3
+Eevee - Qvist: 4 - 2
+Eevee - Heisenberg: 3 - 3
+TailRed - MarkowKette: 2.5 - 3.5
+TailRed - Jean-Michel: 4 - 2
+TailRed - Qvist: 2 - 4
+TailRed - Heisenberg: 4 - 2
+MarkowKette - Jean-Michel: 3 - 3
+MarkowKette - Qvist: 3 - 3
+MarkowKette - Heisenberg: 4 - 2
+Jean-Michel - Qvist: 3.5 - 2.5
+Jean-Michel - Heisenberg: 3 - 3
+Qvist - Heisenberg: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Horist	4.0	16	4	0.0	177.5	32.3	   Yes
+2.	Derg17	3.1	12.5	4	4.0	130.8	32.4	   Yes
+3.	jamfamsam	3.1	12.5	4	2.0	147.5	22.9	   Yes
+4.	microman	2.4	9.5	4	4.0	115.5	27.6	   No
+5.	iamsparticus	2.4	9.5	4	2.0	119.8	25.5	   Yes
+Horist - Derg17: 6 - 0
+Horist - jamfamsam: 2.5 - 3.5
+Horist - microman: 3.5 - 2.5
+Horist - iamsparticus: 4 - 2
+Derg17 - jamfamsam: 4 - 2
+Derg17 - microman: 5 - 1
+Derg17 - iamsparticus: 3.5 - 2.5
+jamfamsam - microman: 4 - 2
+jamfamsam - iamsparticus: 3 - 3
+microman - iamsparticus: 4 - 2
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	swedenman	4.0	4	1	0.0	58.0	26.0	   -
+2.	MtMagus	3.6	14.5	4	7.0	162.8	31.0	   Yes
+3.	AHoppy	3.6	14.5	4	5.5	159.8	18.0	   No
+4.	Qbrick	3.1	12.5	4	0.0	155.8	28.7	   Yes
+5.	Voltaire	2.9	14.5	5	5.5	142.8	14.7	   Yes
+6.	Seprix	1.5	6	4	0.0	81.0	23.7	   Yes
+swedenman - Voltaire: 4 - 2
+MtMagus - AHoppy: 3 - 3
+MtMagus - Qbrick: 2.5 - 3.5
+MtMagus - Voltaire: 4 - 2
+MtMagus - Seprix: 5 - 1
+AHoppy - Qbrick: 4 - 2
+AHoppy - Voltaire: 2.5 - 3.5
+AHoppy - Seprix: 5 - 1
+Qbrick - Voltaire: 4 - 2
+Qbrick - Seprix: 3 - 3
+Voltaire - Seprix: 5 - 1
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Malmerung	4.0	20	5	0.0	280.0	21.5	   Yes
+2.	gregsucks	3.4	17	5	3.0	241.0	21.1	   No
+3.	Iguana Iguana	3.4	17	5	3.0	225.0	25.8	   Yes
+4.	Chris is me	2.6	13	5	0.0	200.0	23.8	   Yes
+5.	Jeb	2.4	12	5	0.0	180.0	17.9	   Yes
+6.	Ghacob	2.2	11	5	0.0	162.0	16.1	   Yes
+Malmerung - gregsucks: 3 - 3
+Malmerung - Iguana Iguana: 5 - 1
+Malmerung - Chris is me: 4 - 2
+Malmerung - Jeb: 4 - 2
+Malmerung - Ghacob: 4 - 2
+gregsucks - Iguana Iguana: 3 - 3
+gregsucks - Chris is me: 3 - 3
+gregsucks - Jeb: 3 - 3
+gregsucks - Ghacob: 5 - 1
+Iguana Iguana - Chris is me: 3 - 3
+Iguana Iguana - Jeb: 5 - 1
+Iguana Iguana - Ghacob: 5 - 1
+Chris is me - Jeb: 3 - 3
+Chris is me - Ghacob: 2 - 4
+Jeb - Ghacob: 3 - 3
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	werothegreat	3.6	14.5	4	0.0	151.3	20.6	   Yes
+2.	mpsprs	3.5	14	4	0.0	169.3	33.9	   Yes
+3.	Rubby	3.3	13	4	0.0	146.8	28.8	   Yes
+4.	ThaddeusB	2.5	10	4	0.0	115.0	31.1	    ?
+5.	ryan.echternacht	2.1	8.5	4	0.0	110.3	17.9	    ?
+werothegreat - mpsprs: 1 - 5
+werothegreat - Rubby: 3 - 3
+werothegreat - ThaddeusB: 6 - 0
+werothegreat - ryan.echternacht: 4.5 - 1.5
+mpsprs - Rubby: 3.5 - 2.5
+mpsprs - ThaddeusB: 3 - 3
+mpsprs - ryan.echternacht: 2.5 - 3.5
+Rubby - ThaddeusB: 3 - 3
+Rubby - ryan.echternacht: 4.5 - 1.5
+ThaddeusB - ryan.echternacht: 4 - 2
+
+
+D5 (93%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Assemble Meme	4.6	18.5	4	0.0	261.0	32.9	   
+2.	Simon (DK)	3.3	16.5	5	0.0	210.0	35.2	   Yes
+3.	drsteelhammer	3.0	15	5	0.0	196.0	27.7	   Yes
+4.	Micha1980	2.8	14	5	0.0	174.5	24.5	   Yes
+5.	Hockeysemlan	2.3	9	4	0.0	128.0	17.8	   
+6.	noey21	2.2	11	5	0.0	148.0	21.3	   Yes
+Assemble Meme - Simon (DK): 5 - 1
+Assemble Meme - drsteelhammer: 4.5 - 1.5
+Assemble Meme - Micha1980: 4 - 2
+Assemble Meme - noey21: 5 - 1
+Simon (DK) - drsteelhammer: 3.5 - 2.5
+Simon (DK) - Micha1980: 5 - 1
+Simon (DK) - Hockeysemlan: 4 - 2
+Simon (DK) - noey21: 3 - 3
+drsteelhammer - Micha1980: 4 - 2
+drsteelhammer - Hockeysemlan: 3 - 3
+drsteelhammer - noey21: 4 - 2
+Micha1980 - Hockeysemlan: 4 - 2
+Micha1980 - noey21: 5 - 1
+Hockeysemlan - noey21: 2 - 4
+Remaining: Assemble Meme-Hockeysemlan
+
+D6 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Burning Skull	3.5	14	4	0.0	160.0	39.8	   Yes
+2.	Dunduks	3.0	12	4	0.0	147.0	34.2	   Yes
+3.	Master88	2.9	11.5	4	3.5	134.3	24.7	   Yes
+4.	Egor Kulikov	2.9	11.5	4	2.5	139.8	31.7	   Yes
+5.	Jimmmmm	2.8	11	4	0.0	133.5	30.8	   Yes
+Burning Skull - Dunduks: 2 - 4
+Burning Skull - Master88: 5 - 1
+Burning Skull - Egor Kulikov: 3 - 3
+Burning Skull - Jimmmmm: 4 - 2
+Dunduks - Master88: 3 - 3
+Dunduks - Egor Kulikov: 3 - 3
+Dunduks - Jimmmmm: 2 - 4
+Master88 - Egor Kulikov: 3.5 - 2.5
+Master88 - Jimmmmm: 4 - 2
+Egor Kulikov - Jimmmmm: 3 - 3
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	gkrieg	4.9	19.5	4	0.0	188.3	19.1	   Yes
+2.	crlundy	3.5	14	4	0.0	153.5	11.4	   Yes
+3.	Black Dagger	2.8	11	4	0.0	104.0	8.7	   Yes
+4.	Evilpirate	2.1	8.5	4	0.0	100.3	0.5	   No
+5.	mathguy89	1.8	7	4	0.0	75.5	3.2	   Yes
+gkrieg - crlundy: 3 - 3
+gkrieg - Black Dagger: 6 - 0
+gkrieg - Evilpirate: 4.5 - 1.5
+gkrieg - mathguy89: 6 - 0
+crlundy - Black Dagger: 3 - 3
+crlundy - Evilpirate: 4 - 2
+crlundy - mathguy89: 4 - 2
+Black Dagger - Evilpirate: 4 - 2
+Black Dagger - mathguy89: 4 - 2
+Evilpirate - mathguy89: 3 - 3
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	Pizowned	4.3	17	4	0.0	183.0	15.9	   Yes
+2.	Asher Howarth	3.5	14	4	0.0	150.0	4.0	   Yes
+3.	bramroop	2.8	11	4	3.0	130.0	-4.6	   Yes
+4.	LibraryAdventurer	2.8	11	4	3.0	106.0	5.8	   No
+5.	marksim	1.8	7	4	0.0	95.0	-4.9	   Yes
+Pizowned - Asher Howarth: 4 - 2
+Pizowned - bramroop: 4 - 2
+Pizowned - LibraryAdventurer: 5 - 1
+Pizowned - marksim: 4 - 2
+Asher Howarth - bramroop: 3 - 3
+Asher Howarth - LibraryAdventurer: 5 - 1
+Asher Howarth - marksim: 4 - 2
+bramroop - LibraryAdventurer: 3 - 3
+bramroop - marksim: 3 - 3
+LibraryAdventurer - marksim: 6 - 0
+
+
+E3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	DoesItGoBoom	4.2	16.8	4	0.0	116.2	6.8	   Yes
+2.	enfynet	3.3	10	3	0.0	112.8	0.5	    ?
+3.	CAT GIRL	3.3	6.5	2	0.0	56.3	7.9	   -
+4.	C_Roy8	2.7	10.8	4	0.0	91.1	9.3	   Yes
+5.	critchie	2.5	7.5	3	0.0	76.0	-14.3	   -
+6.	EFHW	1.3	2.5	2	0.0	29.9	-9.0	   -
+DoesItGoBoom - enfynet: 3 - 3
+DoesItGoBoom - C_Roy8: 3.3 - 2.8
+DoesItGoBoom - critchie: 5 - 1
+DoesItGoBoom - EFHW: 5.5 - 0.5
+enfynet - CAT GIRL: 3 - 3
+enfynet - C_Roy8: 4 - 2
+CAT GIRL - critchie: 3.5 - 2.5
+C_Roy8 - critchie: 2 - 4
+C_Roy8 - EFHW: 4 - 2
+
+
+E4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	tom joads radiator	4.3	13	3	0.0	93.0	16.4	    ?
+2.	weather3003	3.0	9	3	3.0	81.0	8.2	   Yes
+3.	reeeeeeeed	3.0	9	3	3.0	73.0	4.9	    ?
+4.	kasheefali	1.7	5	3	0.0	45.0	-10.2	   Yes
+tom joads radiator - weather3003: 3 - 3
+tom joads radiator - reeeeeeeed: 4 - 2
+tom joads radiator - kasheefali: 6 - 0
+weather3003 - reeeeeeeed: 3 - 3
+weather3003 - kasheefali: 3 - 3
+reeeeeeeed - kasheefali: 4 - 2
+
+
+E5 (66%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season9?
+1.	tufftaeh	5.0	10	2	5.0	70.0	17.4	   
+2.	shraeye	3.3	10	3	1.0	46.0	-17.7	   
+3.	trinadianese	1.3	4	3	0.0	40.0	-15.7	   
+tufftaeh - shraeye: 5 - 1
+tufftaeh - trinadianese: 5 - 1
+shraeye - trinadianese: 3 - 3
+shraeye - trinadianese: 6 - 0

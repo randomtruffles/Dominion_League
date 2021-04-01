@@ -1,0 +1,249 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Mic Qsenoch	3,8	19	5	0,0	274,0	   Yes
+2.	Stef	3,4	17	5	0,0	239,0	   Yes
+3.	SCSN	3,0	15	5	0,0	212,0	   Yes
+4.	A Drowned Kernel	2,8	14	5	0,0	205,0	   Yes
+5.	gamesou	2,6	13	5	0,0	197,0	   Yes
+6.	Rabid	2,4	12	5	0,0	189,0	   Yes
+Mic Qsenoch - Stef: 4 - 2
+Mic Qsenoch - SCSN: 4 - 2
+Mic Qsenoch - A Drowned Kernel: 5 - 1
+Mic Qsenoch - gamesou: 4 - 2
+Mic Qsenoch - Rabid: 2 - 4
+Stef - SCSN: 4 - 2
+Stef - A Drowned Kernel: 3 - 3
+Stef - gamesou: 3 - 3
+Stef - Rabid: 5 - 1
+SCSN - A Drowned Kernel: 2 - 4
+SCSN - gamesou: 4 - 2
+SCSN - Rabid: 5 - 1
+A Drowned Kernel - gamesou: 3 - 3
+A Drowned Kernel - Rabid: 3 - 3
+gamesou - Rabid: 3 - 3
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Assemble Meme	4,2	21	5	0,0	269,5	   No
+2.	gkrieg	3,5	17,5	5	0,0	247,0	   Yes
+3.	2.71828.....	3,4	17	5	0,0	240,8	   Yes
+4.	DG	2,9	14,5	5	0,0	179,0	   Yes
+5.	scotty2hotty	2,6	13	5	0,0	190,3	   Yes
+6.	AHoppy	1,4	7	5	0,0	109,0	   No
+Assemble Meme - gkrieg: 2 - 4
+Assemble Meme - 2.71828.....: 4 - 2
+Assemble Meme - DG: 5 - 1
+Assemble Meme - scotty2hotty: 4 - 2
+Assemble Meme - AHoppy: 6 - 0
+gkrieg - 2.71828.....: 2,5 - 3,5
+gkrieg - DG: 5 - 1
+gkrieg - scotty2hotty: 1 - 5
+gkrieg - AHoppy: 5 - 1
+2.71828..... - DG: 4 - 2
+2.71828..... - scotty2hotty: 4,5 - 1,5
+2.71828..... - AHoppy: 3 - 3
+DG - scotty2hotty: 5,5 - 0,5
+DG - AHoppy: 5 - 1
+scotty2hotty - AHoppy: 4 - 2
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Burning Skull	3,5	7	2	0,0	77,0	   -
+2.	Wachsmuth	3,4	13,5	4	0,0	114,0	   Yes
+3.	Qvist	3,2	9,5	3	0,0	102,0	   Yes
+4.	Geronimoo	2,7	8	3	0,0	85,8	   Yes
+5.	teamrocketgrunt	2,5	10	4	0,0	98,8	   No
+Burning Skull - Wachsmuth: 2 - 4
+Burning Skull - teamrocketgrunt: 5 - 1
+Wachsmuth - Qvist: 2 - 4
+Wachsmuth - Geronimoo: 4 - 2
+Wachsmuth - teamrocketgrunt: 3,5 - 2,5
+Qvist - Geronimoo: 3,5 - 2,5
+Qvist - teamrocketgrunt: 2 - 4
+Geronimoo - teamrocketgrunt: 3,5 - 2,5
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Derg17	4,4	17,8	4	0,0	170,9	   No
+2.	Dingan	4,1	16,5	4	0,0	165,4	   Yes
+3.	MdLC	3,1	12,3	4	0,0	123,9	   No
+4.	schadd	2,0	8	4	0,0	83,8	   Yes
+5.	MtMagus	1,4	5,5	4	0,0	64,4	   Yes
+Derg17 - Dingan: 3 - 3
+Derg17 - MdLC: 3,8 - 2,3
+Derg17 - schadd: 6 - 0
+Derg17 - MtMagus: 5 - 1
+Dingan - MdLC: 4,5 - 1,5
+Dingan - schadd: 3 - 3
+Dingan - MtMagus: 6 - 0
+MdLC - schadd: 5 - 1
+MdLC - MtMagus: 3,5 - 2,5
+schadd - MtMagus: 4 - 2
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Mikey the great	4,3	17	4	0,0	168,3	   Yes
+2.	MVP	4,0	16	4	0,0	172,8	   Yes
+3.	Chris is me	2,7	10,8	4	0,0	119,1	   Yes
+4.	aku chi	2,2	8,8	4	0,0	93,2	   Yes
+5.	Infthitbox	1,9	7,5	4	0,0	93,4	   Yes
+Mikey the great - MVP: 2 - 4
+Mikey the great - Chris is me: 5 - 1
+Mikey the great - aku chi: 6 - 0
+Mikey the great - Infthitbox: 4 - 2
+MVP - Chris is me: 3 - 3
+MVP - aku chi: 4 - 2
+MVP - Infthitbox: 5 - 1
+Chris is me - aku chi: 2,8 - 3,3
+Chris is me - Infthitbox: 4 - 2
+aku chi - Infthitbox: 3,5 - 2,5
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	drsteelhammer	3,6	18	5	3,0	255,0	   Yes
+2.	E.Honda	3,6	18	5	3,0	252,0	   Yes
+3.	markus	3,2	16	5	0,0	225,0	   Yes
+4.	tufftaeh	3,0	15	5	0,0	229,0	   Yes
+5.	Watno	2,4	12	5	0,0	162,0	   Yes
+6.	Simon (DK)	2,2	11	5	0,0	183,0	   Yes
+drsteelhammer - E.Honda: 3 - 3
+drsteelhammer - markus: 4 - 2
+drsteelhammer - tufftaeh: 3 - 3
+drsteelhammer - Watno: 4 - 2
+drsteelhammer - Simon (DK): 4 - 2
+E.Honda - markus: 3 - 3
+E.Honda - tufftaeh: 3 - 3
+E.Honda - Watno: 6 - 0
+E.Honda - Simon (DK): 3 - 3
+markus - tufftaeh: 2 - 4
+markus - Watno: 6 - 0
+markus - Simon (DK): 3 - 3
+tufftaeh - Watno: 2 - 4
+tufftaeh - Simon (DK): 3 - 3
+Watno - Simon (DK): 6 - 0
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Horist	3,9	15,5	4	0,0	201,0	   Yes
+2.	funkdoc	3,8	15	4	0,0	192,5	   Yes
+3.	crlundy	2,6	10,5	4	0,0	149,0	   Yes
+4.	jamfamsam	2,6	13	5	5,0	157,0	   Yes
+5.	The Do-Operator	2,6	13	5	1,0	121,0	   Yes
+6.	TheRightStuff	2,5	5	2	0,0	65,0	   -
+Horist - funkdoc: 3,5 - 2,5
+Horist - crlundy: 3 - 3
+Horist - jamfamsam: 4 - 2
+Horist - The Do-Operator: 5 - 1
+funkdoc - crlundy: 3,5 - 2,5
+funkdoc - jamfamsam: 4 - 2
+funkdoc - The Do-Operator: 5 - 1
+crlundy - jamfamsam: 4 - 2
+crlundy - The Do-Operator: 1 - 5
+jamfamsam - The Do-Operator: 5 - 1
+jamfamsam - TheRightStuff: 2 - 4
+The Do-Operator - TheRightStuff: 5 - 1
+
+
+D2 (93%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	singletee	4,0	20	5	0,0	244,0	   Yes
+2.	Jeb	3,5	14	4	3,0	214,0	   
+3.	amoffett11	3,2	16	5	0,0	206,0	   Yes
+4.	microman	2,8	14	5	3,0	186,0	   Yes
+5.	SaintO	2,4	12	5	0,0	174,0	   No
+6.	SenseiCAY	2,0	8	4	0,0	108,0	   
+singletee - Jeb: 3 - 3
+singletee - amoffett11: 4 - 2
+singletee - microman: 3 - 3
+singletee - SaintO: 4 - 2
+singletee - SenseiCAY: 6 - 0
+Jeb - amoffett11: 4 - 2
+Jeb - microman: 3 - 3
+Jeb - SaintO: 4 - 2
+amoffett11 - microman: 5 - 1
+amoffett11 - SaintO: 3 - 3
+amoffett11 - SenseiCAY: 4 - 2
+microman - SaintO: 3 - 3
+microman - SenseiCAY: 4 - 2
+SaintO - SenseiCAY: 2 - 4
+Remaining: Jeb-SenseiCAY
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	gloures	4,4	22	5	0,0	279,5	   Yes
+2.	ced	3,9	19,5	5	0,0	236,8	   Yes
+3.	Micha1980	3,1	15,5	5	0,0	221,3	   Yes
+4.	Ravi Vasudevan	3,0	15	5	0,0	186,5	   Yes
+5.	tadpole	2,8	14	5	0,0	174,5	   No
+6.	LibraryAdventurer	0,8	4	5	0,0	60,0	   No
+gloures - ced: 4 - 2
+gloures - Micha1980: 3 - 3
+gloures - Ravi Vasudevan: 5 - 1
+gloures - tadpole: 4 - 2
+gloures - LibraryAdventurer: 6 - 0
+ced - Micha1980: 2,5 - 3,5
+ced - Ravi Vasudevan: 4 - 2
+ced - tadpole: 5 - 1
+ced - LibraryAdventurer: 6 - 0
+Micha1980 - Ravi Vasudevan: 1 - 5
+Micha1980 - tadpole: 4 - 2
+Micha1980 - LibraryAdventurer: 4 - 2
+Ravi Vasudevan - tadpole: 2 - 4
+Ravi Vasudevan - LibraryAdventurer: 5 - 1
+tadpole - LibraryAdventurer: 5 - 1
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Tomush	3,7	11	3	0,0	107,0	   Yes
+2.	Jean-Michel	3,6	10,8	3	0,0	106,4	   Yes
+3.	Dunduks	3,3	13,3	4	0,0	108,9	   Yes
+4.	lilayZee	3,3	6,5	2	3,5	62,5	   -
+5.	andrewzom	1,6	6,5	4	2,5	62,0	   Yes
+Tomush - Jean-Michel: 2 - 4
+Tomush - Dunduks: 4 - 2
+Tomush - andrewzom: 5 - 1
+Jean-Michel - Dunduks: 2,8 - 3,3
+Jean-Michel - andrewzom: 4 - 2
+Dunduks - lilayZee: 3 - 3
+Dunduks - andrewzom: 5 - 1
+lilayZee - andrewzom: 3,5 - 2,5
+
+
+E1 (93%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Haddock	4,2	21	5	0,0	266,0	   Yes
+2.	Petrovic	3,2	16	5	0,0	198,0	   Yes
+3.	rds36	2,8	11	4	0,0	167,0	   
+4.	Deal	2,8	11	4	0,0	158,5	   
+5.	diedre91	2,7	13,5	5	0,0	189,8	   Yes
+6.	Water Polo DMo	2,3	11,5	5	0,0	155,3	   Yes
+Haddock - Petrovic: 5 - 1
+Haddock - rds36: 4 - 2
+Haddock - Deal: 4 - 2
+Haddock - diedre91: 3 - 3
+Haddock - Water Polo DMo: 5 - 1
+Petrovic - rds36: 3 - 3
+Petrovic - Deal: 4 - 2
+Petrovic - diedre91: 4 - 2
+Petrovic - Water Polo DMo: 4 - 2
+rds36 - diedre91: 4 - 2
+rds36 - Water Polo DMo: 2 - 4
+Deal - diedre91: 2 - 4
+Deal - Water Polo DMo: 5 - 1
+diedre91 - Water Polo DMo: 2,5 - 3,5
+Remaining: rds36-Deal
+
+E2 (66%)
+rank	name                                 	average	points	#played	2nd	3rd     	season15?
+1.	Sciserr	4,0	8	2	0,0	16,0	   Yes
+2.	Mort	2,0	2	1	0,0	16,0	   
+2.	Sunmaster14	2,0	2	1	0,0	16,0	   
+Sciserr - Mort: 4 - 2
+Sciserr - Sunmaster14: 4 - 2

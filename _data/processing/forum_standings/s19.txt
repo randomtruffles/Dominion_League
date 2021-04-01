@@ -1,0 +1,250 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	Mic Qsenoch	3.8	19	5	0.0	262.5	   Yes
+2.	DG	3.6	18	5	0.0	261.5	   Yes
+3.	aku chi	2.9	14.5	5	3.5	207.8	   Yes
+4.	gamesou	2.9	14.5	5	2.5	206.3	   Yes
+5.	Qvist	2.4	12	5	4.0	179.0	   Yes
+6.	Dingan	2.4	12	5	2.0	189.5	   Yes
+Mic Qsenoch - DG: 2 - 4
+Mic Qsenoch - aku chi: 5 - 1
+Mic Qsenoch - gamesou: 4 - 2
+Mic Qsenoch - Qvist: 5 - 1
+Mic Qsenoch - Dingan: 3 - 3
+DG - aku chi: 3 - 3
+DG - gamesou: 4 - 2
+DG - Qvist: 3 - 3
+DG - Dingan: 4 - 2
+aku chi - gamesou: 3.5 - 2.5
+aku chi - Qvist: 3 - 3
+aku chi - Dingan: 4 - 2
+gamesou - Qvist: 5 - 1
+gamesou - Dingan: 3 - 3
+Qvist - Dingan: 4 - 2
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	tracer	3.8	19	5	0.0	260.5	   Yes
+2.	drsteelhammer	3.2	16	5	0.0	238.0	   Yes
+3.	vsiewnar	3.1	15.5	5	0.0	224.5	   Yes
+4.	singletee	3.0	15	5	0.0	229.0	   Yes
+5.	Derg17	2.5	12.5	5	0.0	188.5	   No
+6.	schadd	2.4	12	5	0.0	177.0	   Yes
+tracer - drsteelhammer: 3 - 3
+tracer - vsiewnar: 3.5 - 2.5
+tracer - singletee: 2 - 4
+tracer - Derg17: 4.5 - 1.5
+tracer - schadd: 6 - 0
+drsteelhammer - vsiewnar: 4 - 2
+drsteelhammer - singletee: 3 - 3
+drsteelhammer - Derg17: 4 - 2
+drsteelhammer - schadd: 2 - 4
+vsiewnar - singletee: 4 - 2
+vsiewnar - Derg17: 2 - 4
+vsiewnar - schadd: 5 - 1
+singletee - Derg17: 4 - 2
+singletee - schadd: 2 - 4
+Derg17 - schadd: 3 - 3
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	markus	3.4	17	5	4.0	254.5	   Yes
+2.	Rabid	3.4	17	5	2.0	235.5	   Yes
+3.	RTT	3.2	16	5	0.0	234.5	   Yes
+4.	Mikey the great	2.9	14.5	5	0.0	216.8	   Yes
+5.	E.Honda	2.6	13	5	0.0	202.0	   Yes
+6.	Assemble Meme	2.5	12.5	5	0.0	187.3	   Yes
+markus - Rabid: 4 - 2
+markus - RTT: 5 - 1
+markus - Mikey the great: 3 - 3
+markus - E.Honda: 1 - 5
+markus - Assemble Meme: 4 - 2
+Rabid - RTT: 1 - 5
+Rabid - Mikey the great: 4 - 2
+Rabid - E.Honda: 5 - 1
+Rabid - Assemble Meme: 5 - 1
+RTT - Mikey the great: 3 - 3
+RTT - E.Honda: 3 - 3
+RTT - Assemble Meme: 4 - 2
+Mikey the great - E.Honda: 5 - 1
+Mikey the great - Assemble Meme: 1.5 - 4.5
+E.Honda - Assemble Meme: 3 - 3
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	breppert	4.1	20.5	5	0.0	269.8	   Yes
+2.	funkdoc	3.6	18	5	0.0	253.0	   No
+3.	Horist	3.0	15	5	0.0	221.5	   No
+4.	scotty2hotty	2.8	14	5	0.0	200.0	   Yes
+5.	Beyond Awesome	2.7	13.5	5	0.0	191.8	   Yes
+6.	Jimmmmm	1.8	9	5	0.0	135.5	   No
+breppert - funkdoc: 3 - 3
+breppert - Horist: 3 - 3
+breppert - scotty2hotty: 4 - 2
+breppert - Beyond Awesome: 4.5 - 1.5
+breppert - Jimmmmm: 6 - 0
+funkdoc - Horist: 4 - 2
+funkdoc - scotty2hotty: 2 - 4
+funkdoc - Beyond Awesome: 5 - 1
+funkdoc - Jimmmmm: 4 - 2
+Horist - scotty2hotty: 5 - 1
+Horist - Beyond Awesome: 2 - 4
+Horist - Jimmmmm: 3 - 3
+scotty2hotty - Beyond Awesome: 2 - 4
+scotty2hotty - Jimmmmm: 5 - 1
+Beyond Awesome - Jimmmmm: 3 - 3
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	A Drowned Kernel	4.0	16	4	0.0	178.0	   Yes
+2.	Jeb	3.8	15	4	0.0	152.0	   Yes
+3.	Chris is me	2.8	11	4	0.0	124.0	   Yes
+4.	Launchywiggin	2.5	10	4	0.0	125.0	   Yes
+5.	gloures	2.0	8	4	0.0	95.0	   Yes
+A Drowned Kernel - Jeb: 5 - 1
+A Drowned Kernel - Chris is me: 3 - 3
+A Drowned Kernel - Launchywiggin: 3 - 3
+A Drowned Kernel - gloures: 5 - 1
+Jeb - Chris is me: 6 - 0
+Jeb - Launchywiggin: 3 - 3
+Jeb - gloures: 5 - 1
+Chris is me - Launchywiggin: 6 - 0
+Chris is me - gloures: 2 - 4
+Launchywiggin - gloures: 4 - 2
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	Burning Skull	4.0	12	3	0.0	96.0	   Yes
+2.	Jean-Michel	3.7	11	3	0.0	82.0	   Yes
+3.	Simon (DK)	2.3	7	3	0.0	64.0	   Yes
+4.	Lalight	2.0	6	3	0.0	56.0	   Yes
+Burning Skull - Jean-Michel: 4 - 2
+Burning Skull - Simon (DK): 4 - 2
+Burning Skull - Lalight: 4 - 2
+Jean-Michel - Simon (DK): 4 - 2
+Jean-Michel - Lalight: 5 - 1
+Simon (DK) - Lalight: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	zeruf	5.0	25	5	0.0	322.3	   Yes
+2.	mikechike	3.6	18	5	0.0	217.5	   Yes
+3.	bog	3.1	15.5	5	0.0	206.5	   Yes
+4.	Water Polo DMo	2.2	11	5	0.0	154.0	   Yes
+5.	jamfamsam	2.1	10.5	5	0.0	160.0	   Yes
+6.	Hertz Doughnut	2.0	10	5	0.0	119.3	   Yes
+zeruf - mikechike: 5 - 1
+zeruf - bog: 4.5 - 1.5
+zeruf - Water Polo DMo: 5.5 - 0.5
+zeruf - jamfamsam: 4 - 2
+zeruf - Hertz Doughnut: 6 - 0
+mikechike - bog: 3 - 3
+mikechike - Water Polo DMo: 3 - 3
+mikechike - jamfamsam: 6 - 0
+mikechike - Hertz Doughnut: 5 - 1
+bog - Water Polo DMo: 4 - 2
+bog - jamfamsam: 2 - 4
+bog - Hertz Doughnut: 5 - 1
+Water Polo DMo - jamfamsam: 3 - 3
+Water Polo DMo - Hertz Doughnut: 2.5 - 3.5
+jamfamsam - Hertz Doughnut: 1.5 - 4.5
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	rchandra	3.6	18	5	0.0	249.0	   Yes
+2.	amoffett11	3.5	17.5	5	3.5	244.3	   Yes
+3.	MtMagus	3.5	17.5	5	2.5	249.8	   Yes
+4.	diedre91	2.8	14	5	0.0	221.0	   Yes
+5.	Orange	2.6	13	5	0.0	176.5	   Yes
+6.	Cascadestyler	2.0	10	5	0.0	158.0	   Yes
+rchandra - amoffett11: 4 - 2
+rchandra - MtMagus: 2 - 4
+rchandra - diedre91: 3 - 3
+rchandra - Orange: 4 - 2
+rchandra - Cascadestyler: 5 - 1
+amoffett11 - MtMagus: 3.5 - 2.5
+amoffett11 - diedre91: 3 - 3
+amoffett11 - Orange: 5 - 1
+amoffett11 - Cascadestyler: 4 - 2
+MtMagus - diedre91: 3 - 3
+MtMagus - Orange: 4 - 2
+MtMagus - Cascadestyler: 4 - 2
+diedre91 - Orange: 4 - 2
+diedre91 - Cascadestyler: 1 - 5
+Orange - Cascadestyler: 6 - 0
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	Micha1980	4.5	22.5	5	0.0	300.3	   Yes
+2.	Calamitas	3.2	16	5	0.0	213.0	   No
+3.	Haddock	3.1	15.5	5	0.0	215.3	   Yes
+4.	Joseph2302	2.7	13.5	5	0.0	214.3	   Yes
+5.	hackibacki	2.4	12	5	0.0	166.0	   Yes
+6.	love	2.1	10.5	5	0.0	152.3	   No
+Micha1980 - Calamitas: 5 - 1
+Micha1980 - Haddock: 4 - 2
+Micha1980 - Joseph2302: 3 - 3
+Micha1980 - hackibacki: 5 - 1
+Micha1980 - love: 5.5 - 0.5
+Calamitas - Haddock: 3 - 3
+Calamitas - Joseph2302: 4 - 2
+Calamitas - hackibacki: 4 - 2
+Calamitas - love: 4 - 2
+Haddock - Joseph2302: 1.5 - 4.5
+Haddock - hackibacki: 5 - 1
+Haddock - love: 4 - 2
+Joseph2302 - hackibacki: 2 - 4
+Joseph2302 - love: 2 - 4
+hackibacki - love: 4 - 2
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	Dunduks	3.8	19	5	0.0	277.0	   Yes
+2.	Watno	3.6	18	5	0.0	246.0	   No
+3.	tufftaeh	3.0	15	5	0.0	217.0	   Yes
+4.	ehunt	2.8	14	5	3.0	196.0	   Yes
+4.	sorawotobu	2.8	14	5	3.0	196.0	   Yes
+6.	Ravi Vasudevan	2.0	10	5	0.0	166.0	   Yes
+Dunduks - Watno: 5 - 1
+Dunduks - tufftaeh: 3 - 3
+Dunduks - ehunt: 4 - 2
+Dunduks - sorawotobu: 4 - 2
+Dunduks - Ravi Vasudevan: 3 - 3
+Watno - tufftaeh: 5 - 1
+Watno - ehunt: 4 - 2
+Watno - sorawotobu: 4 - 2
+Watno - Ravi Vasudevan: 4 - 2
+tufftaeh - ehunt: 4 - 2
+tufftaeh - sorawotobu: 4 - 2
+tufftaeh - Ravi Vasudevan: 3 - 3
+ehunt - sorawotobu: 3 - 3
+ehunt - Ravi Vasudevan: 5 - 1
+sorawotobu - Ravi Vasudevan: 5 - 1
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season20?
+1.	NZacharias	4.7	14	3	0.0	92.0	Yes
+2.	MVoltaire	4.5	9	2	9.0	81.0	  -
+3.	McGarnacle	3.7	11	3	0.0	74.0	No
+4.	makqvist	3.0	9	3	7.0	91.0	Yes
+5.	Dylan32	2.3	9	4	2.0	50.0	Yes
+6.	eselka	0.7	2	3	0.0	20.0	Yes
+NZacharias - McGarnacle: 4 - 2
+NZacharias - makqvist: 4 - 2
+NZacharias - eselka: 6 - 0
+MVoltaire - makqvist: 3 - 3
+MVoltaire - Dylan32: 6 - 0
+McGarnacle - Dylan32: 4 - 2
+McGarnacle - eselka: 5 - 1
+makqvist - Dylan32: 4 - 2
+Dylan32 - eselka: 5 - 1

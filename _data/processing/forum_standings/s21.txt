@@ -1,0 +1,239 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	aku chi	4.2	21	5	0.0	285.0	63.0	   Yes
+2.	drsteelhammer	3.6	18	5	0.0	234.0	63.2	   Yes
+3.	markus	3.4	17	5	0.0	236.0	63.8	   Yes
+4.	Rabid	2.8	14	5	0.0	200.0	61.6	   Yes
+5.	tracer	2.2	11	5	0.0	149.0	61.7	   No
+6.	A Drowned Kernel	1.8	9	5	0.0	144.0	56.1	   No
+aku chi - drsteelhammer: 4 - 2
+aku chi - markus: 4 - 2
+aku chi - Rabid: 4 - 2
+aku chi - tracer: 4 - 2
+aku chi - A Drowned Kernel: 5 - 1
+drsteelhammer - markus: 2 - 4
+drsteelhammer - Rabid: 4 - 2
+drsteelhammer - tracer: 6 - 0
+drsteelhammer - A Drowned Kernel: 4 - 2
+markus - Rabid: 3 - 3
+markus - tracer: 4 - 2
+markus - A Drowned Kernel: 4 - 2
+Rabid - tracer: 4 - 2
+Rabid - A Drowned Kernel: 3 - 3
+tracer - A Drowned Kernel: 5 - 1
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	Jean-Michel	4.1	16.5	4	0.0	179.3	58.4	   Yes
+2.	Qvist	2.9	11.5	4	0.0	135.3	55.8	   Yes
+3.	Burning Skull	2.8	11	4	4.0	125.0	60.2	   Yes
+4.	gamesou	2.8	11	4	2.0	132.5	57.5	   Yes
+5.	Watno	2.5	10	4	0.0	121.5	56.8	    ?
+Jean-Michel - Qvist: 3.5 - 2.5
+Jean-Michel - Burning Skull: 5 - 1
+Jean-Michel - gamesou: 4 - 2
+Jean-Michel - Watno: 4 - 2
+Qvist - Burning Skull: 3 - 3
+Qvist - gamesou: 1 - 5
+Qvist - Watno: 5 - 1
+Burning Skull - gamesou: 4 - 2
+Burning Skull - Watno: 3 - 3
+gamesou - Watno: 2 - 4
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	DG	3.8	15	4	0.0	166.5	51.6	   Yes
+2.	amoffett11	3.3	13	4	0.0	146.0	62.0	   Yes
+3.	mikechike	3.0	12	4	0.0	147.0	60.7	   No
+4.	Bryan	2.9	11.5	4	0.0	130.0	60.5	    ?
+5.	scotty2hotty	2.1	8.5	4	0.0	108.0	47.6	   No
+DG - amoffett11: 4 - 2
+DG - mikechike: 3 - 3
+DG - Bryan: 3.5 - 2.5
+DG - scotty2hotty: 4.5 - 1.5
+amoffett11 - mikechike: 3 - 3
+amoffett11 - Bryan: 4 - 2
+amoffett11 - scotty2hotty: 4 - 2
+mikechike - Bryan: 4 - 2
+mikechike - scotty2hotty: 2 - 4
+Bryan - scotty2hotty: 5 - 1
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	Jeb	3.5	10.5	3	3.5	87.3	56.5	   Yes
+2.	schadd	3.5	10.5	3	2.5	82.3	60.3	    ?
+3.	Beyond Awesome	3.2	9.5	3	0.0	82.3	59.7	    ?
+4.	NZacharias	1.8	5.5	3	0.0	55.3	48.9	    ?
+Jeb - schadd: 3.5 - 2.5
+Jeb - Beyond Awesome: 3 - 3
+Jeb - NZacharias: 4 - 2
+schadd - Beyond Awesome: 3 - 3
+schadd - NZacharias: 5 - 1
+Beyond Awesome - NZacharias: 3.5 - 2.5
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	gloures	3.6	14.5	4	0.0	162.3	61.0	   Yes
+2.	singletee	3.5	14	4	0.0	157.5	62.4	   Yes
+3.	Micha1980	2.8	11	4	0.0	137.0	57.0	   Yes
+4.	Chris is me	2.6	10.5	4	0.0	130.8	56.4	   Yes
+5.	Hackibacki	2.5	10	4	0.0	115.0	56.9	   No
+gloures - singletee: 3 - 3
+gloures - Micha1980: 3 - 3
+gloures - Chris is me: 4.5 - 1.5
+gloures - Hackibacki: 4 - 2
+singletee - Micha1980: 3 - 3
+singletee - Chris is me: 2 - 4
+singletee - Hackibacki: 6 - 0
+Micha1980 - Chris is me: 3 - 3
+Micha1980 - Hackibacki: 2 - 4
+Chris is me - Hackibacki: 2 - 4
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	LaLight	3.6	14.5	4	0.0	166.8	55.4	   Yes
+2.	ehunt	3.0	12	4	0.0	134.0	56.5	   Yes
+3.	Dunduks	2.9	11.5	4	0.0	140.8	51.0	   Yes
+4.	assemble me	2.8	11	4	3.0	135.0	52.4	   No
+4.	Sirusc	2.8	11	4	3.0	135.0	58.5	   Yes
+LaLight - ehunt: 6 - 0
+LaLight - Dunduks: 2.5 - 3.5
+LaLight - assemble me: 3 - 3
+LaLight - Sirusc: 3 - 3
+ehunt - Dunduks: 4 - 2
+ehunt - assemble me: 4 - 2
+ehunt - Sirusc: 4 - 2
+Dunduks - assemble me: 3 - 3
+Dunduks - Sirusc: 3 - 3
+assemble me - Sirusc: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	skumpy	4.3	17	4	0.0	117.0	57.5	   Yes
+2.	luckat	4.0	12	3	0.0	119.0	53.8	   Yes
+3.	Funhaver	3.3	13	4	0.0	89.0	47.4	   No
+4.	McGarnacle	1.3	4	3	0.0	55.0	40.9	   No
+5.	Water Polo DMo	1.0	2	2	0.0	30.0	37.1	   -
+skumpy - luckat: 4 - 2
+skumpy - Funhaver: 3 - 3
+skumpy - McGarnacle: 5 - 1
+skumpy - Water Polo DMo: 5 - 1
+luckat - Funhaver: 5 - 1
+luckat - McGarnacle: 5 - 1
+Funhaver - McGarnacle: 4 - 2
+Funhaver - Water Polo DMo: 5 - 1
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	Dylan32	3.5	14	4	0.0	162.0	49.6	   Yes
+2.	SinisterHologram	3.3	13	4	0.0	150.0	52.6	   No
+3.	topher1588	3.0	12	4	3.0	140.0	56.5	   No
+4.	MtMagus	3.0	12	4	3.0	138.0	51.7	   Yes
+5.	Hertz Doughnut	2.3	9	4	0.0	116.0	46.5	   Yes
+Dylan32 - SinisterHologram: 3 - 3
+Dylan32 - topher1588: 3 - 3
+Dylan32 - MtMagus: 5 - 1
+Dylan32 - Hertz Doughnut: 3 - 3
+SinisterHologram - topher1588: 4 - 2
+SinisterHologram - MtMagus: 2 - 4
+SinisterHologram - Hertz Doughnut: 4 - 2
+topher1588 - MtMagus: 3 - 3
+topher1588 - Hertz Doughnut: 4 - 2
+MtMagus - Hertz Doughnut: 4 - 2
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	Launchywiggin	4.3	21.5	5	0.0	271.8	58.7	   Yes
+2.	IDontPlayThisGame	3.6	18	5	0.0	259.0	53.5	   Yes
+3.	AlexJRStone	3.2	16	5	0.0	231.0	55.3	   Yes
+4.	The Do-Operator	2.6	13	5	0.0	188.0	56.9	   No
+5.	yariv	2.5	12.5	5	0.0	169.8	57.9	   Yes
+6.	ryan.echternacht	1.8	9	5	0.0	132.0	50.0	   Yes
+Launchywiggin - IDontPlayThisGame: 2 - 4
+Launchywiggin - AlexJRStone: 3 - 3
+Launchywiggin - The Do-Operator: 5 - 1
+Launchywiggin - yariv: 5.5 - 0.5
+Launchywiggin - ryan.echternacht: 6 - 0
+IDontPlayThisGame - AlexJRStone: 3 - 3
+IDontPlayThisGame - The Do-Operator: 3 - 3
+IDontPlayThisGame - yariv: 4 - 2
+IDontPlayThisGame - ryan.echternacht: 4 - 2
+AlexJRStone - The Do-Operator: 3 - 3
+AlexJRStone - yariv: 3 - 3
+AlexJRStone - ryan.echternacht: 4 - 2
+The Do-Operator - yariv: 3 - 3
+The Do-Operator - ryan.echternacht: 3 - 3
+yariv - ryan.echternacht: 4 - 2
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	E.Honda	3.6	18	5	0.0	265.0	59.8	   Yes
+2.	Cascadestyler	3.4	17	5	0.0	235.0	52.9	   No
+3.	tufftaeh	3.0	15	5	3.0	224.0	55.7	   Yes
+4.	ROGAVKA	3.0	15	5	3.0	215.0	57.2	   No
+5.	Haddock	2.6	13	5	0.0	202.0	51.8	   Yes
+6.	iremio	2.4	12	5	0.0	183.0	54.9	   Yes
+E.Honda - Cascadestyler: 4 - 2
+E.Honda - tufftaeh: 4 - 2
+E.Honda - ROGAVKA: 5 - 1
+E.Honda - Haddock: 2 - 4
+E.Honda - iremio: 3 - 3
+Cascadestyler - tufftaeh: 2 - 4
+Cascadestyler - ROGAVKA: 3 - 3
+Cascadestyler - Haddock: 4 - 2
+Cascadestyler - iremio: 6 - 0
+tufftaeh - ROGAVKA: 3 - 3
+tufftaeh - Haddock: 3 - 3
+tufftaeh - iremio: 3 - 3
+ROGAVKA - Haddock: 5 - 1
+ROGAVKA - iremio: 3 - 3
+Haddock - iremio: 3 - 3
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	GreysonEK	4.8	24	5	0.0	312.0	52.2	   Yes
+2.	Nala	3.6	18	5	0.0	240.5	47.7	   Yes
+3.	Nicholas Galauxy	3.0	15	5	0.0	197.5	47.8	   Yes
+4.	mirikoko	2.5	12.5	5	0.0	169.0	41.1	    ?
+5.	jdcw	2.4	12	5	0.0	144.5	42.6	   No
+6.	shaila	1.7	8.5	5	0.0	139.0	38.0	   Yes
+GreysonEK - Nala: 4 - 2
+GreysonEK - Nicholas Galauxy: 5 - 1
+GreysonEK - mirikoko: 5 - 1
+GreysonEK - jdcw: 5 - 1
+GreysonEK - shaila: 5 - 1
+Nala - Nicholas Galauxy: 3 - 3
+Nala - mirikoko: 4 - 2
+Nala - jdcw: 6 - 0
+Nala - shaila: 3 - 3
+Nicholas Galauxy - mirikoko: 3 - 3
+Nicholas Galauxy - jdcw: 4 - 2
+Nicholas Galauxy - shaila: 4 - 2
+mirikoko - jdcw: 2.5 - 3.5
+mirikoko - shaila: 4 - 2
+jdcw - shaila: 5.5 - 0.5
+
+
+E2 (60%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season22?
+1.	kamikazepig	4.2	12.5	3	0.0	77.3	52.8	   
+2.	bouchon	4.0	12	3	0.0	74.0	55.8	   
+3.	Makqvist	3.0	3	1	0.0	18.0	22.0	   
+4.	eselka	2.0	6	3	0.0	45.5	41.5	   
+5.	Alchemist38	1.3	2.5	2	0.0	30.8	50.4	   
+kamikazepig - bouchon: 3 - 3
+kamikazepig - eselka: 5 - 1
+kamikazepig - Alchemist38: 4.5 - 1.5
+bouchon - eselka: 4 - 2
+bouchon - Alchemist38: 5 - 1
+Makqvist - eselka: 3 - 3

@@ -1,0 +1,279 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	Mic Qsenoch	4.0	20	5	0.0	271.0	   No
+2.	markus	3.8	19	5	0.0	261.0	   Yes
+3.	tracer	3.2	16	5	0.0	209.0	   Yes
+4.	aku chi	3.0	15	5	0.0	200.0	   Yes
+5.	DG	2.6	13	5	0.0	184.0	    ?
+6.	gamesou	1.4	7	5	0.0	115.0	   Yes
+Mic Qsenoch - markus: 3 - 3
+Mic Qsenoch - tracer: 5 - 1
+Mic Qsenoch - aku chi: 4 - 2
+Mic Qsenoch - DG: 3 - 3
+Mic Qsenoch - gamesou: 5 - 1
+markus - tracer: 3 - 3
+markus - aku chi: 4 - 2
+markus - DG: 5 - 1
+markus - gamesou: 4 - 2
+tracer - aku chi: 3 - 3
+tracer - DG: 4 - 2
+tracer - gamesou: 5 - 1
+aku chi - DG: 3 - 3
+aku chi - gamesou: 5 - 1
+DG - gamesou: 4 - 2
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	A Drowned Kernel	4.3	17	4	0.0	230.5	   Yes
+2.	vsiewnar	4.2	21	5	0.0	186.5	   No
+3.	breppert	3.3	13	4	0.0	152.5	   No
+4.	Dingan	2.9	14.5	5	0.0	106.8	   No
+5.	singletee	1.4	5.5	4	0.0	97.8	   Yes
+6.	RTT	0.5	1	2	0.0	14.5	   -
+A Drowned Kernel - vsiewnar: 4 - 2
+A Drowned Kernel - breppert: 4 - 2
+A Drowned Kernel - Dingan: 5 - 1
+A Drowned Kernel - singletee: 4 - 2
+vsiewnar - breppert: 4 - 2
+vsiewnar - Dingan: 5 - 1
+vsiewnar - singletee: 4 - 2
+vsiewnar - RTT: 6 - 0
+breppert - Dingan: 3 - 3
+breppert - singletee: 6 - 0
+Dingan - singletee: 4.5 - 1.5
+Dingan - RTT: 5 - 1
+
+
+B2 (86%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	drsteelhammer	4.0	20	5	0.0	236.0	   Yes
+2.	Rabid	3.5	14	4	0.0	168.5	   
+3.	Qvist	2.9	11.5	4	0.0	144.3	   
+4.	Marin	2.8	11	4	0.0	144.0	   
+5.	Burning Skull	2.7	13.5	5	0.0	161.8	   Yes
+6.	Mikey the great	2.0	8	4	0.0	123.0	   
+drsteelhammer - Rabid: 4 - 2
+drsteelhammer - Qvist: 6 - 0
+drsteelhammer - Marin: 3 - 3
+drsteelhammer - Burning Skull: 4 - 2
+drsteelhammer - Mikey the great: 3 - 3
+Rabid - Qvist: 3 - 3
+Rabid - Burning Skull: 4 - 2
+Rabid - Mikey the great: 5 - 1
+Qvist - Marin: 5 - 1
+Qvist - Burning Skull: 3.5 - 2.5
+Marin - Burning Skull: 3 - 3
+Marin - Mikey the great: 4 - 2
+Burning Skull - Mikey the great: 4 - 2
+Remaining: Rabid-Marin, Qvist-Mikey the great
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	scotty2hotty	3.6	18	5	0.0	250.0	   Yes
+2.	amoffett11	3.4	17	5	3.0	247.0	   Yes
+3.	schadd	3.4	17	5	3.0	239.0	   Yes
+4.	Chris is me	2.8	14	5	3.0	212.0	   Yes
+5.	Beyond Awesome	2.8	14	5	3.0	202.0	   Yes
+6.	zeruf	2.0	10	5	0.0	156.0	   Yes
+scotty2hotty - amoffett11: 3 - 3
+scotty2hotty - schadd: 3 - 3
+scotty2hotty - Chris is me: 2 - 4
+scotty2hotty - Beyond Awesome: 5 - 1
+scotty2hotty - zeruf: 5 - 1
+amoffett11 - schadd: 3 - 3
+amoffett11 - Chris is me: 4 - 2
+amoffett11 - Beyond Awesome: 4 - 2
+amoffett11 - zeruf: 3 - 3
+schadd - Chris is me: 4 - 2
+schadd - Beyond Awesome: 2 - 4
+schadd - zeruf: 5 - 1
+Chris is me - Beyond Awesome: 3 - 3
+Chris is me - zeruf: 3 - 3
+Beyond Awesome - zeruf: 4 - 2
+
+
+C2 (90%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	mikechike	4.0	16	4	0.0	144.5	   Yes
+2.	rchandra	3.8	11.5	3	0.0	130.3	   
+3.	Dunduks	2.5	10	4	0.0	115.5	   Yes
+4.	Jeb	2.4	9.5	4	0.0	98.8	   Yes
+5.	Launchywiggin	2.3	7	3	0.0	68.5	   
+mikechike - rchandra: 3 - 3
+mikechike - Dunduks: 3 - 3
+mikechike - Jeb: 4 - 2
+mikechike - Launchywiggin: 6 - 0
+rchandra - Dunduks: 3 - 3
+rchandra - Jeb: 5.5 - 0.5
+Dunduks - Jeb: 2 - 4
+Dunduks - Launchywiggin: 2 - 4
+Jeb - Launchywiggin: 3 - 3
+Remaining: rchandra-Launchywiggin
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	Watno	3.7	18.5	5	0.0	250.8	   Yes
+2.	Jean-Michel	3.3	16.5	5	0.0	249.3	   Yes
+3.	Assemble Meme	3.2	16	5	0.0	231.5	   No
+4.	Simon (DK)	3.0	15	5	0.0	220.5	   Yes
+5.	Micha1980	2.6	13	5	0.0	196.5	   Yes
+6.	E.Honda	2.2	11	5	0.0	166.0	   Yes
+Watno - Jean-Michel: 1.5 - 4.5
+Watno - Assemble Meme: 3 - 3
+Watno - Simon (DK): 3 - 3
+Watno - Micha1980: 6 - 0
+Watno - E.Honda: 5 - 1
+Jean-Michel - Assemble Meme: 4 - 2
+Jean-Michel - Simon (DK): 2 - 4
+Jean-Michel - Micha1980: 3 - 3
+Jean-Michel - E.Honda: 3 - 3
+Assemble Meme - Simon (DK): 5 - 1
+Assemble Meme - Micha1980: 1 - 5
+Assemble Meme - E.Honda: 5 - 1
+Simon (DK) - Micha1980: 3 - 3
+Simon (DK) - E.Honda: 4 - 2
+Micha1980 - E.Honda: 2 - 4
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	bog	4.3	17	4	0.0	178.0	   No
+2.	NZacharias	3.4	13.5	4	0.0	137.3	   Yes
+3.	Hertz Doughnut	3.3	13	4	0.0	124.0	   Yes
+4.	jamfamsam	3.0	12	4	0.0	135.0	   Yes
+5.	Water Polo DMo	1.1	4.5	4	0.0	61.3	   Yes
+bog - NZacharias: 5 - 1
+bog - Hertz Doughnut: 4 - 2
+bog - jamfamsam: 3 - 3
+bog - Water Polo DMo: 5 - 1
+NZacharias - Hertz Doughnut: 4 - 2
+NZacharias - jamfamsam: 4 - 2
+NZacharias - Water Polo DMo: 4.5 - 1.5
+Hertz Doughnut - jamfamsam: 3 - 3
+Hertz Doughnut - Water Polo DMo: 6 - 0
+jamfamsam - Water Polo DMo: 4 - 2
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	gloures	5.0	20	4	0.0	198.0	   Yes
+2.	diedre91	3.8	15	4	0.0	142.0	    ?
+3.	MtMagus	2.5	10	4	0.0	96.0	   Yes
+4.	Funhaver	2.3	9	4	0.0	84.0	   Yes
+5.	dawnofnight	1.5	6	4	0.0	78.0	    ?
+gloures - diedre91: 4 - 2
+gloures - MtMagus: 6 - 0
+gloures - Funhaver: 6 - 0
+gloures - dawnofnight: 4 - 2
+diedre91 - MtMagus: 3 - 3
+diedre91 - Funhaver: 4 - 2
+diedre91 - dawnofnight: 6 - 0
+MtMagus - Funhaver: 3 - 3
+MtMagus - dawnofnight: 4 - 2
+Funhaver - dawnofnight: 4 - 2
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	ehunt	4.4	22	5	0.0	294.0	   Yes
+2.	hackibacki	3.4	17	5	0.0	227.0	   Yes
+3.	Haddock	3.0	15	5	0.0	221.0	   Yes
+4.	LuciferousPeridot	2.8	14	5	0.0	172.0	    ?
+5.	Cascadestyler	2.6	13	5	0.0	210.0	   Yes
+6.	Joseph2302	1.8	9	5	0.0	132.0	   No
+ehunt - hackibacki: 5 - 1
+ehunt - Haddock: 3 - 3
+ehunt - LuciferousPeridot: 6 - 0
+ehunt - Cascadestyler: 2 - 4
+ehunt - Joseph2302: 6 - 0
+hackibacki - Haddock: 4 - 2
+hackibacki - LuciferousPeridot: 5 - 1
+hackibacki - Cascadestyler: 3 - 3
+hackibacki - Joseph2302: 4 - 2
+Haddock - LuciferousPeridot: 3 - 3
+Haddock - Cascadestyler: 4 - 2
+Haddock - Joseph2302: 3 - 3
+LuciferousPeridot - Cascadestyler: 5 - 1
+LuciferousPeridot - Joseph2302: 5 - 1
+Cascadestyler - Joseph2302: 3 - 3
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	sorawotobu	3.8	15	4	0.0	155.5	   No
+2.	Lalight	3.4	13.5	4	0.0	152.3	   Yes
+3.	tufftaeh	3.1	12.5	4	0.0	152.3	   Yes
+4.	Ravi Vasudevan	3.0	12	4	0.0	135.0	   No
+5.	The Do-Operator	1.8	7	4	0.0	88.5	   Yes
+sorawotobu - Lalight: 3 - 3
+sorawotobu - tufftaeh: 2 - 4
+sorawotobu - Ravi Vasudevan: 4 - 2
+sorawotobu - The Do-Operator: 6 - 0
+Lalight - tufftaeh: 2.5 - 3.5
+Lalight - Ravi Vasudevan: 4 - 2
+Lalight - The Do-Operator: 4 - 2
+tufftaeh - Ravi Vasudevan: 2 - 4
+tufftaeh - The Do-Operator: 3 - 3
+Ravi Vasudevan - The Do-Operator: 4 - 2
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	luckat	3.8	15	4	0.0	170.5	   Yes
+2.	Dylan32	3.4	13.5	4	0.0	150.3	   Yes
+3.	bgecko	2.9	11.5	4	0.0	133.3	    ?
+4.	jdcw	2.6	10.5	4	0.0	124.8	   Yes
+5.	Nicholas Galauxy	2.4	9.5	4	0.0	121.3	   Yes
+luckat - Dylan32: 4 - 2
+luckat - bgecko: 4 - 2
+luckat - jdcw: 4 - 2
+luckat - Nicholas Galauxy: 3 - 3
+Dylan32 - bgecko: 3.5 - 2.5
+Dylan32 - jdcw: 4 - 2
+Dylan32 - Nicholas Galauxy: 4 - 2
+bgecko - jdcw: 3 - 3
+bgecko - Nicholas Galauxy: 4 - 2
+jdcw - Nicholas Galauxy: 3.5 - 2.5
+
+
+E2 (90%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	topher1588	4.8	19	4	0.0	172.0	   Yes
+2.	Octopode	3.3	13	4	0.0	93.5	    ?
+3.	kamikazepig	2.7	8	3	0.0	108.5	   
+4.	shaila	2.1	8.5	4	0.0	82.8	   Yes
+5.	oneELECTRIC	1.8	5.5	3	0.0	61.8	   
+topher1588 - Octopode: 6 - 0
+topher1588 - kamikazepig: 3 - 3
+topher1588 - shaila: 5 - 1
+topher1588 - oneELECTRIC: 5 - 1
+Octopode - kamikazepig: 4 - 2
+Octopode - shaila: 4 - 2
+Octopode - oneELECTRIC: 5 - 1
+kamikazepig - shaila: 3 - 3
+shaila - oneELECTRIC: 2.5 - 3.5
+Remaining: kamikazepig-oneELECTRIC
+
+E3 (93%)
+rank	name                                 	average	points	#played	2nd	3rd     	season21?
+1.	AlexJRStone	4.0	20	5	0.0	264.0	   Yes
+2.	Alchemist38	3.4	17	5	3.0	208.0	   Yes
+3.	bouchon	3.4	17	5	3.0	200.0	   Yes
+4.	eselka	2.4	12	5	0.0	170.0	   Yes
+5.	Timethief	2.3	9	4	0.0	144.0	   
+6.	makqvist	2.3	9	4	0.0	142.0	   
+AlexJRStone - Alchemist38: 4 - 2
+AlexJRStone - bouchon: 5 - 1
+AlexJRStone - eselka: 4 - 2
+AlexJRStone - Timethief: 4 - 2
+AlexJRStone - makqvist: 3 - 3
+Alchemist38 - bouchon: 3 - 3
+Alchemist38 - eselka: 3 - 3
+Alchemist38 - Timethief: 4 - 2
+Alchemist38 - makqvist: 5 - 1
+bouchon - eselka: 4 - 2
+bouchon - Timethief: 4 - 2
+bouchon - makqvist: 5 - 1
+eselka - Timethief: 3 - 3
+eselka - makqvist: 2 - 4

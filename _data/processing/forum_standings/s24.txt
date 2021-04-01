@@ -1,0 +1,244 @@
+A1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	markus	3.5	17.5	5	3.5	243.3	63.5	   Yes
+2.	Rabid	3.5	17.5	5	2.5	254.8	61.7	   Yes
+3.	Bryan	3.2	16	5	0.0	235.0	57.9	   Yes
+4.	aku chi	3.0	15	5	0.0	215.5	60.5	   Yes
+5.	vsiewnar	2.6	13	5	0.0	197.0	59.6	   No
+6.	ehunt	2.2	11	5	0.0	171.0	54.9	   Yes
+markus - Rabid: 3.5 - 2.5
+markus - Bryan: 2 - 4
+markus - aku chi: 2 - 4
+markus - vsiewnar: 5 - 1
+markus - ehunt: 5 - 1
+Rabid - Bryan: 4 - 2
+Rabid - aku chi: 5 - 1
+Rabid - vsiewnar: 3 - 3
+Rabid - ehunt: 3 - 3
+Bryan - aku chi: 4 - 2
+Bryan - vsiewnar: 2 - 4
+Bryan - ehunt: 4 - 2
+aku chi - vsiewnar: 4 - 2
+aku chi - ehunt: 4 - 2
+vsiewnar - ehunt: 3 - 3
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	Mic Qsenoch	4.2	21	5	0.0	269.0	60.8	   Yes
+2.	DG	3.4	17	5	0.0	259.5	57.6	   Yes
+3.	Burning Skull	3.1	15.5	5	0.0	233.8	61.8	   Yes
+4.	gloures	2.7	13.5	5	0.0	184.3	60.3	   Yes
+5.	Seprix	2.6	13	5	0.0	181.5	59.5	   Yes
+6.	Sicomatic	2.0	10	5	0.0	150.5	64.8	   Yes
+Mic Qsenoch - DG: 1 - 5
+Mic Qsenoch - Burning Skull: 3 - 3
+Mic Qsenoch - gloures: 5 - 1
+Mic Qsenoch - Seprix: 6 - 0
+Mic Qsenoch - Sicomatic: 6 - 0
+DG - Burning Skull: 2 - 4
+DG - gloures: 5 - 1
+DG - Seprix: 2 - 4
+DG - Sicomatic: 3 - 3
+Burning Skull - gloures: 2.5 - 3.5
+Burning Skull - Seprix: 3 - 3
+Burning Skull - Sicomatic: 3 - 3
+gloures - Seprix: 4 - 2
+gloures - Sicomatic: 4 - 2
+Seprix - Sicomatic: 4 - 2
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	drsteelhammer	4.8	24	5	0.0	316.0	63.1	   Yes
+2.	LimeTime	3.2	16	5	0.0	208.5	63.6	   No
+3.	E.Honda	3.1	15.5	5	0.0	192.0	60.9	   Yes
+4.	gamesou	2.7	13.5	5	0.0	193.0	61.7	   Yes
+5.	mikechike	2.4	12	5	0.0	187.0	60.5	   Yes
+6.	skumpy	1.8	9	5	0.0	124.0	57.2	   Yes
+drsteelhammer - LimeTime: 5 - 1
+drsteelhammer - E.Honda: 5.5 - 0.5
+drsteelhammer - gamesou: 4.5 - 1.5
+drsteelhammer - mikechike: 3 - 3
+drsteelhammer - skumpy: 6 - 0
+LimeTime - E.Honda: 3 - 3
+LimeTime - gamesou: 4 - 2
+LimeTime - mikechike: 4 - 2
+LimeTime - skumpy: 4 - 2
+E.Honda - gamesou: 2 - 4
+E.Honda - mikechike: 5 - 1
+E.Honda - skumpy: 5 - 1
+gamesou - mikechike: 3 - 3
+gamesou - skumpy: 3 - 3
+mikechike - skumpy: 3 - 3
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	Gazbag	4.1	20.5	5	0.0	283.3	60.6	   Yes
+2.	Micha1980	3.1	15.5	5	0.0	228.3	55.7	   Yes
+3.	Anders	3.0	15	5	0.0	215.0	58.8	   Yes
+4.	Jimmmy	2.6	13	5	7.0	198.0	55.3	   Yes
+5.	MP52	2.6	13	5	7.0	183.0	55.8	   Yes
+6.	assemble me	2.6	13	5	4.0	200.0	53.1	   Yes
+Gazbag - Micha1980: 3.5 - 2.5
+Gazbag - Anders: 4 - 2
+Gazbag - Jimmmy: 3 - 3
+Gazbag - MP52: 6 - 0
+Gazbag - assemble me: 4 - 2
+Micha1980 - Anders: 4 - 2
+Micha1980 - Jimmmy: 5 - 1
+Micha1980 - MP52: 2 - 4
+Micha1980 - assemble me: 2 - 4
+Anders - Jimmmy: 4 - 2
+Anders - MP52: 4 - 2
+Anders - assemble me: 3 - 3
+Jimmmy - MP52: 2 - 4
+Jimmmy - assemble me: 5 - 1
+MP52 - assemble me: 3 - 3
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	SSLY	4.3	17	4	0.0	135.0	58.5	   Yes
+2.	Jean-Michel	3.0	6	2	0.0	81.0	58.4	   -
+3.	chrismikethomas	2.7	8	3	0.0	85.0	54.2	    ?
+4.	Chris is me	2.5	10	4	0.0	80.0	56.8	   Yes
+5.	LaLight	2.3	7	3	0.0	71.0	57.3	   -
+SSLY - Jean-Michel: 3 - 3
+SSLY - chrismikethomas: 4 - 2
+SSLY - Chris is me: 5 - 1
+SSLY - LaLight: 5 - 1
+Jean-Michel - Chris is me: 3 - 3
+chrismikethomas - Chris is me: 3 - 3
+chrismikethomas - LaLight: 3 - 3
+Chris is me - LaLight: 3 - 3
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	amoffett11	4.2	21	5	0.0	227.0	55.8	   Yes
+2.	SmokeyRivers	3.8	19	5	0.0	195.0	58.2	   Yes
+3.	therem.harth	3.0	15	5	0.0	188.0	56.9	   Yes
+4.	Sirusc	2.7	8	3	0.0	136.0	54.9	   -
+5.	Dunduks	2.0	8	4	0.0	112.0	52.8	   Yes
+6.	bouchon	1.8	7	4	0.0	92.0	57.1	   Yes
+amoffett11 - SmokeyRivers: 4 - 2
+amoffett11 - therem.harth: 3 - 3
+amoffett11 - Sirusc: 4 - 2
+amoffett11 - Dunduks: 4 - 2
+amoffett11 - bouchon: 6 - 0
+SmokeyRivers - therem.harth: 3 - 3
+SmokeyRivers - Sirusc: 5 - 1
+SmokeyRivers - Dunduks: 5 - 1
+SmokeyRivers - bouchon: 4 - 2
+therem.harth - Sirusc: 1 - 5
+therem.harth - Dunduks: 4 - 2
+therem.harth - bouchon: 4 - 2
+Dunduks - bouchon: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	Severian-666	4.1	20.5	5	0.0	273.3	57.0	    ?
+2.	freact	3.6	18	5	0.0	252.5	55.3	   Yes
+3.	gjduckworth	3.4	17	5	0.0	230.5	53.5	   Yes
+4.	sillle14	2.7	13.5	5	0.0	190.3	51.6	   Yes
+5.	mglagrla	2.4	12	5	0.0	176.0	47.4	   Yes
+6.	MtMagus	1.8	9	5	0.0	137.0	50.7	   Yes
+Severian-666 - freact: 2 - 4
+Severian-666 - gjduckworth: 5 - 1
+Severian-666 - sillle14: 3.5 - 2.5
+Severian-666 - mglagrla: 5 - 1
+Severian-666 - MtMagus: 5 - 1
+freact - gjduckworth: 2 - 4
+freact - sillle14: 5 - 1
+freact - mglagrla: 2 - 4
+freact - MtMagus: 5 - 1
+gjduckworth - sillle14: 4 - 2
+gjduckworth - mglagrla: 4 - 2
+gjduckworth - MtMagus: 4 - 2
+sillle14 - mglagrla: 5 - 1
+sillle14 - MtMagus: 3 - 3
+mglagrla - MtMagus: 4 - 2
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	tufftaeh	3.8	15	4	0.0	95.0	55.6	   Yes
+2.	Huevos Locos	3.7	11	3	0.0	89.0	59.7	   Yes
+3.	RICHARDNIXON	2.7	8	3	0.0	72.0	51.3	   Yes
+4.	benedettosoxfan	2.5	5	2	0.0	61.0	56.8	   -
+5.	Bounceyboy	1.5	3	2	0.0	37.0	53.4	   -
+tufftaeh - Huevos Locos: 3 - 3
+tufftaeh - RICHARDNIXON: 4 - 2
+tufftaeh - benedettosoxfan: 3 - 3
+tufftaeh - Bounceyboy: 5 - 1
+Huevos Locos - RICHARDNIXON: 4 - 2
+Huevos Locos - Bounceyboy: 4 - 2
+RICHARDNIXON - benedettosoxfan: 4 - 2
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	iremio	4.0	20	5	0.0	282.5	55.4	   No
+2.	NZacharias	3.3	16.5	5	0.0	223.3	52.8	   Yes
+3.	Hertz Doughnut	3.2	16	5	0.0	228.5	52.1	   Yes
+4.	IDontPlayThisGame	3.0	15	5	0.0	215.0	55.0	   No
+5.	ryan.echternacht	2.4	12	5	0.0	172.5	56.6	    ?
+6.	walinger	2.1	10.5	5	0.0	170.8	50.0	   No
+iremio - NZacharias: 4 - 2
+iremio - Hertz Doughnut: 5 - 1
+iremio - IDontPlayThisGame: 3 - 3
+iremio - ryan.echternacht: 5 - 1
+iremio - walinger: 3 - 3
+NZacharias - Hertz Doughnut: 1 - 5
+NZacharias - IDontPlayThisGame: 4 - 2
+NZacharias - ryan.echternacht: 5 - 1
+NZacharias - walinger: 4.5 - 1.5
+Hertz Doughnut - IDontPlayThisGame: 4 - 2
+Hertz Doughnut - ryan.echternacht: 2 - 4
+Hertz Doughnut - walinger: 4 - 2
+IDontPlayThisGame - ryan.echternacht: 4 - 2
+IDontPlayThisGame - walinger: 4 - 2
+ryan.echternacht - walinger: 4 - 2
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	Sharur	3.8	19	5	0.0	265.5	55.7	   Yes
+2.	luckat	3.7	18.5	5	0.0	261.3	55.1	   Yes
+3.	GreysonEK	3.2	16	5	0.0	215.5	57.1	   Yes
+4.	Wrobbe	2.8	14	5	0.0	207.0	55.4	   Yes
+5.	Launchywiggin	2.3	11.5	5	0.0	172.3	58.0	   Yes
+6.	Puk	2.2	11	5	0.0	170.0	53.4	   No
+Sharur - luckat: 3 - 3
+Sharur - GreysonEK: 4 - 2
+Sharur - Wrobbe: 4 - 2
+Sharur - Launchywiggin: 4 - 2
+Sharur - Puk: 4 - 2
+luckat - GreysonEK: 4 - 2
+luckat - Wrobbe: 4 - 2
+luckat - Launchywiggin: 3.5 - 2.5
+luckat - Puk: 4 - 2
+GreysonEK - Wrobbe: 2 - 4
+GreysonEK - Launchywiggin: 5 - 1
+GreysonEK - Puk: 5 - 1
+Wrobbe - Launchywiggin: 4 - 2
+Wrobbe - Puk: 2 - 4
+Launchywiggin - Puk: 4 - 2
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season25?
+1.	phazex3375	4.1	16.5	4	0.0	80.8	49.4	   Yes
+2.	zxcvbn19	3.3	6.5	2	0.0	57.3	48.0	   -
+3.	Courtney	3.0	6	2	0.0	31.5	43.1	   No
+4.	mutagen	2.0	4	2	0.0	46.0	50.8	   -
+5.	GregDC	1.5	3	2	0.0	39.0	36.6	   -
+phazex3375 - zxcvbn19: 3.5 - 2.5
+phazex3375 - Courtney: 5 - 1
+phazex3375 - mutagen: 4 - 2
+phazex3375 - GregDC: 4 - 2
+zxcvbn19 - mutagen: 4 - 2
+Courtney - GregDC: 5 - 1
