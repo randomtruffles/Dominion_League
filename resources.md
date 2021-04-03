@@ -188,6 +188,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Way of the Chameleon**:
   * See **Oracle** above.
   * See **Priest** above.
+* **Way of the Frog**: If you play a card using Way of the Frog when it isn't your turn, when it is discarded from play, it is not put onto your deck.
 * **Way of the Mouse + Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card (other than Captain or Mastermind) using Way of the Mouse it is discarded from play the same turn.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
 * **Wayfarer**: See **Quarry** above.
