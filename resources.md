@@ -1,7 +1,7 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-date: 2021-02-05
+date: 2021-04-02
 categories: pinned
 layout: rules_faq
 ---
@@ -139,6 +139,7 @@ If you have to do anything with your deck — for example draw, look at, reveal,
 Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI.
 
 * **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
+* **Black Cat**: If you play Black Cat when it is not your turn, players gain Curses starting with the player to your left, instead of the current player.
 * **Black Market, Storyteller**: When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
 * **Blessed Village**: When you gain a Blessed Village during another player's turn, take The Field's Gift, The Forest's Gift, or The River's Gift, and choose to receive it now, the Boon is discarded during your next Clean-up phase instead of the very next Clean-up phase.
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
@@ -180,18 +181,19 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Star Chart**: See **Fleet** above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
 * **Storyteller**: See **Black Market** above.
+* **Trader**: When you gain a card that is not from a pile, the game will freeze if you react with Trader.
 * **Transport**
 
   * **Invest**: See **Invest** above.
   * **Possession**: See **Possession** above.
 * **Villa**: See **Cavalry** above.
+* **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
 * **Way of the Chameleon**:
   * See **Oracle** above.
   * See **Priest** above.
 * **Way of the Frog**: If you play a card using Way of the Frog when it isn't your turn, when it is discarded from play, it is not put onto your deck.
 * **Way of the Mouse + Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card (other than Captain or Mastermind) using Way of the Mouse it is discarded from play the same turn.
-* **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
 * **Wayfarer**: See **Quarry** above.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
 
-If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (Card Game) Discord server, and then tag a League moderator.
+If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
