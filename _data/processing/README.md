@@ -10,9 +10,9 @@ This contains scripts and data for producing and updating the files in the paren
 	- Where the scripts dump files to not overwrite working versions. Move from here once checked for quality
 - `Seasons`
 	- JSON files for raw individual season standings and results
-- `chartsDataUpdate.js`
-	- Updates the chart data files for a season (named in the file), currently only for `chart_history.json` and `chart_counts.json`
-	- Processes any name changes on these
+- `chartsDataMaker.js`
+	- Creates the chart data files up to date with `league_history.json`
+	- `chart_transitions.json` dependent on `current_season.json` as well
 - `forumStandingsProc.js`
 	- Parses the forum standings data files and places the json outputs in the Seasons folder for seasons 1-25
 	- Should not be needed unless an error is spotted in those past standings
