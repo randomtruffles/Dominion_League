@@ -1,0 +1,264 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	Stef	4,0	20	5	0,0	276,0	   Yes
+2.	Burning Skull	3,4	16,8	5	0,0	236,6	   Yes
+3.	Mic Qsenoch	3,1	15,3	5	0,0	213,6	   Yes
+4.	SheCantSayNo	3,0	15	5	0,0	225,0	   Yes
+5.	gamesou	2,5	12,5	5	0,0	178,6	   Yes
+6.	Rabid	2,1	10,5	5	0,0	165,6	   Yes
+Stef - Burning Skull: 3 - 3
+Stef - Mic Qsenoch: 5 - 1
+Stef - SheCantSayNo: 3 - 3
+Stef - gamesou: 5 - 1
+Stef - Rabid: 4 - 2
+Burning Skull - Mic Qsenoch: 2,3 - 3,8
+Burning Skull - SheCantSayNo: 3 - 3
+Burning Skull - gamesou: 4 - 2
+Burning Skull - Rabid: 4,5 - 1,5
+Mic Qsenoch - SheCantSayNo: 3 - 3
+Mic Qsenoch - gamesou: 3,5 - 2,5
+Mic Qsenoch - Rabid: 4 - 2
+SheCantSayNo - gamesou: 3 - 3
+SheCantSayNo - Rabid: 3 - 3
+gamesou - Rabid: 4 - 2
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	mpsprs	3,7	18,5	5	0,0	261,0	   Yes
+2.	Dingan	3,3	16,5	5	0,0	237,0	   Yes
+3.	2.71828.....	3,2	16	5	0,0	220,5	   No
+4.	Mikey the great	3,0	15	5	3,0	222,3	   Yes
+5.	DG	3,0	15	5	3,0	212,5	   Yes
+6.	gkrieg	1,8	9	5	0,0	145,3	   Yes
+mpsprs - Dingan: 3 - 3
+mpsprs - 2.71828.....: 6 - 0
+mpsprs - Mikey the great: 3 - 3
+mpsprs - DG: 2 - 4
+mpsprs - gkrieg: 4,5 - 1,5
+Dingan - 2.71828.....: 3 - 3
+Dingan - Mikey the great: 1,5 - 4,5
+Dingan - DG: 5 - 1
+Dingan - gkrieg: 4 - 2
+2.71828..... - Mikey the great: 5 - 1
+2.71828..... - DG: 4 - 2
+2.71828..... - gkrieg: 4 - 2
+Mikey the great - DG: 3 - 3
+Mikey the great - gkrieg: 3,5 - 2,5
+DG - gkrieg: 5 - 1
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	Psyduck	3,5	14	4	0,0	161,5	   Yes
+2.	Geronimoo	3,3	13	4	0,0	148,0	   Yes
+3.	Fergesser	3,0	12	4	0,0	144,0	   Yes
+4.	Assemble Meme	2,6	10,5	4	3,0	128,5	   Yes
+4.	Dunduks	2,6	10,5	4	3,0	128,5	   Yes
+Psyduck - Geronimoo: 4 - 2
+Psyduck - Fergesser: 3 - 3
+Psyduck - Assemble Meme: 3 - 3
+Psyduck - Dunduks: 4 - 2
+Geronimoo - Fergesser: 3 - 3
+Geronimoo - Assemble Meme: 5 - 1
+Geronimoo - Dunduks: 3 - 3
+Fergesser - Assemble Meme: 2,5 - 3,5
+Fergesser - Dunduks: 3,5 - 2,5
+Assemble Meme - Dunduks: 3 - 3
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	A Drowned Kernel	4,4	22	5	0,0	302,0	   Yes
+2.	mith	3,8	19	5	0,0	235,0	   No
+3.	Derg17	3,0	15	5	0,0	216,0	   Yes
+4.	michaeljb	2,6	13	5	0,0	171,0	   Yes
+5.	noey21	2,4	12	5	0,0	176,0	   Yes
+6.	Pizowned	1,8	9	5	0,0	136,0	    ?
+A Drowned Kernel - mith: 5 - 1
+A Drowned Kernel - Derg17: 3 - 3
+A Drowned Kernel - michaeljb: 6 - 0
+A Drowned Kernel - noey21: 4 - 2
+A Drowned Kernel - Pizowned: 4 - 2
+mith - Derg17: 4 - 2
+mith - michaeljb: 3 - 3
+mith - noey21: 5 - 1
+mith - Pizowned: 6 - 0
+Derg17 - michaeljb: 4 - 2
+Derg17 - noey21: 2 - 4
+Derg17 - Pizowned: 4 - 2
+michaeljb - noey21: 4 - 2
+michaeljb - Pizowned: 4 - 2
+noey21 - Pizowned: 3 - 3
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	popsofctown	3,3	10	3	0,0	157,0	   -
+2.	vsiewnar	3,3	16,5	5	5,0	204,3	   No
+3.	singletee	3,3	16,5	5	1,0	189,8	   Yes
+4.	werothegreat	2,9	14,5	5	0,0	193,8	   Yes
+5.	JP Gerber	2,9	11,5	4	0,0	151,8	   Yes
+6.	7MiKL7	2,3	9	4	0,0	132,5	    ?
+popsofctown - vsiewnar: 3 - 3
+popsofctown - singletee: 3 - 3
+popsofctown - werothegreat: 4 - 2
+vsiewnar - singletee: 5 - 1
+vsiewnar - werothegreat: 0,5 - 5,5
+vsiewnar - JP Gerber: 5 - 1
+vsiewnar - 7MiKL7: 3 - 3
+singletee - werothegreat: 4 - 2
+singletee - JP Gerber: 3,5 - 2,5
+singletee - 7MiKL7: 5 - 1
+werothegreat - JP Gerber: 2 - 4
+werothegreat - 7MiKL7: 3 - 3
+JP Gerber - 7MiKL7: 4 - 2
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	Jimmmmm	3,8	19	5	0,0	253,5	   No
+2.	awaclus	3,5	17,5	5	0,0	236,8	   Yes
+3.	tufftaeh	3,4	17	5	4,0	231,0	   Yes
+4.	Jean-Michel	3,4	17	5	2,0	237,5	   Yes
+5.	faust	2,4	12	5	0,0	182,5	    ?
+6.	calimero	1,5	7,5	5	0,0	113,3	    ?
+Jimmmmm - awaclus: 5 - 1
+Jimmmmm - tufftaeh: 4 - 2
+Jimmmmm - Jean-Michel: 1 - 5
+Jimmmmm - faust: 3 - 3
+Jimmmmm - calimero: 6 - 0
+awaclus - tufftaeh: 4 - 2
+awaclus - Jean-Michel: 4 - 2
+awaclus - faust: 4 - 2
+awaclus - calimero: 4,5 - 1,5
+tufftaeh - Jean-Michel: 4 - 2
+tufftaeh - faust: 5 - 1
+tufftaeh - calimero: 4 - 2
+Jean-Michel - faust: 3 - 3
+Jean-Michel - calimero: 5 - 1
+faust - calimero: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	Deadlock39	4,0	12	3	0,0	90,0	   Yes
+2.	Horist	3,3	10	3	0,0	90,0	   Yes
+3.	jamfamsam	2,5	7,5	3	0,0	64,8	   Yes
+4.	crlundy	2,2	6,5	3	0,0	60,8	   Yes
+Deadlock39 - Horist: 2 - 4
+Deadlock39 - jamfamsam: 5 - 1
+Deadlock39 - crlundy: 5 - 1
+Horist - jamfamsam: 3 - 3
+Horist - crlundy: 3 - 3
+jamfamsam - crlundy: 3,5 - 2,5
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	AHoppy	4,2	21	5	0,0	283,0	   Yes
+2.	Chris is me	3,4	17	5	4,0	237,0	   Yes
+3.	Elanchana Destler	3,4	17	5	2,0	239,0	   No
+4.	MtMagus	2,6	13	5	0,0	177,0	   Yes
+5.	BraveBear	2,2	11	5	4,0	163,0	    ?
+6.	Voltaire	2,2	11	5	2,0	171,0	    ?
+AHoppy - Chris is me: 4 - 2
+AHoppy - Elanchana Destler: 3 - 3
+AHoppy - MtMagus: 5 - 1
+AHoppy - BraveBear: 4 - 2
+AHoppy - Voltaire: 5 - 1
+Chris is me - Elanchana Destler: 4 - 2
+Chris is me - MtMagus: 3 - 3
+Chris is me - BraveBear: 4 - 2
+Chris is me - Voltaire: 4 - 2
+Elanchana Destler - MtMagus: 5 - 1
+Elanchana Destler - BraveBear: 5 - 1
+Elanchana Destler - Voltaire: 2 - 4
+MtMagus - BraveBear: 4 - 2
+MtMagus - Voltaire: 4 - 2
+BraveBear - Voltaire: 4 - 2
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	Jeb	3,7	11	3	0,0	87,0	   Yes
+2.	SaintO	3,3	10	3	0,0	89,0	   Yes
+3.	microman	2,7	8	3	0,0	73,0	   Yes
+4.	mumposaur	2,3	7	3	0,0	65,0	   Yes
+Jeb - SaintO: 2 - 4
+Jeb - microman: 4 - 2
+Jeb - mumposaur: 5 - 1
+SaintO - microman: 3 - 3
+SaintO - mumposaur: 3 - 3
+microman - mumposaur: 3 - 3
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	markus	4,0	16	4	0,0	175,0	   Yes
+2.	drsteelhammer	3,5	14	4	0,0	150,0	   Yes
+3.	Aleimon Thimble	3,3	13	4	0,0	140,0	   No
+4.	Emeric	2,3	9	4	0,0	110,0	   Yes
+5.	Calamitas	2,0	8	4	0,0	99,0	   No
+markus - drsteelhammer: 3 - 3
+markus - Aleimon Thimble: 5 - 1
+markus - Emeric: 4 - 2
+markus - Calamitas: 4 - 2
+drsteelhammer - Aleimon Thimble: 2 - 4
+drsteelhammer - Emeric: 4 - 2
+drsteelhammer - Calamitas: 5 - 1
+Aleimon Thimble - Emeric: 4 - 2
+Aleimon Thimble - Calamitas: 4 - 2
+Emeric - Calamitas: 3 - 3
+
+
+D5 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	Simon (DK)	3,8	15	4	0,0	165,0	   Yes
+2.	Qvist	3,5	14	4	0,0	152,0	   Yes
+3.	Mike Koeman	3,3	13	4	0,0	137,0	   Yes
+4.	smcrtorchs1	3,0	12	4	0,0	135,0	   Yes
+5.	Micha1980	1,5	6	4	0,0	81,0	   Yes
+Simon (DK) - Qvist: 2 - 4
+Simon (DK) - Mike Koeman: 5 - 1
+Simon (DK) - smcrtorchs1: 4 - 2
+Simon (DK) - Micha1980: 4 - 2
+Qvist - Mike Koeman: 2 - 4
+Qvist - smcrtorchs1: 3 - 3
+Qvist - Micha1980: 5 - 1
+Mike Koeman - smcrtorchs1: 3 - 3
+Mike Koeman - Micha1980: 5 - 1
+smcrtorchs1 - Micha1980: 4 - 2
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	bog	4,3	17	4	0,0	172,0	   Yes
+2.	Ampharos	3,8	15	4	0,0	162,0	   Yes
+3.	tadpole	3,3	13	4	0,0	131,0	   Yes
+4.	andrewzom	2,0	8	4	0,0	102,0	   Yes
+5.	marksim	1,8	7	4	0,0	77,0	    ?
+bog - Ampharos: 3 - 3
+bog - tadpole: 4 - 2
+bog - andrewzom: 5 - 1
+bog - marksim: 5 - 1
+Ampharos - tadpole: 4 - 2
+Ampharos - andrewzom: 3 - 3
+Ampharos - marksim: 5 - 1
+tadpole - andrewzom: 4 - 2
+tadpole - marksim: 5 - 1
+andrewzom - marksim: 2 - 4
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season12?
+1.	Morghas	4,3	13	3	0,0	89,0	   Yes
+2.	Ravi Vasudevan	3,7	11	3	0,0	83,0	   Yes
+3.	Sunmaster14	3,0	9	3	0,0	65,0	   Yes
+4.	unminable	1,0	3	3	0,0	31,0	   Yes
+Morghas - Ravi Vasudevan: 4 - 2
+Morghas - Sunmaster14: 3 - 3
+Morghas - unminable: 6 - 0
+Ravi Vasudevan - Sunmaster14: 5 - 1
+Ravi Vasudevan - unminable: 4 - 2
+Sunmaster14 - unminable: 5 - 1

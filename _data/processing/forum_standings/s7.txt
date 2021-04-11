@@ -1,0 +1,304 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	Stef	5.0	25	5	0.0	319.5	55.8	   Yes
+2.	SheCantSayNo	3.4	16.8	5	0.0	200.1	47.9	   Yes
+3.	2.71828.....	3.2	16	5	0.0	212.0	38.1	   Yes
+4.	Mic Qsenoch	2.8	13.8	5	0.0	188.4	51.1	   Yes
+5.	DG	2.5	12.5	5	0.0	142.6	49.3	   Yes
+6.	Monsieur X	1.2	6	5	0.0	94.5	42.5	   No
+Stef - SheCantSayNo: 5 - 1
+Stef - 2.71828.....: 6 - 0
+Stef - Mic Qsenoch: 3 - 3
+Stef - DG: 5 - 1
+Stef - Monsieur X: 6 - 0
+SheCantSayNo - 2.71828.....: 1 - 5
+SheCantSayNo - Mic Qsenoch: 5.8 - 0.3
+SheCantSayNo - DG: 4 - 2
+SheCantSayNo - Monsieur X: 5 - 1
+2.71828..... - Mic Qsenoch: 3 - 3
+2.71828..... - DG: 6 - 0
+2.71828..... - Monsieur X: 2 - 4
+Mic Qsenoch - DG: 2.5 - 3.5
+Mic Qsenoch - Monsieur X: 5 - 1
+DG - Monsieur X: 6 - 0
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	Tao Chen	4.2	21	5	0.0	254.0	41.8	   Yes
+2.	Wandering Winder	3.6	14.5	4	0.0	205.8	49.2	   -
+3.	kylar	3.3	16.5	5	0.0	211.3	35.9	   Yes
+4.	Adam Horton	3.0	15	5	0.0	182.0	41.4	   Yes
+5.	jaybeez	2.3	9	4	0.0	111.5	33.4	   No
+6.	andwilk	1.6	8	5	0.0	121.0	33.4	   Yes
+Tao Chen - Wandering Winder: 3 - 3
+Tao Chen - kylar: 3 - 3
+Tao Chen - Adam Horton: 5 - 1
+Tao Chen - jaybeez: 6 - 0
+Tao Chen - andwilk: 4 - 2
+Wandering Winder - kylar: 3.5 - 2.5
+Wandering Winder - Adam Horton: 3 - 3
+Wandering Winder - andwilk: 5 - 1
+kylar - Adam Horton: 3 - 3
+kylar - jaybeez: 3 - 3
+kylar - andwilk: 5 - 1
+Adam Horton - jaybeez: 4 - 2
+Adam Horton - andwilk: 4 - 2
+jaybeez - andwilk: 4 - 2
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	dudeabides	3.8	15	4	3.0	166.0	35.9	   Yes
+2.	Rabid	3.8	15	4	3.0	164.0	48.0	   Yes
+3.	liopoil	2.8	11	4	0.0	127.0	37.9	   Yes
+4.	Emeric	2.5	10	4	0.0	118.0	32.9	   Yes
+5.	RedWing	2.3	9	4	0.0	113.0	38.0	   No
+dudeabides - Rabid: 3 - 3
+dudeabides - liopoil: 5 - 1
+dudeabides - Emeric: 3 - 3
+dudeabides - RedWing: 4 - 2
+Rabid - liopoil: 3 - 3
+Rabid - Emeric: 5 - 1
+Rabid - RedWing: 4 - 2
+liopoil - Emeric: 4 - 2
+liopoil - RedWing: 3 - 3
+Emeric - RedWing: 4 - 2
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	Robz888	4.2	21	5	0.0	280.5	43.7	   Yes
+2.	Hyphen-ated	3.3	16.5	5	0.0	228.8	36.1	   Yes
+3.	Dingan	3.2	16	5	0.0	233.0	40.0	   Yes
+4.	nate_w	3.0	15	5	0.0	215.0	46.1	   Yes
+5.	mpsprs	2.2	11	5	0.0	149.0	33.4	   Yes
+6.	ThaddeusB	2.1	10.5	5	0.0	168.3	34.3	   Yes
+Robz888 - Hyphen-ated: 3 - 3
+Robz888 - Dingan: 3 - 3
+Robz888 - nate_w: 5 - 1
+Robz888 - mpsprs: 6 - 0
+Robz888 - ThaddeusB: 4 - 2
+Hyphen-ated - Dingan: 3 - 3
+Hyphen-ated - nate_w: 1 - 5
+Hyphen-ated - mpsprs: 6 - 0
+Hyphen-ated - ThaddeusB: 3.5 - 2.5
+Dingan - nate_w: 3 - 3
+Dingan - mpsprs: 4 - 2
+Dingan - ThaddeusB: 3 - 3
+nate_w - mpsprs: 1 - 5
+nate_w - ThaddeusB: 5 - 1
+mpsprs - ThaddeusB: 4 - 2
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	gamesou	3.4	17	5	0.0	243.5	41.0	   Yes
+2.	kiliana	3.3	16.5	5	0.0	239.8	31.2	   Yes
+3.	LESPEUTERE	3.1	15.5	5	0.0	234.8	48.6	   Yes
+4.	HvBoedefeld	3.0	15	5	4.0	216.0	36.2	   Yes
+5.	Simon (DK)	3.0	15	5	2.0	220.0	35.6	   Yes
+6.	lehmacdj	2.2	11	5	0.0	173.5	26.8	   No
+gamesou - kiliana: 2 - 4
+gamesou - LESPEUTERE: 3 - 3
+gamesou - HvBoedefeld: 5 - 1
+gamesou - Simon (DK): 3 - 3
+gamesou - lehmacdj: 4 - 2
+kiliana - LESPEUTERE: 0.5 - 5.5
+kiliana - HvBoedefeld: 4 - 2
+kiliana - Simon (DK): 4 - 2
+kiliana - lehmacdj: 4 - 2
+LESPEUTERE - HvBoedefeld: 2 - 4
+LESPEUTERE - Simon (DK): 2 - 4
+LESPEUTERE - lehmacdj: 3 - 3
+HvBoedefeld - Simon (DK): 4 - 2
+HvBoedefeld - lehmacdj: 4 - 2
+Simon (DK) - lehmacdj: 4 - 2
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	awaclus	3.4	17	5	0.0	244.5	40.9	   No
+2.	Jean-Michel	3.3	16.5	5	0.0	244.3	39.4	   Yes
+3.	Eevee	3.2	16	5	0.0	229.5	35.3	   Yes
+4.	Heisenberg	3.0	15	5	0.0	220.5	33.3	   Yes
+5.	Burning Skull	2.8	14	5	0.0	211.5	37.5	   Yes
+6.	Dunduks	2.3	11.5	5	0.0	179.3	34.1	   Yes
+awaclus - Jean-Michel: 3 - 3
+awaclus - Eevee: 3 - 3
+awaclus - Heisenberg: 3 - 3
+awaclus - Burning Skull: 4 - 2
+awaclus - Dunduks: 4 - 2
+Jean-Michel - Eevee: 5 - 1
+Jean-Michel - Heisenberg: 3 - 3
+Jean-Michel - Burning Skull: 2 - 4
+Jean-Michel - Dunduks: 3.5 - 2.5
+Eevee - Heisenberg: 4 - 2
+Eevee - Burning Skull: 4 - 2
+Eevee - Dunduks: 4 - 2
+Heisenberg - Burning Skull: 3 - 3
+Heisenberg - Dunduks: 4 - 2
+Burning Skull - Dunduks: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	pubby	4.7	23.5	5	0.0	312.3	38.7	   Yes
+2.	A Drowned Kernel	2.9	14.5	5	3.5	207.3	36.1	   Yes
+3.	microman	2.9	14.5	5	2.5	196.8	28.1	   Yes
+4.	Flip5ide	2.6	13	5	4.0	185.5	28.0	   Yes
+5.	SXTLHGaiden	2.6	13	5	2.0	185.5	27.8	    ?
+6.	MtMagus	2.3	11.5	5	0.0	169.8	27.7	   Yes
+pubby - A Drowned Kernel: 4 - 2
+pubby - microman: 5 - 1
+pubby - Flip5ide: 5 - 1
+pubby - SXTLHGaiden: 5 - 1
+pubby - MtMagus: 4.5 - 1.5
+A Drowned Kernel - microman: 3.5 - 2.5
+A Drowned Kernel - Flip5ide: 2 - 4
+A Drowned Kernel - SXTLHGaiden: 2 - 4
+A Drowned Kernel - MtMagus: 5 - 1
+microman - Flip5ide: 4 - 2
+microman - SXTLHGaiden: 3 - 3
+microman - MtMagus: 4 - 2
+Flip5ide - SXTLHGaiden: 4 - 2
+Flip5ide - MtMagus: 2 - 4
+SXTLHGaiden - MtMagus: 3 - 3
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	Deadlock39	3.4	13.5	4	4.0	154.8	33.4	   Yes
+2.	vsiewnar	3.4	13.5	4	2.0	152.8	35.9	   Yes
+3.	Derg17	3.1	12.5	4	4.0	142.8	30.3	   Yes
+4.	CavJes	3.1	12.5	4	2.0	144.8	27.3	    ?
+5.	pplatypus	2.0	8	4	0.0	104.0	27.9	    ?
+Deadlock39 - vsiewnar: 4 - 2
+Deadlock39 - Derg17: 2.5 - 3.5
+Deadlock39 - CavJes: 3 - 3
+Deadlock39 - pplatypus: 4 - 2
+vsiewnar - Derg17: 5 - 1
+vsiewnar - CavJes: 2.5 - 3.5
+vsiewnar - pplatypus: 4 - 2
+Derg17 - CavJes: 4 - 2
+Derg17 - pplatypus: 4 - 2
+CavJes - pplatypus: 4 - 2
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	Eras	4.0	20	5	0.0	276.8	22.9	   Yes
+2.	ephesos	3.5	17.5	5	0.0	240.0	13.8	   Yes
+3.	ryan.echternacht	3.3	16.5	5	0.0	238.3	19.3	   Yes
+4.	silentstrife	2.5	12.5	5	0.0	164.8	7.7	    ?
+5.	nickchak	2.4	12	5	0.0	190.3	19.8	   No
+6.	Chris is me	2.3	11.5	5	0.0	179.0	24.2	   Yes
+Eras - ephesos: 4 - 2
+Eras - ryan.echternacht: 3 - 3
+Eras - silentstrife: 6 - 0
+Eras - nickchak: 3.5 - 2.5
+Eras - Chris is me: 3.5 - 2.5
+ephesos - ryan.echternacht: 3 - 3
+ephesos - silentstrife: 5 - 1
+ephesos - nickchak: 3.5 - 2.5
+ephesos - Chris is me: 4 - 2
+ryan.echternacht - silentstrife: 3.5 - 2.5
+ryan.echternacht - nickchak: 3 - 3
+ryan.echternacht - Chris is me: 4 - 2
+silentstrife - nickchak: 5 - 1
+silentstrife - Chris is me: 4 - 2
+nickchak - Chris is me: 3 - 3
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	Joseph2302	4.1	20.5	5	0.0	280.8	22.6	   Yes
+2.	Qvist	3.7	18.5	5	0.0	254.8	40.5	   Yes
+3.	Rubby	3.5	17.5	5	0.0	224.3	27.6	   Yes
+4.	Iguana Iguana	2.6	13	5	0.0	182.0	23.3	   Yes
+5.	Jeb	2.2	11	5	0.0	171.0	18.3	   Yes
+6.	werothegreat	1.9	9.5	5	0.0	138.3	16.3	   Yes
+Joseph2302 - Qvist: 2.5 - 3.5
+Joseph2302 - Rubby: 5 - 1
+Joseph2302 - Iguana Iguana: 5 - 1
+Joseph2302 - Jeb: 4 - 2
+Joseph2302 - werothegreat: 4 - 2
+Qvist - Rubby: 3 - 3
+Qvist - Iguana Iguana: 3 - 3
+Qvist - Jeb: 4 - 2
+Qvist - werothegreat: 5 - 1
+Rubby - Iguana Iguana: 4 - 2
+Rubby - Jeb: 4 - 2
+Rubby - werothegreat: 5.5 - 0.5
+Iguana Iguana - Jeb: 3 - 3
+Iguana Iguana - werothegreat: 4 - 2
+Jeb - werothegreat: 2 - 4
+
+
+D5 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	M0G3L	4.2	21	5	0.0	286.0	23.7	   Yes
+2.	calimero	3.6	18	5	0.0	252.5	25.2	   Yes
+3.	Sebifreak	2.9	14.5	5	0.0	194.8	25.3	   No
+4.	Egor Kulikov	2.6	13	5	0.0	198.0	31.7	   Yes
+5.	Micha1980	2.4	12	5	0.0	169.5	25.0	   Yes
+6.	Malmerung	2.3	11.5	5	0.0	178.8	18.5	   Yes
+M0G3L - calimero: 3 - 3
+M0G3L - Sebifreak: 6 - 0
+M0G3L - Egor Kulikov: 3 - 3
+M0G3L - Micha1980: 5 - 1
+M0G3L - Malmerung: 4 - 2
+calimero - Sebifreak: 3 - 3
+calimero - Egor Kulikov: 4 - 2
+calimero - Micha1980: 4 - 2
+calimero - Malmerung: 4 - 2
+Sebifreak - Egor Kulikov: 4 - 2
+Sebifreak - Micha1980: 5 - 1
+Sebifreak - Malmerung: 2.5 - 3.5
+Egor Kulikov - Micha1980: 2 - 4
+Egor Kulikov - Malmerung: 4 - 2
+Micha1980 - Malmerung: 4 - 2
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	Seprix	4.4	22	5	0.0	312.0	19.9	   Yes
+2.	swedenman	3.9	19.5	5	0.0	237.3	24.1	   Yes
+3.	jamfamsam	3.0	15	5	0.0	203.5	20.3	   Yes
+4.	goblinprof	2.6	13	5	0.0	160.5	10.6	   No
+5.	EFHW	2.2	11	5	0.0	165.5	-6.7	   Yes
+6.	bramroop	1.9	9.5	5	0.0	151.8	-9.7	   Yes
+Seprix - swedenman: 5 - 1
+Seprix - jamfamsam: 5 - 1
+Seprix - goblinprof: 6 - 0
+Seprix - EFHW: 3 - 3
+Seprix - bramroop: 3 - 3
+swedenman - jamfamsam: 3 - 3
+swedenman - goblinprof: 4 - 2
+swedenman - EFHW: 6 - 0
+swedenman - bramroop: 5.5 - 0.5
+jamfamsam - goblinprof: 4 - 2
+jamfamsam - EFHW: 3 - 3
+jamfamsam - bramroop: 4 - 2
+goblinprof - EFHW: 4 - 2
+goblinprof - bramroop: 5 - 1
+EFHW - bramroop: 3 - 3
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season8?
+1.	drsteelhammer	4.3	17	4	0.0	158.0	22.7	   Yes
+2.	No one	4.1	16.5	4	0.0	176.8	14.1	   Yes
+3.	noey21	3.5	14	4	0.0	129.5	20.8	   Yes
+4.	trinadianese	1.6	6.5	4	0.0	73.3	-16.9	   Yes
+5.	kasheefali	1.5	6	4	0.0	67.0	-30.0	   Yes
+drsteelhammer - No one: 2 - 4
+drsteelhammer - noey21: 4 - 2
+drsteelhammer - trinadianese: 6 - 0
+drsteelhammer - kasheefali: 5 - 1
+No one - noey21: 4 - 2
+No one - trinadianese: 3.5 - 2.5
+No one - kasheefali: 5 - 1
+noey21 - trinadianese: 5 - 1
+noey21 - kasheefali: 5 - 1
+trinadianese - kasheefali: 3 - 3

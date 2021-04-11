@@ -1,0 +1,203 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	markus	4.1	20.5	5	0.0	267.8	61.0	   Yes
+2.	Rabid	3.5	17.5	5	0.0	243.8	58.8	   Yes
+3.	aku chi	3.2	16	5	0.0	215.5	60.8	   Yes
+4.	DG	3.1	15.5	5	0.0	218.8	55.4	   Yes
+5.	drsteelhammer	2.7	13.5	5	0.0	191.3	61.2	   Yes
+6.	Jean-Michel	1.4	7	5	0.0	109.0	52.0	   Yes
+markus - Rabid: 3 - 3
+markus - aku chi: 4 - 2
+markus - DG: 4 - 2
+markus - drsteelhammer: 3.5 - 2.5
+markus - Jean-Michel: 6 - 0
+Rabid - aku chi: 3 - 3
+Rabid - DG: 2.5 - 3.5
+Rabid - drsteelhammer: 5 - 1
+Rabid - Jean-Michel: 4 - 2
+aku chi - DG: 3 - 3
+aku chi - drsteelhammer: 3 - 3
+aku chi - Jean-Michel: 5 - 1
+DG - drsteelhammer: 3 - 3
+DG - Jean-Michel: 4 - 2
+drsteelhammer - Jean-Michel: 4 - 2
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	Mic Qsenoch	4.3	21.5	5	0.0	275.5	64.8	   Yes
+2.	singletee	3.6	18	5	0.0	264.0	60.3	   Yes
+3.	Jeb	3.0	15	5	0.0	212.5	53.1	   Yes
+4.	vsiewnar	2.8	14	5	0.0	193.0	59.5	   Yes
+5.	mikechike	2.5	12.5	5	0.0	173.5	60.4	   Yes
+6.	amoffett11	1.8	9	5	0.0	137.0	58.4	   Yes
+Mic Qsenoch - singletee: 2 - 4
+Mic Qsenoch - Jeb: 4 - 2
+Mic Qsenoch - vsiewnar: 4.5 - 1.5
+Mic Qsenoch - mikechike: 5 - 1
+Mic Qsenoch - amoffett11: 6 - 0
+singletee - Jeb: 3 - 3
+singletee - vsiewnar: 4 - 2
+singletee - mikechike: 4 - 2
+singletee - amoffett11: 3 - 3
+Jeb - vsiewnar: 3 - 3
+Jeb - mikechike: 3 - 3
+Jeb - amoffett11: 4 - 2
+vsiewnar - mikechike: 3.5 - 2.5
+vsiewnar - amoffett11: 4 - 2
+mikechike - amoffett11: 4 - 2
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	ehunt	4.0	20	5	0.0	275.5	56.9	   Yes
+2.	Qvist	3.7	18.5	5	0.0	246.3	58.2	   Yes
+3.	gamesou	3.4	17	5	0.0	241.0	57.6	   Yes
+4.	gloures	2.5	12.5	5	0.0	175.8	57.4	   Yes
+5.	Burning Skull	2.2	11	5	4.0	164.5	61.6	   Yes
+6.	LaLight	2.2	11	5	2.0	167.5	51.8	   Yes
+ehunt - Qvist: 4 - 2
+ehunt - gamesou: 3 - 3
+ehunt - gloures: 5 - 1
+ehunt - Burning Skull: 5 - 1
+ehunt - LaLight: 3 - 3
+Qvist - gamesou: 3 - 3
+Qvist - gloures: 4.5 - 1.5
+Qvist - Burning Skull: 4 - 2
+Qvist - LaLight: 5 - 1
+gamesou - gloures: 3 - 3
+gamesou - Burning Skull: 3 - 3
+gamesou - LaLight: 5 - 1
+gloures - Burning Skull: 5 - 1
+gloures - LaLight: 2 - 4
+Burning Skull - LaLight: 4 - 2
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	LimeTime	4.5	18	4	0.0	185.5	59.5	    ?
+2.	luckat	2.9	11.5	4	0.0	141.5	55.3	   Yes
+3.	skumpy	2.8	11	4	0.0	119.0	56.8	   Yes
+4.	Chris is me	2.6	10.5	4	0.0	126.5	56.5	   Yes
+5.	Dylan32	2.3	9	4	0.0	99.0	53.8	   Yes
+LimeTime - luckat: 3 - 3
+LimeTime - skumpy: 5 - 1
+LimeTime - Chris is me: 4 - 2
+LimeTime - Dylan32: 6 - 0
+luckat - skumpy: 4 - 2
+luckat - Chris is me: 2 - 4
+luckat - Dylan32: 2.5 - 3.5
+skumpy - Chris is me: 4 - 2
+skumpy - Dylan32: 4 - 2
+Chris is me - Dylan32: 2.5 - 3.5
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	E.Honda	3.6	18	5	4.0	247.0	59.0	   Yes
+2.	schadd	3.6	18	5	2.0	247.0	56.2	   Yes
+3.	Micha1980	3.2	16	5	0.0	234.0	56.9	   Yes
+4.	Sirusc	3.0	15	5	0.0	207.0	56.1	   Yes
+5.	Dunduks	2.8	14	5	0.0	222.0	54.4	    ?
+6.	Launchywiggin	1.8	9	5	0.0	137.0	55.4	   Yes
+E.Honda - schadd: 4 - 2
+E.Honda - Micha1980: 3 - 3
+E.Honda - Sirusc: 3 - 3
+E.Honda - Dunduks: 2 - 4
+E.Honda - Launchywiggin: 6 - 0
+schadd - Micha1980: 4 - 2
+schadd - Sirusc: 4 - 2
+schadd - Dunduks: 3 - 3
+schadd - Launchywiggin: 5 - 1
+Micha1980 - Sirusc: 5 - 1
+Micha1980 - Dunduks: 3 - 3
+Micha1980 - Launchywiggin: 3 - 3
+Sirusc - Dunduks: 4 - 2
+Sirusc - Launchywiggin: 5 - 1
+Dunduks - Launchywiggin: 2 - 4
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	GreysonEK	4.2	21	5	0.0	268.5	50.0	   Yes
+2.	Hertz Doughnut	4.0	20	5	0.0	265.5	49.6	   Yes
+3.	kamikazepig	3.3	16.5	5	0.0	222.5	49.8	   Yes
+4.	NZacharias	2.8	14	5	0.0	177.5	45.6	   Yes
+5.	MtMagus	2.7	13.5	5	0.0	164.5	50.0	   Yes
+6.	Nala	1.0	5	5	0.0	85.0	44.7	   No
+GreysonEK - Hertz Doughnut: 2 - 4
+GreysonEK - kamikazepig: 4 - 2
+GreysonEK - NZacharias: 5 - 1
+GreysonEK - MtMagus: 5 - 1
+GreysonEK - Nala: 5 - 1
+Hertz Doughnut - kamikazepig: 2 - 4
+Hertz Doughnut - NZacharias: 4 - 2
+Hertz Doughnut - MtMagus: 5 - 1
+Hertz Doughnut - Nala: 5 - 1
+kamikazepig - NZacharias: 2.5 - 3.5
+kamikazepig - MtMagus: 3 - 3
+kamikazepig - Nala: 5 - 1
+NZacharias - MtMagus: 2.5 - 3.5
+NZacharias - Nala: 5 - 1
+MtMagus - Nala: 5 - 1
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	IDontPlayThisGame	3.6	18	5	0.0	267.5	59.7	   Yes
+2.	ryan.echternacht	3.4	17	5	0.0	235.5	44.8	    ?
+3.	sillle14	3.2	16	5	0.0	223.0	52.2	   Yes
+4.	benedettosoxfan	3.1	15.5	5	0.0	222.3	52.8	   Yes
+5.	AlexJRStone	2.8	14	5	0.0	199.5	52.5	   No
+6.	Haddock	1.9	9.5	5	0.0	156.8	46.8	   No
+IDontPlayThisGame - ryan.echternacht: 5 - 1
+IDontPlayThisGame - sillle14: 4 - 2
+IDontPlayThisGame - benedettosoxfan: 4 - 2
+IDontPlayThisGame - AlexJRStone: 2 - 4
+IDontPlayThisGame - Haddock: 3 - 3
+ryan.echternacht - sillle14: 2 - 4
+ryan.echternacht - benedettosoxfan: 5 - 1
+ryan.echternacht - AlexJRStone: 5 - 1
+ryan.echternacht - Haddock: 4 - 2
+sillle14 - benedettosoxfan: 1 - 5
+sillle14 - AlexJRStone: 4 - 2
+sillle14 - Haddock: 5 - 1
+benedettosoxfan - AlexJRStone: 4 - 2
+benedettosoxfan - Haddock: 3.5 - 2.5
+AlexJRStone - Haddock: 5 - 1
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	therem.harth	3.9	15.5	4	0.0	174.0	50.6	   Yes
+2.	tufftaeh	3.0	12	4	4.0	140.0	54.0	   Yes
+3.	bouchon	3.0	12	4	2.0	134.5	56.5	   Yes
+4.	iremio	2.6	10.5	4	0.0	127.0	50.7	   Yes
+5.	Jimmmy	2.5	10	4	0.0	126.0	53.3	   Yes
+therem.harth - tufftaeh: 4 - 2
+therem.harth - bouchon: 4.5 - 1.5
+therem.harth - iremio: 4 - 2
+therem.harth - Jimmmy: 3 - 3
+tufftaeh - bouchon: 4 - 2
+tufftaeh - iremio: 2 - 4
+tufftaeh - Jimmmy: 4 - 2
+bouchon - iremio: 4.5 - 1.5
+bouchon - Jimmmy: 4 - 2
+iremio - Jimmmy: 3 - 3
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season23?
+1.	RICHARDNIXON	3.8	11.5	3	0.0	125.8	51.3	   Yes
+2.	eselka	3.8	15	4	0.0	108.5	40.9	   Yes
+3.	shaila	3.5	14	4	0.0	100.0	41.7	   Yes
+4.	Buttsniffer205	1.8	5.5	3	0.0	75.3	36.5	   No
+5.	Roshavi4ak	1.0	2	2	0.0	29.0	44.9	   -
+RICHARDNIXON - eselka: 3 - 3
+RICHARDNIXON - shaila: 4 - 2
+RICHARDNIXON - Buttsniffer205: 4.5 - 1.5
+eselka - shaila: 3 - 3
+eselka - Buttsniffer205: 4 - 2
+eselka - Roshavi4ak: 5 - 1
+shaila - Buttsniffer205: 4 - 2
+shaila - Roshavi4ak: 5 - 1

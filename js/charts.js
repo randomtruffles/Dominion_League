@@ -156,7 +156,7 @@ PlayerPlot.prepControls = function() {
 	};
 	PlayerPlot.allTiersCheck.onclick = function() {
 		PlayerPlot.allTiersCheck.blur();
-		allTiers = PlayerPlot.allTiersCheck.checked;						
+		PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;						
 		PlayerPlot.makePlot();
 	};
 };

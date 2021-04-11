@@ -1,0 +1,271 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Stef	4.2	16.8	4	0.0	202.8	   Yes
+2.	Mic Qsenoch	3.3	16.5	5	0.0	180.4	   Yes
+3.	SCSN	3.2	12.8	4	0.0	158.4	   Yes
+4.	Burning Skull	2.8	11	4	0.0	162.5	   Yes
+5.	mpsprs	2.3	4.5	2	0.0	59.3	   -
+6.	Psyduck	2.1	10.5	5	0.0	105.8	   Yes
+Stef - Mic Qsenoch: 2 - 4
+Stef - SCSN: 5.8 - 0.3
+Stef - Burning Skull: 4 - 2
+Stef - Psyduck: 5 - 1
+Mic Qsenoch - SCSN: 2.5 - 3.5
+Mic Qsenoch - Burning Skull: 1 - 5
+Mic Qsenoch - mpsprs: 4 - 2
+Mic Qsenoch - Psyduck: 5 - 1
+SCSN - Burning Skull: 4 - 2
+SCSN - Psyduck: 5 - 1
+Burning Skull - Psyduck: 2 - 4
+mpsprs - Psyduck: 2.5 - 3.5
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	dan brooks	4.2	21	5	0.0	285.0	   Yes
+2.	A Drowned Kernel	3.3	16.5	5	0.0	231.8	   Yes
+3.	Mikey the great	3.2	16	5	0.0	224.5	   Yes
+4.	Rabid	2.7	13.5	5	0.0	204.8	   Yes
+5.	Dingan	2.4	12	5	0.0	173.0	   Yes
+6.	DG	2.2	11	5	0.0	164.5	   Yes
+dan brooks - A Drowned Kernel: 3 - 3
+dan brooks - Mikey the great: 5 - 1
+dan brooks - Rabid: 3 - 3
+dan brooks - Dingan: 5 - 1
+dan brooks - DG: 5 - 1
+A Drowned Kernel - Mikey the great: 2 - 4
+A Drowned Kernel - Rabid: 2.5 - 3.5
+A Drowned Kernel - Dingan: 4 - 2
+A Drowned Kernel - DG: 5 - 1
+Mikey the great - Rabid: 5 - 1
+Mikey the great - Dingan: 4 - 2
+Mikey the great - DG: 2 - 4
+Rabid - Dingan: 2 - 4
+Rabid - DG: 4 - 2
+Dingan - DG: 3 - 3
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Geronimoo	3.8	19	5	0.0	254.5	   Yes
+2.	Fergesser	3.7	18.5	5	0.0	268.5	   Yes
+3.	Assemble Meme	3.2	16	5	0.0	222.5	   Yes
+4.	gamesou	3.1	15.5	5	0.0	208.5	   Yes
+5.	Dunduks	2.3	11.5	5	0.0	180.8	   Yes
+6.	yed	1.9	9.5	5	0.0	143.3	   No
+Geronimoo - Fergesser: 1.5 - 4.5
+Geronimoo - Assemble Meme: 3 - 3
+Geronimoo - gamesou: 5.5 - 0.5
+Geronimoo - Dunduks: 4 - 2
+Geronimoo - yed: 5 - 1
+Fergesser - Assemble Meme: 4 - 2
+Fergesser - gamesou: 3 - 3
+Fergesser - Dunduks: 3 - 3
+Fergesser - yed: 4 - 2
+Assemble Meme - gamesou: 3 - 3
+Assemble Meme - Dunduks: 3 - 3
+Assemble Meme - yed: 5 - 1
+gamesou - Dunduks: 5 - 1
+gamesou - yed: 4 - 2
+Dunduks - yed: 2.5 - 3.5
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Deadlock39	3.4	17	5	0.0	241.5	   Yes
+2.	gkrieg	3.2	16	5	0.0	232.0	   Yes
+3.	Derg17	3.1	15.5	5	4.0	228.3	   Yes
+4.	schadd	3.1	15.5	5	2.0	232.3	   Yes
+5.	MdLC	2.9	14.5	5	0.0	221.3	   Yes
+6.	michaeljb	2.3	11.5	5	0.0	176.8	   No
+Deadlock39 - gkrieg: 4 - 2
+Deadlock39 - Derg17: 2 - 4
+Deadlock39 - schadd: 2 - 4
+Deadlock39 - MdLC: 4 - 2
+Deadlock39 - michaeljb: 5 - 1
+gkrieg - Derg17: 5 - 1
+gkrieg - schadd: 2 - 4
+gkrieg - MdLC: 3 - 3
+gkrieg - michaeljb: 4 - 2
+Derg17 - schadd: 4 - 2
+Derg17 - MdLC: 2.5 - 3.5
+Derg17 - michaeljb: 4 - 2
+schadd - MdLC: 2 - 4
+schadd - michaeljb: 3.5 - 2.5
+MdLC - michaeljb: 2 - 4
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	drsteelhammer	3.8	19	5	0.0	269.0	   Yes
+2.	AHoppy	3.3	16.5	5	0.0	238.0	   Yes
+3.	werothegreat	2.9	14.5	5	7.0	208.5	   Yes
+4.	singletee	2.9	14.5	5	6.0	215.8	   Yes
+5.	Jeb	2.9	14.5	5	5.0	209.8	   Yes
+6.	glups	2.2	11	5	0.0	174.0	   No
+drsteelhammer - AHoppy: 2 - 4
+drsteelhammer - werothegreat: 5 - 1
+drsteelhammer - singletee: 4 - 2
+drsteelhammer - Jeb: 5 - 1
+drsteelhammer - glups: 3 - 3
+AHoppy - werothegreat: 3 - 3
+AHoppy - singletee: 2.5 - 3.5
+AHoppy - Jeb: 1.5 - 4.5
+AHoppy - glups: 5.5 - 0.5
+werothegreat - singletee: 3 - 3
+werothegreat - Jeb: 4 - 2
+werothegreat - glups: 3.5 - 2.5
+singletee - Jeb: 3 - 3
+singletee - glups: 3 - 3
+Jeb - glups: 4 - 2
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Qvist	3.8	18.8	5	0.0	265.4	   Yes
+2.	Jean-Michel	3.2	16	5	3.0	232.8	   Yes
+3.	markus	3.2	16	5	3.0	228.3	   Yes
+4.	awaclus	2.9	14.3	5	0.0	216.7	   No
+5.	tufftaeh	2.5	12.5	5	4.5	184.5	   Yes
+6.	Simon (DK)	2.5	12.5	5	1.5	193.3	   Yes
+Qvist - Jean-Michel: 3 - 3
+Qvist - markus: 4 - 2
+Qvist - awaclus: 3.8 - 2.3
+Qvist - tufftaeh: 4 - 2
+Qvist - Simon (DK): 4 - 2
+Jean-Michel - markus: 3 - 3
+Jean-Michel - awaclus: 2 - 4
+Jean-Michel - tufftaeh: 4 - 2
+Jean-Michel - Simon (DK): 4 - 2
+markus - awaclus: 3 - 3
+markus - tufftaeh: 5 - 1
+markus - Simon (DK): 3 - 3
+awaclus - tufftaeh: 3 - 3
+awaclus - Simon (DK): 2 - 4
+tufftaeh - Simon (DK): 4.5 - 1.5
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	funkdoc	3.9	15.5	4	0.0	168.8	   Yes
+2.	Morghas	3.6	14.5	4	0.0	149.8	   Yes
+3.	bog	3.3	13	4	0.0	155.5	   No
+4.	lilayZee	2.8	11	4	0.0	105.0	   Yes
+5.	crlundy	1.5	6	4	0.0	84.5	   Yes
+funkdoc - Morghas: 3.5 - 2.5
+funkdoc - bog: 3 - 3
+funkdoc - lilayZee: 5 - 1
+funkdoc - crlundy: 4 - 2
+Morghas - bog: 2 - 4
+Morghas - lilayZee: 5 - 1
+Morghas - crlundy: 5 - 1
+bog - lilayZee: 3 - 3
+bog - crlundy: 3 - 3
+lilayZee - crlundy: 6 - 0
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Horist	4.2	21	5	0.0	281.3	   Yes
+2.	noey21	3.4	16.8	5	0.0	247.7	   No
+3.	microman	3.0	15	5	0.0	201.1	   Yes
+4.	zeruf	2.9	14.3	5	0.0	205.9	   No
+5.	jamfamsam	2.6	13	5	0.0	194.6	   Yes
+6.	MtMagus	2.0	10	5	0.0	150.8	   Yes
+Horist - noey21: 3 - 3
+Horist - microman: 5 - 1
+Horist - zeruf: 4 - 2
+Horist - jamfamsam: 3 - 3
+Horist - MtMagus: 6 - 0
+noey21 - microman: 3 - 3
+noey21 - zeruf: 4.8 - 1.3
+noey21 - jamfamsam: 4 - 2
+noey21 - MtMagus: 2 - 4
+microman - zeruf: 1.5 - 4.5
+microman - jamfamsam: 4.5 - 1.5
+microman - MtMagus: 5 - 1
+zeruf - jamfamsam: 3.5 - 2.5
+zeruf - MtMagus: 3 - 3
+jamfamsam - MtMagus: 4 - 2
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Chris is me	3.7	18.5	5	0.0	265.5	   Yes
+2.	mumposaur	3.6	18	5	0.0	236.0	   Yes
+3.	JP Gerber	3.5	17.5	5	0.0	249.5	   Yes
+4.	Infthitbox	2.8	14	5	0.0	209.5	   Yes
+5.	Asher Howarth	2.4	12	5	0.0	166.8	   Yes
+6.	Voltaire	2.0	10	5	0.0	160.3	   Yes
+Chris is me - mumposaur: 4 - 2
+Chris is me - JP Gerber: 3 - 3
+Chris is me - Infthitbox: 4 - 2
+Chris is me - Asher Howarth: 5 - 1
+Chris is me - Voltaire: 2.5 - 3.5
+mumposaur - JP Gerber: 2 - 4
+mumposaur - Infthitbox: 3 - 3
+mumposaur - Asher Howarth: 6 - 0
+mumposaur - Voltaire: 5 - 1
+JP Gerber - Infthitbox: 3 - 3
+JP Gerber - Asher Howarth: 2.5 - 3.5
+JP Gerber - Voltaire: 5 - 1
+Infthitbox - Asher Howarth: 3 - 3
+Infthitbox - Voltaire: 3 - 3
+Asher Howarth - Voltaire: 4.5 - 1.5
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Mike Koeman	3.9	15.5	4	0.0	178.3	   No
+2.	smcrtorchs	3.3	13	4	3.0	151.0	   Yes
+3.	Emeric	3.3	13	4	3.0	130.0	   No
+4.	Micha1980	2.5	10	4	0.0	117.0	   Yes
+5.	SaintO	2.1	8.5	4	0.0	113.3	   Yes
+Mike Koeman - smcrtorchs: 3 - 3
+Mike Koeman - Emeric: 6 - 0
+Mike Koeman - Micha1980: 4 - 2
+Mike Koeman - SaintO: 2.5 - 3.5
+smcrtorchs - Emeric: 3 - 3
+smcrtorchs - Micha1980: 4 - 2
+smcrtorchs - SaintO: 3 - 3
+Emeric - Micha1980: 4 - 2
+Emeric - SaintO: 6 - 0
+Micha1980 - SaintO: 4 - 2
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	tadpole	4.3	17	4	0.0	160.0	   Yes
+2.	aku chi	4.2	16.8	4	0.0	175.9	   Yes
+3.	Dlesar	3.3	13	4	0.0	128.8	    ?
+4.	Ampharos	2.1	8.3	4	0.0	75.7	   No
+5.	XD9	1.3	5	4	0.0	68.0	   Yes
+tadpole - aku chi: 2 - 4
+tadpole - Dlesar: 4 - 2
+tadpole - Ampharos: 6 - 0
+tadpole - XD9: 5 - 1
+aku chi - Dlesar: 4 - 2
+aku chi - Ampharos: 3.8 - 2.3
+aku chi - XD9: 5 - 1
+Dlesar - Ampharos: 5 - 1
+Dlesar - XD9: 4 - 2
+Ampharos - XD9: 5 - 1
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season13?
+1.	Ravi Vasudevan	4.0	16	4	0.0	173.0	   Yes
+2.	andrewzom	3.5	14	4	0.0	157.0	   Yes
+3.	Sunmaster14	2.8	11	4	0.0	124.5	   Yes
+4.	AdrianHealey	2.4	9.5	4	4.5	113.8	   Yes
+5.	unminable	2.4	9.5	4	1.5	118.3	    ?
+Ravi Vasudevan - andrewzom: 3 - 3
+Ravi Vasudevan - Sunmaster14: 5 - 1
+Ravi Vasudevan - AdrianHealey: 4 - 2
+Ravi Vasudevan - unminable: 4 - 2
+andrewzom - Sunmaster14: 3 - 3
+andrewzom - AdrianHealey: 4 - 2
+andrewzom - unminable: 4 - 2
+Sunmaster14 - AdrianHealey: 5 - 1
+Sunmaster14 - unminable: 2 - 4
+AdrianHealey - unminable: 4.5 - 1.5

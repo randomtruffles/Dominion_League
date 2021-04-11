@@ -1,0 +1,249 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	Stef	4.3	21.5	5	0.0	292.0	64.8	   Yes
+2.	gamesou	3.3	16.5	5	0.0	231.0	54.7	   Yes
+3.	A Drowned Kernel	2.8	14	5	0.0	203.0	49.4	   Yes
+4.	vsiewnar	2.6	13	5	3.0	197.5	56.7	   Yes
+5.	Mic Qsenoch	2.6	13	5	3.0	195.5	67.3	   Yes
+6.	SCSN	2.4	12	5	0.0	168.5	63.0	   Yes
+Stef - gamesou: 4 - 2
+Stef - A Drowned Kernel: 4 - 2
+Stef - vsiewnar: 4 - 2
+Stef - Mic Qsenoch: 4 - 2
+Stef - SCSN: 5.5 - 0.5
+gamesou - A Drowned Kernel: 4 - 2
+gamesou - vsiewnar: 3 - 3
+gamesou - Mic Qsenoch: 3 - 3
+gamesou - SCSN: 4.5 - 1.5
+A Drowned Kernel - vsiewnar: 3 - 3
+A Drowned Kernel - Mic Qsenoch: 4 - 2
+A Drowned Kernel - SCSN: 3 - 3
+vsiewnar - Mic Qsenoch: 3 - 3
+vsiewnar - SCSN: 2 - 4
+Mic Qsenoch - SCSN: 3 - 3
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	Derg17	3.5	17.5	5	0.0	255.3	54.7	   Yes
+2.	Polk5440	3.1	15.5	5	0.0	227.3	46.8	   Yes
+3.	Dingan	3.0	15	5	3.0	225.0	52.7	   Yes
+4.	singletee	3.0	15	5	3.0	221.0	44.9	   Yes
+5.	MVP	2.9	14.5	5	0.0	212.8	40.8	   Yes
+6.	gkrieg	2.5	12.5	5	0.0	195.8	44.4	   Yes
+Derg17 - Polk5440: 4.5 - 1.5
+Derg17 - Dingan: 2 - 4
+Derg17 - singletee: 4 - 2
+Derg17 - MVP: 4 - 2
+Derg17 - gkrieg: 3 - 3
+Polk5440 - Dingan: 4 - 2
+Polk5440 - singletee: 4 - 2
+Polk5440 - MVP: 3 - 3
+Polk5440 - gkrieg: 3 - 3
+Dingan - singletee: 3 - 3
+Dingan - MVP: 2 - 4
+Dingan - gkrieg: 4 - 2
+singletee - MVP: 5 - 1
+singletee - gkrieg: 3 - 3
+MVP - gkrieg: 4.5 - 1.5
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	Qvist	4.0	20	5	0.0	278.0	49.6	   Yes
+2.	ced	3.2	16	5	0.0	234.0	42.5	   No
+3.	Rabid	2.9	14.5	5	0.0	209.8	54.9	   Yes
+4.	DG	2.8	14	5	0.0	205.5	38.7	   Yes
+5.	Mikey the great	2.6	13	5	0.0	199.0	51.0	   Yes
+6.	Burning Skull	2.5	12.5	5	0.0	186.3	43.9	   Yes
+Qvist - ced: 3 - 3
+Qvist - Rabid: 5 - 1
+Qvist - DG: 4 - 2
+Qvist - Mikey the great: 3 - 3
+Qvist - Burning Skull: 5 - 1
+ced - Rabid: 1 - 5
+ced - DG: 5 - 1
+ced - Mikey the great: 4 - 2
+ced - Burning Skull: 3 - 3
+Rabid - DG: 1 - 5
+Rabid - Mikey the great: 4 - 2
+Rabid - Burning Skull: 3.5 - 2.5
+DG - Mikey the great: 4 - 2
+DG - Burning Skull: 2 - 4
+Mikey the great - Burning Skull: 4 - 2
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	Beyond Awesome	3.6	18	5	0.0	253.5	45.9	   Yes
+2.	2.71828.....	3.4	17	5	0.0	251.5	50.1	   No
+3.	funkdoc	2.9	14.5	5	5.5	199.8	53.2	   No
+4.	joey12	2.9	14.5	5	0.5	226.3	48.7	   No
+5.	scotty2hotty	2.8	14	5	0.0	209.0	40.1	   Yes
+6.	The Do-Operator	2.4	12	5	0.0	186.5	33.7	   Yes
+Beyond Awesome - 2.71828.....: 2 - 4
+Beyond Awesome - funkdoc: 5 - 1
+Beyond Awesome - joey12: 2 - 4
+Beyond Awesome - scotty2hotty: 5 - 1
+Beyond Awesome - The Do-Operator: 4 - 2
+2.71828..... - funkdoc: 6 - 0
+2.71828..... - joey12: 1 - 5
+2.71828..... - scotty2hotty: 3 - 3
+2.71828..... - The Do-Operator: 3 - 3
+funkdoc - joey12: 5.5 - 0.5
+funkdoc - scotty2hotty: 3 - 3
+funkdoc - The Do-Operator: 5 - 1
+joey12 - scotty2hotty: 1 - 5
+joey12 - The Do-Operator: 4 - 2
+scotty2hotty - The Do-Operator: 2 - 4
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	aku chi	3.4	17	5	0.0	243.0	34.7	   Yes
+2.	schadd	3.3	16.5	5	0.0	242.5	50.9	   Yes
+3.	Seprix	3.0	15	5	0.0	227.5	49.3	   Yes
+4.	Aleimon Thimble	2.9	14.5	5	0.0	218.0	42.6	   Yes
+5.	Chris is me	2.8	14	5	0.0	212.3	41.4	   Yes
+6.	Jimmmmm	2.6	13	5	0.0	195.3	31.5	   Yes
+aku chi - schadd: 2 - 4
+aku chi - Seprix: 3 - 3
+aku chi - Aleimon Thimble: 4 - 2
+aku chi - Chris is me: 3 - 3
+aku chi - Jimmmmm: 5 - 1
+schadd - Seprix: 3 - 3
+schadd - Aleimon Thimble: 2 - 4
+schadd - Chris is me: 3 - 3
+schadd - Jimmmmm: 4.5 - 1.5
+Seprix - Aleimon Thimble: 4 - 2
+Seprix - Chris is me: 4 - 2
+Seprix - Jimmmmm: 1 - 5
+Aleimon Thimble - Chris is me: 3.5 - 2.5
+Aleimon Thimble - Jimmmmm: 3 - 3
+Chris is me - Jimmmmm: 3.5 - 2.5
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	Jean-Michel	3.5	14	4	3.0	159.0	47.5	   Yes
+1.	markus	3.5	14	4	3.0	159.0	54.4	   Yes
+3.	E.Honda	3.3	13	4	0.0	143.0	52.7	   Yes
+4.	tufftaeh	2.8	11	4	0.0	129.0	50.2	   Yes
+5.	Haddock	2.0	8	4	0.0	104.0	37.3	   Yes
+Jean-Michel - markus: 3 - 3
+Jean-Michel - E.Honda: 4 - 2
+Jean-Michel - tufftaeh: 3 - 3
+Jean-Michel - Haddock: 4 - 2
+markus - E.Honda: 4 - 2
+markus - tufftaeh: 3 - 3
+markus - Haddock: 4 - 2
+E.Honda - tufftaeh: 5 - 1
+E.Honda - Haddock: 4 - 2
+tufftaeh - Haddock: 4 - 2
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	tracer	4.0	20	5	0.0	274.0	39.0	   Yes
+2.	Horist	3.6	18	5	0.0	258.0	53.3	   Yes
+3.	microman	3.1	15.5	5	0.0	210.8	31.4	   Yes
+4.	jamfamsam	2.7	13.5	5	0.0	198.3	30.2	   Yes
+5.	MtMagus	2.4	12	5	0.0	176.0	30.6	   Yes
+6.	crlundy	2.2	11	5	0.0	171.5	25.6	   Yes
+tracer - Horist: 3 - 3
+tracer - microman: 4 - 2
+tracer - jamfamsam: 4 - 2
+tracer - MtMagus: 5 - 1
+tracer - crlundy: 4 - 2
+Horist - microman: 5 - 1
+Horist - jamfamsam: 3 - 3
+Horist - MtMagus: 3 - 3
+Horist - crlundy: 4 - 2
+microman - jamfamsam: 4.5 - 1.5
+microman - MtMagus: 4 - 2
+microman - crlundy: 4 - 2
+jamfamsam - MtMagus: 4 - 2
+jamfamsam - crlundy: 3 - 3
+MtMagus - crlundy: 4 - 2
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	SearingSpear92	3.8	19	5	0.0	272.0	49.0	   Yes
+2.	amoffett11	3.7	18.5	5	0.0	246.3	45.7	   Yes
+3.	zporiri	3.2	16	5	0.0	221.5	34.9	   No
+4.	Infthitbox	3.0	15	5	0.0	213.0	42.5	   No
+5.	Jeb	2.4	12	5	0.0	183.5	39.0	   Yes
+6.	Petrovic	1.9	9.5	5	0.0	145.3	30.2	   Yes
+SearingSpear92 - amoffett11: 4 - 2
+SearingSpear92 - zporiri: 4 - 2
+SearingSpear92 - Infthitbox: 4 - 2
+SearingSpear92 - Jeb: 3 - 3
+SearingSpear92 - Petrovic: 4 - 2
+amoffett11 - zporiri: 3 - 3
+amoffett11 - Infthitbox: 4 - 2
+amoffett11 - Jeb: 4 - 2
+amoffett11 - Petrovic: 5.5 - 0.5
+zporiri - Infthitbox: 2 - 4
+zporiri - Jeb: 5 - 1
+zporiri - Petrovic: 4 - 2
+Infthitbox - Jeb: 3 - 3
+Infthitbox - Petrovic: 4 - 2
+Jeb - Petrovic: 3 - 3
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	diedre91	3.5	14	4	0.0	158.0	32.6	   No
+2.	Calamitas	3.0	12	4	8.0	144.0	38.5	   Yes
+3.	gloures	3.0	12	4	6.0	144.0	44.3	   No
+4.	Joseph2302	3.0	12	4	4.0	144.0	27.2	   No
+5.	Harley_Beckett	2.5	10	4	0.0	122.0	29.2	   Yes
+diedre91 - Calamitas: 4 - 2
+diedre91 - gloures: 3 - 3
+diedre91 - Joseph2302: 2 - 4
+diedre91 - Harley_Beckett: 5 - 1
+Calamitas - gloures: 4 - 2
+Calamitas - Joseph2302: 4 - 2
+Calamitas - Harley_Beckett: 2 - 4
+gloures - Joseph2302: 4 - 2
+gloures - Harley_Beckett: 3 - 3
+Joseph2302 - Harley_Beckett: 4 - 2
+
+
+D4 (90%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	Sciserr	3.5	14	4	4.0	140.0	32.3	   Yes
+2.	Micha1980	3.5	14	4	2.0	125.5	41.7	   Yes
+3.	Dunduks	3.5	10.5	3	0.0	140.8	41.6	   
+4.	Ravi Vasudevan	2.9	11.5	4	0.0	98.8	34.2	   No
+5.	Mort	1.3	4	3	0.0	53.5	26.6	   
+Sciserr - Micha1980: 4 - 2
+Sciserr - Dunduks: 1 - 5
+Sciserr - Ravi Vasudevan: 5 - 1
+Sciserr - Mort: 4 - 2
+Micha1980 - Dunduks: 3 - 3
+Micha1980 - Ravi Vasudevan: 4 - 2
+Micha1980 - Mort: 5 - 1
+Dunduks - Ravi Vasudevan: 2.5 - 3.5
+Ravi Vasudevan - Mort: 5 - 1
+Remaining: Dunduks-Mort
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	Orange	4.5	9	2	0.0	40.0	30.1	   Yes
+2.	mail-mi	2.5	5	2	0.0	30.0	22.7	   No
+3.	Water Polo DMo	2.0	4	2	0.0	24.0	18.5	   Yes
+Orange - mail-mi: 4 - 2
+Orange - Water Polo DMo: 5 - 1
+mail-mi - Water Polo DMo: 3 - 3
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season17?
+1.	levymealone	3.8	7.5	2	0.0	36.8	26.9	    ?
+2.	KkuririnN	3.5	7	2	0.0	36.5	23.3	   No
+3.	maximator	1.8	3.5	2	0.0	25.3	-22.7	   Yes
+levymealone - KkuririnN: 3 - 3
+levymealone - maximator: 4.5 - 1.5
+KkuririnN - maximator: 4 - 2

@@ -1,0 +1,231 @@
+A (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	Mic Qsenoch	3,5	17.5	5	5.5	251	  Yes
+2.	DG	3,5	17.5	5	0.5	234	  Yes
+3.	silverspawn	3,1	15.5	5	4	226	  Yes
+4.	Stef	3,1	15.5	5	2	237	  Yes
+5.	yed	2,7	13.5	5	0	206	  No
+6.	dudeabides	2,1	10.5	5	0	157	  Yes
+Mic Qsenoch - DG: 5.5 - 0.5
+Mic Qsenoch - silverspawn: 3 - 3
+Mic Qsenoch - Stef: 1 - 5
+Mic Qsenoch - yed: 3 - 3
+Mic Qsenoch - dudeabides: 5 - 1
+DG - silverspawn: 4 - 2
+DG - Stef: 3 - 3
+DG - yed: 4 - 2
+DG - dudeabides: 6 - 0
+silverspawn - Stef: 4 - 2
+silverspawn - yed: 3 - 3
+silverspawn - dudeabides: 3.5 - 2.5
+Stef - yed: 3 - 3
+Stef - dudeabides: 2.5 - 3.5
+yed - dudeabides: 2.5 - 3.5
+
+B1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	Rabid	3,2	16	5	4	239	  Yes
+2.	2.71828...	3,2	16	5	2	236	  Yes
+3.	A Drowned Kernel	3,0	15	5	4	218	  Yes
+4.	florrat	3,0	15	5	2	226	  Yes
+5.	liopoil	2,8	14	5	4	211	  Yes
+6.	soulnet	2,8	14	5	2	216	  Yes
+Rabid - 2.71828...: 4 - 2
+Rabid - A Drowned Kernel: 5 - 1
+Rabid - florrat: 2 - 4
+Rabid - liopoil: 3 - 3
+Rabid - soulnet: 2 - 4
+2.71828... - A Drowned Kernel: 5 - 1
+2.71828... - florrat: 3 - 3
+2.71828... - liopoil: 4 - 2
+2.71828... - soulnet: 2 - 4
+A Drowned Kernel - florrat: 4 - 2
+A Drowned Kernel - liopoil: 5 - 1
+A Drowned Kernel - soulnet: 4 - 2
+florrat - liopoil: 2 - 4
+florrat - soulnet: 4 - 2
+liopoil - soulnet: 4 - 2
+
+B2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	HarryPeteur	3,2	16	5	7	239	  Yes
+2.	Monsieur X	3,2	16	5	6	236	  Yes
+3.	QwertZuiop	3,2	16	5	5	235	  Yes
+4.	Mr Anderson	3,0	15	5	0	220	  Yes
+5.	Eevee	2,8	14	5	0	210	  Yes
+6.	Qvist	2,6	13	5	0	202	  Yes
+HarryPeteur - Monsieur X: 3 - 3
+HarryPeteur - QwertZuiop: 4 - 2
+HarryPeteur - Mr Anderson: 3 - 3
+HarryPeteur - Eevee: 4 - 2
+HarryPeteur - Qvist: 2 - 4
+Monsieur X - QwertZuiop: 3 - 3
+Monsieur X - Mr Anderson: 4 - 2
+Monsieur X - Eevee: 2 - 4
+Monsieur X - Qvist: 4 - 2
+QwertZuiop - Mr Anderson: 4 - 2
+QwertZuiop - Eevee: 4 - 2
+QwertZuiop - Qvist: 3 - 3
+Mr Anderson - Eevee: 4 - 2
+Mr Anderson - Qvist: 4 - 2
+Eevee - Qvist: 4 - 2
+
+C1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	ragingduckd	4,7	19	4	0	192	  No
+2.	jaybeez	3,7	15	4	0	152	  Yes
+3.	TomConerly	2,5	10	4	0	87	  No
+4.	michaeljb	2,0	8	4	3	102	  No
+5.	ThaddeusB	2,0	8	4	3	93	  Yes
+ragingduckd - jaybeez: 4 - 2
+ragingduckd - TomConerly: 6 - 0
+ragingduckd - michaeljb: 4 - 2
+ragingduckd - ThaddeusB: 5 - 1
+jaybeez - TomConerly: 5 - 1
+jaybeez - michaeljb: 4 - 2
+jaybeez - ThaddeusB: 4 - 2
+TomConerly - michaeljb: 5 - 1
+TomConerly - ThaddeusB: 4 - 2
+michaeljb - ThaddeusB: 3 - 3
+
+C2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	Adam	4,2	21	5	0	291.5	  Yes
+2.	theblankman	3,2	16	5	4	245.5	  Yes
+3.	mpsprs	3,2	16	5	2	211.5	  Yes
+4.	zporiri	2,8	14	5	0	184	  Yes
+5.	Temron	2,7	13.5	5	0	184	  Yes
+6.	jsh357	1,9	9.5	5	0	161	  No
+Adam - theblankman: 2 - 4
+Adam - mpsprs: 5 - 1
+Adam - zporiri: 5 - 1
+Adam - Temron: 6 - 0
+Adam - jsh357: 3 - 3
+theblankman - mpsprs: 4 - 2
+theblankman - zporiri: 3 - 3
+theblankman - Temron: 2 - 4
+theblankman - jsh357: 3 - 3
+mpsprs - zporiri: 6 - 0
+mpsprs - Temron: 2 - 4
+mpsprs - jsh357: 5 - 1
+zporiri - Temron: 5 - 1
+zporiri - jsh357: 5 - 1
+Temron - jsh357: 4.5 - 1.5
+
+C3 (93%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	SheCantSayNo	3,6	18	5	0	238	  Yes
+2.	gamesou	3,2	16	5	0	194.5	  Yes
+3.	Tables	3,1	15.5	5	0	211	  No
+4.	Emeric	3,0	15	5	0	210	  Yes
+5.	impromptublue	2,6	10.5	4	0	168	  Yes
+6.	adrien	2,2	9	4	0	143.5	   ?
+SheCantSayNo - gamesou: 4 - 2
+SheCantSayNo - Tables: 3 - 3
+SheCantSayNo - Emeric: 4 - 2
+SheCantSayNo - impromptublue: 3 - 3
+SheCantSayNo - adrien: 4 - 2
+gamesou - Tables: 2 - 4
+gamesou - Emeric: 2 - 4
+gamesou - impromptublue: 5 - 1
+gamesou - adrien: 5 - 1
+Tables - Emeric: 2 - 4
+Tables - impromptublue: 3.5 - 2.5
+Tables - adrien: 3 - 3
+Emeric - impromptublue: 2 - 4
+Emeric - adrien: 3 - 3
+
+C4 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	Fergesser	4,4	22	5	0	298.5	  Yes
+2.	moharimo	2,9	14.5	5	0	219.5	  No
+3.	Burning Skull	2,8	14	5	0	190	  Yes
+4.	awaclus	2,7	13.5	5	0	198.5	  Yes
+5.	Meguchan	2,6	13	5	6	176	  Yes
+6.	Jean-Michel	2,6	13	5	0	207	  Yes
+Fergesser - moharimo: 3 - 3
+Fergesser - Burning Skull: 6 - 0
+Fergesser - awaclus: 4 - 2
+Fergesser - Meguchan: 6 - 0
+Fergesser - Jean-Michel: 3 - 3
+moharimo - Burning Skull: 1.5 - 4.5
+moharimo - awaclus: 5 - 1
+moharimo - Meguchan: 3 - 3
+moharimo - Jean-Michel: 2 - 4
+Burning Skull - awaclus: 2.5 - 3.5
+Burning Skull - Meguchan: 5 - 1
+Burning Skull - Jean-Michel: 2 - 4
+awaclus - Meguchan: 3 - 3
+awaclus - Jean-Michel: 4 - 2
+Meguchan - Jean-Michel: 6 - 0
+
+D1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	kylar	4,6	18.5	4	0	188	  Yes
+2.	Twistedarcher	3,0	12	4	4	128	  Yes
+3.	MtMagus	3,0	12	4	2	140.5	  Yes
+4.	jerni	2,2	9	4	0	99	  Yes
+5.	Voltaire	2,1	8.5	4	0	101	  No
+kylar - Twistedarcher: 5 - 1
+kylar - MtMagus: 3 - 3
+kylar - jerni: 5.5 - 0.5
+kylar - Voltaire: 5 - 1
+Twistedarcher - MtMagus: 4 - 2
+Twistedarcher - jerni: 4 - 2
+Twistedarcher - Voltaire: 3 - 3
+MtMagus - jerni: 3 - 3
+MtMagus - Voltaire: 4 - 2
+jerni - Voltaire: 3.5 - 2.5
+
+D2 (83%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	Joseph2302	4,5	13.5	3	0	66	  Yes
+2.	kfm	3,8	11.5	3	0	40	  Yes
+3.	andwilk	2,5	5	2	0	63.5	  Yes
+4.	EFHW	0,0	0	2	0	0	  Yes
+Joseph2302 - kfm: 4.5 - 1.5
+Joseph2302 - andwilk: 3 - 3
+Joseph2302 - EFHW: 6 - 0
+kfm - andwilk: 4 - 2
+kfm - EFHW: 6 - 0
+
+D3 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	Assemble Meme	3,8	19	5	0	249.5	  Yes
+2.	Victor Savenije	3,6	18	5	3	253.5	  No
+3.	Hugovj	3,6	18	5	3	235	  Yes
+4.	Simon (DK)	3,1	15.5	5	0	220	  Yes
+5.	matildha	2,4	12	5	0	180.5	  No
+6.	pst	1,5	7.5	5	0	111	  No
+Assemble Meme - Victor Savenije: 2 - 4
+Assemble Meme - Hugovj: 3 - 3
+Assemble Meme - Simon (DK): 4 - 2
+Assemble Meme - matildha: 5 - 1
+Assemble Meme - pst: 5 - 1
+Victor Savenije - Hugovj: 3 - 3
+Victor Savenije - Simon (DK): 4 - 2
+Victor Savenije - matildha: 2 - 4
+Victor Savenije - pst: 5 - 1
+Hugovj - Simon (DK): 2 - 4
+Hugovj - matildha: 4 - 2
+Hugovj - pst: 6 - 0
+Simon (DK) - matildha: 4 - 2
+Simon (DK) - pst: 3.5 - 2.5
+matildha - pst: 3 - 3
+
+D4 (90%)
+rank	name                                         	average	points	#played	2nd	3rd	Season5?
+1.	Dunduks	3,5	14	4	0	140	  Yes
+2.	Egor Kulikov	3,2	13	4	0	125	  Yes
+3.	rogavka	2,8	11.5	4	0	121	  Yes
+4.	JP Gerber	2,8	8.5	3	0	112	  No
+5.	LaLight	2,3	7	3	0	86	   ?
+Dunduks - Egor Kulikov: 5 - 1
+Dunduks - rogavka: 2 - 4
+Dunduks - JP Gerber: 2 - 4
+Dunduks - LaLight: 5 - 1
+Egor Kulikov - rogavka: 5 - 1
+Egor Kulikov - JP Gerber: 3 - 3
+Egor Kulikov - LaLight: 4 - 2
+rogavka - JP Gerber: 4.5 - 1.5
+rogavka - LaLight: 2 - 4

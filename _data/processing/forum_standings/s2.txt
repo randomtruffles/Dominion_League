@@ -1,0 +1,278 @@
+A (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	Mic Qsenoch	3.8	15.5	4	0	171	  Yes
+2.	Stef	3.0	12	4	0	144.5	  Yes
+3.	Monsieur X	2.7	11	4	3	131.5	  Yes
+4.	Rabid	2.7	11	4	3	125	  Yes
+5.	SheCantSayNo	2.6	10.5	4	0	130	  Yes
+Mic Qsenoch - Stef: 3 - 3
+Mic Qsenoch - Monsieur X: 4 - 2
+Mic Qsenoch - Rabid: 5 - 1
+Mic Qsenoch - SheCantSayNo: 3.5 - 2.5
+Stef - Monsieur X: 3 - 3
+Stef - Rabid: 4 - 2
+Stef - SheCantSayNo: 2 - 4
+Monsieur X - Rabid: 3 - 3
+Monsieur X - SheCantSayNo: 3 - 3
+Rabid - SheCantSayNo: 5 - 1
+
+B1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	dudeabides	3.2	16	5	3	237.5	  Yes
+2.	Obi Wan Bonogi	3.2	16	5	3	235.5	  Yes
+3.	2.71828...	3.1	15.5	5	0	228	  No
+4.	Titandrake	2.9	14.5	5	3.5	220	   ?
+5.	Tao Chen	2.9	14.5	5	2.5	218	   ?
+6.	HiveMindEmulator	2.7	13.5	5	0	205	  No
+dudeabides - Obi Wan Bonogi: 3 - 3
+dudeabides - 2.71828...: 4 - 2
+dudeabides - Titandrake: 2 - 4
+dudeabides - Tao Chen: 4 - 2
+dudeabides - HiveMindEmulator: 3 - 3
+Obi Wan Bonogi - 2.71828...: 2.5 - 3.5
+Obi Wan Bonogi - Titandrake: 3 - 3
+Obi Wan Bonogi - Tao Chen: 4 - 2
+Obi Wan Bonogi - HiveMindEmulator: 3.5 - 2.5
+2.71828... - Titandrake: 4 - 2
+2.71828... - Tao Chen: 1 - 5
+2.71828... - HiveMindEmulator: 5 - 1
+Titandrake - Tao Chen: 3.5 - 2.5
+Titandrake - HiveMindEmulator: 2 - 4
+Tao Chen - HiveMindEmulator: 3 - 3
+
+B2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	yed	3.6	18	5	0	258	  Yes
+2.	Qvist	3.4	17	5	0	249	  Yes
+3.	Mr Anderson	3.0	15	5	0	209	  Yes
+4.	silverspawn	2.8	14	5	3	216	  Yes
+5.	awaclus	2.8	14	5	3	207	  Yes
+6.	Jdaki	2.4	12	5	0	187	   ?
+yed - Qvist: 3 - 3
+yed - Mr Anderson: 5 - 1
+yed - silverspawn: 2 - 4
+yed - awaclus: 4 - 2
+yed - Jdaki: 4 - 2
+Qvist - Mr Anderson: 5 - 1
+Qvist - silverspawn: 3 - 3
+Qvist - awaclus: 3 - 3
+Qvist - Jdaki: 3 - 3
+Mr Anderson - silverspawn: 5 - 1
+Mr Anderson - awaclus: 4 - 2
+Mr Anderson - Jdaki: 4 - 2
+silverspawn - awaclus: 3 - 3
+silverspawn - Jdaki: 3 - 3
+awaclus - Jdaki: 4 - 2
+
+C1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	Warrior	3.5	14	4	0	163	  Yes
+2.	popsofctown	3.3	13.5	4	0	151	  No
+3.	Slyfox	2.8	11.5	4	0	135	  Yes
+4.	A Drowned Kernel	2.7	11	4	0	135.5	  Yes
+5.	Alan Malloy	2.5	10	4	0	123	   ?
+Warrior - popsofctown: 4 - 2
+Warrior - Slyfox: 4 - 2
+Warrior - A Drowned Kernel: 3 - 3
+Warrior - Alan Malloy: 3 - 3
+popsofctown - Slyfox: 3.5 - 2.5
+popsofctown - A Drowned Kernel: 3 - 3
+popsofctown - Alan Malloy: 5 - 1
+Slyfox - A Drowned Kernel: 4 - 2
+Slyfox - Alan Malloy: 3 - 3
+A Drowned Kernel - Alan Malloy: 3 - 3
+
+C2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	soulnet	3.7	18.5	5	0	267	  Yes
+2.	florrat	3.4	17	5	0	241.5	  Yes
+3.	liopoil	2.9	14.5	5	0	203	  Yes
+4.	Adam Horton	2.8	14	5	0	213.5	  Yes
+5.	theblankman	2.6	13	5	3	202	  Yes
+6.	kfm	2.6	13	5	3	196.5	  Yes
+soulnet - florrat: 4 - 2
+soulnet - liopoil: 4.5 - 1.5
+soulnet - Adam Horton: 4 - 2
+soulnet - theblankman: 3 - 3
+soulnet - kfm: 3 - 3
+florrat - liopoil: 5 - 1
+florrat - Adam Horton: 2 - 4
+florrat - theblankman: 3 - 3
+florrat - kfm: 5 - 1
+liopoil - Adam Horton: 3 - 3
+liopoil - theblankman: 5 - 1
+liopoil - kfm: 4 - 2
+Adam Horton - theblankman: 3 - 3
+Adam Horton - kfm: 2 - 4
+theblankman - kfm: 3 - 3
+
+C3 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	DG	4.3	21.5	5	0	290	  Yes
+2.	gamesou	3.6	18	5	0	242	  Yes
+3.	Markowkette	3.0	15	5	3.5	209	  Yes
+4.	qmech	3.0	15	5	2.5	205	  Yes
+5.	QwertZuiop	2.4	12	5	0	163.5	  Yes
+6.	Simon (DK)	1.7	8.5	5	0	137	  Yes
+DG - gamesou: 4 - 2
+DG - Markowkette: 4 - 2
+DG - qmech: 4.5 - 1.5
+DG - QwertZuiop: 4 - 2
+DG - Simon (DK): 5 - 1
+gamesou - Markowkette: 4 - 2
+gamesou - qmech: 3 - 3
+gamesou - QwertZuiop: 5 - 1
+gamesou - Simon (DK): 4 - 2
+Markowkette - qmech: 3.5 - 2.5
+Markowkette - QwertZuiop: 4 - 2
+Markowkette - Simon (DK): 3.5 - 2.5
+qmech - QwertZuiop: 4 - 2
+qmech - Simon (DK): 4 - 2
+QwertZuiop - Simon (DK): 5 - 1
+
+C4 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	Eevee	3.8	19	5	0	269.5	  Yes
+2.	Fergesser	3.2	16	5	0	235.5	  No
+3.	Jean-Michel	3.1	15.5	5	0	231	  Yes
+4.	Emeric	2.9	14.5	5	0	195.5	  Yes
+5.	Burning Skull	2.5	12.5	5	3.5	194	  Yes
+6.	moharimo	2.5	12.5	5	2.5	194	  Yes
+Eevee - Fergesser: 4 - 2
+Eevee - Jean-Michel: 2 - 4
+Eevee - Emeric: 6 - 0
+Eevee - Burning Skull: 3 - 3
+Eevee - moharimo: 4 - 2
+Fergesser - Jean-Michel: 4.5 - 1.5
+Fergesser - Emeric: 4.5 - 1.5
+Fergesser - Burning Skull: 3 - 3
+Fergesser - moharimo: 2 - 4
+Jean-Michel - Emeric: 3 - 3
+Jean-Michel - Burning Skull: 4 - 2
+Jean-Michel - moharimo: 3 - 3
+Emeric - Burning Skull: 5 - 1
+Emeric - moharimo: 5 - 1
+Burning Skull - moharimo: 3.5 - 2.5
+
+D1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	michaeljb	3.7	15	4	0	169	  Yes
+2.	TomConerly	3.2	13	4	0	145	  Yes
+3.	Geolib	3.0	12	4	0	140	  No
+4.	kylar	2.7	11	4	0	133	  Yes
+5.	Aidan Millow	2.2	9	4	0	113	  Yes
+michaeljb - TomConerly: 4 - 2
+michaeljb - Geolib: 4 - 2
+michaeljb - kylar: 3 - 3
+michaeljb - Aidan Millow: 4 - 2
+TomConerly - Geolib: 2 - 4
+TomConerly - kylar: 5 - 1
+TomConerly - Aidan Millow: 4 - 2
+Geolib - kylar: 2 - 4
+Geolib - Aidan Millow: 4 - 2
+kylar - Aidan Millow: 3 - 3
+
+D2 (93%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	Temron	4.0	20	5	0	245	  Yes
+2.	Breezy	3.7	15	4	0	207.5	  Yes
+3.	impromptublue	3.7	18.5	5	0	226.5	  Yes
+4.	Voltaire	2.6	13	5	0	180.5	  Yes
+5.	MtMagus	2.0	10	5	0	127.5	  Yes
+6.	bama	1.8	7.5	4	0	105.5	   ?
+Temron - Breezy: 4 - 2
+Temron - impromptublue: 3 - 3
+Temron - Voltaire: 4 - 2
+Temron - MtMagus: 4 - 2
+Temron - bama: 5 - 1
+Breezy - impromptublue: 3 - 3
+Breezy - Voltaire: 4 - 2
+Breezy - MtMagus: 6 - 0
+impromptublue - Voltaire: 3 - 3
+impromptublue - MtMagus: 4.5 - 1.5
+impromptublue - bama: 5 - 1
+Voltaire - MtMagus: 4 - 2
+Voltaire - bama: 2 - 4
+MtMagus - bama: 4.5 - 1.5
+
+D3 (93%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	mpsprs	3.7	18.5	5	0	248	  Yes
+2.	KingZog3	3.2	16	5	0	207.5	  Yes
+3.	AHoppy	3.1	15.5	5	0	199	  Yes
+4.	jothemieden	3.0	12	4	0	168	  Yes
+5.	shraeye	2.7	11	4	4	162.5	  Yes
+6.	Turtlegods	2.2	11	5	2	171	  No
+mpsprs - KingZog3: 4 - 2
+mpsprs - AHoppy: 4.5 - 1.5
+mpsprs - jothemieden: 5 - 1
+mpsprs - shraeye: 3 - 3
+mpsprs - Turtlegods: 2 - 4
+KingZog3 - AHoppy: 3 - 3
+KingZog3 - jothemieden: 3 - 3
+KingZog3 - shraeye: 4 - 2
+KingZog3 - Turtlegods: 4 - 2
+AHoppy - jothemieden: 3 - 3
+AHoppy - shraeye: 4 - 2
+AHoppy - Turtlegods: 4 - 2
+jothemieden - Turtlegods: 5 - 1
+shraeye - Turtlegods: 4 - 2
+
+D4 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	Lekkit	4.1	16.5	4	0	174.5	  No
+2.	HarryPeteur	3.2	13	4	0	151.5	  Yes
+3.	Pitrpicko	3.1	12.5	4	0	131.5	  Yes
+4.	Joseph2302	2.7	11	4	0	125	  Yes
+5.	TheMirrorMan	1.7	7	4	0	90	  No
+Lekkit - HarryPeteur: 3.5 - 2.5
+Lekkit - Pitrpicko: 4 - 2
+Lekkit - Joseph2302: 4 - 2
+Lekkit - TheMirrorMan: 5 - 1
+HarryPeteur - Pitrpicko: 4.5 - 1.5
+HarryPeteur - Joseph2302: 3 - 3
+HarryPeteur - TheMirrorMan: 3 - 3
+Pitrpicko - Joseph2302: 4 - 2
+Pitrpicko - TheMirrorMan: 5 - 1
+Joseph2302 - TheMirrorMan: 4 - 2
+
+D5 (93%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	Dunduks	3.5	17.5	5	0	222	  Yes
+2.	Assemble Meme	3.4	17	5	0	229	  Yes
+3.	Egor Kulikov	3.2	16	5	0	206.5	  Yes
+4.	adrien	3.0	15	5	0	202.5	  Yes
+5.	luser	2.3	9.5	4	0	154	  Yes
+6.	Victor Savenije	2.2	9	4	0	146.5	  Yes
+Dunduks - Assemble Meme: 2 - 4
+Dunduks - Egor Kulikov: 5 - 1
+Dunduks - adrien: 2 - 4
+Dunduks - luser: 3.5 - 2.5
+Dunduks - Victor Savenije: 5 - 1
+Assemble Meme - Egor Kulikov: 4 - 2
+Assemble Meme - adrien: 2 - 4
+Assemble Meme - luser: 4 - 2
+Assemble Meme - Victor Savenije: 3 - 3
+Egor Kulikov - adrien: 6 - 0
+Egor Kulikov - luser: 4 - 2
+Egor Kulikov - Victor Savenije: 3 - 3
+adrien - luser: 3 - 3
+adrien - Victor Savenije: 4 - 2
+
+E (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season3?
+1.	kipkoan	3.7	15	4	0	164.5	  Yes
+2.	matildha	3.6	14.5	4	0	157	  Yes
+3.	jerni	3.2	13	4	0	141.5	  Yes
+4.	pst	2.5	10	4	0	124.5	  Yes
+5.	maos	1.8	7.5	4	0	92	   ?
+kipkoan - matildha: 4 - 2
+kipkoan - jerni: 3 - 3
+kipkoan - pst: 3 - 3
+kipkoan - maos: 5 - 1
+matildha - jerni: 4 - 2
+matildha - pst: 4.5 - 1.5
+matildha - maos: 4 - 2
+jerni - pst: 3 - 3
+jerni - maos: 5 - 1
+pst - maos: 2.5 - 3.5
