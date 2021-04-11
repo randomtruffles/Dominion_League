@@ -1,5 +1,89 @@
 # `/_data` Subdirectory
 
+This contains site settings as well as data used throughout the site (for example by past standings). Folders and files listed below.
+
+- `archive`
+	- Contains currently unused and/or old data files, with a fair amount of redundant information.
+- `processing`
+	- Contains scripts for producing and updating the files in this folder
+- `champions.json`
+	- League champions by player and by season
+	- Currently used in:
+		- Player database
+		- Past standings
+- `championship_videos.json`
+	- Links for league championship videos
+	- Currently unused, possibly not up-to-date
+- `chart_counts.json`
+	- Number of players and fraction of league by player by season
+	- Currently used in:
+		- charts > Player charts (makes the bars)
+- `chart_history.json`
+	- League standings history in long form, along with corresponding player chart placement
+	- Currently used in:
+		- charts > Player charts (makes the points and lines)
+- `chart_power.json`
+	- Transformed placement data for all players to have played in A division
+	- Currently used in:
+		- charts > A division power chart
+- `chart_transitions.json`
+	- List of tier strings for every player to have played in the league
+	- List of players matching those strings by location
+	- List of tiers in the league by season
+	- Currently used in:
+		- charts > Transitions chart
+- `current_season.json`
+	- Standings and matches for current season, by division
+	- Is updated from Google Apps Script upon results and returning form submissions for that division only
+	- Is updated from Google Apps Script for all divisions roughly every 24 hours (around 8 UTC).
+	- Currently used in:
+		- Current Standings
+		- Player Database
+		- charts > Player chart
+- `league_history.json`
+	- All standings and matches history through season before last, first by season, then by division
+	- Currently used in:
+		- Past Standings
+		- Player Database
+- `mod_history.json`
+	- Current and past moderator names, start season, and finish season, and whether they are a current moderator or not
+	- Currently used in:
+		- Moderators (bottom chart)
+- `moderators.yml`
+	- Current moderator names, images, and any chairs they have
+	- Currently used in:
+		- Moderators (gallery at top)
+- `nav.yml`
+	- Organization for the navigation menu
+	- Currently used in:
+		- All pages (see `_includes/header.html`)
+- `player_seasons`
+	- For each player (by lower case of their name), name and which seasons and divisions they played in
+	- Currently used in:
+		- Player Database
+- `README.md`
+	- This description page
+- `season.yml`
+	- The current season and how many divisions are in each tier
+	- Standings embeds which are currently unused
+	- Currently used in:
+		- Various places for current season number
+- `sheet_links.json`
+	- Links to published standings sheets by season by division
+	- For pre-sheets (before season 26) seasons, links to the Dominion Strategy Forum standings post
+	- Currently used in:
+		- Current Standings
+		- Past Standings
+		- Player Database
+- `template.yml`
+	- Some colors and fonts used throughout the site
+	- Currently used in:
+		- All pages (see css files)
+- `youtube_channels.json`
+	- Links to Youtube channels for those players who have them
+	- Currently used in:
+		- Player database
+	
 - This contains all overall "information" and "settings" of the site (ie. the moderators, the template settings, etc.) to be used by pages and must be in `.yml` format.
   - `moderators.yaml`
     - Contains a list of moderators and information regarding name, discord handle, etc. to be used. Eg.

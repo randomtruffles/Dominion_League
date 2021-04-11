@@ -1,0 +1,374 @@
+A (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	Mic Qsenoch	3,6	18	5	0	257	  Yes
+2.	Stef	3,5	17.5	5	0	254.5	  Yes
+3.	HvBoedefeld	3,4	17	5	0	228	  Yes
+4.	SheCantSayNo	3,1	15.5	5	0	219	  Yes
+5.	Perry Green	2,2	11	5	3	172	  No
+6.	Andrew Iannaconne	2,2	11	5	3	167	  No
+Mic Qsenoch - Stef: 4 - 2
+Mic Qsenoch - HvBoedefeld: 3 - 3
+Mic Qsenoch - SheCantSayNo: 3.5 - 2.5
+Mic Qsenoch - Perry Green: 2.5 - 3.5
+Mic Qsenoch - Andrew Iannaconne: 5 - 1
+Stef - HvBoedefeld: 5 - 1
+Stef - SheCantSayNo: 4 - 2
+Stef - Perry Green: 3.5 - 2.5
+Stef - Andrew Iannaconne: 3 - 3
+HvBoedefeld - SheCantSayNo: 3 - 3
+HvBoedefeld - Perry Green: 5 - 1
+HvBoedefeld - Andrew Iannaconne: 5 - 1
+SheCantSayNo - Perry Green: 5 - 1
+SheCantSayNo - Andrew Iannaconne: 3 - 3
+Perry Green - Andrew Iannaconne: 3 - 3
+
+B1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	Rabid	3,4	17	5	0	246.5	  Yes
+2.	jog	3,3	16.5	5	0	247	  No
+3.	Jdaki	3,2	16	5	0	228.5	  Yes
+4.	Tao Chen	3,0	15	5	0	216.5	  Yes
+5.	florrat	2,7	13.5	5	0	205	  Yes
+6.	Destierro	2,4	12	5	0	187.5	  Yes
+Rabid - jog: 2 - 4
+Rabid - Jdaki: 5 - 1
+Rabid - Tao Chen: 3 - 3
+Rabid - florrat: 3 - 3
+Rabid - Destierro: 4 - 2
+jog - Jdaki: 3 - 3
+jog - Tao Chen: 4 - 2
+jog - florrat: 3.5 - 2.5
+jog - Destierro: 2 - 4
+Jdaki - Tao Chen: 4 - 2
+Jdaki - florrat: 4 - 2
+Jdaki - Destierro: 4 - 2
+Tao Chen - florrat: 3 - 3
+Tao Chen - Destierro: 5 - 1
+florrat - Destierro: 3 - 3
+
+B2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	Monsieur X	3,8	19	5	0	266	  Yes
+2.	yed	3,5	17.5	5	0	245	  Yes
+3.	silverspawn	3,0	15	5	0	206	  Yes
+4.	Mr Anderson	2,8	14	5	0	219	  Yes
+5.	Jean-Michel	2,7	13.5	5	0	209.5	  Yes
+6.	MarkowKette	2,2	11	5	0	162	  Yes
+Monsieur X - yed: 3 - 3
+Monsieur X - silverspawn: 5 - 1
+Monsieur X - Mr Anderson: 4 - 2
+Monsieur X - Jean-Michel: 2.5 - 3.5
+Monsieur X - MarkowKette: 4.5 - 1.5
+yed - silverspawn: 4.5 - 1.5
+yed - Mr Anderson: 1 - 5
+yed - Jean-Michel: 3 - 3
+yed - MarkowKette: 6 - 0
+silverspawn - Mr Anderson: 4 - 2
+silverspawn - Jean-Michel: 4.5 - 1.5
+silverspawn - MarkowKette: 4 - 2
+Mr Anderson - Jean-Michel: 3.5 - 2.5
+Mr Anderson - MarkowKette: 1.5 - 4.5
+Jean-Michel - MarkowKette: 3 - 3
+
+C1 (80%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	HiveMindEmulator	3,7	15	4	0	116	  Yes
+2.	Adam Horton	3,0	12	4	0	108	  Yes
+3.	Slyfox	3,0	9	3	0	107	  Yes
+4.	Chan Kuan Rong	2,5	5	2	0	63	   ?
+5.	A Drowned Kernel	2,3	7	3	0	78	  Yes
+HiveMindEmulator - Adam Horton: 3 - 3
+HiveMindEmulator - Slyfox: 3 - 3
+HiveMindEmulator - Chan Kuan Rong: 5 - 1
+HiveMindEmulator - A Drowned Kernel: 4 - 2
+Adam Horton - Slyfox: 2 - 4
+Adam Horton - Chan Kuan Rong: 2 - 4
+Adam Horton - A Drowned Kernel: 5 - 1
+Slyfox - A Drowned Kernel: 2 - 4
+
+C2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	dudeabides	3,6	18	5	0	260	  Yes
+2.	soulnet	3,4	17	5	0	241	  Yes
+3.	theblankman	2,9	14.5	5	0	219	  Yes
+4.	jsh357	2,8	14	5	0	205	  No
+5.	markusin	2,7	13.5	5	0	208	  No
+6.	Temron	2,6	13	5	0	195	   ?
+dudeabides - soulnet: 4 - 2
+dudeabides - theblankman: 3 - 3
+dudeabides - jsh357: 4 - 2
+dudeabides - markusin: 3 - 3
+dudeabides - Temron: 4 - 2
+soulnet - theblankman: 3.5 - 2.5
+soulnet - jsh357: 4 - 2
+soulnet - markusin: 3 - 3
+soulnet - Temron: 4.5 - 1.5
+theblankman - jsh357: 4 - 2
+theblankman - markusin: 3.5 - 2.5
+theblankman - Temron: 1.5 - 4.5
+jsh357 - markusin: 4 - 2
+jsh357 - Temron: 4 - 2
+markusin - Temron: 3 - 3
+
+C3 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	Qvist	3,7	18.5	5	3	256	  Yes
+2.	qmech	3,7	18.5	5	3	252	  Yes
+3.	gamesou	3,5	17.5	5	0	245	  Yes
+4.	Fergesser	3,0	15	5	0	208.5	  Yes
+5.	PitrPicko	2,2	11	5	0	157.5	  Yes
+6.	Lekkit	1,9	9.5	5	0	152	   ?
+Qvist - qmech: 3 - 3
+Qvist - gamesou: 3.5 - 2.5
+Qvist - Fergesser: 3 - 3
+Qvist - PitrPicko: 6 - 0
+Qvist - Lekkit: 3 - 3
+qmech - gamesou: 2 - 4
+qmech - Fergesser: 5 - 1
+qmech - PitrPicko: 4 - 2
+qmech - Lekkit: 4.5 - 1.5
+gamesou - Fergesser: 3 - 3
+gamesou - PitrPicko: 3 - 3
+gamesou - Lekkit: 5 - 1
+Fergesser - PitrPicko: 4 - 2
+Fergesser - Lekkit: 4 - 2
+PitrPicko - Lekkit: 4 - 2
+
+C4 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	awaclus	4,4	22	5	0	294	  Yes
+2.	Burning Skull	3,2	16	5	0	213.5	  Yes
+3.	Eevee	3,0	15	5	0	207	  Yes
+4.	Emeric	2,9	14.5	5	0	218.5	  Yes
+5.	Watno	2,7	13.5	5	0	193.5	   ?
+6.	Dunduks	1,8	9	5	0	135	  Yes
+awaclus - Burning Skull: 6 - 0
+awaclus - Eevee: 4 - 2
+awaclus - Emeric: 3 - 3
+awaclus - Watno: 3 - 3
+awaclus - Dunduks: 6 - 0
+Burning Skull - Eevee: 5 - 1
+Burning Skull - Emeric: 3.5 - 2.5
+Burning Skull - Watno: 4.5 - 1.5
+Burning Skull - Dunduks: 3 - 3
+Eevee - Emeric: 3 - 3
+Eevee - Watno: 5 - 1
+Eevee - Dunduks: 4 - 2
+Emeric - Watno: 3 - 3
+Emeric - Dunduks: 3 - 3
+Watno - Dunduks: 5 - 1
+
+D1 (66%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	moharimo	4,3	21.5	5	0	161	  Yes
+2.	a mad mongoose marvelously	3,2	6.5	2	0	99	   ?
+3.	ashersky	2,8	8.5	3	0	109	   ?
+4.	Aidan Millow	2,5	12.5	5	0	111	  Yes
+5.	mikemike	2,5	5	2	0	80.5	   ?
+6.	ConMan	2,0	6	3	0	63	  Yes
+moharimo - a mad mongoose marvelously: 4 - 2
+moharimo - ashersky: 3.5 - 2.5
+moharimo - Aidan Millow: 4 - 2
+moharimo - mikemike: 4 - 2
+moharimo - ConMan: 6 - 0
+a mad mongoose marvelously - Aidan Millow: 4.5 - 1.5
+ashersky - Aidan Millow: 3 - 3
+ashersky - ConMan: 3 - 3
+Aidan Millow - mikemike: 3 - 3
+Aidan Millow - ConMan: 3 - 3
+
+D2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	Alan Malloy	3,6	18	5	0	240	  Yes
+2.	kylar	3,5	17.5	5	0	251	  Yes
+3.	michaeljb	3,3	16.5	5	0	229	  Yes
+4.	GeoLib	3,1	15.5	5	0	236	  Yes
+5.	MtMagus	2,7	13.5	5	0	196	  Yes
+6.	kipkoan	1,8	9	5	0	140.5	  Yes
+Alan Malloy - kylar: 2 - 4
+Alan Malloy - michaeljb: 2 - 4
+Alan Malloy - GeoLib: 5 - 1
+Alan Malloy - MtMagus: 3 - 3
+Alan Malloy - kipkoan: 6 - 0
+kylar - michaeljb: 4 - 2
+kylar - GeoLib: 1.5 - 4.5
+kylar - MtMagus: 4 - 2
+kylar - kipkoan: 4 - 2
+michaeljb - GeoLib: 1.5 - 4.5
+michaeljb - MtMagus: 4 - 2
+michaeljb - kipkoan: 5 - 1
+GeoLib - MtMagus: 3.5 - 2.5
+GeoLib - kipkoan: 2 - 4
+MtMagus - kipkoan: 4 - 2
+
+D3 (95%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	popsofctown	3,6	22	6	0	356	  Yes
+2.	uvafan	3,5	21.5	6	0	333	  Yes
+3.	bama	3,2	19.5	6	3	308.5	  Yes
+4.	Breezy	3,2	19.5	6	3	297	  Yes
+5.	impromptublue	3,1	15.5	5	0	295	  Yes
+6.	Voltaire	2,1	13	6	0	226	  Yes
+7.	Havilah	1,8	9	5	0	158.5	  No
+popsofctown - uvafan: 3 - 3
+popsofctown - bama: 3.5 - 2.5
+popsofctown - Breezy: 5 - 1
+popsofctown - impromptublue: 3 - 3
+popsofctown - Voltaire: 3 - 3
+popsofctown - Havilah: 4.5 - 1.5
+uvafan - bama: 3 - 3
+uvafan - Breezy: 3.5 - 2.5
+uvafan - impromptublue: 2 - 4
+uvafan - Voltaire: 5 - 1
+uvafan - Havilah: 5 - 1
+bama - Breezy: 3 - 3
+bama - impromptublue: 3 - 3
+bama - Voltaire: 3 - 3
+bama - Havilah: 5 - 1
+Breezy - impromptublue: 4 - 2
+Breezy - Voltaire: 5 - 1
+Breezy - Havilah: 4 - 2
+impromptublue - Voltaire: 3.5 - 2.5
+Voltaire - Havilah: 2.5 - 3.5
+
+D4 (76%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	kfm	3,8	23	6	0	275.5	  Yes
+2.	mpsprs	3,8	19	5	0	240	  Yes
+3.	The Imp	3,1	9.5	3	0	139	   ?
+4.	BraveBear	3,0	15	5	0	187.5	   ?
+5.	StrongRhino	2,6	10.5	4	0	162	   ?
+6.	KingZog3	2,2	11	5	0	172	   ?
+7.	rrwoods	2,0	8	4	0	116	   ?
+kfm - mpsprs: 3 - 3
+kfm - The Imp: 3 - 3
+kfm - BraveBear: 5 - 1
+kfm - StrongRhino: 4 - 2
+kfm - KingZog3: 3 - 3
+kfm - rrwoods: 5 - 1
+mpsprs - BraveBear: 3 - 3
+mpsprs - StrongRhino: 4 - 2
+mpsprs - KingZog3: 4 - 2
+mpsprs - rrwoods: 5 - 1
+The Imp - StrongRhino: 2.5 - 3.5
+The Imp - KingZog3: 4 - 2
+BraveBear - StrongRhino: 3 - 3
+BraveBear - KingZog3: 4 - 2
+BraveBear - rrwoods: 4 - 2
+KingZog3 - rrwoods: 2 - 4
+
+D5 (95%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	liopoil	5,1	31	6	0	448	  Yes
+2.	AHoppy	3,5	21	6	0	301	  Yes
+3.	shraeye	3,1	15.5	5	4	264	  Yes
+4.	joethemieden	3,0	18.5	6	0	248	  Yes
+5.	rspeer	2,5	15.5	6	2	232	  No
+6.	Soratar	2,1	10.5	5	0	140.5	  No
+7.	jerni	1,3	8	6	0	130	  Yes
+liopoil - AHoppy: 5 - 1
+liopoil - shraeye: 4 - 2
+liopoil - joethemieden: 5 - 1
+liopoil - rspeer: 5 - 1
+liopoil - Soratar: 6 - 0
+liopoil - jerni: 6 - 0
+AHoppy - shraeye: 3.5 - 2.5
+AHoppy - joethemieden: 4 - 2
+AHoppy - rspeer: 4 - 2
+AHoppy - Soratar: 5 - 1
+AHoppy - jerni: 3.5 - 2.5
+shraeye - joethemieden: 3 - 3
+shraeye - rspeer: 4 - 2
+shraeye - jerni: 4 - 2
+joethemieden - rspeer: 2.5 - 3.5
+joethemieden - Soratar: 4 - 2
+joethemieden - jerni: 6 - 0
+rspeer - Soratar: 3 - 3
+rspeer - jerni: 4 - 2
+Soratar - jerni: 4.5 - 1.5
+
+D6 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	DG	4,2	21	5	0	287	  Yes
+2.	Joseph2302	3,6	18	5	0	252	  Yes
+3.	luliin	3,2	16	5	0	216	   ?
+4.	Turtlegods	2,6	13	5	0	173	  Yes
+5.	Loes U	2,4	12	5	0	175	  No
+6.	matildha	2,0	10	5	0	163	  Yes
+DG - Joseph2302: 2 - 4
+DG - luliin: 6 - 0
+DG - Turtlegods: 5 - 1
+DG - Loes U: 5 - 1
+DG - matildha: 3 - 3
+Joseph2302 - luliin: 1 - 5
+Joseph2302 - Turtlegods: 4 - 2
+Joseph2302 - Loes U: 5 - 1
+Joseph2302 - matildha: 4 - 2
+luliin - Turtlegods: 4 - 2
+luliin - Loes U: 2 - 4
+luliin - matildha: 5 - 1
+Turtlegods - Loes U: 2 - 4
+Turtlegods - matildha: 6 - 0
+Loes U - matildha: 2 - 4
+
+D7 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	DerErklärbär	3,5	21	6	0	371	  No
+2.	HarryPeteur	3,3	20	6	0	346	  Yes
+3.	arjanb	3,2	19.5	6	0	341	  No
+4.	hsiale_	3,0	18	6	0	313.5	  Yes
+5.	adrien	2,6	16	6	3	296	  Yes
+6.	Sir Elamo	2,6	16	6	3	291	   ?
+7.	pst	2,5	15.5	6	0	280	  Yes
+DerErklärbär - HarryPeteur: 4 - 2
+DerErklärbär - arjanb: 3 - 3
+DerErklärbär - hsiale_: 5 - 1
+DerErklärbär - adrien: 3 - 3
+DerErklärbär - Sir Elamo: 3 - 3
+DerErklärbär - pst: 3 - 3
+HarryPeteur - arjanb: 3.5 - 2.5
+HarryPeteur - hsiale_: 3 - 3
+HarryPeteur - adrien: 4 - 2
+HarryPeteur - Sir Elamo: 3 - 3
+HarryPeteur - pst: 4.5 - 1.5
+arjanb - hsiale_: 3 - 3
+arjanb - adrien: 2 - 4
+arjanb - Sir Elamo: 5 - 1
+arjanb - pst: 4 - 2
+hsiale_ - adrien: 4 - 2
+hsiale_ - Sir Elamo: 3 - 3
+hsiale_ - pst: 4 - 2
+adrien - Sir Elamo: 3 - 3
+adrien - pst: 2 - 4
+Sir Elamo - pst: 3 - 3
+
+D8 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season2?
+1.	Simon (DK)	4,2	25.5	6	0	397	  Yes
+2.	QwertZuiop	4,1	25	6	0	374	  Yes
+3.	TheMirrorMan	3,9	23.5	6	0	383	  Yes
+4.	hugovj	2,5	15.5	6	4	219	  No
+5.	Assemble Meme	2,5	15.5	6	2	277	  Yes
+6.	Egor Kulikov	2,3	14	6	0	205	  Yes
+7.	maos	1,1	7	6	0	125	  Yes
+Simon (DK) - QwertZuiop: 3 - 3
+Simon (DK) - TheMirrorMan: 3 - 3
+Simon (DK) - hugovj: 5 - 1
+Simon (DK) - Assemble Meme: 4.5 - 1.5
+Simon (DK) - Egor Kulikov: 5 - 1
+Simon (DK) - maos: 5 - 1
+QwertZuiop - TheMirrorMan: 2 - 4
+QwertZuiop - hugovj: 5.5 - 0.5
+QwertZuiop - Assemble Meme: 3 - 3
+QwertZuiop - Egor Kulikov: 5.5 - 0.5
+QwertZuiop - maos: 6 - 0
+TheMirrorMan - hugovj: 4.5 - 1.5
+TheMirrorMan - Assemble Meme: 3 - 3
+TheMirrorMan - Egor Kulikov: 4 - 2
+TheMirrorMan - maos: 5 - 1
+hugovj - Assemble Meme: 4 - 2
+hugovj - Egor Kulikov: 3.5 - 2.5
+hugovj - maos: 5 - 1
+Assemble Meme - Egor Kulikov: 3 - 3
+Assemble Meme - maos: 3 - 3
+Egor Kulikov - maos: 5 - 1

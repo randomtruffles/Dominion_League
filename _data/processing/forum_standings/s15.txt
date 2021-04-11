@@ -1,0 +1,299 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	Mic Qsenoch	4,4	22	5	0,0	194,5	   Yes
+2.	Stef	3,9	19,5	5	0,0	196,8	    ?
+3.	SCSN	2,5	10	4	0,0	126,5	   Yes
+4.	A Drowned Kernel	2,3	9	4	5,0	106,5	   Yes
+5.	gkrieg	2,3	9	4	1,0	141,5	   Yes
+6.	Wachsmuth	1,3	2,5	2	0,0	48,8	   -
+Mic Qsenoch - Stef: 3 - 3
+Mic Qsenoch - SCSN: 4 - 2
+Mic Qsenoch - A Drowned Kernel: 5 - 1
+Mic Qsenoch - gkrieg: 4 - 2
+Mic Qsenoch - Wachsmuth: 6 - 0
+Stef - SCSN: 5 - 1
+Stef - A Drowned Kernel: 5 - 1
+Stef - gkrieg: 3 - 3
+Stef - Wachsmuth: 3,5 - 2,5
+SCSN - A Drowned Kernel: 4 - 2
+SCSN - gkrieg: 3 - 3
+A Drowned Kernel - gkrieg: 5 - 1
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	vsiewnar	3,4	17	5	4,0	255,0	   Yes
+2.	Mikey the great	3,4	17	5	2,0	239,0	   Yes
+3.	Dingan	3,0	15	5	7,0	217,0	   Yes
+4.	MVP	3,0	15	5	6,0	213,0	   Yes
+5.	drsteelhammer	3,0	15	5	5,0	227,0	   Yes
+6.	2.71828.....	2,2	11	5	0,0	175,0	    ?
+vsiewnar - Mikey the great: 4 - 2
+vsiewnar - Dingan: 4 - 2
+vsiewnar - MVP: 5 - 1
+vsiewnar - drsteelhammer: 2 - 4
+vsiewnar - 2.71828.....: 2 - 4
+Mikey the great - Dingan: 4 - 2
+Mikey the great - MVP: 3 - 3
+Mikey the great - drsteelhammer: 3 - 3
+Mikey the great - 2.71828.....: 5 - 1
+Dingan - MVP: 3 - 3
+Dingan - drsteelhammer: 4 - 2
+Dingan - 2.71828.....: 4 - 2
+MVP - drsteelhammer: 3 - 3
+MVP - 2.71828.....: 5 - 1
+drsteelhammer - 2.71828.....: 3 - 3
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	gamesou	3,5	17,5	5	0,0	259,5	   Yes
+2.	DG	3,4	17	5	0,0	239,3	   Yes
+3.	Rabid	3,2	16	5	0,0	229,5	   Yes
+4.	Qvist	2,7	13,5	5	0,0	203,5	   Yes
+5.	Geronimoo	2,6	13	5	4,0	193,3	   No
+6.	E.Honda	2,6	13	5	2,0	203,5	   Yes
+gamesou - DG: 4,5 - 1,5
+gamesou - Rabid: 4 - 2
+gamesou - Qvist: 4 - 2
+gamesou - Geronimoo: 3 - 3
+gamesou - E.Honda: 2 - 4
+DG - Rabid: 3 - 3
+DG - Qvist: 5 - 1
+DG - Geronimoo: 4,5 - 1,5
+DG - E.Honda: 3 - 3
+Rabid - Qvist: 1 - 5
+Rabid - Geronimoo: 5 - 1
+Rabid - E.Honda: 5 - 1
+Qvist - Geronimoo: 2,5 - 3,5
+Qvist - E.Honda: 3 - 3
+Geronimoo - E.Honda: 4 - 2
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	Polk5440	3,7	18,5	5	0,0	262,8	   Yes
+2.	funkdoc	3,2	16	5	0,0	237,0	   Yes
+3.	schadd	2,9	14,5	5	0,0	212,3	   Yes
+4.	joey12	2,8	14	5	3,0	212,0	   Yes
+5.	Iguana Iguana	2,8	14	5	3,0	208,5	   No
+6.	Horist	2,6	13	5	0,0	198,0	   Yes
+Polk5440 - funkdoc: 3 - 3
+Polk5440 - schadd: 3,5 - 2,5
+Polk5440 - joey12: 3 - 3
+Polk5440 - Iguana Iguana: 5 - 1
+Polk5440 - Horist: 4 - 2
+funkdoc - schadd: 5 - 1
+funkdoc - joey12: 4 - 2
+funkdoc - Iguana Iguana: 1 - 5
+funkdoc - Horist: 3 - 3
+schadd - joey12: 3 - 3
+schadd - Iguana Iguana: 4 - 2
+schadd - Horist: 4 - 2
+joey12 - Iguana Iguana: 3 - 3
+joey12 - Horist: 3 - 3
+Iguana Iguana - Horist: 3 - 3
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	singletee	3,8	19	5	0,0	244,0	   Yes
+2.	scotty2hotty	3,6	18	5	0,0	267,5	   Yes
+3.	Chris is me	3,5	17,5	5	0,0	236,5	   Yes
+4.	aku chi	3,2	16	5	0,0	218,5	   Yes
+5.	gloures	2,4	12	5	0,0	161,5	    ?
+6.	TadyBoy	1,5	7,5	5	0,0	124,5	   No
+singletee - scotty2hotty: 1 - 5
+singletee - Chris is me: 3 - 3
+singletee - aku chi: 4 - 2
+singletee - gloures: 6 - 0
+singletee - TadyBoy: 5 - 1
+scotty2hotty - Chris is me: 4 - 2
+scotty2hotty - aku chi: 2 - 4
+scotty2hotty - gloures: 4 - 2
+scotty2hotty - TadyBoy: 3 - 3
+Chris is me - aku chi: 4 - 2
+Chris is me - gloures: 3,5 - 2,5
+Chris is me - TadyBoy: 5 - 1
+aku chi - gloures: 3 - 3
+aku chi - TadyBoy: 5 - 1
+gloures - TadyBoy: 4,5 - 1,5
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	ced	3,5	17,5	5	0,0	240,8	   Yes
+2.	tufftaeh	3,4	17	5	0,0	252,5	   Yes
+3.	markus	3,2	16	5	0,0	217,0	   Yes
+4.	Jean-Michel	3,1	15,5	5	0,0	232,8	   Yes
+5.	Harley_Beckett	2,9	14,5	5	0,0	214,3	   Yes
+6.	Tomush	1,9	9,5	5	0,0	150,8	   No
+ced - tufftaeh: 2 - 4
+ced - markus: 3 - 3
+ced - Jean-Michel: 5 - 1
+ced - Harley_Beckett: 2 - 4
+ced - Tomush: 5,5 - 0,5
+tufftaeh - markus: 4 - 2
+tufftaeh - Jean-Michel: 3 - 3
+tufftaeh - Harley_Beckett: 3 - 3
+tufftaeh - Tomush: 3 - 3
+markus - Jean-Michel: 1 - 5
+markus - Harley_Beckett: 4 - 2
+markus - Tomush: 6 - 0
+Jean-Michel - Harley_Beckett: 4,5 - 1,5
+Jean-Michel - Tomush: 2 - 4
+Harley_Beckett - Tomush: 4 - 2
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	The Do-Operator	3,8	15	4	0,0	163,0	   Yes
+2.	tracer	3,6	14,5	4	0,0	150,8	   Yes
+3.	dmet	3,4	13,5	4	0,0	155,8	    ?
+4.	jamfamsam	2,3	9	4	0,0	115,0	   Yes
+5.	crlundy	2,0	8	4	0,0	93,0	   Yes
+The Do-Operator - tracer: 5 - 1
+The Do-Operator - dmet: 1 - 5
+The Do-Operator - jamfamsam: 5 - 1
+The Do-Operator - crlundy: 4 - 2
+tracer - dmet: 4,5 - 1,5
+tracer - jamfamsam: 3 - 3
+tracer - crlundy: 6 - 0
+dmet - jamfamsam: 3 - 3
+dmet - crlundy: 4 - 2
+jamfamsam - crlundy: 2 - 4
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	Seprix	3,8	19	5	0,0	268,0	   Yes
+2.	amoffett11	3,6	18	5	0,0	253,0	   Yes
+3.	OvertAnglerfish	3,0	15	5	0,0	212,0	    ?
+4.	MtMagus	2,6	13	5	4,0	201,0	   Yes
+5.	microman	2,6	13	5	2,0	197,0	   Yes
+6.	ephesos	2,4	12	5	0,0	177,0	   No
+Seprix - amoffett11: 3 - 3
+Seprix - OvertAnglerfish: 5 - 1
+Seprix - MtMagus: 4 - 2
+Seprix - microman: 3 - 3
+Seprix - ephesos: 4 - 2
+amoffett11 - OvertAnglerfish: 3 - 3
+amoffett11 - MtMagus: 3 - 3
+amoffett11 - microman: 4 - 2
+amoffett11 - ephesos: 5 - 1
+OvertAnglerfish - MtMagus: 3 - 3
+OvertAnglerfish - microman: 4 - 2
+OvertAnglerfish - ephesos: 4 - 2
+MtMagus - microman: 4 - 2
+MtMagus - ephesos: 1 - 5
+microman - ephesos: 4 - 2
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	Haddock	4,3	17	4	0,0	182,5	   Yes
+2.	Jeb	3,0	12	4	4,0	128,5	   Yes
+3.	zporiri	3,0	12	4	2,0	144,5	   Yes
+4.	Infthitbox	2,6	10,5	4	0,0	115,3	   Yes
+5.	Hugovj	2,1	8,5	4	0,0	109,8	   No
+Haddock - Jeb: 5 - 1
+Haddock - zporiri: 3 - 3
+Haddock - Infthitbox: 5 - 1
+Haddock - Hugovj: 4 - 2
+Jeb - zporiri: 4 - 2
+Jeb - Infthitbox: 2 - 4
+Jeb - Hugovj: 5 - 1
+zporiri - Infthitbox: 5 - 1
+zporiri - Hugovj: 2 - 4
+Infthitbox - Hugovj: 4,5 - 1,5
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	Aleimon Thimble	3,4	17	5	3,0	244,5	   Yes
+2.	Calamitas	3,4	17	5	3,0	243,0	   Yes
+3.	Ravi Vasudevan	3,2	16	5	0,0	223,0	   Yes
+4.	Micha1980	3,1	15,5	5	3,5	223,3	   Yes
+5.	Joseph2302	3,1	15,5	5	2,5	224,8	   Yes
+6.	Nara	1,8	9	5	0,0	146,0	    ?
+Aleimon Thimble - Calamitas: 3 - 3
+Aleimon Thimble - Ravi Vasudevan: 5 - 1
+Aleimon Thimble - Micha1980: 3 - 3
+Aleimon Thimble - Joseph2302: 2 - 4
+Aleimon Thimble - Nara: 4 - 2
+Calamitas - Ravi Vasudevan: 2 - 4
+Calamitas - Micha1980: 4 - 2
+Calamitas - Joseph2302: 4 - 2
+Calamitas - Nara: 4 - 2
+Ravi Vasudevan - Micha1980: 3 - 3
+Ravi Vasudevan - Joseph2302: 3 - 3
+Ravi Vasudevan - Nara: 5 - 1
+Micha1980 - Joseph2302: 3,5 - 2,5
+Micha1980 - Nara: 4 - 2
+Joseph2302 - Nara: 4 - 2
+
+
+D5 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	Simon (DK)	4,1	20,5	5	0,0	272,8	   No
+2.	Dunduks	3,8	19	5	0,0	255,5	   Yes
+3.	Watno	3,5	17,5	5	0,0	227,3	    ?
+4.	Sciserr	2,9	14,5	5	0,0	204,3	   Yes
+5.	andrewzom	1,9	9,5	5	0,0	134,8	   Yes
+6.	SnakeEater	1,8	9	5	0,0	136,5	   No
+Simon (DK) - Dunduks: 3 - 3
+Simon (DK) - Watno: 4 - 2
+Simon (DK) - Sciserr: 4 - 2
+Simon (DK) - andrewzom: 4,5 - 1,5
+Simon (DK) - SnakeEater: 5 - 1
+Dunduks - Watno: 3 - 3
+Dunduks - Sciserr: 4 - 2
+Dunduks - andrewzom: 5 - 1
+Dunduks - SnakeEater: 4 - 2
+Watno - Sciserr: 2,5 - 3,5
+Watno - andrewzom: 6 - 0
+Watno - SnakeEater: 4 - 2
+Sciserr - andrewzom: 2 - 4
+Sciserr - SnakeEater: 5 - 1
+andrewzom - SnakeEater: 3 - 3
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	Petrovic	4,4	17,5	4	0,0	199,8	   Yes
+2.	Water Polo DMo	3,4	13,5	4	0,0	169,3	   Yes
+3.	traldan	3,3	6,5	2	0,0	85,8	   -
+4.	kungapa	2,8	14	5	0,0	160,5	    ?
+5.	rds36	2,5	12,5	5	0,0	140,3	    ?
+6.	ErinJ	2,0	8	4	0,0	106,5	   Yes
+Petrovic - Water Polo DMo: 3,5 - 2,5
+Petrovic - kungapa: 3 - 3
+Petrovic - rds36: 5 - 1
+Petrovic - ErinJ: 6 - 0
+Water Polo DMo - kungapa: 4 - 2
+Water Polo DMo - rds36: 3 - 3
+Water Polo DMo - ErinJ: 4 - 2
+traldan - kungapa: 3 - 3
+traldan - rds36: 3,5 - 2,5
+kungapa - rds36: 3 - 3
+kungapa - ErinJ: 3 - 3
+rds36 - ErinJ: 3 - 3
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	season16?
+1.	diedre91	4,1	16,5	4	0,0	162,8	   Yes
+2.	Mort	3,8	15	4	0,0	154,0	   Yes
+3.	Michael Jay	3,4	13,5	4	0,0	133,8	   Yes
+4.	Orange	2,8	11	4	0,0	122,5	   Yes
+5.	Adroman	1,0	4	4	0,0	50,5	   No
+diedre91 - Mort: 3 - 3
+diedre91 - Michael Jay: 4,5 - 1,5
+diedre91 - Orange: 3 - 3
+diedre91 - Adroman: 6 - 0
+Mort - Michael Jay: 3 - 3
+Mort - Orange: 4 - 2
+Mort - Adroman: 5 - 1
+Michael Jay - Orange: 4 - 2
+Michael Jay - Adroman: 5 - 1
+Orange - Adroman: 4 - 2

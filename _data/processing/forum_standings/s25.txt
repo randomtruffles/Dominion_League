@@ -1,0 +1,247 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	Rabid	4.0	20	5	0.0	278.5	62.2	   Yes
+2.	aku chi	3.5	17.5	5	0.0	239.8	60.8	   Yes
+3.	markus	3.2	16	5	3.0	220.0	64.1	   Yes
+4.	Mic Qsenoch	3.2	16	5	3.0	213.0	61.0	   Yes
+5.	Bryan	2.5	12.5	5	0.0	179.8	62.1	   Yes
+6.	drsteelhammer	1.6	8	5	0.0	130.5	59.4	   Yes
+Rabid - aku chi: 3 - 3
+Rabid - markus: 5 - 1
+Rabid - Mic Qsenoch: 4 - 2
+Rabid - Bryan: 4 - 2
+Rabid - drsteelhammer: 4 - 2
+aku chi - markus: 2 - 4
+aku chi - Mic Qsenoch: 4 - 2
+aku chi - Bryan: 3.5 - 2.5
+aku chi - drsteelhammer: 5 - 1
+markus - Mic Qsenoch: 3 - 3
+markus - Bryan: 4 - 2
+markus - drsteelhammer: 4 - 2
+Mic Qsenoch - Bryan: 4 - 2
+Mic Qsenoch - drsteelhammer: 5 - 1
+Bryan - drsteelhammer: 4 - 2
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	PerryGreen	3.5	14	4	0.0	157.5	61.4	   Yes
+2.	tracer	3.3	13	4	0.0	150.8	56.7	   No
+3.	E.Honda	3.0	12	4	0.0	148.8	62.0	   Yes
+4.	ehunt	2.6	10.5	4	3.0	127.5	54.9	   Yes
+5.	Gazbag	2.6	10.5	4	3.0	126.0	61.7	   Yes
+PerryGreen - tracer: 3 - 3
+PerryGreen - E.Honda: 2 - 4
+PerryGreen - ehunt: 4 - 2
+PerryGreen - Gazbag: 5 - 1
+tracer - E.Honda: 2.5 - 3.5
+tracer - ehunt: 4 - 2
+tracer - Gazbag: 3.5 - 2.5
+E.Honda - ehunt: 2.5 - 3.5
+E.Honda - Gazbag: 2 - 4
+ehunt - Gazbag: 3 - 3
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	gloures	3.6	18	5	0.0	254.5	61.8	   Yes
+2.	Burning Skull	3.3	16.5	5	0.0	242.3	62.0	   Yes
+3.	DG	3.0	15	5	0.0	224.0	56.1	   Yes
+4.	SamE	2.8	14	5	0.0	212.5	59.2	   No
+5.	gamesou	2.7	13.5	5	0.0	208.3	59.9	   Yes
+6.	amoffett11	2.6	13	5	0.0	190.0	57.0	   Yes
+gloures - Burning Skull: 3 - 3
+gloures - DG: 2 - 4
+gloures - SamE: 4 - 2
+gloures - gamesou: 4 - 2
+gloures - amoffett11: 5 - 1
+Burning Skull - DG: 5 - 1
+Burning Skull - SamE: 2 - 4
+Burning Skull - gamesou: 1.5 - 4.5
+Burning Skull - amoffett11: 5 - 1
+DG - SamE: 4 - 2
+DG - gamesou: 3 - 3
+DG - amoffett11: 3 - 3
+SamE - gamesou: 5 - 1
+SamE - amoffett11: 1 - 5
+gamesou - amoffett11: 3 - 3
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	COYS	4.0	20	5	0.0	264.0	60.0	   Yes
+2.	Sicomatic	3.8	19	5	0.0	265.0	62.2	   Yes
+3.	coinflip	3.4	17	5	0.0	229.0	56.5	   Yes
+4.	xyrix	2.6	13	5	0.0	199.0	57.5	   Yes
+5.	Anders	2.2	11	5	0.0	155.0	57.7	   Yes
+6.	luckat	2.0	10	5	0.0	148.0	53.7	   No
+COYS - Sicomatic: 3 - 3
+COYS - coinflip: 3 - 3
+COYS - xyrix: 4 - 2
+COYS - Anders: 4 - 2
+COYS - luckat: 6 - 0
+Sicomatic - coinflip: 4 - 2
+Sicomatic - xyrix: 4 - 2
+Sicomatic - Anders: 5 - 1
+Sicomatic - luckat: 3 - 3
+coinflip - xyrix: 2 - 4
+coinflip - Anders: 5 - 1
+coinflip - luckat: 5 - 1
+xyrix - Anders: 3 - 3
+xyrix - luckat: 2 - 4
+Anders - luckat: 4 - 2
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	Jimmmy	3.8	19	5	0.0	263.0	58.4	   Yes
+2.	Seprix	3.6	18	5	0.0	251.0	59.0	   Yes
+3.	SmokeyRivers	3.4	17	5	0.0	237.0	58.0	   No
+4.	Micha1980	3.0	15	5	0.0	209.0	54.8	   Yes
+5.	mikechike	2.2	11	5	0.0	161.0	59.2	   Yes
+6.	Chris is me	2.0	10	5	0.0	159.0	56.4	    ?
+Jimmmy - Seprix: 2 - 4
+Jimmmy - SmokeyRivers: 4 - 2
+Jimmmy - Micha1980: 5 - 1
+Jimmmy - mikechike: 4 - 2
+Jimmmy - Chris is me: 4 - 2
+Seprix - SmokeyRivers: 3 - 3
+Seprix - Micha1980: 2 - 4
+Seprix - mikechike: 4 - 2
+Seprix - Chris is me: 5 - 1
+SmokeyRivers - Micha1980: 4 - 2
+SmokeyRivers - mikechike: 5 - 1
+SmokeyRivers - Chris is me: 3 - 3
+Micha1980 - mikechike: 4 - 2
+Micha1980 - Chris is me: 4 - 2
+mikechike - Chris is me: 4 - 2
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	skumpy	3.9	19.5	5	0.0	264.8	58.3	   Yes
+2.	jonts	3.5	17.5	5	3.5	234.3	59.3	   Yes
+3.	tufftaeh	3.5	17.5	5	2.5	244.3	57.5	   Yes
+4.	Huevos Locos	3.3	16.5	5	0.0	226.3	57.4	   Yes
+5.	therem.harth	2.1	10.5	5	0.0	141.3	56.6	   Yes
+6.	Sharur	1.7	8.5	5	0.0	141.8	53.1	   Yes
+skumpy - jonts: 4 - 2
+skumpy - tufftaeh: 3 - 3
+skumpy - Huevos Locos: 3 - 3
+skumpy - therem.harth: 6 - 0
+skumpy - Sharur: 3.5 - 2.5
+jonts - tufftaeh: 3.5 - 2.5
+jonts - Huevos Locos: 3 - 3
+jonts - therem.harth: 4 - 2
+jonts - Sharur: 5 - 1
+tufftaeh - Huevos Locos: 4 - 2
+tufftaeh - therem.harth: 4 - 2
+tufftaeh - Sharur: 4 - 2
+Huevos Locos - therem.harth: 4 - 2
+Huevos Locos - Sharur: 4.5 - 1.5
+therem.harth - Sharur: 4.5 - 1.5
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	Dunduks	4.3	17	4	0.0	188.0	55.5	   No
+2.	Diedre	3.3	13	4	0.0	127.0	57.3	   No
+3.	Lemonspawn	2.8	11	4	0.0	134.0	55.5	   Yes
+4.	RICHARDNIXON	2.5	10	4	0.0	120.0	51.9	   Yes
+5.	Launchywiggin	2.3	9	4	0.0	111.0	58.1	    ?
+Dunduks - Diedre: 6 - 0
+Dunduks - Lemonspawn: 4 - 2
+Dunduks - RICHARDNIXON: 3 - 3
+Dunduks - Launchywiggin: 4 - 2
+Diedre - Lemonspawn: 2 - 4
+Diedre - RICHARDNIXON: 6 - 0
+Diedre - Launchywiggin: 5 - 1
+Lemonspawn - RICHARDNIXON: 3 - 3
+Lemonspawn - Launchywiggin: 2 - 4
+RICHARDNIXON - Launchywiggin: 4 - 2
+
+
+D2 (93%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	GreysonEK	4.6	23	5	0.0	261.0	59.0	   Yes
+2.	Hugovj	3.4	17	5	4.0	224.0	45.8	   Yes
+3.	gjduckworth	3.4	17	5	2.0	192.0	55.3	    ?
+4.	freact	3.0	12	4	0.0	165.0	54.9	   
+5.	Klaus	1.8	7	4	0.0	83.0	51.9	   
+6.	CPiGuy	1.6	8	5	0.0	117.0	50.2	    ?
+GreysonEK - Hugovj: 3 - 3
+GreysonEK - gjduckworth: 4 - 2
+GreysonEK - freact: 5 - 1
+GreysonEK - Klaus: 6 - 0
+GreysonEK - CPiGuy: 5 - 1
+Hugovj - gjduckworth: 4 - 2
+Hugovj - freact: 3 - 3
+Hugovj - Klaus: 5 - 1
+Hugovj - CPiGuy: 2 - 4
+gjduckworth - freact: 3 - 3
+gjduckworth - Klaus: 4 - 2
+gjduckworth - CPiGuy: 6 - 0
+freact - CPiGuy: 5 - 1
+Klaus - CPiGuy: 4 - 2
+Remaining: freact-Klaus
+
+D3 (86%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	assemble me	4.2	21	5	0.0	226.0	56.6	   No
+2.	bouchon	4.0	16	4	0.0	213.5	59.2	   
+3.	MtMagus	2.8	14	5	0.0	173.5	48.9	   Yes
+4.	sillle14	2.5	10	4	0.0	139.0	50.3	   
+5.	mglagrla	2.2	11	5	0.0	125.0	49.4	   Yes
+6.	Wrobbe	2.0	6	3	0.0	85.0	53.4	   
+assemble me - bouchon: 3.5 - 2.5
+assemble me - MtMagus: 2.5 - 3.5
+assemble me - sillle14: 5 - 1
+assemble me - mglagrla: 5 - 1
+assemble me - Wrobbe: 5 - 1
+bouchon - MtMagus: 5.5 - 0.5
+bouchon - sillle14: 4 - 2
+bouchon - mglagrla: 4 - 2
+MtMagus - sillle14: 3 - 3
+MtMagus - mglagrla: 4 - 2
+MtMagus - Wrobbe: 3 - 3
+sillle14 - mglagrla: 4 - 2
+mglagrla - Wrobbe: 4 - 2
+Remaining: bouchon-Wrobbe, sillle14-Wrobbe
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	Hertz Doughnut	3.7	11	3	0.0	89.0	53.4	   Yes
+2.	NZacharias	3.0	9	3	4.0	83.0	50.6	   Yes
+3.	phazex3375	3.0	9	3	2.0	79.0	48.4	   Yes
+4.	LuciferousPeridot	2.3	7	3	0.0	65.0	54.7	   No
+Hertz Doughnut - NZacharias: 3 - 3
+Hertz Doughnut - phazex3375: 3 - 3
+Hertz Doughnut - LuciferousPeridot: 5 - 1
+NZacharias - phazex3375: 4 - 2
+NZacharias - LuciferousPeridot: 2 - 4
+phazex3375 - LuciferousPeridot: 4 - 2
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	level     	season26?
+1.	Souleater	3.9	19.5	5	0.0	276.3	45.5	   Yes
+2.	AB Witty	3.5	17.5	5	0.0	237.8	50.4	   Yes
+3.	schnaigs	3.1	15.5	5	0.0	228.8	43.2	   Yes
+4.	blamelewis	2.7	13.5	5	0.0	195.3	47.2	   Yes
+5.	ShaiyaCat	2.4	12	5	4.0	172.0	46.2	   Yes
+6.	t437	2.4	12	5	2.0	193.0	39.3	   Yes
+Souleater - AB Witty: 4.5 - 1.5
+Souleater - schnaigs: 3.5 - 2.5
+Souleater - blamelewis: 3.5 - 2.5
+Souleater - ShaiyaCat: 5 - 1
+Souleater - t437: 3 - 3
+AB Witty - schnaigs: 3 - 3
+AB Witty - blamelewis: 4 - 2
+AB Witty - ShaiyaCat: 6 - 0
+AB Witty - t437: 3 - 3
+schnaigs - blamelewis: 5 - 1
+schnaigs - ShaiyaCat: 1 - 5
+schnaigs - t437: 4 - 2
+blamelewis - ShaiyaCat: 4 - 2
+blamelewis - t437: 4 - 2
+ShaiyaCat - t437: 4 - 2

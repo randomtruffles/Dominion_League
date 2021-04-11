@@ -1,0 +1,250 @@
+A (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	yed	3,8	19	5	0	272.5	  Yes
+2.	Stef	3,5	17.5	5	0	249.5	  Yes
+3.	Mic Qsenoch	3,1	15.5	5	0	215.5	  Yes
+4.	dudeabides	3,0	15	5	0	205	  Yes
+5.	Rabid	2,4	12	5	0	185.5	  Yes
+6.	Monsieur X	2,2	11	5	0	173	  Yes
+yed - Stef: 4 - 2
+yed - Mic Qsenoch: 3 - 3
+yed - dudeabides: 5.5 - 0.5
+yed - Rabid: 2 - 4
+yed - Monsieur X: 4.5 - 1.5
+Stef - Mic Qsenoch: 6 - 0
+Stef - dudeabides: 2.5 - 3.5
+Stef - Rabid: 4 - 2
+Stef - Monsieur X: 3 - 3
+Mic Qsenoch - dudeabides: 4 - 2
+Mic Qsenoch - Rabid: 5 - 1
+Mic Qsenoch - Monsieur X: 3.5 - 2.5
+dudeabides - Rabid: 5 - 1
+dudeabides - Monsieur X: 4 - 2
+Rabid - Monsieur X: 4 - 2
+
+B1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	DG	4,2	17	4	0	179	  Yes
+2.	florrat	3,5	14	4	0	150	  Yes
+3.	Titandrake	3,0	12	4	0	130	  No
+4.	soulnet	2,5	10	4	0	114	  Yes
+5.	Obi Wan Bonogi	1,7	7	4	0	89	  No
+DG - florrat: 4 - 2
+DG - Titandrake: 4 - 2
+DG - soulnet: 4 - 2
+DG - Obi Wan Bonogi: 5 - 1
+florrat - Titandrake: 4 - 2
+florrat - soulnet: 4 - 2
+florrat - Obi Wan Bonogi: 4 - 2
+Titandrake - soulnet: 4 - 2
+Titandrake - Obi Wan Bonogi: 4 - 2
+soulnet - Obi Wan Bonogi: 4 - 2
+
+B2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	silverspawn	4,2	21	5	0	289.5	  Yes
+2.	Mr Anderson	3,0	15	5	0	224	  Yes
+3.	Eevee	2,8	14	5	5	200.5	  Yes
+4.	Qvist	2,8	14	5	1	205	  Yes
+5.	gamesou	2,7	13.5	5	0	185.5	  Yes
+6.	SheCantSayNo	2,5	12.5	5	0	198	  Yes
+silverspawn - Mr Anderson: 3 - 3
+silverspawn - Eevee: 5 - 1
+silverspawn - Qvist: 4 - 2
+silverspawn - gamesou: 6 - 0
+silverspawn - SheCantSayNo: 3 - 3
+Mr Anderson - Eevee: 3 - 3
+Mr Anderson - Qvist: 2.5 - 3.5
+Mr Anderson - gamesou: 3.5 - 2.5
+Mr Anderson - SheCantSayNo: 3 - 3
+Eevee - Qvist: 5 - 1
+Eevee - gamesou: 2 - 4
+Eevee - SheCantSayNo: 3 - 3
+Qvist - gamesou: 3 - 3
+Qvist - SheCantSayNo: 4.5 - 1.5
+gamesou - SheCantSayNo: 4 - 2
+
+C1 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	A Drowned Kernel	3,8	15.5	4	0	169	  Yes
+2.	TomConerly	3,1	12.5	4	5	139.5	  Yes
+3.	Adam Horton	3,1	12.5	4	1	147	  Yes
+4.	michaeljb	2,7	11	4	0	131.5	  Yes
+5.	Slyfox	2,1	8.5	4	0	106	  No
+A Drowned Kernel - TomConerly: 5 - 1
+A Drowned Kernel - Adam Horton: 2 - 4
+A Drowned Kernel - michaeljb: 4 - 2
+A Drowned Kernel - Slyfox: 4.5 - 1.5
+TomConerly - Adam Horton: 5 - 1
+TomConerly - michaeljb: 2.5 - 3.5
+TomConerly - Slyfox: 4 - 2
+Adam Horton - michaeljb: 3.5 - 2.5
+Adam Horton - Slyfox: 4 - 2
+michaeljb - Slyfox: 3 - 3
+
+C2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	liopoil	3,5	17.5	5	4	252.5	  Yes
+2.	mpsprs	3,5	17.5	5	2	241	  Yes
+3.	theblankman	3,2	16	5	0	245	  Yes
+4.	Temron	2,8	14	5	0	201.5	  Yes
+5.	KingZog3	2,6	13	5	0	200	  No
+6.	Breezy	2,4	12	5	0	182	  No
+liopoil - mpsprs: 4 - 2
+liopoil - theblankman: 3 - 3
+liopoil - Temron: 2 - 4
+liopoil - KingZog3: 4.5 - 1.5
+liopoil - Breezy: 4 - 2
+mpsprs - theblankman: 1 - 5
+mpsprs - Temron: 6 - 0
+mpsprs - KingZog3: 4 - 2
+mpsprs - Breezy: 4.5 - 1.5
+theblankman - Temron: 4 - 2
+theblankman - KingZog3: 1 - 5
+theblankman - Breezy: 3 - 3
+Temron - KingZog3: 3.5 - 2.5
+Temron - Breezy: 4.5 - 1.5
+KingZog3 - Breezy: 2 - 4
+
+C3 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	HarryPeteur	3,8	19	5	0	262	  Yes
+2.	Markowkette	3,3	16.5	5	0	239.5	   ?
+3.	jsh357	3,2	16	5	0	233	  Yes
+4.	Emeric	2,8	14	5	0	209.5	  Yes
+5.	Assemble Meme	2,7	13.5	5	0	199	  Yes
+6.	qmech	2,2	11	5	0	167	  No
+HarryPeteur - Markowkette: 2 - 4
+HarryPeteur - jsh357: 4 - 2
+HarryPeteur - Emeric: 4 - 2
+HarryPeteur - Assemble Meme: 4 - 2
+HarryPeteur - qmech: 5 - 1
+Markowkette - jsh357: 2.5 - 3.5
+Markowkette - Emeric: 2 - 4
+Markowkette - Assemble Meme: 3 - 3
+Markowkette - qmech: 5 - 1
+jsh357 - Emeric: 5 - 1
+jsh357 - Assemble Meme: 3 - 3
+jsh357 - qmech: 2.5 - 3.5
+Emeric - Assemble Meme: 5 - 1
+Emeric - qmech: 2 - 4
+Assemble Meme - qmech: 4.5 - 1.5
+
+C4 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	QwertZuiop	3,9	19.5	5	0	270	  Yes
+2.	Burning Skull	3,2	16	5	0	230.5	  Yes
+3.	Jean-Michel	3,1	15.5	5	0	229	  Yes
+4.	awaclus	2,9	14.5	5	0	214	  Yes
+5.	Dunduks	2,6	13	5	0	189	  Yes
+6.	Pitrpicko	2,3	11.5	5	0	177	  No
+QwertZuiop - Burning Skull: 4 - 2
+QwertZuiop - Jean-Michel: 1.5 - 4.5
+QwertZuiop - awaclus: 5 - 1
+QwertZuiop - Dunduks: 5 - 1
+QwertZuiop - Pitrpicko: 4 - 2
+Burning Skull - Jean-Michel: 5 - 1
+Burning Skull - awaclus: 2 - 4
+Burning Skull - Dunduks: 3 - 3
+Burning Skull - Pitrpicko: 4 - 2
+Jean-Michel - awaclus: 2 - 4
+Jean-Michel - Dunduks: 3 - 3
+Jean-Michel - Pitrpicko: 5 - 1
+awaclus - Dunduks: 4 - 2
+awaclus - Pitrpicko: 1.5 - 4.5
+Dunduks - Pitrpicko: 4 - 2
+
+D1 (73%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	theright555J	4,1	16.5	4	0	179	  Yes
+2.	kylar	3,5	14	4	0	169.5	  Yes
+3.	Twistedarcher	3,1	15.5	5	0	148	  Yes
+4.	kipkoan	3,0	3	1	0	46.5	  No
+5.	MtMagus	2,2	9	4	0	113.5	  Yes
+6.	Voltaire	2,0	8	4	0	102.5	  Yes
+theright555J - kylar: 4 - 2
+theright555J - Twistedarcher: 2.5 - 3.5
+theright555J - MtMagus: 5 - 1
+theright555J - Voltaire: 5 - 1
+kylar - Twistedarcher: 5 - 1
+kylar - MtMagus: 3 - 3
+kylar - Voltaire: 4 - 2
+Twistedarcher - kipkoan: 3 - 3
+Twistedarcher - MtMagus: 4 - 2
+Twistedarcher - Voltaire: 4 - 2
+MtMagus - Voltaire: 3 - 3
+
+D2 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	impromptublue	3,6	11	3	4	90	  Yes
+2.	kfm	3,6	11	3	2	82	  Yes
+3.	jothemieden	3,3	10	3	0	75	  No
+4.	andwilk	1,3	4	3	0	43	  Yes
+impromptublue - kfm: 4 - 2
+impromptublue - jothemieden: 3 - 3
+impromptublue - andwilk: 4 - 2
+kfm - jothemieden: 4 - 2
+kfm - andwilk: 5 - 1
+jothemieden - andwilk: 5 - 1
+
+D3 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	Tables	4,0	12	3	0	96	  Yes
+2.	Simon (DK)	3,3	10	3	0	80	  Yes
+3.	gseipkes	2,3	7	3	4	62	  Yes
+4.	Joseph2302	2,3	7	3	2	68	  Yes
+Tables - Simon (DK): 4 - 2
+Tables - gseipkes: 4 - 2
+Tables - Joseph2302: 4 - 2
+Simon (DK) - gseipkes: 5 - 1
+Simon (DK) - Joseph2302: 3 - 3
+gseipkes - Joseph2302: 4 - 2
+
+D4 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	adrien	4,5	18	4	0	186	  Yes
+2.	Victor Savenije	4,0	16	4	0	160	   ?
+3.	urob	3,0	12	4	0	104	  No
+4.	matildha	2,0	8	4	0	88	  Yes
+5.	Hugovj	1,5	6	4	0	78	  Yes
+adrien - Victor Savenije: 4 - 2
+adrien - urob: 5 - 1
+adrien - matildha: 4 - 2
+adrien - Hugovj: 5 - 1
+Victor Savenije - urob: 5 - 1
+Victor Savenije - matildha: 5 - 1
+Victor Savenije - Hugovj: 4 - 2
+urob - matildha: 5 - 1
+urob - Hugovj: 5 - 1
+matildha - Hugovj: 4 - 2
+
+D5 (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	moharimo	4,0	12	3	0	95	  Yes
+2.	Aidan Millow	3,0	9	3	0	77	  No
+3.	Egor Kulikov	2,6	8	3	0	75	  Yes
+4.	Watno	2,3	7	3	0	63	  No
+moharimo - Aidan Millow: 4 - 2
+moharimo - Egor Kulikov: 3 - 3
+moharimo - Watno: 5 - 1
+Aidan Millow - Egor Kulikov: 4 - 2
+Aidan Millow - Watno: 3 - 3
+Egor Kulikov - Watno: 3 - 3
+
+E (100%)
+rank	name                                         	average	points	#played	2nd	3rd	Season4?
+1.	JP Gerber	4,7	19	4	0	187.5	  Yes
+2.	jerni	3,8	15.5	4	0	154	  Yes
+3.	pst	3,2	13	4	0	109	  Yes
+4.	Hydrad	2,0	8	4	0	75	  No
+5.	EFHW	1,1	4.5	4	0	60	  Yes
+JP Gerber - jerni: 3.5 - 2.5
+JP Gerber - pst: 5 - 1
+JP Gerber - Hydrad: 6 - 0
+JP Gerber - EFHW: 4.5 - 1.5
+jerni - pst: 4 - 2
+jerni - Hydrad: 4 - 2
+jerni - EFHW: 5 - 1
+pst - Hydrad: 4 - 2
+pst - EFHW: 6 - 0
+Hydrad - EFHW: 4 - 2

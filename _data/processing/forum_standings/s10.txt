@@ -1,0 +1,239 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	Stef	3,7	18,5	5	0,0	258,8	53,9	   Yes
+2.	LESPEUTERE	3,4	17	5	0,0	249,5	44,9	   No
+3.	SheCantSayNo	2,9	14,5	5	0,0	217,3	47,2	   Yes
+4.	Mic Qsenoch	2,8	14	5	0,0	208,0	53,8	   Yes
+5.	DG	2,6	13	5	5,0	188,5	48,8	   Yes
+6.	Adam Horton	2,6	13	5	1,0	202,5	41,4	   Yes
+Stef - LESPEUTERE: 2 - 4
+Stef - SheCantSayNo: 3,5 - 2,5
+Stef - Mic Qsenoch: 5 - 1
+Stef - DG: 5 - 1
+Stef - Adam Horton: 3 - 3
+LESPEUTERE - SheCantSayNo: 3 - 3
+LESPEUTERE - Mic Qsenoch: 2 - 4
+LESPEUTERE - DG: 4 - 2
+LESPEUTERE - Adam Horton: 4 - 2
+SheCantSayNo - Mic Qsenoch: 3 - 3
+SheCantSayNo - DG: 4 - 2
+SheCantSayNo - Adam Horton: 2 - 4
+Mic Qsenoch - DG: 3 - 3
+Mic Qsenoch - Adam Horton: 3 - 3
+DG - Adam Horton: 5 - 1
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	Rabid	4,0	20	5	0,0	275,0	48,3	   Yes
+2.	gamesou	3,7	18,5	5	0,0	258,8	37,5	   Yes
+3.	Assemble Meme	2,9	14,5	5	0,0	205,8	33,5	   Yes
+4.	mpsprs	2,7	13,5	5	0,0	191,8	34,7	   Yes
+5.	pubby	2,4	12	5	0,0	188,0	41,0	   Yes
+6.	A Drowned Kernel	2,3	11,5	5	0,0	169,8	35,7	   Yes
+Rabid - gamesou: 3 - 3
+Rabid - Assemble Meme: 4 - 2
+Rabid - mpsprs: 5 - 1
+Rabid - pubby: 4 - 2
+Rabid - A Drowned Kernel: 4 - 2
+gamesou - Assemble Meme: 4 - 2
+gamesou - mpsprs: 3,5 - 2,5
+gamesou - pubby: 3 - 3
+gamesou - A Drowned Kernel: 5 - 1
+Assemble Meme - mpsprs: 3 - 3
+Assemble Meme - pubby: 4 - 2
+Assemble Meme - A Drowned Kernel: 3,5 - 2,5
+mpsprs - pubby: 3 - 3
+mpsprs - A Drowned Kernel: 4 - 2
+pubby - A Drowned Kernel: 2 - 4
+
+
+B2 (80%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	yudai214	4,0	12	3	0,0	172,0	39,6	-
+2.	Burning Skull	3,1	15,5	5	0,0	165,8	38,8	   Yes
+3.	Lotoreo	3,0	15	5	0,0	177,0	34,4	   Yes
+4.	Geronimoo	3,0	9	3	0,0	131,0	39,3	-
+5.	Eevee	2,7	8	3	0,0	111,0	32,8	-
+6.	awaclus	2,5	12,5	5	0,0	144,8	39,9	   Yes
+yudai214 - Burning Skull: 4 - 2
+yudai214 - Lotoreo: 4 - 2
+yudai214 - awaclus: 4 - 2
+Burning Skull - Lotoreo: 2 - 4
+Burning Skull - Geronimoo: 4 - 2
+Burning Skull - Eevee: 4 - 2
+Burning Skull - awaclus: 3,5 - 2,5
+Lotoreo - Geronimoo: 1 - 5
+Lotoreo - Eevee: 4 - 2
+Lotoreo - awaclus: 4 - 2
+Geronimoo - awaclus: 2 - 4
+Eevee - awaclus: 4 - 2
+Remaining: yudai214-Geronimoo, yudai214-Eevee, Geronimoo-Eevee
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	gkrieg	3,6	18	5	0,0	260,0	21,7	   Yes
+2.	Pizowned	3,4	17	5	0,0	233,5	26,0	   Yes
+3.	Derg17	3,3	16,5	5	0,0	240,5	30,5	    ?
+4.	michaeljb	2,8	14	5	0,0	215,5	34,2	   Yes
+5.	Deadlock39	2,5	12,5	5	0,0	185,5	32,1	   Yes
+6.	Horist	2,4	12	5	0,0	183,5	35,0	   Yes
+gkrieg - Pizowned: 4 - 2
+gkrieg - Derg17: 3,5 - 2,5
+gkrieg - michaeljb: 3 - 3
+gkrieg - Deadlock39: 4,5 - 1,5
+gkrieg - Horist: 3 - 3
+Pizowned - Derg17: 2 - 4
+Pizowned - michaeljb: 3 - 3
+Pizowned - Deadlock39: 5 - 1
+Pizowned - Horist: 5 - 1
+Derg17 - michaeljb: 3 - 3
+Derg17 - Deadlock39: 3 - 3
+Derg17 - Horist: 4 - 2
+michaeljb - Deadlock39: 2 - 4
+michaeljb - Horist: 3 - 3
+Deadlock39 - Horist: 3 - 3
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	markusin	3,8	19	5	0,0	268,0	36,9	   Yes
+2.	singletee	3,2	16	5	0,0	234,0	32,7	   Yes
+3.	7MiKL7	3,0	15	5	0,0	220,0	30,7	   Yes
+4.	werothegreat	2,8	14	5	3,0	213,0	22,5	   Yes
+5.	ephesos	2,8	14	5	3,0	202,0	20,1	   No
+6.	Jeb	2,4	12	5	0,0	185,0	23,0	   Yes
+markusin - singletee: 3 - 3
+markusin - 7MiKL7: 4 - 2
+markusin - werothegreat: 4 - 2
+markusin - ephesos: 4 - 2
+markusin - Jeb: 4 - 2
+singletee - 7MiKL7: 3 - 3
+singletee - werothegreat: 2 - 4
+singletee - ephesos: 4 - 2
+singletee - Jeb: 4 - 2
+7MiKL7 - werothegreat: 3 - 3
+7MiKL7 - ephesos: 4 - 2
+7MiKL7 - Jeb: 3 - 3
+werothegreat - ephesos: 3 - 3
+werothegreat - Jeb: 2 - 4
+ephesos - Jeb: 5 - 1
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	Dunduks	4,0	20	5	0,0	276,5	34,2	   Yes
+2.	Jean-Michel	3,1	15,5	5	0,0	230,8	36,7	   Yes
+3.	calimero	3,0	15	5	0,0	223,0	24,1	    ?
+4.	tufftaeh	2,7	13,5	5	4,5	193,8	21,5	   Yes
+5.	mnip	2,7	13,5	5	1,5	199,8	22,8	    ?
+6.	Emeric	2,5	12,5	5	0,0	190,3	30,6	   Yes
+Dunduks - Jean-Michel: 3 - 3
+Dunduks - calimero: 3 - 3
+Dunduks - tufftaeh: 5 - 1
+Dunduks - mnip: 5 - 1
+Dunduks - Emeric: 4 - 2
+Jean-Michel - calimero: 3 - 3
+Jean-Michel - tufftaeh: 5 - 1
+Jean-Michel - mnip: 2 - 4
+Jean-Michel - Emeric: 2,5 - 3,5
+calimero - tufftaeh: 2 - 4
+calimero - mnip: 2 - 4
+calimero - Emeric: 5 - 1
+tufftaeh - mnip: 4,5 - 1,5
+tufftaeh - Emeric: 3 - 3
+mnip - Emeric: 3 - 3
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	noey21	3,5	14	4	0,0	160,0	22,4	   Yes
+2.	crlundy	3,1	12,5	4	0,0	148,5	12,4	   Yes
+3.	funkdoc	2,9	11,5	4	3,5	137,3	29,2	   No
+4.	Voltaire	2,9	11,5	4	2,5	138,3	16,0	   Yes
+5.	MtMagus	2,6	10,5	4	0,0	129,0	29,4	   Yes
+noey21 - crlundy: 2,5 - 3,5
+noey21 - funkdoc: 4 - 2
+noey21 - Voltaire: 4 - 2
+noey21 - MtMagus: 3,5 - 2,5
+crlundy - funkdoc: 3 - 3
+crlundy - Voltaire: 2 - 4
+crlundy - MtMagus: 4 - 2
+funkdoc - Voltaire: 3,5 - 2,5
+funkdoc - MtMagus: 3 - 3
+Voltaire - MtMagus: 3 - 3
+
+
+D2 (90%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	JP Gerber	4,6	18,5	4	0,0	149,3	29,8	   Yes
+2.	Calamitas	3,4	13,5	4	0,0	129,8	27,1	   Yes
+3.	Chris is me	3,0	12	4	0,0	88,0	25,7	   Yes
+4.	weather3003	2,5	7,5	3	0,0	105,8	12,0	   
+5.	bramroop	0,8	2,5	3	0,0	32,3	-5,2	   
+JP Gerber - Calamitas: 3 - 3
+JP Gerber - Chris is me: 5 - 1
+JP Gerber - weather3003: 4,5 - 1,5
+JP Gerber - bramroop: 6 - 0
+Calamitas - Chris is me: 4 - 2
+Calamitas - weather3003: 2 - 4
+Calamitas - bramroop: 4,5 - 1,5
+Chris is me - weather3003: 4 - 2
+Chris is me - bramroop: 5 - 1
+Remaining: weather3003-bramroop
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	Jimmmmm	3,8	19	5	0,0	265,0	29,1	   Yes
+2.	Master88	3,4	17	5	4,0	239,0	24,1	   No
+3.	Micha1980	3,4	17	5	2,0	227,0	26,1	   Yes
+4.	jerni	3,0	15	5	3,0	223,0	26,4	    ?
+5.	Simon (DK)	3,0	15	5	3,0	191,0	31,6	   Yes
+6.	Hugovj	1,4	7	5	0,0	117,0	19,1	   Yes
+Jimmmmm - Master88: 4 - 2
+Jimmmmm - Micha1980: 2 - 4
+Jimmmmm - jerni: 4 - 2
+Jimmmmm - Simon (DK): 5 - 1
+Jimmmmm - Hugovj: 4 - 2
+Master88 - Micha1980: 4 - 2
+Master88 - jerni: 3 - 3
+Master88 - Simon (DK): 4 - 2
+Master88 - Hugovj: 4 - 2
+Micha1980 - jerni: 2 - 4
+Micha1980 - Simon (DK): 3 - 3
+Micha1980 - Hugovj: 6 - 0
+jerni - Simon (DK): 3 - 3
+jerni - Hugovj: 3 - 3
+Simon (DK) - Hugovj: 6 - 0
+
+
+E1 (90%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	drsteelhammer	5,0	20	4	0,0	154,0	30,2	   Yes
+2.	Asher Howarth	3,5	14	4	0,0	128,0	7,0	   Yes
+3.	Ravalanche	2,7	8	3	5,0	82,0	-3,0	   
+4.	Black Dagger	2,0	8	4	1,0	82,0	6,3	    ?
+5.	kasheefali	1,3	4	3	0,0	38,0	-7,8	   
+drsteelhammer - Asher Howarth: 3 - 3
+drsteelhammer - Ravalanche: 6 - 0
+drsteelhammer - Black Dagger: 5 - 1
+drsteelhammer - kasheefali: 6 - 0
+Asher Howarth - Ravalanche: 3 - 3
+Asher Howarth - Black Dagger: 3 - 3
+Asher Howarth - kasheefali: 5 - 1
+Ravalanche - Black Dagger: 5 - 1
+Black Dagger - kasheefali: 3 - 3
+Remaining: Ravalanche-kasheefali
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season11?
+1.	Umbrageofsnow	4,0	12	3	0,0	90,0	13,4	   Yes
+2.	Morghas	3,7	11	3	0,0	88,0	14,9	   Yes
+3.	trinadianese	2,7	8	3	0,0	66,0	1,9	   Yes
+4.	unminable	1,7	5	3	0,0	50,0	-	   Yes
+Umbrageofsnow - Morghas: 3 - 3
+Umbrageofsnow - trinadianese: 4 - 2
+Umbrageofsnow - unminable: 5 - 1
+Morghas - trinadianese: 4 - 2
+Morghas - unminable: 4 - 2
+trinadianese - unminable: 4 - 2

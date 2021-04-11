@@ -1,0 +1,303 @@
+A (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	Stef	4,0	20	5	0,0	277,5	51,5	   Yes
+2.	Mic Qsenoch	3,7	18,5	5	0,0	249,8	53,3	   Yes
+3.	SheCantSayNo	3,4	17	5	0,0	228,0	48,3	   Yes
+4.	DG	2,7	13,5	5	0,0	194,8	48,5	   Yes
+5.	kylar	2,2	11	5	0,0	166,0	37,4	   No
+6.	dudeabides	2,0	10	5	0,0	149,5	38,6	   No
+Stef - Mic Qsenoch: 3 - 3
+Stef - SheCantSayNo: 5 - 1
+Stef - DG: 4 - 2
+Stef - kylar: 3 - 3
+Stef - dudeabides: 5 - 1
+Mic Qsenoch - SheCantSayNo: 3 - 3
+Mic Qsenoch - DG: 2,5 - 3,5
+Mic Qsenoch - kylar: 5 - 1
+Mic Qsenoch - dudeabides: 5 - 1
+SheCantSayNo - DG: 5 - 1
+SheCantSayNo - kylar: 5 - 1
+SheCantSayNo - dudeabides: 3 - 3
+DG - kylar: 3 - 3
+DG - dudeabides: 4 - 2
+kylar - dudeabides: 3 - 3
+
+
+B1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	LESPEUTERE	3,9	15,5	4	0,0	169,3	45,9	   Yes
+2.	gamesou	3,3	13	4	4,0	136,0	41,0	   Yes
+3.	Eevee	3,3	13	4	2,0	141,0	34,8	   Yes
+4.	Rabid	3,0	12	4	0,0	144,0	48,7	   Yes
+5.	awaclus	1,6	6,5	4	0,0	85,3	39,0	   Yes
+LESPEUTERE - gamesou: 5 - 1
+LESPEUTERE - Eevee: 3 - 3
+LESPEUTERE - Rabid: 3 - 3
+LESPEUTERE - awaclus: 4,5 - 1,5
+gamesou - Eevee: 4 - 2
+gamesou - Rabid: 3 - 3
+gamesou - awaclus: 5 - 1
+Eevee - Rabid: 3 - 3
+Eevee - awaclus: 5 - 1
+Rabid - awaclus: 3 - 3
+
+
+B2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	nate_w	4,0	20	5	0,0	277,0	43,3	   No
+2.	Dingan	3,4	17	5	0,0	240,0	40,4	   No
+3.	2.71828.....	3,2	16	5	0,0	223,0	39,0	   No
+4.	Robz888	2,8	14	5	3,0	200,0	43,8	   No
+5.	pubby	2,8	14	5	3,0	196,0	41,7	   Yes
+6.	ephesos	1,8	9	5	0,0	146,0	18,2	   Yes
+nate_w - Dingan: 3 - 3
+nate_w - 2.71828.....: 4 - 2
+nate_w - Robz888: 4 - 2
+nate_w - pubby: 5 - 1
+nate_w - ephesos: 4 - 2
+Dingan - 2.71828.....: 2 - 4
+Dingan - Robz888: 4 - 2
+Dingan - pubby: 4 - 2
+Dingan - ephesos: 4 - 2
+2.71828..... - Robz888: 3 - 3
+2.71828..... - pubby: 2 - 4
+2.71828..... - ephesos: 5 - 1
+Robz888 - pubby: 3 - 3
+Robz888 - ephesos: 4 - 2
+pubby - ephesos: 4 - 2
+
+
+C1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	yudai214	4,2	21	5	0,0	277,0	42,0	   Yes
+2.	Burning Skull	3,7	18,5	5	0,0	243,5	37,7	   Yes
+3.	Emeric	3,2	16	5	0,0	218,8	33,7	   Yes
+4.	7MiKL7	3,0	15	5	0,0	209,3	31,4	   Yes
+5.	Jean-Michel	2,5	12,5	5	0,0	174,0	37,4	   Yes
+6.	Simon (DK)	1,4	7	5	0,0	108,0	32,5	    ?
+yudai214 - Burning Skull: 3 - 3
+yudai214 - Emeric: 4 - 2
+yudai214 - 7MiKL7: 4 - 2
+yudai214 - Jean-Michel: 5 - 1
+yudai214 - Simon (DK): 5 - 1
+Burning Skull - Emeric: 3,5 - 2,5
+Burning Skull - 7MiKL7: 3 - 3
+Burning Skull - Jean-Michel: 3 - 3
+Burning Skull - Simon (DK): 6 - 0
+Emeric - 7MiKL7: 3,5 - 2,5
+Emeric - Jean-Michel: 4 - 2
+Emeric - Simon (DK): 4 - 2
+7MiKL7 - Jean-Michel: 3,5 - 2,5
+7MiKL7 - Simon (DK): 4 - 2
+Jean-Michel - Simon (DK): 4 - 2
+
+
+C2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	mpsprs	3,8	15	4	0,0	166,0	34,8	   Yes
+2.	Assemble Meme	3,5	14	4	0,0	152,0	32,5	   Yes
+3.	vsiewnar	3,3	13	4	0,0	144,0	38,0	   No
+4.	werothegreat	2,8	11	4	0,0	126,0	22,2	   Yes
+5.	Malmerung	1,8	7	4	0,0	92,0	21,8	   No
+mpsprs - Assemble Meme: 3 - 3
+mpsprs - vsiewnar: 4 - 2
+mpsprs - werothegreat: 4 - 2
+mpsprs - Malmerung: 4 - 2
+Assemble Meme - vsiewnar: 3 - 3
+Assemble Meme - werothegreat: 3 - 3
+Assemble Meme - Malmerung: 5 - 1
+vsiewnar - werothegreat: 4 - 2
+vsiewnar - Malmerung: 4 - 2
+werothegreat - Malmerung: 4 - 2
+
+
+C3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	A Drowned Kernel	3,8	19	5	0,0	269,0	37,0	   Yes
+2.	SM.SM	3,2	16	5	0,0	231,0	34,3	    ?
+3.	Derg17	3,0	15	5	4,0	206,0	32,2	   Yes
+4.	Titandrake	3,0	15	5	2,0	224,0	38,7	   No
+5.	Horist	2,8	14	5	0,0	215,0	33,8	   Yes
+6.	MtMagus	2,2	11	5	0,0	171,0	29,5	   Yes
+A Drowned Kernel - SM.SM: 4 - 2
+A Drowned Kernel - Derg17: 5 - 1
+A Drowned Kernel - Titandrake: 2 - 4
+A Drowned Kernel - Horist: 4 - 2
+A Drowned Kernel - MtMagus: 4 - 2
+SM.SM - Derg17: 5 - 1
+SM.SM - Titandrake: 4 - 2
+SM.SM - Horist: 1 - 5
+SM.SM - MtMagus: 4 - 2
+Derg17 - Titandrake: 4 - 2
+Derg17 - Horist: 4 - 2
+Derg17 - MtMagus: 5 - 1
+Titandrake - Horist: 3 - 3
+Titandrake - MtMagus: 4 - 2
+Horist - MtMagus: 2 - 4
+
+
+D1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	Dunduks	3,2	16	5	0,0	236,0	33,5	   Yes
+2.	tufftaeh	3,0	15	5	10,0	224,0	21,2	   Yes
+3.	EgorK	3,0	15	5	9,0	227,0	23,1	   No
+4.	Micha1980	3,0	15	5	9,0	223,0	24,5	   Yes
+5.	Master88	3,0	15	5	8,0	226,0	26,0	   Yes
+6.	Jimmmmm	2,8	14	5	0,0	212,0	26,3	   Yes
+Dunduks - tufftaeh: 4 - 2
+Dunduks - EgorK: 2 - 4
+Dunduks - Micha1980: 4 - 2
+Dunduks - Master88: 2 - 4
+Dunduks - Jimmmmm: 4 - 2
+tufftaeh - EgorK: 3 - 3
+tufftaeh - Micha1980: 3 - 3
+tufftaeh - Master88: 4 - 2
+tufftaeh - Jimmmmm: 3 - 3
+EgorK - Micha1980: 3 - 3
+EgorK - Master88: 3 - 3
+EgorK - Jimmmmm: 2 - 4
+Micha1980 - Master88: 3 - 3
+Micha1980 - Jimmmmm: 4 - 2
+Master88 - Jimmmmm: 3 - 3
+
+
+D2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	mnip	3,3	16,5	5	3,0	243,3	18,9	   Yes
+2.	calimero	3,3	16,5	5	3,0	242,3	24,6	   Yes
+3.	Iguana Iguana	3,1	15,5	5	3,5	224,8	27,7	   No
+4.	Calamitas	3,1	15,5	5	2,5	224,8	21,3	   Yes
+5.	drsteelhammer	2,8	14	5	0,0	213,5	24,3	   Yes
+6.	Qvist	2,4	12	5	0,0	186,5	36,9	   No
+mnip - calimero: 3 - 3
+mnip - Iguana Iguana: 4,5 - 1,5
+mnip - Calamitas: 4 - 2
+mnip - drsteelhammer: 1 - 5
+mnip - Qvist: 4 - 2
+calimero - Iguana Iguana: 2,5 - 3,5
+calimero - Calamitas: 4 - 2
+calimero - drsteelhammer: 4 - 2
+calimero - Qvist: 3 - 3
+Iguana Iguana - Calamitas: 3,5 - 2,5
+Iguana Iguana - drsteelhammer: 2 - 4
+Iguana Iguana - Qvist: 5 - 1
+Calamitas - drsteelhammer: 6 - 0
+Calamitas - Qvist: 3 - 3
+drsteelhammer - Qvist: 3 - 3
+
+
+D3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	Jeb	4,0	16	4	4,0	166,0	20,7	   Yes
+2.	singletee	4,0	16	4	2,0	158,5	31,6	   Yes
+3.	Chris is me	3,4	13,5	4	0,0	139,8	26,7	   Yes
+4.	jerni	2,1	8,5	4	0,0	109,8	26,7	   Yes
+5.	DoesItGoBoom	1,5	6	4	0,0	63,5	10,7	   Yes
+Jeb - singletee: 4 - 2
+Jeb - Chris is me: 3 - 3
+Jeb - jerni: 3 - 3
+Jeb - DoesItGoBoom: 6 - 0
+singletee - Chris is me: 4 - 2
+singletee - jerni: 5 - 1
+singletee - DoesItGoBoom: 5 - 1
+Chris is me - jerni: 3,5 - 2,5
+Chris is me - DoesItGoBoom: 5 - 1
+jerni - DoesItGoBoom: 2 - 4
+
+
+D4 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	Deadlock39	3,5	17,5	5	4,0	254,1	32,9	   Yes
+2.	Qbrick	3,5	17,5	5	2,0	252,1	31,7	   No
+3.	Cuzz	3,3	16,5	5	0,0	228,4	19,0	   No
+4.	Rubby	3,0	15	5	0,0	217,3	29,0	   No
+5.	Seprix	3,0	14,8	5	0,0	198,3	23,0	   Yes
+6.	Voltaire	1,8	8,8	5	0,0	145,9	14,9	   Yes
+Deadlock39 - Qbrick: 4 - 2
+Deadlock39 - Cuzz: 3 - 3
+Deadlock39 - Rubby: 3 - 3
+Deadlock39 - Seprix: 4 - 2
+Deadlock39 - Voltaire: 3,5 - 2,5
+Qbrick - Cuzz: 5 - 1
+Qbrick - Rubby: 3 - 3
+Qbrick - Seprix: 4 - 2
+Qbrick - Voltaire: 3,5 - 2,5
+Cuzz - Rubby: 4 - 2
+Cuzz - Seprix: 4 - 2
+Cuzz - Voltaire: 4,5 - 1,5
+Rubby - Seprix: 3 - 3
+Rubby - Voltaire: 4 - 2
+Seprix - Voltaire: 5,8 - 0,3
+
+
+D5 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	gkrieg	3,8	19	5	0,0	257,5	19,5	   Yes
+2.	Pizowned	3,4	17	5	0,0	246,5	23,2	   Yes
+3.	iamsparticus	3,1	15,5	5	0,0	231,5	25,4	   No
+4.	noey21	2,9	14,5	5	0,0	220,5	20,4	   Yes
+5.	jamfamsam	2,4	12	5	4,0	170,5	22,4	   No
+6.	funkdoc	2,4	12	5	2,0	185,0	24,7	   Yes
+gkrieg - Pizowned: 3 - 3
+gkrieg - iamsparticus: 2 - 4
+gkrieg - noey21: 3 - 3
+gkrieg - jamfamsam: 6 - 0
+gkrieg - funkdoc: 5 - 1
+Pizowned - iamsparticus: 4 - 2
+Pizowned - noey21: 3 - 3
+Pizowned - jamfamsam: 4 - 2
+Pizowned - funkdoc: 3 - 3
+iamsparticus - noey21: 3 - 3
+iamsparticus - jamfamsam: 4,5 - 1,5
+iamsparticus - funkdoc: 2 - 4
+noey21 - jamfamsam: 1,5 - 4,5
+noey21 - funkdoc: 4 - 2
+jamfamsam - funkdoc: 4 - 2
+
+
+E1 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	bramroop	4,5	18	4	0,0	182,5	-3,6	   Yes
+2.	ealayne	3,4	13,5	4	0,0	145,3	9,1	   No
+3.	Nrrden	2,9	11,5	4	0,0	138,8	0,5	   Yes
+4.	kasheefali	2,3	9	4	0,0	88,0	-10,1	   Yes
+5.	trinadianese	2,0	8	4	0,0	102,0	-15,7	   Yes
+bramroop - ealayne: 4 - 2
+bramroop - Nrrden: 3 - 3
+bramroop - kasheefali: 6 - 0
+bramroop - trinadianese: 5 - 1
+ealayne - Nrrden: 3,5 - 2,5
+ealayne - kasheefali: 5 - 1
+ealayne - trinadianese: 3 - 3
+Nrrden - kasheefali: 3 - 3
+Nrrden - trinadianese: 3 - 3
+kasheefali - trinadianese: 5 - 1
+
+
+E2 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	weather3003	3,8	15	4	0,0	167,0	9,3	   Yes
+2.	Asher Howarth	3,0	12	4	0,0	140,5	7,0	   Yes
+3.	Ravalanche	2,9	11,5	4	3,5	139,3	-7,3	   Yes
+4.	C_Roy8	2,9	11,5	4	2,5	139,8	10,1	   No
+5.	marksim	2,5	10	4	0,0	120,0	-2,6	   No
+weather3003 - Asher Howarth: 4 - 2
+weather3003 - Ravalanche: 3 - 3
+weather3003 - C_Roy8: 3 - 3
+weather3003 - marksim: 5 - 1
+Asher Howarth - Ravalanche: 4 - 2
+Asher Howarth - C_Roy8: 3 - 3
+Asher Howarth - marksim: 3 - 3
+Ravalanche - C_Roy8: 3,5 - 2,5
+Ravalanche - marksim: 3 - 3
+C_Roy8 - marksim: 3 - 3
+
+
+E3 (100%)
+rank	name                                 	average	points	#played	2nd	3rd     	iso     	season10?
+1.	crlundy	3,5	7	2	4,0	40,0	11,3	   Yes
+2.	Black Dagger	3,5	7	2	2,0	34,0	7,9	   Yes
+3.	mathguy89	2,0	4	2	0,0	28,0	1,5	   No
+crlundy - Black Dagger: 4 - 2
+crlundy - mathguy89: 3 - 3
+Black Dagger - mathguy89: 5 - 1
