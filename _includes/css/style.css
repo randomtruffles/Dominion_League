@@ -710,8 +710,7 @@ a.db-link {
   border-bottom: 1px dotted gray;
 }
 
-p.db-link {
-	display: inline-block;
+span.db-link {
 	border-bottom: 1px dotted gray;
 	margin: 0;
 }
@@ -720,7 +719,7 @@ a.db-link:hover {
   color: #ca2017;
 }
 
-p.db-link:hover {
+span.db-link:hover {
 	color: #ca2017;
 	text-decoration: underline;
 	cursor: pointer;

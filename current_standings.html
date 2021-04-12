@@ -26,10 +26,10 @@ title: Current standings of divisions in Season 45
 <script src="/js/standingsUtils.js"></script>
 <script>
 // Load data
-var cur_season = {{ site.data.season.number }};
+var cur_season = String({{ site.data.season.number }});
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetsLinks = {{ site.data.sheet_links | jsonify }};
-sheetsLinks = sheetsLinks[cur_season.toString()];
+sheetsLinks = sheetsLinks[cur_season];
 var tiers = [
   ["A", 1],
   ["B", 2],
@@ -51,7 +51,7 @@ function singleDivision(division){
   singleDivisionDiv.scrollTop = 0;
   document.getElementById("all-divisions").style.display = "none";
   console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, {"sims": "new"});
+  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, cur_season, {});
   var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
   w3AddClass(divisionDiv, "show");
 }
@@ -62,7 +62,6 @@ function allDivisions(){
   var divisionDiv = document.getElementById("all-divisions");
   console.log("Showing all divisions");
   document.getElementById("single-division").style.display = "none";
-  console.log(tiers);
   while (true) {
     if (curTierIdx == tiers.length) {
       break;
@@ -76,7 +75,7 @@ function allDivisions(){
     }
     division = `${tiers[curTierIdx][0]}${curDiv}`;
     curDiv += 1;
-    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, {"sims": "new"});
+    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, cur_season, {});
   }
   return;
 }

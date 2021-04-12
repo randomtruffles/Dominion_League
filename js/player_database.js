@@ -120,7 +120,7 @@ function searchHistory() {
 		let division = currentSeason.players[playerKey].division;
 		let title = `<a href="current_standings?div=${division}"> S${season}</a> ${division} Division`;
 		let params = {"headerText":title, "playerNameKey":playerKey, "sims": "new"};
-		loadDivision(standingsDiv, currentSeason[division], sheetsLinks[String(season)][division], division, params);
+		loadDivision(standingsDiv, currentSeason[division], sheetsLinks[String(season)][division], division, String(season), params);
 		for (opp in currentSeason[division].by_player[player]) {
 			if (!notPlayers.includes(opp)) {
 				playerVersus[opp] = [{"season": season, "tier": division.charAt(0), "wins": currentSeason[division].by_player[player][opp].wins, "losses": currentSeason[division].by_player[player][opp].losses}];
@@ -135,9 +135,9 @@ function searchHistory() {
 		for (let i = players[playerKey].seasons.length - 1; i >= 0; i--) {
 			let season = players[playerKey].seasons[i].season;
 			let division = players[playerKey].seasons[i].division;
-			let title = `<a href="current_standings?div=${division}"> S${season}</a> ${division} Division`;
-			let params = {"headerText":title, "playerNameKey":playerKey, "sims": (Number(season) < 29) ? "none" : ((Number(season) < 42) ? "old" : "new"), "champ": champions.seasons[season]};
-			loadDivision(standingsDiv, leagueHist[season][division], sheetsLinks[season][division], division, params);
+			let title = `<a href="past_standings/season${season}?div=${division}"> S${season}</a> ${division} Division`;
+			let params = {"headerText":title, "playerNameKey":playerKey, "champ": champions.seasons[season]};
+			loadDivision(standingsDiv, leagueHist[season][division], sheetsLinks[season][division], division, season, params);
 			for (opp in leagueHist[season][division].by_player[player]) {
 				if (!notPlayers.includes(opp)) {
 					if (playerVersus[opp]) {

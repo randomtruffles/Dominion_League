@@ -3,12 +3,13 @@ var promoteIcon = "&#9651;";
 var demoteIcon = "&#9661;";
 var playerQuery = ""
 var noLink = false;
+var oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]}};
 var testing = false;
 /* Helper functions */
 function formatDbLink(playerName, className, drop = "No"){
   var champion_sym = " <img src=\"/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
-  var link = noLink ? `<p class = "${className}">${playerName}</p>`: `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
-  link = drop == "Yes" ? `<s>${link}</s>` : link;
+  var link = noLink ? `<span class = "${className}">${playerName}</span>`: `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
+  link = (drop == "Yes") ? `<s>${link}</s>` : link;
   if (playerName.toLowerCase() == champ) {
     link += champion_sym;
   }
@@ -34,13 +35,19 @@ function matchGreyscaleColor(score, upper){
   return color;
 }
 
-function standingsColor(complete, cell, tier, next_tier, name, drop){
+function standingsColor(complete, cell, tier, next_tier, season, name, drop){
   if (complete == "No" || next_tier == "") {
     return;
   }
   var promotion = "#91eb9b";
   var demotion = "#f0948d";
-  if ((next_tier < tier || name.toLowerCase() == champ) && !drop) {
+  if (oddSchemes[season] && oddSchemes[season][tier]) {
+    if (next_tier == oddSchemes[season][tier][0]) {
+	  cell.style.backgroundColor = promotion;
+	} else if (next_tier == oddSchemes[season][tier][1]) {
+	  cell.style.backgroundColor = demotion;
+	}
+  } else if ((next_tier < tier || name.toLowerCase() == champ) && !drop) {
     cell.style.backgroundColor = promotion;
   } else if (next_tier > tier) {
     cell.style.backgroundColor = demotion;
@@ -324,7 +331,7 @@ function genSimulations(players, drops, sorted, simType){
 }
 
 
-function genStandings(data, tier, tiebreaker, sorted, drops, complete, isRaw) {
+function genStandings(data, tier, season, tiebreaker, sorted, drops, complete, isRaw) {
   if (testing) console.log("Generating standings...");
   var table = document.createElement("table");
   var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
@@ -496,7 +503,7 @@ function genStandings(data, tier, tiebreaker, sorted, drops, complete, isRaw) {
       cell.innerHTML = rowInfo[info];
       switch (info) {
         case "name":
-          standingsColor(complete, cell, tier, playerData["next tier"], playerData["name"], playerData["drop"] == "Yes");
+          standingsColor(complete, cell, tier, playerData["next tier"], season, playerData["name"], playerData["drop"] == "Yes");
           cell.classList.add("cellWithDetail");
           cell.append(genIndividualMatch(playerData["name"], sorted, tiebreaker, isRaw, drops));
           break;
@@ -683,7 +690,7 @@ function genGrid(data, drops, sorted) {
 }
 
 
-function loadDivision(divisionDiv, divisionData, link, division, params) {
+function loadDivision(divisionDiv, divisionData, link, division, season, params) {
   console.log(`Loading ${division} standings...`);
 
   // Get information
@@ -695,6 +702,7 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   var drops = divisionData["late drops"];
   var complete = divisionData["complete?"];
   //var tiebreaker = divisionData["tiebreaker"];
+  var simType = (Number(season) >= 42) ? "new" : (Number(season) >= 29) ? "old" : "none";
 
   // Compute sorted player list with drops last
   var sorted = [];
@@ -723,8 +731,8 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   var headerText = params["headerText"] ? params["headerText"] : "";
   playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
   champ = params["champ"] ? params["champ"] : champ;
-  var header = genHeader(division, complete, link, drops, headerText, params["sims"] == "none");
-  var standingsTable = genStandings(standings, tier, players, sorted, drops, complete, false);
+  var header = genHeader(division, complete, link, drops, headerText, simType == "none");
+  var standingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, false);
 
   if (!params["playerNameKey"]) {
     standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
@@ -736,12 +744,12 @@ function loadDivision(divisionDiv, divisionData, link, division, params) {
   standingsDiv.appendChild(header);
   standingsDiv.appendChild(standingsTable);
   if (drops.length > 0 ){
-    var rawStandingsTable = genStandings(standings, tier, players, sorted, drops, complete, true);
+    var rawStandingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, true);
     standingsDiv.appendChild(rawStandingsTable);
   }
   standingsDiv.appendChild(gridTable);
   standingsDiv.appendChild(matchesTable);
-  if((drops.length > 0) && (params["sims"] != "none")) {
-    standingsDiv.appendChild(genSimulations(players, drops, sorted, params["sims"]));
+  if((drops.length > 0) && (simType != "none")) {
+    standingsDiv.appendChild(genSimulations(players, drops, sorted, simType));
   }
 }

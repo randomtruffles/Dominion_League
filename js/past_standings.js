@@ -4,7 +4,6 @@
 var divisions = {{ site.data.league_history | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
-var simType = "new";
 
 function makeButtons() {
 	var tiers = [...new Set(Object.keys(sheetLinks).map(x => x.charAt(0)))].sort();
@@ -54,18 +53,18 @@ function filtDivs(cl) {
 	}
 }
 
-function singleDivision(division) {
+function singleDivision(season, division) {
 	var singleDivisionDiv = document.getElementById("single-division");
 	singleDivisionDiv.style.display = "";
 	singleDivisionDiv.scrollIntoView(true);
 	document.getElementById("all-divisions").style.display = "none";
 	console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, {"champ":champion, "sims": simType});
+	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, season, {"champ":champion});
 	var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
 	w3AddClass(divisionDiv, "show");
 }
 
-function allDivisions() {
+function allDivisions(season) {
 	var curTierIdx = 0;
 	var curDiv = 1;
 	var divisionDiv = document.getElementById("all-divisions");
@@ -77,7 +76,7 @@ function allDivisions() {
 			console.log(`${division} data not found. Continuing...`);
 			continue;
 		}
-		loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, {"champ":champion, "sims": simType});
+		loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, season, {"champ":champion});
 	}
 	return;
 }
@@ -87,17 +86,12 @@ function loadPage(season) {
 	sheetLinks = sheetLinks[season];
 	champion = champions.seasons[season];
 	makeButtons();
-	if (Number(season) < 29) {
-		simType = "none";
-	} else if (Number(season) < 42) {
-		simType = "old";
-	}
 	var division = getParam('div');
 	var tier = getParam('tier');
 	if (division.length > 0) {
-		singleDivision(division.toUpperCase());
+		singleDivision(season, division.toUpperCase());
 	} else {
-		allDivisions();
+		allDivisions(season);
 		filtDivs(false);
 	}
 }
