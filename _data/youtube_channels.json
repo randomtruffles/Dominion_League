@@ -145,5 +145,8 @@
   },
   "ssounder" : {
 	"channel" : "https://www.youtube.com/channel/UCbJIRsK3rp5d7CTtu0Q7ZsA"
+  },
+  "aglet": {
+  	"channel": "https://www.youtube.com/channel/UCWFK6TepsJjfdVpXDwMNbsA"
   }
 }
