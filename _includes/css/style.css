@@ -1229,6 +1229,11 @@ tbody {
 	left: 22px;
 }
 
+.dbSelector.infoSelector#statsSelect:before {
+	content: "Stats";
+	left: 43px;
+}
+
 .dbSelector.infoSelector#versusSelect:before {
 	content: "Versus";
 	left: 36px;

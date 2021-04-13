@@ -39,6 +39,12 @@ document.getElementById("standingsSelect").onclick = function(ev) {
 	statsDiv.style.display = "none";
 	versusDiv.style.display = "none";
 };
+document.getElementById("statsSelect").onclick = function(ev) {
+	ev.target.blur();
+	standingsDiv.style.display = "none";
+	statsDiv.style.display = "block";
+	versusDiv.style.display = "none";
+};
 document.getElementById("versusSelect").onclick = function(ev) {
 	ev.target.blur();
 	standingsDiv.style.display = "none";
