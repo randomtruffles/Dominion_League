@@ -97,6 +97,7 @@ function searchHistory() {
 	var player = "";
 	playerDiv.innerHTML = "";
 	standingsDiv.innerHTML = "";
+	statsDiv.innerHTML = "";
 	versusDiv.innerHTML = "";
 	
 	if (currentSeason.players[playerKey]) {
@@ -108,6 +109,7 @@ function searchHistory() {
 		playerInput.value = player;
 	} else {
 		customDisplay(playerDiv, "Error: Player Does Not Exist", "<b>" + (enteredPlayerName || playerKey) + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').");
+		document.getElementById("content-controls").style.display = "none";
 		loadingDiv.style.display = "none";
 		return;
 	}
@@ -175,7 +177,7 @@ function searchHistory() {
 				streaks.played.current.count += 1;
 				streaks.played.current.start = Number(season);
 			} else {
-				if (streaks.played.current.count >= streaks.played.best.count) {
+				if (streaks.played.current.count > streaks.played.best.count) {
 					streaks.played.best = JSON.parse(JSON.stringify(streaks.played.current));
 				}
 				streaks.played.current = {"count": 1, "start": Number(season), "end": Number(season)};
@@ -189,7 +191,7 @@ function searchHistory() {
 				} else if (next_tier == oddSchemes[season][tier][1]) {
 					demotion = true;
 				}
-			} else if ((next_tier < tier) && (leagueHist[season][division].members[player].drop == "No")) {
+			} else if (((next_tier < tier) || (playerKey == champions.seasons[season])) && (leagueHist[season][division].members[player].drop == "No")) {
 				promotion = true;
 			} else if (next_tier > tier) {
 				demotion = true;
@@ -199,7 +201,7 @@ function searchHistory() {
 					streaks.promote.current.count += 1;
 					streaks.promote.current.start = Number(season);
 				} else {
-					if (streaks.promote.current.count >= streaks.promote.best.count) {
+					if (streaks.promote.current.count > streaks.promote.best.count) {
 						streaks.promote.best = JSON.parse(JSON.stringify(streaks.promote.current));
 					}
 					streaks.promote.current = {"count": 1, "start": Number(season), "end": Number(season)};
@@ -210,7 +212,7 @@ function searchHistory() {
 					streaks.nondem.current.count += 1;
 					streaks.nondem.current.start = Number(season);
 				} else {
-					if (streaks.nondem.current.count >= streaks.nondem.best.count) {
+					if (streaks.nondem.current.count > streaks.nondem.best.count) {
 						streaks.nondem.best = JSON.parse(JSON.stringify(streaks.nondem.current));
 					}
 					streaks.nondem.current = {"count": 1, "start": Number(season), "end": Number(season)};
@@ -244,13 +246,13 @@ function searchHistory() {
 		});
 		stats.highest = tierRanks[0];
 		stats.median = tierRanks[Math.ceil(tierRanks.length/2 - 1)];
-		if (streaks.played.current.count >= streaks.played.best.count) {
+		if (streaks.played.current.count > streaks.played.best.count) {
 			streaks.played.best = JSON.parse(JSON.stringify(streaks.played.current));
 		}
-		if (streaks.promote.current.count >= streaks.promote.best.count) {
+		if (streaks.promote.current.count > streaks.promote.best.count) {
 			streaks.promote.best = JSON.parse(JSON.stringify(streaks.promote.current));
 		}
-		if (streaks.nondem.current.count >= streaks.nondem.best.count) {
+		if (streaks.nondem.current.count > streaks.nondem.best.count) {
 			streaks.nondem.best = JSON.parse(JSON.stringify(streaks.nondem.current));
 		}
 	}
@@ -294,7 +296,11 @@ function searchHistory() {
 	// Stats
 	// **************
 	
-	statsDiv.innerHTML = JSON.stringify(stats) + JSON.stringify(streaks) + JSON.stringify(tiersPlayed);
+	if (!stats) {
+		statsDiv.innerHTML = `<p>${player} has not yet completed a league season and so does not have any stats.</p>`;
+	} else {
+		statsDiv.innerHTML = JSON.stringify(stats) + JSON.stringify(streaks) + JSON.stringify(tiersPlayed);
+	}
 	
 	document.getElementById("content-controls").style.display = "block";
 	loadingDiv.style.display = "none";
