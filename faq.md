@@ -284,6 +284,7 @@ For a new player, their starting tier is decided shortly before the season start
 The number of tiers and divisions depends on the number of players. Each division has 6 players by default, and divisions are filled from the top down. The general pattern for making divisions is that there is 1 division in tier A and 2 divisions in tier B, and starting with tier B, every other tier doubles in size, except the bottom 2 tiers will be made to be roughly equal in size.
 
 Here are some examples for different numbers of players:
+
 * 402 players = 8 tiers = 67 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 16 H
 * 690 players = 9 tiers = 115 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 32 I
 * 1,266 players = 10 tiers = 211 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 64 I + 64 J
@@ -296,6 +297,7 @@ As much as possible, players are grouped by their time zones in tiers E and belo
 ##### How are players seeded?
 
 For all divisions in the same tier (and in the same time zone region, for tiers E and below), players split into 4 groups: new players, players who demoted from the tier above, players who promoted from the tier below, and players returning to the same tier. These groups are distributed as evenly as possible:
+
 * In a random order, new players are placed into divisions, starting with the last division of the tier.
 * In a random order, players who demoted are placed into divisions, starting with the first division of the tier.
 * In a random order, players who promoted are placed into divisions, starting with the first division of the tier.
@@ -357,7 +359,7 @@ There are no rules on etiquette, but we encourage you to be friendly and courteo
 
 Notify the moderators, and we may help them change their username.
 
-##### Are there ever matches with 3 or players?
+##### Are there ever matches with 3 or more players?
 
 No, all matches are played with 2 players.
 
