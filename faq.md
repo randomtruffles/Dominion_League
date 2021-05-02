@@ -171,7 +171,7 @@ The default is to play with all the cards either player owns and up to 2 landsca
 
 ##### Can I request an undo? Do I need to grant an undo?
 
-The default policy is that granting undo requests is required for low numbers of decisions that do not provide new information, UNLESS players announce a different undo policy before a match. Such grants are commonplace among higher level players, as disallowing them slows the pace of play by forcing players to be ultra-cautious. An example of a no new info undo is when a player means to play Throne Room > Militia, but misclicks the Militia first. No new information about either player is revealed, so the undo request should be granted. Undoing the play of a Smithy, intentional or not, need not be allowed, as playing it reveals the player's next three cards.
+The default policy is that granting undo requests is required for low numbers of decisions that do not provide new information. Players with a different undo policy must announce it before the match. Granting these undo requests means players don't have to play very slowly and cautiously. This default policy is common among players in the higher tiers. Players who wish to use a different undo policy must announce it before the match.
 
 ##### What is an undo policy?
 
@@ -181,13 +181,26 @@ An undo policy is a statement to your opponent before a match about what types o
 * "I won't allow any undos."
 * "I will decide whether to allow each individual undo request as it comes up."
 
-##### How do I report the score of a match?
+#### What are "decisions that do not provide new information"?
+
+Each entry in the Dominion Online game log counts a decision, for example, playing a card. The most common type of new information is learning which cards are where, for example seeing what cards were on top of your deck by drawing them.
+
+For example:
+* Playing a Workshop does not give you any new information, so undoing that should be granted by default.
+* Playing a Militia does not give you any new information (unless they already discarded, and you can see that card), so undoing that should be granted by default.
+* Playing a Smithy lets you see new cards, so undoing that does not need to be granted. It's possible that the Smithy player drew Action cards they couldn't play and wanted to change their mind, but this is information they learned *only after* making the decision to play Smithy.
+
+##### How do I report the score of a playing session?
 
 See the pinned message in your division’s Discord channel for the link to a Google form where you can submit the score of a match. Partial match scores should be submitted as you go, so you don’t forget.
 
-##### Should both players report their score for a match?
+##### Should both players report their score for a playing session?
 
-No, one player should submit the scores of both players. Please coordinate with your opponent who is responsible for submitting the score.
+No, one player should submit the scores of both players.
+
+##### Which player should report the score of a playing session?
+
+We recommend that the player with more wins during the playing session be responsible for reporting the score. If it's a tie, the player who was not the table host (and therefore did not have to manage the table settings) should report the score. If you wish to have the other player report the score, coordinate that with your opponent.
 
 ##### Do the players’ VP scores in a game matter for the League?
 
