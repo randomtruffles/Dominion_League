@@ -363,8 +363,12 @@ function genStandings(data, tier, season, tiebreaker, sorted, drops, complete, i
   }
 
   function calcTiebreakers() {
-    // Figure out tiebreakers
     for (var member in data) {
+	  if (data[member].tiebreaker) {
+	    tbValues[member] = data[member].tiebreaker;
+	  }
+	  //old - these are now imported from standings
+	  /*
       for (var opponent in data) {
         memberData = data[member];
         opponentData = data[opponent];
@@ -384,7 +388,8 @@ function genStandings(data, tier, season, tiebreaker, sorted, drops, complete, i
             }
         }
       }
-    }
+	  */
+    }	
   }
 
   calcTiebreakers();
