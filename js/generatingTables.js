@@ -40,8 +40,11 @@ function standingsColor(complete, cell, tier, next_tier, season, name, drop){
     return;
   }
   var promotion = "#91eb9b";
+  var tbd = "#f1e28d";
   var demotion = "#f0948d";
-  if (oddSchemes[season] && oddSchemes[season][tier]) {
+  if (/TBD/.test(next_tier)) {
+	cell.style.backgroundColor = tbd;
+  } else if (oddSchemes[season] && oddSchemes[season][tier]) {
     if (next_tier == oddSchemes[season][tier][0]) {
 	  cell.style.backgroundColor = promotion;
 	} else if (next_tier == oddSchemes[season][tier][1]) {
