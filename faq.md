@@ -171,7 +171,7 @@ The default is to play with all the cards either player owns and up to 2 landsca
 
 ##### Can I request an undo? Do I need to grant an undo?
 
-The default policy is that granting undo requests is required for low numbers of decisions that do not provide new information, UNLESS players announce a different undo policy before a match. Such grants are commonplace among higher level players, as disallowing them slows the pace of play by forcing players to be ultra-cautious. An example of a no new info undo is when a player means to play Throne Room > Militia, but misclicks the Militia first. No new information about either player is revealed, so the undo request should be granted. Undoing the play of a Smithy, intentional or not, need not be allowed, as playing it reveals the player's next three cards.
+The default policy is that granting undo requests is required for low numbers of decisions that do not provide new information. Players with a different undo policy must announce it before the match. Granting these undo requests means players don't have to play very slowly and cautiously. This default policy is common among players in the higher tiers. Players who wish to use a different undo policy must announce it before the match.
 
 ##### What is an undo policy?
 
@@ -181,13 +181,26 @@ An undo policy is a statement to your opponent before a match about what types o
 * "I won't allow any undos."
 * "I will decide whether to allow each individual undo request as it comes up."
 
-##### How do I report the score of a match?
+#### What are "decisions that do not provide new information"?
+
+Each entry in the Dominion Online game log counts a decision, for example, playing a card. The most common type of new information is learning which cards are where, for example seeing what cards were on top of your deck by drawing them.
+
+For example:
+* Playing a Workshop does not give you any new information, so undoing that should be granted by default.
+* Playing a Militia does not give you any new information (unless they already discarded, and you can see that card), so undoing that should be granted by default.
+* Playing a Smithy lets you see new cards, so undoing that does not need to be granted. It's possible that the Smithy player drew Action cards they couldn't play and wanted to change their mind, but this is information they learned *only after* making the decision to play Smithy.
+
+##### How do I report the score of a playing session?
 
 See the pinned message in your division’s Discord channel for the link to a Google form where you can submit the score of a match. Partial match scores should be submitted as you go, so you don’t forget.
 
-##### Should both players report their score for a match?
+##### Should both players report their score for a playing session?
 
-No, one player should submit the scores of both players. Please coordinate with your opponent who is responsible for submitting the score.
+No, one player should submit the scores of both players.
+
+##### Which player should report the score of a playing session?
+
+We recommend that the player with more wins during the playing session be responsible for reporting the score. If it's a tie, the player who was not the table host (and therefore did not have to manage the table settings) should report the score. If you wish to have the other player report the score, coordinate that with your opponent.
 
 ##### Do the players’ VP scores in a game matter for the League?
 
@@ -284,6 +297,7 @@ For a new player, their starting tier is decided shortly before the season start
 The number of tiers and divisions depends on the number of players. Each division has 6 players by default, and divisions are filled from the top down. The general pattern for making divisions is that there is 1 division in tier A and 2 divisions in tier B, and starting with tier B, every other tier doubles in size, except the bottom 2 tiers will be made to be roughly equal in size.
 
 Here are some examples for different numbers of players:
+
 * 402 players = 8 tiers = 67 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 16 H
 * 690 players = 9 tiers = 115 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 32 I
 * 1,266 players = 10 tiers = 211 divisions:<br>1 A + 2 B + 4 C + 4 D + 8 E + 16 F + 16 G + 32 H + 64 I + 64 J
@@ -296,6 +310,7 @@ As much as possible, players are grouped by their time zones in tiers E and belo
 ##### How are players seeded?
 
 For all divisions in the same tier (and in the same time zone region, for tiers E and below), players split into 4 groups: new players, players who demoted from the tier above, players who promoted from the tier below, and players returning to the same tier. These groups are distributed as evenly as possible:
+
 * In a random order, new players are placed into divisions, starting with the last division of the tier.
 * In a random order, players who demoted are placed into divisions, starting with the first division of the tier.
 * In a random order, players who promoted are placed into divisions, starting with the first division of the tier.
@@ -357,7 +372,7 @@ There are no rules on etiquette, but we encourage you to be friendly and courteo
 
 Notify the moderators, and we may help them change their username.
 
-##### Are there ever matches with 3 or players?
+##### Are there ever matches with 3 or more players?
 
 No, all matches are played with 2 players.
 
