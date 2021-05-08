@@ -139,13 +139,13 @@ function searchHistory() {
 	}
 	
 	if (players[playerKey]) {
-		stats = {"first": players[playerKey].seasons[0].season, "wins": [], "six": 0, "five": 0};
+		stats = {"wins": [], "first": players[playerKey].seasons[0].season, "six": 0, "five": 0};
 		let tierRanks = [];
 		var streaks = {
-			"played": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": 0}},
-			"nondem": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": 0}},
-			"promote": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": 0}}
-		}
+			"played": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": null}},
+			"nondem": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": null}},
+			"promote": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": null}}
+		};
 		seasonRange[0] = Number(players[playerKey].seasons[0].season);
 		if (!inCurrent) {seasonRange[1] = Number(players[playerKey].seasons[players[playerKey].seasons.length - 1].season);}
 		for (let i = players[playerKey].seasons.length - 1; i >= 0; i--) {
@@ -178,7 +178,9 @@ function searchHistory() {
 				streaks.played.current.start = Number(season);
 			} else {
 				if (streaks.played.current.count > streaks.played.best.count) {
-					streaks.played.best = JSON.parse(JSON.stringify(streaks.played.current));
+					streaks.played.best = {"count": streaks.played.current.count, "seasons": [[streaks.played.current.start, streaks.played.current.end]]};
+				} else if (streaks.played.current.count === streaks.played.best.count) {
+					streaks.played.best.seasons.push([streaks.played.current.start, streaks.played.current.end]);
 				}
 				streaks.played.current = {"count": 1, "start": Number(season), "end": Number(season)};
 			}
@@ -202,7 +204,9 @@ function searchHistory() {
 					streaks.promote.current.start = Number(season);
 				} else {
 					if (streaks.promote.current.count > streaks.promote.best.count) {
-						streaks.promote.best = JSON.parse(JSON.stringify(streaks.promote.current));
+						streaks.promote.best = {"count": streaks.promote.current.count, "seasons": [[streaks.promote.current.start, streaks.promote.current.end]]};
+					} else if (streaks.promote.current.count === streaks.promote.best.count) {
+						streaks.promote.best.seasons.push([streaks.promote.current.start, streaks.promote.current.end]);
 					}
 					streaks.promote.current = {"count": 1, "start": Number(season), "end": Number(season)};
 				}
@@ -213,7 +217,9 @@ function searchHistory() {
 					streaks.nondem.current.start = Number(season);
 				} else {
 					if (streaks.nondem.current.count > streaks.nondem.best.count) {
-						streaks.nondem.best = JSON.parse(JSON.stringify(streaks.nondem.current));
+						streaks.nondem.best = {"count": streaks.nondem.current.count, "seasons": [[streaks.nondem.current.start, streaks.nondem.current.end]]};
+					} else if (streaks.nondem.current.count === streaks.nondem.best.count) {
+						streaks.nondem.best.seasons.push([streaks.nondem.current.start, streaks.nondem.current.end]);
 					}
 					streaks.nondem.current = {"count": 1, "start": Number(season), "end": Number(season)};
 				}
@@ -245,15 +251,29 @@ function searchHistory() {
 			}
 		});
 		stats.highest = tierRanks[0];
+		stats.highest.season = [stats.highest.season];
+		for (let i=1; i<tierRanks.length; i++) {
+			if ((stats.highest.tier == tierRanks[i].tier) && (stats.highest.rank == tierRanks[i].rank)) {
+				stats.highest.season.push(tierRanks[i].season);
+			} else {
+				break;
+			}
+		}
 		stats.median = tierRanks[Math.ceil(tierRanks.length/2 - 1)];
 		if (streaks.played.current.count > streaks.played.best.count) {
-			streaks.played.best = JSON.parse(JSON.stringify(streaks.played.current));
+			streaks.played.best = {"count": streaks.played.current.count, "seasons": [[streaks.played.current.start, streaks.played.current.end]]};
+		} else if (streaks.played.current.count === streaks.played.best.count) {
+			streaks.played.best.seasons.push([streaks.played.current.start, streaks.played.current.end]);
 		}
 		if (streaks.promote.current.count > streaks.promote.best.count) {
-			streaks.promote.best = JSON.parse(JSON.stringify(streaks.promote.current));
+			streaks.promote.best = {"count": streaks.promote.current.count, "seasons": [[streaks.promote.current.start, streaks.promote.current.end]]};
+		} else if (streaks.promote.current.count === streaks.promote.best.count) {
+			streaks.promote.best.seasons.push([streaks.promote.current.start, streaks.promote.current.end]);
 		}
 		if (streaks.nondem.current.count > streaks.nondem.best.count) {
-			streaks.nondem.best = JSON.parse(JSON.stringify(streaks.nondem.current));
+			streaks.nondem.best = {"count": streaks.nondem.current.count, "seasons": [[streaks.nondem.current.start, streaks.nondem.current.end]]};
+		} else if (streaks.nondem.current.count === streaks.nondem.best.count) {
+			streaks.nondem.best.seasons.push([streaks.nondem.current.start, streaks.nondem.current.end]);
 		}
 	}
 	
@@ -299,7 +319,7 @@ function searchHistory() {
 	if (!stats) {
 		statsDiv.innerHTML = `<p>${player} has not yet completed a league season and so does not have any stats.</p>`;
 	} else {
-		statsDiv.innerHTML = JSON.stringify(stats) + JSON.stringify(streaks) + JSON.stringify(tiersPlayed);
+		makeStats(stats, streaks);
 	}
 	
 	document.getElementById("content-controls").style.display = "block";
@@ -457,7 +477,7 @@ function genVersusTable() {
 		let oc = document.createElement('td');
 		oc.classList.add('cells-past-standings');
 		oc.classList.add('cellWithDetail');
-		let playerName = document.createElement('p');
+		let playerName = document.createElement('span');
 		playerName.classList.add('db-link');
 		playerName.appendChild(document.createTextNode(filtVersus[i].player));
 		oc.appendChild(playerName)
@@ -524,6 +544,7 @@ function genVersusTable() {
 }
 
 function setPlayer(ev) {
+	window.scrollTo(0, 200);
 	playerInput.value = ev.target.innerHTML.toLowerCase();
 	searchHistory();
 }
@@ -605,6 +626,139 @@ function setFakeLinks() {
 	for (let li of fakeLinks) {
 		li.onclick = setPlayer;
 	}
+}
+
+function makeStats(stats, streaks) {
+	console.log(streaks);
+	
+	function addLine(box, key, value) {
+		let line = document.createElement('p');
+		line.innerHTML = `<b>${key}</b>: ${value}`;
+		box.appendChild(line);
+	}
+	
+	function rankSuffix(n) {
+		switch (n) {
+			case 1:
+				return 'st';
+				break;
+			case 2:
+				return 'nd';
+				break;
+			case 3:
+				return 'rd';
+				break;
+			default:
+				return 'th';
+		}
+	}
+	let warningLine = document.createElement('p');
+	warningLine.style.fontStyle = "italic";
+	warningLine.appendChild(document.createTextNode("Note that stats other than records by tier do not include current season"));
+	statsDiv.appendChild(warningLine);
+	let achTitle = document.createElement('h4');
+	achTitle.appendChild(document.createTextNode("Achievements"));
+	statsDiv.appendChild(achTitle);
+	let achBox = document.createElement('div');
+	achBox.classList.add('statsBox');
+	addLine(achBox, "Division Wins", stats.wins.length);
+	addLine(achBox,"Highest Finish", `${stats.highest.rank + rankSuffix(stats.highest.rank)} in ${stats.highest.tier} (Season${stats.highest.season.length > 1 ? "s" : ""} ${stats.highest.season.reverse().join(", ")})`);
+	addLine(achBox, "Median Finish", `${stats.median.rank + rankSuffix(stats.median.rank)} in ${stats.median.tier}`);
+	addLine(achBox, "First Season", `Season ${stats.first}`);
+	addLine(achBox, "6-0 Victories", stats.six);
+	addLine(achBox, "5-1 or Better", stats.five);	
+	statsDiv.appendChild(achBox);
+	
+	let strTitle = document.createElement('h4');
+	strTitle.appendChild(document.createTextNode("Longest Streaks"));
+	statsDiv.appendChild(strTitle);
+	let strBox = document.createElement('div');
+	strBox.classList.add('statsBox');
+	addLine(strBox, "Consecutive Seasons Playing in League", `${streaks.played.best.count} (Seasons ${streaks.played.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
+	addLine(strBox, "Consecutive Seasons Promoting" + (champions.players[playerKey] ? "*" : ""), `${streaks.promote.best.count} (Seasons ${streaks.promote.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
+	addLine(strBox, "Consecutive Seasons Without Demoting", `${streaks.nondem.best.count} (Seasons ${streaks.nondem.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
+	if (champions.players[playerKey]) {
+		let underline = document.createElement('p');
+		underline.style.fontStyle = "italic";
+		underline.style.fontSize = "11px";
+		underline.appendChild(document.createTextNode("*includes league championships"));
+		strBox.appendChild(underline);
+	}
+	statsDiv.appendChild(strBox);
+	
+	let recTitle = document.createElement('h4');
+	recTitle.appendChild(document.createTextNode("Records by Tier"));
+	statsDiv.appendChild(recTitle);
+	let recTable = document.createElement('table');
+	recTable.classList.add('table-past-standings');
+	let recBody = document.createElement('tbody');
+	let recHeadings = ["Tier", "W", "L", "W %", "Best"];
+	let headRow = document.createElement('tr');
+	headRow.classList.add('rows-past-standings');
+	for (let i=0; i<5; i++) {
+		let cell = document.createElement('th');
+		cell.classList.add('cells-past-standings');
+		cell.appendChild(document.createTextNode(recHeadings[i]));
+		headRow.appendChild(cell);
+	}
+	recBody.appendChild(headRow);
+	let totalWins = 0;
+	let totalLosses = 0;
+	for (t of selectedTiers) {
+		totalWins += tiersPlayed[t].wins;
+		totalLosses += tiersPlayed[t].losses;
+		let row = document.createElement('tr');
+		row.classList.add('rows-past-standings');
+		let tier = document.createElement('td');
+		tier.classList.add('cells-past-standings');
+		tier.appendChild(document.createTextNode(t));
+		row.appendChild(tier);
+		let wins = document.createElement('td');
+		wins.classList.add('cells-past-standings');
+		wins.appendChild(document.createTextNode(tiersPlayed[t].wins));
+		row.appendChild(wins);
+		let losses = document.createElement('td');
+		losses.classList.add('cells-past-standings');
+		losses.appendChild(document.createTextNode(tiersPlayed[t].losses));
+		row.appendChild(losses);
+		let pctcell = document.createElement('td');
+		pctcell.classList.add('cells-past-standings');
+		let pct = tiersPlayed[t].wins/(tiersPlayed[t].wins + tiersPlayed[t].losses);
+		pctcell.style.backgroundColor = numericStandingsColor(pct);
+		pctcell.appendChild(document.createTextNode(Math.round(100*pct) + "%"));
+		row.appendChild(pctcell);
+		let bestcell = document.createElement('td');
+		bestcell.classList.add('cells-past-standings');
+		bestcell.appendChild(document.createTextNode(Math.round(100*tiersPlayed[t].best.pct) + "% (Season " + tiersPlayed[t].best.season + ")"));
+		row.appendChild(bestcell);
+		recBody.appendChild(row);
+	}
+	let totRow = document.createElement('tr');
+	totRow.classList.add('rows-past-standings');
+	let tier = document.createElement('th');
+	tier.classList.add('cells-past-standings');
+	tier.appendChild(document.createTextNode("Total"));
+	totRow.appendChild(tier);
+	let wins = document.createElement('th');
+	wins.classList.add('cells-past-standings');
+	wins.appendChild(document.createTextNode(totalWins));
+	totRow.appendChild(wins);
+	let losses = document.createElement('th');
+	losses.classList.add('cells-past-standings');
+	losses.appendChild(document.createTextNode(totalLosses));
+	totRow.appendChild(losses);
+	let pctcell = document.createElement('th');
+	pctcell.classList.add('cells-past-standings');
+	let pct = totalWins/(totalWins + totalLosses);
+	pctcell.style.backgroundColor = numericStandingsColor(pct);
+	pctcell.appendChild(document.createTextNode(Math.round(100*pct) + "%"));
+	totRow.appendChild(pctcell);
+	let emptycell = document.createElement('th');
+	emptycell.classList.add('cells-past-standings');
+	totRow.appendChild(emptycell);
+	recBody.appendChild(totRow);
+	recTable.appendChild(recBody);
+	statsDiv.appendChild(recTable);
 }
 
 // search box

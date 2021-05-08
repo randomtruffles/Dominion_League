@@ -367,7 +367,7 @@ function genStandings(data, tier, season, tiebreaker, sorted, drops, complete, i
 	  if (data[member].tiebreaker) {
 	    tbValues[member] = data[member].tiebreaker;
 	  }
-	  //old - these are now imported from standings
+	  //old - these are now imported from standings (also this is wrong to compare pcts which are rounded)
 	  /*
       for (var opponent in data) {
         memberData = data[member];
