@@ -715,11 +715,11 @@ function makeStats(stats, streaks) {
 		row.appendChild(tier);
 		let wins = document.createElement('td');
 		wins.classList.add('cells-past-standings');
-		wins.appendChild(document.createTextNode(tiersPlayed[t].wins));
+		wins.appendChild(document.createTextNode(tiersPlayed[t].wins.toFixed(1).replace(".0", "")));
 		row.appendChild(wins);
 		let losses = document.createElement('td');
 		losses.classList.add('cells-past-standings');
-		losses.appendChild(document.createTextNode(tiersPlayed[t].losses));
+		losses.appendChild(document.createTextNode(tiersPlayed[t].losses.toFixed(1).replace(".0", "")));
 		row.appendChild(losses);
 		let pctcell = document.createElement('td');
 		pctcell.classList.add('cells-past-standings');
@@ -741,11 +741,11 @@ function makeStats(stats, streaks) {
 	totRow.appendChild(tier);
 	let wins = document.createElement('th');
 	wins.classList.add('cells-past-standings');
-	wins.appendChild(document.createTextNode(totalWins));
+	wins.appendChild(document.createTextNode(totalWins.toFixed(1).replace(".0", "")));
 	totRow.appendChild(wins);
 	let losses = document.createElement('th');
 	losses.classList.add('cells-past-standings');
-	losses.appendChild(document.createTextNode(totalLosses));
+	losses.appendChild(document.createTextNode(totalLosses.toFixed(1).replace(".0", "")));
 	totRow.appendChild(losses);
 	let pctcell = document.createElement('th');
 	pctcell.classList.add('cells-past-standings');
