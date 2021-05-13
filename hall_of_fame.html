@@ -8,7 +8,7 @@ title: Dominion League Hall of Fame
   <p> This page contains various achievements reached by league players. <br> Ties are broken by seniority (i.e. who reached it first). <br> Hover over player names for details regarding their achievement.</p>
   <div class=spacing></div>
 <!-- All League Champions -->
-<div class="achievement-header"><h4>All League Champions</h4>  <table class="hof-table">
+<div class="achievement-header"><h4>All League Champions</h4>  <table class="hof-table" id="champions">
     <tr>
       <th  width="15%"><img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="champion-trophy" title="Championship Match between top 2 A division finishers"></th>
       <th  width="30%">Player</th>
@@ -58,7 +58,7 @@ title: Dominion League Hall of Fame
 </div>
 <section class="hall-of-fame">  <div class="achievement">
     <h4> Most Seasons Played in A </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="a-seasons">
       <tr>
       <td>1.</td>
       <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=Mic%20Qsenoch">Mic Qsenoch</a> <span class="CellComment"> Seasons 1-16, 18-20, 23, 25-30, 37-42 </span> </td>
@@ -87,7 +87,7 @@ title: Dominion League Hall of Fame
 </table>  </div>
   <div class="achievement">
     <h4> Longest Consecutive Streak in A </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="a-streak">
       <tr>
       <td>1.</td>
       <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=Stef">Stef</a> <span class="CellComment"> From Season 1 to 17 </span> </td>
@@ -116,7 +116,7 @@ title: Dominion League Hall of Fame
 </table>  </div>
   <div class="achievement">
     <h4> Most Championship Runner-Ups in A </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="a-second">
       <tr>
       <td>1.</td>
       <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=markus">markus</a> <span class="CellComment"> Seasons 24, 26, 27, 28, 30, 31, 34, 38 </span> </td>
@@ -146,7 +146,7 @@ title: Dominion League Hall of Fame
 </section>
 <section class="hall-of-fame">  <div class="achievement">
     <h4> Most Consecutive First Place Finishes </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="first-streak">
         <tr>
         <td>1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=Stef">Stef</a> <span class="CellComment"> Seasons 9 to 12 </span> </td>
@@ -201,7 +201,7 @@ title: Dominion League Hall of Fame
   </div>
   <div class="achievement">
     <h4> Most Consecutive Second Place Finishes </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="second-streak">
         <tr>
         <td>1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=iparres">iparres</a> <span class="CellComment"> Seasons 33 to 36 </span> </td>
@@ -256,7 +256,7 @@ title: Dominion League Hall of Fame
   </div>
   <div class="achievement">
     <h4> Most Unique Tiers Played </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="unique-tiers">
         <tr>
         <td>1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=Witz">Witz</a> <span class="CellComment"> {E, F, G, H, I, J} by S42 </span> </td>
@@ -312,7 +312,7 @@ title: Dominion League Hall of Fame
 </section>
 <section class="hall-of-fame">  <div class="achievement">
     <h4> Most Seasons Played in League </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="seasons-played">
         <tr>
         <td> 1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=gamesou">gamesou</a> <span class="CellComment"> Seasons 1-43 </span> </td>
@@ -367,7 +367,7 @@ title: Dominion League Hall of Fame
   </div>
   <div class="achievement">
     <h4>  Most Consecutive Seasons Played in League </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="played-streak">
         <tr>
         <td> 1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=gamesou">gamesou</a> <span class="CellComment"> From Season 1 to 43 </span> </td>
@@ -422,7 +422,7 @@ title: Dominion League Hall of Fame
   </div>
   <div class="achievement">
     <h4> Longest Active Consecutive Streak </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="active-played">
         <tr>
         <td> 1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=gamesou">gamesou</a> <span class="CellComment"> Since Season 1 </span> </td>
@@ -478,7 +478,7 @@ title: Dominion League Hall of Fame
 </section>
 <section class="hall-of-fame">  <div class="achievement">
     <h4> Most 6-0 Matches </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="sixes">
         <tr>
         <td> 1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=Mic%20Qsenoch">Mic Qsenoch</a> <span class="CellComment"> irrationalE (S8), Geronimoo (S13), Wachsmuth (S15), amoffett11 (S22), Seprix (S24), Sicomatic (S24), aku chi (S26), Dan Brooks (S28), E.Honda (S28), xyrix (S36), Sicomatic (S39), JNails (S40), nasmith99 (S41) </span> </td>
@@ -533,7 +533,7 @@ title: Dominion League Hall of Fame
   </div>
   <div class="achievement">
     <h4> Most Unique Number of Opponents Faced </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="opponents">
         <tr>
         <td> 1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=MtMagus">MtMagus</a> <span class="CellComment"> Tiers played: {C, D, E, F, G}, Seasons played: 43 </span> </td>
@@ -588,7 +588,7 @@ title: Dominion League Hall of Fame
   </div>
   <div class="achievement">
     <h4> Most First Place Finishes </h4>
-      <table class="hof-table">
+      <table class="hof-table" id="div-wins">
         <tr>
         <td> 1. </td>
         <td class="CellWithComment"> <a href="{{site.baseurl}}/player_database?player=Mic%20Qsenoch">Mic Qsenoch</a> <span class="CellComment"> 1-2, 4, 6, 8, 13-15, 17, 19, 22, 24, 26-29, 36, 38-41 </span> </td>
@@ -643,7 +643,7 @@ title: Dominion League Hall of Fame
   </div>
 </section>
 <!-- Highest Win Percentage -->
-<div class="achievement-header"><h4>Highest Win Percentage by Tier</h4>  <table class="hof-table" style="text-align:center">
+<div class="achievement-header"><h4>Highest Win Percentage by Tier</h4>  <table class="hof-table" style="text-align:center" id="tier-seasons">
     <tr>
       <th  width="20%" style="text-align:center">Tier</th>
       <th  width="55%" style="text-align:center">Player(s)</th>
