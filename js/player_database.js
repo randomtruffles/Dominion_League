@@ -675,8 +675,8 @@ function makeStats(stats, streaks) {
 	let strBox = document.createElement('div');
 	strBox.classList.add('statsBox');
 	addLine(strBox, "Consecutive Seasons Playing in League", `${streaks.played.best.count} (Seasons ${streaks.played.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
-	addLine(strBox, "Consecutive Seasons Promoting" + (champions.players[playerKey] ? "*" : ""), `${streaks.promote.best.count} (Seasons ${streaks.promote.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
-	addLine(strBox, "Consecutive Seasons Without Demoting", `${streaks.nondem.best.count} (Seasons ${streaks.nondem.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
+	addLine(strBox, "Consecutive Seasons Promoting" + (champions.players[playerKey] ? "*" : ""), streaks.promote.best.count ? `${streaks.promote.best.count} (Seasons ${streaks.promote.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})` : "0");
+	addLine(strBox, "Consecutive Seasons Without Demoting", streaks.nondem.best.count ? `${streaks.nondem.best.count} (Seasons ${streaks.nondem.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})` : "0");
 	if (champions.players[playerKey]) {
 		let underline = document.createElement('p');
 		underline.style.fontStyle = "italic";

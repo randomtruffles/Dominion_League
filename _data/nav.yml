@@ -20,14 +20,14 @@
   children:
     - name: Current Season
       path: current_standings
-    - name: Player Database
-      path: player_database
     - name: Past Seasons
       path: past_standings
+    - name: Player Database
+      path: player_database
     - name: Visual History
       path: charts
-    #- name: Hall of Fame
-    #  path: hall_of_fame
+    - name: Hall of Fame
+      path: hall_of_fame
 - name: Matches
   path: matches
 - name: News

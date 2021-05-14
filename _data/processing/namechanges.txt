@@ -37,7 +37,7 @@ missvictoriang	BoarderBee
 nico88	roeroe
 britchken	Pico Paco
 NBSchlueter	bosmang39
-franklinw	Baseball Man
+franklinw	Baseball man
 xtruffles	truffles
 CaleG38	GoldJacket
 yueshan	numberwang
@@ -68,3 +68,7 @@ GeoLib	GeoLib
 PitrPicko	PitrPicko
 MarkowKette	MarkowKette
 JP Gerber	JP Gerber
+Folivora	folivora
+scoopypls	Scoopypls
+eaterpoosack	Eaterpoosack
+Thommyp	thommyp
