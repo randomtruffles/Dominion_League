@@ -129,6 +129,7 @@ function searchHistory() {
 		let division = currentSeason.players[playerKey].division;
 		let title = `<a href="current_standings?div=${division}"> S${season}</a> ${division} Division`;
 		let params = {"headerText":title, "playerNameKey":playerKey, "sims": "new"};
+		if (champions.seasons[season]) {params["champ"] = champions.seasons[season];}
 		loadDivision(standingsDiv, currentSeason[division], sheetsLinks[String(season)][division], division, String(season), params);
 		for (opp in currentSeason[division].by_player[player]) {
 			if (!notPlayers.includes(opp)) {
