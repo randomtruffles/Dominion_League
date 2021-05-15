@@ -4,6 +4,7 @@ var fs = require('fs');
 
 //player chart
 const fullHist = JSON.parse(fs.readFileSync("../league_history.json"));
+const champs = JSON.parse(fs.readFileSync("../champions.json"));
 
 var counts = {};
 var hist = [];
@@ -45,11 +46,22 @@ for (const s in fullHist) {
 				propBase += counts[s][tier].lfrac;
 			}
 			for (let i=0; i<nplayer; i++) {
+				let champ = (fullHist[s][div].members[players[i]].rank == 1) ? "division" : "no";
+				let place = String(fullHist[s][div].members[players[i]].rank);
+				if (fullHist[s][div].tier == "A") {
+					if (champions.seasons[s] == players[i].toLowerCase()) {
+						champ = "league";
+						place = "1";
+					} else if (champions.runner_ups[s] == players[i].toLowerCase()) {
+						champ = "no";
+						place = "2";
+					}
+				}
 				hist.push({
 					"player": players[i],
-					"tier": tier,
+					"tier": fullHist[s][div].tier,
 					"division": div,
-					"place": String(fullHist[s][div].members[players[i]].rank),
+					"place": place,
 					"wins": fullHist[s][div].members[players[i]].wins,
 					"losses": fullHist[s][div].members[players[i]].losses,
 					"pct": fullHist[s][div].members[players[i]].pct,
@@ -57,7 +69,7 @@ for (const s in fullHist) {
 					"season": s,
 					"countPlacement": String(countBase + countMult*(fullHist[s][div].members[players[i]].rank - 0.5)/nplayer),
 					"propPlacement": String(propBase + propMult*(fullHist[s][div].members[players[i]].rank - 0.5)/nplayer),
-					"champ": (fullHist[s][div].members[players[i]].rank == 1) ? ((fullHist[s][div].tier == "A") ? "league" : "division") : "no"
+					"champ": champ
 				})
 			}
 		}
