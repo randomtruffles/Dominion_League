@@ -129,6 +129,7 @@ function searchHistory() {
 		let division = currentSeason.players[playerKey].division;
 		let title = `<a href="current_standings?div=${division}"> S${season}</a> ${division} Division`;
 		let params = {"headerText":title, "playerNameKey":playerKey, "sims": "new"};
+		if (champions.seasons[season]) {params["champ"] = champions.seasons[season];}
 		loadDivision(standingsDiv, currentSeason[division], sheetsLinks[String(season)][division], division, String(season), params);
 		for (opp in currentSeason[division].by_player[player]) {
 			if (!notPlayers.includes(opp)) {
@@ -665,6 +666,7 @@ function makeStats(stats, streaks) {
 	addLine(achBox,"Highest Finish", `${stats.highest.rank + rankSuffix(stats.highest.rank)} in ${stats.highest.tier} (Season${stats.highest.season.length > 1 ? "s" : ""} ${stats.highest.season.reverse().join(", ")})`);
 	addLine(achBox, "Median Finish", `${stats.median.rank + rankSuffix(stats.median.rank)} in ${stats.median.tier}`);
 	addLine(achBox, "First Season", `Season ${stats.first}`);
+	addLine(achBox, "Unique Opponents", Object.keys(playerVersus).length);
 	addLine(achBox, "6-0 Victories", stats.six);
 	addLine(achBox, "5-1 or Better", stats.five);	
 	statsDiv.appendChild(achBox);
@@ -692,10 +694,10 @@ function makeStats(stats, streaks) {
 	let recTable = document.createElement('table');
 	recTable.classList.add('table-past-standings');
 	let recBody = document.createElement('tbody');
-	let recHeadings = ["Tier", "W", "L", "W %", "Best"];
+	let recHeadings = ["Tier", "Seasons", "W", "L", "W %", "Best"];
 	let headRow = document.createElement('tr');
 	headRow.classList.add('rows-past-standings');
-	for (let i=0; i<5; i++) {
+	for (let i=0; i<6; i++) {
 		let cell = document.createElement('th');
 		cell.classList.add('cells-past-standings');
 		cell.appendChild(document.createTextNode(recHeadings[i]));
@@ -713,6 +715,10 @@ function makeStats(stats, streaks) {
 		tier.classList.add('cells-past-standings');
 		tier.appendChild(document.createTextNode(t));
 		row.appendChild(tier);
+		let seas = document.createElement('td');
+		seas.classList.add('cells-past-standings');
+		seas.appendChild(document.createTextNode(tiersPlayed[t].count));
+		row.appendChild(seas);
 		let wins = document.createElement('td');
 		wins.classList.add('cells-past-standings');
 		wins.appendChild(document.createTextNode(tiersPlayed[t].wins.toFixed(1).replace(".0", "")));
@@ -739,6 +745,10 @@ function makeStats(stats, streaks) {
 	tier.classList.add('cells-past-standings');
 	tier.appendChild(document.createTextNode("Total"));
 	totRow.appendChild(tier);
+	let seas = document.createElement('th');
+	seas.classList.add('cells-past-standings');
+	seas.appendChild(document.createTextNode(players[playerKey].seasons.length + Boolean(currentSeason.players[playerKey])));
+	totRow.appendChild(seas);
 	let wins = document.createElement('th');
 	wins.classList.add('cells-past-standings');
 	wins.appendChild(document.createTextNode(totalWins.toFixed(1).replace(".0", "")));

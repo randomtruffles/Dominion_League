@@ -43,7 +43,8 @@
     "41": "mic qsenoch",
     "42": "tracer",
     "43": "nasmith99",
-	"44": "crabcat2"
+    "44": "crabcat2",
+    "45": "recycle_garbage"
   },
   "runner_ups": {
     "1": "stef",
@@ -89,7 +90,8 @@
     "41": "e.honda",
     "42": "e.honda",
 	"43": "mic qsenoch",
-	"44": "tracer"
+	"44": "tracer",
+	"45": "nasmith99"
   },
   "players": {
     "mic qsenoch": [
@@ -155,6 +157,9 @@
 	],
 	"crabcat2": [
 	  "44"
+	],
+	"recycle_garbage": [
+	  "45"
 	]
   },
   "players_runner_ups": {
@@ -232,7 +237,8 @@
     ],
     "nasmith99": [
       "39",
-      "40"
+      "40",
+	    "45"
     ],
     "e.honda": [
       "41",
