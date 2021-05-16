@@ -630,8 +630,6 @@ function setFakeLinks() {
 }
 
 function makeStats(stats, streaks) {
-	console.log(streaks);
-	
 	function addLine(box, key, value) {
 		let line = document.createElement('p');
 		line.innerHTML = `<b>${key}</b>: ${value}`;

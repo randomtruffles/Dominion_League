@@ -14,4 +14,4 @@ for (let i=1; i<ndiv; i++) {
 	out[season][parts[0]] = parts[8];
 }
 
-fs.writeFileSync("sheet_links.json", JSON.stringify(out));
+fs.writeFileSync("outputs/sheet_links.json", JSON.stringify(out));

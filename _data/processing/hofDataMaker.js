@@ -8,6 +8,19 @@ const currentSeason = 44;
 const thresholdForOverallPct = 5;
 const thresholdForTierPct = 2;
 const oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]}};
+const nondemTiers = {};
+for (let s=1; s<=26; s++) {
+	nondemTiers[String(s)] = ["D","E"];
+}
+for (let s=27; s<=38; s++) {
+	nondemTiers[String(s)] = ["F"];
+}
+for (let s=39; s<=40; s++) {
+	nondemTiers[String(s)] = ["H"];
+}
+for (let s=41; s<=currentSeason; s++) {
+	nondemTiers[String(s)] = ["J"];
+}
 
 var allTiers = {"A": [], "B": [], "C": [], "D": [], "E": [], "F": [], "G": [], "H": [], "I": [], "J": [], "P": []};
 var allStats = [];
@@ -78,7 +91,7 @@ for (playerKey in players) {
 				streaks.promote.current = {"count": 1, "start": Number(season), "end": Number(season)};
 			}
 		}
-		if (!demotion) {
+		if (!demotion && !nondemTiers[season].includes(tier)) {
 			if (streaks.nondem.current.start == Number(season) + 1) {
 				streaks.nondem.current.count += 1;
 				streaks.nondem.current.start = Number(season);
