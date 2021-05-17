@@ -5,8 +5,8 @@ var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
 
 const currentSeason = 44;
-const thresholdForOverallPct = 5;
-const thresholdForTierPct = 2;
+const thresholdForOverallPct = 10;
+const thresholdForTierPct = 3;
 const oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]}};
 const nondemTiers = {};
 for (let s=1; s<=26; s++) {
@@ -134,11 +134,11 @@ var out = {};
 
 out['champions'] = Object.keys(champions.players).map(key => {return {"player": players[key].name, "seasons": champions.players[key]}});
 
-out['div-wins'] = allStats.sort((a,b) => b.divWins.length - a.divWins.length).slice(0,30).map(k => {return {"player": k.player, "wins": k.divWins}});
-out['win-pct'] = allStats.sort((a,b) => b.pct - a.pct).slice(0,30).map(k => {return {"player": k.player, "pct": k.pct}});
-out['sixes'] = allStats.sort((a,b) => b.six - a.six).slice(0,30).map(k => {return {"player": k.player, "sixes": k.six}});
-out['opponents'] = allStats.sort((a,b) => b.opponents - a.opponents).slice(0,30).map(k => {return {"player": k.player, "opponents": k.opponents}});
-out['seasons'] = allStats.sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons}});
+out['div-wins'] = allStats.sort((a,b) => b.divWins.length - a.divWins.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.divWins}});
+out['win-pct'] = allStats.sort((a,b) => b.pct - a.pct).slice(0,30).map(k => {return {"player": k.player, "num": k.pct, "disp": Math.round(100*k.pct) + "%"}});
+out['sixes'] = allStats.sort((a,b) => b.six - a.six).slice(0,30).map(k => {return {"player": k.player, "num": k.six, "disp": String(k.six)}});
+out['opponents'] = allStats.sort((a,b) => b.opponents - a.opponents).slice(0,30).map(k => {return {"player": k.player, "num": k.opponents, "disp": String(k.opponents)}});
+out['seasons'] = allStats.sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons.map(l => l.season)}});
 
 out['a-seasons'] = allTiers["A"].sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons}});
 out['tier-record'] = Object.keys(allTiers).map(key => {return {"tier": key, "best-pct": allTiers[key].sort((a,b) => b.pct - a.pct).slice(0,3)}});
