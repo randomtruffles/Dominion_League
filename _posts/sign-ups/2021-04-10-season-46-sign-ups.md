@@ -6,7 +6,7 @@ author: Rozyroz
 layout: simple_post
 categories: signups
 ---
-[b]Season 46[/b] will run from Monday, May 24 until Sunday, July 4 and [s]you can sign up until Sunday, May 16 at 23:59 UTC[/s]. [b]Signups are now officially closed[/b], but you can still sign up below to join the waiting list until [b]Friday, June 4 at 23:59 UTC[/b]. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
+**Season 46** will run from Monday, May 24 until Sunday, July 4 and ~~you can sign up until Sunday, May 16 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Friday, June 4 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
