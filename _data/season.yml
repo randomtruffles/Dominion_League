@@ -1,4 +1,4 @@
-number: 45
+number: 46
 
 tiers:
   - name: A
@@ -12,15 +12,15 @@ tiers:
   - name: E
     divisions: 7
   - name: F
-    divisions: 13
+    divisions: 12
   - name: G
-    divisions: 13
+    divisions: 12
   - name: H
-    divisions: 29
+    divisions: 28
   - name: I
-    divisions: 30
+    divisions: 28
   - name: J
-    divisions: 29
+    divisions: 28
 
 #these are old (s44), won't be using them afaik
 iframes:
