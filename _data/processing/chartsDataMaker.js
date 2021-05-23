@@ -67,8 +67,8 @@ for (let s in fullHist) {
 					"pct": fullHist[s][div].members[players[i]].pct,
 					"standingsColor": fullHist[s][div].members[players[i]].color,
 					"season": s,
-					"countPlacement": String(countBase + countMult*(fullHist[s][div].members[players[i]].rank - 0.5)/nplayer),
-					"propPlacement": String(propBase + propMult*(fullHist[s][div].members[players[i]].rank - 0.5)/nplayer),
+					"countPlacement": String(countBase + countMult*(Number(place) - 0.5)/nplayer),
+					"propPlacement": String(propBase + propMult*(Number(place) - 0.5)/nplayer),
 					"champ": champ
 				})
 			}
