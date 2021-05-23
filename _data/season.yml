@@ -10,17 +10,17 @@ tiers:
   - name: D
     divisions: 4
   - name: E
-    divisions: 7
+    divisions: 8
   - name: F
     divisions: 12
   - name: G
     divisions: 12
   - name: H
-    divisions: 28
+    divisions: 27
   - name: I
-    divisions: 28
+    divisions: 27
   - name: J
-    divisions: 28
+    divisions: 27
 
 #these are old (s44), won't be using them afaik
 iframes:
