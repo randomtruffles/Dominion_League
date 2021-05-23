@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Current standings of divisions in Season 45
+title: Current standings of divisions in Season 46
 ---
 
 <div class="home">
@@ -28,57 +28,35 @@ title: Current standings of divisions in Season 45
 // Load data
 var cur_season = String({{ site.data.season.number }});
 var divisions = {{ site.data.current_season | jsonify }};
-var sheetsLinks = {{ site.data.sheet_links | jsonify }};
-sheetsLinks = sheetsLinks[cur_season];
-var tiers = [
-  ["A", 1],
-  ["B", 2],
-  ["C", 4],
-  ["D", 4],
-  ["E", 7],
-  ["F", 13],
-  ["G", 13],
-  ["H", 29],
-  ["I", 30],
-  ["J", 29]
-];
-champ = "recycle_garbage";
+var sheetLinks = {{ site.data.sheet_links | jsonify }};
+sheetLinks = sheetLinks[cur_season];
+var champion = "";
 loadPage();
 
-function singleDivision(division){
-  var singleDivisionDiv = document.getElementById("single-division");
-  singleDivisionDiv.style.display = "";
-  console.log("scroll");
-  singleDivisionDiv.scrollTop = 0;
-  document.getElementById("all-divisions").style.display = "none";
-  console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-  loadDivision(singleDivisionDiv, divisions[division], sheetsLinks[division], division, cur_season, {});
-  var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
-  w3AddClass(divisionDiv, "show");
+function singleDivision(division) {
+	var singleDivisionDiv = document.getElementById("single-division");
+	singleDivisionDiv.style.display = "";
+	singleDivisionDiv.scrollIntoView(true);
+	document.getElementById("all-divisions").style.display = "none";
+	console.log(`Showing single division: ${division.toLowerCase()}-standings`);
+	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
+	var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
+	w3AddClass(divisionDiv, "show");
 }
 
-function allDivisions(){
-  var curTierIdx = 0;
-  var curDiv = 1;
-  var divisionDiv = document.getElementById("all-divisions");
-  console.log("Showing all divisions");
-  document.getElementById("single-division").style.display = "none";
-  while (true) {
-    if (curTierIdx == tiers.length) {
-      break;
-    }
-    if (curDiv > tiers[curTierIdx][1]) {
-      curDiv = 1;
-      curTierIdx += 1;
-    }
-    if (curTierIdx == tiers.length) {
-      break;
-    }
-    division = `${tiers[curTierIdx][0]}${curDiv}`;
-    curDiv += 1;
-    loadDivision(divisionDiv, divisions[division], sheetsLinks[division], division, cur_season, {});
-  }
-  return;
+function allDivisions() {
+	var divisionDiv = document.getElementById("all-divisions");
+	console.log("Showing all divisions");
+	divisionDiv.style.display = "block";
+	document.getElementById("single-division").style.display = "none";
+	for (var division in sheetLinks) {
+		if (!divisions[division]) {
+			console.log(`${division} data not found. Continuing...`);
+			continue;
+		}
+		loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
+	}
+	return;
 }
 
 function loadPage() {

@@ -65,8 +65,6 @@ function singleDivision(season, division) {
 }
 
 function allDivisions(season) {
-	var curTierIdx = 0;
-	var curDiv = 1;
 	var divisionDiv = document.getElementById("all-divisions");
 	console.log("Showing all divisions");
 	divisionDiv.style.display = "block";

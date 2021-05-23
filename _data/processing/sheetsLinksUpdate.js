@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-const season = "45";
+const season = "46";
 
 var out = JSON.parse(fs.readFileSync("../sheet_links.json"));
 out[season] = {};
@@ -14,4 +14,4 @@ for (let i=1; i<ndiv; i++) {
 	out[season][parts[0]] = parts[8];
 }
 
-fs.writeFileSync("sheet_links.json", JSON.stringify(out));
+fs.writeFileSync("outputs/sheet_links.json", JSON.stringify(out));

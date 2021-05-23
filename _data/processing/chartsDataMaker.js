@@ -4,16 +4,17 @@ var fs = require('fs');
 
 //player chart
 const fullHist = JSON.parse(fs.readFileSync("../league_history.json"));
+const champs = JSON.parse(fs.readFileSync("../champions.json"));
 
 var counts = {};
 var hist = [];
 
-for (const s in fullHist) {
+for (let s in fullHist) {
 	counts[s] = {};
 	let totalPlayers = 0;
-	for (const div in fullHist[s]) {
+	for (let div in fullHist[s]) {
 		if (div != "season") {
-			let ps = Object.keys(fullHist[s][div]).length;
+			let ps = Object.keys(fullHist[s][div].members).length;
 			totalPlayers += ps;
 			if (counts[s][fullHist[s][div].tier]) {
 				counts[s][fullHist[s][div].tier].divisions += 1;
@@ -23,11 +24,11 @@ for (const s in fullHist) {
 			}
 		}
 	}
-	for (tier in counts[s]) {
+	for (let tier in counts[s]) {
 		counts[s][tier].lfrac = counts[s][tier].players/totalPlayers;
 	}
 	
-	for (const div in fullHist[s]) {
+	for (let div in fullHist[s]) {
 		if (div != "season") {
 			let players = Object.keys(fullHist[s][div].members);
 			const nplayer = players.length;
@@ -45,25 +46,36 @@ for (const s in fullHist) {
 				propBase += counts[s][tier].lfrac;
 			}
 			for (let i=0; i<nplayer; i++) {
+				let champ = (fullHist[s][div].members[players[i]].rank == 1) ? "division" : "no";
+				let place = String(fullHist[s][div].members[players[i]].rank);
+				if (fullHist[s][div].tier == "A") {
+					if (champs.seasons[s] == players[i].toLowerCase()) {
+						champ = "league";
+						place = "1";
+					} else if (champs.runner_ups[s] == players[i].toLowerCase()) {
+						champ = "no";
+						place = "2";
+					}
+				}
 				hist.push({
 					"player": players[i],
-					"tier": tier,
+					"tier": fullHist[s][div].tier,
 					"division": div,
-					"place": String(fullHist[s][div].members[players[i]].rank),
+					"place": place,
 					"wins": fullHist[s][div].members[players[i]].wins,
 					"losses": fullHist[s][div].members[players[i]].losses,
 					"pct": fullHist[s][div].members[players[i]].pct,
 					"standingsColor": fullHist[s][div].members[players[i]].color,
 					"season": s,
-					"countPlacement": String(countBase + countMult*(fullHist[s][div].members[players[i]].rank - 0.5)/nplayer),
-					"propPlacement": String(propBase + propMult*(fullHist[s][div].members[players[i]].rank - 0.5)/nplayer),
-					"champ": (fullHist[s][div].members[players[i]].rank == 1) ? ((fullHist[s][div].tier == "A") ? "league" : "division") : "no"
+					"countPlacement": String(countBase + countMult*(Number(place) - 0.5)/nplayer),
+					"propPlacement": String(propBase + propMult*(Number(place) - 0.5)/nplayer),
+					"champ": champ
 				})
 			}
 		}
 	}
 	
-	for (tier in counts[s]) {
+	for (let tier in counts[s]) {
 		counts[s][tier].lfrac = String(counts[s][tier].lfrac);
 		counts[s][tier].players = String(counts[s][tier].players);
 		counts[s][tier].divisions = String(counts[s][tier].divisions);
@@ -90,7 +102,7 @@ var schemes = [];
 for (let i=0; i<nplayer; i++) {
 	let sch = Array.from({length: current.season}, x => "-");
 	if (players[playerlist[i]]) {
-		for (infs of players[playerlist[i]].seasons) {
+		for (let infs of players[playerlist[i]].seasons) {
 			sch[Number(infs.season)-1] = infs.division.charAt(0);
 		}
 		if (!current.players[playerlist[i]]) {

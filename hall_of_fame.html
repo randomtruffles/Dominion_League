@@ -1,0 +1,82 @@
+---
+layout: default
+title: Dominion League Hall of Fame
+---
+<div class="container-centered">
+	<h3>Dominion League Hall of Fame</h3>
+	<img src="{{site.baseurl}}/img/icons/vp_with_trophy.png" class="hof-champion-trophy" title="Championship Match between top 2 A division finishers">
+	<p> This page contains various achievements reached by league players. It is updated at the end of each season. <br> Hover over player names for details regarding their achievement. <br> * denotes an active streak.</p>
+	<div class=spacing></div>
+	<div class="achievement-header">
+		<h4>League Champions</h4> 
+		<table class="hof-table"><tbody id="champions"></tbody></table>
+	</div>
+	<section class="hall-of-fame">
+		<div class="achievement">
+			<h4> Most Seasons Played in A </h4>
+			<table class="hof-table"><tbody class="arrtable" id="a-seasons"></tbody></table>
+		</div>
+		<div class="achievement">
+			<h4> Most Divisions Won </h4>
+			<table class="hof-table"><tbody class="arrtable" id="div-wins"></tbody></table>
+		</div>
+		<div class="achievement">
+			<h4> Most Seasons Played in League </h4>
+			<table class="hof-table"><tbody class="arrtable" id="seasons"></tbody></table>
+		</div>
+	</section>
+	<section class="hall-of-fame">
+		<div class="achievement">
+			<h4> Most Consecutive Seasons Played </h4>
+			<table class="hof-table"><tbody class="streaktable" id="played-streak"></tbody></table>
+		</div>
+		<div class="achievement">
+			<h4> Most Consecutive Promotions (incl. League Championships) </h4>
+			<table class="hof-table"><tbody class="streaktable" id="promote-streak"></tbody></table>
+		</div>
+		<div class="achievement">
+			<h4> Most Consecutive Seasons Without Demoting </h4>
+			<table class="hof-table"><tbody class="streaktable" id="nondem-streak"></tbody></table>
+		</div>
+	</section>
+	<section class="hall-of-fame">
+		<div class="achievement">
+			<h4> Most Unique Opponents </h4>
+			<table class="hof-table"><tbody class="numtable" id="opponents"></tbody></table>
+		</div>
+		<div class="achievement">
+			<h4> Most 6-0 Results </h4>
+			<table class="hof-table"><tbody class="numtable" id="sixes"></tbody></table>
+		</div>
+		<div class="achievement">
+			<h4> Highest Overall Win Percentage (min. 10 seasons) </h4>
+			<table class="hof-table"><tbody class="numtable" id="win-pct"></tbody></table>
+		</div>
+	</section>
+	<div class="achievement-header">
+		<h4>Best Season by Tier</h4> 
+		<table class="hof-table" style="text-align:center">
+			<tbody id="tier-best">
+				<tr>
+				  <th  width="20%" style="text-align:center">Tier</th>
+				  <th  width="55%" style="text-align:center">Player(s)</th>
+				  <th  width="25%" style="text-align:center">Win %</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class=spacing></div>
+	<div class="achievement-header">
+		<h4>Highest Win Percentage by Tier (min. 3 seasons)</h4> 
+		<table class="hof-table" style="text-align:center">
+			<tbody id="tier-record">
+				<tr>
+				  <th  width="20%" style="text-align:center">Tier</th>
+				  <th  width="55%" style="text-align:center">Player(s)</th>
+				  <th  width="25%" style="text-align:center">Win %</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script src="js/hall_of_fame.js"></script>

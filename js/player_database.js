@@ -630,8 +630,6 @@ function setFakeLinks() {
 }
 
 function makeStats(stats, streaks) {
-	console.log(streaks);
-	
 	function addLine(box, key, value) {
 		let line = document.createElement('p');
 		line.innerHTML = `<b>${key}</b>: ${value}`;
@@ -677,8 +675,8 @@ function makeStats(stats, streaks) {
 	let strBox = document.createElement('div');
 	strBox.classList.add('statsBox');
 	addLine(strBox, "Consecutive Seasons Playing in League", `${streaks.played.best.count} (Seasons ${streaks.played.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
-	addLine(strBox, "Consecutive Seasons Promoting" + (champions.players[playerKey] ? "*" : ""), `${streaks.promote.best.count} (Seasons ${streaks.promote.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
-	addLine(strBox, "Consecutive Seasons Without Demoting", `${streaks.nondem.best.count} (Seasons ${streaks.nondem.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})`);
+	addLine(strBox, "Consecutive Seasons Promoting" + (champions.players[playerKey] ? "*" : ""), streaks.promote.best.count ? `${streaks.promote.best.count} (Seasons ${streaks.promote.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})` : "0");
+	addLine(strBox, "Consecutive Seasons Without Demoting", streaks.nondem.best.count ? `${streaks.nondem.best.count} (Seasons ${streaks.nondem.best.seasons.reverse().map(s => s[0] + ((s[1] == s[0]) ? '' : '-' + s[1])).join(", ")})` : "0");
 	if (champions.players[playerKey]) {
 		let underline = document.createElement('p');
 		underline.style.fontStyle = "italic";
@@ -721,11 +719,11 @@ function makeStats(stats, streaks) {
 		row.appendChild(seas);
 		let wins = document.createElement('td');
 		wins.classList.add('cells-past-standings');
-		wins.appendChild(document.createTextNode(tiersPlayed[t].wins));
+		wins.appendChild(document.createTextNode(tiersPlayed[t].wins.toFixed(1).replace(".0", "")));
 		row.appendChild(wins);
 		let losses = document.createElement('td');
 		losses.classList.add('cells-past-standings');
-		losses.appendChild(document.createTextNode(tiersPlayed[t].losses));
+		losses.appendChild(document.createTextNode(tiersPlayed[t].losses.toFixed(1).replace(".0", "")));
 		row.appendChild(losses);
 		let pctcell = document.createElement('td');
 		pctcell.classList.add('cells-past-standings');
@@ -751,11 +749,11 @@ function makeStats(stats, streaks) {
 	totRow.appendChild(seas);
 	let wins = document.createElement('th');
 	wins.classList.add('cells-past-standings');
-	wins.appendChild(document.createTextNode(totalWins));
+	wins.appendChild(document.createTextNode(totalWins.toFixed(1).replace(".0", "")));
 	totRow.appendChild(wins);
 	let losses = document.createElement('th');
 	losses.classList.add('cells-past-standings');
-	losses.appendChild(document.createTextNode(totalLosses));
+	losses.appendChild(document.createTextNode(totalLosses.toFixed(1).replace(".0", "")));
 	totRow.appendChild(losses);
 	let pctcell = document.createElement('th');
 	pctcell.classList.add('cells-past-standings');
