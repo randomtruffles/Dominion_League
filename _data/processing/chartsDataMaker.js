@@ -9,12 +9,12 @@ const champs = JSON.parse(fs.readFileSync("../champions.json"));
 var counts = {};
 var hist = [];
 
-for (const s in fullHist) {
+for (let s in fullHist) {
 	counts[s] = {};
 	let totalPlayers = 0;
-	for (const div in fullHist[s]) {
+	for (let div in fullHist[s]) {
 		if (div != "season") {
-			let ps = Object.keys(fullHist[s][div]).length;
+			let ps = Object.keys(fullHist[s][div].members).length;
 			totalPlayers += ps;
 			if (counts[s][fullHist[s][div].tier]) {
 				counts[s][fullHist[s][div].tier].divisions += 1;
@@ -24,11 +24,11 @@ for (const s in fullHist) {
 			}
 		}
 	}
-	for (tier in counts[s]) {
+	for (let tier in counts[s]) {
 		counts[s][tier].lfrac = counts[s][tier].players/totalPlayers;
 	}
 	
-	for (const div in fullHist[s]) {
+	for (let div in fullHist[s]) {
 		if (div != "season") {
 			let players = Object.keys(fullHist[s][div].members);
 			const nplayer = players.length;
@@ -49,10 +49,10 @@ for (const s in fullHist) {
 				let champ = (fullHist[s][div].members[players[i]].rank == 1) ? "division" : "no";
 				let place = String(fullHist[s][div].members[players[i]].rank);
 				if (fullHist[s][div].tier == "A") {
-					if (champions.seasons[s] == players[i].toLowerCase()) {
+					if (champs.seasons[s] == players[i].toLowerCase()) {
 						champ = "league";
 						place = "1";
-					} else if (champions.runner_ups[s] == players[i].toLowerCase()) {
+					} else if (champs.runner_ups[s] == players[i].toLowerCase()) {
 						champ = "no";
 						place = "2";
 					}
@@ -75,7 +75,7 @@ for (const s in fullHist) {
 		}
 	}
 	
-	for (tier in counts[s]) {
+	for (let tier in counts[s]) {
 		counts[s][tier].lfrac = String(counts[s][tier].lfrac);
 		counts[s][tier].players = String(counts[s][tier].players);
 		counts[s][tier].divisions = String(counts[s][tier].divisions);
@@ -102,7 +102,7 @@ var schemes = [];
 for (let i=0; i<nplayer; i++) {
 	let sch = Array.from({length: current.season}, x => "-");
 	if (players[playerlist[i]]) {
-		for (infs of players[playerlist[i]].seasons) {
+		for (let infs of players[playerlist[i]].seasons) {
 			sch[Number(infs.season)-1] = infs.division.charAt(0);
 		}
 		if (!current.players[playerlist[i]]) {
