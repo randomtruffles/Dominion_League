@@ -21,7 +21,7 @@ The current rulebooks for each Dominion set are linked below. See below for some
 * [Dominion: Guilds & Cornucopia](/img/uploads/08-guilds-and-05-cornucopia-rulebook.pdf)
 * [Dominion: Adventures](/img/uploads/09-adventures-rulebook.pdf)
 * [Dominion: Empires](/img/uploads/10-empires-rulebook.pdf)
-* [Dominion: Nocturne](/img/uploads/11-nocturne.pdf)
+* [Dominion: Nocturne](/img/uploads/11-nocturne-rulebook.pdf)
 * [Dominion: Renaissance](/img/uploads/12-renaissance-rulebook.pdf)
 * [Dominion: Menagerie](/img/uploads/13-menagerie-rulebook.pdf)
 
