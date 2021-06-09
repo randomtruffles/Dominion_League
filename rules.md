@@ -25,7 +25,7 @@ Matches may be played over one or more playing sessions. A playing session is a 
 
 The League also has the following general rules for games by default:
 
-* Games should be played on Dominion Online.
+* Games must be played on Dominion Online.
 * There is no official timer in Dominion Online, and games should not use a timer.
 * During games, players may not attempt to gain a competitive advantage by consulting resources other than those maintained by League. For example, getting advice from Dominion Strategy articles or from spectators is not allowed. The allowed resources maintained by the League are available on the <a href="https://dominionleague.org/resources">Dominion League Resources page</a> and may be consulted privately or publicly at anytime.
 
@@ -42,7 +42,8 @@ For games played online, players should set the following Advanced Options by de
 
 All these defaults may be changed between games by mutual agreement of the players except:
 
-* Players in tiers A, B, C, D, and E may not agree to disallow spectators.
+* Games must be played on Dominion Online.
+* Players may not agree to disallow spectators.
 * Games without expansions may not use Familiar cards or any cardlists.
 * Cardlists may only be changed between playing sessions.
 * Players agreeing to use an unofficial timer must agree on all timer settings and how to handle any glitches or lag.
@@ -70,7 +71,7 @@ At the end of the season, players may earn a spot in a different tier by promoti
 
 * Players who finish in first place promote if the tier directly above has fewer divisions than the tier they are currently in.
 * Players who finish in first or second place promote if the tier directly above has exactly the same number of divisions of the tier they are currently in.
-* In any tier, players who finish in sixth or seventh place in a seven-player division, or fifth or sixth place in any other division, demote unless they are in the bottom tier, in which case they will stay in that tier.
+* In any tier, players who finish in sixth or seventh place in a seven-player division where no player dropped before playing any games, or fifth or sixth place in any other division, demote unless they are in the bottom tier, in which case they will stay in that tier.
 
 Additionally, players who finish in first place, or tied for first place, may be re-placed using the rules for placing new players. This allows returning players to promote across multiple tiers, known as superpromotions, if a player can improve their rating significantly across a season. Players who would be superpromoted into tiers A, B, C, or D are instead placed into tier E.
 
@@ -87,8 +88,8 @@ You may only participate in the League once per season. You may switch your Domi
 
 At the end of each season, players who want to return for the following season must fill out the Returning form linked in their division’s Discord channel, otherwise by default they will leave the League. The following priorities are used, in order, to fill the open spots created by players who leave:
 
-1. Players returning to the League after playing in one of the past 6 seasons are placed into the tiers they would have most recently returned to, starting with the players that played most recently and with ties broken by seeding. For purposes of this priority, divisions may have up to 7 players each.
-2. Players returning from before the past 6 seasons, or joining for the first time with 30 or more rated 2-player games, are placed into tiers based on their Dominion Online level. For particularly highly-rated players, divisions may have up to 7 players each. Level thresholds that would trigger this will be published in the previous season’s Newsletter.
+1. Players returning to the League after completing one of the past 6 seasons are placed into the tiers they would have most recently returned to, starting with the players that played most recently and with ties broken by seeding. For purposes of this priority, divisions may have up to 7 players each.
+2. Players returning to the League who did not complete one of the past 6 season, or are joining for the first time, are placed into tiers based on their Dominion Online level. For particularly highly-rated players, divisions may have up to 7 players each.
 3. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) second place in the tier below with a high score in the previous season are offered a free promotion.
 4. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
 
@@ -145,7 +146,7 @@ Whenever the moderators gather for an official meeting at which rules may change
 
 League Moderators are eligible for 1-season breaks, during which they retain voting privileges and access to league mod channels to stay up-to-date with information. If more moderators want to take breaks that the moderator team can afford, priority will be given to moderators that have least recently taken breaks.
 
-Each active moderator shall moderate at least 5 divisions per season. If the following season is anticipated to have more than 10 divisions per moderator, then the League shall recruit additional moderators. New moderator applications will open week 2 of each season, allow review by the existing moderator team during week 3, and onboarding/shadowing of new moderators beginning week 4.
+Each active moderator shall moderate at least 5 divisions per season. If the following season is anticipated to have more than 10 divisions per moderator, or if the League did not open applications for new moderators in either of the preceding two seasons, then the League shall open applications for additional moderators. New moderator applications will open week 2 of each season, allow review by the existing moderator team during week 3, and onboarding/shadowing of new moderators beginning week 4. When applications close, the moderators may accept none, some, or all of the applicants.
 
 #### XI. Amendments
 
