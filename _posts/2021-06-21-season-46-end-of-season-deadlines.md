@@ -3,8 +3,7 @@ title: Season 46 - End of Season Deadlines
 date: 2021-06-21
 author: Rozyroz
 layout: post
-categories:
-  - pinned
+categories: null
 ---
 Season 46 officially ends on Sunday, July 4. To account for the westernmost timezones, **the deadline for reporting matches is Sunday, July 4, at 23:59 UTC.**
 If you need extra time to finish, **you must contact your group moderator** to request an extension of up to one week. **All late finish matches must be reported by Sunday, July 11, at 23:59 UTC.**
