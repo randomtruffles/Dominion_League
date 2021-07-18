@@ -2707,8 +2707,8 @@ img.hof-champion-trophy {
 }
 
 .checkslider-button {
-	position: absolute;
-	top: 0;
+	position: absolute !important;
+	top: 0 !important;
 	left: 0;
 	right: 0;
 	bottom: 0;
