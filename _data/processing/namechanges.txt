@@ -43,6 +43,8 @@ CaleG38	GoldJacket
 yueshan	numberwang
 Skylar123	Express1
 Mutteasy	Eneandro
+Ida Hodnebrog	Baconpotato
+MaoMaster51	mathraccoon51
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -74,3 +76,4 @@ scoopypls	Scoopypls
 eaterpoosack	Eaterpoosack
 Thommyp	thommyp
 Goodac10	goodac10
+Skpetroff	skpetroff
