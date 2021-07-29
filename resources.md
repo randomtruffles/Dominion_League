@@ -166,6 +166,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Improve**: See **Clean-up** above.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
+* **Merchant**:
+  * If playing your first Silver somehow triggers you to play a Merchant, it will give you +$1 even though it was played after the Silver.
+  * If you play Merchant during an opponent's turn before playing a Silver during their turn, then if you play a Silver during their turn, you do not get +$1.
 * **Possession**
   * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot choose any Actions to shuffle in.
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
@@ -185,7 +188,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Scepter**: See **Crown** above.
 * **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you wanted to exchange for a Warrior.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
-* **Sleigh**: You can react with Sleighs even if they have left your hand and moved back. For example, if you have a Sleigh in hand and gain a Sleigh, you can react with them both in an infinite loop.
+* **Sleigh**: You can react with Sleighs even if they have already moved. For example, if you have a Sleigh in hand and gain a Sleigh, you can react with them both in an infinite loop.
 * **Snowy Village**: If you played a Snowy Village this turn, have a Coin of the Realm or a Royal Carriage on your Tavern mat, have Villagers, and have 0 Actions remaining, you may play an Action card from your hand, automatically using a Villager to do so. Note you cannot spend the Villagers manually for +Actions, and in all cases you correctly do not actually get +Actions from spending any.
 * **Star Chart**: See **Fleet** above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
