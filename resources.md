@@ -166,20 +166,19 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Improve**: See **Clean-up** above.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
+* **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Merchant**:
-  * If playing your first Silver somehow triggers you to play a Merchant, it will give you +$1 even though it was played after the Silver.
+  * If you play your first Silver in a turn, and that somehow triggers you to play a Merchant, you incorrectly get a retroactive +$1 from the Merchant.
   * If you play Merchant during an opponent's turn before playing a Silver during their turn, then if you play a Silver during their turn, you do not get +$1.
+* **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
 * **Possession**
   * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot choose any Actions to shuffle in.
   * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
-* **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
-* **Merchant**: If you play a Silver, and that somehow triggers you to play a Merchant, you incorrectly get a retroactive +$1 from the Merchant.
-* **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
 * **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
 * **Priest**
   * If you trash a card, and that somehow triggers you to play a Priest, you incorrectly get a retroactive +$2 from the Priest's "for the rest of this turn" ability (in addition to its normal +$2).
   * **Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
-* **Quarry + Wayfarer**: When the last card gained is not an Action and you have a Quarry in play, Wayfarer displays the correct price but can be bought as if it cost $2 less.
+* **Quarry + Wayfarer**: When the last card gained is not an Action and you have a Quarry in play, Wayfarer displays the correct price but can be bought/gained as if it cost $2 less.
 * **The River's Gift**: See **Clean-up** above.
 * **Royal Carriage**:
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
@@ -190,13 +189,15 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**: You can react with Sleighs even if they have already moved. For example, if you have a Sleigh in hand and gain a Sleigh, you can react with them both in an infinite loop.
 * **Snowy Village**: If you played a Snowy Village this turn, have a Coin of the Realm or a Royal Carriage on your Tavern mat, have Villagers, and have 0 Actions remaining, you may play an Action card from your hand, automatically using a Villager to do so. Note you cannot spend the Villagers manually for +Actions, and in all cases you correctly do not actually get +Actions from spending any.
-* **Star Chart**: See **Fleet** above.
+* **Star Chart**:
+  * You cannot look through your remaining deck before choosing which shuffled card to put on top.
+  * See **Fleet** above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
 * **Storyteller**: See **Black Market** above.
 * **Trader**: When you gain a card that is not from a pile, the game will freeze if you react with Trader.
 * **Transport**
-  * **Invest**: See **Invest** above.
-  * **Possession**: See **Possession** above.
+  * See **Invest** above.
+  * See **Possession** above.
 * **Treasure Map**: The two Treasure Maps are not trashed simultaneously. For example, if you play a Treasure Map and trash it, you can resolve "when you trash" abilities before trashing another Treasure Map from your hand.
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
