@@ -46,11 +46,10 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
 * **Trader**: Action, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
-* **Village Green**: Action - Duration - Reaction, $4 *(Dominion: Menagerie)*<br>Either now or at the start of your next turn, **+1 Card** and **+2 Actions**.<br>––––––––––––––––––––<br>When you discard this other than during Clean-up, you may reveal it to play it.
 
 Additionally, two cards intentionally works differently online than what the card text says:
 
-* **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
+* **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have card costing a Potion unless a card like that is in the Kingdom. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 * **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played via Way of the Mouse would be as useful or less useful than other Ways.
 
 ##### Tracking rules
@@ -79,11 +78,15 @@ The cost in $ of a card can't go below $0. The cost in Potion of a card can't go
 
 ##### Kingdom Treasure cards
 
-New printings of Treasure cards that do special things when played will no longer say "when you play this", and will give +$ instead of saying they are "worth" an amount of $.
+New printings of Treasure cards that do special things when played will no longer say "when you play this", and instead of saying they are "worth" an amount of $ they will give +$.
 
 ##### "While this is in play" abilities
 
 New printings of cards with "while this is in play" abilities that only affect the card's player (such as Hoard's) now say "while you have this in play". Abilities that affect all players (such as Highway's) are unchanged.
+
+##### Shuffling
+
+In addition to the shuffling rules in the Previous errata section below, there is additional errata that when shuffling, you may also look through your remaining deck.
 
 #### Previous errata
 
@@ -94,35 +97,27 @@ These errata are included in the rulebooks linked above, but may be useful if yo
 Cards which have new wordings but function identically in all situations are not listed here.
 
 * Dominion
-
   * **Adventurer**, **Chancellor**, **Feast**, **Spy**, **Thief**, and **Woodcutter** were removed. **Artisan**, **Bandit**, **Harbinger**, **Merchant**, **Poacher**, **Sentry**, and **Vassal** were added.
   * **Cellar**: You draw cards instead of getting +Cards.
   * **Mine**: Trashing a Treasure from your hand is optional.
   * **Moneylender**: Trashing a Copper from your hand is optional.
   * **Throne Room**: Playing a card from your hand twice is optional.
 * Dominion: Intrigue
-
   * **Coppersmith**, **Great Hall**, **Saboteur**, **Secret Chamber**, **Scout**, and **Tribute** were removed. **Courtier**, **Diplomat**, **Lurker**, **Mill**, **Patrol**, **Replace**, and **Secret Passage** were added.
   * **Masquerade**: Players with no cards in hand do not participate in passing cards.
 * Dominion: Seaside
-
   * **Embargo**: You gain Curses one at a time.
   * **Outpost**: The conditions for getting an extra turn are now that it's the first time you played an Outpost that turn and that the previous turn wasn't yours.
 * Dominion: Alchemy
-
   * **Possession**: Any Debt tokens (and no other kinds of tokens) that the player to your left would take during their extra turn you take instead.
 * Dominion: Prosperity
-
   * **Trade Route**: You trash a card from your hand before you get +$1 per token on the Trade Route mat.
 * Dominion: Hinterlands
-
   * **Oracle**: You get +2 Cards instead of drawing 2 cards.
   * **Scheme**: You can only choose cards that will be discarded from play this turn to put onto your deck.
 * Dominion: Adventures
-
   * **Storyteller**: You draw cards instead of getting +Cards.
 * Promo cards
-
   * **Black Market**: It is clarified that you can play any number of Treasures from your hand before buying a card from the Black Market deck.
   * **Envoy**: It is clarified that you put the cards into your hand instead of drawing them.
 
@@ -132,7 +127,11 @@ If a card such as Throne Room plays a Duration card multiple times, that card al
 
 ##### Shuffling
 
-If you have to do anything with your deck — for example draw, look at, reveal, set aside, discard,or trash cards — and you need more cards than are left in your deck, first shuffle your discard pile and put it under your deck, then do the thing. If there are still not enough cards, you do the thing with however many cards you can. If when shuffling there are no cards in your deck, the shuffled discard pile simply becomes your new deck.
+If you have to do anything with your deck — for example draw, look at, reveal, set aside, discard, or trash cards — and you need more cards than are left in your deck, first shuffle your discard pile and put it under your deck, then do the thing. If there are still not enough cards, you do the thing with however many cards you can. If when shuffling there are no cards in your deck, the shuffled discard pile simply becomes your new deck.
+
+##### Playing cards
+
+An effect that tries to play a card for the first time can only do so when the card is where the effect expects it to be. If it can play it the first time, subsequent plays will also work.
 
 #### Dominion Online bugs
 
@@ -155,6 +154,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt that you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
 * **Encampment**: See **Clean-up** above.
+* **Enchantress**: If you play Enchantress during an opponent's turn before they play their first Action, then when they play their first Action it is not affected by Enchantress.
 * **The Field's Gift**: See **Clean-up** above.
 * **The Forest's Gift**: See **Clean-up** above.
 * **Fleet**: Fleet turns in multiplayer games can happen in the wrong order.
