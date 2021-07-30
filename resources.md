@@ -135,7 +135,7 @@ An effect that tries to play a card for the first time can only do so when the c
 
 #### Dominion Online bugs
 
-Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI.
+Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI. Bugs due to using abilities during another player's turn are in a separate section below.
 
 * **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
 * **Black Cat**: If you play Black Cat when it is not your turn, players gain Curses starting with the player to your left, instead of the current player.
@@ -145,25 +145,19 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
 * **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
-* **Clean-up**:
-  * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the current player's Clean-up. This includes abilities from cards (such as playing Improve during another player's turn) and Boons (such as receiving the Field's Gift during another player's turn).
-  * Card abilities that happen when you discard the card from play will not happen if you discard it from play during another player's turn.
 * **Coin of the Realm**: See **Snowy Village** below.
 * **Colonnade**: See **Basilica** above.
 * **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt that you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
-* **Encampment**: See **Clean-up** above.
+* **Encampment**: See **Other player's turn + Clean-up** below.
 * **Enchantress**: If you play Enchantress during an opponent's turn before they play their first Action, then when they play their first Action it is not affected by Enchantress.
-* **The Field's Gift**: See **Clean-up** above.
-* **The Forest's Gift**: See **Clean-up** above.
 * **Fleet**: Fleet turns in multiplayer games can happen in the wrong order.
 * **Fleet + Star Chart**: When you shuffle your deck during your Clean-up phase, if the next turn is a Fleet turn, you don't get to use Star Chart.
 * **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
 * **Hamlet**: If you discard a card for +1 Action and then have no cards in hand, you can choose to discard for +1 Buy, discard nothing, and still get +1 Buy.
 * **Herbalist**: See **Capitalism** above.
 * **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
-* **Improve**: See **Clean-up** above.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
@@ -179,7 +173,6 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * If you trash a card, and that somehow triggers you to play a Priest, you incorrectly get a retroactive +$2 from the Priest's "for the rest of this turn" ability (in addition to its normal +$2).
   * **Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quarry + Wayfarer**: When the last card gained is not an Action and you have a Quarry in play, Wayfarer displays the correct price but can be bought/gained as if it cost $2 less.
-* **The River's Gift**: See **Clean-up** above.
 * **Royal Carriage**:
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
   * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
@@ -208,5 +201,12 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Way of the Mouse + Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card (other than Captain or Mastermind) using Way of the Mouse it is discarded from play the same turn.
 * **Wayfarer**: See **Quarry** above.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
+
+##### Bugs during another player's turn
+
+* If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the current player's Clean-up. This includes abilities from cards (such as playing Improve during another player's turn) and Boons (such as receiving the Field's Gift during another player's turn).
+* Card abilities that happen when you discard the card from play will not happen if you discard it from play during another player's turn.
+* When a card checks how many times you've played certain cards, it counts how many times the current player has played the cards. This includes abilities that check for a particular card (such as Crossroads) or a type of card (such as Conspirator).
+* When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
