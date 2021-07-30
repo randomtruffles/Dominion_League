@@ -151,7 +151,6 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt that you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
 * **Encampment**: See **Other player's turn + Clean-up** below.
-* **Enchantress**: If you play Enchantress during an opponent's turn before they play their first Action, then when they play their first Action it is not affected by Enchantress.
 * **Fleet**: Fleet turns in multiplayer games can happen in the wrong order.
 * **Fleet + Star Chart**: When you shuffle your deck during your Clean-up phase, if the next turn is a Fleet turn, you don't get to use Star Chart.
 * **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
@@ -197,7 +196,6 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Way of the Chameleon**:
   * See **Oracle** above.
   * See **Priest** above.
-* **Way of the Frog**: If you play a card using Way of the Frog when it isn't your turn, when it is discarded from play, it is not put onto your deck.
 * **Way of the Mouse + Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card (other than Captain or Mastermind) using Way of the Mouse it is discarded from play the same turn.
 * **Wayfarer**: See **Quarry** above.
 * **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
@@ -205,8 +203,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 ##### Bugs during another player's turn
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the current player's Clean-up. This includes abilities from cards (such as playing Improve during another player's turn) and Boons (such as receiving the Field's Gift during another player's turn).
-* Card abilities that happen when you discard the card from play will not happen if you discard it from play during another player's turn.
+* Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
 * When a card checks how many times you've played certain cards, it counts how many times the current player has played the cards. This includes abilities that check for a particular card (such as Crossroads) or a type of card (such as Conspirator).
 * When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.
+* If you play Enchantress during an opponent's turn before they play their first Action, then when they play their first Action it is not affected by Enchantress.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
