@@ -205,5 +205,6 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * If you play a card during another player's turn and it sets up an ability that happens the first time a card is played (such as Merchant's +$1 or Enchantress's Attack), that ability will not happen.
 * When a card checks how many times you've played certain cards, it counts how many times the current player has played the cards. This includes abilities that check for a particular card (such as Crossroads) or a type of card (such as Conspirator).
 * When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.
+* If another player has Capitalism and plays an Attack that somehow triggers you to play a Black Market during which you play Caravan Guards from your hand, then after Black Market you will be given a prompt to react to the Attack with those same Caravan Guards (though the game correctly does not show them in your hand). At the start of your next turn, the Caravan Guards you played twice will give +$1 twice.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
