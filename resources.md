@@ -149,10 +149,10 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Colonnade**: See **Basilica** above.
 * **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
-* **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt that you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
-* **Encampment**: See **Other player's turn + Clean-up** below.
-* **Fleet**: Fleet turns in multiplayer games can happen in the wrong order.
-* **Fleet + Star Chart**: When you shuffle your deck during your Clean-up phase, if the next turn is a Fleet turn, you don't get to use Star Chart.
+* **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
+* **Fleet**:
+  * Fleet turns in games with 3 or more players can happen in the wrong order.
+  * **Star Chart**: When you shuffle your deck during your Clean-up, if the next turn is a Fleet turn, you don't get to use Star Chart.
 * **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
 * **Hamlet**: If you discard a card for +1 Action and then have no cards in hand, you can choose to discard for +1 Buy, discard nothing, and still get +1 Buy.
 * **Herbalist**: See **Capitalism** above.
@@ -160,9 +160,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
-* **Merchant**:
-  * If you play your first Silver in a turn, and that somehow triggers you to play a Merchant, you incorrectly get a retroactive +$1 from the Merchant.
-  * If you play Merchant during an opponent's turn before playing a Silver during their turn, then if you play a Silver during their turn, you do not get +$1.
+* **Merchant**: If you play your first Silver in a turn, and that somehow triggers you to play a Merchant, you incorrectly get a retroactive +$1 from the Merchant.
 * **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
 * **Possession**
   * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot choose any Actions to shuffle in.
@@ -177,14 +175,14 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
   * **Snowy Village**: See **Snowy Village** below.
 * **Scepter**: See **Crown** above.
-* **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you wanted to exchange for a Warrior.
+* **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you planned to exchange for a Warrior.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**: You can react with Sleighs even if they have already moved. For example, if you have a Sleigh in hand and gain a Sleigh, you can react with them both in an infinite loop.
-* **Snowy Village**: If you played a Snowy Village this turn, have a Coin of the Realm or a Royal Carriage on your Tavern mat, have Villagers, and have 0 Actions remaining, you may play an Action card from your hand, automatically using a Villager to do so. Note you cannot spend the Villagers manually for +Actions, and in all cases you correctly do not actually get +Actions from spending any.
+* **Snowy Village + Coin of the Realm / Royal Carriage**: If you played a Snowy Village this turn, have a Coin of the Realm or a Royal Carriage on your Tavern mat, have Villagers, and have 0 Actions remaining, you may play an Action card from your hand, automatically using a Villager to do so. Note you cannot spend the Villagers manually for +Actions, and in all cases you correctly do not actually get +Actions from spending any.
 * **Star Chart**:
   * You cannot look through your remaining deck before choosing which shuffled card to put on top.
   * See **Fleet** above.
-* **Stonemason**: You cannot choose to overpay an amount that would not gain you cards.
+* **Stonemason**: You cannot choose to overpay an amount that would not gain you anything.
 * **Storyteller**: See **Black Market** above.
 * **Trader**: When you gain a card that is not from a pile, the game will freeze if you react with Trader.
 * **Transport**
@@ -192,20 +190,20 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * See **Possession** above.
 * **Treasure Map**: The two Treasure Maps are not trashed simultaneously. For example, if you play a Treasure Map and trash it, you can resolve "when you trash" abilities before trashing another Treasure Map from your hand.
 * **Villa**: See **Cavalry** above.
-* **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings.
+* **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings. This can matter with Diadem or Possession.
 * **Way of the Chameleon**:
   * See **Oracle** above.
   * See **Priest** above.
 * **Way of the Mouse + Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card (other than Captain or Mastermind) using Way of the Mouse it is discarded from play the same turn.
 * **Wayfarer**: See **Quarry** above.
-* **Zombie Spy**: If you play Herald to reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you play Zombie Spy via the Necromancer.
+* **Zombie Spy**: If you play Herald, reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you then play Zombie Spy via the Necromancer.
 
 ##### Bugs during another player's turn
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the current player's Clean-up. This includes abilities from cards (such as playing Improve during another player's turn) and Boons (such as receiving the Field's Gift during another player's turn).
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
+* If you play a card during another player's turn and it sets up an ability that happens the first time a card is played (such as Merchant's +$1 or Enchantress's Attack), that ability will not happen.
 * When a card checks how many times you've played certain cards, it counts how many times the current player has played the cards. This includes abilities that check for a particular card (such as Crossroads) or a type of card (such as Conspirator).
 * When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.
-* If you play Enchantress during an opponent's turn before they play their first Action, then when they play their first Action it is not affected by Enchantress.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
