@@ -147,12 +147,15 @@
 	"channel" : "https://www.youtube.com/channel/UCbJIRsK3rp5d7CTtu0Q7ZsA"
   },
   "aglet": {
-  	"channel": "https://www.youtube.com/channel/UCWFK6TepsJjfdVpXDwMNbsA"
+  	"channel" : "https://www.youtube.com/channel/UCWFK6TepsJjfdVpXDwMNbsA"
   },
   "nolucksgiven": {
-	"channel": "https://www.youtube.com/channel/UCtKGNqcou80fr25rVjtkwhQ"
+	"channel" : "https://www.youtube.com/channel/UCtKGNqcou80fr25rVjtkwhQ"
   },
   "gingxr": {
-	"channel": "https://www.youtube.com/channel/UCW5R5UINB6ZQVHJ2yyL-klQ"
+	"channel" : "https://www.youtube.com/channel/UCW5R5UINB6ZQVHJ2yyL-klQ"
+  },
+  "naesala": {
+	"channel" : "https://www.youtube.com/channel/UCI4C-6DNOglF47BZ8qXP5zg"
   }
 }
