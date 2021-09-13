@@ -140,8 +140,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
 * **Black Cat**: If you play Black Cat when it is not your turn, players gain Curses starting with the player to your left, instead of the current player.
 * **Black Market**
-  * When you play Black Market between turns, the game freezes.
+  * **Exploration**: When you play Black Market during your Buy phase and buy a card, you still get +1 Coffers and +1 Villager from Exploration.
   * (also **Storyteller**): When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
+  * When you play Black Market between turns, the game freezes.
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
 * **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
@@ -150,6 +151,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
 * **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
+* **Exploration**: See **Black Market** above.
 * **Fleet**:
   * Fleet turns in games with 3 or more players can happen in the wrong order.
   * **Star Chart**: When you shuffle your deck during your Clean-up, if the next turn is a Fleet turn, you don't get to use Star Chart.
