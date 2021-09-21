@@ -43,7 +43,6 @@ This contains site settings as well as data used throughout the site (for exampl
 - `league_history.json`
 	- All standings and matches history through season before last, first by season, then by division
 	- Currently used in:
-		- Past Standings
 		- Player Database
 - `mod_history.json`
 	- Current and past moderator names, start season, and finish season, and whether they are a current moderator or not
@@ -83,29 +82,7 @@ This contains site settings as well as data used throughout the site (for exampl
 	- Links to Youtube channels for those players who have them
 	- Currently used in:
 		- Player database
-	
-- This contains all overall "information" and "settings" of the site (ie. the moderators, the template settings, etc.) to be used by pages and must be in `.yml` format.
-  - `moderators.yaml`
-    - Contains a list of moderators and information regarding name, discord handle, etc. to be used. Eg.
-    ```
-    - name: truffles
-      discord: truffles#9374
-      description: truffles likes truffles
-      image: truffles
-    ```
-  - `nav.yml`
-    - Contains the pages to be generated in the navigation bar. Eg.
-    ```
-    - name: About
-      path: rules.html
-      section_id: about
-      children:
-        - name: Rules
-          path: rules.html
-        - name: F.A.Q.
-          path: faq.html
-    - name: Matches
-      ...
-    ```
-  - `template.yaml`
-    - Contains the template settings to be used across the site, including font, colors etc.
+- `z##.json`
+	- Standings for season ## to improve load time on past standings
+	- Currently used in:
+		- Past Standings

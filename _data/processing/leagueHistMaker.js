@@ -24,6 +24,7 @@ hist = JSON.parse(hist);
 var players = {};
 
 for (const season in hist) {
+	fs.writeFileSync(`outputs/z${season}.json`, JSON.stringify(hist[season]));
 	for (const div in hist[season]) {
 		if (div == "season") {continue;}
 		for (const player in hist[season][div].members) {
