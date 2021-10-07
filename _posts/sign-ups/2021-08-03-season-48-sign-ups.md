@@ -6,7 +6,7 @@ author: crlundy
 layout: simple_post
 categories: signups
 ---
-**Season 48** will run from Monday, October 11, until Sunday, November 21, and you can sign up until **Sunday, October 3 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 48** will run from Monday, October 11 until Sunday, November 21 and ~~you can sign up until Sunday, October 3 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Friday, October 22 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
@@ -29,15 +29,17 @@ A moderator will contact you on Discord to confirm your participation. You must 
 <br>
 
 <div class="sheets">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOHgabwc3cp7u8i6R_uGuTK3OijRvNfyQsmMPrZWg3uOaqRw/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOHgabwc3cp7u8i6R_uGuTK3OijRvNfyQsmMPrZWg3uOaqRw/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
 </div>
 
 #### Sign-ups and Counts
 
-Sign-ups and Counts are listed below (**it may take several seconds to load**).
-<br>
+Sign-ups and Counts are listed below (it may take a while to load).
+
+<br>
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
 <div class="sheets">
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFrtOAhl7Z1XVR33O42uOmPCLA-URChKaSb8XI4eI97gpk20Rj7eQ0liwykiZfD4Oylqz63lbNgHod/pubhtml" height="500" width="100%">Loading...</iframe>
+  <iframe src="https://docs.google.com/spreadsheets/d/1i2BNBpSRjOBuxiFgBl87Yca1RMZOW8EKVYHC5PsqMfU/pubhtml" height="500" width="100%">Loading...</iframe>
 </div>
