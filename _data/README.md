@@ -43,6 +43,7 @@ This contains site settings as well as data used throughout the site (for exampl
 - `league_history.json`
 	- All standings and matches history through season before last, first by season, then by division
 	- Currently used in:
+		- Past Standings
 		- Player Database
 - `mod_history.json`
 	- Current and past moderator names, start season, and finish season, and whether they are a current moderator or not
@@ -82,7 +83,3 @@ This contains site settings as well as data used throughout the site (for exampl
 	- Links to Youtube channels for those players who have them
 	- Currently used in:
 		- Player database
-- `z##.json`
-	- Standings for season ## to improve load time on past standings
-	- Currently used in:
-		- Past Standings
