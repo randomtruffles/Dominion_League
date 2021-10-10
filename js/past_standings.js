@@ -1,7 +1,6 @@
 ---
 ---
 
-var divisions = {{ site.data.league_history | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
 
@@ -80,7 +79,6 @@ function allDivisions(season) {
 }
 
 function loadPage(season) {
-	divisions = divisions[season];
 	sheetLinks = sheetLinks[season];
 	champion = champions.seasons[season];
 	makeButtons();

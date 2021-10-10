@@ -4,7 +4,7 @@ var players = JSON.parse(fs.readFileSync("../player_seasons.json"));
 var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
 
-const currentSeason = 46;
+const currentSeason = 47;
 const thresholdForOverallPct = 10;
 const thresholdForTierPct = 3;
 const oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]}};
@@ -38,27 +38,27 @@ for (playerKey in players) {
 		"nondem": {"current": {"count": 0, "start": Infinity, "end": Infinity}},
 		"promote": {"current": {"count": 0, "start": Infinity, "end": Infinity}}
 	};
-	console.log(playerKey);
 	for (let i = players[playerKey].seasons.length - 1; i >= 0; i--) {
 		let season = players[playerKey].seasons[i].season;
+		let seasonKey = "s" + season;
 		let division = players[playerKey].seasons[i].division;
 		let tier = division.charAt(0);
-		totalWins += leagueHist[season][division].by_player[player].wins;
-		totalLosses += leagueHist[season][division].by_player[player].losses;
+		totalWins += leagueHist[seasonKey][division].by_player[player].wins;
+		totalLosses += leagueHist[seasonKey][division].by_player[player].losses;
 		//stats
 		if (tiersPlayed[tier]) {
 			tiersPlayed[tier].seasons.push(season);
-			tiersPlayed[tier].wins += leagueHist[season][division].by_player[player].wins;
-			tiersPlayed[tier].losses += leagueHist[season][division].by_player[player].losses;
-			let seaspct = leagueHist[season][division].by_player[player].wins/(leagueHist[season][division].by_player[player].wins + leagueHist[season][division].by_player[player].losses);
+			tiersPlayed[tier].wins += leagueHist[seasonKey][division].by_player[player].wins;
+			tiersPlayed[tier].losses += leagueHist[seasonKey][division].by_player[player].losses;
+			let seaspct = leagueHist[seasonKey][division].by_player[player].wins/(leagueHist[seasonKey][division].by_player[player].wins + leagueHist[seasonKey][division].by_player[player].losses);
 			if (seaspct >= tiersPlayed[tier].best.pct) {
 				tiersPlayed[tier].best = {"season": season, "pct": seaspct};
 			}
 		} else {
-			tiersPlayed[tier] = {"seasons": [season], "wins": leagueHist[season][division].by_player[player].wins, "losses": leagueHist[season][division].by_player[player].losses};
+			tiersPlayed[tier] = {"seasons": [season], "wins": leagueHist[seasonKey][division].by_player[player].wins, "losses": leagueHist[seasonKey][division].by_player[player].losses};
 			tiersPlayed[tier].best = {"season": season, "pct": tiersPlayed[tier].wins/(tiersPlayed[tier].wins + tiersPlayed[tier].losses)};
 		}
-		if (leagueHist[season][division].members[player].rank == 1) {
+		if (leagueHist[seasonKey][division].members[player].rank == 1) {
 			stats.divWins.push(season);
 		}
 		if (streaks.played.current.start == Number(season) + 1) {
@@ -70,14 +70,14 @@ for (playerKey in players) {
 		}
 		let promotion = false;
 		let demotion = false;
-		let next_tier = leagueHist[season][division].members[player]["next tier"];
+		let next_tier = leagueHist[seasonKey][division].members[player]["next tier"];
 		if (oddSchemes[season] && oddSchemes[season][tier]) {
 			if (next_tier == oddSchemes[season][tier][0]) {
 				promotion = true;
 			} else if (next_tier == oddSchemes[season][tier][1]) {
 				demotion = true;
 			}
-		} else if (((next_tier < tier) || (playerKey == champions.seasons[season])) && (leagueHist[season][division].members[player].drop == "No")) {
+		} else if (((next_tier < tier) || (playerKey == champions.seasons[season])) && (leagueHist[seasonKey][division].members[player].drop == "No")) {
 			promotion = true;
 		} else if (next_tier > tier) {
 			demotion = true;
@@ -101,12 +101,12 @@ for (playerKey in players) {
 			}
 		}
 		//versus (and some stats)
-		for (opp in leagueHist[season][division].by_player[player]) {
+		for (opp in leagueHist[seasonKey][division].by_player[player]) {
 			if (!notPlayers.includes(opp)) {
 				stats.opponents.push(opp);
-				if (leagueHist[season][division].by_player[player][opp].wins >= 5) {
+				if (leagueHist[seasonKey][division].by_player[player][opp].wins >= 5) {
 					stats.five += 1;
-					if (leagueHist[season][division].by_player[player][opp].wins == 6) {
+					if (leagueHist[seasonKey][division].by_player[player][opp].wins == 6) {
 						stats.six += 1;
 					}
 				}

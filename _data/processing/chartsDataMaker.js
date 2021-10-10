@@ -20,7 +20,7 @@ for (let s in fullHist) {
 				counts[s][fullHist[s][div].tier].divisions += 1;
 				counts[s][fullHist[s][div].tier].players += ps;
 			} else {
-				counts[s][fullHist[s][div].tier] = {"season": s, "tier": div.charAt(0), "divisions": 1, "players": ps};
+				counts[s][fullHist[s][div].tier] = {"season": s.slice(1), "tier": div.charAt(0), "divisions": 1, "players": ps};
 			}
 		}
 	}
@@ -49,7 +49,7 @@ for (let s in fullHist) {
 				let champ = (fullHist[s][div].members[players[i]].rank == 1) ? "division" : "no";
 				let place = String(fullHist[s][div].members[players[i]].rank);
 				if (fullHist[s][div].tier == "A") {
-					if (champs.seasons[s] == players[i].toLowerCase()) {
+					if (champs.seasons[s.slice(1)] == players[i].toLowerCase()) {
 						champ = "league";
 						place = "1";
 					} else if (champs.runner_ups[s] == players[i].toLowerCase()) {
@@ -66,7 +66,7 @@ for (let s in fullHist) {
 					"losses": fullHist[s][div].members[players[i]].losses,
 					"pct": fullHist[s][div].members[players[i]].pct,
 					"standingsColor": fullHist[s][div].members[players[i]].color,
-					"season": s,
+					"season": s.slice(1),
 					"countPlacement": String(countBase + countMult*(Number(place) - 0.5)/nplayer),
 					"propPlacement": String(propBase + propMult*(Number(place) - 0.5)/nplayer),
 					"champ": champ
