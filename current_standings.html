@@ -31,7 +31,7 @@ var cur_season = String({{ site.data.season.number }});
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 sheetLinks = sheetLinks[cur_season];
-var champion = "nasmith99";
+var champion = "";
 loadPage();
 
 function singleDivision(division) {

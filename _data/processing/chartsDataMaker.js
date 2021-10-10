@@ -49,7 +49,7 @@ for (let s in fullHist) {
 				let champ = (fullHist[s][div].members[players[i]].rank == 1) ? "division" : "no";
 				let place = String(fullHist[s][div].members[players[i]].rank);
 				if (fullHist[s][div].tier == "A") {
-					if (champs.seasons[s] == players[i].toLowerCase()) {
+					if (champs.seasons[s.slice(1)] == players[i].toLowerCase()) {
 						champ = "league";
 						place = "1";
 					} else if (champs.runner_ups[s] == players[i].toLowerCase()) {
