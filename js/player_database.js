@@ -108,7 +108,22 @@ function searchHistory() {
 		player = players[playerKey].name;
 		playerInput.value = player;
 	} else {
-		customDisplay(playerDiv, "Error: Player Does Not Exist", "<b>" + (enteredPlayerName || playerKey) + "</b>" + " does not exist or has not completed a league season yet. <br> Enter another name (eg. 'kaplane').");
+		let errHeader = document.createElement('h4');
+		errHeader.appendChild(document.createTextNode("Error: Player Does Not Exist"));
+		playerDiv.appendChild(errHeader);
+		let errDesc = document.createElement('p');
+		if (/</.test(playerKey) && /<|(%3c)/i.test(window.location.search)) {
+			errDesc.appendChild(document.createTextNode("The person who gave you this link is probably an asshole."));
+		} else {
+			let pname = document.createElement('span');
+			pname.style.fontWeight = "bold";
+			pname.appendChild(document.createTextNode(enteredPlayerName || playerKey));
+			errDesc.appendChild(pname);
+			errDesc.appendChild(document.createTextNode(" does not exist or has not completed a league season yet."));
+			errDesc.appendChild(document.createElement('br'));
+			errDesc.appendChild(document.createTextNode("Enter another name (eg. 'kaplane')."));
+		}
+		playerDiv.appendChild(errDesc);
 		document.getElementById("content-controls").style.display = "none";
 		loadingDiv.style.display = "none";
 		return;
