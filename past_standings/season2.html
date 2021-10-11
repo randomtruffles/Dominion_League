@@ -23,5 +23,6 @@ title: Dominion League Season 2 Standings
 <script src="/js/standingsUtils.js"></script>
 <script src="/js/past_standings.js"></script>
 <script>
+divisions = {{ site.data.league_history.s2 | jsonify }};
 loadPage("2");
 </script>

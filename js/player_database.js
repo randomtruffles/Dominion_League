@@ -166,29 +166,30 @@ function searchHistory() {
 		if (!inCurrent) {seasonRange[1] = Number(players[playerKey].seasons[players[playerKey].seasons.length - 1].season);}
 		for (let i = players[playerKey].seasons.length - 1; i >= 0; i--) {
 			let season = players[playerKey].seasons[i].season;
+			let seasonKey = "s" + season;
 			let division = players[playerKey].seasons[i].division;
 			let tier = division.charAt(0);
 			//standings
 			let title = `<a href="past_standings/season${season}?div=${division}"> S${season}</a> ${division} Division`;
 			let params = {"headerText":title, "playerNameKey":playerKey, "champ": champions.seasons[season]};
-			loadDivision(standingsDiv, leagueHist[season][division], sheetsLinks[season][division], division, season, params);
+			loadDivision(standingsDiv, leagueHist[seasonKey][division], sheetsLinks[season][division], division, season, params);
 			//stats
 			if (tiersPlayed[tier]) {
 				tiersPlayed[tier].count += 1;
-				tiersPlayed[tier].wins += leagueHist[season][division].by_player[player].wins;
-				tiersPlayed[tier].losses += leagueHist[season][division].by_player[player].losses;
-				let seaspct = leagueHist[season][division].by_player[player].wins/(leagueHist[season][division].by_player[player].wins + leagueHist[season][division].by_player[player].losses);
+				tiersPlayed[tier].wins += leagueHist[seasonKey][division].by_player[player].wins;
+				tiersPlayed[tier].losses += leagueHist[seasonKey][division].by_player[player].losses;
+				let seaspct = leagueHist[seasonKey][division].by_player[player].wins/(leagueHist[seasonKey][division].by_player[player].wins + leagueHist[seasonKey][division].by_player[player].losses);
 				if (seaspct >= tiersPlayed[tier].best.pct) {
 					tiersPlayed[tier].best = {"season": season, "pct": seaspct};
 				}
 			} else {
-				tiersPlayed[tier] = {"count": 1, "wins": leagueHist[season][division].by_player[player].wins, "losses": leagueHist[season][division].by_player[player].losses};
+				tiersPlayed[tier] = {"count": 1, "wins": leagueHist[seasonKey][division].by_player[player].wins, "losses": leagueHist[seasonKey][division].by_player[player].losses};
 				tiersPlayed[tier].best = {"season": season, "pct": tiersPlayed[tier].wins/(tiersPlayed[tier].wins + tiersPlayed[tier].losses)};
 			}
-			if (leagueHist[season][division].members[player].rank == 1) {
+			if (leagueHist[seasonKey][division].members[player].rank == 1) {
 				stats.wins.push(season);
 			}
-			tierRanks.push({"season": season, "tier": tier, "rank": leagueHist[season][division].members[player].rank})
+			tierRanks.push({"season": season, "tier": tier, "rank": leagueHist[seasonKey][division].members[player].rank})
 			if (streaks.played.current.start == Number(season) + 1) {
 				streaks.played.current.count += 1;
 				streaks.played.current.start = Number(season);
@@ -202,14 +203,14 @@ function searchHistory() {
 			}
 			let promotion = false;
 			let demotion = false;
-			let next_tier = leagueHist[season][division].members[player]["next tier"];
+			let next_tier = leagueHist[seasonKey][division].members[player]["next tier"];
 			if (oddSchemes[season] && oddSchemes[season][tier]) {
 				if (next_tier == oddSchemes[season][tier][0]) {
 					promotion = true;
 				} else if (next_tier == oddSchemes[season][tier][1]) {
 					demotion = true;
 				}
-			} else if (((next_tier < tier) || (playerKey == champions.seasons[season])) && (leagueHist[season][division].members[player].drop == "No")) {
+			} else if (((next_tier < tier) || (playerKey == champions.seasons[season])) && (leagueHist[seasonKey][division].members[player].drop == "No")) {
 				promotion = true;
 			} else if (next_tier > tier) {
 				demotion = true;
@@ -241,16 +242,16 @@ function searchHistory() {
 				}
 			}
 			//versus (and some stats)
-			for (opp in leagueHist[season][division].by_player[player]) {
+			for (opp in leagueHist[seasonKey][division].by_player[player]) {
 				if (!notPlayers.includes(opp)) {
 					if (playerVersus[opp]) {
-						playerVersus[opp].push({"season": season, "tier": division.charAt(0), "wins": leagueHist[season][division].by_player[player][opp].wins, "losses": leagueHist[season][division].by_player[player][opp].losses});
+						playerVersus[opp].push({"season": season, "tier": division.charAt(0), "wins": leagueHist[seasonKey][division].by_player[player][opp].wins, "losses": leagueHist[seasonKey][division].by_player[player][opp].losses});
 					} else {
-						playerVersus[opp] = [{"season": season, "tier": division.charAt(0), "wins": leagueHist[season][division].by_player[player][opp].wins, "losses": leagueHist[season][division].by_player[player][opp].losses}];
+						playerVersus[opp] = [{"season": season, "tier": division.charAt(0), "wins": leagueHist[seasonKey][division].by_player[player][opp].wins, "losses": leagueHist[seasonKey][division].by_player[player][opp].losses}];
 					}
-					if (leagueHist[season][division].by_player[player][opp].wins >= 5) {
+					if (leagueHist[seasonKey][division].by_player[player][opp].wins >= 5) {
 						stats.five += 1;
-						if (leagueHist[season][division].by_player[player][opp].wins == 6) {
+						if (leagueHist[seasonKey][division].by_player[player][opp].wins == 6) {
 							stats.six += 1;
 						}
 					}

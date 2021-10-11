@@ -2,8 +2,8 @@ var fs = require('fs');
 
 var hist = {};
 
-for (let s=1; s<=46; s++) {
-	hist[String(s)] = JSON.parse(fs.readFileSync(`Seasons/s${s}.json`));
+for (let s=1; s<=47; s++) {
+	hist["s" + String(s)] = JSON.parse(fs.readFileSync(`Seasons/s${s}.json`));
 }
 
 hist = JSON.stringify(hist);
@@ -23,14 +23,14 @@ hist = JSON.parse(hist);
 
 var players = {};
 
-for (const season in hist) {
-	for (const div in hist[season]) {
+for (const seasonKey in hist) {
+	for (const div in hist[seasonKey]) {
 		if (div == "season") {continue;}
-		for (const player in hist[season][div].members) {
+		for (const player in hist[seasonKey][div].members) {
 			if (players[player.toLowerCase()]) {
-				players[player.toLowerCase()].seasons.push({"season": season, "division": div});
+				players[player.toLowerCase()].seasons.push({"season": seasonKey.slice(1), "division": div});
 			} else {
-				players[player.toLowerCase()] = {"name": player, "seasons": [{"season": season, "division": div}]};
+				players[player.toLowerCase()] = {"name": player, "seasons": [{"season": seasonKey.slice(1), "division": div}]};
 			}
 		}
 	}

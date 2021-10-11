@@ -23,5 +23,6 @@ title: Dominion League Season 7 Standings
 <script src="/js/standingsUtils.js"></script>
 <script src="/js/past_standings.js"></script>
 <script>
+divisions = {{ site.data.league_history.s7 | jsonify }};
 loadPage("7");
 </script>
