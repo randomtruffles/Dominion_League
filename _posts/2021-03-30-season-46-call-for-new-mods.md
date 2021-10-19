@@ -6,7 +6,7 @@ layout: post
 ---
 Hello, everyone!
 
-The League is run by a team of volunteer moderators and more help is always welcome! [...]
+The League is run by a team of volunteer moderators and more help is always welcome!
 
 Moderator responsibilities consist of the following:
 
