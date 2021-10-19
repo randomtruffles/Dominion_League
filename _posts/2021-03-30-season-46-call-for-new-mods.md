@@ -6,7 +6,7 @@ layout: post
 ---
 Hello, everyone!
 
-The League is run by a team of volunteer moderators, and due to some recent turnover on the team, we're looking for more!
+The League is run by a team of volunteer moderators and more help is always welcome! [...]
 
 Moderator responsibilities consist of the following:
 
@@ -18,7 +18,7 @@ Moderator responsibilities consist of the following:
 
 In general, the moderator role tends to be a reactive responsibility. Accordingly, we expect moderators to be responsive within 24 hours on Discord throughout the season. We also require new moderators to have played at least two full League seasons (which can include Season 48).\
 \
-We are accepting applications until April 5th at 0 UTC.
+We are accepting applications until November 7th at 0 UTC.
 
 To apply, use this Google Form:
 
