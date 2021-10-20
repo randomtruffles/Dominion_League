@@ -1,27 +1,24 @@
 ---
-title: Season 46 - Call for new mods
+title: Season 49 - Call for new mods
 date: 2021-03-30
-author: Sharur
+author: MuensterCheese
 layout: post
 ---
 Hello, everyone!
 
-The League is run by a team of volunteer moderators, and due to some recent turnover on the team, we're looking for more!
+The League is run by a team of volunteer moderators and more help is always welcome!
 
 Moderator responsibilities consist of the following:
 
-* Meet with fellow moderators on the weekend before the season to set everything up. For Season 46, this will be the weekend of May 22-23.
+* Moderate 7-10 divisions during the season: respond to any questions from the players in them, message players who fall behind, and then remove them if there is no response or they are unable to finish the season.
+* Participate in a few training meetings between November 8th and November 14th, usually lasting 30–60 minutes.
+* Meet with fellow moderators on the final weekend of each season to discuss and vote on any necessary rules changes (though missing on occasion is okay). For Season 48, this will be the weekend of November 20th. These meetings typically start during the European evening and vary in length, but usually last an hour or two.
+* Meet with fellow moderators on the weekend before each season to set everything up (though missing on occasion is okay). For Season 49, this will be the weekend of December 4th. These meetings also typically start during the European evening and vary in length but usually last a few hours, including post-meeting tasks.
+* Complete miscellaneous tasks including onboarding new players and making Google Sheets adjustments.
 
-  * These meetings vary in length but usually last a few hours, including post-meeting tasks.
-* Meet with fellow moderators on the final weekend of the season to discuss and vote on any necessary rules changes. For Season 45, this will be the weekend of May 8-9. These meetings also vary in length, but usually last an hour or two.
-* Answer any questions from players in your 7-10 divisions.
-* Resolve any disputes between players that arise in your divisions.
-* Message players in your divisions who have fallen behind and remove them if they don’t reply or can’t finish.
-* Help out with miscellaneous tasks like onboarding new players and updating our Google Sheets automation systems.
-
-In general, the moderator role tends to be a reactive responsibility. Accordingly, we expect moderators to be responsive within 24 hours on Discord throughout the season. We also require new moderators to have played at least two full League seasons (which can include Season 45).\
+In general, the moderator role tends to be a reactive responsibility. Accordingly, we expect moderators to be responsive within 24 hours on Discord throughout the season. We also require new moderators to have played at least two full League seasons (which can include Season 48).\
 \
-We are accepting applications until April 5th at 0 UTC.
+We are accepting applications until October 31st at 0 UTC.
 
 To apply, use this Google Form:
 
