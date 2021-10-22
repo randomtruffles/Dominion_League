@@ -20,7 +20,7 @@
 - name: crlundy
   discord: crlundy#0018
   image: crlundy
-  chair: Rules, Sheets
+  chair: Sheets
 - name: DomBot
   discord: DomBot#0234
   image: dombot
@@ -43,6 +43,7 @@
 - name: muenstercheese
   discord: SkyHawk#1058
   image: muenstercheese
+  chair: Outreach, Recruiting
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
@@ -52,7 +53,7 @@
 - name: Sharur
   discord: Sharur#7043
   image: sharur
-  chair: Recruiting
+  chair: Rules
 - name: singletee
   discord: singletee#0905
   image: singletee
@@ -62,7 +63,7 @@
 - name: tracer
   discord: tracer#2575
   image: tracer
-  chair: Website
+  chair: Feedback, Website
 - name: wharf_rat
   discord: wharf_rat#8971
   image: wharf_rat
