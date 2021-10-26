@@ -50,6 +50,10 @@ All these defaults may be changed between games by mutual agreement of the playe
 
 The League recognizes players from different backgrounds may have different opinions on which undos, if any, should be allowed during a game. The League’s default is to at least grant all undos that are for small numbers of steps that did not reveal new game information. A player can choose a different policy regarding which undos they will allow, so long as they announce it to their opponent before the game.
 
+If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the old game (it does not count toward the match score) and play a new game in its place.
+
+If players mutually agree their current game is a stalemate, they may abandon the old game (it does not count toward the match score) and play a new game in its place. If the players don’t agree about a stalemate, then they must play on.
+
 After each playing session, one of the players should submit the result of that playing session as soon as possible using the Results form linked in their division’s Discord channel. Players receive 1 point for each game they win and 0.5 points for each game they tie (note that, per Dominion rules, a player wins a game with tied VP scores if they took fewer turns). If the match is played across multiple sessions, only submit the games just played, and the system will add the multiple submissions together.
 
 #### III. Standings
@@ -95,7 +99,7 @@ At the end of each season, players who want to return for the following season m
 
 When multiple players would be offered free promotions (as described above) to a tier with not enough open spots for all of them, that tier determines how players are chosen: For tiers A, B, C, D, and E the moderators arrange play-in matches between those players. For all other tiers, the moderators choose the players at their discretion, taking into account time zones.
 
-During a season, the moderators may, at their discretion, fill new open spots from a waiting list.
+During a season, the moderators may, at their discretion, fill new open spots from a waiting list, except that they may not fill open spots with players who were already dropped from that season.
 
 #### V. Scheduling
 
@@ -121,7 +125,9 @@ Match results must be reported by 23:59 UTC of the last day of the season (note 
 
 #### IX. Dropping Players Mid-Season
 
-Players dropping out during the season have a significant negative impact on their group. Unfortunately, some must drop out, or become inactive and have to be removed by the moderators. It is difficult to deal with matches that have been played by a player who has dropped because the matches they played and failed to play can have a significant impact on the group standings. The following rules are used for dropped players:
+Players dropping out during the season have a significant negative impact on their group. Unfortunately, some must drop out, or become inactive and have to be removed by the moderators. **By default, players who drop mid-season will be banned from participating in the next 2 League seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.** Once dropped from a season, players may not rejoin that season.
+
+It is difficult to deal with matches that have been played by a player who has dropped because the matches they played and failed to play can have a significant impact on the group standings. The following rules are used for dropped players:
 
 * If the removed player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
 * If the removed player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play. Afterward, all the match results involving the dropped player are scaled by the percentage of their games they actually played.
@@ -134,7 +140,7 @@ At the end of the season, to account for the approximations inherent in simulate
 
 If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. In an adjustment match, the players play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. The winner is placed ahead of the loser in the final standings. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly decide the standings.
 
-**Players who drop mid-season will be banned from participation in the next 2 League seasons.** Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to. If a player drops out within the first week of the season or is in good standing with the League (i.e. has played in prior seasons without drops or late finishes), the ban period and demotion penalty may be reduced or eliminated at the moderators’ discretion.
+Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to. Any ban period and/or demotion penalty may be reduced or waived at the moderators' discretion.
 
 #### X. League Moderation
 
