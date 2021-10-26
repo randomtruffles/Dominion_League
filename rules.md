@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2021-06-08
+date: 2021-10-11
 categories: pinned rules
 ---
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
