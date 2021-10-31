@@ -18,7 +18,7 @@ Moderator responsibilities consist of the following:
 
 In general, the moderator role tends to be a reactive responsibility. Accordingly, we expect moderators to be responsive within 24 hours on Discord throughout the season. We also require new moderators to have played at least two full League seasons (which can include Season 48).\
 \
-We are accepting applications until October 31st at 0 UTC.
+~~We are accepting applications until October 31st at 0 UTC.~~ Applications for season 49 are now closed. If interested, be on the lookout for a call for new mods in season 52.
 
 To apply, use this Google Form:
 
