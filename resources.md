@@ -47,6 +47,11 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
 * **Trader**: Action, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
 
+Errata has been announced for some cards, but has not been implemented in Dominion Online yet:
+* **Donate**: At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
+* **Mountain Pass**: When you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
+
+
 Additionally, two cards intentionally works differently online than what the card text says:
 
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have card costing a Potion unless a card like that is in the Kingdom. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
@@ -87,6 +92,10 @@ New printings of cards with "while this is in play" abilities that only affect t
 ##### Shuffling
 
 In addition to the shuffling rules in the Previous errata section below, there is additional errata that when shuffling, you may also look through your remaining deck.
+
+##### Coffers
+
+Errata has been announced for Coffers, but is not finalized or official yet. The errata will let you remove Coffers tokens from your mat any time during your turn, and Patron and Merchant Guild will be updated due to this.
 
 #### Previous errata
 
@@ -143,6 +152,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Exploration**: When you play Black Market during your Buy phase and buy a card, you still get +1 Coffers and +1 Villager from Exploration.
   * (also **Storyteller**): When you play Black Market or Storyteller during your Buy phase, you are not able to remove Coffers tokens from your mat.
   * When you play Black Market between turns, the game freezes.
+* **Border Guard**
+  * **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
+  * **The Lantern + Way of the Chameleon**: If you have the Lantern and play Border Guard using Way of the Chameleon, you will reveal 3 cards and discard 2. (The Lantern should not function since you didn't play the Border Guard due to Way of the Chameleon, you just followed the instructions on it.)
 * **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
 * **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
@@ -158,9 +170,10 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
 * **Hamlet**: If you discard a card for +1 Action and then have no cards in hand, you can choose to discard for +1 Buy, discard nothing, and still get +1 Buy.
 * **Herbalist**: See **Capitalism** above.
-* **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
+* **The Horn**: See **Border Guard** above.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
+* **The Lantern**: See **Border Guard** above.
 * **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
 * **Merchant**: If you play your first Silver in a turn, and that somehow triggers you to play a Merchant, you incorrectly get a retroactive +$1 from the Merchant.
 * **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
@@ -194,6 +207,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings. This can matter with Diadem or Possession.
 * **Way of the Chameleon**:
+  * See **Border Guard** above.
   * See **Oracle** above.
   * See **Priest** above.
 * **Way of the Mouse + Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card (other than Captain or Mastermind) using Way of the Mouse it is discarded from play the same turn.
