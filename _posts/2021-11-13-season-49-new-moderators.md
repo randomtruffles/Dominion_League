@@ -8,6 +8,6 @@ The Dominion League is happy to present three new moderators!
 
 AJL828 - An aspiring young Dominion fan who has been playing in the League every season since Season 45. 
 
-Naesala
+Naesala - I've been playing in League since Season 46 and have been a big fan since then. Very happy to have found this community!
 
 snowbz
