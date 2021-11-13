@@ -10,4 +10,4 @@ AJL828 - An aspiring young Dominion fan who has been playing in the League every
 
 Naesala - I've been playing in League since Season 46 and have been a big fan since then. Very happy to have found this community!
 
-snowbz
+snowbz - Has been in the league since season 43 and enjoys spectating matches. They will bring new geographical coverage to the team.
