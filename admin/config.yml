@@ -58,6 +58,16 @@ collections:
           - {label: "Updated Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
           - {label: "Categories", name: "categories", widget: "hidden"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Old Rules"
+        name: "old_rules"
+        file: "oldrules.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "hidden"}
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Updated Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
+          - {label: "Categories", name: "categories", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
   - name: "changelog" # Used in routes, e.g., /admin/collections/blog
     label: "Rules Changelog" # Used in the UI
     folder: "_posts/rules-changelog" # The path to the folder where the documents are stored
