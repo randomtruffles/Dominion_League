@@ -21,7 +21,7 @@ The moderators at their discretion may decide to leave empty divisions only in t
 
 Divisions are determined by a seeding algorithm depending on previous performance in the League, taking into account time zone in tiers E and below, and Dominion Online level for new players. At the end of each season, some players promote or demote based on the standings (see section III).
 
-#### 1.1 Test Header
+#### 1.1. Test Header
 
 #### II. Match Structure and Policies
 
@@ -172,5 +172,5 @@ Each active moderator shall moderate at least 5 divisions per season. If the fol
 
 These rules can be amended for future seasons by a majority vote of the moderators. All such changes will be posted to the [changelog](/rules-changelog) with an explanation of the change taking place. Exceptions to rules for the current season may be granted if and only if the moderators and all directly affected players agree to the exception.
 
-[Test Header Link](#1-1-test-header)
+[Test Header Link](#1.1-test-header)
 [Test Named Link](#test)
