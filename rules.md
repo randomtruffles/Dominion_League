@@ -362,3 +362,54 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
 <a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.5](#3.5)) will be subject to a warning or suspension per discretion of the moderator team.
+
+# <a name="8"></a>8. Moderation
+
+## <a name="8.1"></a>8.1. Contacting the moderators
+
+You should notify your division moderator via Discord direct message of any issues you have. Direct messages with a moderator about League matters may be shared with the other moderators for the team to resolve together. For other questions, feedback, etc., see our [contact](http://dominionleague.org/contact) page.
+
+## <a name="8.2"></a>8.2. Moderators may play
+
+Moderators are allowed, but not required, to play in the League.
+
+## <a name="8.3"></a>8.3. Moderator responsibilities
+
+<a name="8.3.1"></a>8.3.1. Moderators are assigned divisions to be the primary point of contact for those divisions. They are never assigned divisions in the tier they play in. They are responsible for checking up on players who have fallen behind and dropping those who are non-responsive for a considerable period of time (see [7.1](#7.1)).
+
+<a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.10](#4.10)).
+
+## <a name="8.4"></a>8.4. Meeting minutes
+
+Whenever the moderators gather for an official meeting at which rules may change, the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting. This will happen at least once per season.
+
+## <a name="8.5"></a>8.5. Moderator division quotas
+
+Each active moderator will moderate at least 5 divisions per season.
+
+## <a name="8.6"></a>8.6. Moderator breaks
+
+Moderators are eligible for 1-season breaks, during which they retain voting privileges and access to moderator Discord channels.
+
+<a name="8.6.1"></a>8.6.1. If more moderators want to take breaks than the team can afford, moderators who have gone the longest without a break will receive priority.
+
+## <a name="8.7"></a>8.7. Recruiting new moderators
+
+The moderator team will open applications for new moderators under the following conditions:
+
+<a name="8.7.1"></a>8.7.1. The following season is expected to have more than 10 divisions per moderator.
+
+<a name="8.7.2"></a>8.7.2. The moderator team has not opened applications for new moderators in either of the preceding two seasons.
+
+## <a name="8.8"></a>8.8. Evaluating new moderator applicants
+
+When the moderator team opens applications for new moderators per [8.7](#8.7), they will follow this process:
+
+<a name="8.8.1"></a>8.8.1. New moderator applications will open during week 2 of the season.
+
+<a name="8.8.2"></a>8.8.2. The existing moderator team will review applications during week 3 of the season.
+
+<a name="8.8.3"></a>8.8.3. When applications close, the moderators may accept none, some, or all of the applicants.
+
+<a name="8.8.4"></a>8.8.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
+
