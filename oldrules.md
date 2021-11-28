@@ -4,11 +4,16 @@ subtitle: Pre-Season 49 Format of the Rules
 layout: rules_faq
 date: 2021-11-28
 ---
+*These are the old league rules (pre-season 49). The current rules can be found [here](/rules)*.
+
+---
+
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
 
 #### I. League Structure
 
 Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A. Starting with tier B, two rules govern the size of a tier:
+
 * The maximum number of divisions in a tier is twice the maximum for the tier above it, except every third tier which has the same number as the one above it.
 * The lowest two tiers have approximately the same number of divisions.
 
@@ -60,13 +65,19 @@ After each playing session, one of the players should submit the result of that 
 During the season, the standings for each group will be automatically updated as players complete matches. The players in each group will be ranked based on the average number of points they have received in each match.
 
 If there is a tie within a division, apply these steps with the group of tied players:
+
 1. Head-to-head
+
 * Order the players by the total head-to-head wins each player earned from the matches involving only the group of tied players.
 * Break any ties in total head-to-head wins by the total head-to-head wins each player earned from the matches involving only this new group of tied players.
+
 2. Promotion/demotion implications
+
 * If the tie affects promotions, demotions, or entry into the Championship Match, move to step 3.
 * Otherwise, all players share the rank of the best tied place.
+
 3. Tiebreaker match
+
 * If the tie is between 2 players, they play a 2-game match with each player starting one of the games. If the players are tied after those 2 games, they play one final game with a random player starting. If there is still a tie, the player that went second in the last game wins. A player who does not wish to play this match may concede. If one player fails to respond promptly or is unable to play, that player concedes by default. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly break the tie.
 * If the tie is between three or more players, the moderators will randomly break the tie.
 
@@ -83,6 +94,7 @@ In addition, the top two finishers in the A1 division will play a second 6-game 
 #### IV. Joining and Leaving
 
 To join the Dominion League, new players must complete the following steps:
+
 1. Have a <a href="http://dominion.games">Dominion Online</a> account with 10 or more rated 2-player games.
 2. Join the <a href="https://discord.gg/vMmmMBu">Dominion (Card Game)</a> Discord server.
 3. Fill out the <a href="http://dominionleague.org/sign-ups">sign-up form</a> for the upcoming season.
@@ -132,6 +144,7 @@ It is difficult to deal with matches that have been played by a player who has d
 * If the removed player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play. Afterward, all the match results involving the dropped player are scaled by the percentage of their games they actually played.
 
 At the end of the season, to account for the approximations inherent in simulated results, adjustment matches may be required to better decide the standings between players straddling a promotion or demotion boundary. To determine if an adjustment match is needed, 4 scenarios are compared:
+
 * Scale all the dropped player's match results by the percentage of the games the first player actually played against all dropped players.
 * Round all unscaled results to the nearest 0.5, then scale all the dropped player's match results by the percentage of the games the first player actually played against all dropped players.
 * Scale all the dropped player's match results by the percentage of the games the second player actually played against all dropped players.
