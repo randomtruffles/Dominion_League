@@ -312,3 +312,34 @@ After the normal matches of A1 are complete, the players in first place and seco
 <a name="5.6.3"></a>5.6.3. All 6 games of the Championship Match should be played, even if the Dominion League Champion is decided sooner.
 
 <a name="5.6.4"></a>5.6.4. The date and time of the Championship Match should be decided with sufficient time for the League to find commentators and advertise the match.
+
+# <a name="6"></a>6. Scheduling
+
+## <a name="6.1"></a>6.1. Suggested schedule
+
+The League recommends you play at least one match per week. In F tier and below, a suggested schedule is posted in your division’s Discord channel and gives you an opponent to play each week. Although many players find this helpful, there is no requirement to follow this suggested schedule.
+
+## <a name="6.2"></a>6.2. Conflicts of interest
+
+If one of your close friends or family members is in your division, please schedule that match to happen early in the season, to eliminate any temptation for collusion.
+
+<a name="6.2.1"></a>6.2.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions.
+
+## <a name="6.3"></a>6.3. Deadline
+
+All matches must be played by the end of the last day of the season, which is always a Sunday at 23:59 UTC.
+
+## <a name="6.4"></a>6.4. Extensions
+
+If you are unable to complete your games by the deadline in [6.3](#6.3), you must request an extension from your moderator by that deadline.
+
+<a name="6.4.1"></a>6.4.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
+
+<a name="6.4.2"></a>6.4.2. You must schedule an incomplete match with your opponent before you can request an extension for it. Provide the date and time to your moderator when you request it.
+
+<a name="6.4.3"></a>6.4.3. If matches are not completed during the extension period, or an extension was never requested, you and/or your opponent may be dropped at your moderator’s judgment per [7.1](#7.1).
+
+## <a name="6.5"></a>6.5. Difficulty scheduling
+
+If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator.
+
