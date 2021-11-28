@@ -10,7 +10,7 @@ date: 2021-11-28
 
 Changelog for Rules and Regulations can be found [here](/rules-changelog).
 
-#### <a href="test">I. League Structure</a>
+#### <a href="#test">I. League Structure</a>
 
 Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A. Starting with tier B, two rules govern the size of a tier:
 
