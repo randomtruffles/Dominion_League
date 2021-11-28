@@ -343,3 +343,22 @@ If you are unable to complete your games by the deadline in [6.3](#6.3), you mus
 
 If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator.
 
+# <a name="7"></a>7. Drops and Suspensions
+
+## <a name="7.1"></a>7.1. Drops
+
+Players may be dropped from the League during the season. All drops are subject to a suspension by default (see [7.2](#7.2)).
+
+<a name="7.1.1"></a>7.1.1. If you are unable to complete your League season for any reason, contact your division moderator for a voluntary drop. Your reason(s) for needing to drop will be considered by the moderator team when deciding whether to apply a suspension.
+
+<a name="7.1.2"></a>7.1.2. Players may be involuntarily dropped due to unresponsiveness, failure to play matches in a timely manner, or misconduct (see [3.5](#3.5)).
+
+## <a name="7.2"></a>7.2. Suspensions
+
+All suspensions occur, and may be waived, at the discretion of the moderator team. Players who are suspended may not participate in the Dominion League for the duration of their suspension.
+
+<a name="7.2.1"></a>7.2.1. Suspension durations refer to seasons after the current/active season. A 1 season suspension assigned during season 40 would mean that the suspended player could play again during season 42.
+
+<a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
+
+<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.5](#3.5)) will be subject to a warning or suspension per discretion of the moderator team.
