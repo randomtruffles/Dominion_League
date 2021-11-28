@@ -12,7 +12,7 @@ Changelog for Rules and Regulations can be found [here](/rules-changelog).
 
 #### I. League Structure
 
-Each League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A. Starting with tier B, two rules govern the size of a tier:
+<a name="test">Each</a> League season lasts 6 weeks, and is followed by a 2-week break. Players are divided into groups of approximately 6 players. Groups are arranged in tiered divisions. There is a single division in tier A. Starting with tier B, two rules govern the size of a tier:
 
 * The maximum number of divisions in a tier is twice the maximum for the tier above it, except every third tier which has the same number as the one above it.
 * The lowest two tiers have approximately the same number of divisions.
@@ -171,3 +171,4 @@ Each active moderator shall moderate at least 5 divisions per season. If the fol
 These rules can be amended for future seasons by a majority vote of the moderators. All such changes will be posted to the [changelog](/rules-changelog) with an explanation of the change taking place. Exceptions to rules for the current season may be granted if and only if the moderators and all directly affected players agree to the exception.
 
 [Test Header Link](#i-league-structure)
+[Test Named Link](#test)
