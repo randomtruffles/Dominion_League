@@ -413,3 +413,22 @@ When the moderator team opens applications for new moderators per [8.7](#8.7), t
 
 <a name="8.8.4"></a>8.8.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
 
+# <a name="9"></a>9. Amendments
+
+## <a name="9.1"></a>9.1. Passing amendments
+
+These rules may be amended by a majority vote of the moderators.
+
+<a name="9.1.1"></a>9.1.1. Moderators may vote “no opinion”, in which case their vote doesn't count towards establishing or preventing a majority.
+
+<a name="9.1.2"></a>9.1.2. Major changes, such as those affecting promotion and demotion, will never be made mid-season.
+
+<a name="9.1.3"></a>9.1.3. Whenever possible, the moderators will announce major changes at least 1 season before the changes go into effect.
+
+## <a name="9.2"></a>9.2. Changelog
+
+The moderators maintain a [changelog](https://dominionleague.org/rules-changelog) for these rules. It includes the effective dates of all such changes.
+
+## <a name="9.3"></a>9.3. Waiving rules
+
+The moderators may waive rules or make exceptions for the current season if and only if all the directly affected players and a majority of the moderators agree to do so.
