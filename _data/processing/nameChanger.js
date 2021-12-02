@@ -6,7 +6,7 @@ var aliases = fs.readFileSync("namechanges.txt", 'utf8').split('\n').map(x => {
 });
 const aliascount = aliases.length;
 
-const nameFiles = ["league_history.json", "player_seasons.json", "chart_history.json", "chart_transitions.json", "chart_power.json"];
+const nameFiles = ["league_history.json", "chart_history.json", "chart_transitions.json", "chart_power.json"];
 
 for (let i=0; i<nameFiles.length; i++) {
 	let fileString = fs.readFileSync(`../${nameFiles[i]}`, 'utf8');
