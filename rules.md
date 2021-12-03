@@ -93,6 +93,8 @@ You are expected to treat all players with respect at all times. Examples of ina
 
 Be kind and polite when communicating with players and moderators. Examples of inappropriate communications include swearing, harassment, and excessive complaints of luck.
 
+<a name="3.2.1"></a>3.2.1 All League communication should be through Discord or dominion.games. Do not use external apps like WhatsApp or Facebook for League communications.
+
 ### <a name="3.3"></a>3.3. Username and profile picture
 
 Your username and profile picture may not contain any inappropriate content.
