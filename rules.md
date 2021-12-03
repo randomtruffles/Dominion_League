@@ -5,9 +5,9 @@ layout: rules_faq
 date: 2021-12-02
 categories: pinned rules
 ---
-# <a name="1"></a>1. Registration
+## <a name="1"></a>1. Registration
 
-## <a name="1.1"></a>1.1. Membership requirements
+### <a name="1.1"></a>1.1. Membership requirements
 
 To join the Dominion League, you must meet all these requirements:
 
@@ -21,21 +21,21 @@ To join the Dominion League, you must meet all these requirements:
 
 <a name="1.1.5"></a>1.1.5. Your username and profile picture comply with the conduct rules in [3.3](#3.3).
 
-## <a name="1.2"></a>1.2. Signing up
+### <a name="1.2"></a>1.2. Signing up
 
 If you meet all the requirements and are not playing in the current season, you may fill out the [sign-up form](http://dominionleague.org/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
 
 <a name="1.2.1"></a>1.2.1. After the sign-up deadline passes, you may still sign up for the waiting list. If spots open up during the early weeks of a season, moderators may fill them with players from the waiting list, depending on skill and time zone. Players who have dropped from the current season may not re-enter via the wait list.
 
-## <a name="1.3"></a>1.3. Returning
+### <a name="1.3"></a>1.3. Returning
 
 If you are playing in the current season and would like to join the next season, fill out the Returning Form linked in your division’s Discord channel. Otherwise, you will by default leave the League after the current season.
 
-## <a name="1.4"></a>1.4. Hiatus
+### <a name="1.4"></a>1.4. Hiatus
 
 You retain your tier placement, space permitting (see [2.4](#2.4) and [2.5](#2.5)), during a break of up to 5 consecutive seasons. If you rejoin after a break of 6 or more consecutive seasons, you will be placed as a new player.
 
-## <a name="1.5"></a>1.5. Accounts
+### <a name="1.5"></a>1.5. Accounts
 
 You may switch your Dominion Online or Discord account at any time by letting your moderator know, but you may not join the League additional times using other accounts.
 
