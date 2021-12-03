@@ -25,7 +25,7 @@ To join the Dominion League, you must meet all these requirements:
 
 ### <a name="1.2"></a>1.2. Signing up
 
-If you meet all the requirements and are not playing in the current season, you may fill out the [sign-up form](http://dominionleague.org/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
+If you meet all the requirements per [1.1](#1.1) and are not playing in the current season, you may fill out the [sign-up form](http://dominionleague.org/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
 
 <a name="1.2.1"></a>1.2.1. After the sign-up deadline passes, you may still sign up for the waiting list. If spots open up during the early weeks of a season, moderators may fill them with players from the waiting list, depending on skill and time zone. Players who have dropped from the current season may not re-enter via the wait list.
 
