@@ -5,7 +5,7 @@ layout: rules_faq
 date: 2021-12-02
 categories: pinned rules
 ---
-The changelog for the Rules and Regulations can be found [here](https://dominionleague.org/rules-changelog).
+The changelog for the Rules and Regulations can be found [here](/rules-changelog).
 
 #### Contents
 
@@ -37,7 +37,7 @@ To join the Dominion League, you must meet all these requirements:
 
 ### <a name="1.2"></a>1.2. Signing up
 
-If you meet all the requirements per [1.1](#1.1) and are not playing in the current season, you may fill out the [sign-up form](http://dominionleague.org/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
+If you meet all the requirements per [1.1](#1.1) and are not playing in the current season, you may fill out the [sign-up form](/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
 
 <a name="1.2.1"></a>1.2.1. After the sign-up deadline passes, you may still sign up for the waiting list. If spots open up during the early weeks of a season, moderators may fill them with players from the waiting list, depending on skill and time zone. Players who have dropped from the current season may not re-enter via the wait list.
 
@@ -61,7 +61,7 @@ Each season lasts 6 weeks, and most are followed by a 2-week break. Once per yea
 
 ### <a name="2.2"></a>2.2. Divisions
 
-A division is a group of approximately 6 players who will play each other during a season. Each division is assigned a moderator from the [League moderator team](https://dominionleague.org/moderators). The number of divisions depends on the number of players.
+A division is a group of approximately 6 players who will play each other during a season. Each division is assigned a moderator from the [League moderator team](/moderators). The number of divisions depends on the number of players.
 
 ### <a name="2.2"></a>2.3. Tiers
 
@@ -83,7 +83,7 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.2"></a>2.4.2. Players returning to the League after completing one of the past 6 seasons are placed into the tier they would have most recently returned to, starting with the players that played most recently, and with ties broken by seeding ([2.6](#2.6)).
 
-<a name="2.4.3"></a>2.4.3. Players returning to the League who did not complete one of the past 6 seasons, and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](http://dominionleague.org/sign-ups).
+<a name="2.4.3"></a>2.4.3. Players returning to the League who did not complete one of the past 6 seasons, and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups).
 
 <a name="2.4.4"></a>2.4.4. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.4](#5.4) for details.
 
@@ -145,7 +145,7 @@ A playing session is a series of one or more games between the same two players,
 
 ### <a name="4.3"></a>4.3. Outside help
 
-During games, you may not attempt to gain a competitive advantage by consulting resources other than those maintained by the League on the [Dominion League Resources page](https://dominionleague.org/resources).
+During games, you may not attempt to gain a competitive advantage by consulting resources other than those maintained by the League on the [Dominion League Resources page](/resources).
 
 <a name="4.3.1"></a>4.3.1. The Dominion League Resources page may be consulted privately or publicly at any time.
 
@@ -387,7 +387,7 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 
 ### <a name="8.1"></a>8.1. Contacting the moderators
 
-You should notify your division moderator via Discord direct message of any issues you have. Direct messages with a moderator about League matters may be shared with the other moderators for the team to resolve together. For other questions, feedback, etc., see our [contact](http://dominionleague.org/contact) page.
+You should notify your division moderator via Discord direct message of any issues you have. Direct messages with a moderator about League matters may be shared with the other moderators for the team to resolve together. For other questions, feedback, etc., see our [contact](/contact) page.
 
 ### <a name="8.2"></a>8.2. Moderators may play
 
@@ -447,7 +447,7 @@ These rules may be amended by a majority vote of the moderators.
 
 ### <a name="9.2"></a>9.2. Changelog
 
-The moderators maintain a [changelog](https://dominionleague.org/rules-changelog) for these rules. It includes the effective dates of all such changes.
+The moderators maintain a [changelog](/rules-changelog) for these rules. It includes the effective dates of all such changes.
 
 ### <a name="9.3"></a>9.3. Waiving rules
 
