@@ -93,7 +93,7 @@ You are expected to treat all players with respect at all times. Examples of ina
 
 Be kind and polite when communicating with players and moderators. Examples of inappropriate communications include swearing, harassment, and excessive complaints of luck.
 
-<a name="3.2.1"></a>3.2.1 All League communication should be through Discord or dominion.games. Do not use external apps like WhatsApp or Facebook for League communications.
+<a name="3.2.1"></a>3.2.1. All League communication should be through Discord or dominion.games. Do not use external apps like WhatsApp or Facebook for League communications.
 
 ### <a name="3.3"></a>3.3. Username and profile picture
 
@@ -164,6 +164,8 @@ Games played on Dominion Online should use these table setting under Advanced Op
 <a name="4.4.10"></a>4.4.10. Kingdoms should be generated randomly with all cards either player owns and from zero to two landscapes. No particular cards, landscapes, landscape types, or expansions should be selected.
 
 <a name="4.4.11"></a>4.4.11. There is no official game timer on Dominion Online, and games should not use an unofficial timer.
+
+<a name="4.4.12"></a>4.4.12. 
 
 ### <a name="4.5"></a>4.5. Changes to the defaults
 
