@@ -5,7 +5,6 @@ author: crlundy
 layout: post
 categories:
   - newsletters
-  - pinned
 ---
 Season 42 has started! We have been thrilled to have so much interest in the League recently, and while this is the first season in quarantine to have fewer players than the one before it, the League is still far larger than any pre-coronavirus season. There have been 403 divisions in the 3 seasons since players have been in quarantine, which more than the previous 9 seasons (S31–S39) combined. It's also about 30% of all the divisions ever in the League. The diversity of player skills means we can continue to build divisions with competitive matches, and has also led to the addition of several new tiers.
 
