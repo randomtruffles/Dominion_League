@@ -233,7 +233,7 @@ There are several types of matches ([adjustment](#5.5), [play-in](#5.4), and [ti
 
 <a name="4.11.7"></a>4.11.7. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
-### <a name="4.12"></a>4.12 New expansions
+### <a name="4.12"></a>4.12. New expansions
 
 Per [4.4.10](#4.4.10), the default card pool for kingdom generation each season is all cards. However, either player may opt to remove cards from new expansions that were released after the end of the previous season from kingdom generation.
 
