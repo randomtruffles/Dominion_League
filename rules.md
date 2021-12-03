@@ -5,6 +5,8 @@ layout: rules_faq
 date: 2021-12-02
 categories: pinned rules
 ---
+The changelog for the Rules and Regulations can be found [here](https://dominionleague.org/rules-changelog).
+
 ## <a name="1"></a>1. Registration
 
 ### <a name="1.1"></a>1.1. Membership requirements
