@@ -179,59 +179,63 @@ The default table settings in [4.4](#4.4) may be changed between games by mutual
 
 <a name="4.5.4"></a>4.5.4. If you agree to use an unofficial timer, you and your opponent must also agree on all timer settings and how to handle any glitches or lag.
 
-### <a name="4.6"></a>4.6. Undos
+### <a name="4.6"></a>4.6. New expansions
+
+Per [4.4.10](#4.4.10), the default card pool for kingdom generation each season is all cards. However, either player may opt to remove cards from new expansions that were released after the end of the previous season from kingdom generation.
+
+### <a name="4.7"></a>4.7. Undos
 
 Players may have different opinions on which undos should be allowed, if any.
 
-<a name="4.6.1"></a>4.6.1. The default policy is that you at least grant all undos that are for small numbers of steps and that did not reveal new game information.
+<a name="4.7.1"></a>4.7.1. The default policy is that you at least grant all undos that are for small numbers of steps and that did not reveal new game information.
 
-<a name="4.6.2"></a>4.6.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
+<a name="4.7.2"></a>4.7.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
 
-### <a name="4.7"></a>4.7. Abandoning games
+### <a name="4.8"></a>4.8. Abandoning games
 
 In the rare event of a game which must be abandoned, players should play a new game in its place. Abandoned games do not count toward match completion or match score.
 
-<a name="4.7.1"></a>4.7.1. If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the game.
+<a name="4.8.1"></a>4.8.1. If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the game.
 
-<a name="4.7.2"></a>4.7.2. If players mutually agree their current game is a stalemate, they may abandon the game. If the players don’t agree about a stalemate, then they must play on.
+<a name="4.8.2"></a>4.8.2. If players mutually agree their current game is a stalemate, they may abandon the game. If the players don’t agree about a stalemate, then they must play on.
 
-### <a name="4.8"></a>4.8 Wins and ties
+### <a name="4.9"></a>4.9 Wins and ties
 
 Each game you win is reported as 1 win. Each game you tie is reported as 0.5 wins.
 
-<a name="4.8.1"></a>4.8.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
+<a name="4.9.1"></a>4.9.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
 
-### <a name="4.9"></a>4.9. Submitting results
+### <a name="4.10"></a>4.10. Submitting results
 
 After each playing session, you or your opponent should submit the results of that playing session as soon as possible using the Results form linked in your division’s Discord channel.
 
-<a name="4.9.1"></a>4.9.1. The results are the total wins and ties per [4.8](#4.8).
+<a name="4.10.1"></a>4.10.1. The results are the total wins and ties per [4.9](#4.9).
 
-<a name="4.9.2"></a>4.9.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
+<a name="4.10.2"></a>4.10.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
 
-<a name="4.9.3"></a>4.9.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
+<a name="4.10.3"></a>4.10.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
 
-### <a name="4.10"></a>4.10. Playing under protest
+### <a name="4.11"></a>4.11. Playing under protest
 
 In the case of a disputed rules infraction, you should reach out to a moderator for help. If a moderator decision needs to be made that affects the outcome of a game, you should finish the game, and you may protest the game by contacting your moderator with a description of what occurred and the game number. The moderator team will review the game and make a ruling by a majority vote whether the game results stand or that the game must be replayed.
 
-### <a name="4.11"></a>4.11. Extra/non-standard matches
+### <a name="4.12"></a>4.12. Extra/non-standard matches
 
 There are several types of matches ([adjustment](#5.5), [play-in](#5.4), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
-<a name="4.11.1"></a>4.11.1. Adjustment and tiebreaker matches are 2-game matches with each player starting one of the games.
+<a name="4.12.1"></a>4.12.1. Adjustment and tiebreaker matches are 2-game matches with each player starting one of the games.
 
-<a name="4.11.2"></a>4.11.2. Play-in matches are standard 6-game matches, but if one player reaches 3.5 or more wins, they win the match, and there is no need to complete any remaining games.
+<a name="4.12.2"></a>4.12.2. Play-in matches are standard 6-game matches, but if one player reaches 3.5 or more wins, they win the match, and there is no need to complete any remaining games.
 
-<a name="4.11.3"></a>4.11.3. If the players are tied after completing all games per [4.11.1](#4.11.1) or [4.11.2](#4.11.2), they play one final game with a random player starting.
+<a name="4.12.3"></a>4.12.3. If the players are tied after completing all games per [4.12.1](#4.12.1) or [4.12.2](#4.12.2), they play one final game with a random player starting.
 
-<a name="4.11.4"></a>4.11.4. If there is still a tie, the player that went second in the last game wins.
+<a name="4.12.4"></a>4.12.4. If there is still a tie, the player that went second in the last game wins.
 
-<a name="4.11.5"></a>4.11.5. A player who does not wish to play one of these matches may concede.
+<a name="4.12.5"></a>4.12.5. A player who does not wish to play one of these matches may concede.
 
-<a name="4.11.6"></a>4.11.6. If one player fails to respond promptly or is unable to play, that player concedes by default.
+<a name="4.12.6"></a>4.12.6. If one player fails to respond promptly or is unable to play, that player concedes by default.
 
-<a name="4.11.7"></a>4.11.7. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
+<a name="4.12.7"></a>4.12.7. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
 ### <a name="4.12"></a>4.12. New expansions
 
@@ -241,7 +245,7 @@ Per [4.4.10](#4.4.10), the default card pool for kingdom generation each season 
 
 ### <a name="5.1"></a>5.1. Standings
 
-The players in each division are ranked by their win rates. This is updated when players submit results per [4.9](#4.9).
+The players in each division are ranked by their win rates. This is updated when players submit results per [4.10](#4.10).
 
 ### <a name="5.2"></a>5.2. Tiebreakers
 
@@ -255,7 +259,7 @@ If there is a tie within a division, these steps are applied with the group of t
 
 #### <a name="5.2.2"></a>5.2.2. Promotion or demotion implications
 
-<a name="5.2.2.1"></a>5.2.2.1. If a two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.11](#4.11).
+<a name="5.2.2.1"></a>5.2.2.1. If a two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.12](#4.12).
 
 <a name="5.2.2.2"></a>5.2.2.2. If a three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
 
@@ -287,7 +291,7 @@ In order to fill open spots created by players leaving the League between season
 
 <a name="5.4.2"></a>5.4.2. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
 
-<a name="5.4.3"></a>5.4.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.11](#4.11). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
+<a name="5.4.3"></a>5.4.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.12](#4.12). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
 
 ### <a name="5.5"></a>5.5. Dropped players
 
@@ -307,7 +311,7 @@ The following rules are used to account for dropped players in the standings. Se
 
 <a name="5.5.3.4"></a>5.5.3.4. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
 
-<a name="5.5.4"></a>5.5.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.11](#4.11). The winner is placed ahead of the loser in the final standings.
+<a name="5.5.4"></a>5.5.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.12](#4.12). The winner is placed ahead of the loser in the final standings.
 
 <a name="5.5.5"></a>5.5.5. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
 
@@ -387,7 +391,7 @@ Moderators are allowed, but not required, to play in the League.
 
 <a name="8.3.1"></a>8.3.1. Moderators are assigned divisions to be the primary point of contact for those divisions. They are never assigned divisions in the tier they play in. They are responsible for checking up on players who have fallen behind and dropping those who are non-responsive for a considerable period of time (see [7.1](#7.1)).
 
-<a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.10](#4.10)).
+<a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.11](#4.11)).
 
 ### <a name="8.4"></a>8.4. Meeting minutes
 
