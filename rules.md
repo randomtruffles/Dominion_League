@@ -7,6 +7,18 @@ categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](https://dominionleague.org/rules-changelog).
 
+#### Contents
+
+1. [Registration](#1)
+2. [League Structure](#2)
+3. [Conduct](#3)
+4. [Match Structure](#4)
+5. [Standings](#5)
+6. [Scheduling](#6)
+7. [Drops and Suspensions](#7)
+8. [Moderation](#8)
+9. [Amendments](#9)
+
 ## <a name="1"></a>1. Registration
 
 ### <a name="1.1"></a>1.1. Membership requirements
