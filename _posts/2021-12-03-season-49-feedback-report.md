@@ -36,13 +36,13 @@ In total, we had 68% support for continued use of Ban lists, and 60% support for
 
 Considering both these results and the Dominion Online table defaults, we will be maintaining the status quo, meaning Ban and Dislike lists will be enabled by default, and Like lists disabled.
 
-The results from this question broken down by tier are shown below. Number of responses reflects anybody who indicated a response for at least one of the three lists.
+The results from this question broken down by tier are shown below. Number of responses reflects anybody who indicated a response for at least one of the three lists. Percentages reflect the proportion of "Yes" votes among those who responded to that question.
 
 *Question: For each of the following card lists, should the default rules of the league be to use it in games with expansions?*
 
 <table style="text-align:center"><tr><th>Tier</th><th>Resp.</th><th>Ban</th><th>Dislike</th><th>Like</th></tr><tr><td>&nbsp;A&nbsp;</td><td>&nbsp;5&nbsp;</td><td>&nbsp;100%&nbsp;</td><td>&nbsp;100%&nbsp;</td><td>&nbsp;60%&nbsp;</td></tr><tr><td>&nbsp;B&nbsp;</td><td>&nbsp;10&nbsp;</td><td>&nbsp;100%&nbsp;</td><td>&nbsp;80%&nbsp;</td><td>&nbsp;40%&nbsp;</td></tr><tr><td>&nbsp;C&nbsp;</td><td>&nbsp;17&nbsp;</td><td>&nbsp;94%&nbsp;</td><td>&nbsp;71%&nbsp;</td><td>&nbsp;12%&nbsp;</td></tr><tr><td>&nbsp;D&nbsp;</td><td>&nbsp;15&nbsp;</td><td>&nbsp;100%&nbsp;</td><td>&nbsp;87%&nbsp;</td><td>&nbsp;27%&nbsp;</td></tr><tr><td>&nbsp;E&nbsp;</td><td>&nbsp;36&nbsp;</td><td>&nbsp;81%&nbsp;</td><td>&nbsp;81%&nbsp;</td><td>&nbsp;29%&nbsp;</td></tr><tr><td>&nbsp;F&nbsp;</td><td>&nbsp;46&nbsp;</td><td>&nbsp;72%&nbsp;</td><td>&nbsp;63%&nbsp;</td><td>&nbsp;20%&nbsp;</td></tr><tr><td>&nbsp;G&nbsp;</td><td>&nbsp;48&nbsp;</td><td>&nbsp;71%&nbsp;</td><td>&nbsp;60%&nbsp;</td><td>&nbsp;38%&nbsp;</td></tr><tr><td>&nbsp;H&nbsp;</td><td>&nbsp;84&nbsp;</td><td>&nbsp;64%&nbsp;</td><td>&nbsp;57%&nbsp;</td><td>&nbsp;24%&nbsp;</td></tr><tr><td>&nbsp;I&nbsp;</td><td>&nbsp;79&nbsp;</td><td>&nbsp;46%&nbsp;</td><td>&nbsp;39%&nbsp;</td><td>&nbsp;22%&nbsp;</td></tr><tr><td>&nbsp;J&nbsp;</td><td>&nbsp;64&nbsp;</td><td>&nbsp;66%&nbsp;</td><td>&nbsp;62%&nbsp;</td><td>&nbsp;33%&nbsp;</td></tr><tr><th>&nbsp;Total&nbsp;</th><th>&nbsp;404&nbsp;</th><th>&nbsp;67.9%&nbsp;</th><th>&nbsp;60.2%&nbsp;</th><th>&nbsp;27.0%&nbsp;</th></tr></table>
 
-*Answer Format: For each list, select Yes or No*
+*Answer Format: For each list, select one of Yes or No*
 
 ### Season 49 Townhall
 
