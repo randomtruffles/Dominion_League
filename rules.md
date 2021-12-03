@@ -351,7 +351,7 @@ All matches must be played by the end of the last day of the season, which is al
 
 ### <a name="6.4"></a>6.4. Extensions
 
-If you are unable to complete your games by the deadline in [6.3](#6.3), you must request an extension from your moderator by that deadline.
+If you are unable to complete your matches by the deadline in [6.3](#6.3), you must request an extension from your moderator by that deadline.
 
 <a name="6.4.1"></a>6.4.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
 
