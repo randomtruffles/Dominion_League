@@ -357,7 +357,7 @@ If you are unable to a match by the deadline in [6.3](#6.3), you must request an
 
 <a name="6.4.2"></a>6.4.2. You must schedule an uncompleted match with your opponent before you can request an extension for it. Provide the date and time to your moderator when you request it.
 
-<a name="6.4.3"></a>6.4.3. If matches are not completed during the extension period, or an extension was never requested, you and/or your opponent may be dropped at your moderator’s judgment per [7.1](#7.1).
+<a name="6.4.3"></a>6.4.3. If the match is not completed during the extension period, or an extension was never requested, you and/or your opponent may be dropped at your moderator’s judgment per [7.1](#7.1).
 
 ### <a name="6.5"></a>6.5. Difficulty scheduling
 
