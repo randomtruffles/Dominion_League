@@ -165,8 +165,6 @@ Games played on Dominion Online should use these table setting under Advanced Op
 
 <a name="4.4.11"></a>4.4.11. There is no official game timer on Dominion Online, and games should not use an unofficial timer.
 
-<a name="4.4.12"></a>4.4.12. 
-
 ### <a name="4.5"></a>4.5. Changes to the defaults
 
 The default table settings in [4.4](#4.4) may be changed between games by mutual agreement of you and your opponent except:
