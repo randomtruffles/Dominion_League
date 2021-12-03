@@ -218,7 +218,7 @@ If a game ends in a tie, both players get 0.5 wins for that game. For example, i
 
 No, we operate on an honor system. You can also use DomBot on Discord to retrieve the results of recent games. If you disagree about who won a game, notify your moderator.
 
-##### Why are players in tiers A, B, C, D, and E required to allow spectators?
+##### Why am I required to allow spectators?
 
 Allowing spectators offers League members an opportunity to watch competitive games between some of the top Dominion players. It also allows those players to get feedback after the games. Having spectators at your games can provide you constructive comments to help your future play.
 
