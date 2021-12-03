@@ -145,7 +145,7 @@ Notify your moderator, and they may be able to grant you an extension of up to 1
 
 ##### What do I do if I can’t finish the season due to unforeseen circumstances?
 
-Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the ban if appropriate.
+Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the suspension if appropriate.
 
 #### 4. Playing matches
 
