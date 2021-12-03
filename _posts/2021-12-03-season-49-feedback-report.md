@@ -48,4 +48,4 @@ The results from this question broken down by tier are shown below. Number of re
 
 Among suggestions from both the general feedback section of the form and the town hall suggestions, there were two themes: kingdom selection and use of timers. We do not feel that we are able to make any changes regarding the latter of these.
 
-As such, the season 49 townhall will focus on the topic of kingdom selection, including how much is allowed to be pre-specified, and how much defaults can be strayed from.
+As such, the season 49 townhall will focus on the topic of kingdom selection, including how much is allowed to be pre-specified and how much defaults can be strayed from.
