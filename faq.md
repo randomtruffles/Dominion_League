@@ -39,7 +39,7 @@ In <a href="<http://dominion.games>">Dominion Online</a>, click the **Matching**
 
 ![faq_images](/img/faq/Capture_Ranked.PNG)
 
-##### I didn’t respond in time to Discord message to confirm my signup. Can sign up again?
+##### I didn’t respond in time to Discord message to confirm my signup. Can I sign up again?
 
 If the deadline hasn't passed, you are encouraged to re-sign up by filling out the Google form again.
 
