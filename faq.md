@@ -137,7 +137,7 @@ Notify your moderator if your schedule is completely incompatible with someone e
 
 ##### What happens if someone in my division is completely inactive?
 
-If someone does not respond to any other players in their division, or to their moderator, that player will be removed and banned from returning to the League for the next 2 seasons. If they played 3 or more complete matches, the remainder of their games will be simulated. Otherwise, their game results will be voided. If a removed player rejoins the League after their ban ends, they return to the tier below the one they were removed from.
+If someone does not respond to any other players in their division, or to their moderator, that player will be removed and suspended from returning to the League for the next 2 seasons. If they played 3 or more complete matches, the remainder of their games will be simulated. Otherwise, their game results will be voided. If a removed player rejoins the League after their suspension ends, they return to the tier below the one they were removed from.
 
 ##### What do I do if I can’t play all my matches in time?
 
