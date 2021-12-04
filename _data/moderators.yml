@@ -2,6 +2,9 @@
 #- name: truffles
 #  discord: truffles#1234
 #  image: truffles_picture_png_file_prefix
+- name: AJL828
+  discord: AJL828#2101
+  image: ajl828
 - name: alibby1152
   discord: alibby1152#4103
   image: alibby
@@ -21,9 +24,9 @@
   discord: crlundy#0018
   image: crlundy
   chair: Sheets
-- name: DomBot
-  discord: DomBot#0234
-  image: dombot
+#- name: DomBot
+#  discord: DomBot#0234
+#  image: dombot
 - name: Earl
   discord: Earl#3402
   image: earl
@@ -34,9 +37,9 @@
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-- name: LeagueLackey
-  discord: LeagueLackey#6269
-  image: lackey
+#- name: LeagueLackey
+#  discord: LeagueLackey#6269
+#  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
@@ -44,6 +47,9 @@
   discord: SkyHawk#1058
   image: muenstercheese
   chair: Outreach, Recruiting
+- name: Naesala
+  discord: Naesala#1312
+  image: naesala
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
@@ -57,6 +63,9 @@
 - name: singletee
   discord: singletee#0905
   image: singletee
+- name: snowbz
+  discord: snowbz#9320
+  image: snowbz
 - name: sweetjohn33
   discord: sweetjohn33#5861
   image: sweetjohn33

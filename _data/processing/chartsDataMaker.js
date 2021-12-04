@@ -52,7 +52,7 @@ for (let s in fullHist) {
 					if (champs.seasons[s.slice(1)] == players[i].toLowerCase()) {
 						champ = "league";
 						place = "1";
-					} else if (champs.runner_ups[s] == players[i].toLowerCase()) {
+					} else if (champs.runner_ups[s.slice(1)] == players[i].toLowerCase()) {
 						champ = "no";
 						place = "2";
 					}

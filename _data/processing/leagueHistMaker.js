@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var hist = {};
 
-for (let s=1; s<=47; s++) {
+for (let s=1; s<=48; s++) {
 	hist["s" + String(s)] = JSON.parse(fs.readFileSync(`Seasons/s${s}.json`));
 }
 

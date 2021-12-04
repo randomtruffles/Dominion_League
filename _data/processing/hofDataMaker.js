@@ -4,7 +4,7 @@ var players = JSON.parse(fs.readFileSync("../player_seasons.json"));
 var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
 
-const currentSeason = 47;
+const currentSeason = 49;
 const thresholdForOverallPct = 10;
 const thresholdForTierPct = 3;
 const oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]}};
@@ -29,6 +29,7 @@ const notPlayers = ["games_nondrop","losses","losses_nondrop","wins","wins_nondr
 
 for (playerKey in players) {
 	let player = players[playerKey].name;
+	console.log(player);
 	let tiersPlayed = {};
 	let stats = {"divWins": [], "seasons": players[playerKey].seasons, "six": 0, "five": 0, "opponents": []};
 	let totalWins = 0;

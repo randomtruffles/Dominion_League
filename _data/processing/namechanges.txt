@@ -49,6 +49,13 @@ D0cFaust	J0hann3s
 pqr4	Chorus
 Seprix	Ketyri
 pgrabber	CremeFraiche
+tortuga_71	tortuga1
+mmaurer	marcvs
+Armenviertel	Diplomat
+BrandonAldrich	mazaltov
+Aglet	_LuCaS_
+cpsch2	hamperboy
+JaCrispyKing	The Pixie
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -81,3 +88,6 @@ eaterpoosack	Eaterpoosack
 Thommyp	thommyp
 Goodac10	goodac10
 Skpetroff	skpetroff
+khz	kHz
+Dbloslim	Dbloslim
+Towny95	Towny95
