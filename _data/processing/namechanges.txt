@@ -89,3 +89,5 @@ Thommyp	thommyp
 Goodac10	goodac10
 Skpetroff	skpetroff
 khz	kHz
+Dbloslim	Dbloslim
+Towny95	Towny95
