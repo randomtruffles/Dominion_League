@@ -39,7 +39,7 @@ In <a href="<http://dominion.games>">Dominion Online</a>, click the **Matching**
 
 ![faq_images](/img/faq/Capture_Ranked.PNG)
 
-##### I didn’t respond in time to Discord message to confirm my signup. Can sign up again?
+##### I didn’t respond in time to Discord message to confirm my signup. Can I sign up again?
 
 If the deadline hasn't passed, you are encouraged to re-sign up by filling out the Google form again.
 
@@ -111,7 +111,7 @@ The moderators host Town Halls to gather feedback on a specific topic that doesn
 
 You will need to coordinate with your opponent via Discord. You can send messages in your division’s channel, or send direct messages to an opponent. It is very beneficial to schedule matches in advance, instead of hoping someone is available to play impromptu.
 
-##### Do I need to follow the suggested schedule (provided to tier E and below)?
+##### Do I need to follow the suggested schedule (provided to tier F and below)?
 
 No, but it is provided as a guideline.
 
@@ -137,7 +137,7 @@ Notify your moderator if your schedule is completely incompatible with someone e
 
 ##### What happens if someone in my division is completely inactive?
 
-If someone does not respond to any other players in their division, or to their moderator, that player will be removed and banned from returning to the League for the next 2 seasons. If they played 3 or more complete matches, the remainder of their games will be simulated. Otherwise, their game results will be voided. If a removed player rejoins the League after their ban ends, they return to the tier below the one they were removed from.
+If someone does not respond to any other players in their division, or to their moderator, that player will be removed and suspended from returning to the League for the next 2 seasons. If they played 3 or more complete matches, the remainder of their games will be simulated. Otherwise, their game results will be voided. If a removed player rejoins the League after their suspension ends, they return to the tier below the one they were removed from.
 
 ##### What do I do if I can’t play all my matches in time?
 
@@ -145,7 +145,7 @@ Notify your moderator, and they may be able to grant you an extension of up to 1
 
 ##### What do I do if I can’t finish the season due to unforeseen circumstances?
 
-Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the ban if appropriate.
+Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the suspension if appropriate.
 
 #### 4. Playing matches
 
@@ -218,7 +218,7 @@ If a game ends in a tie, both players get 0.5 wins for that game. For example, i
 
 No, we operate on an honor system. You can also use DomBot on Discord to retrieve the results of recent games. If you disagree about who won a game, notify your moderator.
 
-##### Why are players in tiers A, B, C, D, and E required to allow spectators?
+##### Why am I required to allow spectators?
 
 Allowing spectators offers League members an opportunity to watch competitive games between some of the top Dominion players. It also allows those players to get feedback after the games. Having spectators at your games can provide you constructive comments to help your future play.
 
