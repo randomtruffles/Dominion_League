@@ -1,6 +1,6 @@
 ---
 permalink: check-in
 layout: redirect
-redirect: https://docs.google.com/forms/d/e/1FAIpQLSemw47NmkZOIhZio8tgIoX38VwsFf9ABO2knN-Pbo_0SWrh6Q/viewform
+redirect: https://docs.google.com/forms/d/e/1FAIpQLSe2O-JdbKNAkniAROXuo2SniuKjfyyj_fDCkbvRSM2_C3A24A/viewform
 owner: tracer
 ---
