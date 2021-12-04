@@ -46,7 +46,8 @@
     "44": "crabcat2",
     "45": "recycle_garbage",
 	"46": "nasmith99",
-	"47": "nasmith99"
+	"47": "nasmith99",
+	"48": "nasmith99"
   },
   "runner_ups": {
     "1": "stef",
@@ -95,7 +96,8 @@
     "44": "tracer",
     "45": "nasmith99",
 	"46": "jonts",
-	"47": "jnails"
+	"47": "jnails",
+	"48": "jonts",
   },
   "players": {
     "mic qsenoch": [
@@ -159,7 +161,8 @@
     "nasmith99": [
       "43",
 	  "46",
-	  "47"
+	  "47",
+	  "48"
     ],
 	"crabcat2": [
 	  "44"
@@ -251,7 +254,8 @@
       "42"
     ],
 	"jonts": [
-	  "46"
+	  "46",
+	  "48"
 	],
 	"jnails": [
 	  "47"
