@@ -76,7 +76,7 @@ The divisions are grouped into tiers. The number of tiers depends on the number 
 * 7 tiers (A-G): 1-2-4-4-8-16-16
 * 8 tiers (A-H): 1-2-4-4-8-16-16-16
 * 9 tiers (A-I): 1-2-4-4-8-16-16-32-32
-* 10 tiers (A-J): 1-2-4-4-8-16-16-32-64-64
+* 10 tiers (A-J): 1-2-4-4-8-16-16-32-64-64
 
 <a name="2.3.4"></a>2.3.4. Tiers A through D always have the maximum number of divisions. The moderators at their discretion may choose to have fewer than the maximum number of divisions in tiers E and below.
 
