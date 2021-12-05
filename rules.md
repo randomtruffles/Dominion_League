@@ -63,7 +63,7 @@ Each season lasts 6 weeks, and most are followed by a 2-week break. Once per yea
 
 A division is a group of approximately 6 players who will play each other during a season. Each division is assigned a moderator from the [League moderator team](/moderators). The number of divisions depends on the number of players.
 
-### <a name="2.2"></a>2.3. Tiers
+### <a name="2.3"></a>2.3. Tiers
 
 The divisions are grouped into tiers. The number of tiers depends on the number of divisions.
 
