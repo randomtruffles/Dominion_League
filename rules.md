@@ -72,10 +72,10 @@ The divisions are grouped into tiers. The number of tiers depends on the number 
 <a name="2.3.2"></a>2.3.2. The lowest tier has the same maximum number of divisions as the one above it. This rule overrides [2.3.1](#2.3.1).
 
 <a name="2.3.3"></a>2.3.3. The combination of [2.3.1](#2.3.1) and [2.3.2](#2.3.2) results in the following maximum division counts based on the number of tiers:
-* 6 tiers (A-F):  1-2-4-4-8-8
-* 7 tiers (A-G):  1-2-4-4-8-16-16
-* 8 tiers (A-H):  1-2-4-4-8-16-16-16
-* 9 tiers (A-I):  1-2-4-4-8-16-16-32-32
+* 6 tiers (A-F): 1-2-4-4-8-8
+* 7 tiers (A-G): 1-2-4-4-8-16-16
+* 8 tiers (A-H): 1-2-4-4-8-16-16-16
+* 9 tiers (A-I): 1-2-4-4-8-16-16-32-32
 * 10 tiers (A-J): 1-2-4-4-8-16-16-32-64-64
 
 <a name="2.3.4"></a>2.3.4. Tiers A through D always have the maximum number of divisions. The moderators at their discretion may choose to have fewer than the maximum number of divisions in tiers E and below.
