@@ -33,7 +33,6 @@
 - name: Emmi
   discord: Emmi#1480
   image: Emmi
-  chair: Onboarding
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
@@ -50,6 +49,7 @@
 - name: Naesala
   discord: Naesala#1312
   image: naesala
+  chair: Onboarding
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
