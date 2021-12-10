@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2021-12-05
+date: 2021-12-09
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -92,11 +92,11 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.3"></a>2.4.3. Players returning to the League who did not complete one of the past 6 seasons, and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups).
 
-<a name="2.4.4"></a>2.4.4. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.4](#5.4) for details.
+<a name="2.4.4"></a>2.4.4. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
 
 ### <a name="2.5"></a>2.5. Flex Divisions
 
-Divisions usually have a maximum of 6 players. However, divisions may “flex” up to a size of 7 players in order to accommodate returning players ([2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.3](#2.4.3)). Free promotions ([5.4](#5.4)) are only used to fill divisions up to the normal maximum of 6 players.
+Divisions usually have a maximum of 6 players. However, divisions may “flex” up to a size of 7 players in order to accommodate returning players ([2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.3](#2.4.3)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
 
 ### <a name="2.6"></a>2.6. Seeding
 
@@ -238,7 +238,7 @@ In the case of a disputed rules infraction, you should reach out to a moderator 
 
 ### <a name="4.12"></a>4.12. Extra/non-standard matches
 
-There are several types of matches ([adjustment](#5.5), [play-in](#5.4), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
+There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
 <a name="4.12.1"></a>4.12.1. Adjustment and tiebreaker matches are 2-game matches with each player starting one of the games.
 
@@ -290,55 +290,63 @@ At the end of the season, you may earn a spot in a different tier by promoting t
 
 <a name="5.3.4"></a>5.3.4. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
 
-<a name="5.3.5"></a>5.3.5. If you promote, you rise a minimum of one tier.
+<a name="5.3.5"></a>5.3.5. If you promote, you rise one tier.
 
-<a name="5.3.6"></a>5.3.6. If you finish in first place (including ties) in tier F or below, you are evaluated by the new player rules in [2.4.3](#2.4.3). If these rules would place you in a higher tier than the standard promotion rules (see above), you are placed into the higher tier instead. If this rule would place you into D tier or higher, you are placed into E tier instead. This is referred to as a “superpromotion”.
+<a name="5.3.6"></a>5.3.6. If you demote, you drop one tier.
 
-<a name="5.3.7"></a>5.3.7. If you demote, you drop one tier.
+### <a name="5.4"></a>5.4. Superpromotions
 
-### <a name="5.4"></a>5.4. Free promotions
+Superpromotions allow you to promote multiple tiers at once, based on how you would be placed as new player.
+
+<a name="5.4.1"></a>5.4.1. If you played in tier G or below and finished in first place (including ties), you are eligible for a superpromotion.
+
+<a name="5.4.2"></a>5.4.2. If you are eligible, and would be placed higher by the new player placement rules ([2.4.3](#2.4.3)) than by the standard promotion rules ([5.3](#5.3)), you superpromote into the higher tier.
+
+<a name="5.4.3"></a>5.4.3. You cannot superpromote past E tier. If the new player placement rules ([2.4.3](#2.4.3)) would place you in D tier or higher, you superpromote into E tier instead.
+
+### <a name="5.5"></a>5.5. Free promotions
 
 In order to fill open spots created by players leaving the League between seasons, players in lower tiers may be offered free promotions. The following criteria are used, in order, to determine eligibility:
 
-<a name="5.4.1"></a>5.4.1. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) second place in the tier below with a high score in the previous season are offered a free promotion.
+<a name="5.5.1"></a>5.5.1. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) second place in the tier below with a high score in the previous season are offered a free promotion.
 
-<a name="5.4.2"></a>5.4.2. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
+<a name="5.5.2"></a>5.5.2. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
 
-<a name="5.4.3"></a>5.4.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.12](#4.12). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
+<a name="5.5.3"></a>5.5.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.12](#4.12). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
 
-### <a name="5.5"></a>5.5. Dropped players
+### <a name="5.6"></a>5.6. Dropped players
 
 The following rules are used to account for dropped players in the standings. See [7.1](#7.1) for more information about drops.
 
-<a name="5.5.1"></a>5.5.1. If the dropped player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
+<a name="5.6.1"></a>5.6.1. If the dropped player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
 
-<a name="5.5.2"></a>5.5.2. If the dropped player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play. Afterward, all the match results involving the dropped player are scaled by the percentage of their games they actually played.
+<a name="5.6.2"></a>5.6.2. If the dropped player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play. Afterward, all the match results involving the dropped player are scaled by the percentage of their games they actually played.
 
-<a name="5.5.3"></a>5.5.3. At the end of the season, to account for the approximations inherent in simulated results, adjustment matches may be required to better decide the standings between players straddling a promotion or demotion boundary. To determine if an adjustment match is needed, 4 scenarios are compared:
+<a name="5.6.3"></a>5.6.3. At the end of the season, to account for the approximations inherent in simulated results, adjustment matches may be required to better decide the standings between players straddling a promotion or demotion boundary. To determine if an adjustment match is needed, 4 scenarios are compared:
 
-<a name="5.5.3.1"></a>5.5.3.1. Scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
+<a name="5.6.3.1"></a>5.6.3.1. Scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
 
-<a name="5.5.3.2"></a>5.5.3.2. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
+<a name="5.6.3.2"></a>5.6.3.2. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
 
-<a name="5.5.3.3"></a>5.5.3.3. Scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
+<a name="5.6.3.3"></a>5.6.3.3. Scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
 
-<a name="5.5.3.4"></a>5.5.3.4. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
+<a name="5.6.3.4"></a>5.6.3.4. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
 
-<a name="5.5.4"></a>5.5.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.12](#4.12). The winner is placed ahead of the loser in the final standings.
+<a name="5.6.4"></a>5.6.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.12](#4.12). The winner is placed ahead of the loser in the final standings.
 
-<a name="5.5.5"></a>5.5.5. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
+<a name="5.6.5"></a>5.6.5. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
 
-### <a name="5.6"></a>5.6. Championship match
+### <a name="5.7"></a>5.7. Championship match
 
 After the normal matches of A1 are complete, the players in first place and second place play a second 6-game Championship Match to determine the Dominion League Champion of the season.
 
-<a name="5.6.1"></a>5.6.1. The Dominion League Champion is the player with the higher total wins from their normal matches and the Championship Match.
+<a name="5.7.1"></a>5.7.1. The Dominion League Champion is the player with the higher total wins from their normal matches and the Championship Match.
 
-<a name="5.6.2"></a>5.6.2. If the players are tied in total wins per [5.6.1](#5.6.1), the tiebreaker rules per [5.2](#5.2) are applied, including the wins from the Championship Match. If there is still a tie, they play one final game and the winner is the Champion. If that final game is tied, the player who went second is the Champion.
+<a name="5.7.2"></a>5.7.2. If the players are tied in total wins per [5.7.1](#5.7.1), the tiebreaker rules per [5.2](#5.2) are applied, including the wins from the Championship Match. If there is still a tie, they play one final game and the winner is the Champion. If that final game is tied, the player who went second is the Champion.
 
-<a name="5.6.3"></a>5.6.3. All 6 games of the Championship Match should be played, even if the Dominion League Champion is decided sooner.
+<a name="5.7.3"></a>5.7.3. All 6 games of the Championship Match should be played, even if the Dominion League Champion is decided sooner.
 
-<a name="5.6.4"></a>5.6.4. The date and time of the Championship Match should be decided with sufficient time for the League to find commentators and advertise the match.
+<a name="5.7.4"></a>5.7.4. The date and time of the Championship Match should be decided with sufficient time for the League to find commentators and advertise the match.
 
 ## <a name="6"></a>6. Scheduling
 
