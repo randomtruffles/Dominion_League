@@ -4,7 +4,7 @@ date: 2021-12-12
 author: alibby1152
 layout: post
 ---
-As we sit a week into Season 49, I wanted to pick up on something I’ve been slacking on the past few seasons: posting an update newsletter. This season, we welcome three new Moderators to our team: AJL828, Naesala, and snowbz. All three have hit the ground running and gotten up to speed quite quickly. There has also been a pair of announcements posted outside of this newsletter that I would like to call attention to. First, there has been a major overhaul of the structure of the League Rules document. While none of the rules have changed, the rules now use a completely different layout and there have been wording changes aimed at increasing clarity. Second, a summary of the Season 48 Town Hall and Season 48 Feedback we received has been posted. The feedback we received helped guide some of the decisions that will be covered later in this update and continue to assist us in making sure we keep League fun, exciting, and competitive for all.
+As we sit a week into Season 49, I wanted to pick up on something I’ve been slacking on the past few seasons: posting an update newsletter. This season, we welcomed three new Moderators to our team: AJL828, Naesala, and snowbz. All three have hit the ground running and gotten up to speed quite quickly. There has also been a pair of announcements posted outside of this newsletter that I would like to call attention to. First, there has been a major overhaul of the structure of the League Rules document. While none of the rules have changed, the rules now use a completely different layout and there have been wording changes aimed at increasing clarity. Second, a summary of the Season 48 Town Hall and Season 48 Feedback we received has been posted. The feedback we received helped guide some of the decisions that will be covered later in this update and continue to assist us in making sure we keep League fun, exciting, and competitive for all.
 
 I would now like to turn towards the future. While there have been only minor changes the past few seasons, as we look forward to the Golden Anniversary of League (Season 50), there are some changes on the horizon.
 
@@ -14,9 +14,6 @@ While we continue to see high returning rates amongst league players, we’ve se
 
 ![Season 49 to Season 50 transition schemes for if we remain above 588 players (left) or fall to 588 or fewer players (right).](/img/uploads/screen-shot-2021-12-12-at-10.32.06-pm.png "Season 49 Transition Schemes")
 
-< IMAGES GO HERE >
-
-\
 Tiers A-E are unaffected by the change and there are slight modifications in F and below to:
 
 1. Have Season 50 tiers include players from no more than 3 different tiers in Season 49
