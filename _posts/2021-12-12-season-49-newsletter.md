@@ -14,6 +14,12 @@ While we continue to see high returning rates amongst league players, we’ve se
 
 ![Season 49 to Season 50 transition schemes for if we remain above 588 players (left) or fall to 588 or fewer players (right).](/img/uploads/screen-shot-2021-12-12-at-10.32.06-pm.png "Season 49 Transition Schemes")
 
+And a visual representation of where players will move under the contraction scheme:
+
+![Player movement under Tier contraction.](/img/uploads/season-49-promotion-demotion-contraction-2.png "League Contraction Player Movement")
+
+
+
 Tiers A-E are unaffected by the change and there are slight modifications in F and below to:
 
 1. Have Season 50 tiers include players from no more than 3 different tiers in Season 49
