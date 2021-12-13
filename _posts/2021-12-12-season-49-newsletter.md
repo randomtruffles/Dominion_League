@@ -12,14 +12,14 @@ I would now like to turn towards the future. While there have been only minor ch
 
 While we continue to see high returning rates amongst league players, we’ve seen a decline in the number of new signups over the past few seasons. While there are certainly other factors, we’ve seen League participation drop from 838 players at the start of Season 44 down to 592 at the start of Season 49. If this trend continues, we’ll be under 588 players for Season 50, which is the threshold for contraction from 10 tiers down to 9. Should we reach this point, J tier will be removed and not added back until we expand beyond 690 players. If we are to contract after this season, we will need a one-time transition scheme to place players from Season 49 into their new tier for Season 50. That transition can be found below and is compared to Season 49:
 
+< IMAGES GO HERE >
+
 \
 Tiers A-E are unaffected by the change and there are slight modifications in F and below to:
 
 1. Have Season 50 tiers include players from no more than 3 different tiers in Season 49
 2. Limit the amount of additional movement needed to fill divisions in Season 50
 3. Maintain competitive balance in the new Season 50 tiers
-
-
 
 While we won’t know the player counts for Season 50 until after sign-ups close, we wanted everybody playing this season to be aware of where they would end up in both the 10 tier and 9 tier scenarios.
 
