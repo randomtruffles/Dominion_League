@@ -12,6 +12,8 @@ I would now like to turn towards the future. While there have been only minor ch
 
 While we continue to see high returning rates amongst league players, we’ve seen a decline in the number of new signups over the past few seasons. While there are certainly other factors, we’ve seen League participation drop from 838 players at the start of Season 44 down to 592 at the start of Season 49. If this trend continues, we’ll be under 588 players for Season 50, which is the threshold for contraction from 10 tiers down to 9. Should we reach this point, J tier will be removed and not added back until we expand beyond 690 players. If we are to contract after this season, we will need a one-time transition scheme to place players from Season 49 into their new tier for Season 50. That transition can be found below and is compared to Season 49:
 
+![Season 49 to Season 50 transition schemes for if we remain above 588 players (left) or fall to 588 or fewer players (right).](/img/uploads/screen-shot-2021-12-12-at-10.32.06-pm.png "Season 49 Transition Schemes")
+
 < IMAGES GO HERE >
 
 \
