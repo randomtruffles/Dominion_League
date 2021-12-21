@@ -34,11 +34,11 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign-ups and Counts
 
-Sign-ups and Counts are listed below (it may take a few seconds to load).
+Sign-ups and Counts are listed below (it may take a while to load).
 
 <br>
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
 <div class="sheets">
-  <iframe src="https://docs.google.com/spreadsheets/d/1i2BNBpSRjOBuxiFgBl87Yca1RMZOW8EKVYHC5PsqMfU/pubhtml" height="500" width="100%">Loading...</iframe>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_o00K2u1R6JIOOulPO6VJCnppsxAFqagFV0tUnteZkqKIR9K5BJJL0Bm66jDPH1E1LDFSCyjbxfjq/pubhtml" height="500" width="100%">Loading...</iframe>
 </div>
