@@ -180,7 +180,7 @@ Games played on Dominion Online should use these table setting under Advanced Op
 
 <a name="4.4.9"></a>4.4.9. The player order should be set per [4.1.2](#4.1.2).
 
-<a name="4.4.10"></a>4.4.10. Kingdoms should be generated randomly with all cards either player owns and from zero to two landscapes. No particular cards, landscapes, landscape types, or expansions should be selected.
+<a name="4.4.10"></a>4.4.10. Kingdoms should be generated randomly with all cards either player has access to and from zero to two landscapes. No particular cards, landscapes, landscape types, or expansions should be selected.
 
 <a name="4.4.11"></a>4.4.11. There is no official game timer on Dominion Online, and games should not use an unofficial timer.
 
