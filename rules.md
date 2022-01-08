@@ -198,7 +198,7 @@ The default table settings in [4.4](#4.4) may be changed between games by mutual
 
 ### <a name="4.6"></a>4.6. New expansions
 
-Per [4.4.10](#4.4.10), the default card pool for kingdom generation each season is all cards. However, either player may opt to remove cards from new expansions that were released after the end of the previous season from kingdom generation.
+Per [4.4.10](#4.4.10), the default card pool for Kingdom generation each season is all cards. However, either player may opt to remove cards from new expansions that were released after the end of the previous season from Kingdom generation.
 
 ### <a name="4.7"></a>4.7. Undos
 
