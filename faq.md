@@ -49,11 +49,11 @@ You do not need to buy a subscription, but you do need to create a free account.
 
 ##### Am I required to play matches on Dominion Online (<http://dominion.games>)?
 
-No, but this may be the only way to play games against the vast majority of your opponents. Note you are required to have a Dominion Online account and you must play 10 or more rated 2-player games before you can play in the League.
+Yes. Note you are required to have a Dominion Online account and you must play 10 or more rated 2-player games before you can play in the League.
 
 ##### How good do I need to be at Dominion to sign up?
 
-We welcome players of all skill levels. Players are divided into different tiers so that they can compete against opponents of similar skill.
+We welcome players of all skill levels. Players are divided into different tiers so that they can compete against opponents of similar skill. Players are expected to be willing to play games with cards from all expansions.
 
 ##### Do I need to be proficient in the English language to sign up?
 
