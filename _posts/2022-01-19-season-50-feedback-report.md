@@ -18,6 +18,8 @@ As such, we will be imposing the following restrictions: players may specify at 
 
 ### Returning Form Questions
 
+On the season 50 returning form, we asked questions about sorting players into divisions by time zone and the length of tiebreakers.
+
 #### Time Zone Based Divisions
 
 #### Tiebreaker Length
