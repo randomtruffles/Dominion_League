@@ -202,25 +202,25 @@ The following settings, found under "Advanced Options", are set by default when 
 
 <a name="4.6.7"></a>4.6.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
 
-### <a name="4.6"></a>4.6. Modifying table settings
+### <a name="4.7"></a>4.7. Modifying table settings
 
-By mutual agreement, you and your opponent may change the table settings specified in [4.4](#4.4) and [4.5](#4.5) as follows:
+By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
 
-<a name="4.6.1"></a>4.6.1. For games using expansions, you may agree to turn on "Respect liked cards".
+<a name="4.7.1"></a>4.7.1. For games using expansions, you may agree to turn on "Respect liked cards".
 
-<a name="4.6.2"></a>4.6.2. Under "Select Kingdom Cards", you may agree to only allow cards from certain expansions.
+<a name="4.7.2"></a>4.7.2. Under "Select Kingdom Cards", you may agree to only allow cards from certain expansions.
  
-<a name="4.6.3"></a>4.6.3. Under "Select Kingdom Cards", you may agree to require a maximum of either one card or one landscape.
+<a name="4.7.3"></a>4.7.3. Under "Select Kingdom Cards", you may agree to require a maximum of either one card or one landscape.
  
-<a name="4.6.4"></a>4.6.4. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
+<a name="4.7.4"></a>4.7.4. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
-<a name="4.6.5"></a>4.6.5. You may agree to turn on "Rated game".
+<a name="4.7.5"></a>4.7.5. You may agree to turn on "Rated game".
 
-### <a name="4.7"></a>4.7. New expansions
+### <a name="4.8"></a>4.8. New expansions
 
-Per [4.5.7](#4.5.7), the default card pool for Kingdom generation each season includes all expansions. However, either player may opt to remove new expansions from Kingdom generation.
+Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season includes all expansions. However, either player may opt to remove new expansions from Kingdom generation.
 
-<a name="4.7.1"></a>4.7.1. An expansion is considered new if it was released after the end of the previous Dominion League season.
+<a name="4.8.1"></a>4.8.1. An expansion is considered new if it was released after the end of the previous Dominion League season.
 
 ### <a name="4.8"></a>4.8. Undos
 
