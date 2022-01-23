@@ -359,23 +359,27 @@ In order to fill open spots created by players leaving the League between season
 
 The following rules are used to account for dropped players in the standings. See [7.1](#7.1) for more information about drops.
 
-<a name="5.6.1"></a>5.6.1. If the dropped player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
+<a name="5.6.1"></a>5.6.1. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
 
-<a name="5.6.2"></a>5.6.2. If the dropped player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play. Afterward, all the match results involving the dropped player are scaled by the percentage of their games they actually played.
+<a name="5.6.2"></a>5.6.2. If the dropped player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
 
-<a name="5.6.3"></a>5.6.3. At the end of the season, to account for the approximations inherent in simulated results, adjustment matches may be required to better decide the standings between players straddling a promotion or demotion boundary. To determine if an adjustment match is needed, 4 scenarios are compared:
+#### <a name="5.6.3"></a>5.6.3. Adjustment match determination
 
-<a name="5.6.3.1"></a>5.6.3.1. Scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
+If a dropped player played any games, adjustment matches may be needed to determine promotions or demotions. The format of adjustment matches is specified in [4.15](#4.15). The following procedure determines whether an adjustment match is required:
 
-<a name="5.6.3.2"></a>5.6.3.2. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
+<a name="5.6.3.1"></a>5.6.3.1. Order all remaining players by win percentage in games that were played and note who promotes and who demotes.
 
-<a name="5.6.3.3"></a>5.6.3.3. Scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
+<a name="5.6.3.2"></a>5.6.3.2. Order all remaining players by win percentage in games not involving the dropped players and note who promotes and who demotes.
 
-<a name="5.6.3.4"></a>5.6.3.4. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
+<a name="5.6.3.3"></a>5.6.3.3. If the promoters (or demoters) are not the same in both scenarios, then the players who promote (or demote) in one scenario, but not the other, play an adjustment match.
 
-<a name="5.6.4"></a>5.6.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.15](#4.15). The winner is placed ahead of the loser in the final standings.
+<a name="5.6.3.4"></a>5.6.3.4. If the players with promotion (or non-demotion) claims played the same number of games against each dropped player, only the all games played scenario ([5.6.3.1](#5.6.3.1)) is considered.
 
-<a name="5.6.5"></a>5.6.5. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
+<a name="5.6.3.5"></a>5.6.3.5. If there is an unbroken tie (see [5.2](#5.2)) for promotion or non-demotion in at least one of the scenarios, the tied players play an adjustment match. They do not play a tiebreaker match.
+
+<a name="5.6.3.6"></a>5.6.3.6. If a player promotes in one scenario and demotes in the other, then that player doesn't play in any adjustment matches and doesn't promote or demote.
+
+<a name="5.6.3.7"></a>5.6.3.7. If more than two players have promotion (or non-demotion) claims, the moderators will determine what adjustment matches are needed, if any, at their discretion.
 
 ### <a name="5.7"></a>5.7. Championship match
 
