@@ -184,23 +184,23 @@ Games played on Dominion Online should use the default table settings provided b
 
 <a name="4.5.3"></a>4.5.3. For games without expansions, "Respect disliked cards" and "Respect banned cards" should be off.
 
-### <a name="4.5"></a>4.5 Table settings reference
+### <a name="4.6"></a>4.6 Table settings reference
 
-The following settings, found under "Advanced Options", are set by default when you create a new table on Dominion Online. Per [4.4](#4.4), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
+The following settings, found under "Advanced Options", are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
 
-<a name="4.5.1"></a>4.5.1. "Allow spectators" should be set to Yes.
+<a name="4.6.1"></a>4.6.1. "Allow spectators" should be set to Yes.
 
-<a name="4.5.2"></a>4.5.2. "Respect Familiar cards" should be off.
+<a name="4.6.2"></a>4.6.2. "Respect Familiar cards" should be off.
 
-<a name="4.5.3"></a>4.5.3. For games using expansions, "Respect disliked cards" and "Respect banned cards" should be on. "Respect liked cards" should be off.
+<a name="4.6.3"></a>4.6.3. For games using expansions, "Respect disliked cards" and "Respect banned cards" should be on. "Respect liked cards" should be off.
 
-<a name="4.5.4"></a>4.5.4. “Extra Menagerie” should be off.
+<a name="4.6.4"></a>4.6.4. “Extra Menagerie” should be off.
 
-<a name="4.5.5"></a>4.5.5. "Rated game" should be off.
+<a name="4.6.5"></a>4.6.5. "Rated game" should be off.
 
-<a name="4.5.6"></a>4.5.6. "Show VP counter" should be on.
+<a name="4.6.6"></a>4.6.6. "Show VP counter" should be on.
 
-<a name="4.5.7"></a>4.5.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
+<a name="4.6.7"></a>4.6.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
 
 ### <a name="4.6"></a>4.6. Modifying table settings
 
