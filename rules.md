@@ -349,7 +349,7 @@ The following rules are used to account for dropped players in the standings. Se
 
 <a name="5.6.3.4"></a>5.6.3.4. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
 
-<a name="5.6.4"></a>5.6.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.13](#4.13). The winner is placed ahead of the loser in the final standings.
+<a name="5.6.4"></a>5.6.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.14](#4.14). The winner is placed ahead of the loser in the final standings.
 
 <a name="5.6.5"></a>5.6.5. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
 
