@@ -303,9 +303,9 @@ The players in each division are ranked by their win rates. This is updated when
 
 ### <a name="5.2"></a>5.2. Tiebreakers
 
-If there is a tie within a division, these steps are applied with the group of tied players:
+If there is a tie within a division, a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
 
-#### <a name="5.2.1"></a>5.2.1. Head-to-head
+#### <a name="5.2.1"></a>5.2.1. Head-to-head tiebreaker
 
 <a name="5.2.1.1"></a>5.2.1.1. Order the players by the total head-to-head wins each player earned from the matches involving only the group of tied players.
 
@@ -313,7 +313,7 @@ If there is a tie within a division, these steps are applied with the group of t
 
 #### <a name="5.2.2"></a>5.2.2. Promotion or demotion implications
 
-<a name="5.2.2.1"></a>5.2.2.1. If a two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.15](#4.15).
+<a name="5.2.2.1"></a>5.2.2.1. If an unbroken two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.15](#4.15).
 
 <a name="5.2.2.2"></a>5.2.2.2. If a three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
 
