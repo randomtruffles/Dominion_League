@@ -174,15 +174,15 @@ Each player should go first 3 times in a 6 game match. It is each player's respo
 
 <a name="4.4.5"></a>4.4.5. Games cannot be voided after the fact due to a mismatch in starting player counts.
 
-### <a name="4.4"></a>4.4. Table settings
+### <a name="4.5"></a>4.5. Table settings
 
 Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions, found under "Advanced Options":
 
-<a name="4.4.1"></a>4.4.1. “Players can see spectator chat” should be off.
+<a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
 
-<a name="4.4.2"></a>4.4.2. The player order should be set per [4.1.2](#4.1.2). TODO
+<a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.4.3"></a>4.4.3. For games without expansions, "Respect disliked cards" and "Respect banned cards" should be off.
+<a name="4.5.3"></a>4.5.3. For games without expansions, "Respect disliked cards" and "Respect banned cards" should be off.
 
 ### <a name="4.5"></a>4.5 Table settings reference
 
