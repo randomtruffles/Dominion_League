@@ -35,6 +35,8 @@ To join the Dominion League, you must meet all these requirements:
 
 <a name="1.1.5"></a>1.1.5. Your username and profile picture comply with the conduct rules in [3.3](#3.3).
 
+<a name="1.1.6"></a>1.1.6. You are able to commit both the necessary time to play your matches, and the necessary time to coordinate with your opponents via Discord to schedule your matches. Note that while playing your matches will require approximately two hours per week during the season, you will usually need more available time than this, in order to accommodate your opponents' schedules.
+
 ### <a name="1.2"></a>1.2. Signing up
 
 If you meet all the requirements per [1.1](#1.1) and are not playing in the current season, you may fill out the [sign-up form](/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
