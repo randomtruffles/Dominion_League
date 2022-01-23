@@ -287,13 +287,13 @@ There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [ti
 
 <a name="4.15.4"></a>4.15.4. If the players are tied after completing all games per [4.15.1](#4.15.1) or [4.15.2](#4.15.2), they play one final game with a random player starting.
 
-<a name="4.14.5"></a>4.14.5. If there is still a tie, the player that went second in the last game wins.
+<a name="4.15.5"></a>4.15.5. If there is still a tie, the player that went second in the last game wins.
 
-<a name="4.14.6"></a>4.14.6. A player who does not wish to play one of these matches may concede.
+<a name="4.15.6"></a>4.15.6. A player who does not wish to play one of these matches may concede.
 
-<a name="4.14.7"></a>4.14.7. If one player fails to respond promptly or is unable to play, that player concedes by default.
+<a name="4.15.7"></a>4.15.7. If one player fails to respond promptly or is unable to play, that player concedes by default.
 
-<a name="4.14.8"></a>4.14.8. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
+<a name="4.15.8"></a>4.15.8. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
 ## <a name="5"></a>5. Standings
 
