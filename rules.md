@@ -275,7 +275,7 @@ There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [ti
 
 ### <a name="5.1"></a>5.1. Standings
 
-The players in each division are ranked by their win rates. This is updated when players submit results per [4.11](#4.11).
+The players in each division are ranked by their win rates. This is updated when players submit results per [4.12](#4.12).
 
 ### <a name="5.2"></a>5.2. Tiebreakers
 
