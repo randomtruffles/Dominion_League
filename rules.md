@@ -315,7 +315,7 @@ If there is a tie within a division, a head-to-head tiebreaker is applied. If th
 
 <a name="5.2.2.1"></a>5.2.2.1. If an unbroken two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.15](#4.15).
 
-<a name="5.2.2.2"></a>5.2.2.2. If a three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
+<a name="5.2.2.2"></a>5.2.2.2. If an unbroken three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
 
 <a name="5.2.2.3"></a>5.2.2.3. Otherwise, all players share the rank of the best tied place.
 
