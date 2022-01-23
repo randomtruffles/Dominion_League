@@ -329,7 +329,7 @@ In order to fill open spots created by players leaving the League between season
 
 <a name="5.5.2"></a>5.5.2. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
 
-<a name="5.5.3"></a>5.5.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.13](#4.13). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
+<a name="5.5.3"></a>5.5.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.14](#4.14). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
 
 ### <a name="5.6"></a>5.6. Dropped players
 
