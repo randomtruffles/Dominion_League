@@ -313,7 +313,7 @@ If there is a tie within a division, these steps are applied with the group of t
 
 #### <a name="5.2.2"></a>5.2.2. Promotion or demotion implications
 
-<a name="5.2.2.1"></a>5.2.2.1. If a two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.14](#4.14).
+<a name="5.2.2.1"></a>5.2.2.1. If a two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.15](#4.15).
 
 <a name="5.2.2.2"></a>5.2.2.2. If a three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
 
