@@ -108,7 +108,7 @@ Each tier of players is split into divisions by a seeding algorithm. The algorit
 
 ### <a name="3.1"></a>3.1 Behavior
 
-You are expected to treat all players with respect at all times. Examples of inappropriate actions include rage quitting, intentionally slow playing, and unexpectedly or suddenly changing the match arrangements per [4.5](#4.5).
+You are expected to treat all players with respect at all times. Examples of inappropriate actions include rage quitting, intentionally slow playing, and unexpectedly or suddenly changing the match arrangements per [4.6](#4.6).
 
 ### <a name="3.2"></a>3.2. Communication
 
@@ -160,31 +160,33 @@ During games, you may not attempt to gain a competitive advantage by consulting 
 
 <a name="4.3.2"></a>4.3.2. For example, getting advice from Dominion Strategy articles or from spectators is not allowed.
 
-### <a name="4.4"></a>4.4. Default table settings
+### <a name="4.4"></a>4.4. Table settings
 
-Games played on Dominion Online should use these table setting under Advanced Options:
+Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions, found under "Advanced Options":
 
-<a name="4.4.1"></a>4.4.1. Spectators should be allowed.
+<a name="4.4.1"></a>4.4.1. “Players can see spectator chat” should be off.
 
-<a name="4.4.2"></a>4.4.2. “Players can see spectator chat” should be off.
+<a name="4.4.2"></a>4.4.2. The player order should be set per [4.1.2](#4.1.2). TODO
 
-<a name="4.4.3"></a>4.4.3. Familiar cards should not be respected.
+<a name="4.4.3"></a>4.4.3. For games without expansions, "Respect disliked cards" and "Respect banned cards" should be off.
 
-<a name="4.4.4"></a>4.4.4. For games using expansions, the disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be.
+### <a name="4.5"></a>4.5 Table settings reference
 
-<a name="4.4.5"></a>4.4.5. For games without expansions, no cardlists should be respected.
+The following settings, found under "Advanced Options", are set by default when you create a new table on Dominion Online. Per [4.4](#4.4), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
 
-<a name="4.4.6"></a>4.4.6. The game should not use the “Extra Menagerie” option.
+<a name="4.5.1"></a>4.5.1. "Allow spectators" should be set to Yes.
 
-<a name="4.4.7"></a>4.4.7. The game should be unrated.
+<a name="4.5.2"></a>4.5.2. "Respect Familiar cards" should be off.
 
-<a name="4.4.8"></a>4.4.8. The victory point counter should be used.
+<a name="4.5.3"></a>4.5.3. For games using expansions, "Respect disliked cards" and "Respect banned cards" should be on. "Respect liked cards" should be off.
 
-<a name="4.4.9"></a>4.4.9. The player order should be set per [4.1.2](#4.1.2).
+<a name="4.5.4"></a>4.5.4. “Extra Menagerie” should be off.
 
-<a name="4.4.10"></a>4.4.10. Kingdoms should be generated randomly with all cards either player has access to and from zero to two landscapes, with a maximum of one Way. No particular cards, landscapes, landscape types, or expansions should be selected.
+<a name="4.5.5"></a>4.5.5. "Rated game" should be off.
 
-<a name="4.4.11"></a>4.4.11. There is no official game timer on Dominion Online, and games should not use an unofficial timer.
+<a name="4.5.6"></a>4.5.6. "Show VP counter" should be on.
+
+<a name="4.5.7"></a>4.5.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected. For landscapes, this will result in zero to two landscapes, with a maximum of one Way.
 
 ### <a name="4.5"></a>4.5. Changes to the defaults
 
