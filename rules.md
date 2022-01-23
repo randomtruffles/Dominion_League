@@ -248,19 +248,19 @@ In the case of a disputed rules infraction, you should reach out to a moderator 
 
 There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
-<a name="4.12.1"></a>4.12.1. Adjustment and tiebreaker matches are 2-game matches with each player starting one of the games.
+<a name="4.13.1"></a>4.13.1. Adjustment and tiebreaker matches are 2-game matches with each player starting one of the games.
 
-<a name="4.12.2"></a>4.12.2. Play-in matches are standard 6-game matches, but if one player reaches 3.5 or more wins, they win the match, and there is no need to complete any remaining games.
+<a name="4.13.2"></a>4.13.2. Play-in matches are standard 6-game matches, but if one player reaches 3.5 or more wins, they win the match, and there is no need to complete any remaining games.
 
-<a name="4.12.3"></a>4.12.3. If the players are tied after completing all games per [4.12.1](#4.12.1) or [4.12.2](#4.12.2), they play one final game with a random player starting.
+<a name="4.13.3"></a>4.13.3. If the players are tied after completing all games per [4.13.1](#4.13.1) or [4.13.2](#4.13.2), they play one final game with a random player starting.
 
-<a name="4.12.4"></a>4.12.4. If there is still a tie, the player that went second in the last game wins.
+<a name="4.13.4"></a>4.13.4. If there is still a tie, the player that went second in the last game wins.
 
-<a name="4.12.5"></a>4.12.5. A player who does not wish to play one of these matches may concede.
+<a name="4.13.5"></a>4.13.5. A player who does not wish to play one of these matches may concede.
 
-<a name="4.12.6"></a>4.12.6. If one player fails to respond promptly or is unable to play, that player concedes by default.
+<a name="4.13.6"></a>4.13.6. If one player fails to respond promptly or is unable to play, that player concedes by default.
 
-<a name="4.12.7"></a>4.12.7. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
+<a name="4.13.7"></a>4.13.7. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
 ## <a name="5"></a>5. Standings
 
