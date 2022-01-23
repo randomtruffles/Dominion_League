@@ -435,35 +435,25 @@ Moderators are allowed, but not required, to play in the League.
 
 Whenever the moderators gather for an official meeting at which rules may change, the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting. This will happen at least once per season.
 
-### <a name="8.5"></a>8.5. Moderator division quotas
-
-Each active moderator will moderate at least 5 divisions per season.
-
-### <a name="8.6"></a>8.6. Moderator breaks
-
-Moderators are eligible for 1-season breaks, during which they retain voting privileges and access to moderator Discord channels.
-
-<a name="8.6.1"></a>8.6.1. If more moderators want to take breaks than the team can afford, moderators who have gone the longest without a break will receive priority.
-
-### <a name="8.7"></a>8.7. Recruiting new moderators
+### <a name="8.5"></a>8.5. Recruiting new moderators
 
 The moderator team will open applications for new moderators under the following conditions:
 
-<a name="8.7.1"></a>8.7.1. The following season is expected to have more than 10 divisions per moderator.
+<a name="8.5.1"></a>8.5.1. The following season is expected to have more than 10 divisions per moderator.
 
-<a name="8.7.2"></a>8.7.2. The moderator team has not opened applications for new moderators in either of the preceding two seasons.
+<a name="8.5.2"></a>8.5.2. The moderator team has not opened applications for new moderators in either of the preceding two seasons.
 
-### <a name="8.8"></a>8.8. Evaluating new moderator applicants
+### <a name="8.6"></a>8.6. Evaluating new moderator applicants
 
-When the moderator team opens applications for new moderators per [8.7](#8.7), they will follow this process:
+When the moderator team opens applications for new moderators per [8.5](#8.5), they will follow this process:
 
-<a name="8.8.1"></a>8.8.1. New moderator applications will open during week 2 of the season.
+<a name="8.6.1"></a>8.6.1. New moderator applications will open during week 2 of the season.
 
-<a name="8.8.2"></a>8.8.2. The existing moderator team will review applications during week 3 of the season.
+<a name="8.6.2"></a>8.6.2. The existing moderator team will review applications during week 3 of the season.
 
-<a name="8.8.3"></a>8.8.3. When applications close, the moderators may accept none, some, or all of the applicants.
+<a name="8.6.3"></a>8.6.3. When applications close, the moderators may accept none, some, or all of the applicants.
 
-<a name="8.8.4"></a>8.8.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
+<a name="8.6.4"></a>8.6.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
 
 ## <a name="9"></a>9. Amendments
 
