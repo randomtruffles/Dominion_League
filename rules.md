@@ -453,7 +453,7 @@ Moderators are allowed, but not required, to play in the League.
 
 <a name="8.3.1"></a>8.3.1. Moderators are assigned divisions to be the primary point of contact for those divisions. They are never assigned divisions in the tier they play in. They are responsible for checking up on players who have fallen behind and dropping those who are non-responsive for a considerable period of time (see [7.1](#7.1)).
 
-<a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.13](#4.13)).
+<a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.14](#4.14)).
 
 ### <a name="8.4"></a>8.4. Meeting minutes
 
