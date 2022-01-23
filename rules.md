@@ -263,29 +263,29 @@ After each playing session, you or your opponent should submit the results of th
 
 <a name="4.13.3"></a>4.13.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
 
-### <a name="4.13"></a>4.13. Playing under protest
+### <a name="4.14"></a>4.14. Playing under protest
 
 In the case of a disputed rules infraction during a Dominion League game, you should initiate the following procedure:
 
-<a name="4.13.1"></a>4.13.1. Inform your opponent that you believe an infraction occurred, and that you're playing under protest.
+<a name="4.14.1"></a>4.14.1. Inform your opponent that you believe an infraction occurred, and that you're playing under protest.
 
-<a name="4.13.2"></a>4.13.2. Finish playing the game, as well as the rest of your games for that playing session ([4.2](#4.2)).
+<a name="4.14.2"></a>4.14.2. Finish playing the game, as well as the rest of your games for that playing session ([4.2](#4.2)).
  
-<a name="4.13.3"></a>4.13.3. [Contact](/contact) your moderator about the protest and your reasons for it, either directly via Discord, or through the Hotline Form.
+<a name="4.14.3"></a>4.14.3. [Contact](/contact) your moderator about the protest and your reasons for it, either directly via Discord, or through the Hotline Form.
 
-<a name="4.13.4"></a>4.13.4. The moderators will review the dispute and issue a ruling based on a majority vote. This may result in the disputed game being voided and replayed.
+<a name="4.14.4"></a>4.14.4. The moderators will review the dispute and issue a ruling based on a majority vote. This may result in the disputed game being voided and replayed.
 
-### <a name="4.14"></a>4.14. Extra/non-standard matches
+### <a name="4.15"></a>4.15. Extra/non-standard matches
 
 There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
-<a name="4.14.1"></a>4.14.1. Adjustment and tiebreaker matches are 2 game matches with each player starting one of the games. You and your opponent may play a 4 or 6 game match instead by mutual agreement.
+<a name="4.15.1"></a>4.15.1. Adjustment and tiebreaker matches are 2 game matches with each player starting one of the games. You and your opponent may play a 4 or 6 game match instead by mutual agreement.
 
-<a name="4.14.2"></a>4.14.2. Play-in matches are 6-game matches.
+<a name="4.15.2"></a>4.15.2. Play-in matches are 6-game matches.
 
-<a name="4.14.3"></a>4.14.3. If one player reaches 2.5 or more wins in a 4 game match, or 3.5 or more wins in a 6 game match, they win the match, and there is no need to complete any remaining games.
+<a name="4.15.3"></a>4.15.3. If one player reaches 2.5 or more wins in a 4 game match, or 3.5 or more wins in a 6 game match, they win the match, and there is no need to complete any remaining games.
 
-<a name="4.14.4"></a>4.14.4. If the players are tied after completing all games per [4.14.1](#4.14.1) or [4.14.2](#4.14.2), they play one final game with a random player starting.
+<a name="4.15.4"></a>4.15.4. If the players are tied after completing all games per [4.15.1](#4.15.1) or [4.15.2](#4.15.2), they play one final game with a random player starting.
 
 <a name="4.14.5"></a>4.14.5. If there is still a tie, the player that went second in the last game wins.
 
