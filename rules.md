@@ -152,6 +152,8 @@ A playing session is a series of one or more games between the same two players,
 
 <a name="4.2.2"></a>4.2.2. The League recommends you complete all 6 games of a match on the same day in a single playing session.
 
+<a name="4.2.3"></a>4.2.3. You may only change your banned, disliked, and liked cardlists between playing sessions.
+
 ### <a name="4.3"></a>4.3. Outside help
 
 During games, you may not attempt to gain a competitive advantage by consulting resources other than those maintained by the League on the [Dominion League Resources page](/resources).
@@ -188,17 +190,19 @@ The following settings, found under "Advanced Options", are set by default when 
 
 <a name="4.5.7"></a>4.5.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected. For landscapes, this will result in zero to two landscapes, with a maximum of one Way.
 
-### <a name="4.5"></a>4.5. Changes to the defaults
+### <a name="4.6"></a>4.6. Modifying table settings
 
-The default table settings in [4.4](#4.4) may be changed between games by mutual agreement of you and your opponent except:
+By mutual agreement, you and your opponent may change the table settings specified in [4.4](#4.4) and [4.5](#4.5) as follows:
 
-<a name="4.5.1"></a>4.5.1. You may not agree to disallow spectators ([4.4.1](#4.4.1)).
+<a name="4.6.1"></a>4.6.1. For games using expansions, you may agree to turn on "Respect liked cards".
 
-<a name="4.5.2"></a>4.5.2. If your game does not use expansions, you may not use Familiar cards or any cardlists ([4.4.3](#4.4.3) & [4.4.5](#4.4.5)).
+<a name="4.6.2"></a>4.6.2. Under "Select Kingdom Cards", you may agree to only allow cards from certain expansions.
+ 
+<a name="4.6.3"></a>4.6.3. Under "Select Kingdom Cards", you may agree to require a maximum of either one card or one landscape.
+ 
+<a name="4.6.4"></a>4.6.4. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
-<a name="4.5.3"></a>4.5.3. You may only change your cardlists between playing sessions.
-
-<a name="4.5.4"></a>4.5.4. If you agree to use an unofficial timer, you and your opponent must also agree on all timer settings and how to handle any glitches or lag.
+<a name="4.6.5"></a>4.6.5. You may agree to turn on "Rated game".
 
 ### <a name="4.7"></a>4.7. New expansions
 
