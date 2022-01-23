@@ -200,47 +200,47 @@ The default table settings in [4.4](#4.4) may be changed between games by mutual
 
 <a name="4.5.4"></a>4.5.4. If you agree to use an unofficial timer, you and your opponent must also agree on all timer settings and how to handle any glitches or lag.
 
-### <a name="4.6"></a>4.6. New expansions
+### <a name="4.7"></a>4.7. New expansions
 
 Per [4.4.10](#4.4.10), the default card pool for Kingdom generation each season is all cards. However, either player may opt to remove cards from new expansions that were released after the end of the previous season from Kingdom generation.
 
-### <a name="4.7"></a>4.7. Undos
+### <a name="4.8"></a>4.8. Undos
 
 Players may have different opinions on which undos should be allowed, if any.
 
-<a name="4.7.1"></a>4.7.1. The default policy is that you at least grant all undos that are for small numbers of steps and that did not reveal new game information.
+<a name="4.8.1"></a>4.8.1. The default policy is that you at least grant all undos that are for small numbers of steps and that did not reveal new game information.
 
-<a name="4.7.2"></a>4.7.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
+<a name="4.8.2"></a>4.8.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
 
-### <a name="4.8"></a>4.8. Abandoning games
+### <a name="4.9"></a>4.9. Abandoning games
 
 In the rare event of a game which must be abandoned, players should play a new game in its place. Abandoned games do not count toward match completion or match score.
 
-<a name="4.8.1"></a>4.8.1. If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the game.
+<a name="4.9.1"></a>4.9.1. If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the game.
 
-<a name="4.8.2"></a>4.8.2. If players mutually agree their current game is a stalemate, they may abandon the game. If the players don’t agree about a stalemate, then they must play on.
+<a name="4.9.2"></a>4.9.2. If players mutually agree their current game is a stalemate, they may abandon the game. If the players don’t agree about a stalemate, then they must play on.
 
-### <a name="4.9"></a>4.9 Wins and ties
+### <a name="4.10"></a>4.10 Wins and ties
 
 Each game you win is reported as 1 win. Each game you tie is reported as 0.5 wins.
 
-<a name="4.9.1"></a>4.9.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
+<a name="4.10.1"></a>4.10.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
 
-### <a name="4.10"></a>4.10. Submitting results
+### <a name="4.11"></a>4.11. Submitting results
 
 After each playing session, you or your opponent should submit the results of that playing session as soon as possible using the Results form linked in your division’s Discord channel.
 
-<a name="4.10.1"></a>4.10.1. The results are the total wins and ties per [4.9](#4.9).
+<a name="4.11.1"></a>4.11.1. The results are the total wins and ties per [4.10](#4.10).
 
-<a name="4.10.2"></a>4.10.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
+<a name="4.11.2"></a>4.11.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
 
-<a name="4.10.3"></a>4.10.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
+<a name="4.11.3"></a>4.11.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
 
-### <a name="4.11"></a>4.11. Playing under protest
+### <a name="4.12"></a>4.12. Playing under protest
 
 In the case of a disputed rules infraction, you should reach out to a moderator for help. If a moderator decision needs to be made that affects the outcome of a game, you should finish the game, and you may protest the game by contacting your moderator with a description of what occurred and the game number. The moderator team will review the game and make a ruling by a majority vote whether the game results stand or that the game must be replayed.
 
-### <a name="4.12"></a>4.12. Extra/non-standard matches
+### <a name="4.13"></a>4.13. Extra/non-standard matches
 
 There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
