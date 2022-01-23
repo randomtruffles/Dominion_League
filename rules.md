@@ -188,7 +188,7 @@ The following settings, found under "Advanced Options", are set by default when 
 
 <a name="4.5.6"></a>4.5.6. "Show VP counter" should be on.
 
-<a name="4.5.7"></a>4.5.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected. For landscapes, this will result in zero to two landscapes, with a maximum of one Way.
+<a name="4.5.7"></a>4.5.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
 
 ### <a name="4.6"></a>4.6. Modifying table settings
 
