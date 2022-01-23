@@ -341,7 +341,7 @@ Superpromotions allow you to promote multiple tiers at once, based on how you wo
 
 <a name="5.4.1"></a>5.4.1. If you played in tier G or below and finished in first place (including ties), you are eligible for a superpromotion.
 
-<a name="5.4.2"></a>5.4.2. If you are eligible, and would be placed higher by the new player placement rules ([2.4.3](#2.4.3)) than by the standard promotion rules ([5.3](#5.3)), you superpromote into the higher tier.
+<a name="5.4.2"></a>5.4.2. If you are eligible, and would be placed higher by the new player placement rules ([2.4.3](#2.4.3)) than by the standard promotion rules ([5.3](#5.3)), you superpromote into the higher tier. Note that, in practice, superpromoting players use a different, stricter set of Dominion Online level cutoffs than new players.
 
 <a name="5.4.3"></a>5.4.3. You cannot superpromote past E tier. If the new player placement rules ([2.4.3](#2.4.3)) would place you in D tier or higher, you superpromote into E tier instead.
 
