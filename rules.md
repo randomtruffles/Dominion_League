@@ -249,7 +249,15 @@ After each playing session, you or your opponent should submit the results of th
 
 ### <a name="4.13"></a>4.13. Playing under protest
 
-In the case of a disputed rules infraction, you should reach out to a moderator for help. If a moderator decision needs to be made that affects the outcome of a game, you should finish the game, and you may protest the game by contacting your moderator with a description of what occurred and the game number. The moderator team will review the game and make a ruling by a majority vote whether the game results stand or that the game must be replayed.
+In the case of a disputed rules infraction during a Dominion League game, you should initiate the following procedure:
+
+<a name="4.13.1"></a>4.13.1. Inform your opponent that you believe an infraction occurred, and that you're playing under protest.
+
+<a name="4.13.2"></a>4.13.2. Finish playing the game, as well as the rest of your games for that playing session ([4.2](#4.2)).
+ 
+<a name="4.13.3"></a>4.13.3. [Contact](/contact) your moderator about the protest and your reasons for it, either directly via Discord, or through the Hotline Form.
+
+<a name="4.13.4"></a>4.13.4. The moderators will review the dispute and issue a ruling based on a majority vote. This may result in the disputed game being voided and replayed.
 
 ### <a name="4.14"></a>4.14. Extra/non-standard matches
 
