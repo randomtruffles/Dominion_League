@@ -138,11 +138,9 @@ If you witness or experience any misconduct, including but not limited to the ex
 
 ### <a name="4.1"></a>4.1. Matches
 
-A match is 6 games between the same two players, with each player going first 3 times. Each player plays one match against each other player in their division.
+A match is 6 games between the same two players. Each player plays one match against each other player in their division.
 
 <a name="4.1.1"></a>4.1.1. Matches must be played on [Dominion Online](https://dominion.games/).
-
-<a name="4.1.2"></a>4.1.2. The first game should have a random starting player, and then starting player should alternate for the remaining games.
 
 ### <a name="4.2"></a>4.2. Playing sessions
 
