@@ -204,6 +204,8 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.6.5"></a>4.6.5. You may agree to turn on "Rated game".
 
+<a name="4.6.6"></a>4.6.6. You may agree to re-roll a Base-only kingdom in order to first extend your Dominion Online subscription if you or your opponent did not realize your subscription had expired. You may not otherwise agree to re-roll a kingdom based on its composition.
+
 ### <a name="4.7"></a>4.7. New expansions
 
 Per [4.5.7](#4.5.7), the default card pool for Kingdom generation each season includes all expansions. However, either player may opt to remove new expansions from Kingdom generation.
