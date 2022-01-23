@@ -405,13 +405,23 @@ If one of your close friends or family members is in your division, please sched
 
 <a name="6.2.1"></a>6.2.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions.
 
-### <a name="6.3"></a>6.3. Deadline
+### <a name="6.3"></a>6.3. Deadlines
 
-All matches must be played by the end of the last day of the season, which is always a Sunday at 23:59 UTC.
+In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC.
+
+<a name="6.3.1"></a>6.3.1. At the end of the third week of the season, players should have no more than 4 matches remaining. This typically requires having played 1 match.
+
+<a name="6.3.2"></a>6.3.2. At the end of the fourth week of the season, players should have no more than 3 matches remaining. This typically requires having played 2 matches.
+
+<a name="6.3.3"></a>6.3.3. At the end of the fifth week of the season, players should have no more than 2 matches remaining. This typically requires having played 3 matches.
+
+<a name="6.3.4"></a>6.3.4. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having played 5 matches.
+
+<a name="6.3.5"></a>6.3.5. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
 
 ### <a name="6.4"></a>6.4. Extensions
 
-If you are unable to a match by the deadline in [6.3](#6.3), you must request an extension from your moderator by that deadline.
+If you are unable to complete a match by the end of season deadline ([6.3.4](#6.3.4)), you must request an extension from your moderator by that deadline.
 
 <a name="6.4.1"></a>6.4.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
 
