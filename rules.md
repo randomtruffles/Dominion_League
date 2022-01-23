@@ -108,7 +108,7 @@ Each tier of players is split into divisions by a seeding algorithm. The algorit
 
 ### <a name="3.1"></a>3.1 Behavior
 
-You are expected to treat all players with respect at all times. Examples of inappropriate actions include rage quitting, intentionally slow playing, and unexpectedly or suddenly changing the match arrangements per [4.6](#4.6).
+You are expected to treat all players with respect at all times. Examples of inappropriate actions include rage quitting, intentionally slow playing, and unexpectedly or suddenly changing the match arrangements per [4.7](#4.7).
 
 ### <a name="3.2"></a>3.2. Communication
 
