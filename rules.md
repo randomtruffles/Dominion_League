@@ -216,53 +216,60 @@ Players may have different opinions on which undos should be allowed, if any.
 
 <a name="4.8.2"></a>4.8.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
 
-### <a name="4.9"></a>4.9. Abandoning games
+### <a name="4.9"></a>4.9. Timers
+Games in the Dominion League do not user a timer.
+
+<a name="4.9.1"></a>4.9.1. The "Make (opponent) Resign?" prompt in Dominion Online should only be used to address connection issues and other technical difficulties (see [4.10](#4.10)). It should not be used to enforce speed of play on your opponent.
+
+<a name="4.9.2"></a>4.9.2. If you feel that an opponent is playing especially slowly, consider politely requesting that the play more quickly, or reaching out to a moderator.
+
+### <a name="4.10"></a>4.10. Abandoning games
 
 In the rare event of a game which must be abandoned, players should play a new game in its place. Abandoned games do not count toward match completion or match score.
 
-<a name="4.9.1"></a>4.9.1. If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the game.
+<a name="4.10.1"></a>4.10.1. If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the game.
 
-<a name="4.9.2"></a>4.9.2. If players mutually agree their current game is a stalemate, they may abandon the game. If the players don’t agree about a stalemate, then they must play on.
+<a name="4.10.2"></a>4.10.2. If players mutually agree their current game is a stalemate, they may abandon the game. If the players don’t agree about a stalemate, then they must play on.
 
-### <a name="4.10"></a>4.10 Wins and ties
+### <a name="4.11"></a>4.11 Wins and ties
 
 Each game you win is reported as 1 win. Each game you tie is reported as 0.5 wins.
 
-<a name="4.10.1"></a>4.10.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
+<a name="4.11.1"></a>4.11.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
 
-### <a name="4.11"></a>4.11. Submitting results
+### <a name="4.12"></a>4.12. Submitting results
 
 After each playing session, you or your opponent should submit the results of that playing session as soon as possible using the Results form linked in your division’s Discord channel.
 
-<a name="4.11.1"></a>4.11.1. The results are the total wins and ties per [4.10](#4.10).
+<a name="4.12.1"></a>4.12.1. The results are the total wins and ties per [4.11](#4.11).
 
-<a name="4.11.2"></a>4.11.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
+<a name="4.12.2"></a>4.12.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
 
-<a name="4.11.3"></a>4.11.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
+<a name="4.12.3"></a>4.12.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
 
-### <a name="4.12"></a>4.12. Playing under protest
+### <a name="4.13"></a>4.13. Playing under protest
 
 In the case of a disputed rules infraction, you should reach out to a moderator for help. If a moderator decision needs to be made that affects the outcome of a game, you should finish the game, and you may protest the game by contacting your moderator with a description of what occurred and the game number. The moderator team will review the game and make a ruling by a majority vote whether the game results stand or that the game must be replayed.
 
-### <a name="4.13"></a>4.13. Extra/non-standard matches
+### <a name="4.14"></a>4.14. Extra/non-standard matches
 
 There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
-<a name="4.13.1"></a>4.13.1. Adjustment and tiebreaker matches are 2 game matches with each player starting one of the games. You and your opponent may play a 4 or 6 game match instead by mutual agreement.
+<a name="4.14.1"></a>4.14.1. Adjustment and tiebreaker matches are 2 game matches with each player starting one of the games. You and your opponent may play a 4 or 6 game match instead by mutual agreement.
 
-<a name="4.13.2"></a>4.13.2. Play-in matches are 6-game matches.
+<a name="4.14.2"></a>4.14.2. Play-in matches are 6-game matches.
 
-<a name="4.13.3"></a>4.13.3. If one player reaches 2.5 or more wins in a 4 game match, or 3.5 or more wins in a 6 game match, they win the match, and there is no need to complete any remaining games.
+<a name="4.14.3"></a>4.14.3. If one player reaches 2.5 or more wins in a 4 game match, or 3.5 or more wins in a 6 game match, they win the match, and there is no need to complete any remaining games.
 
-<a name="4.13.4"></a>4.13.4. If the players are tied after completing all games per [4.13.1](#4.13.1) or [4.13.2](#4.13.2), they play one final game with a random player starting.
+<a name="4.14.4"></a>4.14.4. If the players are tied after completing all games per [4.14.1](#4.14.1) or [4.14.2](#4.14.2), they play one final game with a random player starting.
 
-<a name="4.13.5"></a>4.13.5. If there is still a tie, the player that went second in the last game wins.
+<a name="4.14.5"></a>4.14.5. If there is still a tie, the player that went second in the last game wins.
 
-<a name="4.13.6"></a>4.13.6. A player who does not wish to play one of these matches may concede.
+<a name="4.14.6"></a>4.14.6. A player who does not wish to play one of these matches may concede.
 
-<a name="4.13.7"></a>4.13.7. If one player fails to respond promptly or is unable to play, that player concedes by default.
+<a name="4.14.7"></a>4.14.7. If one player fails to respond promptly or is unable to play, that player concedes by default.
 
-<a name="4.13.8"></a>4.13.8. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
+<a name="4.14.8"></a>4.14.8. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
 ## <a name="5"></a>5. Standings
 
