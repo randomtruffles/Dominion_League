@@ -102,7 +102,15 @@ Divisions usually have a maximum of 6 players. However, divisions may “flex”
 
 ### <a name="2.6"></a>2.6. Seeding
 
-Each tier of players is split into divisions by a seeding algorithm. The algorithm takes into account time zones in tiers E and below, previous performance in the League for returning players, and Dominion Online level for new players.
+Each tier of players is split into divisions by a seeding algorithm. For all divisions in the same tier (and in the same time zone region, for tiers E and below), players split into 4 groups: new players, players who demoted from the tier above, players who promoted from the tier below, and players returning to the same tier. These groups are distributed as evenly as possible.
+
+<a name="2.6.1"></a>2.6.1. In a random order, new players are placed into divisions, starting with the last division of the tier.
+
+<a name="2.6.2"></a>2.6.2. In a random order, players who demoted are placed into divisions, starting with the first division of the tier.
+
+<a name="2.6.3"></a>2.6.3. In a random order, players who promoted are placed into divisions, starting with the first division of the tier.
+
+<a name="2.6.4"></a>2.6.4. The players returning to the same tier randomly fill in the remaining spots.
 
 ## <a name="3"></a>3. Conduct
 
