@@ -355,13 +355,19 @@ Superpromotions allow you to promote multiple tiers at once, based on how you wo
 
 ### <a name="5.5"></a>5.5. Free promotions
 
-In order to fill open spots created by players leaving the League between seasons, players in lower tiers may be offered free promotions. The following criteria are used, in order, to determine eligibility:
+In order to fill open spots in a tier created by players leaving the League between seasons, players who would play in the tier below may be offered a free promotion. Players are selected as follows:
 
-<a name="5.5.1"></a>5.5.1. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) second place in the tier below with a high score in the previous season are offered a free promotion.
+<a name="5.5.1"></a>5.5.1. Players are divided into prioritized groups based on their results from the previous season. In descending order of priority, these are: second place finishers (from the tier below), fifth place finishers (from the target tier), and third place finishers (from the tier below, only eligible if the tier below promoted second place finishers).
 
-<a name="5.5.2"></a>5.5.2. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
+<a name="5.5.2"></a>5.5.2. Players who tied are considered to have finished in the best tied place for free promotion eligibility.
 
-<a name="5.5.3"></a>5.5.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.15](#4.15). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
+<a name="5.5.3"></a>5.5.3. If there at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
+
+<a name="5.5.4"></a>5.5.4. If the target tier is in tiers A through E, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators arrange play-in matches between eligible players. The format for these matches is specified in [4.15](#4.15).
+
+<a name="5.5.5"></a>5.5.5. Depending on the number of slots and eligible players in [5.5.4](#5.5.4), some players may receive a free promotion while others play a play-in match. Players are ordered by their win percentage from the previous season for determining priority.
+
+<a name="5.5.6"></a>5.5.6. If the target tier is tier F or below, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators choose players for free promotions at their discretion, taking into account the players' time zones and win percentages in the previous season.
 
 ### <a name="5.6"></a>5.6. Dropped players
 
