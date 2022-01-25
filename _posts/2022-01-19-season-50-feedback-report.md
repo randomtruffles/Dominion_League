@@ -24,7 +24,7 @@ On the season 50 returning form, we asked questions about sorting players into d
 
 Our responses to this question from tiers E through J, where divisions are split by time zone, indicated that a strong majority of players there prefer to keep those divisions based on time zone. We will not change these.
 
-In tiers C and D, a weak majority indicated a preference for splitting based on time zone, though a sizable proportion of players in those tiers had a strong preference for worldwide divisions. When discussing possible we had very few responses from these divisions so did not act - we will look again towards the end of season 50, so if you have something additional to say please do so.
+In tiers C and D, a weak majority indicated a preference for splitting based on time zone, though a sizable proportion of players in those tiers had a strong preference for worldwide divisions. When discussing possible changes we had very few responses from these divisions so did not act - we will look again towards the end of season 50, so if you have something additional to say please do so.
 
 *In your tier, what are your feelings towards creating divisions based on time zones?*
 
