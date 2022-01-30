@@ -427,7 +427,7 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 <a name="6.3.2"></a>6.3.2. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having played or scheduled 2 matches.
 
-<a name="6.3.3"></a>6.3.3. At the end of the fifth week of the season, players should have no more than 2 matches remaining. This typically requires having played 3 matches.
+<a name="6.3.3"></a>6.3.3. At the end of the fifth week of the season, players should have no more than 2 matches remaining to be played or scheduled. This typically requires having played or scheduled 3 matches.
 
 <a name="6.3.4"></a>6.3.4. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having played 5 matches.
 
