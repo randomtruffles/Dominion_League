@@ -216,15 +216,19 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.7.1"></a>4.7.1. For games using expansions, you may agree to turn on "Respect liked cards".
 
-<a name="4.7.2"></a>4.7.2. Under "Select Kingdom Cards", you may agree to use the checkboxes on the left to only allow cards from certain expansions.
+<a name="4.7.2"></a>4.7.2. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
-<a name="4.7.3"></a>4.7.3. Under "Select Kingdom Cards", you may agree to use the expansion buttons at the top to require cards from certain expansions.
+<a name="4.7.3"></a>4.7.3. You may agree to turn on "Rated game".
 
-<a name="4.7.4"></a>4.7.4. Under "Select Kingdom Cards", you may agree to require a maximum of either one card or one landscape.
- 
-<a name="4.7.4"></a>4.7.4. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
+#### <a name="4.7.4"></a>4.7.4. Select Kingdom Cards
 
-<a name="4.7.5"></a>4.7.5. You may agree to turn on "Rated game".
+Under "Select Kingdom Cards", you may agree to...
+
+<a name="4.7.4.1"></a>4.7.4.1. Use the checkboxes on the left to only allow cards from certain expansions.
+
+<a name="4.7.4.2"></a>4.7.4.2. Use the expansion buttons at the top to require cards from certain expansions.
+
+<a name="4.7.4.3"></a>4.7.4.3. Require a maximum of either one card or one landscape.
 
 ### <a name="4.8"></a>4.8. New expansions
 
