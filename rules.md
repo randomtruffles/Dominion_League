@@ -243,7 +243,7 @@ Games in the Dominion League do not user a timer.
 
 <a name="4.10.1"></a>4.10.1. The "Make (opponent) Resign?" prompt in Dominion Online should only be used to address connection issues and other technical difficulties (see [4.11](#4.11)). It should not be used to enforce speed of play on your opponent.
 
-<a name="4.10.2"></a>4.10.2. If you feel that an opponent is playing especially slowly, consider politely requesting that the play more quickly, or reaching out to a moderator.
+<a name="4.10.2"></a>4.10.2. If you feel that an opponent is playing especially slowly, consider politely requesting that they play more quickly, or reaching out to a moderator.
 
 ### <a name="4.11"></a>4.11. Abandoning games
 
