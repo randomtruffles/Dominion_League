@@ -710,7 +710,7 @@ function loadDivision(divisionDiv, divisionData, link, division, season, params)
   var drops = divisionData["late drops"];
   var complete = divisionData["complete?"];
   //var tiebreaker = divisionData["tiebreaker"];
-  var simType = (Number(season) >= 42) ? "new" : (Number(season) >= 28) ? "old" : "none";
+  var simType = (Number(season) >= 50) ? "none" : (Number(season) >= 42) ? "new" : (Number(season) >= 28) ? "old" : "none";
 
   // Compute sorted player list with drops last
   var sorted = [];
