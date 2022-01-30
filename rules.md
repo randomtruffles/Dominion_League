@@ -423,7 +423,7 @@ If one of your close friends or family members is in your division, please sched
 
 In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC.
 
-<a name="6.3.1"></a>6.3.1. At the end of the third week of the season, players should have no more than 4 matches remaining to be played/scheduled. This typically requires having played or scheduled 1 match.
+<a name="6.3.1"></a>6.3.1. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having played or scheduled 1 match.
 
 <a name="6.3.2"></a>6.3.2. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having played or scheduled 2 matches.
 
