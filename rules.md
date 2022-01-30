@@ -35,6 +35,8 @@ To join the Dominion League, you must meet all these requirements:
 
 <a name="1.1.5"></a>1.1.5. Your username and profile picture comply with the conduct rules in [3.3](#3.3).
 
+<a name="1.1.6"></a>1.1.6. You are able to commit both the necessary time to play your matches, and the necessary time to coordinate with your opponents via Discord to schedule your matches. Note that while playing your matches will require approximately two hours per week during the season, you will usually need more available time than this, in order to accommodate your opponents' schedules.
+
 ### <a name="1.2"></a>1.2. Signing up
 
 If you meet all the requirements per [1.1](#1.1) and are not playing in the current season, you may fill out the [sign-up form](/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
@@ -100,13 +102,21 @@ Divisions usually have a maximum of 6 players. However, divisions may “flex”
 
 ### <a name="2.6"></a>2.6. Seeding
 
-Each tier of players is split into divisions by a seeding algorithm. The algorithm takes into account time zones in tiers E and below, previous performance in the League for returning players, and Dominion Online level for new players.
+Each tier of players is split into divisions by a seeding algorithm. For all divisions in the same tier (and in the same time zone region, for tiers E and below), players split into 4 groups: new players, players who demoted from the tier above, players who promoted from the tier below, and players returning to the same tier. These groups are distributed as evenly as possible.
+
+<a name="2.6.1"></a>2.6.1. In a random order, new players are placed into divisions, starting with the last division of the tier.
+
+<a name="2.6.2"></a>2.6.2. In a random order, players who demoted are placed into divisions, starting with the first division of the tier.
+
+<a name="2.6.3"></a>2.6.3. In a random order, players who promoted are placed into divisions, starting with the first division of the tier.
+
+<a name="2.6.4"></a>2.6.4. The players returning to the same tier randomly fill in the remaining spots.
 
 ## <a name="3"></a>3. Conduct
 
 ### <a name="3.1"></a>3.1 Behavior
 
-You are expected to treat all players with respect at all times. Examples of inappropriate actions include rage quitting, intentionally slow playing, and unexpectedly or suddenly changing the match arrangements per [4.5](#4.5).
+You are expected to treat all players with respect at all times. Examples of inappropriate actions include rage quitting, intentionally slow playing, and unexpectedly or suddenly changing the match arrangements per [4.7](#4.7).
 
 ### <a name="3.2"></a>3.2. Communication
 
@@ -136,11 +146,9 @@ If you witness or experience any misconduct, including but not limited to the ex
 
 ### <a name="4.1"></a>4.1. Matches
 
-A match is 6 games between the same two players, with each player going first 3 times. Each player plays one match against each other player in their division.
+A match is 6 games between the same two players. Each player plays one match against each other player in their division.
 
 <a name="4.1.1"></a>4.1.1. Matches must be played on [Dominion Online](https://dominion.games/).
-
-<a name="4.1.2"></a>4.1.2. The first game should have a random starting player, and then starting player should alternate for the remaining games.
 
 ### <a name="4.2"></a>4.2. Playing sessions
 
@@ -150,6 +158,8 @@ A playing session is a series of one or more games between the same two players,
 
 <a name="4.2.2"></a>4.2.2. The League recommends you complete all 6 games of a match on the same day in a single playing session.
 
+<a name="4.2.3"></a>4.2.3. You may not change your banned, disliked, and liked cardlists during a playing session.
+
 ### <a name="4.3"></a>4.3. Outside help
 
 During games, you may not attempt to gain a competitive advantage by consulting resources other than those maintained by the League on the [Dominion League Resources page](/resources).
@@ -158,113 +168,152 @@ During games, you may not attempt to gain a competitive advantage by consulting 
 
 <a name="4.3.2"></a>4.3.2. For example, getting advice from Dominion Strategy articles or from spectators is not allowed.
 
-### <a name="4.4"></a>4.4. Default table settings
+### <a name="4.4"></a>4.4. Starting player
 
-Games played on Dominion Online should use these table setting under Advanced Options:
+Each player should go first 3 times in a 6 game match. It is each player's responsibility to ensure that they get 3 starts in a match.
 
-<a name="4.4.1"></a>4.4.1. Spectators should be allowed.
+<a name="4.4.1"></a>4.4.1. The first game of a match should have a random starting player. This is the default setting when creating a new table on Dominion Online.
 
-<a name="4.4.2"></a>4.4.2. “Players can see spectator chat” should be off.
+<a name="4.4.2"></a>4.4.2. Starting player should alternate for the remaining games.
 
-<a name="4.4.3"></a>4.4.3. Familiar cards should not be respected.
+<a name="4.4.3"></a>4.4.3. If the table host makes a mistake in setting starting player, future games should be used to correct the discrepancy as quickly as possible. For example, if player A starts games 1 and 2, player B should start games 3 and 4. This should be done even if it is not possible for one of the players to receive 3 starts. For example, if player A starts games 1 through 4, player B should start games 5 and 6.
 
-<a name="4.4.4"></a>4.4.4. For games using expansions, the disliked cards lists and banned cards lists should be respected, and the liked cards lists should not be.
+<a name="4.4.4"></a>4.4.4. If the table host makes a mistake in setting starting player, and this mistake is caught during an ongoing game that has not reached turn 2, either player may request that the game be abandoned only if one player cannot reach 3 starts using future games per [4.4.3](#4.4.3). Otherwise, the game must be played out normally.
 
-<a name="4.4.5"></a>4.4.5. For games without expansions, no cardlists should be respected.
+<a name="4.4.5"></a>4.4.5. Games cannot be voided after the fact due to a mismatch in starting player counts.
 
-<a name="4.4.6"></a>4.4.6. The game should not use the “Extra Menagerie” option.
+### <a name="4.5"></a>4.5. Table settings
 
-<a name="4.4.7"></a>4.4.7. The game should be unrated.
+Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions, found under "Advanced Options":
 
-<a name="4.4.8"></a>4.4.8. The victory point counter should be used.
+<a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
 
-<a name="4.4.9"></a>4.4.9. The player order should be set per [4.1.2](#4.1.2).
+<a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.4.10"></a>4.4.10. Kingdoms should be generated randomly with all cards either player has access to and from zero to two landscapes, with a maximum of one Way. No particular cards, landscapes, landscape types, or expansions should be selected.
+<a name="4.5.3"></a>4.5.3. For games without expansions, "Respect disliked cards" and "Respect banned cards" should be off.
 
-<a name="4.4.11"></a>4.4.11. There is no official game timer on Dominion Online, and games should not use an unofficial timer.
+### <a name="4.6"></a>4.6 Table settings reference
 
-### <a name="4.5"></a>4.5. Changes to the defaults
+The following settings, found under "Advanced Options", are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
 
-The default table settings in [4.4](#4.4) may be changed between games by mutual agreement of you and your opponent except:
+<a name="4.6.1"></a>4.6.1. "Allow spectators" should be set to Yes.
 
-<a name="4.5.1"></a>4.5.1. You may not agree to disallow spectators ([4.4.1](#4.4.1)).
+<a name="4.6.2"></a>4.6.2. "Respect Familiar cards" should be off.
 
-<a name="4.5.2"></a>4.5.2. If your game does not use expansions, you may not use Familiar cards or any cardlists ([4.4.3](#4.4.3) & [4.4.5](#4.4.5)).
+<a name="4.6.3"></a>4.6.3. For games using expansions, "Respect disliked cards" and "Respect banned cards" should be on. "Respect liked cards" should be off.
 
-<a name="4.5.3"></a>4.5.3. You may only change your cardlists between playing sessions.
+<a name="4.6.4"></a>4.6.4. “Extra Menagerie” should be off.
 
-<a name="4.5.4"></a>4.5.4. If you agree to use an unofficial timer, you and your opponent must also agree on all timer settings and how to handle any glitches or lag.
+<a name="4.6.5"></a>4.6.5. "Rated game" should be off.
 
-### <a name="4.6"></a>4.6. New expansions
+<a name="4.6.6"></a>4.6.6. "Show VP counter" should be on.
 
-Per [4.4.10](#4.4.10), the default card pool for Kingdom generation each season is all cards. However, either player may opt to remove cards from new expansions that were released after the end of the previous season from Kingdom generation.
+<a name="4.6.7"></a>4.6.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
 
-### <a name="4.7"></a>4.7. Undos
+### <a name="4.7"></a>4.7. Modifying table settings
+
+By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
+
+<a name="4.7.1"></a>4.7.1. For games using expansions, you may agree to turn on "Respect liked cards".
+
+<a name="4.7.2"></a>4.7.2. Under "Select Kingdom Cards", you may agree to only allow cards from certain expansions.
+ 
+<a name="4.7.3"></a>4.7.3. Under "Select Kingdom Cards", you may agree to require a maximum of either one card or one landscape.
+ 
+<a name="4.7.4"></a>4.7.4. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
+
+<a name="4.7.5"></a>4.7.5. You may agree to turn on "Rated game".
+
+### <a name="4.8"></a>4.8. New expansions
+
+Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season includes all expansions. However, either player may opt to remove new expansions from Kingdom generation.
+
+<a name="4.8.1"></a>4.8.1. An expansion is considered new if it was released after the end of the previous Dominion League season.
+
+### <a name="4.9"></a>4.9. Undos
 
 Players may have different opinions on which undos should be allowed, if any.
 
-<a name="4.7.1"></a>4.7.1. The default policy is that you at least grant all undos that are for small numbers of steps and that did not reveal new game information.
+<a name="4.9.1"></a>4.9.1. The default policy is that you at least grant all undos that are for small numbers of steps and that did not reveal new game information.
 
-<a name="4.7.2"></a>4.7.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
+<a name="4.9.2"></a>4.9.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
 
-### <a name="4.8"></a>4.8. Abandoning games
+### <a name="4.10"></a>4.10. Timers
+Games in the Dominion League do not user a timer.
 
-In the rare event of a game which must be abandoned, players should play a new game in its place. Abandoned games do not count toward match completion or match score.
+<a name="4.10.1"></a>4.10.1. The "Make (opponent) Resign?" prompt in Dominion Online should only be used to address connection issues and other technical difficulties (see [4.11](#4.11)). It should not be used to enforce speed of play on your opponent.
 
-<a name="4.8.1"></a>4.8.1. If a player has connection issues or otherwise cannot continue a game, they should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), the players should abandon the game.
+<a name="4.10.2"></a>4.10.2. If you feel that an opponent is playing especially slowly, consider politely requesting that the play more quickly, or reaching out to a moderator.
 
-<a name="4.8.2"></a>4.8.2. If players mutually agree their current game is a stalemate, they may abandon the game. If the players don’t agree about a stalemate, then they must play on.
+### <a name="4.11"></a>4.11. Abandoning games
 
-### <a name="4.9"></a>4.9 Wins and ties
+In the rare event of a game which must be abandoned, you should play a new game in its place. Abandoned games do not count toward match completion or match score.
+
+<a name="4.11.1"></a>4.11.1. If you or your opponent have connection issues or otherwise cannot continue a game, you should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), you should abandon the game.
+
+<a name="4.11.2"></a>4.11.2. If you and your opponent agree that your current game is a stalemate, you should abandon the game. If you and your opponent don’t agree about a stalemate, then you must play on.
+
+<a name="4.11.3"></a>4.11.3. You and your opponent may agree to abandon a game with a Base-only kingdom that was generated by mistake, i.e. because you and/or your opponent did not realize your Dominion Online subscription had expired. This must be done before the start of turn 2. In this case, you or your opponent should extend your subscription before starting a new game. You may not otherwise agree to abandon a game based on the contents of the kingdom.
+
+### <a name="4.12"></a>4.12 Wins and ties
 
 Each game you win is reported as 1 win. Each game you tie is reported as 0.5 wins.
 
-<a name="4.9.1"></a>4.9.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
+<a name="4.12.1"></a>4.12.1. Per Dominion rules, a game with tied VP scores is won by the player who took fewer turns (not counting extra turns).
 
-### <a name="4.10"></a>4.10. Submitting results
+### <a name="4.13"></a>4.13. Submitting results
 
 After each playing session, you or your opponent should submit the results of that playing session as soon as possible using the Results form linked in your division’s Discord channel.
 
-<a name="4.10.1"></a>4.10.1. The results are the total wins and ties per [4.9](#4.9).
+<a name="4.13.1"></a>4.13.1. The results are the total wins and ties per [4.12](#4.12).
 
-<a name="4.10.2"></a>4.10.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
+<a name="4.13.2"></a>4.13.2. If the match is played across multiple sessions, only submit the games you just played, and the system will add the multiple submissions together.
 
-<a name="4.10.3"></a>4.10.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
+<a name="4.13.3"></a>4.13.3. Only submit results for games that actually happened. Reporting fraudulent results or forfeited games per [3.4.2](#3.4.2) may result in a suspension per [7.2](#7.2).
 
-### <a name="4.11"></a>4.11. Playing under protest
+### <a name="4.14"></a>4.14. Playing under protest
 
-In the case of a disputed rules infraction, you should reach out to a moderator for help. If a moderator decision needs to be made that affects the outcome of a game, you should finish the game, and you may protest the game by contacting your moderator with a description of what occurred and the game number. The moderator team will review the game and make a ruling by a majority vote whether the game results stand or that the game must be replayed.
+In the case of a disputed rules infraction during a Dominion League game, you should initiate the following procedure:
 
-### <a name="4.12"></a>4.12. Extra/non-standard matches
+<a name="4.14.1"></a>4.14.1. Inform your opponent that you believe an infraction occurred, and that you're playing under protest.
+
+<a name="4.14.2"></a>4.14.2. Finish playing the game, as well as the rest of your games for that playing session ([4.2](#4.2)).
+ 
+<a name="4.14.3"></a>4.14.3. [Contact](/contact) your moderator about the protest and your reasons for it, either directly via Discord, or through the Hotline Form.
+
+<a name="4.14.4"></a>4.14.4. The moderators will review the dispute and issue a ruling based on a majority vote. This may result in the disputed game being voided and replayed.
+
+### <a name="4.15"></a>4.15. Extra/non-standard matches
 
 There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
-<a name="4.12.1"></a>4.12.1. Adjustment and tiebreaker matches are 2-game matches with each player starting one of the games.
+<a name="4.15.1"></a>4.15.1. Adjustment and tiebreaker matches are 2 game matches with each player starting one of the games. You and your opponent may play a 4 or 6 game match instead by mutual agreement.
 
-<a name="4.12.2"></a>4.12.2. Play-in matches are standard 6-game matches, but if one player reaches 3.5 or more wins, they win the match, and there is no need to complete any remaining games.
+<a name="4.15.2"></a>4.15.2. Play-in matches are 6-game matches.
 
-<a name="4.12.3"></a>4.12.3. If the players are tied after completing all games per [4.12.1](#4.12.1) or [4.12.2](#4.12.2), they play one final game with a random player starting.
+<a name="4.15.3"></a>4.15.3. If one player reaches 2.5 or more wins in a 4 game match, or 3.5 or more wins in a 6 game match, they win the match, and there is no need to complete any remaining games.
 
-<a name="4.12.4"></a>4.12.4. If there is still a tie, the player that went second in the last game wins.
+<a name="4.15.4"></a>4.15.4. If the players are tied after completing all games per [4.15.1](#4.15.1) or [4.15.2](#4.15.2), they play one final game with a random player starting.
 
-<a name="4.12.5"></a>4.12.5. A player who does not wish to play one of these matches may concede.
+<a name="4.15.5"></a>4.15.5. If there is still a tie, the player that went second in the last game wins.
 
-<a name="4.12.6"></a>4.12.6. If one player fails to respond promptly or is unable to play, that player concedes by default.
+<a name="4.15.6"></a>4.15.6. A player who does not wish to play one of these matches may concede.
 
-<a name="4.12.7"></a>4.12.7. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
+<a name="4.15.7"></a>4.15.7. If one player fails to respond promptly or is unable to play, that player concedes by default.
+
+<a name="4.15.8"></a>4.15.8. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
 ## <a name="5"></a>5. Standings
 
 ### <a name="5.1"></a>5.1. Standings
 
-The players in each division are ranked by their win rates. This is updated when players submit results per [4.10](#4.10).
+The players in each division are ranked by their win rates. This is updated when players submit results per [4.13](#4.13).
 
 ### <a name="5.2"></a>5.2. Tiebreakers
 
-If there is a tie within a division, these steps are applied with the group of tied players:
+If there is a tie within a division, a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
 
-#### <a name="5.2.1"></a>5.2.1. Head-to-head
+#### <a name="5.2.1"></a>5.2.1. Head-to-head tiebreaker
 
 <a name="5.2.1.1"></a>5.2.1.1. Order the players by the total head-to-head wins each player earned from the matches involving only the group of tied players.
 
@@ -272,9 +321,9 @@ If there is a tie within a division, these steps are applied with the group of t
 
 #### <a name="5.2.2"></a>5.2.2. Promotion or demotion implications
 
-<a name="5.2.2.1"></a>5.2.2.1. If a two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.12](#4.12).
+<a name="5.2.2.1"></a>5.2.2.1. If an unbroken two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.15](#4.15).
 
-<a name="5.2.2.2"></a>5.2.2.2. If a three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
+<a name="5.2.2.2"></a>5.2.2.2. If an unbroken three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
 
 <a name="5.2.2.3"></a>5.2.2.3. Otherwise, all players share the rank of the best tied place.
 
@@ -300,41 +349,51 @@ Superpromotions allow you to promote multiple tiers at once, based on how you wo
 
 <a name="5.4.1"></a>5.4.1. If you played in tier G or below and finished in first place (including ties), you are eligible for a superpromotion.
 
-<a name="5.4.2"></a>5.4.2. If you are eligible, and would be placed higher by the new player placement rules ([2.4.3](#2.4.3)) than by the standard promotion rules ([5.3](#5.3)), you superpromote into the higher tier.
+<a name="5.4.2"></a>5.4.2. If you are eligible, and would be placed higher by the new player placement rules ([2.4.3](#2.4.3)) than by the standard promotion rules ([5.3](#5.3)), you superpromote into the higher tier. Note that, in practice, superpromoting players use a different, stricter set of Dominion Online level cutoffs than new players.
 
 <a name="5.4.3"></a>5.4.3. You cannot superpromote past E tier. If the new player placement rules ([2.4.3](#2.4.3)) would place you in D tier or higher, you superpromote into E tier instead.
 
 ### <a name="5.5"></a>5.5. Free promotions
 
-In order to fill open spots created by players leaving the League between seasons, players in lower tiers may be offered free promotions. The following criteria are used, in order, to determine eligibility:
+In order to fill open spots in a tier created by players leaving the League between seasons, players who would play in the tier below may be offered a free promotion. Players are selected as follows:
 
-<a name="5.5.1"></a>5.5.1. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) second place in the tier below with a high score in the previous season are offered a free promotion.
+<a name="5.5.1"></a>5.5.1. Players are divided into prioritized groups based on their results from the previous season. In descending order of priority, these are: second place finishers (from the tier below), fifth place finishers (from the target tier), and third place finishers (from the tier below, only eligible if the tier below promoted second place finishers).
 
-<a name="5.5.2"></a>5.5.2. If the open spot is in a tier roughly the same size as the tier below it, players who finished in (or tied for) third place in the tier below with a high score in the previous season are offered a free promotion. Otherwise, players who finished in (or tied for) fifth place in that tier with a high score in the previous season are offered a free promotion.
+<a name="5.5.2"></a>5.5.2. Players who tied are considered to have finished in the best tied place for free promotion eligibility.
 
-<a name="5.5.3"></a>5.5.3. When multiple players would be offered free promotions to a tier without enough open slots for all of them, that tier determines how players are chosen. For tiers A through E, the moderators arrange play-in matches between those players. The format for these matches is specified in [4.12](#4.12). For all other tiers, the moderators choose players at their discretion, taking into account time zones.
+<a name="5.5.3"></a>5.5.3. If there at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
+
+<a name="5.5.4"></a>5.5.4. If the target tier is in tiers A through E, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators arrange play-in matches between eligible players. The format for these matches is specified in [4.15](#4.15).
+
+<a name="5.5.5"></a>5.5.5. Depending on the number of slots and eligible players in [5.5.4](#5.5.4), some players may receive a free promotion while others play a play-in match. Players are ordered by their win percentage from the previous season for determining priority.
+
+<a name="5.5.6"></a>5.5.6. If the target tier is tier F or below, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators choose players for free promotions at their discretion, taking into account the players' time zones and win percentages in the previous season.
 
 ### <a name="5.6"></a>5.6. Dropped players
 
 The following rules are used to account for dropped players in the standings. See [7.1](#7.1) for more information about drops.
 
-<a name="5.6.1"></a>5.6.1. If the dropped player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
+<a name="5.6.1"></a>5.6.1. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
 
-<a name="5.6.2"></a>5.6.2. If the dropped player played any games, their remaining match results are instead simulated by averaging the average winning percentage of the dropped player and the average losing percentage of their opponent in all games they did play. Afterward, all the match results involving the dropped player are scaled by the percentage of their games they actually played.
+<a name="5.6.2"></a>5.6.2. If the dropped player played no games, they are removed and the remaining players play one fewer match. If possible, the moderators will replace them with a player from the waiting list.
 
-<a name="5.6.3"></a>5.6.3. At the end of the season, to account for the approximations inherent in simulated results, adjustment matches may be required to better decide the standings between players straddling a promotion or demotion boundary. To determine if an adjustment match is needed, 4 scenarios are compared:
+#### <a name="5.6.3"></a>5.6.3. Adjustment match determination
 
-<a name="5.6.3.1"></a>5.6.3.1. Scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
+If a dropped player played any games, adjustment matches may be needed to determine promotions or demotions. The format of adjustment matches is specified in [4.15](#4.15). The following procedure determines whether an adjustment match is required:
 
-<a name="5.6.3.2"></a>5.6.3.2. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the first player actually played against all dropped players.
+<a name="5.6.3.1"></a>5.6.3.1. Order all remaining players by win percentage in games that were played and note who promotes and who demotes.
 
-<a name="5.6.3.3"></a>5.6.3.3. Scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
+<a name="5.6.3.2"></a>5.6.3.2. Order all remaining players by win percentage in games not involving the dropped players and note who promotes and who demotes.
 
-<a name="5.6.3.4"></a>5.6.3.4. Round all unscaled results to the nearest 0.5, then scale all the dropped player’s match results by the percentage of the games the second player actually played against all dropped players.
+<a name="5.6.3.3"></a>5.6.3.3. If the promoters (or demoters) are not the same in both scenarios, then the players who promote (or demote) in one scenario, but not the other, play an adjustment match.
 
-<a name="5.6.4"></a>5.6.4. If the 4 scenarios do not all yield the same promoter or demoter, an adjustment match is needed. The format of this match is specified in [4.12](#4.12). The winner is placed ahead of the loser in the final standings.
+<a name="5.6.3.4"></a>5.6.3.4. If the players with promotion (or non-demotion) claims played the same number of games against each dropped player, only the all games played scenario ([5.6.3.1](#5.6.3.1)) is considered.
 
-<a name="5.6.5"></a>5.6.5. Dropped players finish last place in their division and will demote, which may affect their placement in subsequent seasons they return to.
+<a name="5.6.3.5"></a>5.6.3.5. If there is an unbroken tie (see [5.2](#5.2)) for promotion or non-demotion in at least one of the scenarios, the tied players play an adjustment match. They do not play a tiebreaker match.
+
+<a name="5.6.3.6"></a>5.6.3.6. If a player promotes in one scenario and demotes in the other, then that player doesn't play in any adjustment matches and doesn't promote or demote.
+
+<a name="5.6.3.7"></a>5.6.3.7. If more than two players have promotion (or non-demotion) claims, the moderators will determine what adjustment matches are needed, if any, at their discretion.
 
 ### <a name="5.7"></a>5.7. Championship match
 
@@ -360,13 +419,23 @@ If one of your close friends or family members is in your division, please sched
 
 <a name="6.2.1"></a>6.2.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions.
 
-### <a name="6.3"></a>6.3. Deadline
+### <a name="6.3"></a>6.3. Deadlines
 
-All matches must be played by the end of the last day of the season, which is always a Sunday at 23:59 UTC.
+In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC.
+
+<a name="6.3.1"></a>6.3.1. At the end of the third week of the season, players should have no more than 4 matches remaining. This typically requires having played 1 match.
+
+<a name="6.3.2"></a>6.3.2. At the end of the fourth week of the season, players should have no more than 3 matches remaining. This typically requires having played 2 matches.
+
+<a name="6.3.3"></a>6.3.3. At the end of the fifth week of the season, players should have no more than 2 matches remaining. This typically requires having played 3 matches.
+
+<a name="6.3.4"></a>6.3.4. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having played 5 matches.
+
+<a name="6.3.5"></a>6.3.5. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
 
 ### <a name="6.4"></a>6.4. Extensions
 
-If you are unable to a match by the deadline in [6.3](#6.3), you must request an extension from your moderator by that deadline.
+If you are unable to complete a match by the end of season deadline ([6.3.4](#6.3.4)), you must request an extension from your moderator by that deadline.
 
 <a name="6.4.1"></a>6.4.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
 
@@ -412,41 +481,31 @@ Moderators are allowed, but not required, to play in the League.
 
 <a name="8.3.1"></a>8.3.1. Moderators are assigned divisions to be the primary point of contact for those divisions. They are never assigned divisions in the tier they play in. They are responsible for checking up on players who have fallen behind and dropping those who are non-responsive for a considerable period of time (see [7.1](#7.1)).
 
-<a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.11](#4.11)).
+<a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.14](#4.14)).
 
 ### <a name="8.4"></a>8.4. Meeting minutes
 
 Whenever the moderators gather for an official meeting at which rules may change, the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting. This will happen at least once per season.
 
-### <a name="8.5"></a>8.5. Moderator division quotas
-
-Each active moderator will moderate at least 5 divisions per season.
-
-### <a name="8.6"></a>8.6. Moderator breaks
-
-Moderators are eligible for 1-season breaks, during which they retain voting privileges and access to moderator Discord channels.
-
-<a name="8.6.1"></a>8.6.1. If more moderators want to take breaks than the team can afford, moderators who have gone the longest without a break will receive priority.
-
-### <a name="8.7"></a>8.7. Recruiting new moderators
+### <a name="8.5"></a>8.5. Recruiting new moderators
 
 The moderator team will open applications for new moderators under the following conditions:
 
-<a name="8.7.1"></a>8.7.1. The following season is expected to have more than 10 divisions per moderator.
+<a name="8.5.1"></a>8.5.1. The following season is expected to have more than 10 divisions per moderator.
 
-<a name="8.7.2"></a>8.7.2. The moderator team has not opened applications for new moderators in either of the preceding two seasons.
+<a name="8.5.2"></a>8.5.2. The moderator team has not opened applications for new moderators in either of the preceding two seasons.
 
-### <a name="8.8"></a>8.8. Evaluating new moderator applicants
+### <a name="8.6"></a>8.6. Evaluating new moderator applicants
 
-When the moderator team opens applications for new moderators per [8.7](#8.7), they will follow this process:
+When the moderator team opens applications for new moderators per [8.5](#8.5), they will follow this process:
 
-<a name="8.8.1"></a>8.8.1. New moderator applications will open during week 2 of the season.
+<a name="8.6.1"></a>8.6.1. New moderator applications will open during week 2 of the season.
 
-<a name="8.8.2"></a>8.8.2. The existing moderator team will review applications during week 3 of the season.
+<a name="8.6.2"></a>8.6.2. The existing moderator team will review applications during week 3 of the season.
 
-<a name="8.8.3"></a>8.8.3. When applications close, the moderators may accept none, some, or all of the applicants.
+<a name="8.6.3"></a>8.6.3. When applications close, the moderators may accept none, some, or all of the applicants.
 
-<a name="8.8.4"></a>8.8.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
+<a name="8.6.4"></a>8.6.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
 
 ## <a name="9"></a>9. Amendments
 
@@ -454,7 +513,7 @@ When the moderator team opens applications for new moderators per [8.7](#8.7), t
 
 These rules may be amended by a majority vote of the moderators.
 
-<a name="9.1.1"></a>9.1.1. Moderators may vote “no opinion”, in which case their vote doesn't count towards establishing or preventing a majority.
+<a name="9.1.1"></a>9.1.1. Moderators may vote “no opinion”, in which case their vote doesn't count towards establishing or preventing a majority. This also applies to other moderator votes, including rulings on protested games ([4.14](#4.14)).
 
 <a name="9.1.2"></a>9.1.2. Major changes, such as those affecting promotion and demotion, will never be made mid-season.
 
