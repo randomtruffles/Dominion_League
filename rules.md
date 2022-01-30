@@ -158,7 +158,7 @@ A playing session is a series of one or more games between the same two players,
 
 <a name="4.2.2"></a>4.2.2. The League recommends you complete all 6 games of a match on the same day in a single playing session.
 
-<a name="4.2.3"></a>4.2.3. You may only change your banned, disliked, and liked cardlists between playing sessions.
+<a name="4.2.3"></a>4.2.3. You may not change your banned, disliked, and liked cardlists during a playing session.
 
 ### <a name="4.3"></a>4.3. Outside help
 
