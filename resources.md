@@ -11,7 +11,7 @@ These resources may be consulted at any time, including during a League game.
 * [Rulebooks](#rulebooks)
 * [New errata](#new-errata)
 * [Previous errata](#previous-errata)
-* [Dominion Online bugs](#dominion-Online-bugs)
+* [Dominion Online bugs](#dominion-online-bugs)
 
 ### Rulebooks
 
