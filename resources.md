@@ -7,7 +7,13 @@ layout: rules_faq
 ---
 These resources may be consulted at any time, including during a League game.
 
-#### Rulebooks
+### Contents
+* [Rulebooks](#Rulebooks)
+* [New errata](#New-errata)
+* [Previous errata](#Previous-errata)
+* [Dominion Online bugs](#Dominion-Online-bugs)
+
+### Rulebooks
 
 The current rulebooks for each Dominion set are linked below. See below for some changes that were made but not yet incorporated into the official rulebooks.
 
@@ -27,11 +33,11 @@ The current rulebooks for each Dominion set are linked below. See below for some
 
 There is no official rulebook for the promo cards (Envoy, Black Market, Stash, Walled Village, Governor, Prince, Summon, Sauna/Avanto, Dismantle, Church, and Captain).
 
-#### New errata
+### New errata
 
 These errata are not included in the rulebooks linked above, but are official rules and are used in Dominion Online.
 
-##### Updated cards
+#### Updated cards
 
 The abilities of these cards have changed since the rulebooks were last printed. Cards with the same abilities but new wordings (such as due to the "Gaining non-Supply cards" rule below) are not listed here.
 
@@ -45,11 +51,13 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
-* **Trader**: Action, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
+* **Trader**: Action - Reaction, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
 
 Errata has been announced for some cards, but has not been implemented in Dominion Online yet:
-* **Donate**: At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
-* **Mountain Pass**: When you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
+* **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
+* **Merchant Guild**: Action, $5 *(Dominion: Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
+* **Mountain Pass**: Landmark *(Dominion: Empires)*<brWhen you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
+* **Patron**: Action - Reaction, $4 *(Dominion: Renaissance)*<br>**+1 Villager**<br>**+$2**<br>––––––––––––––––––––<br>When something causes you to reveal this (using the word "reveal") in an Action phase, **+1 Coffers**.
 
 
 Additionally, two cards intentionally works differently online than what the card text says:
@@ -57,13 +65,13 @@ Additionally, two cards intentionally works differently online than what the car
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have card costing a Potion unless a card like that is in the Kingdom. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 * **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played via Way of the Mouse would be as useful or less useful than other Ways.
 
-##### Tracking rules
+#### Tracking rules
 
 Some cards, like the new Band of Misfits, can play a card that isn't put into play. When you play Band of Misfits, leave it in play as long as you would have left the card it plays in play. Normally that will be the same turn's Clean-up. For a Band of Misfits playing a Duration card, it will be the Clean-up of the last turn the Duration card has any effects. For a Band of Misfits playing a Throne Room playing a Duration card, it will be the Clean-up of the turn the Duration card leaves play. For a Band of Misfits playing a card that can move itself from play, like Mining Village, the Mining Village can't move itself, so Band of Misfits doesn't leave play any earlier than normal. If a Band of Misfits plays multiple Duration cards (e.g., you used Throne Room on it), leave it out until the Clean-up of the last turn that one of them still had effects.
 
 These rules apply to all of the cards that play cards without putting them into play: Band of Misfits, Captain, Inheritance, Necromancer, Overlord, and Way of the Mouse.
 
-##### Stop-Moving rule
+#### Stop-Moving rule
 
 *Note: This replaces the Lose-Track rule (which was introduced in the Dominion: Dark Ages rulebook), and is largely the same as it.*
 
@@ -71,37 +79,41 @@ An effect can move a card if it specifies where the card is coming from, or if t
 
 Additionally, when you are told to get a card from your discard pile and that card is not the top card of your discard pile, you can look through your discard pile to get the card. You don't have to just look at the top couple of cards, you can look through the whole discard pile.
 
-##### Gaining non-Supply cards
+#### Gaining non-Supply cards
 
 When a card tells you to gain a non-Supply card by name, you can gain it from its pile, even though it's not in the Supply.
 
 For example, Marauder can gain Spoils because Marauder uses the words "gain a Spoils", but Changeling cannot gain an Imp because Changeling does not use the word "Imp" and instead says "gain a copy".
 
-##### Reducing costs
+#### Reducing costs
 
 The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion. The cost in Debt of a card can't go below 0 Debt.
 
-##### Kingdom Treasure cards
+#### Kingdom Treasure cards
 
 New printings of Treasure cards that do special things when played will no longer say "when you play this", and instead of saying they are "worth" an amount of $ they will give +$.
 
-##### "While this is in play" abilities
+#### "While this is in play" abilities
 
 New printings of cards with "while this is in play" abilities that only affect the card's player (such as Hoard's) now say "while you have this in play". Abilities that affect all players (such as Highway's) are unchanged.
 
-##### Shuffling
+#### Shuffling
 
 In addition to the shuffling rules in the Previous errata section below, there is additional errata that when shuffling, you may also look through your remaining deck.
 
-##### Coffers
+#### Coffers
 
-Errata has been announced for Coffers, but is not finalized or official yet. The errata will let you remove Coffers tokens from your mat any time during your turn, and Patron and Merchant Guild will be updated due to this.
+You may spend Coffers at any time on your turn.
 
-#### Previous errata
+#### Playing cards
+
+An effect that tries to play a card for the first time can only do so when the card is where the effect expects it to be. If it can play it the first time, subsequent plays will also work.
+
+### Previous errata
 
 These errata are included in the rulebooks linked above, but may be useful if you are only familiar with older copies of the rulebooks and cards.
 
-##### Updated cards
+#### Updated cards
 
 Cards which have new wordings but function identically in all situations are not listed here.
 
@@ -130,19 +142,15 @@ Cards which have new wordings but function identically in all situations are not
   * **Black Market**: It is clarified that you can play any number of Treasures from your hand before buying a card from the Black Market deck.
   * **Envoy**: It is clarified that you put the cards into your hand instead of drawing them.
 
-##### Playing Durations multiple times
+#### Playing Durations multiple times
 
 If a card such as Throne Room plays a Duration card multiple times, that card also stays in play until the player discards the Duration card. If a card such as Throne Room plays a non-Duration card multiple times — even if the card it plays then plays a Duration card — it is always discarded from play the turn it is played.
 
-##### Shuffling
+#### Shuffling
 
 If you have to do anything with your deck — for example draw, look at, reveal, set aside, discard, or trash cards — and you need more cards than are left in your deck, first shuffle your discard pile and put it under your deck, then do the thing. If there are still not enough cards, you do the thing with however many cards you can. If when shuffling there are no cards in your deck, the shuffled discard pile simply becomes your new deck.
 
-##### Playing cards
-
-An effect that tries to play a card for the first time can only do so when the card is where the effect expects it to be. If it can play it the first time, subsequent plays will also work.
-
-#### Dominion Online bugs
+### Dominion Online bugs
 
 Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI. Bugs due to using abilities during another player's turn are in a separate section below.
 
@@ -214,7 +222,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Wayfarer**: See **Quarry** above.
 * **Zombie Spy**: If you play Herald, reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you then play Zombie Spy via the Necromancer.
 
-##### Bugs during another player's turn
+#### Bugs during another player's turn
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and Boons (such as receiving the Field's Gift during another player's turn).
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
@@ -223,4 +231,4 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.
 * If another player has Capitalism and plays an Attack that somehow triggers you to play a Black Market during which you play Caravan Guards from your hand, then after Black Market you will be given a prompt to react to the Attack with those same Caravan Guards (though the game correctly does not show them in your hand). At the start of your next turn, the Caravan Guards you played twice will give +$1 twice.
 
-If you encounter a bug not listed here, please confirm it is indeed a bug in the #rules-help channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
+If you encounter a bug not listed here, please confirm it is indeed a bug in the [#rules-help](https://discord.com/channels/212660788786102272/285903840660946954) channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
