@@ -291,7 +291,7 @@ In the case of a disputed rules infraction during a Dominion League game, you sh
 
 ### <a name="4.15"></a>4.15. Extra/non-standard matches
 
-There are several types of matches ([adjustment](#5.5), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
+There are several types of matches ([adjustment](#5.6.3), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
 <a name="4.15.1"></a>4.15.1. Adjustment and tiebreaker matches are 2 game matches with each player starting one of the games. You and your opponent may play a 4 or 6 game match instead by mutual agreement.
 
