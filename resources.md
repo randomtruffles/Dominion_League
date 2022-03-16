@@ -44,21 +44,19 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Band of Misfits**: Action - Command, $5 *(Dominion: Dark Ages)*<br>Play a non-Command Action card from the Supply that costs less than this, leaving it there.
 * **Captain**: Action - Duration - Command, $6 *(promo card)*<br>Now and at the start of your next turn: Play a non-Duration non-Command Action card from the Supply costing up to $4, leaving it there.
 * **Death Cart**: Action - Looter, $4 *(Dominion: Dark Ages)*<br>You may trash this or an Action card from your hand, for **+$5**.<br>––––––––––––––––––––<br>When you gain this, gain 2 Ruins.
+* **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
 * **Embargo**: Action, $2 *(Dominion: Seaside)*<br>**+$2**<br>Trash this. If you did, add an Embargo token to a Supply pile. (For the rest of the game, when a player buys a card from that pile, they gain a Curse.)
 * **Inheritance**: Event, $7 *(Dominion: Adventures)*<br>Once per game: Set aside a non-Command Action card from the Supply costing up to $4. Move your Estate token to it. (During your turns, Estates are also Actions with "Play the card with your Estate token, leaving it there.")
 * **Lantern**: Artifact *(Dominion: Renaissance)*<br>Border Guards you play reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
-* **Oracle**: Action - Attack, $3 *(Dominion: Hinterlands)*<br>Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice. They choose the order to return them. Afterwards, **+2 Cards**.
-* **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
-* **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
-* **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
-* **Trader**: Action - Reaction, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
-
-Errata has been announced for some cards, but has not been implemented in Dominion Online yet:
-* **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
 * **Merchant Guild**: Action, $5 *(Dominion: Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
 * **Mountain Pass**: Landmark *(Dominion: Empires)*<brWhen you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
+* **Oracle**: Action - Attack, $3 *(Dominion: Hinterlands)*<br>Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice. They choose the order to return them. Afterwards, **+2 Cards**.
+* **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Patron**: Action - Reaction, $4 *(Dominion: Renaissance)*<br>**+1 Villager**<br>**+$2**<br>––––––––––––––––––––<br>When something causes you to reveal this (using the word "reveal") in an Action phase, **+1 Coffers**.
-
+* **Pillage**: Action - Attack, $5 *(Dominion: Dark Ages)*<br>Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.
+* **Prince**: Action, $8 *(promo card)*<br>You may set aside (on this) a non-Duration Action card from your hand costing up to $4. At the start of each of your turns, play that card, leaving it set aside.
+* **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
+* **Trader**: Action - Reaction, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
 
 Additionally, two cards intentionally works differently online than what the card text says:
 
