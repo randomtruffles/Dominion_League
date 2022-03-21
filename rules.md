@@ -184,7 +184,7 @@ Each player should go first 3 times in a 6 game match. It is each player's respo
 
 ### <a name="4.5"></a>4.5. Table settings
 
-Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions~~, found under "Advanced Options"~~:
+Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions:
 
 <a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
 
