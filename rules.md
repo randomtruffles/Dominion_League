@@ -439,15 +439,17 @@ If one of your close friends or family members is in your division, please sched
 
 In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC.
 
-<a name="6.3.1"></a>6.3.1. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 1 match.
+<a name="6.3.1"></a>6.3.1. At the end of the second week of the season, players should have checked in to their division, or played or scheduled a match.
 
-<a name="6.3.2"></a>6.3.2. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 2 matches.
+<a name="6.3.2"></a>6.3.2. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 1 match.
 
-<a name="6.3.3"></a>6.3.3. At the end of the fifth week of the season, players should have no more than 2 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 3 matches.
+<a name="6.3.3"></a>6.3.3. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 2 matches.
 
-<a name="6.3.4"></a>6.3.4. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having played 5 matches.
+<a name="6.3.4"></a>6.3.4. At the end of the fifth week of the season, players should have no more than 2 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 3 matches.
 
-<a name="6.3.5"></a>6.3.5. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
+<a name="6.3.5"></a>6.3.5. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having played 5 matches.
+
+<a name="6.3.6"></a>6.3.6. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
 
 ### <a name="6.4"></a>6.4. Extensions
 
