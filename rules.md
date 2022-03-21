@@ -240,7 +240,7 @@ Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season in
 
 <a name="4.8.2"></a>4.8.2. Previews of expansions are always considered new.
 
-<a name="4.8.3"></a>4.8.3. Something about second editions???
+<a name="4.8.3"></a>4.8.3. An expansion is *not* considered new when a new edition is released, even if that edition adds or removes cards.
 
 <a name="4.8.4"></a>4.8.4. Promotional cards are not considered new expansions.
 
