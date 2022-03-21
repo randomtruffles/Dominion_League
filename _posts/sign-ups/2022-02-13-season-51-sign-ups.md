@@ -6,7 +6,7 @@ author: tracer
 layout: simple_post
 categories: signups
 ---
-**Season 51** will run from Monday, March 28, until Sunday, May 8, and you can sign up until **Saturday, March 19 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 51** will run from Monday, March 28 until Sunday, May 8 and ~~you can sign up until Saturday, March 19 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Friday, April 8 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
