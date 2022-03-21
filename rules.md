@@ -214,27 +214,37 @@ The following settings are set by default when you create a new table on Dominio
 
 By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
 
-<a name="4.7.1"></a>4.7.1. For games using expansions, you may agree to turn on "Respect liked cards".
+<a name="4.7.1"></a>4.7.1. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
 
 <a name="4.7.2"></a>4.7.2. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
 <a name="4.7.3"></a>4.7.3. You may agree to turn on "Rated game".
 
-#### <a name="4.7.4"></a>4.7.4. Select Kingdom Cards
+#### <a name="4.7.4"></a>4.7.4. Kingdom Options
 
-Under "Select Kingdom Cards", you may agree to...
+Under "Kingdom Options", you may agree to...
 
-<a name="4.7.4.1"></a>4.7.4.1. Use the checkboxes on the left to only allow cards from certain expansions.
+<a name="4.7.4.1"></a>4.7.4.1. Use the expansion toggles to only allow cards from certain expansions.
 
-<a name="4.7.4.2"></a>4.7.4.2. Use the expansion buttons at the top to require cards from certain expansions.
+<a name="4.7.4.2"></a>4.7.4.2. Use the card buttons at the top to require cards from certain expansions.
 
 <a name="4.7.4.3"></a>4.7.4.3. Require a maximum of either one card or one landscape.
 
-### <a name="4.8"></a>4.8. New expansions
+<a name="4.7.4.4"></a>4.7.4.4. Change the Card Pool Level.
 
-Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season includes all expansions. However, either player may opt to remove new expansions from Kingdom generation.
+### <a name="4.8"></a>4.8. New cards
 
-<a name="4.8.1"></a>4.8.1. An expansion is considered new if it was released after the end of the previous Dominion League season.
+Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
+
+<a name="4.8.1"></a>4.8.1. An expansion is considered new if its initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
+
+<a name="4.8.2"></a>4.8.2. Previews of expansions are always considered new.
+
+<a name="4.8.3"></a>4.8.3. Something about second editions???
+
+<a name="4.8.4"></a>4.8.4. Promotional cards are not considered new expansions.
+
+<a name="4.8.5"></a>4.8.5. Rules changes, wording changes, new card errata, etc., do not cause cards or expansions to be treated as new.
 
 ### <a name="4.9"></a>4.9. Undos
 
