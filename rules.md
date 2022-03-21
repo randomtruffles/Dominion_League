@@ -194,21 +194,21 @@ Games played on Dominion Online should use the default table settings provided b
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
-The following settings, found under "Advanced Options", are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
+The following settings are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
 
 <a name="4.6.1"></a>4.6.1. "Allow spectators" should be set to Yes.
 
-<a name="4.6.2"></a>4.6.2. "Respect Familiar cards" should be off.
+<a name="4.6.2"></a>4.6.2. For games using expansions and a Card Pool Level of 2 or higher, the "Disliked" and "Banned" options for "Respected Cards" should be on. The "Liked" option should be off.
 
-<a name="4.6.3"></a>4.6.3. For games using expansions, "Respect disliked cards" and "Respect banned cards" should be on. "Respect liked cards" should be off.
+<a name="4.6.3"></a>4.6.3. "Extra Allies" should be off.
 
-<a name="4.6.4"></a>4.6.4. “Extra Menagerie” should be off.
+<a name="4.6.4"></a>4.6.4. "Rated game" should be off.
 
-<a name="4.6.5"></a>4.6.5. "Rated game" should be off.
+<a name="4.6.5"></a>4.6.5. "Show VP counter" should be on.
 
-<a name="4.6.6"></a>4.6.6. "Show VP counter" should be on.
+<a name="4.6.6"></a>4.6.6. "Card Pool Level" should be set to 10.
 
-<a name="4.6.7"></a>4.6.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
+<a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
 
 ### <a name="4.7"></a>4.7. Modifying table settings
 
