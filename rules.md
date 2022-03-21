@@ -184,13 +184,13 @@ Each player should go first 3 times in a 6 game match. It is each player's respo
 
 ### <a name="4.5"></a>4.5. Table settings
 
-Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions, found under "Advanced Options":
+Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions~~, found under "Advanced Options"~~:
 
 <a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
 
 <a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.5.3"></a>4.5.3. For games without expansions, "Respect disliked cards" and "Respect banned cards" should be off.
+<a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off.
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
