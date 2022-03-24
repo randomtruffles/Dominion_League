@@ -91,3 +91,7 @@ Skpetroff	skpetroff
 khz	kHz
 Dbloslim	Dbloslim
 Towny95	Towny95
+mweinreich	mweinreich
+Nlahmeyer	Nlahmeyer
+Operator	Operator
+spectershah	spectershah
