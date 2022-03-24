@@ -17,7 +17,7 @@ categories: pinned faq
 
 If you have a question that is not answered here, please [contact us](/contact).
 
-# 1. Signing up
+## 1. Signing up
 
 #### How do I sign up?
 
@@ -69,7 +69,7 @@ The introductory message in your division’s Discord channel will say who your 
 
 Your moderator’s role is to make sure players stay on schedule, and resolve any disputes between players. You can feel free to reach out to them at any time, either in your division channel or via a direct message if you have any questions or concerns about the league. They can help resolve any conflicts between players such as scheduling issues or rules violations. Your moderator may also check in with you throughout the season for various reasons such as if you fall behind the one match per week pace, or if your opponent is having trouble reaching you. Please respond promptly to any messages your moderator may send you.
 
-# 2. Discord and the online community
+## 2. Discord and the online community
 
 #### What is Discord? How does it work?
 
@@ -95,7 +95,7 @@ Fill out the [Dominion calendar form](https://domi.link/calendar-form), and the 
 
 The moderators host Town Halls to gather feedback on a specific topic that doesn’t have clear answers. Town Halls take place over a 24-hour period in the #town-hall channel on Discord. They begin with a presentation by the moderators on the topic and some of the options under consideration, then everyone is invited to contribute via messages and emoji polls. Following the discussion, the moderators formulate a plan of action based on the feedback, which, if opinion is split on the matter, could involve choosing to collect additional feedback from all League Players via the Returning Form.
 
-# 3. Scheduling matches
+## 3. Scheduling matches
 
 #### How do I schedule matches?
 
@@ -137,7 +137,7 @@ Notify your moderator as soon as possible, and they may be able to grant you an 
 
 Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the suspension if appropriate.
 
-# 4. Playing matches
+## 4. Playing matches
 
 #### What is a match? Is it the same as a game?
 
@@ -227,7 +227,7 @@ See [outside help](/rules#4.3).
 
 See [play to the best of your ability](/rules#3.4).
 
-# 5. Dominion Online (<http://dominion.games>)
+## 5. Dominion Online (<http://dominion.games>)
 
 #### How do I add someone from my division as a friend on Dominion Online?
 
@@ -281,7 +281,7 @@ This setting can also be changed during a game.
 
 One of the introductory posts in your division channel lists the subscription status of the players in your division. You can also see your subscription information on the Account tab of the Dominion Online website. If neither player has access to any expansions, the game will be base-only.
 
-# 6. Details and backend
+## 6. Details and backend
 
 #### How do the moderators determine players’ tiers (A, B, C, etc)?
 
@@ -319,7 +319,7 @@ See [free promotions](/rules#5.5).
 
 See [standings](/rules#5.1) and [tiebreakers](/rules#5.2).
 
-# 7. Miscellaneous
+## 7. Miscellaneous
 
 #### What are the rules on etiquette?
 
