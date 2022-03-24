@@ -7,7 +7,7 @@ title: Current standings of divisions in Season 50
   <div class="container-centered">
 
     <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
-	<h5>2022-01-31 to 2022-03-13</h5>
+	<h5>2022-03-28 to 2022-05-08</h5>
     <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
     <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
     <!-- Filter buttons -->
@@ -31,7 +31,7 @@ var cur_season = String({{ site.data.season.number }});
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 sheetLinks = sheetLinks[cur_season];
-var champion = "cider01";
+var champion = "";
 loadPage();
 
 function singleDivision(division) {
