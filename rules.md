@@ -437,7 +437,7 @@ If one of your close friends or family members is in your division, please sched
 
 ### <a name="6.3"></a>6.3. Deadlines
 
-In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC.
+In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC. We encourage players to stay well ahead of these deadlines - they are not the expected pace.
 
 <a name="6.3.1"></a>6.3.1. At the end of the first week of the season, players who have not checked in to their division may be replaced by players from the waiting list.
 
