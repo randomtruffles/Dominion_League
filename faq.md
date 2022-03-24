@@ -280,6 +280,7 @@ The default is to use the VP tracker. This is also the default setting for a tab
 ##### What other settings should I be aware of?
 
 We encourage you to uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
+
 ![faq_images](/img/faq/table_settings.PNG)
 
 ##### Some settings depend on whether my game is base only. How can I tell?
