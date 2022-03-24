@@ -6,13 +6,21 @@ layout: post
 ---
 ## Season 50 Town Hall (League Calendar)
 
+During the season 50 town hall, we discussed potential adjustments to the League calendar, including where breaks should fall and how to distribute the extra weeks in a calendar year.
 
+Based on the town hall discussion and polling, it appeared that there was no desire to have the League target specific dates for breaks. Additionally, people were generally against having breaks be any longer, and were looking for a reduced (but not non-existent) break for the Online Championship.
+
+As moderators, we felt that it was important to keep the league schedule mapped consistently onto a calendar year to avoid needing to do major work during holiday weekends, so required the 4 extra break weeks to fall somewhere. We decided to reduce the Championship break to 4 weeks, and have an additional break week every other season. We hope that in these longer breaks more people will sign up for some of the many non-league tournaments offered in the Dominion Discord.
+
+For transitioning to the new schedule and keeping season start and end dates at good times for moderation, the next two breaks will be extended to 3 weeks. The break after those will be the 4 week championship break, at which point we will be on the new schedule.
 
 ## Returning Form Questions
 
 On the season 51 returning form, we asked questions about the length of seasons and pace of play.
 
 ### Season Length
+
+There was broad support for maintaining the current season length across all tiers. We will be keeping the season length at 6 weeks. Results of this poll broken down by tier can be viewed below.
 
 *How long would you like a season to last?*
 
@@ -21,6 +29,14 @@ On the season 51 returning form, we asked questions about the length of seasons 
 *Answer Format: Select one of: 5 weeks (1 week per match); 6 weeks (1 more week than matches); 7 weeks (2 more weeks than matches)*
 
 ### Pace of Play
+
+The two questions concerning pace of play were aimed at evaluating attitudes towards the amount of time the League takes people, and starting to look at how people would feel about timed League matches.
+
+A small minority of people are expecting their league matches to take more than 2 hours and 30 minutes for all six games, and a majority expect them to take less than 2 hours. Those in upper tiers seem to have expectations of longer matches. If you find that your League matches are typically taking more than 2 hours and 30 minutes, we encourage you to find ways to better meet others' expectations, as these are typically what they will schedule around.
+
+Based on comments received, we believe the "Make Resign" question was often misinterpreted, particularly at lower tiers where we received many comments believing that the only way the button would come up was in the case of a disconnect. Because of this factor, we believe it is difficult to draw any conclusions from this poll, but with a majority looking for a way to resign their opponent in some cases we believe that pace enforcements are possibly on the radar. Over the course of the next season, we will be collecting timing data from league matches, and will look to present it at a future town hall.
+
+Responses and breakdown by tier for both questions shown below.
 
 *How long do you expect a full 6-game match to take?*
 
@@ -38,3 +54,8 @@ Maximum response (in hours) for each individual shown.
 
 ## Looking forward to Season 51
 
+The most common freeform feedback this season concerned scheduling and tools to use. We will look to handle this internally for now, with more encouragement for players to engage with each other in their division channels.
+
+The scheduled returning form question for season 51 was concerning length of breaks; however, with the recent Town Hall we will push it back, and instead be polling about use of expansions.
+
+There is a pace of play town hall in the future, but we are looking to gather more data first. The Season 51 Town Hall will instead be a reverse town hall, where players are given the opportunity to delve into the inner workings of moderation, and possibly give us some ideas for improvement.
