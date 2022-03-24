@@ -176,6 +176,7 @@ An undo policy is a statement to your opponent before a match about what types o
 Each entry in the Dominion Online game log counts a decision, for example, playing a card. The most common type of new information is learning which cards are where, for example seeing what cards were on top of your deck by drawing them.
 
 For example:
+
 * Playing a Workshop does not give you any new information, so undoing that should be granted by default.
 * Playing a Militia does not give you any new information (unless the other player has already discarded), so undoing that should be granted by default.
 * Playing a Smithy lets you see new cards, so undoing that does not need to be granted. It's possible that the Smithy player drew Action cards they couldn't play and wanted to change their mind, but this is information they learned *only after* making the decision to play Smithy.
@@ -216,7 +217,7 @@ Allowing spectators offers League members an opportunity to watch competitive ga
 
 As a spectator, you can comment on the players’ decisions and discuss strategies with the other spectators. Please refrain from making inappropriate remarks, and be courteous in any critiques. A transcript of the commentary is often given to the players after the game, so they can evaluate their performance and areas for improvement. You may not discuss a game with the players until the game is over. Trying to give a competitive advantage to any player is against the Dominion Online terms and conditions, and could result in your account being suspended.
 
-As a spectator, if you see that the chat message box says “message” rather than “message spectators”, that means that the players have not set “players can see spectator chat” to “false”. In this case, you should notify the players that spec chat is on, and refrain from saying anything about the game until they turn it off.
+As a spectator, if you see that the chat message box says "message" rather than "message spectators", that means that the players have not set "players can see spectator chat" to "false". In this case, you should notify the players that spec chat is on, and refrain from saying anything about the game until they turn it off.
 
 ##### What resources can I use during a game?
 
@@ -246,11 +247,11 @@ The default is to play unrated games, but players can agree to play rated games 
 
 ##### Which cardlists do we play with?
 
-The default is to respect the disliked and banned cardlists, and to use no other special rules (such as “Extra Allies”). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
+The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Allies"). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
 
 ##### What are cardlists?
 
-Everyone gets 3 cardlists, and each one can have up to 5 Kingdom cards and up to 3 landscapes (Events, Landmarks, Projects, Ways). Putting things on these lists can change the likelihood they show up in your games:
+Everyone gets 3 cardlists, and each one can have up to 5 Kingdom cards and up to 3 landscapes (Allies, Events, Landmarks, Projects, Ways). Putting things on these lists can change the likelihood they show up in your games:
 
 * Liked list: these things show up twice as often
 * Disliked list: these things show up half as often
@@ -260,17 +261,19 @@ If you and your opponent both have the same card or landscape on their lists, th
 
 ##### How do I set the cardlists at my table?
 
-If you haven’t already, click “Select Kingdom Cards” to bring up the advanced Kingdom Options panel, then click outside of the “Select Cards” overlay to dismiss it. The “Respected Cards” setting has one button each for “Liked”, “Disliked”, and “Banned”. By default, “Liked” is off and “Disliked” and “Banned” are on.
+If you haven't already, click "Select Kingdom Cards" to bring up the advanced Kingdom Options panel, then click outside of the "Select Cards" overlay to dismiss it. The "Respected Cards" setting has one button each for "Liked", "Disliked", and "Banned". By default, "Liked" is off and "Disliked" and "Banned" are on.
 
 ##### How do I set the starting player at my table?
 
-To have the starting player determined randomly for the first game of a match, check that “Randomized Player Order” in the “Players” box in the upper right is enabled. To set the starting player in subsequent games, turn off “Randomized Player Order”. You can change the player order by dragging and dropping, or by using the up and down arrows next to the players’ names. Note the username of the player who went first during a game is colored red in the game log and chat box.
+To have the starting player determined randomly for the first game of a match, check that "Randomized Player Order" in the "Players" box in the upper right is enabled. To set the starting player in subsequent games, turn off "Randomized Player Order". You can change the player order by dragging and dropping, or by using the up and down arrows next to the players’ names. Note the username of the player who went first during a game is colored red in the game log and chat box.
 
 ##### What other settings should I be aware of?
 
-You should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game. This setting can also be changed during a game.
+You should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 
 ![faq_images](/img/faq/table_settings.PNG)
+
+This setting can also be changed during a game.
 
 ![faq_images](/img/faq/spec_chat_in_game.PNG)
 
