@@ -12,7 +12,7 @@ Based on the town hall discussion and polling, it appeared that there was no des
 
 As moderators, we felt that it was important to keep the league schedule mapped consistently onto a calendar year to avoid needing to do major work during holiday weekends, so required the 4 extra break weeks to fall somewhere. We decided to reduce the Championship break to 4 weeks, and have an additional break week every other season. We hope that in these longer breaks more people will sign up for some of the many non-league tournaments offered in the Dominion Discord.
 
-For transitioning to the new schedule and keeping season start and end dates at good times for moderation, the next two breaks will be extended to 3 weeks. The break after those will be the 4 week championship break, at which point we will be on the new schedule.
+For transitioning to the new schedule and keeping season start and end dates at good times for moderation, the next two breaks will be extended to 3 weeks. The break after those will be the 4 week championship break, at which point we will be on the new schedule. You can find projected dates through season 70 [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vQGvozhFa8ieSdClwQlFV48vu8KDGOFTRA6GAbSyR_DJd01XKhSFAagxkoIbueeX1qXBLLkuXyKVcMX/pubhtml).
 
 ## Returning Form Questions
 
@@ -58,4 +58,4 @@ The most common freeform feedback this season concerned scheduling and tools to 
 
 The scheduled returning form question for season 51 was concerning length of breaks; however, with the recent Town Hall we will push it back, and instead be polling about use of expansions.
 
-There is a pace of play town hall in the future, but we are looking to gather more data first. The Season 51 Town Hall will instead be a reverse town hall, where players are given the opportunity to delve into the inner workings of moderation, and possibly give us some ideas for improvement.
+There is a pace of play town hall in the future, but we are looking to gather more data first. The Season 51 Town Hall will instead be a reverse town hall, where players are given the opportunity to delve into the inner workings of moderation, and possibly give us some ideas for improvement in an open forum.
