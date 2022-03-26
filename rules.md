@@ -218,19 +218,17 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.7.2"></a>4.7.2. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
-<a name="4.7.3"></a>4.7.3. You may agree to turn on "Rated game".
-
-#### <a name="4.7.4"></a>4.7.4. Kingdom Options
+#### <a name="4.7.3"></a>4.7.3. Kingdom Options
 
 Under "Kingdom Options", you may agree to...
 
-<a name="4.7.4.1"></a>4.7.4.1. Use the expansion toggles to only allow cards from certain expansions.
+<a name="4.7.3.1"></a>4.7.3.1. Use the expansion toggles to only allow cards from certain expansions.
 
-<a name="4.7.4.2"></a>4.7.4.2. Use the card buttons at the top to require cards from certain expansions.
+<a name="4.7.3.2"></a>4.7.3.2. Use the card buttons at the top to require cards from certain expansions.
 
-<a name="4.7.4.3"></a>4.7.4.3. Require a maximum of either one card or one landscape.
+<a name="4.7.3.3"></a>4.7.3.3. Require a maximum of either one card or one landscape.
 
-<a name="4.7.4.4"></a>4.7.4.4. Change the Card Pool Level.
+<a name="4.7.3.4"></a>4.7.3.4. Change the Card Pool Level.
 
 ### <a name="4.8"></a>4.8. New cards
 
