@@ -138,7 +138,11 @@ Always play your matches as competitively as possible. Even if your promotion or
 
 <a name="3.4.3"></a>3.4.3. You may not collude with other players or otherwise compromise the competitive integrity of your matches.
 
-### <a name="3.5"></a>3.5. Misconduct
+### <a name="3.5"></a>3.5. Dominion Online Terms of Service
+
+In addition to following Dominion League conduct guidelines, you are expected to adhere to the Dominion Online [Terms of Service](https://dominion.games/terms-of-service.html).
+
+### <a name="3.6"></a>3.6. Misconduct
 
 If you witness or experience any misconduct, including but not limited to the examples listed in [3.1](#3.1), please alert a moderator immediately and share any screenshot evidence you have. Depending on the severity of the misconduct, the offending player may be warned or suspended per [7.2](#7.2).
 
@@ -439,7 +443,7 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 <a name="6.3.1"></a>6.3.1. At the end of the first week of the season, players who have not checked in to their division may be replaced by players from the waiting list.
 
-<a name="6.3.2"></a>6.3.2. At the end of the second week of the season, players should have checked in to their division, and/or completed and/or scheduled at least one match.
+<a name="6.3.2"></a>6.3.2. At the end of the second week of the season, players should have checked in to their division, and/or scheduled and/or completed at least one match.
 
 <a name="6.3.3"></a>6.3.3. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 1 match.
 
@@ -473,7 +477,7 @@ Players may be dropped from the League during the season. All drops are subject 
 
 <a name="7.1.1"></a>7.1.1. If you are unable to complete your League season for any reason, contact your division moderator for a voluntary drop. Your reason(s) for needing to drop will be considered by the moderator team when deciding whether to apply a suspension.
 
-<a name="7.1.2"></a>7.1.2. Players may be involuntarily dropped due to unresponsiveness, failure to play matches in a timely manner, or misconduct (see [3.5](#3.5)).
+<a name="7.1.2"></a>7.1.2. Players may be involuntarily dropped due to unresponsiveness, failure to play matches in a timely manner, or misconduct (see [3.6](#3.6)).
 
 ### <a name="7.2"></a>7.2. Suspensions
 
@@ -483,7 +487,7 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
-<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.5](#3.5)) will be subject to a warning or suspension per discretion of the moderator team.
+<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.6](#3.6)) will be subject to a warning or suspension per discretion of the moderator team.
 
 ## <a name="8"></a>8. Moderation
 
