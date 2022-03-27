@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2022-01-29
+date: 2022-03-27
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -126,7 +126,7 @@ Be kind and polite when communicating with players and moderators. Examples of i
 
 ### <a name="3.3"></a>3.3. Username and profile picture
 
-Your username and profile picture may not contain any inappropriate content.
+Your username and profile picture may not contain any inappropriate content. If your username or profile picture are inappropriate, a moderator will reach out to you to request you change them. You are required to comply with any such request in order to play in the Dominion League.
 
 ### <a name="3.4"></a>3.4. Play to the best of your ability
 
@@ -138,7 +138,11 @@ Always play your matches as competitively as possible. Even if your promotion or
 
 <a name="3.4.3"></a>3.4.3. You may not collude with other players or otherwise compromise the competitive integrity of your matches.
 
-### <a name="3.5"></a>3.5. Misconduct
+### <a name="3.5"></a>3.5. Dominion Online Terms of Service
+
+In addition to following Dominion League conduct guidelines, you are expected to adhere to the Dominion Online [Terms of Service](https://dominion.games/terms-of-service.html).
+
+### <a name="3.6"></a>3.6. Misconduct
 
 If you witness or experience any misconduct, including but not limited to the examples listed in [3.1](#3.1), please alert a moderator immediately and share any screenshot evidence you have. Depending on the severity of the misconduct, the offending player may be warned or suspended per [7.2](#7.2).
 
@@ -184,57 +188,65 @@ Each player should go first 3 times in a 6 game match. It is each player's respo
 
 ### <a name="4.5"></a>4.5. Table settings
 
-Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions, found under "Advanced Options":
+Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions:
 
 <a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
 
 <a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.5.3"></a>4.5.3. For games without expansions, "Respect disliked cards" and "Respect banned cards" should be off.
+<a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off.
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
-The following settings, found under "Advanced Options", are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
+The following settings are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
 
 <a name="4.6.1"></a>4.6.1. "Allow spectators" should be set to Yes.
 
-<a name="4.6.2"></a>4.6.2. "Respect Familiar cards" should be off.
+<a name="4.6.2"></a>4.6.2. For games using expansions and a Card Pool Level of 2 or higher, the "Disliked" and "Banned" options for "Respected Cards" should be on. The "Liked" option should be off.
 
-<a name="4.6.3"></a>4.6.3. For games using expansions, "Respect disliked cards" and "Respect banned cards" should be on. "Respect liked cards" should be off.
+<a name="4.6.3"></a>4.6.3. "Extra Allies" should be off.
 
-<a name="4.6.4"></a>4.6.4. “Extra Menagerie” should be off.
+<a name="4.6.4"></a>4.6.4. "Rated game" should be off.
 
-<a name="4.6.5"></a>4.6.5. "Rated game" should be off.
+<a name="4.6.5"></a>4.6.5. "Show VP counter" should be on.
 
-<a name="4.6.6"></a>4.6.6. "Show VP counter" should be on.
+<a name="4.6.6"></a>4.6.6. "Card Pool Level" should be set to 10.
 
-<a name="4.6.7"></a>4.6.7. Under "Select Kingdom Cards", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
+<a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
 
 ### <a name="4.7"></a>4.7. Modifying table settings
 
 By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
 
-<a name="4.7.1"></a>4.7.1. For games using expansions, you may agree to turn on "Respect liked cards".
+<a name="4.7.1"></a>4.7.1. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
 
 <a name="4.7.2"></a>4.7.2. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
-<a name="4.7.3"></a>4.7.3. You may agree to turn on "Rated game".
+#### <a name="4.7.3"></a>4.7.3. Kingdom Options
 
-#### <a name="4.7.4"></a>4.7.4. Select Kingdom Cards
+Under "Kingdom Options", you may agree to...
 
-Under "Select Kingdom Cards", you may agree to...
+<a name="4.7.3.1"></a>4.7.3.1. Use the expansion toggles to only allow cards from certain expansions.
 
-<a name="4.7.4.1"></a>4.7.4.1. Use the checkboxes on the left to only allow cards from certain expansions.
+<a name="4.7.3.2"></a>4.7.3.2. Use the card buttons at the top to require cards from certain expansions.
 
-<a name="4.7.4.2"></a>4.7.4.2. Use the expansion buttons at the top to require cards from certain expansions.
+<a name="4.7.3.3"></a>4.7.3.3. Require a maximum of either one card or one landscape.
 
-<a name="4.7.4.3"></a>4.7.4.3. Require a maximum of either one card or one landscape.
+<a name="4.7.3.4"></a>4.7.3.4. Change the Card Pool Level.
 
-### <a name="4.8"></a>4.8. New expansions
+### <a name="4.8"></a>4.8. New cards
 
-Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season includes all expansions. However, either player may opt to remove new expansions from Kingdom generation.
+Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
 
-<a name="4.8.1"></a>4.8.1. An expansion is considered new if it was released after the end of the previous Dominion League season.
+<a name="4.8.1"></a>4.8.1. An expansion is considered new if its initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
+
+<a name="4.8.2"></a>4.8.2. Previews of expansions are always considered new.
+
+<a name="4.8.3"></a>4.8.3. An expansion is *not* considered new when a new edition is released, even if that edition adds or removes cards.
+
+<a name="4.8.4"></a>4.8.4. Promotional cards are not considered new expansions.
+
+<a name="4.8.5"></a>4.8.5. Rules changes, wording changes, new card errata, etc., do not cause cards or expansions to be treated as new.
 
 ### <a name="4.9"></a>4.9. Undos
 
@@ -427,21 +439,25 @@ If one of your close friends or family members is in your division, please sched
 
 ### <a name="6.3"></a>6.3. Deadlines
 
-In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC.
+In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC. We encourage players to stay well ahead of these deadlines - they are not the expected pace.
 
-<a name="6.3.1"></a>6.3.1. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 1 match.
+<a name="6.3.1"></a>6.3.1. At the end of the first week of the season, players who have not checked in to their division may be replaced by players from the waiting list.
 
-<a name="6.3.2"></a>6.3.2. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 2 matches.
+<a name="6.3.2"></a>6.3.2. At the end of the second week of the season, players should have checked in to their division, scheduled at least one match, or completed at least one match.
 
-<a name="6.3.3"></a>6.3.3. At the end of the fifth week of the season, players should have no more than 2 matches remaining to be played or scheduled. This typically requires having played and/or scheduled 3 matches.
+<a name="6.3.3"></a>6.3.3. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 1 match.
 
-<a name="6.3.4"></a>6.3.4. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having played 5 matches.
+<a name="6.3.4"></a>6.3.4. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 2 matches.
 
-<a name="6.3.5"></a>6.3.5. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
+<a name="6.3.5"></a>6.3.5. At the end of the fifth week of the season, players should have no more than 2 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 3 matches.
+
+<a name="6.3.6"></a>6.3.6. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having completed 5 matches.
+
+<a name="6.3.7"></a>6.3.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
 
 ### <a name="6.4"></a>6.4. Extensions
 
-If you are unable to complete a match by the end of season deadline ([6.3.4](#6.3.4)), you must request an extension from your moderator by that deadline.
+If you are unable to complete a match by the end of season deadline ([6.3.6](#6.3.6)), you must request an extension from your moderator by that deadline.
 
 <a name="6.4.1"></a>6.4.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
 
@@ -461,7 +477,7 @@ Players may be dropped from the League during the season. All drops are subject 
 
 <a name="7.1.1"></a>7.1.1. If you are unable to complete your League season for any reason, contact your division moderator for a voluntary drop. Your reason(s) for needing to drop will be considered by the moderator team when deciding whether to apply a suspension.
 
-<a name="7.1.2"></a>7.1.2. Players may be involuntarily dropped due to unresponsiveness, failure to play matches in a timely manner, or misconduct (see [3.5](#3.5)).
+<a name="7.1.2"></a>7.1.2. Players may be involuntarily dropped due to unresponsiveness, failure to play matches in a timely manner, or misconduct (see [3.6](#3.6)).
 
 ### <a name="7.2"></a>7.2. Suspensions
 
@@ -471,7 +487,7 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
-<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.5](#3.5)) will be subject to a warning or suspension per discretion of the moderator team.
+<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.6](#3.6)) will be subject to a warning or suspension per discretion of the moderator team.
 
 ## <a name="8"></a>8. Moderation
 
