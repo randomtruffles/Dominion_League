@@ -20,6 +20,7 @@ var versusDiv = document.getElementById("versus");
 var playerInput = document.getElementById("input_player_search");
 
 var playerKey = "";
+var screenKey = "standings";
 var playerVersus = null;
 var filtVersus = null;
 var versusTotal = null;
@@ -38,24 +39,41 @@ document.getElementById("standingsSelect").onclick = function(ev) {
 	standingsDiv.style.display = "block";
 	statsDiv.style.display = "none";
 	versusDiv.style.display = "none";
+	screenKey = "standings";
+	setURLparams();
 };
 document.getElementById("statsSelect").onclick = function(ev) {
 	ev.target.blur();
 	standingsDiv.style.display = "none";
 	statsDiv.style.display = "block";
 	versusDiv.style.display = "none";
+	screenKey = "stats";
+	setURLparams();
 };
 document.getElementById("versusSelect").onclick = function(ev) {
 	ev.target.blur();
 	standingsDiv.style.display = "none";
 	statsDiv.style.display = "none";
 	versusDiv.style.display = "block";
+	screenKey = "versus";
+	setURLparams();
 };
 
 function loadPage() {
 	getURLparams();
 	if (playerKey) {
 		searchHistory();
+		if (screenKey == "stats") {
+			standingsDiv.style.display = "none";
+			statsDiv.style.display = "block";
+			document.getElementById("statsSelect").checked = "checked";
+			versusDiv.style.display = "none";
+		} else if (screenKey == "versus") {
+			standingsDiv.style.display = "none";
+			statsDiv.style.display = "none";
+			versusDiv.style.display = "block";
+			document.getElementById("versusSelect").checked = "checked";
+		}
 	} else {
 		let instructionElements = ["url-instructions", "search-instructions", "spacing-for-instructions"];
 		instructionElements.forEach(el => document.getElementById(el).style.display = "block");
@@ -68,12 +86,13 @@ function getURLparams() {
 	if (window.location.search) {
 		let params = new URLSearchParams(window.location.search);
 		playerKey = params.get('player').toLowerCase();
+		if (params.has('display')) {screenKey = params.get('display').toLowerCase();}
 	}
 }
 
 function setURLparams() {
 	if (playerKey) {
-		window.history.replaceState(null, null, `?player=${playerKey.replace(/ /g, "%20")}`);
+		window.history.replaceState(null, null, `?player=${playerKey.replace(/ /g, "%20")}&display=${screenKey}`);
 	}
 }
 

@@ -594,24 +594,29 @@ PlayerPlot.showStandingsModal = function(season, division) {
 			tableBody.appendChild(row);
 		}
 	} else {
+		let pieces = [];
 		for (let i=0; i < PlayerPlot.placeHistoryLength; i++) {
 			if ((PlayerPlot.placeHistory[i].season == season) && (PlayerPlot.placeHistory[i].division == division)) {
-				let row = document.createElement('tr');
-				row.classList.add('rows-past-standings')
-				let names = ['place', 'player', 'wins', 'losses', 'pct']
-				for (let j = 0; j < 5; j++) {
-					let cell = document.createElement('td');
-					cell.classList.add('cells-past-standings');
-					if (j == 1) {
-						cell.classList.add('clickable-name');
-					} else if (j == 4) {
-						cell.style.cssText = 'background-color:' + PlayerPlot.placeHistory[i].standingsColor;
-					}
-					cell.appendChild(document.createTextNode(PlayerPlot.placeHistory[i][names[j]]));
-					row.appendChild(cell);
-				}
-				tableBody.appendChild(row);
+				pieces.push(PlayerPlot.placeHistory[i]);
 			}
+		}
+		pieces.sort((a,b) => a.place - b.place);
+		for (let pl of pieces) {
+			let row = document.createElement('tr');
+			row.classList.add('rows-past-standings')
+			let names = ['place', 'player', 'wins', 'losses', 'pct']
+			for (let j = 0; j < 5; j++) {
+				let cell = document.createElement('td');
+				cell.classList.add('cells-past-standings');
+				if (j == 1) {
+					cell.classList.add('clickable-name');
+				} else if (j == 4) {
+					cell.style.cssText = 'background-color:' + pl.standingsColor;
+				}
+				cell.appendChild(document.createTextNode(pl[names[j]]));
+				row.appendChild(cell);
+			}
+			tableBody.appendChild(row);
 		}
 	}
 	table.appendChild(tableBody);

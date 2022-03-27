@@ -36,9 +36,9 @@
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-#- name: LeagueLackey
-#  discord: LeagueLackey#6269
-#  image: lackey
+- name: LeagueLackey
+  discord: LeagueLackey#6269
+  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
@@ -66,9 +66,6 @@
 - name: snowbz
   discord: snowbz#9320
   image: snowbz
-- name: sweetjohn33
-  discord: sweetjohn33#5861
-  image: sweetjohn33
 - name: tracer
   discord: tracer#2575
   image: tracer

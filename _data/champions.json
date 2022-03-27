@@ -48,7 +48,8 @@
 	"46": "nasmith99",
 	"47": "nasmith99",
 	"48": "nasmith99",
-	"49": "nasmith99"
+	"49": "nasmith99",
+	"50": "cider01"
   },
   "runner_ups": {
     "1": "stef",
@@ -99,7 +100,8 @@
 	"46": "jonts",
 	"47": "jnails",
 	"48": "jonts",
-	"49": "aku chi"
+	"49": "aku chi",
+	"50": "same"
   },
   "players": {
     "mic qsenoch": [
@@ -172,6 +174,9 @@
 	],
 	"recycle_garbage": [
 	  "45"
+	],
+	"cider01": [
+	  "50"
 	]
   },
   "players_runner_ups": {
@@ -263,6 +268,9 @@
 	],
 	"jnails": [
 	  "47"
+	],
+	"same": [
+	  "50"
 	]
   }
 }

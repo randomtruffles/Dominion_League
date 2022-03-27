@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var hist = {};
 
-for (let s=1; s<=49; s++) {
+for (let s=1; s<=50; s++) {
 	hist["s" + String(s)] = JSON.parse(fs.readFileSync(`Seasons/s${s}.json`));
 }
 
@@ -40,3 +40,4 @@ fs.writeFileSync("outputs/player_seasons.json", JSON.stringify(players));
 
 //old sims: 29
 //new sims: 42
+//back to no sims: 50
