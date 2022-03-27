@@ -243,7 +243,7 @@ Click the "Tables" tab in the lobby, and find their name. If you are friends, th
 
 #### Do we play rated or unrated games?
 
-The default is to play unrated games, but players can agree to play rated games instead. This is also the default setting for a table. Either way, you can use DomBot on Discord to retrieve the results of these games.
+League games are unrated. One reason for this is that rated games do not allow specifying the starting player.
 
 #### Which cardlists do we play with?
 
