@@ -126,7 +126,7 @@ Be kind and polite when communicating with players and moderators. Examples of i
 
 ### <a name="3.3"></a>3.3. Username and profile picture
 
-Your username and profile picture may not contain any inappropriate content.
+Your username and profile picture may not contain any inappropriate content. If your username or profile picture are inappropriate, a moderator will reach out to you to request you change them. You are required to comply with any such request in order to play in the Dominion League.
 
 ### <a name="3.4"></a>3.4. Play to the best of your ability
 
