@@ -25,7 +25,7 @@ See [signing up](/rules#1.2).
 
 #### What is required to sign up?
 
-See [membership requirements(/rules#1.1).
+See [membership requirements](/rules#1.1).
 
 #### How do I play a rated 2-player game?
 
