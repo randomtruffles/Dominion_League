@@ -153,7 +153,7 @@ No, you can play the games of a match across multiple playing sessions. However,
 
 #### Who should be the starting player each game of a match?
 
-See [starting player(/rules#4.4).
+See [starting player](/rules#4.4).
 
 #### Which cards do we play with?
 
