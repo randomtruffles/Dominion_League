@@ -759,13 +759,35 @@ PowerPlot.makePlot = function() {
 
 var TransitionsPlot = {};
 
-TransitionsPlot.data = {{ site.data.chart_transitions | jsonify }};
+TransitionsPlot.data = {
+	"players": [...new Set(Object.keys(da.players).concat(Object.keys(cur.players)))].sort(),
+	"tiers": Array.from({ length: cur.season - 1 }, (v, i) => [...new Set(Object.keys(da.divisions[String(i+1)]).map(dv => dv.charAt(0)))].join(""))
+};
+TransitionsPlot.data.tiers.push([...new Set(Object.keys(cur.players).map(key => cur.players[key].tier))].join(""));
+TransitionsPlot.data.schemes = TransitionsPlot.data.players.map(plkey => {
+	let sch = Array.from({ length: cur.season }, () => "-");
+	if (da.players[plkey]) {
+		for (let i=0; i<da.players[plkey].seasons.length; i++) {
+			sch[da.players[plkey].seasons[i] - 1] = da.players[plkey].divs[i].charAt(0);
+		}
+	}
+	if (cur.players[plkey]) {
+		sch[cur.season - 1] = cur.players[plkey].tier;
+	}
+	return sch.join("");
+});
+TransitionsPlot.data.players = TransitionsPlot.data.players.map(plkey => {
+	if (cur.players[plkey]) {
+		return cur.players[plkey].name;
+	} else {
+		return da.players[plkey].name;
+	}
+});
 TransitionsPlot.schemesLength = TransitionsPlot.data.schemes.length;
-TransitionsPlot.currentSeason = TransitionsPlot.data.tiers.length;
 TransitionsPlot.props = null;
 
-TransitionsPlot.seasonRange = [1, TransitionsPlot.currentSeason];
-TransitionsPlot.seasons = TransitionsPlot.currentSeason;
+TransitionsPlot.seasonRange = [1, cur.season];
+TransitionsPlot.seasons = cur.season;
 TransitionsPlot.startTier = "";
 TransitionsPlot.first = false;
 TransitionsPlot.plotType = 0;
@@ -785,10 +807,10 @@ TransitionsPlot.typeSelect = document.getElementById("typeSelect");
 TransitionsPlot.numberslide = document.getElementById("tnumberslider");
 TransitionsPlot.numbertext = document.getElementById("tnumberbox");
 TransitionsPlot.prepControls = function() {
-	TransitionsPlot.seasonslide1.max = TransitionsPlot.currentSeason;
-	TransitionsPlot.seasonslide2.max = TransitionsPlot.currentSeason;
-	TransitionsPlot.seasonslide2.value = TransitionsPlot.currentSeason;
-	TransitionsPlot.seasontextmax.value = TransitionsPlot.currentSeason;
+	TransitionsPlot.seasonslide1.max = cur.season;
+	TransitionsPlot.seasonslide2.max = cur.season;
+	TransitionsPlot.seasonslide2.value = cur.season;
+	TransitionsPlot.seasontextmax.value = cur.season;
 
 	TransitionsPlot.seasonslide1.oninput = TransitionsPlot.slideinput;
 	TransitionsPlot.seasonslide2.oninput = TransitionsPlot.slideinput;
@@ -815,9 +837,9 @@ TransitionsPlot.prepControls = function() {
 		TransitionsPlot.makePlot();
 	});
 	
-	TransitionsPlot.numberslide.max = TransitionsPlot.currentSeason;
-	TransitionsPlot.numberslide.value = TransitionsPlot.currentSeason;
-	TransitionsPlot.numbertext.value = TransitionsPlot.currentSeason;
+	TransitionsPlot.numberslide.max = cur.season;
+	TransitionsPlot.numberslide.value = cur.season;
+	TransitionsPlot.numbertext.value = cur.season;
 	
 	TransitionsPlot.numberslide.oninput = function() {
 		TransitionsPlot.numbertext.value = TransitionsPlot.numberslide.value;
@@ -942,7 +964,7 @@ TransitionsPlot.makePlot = function() {
 	var tiers = TransitionsPlot.offset ? [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasonRange[0] - 1 + (!TransitionsPlot.plus ? -TransitionsPlot.seasons : (TransitionsPlot.exact ? TransitionsPlot.seasons : 1)), TransitionsPlot.seasonRange[1] + (TransitionsPlot.plus ? TransitionsPlot.seasons : (TransitionsPlot.exact ? -TransitionsPlot.seasons : 0))).join(""))] : 
 		(TransitionsPlot.exact ? (TransitionsPlot.plus ? TransitionsPlot.data.tiers[TransitionsPlot.seasons-1].split('') : 
 			[...new Set(TransitionsPlot.data.tiers.slice(((TransitionsPlot.seasons < TransitionsPlot.seasonRange[0]) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[0]) - 1, (TransitionsPlot.seasonRange[1] < TransitionsPlot.seasons) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[1]).join(""))]) :
-			(TransitionsPlot.plus ? [...new Set(TransitionsPlot.data.tiers.slice(0,TransitionsPlot.seasons).join(""))] : [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasons-1,TransitionsPlot.currentSeason).join(""))]));
+			(TransitionsPlot.plus ? [...new Set(TransitionsPlot.data.tiers.slice(0,TransitionsPlot.seasons).join(""))] : [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasons-1,cur.season).join(""))]));
 	
 	TransitionsPlot.props = {};
 	for (let j=0; j<tiers.length; j++) {
@@ -995,7 +1017,7 @@ TransitionsPlot.makePlot = function() {
 								}
 							}
 						} else {
-							if (TransitionsPlot.data.schemes[i].slice(TransitionsPlot.plus ? 0 : TransitionsPlot.seasons - 1, TransitionsPlot.plus ? TransitionsPlot.seasons : TransitionsPlot.currentSeason).includes(tiers[j])) {
+							if (TransitionsPlot.data.schemes[i].slice(TransitionsPlot.plus ? 0 : TransitionsPlot.seasons - 1, TransitionsPlot.plus ? TransitionsPlot.seasons : cur.season).includes(tiers[j])) {
 								TransitionsPlot.props[tiers[j]].count += 1;
 								TransitionsPlot.props[tiers[j]].ids.push(i);
 							}
@@ -1056,7 +1078,7 @@ TransitionsPlot.makePlot = function() {
 									TransitionsPlot.props[tiers[j]].ids.push(i);
 								}
 							} else {
-								if (TransitionsPlot.data.schemes[i].slice(TransitionsPlot.seasons - 1, TransitionsPlot.currentSeason).includes(tiers[j])) {
+								if (TransitionsPlot.data.schemes[i].slice(TransitionsPlot.seasons - 1, cur.season).includes(tiers[j])) {
 									TransitionsPlot.props[tiers[j]].count += 1;
 									TransitionsPlot.props[tiers[j]].ids.push(i);
 								}
