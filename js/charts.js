@@ -1,11 +1,17 @@
 ---
 ---
 
+//data
+
+const da = {{ site.data.chart_data | jsonify }}
+const cur = {{ site.data.current_season | jsonify }}
+
 //helpers
 
 var ChartUtils = {};
 
 ChartUtils.tierColors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"];
+ChartUtils.standingsColors = ["#E77B72", "#E88372", "#EA8C71", "#EC956F", "#EF9E6E", "#F2A76D", "#F4B06B", "#F7B96B", "#F9C269", "#FCCB67", "#FED467", "#F2D467", "#E2D26B", "#D0CF6F", "#C0CC73", "#AFCA76", "#9EC77A", "#8CC47E", "#7CC181", "#6DBF84", "#5BBC88"]
 ChartUtils.clickableNames = null;
 ChartUtils.widthcheck = document.getElementById('widthcheck');
 
@@ -61,34 +67,47 @@ ChartUtils.setClickableNames = function() {
 var PlayerPlot = {};
 
 PlayerPlot.currentStandings = {{ site.data.current_season | jsonify }};
-PlayerPlot.currentSeason = PlayerPlot.currentStandings.season;
+PlayerPlot.currentSeason = cur.season;
 PlayerPlot.divStandings = null;
-PlayerPlot.counts = {{ site.data.chart_counts | jsonify }};
+PlayerPlot.counts = {};
+for (let s in da.divisions) {
+	PlayerPlot.counts[s] = {};
+	let totalPlayers = 0;
+	for (let d in da.divisions[s]) {
+		let tier = d.charAt(0);
+		let ps = da.divisions[s][d].length;
+		totalPlayers += ps;
+		if (PlayerPlot.counts[s][tier]) {
+			PlayerPlot.counts[s][tier].divisions += 1;
+			PlayerPlot.counts[s][tier].players += ps;
+		} else {
+			PlayerPlot.counts[s][tier] = {"season": s, "tier": tier, "divisions": 1, "players": ps};
+		}
+	}
+	for (let tier in PlayerPlot.counts[s]) {
+		PlayerPlot.counts[s][tier].lfrac = PlayerPlot.counts[s][tier].players/totalPlayers;
+	}
+}
+PlayerPlot.counts = Object.keys(PlayerPlot.counts).map(season => Object.keys(PlayerPlot.counts[season]).map(tier => PlayerPlot.counts[season][tier])).flat();
 PlayerPlot.getCurrentCounts = function() {
 	var tiers = "ABCDEFGHIJ";
 	var currentCounts = {};
 	for (let i=0; i<10; i++) {
-		currentCounts[tiers[i]] = {"season": String(PlayerPlot.currentSeason), "tier": tiers[i], "divisions": 0, "players": 0};
+		currentCounts[tiers[i]] = {"season": String(cur.season), "tier": tiers[i], "divisions": 0, "players": 0};
 	}
 	var totalPlayers = 0;
-	var divisions = Object.keys(PlayerPlot.currentStandings);
+	var divisions = Object.keys(cur);
 	for (let i = divisions.length-1; i>=0; i--) {
 		if (/^[A-J]\d+$/.test(divisions[i])) {
-			currentCounts[PlayerPlot.currentStandings[divisions[i]].tier].divisions += 1;
-			let divPlayers = Object.keys(PlayerPlot.currentStandings[divisions[i]].members).length;
-			currentCounts[PlayerPlot.currentStandings[divisions[i]].tier].players += divPlayers;
+			currentCounts[cur[divisions[i]].tier].divisions += 1;
+			let divPlayers = Object.keys(cur[divisions[i]].members).length;
+			currentCounts[cur[divisions[i]].tier].players += divPlayers;
 			totalPlayers += divPlayers;
 		}
 	}
-	currentCounts = Object.keys(currentCounts).map(key => currentCounts[key]);
-	for (let i=0; i<10; i++) {
-		currentCounts[i].lfrac = String(currentCounts[i].players/totalPlayers);
-		currentCounts[i].divisions = String(currentCounts[i].divisions);
-		currentCounts[i].players = String(currentCounts[i].players);
-	}
-	return currentCounts;
+	return Object.keys(currentCounts).map(key => currentCounts[key]);
 };
-if (PlayerPlot.counts[PlayerPlot.counts.length-1].season != PlayerPlot.currentSeason) {PlayerPlot.counts = PlayerPlot.counts.concat(PlayerPlot.getCurrentCounts())};
+if (PlayerPlot.counts[PlayerPlot.counts.length-1].season != cur.season) {PlayerPlot.counts = PlayerPlot.counts.concat(PlayerPlot.getCurrentCounts())};
 PlayerPlot.countsLength = PlayerPlot.counts.length;
 PlayerPlot.placeHistory = {{ site.data.chart_history | jsonify }};
 PlayerPlot.placeHistoryLength = PlayerPlot.placeHistory.length;
