@@ -10,6 +10,7 @@ const cur = {{ site.data.current_season | jsonify }}
 
 var ChartUtils = {};
 
+ChartUtils.curString = String(cur.season);
 ChartUtils.tierColors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"];
 ChartUtils.standingsColors = ["#E77B72", "#E88372", "#EA8C71", "#EC956F", "#EF9E6E", "#F2A76D", "#F4B06B", "#F7B96B", "#F9C269", "#FCCB67", "#FED467", "#F2D467", "#E2D26B", "#D0CF6F", "#C0CC73", "#AFCA76", "#9EC77A", "#8CC47E", "#7CC181", "#6DBF84", "#5BBC88"]
 ChartUtils.clickableNames = null;
@@ -66,8 +67,6 @@ ChartUtils.setClickableNames = function() {
 
 var PlayerPlot = {};
 
-PlayerPlot.currentStandings = {{ site.data.current_season | jsonify }};
-PlayerPlot.currentSeason = cur.season;
 PlayerPlot.divStandings = null;
 PlayerPlot.counts = {};
 for (let s in da.divisions) {
@@ -76,46 +75,44 @@ for (let s in da.divisions) {
 	for (let d in da.divisions[s]) {
 		let tier = d.charAt(0);
 		let ps = da.divisions[s][d].length;
-		totalPlayers += ps;
 		if (PlayerPlot.counts[s][tier]) {
 			PlayerPlot.counts[s][tier].divisions += 1;
 			PlayerPlot.counts[s][tier].players += ps;
 		} else {
-			PlayerPlot.counts[s][tier] = {"season": s, "tier": tier, "divisions": 1, "players": ps};
+			PlayerPlot.counts[s][tier] = {"divisions": 1, "players": ps, "countBase": totalPlayers};
 		}
+		totalPlayers += ps;
 	}
 	for (let tier in PlayerPlot.counts[s]) {
 		PlayerPlot.counts[s][tier].lfrac = PlayerPlot.counts[s][tier].players/totalPlayers;
+		PlayerPlot.counts[s][tier].propBase = PlayerPlot.counts[s][tier].countBase/totalPlayers;
 	}
 }
-PlayerPlot.counts = Object.keys(PlayerPlot.counts).map(season => Object.keys(PlayerPlot.counts[season]).map(tier => PlayerPlot.counts[season][tier])).flat();
-PlayerPlot.getCurrentCounts = function() {
-	var tiers = "ABCDEFGHIJ";
-	var currentCounts = {};
-	for (let i=0; i<10; i++) {
-		currentCounts[tiers[i]] = {"season": String(cur.season), "tier": tiers[i], "divisions": 0, "players": 0};
-	}
-	var totalPlayers = 0;
-	var divisions = Object.keys(cur);
-	for (let i = divisions.length-1; i>=0; i--) {
-		if (/^[A-J]\d+$/.test(divisions[i])) {
-			currentCounts[cur[divisions[i]].tier].divisions += 1;
-			let divPlayers = Object.keys(cur[divisions[i]].members).length;
-			currentCounts[cur[divisions[i]].tier].players += divPlayers;
-			totalPlayers += divPlayers;
+PlayerPlot.counts[ChartUtils.curString] = {};
+PlayerPlot.curTotalPlayers = 0;
+for (let d in cur) {
+	if (/^[A-J]\d+$/.test(d)) {
+		let tier = d.charAt(0);
+		let ps = Object.keys(cur[d].members).length;
+		if (PlayerPlot.counts[ChartUtils.curString][tier]) {
+			PlayerPlot.counts[ChartUtils.curString][tier].divisions += 1;
+			PlayerPlot.counts[ChartUtils.curString][tier].players += ps;
+		} else {
+			PlayerPlot.counts[ChartUtils.curString][tier] = {"divisions": 1, "players": ps, "countBase": PlayerPlot.curTotalPlayers};
 		}
+		PlayerPlot.curTotalPlayers += ps;
 	}
-	return Object.keys(currentCounts).map(key => currentCounts[key]);
-};
-if (PlayerPlot.counts[PlayerPlot.counts.length-1].season != cur.season) {PlayerPlot.counts = PlayerPlot.counts.concat(PlayerPlot.getCurrentCounts())};
-PlayerPlot.countsLength = PlayerPlot.counts.length;
-PlayerPlot.placeHistory = {{ site.data.chart_history | jsonify }};
-PlayerPlot.placeHistoryLength = PlayerPlot.placeHistory.length;
+}
+for (let tier in PlayerPlot.counts[ChartUtils.curString]) {
+	PlayerPlot.counts[ChartUtils.curString][tier].lfrac = PlayerPlot.counts[ChartUtils.curString][tier].players/PlayerPlot.curTotalPlayers;
+	PlayerPlot.counts[ChartUtils.curString][tier].propBase = PlayerPlot.counts[ChartUtils.curString][tier].countBase/PlayerPlot.curTotalPlayers;
+}
+
 
 PlayerPlot.proportion = false;
 PlayerPlot.allTiers = false;
 PlayerPlot.player = null;
-PlayerPlot.seasonRange = [1,PlayerPlot.currentSeason];
+PlayerPlot.seasonRange = [1,cur.season];
 PlayerPlot.userSetRange = false;
 
 PlayerPlot.plot = null;
@@ -131,10 +128,10 @@ PlayerPlot.countRadio = document.getElementById('count');
 PlayerPlot.propRadio = document.getElementById('prop');
 PlayerPlot.allTiersCheck = document.getElementById('allTiers');
 PlayerPlot.prepControls = function() {
-	PlayerPlot.seasonslide1.max = PlayerPlot.currentSeason;
-	PlayerPlot.seasonslide2.max = PlayerPlot.currentSeason;
-	PlayerPlot.seasonslide2.value = PlayerPlot.currentSeason;
-	PlayerPlot.seasontextmax.value = PlayerPlot.currentSeason;
+	PlayerPlot.seasonslide1.max = ChartUtils.curString;
+	PlayerPlot.seasonslide2.max = ChartUtils.curString;
+	PlayerPlot.seasonslide2.value = ChartUtils.curString;
+	PlayerPlot.seasontextmax.value = ChartUtils.curString;
 
 	PlayerPlot.seasonslide1.oninput = PlayerPlot.slideinput;
 	PlayerPlot.seasonslide2.oninput = PlayerPlot.slideinput;
@@ -208,12 +205,12 @@ PlayerPlot.textinput = function() {
 	}
 };
 PlayerPlot.resetRange = function() {
-	PlayerPlot.seasonRange = [1,PlayerPlot.currentSeason];
+	PlayerPlot.seasonRange = [1,cur.season];
 	PlayerPlot.userSetRange = false;
 	PlayerPlot.seasontextmin.value = 1;
-	PlayerPlot.seasontextmax.value = PlayerPlot.currentSeason;
+	PlayerPlot.seasontextmax.value = cur.season;
 	PlayerPlot.seasonslide1.value = 1;
-	PlayerPlot.seasonslide2.value = PlayerPlot.currentSeason;
+	PlayerPlot.seasonslide2.value = cur.season;
 	PlayerPlot.makePlot();
 };
 	
@@ -233,9 +230,32 @@ PlayerPlot.makePlot = function() {
 	if (PlayerPlot.player) {
 		//data slicing
 		//isolate records for relevant player
-		let lowerplayer = PlayerPlot.player.toLowerCase();
+		let plkey = PlayerPlot.player.toLowerCase();
+		if (da.players[plkey]) {
+			let nplayed = da.players[plkey].seasons.length;
+			for (let i=0; i<nplayed; i++) {
+				if ((da.players[plkey].seasons[i] >= PlayerPlot.seasonRange[0]) && (da.players[plkey].seasons[i] <= PlayerPlot.seasonRange[1])) {
+					let tier = da.players[plkey].divs[i].charAt(0);
+					let sKey = String(da.players[plkey].seasons[i]);
+					let divPs = da.divisions[sKey][da.players[plkey].divs[i]].length;
+					pHist.push({
+						"player": da.players[plkey].name,
+						"season": da.players[plkey].seasons[i],
+						"division": da.players[plkey].divs[i],
+						"place": da.players[plkey].places[i],
+						"countPlacement": PlayerPlot.counts[sKey][tier].countBase + PlayerPlot.counts[sKey][tier].players * (da.players[plkey].places[i] - 0.5) / divPs,
+						"propPlacement": PlayerPlot.counts[sKey][tier].propBase + PlayerPlot.counts[sKey][tier].lfrac * (da.players[plkey].places[i] - 0.5) / divPs,
+						"champ": da.players[plkey].places[i] == 1 ? (da.players[plkey].divs[i] == "A1" ? "league" : "division") : "no",
+						"chart": "point"
+					});
+					seasons.push(da.players[plkey].seasons[i]);
+					tiers.push(tier);
+				}
+			}
+		}
+		
 		for (let i = 0; i < PlayerPlot.placeHistoryLength; i++) {
-			if ((PlayerPlot.placeHistory[i].player.toLowerCase() == lowerplayer) && (Number(PlayerPlot.placeHistory[i].season) >= PlayerPlot.seasonRange[0]) && (Number(PlayerPlot.placeHistory[i].season) <= PlayerPlot.seasonRange[1])) {
+			if ((PlayerPlot.placeHistory[i].player.toLowerCase() == plkey) && (Number(PlayerPlot.placeHistory[i].season) >= PlayerPlot.seasonRange[0]) && (Number(PlayerPlot.placeHistory[i].season) <= PlayerPlot.seasonRange[1])) {
 				pHist.push(PlayerPlot.placeHistory[i]);
 				pHist[pHist.length-1].chart = 'point';
 				seasons.push(PlayerPlot.placeHistory[i].season);
@@ -244,31 +264,16 @@ PlayerPlot.makePlot = function() {
 		}
 		
 		//add information for current season if player is in it
-		if ((PlayerPlot.currentSeason <= PlayerPlot.seasonRange[1]) && Object.keys(PlayerPlot.currentStandings.players).includes(lowerplayer) && (!pHist.length || (pHist[pHist.length-1].season != PlayerPlot.currentSeason))) {
-			let pname = PlayerPlot.currentStandings.players[lowerplayer].name;
-			var currentHistory = {"player": pname, "tier": PlayerPlot.currentStandings.players[lowerplayer].tier, "division": PlayerPlot.currentStandings.players[lowerplayer].division};
-			PlayerPlot.divStandings = Object.keys(PlayerPlot.currentStandings[currentHistory.division].members).map(key => PlayerPlot.currentStandings[currentHistory.division].members[key]);
+		if ((cur.season <= PlayerPlot.seasonRange[1]) && cur.players[plkey] && (!pHist.length || (pHist[pHist.length-1].season != cur.season))) {
+			let pname = cur.players[plkey].name;
+			var currentHistory = {"player": pname, "tier": cur.players[plkey].tier, "division": cur.players[plkey].division};
+			PlayerPlot.divStandings = Object.keys(cur[currentHistory.division].members).map(key => cur[currentHistory.division].members[key]);
 			PlayerPlot.divStandings.sort((a,b) => a.rank - b.rank);
-			let rank = (Number(PlayerPlot.currentStandings[currentHistory.division].members[pname].wins) + Number(PlayerPlot.currentStandings[currentHistory.division].members[pname].losses)) ? PlayerPlot.currentStandings[currentHistory.division].members[pname].rank : "";
+			let rank = (Number(cur[currentHistory.division].members[pname].wins) + Number(cur[currentHistory.division].members[pname].losses)) ? cur[currentHistory.division].members[pname].rank : "";
 			currentHistory.place = String(rank) + " (in progress)";
-			currentHistory.season = String(PlayerPlot.currentSeason);
-			let countBase = 0;
-			let countMult = 0;
-			let propBase = 0;
-			let propMult = 0;
-			for (let i = PlayerPlot.countsLength-1; i >= 0; i--) {
-				if (Number(PlayerPlot.counts[i].season) < PlayerPlot.currentSeason) {
-					break;
-				} else if (PlayerPlot.counts[i].tier == currentHistory.tier) {
-					countMult = Number(PlayerPlot.counts[i].players);
-					propMult = Number(PlayerPlot.counts[i].lfrac);
-				} else if (PlayerPlot.counts[i].tier < currentHistory.tier) {
-					countBase += Number(PlayerPlot.counts[i].players);
-					propBase += Number(PlayerPlot.counts[i].lfrac);
-				}
-			}
-			currentHistory.countPlacement = String(rank ? countBase + (rank-0.5)*countMult/PlayerPlot.divStandings.length : countBase + 0.5*countMult);
-			currentHistory.propPlacement = String(rank ? propBase + (rank-0.5)*propMult/PlayerPlot.divStandings.length : propBase + 0.5*propMult);
+			currentHistory.season = cur.season;
+			currentHistory.countPlacement = rank ? PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].countBase + (rank-0.5)*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].players/PlayerPlot.divStandings.length : countBase + 0.5*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].players;
+			currentHistory.propPlacement = rank ? PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].propBase + (rank-0.5)*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].lfrac/PlayerPlot.divStandings.length : propBase + 0.5*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].lfrac;
 			currentHistory.champ = "in progress";
 			currentHistory.chart = "point";
 			pHist.push(currentHistory);
@@ -276,12 +281,12 @@ PlayerPlot.makePlot = function() {
 			tiers.push(currentHistory.tier);
 		}
 		
-		var played2MostRecent = (seasons[seasons.length - 1] == PlayerPlot.currentSeason) && (seasons[seasons.length - 2] == PlayerPlot.currentSeason - 1) && (pHist[pHist.length - 1].champ == "in progress");
+		var played2MostRecent = (seasons[seasons.length - 1] == cur.season) && (seasons[seasons.length - 2] == cur.season - 1) && (pHist[pHist.length - 1].champ == "in progress");
 		
 		if (pHist.length) {
 			//correct capitalization
-			player = pHist[0].player;
-			document.getElementById('player-input').value = player;
+			PlayerPlot.player = da.players[plkey].name;
+			document.getElementById('player-input').value = PlayerPlot.player;
 			
 			//set allTiers to true if proportion is true
 			if (PlayerPlot.proportion) {PlayerPlot.allTiers = true;}
@@ -291,9 +296,9 @@ PlayerPlot.makePlot = function() {
 			let end = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[1] : Number(seasons[seasons.length-1]);
 			var toadd = [];
 			for (let s = start; s <= end; s++) {
-				if (!(seasons.includes(String(s)))) {
-					pHist.push({"player":player, "tier":null, "division":null, "place":null, "season":String(s), "countPlacement":null, "propPlacement":null, "champ":null});
-					toadd.push(String(s));
+				if (!seasons.includes(s)) {
+					pHist.push({"player":da.players[plkey].name, "tier":null, "division":null, "place":null, "season":s, "countPlacement":null, "propPlacement":null, "champ":null});
+					toadd.push(s);
 				}
 			}
 			pHist.sort(function(a,b){return a.season - b.season});
@@ -323,19 +328,17 @@ PlayerPlot.makePlot = function() {
 			//cut colors because layers with same encoding annoyingly union their domains
 			var colors = ChartUtils.tierColors.slice(0,tiers.length).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
 			
-			//filter counts to desired 
-			if (PlayerPlot.allTiers) {
-				for (let i = 0; i < PlayerPlot.countsLength; i++) {
-					if (seasons.includes(PlayerPlot.counts[i].season)) {
-						fCounts.push(PlayerPlot.counts[i]);
-						fCounts[fCounts.length - 1].chart = "bar";
-					}
-				}
-			} else {
-				for (let i = 0; i < PlayerPlot.countsLength; i++) {
-					if (seasons.includes(PlayerPlot.counts[i].season) && tiers.includes(PlayerPlot.counts[i].tier)) {
-						fCounts.push(PlayerPlot.counts[i]);
-						fCounts[fCounts.length - 1].chart = "bar";
+			//create chartable counts
+			for (let s of seasons) {
+				for (let t of tiers) {
+					if (PlayerPlot.counts[String(s)][t]) {
+						fCounts.push({
+							"season": s,
+							"tier": t,
+							"players": PlayerPlot.counts[String(s)][t].players,
+							"lfrac": PlayerPlot.counts[String(s)][t].lfrac,
+							"chart": "bar"
+						});
 					}
 				}
 			}
@@ -344,7 +347,7 @@ PlayerPlot.makePlot = function() {
 			if (tiers[tiers.length - 1] == "E") {
 				let oldOnly = true;
 				for (let i = pHist.length - 1; i >= 0; i--) {
-					if (pHist[i].tier == "E" && Number(pHist[i].season > 26)) {
+					if (pHist[i].division.charAt(0) == "E" && pHist[i].season > 26) {
 						oldOnly = false;
 						break;
 					}
@@ -524,12 +527,17 @@ PlayerPlot.makePlot = function() {
 	function nullPlotLayer(fCounts) {
 		let seasons = [];
 		let start = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[0] : 1;
-		let end = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[1] : PlayerPlot.currentSeason;
-		for (let s = start; s <= end; s++) {seasons.push(String(s));}
-		for (let i = 0; i < PlayerPlot.countsLength; i++) {
-			if ((Number(PlayerPlot.counts[i].season) >= start) && (Number(PlayerPlot.counts[i].season) <= end)) {
-				fCounts.push(PlayerPlot.counts[i]);
-				fCounts[fCounts.length - 1].chart = "bar";
+		let end = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[1] : cur.season;
+		for (let s = start; s <= end; s++) {seasons.push(s);}
+		for (let s of seasons) {
+			for (t in PlayerPlot.counts[String(s)]) {
+				fCounts.push({
+					"season": s,
+					"tier": t,
+					"players": PlayerPlot.counts[String(s)][t].players,
+					"lfrac": PlayerPlot.counts[String(s)][t].lfrac,
+					"chart": "bar"
+				});
 			}
 		}
 		
@@ -576,7 +584,7 @@ PlayerPlot.makePlot = function() {
 };
 	
 PlayerPlot.showStandingsModal = function(season, division) {
-	document.getElementById('modal-header').innerHTML = '<a href="/' + ((season == PlayerPlot.currentSeason) ? 'current_standings' : 'past_standings/season' + season) + '?div=' + division + '" target="_blank">Season ' + season + ' Division ' + division + ' Standings</a>';
+	document.getElementById('modal-header').innerHTML = '<a href="/' + ((season == cur.season) ? 'current_standings' : 'past_standings/season' + season) + '?div=' + division + '" target="_blank">Season ' + season + ' Division ' + division + ' Standings</a>';
 	var modalBody = document.getElementById('modal-body');
 	modalBody.innerHTML = '';
 	var table = document.createElement('table');
@@ -594,7 +602,7 @@ PlayerPlot.showStandingsModal = function(season, division) {
 		topRow.appendChild(cell);
 	}
 	tableBody.appendChild(topRow);
-	if ((season == PlayerPlot.currentSeason) && PlayerPlot.divStandings) {
+	if ((season == cur.season) && PlayerPlot.divStandings) {
 		for (let i=0; i < PlayerPlot.divStandings.length; i++) {
 			let row = document.createElement('tr');
 			row.classList.add('rows-past-standings')
@@ -613,28 +621,34 @@ PlayerPlot.showStandingsModal = function(season, division) {
 			tableBody.appendChild(row);
 		}
 	} else {
-		let pieces = [];
-		for (let i=0; i < PlayerPlot.placeHistoryLength; i++) {
-			if ((PlayerPlot.placeHistory[i].season == season) && (PlayerPlot.placeHistory[i].division == division)) {
-				pieces.push(PlayerPlot.placeHistory[i]);
-			}
-		}
-		pieces.sort((a,b) => a.place - b.place);
-		for (let pl of pieces) {
+		for (player of da.divisions[String(season)][division]) {
+			let plkey = player.toLowerCase();
+			let sindex = da.players[plkey].seasons.indexOf(season);
 			let row = document.createElement('tr');
-			row.classList.add('rows-past-standings')
-			let names = ['place', 'player', 'wins', 'losses', 'pct']
-			for (let j = 0; j < 5; j++) {
-				let cell = document.createElement('td');
-				cell.classList.add('cells-past-standings');
-				if (j == 1) {
-					cell.classList.add('clickable-name');
-				} else if (j == 4) {
-					cell.style.cssText = 'background-color:' + pl.standingsColor;
-				}
-				cell.appendChild(document.createTextNode(pl[names[j]]));
-				row.appendChild(cell);
-			}
+			row.classList.add('rows-past-standings');
+			let pcell = document.createElement('td');
+			pcell.classList.add('cells-past-standings');
+			pcell.appendChild(document.createTextNode(da.players[plkey].places[sindex]));
+			row.appendChild(pcell);
+			let ncell = document.createElement('td');
+			ncell.classList.add('cells-past-standings');
+			ncell.appendChild(document.createTextNode(da.players[plkey].name));
+			ncell.classList.add('clickable-name');
+			row.appendChild(ncell);
+			let wcell = document.createElement('td');
+			wcell.classList.add('cells-past-standings');
+			wcell.appendChild(document.createTextNode(da.players[plkey].wins[sindex]));
+			row.appendChild(wcell);
+			let lcell = document.createElement('td');
+			lcell.classList.add('cells-past-standings');
+			lcell.appendChild(document.createTextNode(da.players[plkey].losses[sindex]));
+			row.appendChild(lcell);
+			let fcell = document.createElement('td');
+			fcell.classList.add('cells-past-standings');
+			let pct = Number(da.players[plkey].wins[sindex]) / (Number(da.players[plkey].wins[sindex]) + Number(da.players[plkey].losses[sindex]));
+			fcell.appendChild(document.createTextNode(String(Math.round(100 * pct)) + "%"));
+			fcell.style.cssText = 'background-color:' + ChartUtils.standingsColors[Math.floor(2000*pct/101)];
+			row.appendChild(fcell);
 			tableBody.appendChild(row);
 		}
 	}
