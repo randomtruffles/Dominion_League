@@ -6,82 +6,50 @@ var fs = require('fs');
 const fullHist = JSON.parse(fs.readFileSync("../league_history.json"));
 const champs = JSON.parse(fs.readFileSync("../champions.json"));
 
-var counts = {};
-var hist = [];
+var players = {};
+var divisions = {};
 
 for (let s in fullHist) {
-	counts[s] = {};
-	let totalPlayers = 0;
+	let sn = s.slice(1);
+	divisions[sn] = {};
 	for (let div in fullHist[s]) {
-		if (div != "season") {
-			let ps = Object.keys(fullHist[s][div].members).length;
-			totalPlayers += ps;
-			if (counts[s][fullHist[s][div].tier]) {
-				counts[s][fullHist[s][div].tier].divisions += 1;
-				counts[s][fullHist[s][div].tier].players += ps;
+		if (div == "season") {continue;}
+		
+		divisions[sn][div] = Object.keys(fullHist[s][div].members).sort((a,b) => {
+			if (champs.seasons[sn] == a.toLowerCase()) {
+				return -1;
+			} else if (champs.seasons[sn] == b.toLowerCase()) {
+				return 1;
 			} else {
-				counts[s][fullHist[s][div].tier] = {"season": s.slice(1), "tier": div.charAt(0), "divisions": 1, "players": ps};
+				return a.rank - b.rank;
+			}
+		});
+		
+		for (let pl in fullHist[s][div].members) {
+			let plkey = pl.toLowerCase();
+			if (players[plkey]) {
+				players[plkey].seasons.push(Number(sn));
+				players[plkey].divs.push(div);
+				players[plkey].places.push(plkey == champs.seasons[sn] ? 1 : plkey == champs.runner_ups[sn] ? 2 : fullHist[s][div].members[pl].rank);
+				players[plkey].wins.push(fullHist[s][div].members[pl].wins);
+				players[plkey].losses.push(fullHist[s][div].members[pl].losses);
+			} else {
+				players[plkey] = {
+					"name": pl,
+					"seasons": [Number(sn)],
+					"divs": [div],
+					"places": [plkey == champs.seasons[sn] ? 1 : plkey == champs.runner_ups[sn] ? 2 : fullHist[s][div].members[pl].rank],
+					"wins": [fullHist[s][div].members[pl].wins],
+					"losses": [fullHist[s][div].members[pl].losses]
+				};
 			}
 		}
-	}
-	for (let tier in counts[s]) {
-		counts[s][tier].lfrac = counts[s][tier].players/totalPlayers;
-	}
-	
-	for (let div in fullHist[s]) {
-		if (div != "season") {
-			let players = Object.keys(fullHist[s][div].members);
-			const nplayer = players.length;
-			let countBase = 0;
-			let propBase = 0;
-			let countMult = null;
-			let propMult = null;
-			for (tier in counts[s]) {
-				if (tier == fullHist[s][div].tier) {
-					countMult = counts[s][tier].players;
-					propMult = counts[s][tier].lfrac;
-					break;
-				}
-				countBase += counts[s][tier].players;
-				propBase += counts[s][tier].lfrac;
-			}
-			for (let i=0; i<nplayer; i++) {
-				let champ = (fullHist[s][div].members[players[i]].rank == 1) ? "division" : "no";
-				let place = String(fullHist[s][div].members[players[i]].rank);
-				if (fullHist[s][div].tier == "A") {
-					if (champs.seasons[s.slice(1)] == players[i].toLowerCase()) {
-						champ = "league";
-						place = "1";
-					} else if (champs.runner_ups[s.slice(1)] == players[i].toLowerCase()) {
-						champ = "no";
-						place = "2";
-					}
-				}
-				hist.push({
-					"player": players[i],
-					"tier": fullHist[s][div].tier,
-					"division": div,
-					"place": place,
-					"wins": fullHist[s][div].members[players[i]].wins,
-					"losses": fullHist[s][div].members[players[i]].losses,
-					"pct": fullHist[s][div].members[players[i]].pct,
-					"standingsColor": fullHist[s][div].members[players[i]].color,
-					"season": s.slice(1),
-					"countPlacement": String(countBase + countMult*(Number(place) - 0.5)/nplayer),
-					"propPlacement": String(propBase + propMult*(Number(place) - 0.5)/nplayer),
-					"champ": champ
-				})
-			}
-		}
-	}
-	
-	for (let tier in counts[s]) {
-		counts[s][tier].lfrac = String(counts[s][tier].lfrac);
-		counts[s][tier].players = String(counts[s][tier].players);
-		counts[s][tier].divisions = String(counts[s][tier].divisions);
 	}
 }
 
+fs.writeFileSync("outputs/chart_data.json", JSON.stringify({"players": players, "divisions": divisions}));
+
+/*
 counts = Object.keys(counts).map(season => Object.keys(counts[season]).map(tier => counts[season][tier])).flat();
 fs.writeFileSync("outputs/chart_counts.json", JSON.stringify(counts));
 
@@ -123,3 +91,4 @@ for (let i=0; i<current.season; i++) {
 }
 
 fs.writeFileSync("outputs/chart_transitions.json", JSON.stringify({"schemes": schemes, "players": playerlist, "tiers": tiers}));
+*/
