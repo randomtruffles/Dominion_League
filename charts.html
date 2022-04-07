@@ -18,9 +18,19 @@ title: Visual History
 		<div class="control-container">
 			Player: 
 			<input type="text" id="player-input" class="chartInput">
-			<button id="playerchange">Make Chart</button>
-			<button id="clearplayer">Clear</button>
+			<button id="playerchange">Add Player</button>
+			<button id="clearplayer">Clear All</button>
 		</div>
+	</div>
+	<div class="control-row">
+		<span class="slidePiece">Seasons:</span>
+		<input type="text" id="pseasontextmin" class="slidertext slidePiece" value="1">
+		<div class="slider-container slidePiece">
+			<input type="range" id="pseasonslide1" class="dslider" min=1 max=1 value=1>
+			<input type="range" id="pseasonslide2" class="dslider" min=1 max=1>
+		</div>
+		<input type="text" id="pseasontextmax" class="slidertext slidePiece">
+		<button id="rangereset" class="reset slidePiece">Reset Range</button>
 		<div class="control-container">
 			<label for="count" class="chartInput">
 				<input type="radio" id="count" class="chartInput chartRadio" name="prop" checked="checked">
@@ -37,17 +47,6 @@ title: Visual History
 				<span>Show all tiers</span>
 			</label>
 		</div>
-	</div>
-	
-	<div class="control-row">
-		<span class="slidePiece">Seasons:</span>
-		<input type="text" id="pseasontextmin" class="slidertext slidePiece" value="1">
-		<div class="slider-container slidePiece">
-			<input type="range" id="pseasonslide1" class="dslider" min=1 max=1 value=1>
-			<input type="range" id="pseasonslide2" class="dslider" min=1 max=1>
-		</div>
-		<input type="text" id="pseasontextmax" class="slidertext slidePiece">
-		<button id="rangereset" class="reset slidePiece">Reset Range</button> 
 	</div>
 	
 	<div id="widthcheck"><!-- maybe put player not founds in here - I need it for determining render width --></div>
