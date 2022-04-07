@@ -13,7 +13,8 @@ var ChartUtils = {};
 ChartUtils.curString = String(cur.season);
 ChartUtils.tierColors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"];
 ChartUtils.standingsColors = ["#E77B72", "#E88372", "#EA8C71", "#EC956F", "#EF9E6E", "#F2A76D", "#F4B06B", "#F7B96B", "#F9C269", "#FCCB67", "#FED467", "#F2D467", "#E2D26B", "#D0CF6F", "#C0CC73", "#AFCA76", "#9EC77A", "#8CC47E", "#7CC181", "#6DBF84", "#5BBC88"];
-ChartUtils.darkColors = ["#000000", "#5E11B8", "#09823B", "#ABAB0C", "#AD5211"];
+ChartUtils.darkColors = ["#000000", "#ABAB0C", "#09823B", "#5E11B8", "#AD5211"];
+ChartUtils.lightColors = ["#B3B3B3", "#FAFAB7", "#88F7B6", "#C9A2F6", "#F6C5A2"];
 ChartUtils.clickableNames = null;
 ChartUtils.widthcheck = document.getElementById('widthcheck');
 
@@ -58,7 +59,7 @@ ChartUtils.setClickableNames = function() {
 	ChartUtils.clickableNames = document.getElementsByClassName("clickable-name");
 	for (let i=ChartUtils.clickableNames.length-1; i>=0; i--) {
 		ChartUtils.clickableNames[i].onclick = function() {
-			PlayerPlot.player = ChartUtils.clickableNames[i].innerHTML;
+			PlayerPlot.player = [ChartUtils.clickableNames[i].innerHTML];
 			ChartUtils.setURLparams();
 			PlayerPlot.makePlot();
 			ChartUtils.closeModal();
@@ -156,6 +157,7 @@ PlayerPlot.prepControls = function() {
 	PlayerPlot.playerClear.onclick = function() {
 		document.getElementById('player-input').value = "";
 		PlayerPlot.player = [];
+		PlayerPlot.playerButtons.innerHTML = "";
 		ChartUtils.setURLparams();
 		if (PlayerPlot.userSetRange) {PlayerPlot.makePlot();} else {PlayerPlot.resetRange();};
 	};
@@ -186,6 +188,30 @@ PlayerPlot.prepControls = function() {
 		}
 	};
 };
+PlayerPlot.makePlayerButtons = function() {
+	PlayerPlot.playerButtons.innerHTML = "";
+	for (let i=0; i<PlayerPlot.player.length; i++) {
+		let container = document.createElement('div');
+		container.classList.add('chart-player');
+		container.style.backgroundColor = ChartUtils.lightColors[i];
+		container.style.borderColor = ChartUtils.darkColors[i];
+		let remover = document.createElement('span');
+		remover.classList.add('player-close');
+		remover.appendChild(document.createTextNode('\u00d7'));
+		remover.onclick = PlayerPlot.removePlayer;
+		container.appendChild(remover);
+		let playertext = document.createElement('span');
+		playertext.classList.add('player-name');
+		playertext.appendChild(document.createTextNode(PlayerPlot.player[i]));
+		container.appendChild(playertext);
+		PlayerPlot.playerButtons.appendChild(container);
+	}
+}
+PlayerPlot.removePlayer = function(ev) {
+	let toRemove = ev.target.parentElement.lastElementChild.textContent;
+	PlayerPlot.player.splice(PlayerPlot.player.indexOf(toRemove), 1);
+	if (PlayerPlot.userSetRange) {PlayerPlot.makePlot();} else {PlayerPlot.resetRange();}
+}
 PlayerPlot.slideinput = function() {
 	if (Number(PlayerPlot.seasonslide1.value) <= Number(PlayerPlot.seasonslide2.value)) {
 		PlayerPlot.seasontextmin.value = PlayerPlot.seasonslide1.value;
@@ -467,11 +493,7 @@ PlayerPlot.makePlot = function() {
 								"domain": PlayerPlot.player,
 								"range": ChartUtils.darkColors.slice(0, PlayerPlot.player.length)
 							},
-							"legend": {
-								"Title": "Player",
-								"symbolType": "stroke",
-								"orient": "top"
-							}
+							"legend": null
 						},
 						"strokeDash": {
 							"field": "future",
@@ -574,6 +596,7 @@ PlayerPlot.makePlot = function() {
 	});
 	
 	PlayerPlot.blankButtons();
+	PlayerPlot.makePlayerButtons();
 	
 	function nullPlotLayer(fCounts) {
 		let seasons = [];
