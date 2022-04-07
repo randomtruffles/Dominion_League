@@ -126,6 +126,7 @@ PlayerPlot.seasontextmax = document.getElementById("pseasontextmax");
 PlayerPlot.rangeReset = document.getElementById('rangereset');
 PlayerPlot.playerChange = document.getElementById('playerchange');
 PlayerPlot.playerClear = document.getElementById('clearplayer');
+PlayerPlot.playerButtons = document.getElementById('playerbuttons');
 PlayerPlot.countRadio = document.getElementById('count');
 PlayerPlot.propRadio = document.getElementById('prop');
 PlayerPlot.allTiersCheck = document.getElementById('allTiers');
@@ -177,8 +178,12 @@ PlayerPlot.prepControls = function() {
 	};
 	PlayerPlot.allTiersCheck.onclick = function() {
 		PlayerPlot.allTiersCheck.blur();
-		PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;						
-		PlayerPlot.makePlot();
+		if (PlayerPlot.allTiersCheck.classList.contains("fixed-check")) {
+			PlayerPlot.allTiersCheck.checked = !PlayerPlot.allTiersCheck.checked;
+		} else {
+			PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;						
+			PlayerPlot.makePlot();
+		}
 	};
 };
 PlayerPlot.slideinput = function() {
@@ -217,6 +222,24 @@ PlayerPlot.resetRange = function() {
 	PlayerPlot.seasonslide1.value = 1;
 	PlayerPlot.seasonslide2.value = cur.season;
 	PlayerPlot.makePlot();
+};
+PlayerPlot.blankButtons = function() {
+	PlayerPlot.rangeReset.classList.remove("blank-button");
+	PlayerPlot.playerClear.classList.remove("blank-button");
+	PlayerPlot.playerChange.classList.remove("blank-button");
+	PlayerPlot.allTiersCheck.classList.remove("fixed-check");
+	if (!PlayerPlot.userSetRange) {
+		PlayerPlot.rangeReset.classList.add("blank-button");
+	}
+	if (!PlayerPlot.player.length) {
+		PlayerPlot.playerClear.classList.add("blank-button");
+	}
+	if (PlayerPlot.player.length == 5) {
+		PlayerPlot.playerChange.classList.add("blank-button");
+	}
+	if (PlayerPlot.proportion) {
+		PlayerPlot.allTiersCheck.classList.add("fixed-check");
+	}
 };
 	
 PlayerPlot.resize = function() {
@@ -292,10 +315,9 @@ PlayerPlot.makePlot = function() {
 		var played2MostRecent = seasons.map(s => (s[s.length - 1] == cur.season) && (s[s.length - 2] == cur.season - 1));
 		
 		if (pHist.length) {
-			
 			//set allTiers to true if proportion is true
 			if (PlayerPlot.proportion) {PlayerPlot.allTiers = true;}
-		
+			
 			//find missing seasons and insert nulls
 			let start = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[0] : allSeasons[0];
 			let end = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[1] : allSeasons[allSeasons.length-1];
@@ -550,6 +572,8 @@ PlayerPlot.makePlot = function() {
 			})
 		}
 	});
+	
+	PlayerPlot.blankButtons();
 	
 	function nullPlotLayer(fCounts) {
 		let seasons = [];

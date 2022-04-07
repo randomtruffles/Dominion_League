@@ -2649,6 +2649,25 @@ img.hof-champion-trophy {
     color: #d3d3d3;
 }
 
+.fixed-check {
+	border-color: #d3d3d3 !important;
+	background: #d3d3d3 !important;
+}
+/*
+.fixed-check:hover {
+	border-color: #d3d3d3;
+}
+*/
+.fixed-check:after {
+	content: "\2713";
+    color: #efefef !important;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
 .slidePiece {
 	margin: 4px;
 }
@@ -2753,4 +2772,14 @@ img.hof-champion-trophy {
 .clickable-name:hover {
 	cursor: pointer;
 	color: #ca2017;
+}
+
+.blank-button {
+	color: #d3d3d3;
+	border: 0;
+}
+
+.blank-button:hover {
+	cursor: default;
+	background: #efefef;
 }
