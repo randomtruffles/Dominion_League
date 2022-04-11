@@ -11,9 +11,9 @@ categories: signups
 You will need the following in order to sign up:
 
 1. A [Dominion Online](https://dominion.games) account with 10 or more rated 2-player games.
-- These rated games need to be played by Sunday, May 22 at 23:59 UTC. If you do not reach 10 rated games by the deadline, your sign up will be removed."
+- These rated games need to be played by Sunday, May 22 at 23:59 UTC. If you do not reach 10 rated games by the deadline, your sign up will be removed.
 2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu).
-- All League communications will take place by default over Discord."
+- All League communications will take place by default over Discord.
 3. *(Optional)* An email address.
 - This gives the moderators a second means of contacting you should you become unresponsive on Discord. *The Dominion League is committed to keeping your email address confidential. We do not sell or provide your personal information to any third party.*
 
@@ -26,7 +26,7 @@ A moderator will contact you on Discord to confirm your participation. You must 
 **NOTE:** Season 51 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
 <br>
 
-<div class=""sheets"">
+<div class="sheets">
 <iframe src=""https://docs.google.com/forms/d/e/1FAIpQLSf6w--md2GWzqhAdJFnfKmBXAnSbABJbZEQaVi-I7-1mZ1Q5w/viewform?embedded=true"" width=""100%"" height=""600"">Loading…</iframe>
 </div>
 
@@ -36,6 +36,6 @@ Sign-ups and Counts are listed below (it may take a few seconds to load).
 <br>
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
-<div class=""sheets"">
+<div class="sheets">
   <iframe src=""https://docs.google.com/spreadsheets/d/1i2BNBpSRjOBuxiFgBl87Yca1RMZOW8EKVYHC5PsqMfU/pubhtml"" height=""500"" width=""100%"">Loading...</iframe>
 </div>
