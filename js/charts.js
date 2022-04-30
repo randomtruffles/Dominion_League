@@ -23,15 +23,21 @@ ChartUtils.getURLparams = function() {
 		let params = new URLSearchParams(window.location.search);
 		PlayerPlot.player = params.get('player').split(",");
 		let psgiven = PlayerPlot.player.length;
-		if (psgiven > 5) {PlayerPlot.player.splice(5, psgiven - 5);}
+		if (psgiven > 5) {
+			PlayerPlot.player.splice(5, psgiven - 5);
+		} else if (psgiven < 5) {
+			for (let i = psgiven; i < 5; i++) {
+				PlayerPlot.player.push(null);
+			}
+		}
 		PlayerPlot.proportion = Boolean(params.get('prop') == 'true');
 		if (PlayerPlot.proportion) {document.getElementById('prop').checked = "checked";}
 	}
 };
 ChartUtils.setURLparams = function() {
 	let searchString = "?"
-	if (PlayerPlot.player.length) {
-		searchString += "player=" + PlayerPlot.player.join(",").replace(" ", "%20");
+	if (PlayerPlot.getPlayerCount()) {
+		searchString += "player=" + PlayerPlot.player.filter(x => x).join(",").replace(" ", "%20");
 	}
 	if (PlayerPlot.proportion) {
 		searchString += "&".repeat(searchString.length > 1) + "prop=true";
@@ -114,12 +120,20 @@ for (let tier in PlayerPlot.counts[ChartUtils.curString]) {
 
 PlayerPlot.proportion = false;
 PlayerPlot.allTiers = false;
-PlayerPlot.player = [];
+PlayerPlot.player = [null,null,null,null,null];
 PlayerPlot.seasonRange = [1,cur.season];
 PlayerPlot.userSetRange = false;
 
 PlayerPlot.plot = null;
-	
+
+PlayerPlot.getPlayerCount = function() {
+	let out = 0;
+	for (p of PlayerPlot.player) {
+		if (p) {out += 1;}
+	}
+	return out;
+}
+
 PlayerPlot.seasonslide1 = document.getElementById("pseasonslide1");
 PlayerPlot.seasonslide2 = document.getElementById("pseasonslide2");
 PlayerPlot.seasontextmin = document.getElementById("pseasontextmin");
@@ -146,8 +160,13 @@ PlayerPlot.prepControls = function() {
 	
 	PlayerPlot.rangeReset.onclick = PlayerPlot.resetRange;
 	PlayerPlot.playerChange.onclick = function() {
-		if (PlayerPlot.player.length < 5) {
-			PlayerPlot.player.push(document.getElementById('player-input').value);
+		if (PlayerPlot.getPlayerCount() < 5) {
+			for (let i=0; i<5; i++) {
+				if (!PlayerPlot.player[i]) {
+					PlayerPlot.player.splice(i,1,document.getElementById('player-input').value);
+					break;
+				}
+			}
 			document.getElementById('player-input').value = "";
 			PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
 			ChartUtils.setURLparams();
@@ -190,26 +209,29 @@ PlayerPlot.prepControls = function() {
 };
 PlayerPlot.makePlayerButtons = function() {
 	PlayerPlot.playerButtons.innerHTML = "";
-	for (let i=0; i<PlayerPlot.player.length; i++) {
-		let container = document.createElement('div');
-		container.classList.add('chart-player');
-		container.style.backgroundColor = ChartUtils.lightColors[i];
-		container.style.borderColor = ChartUtils.darkColors[i];
-		let remover = document.createElement('span');
-		remover.classList.add('player-close');
-		remover.appendChild(document.createTextNode('\u00d7'));
-		remover.onclick = PlayerPlot.removePlayer;
-		container.appendChild(remover);
-		let playertext = document.createElement('span');
-		playertext.classList.add('player-name');
-		playertext.appendChild(document.createTextNode(PlayerPlot.player[i]));
-		container.appendChild(playertext);
-		PlayerPlot.playerButtons.appendChild(container);
+	for (let i=0; i<5; i++) {
+		if (PlayerPlot.player[i]) {
+			let container = document.createElement('div');
+			container.classList.add('chart-player');
+			container.style.backgroundColor = ChartUtils.lightColors[i];
+			container.style.borderColor = ChartUtils.darkColors[i];
+			let remover = document.createElement('span');
+			remover.classList.add('player-close');
+			remover.appendChild(document.createTextNode('\u00d7'));
+			remover.onclick = PlayerPlot.removePlayer;
+			container.appendChild(remover);
+			let playertext = document.createElement('span');
+			playertext.classList.add('player-name');
+			playertext.appendChild(document.createTextNode(PlayerPlot.player[i]));
+			container.appendChild(playertext);
+			PlayerPlot.playerButtons.appendChild(container);
+		}
 	}
 }
 PlayerPlot.removePlayer = function(ev) {
 	let toRemove = ev.target.parentElement.lastElementChild.textContent;
-	PlayerPlot.player.splice(PlayerPlot.player.indexOf(toRemove), 1);
+	PlayerPlot.player.splice(PlayerPlot.player.indexOf(toRemove), 1, null);
+	ChartUtils.setURLparams();
 	if (PlayerPlot.userSetRange) {PlayerPlot.makePlot();} else {PlayerPlot.resetRange();}
 }
 PlayerPlot.slideinput = function() {
@@ -257,10 +279,10 @@ PlayerPlot.blankButtons = function() {
 	if (!PlayerPlot.userSetRange) {
 		PlayerPlot.rangeReset.classList.add("blank-button");
 	}
-	if (!PlayerPlot.player.length) {
+	if (!PlayerPlot.getPlayerCount()) {
 		PlayerPlot.playerClear.classList.add("blank-button");
 	}
-	if (PlayerPlot.player.length == 5) {
+	if (PlayerPlot.getPlayerCount() == 5) {
 		PlayerPlot.playerChange.classList.add("blank-button");
 	}
 	if (PlayerPlot.proportion) {
@@ -281,14 +303,13 @@ PlayerPlot.makePlot = function() {
 	var allSeasons = [];
 	var fCounts = [];
 	
-	if (PlayerPlot.player.length) {
-		var seasons = Array.from({ length: PlayerPlot.player.length }, () => []);
+	if (PlayerPlot.getPlayerCount()) {
+		var seasons = Array.from({ length: 5 }, () => []);
 		//isolate records for relevant players
-		for (let p = PlayerPlot.player.length-1; p >= 0; p--) {
-			let plkey = PlayerPlot.player[p].toLowerCase();
-			if (!da.players[plkey] && !cur.players[plkey]) {
-				PlayerPlot.player.splice(p,1);
-				seasons.splice(p,1);
+		for (let p = 4; p >= 0; p--) {
+			let plkey = PlayerPlot.player[p] ? PlayerPlot.player[p].toLowerCase() : null;
+			if (!plkey || (!da.players[plkey] && !cur.players[plkey])) {
+				PlayerPlot.player.splice(p,1,null);
 				continue;
 			}
 			
@@ -348,7 +369,7 @@ PlayerPlot.makePlot = function() {
 			let start = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[0] : allSeasons[0];
 			let end = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[1] : allSeasons[allSeasons.length-1];
 			var toadd = [];
-			for (let p = PlayerPlot.player.length-1; p>=0; p--) {
+			for (let p = 4; p>=0; p--) {
 				for (let s = start; s <= end; s++) {
 					if (!seasons[p].includes(s)) {
 						pHist.push({"player":PlayerPlot.player[p], "tier":null, "division":null, "place":null, "season":s, "countPlacement":null, "propPlacement":null, "champ":null});
@@ -491,7 +512,7 @@ PlayerPlot.makePlot = function() {
 							"type": "nominal",
 							"scale" : {
 								"domain": PlayerPlot.player,
-								"range": ChartUtils.darkColors.slice(0, PlayerPlot.player.length)
+								"range": ChartUtils.darkColors
 							},
 							"legend": null
 						},
@@ -520,7 +541,7 @@ PlayerPlot.makePlot = function() {
 						"type": "point",
 						"filled": true,
 						"opacity": "1",
-						"strokeWidth": PlayerPlot.player.length > 1 ? "2" : "1"
+						"strokeWidth": PlayerPlot.getPlayerCount() > 1 ? "2" : "1"
 					},
 					"encoding": {
 						"x": {"field": "season", "type": "ordinal"},
@@ -540,7 +561,7 @@ PlayerPlot.makePlot = function() {
 							"type": "nominal",
 							"scale" : {
 								"domain": PlayerPlot.player,
-								"range": ChartUtils.darkColors.slice(0, PlayerPlot.player.length)
+								"range": ChartUtils.darkColors
 							}
 						},
 						"shape": {
@@ -557,7 +578,7 @@ PlayerPlot.makePlot = function() {
 							},
 							"legend": null
 						},
-						"size": {"condition": {"selection": "hovered", "value": "60"}, "value": PlayerPlot.player.length > 1 ? "30" : "40"},
+						"size": {"condition": {"selection": "hovered", "value": "60"}, "value": PlayerPlot.getPlayerCount() > 1 ? "30" : "40"},
 						"tooltip": (ChartUtils.widthcheck.clientWidth < 540) ? null : [
 							{"field": "player", "type": "nominal", "title": "Player"},
 							{"field": "season", "type": "nominal", "title": "Season"},
