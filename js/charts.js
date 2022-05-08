@@ -344,11 +344,11 @@ PlayerPlot.makePlot = function() {
 				var currentHistory = {"player": pname, "tier": cur.players[plkey].tier, "division": cur.players[plkey].division};
 				let divplayers = Object.keys(cur[currentHistory.division].members).length;
 				let rank = (Number(cur[currentHistory.division].members[pname].wins) + Number(cur[currentHistory.division].members[pname].losses)) ? cur[currentHistory.division].members[pname].rank : "";
-				currentHistory.place = String(rank) + " (in progress)";
+				currentHistory.place = String(rank) + (cur[currentHistory.division]["complete?"] == "Yes" ? "" : " (in progress)");
 				currentHistory.season = cur.season;
 				currentHistory.countPlacement = rank ? PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].countBase + (rank-0.5)*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].players/divplayers : PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].countBase + 0.5*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].players;
 				currentHistory.propPlacement = rank ? PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].propBase + (rank-0.5)*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].lfrac/divplayers : PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].propBase + 0.5*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].lfrac;
-				currentHistory.champ = "in progress";
+				currentHistory.champ = cur[currentHistory.division]["complete?"] == "Yes" ? (currentHistory.tier == "A" ? (rank <= 2 ? "in progress" : "no") : (rank == 1 ? "division" : "no")) : "in progress";
 				currentHistory.chart = "point";
 				pHist.push(currentHistory);
 				seasons[p].push(currentHistory.season);
