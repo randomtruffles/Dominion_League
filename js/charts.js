@@ -13,8 +13,8 @@ var ChartUtils = {};
 ChartUtils.curString = String(cur.season);
 ChartUtils.tierColors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"];
 ChartUtils.standingsColors = ["#E77B72", "#E88372", "#EA8C71", "#EC956F", "#EF9E6E", "#F2A76D", "#F4B06B", "#F7B96B", "#F9C269", "#FCCB67", "#FED467", "#F2D467", "#E2D26B", "#D0CF6F", "#C0CC73", "#AFCA76", "#9EC77A", "#8CC47E", "#7CC181", "#6DBF84", "#5BBC88"];
-ChartUtils.darkColors = ["#000000", "#ABAB0C", "#09823B", "#5E11B8", "#AD5211"];
-ChartUtils.lightColors = ["#B3B3B3", "#FAFAB7", "#88F7B6", "#C9A2F6", "#F6C5A2"];
+ChartUtils.darkColors = ["#000000", "#D0D0D0", "#ABAB0C", "#09823B", "#AD5211", "#5E11B8"];
+ChartUtils.lightColors = ["#B3B3B3", "#FFFFFF", "#FAFAB7", "#88F7B6", "#F6C5A2", "#C9A2F6"];
 ChartUtils.clickableNames = null;
 ChartUtils.widthcheck = document.getElementById('widthcheck');
 
@@ -23,10 +23,10 @@ ChartUtils.getURLparams = function() {
 		let params = new URLSearchParams(window.location.search);
 		PlayerPlot.player = params.get('player').split(",");
 		let psgiven = PlayerPlot.player.length;
-		if (psgiven > 5) {
-			PlayerPlot.player.splice(5, psgiven - 5);
-		} else if (psgiven < 5) {
-			for (let i = psgiven; i < 5; i++) {
+		if (psgiven > 6) {
+			PlayerPlot.player.splice(6, psgiven - 6);
+		} else if (psgiven < 6) {
+			for (let i = psgiven; i < 6; i++) {
 				PlayerPlot.player.push(null);
 			}
 		}
@@ -56,7 +56,7 @@ ChartUtils.closeModal = function() {
 document.getElementById('closemodal').onclick = ChartUtils.closeModal;
 
 window.onclick = function(ev) {
-	if (event.target == document.getElementById('charts-modal')) {
+	if (ev.target == document.getElementById('charts-modal')) {
 		ChartUtils.closeModal();
 	}
 };
@@ -64,10 +64,8 @@ window.onclick = function(ev) {
 ChartUtils.setClickableNames = function() {
 	ChartUtils.clickableNames = document.getElementsByClassName("clickable-name");
 	for (let i=ChartUtils.clickableNames.length-1; i>=0; i--) {
-		ChartUtils.clickableNames[i].onclick = function() {
-			PlayerPlot.player = [ChartUtils.clickableNames[i].innerHTML];
-			ChartUtils.setURLparams();
-			PlayerPlot.makePlot();
+		ChartUtils.clickableNames[i].onclick = function(ev) {
+			PlayerPlot.addPlayer(ev.target.innerText);
 			ChartUtils.closeModal();
 		}
 	}
@@ -120,7 +118,7 @@ for (let tier in PlayerPlot.counts[ChartUtils.curString]) {
 
 PlayerPlot.proportion = false;
 PlayerPlot.allTiers = false;
-PlayerPlot.player = [null,null,null,null,null];
+PlayerPlot.player = [null,null,null,null,null,null];
 PlayerPlot.seasonRange = [1,cur.season];
 PlayerPlot.userSetRange = false;
 
@@ -160,18 +158,7 @@ PlayerPlot.prepControls = function() {
 	
 	PlayerPlot.rangeReset.onclick = PlayerPlot.resetRange;
 	PlayerPlot.playerChange.onclick = function() {
-		if (PlayerPlot.getPlayerCount() < 5) {
-			for (let i=0; i<5; i++) {
-				if (!PlayerPlot.player[i]) {
-					PlayerPlot.player.splice(i,1,document.getElementById('player-input').value);
-					break;
-				}
-			}
-			document.getElementById('player-input').value = "";
-			PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
-			ChartUtils.setURLparams();
-			PlayerPlot.makePlot();
-		}
+		PlayerPlot.addPlayer(document.getElementById('player-input').value);
 	};
 	PlayerPlot.playerClear.onclick = function() {
 		document.getElementById('player-input').value = "";
@@ -209,7 +196,7 @@ PlayerPlot.prepControls = function() {
 };
 PlayerPlot.makePlayerButtons = function() {
 	PlayerPlot.playerButtons.innerHTML = "";
-	for (let i=0; i<5; i++) {
+	for (let i=0; i<6; i++) {
 		if (PlayerPlot.player[i]) {
 			let container = document.createElement('div');
 			container.classList.add('chart-player');
@@ -226,6 +213,22 @@ PlayerPlot.makePlayerButtons = function() {
 			container.appendChild(playertext);
 			PlayerPlot.playerButtons.appendChild(container);
 		}
+	}
+}
+PlayerPlot.addPlayer = function(newname) {
+	if (PlayerPlot.getPlayerCount() < 6) {
+		if (!PlayerPlot.player.filter(x => x).map(x => x.toLowerCase()).includes(newname.toLowerCase())) {
+			for (let i=0; i<6; i++) {
+				if (!PlayerPlot.player[i]) {
+					PlayerPlot.player.splice(i,1,newname);
+					break;
+				}
+			}
+		}
+		document.getElementById('player-input').value = "";
+		PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
+		ChartUtils.setURLparams();
+		PlayerPlot.makePlot();
 	}
 }
 PlayerPlot.removePlayer = function(ev) {
@@ -282,7 +285,7 @@ PlayerPlot.blankButtons = function() {
 	if (!PlayerPlot.getPlayerCount()) {
 		PlayerPlot.playerClear.classList.add("blank-button");
 	}
-	if (PlayerPlot.getPlayerCount() == 5) {
+	if (PlayerPlot.getPlayerCount() == 6) {
 		PlayerPlot.playerChange.classList.add("blank-button");
 	}
 	if (PlayerPlot.proportion) {
@@ -304,9 +307,9 @@ PlayerPlot.makePlot = function() {
 	var fCounts = [];
 	
 	if (PlayerPlot.getPlayerCount()) {
-		var seasons = Array.from({ length: 5 }, () => []);
+		var seasons = Array.from({ length: 6 }, () => []);
 		//isolate records for relevant players
-		for (let p = 4; p >= 0; p--) {
+		for (let p = 5; p >= 0; p--) {
 			let plkey = PlayerPlot.player[p] ? PlayerPlot.player[p].toLowerCase() : null;
 			if (!plkey || (!da.players[plkey] && !cur.players[plkey])) {
 				PlayerPlot.player.splice(p,1,null);
@@ -369,7 +372,7 @@ PlayerPlot.makePlot = function() {
 			let start = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[0] : allSeasons[0];
 			let end = PlayerPlot.userSetRange ? PlayerPlot.seasonRange[1] : allSeasons[allSeasons.length-1];
 			var toadd = [];
-			for (let p = 4; p>=0; p--) {
+			for (let p = 5; p>=0; p--) {
 				for (let s = start; s <= end; s++) {
 					if (!seasons[p].includes(s)) {
 						pHist.push({"player":PlayerPlot.player[p], "tier":null, "division":null, "place":null, "season":s, "countPlacement":null, "propPlacement":null, "champ":null});
@@ -511,8 +514,8 @@ PlayerPlot.makePlot = function() {
 							"field": "player",
 							"type": "nominal",
 							"scale" : {
-								"domain": PlayerPlot.player,
-								"range": ChartUtils.darkColors
+								"domain": PlayerPlot.player.filter(x => x),
+								"range": ChartUtils.darkColors.filter((x,i) => PlayerPlot.player[i])
 							},
 							"legend": null
 						},
@@ -560,8 +563,8 @@ PlayerPlot.makePlot = function() {
 							"field": "player",
 							"type": "nominal",
 							"scale" : {
-								"domain": PlayerPlot.player,
-								"range": ChartUtils.darkColors
+								"domain": PlayerPlot.player.filter(x => x),
+								"range": ChartUtils.darkColors.filter((x,i) => PlayerPlot.player[i])
 							}
 						},
 						"shape": {
@@ -707,7 +710,7 @@ PlayerPlot.showStandingsModal = function(season, division) {
 				let cell = document.createElement('td');
 				cell.classList.add('cells-past-standings');
 				if (j == 1) {
-					cell.classList.add('clickable-name');
+					cell.classList.add(PlayerPlot.getPlayerCount() == 6 ? 'clickable-off' : 'clickable-name');
 				} else if (j == 4) {
 					cell.style.cssText = 'background-color:' + cur[division].members[pl].color;
 				}
@@ -729,7 +732,7 @@ PlayerPlot.showStandingsModal = function(season, division) {
 			let ncell = document.createElement('td');
 			ncell.classList.add('cells-past-standings');
 			ncell.appendChild(document.createTextNode(da.players[plkey].name));
-			ncell.classList.add('clickable-name');
+			ncell.classList.add(PlayerPlot.getPlayerCount() == 6 ? 'clickable-off' : 'clickable-name');
 			row.appendChild(ncell);
 			let wcell = document.createElement('td');
 			wcell.classList.add('cells-past-standings');
@@ -842,13 +845,11 @@ PowerPlot.makePlot = function() {
 		PowerPlot.plot = res.view;
 		PowerPlot.plot.addDataListener('clicked_store', function(name, value){
 			if (value.length) {
-				PlayerPlot.player = PowerPlot.data.data[value[0].values[0]-1].player;
-				PlayerPlot.allTiers = document.getElementById('allTiers').checked;
-				ChartUtils.setURLparams();
-				PlayerPlot.makePlot();
+				PlayerPlot.addPlayer(PowerPlot.data.data[value[0].values[0]-1].player);
 			}
 		})
 	});
+	
 }
 
 //transitions plot
@@ -916,7 +917,7 @@ TransitionsPlot.prepControls = function() {
 	TransitionsPlot.seasontextmin.onblur = TransitionsPlot.slideinput;
 	
 	TransitionsPlot.setTierOptions();
-	TransitionsPlot.tierSelect.addEventListener('change', function (ev) {
+	TransitionsPlot.tierSelect.addEventListener('change', function(ev) {
 		TransitionsPlot.startTier = ev.target.value;
 		TransitionsPlot.makePlot();
 	});
@@ -927,7 +928,7 @@ TransitionsPlot.prepControls = function() {
 		TransitionsPlot.makePlot();
 	};
 	
-	TransitionsPlot.typeSelect.addEventListener('change', function (ev) {
+	TransitionsPlot.typeSelect.addEventListener('change', function(ev) {
 		TransitionsPlot.plotType = Number(ev.target.value);
 		TransitionsPlot.typeToVars();
 		TransitionsPlot.makePlot();
@@ -1308,11 +1309,11 @@ TransitionsPlot.showPlayersModal = function(propidx) {
 	for (let i=0; i<nplayer-1; i+= 2) {
 		let row = document.createElement('tr');
 		let cell1 = document.createElement('td');
-		cell1.classList.add('clickable-name');
+		cell1.classList.add(PlayerPlot.getPlayerCount() == 6 ? 'clickable-off' : 'clickable-name');
 		cell1.appendChild(document.createTextNode(TransitionsPlot.data.players[idxs[i]]));
 		row.appendChild(cell1);
 		let cell2 = document.createElement('td');
-		cell2.classList.add('clickable-name');
+		cell2.classList.add(PlayerPlot.getPlayerCount() == 6 ? 'clickable-off' : 'clickable-name');
 		cell2.appendChild(document.createTextNode(TransitionsPlot.data.players[idxs[i+1]]));
 		row.appendChild(cell2);
 		tableBody.appendChild(row);
@@ -1320,7 +1321,7 @@ TransitionsPlot.showPlayersModal = function(propidx) {
 	if (nplayer % 2) {
 		let row = document.createElement('tr');
 		let cell1 = document.createElement('td');
-		cell1.classList.add('clickable-name');
+		cell1.classList.add(PlayerPlot.getPlayerCount() == 6 ? 'clickable-off' : 'clickable-name');
 		cell1.appendChild(document.createTextNode(TransitionsPlot.data.players[idxs[nplayer-1]]));
 		row.appendChild(cell1);
 		let cell2 = document.createElement('td');
