@@ -21,17 +21,30 @@ ChartUtils.widthcheck = document.getElementById('widthcheck');
 ChartUtils.getURLparams = function() {
 	if (window.location.search) {
 		let params = new URLSearchParams(window.location.search);
-		PlayerPlot.player = params.get('player').split(",");
-		let psgiven = PlayerPlot.player.length;
-		if (psgiven > 6) {
-			PlayerPlot.player.splice(6, psgiven - 6);
-		} else if (psgiven < 6) {
-			for (let i = psgiven; i < 6; i++) {
-				PlayerPlot.player.push(null);
+		if (params.has('player')) {
+			PlayerPlot.player = params.get('player').split(",");
+			let psgiven = PlayerPlot.player.length;
+			if (psgiven > 6) {
+				PlayerPlot.player.splice(6, psgiven - 6);
+			} else if (psgiven < 6) {
+				for (let i = psgiven; i < 6; i++) {
+					PlayerPlot.player.push(null);
+				}
 			}
 		}
-		PlayerPlot.proportion = Boolean(params.get('prop') == 'true');
+		PlayerPlot.proportion = Boolean(params.get('prop') === 'true');
 		if (PlayerPlot.proportion) {document.getElementById('prop').checked = "checked";}
+		if (params.has('seasons')) {
+			let urlRange = params.get('seasons').split(",").map(x => Number(x));
+			if (urlRange.length == 2 & urlRange[0]) {
+				PlayerPlot.seasonRange = urlRange[0] > urlRange[1] ? urlRange.reverse() : urlRange;
+				PlayerPlot.userSetRange = true;
+				PlayerPlot.seasonslide1.value = PlayerPlot.seasonRange[0];
+				PlayerPlot.seasontextmin.value = PlayerPlot.seasonRange[0]
+				PlayerPlot.seasonslide2.value = PlayerPlot.seasonRange[1];
+				PlayerPlot.seasontextmax.value = PlayerPlot.seasonRange[1];
+			}
+		}
 	}
 };
 ChartUtils.setURLparams = function() {
@@ -42,7 +55,12 @@ ChartUtils.setURLparams = function() {
 	if (PlayerPlot.proportion) {
 		searchString += "&".repeat(searchString.length > 1) + "prop=true";
 	}
-	window.history.replaceState(null, null, searchString);
+	if (PlayerPlot.userSetRange) {
+		searchString += "&".repeat(searchString.length > 1) + "seasons=" + PlayerPlot.seasonRange.join(",");
+	}
+	if (searchString.length > 1) {
+		window.history.replaceState(null, null, searchString);
+	}
 }
 
 ChartUtils.openModal = function() {
@@ -248,6 +266,7 @@ PlayerPlot.slideinput = function() {
 	
 	PlayerPlot.seasonRange = [Number(PlayerPlot.seasontextmin.value), Number(PlayerPlot.seasontextmax.value)];
 	PlayerPlot.userSetRange = true;
+	ChartUtils.setURLparams();
 	PlayerPlot.makePlot();
 };
 PlayerPlot.textinput = function() {
@@ -262,6 +281,7 @@ PlayerPlot.textinput = function() {
 		
 		PlayerPlot.seasonRange = [Number(PlayerPlot.seasontextmin.value), Number(PlayerPlot.seasontextmax.value)];
 		PlayerPlot.userSetRange = true;
+		ChartUtils.setURLparams();
 		PlayerPlot.makePlot();
 	}
 };
@@ -272,6 +292,7 @@ PlayerPlot.resetRange = function() {
 	PlayerPlot.seasontextmax.value = cur.season;
 	PlayerPlot.seasonslide1.value = 1;
 	PlayerPlot.seasonslide2.value = cur.season;
+	ChartUtils.setURLparams();
 	PlayerPlot.makePlot();
 };
 PlayerPlot.blankButtons = function() {
@@ -761,8 +782,72 @@ PlayerPlot.showStandingsModal = function(season, division) {
 
 var PowerPlot = {};
 
-PowerPlot.data = {{ site.data.chart_power | jsonify }};
-PowerPlot.dataLength = PowerPlot.data.data.length;
+PowerPlot.players = Object.keys(da.players).filter(p => da.players[p].divs.includes("A1")).sort();
+PowerPlot.nplayers = PowerPlot.players.length;
+PowerPlot.data = [];
+
+PowerPlot.pointMap = {"A1": 10, "A2": 5, "A3": 3, "A4": 3, "A5": 1, "A6": 1, "B1": 2, "B2": 0, "B3": 0, "B4": 0, "B5": -2, "B6": -2};
+PowerPlot.pointDecay = [1, 0.9, 0.7, 0.4];
+PowerPlot.propCutoff = 0.02;
+
+PowerPlot.points = PowerPlot.players.map(plkey => {
+	let out = Array.from({ length:cur.season }, () => 0);
+	for (let s=0; s<cur.season; s++) {
+		let sp = null;
+		if (s == 0 && da.divisions["1"]["A1"].includes(da.players[plkey].name)) {
+			sp = 2;
+		} else {
+			let sloc = da.players[plkey].seasons.indexOf(s);
+			if (sloc == -1) {
+				sp = 0;
+			} else {
+				let sdiv = da.players[plkey].divs[sloc];
+				let stier = sdiv.charAt(0);
+				if (stier > "B") {
+					sp = -1;
+				} else {
+					let trank = null;
+					if (da.divisions[String(s)][sdiv].length == 7 && da.players[plkey].places[sloc] >= 5) {
+						trank = stier + (da.players[plkey].places[sloc] - 1);
+					} else {
+						trank = stier + da.players[plkey].places[sloc]
+					}
+					sp = PowerPlot.pointMap[trank];
+				}
+			}
+		}
+		for (let i=0; i<PowerPlot.pointDecay.length; i++) {
+			if (s+i < cur.season) {
+				out[s+i] += sp * PowerPlot.pointDecay[i];
+			}
+		}
+	}
+	return out;
+});
+
+PowerPlot.players = PowerPlot.players.map(p => da.players[p].name);
+
+for (let s=0; s<cur.season; s++) {
+	for (let i=0; i<PowerPlot.nplayers; i++) {
+		if (PowerPlot.points[i][s] < 0) {
+			PowerPlot.points[i][s] = 0;
+		}
+	}
+	let stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
+	for (let i=0; i<PowerPlot.nplayers; i++) {
+		if (PowerPlot.points[i][s]/stotal < PowerPlot.propCutoff) {
+			PowerPlot.points[i][s] = 0;
+		}
+	}
+	stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
+	for (let i=0; i<PowerPlot.nplayers; i++) {
+		PowerPlot.data.push({
+			"player": PowerPlot.players[i],
+			"season": s,
+			"prop": PowerPlot.points[i][s]/stotal
+		});
+	}
+}
 
 PowerPlot.zoom = false;
 
@@ -789,11 +874,11 @@ PowerPlot.makePlot = function() {
 		"title": "A Division History",
 		"width": ChartUtils.widthcheck.clientWidth - 78, //little bit off with scrollbar, worry when doing resizing for window
 		"height": (PowerPlot.zoom ? 3 : 1) * (ChartUtils.widthcheck.clientWidth - 78),
-		"data": {"values": PowerPlot.data.data},
+		"data": {"values": PowerPlot.data},
 		"layer": [
 			{
 				"mark": {"type": "area"},
-				"transform": [{"calculate": "indexof(" + JSON.stringify(PowerPlot.data.players) + ", datum.player)", "as": "order"}],
+				"transform": [{"calculate": "indexof(" + JSON.stringify(PowerPlot.players) + ", datum.player)", "as": "order"}],
 				"selection": {
 					"hovered": {"type": "single", "on": "mouseover", "empty": "all"},
 					"clicked": {"type": "single", "on": "click", "empty": "none"}
@@ -824,8 +909,8 @@ PowerPlot.makePlot = function() {
 						"field": "player",
 						"type": "nominal",
 						"scale": {
-							"domain": PowerPlot.data.players,
-							"range": PowerPlot.data.colors
+							"domain": PowerPlot.players,
+							"range": PowerPlot.players.map(p => da.players[p.toLowerCase()].powcol)
 						},
 						"legend": null
 					},
@@ -845,7 +930,7 @@ PowerPlot.makePlot = function() {
 		PowerPlot.plot = res.view;
 		PowerPlot.plot.addDataListener('clicked_store', function(name, value){
 			if (value.length) {
-				PlayerPlot.addPlayer(PowerPlot.data.data[value[0].values[0]-1].player);
+				PlayerPlot.addPlayer(PowerPlot.data[value[0].values[0]-1].player);
 			}
 		})
 	});

@@ -5,6 +5,7 @@ var fs = require('fs');
 //player chart
 const fullHist = JSON.parse(fs.readFileSync("../league_history.json"));
 const champs = JSON.parse(fs.readFileSync("../champions.json"));
+const oldData = JSON.parse(fs.readFileSync("../chart_data.json"));
 
 var players = {};
 var divisions = {};
@@ -42,6 +43,9 @@ for (let s in fullHist) {
 					"wins": [fullHist[s][div].members[pl].wins],
 					"losses": [fullHist[s][div].members[pl].losses]
 				};
+				if (oldData.players[plkey].powcol) {
+					players[plkey].powcol = oldData.players[plkey].powcol;
+				}
 			}
 		}
 	}

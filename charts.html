@@ -12,7 +12,7 @@ title: Visual History
 	
 	<div class="container-centered">
 		<h4>League Players</h4>
-		<p>How the league has evolved over time, or the journey of specific players</p>
+		<p>How the league has evolved over time, or the journeys of up to six players</p>
 	</div>
 	
 	<div class="control-row">
@@ -103,7 +103,7 @@ title: Visual History
 		
 	<div class="container-centered">
 		<h4>A Division Power</h4>
-		<p>How the top tier has evolved. Each player gets an area corresponding to their standing in the past few seasons. Click on a player's area to see their history in the chart above.</p>
+		<p>How the top tier has evolved. Each player gets an area corresponding to their standing in the past few seasons. Click on a player's area to add their history to the chart above.</p>
 	</div>
 	
 	<div class="control-row">
@@ -132,17 +132,18 @@ title: Visual History
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 	<script src="js/charts.js"></script>
 	<script>
-	ChartUtils.getURLparams();
 	PlayerPlot.prepControls();
-	PlayerPlot.makePlot();
 	TransitionsPlot.prepControls();
-	TransitionsPlot.makePlot();
 	PowerPlot.prepControls();
+	ChartUtils.getURLparams();
+	PlayerPlot.makePlot();
+	TransitionsPlot.makePlot();
 	PowerPlot.makePlot();
 	window.onresize = function() {
 		PlayerPlot.resize();
 		PowerPlot.resize();
 		TransitionsPlot.resize();
 	};
+	ChartUtils.setURLparams();
 	</script>
 </div>
