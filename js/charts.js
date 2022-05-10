@@ -36,13 +36,17 @@ ChartUtils.getURLparams = function() {
 		if (PlayerPlot.proportion) {document.getElementById('prop').checked = "checked";}
 		if (params.has('seasons')) {
 			let urlRange = params.get('seasons').split(",").map(x => Number(x));
-			if (urlRange.length == 2 & urlRange[0]) {
-				PlayerPlot.seasonRange = urlRange[0] > urlRange[1] ? urlRange.reverse() : urlRange;
-				PlayerPlot.userSetRange = true;
-				PlayerPlot.seasonslide1.value = PlayerPlot.seasonRange[0];
-				PlayerPlot.seasontextmin.value = PlayerPlot.seasonRange[0]
-				PlayerPlot.seasonslide2.value = PlayerPlot.seasonRange[1];
-				PlayerPlot.seasontextmax.value = PlayerPlot.seasonRange[1];
+			if (urlRange.length == 2 && urlRange[0] > 0) {
+				urlRange = urlRange[0] > urlRange[1] ? urlRange.reverse() : urlRange;
+				if(urlRange[0] <= cur.season) {
+					if (urlRange[1] > cur.season) {urlRange[1] = cur.season;}
+					PlayerPlot.seasonRange = urlRange;
+					PlayerPlot.userSetRange = true;
+					PlayerPlot.seasonslide1.value = PlayerPlot.seasonRange[0];
+					PlayerPlot.seasontextmin.value = PlayerPlot.seasonRange[0]
+					PlayerPlot.seasonslide2.value = PlayerPlot.seasonRange[1];
+					PlayerPlot.seasontextmax.value = PlayerPlot.seasonRange[1];
+				}
 			}
 		}
 	}
@@ -372,7 +376,7 @@ PlayerPlot.makePlot = function() {
 				currentHistory.season = cur.season;
 				currentHistory.countPlacement = rank ? PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].countBase + (rank-0.5)*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].players/divplayers : PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].countBase + 0.5*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].players;
 				currentHistory.propPlacement = rank ? PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].propBase + (rank-0.5)*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].lfrac/divplayers : PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].propBase + 0.5*PlayerPlot.counts[ChartUtils.curString][cur.players[plkey].tier].lfrac;
-				currentHistory.champ = cur[currentHistory.division]["complete?"] == "Yes" ? (currentHistory.tier == "A" ? (rank <= 2 ? "in progress" : "no") : (rank == 1 ? "division" : "no")) : "in progress";
+				currentHistory.champ = cur[currentHistory.division]["complete?"] == "Yes" ? (cur[currentHistory.division].members[pname]["next tier"].length > 1 ? "in progress" : (currentHistory.tier == "A" ? (rank <= 2 ? "in progress" : "no") : (rank == 1 ? "division" : "no"))) : "in progress";
 				currentHistory.chart = "point";
 				pHist.push(currentHistory);
 				seasons[p].push(currentHistory.season);
@@ -782,72 +786,71 @@ PlayerPlot.showStandingsModal = function(season, division) {
 
 var PowerPlot = {};
 
-PowerPlot.players = Object.keys(da.players).filter(p => da.players[p].divs.includes("A1")).sort();
-PowerPlot.nplayers = PowerPlot.players.length;
-PowerPlot.data = [];
-
 PowerPlot.pointMap = {"A1": 10, "A2": 5, "A3": 3, "A4": 3, "A5": 1, "A6": 1, "B1": 2, "B2": 0, "B3": 0, "B4": 0, "B5": -2, "B6": -2};
 PowerPlot.pointDecay = [1, 0.9, 0.7, 0.4];
 PowerPlot.propCutoff = 0.02;
 
-PowerPlot.points = PowerPlot.players.map(plkey => {
-	let out = Array.from({ length:cur.season }, () => 0);
-	for (let s=0; s<cur.season; s++) {
-		let sp = null;
-		if (s == 0 && da.divisions["1"]["A1"].includes(da.players[plkey].name)) {
-			sp = 2;
-		} else {
-			let sloc = da.players[plkey].seasons.indexOf(s);
-			if (sloc == -1) {
-				sp = 0;
+PowerPlot.makeData = function() {
+	PowerPlot.data = [];
+	PowerPlot.players = Object.keys(da.players).filter(p => da.players[p].divs.includes("A1")).sort();
+	PowerPlot.nplayers = PowerPlot.players.length;
+	PowerPlot.points = PowerPlot.players.map(plkey => {
+		let out = Array.from({ length:cur.season }, () => 0);
+		for (let s=0; s<cur.season; s++) {
+			let sp = null;
+			if (s == 0 && da.divisions["1"]["A1"].includes(da.players[plkey].name)) {
+				sp = 2;
 			} else {
-				let sdiv = da.players[plkey].divs[sloc];
-				let stier = sdiv.charAt(0);
-				if (stier > "B") {
-					sp = -1;
+				let sloc = da.players[plkey].seasons.indexOf(s);
+				if (sloc == -1) {
+					sp = 0;
 				} else {
+					let sdiv = da.players[plkey].divs[sloc];
+					let stier = sdiv.charAt(0);
 					let trank = null;
 					if (da.divisions[String(s)][sdiv].length == 7 && da.players[plkey].places[sloc] >= 5) {
 						trank = stier + (da.players[plkey].places[sloc] - 1);
 					} else {
 						trank = stier + da.players[plkey].places[sloc]
 					}
-					sp = PowerPlot.pointMap[trank];
+					sp = Object.keys(PowerPlot.pointMap).includes(trank) ? PowerPlot.pointMap[trank] : -1;
+				}
+			}
+			for (let i=0; i<PowerPlot.pointDecay.length; i++) {
+				if (s+i < cur.season) {
+					out[s+i] += sp * PowerPlot.pointDecay[i];
 				}
 			}
 		}
-		for (let i=0; i<PowerPlot.pointDecay.length; i++) {
-			if (s+i < cur.season) {
-				out[s+i] += sp * PowerPlot.pointDecay[i];
+		return out;
+	});
+
+	PowerPlot.players = PowerPlot.players.map(p => da.players[p].name);
+
+	for (let s=0; s<cur.season; s++) {
+		for (let i=0; i<PowerPlot.nplayers; i++) {
+			if (PowerPlot.points[i][s] < 0) {
+				PowerPlot.points[i][s] = 0;
 			}
 		}
-	}
-	return out;
-});
-
-PowerPlot.players = PowerPlot.players.map(p => da.players[p].name);
-
-for (let s=0; s<cur.season; s++) {
-	for (let i=0; i<PowerPlot.nplayers; i++) {
-		if (PowerPlot.points[i][s] < 0) {
-			PowerPlot.points[i][s] = 0;
+		let stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
+		for (let i=0; i<PowerPlot.nplayers; i++) {
+			if (PowerPlot.points[i][s]/stotal < PowerPlot.propCutoff) {
+				PowerPlot.points[i][s] = 0;
+			}
+		}
+		stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
+		for (let i=0; i<PowerPlot.nplayers; i++) {
+			PowerPlot.data.push({
+				"player": PowerPlot.players[i],
+				"season": s,
+				"prop": PowerPlot.points[i][s]/stotal
+			});
 		}
 	}
-	let stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
-	for (let i=0; i<PowerPlot.nplayers; i++) {
-		if (PowerPlot.points[i][s]/stotal < PowerPlot.propCutoff) {
-			PowerPlot.points[i][s] = 0;
-		}
-	}
-	stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
-	for (let i=0; i<PowerPlot.nplayers; i++) {
-		PowerPlot.data.push({
-			"player": PowerPlot.players[i],
-			"season": s,
-			"prop": PowerPlot.points[i][s]/stotal
-		});
-	}
-}
+};
+
+PowerPlot.makeData();
 
 PowerPlot.zoom = false;
 
