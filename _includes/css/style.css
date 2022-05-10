@@ -2698,6 +2698,10 @@ img.hof-champion-trophy {
 	top: 12px;
 }
 
+.dslider:nth-child(n+2) {
+	background: #00000000;
+}
+
 .dslider {
 	position: absolute;
 	-webkit-appearance: none;
@@ -2722,6 +2726,8 @@ img.hof-champion-trophy {
 	position: relative;
 	z-index: 3;
 	background: #888;
+	border: none;
+	border-radius: 0;
 	height: 34px;
 	width: 17px;
 }
