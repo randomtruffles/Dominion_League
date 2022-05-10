@@ -2592,6 +2592,28 @@ img.hof-champion-trophy {
 	top: 2px;
 }
 
+.chart-player {
+	float: left;
+	margin: 2px 4px;
+	border: 3px solid;
+	height: 34px;
+	line-height: 100%;
+	border-radius: 10px;
+}
+
+.chart-player .player-close {
+	font-size: 32px;
+	margin-left: 4px;
+	top: 4px;
+	cursor: pointer;
+}
+
+.chart-player .player-name {
+	margin: 4px;
+	top: 4px;
+	cursor: default;
+}
+
 .chartRadio {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -2649,6 +2671,21 @@ img.hof-champion-trophy {
     color: #d3d3d3;
 }
 
+.fixed-check {
+	border-color: #d3d3d3 !important;
+	background: #d3d3d3 !important;
+}
+
+.fixed-check:after {
+	content: "\2713";
+    color: #efefef !important;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
 .slidePiece {
 	margin: 4px;
 }
@@ -2656,7 +2693,7 @@ img.hof-champion-trophy {
 .slider-container {
 	position: relative;
 	display: inline-block;
-	width: 40%;
+	width: 35%;
 	height: 34px;
 	top: 12px;
 }
@@ -2753,4 +2790,14 @@ img.hof-champion-trophy {
 .clickable-name:hover {
 	cursor: pointer;
 	color: #ca2017;
+}
+
+.blank-button {
+	color: #d3d3d3;
+	border: 0;
+}
+
+.blank-button:hover {
+	cursor: default;
+	background: #efefef;
 }
