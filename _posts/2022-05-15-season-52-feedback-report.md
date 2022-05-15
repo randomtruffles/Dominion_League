@@ -10,7 +10,7 @@ During the season 51 town hall, we asked that players ask us any questions they 
 
 ## Returning Form Questions
 
-On the season 52 returning form, we asked about preferences for default card pools, and in addition sent a supplementary form about flex divisions to those who had participated them in the past.
+On the season 52 returning form, we asked about preferences for default card pools, and in addition sent a supplementary form about flex divisions to those who had participated in them in the past.
 
 From the responses to our comments question, we were pleased to learn that scheduling seems to have been easier for many players this past season, and this was reflected in our completion rates throughout the season. We are hoping that this trend continues.
 
