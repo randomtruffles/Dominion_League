@@ -6,7 +6,7 @@ author: alibby1152
 layout: simple_post
 categories: signups
 ---
-**Season 52** will run from Monday, May 30, until Sunday, July 10, and you can sign up until **Sunday, May 22 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 52** will run from Monday, May 30 until Sunday, July 10 and ~~you can sign up until Sunday, May 22 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Friday, June 10 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
@@ -23,7 +23,7 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
-**NOTE:** Season 51 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+**NOTE:** Season 51 players should **not** use this signup form and should instead contact a moderator for further instructions.
 <br>
 
 <div class="sheets">
