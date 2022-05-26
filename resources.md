@@ -46,10 +46,10 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Captain**: Action - Duration - Command, $6 *(promo card)*<br>Now and at the start of your next turn: Play a non-Duration non-Command Action card from the Supply costing up to $4, leaving it there.
 * **Death Cart**: Action - Looter, $4 *(Dominion: Dark Ages)*<br>You may trash this or an Action card from your hand, for **+$5**.<br>––––––––––––––––––––<br>When you gain this, gain 2 Ruins.
 * **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
-* **Embargo**: Action, $2 *(Dominion: Seaside)*<br>**+$2**<br>Trash this. If you did, add an Embargo token to a Supply pile. (For the rest of the game, when a player buys a card from that pile, they gain a Curse.)
 * **Inheritance**: Event, $7 *(Dominion: Adventures)*<br>Once per game: Set aside a non-Command Action card from the Supply costing up to $4. Move your Estate token to it. (During your turns, Estates are also Actions with "Play the card with your Estate token, leaving it there.")
 * **Lantern**: Artifact *(Dominion: Renaissance)*<br>Border Guards you play reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
 * **Merchant Guild**: Action, $5 *(Dominion: Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
+* **Lighthouse**: Action, $2 *(Dominion: Seaside)*<br>**+1 Action**<br>**+$1**<br>At the start of your next turn, +$1. Until then, when another player plays an Attack card, it doesn't affect you.
 * **Mountain Pass**: Landmark *(Dominion: Empires)*<brWhen you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
 * **Oracle**: Action - Attack, $3 *(Dominion: Hinterlands)*<br>Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice. They choose the order to return them. Afterwards, **+2 Cards**.
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
@@ -58,6 +58,7 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Prince**: Action, $8 *(promo card)*<br>You may set aside (on this) a non-Duration Action card from your hand costing up to $4. At the start of each of your turns, play that card, leaving it set aside.
 * **Procession**: Action, $4 *(Dominion: Dark Ages)*<br>You may play a non-Duration Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
 * **Trader**: Action - Reaction, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
+* **Treasury**: Action, $5 *(Dominion: Seaside)*<br>**+1 Card**<br>**+1 Action**<br>**+$1**<br>At the end of your Buy phase this turn, if you didn't gain a Victory card in it, you may put this onto your deck.
 
 Additionally, two cards intentionally works differently online than what the card text says:
 
@@ -126,7 +127,7 @@ Cards which have new wordings but function identically in all situations are not
   * **Coppersmith**, **Great Hall**, **Saboteur**, **Secret Chamber**, **Scout**, and **Tribute** were removed. **Courtier**, **Diplomat**, **Lurker**, **Mill**, **Patrol**, **Replace**, and **Secret Passage** were added.
   * **Masquerade**: Players with no cards in hand do not participate in passing cards.
 * Dominion: Seaside
-  * **Embargo**: You gain Curses one at a time.
+  * **Ambassador**, **Embargo**, **Explorer**, **Ghost Ship**, **Navigator**, **Pearl Diver**, **Pirate Ship**, and **Sea Hag** were removed. **Astrolabe**, **Blockade**, **Corsair**, **Monkey**, **Pirate**, **Sailor**, **Sea Chart**, **Sea Witch**, and **Tide Pools** were added.
   * **Outpost**: The conditions for getting an extra turn are now that it's the first time you played an Outpost that turn and that the previous turn wasn't yours.
 * Dominion: Alchemy
   * **Possession**: Any Debt tokens (and no other kinds of tokens) that the player to your left would take during their extra turn you take instead.
@@ -151,7 +152,7 @@ If you have to do anything with your deck — for example draw, look at, reveal,
 
 ### Dominion Online bugs
 
-Below is a list of cards and situations where the game rules aren't followed. This list does not include confusing or incorrect interface issues, or problems with the Lord Rattington AI. Bugs due to using abilities during another player's turn are in a separate section below.
+Below is a list of cards and situations where the game rules aren't followed. This list does not include bugs with removed cards, confusing or incorrect interface issues, or problems with the Lord Rattington AI. Bugs due to using abilities during another player's turn are in a separate section below.
 
 * **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
 * **Black Cat**: If you play Black Cat when it is not your turn, players gain Curses starting with the player to your left, instead of the current player.
