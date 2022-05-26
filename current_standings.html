@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Current standings of divisions in Season 51
+title: Current standings of divisions in Season 52
 ---
 
 <div class="home">
   <div class="container-centered">
 
     <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
-	<h5>2022-03-28 to 2022-05-08</h5>
+	<h5>2022-05-30 to 2022-07-10</h5>
     <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
     <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. </p>
+	<p> Season {{ site.data.season.number | plus: 1}} starts 2022-08-01 </p>
     <!-- Filter buttons -->
     <div id="myBtnContainer">
       {% for tier in site.data.season.tiers %}
@@ -31,7 +32,7 @@ var cur_season = String({{ site.data.season.number }});
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 sheetLinks = sheetLinks[cur_season];
-var champion = "cider01";
+var champion = "";
 loadPage();
 
 function singleDivision(division) {
