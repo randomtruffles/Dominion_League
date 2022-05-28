@@ -56,6 +56,8 @@ BrandonAldrich	mazaltov
 Aglet	_LuCaS_
 cpsch2	hamperboy
 JaCrispyKing	The Pixie
+demander206	kditty206
+MarshallIV	Dr.Goomonkey
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -95,3 +97,4 @@ mweinreich	mweinreich
 Nlahmeyer	Nlahmeyer
 Operator	Operator
 spectershah	spectershah
+jeffkingks2	jeffkingks2

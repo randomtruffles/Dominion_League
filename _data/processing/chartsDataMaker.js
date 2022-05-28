@@ -1,5 +1,3 @@
-//does not yet do power chart
-
 var fs = require('fs');
 
 //player chart
@@ -28,7 +26,7 @@ for (let s in fullHist) {
 		
 		for (let pl in fullHist[s][div].members) {
 			let plkey = pl.toLowerCase();
-			if (players[plkey]) {
+			if (plkey in players) {
 				players[plkey].seasons.push(Number(sn));
 				players[plkey].divs.push(div);
 				players[plkey].places.push(plkey == champs.seasons[sn] ? 1 : plkey == champs.runner_ups[sn] ? 2 : fullHist[s][div].members[pl].rank);
@@ -43,7 +41,7 @@ for (let s in fullHist) {
 					"wins": [fullHist[s][div].members[pl].wins],
 					"losses": [fullHist[s][div].members[pl].losses]
 				};
-				if (oldData.players[plkey].powcol) {
+				if ((plkey in oldData.players) && ("powcol" in oldData.players[plkey])) {
 					players[plkey].powcol = oldData.players[plkey].powcol;
 				}
 			}
