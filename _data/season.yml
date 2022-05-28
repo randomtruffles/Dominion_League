@@ -12,15 +12,13 @@ tiers:
   - name: E
     divisions: 8
   - name: F
-    divisions: 11
+    divisions: 15
   - name: G
-    divisions: 11
+    divisions: 15
   - name: H
-    divisions: 19
+    divisions: 23
   - name: I
-    divisions: 19
-  - name: J
-    divisions: 18
+    divisions: 23
 
 #these are old (s44), won't be using them afaik
 iframes:
