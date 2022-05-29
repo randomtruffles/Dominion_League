@@ -68,12 +68,10 @@ function allDivisions(season) {
 	console.log("Showing all divisions");
 	divisionDiv.style.display = "block";
 	document.getElementById("single-division").style.display = "none";
-	for (var division in sheetLinks) {
-		if (!divisions[division]) {
-			console.log(`${division} data not found. Continuing...`);
-			continue;
+	for (var division in divisions) {
+		if (/^[A-Z]\d+$/.test(division)) {
+			loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, season, {"champ":champion});
 		}
-		loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, season, {"champ":champion});
 	}
 	return;
 }
