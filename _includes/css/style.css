@@ -374,9 +374,9 @@ iframe {
 }
 
 .sheets-icon {
-  height: 30px;
+  height: 28px;
   float: right;
-  margin: 2px 4px 0px 4px;
+  margin: 0px 4px;
   opacity: 0.9;
   filter: drop-shadow(2px 2px 2px #222);
 }

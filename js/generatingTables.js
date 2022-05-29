@@ -193,7 +193,7 @@ function genHeader(division, members, complete, link, drops, customText="", noSi
   var seasonHeader = document.createElement("td");
   table.appendChild(seasonRow);
   seasonRow.appendChild(seasonHeader);
-  var text = customText == "" ? `Division ${division} Standings` : customText;
+  var text = customText == "" ? `Division ${division}` : customText;
   text = complete == "Yes" ? text + " (complete)" : text;
   var chartsLink = `<a href="/charts?player=${members.join(",")}" target="_blank"><img src="/img/icons/charts.png" class="sheets-icon" title="Player Charts for this Division"></a>`
   var sheetsLink = link ? `<a href="${link}" target="_blank"><img src="/img/icons/sheets.png" class="sheets-icon" title="View on Google Sheets"></a>` : "";
