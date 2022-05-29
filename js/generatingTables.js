@@ -185,7 +185,7 @@ function selectTab(btn) {
 }
 
 /* Generative Functions */
-function genHeader(division, complete, link, drops, customText="", noSims){
+function genHeader(division, members, complete, link, drops, customText="", noSims){
   var table = document.createElement("table");
   table.classList.add('header-table');
 
@@ -195,8 +195,9 @@ function genHeader(division, complete, link, drops, customText="", noSims){
   seasonRow.appendChild(seasonHeader);
   var text = customText == "" ? `Division ${division} Standings` : customText;
   text = complete == "Yes" ? text + " (complete)" : text;
-  var sheetsLink = `<a href="${link}" target="_blank"><img src="/img/icons/sheets.png" class="sheets-icon"></a>`;
-  seasonHeader.innerHTML = `<p>${text} ${sheetsLink}</p>`;
+  var chartsLink = `<a href="/charts?player=${members.join(",")}" target="_blank"><img src="/img/icons/charts.png" class="sheets-icon" title="Player Charts for this Division"></a>`
+  var sheetsLink = link ? `<a href="${link}" target="_blank"><img src="/img/icons/sheets.png" class="sheets-icon" title="View on Google Sheets"></a>` : "";
+  seasonHeader.innerHTML = `<p>${text} ${sheetsLink} ${chartsLink}</p>`;
   seasonHeader.style.backgroundColor = "lightgrey";
   seasonHeader.setAttribute('colspan', 10);
   seasonHeader.classList.add('division-header');
@@ -394,26 +395,31 @@ function genStandings(data, tier, season, tiebreaker, sorted, drops, complete, i
 
   calcTiebreakers();
 
-  var tableHeadings, headingWidths;
+  var tableHeadings, tableDescriptions, headingWidths;
   var tierIcon = "<img src='/img/icons/tier.png' title='Tier next season'>";
   var returningIcon = "<img src='/img/icons/returning.png' title='Returning next season?'>";
   if (isRaw) {
     tableHeadings = ["#", "Player", "Wnd%", "Wnd", "Lnd", "Wd%", "Wd", "Ld"];
+	tableDecriptions = ["Rank", "", "Win Percentage without games of dropped players", "Wins without games of dropped players", "Losses without games of dropped players", "Win Percentage with all games", "Wins with all games", "Losses with all games"];
     headingWidths = ["6%", "35%", "10%", "10%", "10%", "10%", "10%","9%"];
   } else if (Object.keys(tbValues).length > 0) {
     if (complete == "Yes") {
       tableHeadings = ["#", "Player", "W%", "W", "L", "TB", tierIcon, returningIcon];
+	  tableDecriptions = ["Rank", "", "Win Percentage", "Wins", "Losses", "Tiebreaker (head-to-head)", "Tier next season", "Returning next season?"];
       headingWidths = ["6%", "35%", "11%", "11%", "11%", "10%", "8%","8%"];
     } else {
       tableHeadings = ["#", "Player", "W%", "W", "L", "TB", "MC", returningIcon];
+	  tableDecriptions = ["Rank", "", "Win Percentage", "Wins", "Losses", "Tiebreaker (head-to-head)", "Matches Completed", "Returning next season?"];
       headingWidths = ["6%", "35%", "11%", "11%", "11%", "8%", "11%","7%"];
     }
   } else {
     if (complete == "Yes") {
       tableHeadings = ["#", "Player", "W%", "W", "L", tierIcon, returningIcon];
+	  tableDecriptions = ["Rank", "", "Win Percentage", "Wins", "Losses", "Tier next season", "Returning next season?"];
       headingWidths = ["6%", "35%", "14%", "14%", "14%", "8%", "8%"];
     } else {
       tableHeadings = ["#", "Player", "W%", "W", "L", "MC", returningIcon];
+	  tableDecriptions = ["Rank", "", "Win Percentage", "Wins", "Losses", "Matches Completed", "Returning next season?"];
       headingWidths = ["6%", "35%", "14%", "12%", "12%", "13%", "8%"];
     }
   }
@@ -423,6 +429,7 @@ function genStandings(data, tier, season, tiebreaker, sorted, drops, complete, i
   for (let j = 0; j < headingWidths.length; j++) {
       var th = document.createElement("th");
       th.innerHTML = tableHeadings[j];
+	  if (tableDecriptions[j]) {th.title = tableDecriptions[j];}
       th.style.width = headingWidths[j];
       if (tableHeadings[j].length > 10) {
         th.classList.add("header-icon");
@@ -713,10 +720,7 @@ function loadDivision(divisionDiv, divisionData, link, division, season, params)
   var simType = (Number(season) >= 50) ? "none" : (Number(season) >= 42) ? "new" : (Number(season) >= 28) ? "old" : "none";
 
   // Compute sorted player list with drops last
-  var sorted = [];
-  for (var key in players) {
-    sorted[sorted.length] = key;
-  }
+  var sorted = Object.keys(players);
   sorted.sort(
     function(a, b) {
       if (drops.includes(a) && !(drops.includes(b))) {
@@ -739,7 +743,7 @@ function loadDivision(divisionDiv, divisionData, link, division, season, params)
   var headerText = params["headerText"] ? params["headerText"] : "";
   playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
   champ = params["champ"] ? params["champ"] : champ;
-  var header = genHeader(division, complete, link, drops, headerText, simType == "none");
+  var header = genHeader(division, sorted, complete, link, drops, headerText, simType == "none");
   var standingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, false);
 
   if (!params["playerNameKey"]) {
