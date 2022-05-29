@@ -4,7 +4,7 @@
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
 
-function makeButtons() {
+function makeButtons(div) {
 	var tiers = [...new Set(Object.keys(sheetLinks).map(x => x.charAt(0)))].sort();
 	var container = document.getElementById("myBtnContainer");
 	for (let t of tiers) {
@@ -16,7 +16,7 @@ function makeButtons() {
 	}
 	let allFilt = document.createElement("button");
 	allFilt.classList.add("btn");
-	allFilt.classList.add("active");
+	if (div.length == 0) {allFilt.classList.add("active");}
 	allFilt.onclick = onFiltButton;
 	allFilt.appendChild(document.createTextNode("Show All"));
 	container.appendChild(allFilt);
@@ -79,9 +79,9 @@ function allDivisions(season) {
 function loadPage(season) {
 	sheetLinks = sheetLinks[season];
 	champion = champions.seasons[season];
-	makeButtons();
 	var division = getParam('div');
 	var tier = getParam('tier');
+	makeButtons(division);
 	if (division.length > 0) {
 		singleDivision(season, division.toUpperCase());
 	} else {

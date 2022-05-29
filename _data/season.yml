@@ -1,24 +1,42 @@
 number: 52
 
 tiers:
-  - name: A
+  A:
     divisions: 1
-  - name: B
+    promoters: 0
+    demoters: 2
+  B:
     divisions: 2
-  - name: C
+    promoters: 1
+    demoters: 2
+  C:
     divisions: 4
-  - name: D
+    promoters: 1
+    demoters: 2
+  D:
     divisions: 4
-  - name: E
+    promoters: 2
+    demoters: 2
+  E:
     divisions: 8
-  - name: F
+    promoters: 1
+    demoters: 2
+  F:
     divisions: 15
-  - name: G
+    promoters: 1
+    demoters: 2
+  G:
     divisions: 15
-  - name: H
+    promoters: 2
+    demoters: 2
+  H:
     divisions: 23
-  - name: I
+    promoters: 1
+    demoters: 2
+  I:
     divisions: 23
+    promoters: 2
+    demoters: 2
 
 #these are old (s44), won't be using them afaik
 iframes:
