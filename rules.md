@@ -230,7 +230,7 @@ Under "Kingdom Options", you may agree to...
 
 <a name="4.7.3.2"></a>4.7.3.2. Use the card buttons at the top to require cards from certain expansions.
 
-<a name="4.7.3.3"></a>4.7.3.3. Specify a maximum of either one card or one landscape. NOTE: You cannot agree to use deprecated cards or landscapes.
+<a name="4.7.3.3"></a>4.7.3.3. Specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
 
 <a name="4.7.3.4"></a>4.7.3.4. Change the Card Pool Level.
 
