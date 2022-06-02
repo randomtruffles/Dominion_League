@@ -11,12 +11,7 @@ title: Current standings of divisions in Season 52
     <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
     <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. <br> Season {{ site.data.season.number | plus: 1}} starts 2022-08-01</p>
     <!-- Filter buttons -->
-    <div id="myBtnContainer">
-      {% for tier in site.data.season.tiers %}
-      <button class="btn" onclick="filterSelection('div{{tier.name}}')"> {{tier.name}} </button>
-      {% endfor %}
-      <button class="btn" onclick="filterSelection('all')"> Show all</button>
-    </div>
+    <div id="myBtnContainer"></div>
     <div class="spacing"></div>
     <div id="single-division"></div>
     <div id="all-divisions"></div>
@@ -28,6 +23,7 @@ title: Current standings of divisions in Season 52
 <script>
 // Load data
 var cur_season = String({{ site.data.season.number }});
+var tierParams = {{ site.data.season.tiers | jsonify }};
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 sheetLinks = sheetLinks[cur_season];
@@ -67,5 +63,26 @@ function loadPage() {
     allDivisions();
     filterSelection("all");
   }
+  var container = document.getElementById("myBtnContainer");
+  for (let tier in tierParams) {
+    let butt = document.createElement("button");
+    butt.classList.add("btn");
+    butt.onclick = function (ev) {
+	  document.getElementsByClassName("active")[0].classList.remove("active");
+	  butt.classList.add('active');
+	  filterSelection('div' + tier);
+	};
+    butt.appendChild(document.createTextNode(tier));
+    container.appendChild(butt);
+  }
+  let allFilt = document.createElement("button");
+  allFilt.classList.add("btn");
+  allFilt.onclick = function(ev) {
+    document.getElementsByClassName("active")[0].classList.remove("active");
+	allFilt.classList.add('active');
+    filterSelection("all");
+  };
+  allFilt.appendChild(document.createTextNode("Show All"));
+  container.appendChild(allFilt);
 }
 </script>
