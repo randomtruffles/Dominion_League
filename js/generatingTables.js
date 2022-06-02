@@ -35,7 +35,7 @@ function matchGreyscaleColor(score, upper){
 	return color;
 }
 
-function standingsColor(complete, cell, tier, next_tier, season, name, drop) {
+function standingsColor(complete, cell, tier, next_tier, season, name, champmatch, drop) {
 	if (complete == "No" || next_tier == "") {
 		return;
 	}
@@ -51,14 +51,16 @@ function standingsColor(complete, cell, tier, next_tier, season, name, drop) {
 		}
 	} else if (oddSchemes[season] && oddSchemes[season][tier]) {
 		if (next_tier == oddSchemes[season][tier][0]) {
-		cell.style.backgroundColor = promotion;
-	} else if (next_tier == oddSchemes[season][tier][1]) {
-		cell.style.backgroundColor = demotion;
-	}
+			cell.style.backgroundColor = promotion;
+		} else if (next_tier == oddSchemes[season][tier][1]) {
+			cell.style.backgroundColor = demotion;
+		}
 	} else if ((next_tier < tier || name.toLowerCase() == champ) && !drop) {
 		cell.style.backgroundColor = promotion;
 	} else if (next_tier > tier) {
 		cell.style.backgroundColor = demotion;
+	} else if (champ == "" && champmatch) {
+		cell.style.backgroundColor = protbd;
 	}
 }
 
@@ -76,6 +78,8 @@ function rankColor(complete, cell, tier, rank, allRanks, ndRank, ndAllRanks, dro
 	}
 	if (drop) {
 		cell.style.backgroundColor = demotion;
+	} else if (tier == "A" && rank <= 2) {
+		cell.style.backgroundColor = protbd;
 	} else if (ndRank !== null) {
 		//adjustment scenarios
 		let ndNumtied = 0;
@@ -661,7 +665,7 @@ function genStandings(data, tier, season, players, sorted, drops, complete, isRa
 					rankColor(complete, cell, tier, playerData["rank"], sortedRanks, noDropRanks[name], sortedNoDropRanks, playerData["drop"] == "Yes");
 					break;
 				case "name":
-					standingsColor(complete, cell, tier, playerData["next tier"], season, playerData["name"], playerData["drop"] == "Yes");
+					standingsColor(complete, cell, tier, playerData["next tier"], season, playerData["name"], tier == "A" && playerData["rank"] <= 2, playerData["drop"] == "Yes");
 					cell.classList.add("cellWithDetail");
 					cell.append(genIndividualMatch(playerData["name"], sorted, players, isRaw, drops));
 					break;
