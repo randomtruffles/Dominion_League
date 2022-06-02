@@ -62,33 +62,102 @@ function standingsColor(complete, cell, tier, next_tier, season, name, drop) {
 	}
 }
 
-function rankColor(complete, cell, tier, rank, allRanks, players, drop, anyDrops) {
+function rankColor(complete, cell, tier, rank, allRanks, ndRank, ndAllRanks, drop) {
 	if (complete == "Yes") {
-	return;
+		return;
 	}
 	var promotion = "#91eb9b";
 	var protbd = "#e2f3a5";
 	var demtbd = "#f4d7a4"
 	var demotion = "#f0948d";
 	var numtied = 0;
-	for (r of allRanks) {
+	for (let r of allRanks) {
 		if (rank == r[1]) {numtied++;}
 	}
 	if (drop) {
 		cell.style.backgroundColor = demotion;
-	} else if (anyDrops) {
-		//handle adjustments here
-		console.log(allRanks);
+	} else if (ndRank !== null) {
+		//adjustment scenarios
+		let ndNumtied = 0;
+		for (let r of ndAllRanks) {
+			if (ndRank == r[1]) {ndNumtied++;}
+		}
+		let movementStatus = ["stay", "stay"];
+		if (rank <= tierParams[tier]["promoters"]) {
+			if (rank + numtied - 1 <= tierParams[tier]["promoters"]) {
+				movementStatus[0] = "promotion";
+			} else {
+				movementStatus[0] = "protbd";
+			}
+		} else if (rank > allRanks.length - tierParams[tier]["demoters"]) {
+			movementStatus[0] = "demotion";
+		} else if (rank + numtied - 1 > allRanks.length - tierParams[tier]["demoters"]) {
+			movementStatus[0] = "demtbd";
+		}
+		if (ndRank <= tierParams[tier]["promoters"]) {
+			if (ndRank + ndNumtied - 1 <= tierParams[tier]["promoters"]) {
+				movementStatus[1] = "promotion";
+			} else {
+				movementStatus[1] = "protbd";
+			}
+		} else if (ndRank > allRanks.length - tierParams[tier]["demoters"]) {
+			movementStatus[1] = "demotion";
+		} else if (ndRank + ndNumtied - 1 > allRanks.length - tierParams[tier]["demoters"]) {
+			movementStatus[1] = "demtbd";
+		}
+		
+		if (movementStatus[0] == movementStatus[1]) {
+			switch (movementStatus[0]) {
+				case "promotion":
+					cell.style.backgroundColor = promotion;
+					break;
+				case "protbd":
+					cell.style.backgroundColor = protbd;
+					break;
+				case "demtbd":
+					cell.style.backgroundColor = demtbd;
+					break;
+				case "demotion":
+					cell.style.backgroundColor = demotion;
+					break;
+			} 
+		} else if (movementStatus[0] == "stay") {
+			switch (movementStatus[1]) {
+				case "promotion":
+				case "protbd":
+					cell.style.backgroundColor = protbd;
+					break;
+				case "demtbd":
+				case "demotion":
+					cell.style.backgroundColor = demtbd;
+					break;
+			}
+		} else if (movementStatus[1] == "stay") {
+			switch (movementStatus[0]) {
+				case "promotion":
+				case "protbd":
+					cell.style.backgroundColor = protbd;
+					break;
+				case "demtbd":
+				case "demotion":
+					cell.style.backgroundColor = demtbd;
+					break;
+			}
+		} else if ((movementStatus[0] == "protbd") || (movementStatus[1] == "protbd")) {
+			cell.style.backgroundColor = protbd;
+		} else if ((movementStatus[0] == "demtbd") || (movementStatus[1] == "demtbd")) {
+			cell.style.backgroundColor = demtbd;
+		}
 	} else {
 		if (rank <= tierParams[tier]["promoters"]) {
 			if (rank + numtied - 1 <= tierParams[tier]["promoters"]) {
-			cell.style.backgroundColor = promotion;
+				cell.style.backgroundColor = promotion;
 			} else {
-			cell.style.backgroundColor = protbd;
+				cell.style.backgroundColor = protbd;
 			}
 		} else if (rank > allRanks.length - tierParams[tier]["demoters"]) {
 			cell.style.backgroundColor = demotion;
-		} else if (rank + numtied > allRanks.length - tierParams[tier]["demoters"]) {
+		} else if (rank + numtied - 1 > allRanks.length - tierParams[tier]["demoters"]) {
 			cell.style.backgroundColor = demtbd;
 		}
 	}
@@ -392,6 +461,10 @@ function genStandings(data, tier, season, players, sorted, drops, complete, isRa
 	var tbValues = {};
 	var promotion = "";
 	var demotion = "";
+	
+	var noDropRanks = {};
+	for (player in data) {noDropRanks[player] = null;}
+	var sortedNoDropRanks = null;
 
 	/* helper functions*/
 	function isReturning(name){
@@ -403,35 +476,64 @@ function genStandings(data, tier, season, players, sorted, drops, complete, isRa
 
 	function calcTiebreakers() {
 		for (var member in data) {
-		if (data[member].tiebreaker) {
-			tbValues[member] = data[member].tiebreaker;
-		}
-		//old - these are now imported from standings (also this is wrong to compare pcts which are rounded)
-		/*
-			for (var opponent in data) {
-				memberData = data[member];
-				opponentData = data[opponent];
-				if (
-					member == opponent
-					|| memberData["drop"] == "Yes"
-					|| memberData["pct"] == "0%"
-					|| !(member in tiebreaker)
-				) { continue;}
-
-				if (memberData["pct"] == opponentData["pct"]) {
-						if (!(member in tbValues)) {
-							tbValues[member] = 0;
-						}
-						if (opponent in tiebreaker[member]) {
-							tbValues[member] += parseFloat(tiebreaker[member][opponent]["wins"]);
-						}
-				}
+			if (data[member].tiebreaker) {
+				tbValues[member] = data[member].tiebreaker;
 			}
-		*/
 		}	
 	}
-
+	
 	calcTiebreakers();
+	
+	//get adjusted standings - untested
+	/*
+	if (numDrops && complete == "No") {
+		sortedNoDropRanks = [];
+		for (player of players) {
+			if (data[player][drop] == "No") {
+				sortedNoDropRanks.push({"player": player, "pct": players[player]["wins_nondrop"]/players[player]["games_nondrop"], tb: -1});
+			}
+		}
+		for (let i = sortedNoDropRanks.length - 1; i >= 0; i--) {
+			if (sortedNoDropRanks[i].tb == -1) {
+				let tieds = [i];
+				for (let j=0; j<i; j++) {
+					if (sortedNoDropRanks[i].pct == sortedNoDropRanks[j].pct) {
+						tieds.push(j);
+					}
+				}
+				let tcount = tieds.length;
+				for (let j=0; j<tcount; j++) {
+					sortedNoDropRanks[tieds[j]].tb = 0;
+					for (let k=0; k<tcount; k++) {
+						if (j != k) {
+							sortedNoDropRanks[tieds[j]].tb += (sortedNoDropRanks[tieds[k]].name in players[sortedNoDropRanks[tieds[j]].name]) ? players[sortedNoDropRanks[tieds[j]]][sortedNoDropRanks[tieds[k]].name].wins : 0;
+						}
+					}
+				}
+			}
+		}
+		sortedNoDropRanks.sort((a,b) => {
+			let wpd = b.pct - a.pct;
+			if (wpd) {
+				return wpd;
+			} else {
+				return b.tb - a.tb;
+			}
+		});
+		sortedNoDropRanks[0].rank = 1;
+		for (let i=1; i<sortedNoDropRanks.length; i++) {
+			if ((sortedNoDropRanks[i].pct == sortedNoDropRanks[i-1].pct) && (sortedNoDropRanks[i].tb == sortedNoDropRanks[i-1].tb)) {
+				sortedNoDropRanks[i].rank = sortedNoDropRanks[i-1].rank;
+			} else {
+				sortedNoDropRanks[i].rank = i+1;
+			}
+		}
+		for (let rs of sortedNoDropRanks) {
+			noDropRanks[rs.name] = rs.rank;
+		}
+		sortedNoDropRanks = noDropRanks.map(x => [x.name, x.rank]);
+	}
+	*/
 
 	var tableHeadings, tableDescriptions, headingWidths;
 	var tierIcon = "<img src='/img/icons/tier.png' title='Tier next season'>";
@@ -555,9 +657,9 @@ function genStandings(data, tier, season, players, sorted, drops, complete, isRa
 			var cell = document.createElement("td");
 			cell.innerHTML = rowInfo[info];
 			switch (info) {
-		case "rank":
-			rankColor(complete, cell, tier, playerData["rank"], sortedRanks, players, playerData["drop"] == "Yes", drops.length > 0);
-			break;
+				case "rank":
+					rankColor(complete, cell, tier, playerData["rank"], sortedRanks, noDropRanks[name], sortedNoDropRanks, playerData["drop"] == "Yes");
+					break;
 				case "name":
 					standingsColor(complete, cell, tier, playerData["next tier"], season, playerData["name"], playerData["drop"] == "Yes");
 					cell.classList.add("cellWithDetail");

@@ -36,7 +36,7 @@ tiers:
   I:
     divisions: 23
     promoters: 2
-    demoters: 2
+    demoters: 0
 
 #these are old (s44), won't be using them afaik
 iframes:
