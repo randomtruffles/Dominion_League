@@ -3,6 +3,7 @@
 
 // loading
 var currentSeason = {{ site.data.current_season | jsonify }};
+var tierParams = {{ site.data.season.tiers | jsonify }};
 var players = {{ site.data.player_seasons | jsonify }};
 var leagueHist = {{ site.data.league_history | jsonify }};
 var sheetsLinks = {{ site.data.sheet_links | jsonify }};
