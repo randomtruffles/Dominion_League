@@ -19,7 +19,7 @@ The current rulebooks for each Dominion set are linked below. See below for some
 
 * [Dominion (2nd Edition)](/img/uploads/00-dominion-rulebook.pdf)
 * [Dominion: Intrigue (2nd Edition)](/img/uploads/01-intrigue-rulebook.pdf)
-* [Dominion: Seaside](/img/uploads/02-seaside-rulebook.pdf)
+* [Dominion: Seaside (2nd Edition)](/img/uploads/02-seaside-rulebook.pdf)
 * [Dominion: Alchemy](/img/uploads/03-alchemy-rulebook.pdf)
 * [Dominion: Prosperity](/img/uploads/04-prosperity-rulebook.pdf)
 * [Dominion: Hinterlands](/img/uploads/06-hinterlands-rulebook.pdf)
