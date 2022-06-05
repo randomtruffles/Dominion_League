@@ -2807,3 +2807,29 @@ img.hof-champion-trophy {
 	cursor: default;
 	background: #efefef;
 }
+
+/* Forms */
+
+.form-option {
+	margin: 5px;
+	padding: 5px;
+}
+
+.form-option input{
+	height: 38px;
+}
+
+.form-option select {
+	height: 38px;
+	min-width: 60px;
+	position: relative;
+	top: -2px;
+}
+
+.form-option .inline {
+	margin: 0px 3px;
+}
+
+.form-option p:first-child, span:first-child {
+	font-weight: bold;
+}
