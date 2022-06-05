@@ -1,0 +1,98 @@
+---
+layout: default
+title: Calendar form
+permalink: calendar/form
+---
+
+<div class="home">
+	<div class="container-centered">
+		<h3>Calendar Form</h3>
+		<p>Add your league match to the <a href="/calendar">match calendar</a>.</p>
+	</div>
+	<div class="form-option">
+		<span>Division:</span>
+		<select id="division">
+			<option value=""></option>
+		</select>
+	</div>
+	<div class="form-option">
+		<p>Your username:</p>
+		<select id="user1">
+			<option></option>
+		</select>
+	</div>
+	<div class="form-option">
+		<p>Your opponent's username:</p>
+		<select id="user2">
+			<option></option>
+		</select>
+	</div>
+	<div class="form-option">
+		<p>Time (UTC)</p>
+		<input type="text" id="hour" class="slidertext"></input>
+		<span>:</span>
+		<input type="text" id="minute" class="slidertext"></input>
+		<p id="time-verify"></p>
+	</div>
+	<div class="form-option">
+		<button id="pushout">Add to calendar</button>
+		<button id="prefill">More Options</button>
+	</div>
+</div>
+<script>
+const divisions = {{ site.data.current_season | jsonify }};
+var division = document.getElementById("division");
+var user1 = document.getElementById("user1");
+var user2 = document.getElementById("user2");
+var hours = document.getElementById("hour");
+var minutes = document.getElementById("minute");
+var timeMessage = document.getElementById("time-verify");
+
+loadPage();
+
+function loadPage() {
+	var selectedDiv = "";
+	if (window.location.search) {
+		let params = new URLSearchParams(window.location.search);
+		if (params.has("div")) {
+			selectedDiv = params.get("div").toUpperCase();;
+		}
+	}
+	
+	for (div in divisions) {
+		if (/^[A-Z]\d+$/.test(div)) {
+			let opt = document.createElement("option");
+			opt.value = div;
+			if (div == selectedDiv) {
+				opt.selected = true;
+			}
+			opt.appendChild(document.createTextNode(div));
+			division.appendChild(opt);
+		}
+	}
+	
+	division.addEventListener('change', function(ev) {
+		updatePlayers(ev.target.value);
+	});
+	
+	if (selectedDiv in divisions) {updatePlayers(selectedDiv);}
+}
+
+function updatePlayers(division) {
+	var members = (division in divisions) ? Object.keys(divisions[division].members).sort((a,b) => a.localeCompare(b, 'en', {'sensitivity': 'base'})) : [];
+	user1.innerHTML = "<option></option>";
+	user2.innerHTML = "<option></option>";
+	for (player of members) {
+		let opt1 = document.createElement("option");
+		let opt2 = document.createElement("option");
+		opt1.value = player;
+		opt2.value = player;
+		opt1.appendChild(document.createTextNode(player));
+		opt2.appendChild(document.createTextNode(player));
+		user1.appendChild(opt1);
+		user2.appendChild(opt2);
+	}
+}
+
+
+</script>
