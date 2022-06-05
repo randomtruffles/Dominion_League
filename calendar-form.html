@@ -16,13 +16,13 @@ permalink: calendar/form
 		</select>
 	</div>
 	<div class="form-option">
-		<p>Your username:</p>
+		<p>Your username</p>
 		<select id="user1" name="Your username">
 			<option value=""></option>
 		</select>
 	</div>
 	<div class="form-option">
-		<p>Your opponent's username:</p>
+		<p>Your opponent's username</p>
 		<select id="user2" name="Your opponent's username">
 			<option value=""></option>
 		</select>
@@ -30,17 +30,18 @@ permalink: calendar/form
 	<div class="form-option">
 		<p>Date and Time (UTC)</p>
 		<input type="date" id="date" name="Date"></input>
-		<span>at</span>
+		<span class="inline">at</span>
 		<input type="text" id="hour" name="Hours" maxlength="2" pattern="[0-9]*" novalidate class="slidertext"></input>
 		<span>:</span>
 		<input type="text" id="minute" name="Minutes" maxlength="2" pattern="[0-9]*" novalidate class="slidertext"></input>
-		<span>UTC</span>
+		<span class="inline">UTC</span>
 		<p id="time-verify" style="color:red"></p>
 	</div>
 	<div class="form-option">
+		<div></div>
 		<p>If all fields are filled you may add to the calendar directly by clicking "Add to Calendar." Clicking "More Options" will bring you to a longer form pre-filled with the information above where you will have options such as using a non-UTC time zone, requesting commentary, and leaving additional comments.</p>
-		<button id="pushout">Add to Calendar</button>
-		<button id="prefill">More Options</button>
+		<button id="pushout" class="inline">Add to Calendar</button>
+		<button id="prefill" class="inline">More Options</button>
 		<p id="submit-verify" style="color:red"></p>
 	</div>
 </div>
@@ -116,6 +117,7 @@ function loadPage() {
 			submitMessage.innerHTML = "";
 			fields.forEach(x => {x.value = ""});
 		} else {
+			
 			if (unfilledCount > 2) {
 				unfilled[unfilledCount - 1] = "and " + unfilled[unfilledCount - 1];
 				submitMessage.innerHTML = unfilled.join(", ") + " have not been filled."
