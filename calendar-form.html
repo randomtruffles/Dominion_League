@@ -7,7 +7,7 @@ permalink: calendar/form
 <div class="home">
 	<div class="container-centered">
 		<h3>Calendar Form</h3>
-		<p>Add your league match to the <a href="/calendar">match calendar</a>.</p>
+		<p>Add your league match to the <a href="/matches">match calendar</a>.</p>
 	</div>
 	<div class="form-option">
 		<span>Division:</span>
@@ -31,9 +31,9 @@ permalink: calendar/form
 		<p>Date and Time (UTC)</p>
 		<input type="date" id="date" name="Date"></input>
 		<span class="inline">at</span>
-		<input type="text" id="hour" name="Hours" maxlength="2" pattern="[0-9]*" novalidate class="slidertext"></input>
+		<input type="text" id="hour" name="Hours" maxlength="2" inputmode="numeric" pattern="[0-9]*" novalidate class="slidertext"></input>
 		<span>:</span>
-		<input type="text" id="minute" name="Minutes" maxlength="2" pattern="[0-9]*" novalidate class="slidertext"></input>
+		<input type="text" id="minute" name="Minutes" maxlength="2" inputmode="numeric" pattern="[0-9]*" novalidate class="slidertext"></input>
 		<span class="inline">UTC</span>
 		<p id="time-verify" style="color:red"></p>
 	</div>
@@ -106,13 +106,13 @@ function loadPage() {
 	};
 	
 	document.getElementById("pushout").onclick = function() {
-		var fields = [user1, user2, date, hours, minutes];
+		var fields = [user1, user2, date, hours];
 		let unfilled = fields.filter(x => x.value == "").map(x => x.name);
 		let unfilledCount = unfilled.length;
 		if (unfilledCount == 0) {
 			let submitURL = formURL.replace("substituteme", "formResponse");
 			submitURL += `&entry.665962030=${user1.value.replace(/ /g, "+")}&entry.933461438=${user2.value.replace(/ /g, "+")}`;
-			submitURL += `&entry.1984692058=${date.value}+${hours.value}:${minutes.value}`;
+			submitURL += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
 			window.open(submitURL+"&entry.797613395=02:00:00&submit=Submit");
 			submitMessage.innerHTML = "";
 			fields.forEach(x => {x.value = ""});
@@ -137,8 +137,8 @@ function loadPage() {
 		if (user2.value) {
 			prefillURL += `&entry.933461438=${user2.value.replace(/ /g, "+")}`;
 		}
-		if (date.value && hours.value && minutes.value) {
-			prefillURL += `&entry.1984692058=${date.value}+${hours.value}:${minutes.value}`;
+		if (date.value && hours.value) {
+			prefillURL += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
 		}
 		window.open(prefillURL+"&entry.797613395=02:00:00");
 	};
