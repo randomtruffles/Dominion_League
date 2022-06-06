@@ -2815,15 +2815,14 @@ img.hof-champion-trophy {
 	padding: 5px;
 }
 
-.form-option input{
-	height: 38px;
-}
-
 .form-option select {
-	height: 38px;
 	min-width: 60px;
 	position: relative;
 	top: -2px;
+}
+
+.form-option .text-display {
+	height: 38px;
 }
 
 .form-option .inline {
@@ -2832,4 +2831,16 @@ img.hof-champion-trophy {
 
 .form-option p:first-child, span:first-child {
 	font-weight: bold;
+}
+
+.form-option label input {
+	vertical-align: middle;
+	position: relative;
+	top: -4px;
+}
+
+.form-option label span {
+	font-weight: normal;
+	vertical-align: middle;
+	position: relative;
 }
