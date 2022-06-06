@@ -29,28 +29,30 @@ permalink: calendar/form
 	</div>
 	<div class="form-option">
 		<p>Date and Time</p>
+		<div style="position:relative;top:-6px;>
+			<label for="UTC" class="chartInput inline">
+				<input type="radio" id="UTC" class="chartInput chartRadio" name="timezone" checked="checked">
+				<span>UTC</span>
+			</label>
+			<label for="localTime" class="chartInput inline">
+				<input type="radio" id="localTime" class="chartInput chartRadio" name="timezone">
+				<span id="localTimeZone">Local Time</span>
+			</label>
+		</div>
 		<input type="date" id="date" name="Date" class="text-display"></input>
 		<span class="inline">at</span>
 		<input type="text" id="hour" name="Hours" maxlength="2" inputmode="numeric" pattern="[0-9]*" novalidate class="slidertext text-display"></input>
 		<span>:</span>
 		<input type="text" id="minute" name="Minutes" maxlength="2" inputmode="numeric" pattern="[0-9]*" novalidate class="slidertext text-display"></input>
-		<select id="ampm" class="text-display" style="display:none;top:-1px;">
+		<select id="ampm" class="text-display" style="display:none;">
 			<option value="AM">AM</option>
 			<option value="PM">PM</option>
 		</select>
-		<label for="UTC" class="chartInput inline">
-			<input type="radio" id="UTC" class="chartInput chartRadio" name="timezone" checked="checked">
-			<span>UTC</span>
-		</label>
-		<label for="localTime" class="chartInput inline">
-			<input type="radio" id="localTime" class="chartInput chartRadio" name="timezone">
-			<span id="localTimeZone">Local Time</span>
-		</label>
 		<p id="time-verify" style="color:red;"></p>
 	</div>
 	<div class="form-option">
 		<div></div>
-		<p>If all fields are filled you may add to the calendar directly by clicking "Add to Calendar." Clicking "More Options" will bring you to a longer form pre-filled with the information above where you will have options such as using a non-UTC time zone, requesting commentary, and leaving additional comments.</p>
+		<p>If all fields are filled you may add to the calendar directly by clicking "Add to Calendar." Clicking "More Options" will bring you to a longer form pre-filled with the information above where you will have options such as using a different time zone, requesting commentary, and leaving additional comments.</p>
 		<button id="pushout" class="inline">Add to Calendar</button>
 		<button id="prefill" class="inline">More Options</button>
 		<p id="submit-verify" style="color:red;"></p>
