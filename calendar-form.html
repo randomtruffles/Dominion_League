@@ -136,6 +136,13 @@ function loadPage() {
 		}
 	}
 	
+	ampm.addEventListener('change', function (ev) {
+		if (ev.target.value == "PM" && Number(hours.value) > 12) {
+			timeMessage.innerHTML = "Hours should be an integer between 0 and 12";
+			hours.value = "";
+		}
+	});
+	
 	document.getElementById("pushout").onclick = function() {
 		var fields = [user1, user2, date, hours];
 		let unfilled = fields.filter(x => x.value == "").map(x => x.name);
