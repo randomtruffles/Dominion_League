@@ -2565,7 +2565,7 @@ img.hof-champion-trophy {
 	float: left;
 }
 
-.control-row span,select {
+.control-row span, .control-row select {
 	position: relative;
 	vertical-align: middle;
 	top: 2px;
@@ -2817,8 +2817,6 @@ img.hof-champion-trophy {
 
 .form-option select {
 	min-width: 60px;
-	position: relative;
-	top: -2px;
 }
 
 .form-option .text-display {
@@ -2829,7 +2827,7 @@ img.hof-champion-trophy {
 	margin: 0px 3px;
 }
 
-.form-option p:first-child, span:first-child {
+.form-option p:first-child, .form-option span:first-child {
 	font-weight: bold;
 }
 
