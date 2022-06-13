@@ -26,8 +26,8 @@ A moderator will contact you on Discord to confirm your participation. You must 
 **NOTE:** Season 52 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
 <br>
 
-<div class=""sheets"">
-<iframe src=""https://docs.google.com/forms/d/e/1FAIpQLSfN-eMNz4nyD0MXRhfykgH-geOZEJNmulHDA48MYM7HS4O5Eg/viewform?embedded=true"" width=""100%"" height=""600"">Loading…</iframe>
+<div class="sheets">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfN-eMNz4nyD0MXRhfykgH-geOZEJNmulHDA48MYM7HS4O5Eg/viewform?embedded=true"" width=""100%"" height=""600"">Loading…</iframe>
 </div>
 
 #### Sign-ups and Counts
@@ -36,6 +36,6 @@ Sign-ups and Counts are listed below (it may take a few seconds to load).
 <br>
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
-<div class=""sheets"">
-  <iframe src=""https://docs.google.com/spreadsheets/d/1i2BNBpSRjOBuxiFgBl87Yca1RMZOW8EKVYHC5PsqMfU/pubhtml"" height=""500"" width=""100%"">Loading...</iframe>
+<div class="sheets">
+  <iframe src="https://docs.google.com/spreadsheets/d/1O8-YTGYGBDFSjSReHLOmvGgBesrvMju8KEGqGWmxQpA/pubhtml"" height=""500"" width=""100%"">Loading...</iframe>
 </div>
