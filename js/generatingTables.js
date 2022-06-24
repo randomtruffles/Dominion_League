@@ -72,6 +72,8 @@ function rankColor(complete, cell, tier, rank, allRanks, ndRank, ndAllRanks, dro
 	var protbd = "#e2f3a5";
 	var demtbd = "#f4d7a4"
 	var demotion = "#f0948d";
+	var nPlayers = allRanks.length;
+	nPlayers = nPlayers < 6 ? 6 : nPlayers;
 	var numtied = 0;
 	for (let r of allRanks) {
 		if (rank == r[1]) {numtied++;}
@@ -93,9 +95,9 @@ function rankColor(complete, cell, tier, rank, allRanks, ndRank, ndAllRanks, dro
 			} else {
 				movementStatus[0] = "protbd";
 			}
-		} else if (rank > allRanks.length - tierParams[tier]["demoters"]) {
+		} else if (rank > nPlayers - tierParams[tier]["demoters"]) {
 			movementStatus[0] = "demotion";
-		} else if (rank + numtied - 1 > allRanks.length - tierParams[tier]["demoters"]) {
+		} else if (rank + numtied - 1 > nPlayers - tierParams[tier]["demoters"]) {
 			movementStatus[0] = "demtbd";
 		}
 		if (ndRank <= tierParams[tier]["promoters"]) {
@@ -104,9 +106,9 @@ function rankColor(complete, cell, tier, rank, allRanks, ndRank, ndAllRanks, dro
 			} else {
 				movementStatus[1] = "protbd";
 			}
-		} else if (ndRank > allRanks.length - tierParams[tier]["demoters"]) {
+		} else if (ndRank > nPlayers - tierParams[tier]["demoters"]) {
 			movementStatus[1] = "demotion";
-		} else if (ndRank + ndNumtied - 1 > allRanks.length - tierParams[tier]["demoters"]) {
+		} else if (ndRank + ndNumtied - 1 > nPlayers - tierParams[tier]["demoters"]) {
 			movementStatus[1] = "demtbd";
 		}
 		
@@ -159,9 +161,9 @@ function rankColor(complete, cell, tier, rank, allRanks, ndRank, ndAllRanks, dro
 			} else {
 				cell.style.backgroundColor = protbd;
 			}
-		} else if (rank > allRanks.length - tierParams[tier]["demoters"]) {
+		} else if (rank > nPlayers - tierParams[tier]["demoters"]) {
 			cell.style.backgroundColor = demotion;
-		} else if (rank + numtied - 1 > allRanks.length - tierParams[tier]["demoters"]) {
+		} else if (rank + numtied - 1 > nPlayers - tierParams[tier]["demoters"]) {
 			cell.style.backgroundColor = demtbd;
 		}
 	}
