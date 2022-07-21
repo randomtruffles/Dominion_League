@@ -49,7 +49,7 @@ If you are playing in the current season and would like to join the next season,
 
 ### <a name="1.4"></a>1.4. Hiatus
 
-You retain your tier placement, space permitting (see [2.4](#2.4) and [2.5](#2.5)), during a break of up to 5 consecutive seasons. If you rejoin after a break of 6 or more consecutive seasons, you will be placed as a new player.
+You retain your tier placement, space permitting (see [2.4](#2.4) and [2.5](#2.5)), during a break of up to 2 consecutive seasons. If you rejoin after a break of 3 or more consecutive seasons, you will be placed as a new player.
 
 ### <a name="1.5"></a>1.5. Accounts
 
