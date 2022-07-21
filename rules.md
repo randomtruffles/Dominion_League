@@ -204,7 +204,7 @@ The following settings are set by default when you create a new table on Dominio
 
 <a name="4.6.2"></a>4.6.2. For games using expansions and a Card Pool Level of 2 or higher, the "Disliked" and "Banned" options for "Respected Cards" should be on. The "Liked" option should be off.
 
-<a name="4.6.3"></a>4.6.3. "Extra Allies" should be off.
+<a name="4.6.3"></a>4.6.3. "Extra 2nd Edition" should be off.
 
 <a name="4.6.4"></a>4.6.4. "Rated game" should be off.
 
