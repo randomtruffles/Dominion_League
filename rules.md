@@ -427,45 +427,41 @@ After the normal matches of A1 are complete, the players in first place and seco
 
 ## <a name="6"></a>6. Scheduling
 
-### <a name="6.1"></a>6.1. Suggested schedule
-
-The League recommends you play at least one match per week. In F tier and below, a suggested schedule is posted in your division’s Discord channel and gives you an opponent to play each week. Although many players find this helpful, there is no requirement to follow this suggested schedule.
-
-### <a name="6.2"></a>6.2. Conflicts of interest
+### <a name="6.1"></a>6.1. Conflicts of interest
 
 If one of your close friends or family members is in your division, please schedule that match to happen early in the season, to eliminate any temptation for collusion.
 
-<a name="6.2.1"></a>6.2.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions.
+<a name="6.1.1"></a>6.1.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions.
 
-### <a name="6.3"></a>6.3. Deadlines
+### <a name="6.2"></a>6.2. Deadlines
 
 In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC. We encourage players to stay well ahead of these deadlines - they are not the expected pace.
 
-<a name="6.3.1"></a>6.3.1. At the end of the first week of the season, players who have not checked in to their division may be replaced by players from the waiting list.
+<a name="6.2.1"></a>6.2.1. At the end of the first week of the season, players who have not checked in to their division may be replaced by players from the waiting list.
 
-<a name="6.3.2"></a>6.3.2. At the end of the second week of the season, players should have checked in to their division, scheduled at least one match, or completed at least one match.
+<a name="6.2.2"></a>6.2.2. At the end of the second week of the season, players should have checked in to their division, scheduled at least one match, or completed at least one match.
 
-<a name="6.3.3"></a>6.3.3. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 1 match.
+<a name="6.2.3"></a>6.2.3. At the end of the third week of the season, players should have no more than 4 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 1 match.
 
-<a name="6.3.4"></a>6.3.4. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 2 matches.
+<a name="6.2.4"></a>6.2.4. At the end of the fourth week of the season, players should have no more than 3 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 2 matches.
 
-<a name="6.3.5"></a>6.3.5. At the end of the fifth week of the season, players should have no more than 2 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 3 matches.
+<a name="6.2.5"></a>6.2.5. At the end of the fifth week of the season, players should have no more than 2 matches remaining to be played or scheduled. This typically requires having completed and/or scheduled 3 matches.
 
-<a name="6.3.6"></a>6.3.6. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having completed 5 matches.
+<a name="6.2.6"></a>6.2.6. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having completed 5 matches.
 
-<a name="6.3.7"></a>6.3.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
+<a name="6.2.7"></a>6.2.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
 
-### <a name="6.4"></a>6.4. Extensions
+### <a name="6.3"></a>6.3. Extensions
 
-If you are unable to complete a match by the end of season deadline ([6.3.6](#6.3.6)), you must request an extension from your moderator by that deadline.
+If you are unable to complete a match by the end of season deadline ([6.2.6](#6.2.6)), you must request an extension from your moderator by that deadline.
 
-<a name="6.4.1"></a>6.4.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
+<a name="6.3.1"></a>6.3.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
 
-<a name="6.4.2"></a>6.4.2. You must schedule an uncompleted match with your opponent before you can request an extension for it. Provide the date and time to your moderator when you request it.
+<a name="6.3.2"></a>6.3.2. You must schedule an uncompleted match with your opponent before you can request an extension for it. Provide the date and time to your moderator when you request it.
 
-<a name="6.4.3"></a>6.4.3. If the match is not completed during the extension period, or an extension was never requested, you and/or your opponent may be dropped at your moderator’s judgment per [7.1](#7.1).
+<a name="6.3.3"></a>6.3.3. If the match is not completed during the extension period, or an extension was never requested, you and/or your opponent may be dropped at your moderator’s judgment per [7.1](#7.1).
 
-### <a name="6.5"></a>6.5. Difficulty scheduling
+### <a name="6.4"></a>6.4. Difficulty scheduling
 
 If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator.
 
