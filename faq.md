@@ -101,10 +101,6 @@ The moderators host Town Halls to gather feedback on a specific topic that doesn
 
 You will need to coordinate with your opponent via Discord. You can send messages in your division’s channel, or send direct messages to an opponent. We recommend using a thread in your division channel to discuss times with individual opponents, so that your moderator can see the discussion. It is very beneficial to schedule matches in advance, instead of hoping someone is available to play impromptu.
 
-#### Do I need to follow the suggested schedule (provided to tier F and below)?
-
-No. It is provided as a guideline.
-
 #### May I play multiple matches per week?
 
 Yes. We recommend playing at least one match per week, and encourage you to stay ahead of schedule.
