@@ -89,7 +89,7 @@ Check the [Dominion calendar](/matches). There is also a pinned post in the #mat
 
 #### How do I announce my matches so others can spectate me?
 
-Fill out the [League calendar form](/calendar/form), and the match will be automatically announced on Discord an hour before it begins. A link to the form is also pinned in your division channel. You can also access the form on the [matches](/matches) page.
+See [What is the calendar form?](#what-is-the-calendar-form)
 
 #### What is a Town Hall on Discord?
 
@@ -101,7 +101,13 @@ The moderators host Town Halls to gather feedback on a specific topic that doesn
 
 You will need to coordinate with your opponent via Discord. Your division will have a dedicated channel that you can use to contact your opponents. We recommend using a thread in your division channel to discuss times with individual opponents. We discourage using DMs to contact your opponents, as it makes it harder for the moderators to keep track of your division's progress, and there is no opportunity for other players to offer to play when one player is available but the other isn't.
 
-It is very beneficial to schedule matches in advance, instead of hoping someone is available to play impromptu. We highly recommend adding any matches you schedule to the [League calendar form](/calendar/form). Among other things, this makes it easier for both the moderators and our automated systems to track your scheduling progress.
+It is very beneficial to schedule matches in advance, instead of hoping someone is available to play impromptu. We highly recommend adding any matches you schedule to the [League calendar form](/calendar/form) - see [What is the calendar form?](#what-is-the-calendar-form) for more information.
+
+#### <a name="what-is-the-calendar-form"></a> What is the calendar form?
+
+The [League calendar form](/calendar/form) allows you to add your scheduled matches to the league calendar. The calendar is visible on the [matches](/matches) page, which also contains a link to the form. There will also be a link to the form in the pinned posts in your division channel.
+
+Adding your matches to the calendar causes them to be automatically announced on Discord in the #matches channel. Additionally, the League's automated systems use the calendar to track players' scheduling progress. As such, though it is not required, we highly recommend using it.
 
 #### May I play multiple matches per week?
 
