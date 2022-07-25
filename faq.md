@@ -107,7 +107,9 @@ It is very beneficial to schedule matches in advance, instead of hoping someone 
 
 The [League calendar form](/calendar/form) allows you to add your scheduled matches to the league calendar. The calendar is visible on the [matches](/matches) page, which also contains a link to the form. There will also be a link to the form in the pinned posts in your division channel.
 
-Adding your matches to the calendar causes them to be automatically announced on Discord in the #matches channel. Additionally, the League's automated systems use the calendar to track players' scheduling progress. As such, though it is not required, we highly recommend using it.
+Adding your matches to the calendar causes them to be automatically announced on Discord in the #matches channel. Upcoming matches are summarized once per day, and are also announced an hour in advance, and again when they are starting.
+
+Additionally, the League's automated systems use the calendar to track players' scheduling progress. Though it is not required, we highly recommend using it.
 
 #### May I play multiple matches per week?
 
