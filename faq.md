@@ -89,7 +89,7 @@ Check the [Dominion calendar](/matches). There is also a pinned post in the #mat
 
 #### How do I announce my matches so others can spectate me?
 
-Fill out the [League calendar form](/calendar/form), and the match will be automatically announced on Discord an hour before it begins. The link to the form is also pinned in the #matches channel. You can also access the form on the [matches](/matches) page.
+Fill out the [League calendar form](/calendar/form), and the match will be automatically announced on Discord an hour before it begins. A link to the form is also pinned in your division channel. You can also access the form on the [matches](/matches) page.
 
 #### What is a Town Hall on Discord?
 
