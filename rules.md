@@ -49,7 +49,7 @@ If you are playing in the current season and would like to join the next season,
 
 ### <a name="1.4"></a>1.4. Hiatus
 
-You retain your tier placement, space permitting (see [2.4](#2.4) and [2.5](#2.5)), during a break of up to 2 consecutive seasons. If you rejoin after a break of 3 or more consecutive seasons, you will be placed as a new player.
+You retain your tier placement, space permitting (see [2.4](#2.4) and [2.5](#2.5)), during a short break of up to 2 consecutive seasons. If you rejoin after a longer break of 3 or more consecutive seasons, you will be placed as a new player.
 
 ### <a name="1.5"></a>1.5. Accounts
 
@@ -90,9 +90,9 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.1"></a>2.4.1. Players who played in the previous season are placed into their tier from that season, unless they earned a promotion or demotion ([5.3](#5.3)), in which case they are placed according to the promotion and demotion rules.
 
-<a name="2.4.2"></a>2.4.2. Players returning to the League after completing one of the past 6 seasons are placed into the tier they would have most recently returned to, starting with the players that played most recently, and with ties broken by seeding ([2.6](#2.6)).
+<a name="2.4.2"></a>2.4.2. Players returning to the League after a short break (see [1.4](#1.4)) are placed into the tier they would have most recently returned to, starting with the players that played most recently, and with ties broken by seeding ([2.6](#2.6)).
 
-<a name="2.4.3"></a>2.4.3. Players returning to the League who did not complete one of the past 6 seasons, and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups).
+<a name="2.4.3"></a>2.4.3. Players returning to the League after a longer break (see [1.4](#1.4)), and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups).
 
 <a name="2.4.4"></a>2.4.4. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
 
