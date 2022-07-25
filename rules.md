@@ -92,7 +92,7 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.2"></a>2.4.2. Players returning to the League after a short break (see [1.4](#1.4)) are placed into the tier they would have most recently returned to, starting with the players that played most recently, and with ties broken by seeding ([2.6](#2.6)).
 
-<a name="2.4.3"></a>2.4.3. Players returning to the League after a long break (see [1.4](#1.4)), and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups).
+<a name="2.4.3"></a>2.4.3. Players returning to the League after a longer break (see [1.4](#1.4)), and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups).
 
 <a name="2.4.4"></a>2.4.4. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
 
