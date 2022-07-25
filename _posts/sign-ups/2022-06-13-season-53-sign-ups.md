@@ -6,7 +6,7 @@ author: alibby1152
 layout: simple_post
 categories: signups
 ---
-**Season 53** will run from Monday, August 1, until Sunday, September 11, and you can sign up until **Sunday, July 24 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 53** will run from Monday, August 1 until Sunday, September 11 and ~~you can sign up until Sunday, July 24 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Friday, August 12 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
@@ -23,19 +23,21 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
-**NOTE:** Season 52 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+**NOTE:** Season 52 players should **not** use this signup form and should instead contact a moderator for further instructions.
 <br>
 
 <div class="sheets">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfN-eMNz4nyD0MXRhfykgH-geOZEJNmulHDA48MYM7HS4O5Eg/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfN-eMNz4nyD0MXRhfykgH-geOZEJNmulHDA48MYM7HS4O5Eg/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
 </div>
 
 #### Sign-ups and Counts
 
 Sign-ups and Counts are listed below (it may take a few seconds to load).
-<br>
+
+<br>
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
 <div class="sheets">
-  <iframe src="https://docs.google.com/spreadsheets/d/1O8-YTGYGBDFSjSReHLOmvGgBesrvMju8KEGqGWmxQpA/pubhtml" height="500" width="100%">Loading...</iframe>
+  <iframe src="https://docs.google.com/spreadsheets/d/1i2BNBpSRjOBuxiFgBl87Yca1RMZOW8EKVYHC5PsqMfU/pubhtml" height="500" width="100%">Loading...</iframe>
 </div>
