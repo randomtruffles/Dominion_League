@@ -4,7 +4,7 @@ var players = JSON.parse(fs.readFileSync("../player_seasons.json"));
 var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
 
-const currentSeason = 52;
+const currentSeason = 53;
 const thresholdForOverallPct = 10;
 const thresholdForTierPct = 3;
 const oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]},"51":{"J":["H",null]}};
@@ -22,7 +22,7 @@ for (let s=41; s<=51; s++) {
 	nondemTiers[String(s)] = ["J"];
 }
 for (let s=52; s<=currentSeason; s++) {
-	nondemTiers[String(s)] = ["J"];
+	nondemTiers[String(s)] = ["I"];
 }
 
 var allTiers = {"A": [], "B": [], "C": [], "D": [], "E": [], "F": [], "G": [], "H": [], "I": [], "J": [], "P": []};

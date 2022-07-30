@@ -20,7 +20,7 @@ scsn	Philip
 manchild69	stonedmason
 shaiyacat	TrinaCat
 grand market	crude
-Phtevenjohnsonxx	phtevenj
+Phtevenjohnsonxx	Phtevenj
 h.exe	Ketyri
 turbobaseball	SSounder
 sequoiac	catmom
@@ -58,6 +58,8 @@ cpsch2	hamperboy
 JaCrispyKing	The Pixie
 demander206	kditty206
 MarshallIV	Dr.Goomonkey
+usuallyloser	registeredpigeon
+Arskaboii	aarnii
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -98,3 +100,5 @@ Nlahmeyer	Nlahmeyer
 Operator	Operator
 spectershah	spectershah
 jeffkingks2	jeffkingks2
+phtevenj	Phtevenj
+arcanummage	ArcanumMage
