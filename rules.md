@@ -212,7 +212,7 @@ The following settings are set by default when you create a new table on Dominio
 
 <a name="4.6.6"></a>4.6.6. "Card Pool Level" should be set to 10.
 
-<a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way.
+<a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies are not considered landscapes, so this can result in kingdoms with up to two landscapes plus an Ally if a Liaison is present.
 
 ### <a name="4.7"></a>4.7. Modifying table settings
 
