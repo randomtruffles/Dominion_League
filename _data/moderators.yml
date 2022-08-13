@@ -29,18 +29,16 @@
 - name: Earl
   discord: Earl#3402
   image: earl
+  chair: Issues
 - name: Emmi
   discord: Emmi#1480
   image: Emmi
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-- name: jakkdl
-  discord: jakkdl#1436
-  image: jakkdl
-#- name: LeagueLackey
-#  discord: LeagueLackey#6269
-#  image: lackey
+- name: LeagueLackey
+  discord: LeagueLackey#6269
+  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
@@ -57,6 +55,7 @@
 - name: Rozyroz
   discord: Rozyroz#7547
   image: Rozyroz
+  chair: Outreach
 - name: Sharur
   discord: Sharur#7043
   image: sharur
