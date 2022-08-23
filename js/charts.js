@@ -637,7 +637,7 @@ PlayerPlot.makePlot = function() {
 		if (pHist.length) {
 			PlayerPlot.plot.addDataListener('clicked_store', function(name, value){
 				if (value.length) {
-					let roi = pHist[value[0].values[0]-1];						
+					let roi = pHist[value[0]._vgsid_-1];						
 					PlayerPlot.showStandingsModal(roi.season, roi.division);
 				}
 			})
@@ -933,7 +933,7 @@ PowerPlot.makePlot = function() {
 		PowerPlot.plot = res.view;
 		PowerPlot.plot.addDataListener('clicked_store', function(name, value){
 			if (value.length) {
-				PlayerPlot.addPlayer(PowerPlot.data[value[0].values[0]-1].player);
+				PlayerPlot.addPlayer(PowerPlot.data[value[0]._vgsid_-1].player);
 			}
 		})
 	});
