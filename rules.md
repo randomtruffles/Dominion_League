@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2022-08-04
+date: 2022-08-24
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -50,6 +50,8 @@ If you are playing in the current season and would like to join the next season,
 ### <a name="1.4"></a>1.4. Hiatus
 
 You retain your tier placement, space permitting (see [2.4](#2.4) and [2.5](#2.5)), during a short break of up to 2 consecutive seasons. If you rejoin after a longer break of 3 or more consecutive seasons, you will be placed as a new player.
+
+<a name="1.4.1"></a>1.4.1. For players taking a break starting during Season 53 or earlier, a short break is up to 5 consecutive seasons.
 
 ### <a name="1.5"></a>1.5. Accounts
 
