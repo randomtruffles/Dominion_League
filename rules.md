@@ -265,6 +265,12 @@ Games in the Dominion League do not user a timer.
 
 <a name="4.10.2"></a>4.10.2. If you feel that an opponent is playing especially slowly, consider politely requesting that they play more quickly, or reaching out to a moderator.
 
+### <a name="4.11"></a>4.11. Suspending games
+
+If you or your opponent have connection issues, or otherwise cannot continue a game (e.g. due to connection issues or time constraints), you should suspend the game. Note the game ID and use the Load Old Game button to reload the same game another time.
+
+<a name="4.11.1"></a>4.11.1. Prior to resuming a suspended game, you may not load the game by ID, practice the kingdom, discuss it with other players, or otherwise study the game.
+
 ### <a name="4.11"></a>4.11. Abandoning games
 
 In the rare event of a game which must be abandoned, you should play a new game in its place. Abandoned games do not count toward match completion or match score.
