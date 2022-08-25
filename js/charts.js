@@ -1150,6 +1150,7 @@ TransitionsPlot.makePlot = function() {
 		(TransitionsPlot.exact ? (TransitionsPlot.plus ? TransitionsPlot.data.tiers[TransitionsPlot.seasons-1].split('') : 
 			[...new Set(TransitionsPlot.data.tiers.slice(((TransitionsPlot.seasons < TransitionsPlot.seasonRange[0]) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[0]) - 1, (TransitionsPlot.seasonRange[1] < TransitionsPlot.seasons) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[1]).join(""))]) :
 			(TransitionsPlot.plus ? [...new Set(TransitionsPlot.data.tiers.slice(0,TransitionsPlot.seasons).join(""))] : [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasons-1,cur.season).join(""))]));
+	tiers.sort();
 	
 	TransitionsPlot.props = {};
 	for (let j=0; j<tiers.length; j++) {
@@ -1310,7 +1311,7 @@ TransitionsPlot.makePlot = function() {
 		TransitionsPlot.plot = res.view;
 		TransitionsPlot.plot.addDataListener('clicked_store', function(name, value){
 			if (value.length) {
-				TransitionsPlot.showPlayersModal(value[0].values[0]-1);
+				TransitionsPlot.showPlayersModal(value[0]._vgsid_-1);
 			}
 		})
 	});
