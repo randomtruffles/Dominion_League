@@ -946,9 +946,9 @@ var TransitionsPlot = {};
 
 TransitionsPlot.data = {
 	"players": [...new Set(Object.keys(da.players).concat(Object.keys(cur.players)))].sort(),
-	"tiers": Array.from({ length: cur.season - 1 }, (v, i) => [...new Set(Object.keys(da.divisions[String(i+1)]).map(dv => dv.charAt(0)))].join(""))
+	"tiers": Array.from({ length: cur.season - 1 }, (v, i) => [...new Set(Object.keys(da.divisions[String(i+1)]).map(dv => dv.charAt(0)))].sort().join(""))
 };
-TransitionsPlot.data.tiers.push([...new Set(Object.keys(cur.players).map(key => cur.players[key].tier))].join(""));
+TransitionsPlot.data.tiers.push([...new Set(Object.keys(cur.players).map(key => cur.players[key].tier))].sort().join(""));
 TransitionsPlot.data.schemes = TransitionsPlot.data.players.map(plkey => {
 	let sch = Array.from({ length: cur.season }, () => "-");
 	if (da.players[plkey]) {
@@ -1146,7 +1146,7 @@ TransitionsPlot.resize = function() {
 
 TransitionsPlot.makePlot = function() {
 	var allTiers = (TransitionsPlot.startTier == "any");
-	var tiers = TransitionsPlot.offset ? [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasonRange[0] - 1 + (!TransitionsPlot.plus ? -TransitionsPlot.seasons : (TransitionsPlot.exact ? TransitionsPlot.seasons : 1)), TransitionsPlot.seasonRange[1] + (TransitionsPlot.plus ? TransitionsPlot.seasons : (TransitionsPlot.exact ? -TransitionsPlot.seasons : 0))).join(""))] : 
+	var tiers = TransitionsPlot.offset ? [...new Set(TransitionsPlot.data.tiers.slice(Math.max(0,TransitionsPlot.seasonRange[0] - 1 + (!TransitionsPlot.plus ? -TransitionsPlot.seasons : (TransitionsPlot.exact ? TransitionsPlot.seasons : 1))), TransitionsPlot.seasonRange[1] + (TransitionsPlot.plus ? TransitionsPlot.seasons : (TransitionsPlot.exact ? -TransitionsPlot.seasons : 0))).join(""))] : 
 		(TransitionsPlot.exact ? (TransitionsPlot.plus ? TransitionsPlot.data.tiers[TransitionsPlot.seasons-1].split('') : 
 			[...new Set(TransitionsPlot.data.tiers.slice(((TransitionsPlot.seasons < TransitionsPlot.seasonRange[0]) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[0]) - 1, (TransitionsPlot.seasonRange[1] < TransitionsPlot.seasons) ? TransitionsPlot.seasons : TransitionsPlot.seasonRange[1]).join(""))]) :
 			(TransitionsPlot.plus ? [...new Set(TransitionsPlot.data.tiers.slice(0,TransitionsPlot.seasons).join(""))] : [...new Set(TransitionsPlot.data.tiers.slice(TransitionsPlot.seasons-1,cur.season).join(""))]));
@@ -1282,6 +1282,7 @@ TransitionsPlot.makePlot = function() {
 	}
 	
 	if (tiers[tiers.length-1] == "-") {tiers[tiers.length-1] = "Out";}
+	
 	
 	var plotSpec = {
 		"width": ChartUtils.widthcheck.clientWidth - 52,
