@@ -2613,7 +2613,7 @@ img.hof-champion-trophy {
 	top: 5px;
 	cursor: pointer;
 }
-
+/*
 .chart-player:hover {
 	border-width: 4px;
 }
@@ -2627,7 +2627,7 @@ img.hof-champion-trophy {
 	margin-right: 3px;
 	top: 3px;
 }
-
+*/
 .chart-emphasized {
 	border-width: 4px;
 }
@@ -2641,7 +2641,7 @@ img.hof-champion-trophy {
 	margin-right: 3px;
 	top: 3px;
 }
-
+/*
 .chart-emphasized:hover {
 	border-width: 2px;
 }
@@ -2655,7 +2655,7 @@ img.hof-champion-trophy {
 	margin-right: 5px;
 	top: 5px;
 }
-
+*/
 .chartRadio {
 	-webkit-appearance: none;
 	-moz-appearance: none;

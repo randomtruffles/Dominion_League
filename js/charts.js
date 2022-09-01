@@ -236,6 +236,8 @@ PlayerPlot.makePlayerButtons = function() {
 			let playertext = document.createElement('span');
 			playertext.classList.add('player-name');
 			playertext.appendChild(document.createTextNode(PlayerPlot.player[i]));
+			playertext.onmouseover = PlayerPlot.highlightPlayer;
+			playertext.onmouseout = PlayerPlot.dehighlightPlayer;
 			playertext.onclick = PlayerPlot.emphasizePlayer;
 			container.appendChild(playertext);
 			PlayerPlot.playerButtons.appendChild(container);
@@ -267,6 +269,17 @@ PlayerPlot.removePlayer = function(ev) {
 	}
 	ChartUtils.setURLparams();
 	if (PlayerPlot.userSetRange) {PlayerPlot.makePlot();} else {PlayerPlot.resetRange();}
+}
+PlayerPlot.highlightPlayer = function(ev) {
+	let nametarget = ev.target.textContent;
+	let dataPayload = [{"unit":"layer_1","fields":[{"type":"E","field":"player"}],"values":[nametarget]}];
+	PlayerPlot.plot.data('line_hovered_store', dataPayload);
+	PlayerPlot.plot.runAsync();
+}
+PlayerPlot.dehighlightPlayer = function(ev) {
+	let dataPayload = [];
+	PlayerPlot.plot.data('line_hovered_store', dataPayload);
+	PlayerPlot.plot.runAsync();
 }
 PlayerPlot.emphasizePlayer = function(ev) {
 	let nametarget = ev.target.textContent;
@@ -785,7 +798,7 @@ PlayerPlot.makePlot = function() {
 				} else {
 					let buttons = PlayerPlot.playerButtons.childNodes;
 					for (let i=0; i<6; i++) {
-						if (PlayerPlot.emphasize != PlayerPlot.player[i]) {
+						if (PlayerPlot.player[i] && PlayerPlot.emphasize != PlayerPlot.player[i]) {
 							buttons[i].classList.remove("chart-emphasized");
 						}
 					}
