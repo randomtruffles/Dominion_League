@@ -223,6 +223,9 @@ PlayerPlot.makePlayerButtons = function() {
 		if (PlayerPlot.player[i]) {
 			let container = document.createElement('div');
 			container.classList.add('chart-player');
+			if (PlayerPlot.emphasize == PlayerPlot.player[i]) {
+				container.classList.add('chart-emphasized');
+			}
 			container.style.backgroundColor = ChartUtils.lightColors[i];
 			container.style.borderColor = ChartUtils.darkColors[i];
 			let remover = document.createElement('span');
@@ -550,9 +553,12 @@ PlayerPlot.makePlot = function() {
 						{"calculate": "if(datum.season.length == 1, '0' + datum.season, datum.season)", "as": "order"},
 						{"calculate": "if(datum.champ == 'in progress', 'yes', 'no')", "as": "future"}
 					],
+					"selection": {
+						"line_hovered": {"type": "single", "fields": ["player"], "on": "mouseover", "empty": "none"},
+						"line_clicked": {"type": "single", "on": "click", "empty": "none"}
+					},
 					"mark": {
-						"type": "line",
-						"opacity": PlayerPlot.emphasize ? 0.6 : 1
+						"type": "line"
 					},
 					"encoding" : {
 						"x": {"field": "season", "type": "ordinal"},
@@ -578,6 +584,8 @@ PlayerPlot.makePlot = function() {
 							},
 							"legend": null
 						},
+						"strokeWidth": {"condition": {"selection": "line_hovered", "value": 4}, "value": 2},
+						"opacity": {"condition": {"selection": "line_hovered", "value": 1}, "value": PlayerPlot.emphasize ? 0.5 : 1},
 						"order": {"field": "order", "type": "ordinal"}
 					}
 				},
@@ -588,12 +596,12 @@ PlayerPlot.makePlot = function() {
 					],
 					"selection": {
 						"hovered": {"type": "single", "on": "mouseover", "empty": "none"},
-						"clicked": {"type": "single", "on": "click", "empty": "none"}
+						"clicked": {"type": "single", "fields": ["player", "season", "division", "chart"], "on": "click", "empty": "none", "init": PlayerPlot.emphasize ? {} : null}
 					},
 					"mark": {
 						"type": "point",
 						"filled": true,
-						"opacity": PlayerPlot.emphasize ? 0.6 : 1,
+						//"opacity": PlayerPlot.emphasize ? 0.5 : 1,
 						"strokeWidth": PlayerPlot.getPlayerCount() > 1 ? 2 : 1
 					},
 					"encoding": {
@@ -632,6 +640,7 @@ PlayerPlot.makePlot = function() {
 							"legend": null
 						},
 						"size": {"condition": {"selection": "hovered", "value": 60}, "value": PlayerPlot.getPlayerCount() > 1 ? 30 : 40},
+						"opacity": {"condition": {"selection": "line_hovered", "value": 1}, "value": PlayerPlot.emphasize ? 0.5 : 1},
 						"tooltip": (ChartUtils.widthcheck.clientWidth < 540) ? null : [
 							{"field": "player", "type": "nominal", "title": "Player"},
 							{"field": "season", "type": "nominal", "title": "Season"},
@@ -750,12 +759,38 @@ PlayerPlot.makePlot = function() {
 	vegaEmbed("#player-history", playerSpec, {"actions": false}).then(function(res) {
 		PlayerPlot.plot = res.view;
 		if (pHist.length) {
-			PlayerPlot.plot.addDataListener('clicked_store', function(name, value){
+			PlayerPlot.plot.addDataListener('clicked_store', function(name, value) {
 				if (value.length) {
-					let roi = pHist[value[0]._vgsid_-1];						
-					PlayerPlot.showStandingsModal(roi.season, roi.division);
+					let clickInfo = value[0].values; //[player,season,division,chart]
+					if (clickInfo[3] == 'line') {
+						PlayerPlot.emphasize = clickInfo[0];
+						PlayerPlot.makePlot();
+					} else {
+						PlayerPlot.showStandingsModal(clickInfo[1], clickInfo[2]);
+						if (PlayerPlot.emphasize && PlayerPlot.emphasize != clickInfo[0]) {
+							PlayerPlot.emphasize = clickInfo[0];
+							PlayerPlot.makePlot();
+							document.getElementById("vg-tooltip-element").classList.remove("visible", "light-theme");
+						}
+					}
+				} else if (PlayerPlot.emphasize) {
+					PlayerPlot.emphasize = null;
+					PlayerPlot.makePlot();
 				}
-			})
+			});
+			PlayerPlot.plot.addDataListener('line_hovered_store', function(name, value) {
+				if (value.length) {
+					let hoveredIdx = PlayerPlot.player.indexOf(value[0].values[0]);
+					PlayerPlot.playerButtons.childNodes[hoveredIdx].classList.add("chart-emphasized");
+				} else {
+					let buttons = PlayerPlot.playerButtons.childNodes;
+					for (let i=0; i<6; i++) {
+						if (PlayerPlot.emphasize != PlayerPlot.player[i]) {
+							buttons[i].classList.remove("chart-emphasized");
+						}
+					}
+				}
+			});
 		}
 	});
 	

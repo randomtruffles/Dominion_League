@@ -2595,7 +2595,7 @@ img.hof-champion-trophy {
 .chart-player {
 	float: left;
 	margin: 2px 4px;
-	border: 3px solid;
+	border: 2px solid;
 	height: 34px;
 	line-height: 100%;
 	border-radius: 10px;
@@ -2603,15 +2603,57 @@ img.hof-champion-trophy {
 
 .chart-player .player-close {
 	font-size: 32px;
-	margin-left: 4px;
-	top: 4px;
+	margin-left: 5px;
+	top: 5px;
 	cursor: pointer;
 }
 
 .chart-player .player-name {
-	margin: 4px;
-	top: 4px;
-	cursor: default;
+	margin: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.chart-player:hover {
+	border-width: 4px;
+}
+
+.chart-player:hover .player-close {
+	margin-left: 3px;
+	top: 3px;
+}
+
+.chart-player:hover .player-name {
+	margin-right: 3px;
+	top: 3px;
+}
+
+.chart-emphasized {
+	border-width: 4px;
+}
+
+.chart-emphasized .player-close {
+	margin-left: 3px;
+	top: 3px;
+}
+
+.chart-emphasized .player-name {
+	margin-right: 3px;
+	top: 3px;
+}
+
+.chart-emphasized:hover {
+	border-width: 2px;
+}
+
+.chart-emphasized:hover .player-close {
+	margin-left: 5px;
+	top: 5px;
+}
+
+.chart-emphasized:hover .player-name {
+	margin-right: 5px;
+	top: 5px;
 }
 
 .chartRadio {
