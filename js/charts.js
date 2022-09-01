@@ -141,6 +141,7 @@ for (let tier in PlayerPlot.counts[ChartUtils.curString]) {
 PlayerPlot.proportion = false;
 PlayerPlot.allTiers = false;
 PlayerPlot.player = [null,null,null,null,null,null];
+PlayerPlot.emphasize = null;
 PlayerPlot.seasonRange = [1,cur.season];
 PlayerPlot.userSetRange = false;
 
@@ -222,6 +223,9 @@ PlayerPlot.makePlayerButtons = function() {
 		if (PlayerPlot.player[i]) {
 			let container = document.createElement('div');
 			container.classList.add('chart-player');
+			if (PlayerPlot.emphasize == PlayerPlot.player[i]) {
+				container.classList.add('chart-emphasized');
+			}
 			container.style.backgroundColor = ChartUtils.lightColors[i];
 			container.style.borderColor = ChartUtils.darkColors[i];
 			let remover = document.createElement('span');
@@ -232,6 +236,9 @@ PlayerPlot.makePlayerButtons = function() {
 			let playertext = document.createElement('span');
 			playertext.classList.add('player-name');
 			playertext.appendChild(document.createTextNode(PlayerPlot.player[i]));
+			playertext.onmouseover = PlayerPlot.highlightPlayer;
+			playertext.onmouseout = PlayerPlot.dehighlightPlayer;
+			playertext.onclick = PlayerPlot.emphasizePlayer;
 			container.appendChild(playertext);
 			PlayerPlot.playerButtons.appendChild(container);
 		}
@@ -247,6 +254,7 @@ PlayerPlot.addPlayer = function(newname) {
 				}
 			}
 		}
+		PlayerPlot.emphasize = null;
 		document.getElementById('player-input').value = "";
 		PlayerPlot.allTiers = PlayerPlot.allTiersCheck.checked;
 		ChartUtils.setURLparams();
@@ -256,8 +264,31 @@ PlayerPlot.addPlayer = function(newname) {
 PlayerPlot.removePlayer = function(ev) {
 	let toRemove = ev.target.parentElement.lastElementChild.textContent;
 	PlayerPlot.player.splice(PlayerPlot.player.indexOf(toRemove), 1, null);
+	if (toRemove == PlayerPlot.emphasize) {
+		PlayerPlot.emphasize = null;
+	}
 	ChartUtils.setURLparams();
 	if (PlayerPlot.userSetRange) {PlayerPlot.makePlot();} else {PlayerPlot.resetRange();}
+}
+PlayerPlot.highlightPlayer = function(ev) {
+	let nametarget = ev.target.textContent;
+	let dataPayload = [{"unit":"layer_1","fields":[{"type":"E","field":"player"}],"values":[nametarget]}];
+	PlayerPlot.plot.data('line_hovered_store', dataPayload);
+	PlayerPlot.plot.runAsync();
+}
+PlayerPlot.dehighlightPlayer = function(ev) {
+	let dataPayload = [];
+	PlayerPlot.plot.data('line_hovered_store', dataPayload);
+	PlayerPlot.plot.runAsync();
+}
+PlayerPlot.emphasizePlayer = function(ev) {
+	let nametarget = ev.target.textContent;
+	if (nametarget == PlayerPlot.emphasize) {
+		PlayerPlot.emphasize = null;
+	} else {
+		PlayerPlot.emphasize = nametarget;
+	}
+	PlayerPlot.makePlot();
 }
 PlayerPlot.slideinput = function() {
 	if (Number(PlayerPlot.seasonslide1.value) <= Number(PlayerPlot.seasonslide2.value)) {
@@ -482,6 +513,13 @@ PlayerPlot.makePlot = function() {
 				}
 			}
 			
+			//prepare colors and opacities for players who will appear
+			if (PlayerPlot.emphasize) {
+				emphasisColor = ChartUtils.darkColors[PlayerPlot.player.indexOf(PlayerPlot.emphasize)];
+			}
+			var filteredPlayers = PlayerPlot.player.filter(x => x && x != PlayerPlot.emphasize);
+			var filteredColors = ChartUtils.darkColors.filter((x,i) => PlayerPlot.player[i] && PlayerPlot.player[i] != PlayerPlot.emphasize);
+			
 			var layers = [
 				{
 					"transform": [{"filter": "datum.chart == 'bar'"}],
@@ -524,11 +562,17 @@ PlayerPlot.makePlot = function() {
 				},
 				{
 					"transform": [
-						{"filter": "datum.chart == 'line'"},
+						{"filter": `datum.chart == 'line' && datum.player != '${PlayerPlot.emphasize}'`},
 						{"calculate": "if(datum.season.length == 1, '0' + datum.season, datum.season)", "as": "order"},
 						{"calculate": "if(datum.champ == 'in progress', 'yes', 'no')", "as": "future"}
 					],
-					"mark": {"type": "line"},
+					"selection": {
+						"line_hovered": {"type": "single", "fields": ["player"], "on": "mouseover", "empty": "none"},
+						"line_clicked": {"type": "single", "on": "click", "empty": "none"}
+					},
+					"mark": {
+						"type": "line"
+					},
 					"encoding" : {
 						"x": {"field": "season", "type": "ordinal"},
 						"y": {
@@ -539,8 +583,8 @@ PlayerPlot.makePlot = function() {
 							"field": "player",
 							"type": "nominal",
 							"scale" : {
-								"domain": PlayerPlot.player.filter(x => x),
-								"range": ChartUtils.darkColors.filter((x,i) => PlayerPlot.player[i])
+								"domain": filteredPlayers,
+								"range": filteredColors
 							},
 							"legend": null
 						},
@@ -553,23 +597,25 @@ PlayerPlot.makePlot = function() {
 							},
 							"legend": null
 						},
+						"strokeWidth": {"condition": {"selection": "line_hovered", "value": 4}, "value": 2},
+						"opacity": {"condition": {"selection": "line_hovered", "value": 1}, "value": PlayerPlot.emphasize ? 0.5 : 1},
 						"order": {"field": "order", "type": "ordinal"}
 					}
 				},
 				{
 					"transform": [
-						{"filter": "datum.chart == 'point'"},
+						{"filter": `datum.chart == 'point' && datum.player != '${PlayerPlot.emphasize}'`},
 						{"calculate": "'click'", "as": "Standings"}
 					],
 					"selection": {
 						"hovered": {"type": "single", "on": "mouseover", "empty": "none"},
-						"clicked": {"type": "single", "on": "click", "empty": "none"}
+						"clicked": {"type": "single", "fields": ["player", "season", "division", "chart"], "on": "click", "empty": "none", "init": PlayerPlot.emphasize ? {} : null}
 					},
 					"mark": {
 						"type": "point",
 						"filled": true,
-						"opacity": "1",
-						"strokeWidth": PlayerPlot.getPlayerCount() > 1 ? "2" : "1"
+						//"opacity": PlayerPlot.emphasize ? 0.5 : 1,
+						"strokeWidth": PlayerPlot.getPlayerCount() > 1 ? 2 : 1
 					},
 					"encoding": {
 						"x": {"field": "season", "type": "ordinal"},
@@ -588,8 +634,8 @@ PlayerPlot.makePlot = function() {
 							"field": "player",
 							"type": "nominal",
 							"scale" : {
-								"domain": PlayerPlot.player.filter(x => x),
-								"range": ChartUtils.darkColors.filter((x,i) => PlayerPlot.player[i])
+								"domain": filteredPlayers,
+								"range": filteredColors
 							}
 						},
 						"shape": {
@@ -606,7 +652,8 @@ PlayerPlot.makePlot = function() {
 							},
 							"legend": null
 						},
-						"size": {"condition": {"selection": "hovered", "value": "60"}, "value": PlayerPlot.getPlayerCount() > 1 ? "30" : "40"},
+						"size": {"condition": {"selection": "hovered", "value": 60}, "value": PlayerPlot.getPlayerCount() > 1 ? 30 : 40},
+						"opacity": {"condition": {"selection": "line_hovered", "value": 1}, "value": PlayerPlot.emphasize ? 0.5 : 1},
 						"tooltip": (ChartUtils.widthcheck.clientWidth < 540) ? null : [
 							{"field": "player", "type": "nominal", "title": "Player"},
 							{"field": "season", "type": "nominal", "title": "Season"},
@@ -617,6 +664,96 @@ PlayerPlot.makePlot = function() {
 					}
 				}
 			];
+			
+			if (PlayerPlot.emphasize) {
+				layers = layers.concat(
+					[
+						{
+							"transform": [
+								{"filter": `datum.chart == 'line' && datum.player == '${PlayerPlot.emphasize}'`},
+								{"calculate": "if(datum.season.length == 1, '0' + datum.season, datum.season)", "as": "order"},
+								{"calculate": "if(datum.champ == 'in progress', 'yes', 'no')", "as": "future"}
+							],
+							"mark": {
+								"type": "line",
+								"opacity": 1,
+								"stroke": emphasisColor,
+								"strokeWidth": 4
+							},
+							"encoding" : {
+								"x": {"field": "season", "type": "ordinal"},
+								"y": {
+									"field": PlayerPlot.proportion ? "propPlacement" : "countPlacement",
+									"type": "quantitative"
+								},
+								"strokeDash": {
+									"field": "future",
+									"type": "nominal",
+									"scale": {
+										"domain": ["no", "yes"],
+										"range": [[1,0], [8,8]]
+									},
+									"legend": null
+								},
+								"order": {"field": "order", "type": "ordinal"}
+							}
+						},
+						{
+							"transform": [
+								{"filter": `datum.chart == 'point' && datum.player == '${PlayerPlot.emphasize}'`},
+								{"calculate": "'click'", "as": "Standings"}
+							],
+							"selection": {
+								"emph_hovered": {"type": "single", "on": "mouseover", "empty": "none"},
+								"emph_clicked": {"type": "single", "on": "click", "empty": "none"}
+							},
+							"mark": {
+								"type": "point",
+								"filled": true,
+								"opacity": 1,
+								"stroke": emphasisColor,
+								"strokeWidth": PlayerPlot.getPlayerCount() > 1 ? 2 : 1
+							},
+							"encoding": {
+								"x": {"field": "season", "type": "ordinal"},
+								"y": {
+									"field": PlayerPlot.proportion ? "propPlacement" : "countPlacement",
+									"type": "quantitative"
+								},
+								"color": {
+									"field": "champ",
+									"type": "nominal",
+									"scale": {
+										"domain": ["no", "division", "league", "in progress"]
+									}
+								},
+								"shape": {
+									"field": "champ",
+									"type": "nominal",
+									"scale": {
+										"domain": ["no", "division", "league", "in progress"],
+										"range": [
+											"M 0 -1 A 1 1 0 1 1 0 1 A 1 1 0 1 1 0 -1", 
+											"M 0 -2 L -0.36327126400268 -0.5 L -1.90211303259031 -0.618033988749895 L -0.587785252292473 0.190983005625053 L -1.17557050458495 1.61803398874989 L -7.56848349501309e-17 0.618033988749895 L 1.17557050458495 1.6180339887499 L 0.587785252292473 0.190983005625053 L 1.90211303259031 -0.618033988749894 L 0.363271264002681 -0.5 L 4.89842541528951e-16 -2 L -0.36327126400268 -0.5",
+											"M 0 -2.4 L -0.435925516803217 -0.6 L -2.28253563910837 -0.741640786499874 L -0.705342302750968 0.229179606750063 L -1.41068460550194 1.94164078649987 L -9.0821801940157e-17 0.741640786499874 L 1.41068460550194 1.94164078649987 L 0.705342302750968 0.229179606750063 L 2.28253563910837 -0.741640786499873 L 0.435925516803217 -0.6 L 5.87811049834741e-16 -2.4 L -0.435925516803216 -0.600000000000001",
+											"M 0 -1 A 1 1 0 1 1 0 1 A 1 1 0 1 1 0 -1"
+										]
+									},
+									"legend": null
+								},
+								"size": {"condition": {"selection": "emph_hovered", "value": 60}, "value": PlayerPlot.getPlayerCount() > 1 ? 30 : 40},
+								"tooltip": (ChartUtils.widthcheck.clientWidth < 540) ? null : [
+									{"field": "player", "type": "nominal", "title": "Player"},
+									{"field": "season", "type": "nominal", "title": "Season"},
+									{"field": "division", "type": "nominal", "title": "Division"},
+									{"field": "place", "type": "nominal", "title": "Place"},
+									{"field": "Standings", "type": "nominal", "title": "Standings"}
+								]
+							}
+						}
+					]
+				);
+			}
 		} else {
 			//add message saying not found at some point
 			var layers = nullPlotLayer(fCounts);
@@ -635,12 +772,38 @@ PlayerPlot.makePlot = function() {
 	vegaEmbed("#player-history", playerSpec, {"actions": false}).then(function(res) {
 		PlayerPlot.plot = res.view;
 		if (pHist.length) {
-			PlayerPlot.plot.addDataListener('clicked_store', function(name, value){
+			PlayerPlot.plot.addDataListener('clicked_store', function(name, value) {
 				if (value.length) {
-					let roi = pHist[value[0]._vgsid_-1];						
-					PlayerPlot.showStandingsModal(roi.season, roi.division);
+					let clickInfo = value[0].values; //[player,season,division,chart]
+					if (clickInfo[3] == 'line') {
+						PlayerPlot.emphasize = clickInfo[0];
+						PlayerPlot.makePlot();
+					} else {
+						PlayerPlot.showStandingsModal(clickInfo[1], clickInfo[2]);
+						if (PlayerPlot.emphasize && PlayerPlot.emphasize != clickInfo[0]) {
+							PlayerPlot.emphasize = clickInfo[0];
+							PlayerPlot.makePlot();
+							document.getElementById("vg-tooltip-element").classList.remove("visible", "light-theme");
+						}
+					}
+				} else if (PlayerPlot.emphasize) {
+					PlayerPlot.emphasize = null;
+					PlayerPlot.makePlot();
 				}
-			})
+			});
+			PlayerPlot.plot.addDataListener('line_hovered_store', function(name, value) {
+				if (value.length) {
+					let hoveredIdx = PlayerPlot.player.indexOf(value[0].values[0]);
+					PlayerPlot.playerButtons.childNodes[hoveredIdx].classList.add("chart-emphasized");
+				} else {
+					let buttons = PlayerPlot.playerButtons.childNodes;
+					for (let i=0; i<6; i++) {
+						if (PlayerPlot.player[i] && PlayerPlot.emphasize != PlayerPlot.player[i]) {
+							buttons[i].classList.remove("chart-emphasized");
+						}
+					}
+				}
+			});
 		}
 	});
 	
