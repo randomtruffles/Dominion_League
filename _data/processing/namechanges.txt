@@ -104,3 +104,5 @@ spectershah	spectershah
 jeffkingks2	jeffkingks2
 phtevenj	Phtevenj
 arcanummage	ArcanumMage
+cromulus	Cromulus
+reza70	Reza70
