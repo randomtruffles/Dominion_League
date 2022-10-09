@@ -51,7 +51,8 @@
 	"49": "nasmith99",
 	"50": "cider01",
     "51": "cider01",
-	"52": "cider01"
+	"52": "cider01",
+	"53": "mic qsenoch"
   },
   "runner_ups": {
     "1": "stef",
@@ -105,7 +106,8 @@
 	"49": "aku chi",
 	"50": "same",
     "51": "mic qsenoch",
-	"52": "mic qsenoch"
+	"52": "mic qsenoch",
+	"53": "kazumaru0828"
   },
   "players": {
     "mic qsenoch": [
@@ -125,7 +127,8 @@
       "38",
       "39",
       "40",
-      "41"
+      "41",
+	  "53"
     ],
     "stef": [
       "3",
@@ -279,6 +282,9 @@
 	],
 	"same": [
 	  "50"
+	],
+	"kazumaru0828": [
+	  "53"
 	]
   }
 }
