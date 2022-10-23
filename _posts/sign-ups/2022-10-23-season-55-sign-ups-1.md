@@ -1,5 +1,5 @@
 ---
-title: Season 55 Sign-Ups
+title: Season 55 - Sign-Ups
 subtitle: Signups are now open!
 date: 2022-10-22
 author: alibby1152
