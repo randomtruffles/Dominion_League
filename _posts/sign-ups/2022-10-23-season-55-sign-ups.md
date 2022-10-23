@@ -23,8 +23,6 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
-#### Sign up using this Google Form:
-
 **NOTE:** Season 54 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
 <br>
 
