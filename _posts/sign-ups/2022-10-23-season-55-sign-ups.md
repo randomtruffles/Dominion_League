@@ -23,19 +23,23 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
+#### Sign up using this Google Form:
+
 **NOTE:** Season 54 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
 <br>
 
 <div class="sheets">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4WUjN_LAttcmGmpQoe-u35Fs8_gTczg56kJrYFRCuZ4hMnQ/viewform?embedded=true" width=""100%"" height=""600"">Loading…</iframe>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4WUjN_LAttcmGmpQoe-u35Fs8_gTczg56kJrYFRCuZ4hMnQ/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
 </div>
 
 #### Sign-ups and Counts
 
 Sign-ups and Counts are listed below (it may take a few seconds to load).
-<br>
+
+<br>
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
-<div class="sheets"">
-  <iframe src=""https://https://docs.google.com/spreadsheets/d/1Pp2vlqN9dnBchrxfLIj-GaHi2tCP_bxpAjIrqUSE3hQ/pubhtml"" height=""500"" width=""100%"">Loading...</iframe>
+<div class="sheets">
+  <iframe src="https://https://docs.google.com/spreadsheets/d/1Pp2vlqN9dnBchrxfLIj-GaHi2tCP_bxpAjIrqUSE3hQ/pubhtml" height="500" width="100%">Loading...</iframe>
 </div>
