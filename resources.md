@@ -60,7 +60,7 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Trader**: Action - Reaction, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
 * **Treasury**: Action, $5 *(Dominion: Seaside)*<br>**+1 Card**<br>**+1 Action**<br>**+$1**<br>At the end of your Buy phase this turn, if you didn't gain a Victory card in it, you may put this onto your deck.
 
-Additionally, two cards intentionally works differently online than what the card text says:
+Additionally, two cards intentionally work differently online than what their texts say:
 
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have card costing a Potion unless a card like that is in the Kingdom. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 * **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played via Way of the Mouse would be as useful or less useful than other Ways.
@@ -178,6 +178,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
 * **Hamlet**: If you discard a card for +1 Action and then have no cards in hand, you can choose to discard for +1 Buy, discard nothing, and still get +1 Buy.
 * **Herbalist**: See **Capitalism** above.
+* **Highwayman**: See **Scheme** below.
 * **The Horn**: See **Border Guard** above.
 * **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
 * **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
@@ -196,15 +197,15 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
   * **Snowy Village**: See **Snowy Village** below.
 * **Scepter**: See **Crown** above.
-* **Scheme**: You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you planned to exchange for a Warrior.
+* **Scheme**:
+  * You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you planned to exchange for a Warrior.
+  * **Highwayman**: If you play a Highwayman and at the start of your next turn play a Scheme (for example due to Summon) then discard Highwayman from play, you cannot use Scheme's ability to put the Highwayman onto your deck.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**
   * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs, though they will do nothing.
   * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
 * **Snowy Village + Coin of the Realm / Royal Carriage**: If you played a Snowy Village this turn, have a Coin of the Realm or a Royal Carriage on your Tavern mat, have Villagers, and have 0 Actions remaining, you may play an Action card from your hand, automatically using a Villager to do so. Note you cannot spend the Villagers manually for +Actions, and in all cases you correctly do not actually get +Actions from spending any.
-* **Star Chart**:
-  * You cannot look through your remaining deck before choosing which shuffled card to put on top.
-  * See **Fleet** above.
+* **Star Chart**: See **Fleet** above.
 * **Stonemason**: You cannot choose to overpay an amount that would not gain you anything.
 * **Storyteller**: See **Black Market** above.
 * **Trader**: When you gain a card that is not from a pile, the game will freeze if you react with Trader.
