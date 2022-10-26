@@ -132,9 +132,9 @@ Cards which have new wordings but function identically in all situations are not
 * Dominion: Alchemy
   * **Possession**: Any Debt tokens (and no other kinds of tokens) that the player to your left would take during their extra turn you take instead.
 * Dominion: Prosperity
-  * **Trade Route**: You trash a card from your hand before you get +$1 per token on the Trade Route mat.
+  * **Contraband**, **Counting House**, **Goons**, **Loan**, **Mountebank**, **Royal Seal**, **Talisman**, **Trade Route**, and **Venture** were removed. **Anvil**, **Charlatan**, **Clerk**, **Collection**, **Crystal Ball**, **Investment**, **Magnate**, **Tiara**, and **War Chest** were added.
 * Dominion: Hinterlands
-  * **Oracle**: You get +2 Cards instead of drawing 2 cards.
+  * **Duchess**, **Cache**, **Embassy**, **Ill-Gotten Gains**, **Mandarin**, **Noble Brigand**, **Nomad Camp**, **Oracle**, and **Silk Road** were removed. **Berserker**, **Cauldron**, **Guard Dog**, **Nomads**, **Souk**, **Trail**, **Weaver**, **Wheelwright**, and **Witch's Hut** were added.
   * **Scheme**: You can only choose cards that will be discarded from play this turn to put onto your deck.
 * Dominion: Adventures
   * **Storyteller**: You draw cards instead of getting +Cards.
