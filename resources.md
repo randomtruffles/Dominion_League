@@ -93,10 +93,6 @@ The cost in $ of a card can't go below $0. The cost in Potion of a card can't go
 
 New printings of Treasure cards that do special things when played will no longer say "when you play this", and instead of saying they are "worth" an amount of $ they will give +$.
 
-#### "While this is in play" abilities
-
-New printings of cards with "while this is in play" abilities that only affect the card's player (such as Hoard's) now say "while you have this in play". Abilities that affect all players (such as Highway's) are unchanged.
-
 #### Shuffling
 
 In addition to the shuffling rules in the Previous errata section below, there is additional errata that when shuffling, you may also look through your remaining deck.
