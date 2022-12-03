@@ -62,6 +62,7 @@ usuallyloser	registeredpigeon
 Arskaboii	aarnii
 Egor Kulikov	Kroge
 EgorK	Kroge
+Maleficent6	Java Rat
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -106,3 +107,4 @@ phtevenj	Phtevenj
 arcanummage	ArcanumMage
 cromulus	Cromulus
 reza70	Reza70
+fiddler25	Fiddler25

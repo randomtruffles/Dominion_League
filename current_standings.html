@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Current standings of divisions in Season 54
+title: Current standings of divisions in Season 55
 ---
 
 <div class="home">
   <div class="container-centered">
 
     <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
-	<h5>2022-10-10 to 2022-11-20</h5>
+	<h5>2022-12-05 to 2023-01-15</h5>
     <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
-    <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. <br> Season {{ site.data.season.number | plus: 1}} starts 2022-12-05</p>
+    <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. <br> Season {{ site.data.season.number | plus: 1}} starts 2023-02-06</p>
     <!-- Filter buttons -->
     <div id="myBtnContainer"></div>
     <div class="spacing"></div>
@@ -27,7 +27,7 @@ var tierParams = {{ site.data.season.tiers | jsonify }};
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 sheetLinks = sheetLinks[cur_season];
-var champion = "nasmith99";
+var champion = "";
 loadPage();
 
 function singleDivision(division) {

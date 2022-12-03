@@ -52,7 +52,8 @@
 	"50": "cider01",
     "51": "cider01",
 	"52": "cider01",
-	"53": "mic qsenoch"
+	"53": "mic qsenoch",
+	"54": "nasmith99"
   },
   "runner_ups": {
     "1": "stef",
@@ -107,7 +108,8 @@
 	"50": "same",
     "51": "mic qsenoch",
 	"52": "mic qsenoch",
-	"53": "kazumaru0828"
+	"53": "kazumaru0828",
+	"54": "mic qsenoch"
   },
   "players": {
     "mic qsenoch": [
@@ -174,7 +176,8 @@
 	  "46",
 	  "47",
 	  "48",
-	  "49"
+	  "49",
+	  "54"
     ],
 	"crabcat2": [
 	  "44"
@@ -210,7 +213,8 @@
       "20",
 	  "43",
           "51",
-		  "52"
+		  "52",
+		  "54"
     ],
     "philip": [
       "6",
