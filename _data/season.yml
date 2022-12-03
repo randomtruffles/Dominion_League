@@ -1,4 +1,4 @@
-number: 54
+number: 55
 
 tiers:
   A:
@@ -26,15 +26,15 @@ tiers:
     promoters: 1
     demoters: 2
   G:
-    divisions: 15
+    divisions: 16
     promoters: 2
     demoters: 2
   H:
-    divisions: 19
+    divisions: 21
     promoters: 1
     demoters: 2
   I:
-    divisions: 19
+    divisions: 21
     promoters: 2
     demoters: 0
 
