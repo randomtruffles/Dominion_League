@@ -7,7 +7,7 @@ layout: post
 categories:
   - newsletters
 ---
-Season 55 of the Dominion League is officially underway. Players have hit the ground running and it’s great to see so many matches already played or on the calendar for the coming week. It’s been a while since we have posted a newsletter as we haven’t seen many changes in the past few seasons. Things have been running smoothly, most of the feedback we have received has been in favor of keeping the status quo, and there hasn’t been much voice for drastic change. With that, I wanted to highlight a few items that have been posted throughout the past few seasons and provide a few other updates as well.
+Season 55 of the Dominion League is officially underway. Players have hit the ground running and it’s great to see so many matches already played or on the calendar for the coming weeks. It’s been a while since we have posted a newsletter, as we haven’t seen many changes in the past few seasons. Things have been running smoothly, most of the feedback we have received has been in favor of keeping the status quo, and there hasn’t been much voice for drastic change. With that, I wanted to highlight a few items that have been posted in other places the past few seasons and provide a few other updates as well.
 
 Good luck and have fun!
 
@@ -24,8 +24,6 @@ As you may already know, the latest expansion is nearly here with the imminent r
 * 4.8: Per 4.6.7, the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
 
   * 4.8.1: An expansion is considered new if its initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
-
-
   * 4.8.2: Previews of expansions are always considered new.
 
 This means that players may unilaterally opt out of playing with any of the cards from Plunder for this season. If you were involved in playtesting the expansion, I would encourage you to let your opponents know so that they can factor that into their decision of whether to include the new cards or not. For everyone, please be respectful of any opponent’s decision should they choose to exclude them.
