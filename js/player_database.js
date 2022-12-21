@@ -175,19 +175,19 @@ function searchHistory() {
 	}
 	
 	if (players[playerKey]) {
-		stats = {"wins": [], "first": players[playerKey].seasons[0].season, "six": 0, "five": 0};
+		stats = {"wins": [], "first": players[playerKey].seasons[0], "six": 0, "five": 0};
 		let tierRanks = [];
 		var streaks = {
 			"played": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": null}},
 			"nondem": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": null}},
 			"promote": {"current": {"count": 0, "start": Infinity, "end": Infinity}, "best": {"count": null}}
 		};
-		seasonRange[0] = Number(players[playerKey].seasons[0].season);
-		if (!inCurrent) {seasonRange[1] = Number(players[playerKey].seasons[players[playerKey].seasons.length - 1].season);}
+		seasonRange[0] = Number(players[playerKey].seasons[0]);
+		if (!inCurrent) {seasonRange[1] = Number(players[playerKey].seasons[players[playerKey].seasons.length - 1]);}
 		for (let i = players[playerKey].seasons.length - 1; i >= 0; i--) {
-			let season = players[playerKey].seasons[i].season;
+			let season = players[playerKey].seasons[i];
 			let seasonKey = "s" + season;
-			let division = players[playerKey].seasons[i].division;
+			let division = players[playerKey].divisions[i];
 			let tier = division.charAt(0);
 			//standings
 			let title = `<a href="past_standings/season${season}?div=${division}"> S${season}</a> ${division} Division`;

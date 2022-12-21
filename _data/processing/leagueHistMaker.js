@@ -28,9 +28,10 @@ for (const seasonKey in hist) {
 		if (div == "season") {continue;}
 		for (const player in hist[seasonKey][div].members) {
 			if (players[player.toLowerCase()]) {
-				players[player.toLowerCase()].seasons.push({"season": seasonKey.slice(1), "division": div});
+				players[player.toLowerCase()].seasons.push(seasonKey.slice(1));
+				players[player.toLowerCase()].divisions.push(div);
 			} else {
-				players[player.toLowerCase()] = {"name": player, "seasons": [{"season": seasonKey.slice(1), "division": div}]};
+				players[player.toLowerCase()] = {"name": player, "seasons": [seasonKey.slice(1)], "divisions": [div]};
 			}
 		}
 	}

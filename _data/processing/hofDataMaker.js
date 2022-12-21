@@ -43,9 +43,9 @@ for (playerKey in players) {
 		"promote": {"current": {"count": 0, "start": Infinity, "end": Infinity}}
 	};
 	for (let i = players[playerKey].seasons.length - 1; i >= 0; i--) {
-		let season = players[playerKey].seasons[i].season;
+		let season = players[playerKey].seasons[i];
 		let seasonKey = "s" + season;
-		let division = players[playerKey].seasons[i].division;
+		let division = players[playerKey].divisions[i];
 		let tier = division.charAt(0);
 		totalWins += leagueHist[seasonKey][division].by_player[player].wins;
 		totalLosses += leagueHist[seasonKey][division].by_player[player].losses;
