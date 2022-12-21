@@ -63,6 +63,7 @@ Arskaboii	aarnii
 Egor Kulikov	Kroge
 EgorK	Kroge
 Maleficent6	Java Rat
+Alan Malloy	amalloy
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
