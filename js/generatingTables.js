@@ -6,6 +6,33 @@ var noLink = false;
 var oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]},"51":{"J":["H",null]}};
 var testing = false;
 /* Helper functions */
+function decompactDivision(name, cDiv) {
+	var out = {"name": name, "tier": name.charAt(0), "complete?": "Yes", "late drops": cDiv.drops, "members": {}, "by_player": {}};
+	for (let i=0; i<cDiv.members.length; i++) {
+		let pname = cDiv.members[i];
+		out.members[pname] = {"name": pname, "rank": cDiv.ranks[i], "tiebreaker": cDiv.tbs[i], "next tier": cDiv.nexts[i], "returning": cDiv.returnings[i], "drop": cDiv.drops.includes(pname) ? "Yes" : "No"};
+		out.members[pname].wins = cDiv.grid[i].map(x => x[0]).reduce((a, b) => a + b, 0);
+		out.members[pname].losses = cDiv.grid[i].map(x => x[1]).reduce((a, b) => a + b, 0);
+		out.members[pname].pct = Math.round(100*out.members[pname].wins/(out.members[pname].wins + out.members[pname].losses)) + "%";
+		out.members[pname].color = matchColor(out.members[pname].wins, out.members[pname].wins + out.members[pname].losses);
+		out.members[pname].wins = out.members[pname].wins.toFixed(1).replace(".0", "");
+		out.members[pname].losses = out.members[pname].losses.toFixed(1).replace(".0", "");
+		out.members[pname].wins_wdrop = cDiv.grid[i].filter((x,j) => i != j).map(x => x[0]).reduce((a, b) => a + b, 0);
+		out.members[pname].losses_wdrop = cDiv.grid[i].filter((x,j) => i != j).map(x => x[1]).reduce((a, b) => a + b, 0);
+		out.members[pname].games_wdrop = out.members[pname].wins_wdrop + out.members[pname].losses_wdrop;
+		out.members[pname].wins_nondrop = cDiv.grid[i].filter((x,j) => i != j && !(cDiv.members[j] in cDiv.drops)).map(x => x[0]).reduce((a, b) => a + b, 0);
+		out.members[pname].losses_nondrop = cDiv.grid[i].filter((x,j) => i != j && !(cDiv.members[j] in cDiv.drops)).map(x => x[1]).reduce((a, b) => a + b, 0);
+		out.members[pname].games_nondrop = out.members[pname].wins_nondrop + out.members[pname].losses_nondrop;
+		out.by_player[pname] = {"wins": out.members[pname].wins_wdrop, "losses": out.members[pname].losses_wdrop, "wins_nondrop": out.members[pname].wins_nondrop, "losses_nondrop": out.members[pname].losses_nondrop, "games_nondrop": out.members[pname].games_nondrop};
+		for (let j=0; j<cDiv.members.length; j++) {
+			if (i == j || cDiv.grid[i][j][0] + cDiv.grid[i][j][1] == 0) {continue;}
+			let oname = cDiv.members[j];
+			out.by_player[pname][oname] = {"wins": cDiv.grid[i][j][0], "losses": cDiv.grid[i][j][1], "complete": (cDiv.grid[i][j][0] + cDiv.grid[i][j][1] >= 6) ? "Yes" : "No", "sessions": 1}
+		}
+	}
+	return out;
+}
+
 function formatDbLink(playerName, className, drop = "No"){
 	var champion_sym = " <img src=\"/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
 	var link = noLink ? `<span class = "${className}">${playerName}</span>`: `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;

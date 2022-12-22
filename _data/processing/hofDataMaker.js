@@ -30,6 +30,32 @@ var allStats = [];
 var allStreaks = {"played": [], "nondem": [], "promote": []};
 const notPlayers = ["games_nondrop","losses","losses_nondrop","wins","wins_nondrop"];
 
+function decompactDivision(name, cDiv) {
+	var out = {"name": name, "tier": name.charAt(0), "complete?": "Yes", "late drops": cDiv.drops, "members": {}, "by_player": {}};
+	for (let i=0; i<cDiv.members.length; i++) {
+		let pname = cDiv.members[i];
+		out.members[pname] = {"name": pname, "rank": cDiv.ranks[i], "tiebreaker": cDiv.tbs[i], "next tier": cDiv.nexts[i], "returning": cDiv.returnings[i], "drop": cDiv.drops.includes(pname) ? "Yes" : "No"};
+		out.members[pname].wins = cDiv.grid[i].map(x => x[0]).reduce((a, b) => a + b, 0);
+		out.members[pname].losses = cDiv.grid[i].map(x => x[1]).reduce((a, b) => a + b, 0);
+		out.members[pname].pct = Math.round(100*out.members[pname].wins/(out.members[pname].wins + out.members[pname].losses)) + "%";
+		out.members[pname].wins = out.members[pname].wins.toFixed(1).replace(".0", "");
+		out.members[pname].losses = out.members[pname].losses.toFixed(1).replace(".0", "");
+		out.members[pname].wins_wdrop = cDiv.grid[i].filter((x,j) => i != j).map(x => x[0]).reduce((a, b) => a + b, 0);
+		out.members[pname].losses_wdrop = cDiv.grid[i].filter((x,j) => i != j).map(x => x[1]).reduce((a, b) => a + b, 0);
+		out.members[pname].games_wdrop = out.members[pname].wins_wdrop + out.members[pname].losses_wdrop;
+		out.members[pname].wins_nondrop = cDiv.grid[i].filter((x,j) => i != j && !(cDiv.members[j] in cDiv.drops)).map(x => x[0]).reduce((a, b) => a + b, 0);
+		out.members[pname].losses_nondrop = cDiv.grid[i].filter((x,j) => i != j && !(cDiv.members[j] in cDiv.drops)).map(x => x[1]).reduce((a, b) => a + b, 0);
+		out.members[pname].games_nondrop = out.members[pname].wins_nondrop + out.members[pname].losses_nondrop;
+		out.by_player[pname] = {"wins": out.members[pname].wins_wdrop, "losses": out.members[pname].losses_wdrop, "wins_nondrop": out.members[pname].wins_nondrop, "losses_nondrop": out.members[pname].losses_nondrop, "games_nondrop": out.members[pname].games_nondrop};
+		for (let j=0; j<cDiv.members.length; j++) {
+			if (i == j || cDiv.grid[i][j][0] + cDiv.grid[i][j][1] == 0) {continue;}
+			let oname = cDiv.members[j];
+			out.by_player[pname][oname] = {"wins": cDiv.grid[i][j][0], "losses": cDiv.grid[i][j][1], "complete": (cDiv.grid[i][j][0] + cDiv.grid[i][j][1] >= 6) ? "Yes" : "No", "sessions": 1}
+		}
+	}
+	return out;
+}
+
 for (playerKey in players) {
 	let player = players[playerKey].name;
 	console.log(player);
@@ -43,26 +69,27 @@ for (playerKey in players) {
 		"promote": {"current": {"count": 0, "start": Infinity, "end": Infinity}}
 	};
 	for (let i = players[playerKey].seasons.length - 1; i >= 0; i--) {
-		let season = players[playerKey].seasons[i].season;
+		let season = players[playerKey].seasons[i];
 		let seasonKey = "s" + season;
-		let division = players[playerKey].seasons[i].division;
+		let division = players[playerKey].divisions[i];
+		let divisionData = decompactDivision(division, leagueHist[seasonKey][division]);
 		let tier = division.charAt(0);
-		totalWins += leagueHist[seasonKey][division].by_player[player].wins;
-		totalLosses += leagueHist[seasonKey][division].by_player[player].losses;
+		totalWins += divisionData.by_player[player].wins;
+		totalLosses += divisionData.by_player[player].losses;
 		//stats
 		if (tiersPlayed[tier]) {
 			tiersPlayed[tier].seasons.push(season);
-			tiersPlayed[tier].wins += leagueHist[seasonKey][division].by_player[player].wins;
-			tiersPlayed[tier].losses += leagueHist[seasonKey][division].by_player[player].losses;
-			let seaspct = leagueHist[seasonKey][division].by_player[player].wins/(leagueHist[seasonKey][division].by_player[player].wins + leagueHist[seasonKey][division].by_player[player].losses);
+			tiersPlayed[tier].wins += divisionData.by_player[player].wins;
+			tiersPlayed[tier].losses += divisionData.by_player[player].losses;
+			let seaspct = divisionData.by_player[player].wins/(divisionData.by_player[player].wins + divisionData.by_player[player].losses);
 			if (seaspct >= tiersPlayed[tier].best.pct) {
 				tiersPlayed[tier].best = {"season": season, "pct": seaspct};
 			}
 		} else {
-			tiersPlayed[tier] = {"seasons": [season], "wins": leagueHist[seasonKey][division].by_player[player].wins, "losses": leagueHist[seasonKey][division].by_player[player].losses};
+			tiersPlayed[tier] = {"seasons": [season], "wins": divisionData.by_player[player].wins, "losses": divisionData.by_player[player].losses};
 			tiersPlayed[tier].best = {"season": season, "pct": tiersPlayed[tier].wins/(tiersPlayed[tier].wins + tiersPlayed[tier].losses)};
 		}
-		if (leagueHist[seasonKey][division].members[player].rank == 1) {
+		if (divisionData.members[player].rank == 1) {
 			stats.divWins.push(season);
 		}
 		if (streaks.played.current.start == Number(season) + 1) {
@@ -74,14 +101,14 @@ for (playerKey in players) {
 		}
 		let promotion = false;
 		let demotion = false;
-		let next_tier = leagueHist[seasonKey][division].members[player]["next tier"];
+		let next_tier = divisionData.members[player]["next tier"];
 		if (oddSchemes[season] && oddSchemes[season][tier]) {
 			if (next_tier == oddSchemes[season][tier][0]) {
 				promotion = true;
 			} else if (next_tier == oddSchemes[season][tier][1]) {
 				demotion = true;
 			}
-		} else if (((next_tier < tier) || (playerKey == champions.seasons[season])) && (leagueHist[seasonKey][division].members[player].drop == "No")) {
+		} else if (((next_tier < tier) || (playerKey == champions.seasons[season])) && (divisionData.members[player].drop == "No")) {
 			promotion = true;
 		} else if (next_tier > tier) {
 			demotion = true;
@@ -105,12 +132,12 @@ for (playerKey in players) {
 			}
 		}
 		//versus (and some stats)
-		for (opp in leagueHist[seasonKey][division].by_player[player]) {
+		for (opp in divisionData.by_player[player]) {
 			if (!notPlayers.includes(opp)) {
 				stats.opponents.push(opp);
-				if (leagueHist[seasonKey][division].by_player[player][opp].wins >= 5) {
+				if (divisionData.by_player[player][opp].wins >= 5) {
 					stats.five += 1;
-					if (leagueHist[seasonKey][division].by_player[player][opp].wins == 6) {
+					if (divisionData.by_player[player][opp].wins == 6) {
 						stats.six += 1;
 					}
 				}
@@ -142,7 +169,7 @@ out['div-wins'] = allStats.sort((a,b) => b.divWins.length - a.divWins.length).sl
 out['win-pct'] = allStats.sort((a,b) => b.pct - a.pct).slice(0,30).map(k => {return {"player": k.player, "num": k.pct, "disp": Math.round(100*k.pct) + "%"}});
 out['sixes'] = allStats.sort((a,b) => b.six - a.six).slice(0,30).map(k => {return {"player": k.player, "num": k.six, "disp": String(k.six)}});
 out['opponents'] = allStats.sort((a,b) => b.opponents - a.opponents).slice(0,30).map(k => {return {"player": k.player, "num": k.opponents, "disp": String(k.opponents)}});
-out['seasons'] = allStats.sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons.map(l => l.season)}});
+out['seasons'] = allStats.sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons}});
 
 out['a-seasons'] = allTiers["A"].sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons}});
 out['tier-record'] = Object.keys(allTiers).map(key => {return {"tier": key, "best-pct": allTiers[key].sort((a,b) => b.pct - a.pct).slice(0,3)}});
