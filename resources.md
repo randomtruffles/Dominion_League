@@ -31,6 +31,7 @@ The current rulebooks for each Dominion set are linked below. See below for some
 * [Dominion: Renaissance](/img/uploads/12-renaissance-rulebook.pdf)
 * [Dominion: Menagerie](/img/uploads/13-menagerie-rulebook.pdf)
 * [Dominion: Allies](/img/uploads/14-allies-rulebook.pdf)
+* [Dominion: Plunder](/img/uploads/15-plunder-rulebook.pdf)
 
 There is no official rulebook for the promo cards (Envoy, Black Market, Stash, Walled Village, Governor, Prince, Summon, Sauna/Avanto, Dismantle, Church, and Captain).
 
