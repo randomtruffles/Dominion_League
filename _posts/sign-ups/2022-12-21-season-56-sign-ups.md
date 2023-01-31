@@ -6,7 +6,7 @@ author: tracer
 layout: simple_post
 categories: signups
 ---
-**Season 56** will run from Monday, February 6, until Sunday, March 19, and you can sign up until **Sunday, January 29 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 56** will run from Monday, February 6 until Sunday, March 19 and ~~you can sign up until Sunday, January 29 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Friday, February 17 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
@@ -23,7 +23,7 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
-**NOTE:** Season 55 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+**NOTE:** Season 55 players should **not** use this signup form and should instead contact a moderator for further instructions.
 <br>
 
 <div class="sheets">
@@ -34,7 +34,7 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 Sign-ups and Counts are listed below (it may take a few seconds to load).
 <br>
-Tiers are tentative. Counts for returning players may be a bit off before the season ends.
+Tiers are tentative. Counts for returning players may be a bit off before the season ends."
 
 <div class="sheets">
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRsusbaO8vHA3zPvoSFY23SvgKBLK7wFHZcJHBGoIaPFaBCjn2gNYu0ZGMrGYGyeNUo-sebGVfTlKDb/pubhtml" height="500" width="100%">Loading...</iframe>
