@@ -64,6 +64,8 @@ Egor Kulikov	Kroge
 EgorK	Kroge
 Maleficent6	Java Rat
 Alan Malloy	amalloy
+Count Lorn	Madmartigan
+Kelak1	MeadMonkey
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
