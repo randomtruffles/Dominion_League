@@ -441,7 +441,7 @@ Games played for other tournaments may not be counted as Dominion League games.
 
 If one of your close friends or family members is in your division, please schedule that match to happen early in the season, to eliminate any temptation for collusion.
 
-<a name="6.1.1"></a>6.1.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions.
+<a name="6.1.1"></a>6.1.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions. Note that in higher tiers, we are less likely to be able to accommodate your request.
 
 ### <a name="6.2"></a>6.2. Deadlines
 
