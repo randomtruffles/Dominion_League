@@ -267,7 +267,7 @@ If you and your opponent both have the same card or landscape on their lists, th
 
 #### How do I set the cardlists at my table?
 
-If you haven't already, click "Select Kingdom Cards" to bring up the advanced Kingdom Options panel, then click outside of the "Select Cards" overlay to dismiss it. The "Respected Cards" setting has one button each for "Liked", "Disliked", and "Banned". By default, "Liked" is off and "Disliked" and "Banned" are on.
+You can find the "Respected Cards" setting under "Kingdom Options". The "Respected Cards" setting has one button each for "Liked", "Disliked", and "Banned". By default, "Liked" is off and "Disliked" and "Banned" are on.
 
 #### How do I set the starting player at my table?
 
