@@ -387,7 +387,7 @@ In order to fill open spots in a tier created by players leaving the League betw
 
 <a name="5.5.2"></a>5.5.2. Players who tied are considered to have finished in the best tied place for free promotion eligibility.
 
-<a name="5.5.3"></a>5.5.3. If there at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
+<a name="5.5.3"></a>5.5.3. If there are at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
 
 <a name="5.5.4"></a>5.5.4. If the target tier is in tiers A through E, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators arrange play-in matches between eligible players. The format for these matches is specified in [4.16](#4.16).
 
