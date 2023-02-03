@@ -220,21 +220,17 @@ The following settings are set by default when you create a new table on Dominio
 
 By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
 
-<a name="4.7.1"></a>4.7.1. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
+<a name="4.7.1"></a>4.7.1. You may use the expansion toggles to only allow cards from certain expansions.
 
-<a name="4.7.2"></a>4.7.2. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
+<a name="4.7.2"></a>4.7.2. You may use the card buttons at the top to require cards from certain expansions.
 
-#### <a name="4.7.3"></a>4.7.3. Kingdom Options
+<a name="4.7.3"></a>4.7.3. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
 
-Under "Kingdom Options", you may agree to...
+<a name="4.7.4"></a>4.7.4. You may change the Card Pool Level.
 
-<a name="4.7.3.1"></a>4.7.3.1. Use the expansion toggles to only allow cards from certain expansions.
+<a name="4.7.5"></a>4.7.5. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
 
-<a name="4.7.3.2"></a>4.7.3.2. Use the card buttons at the top to require cards from certain expansions.
-
-<a name="4.7.3.3"></a>4.7.3.3. Specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
-
-<a name="4.7.3.4"></a>4.7.3.4. Change the Card Pool Level.
+<a name="4.7.6"></a>4.7.6. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
 ### <a name="4.8"></a>4.8. New cards
 
