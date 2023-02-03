@@ -433,6 +433,10 @@ After the normal matches of A1 are complete, the players in first place and seco
 
 <a name="5.7.4"></a>5.7.4. The date and time of the Championship Match should be decided with sufficient time for the League to find commentators and advertise the match.
 
+### <a name="5.8"></a>5.8. Other tournaments
+
+<a name="5.8.1"></a>5.8.1. Games played for other tournaments may not be counted as Dominion League games.
+
 ## <a name="6"></a>6. Scheduling
 
 ### <a name="6.1"></a>6.1. Conflicts of interest
