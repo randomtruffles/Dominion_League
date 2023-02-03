@@ -435,7 +435,7 @@ After the normal matches of A1 are complete, the players in first place and seco
 
 ### <a name="5.8"></a>5.8. Other tournaments
 
-<a name="5.8.1"></a>5.8.1. Games played for other tournaments may not be counted as Dominion League games.
+Games played for other tournaments may not be counted as Dominion League games.
 
 ## <a name="6"></a>6. Scheduling
 
