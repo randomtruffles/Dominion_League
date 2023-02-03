@@ -45,6 +45,8 @@ If you meet all the requirements per [1.1](#1.1) and are not playing in the curr
 
 <a name="1.2.1"></a>1.2.1. After the sign-up deadline passes, you may still sign up for the waiting list. If spots open up during the early weeks of a season, moderators may fill them with players from the waiting list, depending on skill and time zone. Players who have dropped from the current season may not re-enter via the wait list.
 
+<a name="1.2.2"></a>1.2.2. If you have previously played in the Dominion League under a different account than the one you're signing up with, let a moderator know.
+
 ### <a name="1.3"></a>1.3. Returning
 
 If you are playing in the current season and would like to join the next season, fill out the Returning Form linked in your division’s Discord channel. Otherwise, you will by default leave the League after the current season.
