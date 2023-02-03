@@ -387,7 +387,7 @@ In order to fill open spots in a tier created by players leaving the League betw
 
 <a name="5.5.4"></a>5.5.4. If the target tier is in tiers A through E, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators arrange play-in matches between eligible players. The format for these matches is specified in [4.16](#4.16).
 
-<a name="5.5.5"></a>5.5.5. Depending on the number of slots and eligible players in [5.5.4](#5.5.4), some players may receive a free promotion while others play a play-in match. Players are ordered by their win percentage from the previous season for determining priority.
+<a name="5.5.5"></a>5.5.5. Depending on the number of slots and eligible players in [5.5.4](#5.5.4), eligible players may receive a free promotion, play a play-in match, or neither. Players are ordered by their win percentage from the previous season for determining priority, with ties broken randomly.
 
 <a name="5.5.6"></a>5.5.6. If the target tier is tier F or below, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators choose players for free promotions at their discretion, taking into account the players' time zones and win percentages in the previous season.
 
