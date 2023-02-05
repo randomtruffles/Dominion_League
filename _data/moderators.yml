@@ -12,6 +12,9 @@
 - name: amoffett11
   discord: amoffett11#8778
   image: amoffett11
+- name: avi.arfin
+  discord: avi#7124
+  image: avi
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -20,9 +23,9 @@
   discord: crlundy#0018
   image: crlundy
   chair: Sheets
-- name: DomBot
-  discord: DomBot#0234
-  image: dombot
+#- name: DomBot
+#  discord: DomBot#0234
+#  image: dombot
 - name: Earl
   discord: Earl#3402
   image: earl
@@ -30,9 +33,9 @@
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-- name: LeagueLackey
-  discord: LeagueLackey#6269
-  image: lackey
+#- name: LeagueLackey
+#  discord: LeagueLackey#6269
+#  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
@@ -50,6 +53,9 @@
   discord: Rozyroz#7547
   image: Rozyroz
   chair: Outreach
+- name: saltroza
+  discord: ejd#7555
+  image: saltroza
 - name: Sharur
   discord: Sharur#7043
   image: sharur
@@ -60,10 +66,14 @@
 - name: snowbz
   discord: snowbz#9320
   image: snowbz
+- name: Theman0613
+  discord: Theman#1324
+  image: theman0613
+  chair: Feedback
 - name: tracer
   discord: tracer#2575
   image: tracer
-  chair: Feedback, Website
+  chair: Website
 - name: wharf_rat
   discord: wharf_rat#8971
   image: wharf_rat
