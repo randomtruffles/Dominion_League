@@ -22,7 +22,7 @@ tiers:
     promoters: 1
     demoters: 2
   F:
-    divisions: 14
+    divisions: 15
     promoters: 1
     demoters: 2
   G:
@@ -34,7 +34,7 @@ tiers:
     promoters: 1
     demoters: 2
   I:
-    divisions: 18
+    divisions: 21
     promoters: 2
     demoters: 0
 
