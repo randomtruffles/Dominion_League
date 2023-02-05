@@ -188,7 +188,7 @@ Each player should go first 3 times in a 6 game match. It is each player's respo
 
 <a name="4.4.3"></a>4.4.3. If the table host makes a mistake in setting starting player, future games should be used to correct the discrepancy as quickly as possible. For example, if player A starts games 1 and 2, player B should start games 3 and 4. This should be done even if it is not possible for one of the players to receive 3 starts. For example, if player A starts games 1 through 4, player B should start games 5 and 6.
 
-<a name="4.4.4"></a>4.4.4. If the table host makes a mistake in setting starting player, and this mistake is caught during an ongoing game that has not reached turn 2, and if one player cannot reach 3 starts using future games per [4.4.3](#4.4.3), either player may request that the game be abandoned. Otherwise, the game must be played out normally.
+<a name="4.4.4"></a>4.4.4. If the table host makes a mistake in setting starting player which is caught during an ongoing game that has not reached turn 2, and if one player cannot reach 3 starts using future games per [4.4.3](#4.4.3), either player may request that the game be abandoned. Otherwise, the game must be played out normally.
 
 <a name="4.4.5"></a>4.4.5. Games cannot be voided after the fact due to a mismatch in starting player counts.
 
