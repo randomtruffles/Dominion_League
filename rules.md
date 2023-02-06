@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2022-08-24
+date: 2023-02-06
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -37,11 +37,15 @@ To join the Dominion League, you must meet all these requirements:
 
 <a name="1.1.6"></a>1.1.6. You are able to commit both the necessary time to play your matches, and the necessary time to coordinate with your opponents via Discord to schedule your matches. Note that while playing your matches will require approximately two hours per week during the season, you will usually need more available time than this, in order to accommodate your opponents' schedules.
 
+<a name="1.1.7"></a>1.1.7. You are not currently suspended (see [7.2](#7.2)).
+
 ### <a name="1.2"></a>1.2. Signing up
 
 If you meet all the requirements per [1.1](#1.1) and are not playing in the current season, you may fill out the [sign-up form](/sign-ups) for the upcoming season. A moderator will review your submission and contact you via Discord. Until they do, your participation is not confirmed.
 
 <a name="1.2.1"></a>1.2.1. After the sign-up deadline passes, you may still sign up for the waiting list. If spots open up during the early weeks of a season, moderators may fill them with players from the waiting list, depending on skill and time zone. Players who have dropped from the current season may not re-enter via the wait list.
+
+<a name="1.2.2"></a>1.2.2. If you have previously played in the Dominion League under a different account than the one you're signing up with, let a moderator know.
 
 ### <a name="1.3"></a>1.3. Returning
 
@@ -184,7 +188,7 @@ Each player should go first 3 times in a 6 game match. It is each player's respo
 
 <a name="4.4.3"></a>4.4.3. If the table host makes a mistake in setting starting player, future games should be used to correct the discrepancy as quickly as possible. For example, if player A starts games 1 and 2, player B should start games 3 and 4. This should be done even if it is not possible for one of the players to receive 3 starts. For example, if player A starts games 1 through 4, player B should start games 5 and 6.
 
-<a name="4.4.4"></a>4.4.4. If the table host makes a mistake in setting starting player, and this mistake is caught during an ongoing game that has not reached turn 2, either player may request that the game be abandoned only if one player cannot reach 3 starts using future games per [4.4.3](#4.4.3). Otherwise, the game must be played out normally.
+<a name="4.4.4"></a>4.4.4. If the table host makes a mistake in setting starting player which is caught during an ongoing game that has not reached turn 2, and if one player cannot reach 3 starts using future games per [4.4.3](#4.4.3), either player may request that the game be abandoned. Otherwise, the game must be played out normally.
 
 <a name="4.4.5"></a>4.4.5. Games cannot be voided after the fact due to a mismatch in starting player counts.
 
@@ -196,7 +200,7 @@ Games played on Dominion Online should use the default table settings provided b
 
 <a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off.
+<a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off (see [4.6.6](#4.6.6) and [4.7.4](#4.7.4) for more information about the Card Pool Level).
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
@@ -212,7 +216,7 @@ The following settings are set by default when you create a new table on Dominio
 
 <a name="4.6.5"></a>4.6.5. "Show VP counter" should be on.
 
-<a name="4.6.6"></a>4.6.6. "Card Pool Level" should be set to 10.
+<a name="4.6.6"></a>4.6.6. "Card Pool Level" should be set to the highest possible value. This will be 10 if at least one player has a Complete subscription. Otherwise, it will be 5 if at least one player has a Core subscription. If neither player has a subscription, it will be 1.
 
 <a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies are not considered landscapes, so this can result in kingdoms with up to two landscapes plus an Ally if a Liaison is present.
 
@@ -220,21 +224,17 @@ The following settings are set by default when you create a new table on Dominio
 
 By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
 
-<a name="4.7.1"></a>4.7.1. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
+<a name="4.7.1"></a>4.7.1. You may use the expansion toggles to exclude certain expansions.
 
-<a name="4.7.2"></a>4.7.2. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
+<a name="4.7.2"></a>4.7.2. You may use the card buttons at the top to require cards from certain expansions.
 
-#### <a name="4.7.3"></a>4.7.3. Kingdom Options
+<a name="4.7.3"></a>4.7.3. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
 
-Under "Kingdom Options", you may agree to...
+<a name="4.7.4"></a>4.7.4. You may change the Card Pool Level.
 
-<a name="4.7.3.1"></a>4.7.3.1. Use the expansion toggles to only allow cards from certain expansions.
+<a name="4.7.5"></a>4.7.5. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
 
-<a name="4.7.3.2"></a>4.7.3.2. Use the card buttons at the top to require cards from certain expansions.
-
-<a name="4.7.3.3"></a>4.7.3.3. Specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
-
-<a name="4.7.3.4"></a>4.7.3.4. Change the Card Pool Level.
+<a name="4.7.6"></a>4.7.6. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
 ### <a name="4.8"></a>4.8. New cards
 
@@ -387,11 +387,11 @@ In order to fill open spots in a tier created by players leaving the League betw
 
 <a name="5.5.2"></a>5.5.2. Players who tied are considered to have finished in the best tied place for free promotion eligibility.
 
-<a name="5.5.3"></a>5.5.3. If there at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
+<a name="5.5.3"></a>5.5.3. If there are at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
 
 <a name="5.5.4"></a>5.5.4. If the target tier is in tiers A through E, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators arrange play-in matches between eligible players. The format for these matches is specified in [4.16](#4.16).
 
-<a name="5.5.5"></a>5.5.5. Depending on the number of slots and eligible players in [5.5.4](#5.5.4), some players may receive a free promotion while others play a play-in match. Players are ordered by their win percentage from the previous season for determining priority.
+<a name="5.5.5"></a>5.5.5. Depending on the number of slots and eligible players in [5.5.4](#5.5.4), eligible players may receive a free promotion, play a play-in match, or neither. Players are ordered by their win percentage from the previous season for determining priority, with ties broken randomly.
 
 <a name="5.5.6"></a>5.5.6. If the target tier is tier F or below, and there are fewer open slots in the target tier than eligible players in the highest priority group remaining, the moderators choose players for free promotions at their discretion, taking into account the players' time zones and win percentages in the previous season.
 
@@ -433,17 +433,21 @@ After the normal matches of A1 are complete, the players in first place and seco
 
 <a name="5.7.4"></a>5.7.4. The date and time of the Championship Match should be decided with sufficient time for the League to find commentators and advertise the match.
 
+### <a name="5.8"></a>5.8. Other tournaments
+
+Games played for other tournaments may not be counted as Dominion League games.
+
 ## <a name="6"></a>6. Scheduling
 
 ### <a name="6.1"></a>6.1. Conflicts of interest
 
 If one of your close friends or family members is in your division, please schedule that match to happen early in the season, to eliminate any temptation for collusion.
 
-<a name="6.1.1"></a>6.1.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions.
+<a name="6.1.1"></a>6.1.1. If you prefer to avoid this, let a moderator know before the season starts, and the League will try to place you in different divisions. Note that in higher tiers, we are less likely to be able to accommodate your request.
 
 ### <a name="6.2"></a>6.2. Deadlines
 
-In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC. We encourage players to stay well ahead of these deadlines - they are not the expected pace. We also encourage players to add their scheduled matches to the [League calendar form](/calendar/form), as this makes it easier for both the moderators and our automated systems to track scheduling progress.
+In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC. We encourage players to stay well ahead of these deadlines - they are not a suggested pace, but the absolute minimum expected. For the purpose of meeting these benchmarks, all scheduled matches must be added to the [League calendar form](/calendar/form), as this makes it easier for both the moderators and our automated systems to track scheduling progress.
 
 <a name="6.2.1"></a>6.2.1. At the end of the first week of the season, players who have not checked in to their division may be replaced by players from the waiting list.
 
