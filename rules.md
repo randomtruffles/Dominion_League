@@ -224,7 +224,7 @@ The following settings are set by default when you create a new table on Dominio
 
 By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
 
-<a name="4.7.1"></a>4.7.1. You may use the expansion toggles to only allow cards from certain expansions.
+<a name="4.7.1"></a>4.7.1. You may use the expansion toggles to exclude certain expansions.
 
 <a name="4.7.2"></a>4.7.2. You may use the card buttons at the top to require cards from certain expansions.
 
