@@ -447,7 +447,7 @@ If one of your close friends or family members is in your division, please sched
 
 ### <a name="6.2"></a>6.2. Deadlines
 
-In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC. We encourage players to stay well ahead of these deadlines - they are not a suggested pace, but the absolute minimum expected. For the purpose of meeting these benchmarks, all scheduled matches must be added to the [League calendar form](/calendar/form), as this makes it easier for both the moderators and our automated systems to track scheduling progress.
+In order to ensure that matches are completed in a timely fashion, players must meet a number of deadlines throughout the season. All deadlines are on Sundays at 23:59 UTC. We encourage players to stay well ahead of these deadlines - they are not a suggested pace, but the absolute minimum expected. For the purpose of meeting these benchmarks, all scheduled matches must be added to the League calendar via either the [League calendar form](/calendar/form) or the [general calendar form](https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/viewform) (note that you need to specify that the match is a League match on this form), as this makes it easier for both the moderators and our automated systems to track scheduling progress.
 
 <a name="6.2.1"></a>6.2.1. At the end of the first week of the season, players who have not checked in to their division may be replaced by players from the waiting list.
 
