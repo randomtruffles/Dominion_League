@@ -11,11 +11,9 @@ Good luck and have fun!
 
 **M﻿oderator Updates**
 
-
-
 Last season's call for moderators brought us numerous applications from outstanding candidates. From those, we welcome three new members to the Moderator team: avi.arfin, saltroza, and Theman0613. Each of them has hit the ground running, bringing new energy, fresh ideas, and are learning the ins and outs of the league infrastructure. Players and mods alike will benefit from their contributions to the League community. 
 
-In addition to the growth of the team, we have a new Feedback Chair. tracer will be passing the torch to Theman0613. I would like to take a moment to recognize tracer's hard work and dedication to the position. He took over in Season 48, and in that time led many successful League Town Halls, set up league exhibition matches, read and summarized every Feedback form response, and revamped our system for identifying where players will be most successful with regards to their time zone grouping for divisions. Thank you for your service and everything you have done to make everyone's experience better! (edited)
+In addition to the growth of the team, we have a new Feedback Chair. tracer will be passing the torch to Theman0613. I would like to take a moment to recognize tracer's hard work and dedication to the position. He took over in Season 48, and in that time led many successful League Town Halls, set up league exhibition matches, read and summarized every Feedback form response, and revamped our system for identifying where players will be most successful with regards to their time zone grouping for divisions. Thank you for your service and everything you have done to make everyone's experience better!
 
 **B﻿enchmarks**
 
@@ -28,6 +26,4 @@ A number of suggestions were made during the discussion. One idea that was broug
 On the Season 55 Returning Form, we asked players about how long they would like seasons to be. 66% of players, including at least 60% in each tier, were in favor of keeping the status quo of six week seasons. With the majority of players wanting to keep things the same, and with little to no push for other rules changes, we've only made the following changes heading into Season 56:
 
 1. Matches played for other tournaments cannot also be counted as League matches. This change was made for two reasons. First, some tournaments are set up to use kingdoms curated in in a way inconsistent with league rules. Rather than complicate the rules by allowing a subset of tournaments to be allowed and others not, we're going with the simpler approach. Second, situations could arise where there are differing incentives for the outcome of a game. For example, a player could be in a situation in which taking a tie guarantees that they will advance to the next round in one tournament, whereas they would be better off playing for the win in the other.
-
-
 2. For a match to count towards reaching a given benchmark, it will be required to be on the League Calendar. This will make it easier for Moderators to track progress towards the benchmarks and adds an extra layer of accountability for players. If you're already ahead of or meeting the next benchmark, matches will be encouraged to be added to the calendar, but not required. A link to a shortened version of the Calendar Form specific to your division can be found in the opening message pinned in your division channel.
