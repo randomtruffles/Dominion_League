@@ -20,8 +20,8 @@ function decompactDivision(name, cDiv) {
 		out.members[pname].wins_wdrop = cDiv.grid[i].filter((x,j) => i != j).map(x => x[0]).reduce((a, b) => a + b, 0);
 		out.members[pname].losses_wdrop = cDiv.grid[i].filter((x,j) => i != j).map(x => x[1]).reduce((a, b) => a + b, 0);
 		out.members[pname].games_wdrop = out.members[pname].wins_wdrop + out.members[pname].losses_wdrop;
-		out.members[pname].wins_nondrop = cDiv.grid[i].filter((x,j) => i != j && !(cDiv.members[j] in cDiv.drops)).map(x => x[0]).reduce((a, b) => a + b, 0);
-		out.members[pname].losses_nondrop = cDiv.grid[i].filter((x,j) => i != j && !(cDiv.members[j] in cDiv.drops)).map(x => x[1]).reduce((a, b) => a + b, 0);
+		out.members[pname].wins_nondrop = cDiv.grid[i].filter((x,j) => i != j && !cDiv.drops.includes(cDiv.members[j])).map(x => x[0]).reduce((a, b) => a + b, 0);
+		out.members[pname].losses_nondrop = cDiv.grid[i].filter((x,j) => i != j && !cDiv.drops.includes(cDiv.members[j])).map(x => x[1]).reduce((a, b) => a + b, 0);
 		out.members[pname].games_nondrop = out.members[pname].wins_nondrop + out.members[pname].losses_nondrop;
 		out.by_player[pname] = {"wins": out.members[pname].wins_wdrop, "losses": out.members[pname].losses_wdrop, "wins_nondrop": out.members[pname].wins_nondrop, "losses_nondrop": out.members[pname].losses_nondrop, "games_nondrop": out.members[pname].games_nondrop};
 		for (let j=0; j<cDiv.members.length; j++) {
