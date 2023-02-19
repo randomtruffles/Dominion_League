@@ -866,7 +866,7 @@ function genGrid(data, drops, sorted) {
 				cell.style.backgroundColor = "gray";
 			} else if (opponent in data[playerName]){
 				cell.innerHTML = data[playerName][opponent]["wins"];
-				cell.style.backgroundColor = matchColor(data[playerName][opponent]["wins"], data[playerName][opponent]["wins"] + data[playerName][opponent]["losses"]);
+				cell.style.backgroundColor = matchColor((data[playerName][opponent]["wins"] + 6 - data[playerName][opponent]["losses"])/2, 6);
 			} else if (drops.includes(opponent)) {
 				//cell.classList.add("crossed");
 			} else if (drops.includes(playerName)) {
