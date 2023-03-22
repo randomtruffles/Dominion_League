@@ -66,6 +66,7 @@ Maleficent6	Java Rat
 Alan Malloy	amalloy
 Count Lorn	Prince of Thieves
 Kelak1	MeadMonkey
+nasmith99	VRSmith
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
