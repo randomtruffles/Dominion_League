@@ -112,3 +112,5 @@ arcanummage	ArcanumMage
 cromulus	Cromulus
 reza70	Reza70
 fiddler25	Fiddler25
+rockitman	rockitman
+hammerson66	Hammerson66
