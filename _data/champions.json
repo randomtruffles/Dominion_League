@@ -54,7 +54,8 @@
 	"52": "cider01",
 	"53": "mic qsenoch",
 	"54": "vrsmith",
-	"55": "kazumaru0828"
+	"55": "kazumaru0828",
+  "56": "vrsmith"
   },
   "runner_ups": {
     "1": "stef",
@@ -111,7 +112,8 @@
 	"52": "mic qsenoch",
 	"53": "kazumaru0828",
 	"54": "mic qsenoch",
-	"55": "jnails"
+	"55": "jnails",
+  "56": "yurikamome"
   },
   "players": {
     "mic qsenoch": [
@@ -179,7 +181,8 @@
 	  "47",
 	  "48",
 	  "49",
-	  "54"
+	  "54",
+    "56"
     ],
 	"crabcat2": [
 	  "44"
@@ -295,6 +298,9 @@
 	],
 	"kazumaru0828": [
 	  "53"
-	]
+	],
+  "yurikamome": [
+    "56"
+  ]
   }
 }
