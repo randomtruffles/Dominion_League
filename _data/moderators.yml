@@ -33,15 +33,12 @@
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-#- name: LeagueLackey
-#  discord: LeagueLackey#6269
-#  image: lackey
+- name: LeagueLackey
+  discord: LeagueLackey#6269
+  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
-- name: muenstercheese
-  discord: SkyHawk#1058
-  image: muenstercheese
 - name: Naesala
   discord: Naesala#1312
   image: naesala
