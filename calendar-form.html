@@ -118,6 +118,7 @@ function loadPage() {
 	
 	document.getElementById("localTimeZone").innerHTML = "Local Time (UTC" + (utcOffset > 0 ? "\u2212" : "+") + offsetHours + ":" + "0".repeat(2-offsetMinutes.length) + offsetMinutes +")";
 	
+	date.oninput = updateUrl;
 	date.onblur = updateUrl;
 	
 	hours.onInput = updateUrl;
