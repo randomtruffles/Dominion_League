@@ -2869,6 +2869,10 @@ img.hof-champion-trophy {
 	margin: 0px 3px;
 }
 
+.form-option .inline a {
+	color: #000;
+}
+
 .form-option p:first-child, .form-option span:first-child {
 	font-weight: bold;
 }
