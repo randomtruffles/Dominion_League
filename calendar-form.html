@@ -31,11 +31,11 @@ permalink: calendar/form
 		<p>Date and Time</p>
 		<div style="position:relative;top:-6px;">
 			<label for="UTC" class="chartInput inline">
-				<input type="radio" id="UTC" class="chartInput chartRadio" name="timezone" checked="checked">
+				<input type="radio" id="UTC" class="chartInput chartRadio" name="timezone" checked="checked"></input>
 				<span>UTC</span>
 			</label>
 			<label for="localTime" class="chartInput inline">
-				<input type="radio" id="localTime" class="chartInput chartRadio" name="timezone">
+				<input type="radio" id="localTime" class="chartInput chartRadio" name="timezone"></input>
 				<span id="localTimeZone">Local Time</span>
 			</label>
 		</div>
@@ -53,8 +53,8 @@ permalink: calendar/form
 	<div class="form-option">
 		<div></div>
 		<p>If all fields are filled you may add to the calendar directly by clicking "Add to Calendar." Clicking "More Options" will bring you to a longer form pre-filled with the information above where you will have options such as using a different time zone, requesting commentary, and leaving additional comments.</p>
-		<button id="pushout" class="inline">Add to Calendar</button>
-		<button id="prefill" class="inline">More Options</button>
+		<div id="pushout" class="inline" style="display:inline-block;"><button>Add to Calendar</button></div>
+		<div class="inline" style="display:inline-block;"><a id="prefill-anchor" target="_blank"><div><button id="prefill">More Options</button></div></a></div>
 		<p id="submit-verify" style="color:red;"></p>
 	</div>
 	<div>
@@ -104,12 +104,23 @@ function loadPage() {
 	
 	if (selectedDiv in divisions) {updatePlayers(selectedDiv);}
 	
+	user1.addEventListener('change', function(ev) {
+		updateUrl();
+	});
+	
+	user2.addEventListener('change', function(ev) {
+		updateUrl();
+	});
+	
 	let utcOffset = (new Date()).getTimezoneOffset();
 	let offsetHours = String(Math.floor(Math.abs(utcOffset)/60));
 	let offsetMinutes = String(Math.abs(utcOffset)%60);
 	
 	document.getElementById("localTimeZone").innerHTML = "Local Time (UTC" + (utcOffset > 0 ? "\u2212" : "+") + offsetHours + ":" + "0".repeat(2-offsetMinutes.length) + offsetMinutes +")";
 	
+	date.onblur = updateUrl;
+	
+	hours.onInput = updateUrl;
 	hours.onblur = function() {
 		var hourInput = Number(hours.value);
 		if (isNaN(hourInput) || hourInput < 0 || hourInput > 23 || hourInput % 1 || (ampm.value == "PM" && hourInput > 12)) {
@@ -118,7 +129,9 @@ function loadPage() {
 		} else {
 			timeMessage.innerHTML = "";
 		}
+		updateUrl();
 	};
+	minutes.onInput = updateUrl;
 	minutes.onblur = function() {
 		var minuteInput = Number(minutes.value);
 		if (isNaN(minuteInput) || minuteInput < 0 || minuteInput > 59 || minuteInput % 1) {
@@ -127,16 +140,19 @@ function loadPage() {
 		} else {
 			timeMessage.innerHTML = "";
 		}
+		updateUrl();
 	};
 	
 	document.getElementById("UTC").onclick = function() {
 		ampm.style.display = "none";
+		updateUrl();
 	}
 	
 	localTime.onclick = function() {
 		if (/[AP]M/i.test((new Date()).toLocaleTimeString())) {
 			ampm.style.display = "inline";
 		}
+		updateUrl();
 	}
 	
 	ampm.addEventListener('change', function (ev) {
@@ -144,25 +160,16 @@ function loadPage() {
 			timeMessage.innerHTML = "Hours should be an integer between 0 and 12";
 			hours.value = "";
 		}
+		updateUrl();
 	});
+	
+	document.getElementById("prefill-anchor").href = formURL.replace("substituteme", "viewform");
 	
 	document.getElementById("pushout").onclick = function() {
 		var fields = [user1, user2, date, hours];
 		let unfilled = fields.filter(x => x.value == "").map(x => x.name);
 		let unfilledCount = unfilled.length;
-		if (unfilledCount == 0) {
-			let submitURL = formURL.replace("substituteme", "formResponse");
-			submitURL += `&entry.665962030=${user1.value.replace(/ /g, "+")}&entry.933461438=${user2.value.replace(/ /g, "+")}`;
-			if (localTime.checked) {
-				submitURL += `&entry.1984692058=${utcFormString(new Date(date.value + " " + (Number(hours.value) + (ampm.value == "PM" ? 12 : 0)) + ":" + minutes.value))}`;
-			} else {
-				submitURL += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
-			}
-			window.open(submitURL+"&entry.797613395=02:00:00&submit=Submit");
-			submitMessage.innerHTML = "";
-			fields.forEach(x => {x.value = ""});
-		} else {
-			
+		if (unfilledCount > 0) {
 			if (unfilledCount > 2) {
 				unfilled[unfilledCount - 1] = "and " + unfilled[unfilledCount - 1];
 				submitMessage.innerHTML = unfilled.join(", ") + " have not been filled."
@@ -173,26 +180,47 @@ function loadPage() {
 			}
 		}
 	};
-	
-	document.getElementById("prefill").onclick = function() {
-		let prefillURL = formURL.replace("substituteme", "viewform");
-		if (user1.value) {
-			prefillURL += `&entry.665962030=${user1.value.replace(/ /g, "+")}`;
-		}
-		if (user2.value) {
-			prefillURL += `&entry.933461438=${user2.value.replace(/ /g, "+")}`;
-		}
-		if (date.value && hours.value) {
-			if (localTime.checked) {
-				prefillURL += `&entry.1984692058=${utcFormString(new Date(date.value + " " + (Number(hours.value) + (ampm.value == "PM" ? 12 : 0)) + ":" + minutes.value))}`;
-			} else {
-				prefillURL += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
-			}
-		}
-		window.open(prefillURL+"&entry.797613395=02:00:00");
-	};
 }
 
+function updateUrl() {
+	let out = formURL;
+	if (user1.value) {
+		out += `&entry.665962030=${user1.value.replace(/ /g, "+")}`;
+	}
+	if (user2.value) {
+		out += `&entry.933461438=${user2.value.replace(/ /g, "+")}`;
+	}
+	if (date.value && hours.value) {
+		if (localTime.checked) {
+			out += `&entry.1984692058=${utcFormString(new Date(date.value + " " + (Number(hours.value) + (ampm.value == "PM" ? 12 : 0)) + ":" + minutes.value))}`;
+		} else {
+			out += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
+		}
+	}
+	out += "&entry.797613395=02:00:00";
+	
+	document.getElementById("prefill-anchor").href = out.replace("substituteme", "viewform");
+	
+	var fields = [user1, user2, date, hours];
+	let unfilled = fields.filter(x => x.value == "").map(x => x.name);
+	let unfilledCount = unfilled.length;
+	let addButton = document.createElement("button");
+	addButton.appendChild(document.createTextNode("Add to Calendar"));
+	let pushout = document.getElementById("pushout");
+	pushout.innerHTML = "";
+	if (unfilledCount == 0) {
+		let buttonDiv = document.createElement("div");
+		buttonDiv.appendChild(addButton);
+		let buttonLink = document.createElement("a");
+		buttonLink.target = "_blank";
+		buttonLink.href = out.replace("substituteme", "formResponse") + "&submit=Submit";
+		buttonLink.appendChild(buttonDiv);
+		pushout.appendChild(buttonLink);
+	} else {
+		pushout.appendChild(addButton);
+	}
+}	
+	
 function updatePlayers(division) {
 	var members = (division in divisions) ? Object.keys(divisions[division].members).sort((a,b) => a.localeCompare(b, 'en', {'sensitivity': 'base'})) : [];
 	user1.innerHTML = '<option value=""></option>';
@@ -210,7 +238,6 @@ function updatePlayers(division) {
 }
 
 function utcFormString(local) {
-	console.log(local);
 	let utcString = local.getUTCFullYear();
 	let utcMonth = String(local.getUTCMonth() + 1);
 	utcString += "-" + "0".repeat(2-utcMonth.length) + utcMonth;
