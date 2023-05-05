@@ -6,7 +6,7 @@ author: alibby1152
 layout: simple_post
 categories: signups
 ---
-**Season 58** will run from Monday, June 5, until Monday, July 17, and you can sign up until **Sunday, May 28 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 58** will run from Monday, June 5, until Sunday, July 16, and you can sign up until **Sunday, May 28 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
 
 You will need the following in order to sign up:
 
