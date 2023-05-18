@@ -471,7 +471,7 @@ If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), y
 
 <a name="6.3.2"></a>6.3.2. You can only request an extension if you have already met all prior deadlines for that season.
 
-<a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](/rules#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it.
+<a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](/rules#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it. For any other extension request, you must include a plan for how you will catch up to the expected pace of scheduling.
 
 <a name="6.3.4"></a>6.3.4. Extensions only apply to the week they are requested for. If you need another extension for a later week in the season, you will need to make another request.
 
