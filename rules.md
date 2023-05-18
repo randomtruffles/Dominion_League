@@ -467,7 +467,7 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), you must request an extension from your moderator by that deadline.
 
-<a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](/rules#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per ([6.2.7](/rules#6.2.7)).
+<a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](/rules#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per [6.2.7](/rules#6.2.7).
 
 <a name="6.3.2"></a>6.3.2. You can only request an extension if you have already met all prior deadlines for that season.
 
