@@ -467,11 +467,17 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), you must request an extension from your moderator by that deadline.
 
-<a name="6.3.1"></a>6.3.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
+<a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](/rules#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per ([6.2.7](/rules#6.2.7)).
 
-<a name="6.3.2"></a>6.3.2. You must schedule an uncompleted match with your opponent before you can request an extension for it. Provide the date and time to your moderator when you request it.
+<a name="6.3.2"></a>6.3.2. You can only request an extension if you have already met all prior deadlines for that season.
 
-<a name="6.3.3"></a>6.3.3. If the match is not completed during the extension period, or an extension was never requested, you and/or your opponent may be dropped at your moderator’s judgment per [7.1](#7.1).
+<a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](/rules#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it.
+
+<a name="6.3.4"></a>6.3.4. Extensions only apply to the week they are requested for. If you need another extension for a later week in the season, you will need to make another request.
+
+<a name="6.3.5"></a>6.3.5. Though moderators will grant extension requests in most cases, they are not required to do so. In particular, players who abuse the extension system/consistently fail to meet deadlines may be denied extensions.
+
+<a name="6.3.6"></a>6.3.6. Moderators will announce all granted extension requests in the division channel.
 
 ### <a name="6.4"></a>6.4. Difficulty scheduling
 
