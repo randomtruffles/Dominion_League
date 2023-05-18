@@ -469,7 +469,7 @@ If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), y
 
 <a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](/rules#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per [6.2.7](/rules#6.2.7).
 
-<a name="6.3.2"></a>6.3.2. You can only request an extension if you have already met all prior deadlines for that season.
+<a name="6.3.2"></a>6.3.2. You can only request an extension if you are not currently behind on any prior deadlines for the season. Similarly, you cannot request an extension for a deadline that you have already missed.
 
 <a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](/rules#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it. For any other extension request, you must include a plan for how you will catch up to the expected pace of scheduling.
 
