@@ -465,7 +465,7 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 ### <a name="6.3"></a>6.3. Extensions
 
-If you are unable to complete a match by the end of season deadline ([6.2.6](#6.2.6)), you must request an extension from your moderator by that deadline.
+If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), you must request an extension from your moderator by that deadline.
 
 <a name="6.3.1"></a>6.3.1. If you are in tier A, you may request an extension of up to 3 days. In all other tiers, you may request an extension of up to 7 days.
 
