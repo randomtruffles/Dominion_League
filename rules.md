@@ -461,7 +461,7 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 <a name="6.2.6"></a>6.2.6. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having completed 5 matches.
 
-<a name="6.2.7"></a>6.2.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines, though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
+<a name="6.2.7"></a>6.2.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines and do not request an extension (see [6.3](/rules#6.3)), though they may waive the drop and/or the suspension at their discretion due to extenuating circumstances.
 
 ### <a name="6.3"></a>6.3. Extensions
 
