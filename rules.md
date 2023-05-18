@@ -267,7 +267,7 @@ Games in the Dominion League do not user a timer.
 
 ### <a name="4.11"></a>4.11. Suspending games
 
-If you or your opponent have connection issues, or otherwise cannot continue a game (e.g. due to connection issues or time constraints), you should suspend the game. Note the game ID and use the Load Old Game button to reload the same game another time.
+If you or your opponent have connection issues, or otherwise cannot continue a game (e.g. due to time constraints), you should suspend the game. Note the game ID, then resign the game. Resigning in this situation will not be considered a loss, and is necessary to ensure the server considers the game completed, as an in-progress game cannot be loaded at a new table. Use the Load Old Game button to reload the same game another time.
 
 <a name="4.11.1"></a>4.11.1. Prior to resuming a suspended game, you may not load the game by ID, practice the kingdom, discuss it with other players, or otherwise study the game.
 
