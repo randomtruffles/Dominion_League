@@ -475,7 +475,7 @@ If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), y
 
 <a name="6.3.4"></a>6.3.4. Extensions only apply to the week they are requested for. If you need another extension for a later week in the season, you will need to make another request.
 
-<a name="6.3.5"></a>6.3.5. Though moderators will grant extension requests in most cases, they are not required to do so. In particular, players who abuse the extension system/consistently fail to meet deadlines may be denied extensions.
+<a name="6.3.5"></a>6.3.5. Although moderators will grant extension requests in most cases, they are not required to do so. In particular, players who abuse the extension system/consistently fail to meet deadlines may be denied extensions.
 
 <a name="6.3.6"></a>6.3.6. Moderators will announce all granted extension requests in the division channel.
 
