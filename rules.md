@@ -259,7 +259,7 @@ Players may have different opinions on which undos should be allowed, if any.
 <a name="4.9.2"></a>4.9.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
 
 ### <a name="4.10"></a>4.10. Timers
-Games in the Dominion League do not user a timer.
+Games in the Dominion League do not use a timer.
 
 <a name="4.10.1"></a>4.10.1. The "Make (opponent) Resign?" prompt in Dominion Online should only be used to address connection issues and other technical difficulties (see [4.11](#4.11)). It should not be used to enforce speed of play on your opponent.
 
