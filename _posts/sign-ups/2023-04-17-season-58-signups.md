@@ -6,7 +6,7 @@ author: alibby1152
 layout: simple_post
 categories: signups
 ---
-**Season 58** will run from Monday, June 5, until Sunday, July 16, and you can sign up until **Sunday, May 28 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 58** will run from Monday, June 5 until Sunday, July 16 and ~~you can sign up until Saturday, May 27 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Thursday, June 15 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
