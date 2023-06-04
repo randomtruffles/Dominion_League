@@ -28,4 +28,4 @@ H﻿aving opponents not show up to scheduled matches can be frustrating, and we 
 
 S﻿tarting this season we are putting in a more consistent enforcement of the scheduling benchmarks, which encourage players to never be in a situation where they will need to schedule more than 2 matches more than a single week. If you are falling behind this pace but still think you can finish the season, be sure to ask your moderator for an extension so that they know you are still around and trying to finish the season on time.
 
-T﻿here are a few divisions this season which when setting them up we knew could lead to some difficult scheduling across time zones. We apologize if this ends up being the case for you; the numbers were pretty tough this season. In any case, best of luck and as always, be sure to have fun!
+T﻿here are a few divisions this season which when setting them up we knew could lead to some difficult scheduling across time zones. We apologize if this ends up being the case for you; the numbers were pretty tough this season. In any case, best of luck this season and, as always, be sure to have fun!
