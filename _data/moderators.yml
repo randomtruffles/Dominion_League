@@ -8,13 +8,10 @@
 - name: alibby1152
   discord: alibby1152#4103
   image: alibby
-  chair: Admin, Setup
+  chair: Recruiting, Setup
 - name: amoffett11
   discord: amoffett11#8778
   image: amoffett11
-- name: avi.arfin
-  discord: avi#7124
-  image: avi
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -23,9 +20,9 @@
   discord: crlundy#0018
   image: crlundy
   chair: Sheets
-#- name: DomBot
-#  discord: DomBot#0234
-#  image: dombot
+- name: DomBot
+  discord: DomBot#0234
+  image: dombot
 - name: Earl
   discord: Earl#3402
   image: earl
@@ -42,17 +39,17 @@
 - name: Naesala
   discord: Naesala#1312
   image: naesala
-  chair: Onboarding
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
+  chair: Outreach
 - name: Rozyroz
   discord: Rozyroz#7547
   image: Rozyroz
-  chair: Outreach
 - name: saltroza
   discord: ejd#7555
   image: saltroza
+  chair: Onboarding
 - name: Sharur
   discord: Sharur#7043
   image: sharur
@@ -70,7 +67,7 @@
 - name: tracer
   discord: tracer#2575
   image: tracer
-  chair: Website
+  chair: Admin, Website
 - name: wharf_rat
   discord: wharf_rat#8971
   image: wharf_rat
