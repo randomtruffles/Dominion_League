@@ -12,7 +12,7 @@ Welcome to Season 58 of the Dominion League! This will be my first season as Adm
 
 A﻿side from the administrative change, we have also seen avi.arfin depart the moderator team. We thank them for their work.
 
-T﻿his season also marks three seasons since we last added new moderators, and so moderator applications will be open this season. If you would like to give back to the league community (and of course wield power) be on the lookout for a message in #announcements from alibby1152 in the coming weeks.
+T﻿his season also marks three seasons since we last added new moderators, and so moderator applications will be open this season. If you are an experienced league player who would like to give back to the community (and of course wield s﻿ome power) be on the lookout for a message in #announcements from alibby1152 in the coming weeks.
 
 **F﻿eedback**
 
