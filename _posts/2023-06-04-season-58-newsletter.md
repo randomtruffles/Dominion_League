@@ -22,7 +22,7 @@ W﻿e have also received some feedback both last season and the few before that 
 
 **N﻿o-Shows**
 
-H﻿aving opponents not show up to scheduled matches can be frustrating, and we have seen these complaints on your returning forms. Understanding that life happens, please let your opponent know ahead of time and as soon as possible if you will not be able to make a scheduled match. On the other side, if your opponent does not show up to a scheduled match without advance warning, please let your division moderator know - we cannot do anything about a problem if we do not know it exists.
+H﻿aving opponents not show up to scheduled matches can be frustrating, and we have seen these complaints on your returning forms. Understanding that life happens, please let your opponent know ahead of time and as soon as possible if you will not be able to make a scheduled match. On the other side, if your opponent does not show up to a scheduled match without advance warning, please let your division moderator know - we cannot do anything about a recurring problem if we do not know it exists.
 
 **B﻿enchmarks**
 
