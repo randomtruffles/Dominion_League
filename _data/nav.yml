@@ -29,7 +29,15 @@
     - name: Hall of Fame
       path: hall_of_fame
 - name: Matches
-  path: matches
+  path: featured-matches
+  section_id: matches
+  children:
+    - name: Reports
+      path: featured-matches
+    - name: Match Calendar
+      path: match-calendar
+    - name: League Calendar Form
+      path: calendar-form
 - name: News
   path: news
   section_id: newsletters
