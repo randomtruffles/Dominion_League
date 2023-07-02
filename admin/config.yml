@@ -46,7 +46,7 @@ collections:
       - {label: "Publish Date", hint: "Press the Now button on the right to set it to the current date.", timeFormat: false, name: "date", format: "YYYY-MM-DD", widget: "datetime"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Post Layout", name: "layout", widget: "hidden", default: "simple_post"}
-      - {label: "Categories", name: "categories", widget: "hidden", default: "signups"}
+      - {label: "Categories", name: "categories", widget: "hidden", default: "featured-matches"}
       - {label: "Body", name: "body", widget: "markdown"}	  
   - name: "rules_and_faq"
     label: "Rules and FAQ"
