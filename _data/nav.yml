@@ -32,7 +32,7 @@
   path: featured-matches
   section_id: matches
   children:
-    - name: Reports
+    - name: Featured Reports
       path: featured-matches
     - name: Match Calendar
       path: match-calendar
