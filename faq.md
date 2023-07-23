@@ -329,7 +329,7 @@ See [standings](/rules#5.1) and [tiebreakers](/rules#5.2).
 
 #### What are the rules on etiquette?
 
-See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.5).
+See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.6).
 
 #### What do I do if there is a player with an offensive username?
 
