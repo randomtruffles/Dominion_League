@@ -137,7 +137,7 @@ If someone does not respond to any other players in their division, or to their 
 
 #### What do I do if I can’t play all my matches in time?
 
-Notify your moderator as soon as possible, and they may be able to grant you an extension. See [extensions](/rules#6.4) for more information.
+Notify your moderator as soon as possible, and they may be able to grant you an extension. See [extensions](/rules#6.3) for more information.
 
 #### What do I do if I can’t finish the season due to unforeseen circumstances?
 
