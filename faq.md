@@ -253,7 +253,7 @@ League games are unrated. One reason for this is that rated games do not allow s
 
 #### Which cardlists do we play with?
 
-The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Allies"). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
+The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Plunder"). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
 
 #### What are cardlists?
 
