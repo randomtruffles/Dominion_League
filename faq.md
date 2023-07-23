@@ -209,7 +209,7 @@ The rules of Dominion say that if both players finish with the same score, the p
 
 #### How does the League count games that end in a tie?
 
-See [wins and ties](/rules#4.12).
+See [wins and ties](/rules#4.13).
 
 #### Do I need to record proof of my game results (screenshots, game IDs, etc)?
 
