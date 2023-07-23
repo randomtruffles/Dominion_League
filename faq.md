@@ -117,7 +117,7 @@ Yes. We recommend playing at least one match per week, and encourage you to stay
 
 #### What do I do if my opponent did not show up at our scheduled time?
 
-Please wait 15 minutes past the scheduled time to see if the opponent shows up. If the opponent has still not arrived, notify your moderator. While this can be frustrating, there are many reasons this may happen.
+Please wait 15 minutes past the scheduled time to see if your opponent shows up. If your opponent has still not arrived, notify your moderator. While this can be frustrating, there are many reasons this may happen.
 
 #### What do I do if I can no longer make it to a match I scheduled?
 
