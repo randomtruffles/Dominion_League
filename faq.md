@@ -189,7 +189,7 @@ For example:
 
 #### How do I report the score of a playing session?
 
-See [submitting results](/rules#4.13).
+See [submitting results](/rules#4.14).
 
 #### Should both players report their score for a playing session?
 
