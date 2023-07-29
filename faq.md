@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2022-07-24
+date: 2023-07-29
 categories: pinned faq
 ---
 #### Contents
@@ -99,7 +99,7 @@ The moderators host Town Halls to gather feedback on a specific topic that doesn
 
 #### How do I schedule matches?
 
-You will need to coordinate with your opponent via Discord. Your division will have a dedicated channel that you can use to contact your opponents. We recommend using a thread in your division channel to discuss times with individual opponents. We discourage using DMs to contact your opponents, as it makes it harder for the moderators to keep track of your division's progress, and there is no opportunity for other players to offer to play when one player is available but the other isn't.
+You will need to coordinate with your opponent via Discord. Your division will have a dedicated channel that you can use to contact your opponents. We recommend using a thread in your division channel to discuss times with individual opponents. We discourage using DMs to contact your opponents, as it makes it harder for the moderators to keep track of your division's progress, and there is no opportunity for other players to offer to play when one player is available but the other isn't. Additionally, due to Discord settings, some players may not receive notifications of DMs, and Discord provides no indication when this is the case.
 
 It is very beneficial to schedule matches in advance, instead of hoping someone is available to play impromptu. We highly recommend adding any matches you schedule to the [League calendar form](/calendar/form) - see [What is the calendar form?](#what-is-the-calendar-form) for more information.
 
@@ -107,7 +107,7 @@ It is very beneficial to schedule matches in advance, instead of hoping someone 
 
 The [League calendar form](/calendar/form) allows you to add your scheduled matches to the league calendar. The calendar is visible on the [matches](/matches) page, which also contains a link to the form. There will also be a link to the form in the pinned posts in your division channel.
 
-Adding your matches to the calendar causes them to be automatically announced on Discord in the #matches channel. Upcoming matches are summarized once per day, and are also announced an hour in advance, and again when they are starting.
+Adding your matches to the calendar causes them to be automatically announced on Discord in both the #matches channel and your division channel. In the #matches channel, upcoming matches are summarized once per day, and are also announced an hour in advance, and again when they are starting. In your division channel, matches are announced when they are added to the calendar, and again when they are starting.
 
 Additionally, the League's automated systems use the calendar to track players' scheduling progress. Though it is not required, we highly recommend using it.
 
@@ -117,7 +117,7 @@ Yes. We recommend playing at least one match per week, and encourage you to stay
 
 #### What do I do if my opponent did not show up at our scheduled time?
 
-Please wait 15 minutes past the scheduled time to see if the opponent shows up. If the opponent has still not arrived, notify your moderator. While this can be frustrating, there are many reasons this may happen.
+Please wait 15 minutes past the scheduled time to see if your opponent shows up. If your opponent has still not arrived, notify your moderator. While this can be frustrating, there are many reasons this may happen.
 
 #### What do I do if I can no longer make it to a match I scheduled?
 
@@ -137,7 +137,7 @@ If someone does not respond to any other players in their division, or to their 
 
 #### What do I do if I can’t play all my matches in time?
 
-Notify your moderator as soon as possible, and they may be able to grant you an extension. See [extensions](/rules#6.4) for more information.
+Notify your moderator as soon as possible, and they may be able to grant you an extension. See [extensions](/rules#6.3) for more information.
 
 #### What do I do if I can’t finish the season due to unforeseen circumstances?
 
@@ -163,7 +163,7 @@ See [starting player](/rules#4.4).
 
 #### Which cards do we play with?
 
-Per [4.6.7](/rules#4.6.7), the default is to play with all the cards that you and/or your opponent have access to. If you have a subscription, you get to play with all of the expansions you have. If you do not have a subscription, but your opponent does, you may need to learn some new cards.
+Per [4.6.6](/rules#4.6.6) and [4.6.7](/rules#4.6.7), the default is to play with all the cards that you and/or your opponent have access to. If you have a subscription, you get to play with all of the expansions you have. If you do not have a subscription, but your opponent does, you may need to learn some new cards.
 
 #### Can I request an undo? Do I need to grant an undo?
 
@@ -189,7 +189,7 @@ For example:
 
 #### How do I report the score of a playing session?
 
-See [submitting results](/rules#4.13).
+See [submitting results](/rules#4.14).
 
 #### Should both players report their score for a playing session?
 
@@ -209,7 +209,7 @@ The rules of Dominion say that if both players finish with the same score, the p
 
 #### How does the League count games that end in a tie?
 
-See [wins and ties](/rules#4.12).
+See [wins and ties](/rules#4.13).
 
 #### Do I need to record proof of my game results (screenshots, game IDs, etc)?
 
@@ -253,7 +253,7 @@ League games are unrated. One reason for this is that rated games do not allow s
 
 #### Which cardlists do we play with?
 
-The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Allies"). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
+The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Plunder"). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
 
 #### What are cardlists?
 
@@ -313,9 +313,9 @@ See [promotions and demotions](/rules#5.3).
 
 The same places promote and demote as normal. If a place that would demote is vacant, no additional players demote. See [dropped players](/rules#5.6) for more information.
 
-#### If I skip a season, what tier do I return to?
+#### If I take a break from the League, what tier do I return to?
 
-See [tier placement](/rules#2.4).
+Generally speaking, you will be able to return to your previous turn if your break is no more than 5 seasons, but there may not always be space for players in higher tiers to do so. If your break lasts 6 or more seasons, you will be placed as a new player. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
 
 #### How are play-in matches and free promotions determined?
 
@@ -329,7 +329,7 @@ See [standings](/rules#5.1) and [tiebreakers](/rules#5.2).
 
 #### What are the rules on etiquette?
 
-See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.5).
+See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.6).
 
 #### What do I do if there is a player with an offensive username?
 
