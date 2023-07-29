@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2023-05-29
+date: 2023-07-29
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -53,9 +53,13 @@ If you are playing in the current season and would like to join the next season,
 
 ### <a name="1.4"></a>1.4. Hiatus
 
-You retain your tier placement, space permitting (see [2.4](#2.4) and [2.5](#2.5)), during a short break of up to 2 consecutive seasons. If you rejoin after a longer break of 3 or more consecutive seasons, you will be placed as a new player.
+Depending on the number of seasons since you last participated in the League, you may retain your previous tier placement, or you may be placed as a new player. See Tier Placement ([2.4](#2.4)) and Flex Divisions ([2.5](#2.5)) for details.
 
-<a name="1.4.1"></a>1.4.1. For players taking a break starting during Season 53 or earlier, a short break is up to 5 consecutive seasons.
+<a name="1.4.1"></a>1.4.1. A short break is a break of up to 2 consecutive seasons.
+
+<a name="1.4.2"></a>1.4.2. A medium break is a break of between 3 and 5 consecutive seasons.
+
+<a name="1.4.3"></a>1.4.3. A long break is a break of 6 or more consecutive seasons.
 
 ### <a name="1.5"></a>1.5. Accounts
 
@@ -65,7 +69,7 @@ You may switch your Dominion Online or Discord account at any time by letting yo
 
 ### <a name="2.1"></a>2.1. Pacing
 
-Each season lasts 6 weeks, and most are followed by a 2-week break. Once per year there is a longer 6-week break for the Shuffle iT Championship tournament in September.
+Each season lasts 6 weeks. Breaks between seasons alternate between 2 and 3 weeks. The September break is 4 weeks instead of 3 due to the Shuffle iT Championship tournament.
 
 ### <a name="2.2"></a>2.2. Divisions
 
@@ -96,15 +100,17 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.1"></a>2.4.1. Players who played in the previous season are placed into their tier from that season, unless they earned a promotion or demotion ([5.3](#5.3)), in which case they are placed according to the promotion and demotion rules.
 
-<a name="2.4.2"></a>2.4.2. Players returning to the League after a short break ([1.4](#1.4)) are placed into the tier they would have most recently returned to, starting with the players that played most recently, and with ties broken by seeding ([2.6](#2.6)).
+<a name="2.4.2"></a>2.4.2. Players returning to the League after a short break ([1.4.1](#1.4.1)) are placed into the tier they would have most recently returned to, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)). If there is insufficient space in a tier to accommodate players returning from a short break, one or more flex divisions ([2.5](#2.5)) will be created.
 
-<a name="2.4.3"></a>2.4.3. Players returning to the League after a longer break ([1.4](#1.4)), and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups).
+<a name="2.4.3"></a>2.4.3. Players returning to the League after a medium break are placed into the tier they would have most recently returned to, or the tier they would be placed into as a new player ([2.4.4](#2.4.4)), whichever is higher, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)). If there is insufficient space in a tier to accommodate players returning from a medium break, they will be placed in the tier below.
 
-<a name="2.4.4"></a>2.4.4. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
+<a name="2.4.4"></a>2.4.4. Players returning to the League after a long break ([1.4.3](#1.4.3)), and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups). If there is insufficient space in a tier to accommodate players exceeding the strict level cutoff, one or more flex divisions ([2.5](#2.5)) will be created.
+
+<a name="2.4.5"></a>2.4.5. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
 
 ### <a name="2.5"></a>2.5. Flex Divisions
 
-Divisions usually have a maximum of 6 players. However, divisions may “flex” up to a size of 7 players in order to accommodate returning players ([2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.3](#2.4.3)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
+Divisions usually have a maximum of 6 players. However, divisions may "flex" up to a size of 7 players in order to accommodate players returning from a short break ([1.4](#1.4), [2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.4](#2.4.4)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
 
 ### <a name="2.6"></a>2.6. Seeding
 
@@ -375,9 +381,9 @@ Superpromotions allow you to promote multiple tiers at once, based on how you wo
 
 <a name="5.4.1"></a>5.4.1. If you played in tier G or below and finished in first place (including ties), you are eligible for a superpromotion.
 
-<a name="5.4.2"></a>5.4.2. If you are eligible, and would be placed higher by the new player placement rules ([2.4.3](#2.4.3)) than by the standard promotion rules ([5.3](#5.3)), you superpromote into the higher tier. Note that, in practice, superpromoting players use a different, stricter set of Dominion Online level cutoffs than new players.
+<a name="5.4.2"></a>5.4.2. If you are eligible, and would be placed higher by the new player placement rules ([2.4.4](#2.4.4)) than by the standard promotion rules ([5.3](#5.3)), you superpromote into the higher tier. Note that, in practice, superpromoting players use a different, stricter set of Dominion Online level cutoffs than new players.
 
-<a name="5.4.3"></a>5.4.3. You cannot superpromote past E tier. If the new player placement rules ([2.4.3](#2.4.3)) would place you in D tier or higher, you superpromote into E tier instead.
+<a name="5.4.3"></a>5.4.3. You cannot superpromote past E tier. If the new player placement rules ([2.4.4](#2.4.4)) would place you in D tier or higher, you superpromote into E tier instead.
 
 ### <a name="5.5"></a>5.5. Free promotions
 
