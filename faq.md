@@ -313,9 +313,9 @@ See [promotions and demotions](/rules#5.3).
 
 The same places promote and demote as normal. If a place that would demote is vacant, no additional players demote. See [dropped players](/rules#5.6) for more information.
 
-#### If I skip a season, what tier do I return to?
+#### If I take a break from the League, what tier do I return to?
 
-See [tier placement](/rules#2.4).
+The number of seasons your break lasts will determine your placement. Generally speaking, you will be able to return to your previous turn if your break is no more than 5 seasons, but there may not always be space for players in higher tiers to do so. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
 
 #### How are play-in matches and free promotions determined?
 
