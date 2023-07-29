@@ -20,9 +20,9 @@
   discord: crlundy#0018
   image: crlundy
   chair: Sheets
-- name: DomBot
-  discord: DomBot#0234
-  image: dombot
+#- name: DomBot
+#  discord: DomBot#0234
+#  image: dombot
 - name: Earl
   discord: Earl#3402
   image: earl
@@ -30,22 +30,27 @@
 - name: Gazbag
   discord: Gazbag#6485
   image: gazbag
-- name: LeagueLackey
-  discord: LeagueLackey#6269
-  image: lackey
+#- name: LeagueLackey
+#  discord: LeagueLackey#6269
+#  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
+- name: Nabalaskar
+  discord: jogi1346
+  image: nabalaskar
 - name: Naesala
   discord: Naesala#1312
   image: naesala
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
-  chair: Outreach
 - name: Rozyroz
   discord: Rozyroz#7547
   image: Rozyroz
+- name: Ruapadi
+  discord: ruapadi
+  image: ruapadi
 - name: saltroza
   discord: ejd#7555
   image: saltroza
