@@ -99,7 +99,7 @@ The moderators host Town Halls to gather feedback on a specific topic that doesn
 
 #### How do I schedule matches?
 
-You will need to coordinate with your opponent via Discord. Your division will have a dedicated channel that you can use to contact your opponents. We recommend using a thread in your division channel to discuss times with individual opponents. We discourage using DMs to contact your opponents, as it makes it harder for the moderators to keep track of your division's progress, and there is no opportunity for other players to offer to play when one player is available but the other isn't. Additionally, due to Discord settings, some players may not be able to receive DMs, and Discord provides no indication when this is the case.
+You will need to coordinate with your opponent via Discord. Your division will have a dedicated channel that you can use to contact your opponents. We recommend using a thread in your division channel to discuss times with individual opponents. We discourage using DMs to contact your opponents, as it makes it harder for the moderators to keep track of your division's progress, and there is no opportunity for other players to offer to play when one player is available but the other isn't. Additionally, due to Discord settings, some players may not receive notifications of DMs, and Discord provides no indication when this is the case.
 
 It is very beneficial to schedule matches in advance, instead of hoping someone is available to play impromptu. We highly recommend adding any matches you schedule to the [League calendar form](/calendar/form) - see [What is the calendar form?](#what-is-the-calendar-form) for more information.
 
