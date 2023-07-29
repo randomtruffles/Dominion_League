@@ -69,7 +69,7 @@ You may switch your Dominion Online or Discord account at any time by letting yo
 
 ### <a name="2.1"></a>2.1. Pacing
 
-Each season lasts 6 weeks, and most are followed by a 2-week break. Once per year there is a longer 6-week break for the Shuffle iT Championship tournament in September.
+Each season lasts 6 weeks. Breaks between seasons alternate between 2 and 3 weeks. The September break is 4 weeks instead of 3 due to the Shuffle iT Championship tournament.
 
 ### <a name="2.2"></a>2.2. Divisions
 
