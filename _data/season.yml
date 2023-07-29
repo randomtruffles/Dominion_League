@@ -30,11 +30,11 @@ tiers:
     promoters: 2
     demoters: 2
   H:
-    divisions: 18
+    divisions: 19
     promoters: 1
     demoters: 2
   I:
-    divisions: 16
+    divisions: 15
     promoters: 2
     demoters: 0
 
