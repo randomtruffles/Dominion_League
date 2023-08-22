@@ -71,6 +71,7 @@ var date = document.getElementById("date");
 var hours = document.getElementById("hour");
 var minutes = document.getElementById("minute");
 var ampm = document.getElementById("ampm");
+ampm.value = "";
 var localTime = document.getElementById("localTime");
 var timeMessage = document.getElementById("time-verify");
 var submitMessage = document.getElementById("submit-verify");
@@ -152,6 +153,7 @@ function loadPage() {
 	localTime.onclick = function() {
 		if (/[AP]M/i.test((new Date()).toLocaleTimeString())) {
 			ampm.style.display = "inline";
+			ampm.value = "AM";
 		}
 		updateUrl();
 	}
@@ -193,7 +195,8 @@ function updateUrl() {
 	}
 	if (date.value && hours.value) {
 		if (localTime.checked) {
-			out += `&entry.1984692058=${utcFormString(new Date(date.value + " " + (Number(hours.value) + (ampm.value == "PM" ? 12 : 0)) + ":" + minutes.value))}`;
+			let ampmadj = hours.value == 12 ? (ampm.value == "AM" ? -12 : 0) : (ampm.value == "PM" ? 12 : 0)
+			out += `&entry.1984692058=${utcFormString(new Date(date.value + " " + (Number(hours.value) + ampmadj) + ":" + minutes.value))}`;
 		} else {
 			out += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
 		}
