@@ -39,6 +39,7 @@ function singleDivision(division) {
 	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
 	var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
 	w3AddClass(divisionDiv, "show");
+	activatePMtoggle();
 }
 
 function allDivisions() {
@@ -51,6 +52,7 @@ function allDivisions() {
 			loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
 		}
 	}
+	activatePMtoggle();
 	return;
 }
 

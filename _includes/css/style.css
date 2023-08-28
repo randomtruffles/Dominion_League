@@ -381,6 +381,43 @@ iframe {
   filter: drop-shadow(2px 2px 2px #222);
 }
 
+.pm-toggle {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	width: 26px;
+	height: 26px;
+	margin: 0px 4px !important;
+	border: 2px solid #404040;
+	border-radius: 5px;
+	background-color: lightgrey;
+	position: relative;
+	top: 1px;
+	
+	cursor: pointer;
+}
+
+.pm-toggle:hover {
+	background-color: #404040;
+	color:#d3d3d3;
+}
+
+.pm-toggle:after {
+	content: '\00b1';
+	font-size: 24px;
+	position: relative;
+	left: 3px;
+	top: -6px;
+}
+
+.pm-toggle:checked:after {
+	content: '%';
+	font-size: 18px;
+	left: 2px;
+	top:-1px;
+}
+
 .center-text {
   text-align: center;
 }
