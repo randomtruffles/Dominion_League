@@ -1040,6 +1040,7 @@ function activatePMtoggle() {
 			checker.blur();
 			for (tog of document.getElementsByClassName('pm-toggle')) {
 				tog.checked = checker.checked;
+				tog.title = checker.checked ? "Show Win Percentage": "Show Plus Minus";
 			}
 			convertPlusMinus(divisions);			
 		}
