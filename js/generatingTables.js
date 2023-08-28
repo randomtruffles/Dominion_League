@@ -335,9 +335,10 @@ function genHeader(division, members, complete, link, drops, customText="", noSi
 	seasonRow.appendChild(seasonHeader);
 	var text = customText == "" ? `Division ${division}` : customText;
 	text = complete == "Yes" ? text + " (complete)" : text;
+	var pmtoggle = `<input type="checkbox" class="sheets-icon pm-toggle" title="Show Plus/Minus"></input>`
 	var chartsLink = `<a href="/charts?player=${members.join(",")}" target="_blank"><img src="/img/icons/charts.png" class="sheets-icon" title="Player Charts for this Division"></a>`
 	var sheetsLink = link ? `<a href="${link}" target="_blank"><img src="/img/icons/sheets.png" class="sheets-icon" title="View on Google Sheets"></a>` : "";
-	seasonHeader.innerHTML = `<p>${text} ${sheetsLink} ${chartsLink}</p>`;
+	seasonHeader.innerHTML = `<p>${text} ${sheetsLink} ${chartsLink} ${pmtoggle}</p>`;
 	seasonHeader.style.backgroundColor = "lightgrey";
 	seasonHeader.setAttribute('colspan', 10);
 	seasonHeader.classList.add('division-header');
@@ -884,7 +885,7 @@ function genGrid(data, drops, sorted) {
 function convertPlusMinus(allData) {	
 	if (plusMinus) {
 		plusMinus = false;
-		for (let divTable of document.getElementById('all-divisions').children) {
+		for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
 			let division = divTable.id.split('-')[0].toUpperCase();
 			let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
 			let drops = divisionData['late drops'];
@@ -954,7 +955,7 @@ function convertPlusMinus(allData) {
 		}
 	} else {
 		plusMinus = true;
-		for (let divTable of document.getElementById('all-divisions').children) {
+		for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
 			let division = divTable.id.split('-')[0].toUpperCase();
 			let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
 			let drops = divisionData['late drops'];
@@ -1027,6 +1028,20 @@ function convertPlusMinus(allData) {
 					}
 				}
 			}
+		}
+	}
+}
+
+function activatePMtoggle() {
+	plusMinus = false;
+	for (tog of document.getElementsByClassName('pm-toggle')) {
+		tog.onclick = function(ev) {
+			let checker = ev.target;
+			checker.blur();
+			for (tog of document.getElementsByClassName('pm-toggle')) {
+				tog.checked = checker.checked;
+			}
+			convertPlusMinus(divisions);			
 		}
 	}
 }
