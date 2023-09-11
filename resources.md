@@ -44,7 +44,6 @@ These errata are not included in the rulebooks linked above, but are official ru
 The abilities of these cards have changed since the rulebooks were last printed. Cards with the same abilities but new wordings (such as due to the "Gaining non-Supply cards" rule below) are not listed here.
 
 * **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
-* **Lantern**: Artifact *(Dominion: Renaissance)*<br>Border Guards you play reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
 * **Merchant Guild**: Action, $5 *(Dominion: Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
 * **Mountain Pass**: Landmark *(Dominion: Empires)*<brWhen you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
