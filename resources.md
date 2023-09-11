@@ -8,6 +8,7 @@ layout: rules_faq
 These resources may be consulted at any time, including during a League game.
 
 ### Contents
+
 * [Rulebooks](#rulebooks)
 * [New errata](#new-errata)
 * [Previous errata](#previous-errata)
@@ -43,7 +44,7 @@ These errata are not included in the rulebooks linked above, but are official ru
 
 The abilities of these cards have changed since the rulebooks were last printed. Cards with the same abilities but new wordings (such as due to the "Gaining non-Supply cards" rule below) are not listed here.
 
-* **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
+* **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At the start of your next turn, first, put your deck and discard pile into your hand, trash any number of cards from it, then shuffle the rest into your deck and draw 5 cards.
 * **Merchant Guild**: Action, $5 *(Dominion: Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
 * **Mountain Pass**: Landmark *(Dominion: Empires)*<brWhen you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
@@ -53,46 +54,6 @@ Additionally, two cards intentionally work differently online than what their te
 
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have cards that require setup not already required by other Kingdom cards. For example, it will not have cards that require Potion or Ruins unless another card in the Kingdom already needs those things. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 * **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played using Way of the Mouse would be as useful or less useful than other Ways.
-
-#### Tracking rules
-
-Some cards, like the new Band of Misfits, can play a card that isn't put into play. When you play Band of Misfits, leave it in play as long as you would have left the card it plays in play. Normally that will be the same turn's Clean-up. For a Band of Misfits playing a Duration card, it will be the Clean-up of the last turn the Duration card has any effects. For a Band of Misfits playing a Throne Room playing a Duration card, it will be the Clean-up of the turn the Duration card leaves play. For a Band of Misfits playing a card that can move itself from play, like Mining Village, the Mining Village can't move itself, so Band of Misfits doesn't leave play any earlier than normal. If a Band of Misfits plays multiple Duration cards (e.g., you used Throne Room on it), leave it out until the Clean-up of the last turn that one of them still had effects.
-
-These rules apply to all of the cards that play cards without putting them into play: Band of Misfits, Captain, Inheritance, Necromancer, Overlord, and Way of the Mouse.
-
-#### Stop-Moving rule
-
-*Note: This replaces the Lose-Track rule (which was introduced in the Dominion: Dark Ages rulebook), and is largely the same as it.*
-
-An effect can move a card if it specifies where the card is coming from, or if the effect put the card where it is now. If a card isn't where the effect would expect it to be, or has moved away from there and then back, it can't move the card. Played cards expect to be in play; they can't move themselves if they aren't. Gained cards are expected to be where they were gained to, even if this isn't the discard pile. Cards in discard piles can be moved even if covered up by other cards; cards on top of a deck can't be moved once covered up.
-
-Additionally, when you are told to get a card from your discard pile and that card is not the top card of your discard pile, you can look through your discard pile to get the card. You don't have to just look at the top couple of cards, you can look through the whole discard pile.
-
-#### Gaining non-Supply cards
-
-When a card tells you to gain a non-Supply card by name, you can gain it from its pile, even though it's not in the Supply.
-
-For example, Marauder can gain Spoils because Marauder uses the words "gain a Spoils", but Changeling cannot gain an Imp because Changeling does not use the word "Imp" and instead says "gain a copy".
-
-#### Reducing costs
-
-The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion. The cost in Debt of a card can't go below 0 Debt.
-
-#### Kingdom Treasure cards
-
-New printings of Treasure cards that do special things when played will no longer say "when you play this", and instead of saying they are "worth" an amount of $ they will give +$.
-
-#### Shuffling
-
-In addition to the shuffling rules in the Previous errata section below, there is additional errata that when shuffling, you may also look through your remaining deck.
-
-#### Coffers
-
-You may spend Coffers at any time on your turn.
-
-#### Playing cards
-
-An effect that tries to play a card for the first time can only do so when the card is where the effect expects it to be. If it can play it the first time, subsequent plays will also work.
 
 ### Previous errata
 
@@ -135,86 +96,86 @@ If a card such as Throne Room plays a Duration card multiple times, that card al
 
 If you have to do anything with your deck — for example draw, look at, reveal, set aside, discard, or trash cards — and you need more cards than are left in your deck, first shuffle your discard pile and put it under your deck, then do the thing. If there are still not enough cards, you do the thing with however many cards you can. If when shuffling there are no cards in your deck, the shuffled discard pile simply becomes your new deck.
 
+When shuffling, you may also look through your remaining deck.
+
+#### Tracking rules
+
+Some cards, like Band of Misfits, can play a card that isn't put into play. When you play Band of Misfits, leave it in play as long as you would have left the card it plays in play. Normally that will be the same turn's Clean-up. For a Band of Misfits playing a Duration card, it will be the Clean-up of the last turn the Duration card has any effects. For a Band of Misfits playing a Throne Room playing a Duration card, it will be the Clean-up of the turn the Duration card leaves play. For a Band of Misfits playing a card that can move itself from play, like Mining Village, the card can't move itself, so Band of Misfits doesn't leave play any earlier than normal. If a Band of Misfits plays multiple Duration cards (e.g., you used Throne Room on it), leave it out until the Clean-up of the last turn that one of the played cards still had effects.
+
+These rules apply to all of the cards that play cards without putting them into play: Band of Misfits, Captain, Inheritance, Necromancer, Overlord, and Way of the Mouse.
+
+#### Stop-Moving rule
+
+*Note: This replaces the Lose-Track rule (which was introduced in the Dominion: Dark Ages rulebook), and is largely the same as it.*
+
+An effect can move a card if it specifies where the card is coming from, or if the effect put the card where it is now. If a card isn't where the effect would expect it to be, or has moved away from there and then back, it can't move the card. Played cards expect to be in play; they can't move themselves if they aren't. Gained cards are expected to be where they were gained to, even if this isn't the discard pile. Cards in discard piles can be moved even if covered up by other cards. Cards on top of a deck can't be moved once covered up.
+
+Additionally, when you are told to get a card from your discard pile and that card is not the top card of your discard pile, you can look through your discard pile to get the card. You don't have to just look at the top couple of cards, you can look through the whole discard pile.
+
+#### Gaining non-Supply cards
+
+When a card tells you to gain a non-Supply card by name (e.g., "gain a Horse"), or by a pile type (e.g., "gain a Prize"), you can gain it from its pile, even though it's not in the Supply.
+
+For example, Marauder can gain Spoils because Marauder uses the words "gain a Spoils", but Changeling cannot gain an Imp because Changeling does not use the word "Imp" and instead says "gain a copy".
+
+#### Reducing costs
+
+The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion. The cost in Debt of a card can't go below 0 Debt.
+
+#### Kingdom Treasure cards
+
+Treasure cards that do special things when played will no longer say "when you play this", and instead of saying they are "worth" an amount of $ they will give +$.
+
+#### Coffers
+
+You may spend Coffers at any time on your turn.
+
+#### Playing cards
+
+An effect that tries to play a card for the first time can only do so when the card is where the effect expects it to be. If it can play it the first time, subsequent plays will also work.
+
 ### Dominion Online bugs
 
 Below is a list of cards and situations where the game rules aren't followed. This list does not include bugs with removed cards, confusing or incorrect interface issues, or problems with the Lord Rattington AI. Bugs due to using abilities during another player's turn are in a separate section below.
 
-* **Basilica, Colonnade**: When buying a card, you cannot choose to resolve other "when you buy" abilities before Basilica or Colonnade.
-* **Black Cat**: If you play Black Cat when it is not your turn, players gain Curses starting with the player to your left, instead of the current player.
-* **Black Market**
-  * **Exploration**: When you play Black Market during your Buy phase and buy a card, you still get +1 Coffers and +1 Villager from Exploration.
-  * (also **Storyteller**): When you play Black Market or Storyteller during the first part of your Buy phase, you are not able to remove Coffers tokens from your mat.
-  * When you play Black Market between turns, the game freezes.
-* **Border Guard**
-  * **The Horn**: The client chooses for you which Border Guard to put onto your deck. For example, it might choose a Border Guard you set aside with Prince.
+* **Alchemist**: You can incorrectly use Alchemist's Clean-up ability if you play it using a Way.
+* **Border Guard**:
+  * **The Horn**: You may incorrectly use the Horn's ability once per Buy phase you have. (Having the Horn autoplay turned on correctly limits you to one use.)
   * **The Lantern + Way of the Chameleon**: If you have the Lantern and play Border Guard using Way of the Chameleon, you will reveal 3 cards and discard 2. (The Lantern should not function since you didn't play the Border Guard due to Way of the Chameleon, you just followed the instructions on it.)
-* **Capitalism + Herbalist**: When you discard Herbalist from play, it can put itself onto your deck.
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
 * **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
-* **Coin of the Realm**: See **Snowy Village** below.
-* **Colonnade**: See **Basilica** above.
-* **Crown + Scepter**: If you use Crown on a Scepter and choose to replay that Crown, the game freezes.
-* **Defiled Shrine**: When gaining a card (except Temple), you cannot choose to resolve other "when you gain" abilities before moving 1 VP from its pile to Defiled Shrine.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
-* **Exploration**: See **Black Market** above.
-* **Fleet**:
-  * Fleet turns in games with 3 or more players can happen in the wrong order.
-  * **Star Chart**: When you shuffle your deck during your Clean-up, if the next turn is a Fleet turn, you don't get to use Star Chart.
-* **Governor**: When you play a Governor and choose the third option, you are forced to trash a card.
-* **Hamlet**: If you discard a card for +1 Action and then have no cards in hand, you can choose to discard for +1 Buy, discard nothing, and still get +1 Buy.
-* **Herbalist**: See **Capitalism** above.
-* **Highwayman**: See **Scheme** below.
+* **Fleet**: Fleet turns in games with 3 or more players can happen in the wrong order. †
 * **The Horn**: See **Border Guard** above.
-* **Inn**: When you gain an Inn from the trash, you can only choose differently named cards to shuffle into your deck.
-* **Invest + Transport**: When putting a card onto your deck with Transport, you cannot differentiate an Invested copy of an Exiled card and a non-Invested copy.
 * **The Lantern**: See **Border Guard** above.
-* **Livery**: If you gain a card and that somehow causes you to play a Livery, you incorrectly do not gain a Horse from Livery. 
-* **Mastermind**: You cannot choose the order to resolve multiple Masterminds at the start of your turn. This can matter when other cards have stayed out with Mastermind for tracking.
-* **Oracle + Way of the Chameleon**: When you play Oracle using Way of the Chameleon and look at the top 2 cards of your deck, if you put them back, you do not get to choose their order.
-* **Possession**
-  * **Inn**: When you gain an Inn while controlling another player with Possession, you cannot choose any Actions to shuffle in.
-  * **Transport**: When you control another player with Possession and have them buy Transport, you cannot have them put a card they have in Exile onto their deck.
-* **Prince + Traveller**: When you discard a Princed Traveller from play, you cannot exchange it before it is set aside again by Prince.
+* **Prepare**: If at the start of your turn you have Prepare and multiple other abilities that play cards, and if you resolve some but not all of the other abilities, then after you resolve Prepare, the game freezes.
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
-* **Quarry + Wayfarer**: When the last card gained is not an Action and you have a Quarry in play, Wayfarer displays the correct price but can be bought/gained as if it cost $2 less.
-* **Royal Carriage**:
-  * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
-  * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
-  * **Snowy Village**: See **Snowy Village** below.
-* **Scepter**: See **Crown** above.
-* **Scheme**:
-  * You cannot choose which copy of a card to put onto your deck when the client stacks them in your play area. For example, it might choose a copy of Treasure Hunter from a stack of Treasure Hunters that you planned to exchange for a Warrior.
-  * **Highwayman**: If you play a Highwayman and at the start of your next turn play a Scheme (for example due to Summon) then discard Highwayman from play, you cannot use Scheme's ability to put the Highwayman onto your deck.
+* **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
+* **Royal Carriage**
+  * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.†
+  * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.†
+* **Scepter**: You may incorrectly replay Action cards that another player has played this turn that are still in play.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**
   * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs, though they will do nothing.
   * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
-* **Snowy Village + Coin of the Realm / Royal Carriage**: If you played a Snowy Village this turn, have a Coin of the Realm or a Royal Carriage on your Tavern mat, have Villagers, and have 0 Actions remaining, you may play an Action card from your hand, automatically using a Villager to do so. Note you cannot spend the Villagers manually for +Actions, and in all cases you correctly do not actually get +Actions from spending any.
-* **Star Chart**: See **Fleet** above.
-* **Stonemason**: You cannot choose to overpay an amount that would not gain you anything.
-* **Storyteller**: See **Black Market** above.
-* **Trader**: When you gain a card that is not from a pile, the game will freeze if you react with Trader.
-* **Transport**
-  * See **Invest** above.
-  * See **Possession** above.
 * **Treasure Map**: The two Treasure Maps should be trashed simultaneously, but are trashed one at a time. For example, if you play a Treasure Map and trash it, you can resolve "when you trash" abilities before trashing another Treasure Map from your hand.
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings. This can matter with Diadem or Possession.
+* **Way of the Butterfly**: If you have the Way of the Butterfly autoplay setting turned on and play a card using Way of the Butterly, the game freezes.
 * **Way of the Chameleon**:
   * See **Border Guard** above.
-  * See **Oracle** above.
   * See **Priest** above.
-* **Way of the Mouse + Durations**: If Way of the Mouse sets aside a Duration card, then when you play a Duration card (other than Captain or Mastermind) using Way of the Mouse, it is discarded from play the same turn.
-* **Wayfarer**: See **Quarry** above.
-* **Zombie Spy**: If you play Herald, reveal and play Necromancer, and then have no cards in your deck or discard pile, the game will freeze if you then play Zombie Spy via the Necromancer.
 
 #### Bugs during another player's turn
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and Boons (such as receiving the Field's Gift during another player's turn).
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
-* If you play a card during another player's turn and it sets up an ability that happens the first time a card is played (such as Merchant's +$1 or Enchantress's Attack), that ability will not happen.
-* When a card checks how many times you've played certain cards, it counts how many times the current player has played the cards. This includes abilities that check for a particular card (such as Crossroads) or a type of card (such as Conspirator).
-* When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.
-* If another player has Capitalism and plays an Attack that somehow triggers you to play a Black Market during which you play Caravan Guards from your hand, then after Black Market you will be given a prompt to react to the Attack with those same Caravan Guards (though the game correctly does not show them in your hand). At the start of your next turn, the Caravan Guards you played twice will give +$1 twice.
+* If you play a card during another player's turn and it sets up an ability that happens the first time a card is played (such as Merchant's +$1 or Enchantress's Attack), that ability will not happen.†
+* When a card checks how many times you've played certain cards, it counts how many times the current player has played the cards. This includes abilities that check for a particular card (such as Crossroads) or a type of card (such as Conspirator).†
+* When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.†
+* If another player has Capitalism and plays an Attack that somehow triggers you to play a Black Market during which you play Caravan Guards from your hand, then after Black Market you will be given a prompt to react to the Attack with those same Caravan Guards (though the game correctly does not show them in your hand). At the start of your next turn, the Caravan Guards you played twice will give +$1 twice.†
 
-If you encounter a bug not listed here, please confirm it is indeed a bug in the [#rules-help](https://discord.com/channels/212660788786102272/285903840660946954) channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
+† *The continued existence of these bugs has not been confirmed since the most recent Shuffle iT release.*
+
+If you encounter a bug not listed here, please confirm it is indeed a bug in the [\#rules-help](https://discord.com/channels/212660788786102272/285903840660946954) channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
