@@ -44,21 +44,16 @@ These errata are not included in the rulebooks linked above, but are official ru
 The abilities of these cards have changed since the rulebooks were last printed. Cards with the same abilities but new wordings (such as due to the "Gaining non-Supply cards" rule below) are not listed here.
 
 * **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At end of turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards.
-* **Inheritance**: Event, $7 *(Dominion: Adventures)*<br>Once per game: Set aside a non-Command Action card from the Supply costing up to $4. Move your Estate token to it. (During your turns, Estates are also Actions with "Play the card with your Estate token, leaving it there.")
 * **Lantern**: Artifact *(Dominion: Renaissance)*<br>Border Guards you play reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
 * **Merchant Guild**: Action, $5 *(Dominion: Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
-* **Lighthouse**: Action, $2 *(Dominion: Seaside)*<br>**+1 Action**<br>**+$1**<br>At the start of your next turn, +$1. Until then, when another player plays an Attack card, it doesn't affect you.
 * **Mountain Pass**: Landmark *(Dominion: Empires)*<brWhen you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
-* **Oracle**: Action - Attack, $3 *(Dominion: Hinterlands)*<br>Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice. They choose the order to return them. Afterwards, **+2 Cards**.
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Patron**: Action - Reaction, $4 *(Dominion: Renaissance)*<br>**+1 Villager**<br>**+$2**<br>––––––––––––––––––––<br>When something causes you to reveal this (using the word "reveal") in an Action phase, **+1 Coffers**.
-* **Trader**: Action - Reaction, $4 *(Dominion: Hinterlands)*<br>Trash a card from your hand. Gain a Silver per $1 it costs.<br>––––––––––––––––––––<br>When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.
-* **Treasury**: Action, $5 *(Dominion: Seaside)*<br>**+1 Card**<br>**+1 Action**<br>**+$1**<br>At the end of your Buy phase this turn, if you didn't gain a Victory card in it, you may put this onto your deck.
 
 Additionally, two cards intentionally work differently online than what their texts say:
 
-* **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have card costing a Potion unless a card like that is in the Kingdom. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
-* **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played via Way of the Mouse would be as useful or less useful than other Ways.
+* **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have cards that require setup not already required by other Kingdom cards. For example, it will not have cards that require Potion or Ruins unless another card in the Kingdom already needs those things. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
+* **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played using Way of the Mouse would be as useful or less useful than other Ways.
 
 #### Tracking rules
 
