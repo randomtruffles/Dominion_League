@@ -63,7 +63,8 @@ permalink: calendar/form
 </div>
 <script>
 const divisions = {{ site.data.current_season | jsonify }};
-var formURL = "https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/substituteme?entry.1760809337=League"
+const override = {"A1": ["tracer", "hakha3", "Minionpawn", "schadd", "Mic Qsenoch"]};
+var formURL = "https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/substituteme?entry.1760809337=League";
 var division = document.getElementById("division");
 var user1 = document.getElementById("user1");
 var user2 = document.getElementById("user2");
@@ -87,8 +88,8 @@ function loadPage() {
 		}
 	}
 	
-	for (div in divisions) {
-		if (/^[A-Z]\d+$/.test(div)) {
+	if (override) {
+		for (div in override) {
 			let opt = document.createElement("option");
 			opt.value = div;
 			if (div == selectedDiv) {
@@ -96,6 +97,18 @@ function loadPage() {
 			}
 			opt.appendChild(document.createTextNode(div));
 			division.appendChild(opt);
+		}
+	} else {
+		for (div in divisions) {
+			if (/^[A-Z]\d+$/.test(div)) {
+				let opt = document.createElement("option");
+				opt.value = div;
+				if (div == selectedDiv) {
+					opt.selected = true;
+				}
+				opt.appendChild(document.createTextNode(div));
+				division.appendChild(opt);
+			}
 		}
 	}
 	
@@ -203,6 +216,14 @@ function updateUrl() {
 	}
 	out += "&entry.797613395=02:00:00";
 	
+	if (override) {
+		out += '&entry.894817070=__other_option__&entry.894817070.other_option_response=' + (division.value == 'A1' ? 'A' : division.value);
+	}
+	
+	if (division.value == 'A1') {
+		out += '&entry.775049264=Yes';
+	}
+	
 	document.getElementById("prefill-anchor").href = out.replace("substituteme", "viewform");
 	
 	var fields = [user1, user2, date, hours];
@@ -226,7 +247,8 @@ function updateUrl() {
 }	
 	
 function updatePlayers(division) {
-	var members = (division in divisions) ? Object.keys(divisions[division].members).sort((a,b) => a.localeCompare(b, 'en', {'sensitivity': 'base'})) : [];
+	var members = override ? ((division in override) ? override[division] : []) : ((division in divisions) ? Object.keys(divisions[division].members) : []);
+	members.sort((a,b) => a.localeCompare(b, 'en', {'sensitivity': 'base'}));
 	user1.innerHTML = '<option value=""></option>';
 	user2.innerHTML = '<option value=""></option>';
 	for (player of members) {
