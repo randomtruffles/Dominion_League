@@ -20,7 +20,7 @@ Starting this season, we would like players to fill out their season 61 returnin
 
 **Match Commentary**
 
-Starting this season, we will be trying to have commentary on all A division matches that are scheduled ahead of time, as well as on a selection of matches in other tiers of interest or with promotion and demotion implications. It is expected that your moderator will be looking for these, but if you schedule a match that you think may be of interest feel free to bring it to their attention.
+Starting this season, we will be trying to have commentary on all A division matches that are scheduled ahead of time, as well as a selection of matches with promotion and demotion implications in all tiers. It is expected that your moderator will be looking for these, but if you schedule a match that you think may be of interest feel free to bring it to their attention.
 
 If you are looking for commentated matches to watch, keep your eye on the #matches channel on Discord. There may also be some featured in #announcements.
 
