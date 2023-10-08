@@ -10,7 +10,7 @@ Welcome to Season 60 of the Dominion League!
 
 **Feedback**
 
-On the returning form last season, we asked about using ban, dislike, and like lists in league matches. Across all divisions, we had a majority of responses favor the status quo of using band and dislike lists and not using like lists, with much stronger majorities in the higher tiers. Given that feedback, we have decided to maintain the current rules for use of these card lists.
+On the returning form last season, we asked about using ban, dislike, and like lists in league matches. Across all divisions, we had a majority of responses favor the status quo of using banned and dislike lists and not using like lists, with much stronger majorities in the higher tiers. Given that feedback, we have decided to maintain the current rules for use of these card lists.
 
 During season 60 (exact date yet to be determined), we will be holding a town hall reviewing league structure, which will primarily concern tiers F, G, H, and I. We have been seeing more imbalance in both player counts and results than we think may be ideal, and want to open the floor to discussion and solutions. If you are in those tiers, stay on the lookout for more details to come in #announcements.
 
