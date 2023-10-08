@@ -1,4 +1,4 @@
-number: 59
+number: 60
 
 tiers:
   A:
@@ -30,7 +30,7 @@ tiers:
     promoters: 2
     demoters: 2
   H:
-    divisions: 19
+    divisions: 15
     promoters: 1
     demoters: 2
   I:
