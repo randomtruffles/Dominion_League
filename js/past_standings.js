@@ -61,7 +61,7 @@ function singleDivision(season, division) {
 	loadDivision(singleDivisionDiv, decompactDivision(division, divisions[division]), sheetLinks[division], division, season, {"champ":champion});
 	var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
 	w3AddClass(divisionDiv, "show");
-	activatePMtoggle();
+	activatePMtoggle(false);
 }
 
 function allDivisions(season) {
@@ -74,7 +74,7 @@ function allDivisions(season) {
 			loadDivision(divisionDiv, decompactDivision(division, divisions[division]), sheetLinks[division], division, season, {"champ":champion});
 		}
 	}
-	activatePMtoggle();
+	activatePMtoggle(false);
 	return;
 }
 
