@@ -882,7 +882,7 @@ function genGrid(data, drops, sorted) {
 	return table;
 }
 
-function tableToPM(divTable, divisionData) {
+function tableToPct(divTable, divisionData) {
 	//standings
 	let standings = divTable.getElementsByClassName('standings-table')[0];
 	for (let row of standings.children) {
@@ -891,7 +891,7 @@ function tableToPM(divTable, divisionData) {
 			colcol.title = 'Win Percentage';
 			colcol.innerText = 'W%';
 		} else {
-			let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
+			let rowplayer = row.children[1].firstChild.innerText.trim();
 			colcol.innerText = divisionData['members'][rowplayer]['pct'];
 		}
 	}
@@ -909,7 +909,7 @@ function tableToPM(divTable, divisionData) {
 				wdcol.title = 'Win Percentage with all games';
 				wdcol.innerText = 'Wd%';
 			} else {
-				let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
+				let rowplayer = row.children[1].firstChild.innerText.trim();
 				let playerinfo = divisionData['members'][rowplayer];
 				if (!divisionData['late drops'].includes(rowplayer)) {
 					ndcol.innerText = Math.round(100*playerinfo['wins_nondrop'] / playerinfo['games_nondrop']) + '%';
@@ -947,7 +947,7 @@ function tableToPM(divTable, divisionData) {
 	}
 }
 
-function tableToPct(divTable, divisionData) {
+function tableToPM(divTable, divisionData) {
 	//standings
 	let standings = divTable.getElementsByClassName('standings-table')[0];
 	for (let row of standings.children) {
@@ -956,7 +956,7 @@ function tableToPct(divTable, divisionData) {
 			colcol.title = 'Wins Above Even';
 			colcol.innerText = '+/−';
 		} else {
-			let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
+			let rowplayer = row.children[1].firstChild.innerText.trim();
 			let playerinfo = divisionData['members'][rowplayer];
 			let pm = Number(playerinfo['wins']) - (Number(playerinfo['wins']) + Number(playerinfo['losses']))/2;
 			colcol.innerText = (pm > 0 ? '+' : (pm < 0 ? '−': '')) + Math.abs(pm);
@@ -976,9 +976,9 @@ function tableToPct(divTable, divisionData) {
 				wdcol.title = 'Wins Above Even with all games';
 				wdcol.innerText = '+/−d';
 			} else {
-				let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
+				let rowplayer = row.children[1].firstChild.innerText.trim();
 				let playerinfo = divisionData['members'][rowplayer];
-				if (!drops.includes(rowplayer)) {
+				if (!divisionData['late drops'].includes(rowplayer)) {
 					let ndpm = playerinfo['wins_nondrop'] - playerinfo['games_nondrop']/2;
 					ndcol.innerText = (ndpm > 0 ? '+' : (ndpm < 0 ? '−': '')) + Math.abs(ndpm);
 				}
@@ -993,9 +993,9 @@ function tableToPct(divTable, divisionData) {
 	var alphsorted = Object.keys(divisionData['by_player']);
 	alphsorted.sort(
 		function(a, b) {
-			if (drops.includes(a) && !(drops.includes(b))) {
+			if (divisionData['late drops'].includes(a) && !(divisionData['late drops'].includes(b))) {
 				return 1;
-			} else if (drops.includes(b)) {
+			} else if (divisionData['late drops'].includes(b)) {
 				return -1;
 			} else {
 				if (a.toLowerCase() < b.toLowerCase()) return -1;
@@ -1021,17 +1021,37 @@ function tableToPct(divTable, divisionData) {
 function convertPlusMinus(dbpage, allData) {	
 	if (plusMinus) {
 		plusMinus = false;
-		for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
-			let division = divTable.id.split('-')[0].toUpperCase();
-			let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
-			tableToPM(divTable, divisionData);
-		}	
+		if (dbpage) {
+			for (let divTable of [...document.getElementById('standings').children]) {
+				let titleComponents = divTable.firstChild.innerText.split(' ');
+				let seasKey = titleComponents[0].toLowerCase();
+				let division = titleComponents[1];
+				let divisionData = seasKey in allData['hist'] ? decompactDivision(division, allData['hist'][seasKey][division]) : allData['curr'][division];
+				tableToPct(divTable, divisionData);
+			}
+		} else {
+			for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
+				let division = divTable.id.split('-')[0].toUpperCase();
+				let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
+				tableToPct(divTable, divisionData);
+			}
+		}
 	} else {
 		plusMinus = true;
-		for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
-			let division = divTable.id.split('-')[0].toUpperCase();
-			let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
-			tableToPct(divTable, divisionData);
+		if (dbpage) {
+			for (let divTable of [...document.getElementById('standings').children]) {
+				let titleComponents = divTable.firstChild.innerText.split(' ');
+				let seasKey = titleComponents[0].toLowerCase();
+				let division = titleComponents[1];
+				let divisionData = seasKey in allData['hist'] ? decompactDivision(division, allData['hist'][seasKey][division]) : allData['curr'][division];
+				tableToPM(divTable, divisionData);
+			}
+		} else {
+			for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
+				let division = divTable.id.split('-')[0].toUpperCase();
+				let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
+				tableToPM(divTable, divisionData);
+			}
 		}
 	}
 }
@@ -1046,7 +1066,7 @@ function activatePMtoggle(dbpage) {
 				tog.checked = checker.checked;
 				tog.title = checker.checked ? "Show Win Percentage": "Show Plus Minus";
 			}
-			convertPlusMinus(dbpage, divisions);
+			convertPlusMinus(dbpage, dbpage ? {'hist': leagueHist, 'curr': currentSeason} : divisions);
 		}
 	}
 }

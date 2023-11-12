@@ -316,6 +316,7 @@ function searchHistory() {
 	}
 	
 	selectedTiers = Object.keys(tiersPlayed).sort();
+	activatePMtoggle(true);
 	
 	// **************
 	// Player Heading
