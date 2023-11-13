@@ -882,157 +882,181 @@ function genGrid(data, drops, sorted) {
 	return table;
 }
 
-function convertPlusMinus(allData) {	
-	if (plusMinus) {
-		plusMinus = false;
-		for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
-			let division = divTable.id.split('-')[0].toUpperCase();
-			let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
-			let drops = divisionData['late drops'];
-			
-			//standings
-			let standings = divTable.getElementsByClassName('standings-table')[0];
-			for (let row of standings.children) {
-				let colcol = row.children[2];
-				if (colcol.tagName == 'TH') {
-					colcol.title = 'Win Percentage';
-					colcol.innerText = 'W%';
-				} else {
-					let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
-					colcol.innerText = divisionData['members'][rowplayer]['pct'];
+function tableToPct(divTable, divisionData) {
+	//standings
+	let standings = divTable.getElementsByClassName('standings-table')[0];
+	for (let row of standings.children) {
+		let colcol = row.children[2];
+		if (colcol.tagName == 'TH') {
+			colcol.title = 'Win Percentage';
+			colcol.innerText = 'W%';
+		} else {
+			let rowplayer = row.children[1].firstChild.innerText.trim();
+			colcol.innerText = divisionData['members'][rowplayer]['pct'];
+		}
+	}
+
+	//split-standings
+	let rawStandings = divTable.getElementsByClassName('raw-standings-table');
+	if (rawStandings.length > 0) {
+		rawStandings = rawStandings[0];
+		for (let row of rawStandings.children) {
+			let ndcol = row.children[2];
+			let wdcol = row.children[5];
+			if (ndcol.tagName == 'TH') {
+				ndcol.title = 'Win Percentage without games of dropped players';
+				ndcol.innerText = 'Wnd%';
+				wdcol.title = 'Win Percentage with all games';
+				wdcol.innerText = 'Wd%';
+			} else {
+				let rowplayer = row.children[1].firstChild.innerText.trim();
+				let playerinfo = divisionData['members'][rowplayer];
+				if (!divisionData['late drops'].includes(rowplayer)) {
+					ndcol.innerText = Math.round(100*playerinfo['wins_nondrop'] / playerinfo['games_nondrop']) + '%';
 				}
-			}
-			
-			//split-standings
-			let rawStandings = divTable.getElementsByClassName('raw-standings-table');
-			if (rawStandings.length > 0) {
-				rawStandings = rawStandings[0];
-				for (let row of rawStandings.children) {
-					let ndcol = row.children[2];
-					let wdcol = row.children[5];
-					if (ndcol.tagName == 'TH') {
-						ndcol.title = 'Win Percentage without games of dropped players';
-						ndcol.innerText = 'Wnd%';
-						wdcol.title = 'Win Percentage with all games';
-						wdcol.innerText = 'Wd%';
-					} else {
-						let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
-						let playerinfo = divisionData['members'][rowplayer];
-						if (!drops.includes(rowplayer)) {
-							ndcol.innerText = Math.round(100*playerinfo['wins_nondrop'] / playerinfo['games_nondrop']) + '%';
-						}
-						wdcol.innerText = Math.round(100*playerinfo['wins_wdrop'] / playerinfo['games_wdrop']) + '%';
-					}
-				}
-			}
-			
-			//grid
-			let grid = divTable.getElementsByClassName('grid-table')[0];
-			var alphsorted = Object.keys(divisionData['by_player']);
-			alphsorted.sort(
-				function(a, b) {
-					if (drops.includes(a) && !(drops.includes(b))) {
-						return 1;
-					} else if (drops.includes(b)) {
-						return -1;
-					} else {
-						if (a.toLowerCase() < b.toLowerCase()) return -1;
-						if (a.toLowerCase() > b.toLowerCase()) return 1;
-						return 0;
-					}
-				}
-			);
-			let gridrows = [...grid.getElementsByTagName('tr')].slice(1);
-			for (let i=0; i<gridrows.length; i++) {
-				let rowcells = [...gridrows[i].children].slice(1);
-				let byplayer = divisionData['by_player'][alphsorted[i]]
-				for (let j=0; j<rowcells.length; j++) {
-					if (rowcells[j].innerText !== '') {
-						rowcells[j].innerHTML = byplayer[alphsorted[j]]['wins'];
-					}
-				}
+				wdcol.innerText = Math.round(100*playerinfo['wins_wdrop'] / playerinfo['games_wdrop']) + '%';
 			}
 		}
-	} else {
-		plusMinus = true;
-		for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
-			let division = divTable.id.split('-')[0].toUpperCase();
-			let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
-			let drops = divisionData['late drops'];
-			
-			//standings
-			let standings = divTable.getElementsByClassName('standings-table')[0];
-			for (let row of standings.children) {
-				let colcol = row.children[2];
-				if (colcol.tagName == 'TH') {
-					colcol.title = 'Wins Above Even';
-					colcol.innerText = '+/−';
-				} else {
-					let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
-					let playerinfo = divisionData['members'][rowplayer];
-					let pm = Number(playerinfo['wins']) - (Number(playerinfo['wins']) + Number(playerinfo['losses']))/2;
-					colcol.innerText = (pm > 0 ? '+' : (pm < 0 ? '−': '')) + Math.abs(pm);
-				}
+	}
+
+	//grid
+	let grid = divTable.getElementsByClassName('grid-table')[0];
+	var alphsorted = Object.keys(divisionData['by_player']);
+	alphsorted.sort(
+		function(a, b) {
+			if (divisionData['late drops'].includes(a) && !(divisionData['late drops'].includes(b))) {
+				return 1;
+			} else if (divisionData['late drops'].includes(b)) {
+				return -1;
+			} else {
+				if (a.toLowerCase() < b.toLowerCase()) return -1;
+				if (a.toLowerCase() > b.toLowerCase()) return 1;
+				return 0;
 			}
-			
-			//split-standings
-			let rawStandings = divTable.getElementsByClassName('raw-standings-table');
-			if (rawStandings.length > 0) {
-				rawStandings = rawStandings[0];
-				for (let row of rawStandings.children) {
-					let ndcol = row.children[2];
-					let wdcol = row.children[5];
-					if (ndcol.tagName == 'TH') {
-						ndcol.title = 'Wins Above Even without games of dropped players';
-						ndcol.innerText = '+/−nd';
-						wdcol.title = 'Wins Above Even with all games';
-						wdcol.innerText = '+/−d';
-					} else {
-						let rowplayer = row.children[1].getElementsByTagName('a')[0].innerText.trim();
-						let playerinfo = divisionData['members'][rowplayer];
-						if (!drops.includes(rowplayer)) {
-							let ndpm = playerinfo['wins_nondrop'] - playerinfo['games_nondrop']/2;
-							ndcol.innerText = (ndpm > 0 ? '+' : (ndpm < 0 ? '−': '')) + Math.abs(ndpm);
-						}
-						let wdpm = playerinfo['wins_wdrop'] - playerinfo['games_wdrop']/2;
-						wdcol.innerText = (wdpm > 0 ? '+' : (wdpm < 0 ? '−': '')) + Math.abs(wdpm);
-					}
-				}
-			}
-			
-			//grid
-			let grid = divTable.getElementsByClassName('grid-table')[0];
-			var alphsorted = Object.keys(divisionData['by_player']);
-			alphsorted.sort(
-				function(a, b) {
-					if (drops.includes(a) && !(drops.includes(b))) {
-						return 1;
-					} else if (drops.includes(b)) {
-						return -1;
-					} else {
-						if (a.toLowerCase() < b.toLowerCase()) return -1;
-						if (a.toLowerCase() > b.toLowerCase()) return 1;
-						return 0;
-					}
-				}
-			);
-			let gridrows = [...grid.getElementsByTagName('tr')].slice(1);
-			for (let i=0; i<gridrows.length; i++) {
-				let rowcells = [...gridrows[i].children].slice(1);
-				let byplayer = divisionData['by_player'][alphsorted[i]]
-				for (let j=0; j<rowcells.length; j++) {
-					if (rowcells[j].innerText !== '') {
-						let cellinfo = byplayer[alphsorted[j]];
-						let pm = cellinfo['wins'] - (cellinfo['wins'] + cellinfo['losses'])/2;
-						rowcells[j].innerText = (pm > 0 ? '+' : (pm < 0 ? '−': '')) + Math.abs(pm);
-					}
-				}
+		}
+	);
+	let gridrows = [...grid.getElementsByTagName('tr')].slice(1);
+	for (let i=0; i<gridrows.length; i++) {
+		let rowcells = [...gridrows[i].children].slice(1);
+		let byplayer = divisionData['by_player'][alphsorted[i]]
+		for (let j=0; j<rowcells.length; j++) {
+			if (rowcells[j].innerText !== '') {
+				rowcells[j].innerHTML = byplayer[alphsorted[j]]['wins'];
 			}
 		}
 	}
 }
 
-function activatePMtoggle() {
+function tableToPM(divTable, divisionData) {
+	//standings
+	let standings = divTable.getElementsByClassName('standings-table')[0];
+	for (let row of standings.children) {
+		let colcol = row.children[2];
+		if (colcol.tagName == 'TH') {
+			colcol.title = 'Wins Above Even';
+			colcol.innerText = '+/−';
+		} else {
+			let rowplayer = row.children[1].firstChild.innerText.trim();
+			let playerinfo = divisionData['members'][rowplayer];
+			let pm = Number(playerinfo['wins']) - (Number(playerinfo['wins']) + Number(playerinfo['losses']))/2;
+			colcol.innerText = (pm > 0 ? '+' : (pm < 0 ? '−': '')) + Math.abs(pm);
+		}
+	}
+
+	//split-standings
+	let rawStandings = divTable.getElementsByClassName('raw-standings-table');
+	if (rawStandings.length > 0) {
+		rawStandings = rawStandings[0];
+		for (let row of rawStandings.children) {
+			let ndcol = row.children[2];
+			let wdcol = row.children[5];
+			if (ndcol.tagName == 'TH') {
+				ndcol.title = 'Wins Above Even without games of dropped players';
+				ndcol.innerText = '+/−nd';
+				wdcol.title = 'Wins Above Even with all games';
+				wdcol.innerText = '+/−d';
+			} else {
+				let rowplayer = row.children[1].firstChild.innerText.trim();
+				let playerinfo = divisionData['members'][rowplayer];
+				if (!divisionData['late drops'].includes(rowplayer)) {
+					let ndpm = playerinfo['wins_nondrop'] - playerinfo['games_nondrop']/2;
+					ndcol.innerText = (ndpm > 0 ? '+' : (ndpm < 0 ? '−': '')) + Math.abs(ndpm);
+				}
+				let wdpm = playerinfo['wins_wdrop'] - playerinfo['games_wdrop']/2;
+				wdcol.innerText = (wdpm > 0 ? '+' : (wdpm < 0 ? '−': '')) + Math.abs(wdpm);
+			}
+		}
+	}
+
+	//grid
+	let grid = divTable.getElementsByClassName('grid-table')[0];
+	var alphsorted = Object.keys(divisionData['by_player']);
+	alphsorted.sort(
+		function(a, b) {
+			if (divisionData['late drops'].includes(a) && !(divisionData['late drops'].includes(b))) {
+				return 1;
+			} else if (divisionData['late drops'].includes(b)) {
+				return -1;
+			} else {
+				if (a.toLowerCase() < b.toLowerCase()) return -1;
+				if (a.toLowerCase() > b.toLowerCase()) return 1;
+				return 0;
+			}
+		}
+	);
+	let gridrows = [...grid.getElementsByTagName('tr')].slice(1);
+	for (let i=0; i<gridrows.length; i++) {
+		let rowcells = [...gridrows[i].children].slice(1);
+		let byplayer = divisionData['by_player'][alphsorted[i]]
+		for (let j=0; j<rowcells.length; j++) {
+			if (rowcells[j].innerText !== '') {
+				let cellinfo = byplayer[alphsorted[j]];
+				let pm = cellinfo['wins'] - (cellinfo['wins'] + cellinfo['losses'])/2;
+				rowcells[j].innerText = (pm > 0 ? '+' : (pm < 0 ? '−': '')) + Math.abs(pm);
+			}
+		}
+	}
+}
+
+function convertPlusMinus(dbpage, allData) {	
+	if (plusMinus) {
+		plusMinus = false;
+		if (dbpage) {
+			for (let divTable of [...document.getElementById('standings').children]) {
+				let titleComponents = divTable.firstChild.innerText.split(' ');
+				let seasKey = titleComponents[0].toLowerCase();
+				let division = titleComponents[1];
+				let divisionData = seasKey in allData['hist'] ? decompactDivision(division, allData['hist'][seasKey][division]) : allData['curr'][division];
+				tableToPct(divTable, divisionData);
+			}
+		} else {
+			for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
+				let division = divTable.id.split('-')[0].toUpperCase();
+				let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
+				tableToPct(divTable, divisionData);
+			}
+		}
+	} else {
+		plusMinus = true;
+		if (dbpage) {
+			for (let divTable of [...document.getElementById('standings').children]) {
+				let titleComponents = divTable.firstChild.innerText.split(' ');
+				let seasKey = titleComponents[0].toLowerCase();
+				let division = titleComponents[1];
+				let divisionData = seasKey in allData['hist'] ? decompactDivision(division, allData['hist'][seasKey][division]) : allData['curr'][division];
+				tableToPM(divTable, divisionData);
+			}
+		} else {
+			for (let divTable of [...document.getElementById('all-divisions').children, ...document.getElementById('single-division').children]) {
+				let division = divTable.id.split('-')[0].toUpperCase();
+				let divisionData = 'grid' in allData[division] ? decompactDivision(division, allData[division]) : allData[division];
+				tableToPM(divTable, divisionData);
+			}
+		}
+	}
+}
+
+function activatePMtoggle(dbpage) {
 	plusMinus = false;
 	for (tog of document.getElementsByClassName('pm-toggle')) {
 		tog.onclick = function(ev) {
@@ -1042,7 +1066,7 @@ function activatePMtoggle() {
 				tog.checked = checker.checked;
 				tog.title = checker.checked ? "Show Win Percentage": "Show Plus Minus";
 			}
-			convertPlusMinus(divisions);			
+			convertPlusMinus(dbpage, dbpage ? {'hist': leagueHist, 'curr': currentSeason} : divisions);
 		}
 	}
 }

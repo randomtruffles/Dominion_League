@@ -5,10 +5,25 @@ var hof = {{ site.data.hall_of_fame | jsonify }};
 var lastSeason = {{ site.data.season.number }} - 1;
 
 function dbLink(name) {
-	let out = document.createElement('a');
-	out.href = `{{site.baseurl}}/player_database?player=${name.replace(/ /g, "%20")}`
-	out.appendChild(document.createTextNode(name));
-	return out;
+	if (name.search('~') == -1) {
+		let out = document.createElement('a');
+		out.href = `{{site.baseurl}}/player_database?player=${name.replace(/ /g, "%20")}`
+		out.appendChild(document.createTextNode(name));
+		return out;
+	} else {
+		let names = name.split(' ~ ');
+		let out = document.createElement('span');
+		let link0 = document.createElement('a');
+		link0.href = `{{site.baseurl}}/player_database?player=${names[0].replace(/ /g, "%20")}`
+		link0.appendChild(document.createTextNode(names[0]));
+		let link1 = document.createElement('a');
+		link1.href = `{{site.baseurl}}/player_database?player=${names[1].replace(/ /g, "%20")}`
+		link1.appendChild(document.createTextNode(names[1]));
+		out.appendChild(link0);
+		out.appendChild(document.createTextNode(' vs. '));
+		out.appendChild(link1);
+		return out;
+	}
 }
 
 function seasonLink(s) {

@@ -27,6 +27,7 @@ for (let s=52; s<=currentSeason; s++) {
 
 var allTiers = {"A": [], "B": [], "C": [], "D": [], "E": [], "F": [], "G": [], "H": [], "I": [], "J": [], "P": []};
 var allStats = [];
+var matchups = [];
 var allStreaks = {"played": [], "nondem": [], "promote": []};
 const notPlayers = ["games_nondrop","losses","losses_nondrop","wins","wins_nondrop"];
 
@@ -60,7 +61,7 @@ for (playerKey in players) {
 	let player = players[playerKey].name;
 	console.log(player);
 	let tiersPlayed = {};
-	let stats = {"divWins": [], "seasons": players[playerKey].seasons, "six": 0, "five": 0, "opponents": []};
+	let stats = {"divWins": [], "seasons": players[playerKey].seasons, "six": 0, "five": 0, "opponents": {}};
 	let totalWins = 0;
 	let totalLosses = 0;
 	let streaks = {
@@ -134,7 +135,11 @@ for (playerKey in players) {
 		//versus (and some stats)
 		for (opp in divisionData.by_player[player]) {
 			if (!notPlayers.includes(opp)) {
-				stats.opponents.push(opp);
+				if (opp in stats.opponents) {
+					stats.opponents[opp].push(season);
+				} else {
+					stats.opponents[opp] = [season];
+				}
 				if (divisionData.by_player[player][opp].wins >= 5) {
 					stats.five += 1;
 					if (divisionData.by_player[player][opp].wins == 6) {
@@ -153,13 +158,21 @@ for (playerKey in players) {
 	
 	stats.player = player;
 	stats.pct = (players[playerKey].seasons.length >= thresholdForOverallPct) ? totalWins/(totalWins + totalLosses) : 0;
-	stats.opponents = [...new Set(stats.opponents)].length;
+	stats.nopponents = Object.keys(stats.opponents).length;
 	allStats.push(JSON.parse(JSON.stringify(stats)));
+	
+	for (let opp in stats.opponents) {
+		if (player > opp) {
+			matchups.push({"player": [player, opp].sort((a,b) => a.localeCompare(b)).join(' ~ '), "seasons": stats.opponents[opp]});
+		}
+	}
 	
 	allStreaks.played.push({"player": player, "streak": JSON.parse(JSON.stringify(streaks.played.current))});
 	allStreaks.promote.push({"player": player, "streak": JSON.parse(JSON.stringify(streaks.promote.current))});
 	allStreaks.nondem.push({"player": player, "streak": JSON.parse(JSON.stringify(streaks.nondem.current))});
 }
+
+
 
 var out = {};
 
@@ -168,8 +181,10 @@ out['champions'] = Object.keys(champions.players).map(key => {return {"player": 
 out['div-wins'] = allStats.sort((a,b) => b.divWins.length - a.divWins.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.divWins}});
 out['win-pct'] = allStats.sort((a,b) => b.pct - a.pct).slice(0,30).map(k => {return {"player": k.player, "num": k.pct, "disp": Math.round(100*k.pct) + "%"}});
 out['sixes'] = allStats.sort((a,b) => b.six - a.six).slice(0,30).map(k => {return {"player": k.player, "num": k.six, "disp": String(k.six)}});
-out['opponents'] = allStats.sort((a,b) => b.opponents - a.opponents).slice(0,30).map(k => {return {"player": k.player, "num": k.opponents, "disp": String(k.opponents)}});
+out['opponents'] = allStats.sort((a,b) => b.nopponents - a.nopponents).slice(0,30).map(k => {return {"player": k.player, "num": k.nopponents, "disp": String(k.nopponents)}});
 out['seasons'] = allStats.sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons}});
+
+out['matchups'] = matchups.sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons}});
 
 out['a-seasons'] = allTiers["A"].sort((a,b) => b.seasons.length - a.seasons.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.seasons}});
 out['tier-record'] = Object.keys(allTiers).map(key => {return {"tier": key, "best-pct": allTiers[key].sort((a,b) => b.pct - a.pct).slice(0,3)}});
