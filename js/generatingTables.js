@@ -402,7 +402,7 @@ function genIndividualMatch(player, players, scores, isRaw, drops) {
 		if (opponent in scores[player]) {
 			score = `${scores[player][opponent]["wins"]} - ${scores[player][opponent]["losses"]}`;
 		} else {
-			score = "0 - 0";
+			score = " ";
 		}
 		score = strike ? `<s>${score}</s>` : score;
 		var cell1 = document.createElement("td");
@@ -792,7 +792,7 @@ function genMatches(data, drops, sorted) {
 			var player = sorted[i];
 			var opponent = sorted[j];
 			var match = `${player} vs. ${opponent}`;
-			var result = "0 - 0";
+			var result = " ";
 			var sessions = 0;
 			var completed = "No";
 			if (opponent in data[player]) {
