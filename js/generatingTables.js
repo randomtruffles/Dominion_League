@@ -1110,8 +1110,8 @@ function loadDivision(divisionDiv, divisionData, link, division, season, params,
 
 
 	var headerText = params["headerText"] ? params["headerText"] : "";
-	var playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
-	var champ = params["champ"] ? params["champ"] : champ;
+	playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
+	champ = params["champ"] ? params["champ"] : champ;
 	var header = genHeader(division, sorted, complete, link, drops, headerText, simType == "none");
 	var standingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, false, divisionCalendar);
 
