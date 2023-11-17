@@ -36,7 +36,7 @@ function singleDivision(division) {
 	singleDivisionDiv.scrollIntoView(true);
 	document.getElementById("all-divisions").style.display = "none";
 	console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
+	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion}, division in divisions['calendar'] ? divisions['calendar'][division] : null);
 	var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
 	w3AddClass(divisionDiv, "show");
 	activatePMtoggle(false);
@@ -47,9 +47,9 @@ function allDivisions() {
 	console.log("Showing all divisions");
 	divisionDiv.style.display = "block";
 	document.getElementById("single-division").style.display = "none";
-	for (var division in divisions) {
+	for (let division in divisions) {
 		if (/^[A-Z]\d+$/.test(division)) {
-			loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
+			loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion}, division in divisions['calendar'] ? divisions['calendar'][division] : null);
 		}
 	}
 	activatePMtoggle(false);
