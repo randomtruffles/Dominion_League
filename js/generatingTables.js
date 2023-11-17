@@ -373,7 +373,7 @@ function genHeader(division, members, complete, link, drops, customText="", noSi
 	return table;
 }
 
-function genIndividualMatch(player, players, scores, isRaw, drops) {
+function genIndividualMatch(player, players, scores, isRaw, drops, calendar) {
 	var span = document.createElement("div");
 	span.classList.add("cellDetail");
 	var table = document.createElement("table");
@@ -397,12 +397,12 @@ function genIndividualMatch(player, players, scores, isRaw, drops) {
 		var match = `${player} vs. ${opponent}`;
 		var strike = isRaw && (drops.includes(opponent) || drops.includes(players[p]));
 		match = strike ? `${match} (drop)` : match;
-		var score;
+		var score = " ";
 		if (player == players[p]) continue;
 		if (opponent in scores[player]) {
 			score = `${scores[player][opponent]["wins"]} - ${scores[player][opponent]["losses"]}`;
-		} else {
-			score = "0 - 0";
+		} else if (calendar && (player in calendar) && (opponent in calendar[player])) {
+			score = `${calendar[player][opponent]['day']} ${calendar[player][opponent]['time']}`;
 		}
 		score = strike ? `<s>${score}</s>` : score;
 		var cell1 = document.createElement("td");
@@ -476,7 +476,7 @@ function genSimulations(players, drops, sorted, simType){
 }
 
 
-function genStandings(data, tier, season, players, sorted, drops, complete, isRaw) {
+function genStandings(data, tier, season, players, sorted, drops, complete, isRaw, calendar) {
 	if (testing) console.log("Generating standings...");
 	var table = document.createElement("table");
 	var tableClass = isRaw ? 'raw-standings-table' : 'standings-table';
@@ -698,7 +698,7 @@ function genStandings(data, tier, season, players, sorted, drops, complete, isRa
 				case "name":
 					standingsColor(complete, cell, tier, playerData["next tier"], season, playerData["name"], tier == "A" && playerData["rank"] <= 2, playerData["drop"] == "Yes");
 					cell.classList.add("cellWithDetail");
-					cell.append(genIndividualMatch(playerData["name"], sorted, players, isRaw, drops));
+					cell.append(genIndividualMatch(playerData["name"], sorted, players, isRaw, drops, calendar));
 					break;
 				case "wins":
 					if (drops.includes(name) && isRaw) {
@@ -759,7 +759,7 @@ function genResults(results) {
 	table.style.display = "none";
 }
 
-function genMatches(data, drops, sorted) {
+function genMatches(data, drops, sorted, calendar) {
 	if (testing) console.log("Generating matches table...");
 
 	var table = document.createElement("table");
@@ -792,7 +792,7 @@ function genMatches(data, drops, sorted) {
 			var player = sorted[i];
 			var opponent = sorted[j];
 			var match = `${player} vs. ${opponent}`;
-			var result = "0 - 0";
+			var result = " ";
 			var sessions = 0;
 			var completed = "No";
 			if (opponent in data[player]) {
@@ -803,6 +803,8 @@ function genMatches(data, drops, sorted) {
 				match = `<s>${match}</s>`;
 				completed = "N/A";
 				sessions = "N/A";
+			} else if (calendar && (player in calendar) && (opponent in calendar[player])) {
+				completed = `${calendar[player][opponent]['day']} at ${calendar[player][opponent]['time']} UTC`;
 			}
 			matches.push({"match":match, "result":result, "completed":completed})
 		}
@@ -1072,7 +1074,7 @@ function activatePMtoggle(dbpage) {
 }
 
 
-function loadDivision(divisionDiv, divisionData, link, division, season, params) {
+function loadDivision(divisionDiv, divisionData, link, division, season, params, divisionCalendar = null) {
 	console.log(`Loading ${division} standings...`);
 
 	// Get information
@@ -1108,10 +1110,10 @@ function loadDivision(divisionDiv, divisionData, link, division, season, params)
 
 
 	var headerText = params["headerText"] ? params["headerText"] : "";
-	playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
-	champ = params["champ"] ? params["champ"] : champ;
+	var playerQuery = params["playerNameKey"] ? params["playerNameKey"] : playerQuery;
+	var champ = params["champ"] ? params["champ"] : champ;
 	var header = genHeader(division, sorted, complete, link, drops, headerText, simType == "none");
-	var standingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, false);
+	var standingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, false, divisionCalendar);
 
 	if (!params["playerNameKey"]) {
 		standingsDiv.setAttribute("id", `${division.toLowerCase()}-standings`);
@@ -1119,11 +1121,11 @@ function loadDivision(divisionDiv, divisionData, link, division, season, params)
 		standingsDiv.classList.add(`div${tier}`);
 	}
 	var gridTable = genGrid(players, drops, sorted);
-	var matchesTable = genMatches(players, drops, sorted);
+	var matchesTable = genMatches(players, drops, sorted, divisionCalendar);
 	standingsDiv.appendChild(header);
 	standingsDiv.appendChild(standingsTable);
 	if (drops.length > 0 ){
-		var rawStandingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, true);
+		var rawStandingsTable = genStandings(standings, tier, season, players, sorted, drops, complete, true, divisionCalendar);
 		standingsDiv.appendChild(rawStandingsTable);
 	}
 	standingsDiv.appendChild(gridTable);

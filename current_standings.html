@@ -9,7 +9,9 @@ title: Current standings of divisions in Season 60
     <h3><a class="current-standings" href="{{site.baseurl}}/current_standings">Season {{ site.data.season.number }} Standings</a></h3>
 	<h5>2023-10-09 to 2023-11-19</h5>
     <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
-    <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>. <br> Season {{ site.data.season.number | plus: 1}} starts 2023-12-04</p>
+    <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>.
+	  <br>All displayed dates and times are UTC
+	  <br>Season {{ site.data.season.number | plus: 1}} starts 2023-12-04</p>
     <!-- Filter buttons -->
     <div id="myBtnContainer"></div>
     <div class="spacing"></div>
@@ -36,7 +38,7 @@ function singleDivision(division) {
 	singleDivisionDiv.scrollIntoView(true);
 	document.getElementById("all-divisions").style.display = "none";
 	console.log(`Showing single division: ${division.toLowerCase()}-standings`);
-	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
+	loadDivision(singleDivisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion}, division in divisions['calendar'] ? divisions['calendar'][division] : null);
 	var divisionDiv = document.getElementById(`${division.toLowerCase()}-standings`);
 	w3AddClass(divisionDiv, "show");
 	activatePMtoggle(false);
@@ -47,9 +49,9 @@ function allDivisions() {
 	console.log("Showing all divisions");
 	divisionDiv.style.display = "block";
 	document.getElementById("single-division").style.display = "none";
-	for (var division in divisions) {
+	for (let division in divisions) {
 		if (/^[A-Z]\d+$/.test(division)) {
-			loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion});
+			loadDivision(divisionDiv, divisions[division], sheetLinks[division], division, cur_season, {"champ":champion}, division in divisions['calendar'] ? divisions['calendar'][division] : null);
 		}
 	}
 	activatePMtoggle(false);
