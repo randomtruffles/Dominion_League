@@ -58,7 +58,8 @@
   "56": "vrsmith",
     "57": "mic qsenoch",
 	  "58": "hakha3",
-	  "59": "neqativ"
+	  "59": "neqativ",
+	  "60": "tracer"
   },
   "runner_ups": {
     "1": "stef",
@@ -119,7 +120,8 @@
   "56": "yurikamome",
     "57": "phika",
 	  "58": "tracer",
-	  "59": "tracer"
+	  "59": "tracer",
+	  "60": "hakha3"
   },
   "players": {
     "mic qsenoch": [
@@ -174,7 +176,8 @@
       "30",
       "33",
       "35",
-      "42"
+      "42",
+	"60"
     ],
     "rtt": [
       "31",
@@ -319,6 +322,9 @@
   ],
     "phika": [
       "57"
-    ]
+    ],
+	"hakha3": [
+		"60"
+	]
   }
 }
