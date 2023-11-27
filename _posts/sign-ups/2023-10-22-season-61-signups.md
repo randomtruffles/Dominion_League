@@ -6,7 +6,7 @@ author: tracer
 layout: simple_post
 categories: signups
 ---
-**Season 61** will run from Monday, December 4 until Sunday, January 14 and ~~you can sign up until Saturday, November 25 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Thursday, December 14 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
+**Season 61** will run from Monday, December 4 until Sunday, January 14 ~~and you can sign up until Saturday, November 25 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Thursday, December 14 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
