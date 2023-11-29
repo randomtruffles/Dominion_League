@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2023-07-29
+date: 2023-11-29
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -431,13 +431,15 @@ If a dropped player played any games, adjustment matches may be needed to determ
 
 After the normal matches of A1 are complete, the players in first place and second place play a second 6-game Championship Match to determine the Dominion League Champion of the season.
 
-<a name="5.7.1"></a>5.7.1. The Dominion League Champion is the player with the higher total wins from their normal matches and the Championship Match.
+<a name="5.7.1"></a>5.7.1. The Championship Match uses the same rules as a standard League match ([4](#4)), except that starting player in the first game is whichever player is in first place. In the case of an unbroken tie, starting player in the first game is chosen randomly.
 
-<a name="5.7.2"></a>5.7.2. If the players are tied in total wins per [5.7.1](#5.7.1), the tiebreaker rules per [5.2](#5.2) are applied, including the wins from the Championship Match. If there is still a tie, they play one final game and the winner is the Champion. If that final game is tied, the player who went second is the Champion.
+<a name="5.7.2"></a>5.7.2. The Dominion League Champion is the player with the higher total wins from their normal matches and the Championship Match.
 
-<a name="5.7.3"></a>5.7.3. All 6 games of the Championship Match should be played, even if the Dominion League Champion is decided sooner.
+<a name="5.7.3"></a>5.7.3. If the players are tied in total wins per [5.7.2](#5.7.2), the tiebreaker rules per [5.2](#5.2) are applied, including the wins from the Championship Match. If there is still a tie, they play one final game and the winner is the Champion. If that final game is tied, the player who went second is the Champion.
 
-<a name="5.7.4"></a>5.7.4. The date and time of the Championship Match should be decided with sufficient time for the League to find commentators and advertise the match.
+<a name="5.7.4"></a>5.7.4. All 6 games of the Championship Match should be played, even if the Dominion League Champion is decided sooner.
+
+<a name="5.7.5"></a>5.7.5. The date and time of the Championship Match should be decided with sufficient time for the League to find commentators and advertise the match.
 
 ### <a name="5.8"></a>5.8. Other tournaments
 
