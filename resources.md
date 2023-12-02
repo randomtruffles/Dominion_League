@@ -144,6 +144,6 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
-* If it is not your turn and you play 2 Action cards and then Conspirator, you will not get +1 Card and +1 Action.
+* If it is not your turn and you play 2 or more Action cards and then Conspirator, you will not get +1 Card and +1 Action.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the [\#rules-help](https://discord.com/channels/212660788786102272/285903840660946954) channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
