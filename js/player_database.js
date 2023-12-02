@@ -432,7 +432,7 @@ function makeVersus(init = false) {
 		textmax.value = String(seasonRange[1]);
 		textmax.oninput = seasonTextInput;
 		seasonSlider.appendChild(textmax);
-		versusDiv.appendChild(seasonSlider)
+		versusDiv.appendChild(seasonSlider);
 		
 		let tableDiv = document.createElement('div');
 		tableDiv.id = "versusTable";
@@ -634,12 +634,12 @@ function seasonTextInput() {
 	var minval = Number(textmin.value);
 	var maxval = Number(textmax.value);
 	if ((minval <= maxval) && (minval >= Number(slide1.min)) && (maxval <= Number(slide1.max))) {
-		if (Number(PlayerPlot.seasonslide1.value) <= Number(PlayerPlot.seasonslide2.value)) {
-			PlayerPlot.seasonslide1.value = minval;
-			PlayerPlot.seasonslide2.value = maxval;
+		if (Number(slide1.value) <= Number(slide2.value)) {
+			slide1.value = minval;
+			slide2.value = maxval;
 		} else {
-			PlayerPlot.seasonslide1.value = maxval;
-			PlayerPlot.seasonslide2.value = minval;
+			slide1.value = maxval;
+			slide2.value = minval;
 		}
 		
 		seasonRange = [minval, maxval];
