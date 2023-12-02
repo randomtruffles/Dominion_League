@@ -1276,6 +1276,16 @@ tbody {
 	left: 36px;
 }
 
+.dbSelector.infoSelector#divisionsSelect:before {
+	content: "Divisions";
+	left: 26px;
+}
+
+.dbSelector.infoSelector#overallSelect:before {
+	content: "Overall";
+	left: 34px;
+}
+
 .dbSelector#versusTierReset:before {
 	content: "All";
 	left: 20px;

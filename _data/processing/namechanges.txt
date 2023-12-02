@@ -112,7 +112,7 @@ Nlahmeyer	Nlahmeyer
 Operator	Operator
 spectershah	spectershah
 jeffkingks2	jeffkingks2
-phtevenj	Phtevenj
+phtevenj	PhtevenJ
 arcanummage	ArcanumMage
 cromulus	Cromulus
 reza70	Reza70
@@ -122,3 +122,5 @@ hammerson66	Hammerson66
 nickz	nickz
 cheapplasticcrap	cheapplasticcrap
 schlafi	schlafi
+bartdjensen	bartdjensen
+tortuga1	Tortuga1

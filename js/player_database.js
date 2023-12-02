@@ -86,7 +86,7 @@ function loadPage() {
 function getURLparams() {
 	if (window.location.search) {
 		let params = new URLSearchParams(window.location.search);
-		playerKey = params.get('player').toLowerCase();
+		if (params.has('player')) {playerKey = params.get('player').toLowerCase();}
 		if (params.has('display')) {screenKey = params.get('display').toLowerCase();}
 	}
 }
@@ -163,7 +163,7 @@ function searchHistory() {
 		let season = currentSeason.season;
 		let division = currentSeason.players[playerKey].division;
 		let title = `<a href="current_standings?div=${division}"> S${season}</a> ${division} Division`;
-		let params = {"headerText":title, "playerNameKey":playerKey, "sims": "new"};
+		let params = {"headerText":title, "playerNameKey":playerKey};
 		if (champions.seasons[season]) {params["champ"] = champions.seasons[season];}
 		loadDivision(standingsDiv, currentSeason[division], sheetsLinks[String(season)][division], division, String(season), params);
 		for (opp in currentSeason[division].by_player[player]) {
@@ -512,7 +512,7 @@ function genVersusTable() {
 	nopps = filtVersus.length;
 	for (let i=0; i<nopps; i++) {
 		let row = document.createElement('tr');
-		row.classList.add('rows-past-standings')
+		row.classList.add('rows-past-standings');
 		let oc = document.createElement('td');
 		oc.classList.add('cells-past-standings');
 		oc.classList.add('cellWithDetail');
@@ -949,9 +949,4 @@ function autocomplete(inp, arr) {
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
   });
-}
-
-function numericStandingsColor(pct) {
-	var gradient = ["#E77B72", "#E88372", "#EA8C71", "#EC956F", "#EF9E6E", "#F2A76D", "#F4B06B", "#F7B96B", "#F9C269", "#FCCB67", "#FED467", "#F2D467", "#E2D26B", "#D0CF6F", "#C0CC73", "#AFCA76", "#9EC77A", "#8CC47E", "#7CC181", "#6DBF84", "#5BBC88"];
-	return gradient[Math.floor(2000*pct/101)];
 }
