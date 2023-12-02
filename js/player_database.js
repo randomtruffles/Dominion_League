@@ -86,7 +86,7 @@ function loadPage() {
 function getURLparams() {
 	if (window.location.search) {
 		let params = new URLSearchParams(window.location.search);
-		playerKey = params.get('player').toLowerCase();
+		if (params.has('player')) {playerKey = params.get('player').toLowerCase();}
 		if (params.has('display')) {screenKey = params.get('display').toLowerCase();}
 	}
 }
