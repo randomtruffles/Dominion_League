@@ -55,6 +55,11 @@ function matchColor(score, upper) {
 	return `#${color}`;
 }
 
+function numericStandingsColor(pct) {
+	var gradient = ["#E77B72", "#E88372", "#EA8C71", "#EC956F", "#EF9E6E", "#F2A76D", "#F4B06B", "#F7B96B", "#F9C269", "#FCCB67", "#FED467", "#F2D467", "#E2D26B", "#D0CF6F", "#C0CC73", "#AFCA76", "#9EC77A", "#8CC47E", "#7CC181", "#6DBF84", "#5BBC88"];
+	return gradient[Math.floor(2000*pct/101)];
+}
+
 function matchGreyscaleColor(score, upper){
 	var score = parseFloat(score);
 	var colors = ["#ffffff", "#f4f4f5", "#ebebeb", "#e1e1e1", "#d7d7d7", "#cdcdcd", "#c4c4c4", "#bababa", "#b1b1b1", "#a7a7a7", "#9e9e9e", "#959595", "#8c8c8c", "#838383", "#7a7a7a"];
