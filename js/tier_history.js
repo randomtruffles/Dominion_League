@@ -7,7 +7,8 @@ var leagueHist = {{ site.data.league_history | jsonify }};
 var sheetsLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
 
-var divisionsDiv = document.getElementById("divisions");
+var loadingDiv = document.getElementById("loading");
+var divisionsDiv = document.getElementById("standings");
 var statsDiv = document.getElementById("stats");
 var overallDiv = document.getElementById("overall");
 
@@ -31,9 +32,16 @@ function makeButtons(div) {
 function onTierButton(ev) {
 	document.getElementsByClassName("active")[0].classList.remove("active");
 	ev.target.classList.add("active");
-	tierKey = ev.target.innerHTML;
-	setURLparams();
-	loadTier();
+	let newTier =  ev.target.innerHTML;
+	if (newTier != tierKey) {
+		tierKey = newTier;
+		setURLparams();
+		divisionsDiv.innerHTML = "";
+		statsDiv.innerHTML = "Coming Soon";
+		overallDiv.innerHTML = "Coming Soon";
+		loadingDiv.style.display = "block";
+		setTimeout(() => {loadTier();}, 0);
+	}
 }
 
 document.getElementById("divisionsSelect").onclick = function(ev) {
@@ -85,7 +93,7 @@ function loadPage() {
 function getURLparams() {
 	if (window.location.search) {
 		let params = new URLSearchParams(window.location.search);
-		if (params.has('tier')) {tierKey = params.get('tier').toLowerCase();}
+		if (params.has('tier')) {tierKey = params.get('tier').toUpperCase();}
 		if (params.has('display')) {screenKey = params.get('display').toLowerCase();}
 	}
 }
@@ -94,6 +102,37 @@ function setURLparams() {
 	window.history.replaceState(null, null, `?tier=${tierKey}&display=${screenKey}`);
 }
 
-function loadTier() {
-	console.log(tierKey);
+function loadTier() {	
+	// get current season if exists
+	const currentSeasonNumber = currentSeason.season;
+	let currentSeasonDivisions = Object.keys(currentSeason).filter(x => /[A-Z]\d+/.test(x));
+	if (currentSeasonDivisions.map(d => d.charAt(0)).includes(tierKey)) {
+		for (let division of currentSeasonDivisions) {
+			if (division.charAt(0) == tierKey) {
+				let title = `<a href="current_standings?div=${division}"> S${currentSeasonNumber}</a> ${division} Division`;
+				let params = {"headerText":title, "playerNameKey": true};
+				if (champions.seasons[currentSeasonNumber]) {params["champ"] = champions.seasons[currentSeasonNumber];}
+				loadDivision(divisionsDiv, currentSeason[division], sheetsLinks[String(currentSeasonNumber)][division], division, String(currentSeasonNumber), params);
+			}
+		}
+	}
+	
+	for (let season = currentSeasonNumber - 1; season > 0; season--) {
+		let seasonKey = 's' + season;
+		let seasonHist = leagueHist[seasonKey];
+		let seasonDivisions = Object.keys(seasonHist).filter(x => /[A-Z]\d+/.test(x));
+		if (seasonDivisions.map(d => d.charAt(0)).includes(tierKey)) {
+			for (let division of seasonDivisions) {
+				if (division.charAt(0) == tierKey) {
+					let title = `<a href="past_standings/season${season}?div=${division}"> S${season}</a> ${division} Division`;
+					let params = {"headerText":title, "playerNameKey": true, "champ": champions.seasons[season]};
+					let divisionData = decompactDivision(division, leagueHist[seasonKey][division])
+					loadDivision(divisionsDiv, divisionData, sheetsLinks[String(season)][division], division, String(season), params);
+				}
+			}
+		}
+	}
+	
+	activatePMtoggle(true);
+	loadingDiv.style.display = "none";
 }
