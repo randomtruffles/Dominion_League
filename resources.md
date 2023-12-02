@@ -1,7 +1,7 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-date: 2023-09-11
+date: 2023-12-01
 categories: pinned
 layout: rules_faq
 ---
