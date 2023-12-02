@@ -1,7 +1,7 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-date: 2023-12-01
+date: 2023-12-02
 categories: pinned
 layout: rules_faq
 ---
@@ -120,7 +120,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
 * **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
-* **The Lantern + Way of the Chameleon**: If you have the Lantern and play Border Guard using Way of the Chameleon, you will reveal 3 cards and discard 2. (The Lantern should not function since you didn't play the Border Guard due to Way of the Chameleon, you just followed the instructions on it.)
+* **Highwayman + Way of the Chameleon**: If you are affected by Highwayman's attack and the first Treasure you play in a turn is also an Action, then playing it using Way of the Chameleon will override Highwayman's attack. (Highwayman should make the Treasure do nothing, regardless of how it's played.) 
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
 * **Royal Carriage**
@@ -136,14 +136,15 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings. This can matter with Diadem or Possession.
 * **Way of the Chameleon**:
-
-  * See **The Lantern** above.
+  * See **Highwayman** above.
   * See **Priest** above.
 
 ### Bugs during another player's turn
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
+
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
+
 * If it is not your turn and you play 2 or more Action cards and then Conspirator, you will not get +1 Card and +1 Action.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the [\#rules-help](https://discord.com/channels/212660788786102272/285903840660946954) channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
