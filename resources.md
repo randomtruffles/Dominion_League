@@ -7,14 +7,14 @@ layout: rules_faq
 ---
 These resources may be consulted at any time, including during a League game.
 
-### Contents
+## Contents
 
 * [Rulebooks](#rulebooks)
 * [New errata](#new-errata)
 * [Previous errata](#previous-errata)
 * [Dominion Online bugs](#dominion-online-bugs)
 
-### Rulebooks
+## Rulebooks
 
 The current rulebooks for each Dominion set are linked below. See below for some changes that were made but not yet incorporated into the official rulebooks.
 
@@ -36,15 +36,13 @@ The current rulebooks for each Dominion set are linked below. See below for some
 
 There is no official rulebook for the promo cards (Envoy, Black Market, Stash, Walled Village, Governor, Prince, Summon, Sauna/Avanto, Dismantle, Church, and Captain).
 
-### New errata
+## New errata
 
 These errata are not included in the rulebooks linked above, but are official rules and are used in Dominion Online.
 
-#### Updated cards
+### Updated cards
 
 The abilities of these cards have changed since the rulebooks were last printed. Cards with the same abilities but new wordings (such as due to the "Gaining non-Supply cards" rule below) are not listed here.
-
-**Possession**: Action, $6 Potion *(Dominion: Alchemy)*<br>The player to your left takes an extra turn after this one (but not a 2nd extra turn in a row), in which you can see all cards they can and make all decisions for them. Any cards or Debt they would gain on that turn, you gain instead; any cards of theirs that are trashed are set aside and put in their discard pile at end of turn.
 
 * **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At the start of your next turn, first, put your deck and discard pile into your hand, trash any number of cards from it, then shuffle the rest into your deck and draw 5 cards.
 * **Island Folk**: Ally *(Dominion: Allies)*<br>At the end of your turn, you may spend **5 Favors** to take an extra turn after this one (but not a 3rd turn in a row).
@@ -55,6 +53,7 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Outpost**: Action - Duration, $5 *(Dominion: Seaside)*<br>You only draw 3 cards for your next hand. Take an extra turn after this one (but not a 3rd turn in a row).
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Patron**: Action - Reaction, $4 *(Dominion: Renaissance)*<br>**+1 Villager**<br>**+$2**<br>––––––––––––––––––––<br>When something causes you to reveal this (using the word "reveal") in an Action phase, **+1 Coffers**.
+* **Possession**: Action, $6 Potion *(Dominion: Alchemy)*<br>The player to your left takes an extra turn after this one (but not a 2nd extra turn in a row), in which you can see all cards they can and make all decisions for them. Any cards or Debt they would gain on that turn, you gain instead; any cards of theirs that are trashed are set aside and put in their discard pile at end of turn.
 * **Voyage**: Action - Duration - Odyssey, $4 *(Dominion: Allies)*<br>**+1 Action**<br>Take an extra turn after this one (but not a 3rd turn in a row), during which you can only play 3 cards from your hand.
 
 Additionally, two cards intentionally work differently online than what their texts say:
@@ -62,29 +61,29 @@ Additionally, two cards intentionally work differently online than what their te
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have cards that require setup not already required by other Kingdom cards. For example, it will not have cards that require Potion or Ruins unless another card in the Kingdom already needs those things. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 * **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played using Way of the Mouse would be as useful or less useful than other Ways.
 
-### Previous errata
+## Previous errata
 
 Previous card errata is not listed here as it has become extensive, and some cards have changed multiple times. You should familiarize yourself with the rulebooks (linked above) and the errata not yet printed in rulebooks (listed above) to know how the cards currently work.
 
 Previous rule errata is below for reference.
 
-#### Playing Durations multiple times
+### Playing Durations multiple times
 
 If a card such as Throne Room plays a Duration card multiple times, that card also stays in play until the player discards the Duration card. If a card such as Throne Room plays a non-Duration card multiple times — even if the card it plays then plays a Duration card — it is always discarded from play the turn it is played.
 
-#### Shuffling
+### Shuffling
 
 If you have to do anything with your deck — for example draw, look at, reveal, set aside, discard, or trash cards — and you need more cards than are left in your deck, first shuffle your discard pile and put it under your deck, then do the thing. If there are still not enough cards, you do the thing with however many cards you can. If when shuffling there are no cards in your deck, the shuffled discard pile simply becomes your new deck.
 
 When shuffling, you may also look through your remaining deck.
 
-#### Tracking rules
+### Tracking rules
 
 Some cards, like Band of Misfits, can play a card that isn't put into play. When you play Band of Misfits, leave it in play as long as you would have left the card it plays in play. Normally that will be the same turn's Clean-up. For a Band of Misfits playing a Duration card, it will be the Clean-up of the last turn the Duration card has any effects. For a Band of Misfits playing a Throne Room playing a Duration card, it will be the Clean-up of the turn the Duration card leaves play. For a Band of Misfits playing a card that can move itself from play, like Mining Village, the card can't move itself, so Band of Misfits doesn't leave play any earlier than normal. If a Band of Misfits plays multiple Duration cards (e.g., you used Throne Room on it), leave it out until the Clean-up of the last turn that one of the played cards still had effects.
 
 These rules apply to all of the cards that play cards without putting them into play: Band of Misfits, Captain, Inheritance, Necromancer, Overlord, and Way of the Mouse.
 
-#### Stop-Moving rule
+### Stop-Moving rule
 
 *Note: This replaces the Lose-Track rule (which was introduced in the Dominion: Dark Ages rulebook), and is largely the same as it.*
 
@@ -92,29 +91,29 @@ An effect can move a card if it specifies where the card is coming from, or if t
 
 Additionally, when you are told to get a card from your discard pile and that card is not the top card of your discard pile, you can look through your discard pile to get the card. You don't have to just look at the top couple of cards, you can look through the whole discard pile.
 
-#### Gaining non-Supply cards
+### Gaining non-Supply cards
 
 When a card tells you to gain a non-Supply card by name (e.g., "gain a Horse"), or by a pile type (e.g., "gain a Prize"), you can gain it from its pile, even though it's not in the Supply.
 
 For example, Marauder can gain Spoils because Marauder uses the words "gain a Spoils", but Changeling cannot gain an Imp because Changeling does not use the word "Imp" and instead says "gain a copy".
 
-#### Reducing costs
+### Reducing costs
 
 The cost in $ of a card can't go below $0. The cost in Potion of a card can't go below 0 Potion. The cost in Debt of a card can't go below 0 Debt.
 
-#### Kingdom Treasure cards
+### Kingdom Treasure cards
 
 Treasure cards that do special things when played will no longer say "when you play this", and instead of saying they are "worth" an amount of $ they will give +$.
 
-#### Coffers
+### Coffers
 
 You may spend Coffers at any time on your turn.
 
-#### Playing cards
+### Playing cards
 
 An effect that tries to play a card for the first time can only do so when the card is where the effect expects it to be. With an effect that plays a card multiple times, the subsequent times will always work, regardless of whether the first play was successful.
 
-### Dominion Online bugs
+## Dominion Online bugs
 
 Below is a list of cards and situations where the game rules aren't followed. This list does not include bugs with removed cards, confusing or incorrect interface issues, or problems with the Lord Rattington bot. Bugs due to using abilities during another player's turn are in a separate section below.
 
@@ -141,7 +140,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * See **The Lantern** above.
   * See **Priest** above.
 
-#### Bugs during another player's turn
+### Bugs during another player's turn
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
