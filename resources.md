@@ -64,27 +64,35 @@ These errata are included in the rulebooks linked above, but may be useful if yo
 Cards which have new wordings but function identically in all situations are not listed here.
 
 * Dominion
+
   * **Adventurer**, **Chancellor**, **Feast**, **Spy**, **Thief**, and **Woodcutter** were removed. **Artisan**, **Bandit**, **Harbinger**, **Merchant**, **Poacher**, **Sentry**, and **Vassal** were added.
   * **Cellar**: You draw cards instead of getting +Cards.
   * **Mine**: Trashing a Treasure from your hand is optional.
   * **Moneylender**: Trashing a Copper from your hand is optional.
   * **Throne Room**: Playing a card from your hand twice is optional.
 * Dominion: Intrigue
+
   * **Coppersmith**, **Great Hall**, **Saboteur**, **Secret Chamber**, **Scout**, and **Tribute** were removed. **Courtier**, **Diplomat**, **Lurker**, **Mill**, **Patrol**, **Replace**, and **Secret Passage** were added.
   * **Masquerade**: Players with no cards in hand do not participate in passing cards.
 * Dominion: Seaside
+
   * **Ambassador**, **Embargo**, **Explorer**, **Ghost Ship**, **Navigator**, **Pearl Diver**, **Pirate Ship**, and **Sea Hag** were removed. **Astrolabe**, **Blockade**, **Corsair**, **Monkey**, **Pirate**, **Sailor**, **Sea Chart**, **Sea Witch**, and **Tide Pools** were added.
   * **Outpost**: The conditions for getting an extra turn are now that it's the first time you played an Outpost that turn and that the previous turn wasn't yours.
 * Dominion: Alchemy
+
   * **Possession**: Any Debt tokens (and no other kinds of tokens) that the player to your left would take during their extra turn you take instead.
 * Dominion: Prosperity
+
   * **Contraband**, **Counting House**, **Goons**, **Loan**, **Mountebank**, **Royal Seal**, **Talisman**, **Trade Route**, and **Venture** were removed. **Anvil**, **Charlatan**, **Clerk**, **Collection**, **Crystal Ball**, **Investment**, **Magnate**, **Tiara**, and **War Chest** were added.
 * Dominion: Hinterlands
+
   * **Duchess**, **Cache**, **Embassy**, **Ill-Gotten Gains**, **Mandarin**, **Noble Brigand**, **Nomad Camp**, **Oracle**, and **Silk Road** were removed. **Berserker**, **Cauldron**, **Guard Dog**, **Nomads**, **Souk**, **Trail**, **Weaver**, **Wheelwright**, and **Witch's Hut** were added.
   * **Scheme**: You can only choose cards that will be discarded from play this turn to put onto your deck.
 * Dominion: Adventures
+
   * **Storyteller**: You draw cards instead of getting +Cards.
 * Promo cards
+
   * **Black Market**: It is clarified that you can play any number of Treasures from your hand before buying a card from the Black Market deck.
   * **Envoy**: It is clarified that you put the cards into your hand instead of drawing them.
 
@@ -138,32 +146,27 @@ An effect that tries to play a card for the first time can only do so when the c
 
 Below is a list of cards and situations where the game rules aren't followed. This list does not include bugs with removed cards, confusing or incorrect interface issues, or problems with the Lord Rattington AI. Bugs due to using abilities during another player's turn are in a separate section below.
 
-* **Alchemist**: You can incorrectly use Alchemist's Clean-up ability if you play it using a Way.
-* **Border Guard**:
-  * **The Horn**: You may incorrectly use the Horn's ability once per Buy phase you have. (Having the Horn autoplay turned on correctly limits you to one use.)
-  * **The Lantern + Way of the Chameleon**: If you have the Lantern and play Border Guard using Way of the Chameleon, you will reveal 3 cards and discard 2. (The Lantern should not function since you didn't play the Border Guard due to Way of the Chameleon, you just followed the instructions on it.)
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
 * **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
 * **Fleet**: Fleet turns in games with 3 or more players can happen in the wrong order. †
-* **The Horn**: See **Border Guard** above.
-* **The Lantern**: See **Border Guard** above.
-* **Prepare**: If at the start of your turn you have Prepare and multiple other abilities that play cards, and if you resolve some but not all of the other abilities, then after you resolve Prepare, the game freezes.
+* **The Lantern + Way of the Chameleon**: If you have the Lantern and play Border Guard using Way of the Chameleon, you will reveal 3 cards and discard 2. (The Lantern should not function since you didn't play the Border Guard due to Way of the Chameleon, you just followed the instructions on it.)
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
 * **Royal Carriage**
+
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.†
   * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.†
-* **Scepter**: You may incorrectly replay Action cards that another player has played this turn that are still in play.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**
+
   * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs, though they will do nothing.
   * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
 * **Treasure Map**: The two Treasure Maps should be trashed simultaneously, but are trashed one at a time. For example, if you play a Treasure Map and trash it, you can resolve "when you trash" abilities before trashing another Treasure Map from your hand.
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings. This can matter with Diadem or Possession.
-* **Way of the Butterfly**: If you have the Way of the Butterfly autoplay setting turned on and play a card using Way of the Butterly, the game freezes.
 * **Way of the Chameleon**:
+
   * See **Border Guard** above.
   * See **Priest** above.
 
@@ -171,10 +174,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and Boons (such as receiving the Field's Gift during another player's turn).
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
-* If you play a card during another player's turn and it sets up an ability that happens the first time a card is played (such as Merchant's +$1 or Enchantress's Attack), that ability will not happen.†
-* When a card checks how many times you've played certain cards, it counts how many times the current player has played the cards. This includes abilities that check for a particular card (such as Crossroads) or a type of card (such as Conspirator).†
-* When any player plays a Fortune, it checks whether any player has doubled their $ yet that turn.†
-* If another player has Capitalism and plays an Attack that somehow triggers you to play a Black Market during which you play Caravan Guards from your hand, then after Black Market you will be given a prompt to react to the Attack with those same Caravan Guards (though the game correctly does not show them in your hand). At the start of your next turn, the Caravan Guards you played twice will give +$1 twice.†
+* If it is not your turn and you play 2 Action cards and then Conspirator, you will not get +1 Card and +1 Action.
 
 † *The continued existence of these bugs has not been confirmed since the most recent Shuffle iT release.*
 
