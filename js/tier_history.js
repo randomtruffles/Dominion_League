@@ -92,11 +92,11 @@ function loadPage() {
 		statsDiv.style.display = "block";
 		document.getElementById("statsSelect").checked = "checked";
 		overallDiv.style.display = "none";
-	} else if (screenKey == "overall") {
-		divisionsDiv.style.display = "none";
+	} else if (screenKey == "divisions") {
+		divisionsDiv.style.display = "block";
 		statsDiv.style.display = "none";
-		overallDiv.style.display = "block";
-		document.getElementById("overallSelect").checked = "checked";
+		overallDiv.style.display = "none";
+		document.getElementById("divisionsSelect").checked = "checked";
 	}
 }
 
