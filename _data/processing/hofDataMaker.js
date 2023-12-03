@@ -90,7 +90,11 @@ for (playerKey in players) {
 			tiersPlayed[tier] = {"seasons": [season], "wins": divisionData.by_player[player].wins, "losses": divisionData.by_player[player].losses};
 			tiersPlayed[tier].best = {"season": season, "pct": tiersPlayed[tier].wins/(tiersPlayed[tier].wins + tiersPlayed[tier].losses)};
 		}
-		if (divisionData.members[player].rank == 1) {
+		if (tier == "A") {
+			if (champions.seasons[season] == playerKey) {
+				stats.divWins.push(season);
+			}
+		} else if (divisionData.members[player].rank == 1) {
 			stats.divWins.push(season);
 		}
 		if (streaks.played.current.start == Number(season) + 1) {
