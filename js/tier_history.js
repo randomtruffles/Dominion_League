@@ -20,6 +20,7 @@ var overallFilt = null;
 var overallSort = {"variable": "won", "desc": true};
 var seasonRange = null;
 var tierSeasons = null;
+var userSetRange = false;
 var rangeSlides = {"overall": {'screen': overallDiv}, "stats": {'screen': statsDiv}};
 var minSeasons = 1;
 var seasonsText = null;
@@ -267,7 +268,7 @@ function loadTier() {
 	activatePMtoggle(true);
 	
 	// add controls to overall and stats pages
-	if (!seasonRange) {seasonRange = tierSeasons;}
+	if (!userSetRange) {seasonRange = tierSeasons;}
 	if (tierSeasons[0] > seasonRange[0]) {seasonRange[0] = tierSeasons[0];}
 	if (tierSeasons[1] < seasonRange[1]) {seasonRange[1] = tierSeasons[1];}
 	initControls();					   
@@ -545,6 +546,7 @@ function rangeSlideInput(ev) {
 			rangeTextBlur([rangeSlides.stats.slide1, rangeSlides.stats.slide2]);
 			break
 	}
+	userSetRange = true;
 	filtOverall();
 	filtStats();
 }
@@ -554,6 +556,7 @@ function rangeTextMinInput(ev) {
 	if ((newmin >= tierSeasons[0]) && (newmin <= seasonRange[1])) {
 		seasonRange[0] = newmin;
 		rangeTextBlur([ev.target]);
+		userSetRange = true;
 		filtOverall();
 		filtStats();
 	}
@@ -564,6 +567,7 @@ function rangeTextMaxInput(ev) {
 	if ((newmax <= tierSeasons[1]) && (newmax >= seasonRange[0])) {
 		seasonRange[1] = newmax;
 		rangeTextBlur([ev.target]);
+		userSetRange = true;
 		filtOverall();
 		filtStats();
 	}
