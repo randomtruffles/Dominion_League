@@ -404,6 +404,7 @@ function makeVersus(init = false) {
 		textmin.classList.add('slidePiece');
 		textmin.value = String(seasonRange[0]);
 		textmin.oninput = seasonTextInput;
+		textmin.onblur = seasonTextBlur;
 		seasonSlider.appendChild(textmin);
 		slideContain = document.createElement('div');
 		slideContain.classList.add('slidePiece');
@@ -431,8 +432,9 @@ function makeVersus(init = false) {
 		textmax.classList.add('slidePiece');
 		textmax.value = String(seasonRange[1]);
 		textmax.oninput = seasonTextInput;
+		textmax.onblur = seasonTextBlur;
 		seasonSlider.appendChild(textmax);
-		versusDiv.appendChild(seasonSlider)
+		versusDiv.appendChild(seasonSlider);
 		
 		let tableDiv = document.createElement('div');
 		tableDiv.id = "versusTable";
@@ -634,17 +636,22 @@ function seasonTextInput() {
 	var minval = Number(textmin.value);
 	var maxval = Number(textmax.value);
 	if ((minval <= maxval) && (minval >= Number(slide1.min)) && (maxval <= Number(slide1.max))) {
-		if (Number(PlayerPlot.seasonslide1.value) <= Number(PlayerPlot.seasonslide2.value)) {
-			PlayerPlot.seasonslide1.value = minval;
-			PlayerPlot.seasonslide2.value = maxval;
+		if (Number(slide1.value) <= Number(slide2.value)) {
+			slide1.value = minval;
+			slide2.value = maxval;
 		} else {
-			PlayerPlot.seasonslide1.value = maxval;
-			PlayerPlot.seasonslide2.value = minval;
+			slide1.value = maxval;
+			slide2.value = minval;
 		}
 		
 		seasonRange = [minval, maxval];
 		makeVersus();
 	}
+}
+
+function seasonTextBlur() {
+	textmin.value = seasonRange[0];
+	textmax.value = seasonRange[1];
 }
 
 function seasonSlideInput() {

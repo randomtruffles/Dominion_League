@@ -24,6 +24,8 @@
       path: past_standings
     - name: Player Database
       path: player_database
+    - name: Tier History
+      path: tier_history
     - name: Visual History
       path: charts
     - name: Hall of Fame
