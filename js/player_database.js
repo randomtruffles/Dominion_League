@@ -404,6 +404,7 @@ function makeVersus(init = false) {
 		textmin.classList.add('slidePiece');
 		textmin.value = String(seasonRange[0]);
 		textmin.oninput = seasonTextInput;
+		textmin.onblur = seasonTextBlur;
 		seasonSlider.appendChild(textmin);
 		slideContain = document.createElement('div');
 		slideContain.classList.add('slidePiece');
@@ -431,6 +432,7 @@ function makeVersus(init = false) {
 		textmax.classList.add('slidePiece');
 		textmax.value = String(seasonRange[1]);
 		textmax.oninput = seasonTextInput;
+		textmax.onblur = seasonTextBlur;
 		seasonSlider.appendChild(textmax);
 		versusDiv.appendChild(seasonSlider);
 		
@@ -645,6 +647,11 @@ function seasonTextInput() {
 		seasonRange = [minval, maxval];
 		makeVersus();
 	}
+}
+
+function seasonTextBlur() {
+	textmin.value = seasonRange[0];
+	textmax.value = seasonRange[1];
 }
 
 function seasonSlideInput() {
