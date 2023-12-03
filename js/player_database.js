@@ -207,10 +207,14 @@ function searchHistory() {
 				tiersPlayed[tier] = {"count": 1, "wins": divisionData.by_player[player].wins, "losses": divisionData.by_player[player].losses};
 				tiersPlayed[tier].best = {"season": season, "pct": tiersPlayed[tier].wins/(tiersPlayed[tier].wins + tiersPlayed[tier].losses)};
 			}
-			if (divisionData.members[player].rank == 1) {
+			if (tier == "A") {
+				if (champions.seasons[season] == playerKey) {
+					stats.wins.push(season);
+				}
+			} else if (divisionData.members[player].rank == 1) {
 				stats.wins.push(season);
 			}
-			tierRanks.push({"season": season, "tier": tier, "rank": divisionData.members[player].rank})
+			tierRanks.push({"season": season, "tier": tier, "rank": tier == "A" ? (playerKey == champions.seasons[season] ? 1 : (playerKey == champions.runner_ups[season] ? 2 : divisionData.members[player].rank)) : divisionData.members[player].rank})
 			if (streaks.played.current.start == Number(season) + 1) {
 				streaks.played.current.count += 1;
 				streaks.played.current.start = Number(season);
