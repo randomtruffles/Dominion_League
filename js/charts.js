@@ -397,7 +397,7 @@ PlayerPlot.makePlot = function() {
 			}
 			
 			//add information for current season if player is in it
-			if ((cur.season <= PlayerPlot.seasonRange[1]) && cur.players[plkey] && (!pHist.length || (pHist[pHist.length-1].season != cur.season))) {
+			if ((cur.season <= PlayerPlot.seasonRange[1]) && cur.players[plkey] && (!pHist.length || (pHist[pHist.length-1].season != cur.season) || (pHist[pHist.length-1].player != cur.players[plkey].name))) {
 				let pname = cur.players[plkey].name;
 				PlayerPlot.player[p].name = pname;
 				var currentHistory = {"player": pname, "tier": cur.players[plkey].tier, "division": cur.players[plkey].division};
