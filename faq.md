@@ -83,6 +83,15 @@ Discord is where you will message opponents to schedule matches and receive impo
 
 You will mainly use Discord to communicate with the other players in your division, and the moderators. You can also see announcements about upcoming matches so you can spectate them, and you can announce your own matches.
 
+#### How do I make sure I see important Discord messages?
+
+We strongly recommend turning off Message Requests for the Dominion server. This ensures you get notifications for all Direct Messages from your opponents and moderators. To do this:
+- Right-click / long-press on the server icon in the left sidebar
+- Choose Privacy Settings
+- Make sure "Direct Messages" are turned ON and "Message Requests" are turned OFF.
+
+If you don't otherwise check Discord frequently, you may find it helpful to get notifications for all posts in your division channel, instead of just ones in which you're tagged. To do this, right-click / long-press on the channel name in the sidebar.
+
 #### How do I see what matches are coming up, so that I can spectate them?
 
 Check the [Dominion calendar](/matches). There is also a pinned post in the #matches channel with links to Google calendars that you can add to your own calendar.
