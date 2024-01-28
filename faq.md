@@ -303,7 +303,7 @@ As much as possible, players are grouped by their time zones in tiers E and belo
 
 #### What do I do if my regular schedule makes it difficult to play with people from my own time zone?
 
-The easiest way to indicate this is to sign up with the time zone you can most easily play with.
+
 
 #### What are promotions and demotions, and how do they work?
 
