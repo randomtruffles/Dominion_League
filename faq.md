@@ -241,7 +241,7 @@ Click the "Friend List" tab in the lobby, enter your opponent’s username, and 
 
 #### How do I make a table?
 
-Click the "New Table" tab in the lobby and choose "Create Table". Note you should also click "Advanced Options" at the table and uncheck "Players can see spectator chat".
+Click the "New Table" tab in the lobby.
 
 #### How do I find my opponent’s table?
 
