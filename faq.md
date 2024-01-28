@@ -303,7 +303,9 @@ As much as possible, players are grouped by their time zones in tiers E and belo
 
 #### What do I do if my regular schedule makes it difficult to play with people from my own time zone?
 
+If you are a new player, we collect this information when you sign up. If you select the answer "I expect my availability to be very different from that of others in my timezone" in response to the Availability question, your onboarding moderator will follow up to ask for more details and figure out how to place you.
 
+If you are a returning player, and the availability that you indicate on your returning form matches up better with players in another time zone, we may allocate you to a division accordingly. If you'd like to request to be placed with players in a specific time zone other than your own, you can contact your moderator.
 
 #### What are promotions and demotions, and how do they work?
 
