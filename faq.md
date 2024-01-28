@@ -241,11 +241,13 @@ Click the "Friend List" tab in the lobby, enter your opponent’s username, and 
 
 #### How do I make a table?
 
-Click the "New Table" tab in the lobby.
+Click the "New Table" tab or the "Create Table" button in the lobby.
 
 #### How do I find my opponent’s table?
 
-Click the "Tables" tab in the lobby, and find their name. If you are friends, then you can also find their name in the Friends area of the "Matching" tab.
+The easiest way is to add your opponent as a friend, using the Friend List tab. Then, go back to the Automatch tab, and click "join" next to their username in the Friends list on the right side.
+
+You can also click the "Tables" tab in the lobby, and find their name.
 
 #### Do we play rated or unrated games?
 
