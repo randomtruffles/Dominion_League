@@ -302,6 +302,10 @@ This setting can also be changed during a game.
 
 One of the introductory posts in your division channel lists the subscription status of the players in your division. You can also see your subscription information on the Account tab of the Dominion Online website. If neither player has access to any expansions, the game will be base-only.
 
+#### What do I do if I have connection issues or other technical problems during a game?
+
+See [suspending games](/rules#4.11).
+
 ## 6. Details and backend
 
 #### How do the moderators determine players' tiers (A, B, C, etc)?
