@@ -59,7 +59,8 @@
     "57": "mic qsenoch",
 	  "58": "hakha3",
 	  "59": "neqativ",
-	  "60": "tracer"
+	  "60": "tracer",
+    "61": "hakha3"
   },
   "runner_ups": {
     "1": "stef",
@@ -121,7 +122,8 @@
     "57": "phika",
 	  "58": "tracer",
 	  "59": "tracer",
-	  "60": "hakha3"
+	  "60": "hakha3",
+    "61": "neqativ"
   },
   "players": {
     "mic qsenoch": [
@@ -209,7 +211,8 @@
 	  "55"
 	],
 	  "hakha3": [
-		  "58"
+		  "58",
+      "61"
 	  ],
 	  "neqativ": [
 		  "59"
@@ -325,6 +328,9 @@
     ],
 	"hakha3": [
 		"60"
-	]
+	],
+  "neqativ": [
+    "61"
+  ]
   }
 }
