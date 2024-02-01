@@ -158,7 +158,7 @@ function loadTier() {
 							if (previousTiers.filter(t => t <= tierKey).length == 0) {
 								stats.firsts.push([winpct, status]);
 							}
-							if (previousSeason == season - 1) {
+							if (previousSeason == currentSeasonNumber - 1) {
 								if ((previousSeason in oddSchemes) && (previousTier in oddSchemes[previousSeason])) {
 									if (tierKey == oddSchemes[previousSeason][previousTier][0]) {
 										stats.promoters.push([winpct, status]);
