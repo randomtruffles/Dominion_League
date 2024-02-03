@@ -11,10 +11,10 @@ const cur = {{ site.data.current_season | jsonify }}
 var ChartUtils = {};
 
 ChartUtils.curString = String(cur.season);
-ChartUtils.tierColors = ["#FF00FF","#9900FF","#0000FF","#4A85E8","#00FFFF","#00FF00","#FFFF00","#FF9800","#FF0000","#980000", "#B7B7B7"];
+ChartUtils.tierColors = {"A": "#d734ed","B": "#7610ad","C": "#3623db","D": "#1c58d9","E": "#19bcd1","F": "#18c939","G": "#c2d119","H": "#f2e01d","I": "#d68213","J": "#d94514", "K": "#b8123c", "P": "#B7B7B7"};
 ChartUtils.standingsColors = ["#E77B72", "#E88372", "#EA8C71", "#EC956F", "#EF9E6E", "#F2A76D", "#F4B06B", "#F7B96B", "#F9C269", "#FCCB67", "#FED467", "#F2D467", "#E2D26B", "#D0CF6F", "#C0CC73", "#AFCA76", "#9EC77A", "#8CC47E", "#7CC181", "#6DBF84", "#5BBC88"];
-ChartUtils.darkColors = ["#000000", "#D0D0D0", "#ABAB0C", "#09823B", "#AD5211", "#5E11B8"];
-ChartUtils.lightColors = ["#B3B3B3", "#FFFFFF", "#FAFAB7", "#88F7B6", "#F6C5A2", "#C9A2F6"];
+ChartUtils.darkColors = ["#000000", "#D0D0D0", "#FF80A0", "#00FFFF", "#FFB000", "#008F00"];
+ChartUtils.lightColors = ["#CCCCCC", "#FFFFFF", "#FFDBE4", "#CCFFFF", "#FFE7B3", "#B3FFB3"];
 ChartUtils.clickableNames = null;
 ChartUtils.widthcheck = document.getElementById('widthcheck');
 
@@ -450,9 +450,9 @@ PlayerPlot.makePlot = function() {
 			//find needed tiers
 			var minTier = tiers.sort()[tiers.length - 1]
 			if (PlayerPlot.allTiers) {
-				tiers = ["A","B","C","D","E","F","G","H","I","J","P"];
+				tiers = ["A","B","C","D","E","F","G","H","I","J","K","P"];
 			} else {
-				let potTiers = ["A","B","C","D","E","F","G","H","I","J","P"];
+				let potTiers = ["A","B","C","D","E","F","G","H","I","J","K","P"];
 				let tempTiers = [];
 				for (let i = 0; i < potTiers.length; i++) {
 					if (potTiers[i] <= minTier) {tempTiers.push(potTiers[i]);} else {break;}
@@ -461,7 +461,7 @@ PlayerPlot.makePlot = function() {
 			}
 			
 			//cut colors because layers with same encoding annoyingly union their domains
-			var colors = ChartUtils.tierColors.slice(0,tiers.length).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
+			var colors = tiers.map(x => ChartUtils.tierColors[x]).concat(["#000000", "#000000", "#FFFF00", "#FFFFFF"]);
 			
 			//create chartable counts
 			for (let s of allSeasons) {
@@ -852,12 +852,12 @@ PlayerPlot.makePlot = function() {
 					"field": "tier",
 					"type": "nominal",
 					"scale": {
-						"domain": ["A","B","C","D","E","F","G","H","I","J","P"],
-						"range": ChartUtils.tierColors
+						"domain": ["A","B","C","D","E","F","G","H","I","J","K","P"],
+						"range": ["A","B","C","D","E","F","G","H","I","J","K","P"].map(x => ChartUtils.tierColors[x])
 					},
 					"legend": {
 						"title": "Tier",
-						"values": ["A","B","C","D","E","F","G","H","I","J","P"],
+						"values": ["A","B","C","D","E","F","G","H","I","J","K","P"],
 						"symbolType": "square",
 						"symbolStrokeWidth": 0,
 						"symbolSize": 200
@@ -1319,7 +1319,7 @@ TransitionsPlot.makePlot = function() {
 	for (let j=0; j<tiers.length; j++) {
 		TransitionsPlot.props[tiers[j]] = {"tier": tiers[j], "ids": [], "count": 0};
 	}
-	var colors = ChartUtils.tierColors.slice(0, tiers.length);
+	var colors = tiers.map(x => ChartUtils.tierColors[x]);
 	if (TransitionsPlot.exact && (TransitionsPlot.offset || TransitionsPlot.plus)) {
 		tiers.push("-");
 		TransitionsPlot.props["-"] = {"tier": "Out", "ids": [], "count": 0};
