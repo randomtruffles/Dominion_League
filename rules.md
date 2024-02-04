@@ -272,7 +272,7 @@ If you or your opponent have connection issues, or otherwise cannot continue a g
 
 In the rare event of a game which must be abandoned, you should play a new game in its place. Abandoned games do not count toward match completion or match score.
 
-<a name="4.12.1"></a>4.12.1. If you or your opponent have connection issues or otherwise cannot continue a game, you should reload the same game another time. If the game can't be reloaded (e.g. due to an internal error or impassable bug), you should abandon the game.
+<a name="4.12.1"></a>4.12.1. If you or your opponent have connection issues or otherwise cannot continue a game, you should suspend the game (see [4.11](/rules#4.11)) and reload it another time. If the game can't be reloaded (e.g. due to an internal error or impassable bug), you should abandon the game.
 
 <a name="4.12.2"></a>4.12.2. If you and your opponent agree that your current game is a stalemate, you should abandon the game. If you and your opponent don't agree about a stalemate, then you must play on.
 
