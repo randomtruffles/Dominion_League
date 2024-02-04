@@ -77,22 +77,13 @@ A division is a group of typically 6 players who will play each other during a s
 
 ### <a name="2.3"></a>2.3. Tiers
 
-The divisions are grouped into tiers. The number of tiers depends on the number of divisions.
+Divisions ([2.2](/rules#2.2)) are grouped into tiers. The Dominion League has 11 tiers, identified by letters A through K.
 
-<a name="2.3.1"></a>2.3.1. There is a single division in tier A. Starting with tier B, the maximum number of divisions in a tier is twice the maximum of the tier above it, except every third tier which has the same maximum number as the one above it.
+<a name="2.3.1"></a>2.3.1. Tiers A through E always have exactly 1, 2, 4, 4, and 8 divisions respectively.
 
-<a name="2.3.2"></a>2.3.2. The lowest tier has the same maximum number of divisions as the one above it. This rule overrides [2.3.1](#2.3.1).
+<a name="2.3.2"></a>2.3.2. Tiers F and below usually have at least 8 divisions. Moderator discretion will be used to balance the distribution of players and divisions within these tiers.
 
-<a name="2.3.3"></a>2.3.3. The combination of [2.3.1](#2.3.1) and [2.3.2](#2.3.2) results in the following maximum division counts based on the number of tiers:
-* 6 tiers (A-F): 1-2-4-4-8-8
-* 7 tiers (A-G): 1-2-4-4-8-16-16
-* 8 tiers (A-H): 1-2-4-4-8-16-16-16
-* 9 tiers (A-I): 1-2-4-4-8-16-16-32-32
-* 10 tiers (A-J): 1-2-4-4-8-16-16-32-64-64
-
-<a name="2.3.4"></a>2.3.4. Tiers A through D always have the maximum number of divisions. The moderators at their discretion may choose to have fewer than the maximum number of divisions in tiers E and below.
-
-<a name="2.3.5"></a>2.3.5. The moderators may make exceptions to these tier count rules to account for probable changes in the size of the League.
+<a name="2.3.3"></a>2.3.3. The moderators may make exceptions to these tier count rules to account for probable changes in the size of the League.
 
 ### <a name="2.4"></a>2.4. Tier Placement
 
@@ -273,7 +264,7 @@ Games in the Dominion League do not use a timer.
 
 ### <a name="4.11"></a>4.11. Suspending games
 
-If you or your opponent have connection issues, or otherwise cannot continue a game (e.g. due to time constraints), you should suspend the game. Note the game ID, then resign the game. Resigning in this situation will not be considered a loss, and is necessary to ensure the server considers the game completed, as an in-progress game cannot be loaded at a new table. Use the Load Old Game button to reload the same game another time.
+If you or your opponent have connection issues, or otherwise cannot continue a game (e.g. due to time constraints), you should suspend the game. Note the game ID, then resign the game. Resigning in this situation will not be considered a loss, and is necessary to ensure the server considers the game completed, as an in-progress game cannot be loaded at a new table. Whenever possible, resign the game before refreshing the website, as you may lose the ability to resign it after refreshing. If you get stuck on the login page, use the "Kick & Resign" button. Use the Load Old Game button to reload the same game another time.
 
 <a name="4.11.1"></a>4.11.1. Prior to resuming a suspended game, you may not load the game by ID, practice the kingdom, discuss it with other players, or otherwise study the game.
 
