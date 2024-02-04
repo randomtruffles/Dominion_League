@@ -62,10 +62,10 @@
 - name: snowbz
   discord: snowbz#9320
   image: snowbz
+- name: TeamOkay
+  discord: teamokay
+  image: teamokay
 - name: tracer
   discord: tracer#2575
   image: tracer
   chair: Admin, Website
-- name: wharf_rat
-  discord: wharf_rat#8971
-  image: wharf_rat

@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var hist = {};
 
-for (let s=1; s<=60; s++) {
+for (let s=1; s<=61; s++) {
 	let bigHist = JSON.parse(fs.readFileSync(`Seasons/s${s}.json`));
 	let smallHist = {"season": s};
 	for (const div in bigHist) {
@@ -45,10 +45,8 @@ fs.writeFileSync("outputs/league_history.json", hist);
 hist = JSON.parse(hist);
 
 var players = {};
-var adivs = {};
 
 for (const seasonKey in hist) {
-	adivs[seasonKey] = hist[seasonKey]["A1"];
 	for (const div in hist[seasonKey]) {
 		if (div == "season") {continue;}
 		for (const player of hist[seasonKey][div].members) {
@@ -63,7 +61,6 @@ for (const seasonKey in hist) {
 }
 
 fs.writeFileSync("outputs/player_seasons.json", JSON.stringify(players));
-fs.writeFileSync("outputs/a_history.json", JSON.stringify(adivs));
 
 //old sims: 29
 //new sims: 42
