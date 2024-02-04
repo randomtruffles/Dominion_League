@@ -77,7 +77,7 @@ A division is a group of typically 6 players who will play each other during a s
 
 ### <a name="2.3"></a>2.3. Tiers
 
-Divisions ([2.2](/rules#2.2)) are grouped into tiers. The Dominion League has 11 tiers, identified by letters A through K.
+Divisions ([2.2](#2.2)) are grouped into tiers. The Dominion League has 11 tiers, identified by letters A through K.
 
 <a name="2.3.1"></a>2.3.1. Tiers A through E always have exactly 1, 2, 4, 4, and 8 divisions respectively.
 
@@ -272,7 +272,7 @@ If you or your opponent have connection issues, or otherwise cannot continue a g
 
 In the rare event of a game which must be abandoned, you should play a new game in its place. Abandoned games do not count toward match completion or match score.
 
-<a name="4.12.1"></a>4.12.1. If you or your opponent have connection issues or otherwise cannot continue a game, you should suspend the game (see [4.11](/rules#4.11)) and reload it another time. If the game can't be reloaded (e.g. due to an internal error or impassable bug), you should abandon the game.
+<a name="4.12.1"></a>4.12.1. If you or your opponent have connection issues or otherwise cannot continue a game, you should suspend the game (see [4.11](#4.11)) and reload it another time. If the game can't be reloaded (e.g. due to an internal error or impassable bug), you should abandon the game.
 
 <a name="4.12.2"></a>4.12.2. If you and your opponent agree that your current game is a stalemate, you should abandon the game. If you and your opponent don't agree about a stalemate, then you must play on.
 
@@ -460,17 +460,17 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 <a name="6.2.6"></a>6.2.6. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having completed 5 matches.
 
-<a name="6.2.7"></a>6.2.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines and do not request an extension (see [6.3](/rules#6.3)), though they may waive the drop and/or the suspension at their discretion in response to extenuating circumstances.
+<a name="6.2.7"></a>6.2.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines and do not request an extension (see [6.3](#6.3)), though they may waive the drop and/or the suspension at their discretion in response to extenuating circumstances.
 
 ### <a name="6.3"></a>6.3. Extensions
 
-If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), you must request an extension from your moderator by that deadline.
+If you are unable to meet one of the deadlines specified in [6.2](#6.2), you must request an extension from your moderator by that deadline.
 
-<a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](/rules#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per [6.2.7](/rules#6.2.7).
+<a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per [6.2.7](#6.2.7).
 
 <a name="6.3.2"></a>6.3.2. You can only request an extension if you are not currently behind on any prior deadlines for the season. This means that any scheduling you need to do for an extension from a prior week must be completed before you can request another extension; similarly, you cannot request an extension for a deadline that you have already missed.
 
-<a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](/rules#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it. For any other extension request, you must include a plan for how you will catch up to the expected pace of scheduling.
+<a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it. For any other extension request, you must include a plan for how you will catch up to the expected pace of scheduling.
 
 <a name="6.3.4"></a>6.3.4. Extensions only apply to the week they are requested for. If you need another extension for a later week in the season, you will need to make another request.
 
@@ -488,7 +488,7 @@ If you have any scheduling issues, inform your moderator.
 
 <a name="6.4.3"></a>6.4.3. If your opponent is 15 minutes late to a scheduled match, fails to show up at all, or cancels at the last minute, inform your moderator.
 
-<a name="6.4.4"></a>6.4.4. Players who are repeatedly in violation of [6.4.2](/rules#6.4.2) may be warned or suspended per [7.2](/rules#7.2).
+<a name="6.4.4"></a>6.4.4. Players who are repeatedly in violation of [6.4.2](#6.4.2) may be warned or suspended per [7.2](#7.2).
 
 ## <a name="7"></a>7. Drops and Suspensions
 
