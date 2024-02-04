@@ -480,7 +480,15 @@ If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), y
 
 ### <a name="6.4"></a>6.4. Difficulty scheduling
 
-If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator.
+If you have any scheduling issues, inform your moderator.
+
+<a name="6.4.1"></a>6.4.1. If you are going to be unavailable for a significant chunk of time during the season, make a post in your division channel explaining the situation and tagging your division and your moderator.
+
+<a name="6.4.2"></a>6.4.2. If you are going to be late to a scheduled match, or need to reschedule, inform your opponent as soon as possible.
+
+<a name="6.4.3"></a>6.4.3. If your opponent is 15 minutes late to a scheduled match, fails to show up at all, or cancels at the last minute, inform your moderator.
+
+<a name="6.4.4"></a>6.4.4. Players who are repeatedly in violation of [6.4.2](/rules#6.4.2) may be warned or suspended per [7.2](/rules#7.2).
 
 ## <a name="7"></a>7. Drops and Suspensions
 
@@ -500,7 +508,7 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
-<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.6](#3.6)) will be subject to a warning or suspension per discretion of the moderator team.
+<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.6](#3.6) and [6.4.4](#6.4.4)) will be subject to a warning or suspension per discretion of the moderator team.
 
 ## <a name="8"></a>8. Moderation
 
