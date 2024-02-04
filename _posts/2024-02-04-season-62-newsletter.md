@@ -23,7 +23,7 @@ We will be adding the two tiers starting in season 63. 64% of players in E-G tie
 
 With the new tiers being added in season 63, there is a different promotion and demotion scheme in place this upcoming season to fill the new tiers. The best performing players in G tier this season and worst performing players in F will join the tier being added between them (labelled G), and the best performing players in I and worst performing players in H will join the tier being added between those two (labelled J). Below is a graphic showing the transition from our current 9 tiers to 11 for next season.
 
-
+![Two tiers being added between others](season-62-promotion-demotion-chart.png "Season 61 -> 62 Default Promotion Rules")
 
 Feel free to ask about the process in the #league discord channel if something seems confusing.
 
