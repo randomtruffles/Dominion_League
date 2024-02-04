@@ -793,7 +793,7 @@ PlayerPlot.makePlot = function() {
 			});
 			PlayerPlot.plot.addDataListener('line_hovered_store', function(name, value) {
 				if (value.length) {
-					let hoveredIdx = PlayerPlot.player.indexOf(value[0].values[0]);
+					let hoveredIdx = PlayerPlot.player.filter(p => p).indexOf(value[0].values[0]);
 					PlayerPlot.playerButtons.childNodes[hoveredIdx].classList.add("chart-emphasized");
 				} else {
 					let buttons = PlayerPlot.playerButtons.childNodes;
