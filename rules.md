@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2023-11-29
+date: 2024-02-05
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -49,7 +49,7 @@ If you meet all the requirements per [1.1](#1.1) and are not playing in the curr
 
 ### <a name="1.3"></a>1.3. Returning
 
-If you are playing in the current season and would like to join the next season, fill out the Returning Form linked in your division’s Discord channel. Otherwise, you will by default leave the League after the current season.
+If you are playing in the current season and would like to join the next season, fill out the Returning Form linked in your division's Discord channel. Otherwise, you will by default leave the League after the current season.
 
 ### <a name="1.4"></a>1.4. Hiatus
 
@@ -77,22 +77,13 @@ A division is a group of typically 6 players who will play each other during a s
 
 ### <a name="2.3"></a>2.3. Tiers
 
-The divisions are grouped into tiers. The number of tiers depends on the number of divisions.
+Divisions ([2.2](#2.2)) are grouped into tiers. The Dominion League has 11 tiers, identified by letters A through K.
 
-<a name="2.3.1"></a>2.3.1. There is a single division in tier A. Starting with tier B, the maximum number of divisions in a tier is twice the maximum of the tier above it, except every third tier which has the same maximum number as the one above it.
+<a name="2.3.1"></a>2.3.1. Tiers A through E always have exactly 1, 2, 4, 4, and 8 divisions respectively.
 
-<a name="2.3.2"></a>2.3.2. The lowest tier has the same maximum number of divisions as the one above it. This rule overrides [2.3.1](#2.3.1).
+<a name="2.3.2"></a>2.3.2. Tiers F and below usually have at least 8 divisions. Moderator discretion will be used to balance the distribution of players and divisions within these tiers.
 
-<a name="2.3.3"></a>2.3.3. The combination of [2.3.1](#2.3.1) and [2.3.2](#2.3.2) results in the following maximum division counts based on the number of tiers:
-* 6 tiers (A-F): 1-2-4-4-8-8
-* 7 tiers (A-G): 1-2-4-4-8-16-16
-* 8 tiers (A-H): 1-2-4-4-8-16-16-16
-* 9 tiers (A-I): 1-2-4-4-8-16-16-32-32
-* 10 tiers (A-J): 1-2-4-4-8-16-16-32-64-64
-
-<a name="2.3.4"></a>2.3.4. Tiers A through D always have the maximum number of divisions. The moderators at their discretion may choose to have fewer than the maximum number of divisions in tiers E and below.
-
-<a name="2.3.5"></a>2.3.5. The moderators may make exceptions to these tier count rules to account for probable changes in the size of the League.
+<a name="2.3.3"></a>2.3.3. The moderators may make exceptions to these tier count rules to account for probable changes in the size of the League.
 
 ### <a name="2.4"></a>2.4. Tier Placement
 
@@ -273,7 +264,7 @@ Games in the Dominion League do not use a timer.
 
 ### <a name="4.11"></a>4.11. Suspending games
 
-If you or your opponent have connection issues, or otherwise cannot continue a game (e.g. due to time constraints), you should suspend the game. Note the game ID, then resign the game. Resigning in this situation will not be considered a loss, and is necessary to ensure the server considers the game completed, as an in-progress game cannot be loaded at a new table. Use the Load Old Game button to reload the same game another time.
+If you or your opponent have connection issues, or otherwise cannot continue a game (e.g. due to time constraints), you should suspend the game. Note the game ID, then resign the game. Resigning in this situation will not be considered a loss, and is necessary to ensure the server considers the game completed, as an in-progress game cannot be loaded at a new table. Whenever possible, resign the game before refreshing the website, as you may lose the ability to resign it after refreshing. If you get stuck on the login page, use the "Kick & Resign" button. Use the Load Old Game button to reload the same game another time.
 
 <a name="4.11.1"></a>4.11.1. Prior to resuming a suspended game, you may not load the game by ID, practice the kingdom, discuss it with other players, or otherwise study the game.
 
@@ -281,9 +272,9 @@ If you or your opponent have connection issues, or otherwise cannot continue a g
 
 In the rare event of a game which must be abandoned, you should play a new game in its place. Abandoned games do not count toward match completion or match score.
 
-<a name="4.12.1"></a>4.12.1. If you or your opponent have connection issues or otherwise cannot continue a game, you should reload the same game another time. If the game can’t be reloaded (e.g. due to an internal error or impassable bug), you should abandon the game.
+<a name="4.12.1"></a>4.12.1. If you or your opponent have connection issues or otherwise cannot continue a game, you should suspend the game (see [4.11](#4.11)) and reload it another time. If the game can't be reloaded (e.g. due to an internal error or impassable bug), you should abandon the game.
 
-<a name="4.12.2"></a>4.12.2. If you and your opponent agree that your current game is a stalemate, you should abandon the game. If you and your opponent don’t agree about a stalemate, then you must play on.
+<a name="4.12.2"></a>4.12.2. If you and your opponent agree that your current game is a stalemate, you should abandon the game. If you and your opponent don't agree about a stalemate, then you must play on.
 
 <a name="4.12.3"></a>4.12.3. You and your opponent may agree to abandon a game with a Base-only kingdom that was generated by mistake, i.e. because you and/or your opponent did not realize your Dominion Online subscription had expired. This must be done before the start of turn 2. In this case, you or your opponent should extend your subscription before starting a new game. You may not otherwise agree to abandon a game based on the contents of the kingdom.
 
@@ -295,7 +286,7 @@ Each game you win is reported as 1 win. Each game you tie is reported as 0.5 win
 
 ### <a name="4.14"></a>4.14. Submitting results
 
-After each playing session, you or your opponent should submit the results of that playing session as soon as possible using the Results form linked in your division’s Discord channel.
+After each playing session, you or your opponent should submit the results of that playing session as soon as possible using the Results form linked in your division's Discord channel.
 
 <a name="4.14.1"></a>4.14.1. The results are the total wins and ties per [4.13](#4.13).
 
@@ -469,17 +460,17 @@ In order to ensure that matches are completed in a timely fashion, players must 
 
 <a name="6.2.6"></a>6.2.6. At the end of the sixth and final week of the season, players should have completed all of their matches. This typically requires having completed 5 matches.
 
-<a name="6.2.7"></a>6.2.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines and do not request an extension (see [6.3](/rules#6.3)), though they may waive the drop and/or the suspension at their discretion in response to extenuating circumstances.
+<a name="6.2.7"></a>6.2.7. By default, the moderators will drop and suspend (see [7](#7)) players who fail to meet these deadlines and do not request an extension (see [6.3](#6.3)), though they may waive the drop and/or the suspension at their discretion in response to extenuating circumstances.
 
 ### <a name="6.3"></a>6.3. Extensions
 
-If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), you must request an extension from your moderator by that deadline.
+If you are unable to meet one of the deadlines specified in [6.2](#6.2), you must request an extension from your moderator by that deadline.
 
-<a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](/rules#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per [6.2.7](/rules#6.2.7).
+<a name="6.3.1"></a>6.3.1. If you are in tier A and you are requesting an extension to the end-of-season deadline ([6.2.6](#6.2.6)), you may request an extension of up to 3 days. In all other cases, you may request an extension of up to 7 days. If you do not request an extension, or if you still have not met the deadline by the end of the extension period, you will be dropped and suspended by default per [6.2.7](#6.2.7).
 
 <a name="6.3.2"></a>6.3.2. You can only request an extension if you are not currently behind on any prior deadlines for the season. This means that any scheduling you need to do for an extension from a prior week must be completed before you can request another extension; similarly, you cannot request an extension for a deadline that you have already missed.
 
-<a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](/rules#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it. For any other extension request, you must include a plan for how you will catch up to the expected pace of scheduling.
+<a name="6.3.3"></a>6.3.3. To receive an extension for the end-of-season deadline ([6.2.6](#6.2.6)), you must schedule an uncompleted match with your opponent. Provide the date and time to your moderator when you request it. For any other extension request, you must include a plan for how you will catch up to the expected pace of scheduling.
 
 <a name="6.3.4"></a>6.3.4. Extensions only apply to the week they are requested for. If you need another extension for a later week in the season, you will need to make another request.
 
@@ -489,7 +480,15 @@ If you are unable to meet one of the deadlines specified in [6.2](/rules#6.2), y
 
 ### <a name="6.4"></a>6.4. Difficulty scheduling
 
-If you have any scheduling issues, or if your opponent does not show up for a scheduled match, please inform your moderator.
+If you have any scheduling issues, inform your moderator.
+
+<a name="6.4.1"></a>6.4.1. If you are going to be unavailable for a significant chunk of time during the season, make a post in your division channel explaining the situation and tagging your division and your moderator.
+
+<a name="6.4.2"></a>6.4.2. If you are going to be late to a scheduled match, or need to reschedule, inform your opponent as soon as possible.
+
+<a name="6.4.3"></a>6.4.3. If your opponent is 15 minutes late to a scheduled match, fails to show up at all, or cancels at the last minute, inform your moderator.
+
+<a name="6.4.4"></a>6.4.4. Players who are repeatedly in violation of [6.4.2](#6.4.2) may be warned or suspended per [7.2](#7.2).
 
 ## <a name="7"></a>7. Drops and Suspensions
 
@@ -509,7 +508,7 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
-<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.6](#3.6)) will be subject to a warning or suspension per discretion of the moderator team.
+<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.6](#3.6) and [6.4.4](#6.4.4)) will be subject to a warning or suspension per discretion of the moderator team.
 
 ## <a name="8"></a>8. Moderation
 
