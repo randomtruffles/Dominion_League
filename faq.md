@@ -33,7 +33,7 @@ In [Dominion Online](http://dominion.games), click the **Automatch** tab. In the
 
 ![faq_images](/img/faq/Capture_Ranked.PNG)
 
-#### I didn’t respond in time to the Discord message to confirm my signup. Can I sign up again?
+#### I didn't respond in time to the Discord message to confirm my signup. Can I sign up again?
 
 If the deadline hasn't passed, you are encouraged to re-sign up by filling out the Google form again.
 
@@ -59,15 +59,15 @@ Typically, you will be put in a division with 5 other similarly skilled players.
 
 #### How do I know who is in my division?
 
-The introductory message in your division’s Discord channel will say who is playing in your division, and will be pinned for your reference. You can also see which players are in every division on the [Standings](/current_standings) page.
+The introductory message in your division's Discord channel will say who is playing in your division, and will be pinned for your reference. You can also see which players are in every division on the [Standings](/current_standings) page.
 
 #### How do I know who my moderator is?
 
-The introductory message in your division’s Discord channel will say who your moderator is, and will be pinned for your reference. There is also a post made in #announcements each season with a full list of moderator division assignments.
+The introductory message in your division's Discord channel will say who your moderator is, and will be pinned for your reference. There is also a post made in #announcements each season with a full list of moderator division assignments.
 
 #### What is the role of my moderator in my division?
 
-Your moderator’s role is to make sure players stay on schedule, and resolve any disputes between players. You can feel free to reach out to them at any time, either in your division channel or via a direct message if you have any questions or concerns about the league. They can help resolve any conflicts between players such as scheduling issues or rules violations. Your moderator may also check in with you throughout the season for various reasons such as if you fall behind the one match per week pace, or if your opponent is having trouble reaching you. Please respond promptly to any messages your moderator may send you.
+Your moderator's role is to make sure players stay on schedule, and resolve any disputes between players. You can feel free to reach out to them at any time, either in your division channel or via a direct message if you have any questions or concerns about the league. They can help resolve any conflicts between players such as scheduling issues or rules violations. Your moderator may also check in with you throughout the season for various reasons such as if you fall behind the one match per week pace, or if your opponent is having trouble reaching you. Please respond promptly to any messages your moderator may send you.
 
 ## 2. Discord and the online community
 
@@ -83,6 +83,15 @@ Discord is where you will message opponents to schedule matches and receive impo
 
 You will mainly use Discord to communicate with the other players in your division, and the moderators. You can also see announcements about upcoming matches so you can spectate them, and you can announce your own matches.
 
+#### How do I make sure I see important Discord messages?
+
+We strongly recommend turning off Message Requests for the Dominion server. This ensures you get notifications for all Direct Messages from your opponents and moderators. To do this:
+- Right-click / long-press on the server icon in the left sidebar
+- Choose Privacy Settings
+- Make sure "Direct Messages" are turned ON and "Message Requests" are turned OFF.
+
+If you don't otherwise check Discord frequently, you may find it helpful to get notifications for all posts in your division channel, instead of just ones in which you're tagged. To change the notification settings, right-click / long-press on the channel name in the sidebar.
+
 #### How do I see what matches are coming up, so that I can spectate them?
 
 Check the [Dominion calendar](/matches). There is also a pinned post in the #matches channel with links to Google calendars that you can add to your own calendar.
@@ -93,7 +102,7 @@ See [What is the calendar form?](#what-is-the-calendar-form)
 
 #### What is a Town Hall on Discord?
 
-The moderators host Town Halls to gather feedback on a specific topic that doesn’t have clear answers. Town Halls take place over a 24-hour period in the #town-hall channel on Discord. They begin with a presentation by the moderators on the topic and some of the options under consideration, then everyone is invited to contribute via messages and emoji polls. Following the discussion, the moderators formulate a plan of action based on the feedback, which, if opinion is split on the matter, could involve choosing to collect additional feedback from all League Players via the Returning Form.
+The moderators host Town Halls to gather feedback on a specific topic that doesn't have clear answers. Town Halls take place over a 24-hour period in the #town-hall channel on Discord. They begin with a presentation by the moderators on the topic and some of the options under consideration, then everyone is invited to contribute via messages and emoji polls. Following the discussion, the moderators formulate a plan of action based on the feedback, which, if opinion is split on the matter, could involve choosing to collect additional feedback from all League Players via the Returning Form.
 
 ## 3. Scheduling matches
 
@@ -129,17 +138,17 @@ Notify your moderator as soon as possible if someone in your division is unrespo
 
 #### What do I do if it is impossible for me to schedule with someone in my division?
 
-Notify your moderator if your schedule is completely incompatible with someone else’s. Make an effort to schedule matches on the weekend if necessary.
+Notify your moderator if your schedule is completely incompatible with someone else's. Make an effort to schedule matches on the weekend if necessary.
 
 #### What happens if someone in my division is completely inactive?
 
 If someone does not respond to any other players in their division, or to their moderator, that player will be removed and suspended from the League. See [drops and suspensions](/rules#7) and [dropped players](/rules#5.6) for more information.
 
-#### What do I do if I can’t play all my matches in time?
+#### What do I do if I can't play all my matches in time?
 
 Notify your moderator as soon as possible, and they may be able to grant you an extension. See [extensions](/rules#6.3) for more information.
 
-#### What do I do if I can’t finish the season due to unforeseen circumstances?
+#### What do I do if I can't finish the season due to unforeseen circumstances?
 
 Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the suspension if appropriate.
 
@@ -199,7 +208,7 @@ No, one player should submit the scores of both players.
 
 We recommend that the player with more wins during the playing session be responsible for reporting the score. If it's a tie, the player who was not the table host (and therefore did not have to manage the table settings) should report the score. If you wish to have the other player report the score, coordinate that with your opponent.
 
-#### Do the players’ VP scores in a game matter for the League?
+#### Do the players' VP scores in a game matter for the League?
 
 No, all that matters is who won, or if it was a tie. It does not matter how many VP you won the game with.
 
@@ -221,7 +230,7 @@ Allowing spectators offers League members an opportunity to watch competitive ga
 
 #### What should I do when spectating a League game?
 
-As a spectator, you can comment on the players’ decisions and discuss strategies with the other spectators. Please refrain from making inappropriate remarks, and be courteous in any critiques. A transcript of the commentary is often given to the players after the game, so they can evaluate their performance and areas for improvement. You may not discuss a game with the players until the game is over. Trying to give a competitive advantage to any player is against the Dominion Online terms and conditions, and could result in your account being suspended.
+As a spectator, you can comment on the players' decisions and discuss strategies with the other spectators. Please refrain from making inappropriate remarks, and be courteous in any critiques. A transcript of the commentary is often given to the players after the game, so they can evaluate their performance and areas for improvement. You may not discuss a game with the players until the game is over. Trying to give a competitive advantage to any player is against the Dominion Online terms and conditions, and could result in your account being suspended.
 
 As a spectator, if you see that the chat message box says "message" rather than "message spectators", that means that the players have not set "players can see spectator chat" to "false". In this case, you should notify the players that spec chat is on, and refrain from saying anything about the game until they turn it off.
 
@@ -237,15 +246,21 @@ See [play to the best of your ability](/rules#3.4).
 
 #### How do I add someone from my division as a friend on Dominion Online?
 
-Click the "Friend List" tab in the lobby, enter your opponent’s username, and click "Add".
+Click the "Friend List" tab in the lobby, enter your opponent's username, and click "Add".
 
 #### How do I make a table?
 
-Click the "New Table" tab in the lobby and choose "Create Table". Note you should also click "Advanced Options" at the table and uncheck "Players can see spectator chat".
+Click the "New Table" tab or the "Create Table" button in the lobby.
 
-#### How do I find my opponent’s table?
+#### How do I find my opponent's table?
 
-Click the "Tables" tab in the lobby, and find their name. If you are friends, then you can also find their name in the Friends area of the "Matching" tab.
+The easiest way is to add your opponent as a friend, using the "Friend List" tab. Then, go back to the "Automatch" tab, and click "join" next to their username in the Friends list on the right side. They do not need to add you as a friend unless they have "Followers see your activity" set to OFF.
+
+You can also click the "Tables" tab in the lobby, and find their name. However, the search for the table host is case sensitive, and sometimes the tab doesn't load properly.
+
+#### Do I need to create the table if I have a subscription, but my opponent doesn't?
+
+No. All of the cards that you and your opponent have access to will be available regardless of who creates the table.
 
 #### Do we play rated or unrated games?
 
@@ -271,7 +286,7 @@ You can find the "Respected Cards" setting under "Kingdom Options". The "Respect
 
 #### How do I set the starting player at my table?
 
-To have the starting player determined randomly for the first game of a match, check that "Randomized Player Order" in the "Players" box in the upper right is enabled. To set the starting player in subsequent games, turn off "Randomized Player Order". You can change the player order by dragging and dropping, or by using the up and down arrows next to the players’ names. Note the username of the player who went first during a game is colored red in the game log and chat box.
+To have the starting player determined randomly for the first game of a match, check that "Randomized Player Order" in the "Players" box in the upper right is enabled. To set the starting player in subsequent games, turn off "Randomized Player Order". You can change the player order by dragging and dropping, or by using the up and down arrows next to the players' names. Note the username of the player who went first during a game is colored red in the game log and chat box.
 
 #### What other settings should I be aware of?
 
@@ -287,9 +302,13 @@ This setting can also be changed during a game.
 
 One of the introductory posts in your division channel lists the subscription status of the players in your division. You can also see your subscription information on the Account tab of the Dominion Online website. If neither player has access to any expansions, the game will be base-only.
 
+#### What do I do if I have connection issues or other technical problems during a game?
+
+See [suspending games](/rules#4.11).
+
 ## 6. Details and backend
 
-#### How do the moderators determine players’ tiers (A, B, C, etc)?
+#### How do the moderators determine players' tiers (A, B, C, etc)?
 
 See [tier placement](/rules#2.4).
 
@@ -303,7 +322,9 @@ As much as possible, players are grouped by their time zones in tiers E and belo
 
 #### What do I do if my regular schedule makes it difficult to play with people from my own time zone?
 
-The easiest way to indicate this is to sign up with the time zone you can most easily play with.
+If you are a new player, we collect this information when you sign up. If you select the answer "I expect my availability to be very different from that of others in my timezone" in response to the Availability question, your onboarding moderator will follow up to ask for more details and figure out how to place you.
+
+If you are a returning player, and the availability that you indicate on your returning form matches up better with players in another time zone, we may allocate you to a division accordingly. If you'd like to request to be placed with players in a specific time zone other than your own, you can contact your moderator.
 
 #### What are promotions and demotions, and how do they work?
 
