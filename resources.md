@@ -25,7 +25,7 @@ The current rulebooks for each Dominion set are linked below. See below for some
 * [Dominion: Prosperity (2nd Edition)](/img/uploads/04-prosperity-rulebook.pdf)
 * [Dominion: Hinterlands (2nd Edition)](/img/uploads/06-hinterlands-rulebook.pdf)
 * [Dominion: Dark Ages](/img/uploads/07-dark-ages-rulebook.pdf)
-* [Dominion: Guilds & Cornucopia](/img/uploads/08-guilds-and-05-cornucopia-rulebook.pdf)
+* [Dominion: Cornucopia & Guilds (2nd Edition)](/img/uploads/05-cornucopia-and-08-guilds-rulebook.pdf)
 * [Dominion: Adventures](/img/uploads/09-adventures-rulebook.pdf)
 * [Dominion: Empires](/img/uploads/10-empires-rulebook.pdf)
 * [Dominion: Nocturne](/img/uploads/11-nocturne-rulebook.pdf)
@@ -34,7 +34,7 @@ The current rulebooks for each Dominion set are linked below. See below for some
 * [Dominion: Allies](/img/uploads/14-allies-rulebook.pdf)
 * [Dominion: Plunder](/img/uploads/15-plunder-rulebook.pdf)
 
-There is no official rulebook for the promo cards (Envoy, Black Market, Stash, Walled Village, Governor, Prince, Summon, Sauna/Avanto, Dismantle, Church, and Captain).
+There is no official rulebook for the promo cards (Envoy, Black Market, Stash, Walled Village, Governor, Prince, Summon, Sauna/Avanto, Dismantle, Church, Captain, and Marchland).
 
 ## New errata
 
@@ -47,9 +47,9 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Donate**: Event, 8 Debt *(Dominion: Empires)*<br>At the start of your next turn, first, put your deck and discard pile into your hand, trash any number of cards from it, then shuffle the rest into your deck and draw 5 cards.
 * **Island Folk**: Ally *(Dominion: Allies)*<br>At the end of your turn, you may spend **5 Favors** to take an extra turn after this one (but not a 3rd turn in a row).
 * **Journey**: Event, $4 *(Dominion: Plunder)*<br>You don't discard cards from play in Clean-up this turn. Take an extra turn after this one (but not a 3rd turn in a row).
-* **Merchant Guild**: Action, $5 *(Dominion: Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
+* **Merchant Guild**: Action, $5 *(Dominion: Cornucopia & Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
 * **Mission**: Event, $4 *(Dominion: Adventures)*<br>Take an extra turn after this one (but not a 3rd turn in a row), during which you can't buy cards. (You can still buy Events.)
-* **Mountain Pass**: Landmark *(Dominion: Empires)*<brWhen you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
+* **Mountain Pass**: Landmark *(Dominion: Empires)*<br>When you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
 * **Outpost**: Action - Duration, $5 *(Dominion: Seaside)*<br>You only draw 3 cards for your next hand. Take an extra turn after this one (but not a 3rd turn in a row).
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Patron**: Action - Reaction, $4 *(Dominion: Renaissance)*<br>**+1 Villager**<br>**+$2**<br>––––––––––––––––––––<br>When something causes you to reveal this (using the word "reveal") in an Action phase, **+1 Coffers**.
