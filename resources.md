@@ -143,6 +143,8 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
 
+* Similarly, if you play a card using Way of the Squirrel during another player's turn, you will draw 2 extra cards at the end of your next turn instead.
+
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
 
 * If it is not your turn and you play 2 or more Action cards and then Conspirator, you will not get +1 Card and +1 Action.
