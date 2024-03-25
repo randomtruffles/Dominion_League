@@ -6,7 +6,7 @@ author: tracer
 layout: simple_post
 categories: signups
 ---
-**Season 63** will run from Monday, April 1, until Sunday, May 12, and you can sign up until **Saturday, March 23 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 63** will run from Monday, April 1 until Sunday, May 12 and ~~you can sign up until Saturday, March 23 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Thursday, April 11 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
@@ -22,7 +22,8 @@ After you fill out the form, please check back in about 5 minutes for the [table
 A moderator will contact you on Discord to confirm your participation. You must reply to this message within 4-7 days depending on how close your sign-up is to the deadline. In addition, we require all players to **check in** during the first week of the season or forfeit their place. This consists of filling out a very short form to confirm that you plan to play the season that will be sent at the start of the season. If you fail to check in promptly, you could be removed.
 
 #### Sign up using this Google Form:
-**NOTE:** Season 62 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+
+**NOTE:** Season 62 players should **not** use this signup form and should instead contact a moderator for further instructions.
 <br>
 
 <div class="sheets">
