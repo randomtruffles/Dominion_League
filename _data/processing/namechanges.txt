@@ -21,7 +21,9 @@ manchild69	stonedmason
 shaiyacat	TrinaCat
 grand market	crude
 Phtevenjohnsonxx	Phtevenj
-h.exe	Ketyri
+Seprix	juniper.sona
+h.exe	juniper.sona
+Ketyri	juniper.sona
 turbobaseball	SSounder
 sequoiac	catmom
 ravi vasudevan	ravivas
@@ -47,7 +49,6 @@ Ida Hodnebrog	Baconpotato
 MaoMaster51	mathraccoon51
 D0cFaust	J0hann3s
 pqr4	Chorus
-Seprix	Ketyri
 pgrabber	CremeFraiche
 tortuga_71	tortuga1
 mmaurer	marcvs
@@ -73,6 +74,7 @@ Eddetektor	Edek
 NateTheSnake	innatelyflawed
 ronarouseme	Antonio_McDyess
 hdarj288	hdarj
+CasualxMajestic	birds of siberia
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco

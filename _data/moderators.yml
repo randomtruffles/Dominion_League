@@ -8,10 +8,13 @@
 - name: alibby1152
   discord: alibby1152#4103
   image: alibby
-  chair: Recruiting, Setup
+  chair: Setup
 - name: amoffett11
   discord: amoffett11#8778
   image: amoffett11
+- name: breppert
+  discord: breppert
+  image: breppert
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -39,6 +42,7 @@
 - name: Nabalaskar
   discord: jogi1346
   image: nabalaskar
+  chair: Outreach
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
@@ -48,6 +52,7 @@
 - name: Ruapadi
   discord: ruapadi
   image: ruapadi
+  chair: Feedback
 - name: saltroza
   discord: ejd#7555
   image: saltroza
@@ -65,6 +70,7 @@
 - name: TeamOkay
   discord: teamokay
   image: teamokay
+  chair: Recruiting
 - name: tracer
   discord: tracer#2575
   image: tracer
