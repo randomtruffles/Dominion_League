@@ -18,23 +18,31 @@ tiers:
     promoters: 2
     demoters: 2
   E:
-    divisions: 8
+    divisions: 7
     promoters: 1
     demoters: 2
   F:
-    divisions: 13
-    promoters: 1
+    divisions: 9
+    promoters: 2
     demoters: 2
   G:
-    divisions: 12
+    divisions: 8
     promoters: 2
-    demoters: 1
+    demoters: 2
   H:
-    divisions: 17
-    promoters: 1
+    divisions: 9
+    promoters: 2
     demoters: 2
   I:
-    divisions: 15
+    divisions: 10
+    promoters: 2
+    demoters: 2
+  J:
+    divisions: 9
+    promoters: 2
+    demoters: 2
+  K:
+    divisions: 9
     promoters: 2
     demoters: 0
 
