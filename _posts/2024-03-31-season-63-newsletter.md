@@ -23,7 +23,7 @@ In the coming seasons, please give us feedback about what is and is not working 
 
 On the season 63 returning form we asked if players wanted to have larger divisions, and an overwhelming majority or respondents voted to maintain the current size. We will not be making any changes here.
 
-We received many comments this past season about difficulty scheduling, particularly across time zones. With fewer divisions in each tier, we expect that there will be more divisions split across zones - when this is the case please remember that you may need to schedule ahead of time when your natural schedules do not align as well. It also may work better to put out a general call in your division channel rather than trying to schedule with specific people - be sure to keep a look out for those.
+We received many comments this past season about difficulty scheduling, particularly across time zones. Please remember that you may need to schedule ahead of time when your natural schedules do not align as well, and you may want to specify time zone when scheduling. It also may work better to put out a general call in your division channel rather than trying to schedule with specific people - be sure to keep a look out for those.
 
 Finally, based on last season's townhall, we will be reducing townhall frequency and only holding them when we feel there is a specific need for a discussion. We will still hold a general purpose townhall at least every year for asking the moderators about internal workings.
 
