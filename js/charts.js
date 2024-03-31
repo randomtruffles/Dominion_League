@@ -120,7 +120,7 @@ for (let s in da.divisions) {
 PlayerPlot.counts[ChartUtils.curString] = {};
 PlayerPlot.curTotalPlayers = 0;
 for (let d in cur) {
-	if (/^[A-J]\d+$/.test(d)) {
+	if (/^[A-Z]\d+$/.test(d)) {
 		let tier = d.charAt(0);
 		let ps = Object.keys(cur[d].members).length;
 		if (PlayerPlot.counts[ChartUtils.curString][tier]) {

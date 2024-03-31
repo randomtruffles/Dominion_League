@@ -60,7 +60,8 @@
 	  "58": "hakha3",
 	  "59": "neqativ",
 	  "60": "tracer",
-    "61": "hakha3"
+    "61": "hakha3",
+    "62": "vrsmith"
   },
   "runner_ups": {
     "1": "stef",
@@ -123,7 +124,8 @@
 	  "58": "tracer",
 	  "59": "tracer",
 	  "60": "hakha3",
-    "61": "neqativ"
+    "61": "neqativ",
+    "62": "hakha3"
   },
   "players": {
     "mic qsenoch": [
@@ -194,7 +196,8 @@
 	  "48",
 	  "49",
 	  "54",
-    "56"
+    "56",
+    "62"
     ],
 	"crabcat2": [
 	  "44"
@@ -327,7 +330,8 @@
       "57"
     ],
 	"hakha3": [
-		"60"
+		"60",
+    "62"
 	],
   "neqativ": [
     "61"
