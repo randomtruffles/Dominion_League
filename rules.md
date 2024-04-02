@@ -360,15 +360,13 @@ At the end of the season, you may earn a spot in a different tier by promoting t
 
 <a name="5.3.1"></a>5.3.1. You cannot promote from the highest tier or demote from the lowest tier.
 
-<a name="5.3.2"></a>5.3.2. If the tier directly above yours has fewer divisions than your tier, you promote by finishing in first place.
+<a name="5.3.2"></a>5.3.2. If your tier has at least 1.5 times as many divisions as the tier directly above yours, you promote by finishing in first place. Additionally, if promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.4](#2.3.4)), you promote by finishing in first place. Otherwise, you promote by finishing in first or second place.
 
-<a name="5.3.3"></a>5.3.3. If the tier directly above yours has roughly the same number of divisions as your tier, you promote by finishing in first or second place.
+<a name="5.3.3"></a>5.3.3. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
 
-<a name="5.3.4"></a>5.3.4. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
+<a name="5.3.4"></a>5.3.4. If you promote, you rise one tier.
 
-<a name="5.3.5"></a>5.3.5. If you promote, you rise one tier.
-
-<a name="5.3.6"></a>5.3.6. If you demote, you drop one tier.
+<a name="5.3.5"></a>5.3.5. If you demote, you drop one tier.
 
 ### <a name="5.4"></a>5.4. Superpromotions
 
