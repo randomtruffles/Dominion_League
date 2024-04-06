@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2024-02-05
+date: 2024-04-06
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -79,11 +79,15 @@ A division is a group of typically 6 players who will play each other during a s
 
 Divisions ([2.2](#2.2)) are grouped into tiers. The Dominion League has 11 tiers, identified by letters A through K.
 
-<a name="2.3.1"></a>2.3.1. Tiers A through E always have exactly 1, 2, 4, 4, and 8 divisions respectively.
+<a name="2.3.1"></a>2.3.1. Tiers A through C always have exactly 1, 2, and 4 divisions respectively.
 
-<a name="2.3.2"></a>2.3.2. Tiers F and below usually have at least 8 divisions. Moderator discretion will be used to balance the distribution of players and divisions within these tiers.
+<a name="2.3.2"></a>2.3.2. Tiers D and E have a minimum of 4 divisions each.
 
-<a name="2.3.3"></a>2.3.3. The moderators may make exceptions to these tier count rules to account for probable changes in the size of the League.
+<a name="2.3.3"></a>2.3.3. Tiers F through K have a minimum of 6 divisions each. If there are not enough players to meet this requirement, tiers will be eliminated as necessary.
+
+<a name="2.3.4"></a>2.3.4. A tier can have no more than twice as many divisions as the tier above it. If there are too many players to meet this requirement, tiers will be added as necessary.
+
+<a name="2.3.5"></a>2.3.5. Excluding the bottom tier, a tier must have at least as many divisions as the tier above it, minus one.
 
 ### <a name="2.4"></a>2.4. Tier Placement
 
@@ -207,7 +211,7 @@ The following settings are set by default when you create a new table on Dominio
 
 <a name="4.6.2"></a>4.6.2. For games using expansions and a Card Pool Level of 2 or higher, the "Disliked" and "Banned" options for "Respected Cards" should be on. The "Liked" option should be off.
 
-<a name="4.6.3"></a>4.6.3. "Extra 2nd Edition" should be off.
+<a name="4.6.3"></a>4.6.3. Options for increasing the frequency of recent card releases (e.g. "Extra 2nd Edition" or "Extra Plunder") should be off.
 
 <a name="4.6.4"></a>4.6.4. "Rated game" should be off.
 
@@ -356,15 +360,13 @@ At the end of the season, you may earn a spot in a different tier by promoting t
 
 <a name="5.3.1"></a>5.3.1. You cannot promote from the highest tier or demote from the lowest tier.
 
-<a name="5.3.2"></a>5.3.2. If the tier directly above yours has fewer divisions than your tier, you promote by finishing in first place.
+<a name="5.3.2"></a>5.3.2. If your tier has at least 1.5 times as many divisions as the tier directly above yours, you promote by finishing in first place. Additionally, if promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.4](#2.3.4)), you promote by finishing in first place. Otherwise, you promote by finishing in first or second place.
 
-<a name="5.3.3"></a>5.3.3. If the tier directly above yours has roughly the same number of divisions as your tier, you promote by finishing in first or second place.
+<a name="5.3.3"></a>5.3.3. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
 
-<a name="5.3.4"></a>5.3.4. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
+<a name="5.3.4"></a>5.3.4. If you promote, you rise one tier.
 
-<a name="5.3.5"></a>5.3.5. If you promote, you rise one tier.
-
-<a name="5.3.6"></a>5.3.6. If you demote, you drop one tier.
+<a name="5.3.5"></a>5.3.5. If you demote, you drop one tier.
 
 ### <a name="5.4"></a>5.4. Superpromotions
 
