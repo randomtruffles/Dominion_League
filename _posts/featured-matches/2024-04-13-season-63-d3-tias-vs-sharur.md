@@ -8,7 +8,7 @@ categories: featured-matches
 ---
 Our first feature match of the season between Tias and Sharur showcased many high-powered, fast kingdoms that were nimbly played by our D3 competitors. The first game of the match lasted 15 turns, the second just 13, and after that we never saw turn 12 again. Though there were two resignations, on turn 11.5 and 8.5, both took place with a game ending immediately forthcoming.
 
-I was pleased to be joined by Bienchen1 for commentary and a great crowd of spectators.
+I was pleased to be joined by Bienchen1 for commentary and a great crowd of spectators. Unfortunately, no recording is available.
 
 **Game 1 (142565657)**
 
