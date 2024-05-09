@@ -117,6 +117,7 @@ An effect that tries to play a card for the first time can only do so when the c
 
 Below is a list of cards and situations where the game rules aren't followed. This list does not include bugs with removed cards, confusing or incorrect interface issues, or problems with the Lord Rattington bot. Bugs due to using abilities during another player's turn are in a separate section below.
 
+* **–$1 token + Way of the Chameleon**: If you have your –$1 token and play a card using Way of the Chameleon that would give you +Cards, you draw 1 less (the amount is correct, but it should be +$).
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
 * **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
@@ -136,6 +137,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings. This can matter with Diadem or Possession.
 * **Way of the Chameleon**:
+  * See **–$1 token** above.
   * See **Highwayman** above.
   * See **Priest** above.
 
