@@ -15,6 +15,7 @@
 - name: breppert
   discord: breppert
   image: breppert
+  chair: Outreach
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -39,10 +40,6 @@
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
-- name: Nabalaskar
-  discord: jogi1346
-  image: nabalaskar
-  chair: Outreach
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
