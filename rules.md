@@ -203,6 +203,8 @@ Games played on Dominion Online should use the default table settings provided b
 
 <a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off (see [4.6.6](#4.6.6) and [4.7.4](#4.7.4) for more information about the Card Pool Level).
 
+<a name="4.5.4"></a>4.5.4. If your automatch card pool level is lower than 10, your table settings may have fewer than two landscape slots by default. If this happens, manually add landscape slots until you have two.
+
 ### <a name="4.6"></a>4.6 Table settings reference
 
 The following settings are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
