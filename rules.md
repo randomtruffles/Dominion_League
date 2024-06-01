@@ -544,23 +544,15 @@ Whenever the moderators gather for an official meeting at which rules may change
 
 ### <a name="8.5"></a>8.5. Recruiting new moderators
 
-The moderator team will open applications for new moderators under the following conditions:
+The moderator team follows this process to recruit new moderators:
 
-<a name="8.5.1"></a>8.5.1. The following season is expected to have more than 10 divisions per moderator.
+<a name="8.5.1"></a>8.5.1. New moderator applications are always open.
 
-<a name="8.5.2"></a>8.5.2. The moderator team has not opened applications for new moderators in either of the preceding two seasons.
+<a name="8.5.2"></a>8.5.2. The existing moderator team reviews applications during week 2 of the season.
 
-### <a name="8.6"></a>8.6. Evaluating new moderator applicants
+<a name="8.5.3"></a>8.5.3. The moderators may accept none, some, or all of the applicants.
 
-When the moderator team opens applications for new moderators per [8.5](#8.5), they will follow this process:
-
-<a name="8.6.1"></a>8.6.1. New moderator applications will open during week 2 of the season.
-
-<a name="8.6.2"></a>8.6.2. The existing moderator team will review applications during week 3 of the season.
-
-<a name="8.6.3"></a>8.6.3. When applications close, the moderators may accept none, some, or all of the applicants.
-
-<a name="8.6.4"></a>8.6.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
+<a name="8.5.4"></a>8.5.4. Onboarding/shadowing of new moderators begins during week 3 of the season.
 
 ## <a name="9"></a>9. Amendments
 
