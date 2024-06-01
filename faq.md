@@ -92,7 +92,7 @@ We strongly recommend turning off Message Requests for the Dominion server. This
 
 If you don't otherwise check Discord frequently, you may find it helpful to get notifications for all posts in your division channel, instead of just ones in which you're tagged. To change the notification settings, right-click / long-press on the channel name in the sidebar.
 
-#### What about voice chat?
+#### Why are people in voice chat?
 
 The primary purpose of the voice channels is for players to provide commentary on ongoing matches for spectators to listen to. Sometimes players commentate their own matches, while other times third parties provide commentary. Please mute yourself in Discord before joining one of these voice channels so that the commentators are not disrupted.
 
