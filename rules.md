@@ -173,11 +173,11 @@ A playing session is a series of one or more games between the same two players,
 
 ### <a name="4.3"></a>4.3. Outside help
 
-During games, you may not attempt to gain a competitive advantage by consulting resources other than those maintained by the League on the [Dominion League Resources page](/resources).
+During games, you may not attempt to gain a competitive advantage by using tools or resources external to the Dominion Online client other than those maintained by the League on the [Dominion League Resources](/resources) page.
 
 <a name="4.3.1"></a>4.3.1. The Dominion League Resources page may be consulted privately or publicly at any time.
 
-<a name="4.3.2"></a>4.3.2. For example, getting advice from Dominion Strategy articles or from spectators is not allowed.
+<a name="4.3.2"></a>4.3.2. Examples of using disallowed external tools and resources include: consulting with friends, family, or spectators; reading wiki or strategy articles; seeking advice on Discord; taking physical or digital notes; and using a deck tracker.
 
 ### <a name="4.4"></a>4.4. Starting player
 
