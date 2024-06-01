@@ -92,6 +92,12 @@ We strongly recommend turning off Message Requests for the Dominion server. This
 
 If you don't otherwise check Discord frequently, you may find it helpful to get notifications for all posts in your division channel, instead of just ones in which you're tagged. To change the notification settings, right-click / long-press on the channel name in the sidebar.
 
+#### Why are people in voice chat?
+
+The primary purpose of the voice channels is for players to provide commentary on ongoing matches for spectators to listen to. Sometimes players commentate their own matches, while other times third parties provide commentary. Please mute yourself in Discord before joining one of these voice channels so that the commentators are not disrupted.
+
+Note that you should usually not join voice chat if the discussion is about a match you are playing! If your opponent is doing commentary, they may be okay with you joining the voice chat and discussing the match together, but you should check with them first. You should never join voice chat of third party commentary for your own match!
+
 #### How do I see what matches are coming up, so that I can spectate them?
 
 Check the [Dominion calendar](/matches). There is also a pinned post in the #matches channel with links to Google calendars that you can add to your own calendar.
@@ -220,7 +226,7 @@ The rules of Dominion say that if both players finish with the same score, the p
 
 See [wins and ties](/rules#4.13).
 
-#### Do I need to record proof of my game results (screenshots, game IDs, etc)?
+#### Do I need to record proof of my game results (screenshots, game IDs, etc.)?
 
 No. When you report your results, DomBot will automatically retrieve the results of recent games and post them in your division channel on Discord. If you disagree about who won a game, notify your moderator.
 
@@ -308,11 +314,11 @@ See [suspending games](/rules#4.11).
 
 ## 6. Details and backend
 
-#### How do the moderators determine players' tiers (A, B, C, etc)?
+#### How do the moderators determine players' tiers (A, B, C, etc.)?
 
 See [tier placement](/rules#2.4).
 
-#### How many tiers (A, B, C, etc) and divisions (C1, C2, C3, etc) are there each season?
+#### How many tiers (A, B, C, etc.) and divisions (C1, C2, C3, etc.) are there each season?
 
 See [tiers](/rules#2.3).
 
@@ -322,7 +328,7 @@ As much as possible, players are grouped by their time zones in tiers E and belo
 
 #### What do I do if my regular schedule makes it difficult to play with people from my own time zone?
 
-If you are a new player, we collect this information when you sign up. If you select the answer "I expect my availability to be very different from that of others in my timezone" in response to the Availability question, your onboarding moderator will follow up to ask for more details and figure out how to place you.
+If you are a new player, we collect this information when you sign up. If you select the answer "I expect my availability to be very different from that of others in my time zone" in response to the Availability question, your onboarding moderator will follow up to ask for more details and figure out how to place you.
 
 If you are a returning player, and the availability that you indicate on your returning form matches up better with players in another time zone, we may allocate you to a division accordingly. If you'd like to request to be placed with players in a specific time zone other than your own, you can contact your moderator.
 
