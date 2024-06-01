@@ -61,7 +61,8 @@
 	  "59": "neqativ",
 	  "60": "tracer",
     "61": "hakha3",
-    "62": "vrsmith"
+    "62": "vrsmith",
+    "63": "yurikamome"
   },
   "runner_ups": {
     "1": "stef",
@@ -125,7 +126,8 @@
 	  "59": "tracer",
 	  "60": "hakha3",
     "61": "neqativ",
-    "62": "hakha3"
+    "62": "hakha3",
+    "63": "vrsmith"
   },
   "players": {
     "mic qsenoch": [
@@ -219,7 +221,10 @@
 	  ],
 	  "neqativ": [
 		  "59"
-	  ]
+	  ],
+    "yurikamome": [
+      "63"
+    ]
   },
   "players_runner_ups": {
     "stef": [
@@ -303,7 +308,8 @@
     "vrsmith": [
       "39",
       "40",
-	  "45"
+	  "45",
+    "63"
     ],
     "e.honda": [
       "41",

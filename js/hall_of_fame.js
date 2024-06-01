@@ -297,7 +297,7 @@ for (tiers of hof['tier-best']) {
 
 tierPctTable = document.getElementById('tier-record');
 for (tiers of hof['tier-record']) {
-	if (tiers.tier != "P") {
+	if (tiers['best-pct'][0].seasons.length >= 3) {
 		let row = document.createElement('tr');
 		let t = document.createElement('td');
 		t.style.textAlign = "center";
