@@ -373,4 +373,4 @@ You can choose any of these methods you prefer:
 
 #### How are moderators chosen?
 
-See [recruiting new moderators](/rules#8.5) and [evaluating new moderator applicants](/rules#8.6).
+See [recruiting new moderators](/rules#8.5).
