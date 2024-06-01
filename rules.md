@@ -364,7 +364,13 @@ At the end of the season, you may earn a spot in a different tier by promoting t
 
 <a name="5.3.1"></a>5.3.1. You cannot promote from the highest tier or demote from the lowest tier.
 
-<a name="5.3.2"></a>5.3.2. If your tier has at least 1.5 times as many divisions as the tier directly above yours, you promote by finishing in first place. Additionally, if promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.4](#2.3.4)), you promote by finishing in first place. Otherwise, you promote by finishing in first or second place.
+#### <a name="5.3.2"></a>5.3.2. Promotion slots
+
+You promote by finishing in first or second place, except under the following circumstances, in which you only promote by finishing in first place:
+
+<a name="5.3.2.1"></a>5.3.2.1. Your tier has at least 1.5 times as many divisions as the tier directly above yours
+
+<a name="5.3.2.2"></a>5.3.2.2. Promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.4](#2.3.4)). Note that divisions are considered to be filled at 6 players, i.e. not flexed ([2.5](#2.5)), for the purpose of determining when a tier would exceed its maximum size.
 
 <a name="5.3.3"></a>5.3.3. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
 
