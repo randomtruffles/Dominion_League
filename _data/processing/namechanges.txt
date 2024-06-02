@@ -75,6 +75,8 @@ NateTheSnake	innatelyflawed
 ronarouseme	Antonio_McDyess
 hdarj288	hdarj
 CasualxMajestic	birds of siberia
+Black-sun	Black-sin
+eaterpoosack	Yeeterthapeter
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -128,3 +130,6 @@ schlafi	schlafi
 bartdjensen	bartdjensen
 tortuga1	Tortuga1
 drkayla	drkayla
+matt979	Matt979
+chadnov	Chadnov
+dpizza	Dpizza
