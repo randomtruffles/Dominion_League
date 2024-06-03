@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2024-04-06
+date: 2024-06-03
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -97,7 +97,7 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.2"></a>2.4.2. Players returning to the League after a short break ([1.4.1](#1.4.1)) are placed into the tier they would have most recently returned to, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)). If there is insufficient space in a tier to accommodate players returning from a short break, one or more flex divisions ([2.5](#2.5)) will be created.
 
-<a name="2.4.3"></a>2.4.3. Players returning to the League after a medium break ([1.4.2](#1.4.2)) are placed into the tier they would have most recently returned to, or the tier they would be placed into as a new player ([2.4.4](#2.4.4)), whichever is higher, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)). If there is insufficient space in a tier to accommodate players returning from a medium break, they will be placed in the tier below.
+<a name="2.4.3"></a>2.4.3. Players returning to the League after a medium break ([1.4.2](#1.4.2)) are placed into the tier they would have most recently returned to, or the tier they would be placed into as a new player ([2.4.4](#2.4.4)), whichever is higher. Slots are filled starting with A tier and working downward. If there is insufficient space in a given tier to accommodate players returning from a medium break, they will be placed in the highest possible tier below that tier that can accommodate them without needing a flex division to do so, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)).
 
 <a name="2.4.4"></a>2.4.4. Players returning to the League after a long break ([1.4.3](#1.4.3)), and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups). If there is insufficient space in a tier to accommodate players exceeding the strict level cutoff, one or more flex divisions ([2.5](#2.5)) will be created.
 
@@ -173,11 +173,11 @@ A playing session is a series of one or more games between the same two players,
 
 ### <a name="4.3"></a>4.3. Outside help
 
-During games, you may not attempt to gain a competitive advantage by consulting resources other than those maintained by the League on the [Dominion League Resources page](/resources).
+During games, you may not attempt to gain a competitive advantage by using tools or resources external to the Dominion Online client other than those maintained by the League on the [Dominion League Resources](/resources) page.
 
 <a name="4.3.1"></a>4.3.1. The Dominion League Resources page may be consulted privately or publicly at any time.
 
-<a name="4.3.2"></a>4.3.2. For example, getting advice from Dominion Strategy articles or from spectators is not allowed.
+<a name="4.3.2"></a>4.3.2. Examples of using disallowed external tools and resources include: consulting with friends, family, or spectators; reading wiki or strategy articles; seeking advice on Discord; taking physical or digital notes; and using a deck tracker.
 
 ### <a name="4.4"></a>4.4. Starting player
 
@@ -201,7 +201,9 @@ Games played on Dominion Online should use the default table settings provided b
 
 <a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off (see [4.6.6](#4.6.6) and [4.7.4](#4.7.4) for more information about the Card Pool Level).
+<a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off (see [4.6.6](#4.6.6) and [4.7.5](#4.7.5) for more information about the Card Pool Level).
+
+<a name="4.5.4"></a>4.5.4. If your automatch card pool level is lower than 10, your table settings may have fewer than two landscape slots by default. If this happens, manually add landscape slots until you have two.
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
@@ -219,23 +221,25 @@ The following settings are set by default when you create a new table on Dominio
 
 <a name="4.6.6"></a>4.6.6. "Card Pool Level" should be set to the highest possible value. This will be 10 if at least one player has a Complete subscription. Otherwise, it will be 5 if at least one player has a Core subscription. If neither player has a subscription, it will be 1.
 
-<a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies are not considered landscapes, so this can result in kingdoms with up to two landscapes plus an Ally if a Liaison is present.
+<a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies are not considered landscapes, so this can result in kingdoms with up to two landscapes plus an Ally if a Liaison is present. Note that the two landscape slots may not be included by default if your automatch card pool level is set below 10 (see [4.5.4](#4.5.4)).
 
 ### <a name="4.7"></a>4.7. Modifying table settings
 
 By mutual agreement, you and your opponent may change the table settings specified in [4.5](#4.5) and [4.6](#4.6) as follows:
 
-<a name="4.7.1"></a>4.7.1. You may use the expansion toggles to exclude certain expansions.
+<a name="4.7.1"></a>4.7.1. You may enable the option to increase the frequency of recent card releases (e.g. "Extra 2nd Edition" or "Extra Plunder").
 
-<a name="4.7.2"></a>4.7.2. You may use the card buttons at the top to require cards from certain expansions.
+<a name="4.7.2"></a>4.7.2. You may use the expansion toggles to exclude certain expansions.
 
-<a name="4.7.3"></a>4.7.3. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
+<a name="4.7.3"></a>4.7.3. You may use the card buttons at the top to require cards from certain expansions.
 
-<a name="4.7.4"></a>4.7.4. You may change the Card Pool Level.
+<a name="4.7.4"></a>4.7.4. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
 
-<a name="4.7.5"></a>4.7.5. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
+<a name="4.7.5"></a>4.7.5. You may change the Card Pool Level.
 
-<a name="4.7.6"></a>4.7.6. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
+<a name="4.7.6"></a>4.7.6. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
+
+<a name="4.7.7"></a>4.7.7. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
 ### <a name="4.8"></a>4.8. New cards
 
@@ -360,7 +364,13 @@ At the end of the season, you may earn a spot in a different tier by promoting t
 
 <a name="5.3.1"></a>5.3.1. You cannot promote from the highest tier or demote from the lowest tier.
 
-<a name="5.3.2"></a>5.3.2. If your tier has at least 1.5 times as many divisions as the tier directly above yours, you promote by finishing in first place. Additionally, if promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.4](#2.3.4)), you promote by finishing in first place. Otherwise, you promote by finishing in first or second place.
+#### <a name="5.3.2"></a>5.3.2. Promotion slots
+
+You promote by finishing in first or second place, except under the following circumstances, in which you only promote by finishing in first place:
+
+<a name="5.3.2.1"></a>5.3.2.1. Your tier has at least 1.5 times as many divisions as the tier directly above yours
+
+<a name="5.3.2.2"></a>5.3.2.2. Promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.4](#2.3.4)). Note that divisions are considered to be filled at 6 players, i.e. not flexed ([2.5](#2.5)), for the purpose of determining when a tier would exceed its maximum size.
 
 <a name="5.3.3"></a>5.3.3. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
 
@@ -534,23 +544,15 @@ Whenever the moderators gather for an official meeting at which rules may change
 
 ### <a name="8.5"></a>8.5. Recruiting new moderators
 
-The moderator team will open applications for new moderators under the following conditions:
+The moderator team follows this process to recruit new moderators:
 
-<a name="8.5.1"></a>8.5.1. The following season is expected to have more than 10 divisions per moderator.
+<a name="8.5.1"></a>8.5.1. New moderator applications are always open.
 
-<a name="8.5.2"></a>8.5.2. The moderator team has not opened applications for new moderators in either of the preceding two seasons.
+<a name="8.5.2"></a>8.5.2. The existing moderator team reviews applications during week 2 of the season.
 
-### <a name="8.6"></a>8.6. Evaluating new moderator applicants
+<a name="8.5.3"></a>8.5.3. The moderators may accept none, some, or all of the applicants.
 
-When the moderator team opens applications for new moderators per [8.5](#8.5), they will follow this process:
-
-<a name="8.6.1"></a>8.6.1. New moderator applications will open during week 2 of the season.
-
-<a name="8.6.2"></a>8.6.2. The existing moderator team will review applications during week 3 of the season.
-
-<a name="8.6.3"></a>8.6.3. When applications close, the moderators may accept none, some, or all of the applicants.
-
-<a name="8.6.4"></a>8.6.4. Onboarding/shadowing of new moderators will begin during week 4 of the season.
+<a name="8.5.4"></a>8.5.4. Onboarding/shadowing of new moderators begins during week 3 of the season.
 
 ## <a name="9"></a>9. Amendments
 
