@@ -233,7 +233,7 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.7.4"></a>4.7.4. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
 
-<a name="4.7.5"></a>4.7.5. You may change the Card Pool Level.
+<a name="4.7.5"></a>4.7.5. You may change the Card Pool Level. If you set the Card Pool Level to 1, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
 
 <a name="4.7.6"></a>4.7.6. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
 
