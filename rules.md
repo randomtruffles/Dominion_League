@@ -227,7 +227,7 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.7.1"></a>4.7.1. You may enable the option to increase the frequency of recent card releases (e.g. "Extra 2nd Edition" or "Extra Plunder").
 
-<a name="4.7.2"></a>4.7.2. You may use the expansion toggles to exclude certain expansions.
+<a name="4.7.2"></a>4.7.2. You may use the expansion toggles to exclude certain expansions. If you only play with a single expansion, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
 
 <a name="4.7.3"></a>4.7.3. You may use the card buttons at the top to require cards from certain expansions.
 
