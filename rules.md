@@ -544,7 +544,7 @@ Whenever the moderators gather for an official meeting at which rules may change
 
 The moderator team follows this process to recruit new moderators:
 
-<a name="8.5.1"></a>8.5.1. New moderator applications are always open.
+<a name="8.5.1"></a>8.5.1. The [moderator application](/moderators/apply) is always open.
 
 <a name="8.5.2"></a>8.5.2. The existing moderator team reviews applications during week 2 of the season.
 
