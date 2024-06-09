@@ -10,6 +10,7 @@ body {
     font-size: 17px;
     /*line-height: 175%;*/
     color: #{{ site.data.template.color.secondary-dark }};
+    background-color: #fdfcfb;
 }
 
 /**Landing page **/
