@@ -1,15 +1,102 @@
 ---
+title: Dominion League Seasons
 layout: default
 ---
 
 <div class="container-centered">
 
   <h3>Past Standings</h3>
-  <p>This page contains links to the pages of past season results. <br> Click <a href="{{site.baseurl}}/current_standings">here</a> for current season standings.</p>
-  <div class="grid-container">
-    {% assign seasons = site.data.season.number | minus: 1 %}
-    {% for season in (1..seasons) %}
-    <div class="grid-item"><a href="{{ site.baseurl }}/past_standings/season{{ season }}" class="past-standings">Season {{ season }}</a></div>
-    {% endfor %}
-    </div>
+  <p>This page contains links to the pages of past season results. <br> <a href="{{site.baseurl}}/current_standings">Click here</a> for current season standings. <br> <span style="font-style:italic;">Future season dates are tentative</span></p>
+
+  <div>
+    <table class = "table-past-standings">
+      <tbody id="season-list">
+      </tbody>
+    </table>
   </div>
+
+
+</div>
+
+<script>
+const currentSeason = {{ site.data.season.number }};
+const currentSeasonPlayers = {{ site.data.current_season.players | jsonify }};
+const seasonDates = {{ site.data.season_dates | jsonify }};
+const champions = {{ site.data.champions.seasons | jsonify }};
+const players = {{ site.data.player_seasons | jsonify }};
+
+var pastSeasonPlayers = {}
+for (let p in players) {
+  let ses = players[p].seasons;
+  for (let s of ses) {
+    if (s in pastSeasonPlayers) {
+      pastSeasonPlayers[s]++;
+    } else {
+      pastSeasonPlayers[s] = 1;
+    }
+  }
+}
+
+function renderTable(desc = false) {
+  var tbl = document.getElementById("season-list");
+  tbl.innerHTML = "";
+  var cols = ["Season", "Start", "End", "Players", "Champion"];
+  let headerRow = document.createElement('tr');
+  headerRow.classList.add("rows-past-standings");
+  let sCell = document.createElement('th');
+  sCell.classList.add("cells-past-standings", "sortable-header");
+  sCell.appendChild(document.createTextNode("Season " + (desc ? "▼" : "▲")));
+  sCell.onclick = function(ev) {
+    if (ev.target.innerText.includes("▲")) {
+      renderTable(true);
+    } else {renderTable();}
+  }
+  headerRow.appendChild(sCell);
+  for (let j = 1; j<cols.length; j++) {
+    let headerCell = document.createElement('th');
+    headerCell.classList.add("cells-past-standings");
+    headerCell.appendChild(document.createTextNode(cols[j]));
+    headerRow.appendChild(headerCell);
+  }
+  tbl.appendChild(headerRow);
+
+  var displayList = Array.from({ length: currentSeason + 3}, (x, i) => i+1);
+  if (desc) {displayList.reverse();}
+
+  for (let s of displayList) {
+    let current = s == currentSeason ? "current" : (s > currentSeason ? "future" : "past")
+    let sRow = document.createElement('tr');
+    sRow.classList.add("rows-past-standings");
+    sRow.appendChild(tblCell("Season " + s, current, s <= currentSeason ? `/past_standings/season${s}`: null));
+    sRow.appendChild(tblCell(seasonDates[s][0], current));
+    sRow.appendChild(tblCell(seasonDates[s][1], current));
+    sRow.appendChild(current == "current" ? tblCell(Object.keys(currentSeasonPlayers).length, current) : (current == "past" ? tblCell(pastSeasonPlayers[s]) : tblCell("")))
+    sRow.appendChild(s in champions ? tblCell(players[champions[s]].name, current, `/player_database?player=${champions[s].replace(/ /, "%20")}`) : tblCell(""));
+    tbl.appendChild(sRow);
+  }
+}
+
+function tblCell(text, current = false, link = null) {
+  let out = document.createElement('td');
+  out.classList.add("cells-past-standings");
+  if (current == "current") {
+    out.style.fontWeight = "bold";
+  } else if (current == "future") {
+    out.style.fontStyle = "italic";
+  }
+  if (link) {
+    let a = document.createElement('a');
+    if (/player_database/.test(link)) {a.classList.add("db-link");}
+    a.href = link;
+    a.appendChild(document.createTextNode(text));
+    out.appendChild(a);
+  } else {
+    out.appendChild(document.createTextNode(text));
+  }
+
+  return out;
+}
+
+renderTable();
+
+</script>

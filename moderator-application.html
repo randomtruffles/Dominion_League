@@ -1,0 +1,52 @@
+---
+layout: default
+title: League Moderator Application
+permalink: moderators/apply
+---
+
+<div class="home">
+	<div class="container-centered">
+		<h3>Dominion League Moderator Application</h3>
+		<p>Apply to join the moderator team and help out</p>
+	</div>
+	<div>
+		<p>Fill out the Google Form below to send your application to the moderator team. A moderator will contact you in the next week to confirm that the application was received and to follow up with any questions we have.</p>
+		<p>Note that although this form is always open we only consider adding moderators once each season. An application submitted between now and <span id="cutoff-date"></span> would result in you joining the moderator team within 2 days on either side of <span id="end-vote-date"></span> if your application is approved.</p>
+	</div>
+	<div class="sheets">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHYL3ZJ8ayYy6mlbiQwBAoZzyMAAzPJYDx8cBOhg4mc2gMhg/viewform?embedded=true" width="100%" height="1000">Loading…</iframe>
+	</div>
+</div>
+<script>
+var dateSpan = document.getElementById("end-vote-date");
+var cutoffSpan = document.getElementById("cutoff-date");
+var voteTime = new Date();
+const currentSeason = {{ site.data.season.number }};
+const seasonDates = {{ site.data.season_dates | jsonify }};
+const cStart = seasonDates[currentSeason][0].split('-');
+const nStart = seasonDates[currentSeason + 1][0].split('-');
+var now = new Date();
+var currentSeasonStart = new Date();
+currentSeasonStart.setUTCFullYear(Number(cStart[0]), Number(cStart[1]) - 1, Number(cStart[2]));
+currentSeasonStart.setUTCHours(0, 0, 0, 0);
+var cutoff = new Date();
+cutoff.setTime(currentSeasonStart.getTime() + (14*24*60*60*1000));
+if (now < cutoff) {
+	voteTime.setTime(currentSeasonStart.getTime() + (21*24*60*60*1000));
+} else {
+	let nextSeasonStart = new Date();
+	nextSeasonStart.setUTCFullYear(Number(nStart[0]), Number(nStart[1]) - 1, Number(nStart[2]));
+	nextSeasonStart.setUTCHours(0, 0, 0, 0);
+	voteTime.setTime(nextSeasonStart.getTime() + (21*24*60*60*1000));
+	cutoff.setTime(nextSeasonStart.getTime() + (14*24*60*60*1000))
+}
+
+cutoffSpan.appendChild(document.createTextNode(dateFormat(cutoff)));
+dateSpan.appendChild(document.createTextNode(dateFormat(voteTime)));
+
+
+function dateFormat(d) {
+	return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2, '0')}-${String(d.getUTCDate()).padStart(2, '0')}`
+}
+
+</script>
