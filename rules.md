@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2024-06-03
+date: 2024-06-09
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -195,15 +195,15 @@ Each player should go first 3 times in a 6 game match. It is each player's respo
 
 ### <a name="4.5"></a>4.5. Table settings
 
-Games played on Dominion Online should use the default table settings provided by the client, with the following exceptions:
+Games should use the default table settings provided by the [Dominion Online](https://dominion.games/) client, with the following exceptions:
 
 <a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
 
 <a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.5.3"></a>4.5.3. For games without expansions, or with a Card Pool Level of 1, the "Disliked" and "Banned" options for "Respected Cards" should be off (see [4.6.6](#4.6.6) and [4.7.5](#4.7.5) for more information about the Card Pool Level).
+<a name="4.5.3"></a>4.5.3. "Card Pool Level" should be set to 10, and there should be two landscape slots. (You will only need to change these settings if your automatch card pool settings are different.)
 
-<a name="4.5.4"></a>4.5.4. If your automatch card pool level is lower than 10, your table settings may have fewer than two landscape slots by default. If this happens, manually add landscape slots until you have two.
+<a name="4.5.4"></a>4.5.4. If neither player has a subscription, the "Disliked" and "Banned" options for "Respected Cards" should be off.
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
@@ -219,9 +219,7 @@ The following settings are set by default when you create a new table on Dominio
 
 <a name="4.6.5"></a>4.6.5. "Show VP counter" should be on.
 
-<a name="4.6.6"></a>4.6.6. "Card Pool Level" should be set to the highest possible value. This will be 10 if at least one player has a Complete subscription. Otherwise, it will be 5 if at least one player has a Core subscription. If neither player has a subscription, it will be 1.
-
-<a name="4.6.7"></a>4.6.7. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies are not considered landscapes, so this can result in kingdoms with up to two landscapes plus an Ally if a Liaison is present. Note that the two landscape slots may not be included by default if your automatch card pool level is set below 10 (see [4.5.4](#4.5.4)).
+<a name="4.6.6"></a>4.6.6. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies are not considered landscapes, so this can result in kingdoms with up to two landscapes plus an Ally if a Liaison is present. Note that the two landscape slots may not be included by default if your automatch card pool level is set below 10 (see [4.5.3](#4.5.3)).
 
 ### <a name="4.7"></a>4.7. Modifying table settings
 
@@ -229,13 +227,13 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.7.1"></a>4.7.1. You may enable the option to increase the frequency of recent card releases (e.g. "Extra 2nd Edition" or "Extra Plunder").
 
-<a name="4.7.2"></a>4.7.2. You may use the expansion toggles to exclude certain expansions.
+<a name="4.7.2"></a>4.7.2. You may use the expansion toggles to exclude certain expansions. If you only play with a single expansion, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
 
 <a name="4.7.3"></a>4.7.3. You may use the card buttons at the top to require cards from certain expansions.
 
 <a name="4.7.4"></a>4.7.4. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
 
-<a name="4.7.5"></a>4.7.5. You may change the Card Pool Level.
+<a name="4.7.5"></a>4.7.5. You may change the Card Pool Level. If you set the Card Pool Level to 1, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
 
 <a name="4.7.6"></a>4.7.6. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
 
@@ -243,7 +241,7 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 ### <a name="4.8"></a>4.8. New cards
 
-Per [4.6.7](#4.6.7), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
+Per [4.6.6](#4.6.6), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
 
 <a name="4.8.1"></a>4.8.1. An expansion is considered new if its initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
 
@@ -546,7 +544,7 @@ Whenever the moderators gather for an official meeting at which rules may change
 
 The moderator team follows this process to recruit new moderators:
 
-<a name="8.5.1"></a>8.5.1. New moderator applications are always open.
+<a name="8.5.1"></a>8.5.1. The [moderator application](/moderators/apply) is always open.
 
 <a name="8.5.2"></a>8.5.2. The existing moderator team reviews applications during week 2 of the season.
 
