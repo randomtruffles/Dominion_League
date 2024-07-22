@@ -6,16 +6,16 @@ author: tracer
 layout: simple_post
 categories: signups
 ---
-**Season 65** will run from Monday, July 29, until Sunday, September 8, and you can sign up until **Sunday, July 21 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 65** will run from Monday, July 29 until Sunday, September 8 and ~~you can sign up until Sunday, July 21 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Thursday, August 8 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
 1. A [Dominion Online](https://dominion.games) account with 10 or more rated 2-player games.
-   - These rated games need to be played by Sunday, July 21 at 23:59 UTC. If you do not reach 10 rated games by the deadline, your sign up will be removed.
+   - If you are joining the waiting list, these rated games need to be played before we can offer you a place. If a suitable space is available but you have not reached 10 rated games, the space may be offered to someone below you on the waiting list.
 2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu).
    - All League communications will take place by default over Discord.
 3. *(Optional)* An email address.
-   - This gives the moderators a second means of contacting you should you become unresponsive on Discord. *The Dominion League is committed to keeping your email address confidential. We do not sell or provide your personal information to any third party.*
+   - This gives the moderators a second means of contacting you for onboarding if we are unable to reach you on Discord. *The Dominion League is committed to keeping your email address confidential. We do not sell or provide your personal information to any third party.*
 
 After you fill out the form, you should receive an automated notification on the Dominion Discord server within a few hours, indicating that we've got your sign-up. If you don't receive this, please check the [table of sign-ups](#sign-ups-and-counts) to make sure your sign-up went through and your details look correct. If any of the entries are highlighted in red, this indicates that we have detected a problem with that entry. If something is wrong, please fill in the form again with the correct details or reach out to the moderators, either on Discord or by using the [Dominion League Hotline](http://dominionleague.org/hotline).
 
@@ -23,7 +23,7 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
-**NOTE:** Season 64 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+**NOTE:** Season 64 players should **not** use this signup form and should instead contact a moderator for further instructions.
 <br>
 
 <div class="sheets">
