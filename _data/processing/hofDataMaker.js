@@ -4,7 +4,7 @@ var players = JSON.parse(fs.readFileSync("../player_seasons.json"));
 var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
 
-const currentSeason = 63;
+const currentSeason = 64;
 const thresholdForOverallPct = 10;
 const thresholdForTierPct = 3;
 var oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]},"51":{"J":["H",null]}, "62":{"G":["G","I"], "H":["H","J"], "I":["J",null]}};
