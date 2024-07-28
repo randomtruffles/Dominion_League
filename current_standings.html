@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Current standings of divisions in Season 64
+title: Current standings of divisions in Season 65
 ---
 
 <div class="home">
   <div class="container-centered">
 
     <h3><a style="text-decoration: none" href="past_standings/season{{ site.data.season.number | minus: 1 }}.html">&nbsp;<b><</b>&nbsp;</a>Season {{ site.data.season.number }} Standings&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-	<h5>2024-06-03 to 2024-07-14</h5>
+	<h5>2024-07-29 to 2024-09-08</h5>
     <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
     <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>.
 	  <br>All displayed dates and times are UTC
-	  <br>Season {{ site.data.season.number | plus: 1}} starts 2024-07-29</p>
+	  <br>Season {{ site.data.season.number | plus: 1}} starts 2024-10-14</p>
     <!-- Filter buttons -->
     <div id="myBtnContainer"></div>
     <div class="spacing"></div>
@@ -29,7 +29,7 @@ var tierParams = {{ site.data.season.tiers | jsonify }};
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 sheetLinks = sheetLinks[cur_season];
-var champion = "yurikamome";
+var champion = "";
 loadPage();
 
 function singleDivision(division) {

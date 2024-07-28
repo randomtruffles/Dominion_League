@@ -1,4 +1,4 @@
-number: 64
+number: 65
 
 tiers:
   A:
@@ -34,15 +34,15 @@ tiers:
     promoters: 2
     demoters: 2
   I:
-    divisions: 9
+    divisions: 8
     promoters: 2
     demoters: 2
   J:
-    divisions: 9
+    divisions: 8
     promoters: 2
     demoters: 2
   K:
-    divisions: 10
+    divisions: 8
     promoters: 2
     demoters: 0
 

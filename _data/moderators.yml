@@ -12,10 +12,12 @@
 - name: amoffett11
   discord: amoffett11#8778
   image: amoffett11
+- name: bobbydj18
+  discord: bobbydj18
+  image: bobbydj18
 - name: breppert
   discord: breppert
   image: breppert
-  chair: Outreach
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -24,9 +26,9 @@
   discord: crlundy#0018
   image: crlundy
   chair: Sheets
-- name: DomBot
-  discord: DomBot#0234
-  image: dombot
+#- name: DomBot
+#  discord: DomBot#0234
+#  image: dombot
 - name: Earl
   discord: Earl#3402
   image: earl
