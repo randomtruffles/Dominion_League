@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-const season = "64";
+const season = "65";
 
 var out = JSON.parse(fs.readFileSync("../sheet_links.json"));
 out[season] = {};
