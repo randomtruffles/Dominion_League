@@ -105,7 +105,7 @@ Game five was relatively simple by comparison: with Necromancer as the only thin
 
 Finally, the sixth game presented the players with a wildly accelerative opening in the form of double Amass for Souk. Souk and its enablers (Flagship, Cursed Village, Town and Druid) were powerful enough here that Nearby Magpie was never quite worth touching, although there were moments at which the players considered it for the autopile. The game rapidly progressed towards another complicated, calculation-heavy endgame: yurikamome hit an unfortunate Delusion on turn 8 and subsequently dudded badly, leaving Mic space for a cleverly woven turn 9 finish that earned him the 4–2 match win and the trophy. Congratulations to Mic Qsenoch on his twentieth turn as League Champion!
 
-**Thank you to all the players who participated in featured matches this season, and to the commentators who helped to make them happen!**
+**Thank you to all the players who participated in feature matches this season, and to the commentators who helped to make them happen!**
 
 
 
