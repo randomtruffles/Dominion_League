@@ -1,6 +1,6 @@
 ---
 title: Season 66 - Signups
-subtitle: Signups are now open!
+subtitle: Signups have closed, but you can still enter the waiting list
 date: 2024-08-11
 author: tracer
 layout: simple_post
