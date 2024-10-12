@@ -1,4 +1,4 @@
-number: 65
+number: 66
 
 tiers:
   A:
@@ -18,11 +18,11 @@ tiers:
     promoters: 2
     demoters: 2
   E:
-    divisions: 7
+    divisions: 8
     promoters: 1
     demoters: 2
   F:
-    divisions: 8
+    divisions: 7
     promoters: 2
     demoters: 2
   G:

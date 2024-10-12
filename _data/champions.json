@@ -63,7 +63,8 @@
     "61": "hakha3",
     "62": "vrsmith",
     "63": "yurikamome",
-    "64": "yurikamome"
+    "64": "yurikamome",
+    "65": "mic qsenoch"
   },
   "runner_ups": {
     "1": "stef",
@@ -129,7 +130,8 @@
     "61": "neqativ",
     "62": "hakha3",
     "63": "vrsmith",
-    "64": "mic qsenoch"
+    "64": "mic qsenoch",
+    "65": "yurikamome"
   },
   "players": {
     "mic qsenoch": [
@@ -151,7 +153,8 @@
       "40",
       "41",
 	  "53",
-      "57"
+      "57",
+      "65"
     ],
     "stef": [
       "3",
@@ -334,7 +337,8 @@
 	  "53"
 	],
   "yurikamome": [
-    "56"
+    "56",
+    "65"
   ],
     "phika": [
       "57"
