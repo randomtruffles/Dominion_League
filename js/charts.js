@@ -952,6 +952,7 @@ var PowerPlot = {};
 PowerPlot.pointMap = {"A1": 10, "A2": 5, "A3": 3, "A4": 3, "A5": 1, "A6": 1, "B1": 2, "B2": 0, "B3": 0, "B4": 0, "B5": -2, "B6": -2};
 PowerPlot.pointDecay = [1, 0.9, 0.7, 0.4];
 PowerPlot.propCutoff = 0.02;
+PowerPlot.requireLength = 2;
 
 PowerPlot.makeData = function() {
 	PowerPlot.data = [];
@@ -989,6 +990,7 @@ PowerPlot.makeData = function() {
 	});
 
 	PowerPlot.players = PowerPlot.players.map(p => da.players[p].name);
+	let appearances = Array.from({ length: PowerPlot.nplayers }, () => 0);
 
 	for (let s=0; s<cur.season; s++) {
 		for (let i=0; i<PowerPlot.nplayers; i++) {
@@ -1000,9 +1002,22 @@ PowerPlot.makeData = function() {
 		for (let i=0; i<PowerPlot.nplayers; i++) {
 			if (PowerPlot.points[i][s]/stotal < PowerPlot.propCutoff) {
 				PowerPlot.points[i][s] = 0;
+			} else {
+				appearances[i] += 1;
 			}
 		}
-		stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
+	}
+
+	for (let i=0; i<PowerPlot.nplayers; i++) {
+		if (appearances[i] < PowerPlot.requireLength) {
+			for (let s=0; s<cur.season; s++) {
+				PowerPlot.points[i][s] = 0;
+			}
+		}
+	}
+
+	for (let s=0; s<cur.season; s++) {
+		let stotal = PowerPlot.points.reduce((p,c) => p + c[s], 0);
 		for (let i=0; i<PowerPlot.nplayers; i++) {
 			PowerPlot.data.push({
 				"player": PowerPlot.players[i],
