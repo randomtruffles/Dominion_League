@@ -11,7 +11,7 @@ Welcome back to the Dominion League for season 66 after our long break. I hope t
 
 **New Player Guide**
 
-This season we are introducing a guide to getting started in the Dominion League, which you can access at [dominionleague.org/player-guide](https://dominionleague.org/player-guide]). While this is primarily aimed at new league players, I encourage returning players to look over it as well - this is what many people in your division will be expecting. A link to this guide will replace some of the division channel opening posts next season.
+This season we are introducing a guide to getting started in the Dominion League, which you can access at [dominionleague.org/player-guide](https://dominionleague.org/player-guide). While this is primarily aimed at new league players, I encourage returning players to look over it as well - this is what many people in your division will be expecting. A link to this guide will replace some of the division channel opening posts next season.
 
 I would like to give a special thanks to saltroza for driving this initiative to make players' introduction to the league smoother.
 
