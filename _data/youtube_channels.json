@@ -110,9 +110,6 @@
   "bradybot" : {
     "channel" : "https://www.youtube.com/channel/UCI0X_Pcltus5441hj_H0hkw"
   },
-  "rozyroz" : {
-    "channel" : "https://www.youtube.com/channel/UCe3mcnsfCTf4s4aTvdsGNVg"
-  },
   "lemonspawn" : {
     "channel" : "https://www.youtube.com/channel/UCy58NtsTa7GDnRSMwg3mYZQ"
   },
@@ -188,7 +185,7 @@
   "tonehack" : {
     "channel" : "https://www.youtube.com/c/tonehack"
   },
-  "ketyri" : {
+  "juniper.sona" : {
     "channel" : "https://www.youtube.com/channel/UCc88WAv2eMKGZGsTfEbiEBA"
   },
   "strumphf" : {
@@ -208,5 +205,8 @@
   },
   "breppert" : {
     "channel" : "https://www.youtube.com/channel/UCAwT-q2ZgqzxofOjMNlo3fA"
+  },
+  "holz" : {
+    "channel" : "https://www.youtube.com/channel/UCr8ohqcZlqjo4O9I0EZ_fOg"
   }
 }
