@@ -529,7 +529,7 @@ function genVersusTable() {
 		oc.appendChild(playerName)
 		let hoverer = document.createElement('div');
 		hoverer.classList.add('cellDetail');
-		hoverer.style.width = 'auto';
+		hoverer.style.width = '200px';
 		let stbl = document.createElement('table');
 		stbl.classList.add('individual-match-table');
 		stbl.classList.add('standings-table');
