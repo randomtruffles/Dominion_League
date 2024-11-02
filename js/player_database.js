@@ -460,7 +460,8 @@ function makeVersus(init = false) {
 				filtered.wins += opp[j].wins;
 				filtered.losses += opp[j].losses;
 				filtered.tiers.push(opp[j].tier);
-				filtered.seasons.push(opp[j].season);
+				filtered.seasons.push({"season": opp[j].season, "tier": opp[j].tier, "result": `${opp[j].wins} - ${opp[j].losses}`});
+				filtered.seasons.sort((a,b) => a.season - b.season)
 				versusTotal.games += Math.round(opp[j].wins + opp[j].losses);
 				versusTotal.wins += opp[j].wins;
 				versusTotal.losses += opp[j].losses;
@@ -528,10 +529,31 @@ function genVersusTable() {
 		oc.appendChild(playerName)
 		let hoverer = document.createElement('div');
 		hoverer.classList.add('cellDetail');
-		hoverer.classList.add('flexWide');
-		let slist = document.createElement('p');
-		slist.appendChild(document.createTextNode("Seasons: " + filtVersus[i].seasons.sort((a,b) => a - b).toString().replace(/,/g, ", ")));
-		hoverer.appendChild(slist);
+		hoverer.style.width = 'auto';
+		let stbl = document.createElement('table');
+		stbl.classList.add('individual-match-table');
+		stbl.classList.add('standings-table');
+		let stblbod = document.createElement('tbody');
+		stbl.appendChild(stblbod);
+		let stblheader = document.createElement('tr');
+		stblheader.style.backgroundColor = "rgb(224, 224, 224)";
+		stblbod.appendChild(stblheader);
+		var stbl_headings = ["Season", "Tier", "Result"];
+		for (heading of stbl_headings) {
+			let hcell = document.createElement('th');
+			hcell.appendChild(document.createTextNode(heading));
+			stblheader.appendChild(hcell);
+		}
+		for (seasVs of filtVersus[i].seasons) {
+			let sRow = document.createElement('tr');
+			for (dataName of ['season', 'tier', 'result']) {
+				let sCell = document.createElement('td');
+				sCell.appendChild(document.createTextNode(seasVs[dataName]));
+				sRow.appendChild(sCell);
+			}
+			stblbod.appendChild(sRow);
+		}
+		hoverer.appendChild(stbl);
 		oc.appendChild(hoverer);
 		row.appendChild(oc);
 		for (let j=0; j<3; j++) {
