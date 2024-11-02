@@ -280,8 +280,12 @@ iframe {
   font-family: {{ site.data.template.font.secondary }};
 }
 
-.individual-match-table tr th:first-child{
+.standings-table .individual-match-table tr th:first-child{
     width: 250px;
+ }
+
+ .individual-match-table tr>*:nth-child(n+2) {
+    text-align: center;
  }
 
 .cellWithDetail{
@@ -323,7 +327,7 @@ iframe {
     width: 275px;
   }
 
-  .individual-match-table tr th:first-child{
+  .standings-table .individual-match-table tr th:first-child{
       width: 200px;
    }
 }
