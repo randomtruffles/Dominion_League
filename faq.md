@@ -178,7 +178,7 @@ See [starting player](/rules#4.4).
 
 #### Which cards do we play with?
 
-Per [4.6.6](/rules#4.6.6) and [4.6.7](/rules#4.6.7), the default is to play with all the cards that you and/or your opponent have access to. If you have a subscription, you get to play with all of the expansions you have. If you do not have a subscription, but your opponent does, you may need to learn some new cards.
+Per [4.5.3](/rules#4.5.3) and [4.6.6](/rules#4.6.6), the default is to play with all the cards that you and/or your opponent have access to. If you have a subscription, you get to play with all of the expansions you have. If you do not have a subscription, but your opponent does, you may need to learn some new cards.
 
 #### Can I request an undo? Do I need to grant an undo?
 
