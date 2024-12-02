@@ -129,7 +129,7 @@ function addStrRow(table, rank, data, extra = false) {
 	}
 	row.appendChild(p);
 	let n = document.createElement('td');
-	n.appendChild(document.createTextNode(data.streak.count + ((data.streak.end == lastSeason) ? "*" : "")));
+	n.appendChild(document.createTextNode(data.streak.count + ((data.streak.end >= lastSeason) ? "*" : "")));
 	row.appendChild(n);
 	table.appendChild(row);
 }
