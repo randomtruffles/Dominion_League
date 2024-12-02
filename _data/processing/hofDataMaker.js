@@ -4,7 +4,7 @@ var players = JSON.parse(fs.readFileSync("../player_seasons.json"));
 var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
 
-const currentSeason = 65;
+const currentSeason = 66;
 const thresholdForOverallPct = 10;
 const thresholdForTierPct = 3;
 var oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]},"51":{"J":["H",null]}, "62":{"G":["G","I"], "H":["H","J"], "I":["J",null]}};
@@ -34,6 +34,8 @@ var matchups = [];
 var allStreaks = {"played": [], "nondem": [], "promote": []};
 const notPlayers = ["games_nondrop","losses","losses_nondrop","wins","wins_nondrop"];
 
+const excludePlayers = ["dean corso", "xen0m0rph", "eni9ma", "predat0r", "bud fox"];
+
 function decompactDivision(name, cDiv) {
 	var out = {"name": name, "tier": name.charAt(0), "complete?": "Yes", "late drops": cDiv.drops, "members": {}, "by_player": {}};
 	for (let i=0; i<cDiv.members.length; i++) {
@@ -61,6 +63,7 @@ function decompactDivision(name, cDiv) {
 }
 
 for (playerKey in players) {
+	if (excludePlayers.includes(playerKey)) {continue;}
 	let player = players[playerKey].name;
 	console.log(player);
 	let tiersPlayed = {};
@@ -183,8 +186,6 @@ for (playerKey in players) {
 
 var out = {};
 
-out['champions'] = Object.keys(champions.players).map(key => {return {"player": players[key].name, "seasons": champions.players[key]}});
-
 out['div-wins'] = allStats.sort((a,b) => b.divWins.length - a.divWins.length).slice(0,30).map(k => {return {"player": k.player, "seasons": k.divWins}});
 out['win-pct'] = allStats.sort((a,b) => b.pct - a.pct).slice(0,30).map(k => {return {"player": k.player, "num": k.pct, "disp": Math.round(100*k.pct) + "%"}});
 out['sixes'] = allStats.sort((a,b) => b.six - a.six).slice(0,30).map(k => {return {"player": k.player, "num": k.six, "disp": String(k.six)}});
@@ -200,6 +201,8 @@ out['tier-best'] = Object.keys(allTiers).map(key => {return {"tier": key, "best-
 out['played-streak'] = allStreaks.played.sort((a,b) => b.streak.count - a.streak.count).slice(0,30);
 out['promote-streak'] = allStreaks.promote.sort((a,b) => b.streak.count - a.streak.count).slice(0,30);
 out['nondem-streak'] = allStreaks.nondem.sort((a,b) => b.streak.count - a.streak.count).slice(0,30);
+
+out['champions'] = Object.keys(champions.players).map(key => {return {"player": players[key].name, "seasons": champions.players[key]}});
 
 fs.writeFileSync("outputs/hall_of_fame.json", JSON.stringify(out));
 
