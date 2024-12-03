@@ -159,7 +159,7 @@ function searchHistory() {
 	tiersPlayed = {};
 	const notPlayers = ["games_nondrop","losses","losses_nondrop","wins","wins_nondrop"];
 	
-	if (inCurrent) {
+	if (inCurrent && !(`s${currentSeason.season}` in leagueHist)) {
 		let season = currentSeason.season;
 		let division = currentSeason.players[playerKey].division;
 		let title = `<a href="current_standings?div=${division}"> S${season}</a> ${division} Division`;
