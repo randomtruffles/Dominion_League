@@ -42,12 +42,12 @@
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
+- name: Naesala
+  discord: naesala.
+  image: naesala
 - name: nottoobad
   discord: nottoobad#9595
   image: nottoobad
-- name: Rozyroz
-  discord: Rozyroz#7547
-  image: Rozyroz
 - name: Ruapadi
   discord: ruapadi
   image: ruapadi
