@@ -50,17 +50,18 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Journey**: Event, $4 *(Dominion: Plunder)*<br>You don't discard cards from play in Clean-up this turn. Take an extra turn after this one (but not a 3rd turn in a row).
 * **Merchant Guild**: Action, $5 *(Dominion: Cornucopia & Guilds)*<br>**+1 Buy**<br>**+$1**<br>At the end of your Buy phase this turn, **+1 Coffers** per card you gained in it.
 * **Mission**: Event, $4 *(Dominion: Adventures)*<br>Take an extra turn after this one (but not a 3rd turn in a row), during which you can't buy cards. (You can still buy Events.)
-* **Mountain Pass**: Landmark *(Dominion: Empires)*<br>When you are the first player to gain a Province, at end of turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
+* **Mountain Pass**: Landmark *(Dominion: Empires)*<br>When you are the first player to gain a Province, each player bids once, up to 40 Debt, ending with you. High bidder gets +8VP and takes the Debt they bid.
 * **Outpost**: Action - Duration, $5 *(Dominion: Seaside)*<br>You only draw 3 cards for your next hand. Take an extra turn after this one (but not a 3rd turn in a row).
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Patron**: Action - Reaction, $4 *(Dominion: Renaissance)*<br>**+1 Villager**<br>**+$2**<br>––––––––––––––––––––<br>When something causes you to reveal this (using the word "reveal") in an Action phase, **+1 Coffers**.
 * **Possession**: Action, $6 Potion *(Dominion: Alchemy)*<br>The player to your left takes an extra turn after this one (but not a 2nd extra turn in a row), in which you can see all cards they can and make all decisions for them. Any cards or Debt they would gain on that turn, you gain instead; any cards of theirs that are trashed are set aside and put in their discard pile at end of turn.
 * **Voyage**: Action - Duration - Odyssey, $4 *(Dominion: Allies)*<br>**+1 Action**<br>Take an extra turn after this one (but not a 3rd turn in a row), during which you can only play 3 cards from your hand.
 
-Additionally, two cards intentionally work differently online than what their texts say:
+Additionally, three cards intentionally work differently online than what their texts say:
 
-* **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have cards that require setup not already required by other Kingdom cards. For example, it will not have cards that require Potion or Ruins unless another card in the Kingdom already needs those things. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
-* **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played using Way of the Mouse would be as useful or less useful than other Ways.
+* **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have cards that require setup not already required by other Kingdom cards. For example, it will not have cards that require Potion or Ruins unless another card in the Kingdom already needs those things. Players do not get to know what cards start in the Black Market deck. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
+* **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played using Way of the Mouse would be as useful or less useful than other Ways (e.g. Moat).
+* **Riverboat**: Riverboat will not set aside cards that are useless or confusing (e.g. Small Castle).
 
 ## Previous errata
 
@@ -114,29 +115,39 @@ You may spend Coffers at any time on your turn.
 
 An effect that tries to play a card for the first time can only do so when the card is where the effect expects it to be. With an effect that plays a card multiple times, the subsequent times will always work, regardless of whether the first play was successful.
 
+### Paying off Debt
+
+You may pay of Debt at any time on your turn.
+
 ## Dominion Online bugs
 
 Below is a list of cards and situations where the game rules aren't followed. This list does not include bugs with removed cards, confusing or incorrect interface issues, or problems with the Lord Rattington bot. Bugs due to using abilities during another player's turn are in a separate section below.
 
-* **–$1 token + Way of the Chameleon**: If you have your –$1 token and play a card using Way of the Chameleon that would give you +Cards, you draw 1 less (the amount is correct, but it should be +$).
+* **–$1 token + Way of the Chameleon**: If you have your –$1 token and play a card using Way of the Chameleon that would give you +Cards, you draw 1 fewer card. (The token is applied correctly, but Way of the Chameleon should change the bonus to +$.)
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
-* **Cavalry, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
+* **Cavalry, Continue, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
+* **Continue**: See **Cavalry** above.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
-* **Highwayman + Way of the Chameleon**: If you are affected by Highwayman's attack and the first Treasure you play in a turn is also an Action, then playing it using Way of the Chameleon will override Highwayman's attack. (Highwayman should make the Treasure do nothing, regardless of how it's played.) 
+* **Flourishing Trade**: See **Villagers** below.
+* **Highwayman**:
+
+  * **Reckless**: If you play a Reckless Highwayman, then when you discard it from play at the start of your next turn, it is not returned to its pile.
+  * **Way of the Chameleon**: If you are affected by Highwayman's attack and the first Treasure you play in a turn is also an Action, then playing it using Way of the Chameleon will override Highwayman's attack. (Highwayman should make the Treasure do nothing, regardless of how it's played.) 
+* **Possession**: See **Villagers** below.
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
-* **Royal Carriage**
+* **Royal Carriage**:
 
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
   * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
 * **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
-* **Sleigh**
+* **Sleigh**:
 
-  * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs, though they will do nothing.
-  * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
+  * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs even though they will do nothing.
+  * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should then stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
 * **Treasure Map**: The two Treasure Maps should be trashed simultaneously, but are trashed one at a time. For example, if you play a Treasure Map and trash it, you can resolve "when you trash" abilities before trashing another Treasure Map from your hand.
 * **Villa**: See **Cavalry** above.
-* **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically beings. This can matter with Diadem or Possession.
+* **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically begins. This can matter with Possession or Flourishing Trade.
 * **Way of the Chameleon**:
   * See **–$1 token** above.
   * See **Highwayman** above.
@@ -144,9 +155,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 
 ### Bugs during another player's turn
 
-* If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
+*These bugs may have been fixed, but are pending a thorough re-testing in early 2025.*
 
-* Similarly, if you play a card using Way of the Squirrel during another player's turn, you will draw 2 extra cards at the end of your next turn instead.
+* If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
 
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
 
