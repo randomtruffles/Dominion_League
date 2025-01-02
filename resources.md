@@ -95,7 +95,7 @@ Additionally, when you are told to get a card from your discard pile and that ca
 
 ### Gaining non-Supply cards
 
-When a card tells you to gain a non-Supply card by name (e.g., "gain a Horse"), or by a pile type (e.g., "gain a Prize"), you can gain it from its pile, even though it's not in the Supply.
+When a card tells you to gain a non-Supply card by name (e.g., "gain a Horse"), or by a pile type (e.g., "gain any Reward"), you can gain it from its pile, even though it's not in the Supply.
 
 For example, Marauder can gain Spoils because Marauder uses the words "gain a Spoils", but Changeling cannot gain an Imp because Changeling does not use the word "Imp" and instead says "gain a copy".
 
@@ -117,7 +117,7 @@ An effect that tries to play a card for the first time can only do so when the c
 
 ### Paying off Debt
 
-You may pay of Debt at any time on your turn.
+You may pay off Debt at any time on your turn.
 
 ## Dominion Online bugs
 
