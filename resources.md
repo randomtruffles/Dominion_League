@@ -136,6 +136,9 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Possession**: See **Villagers** below.
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
+* **Reckless**:
+  * See **Highwayman** above.
+  * **Way of the Chameleon**: If you play a Reckless card using Way of the Chameleon, Reckless applies but Way of the Chameleon does not.
 * **Royal Carriage**:
 
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
@@ -152,6 +155,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
   * See **–$1 token** above.
   * See **Highwayman** above.
   * See **Priest** above.
+  * See **Reckless** above.
 
 ### Bugs during another player's turn
 
