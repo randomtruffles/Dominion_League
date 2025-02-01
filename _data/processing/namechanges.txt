@@ -80,6 +80,7 @@ eaterpoosack	Yeeterthapeter
 tserridge	Tiago84
 VickySWE	MountainsAndOceans
 cfred	Resuscitate Me
+crbland	LordVoldemoat
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -137,3 +138,9 @@ matt979	Matt979
 chadnov	Chadnov
 dpizza	Dpizza
 bumbugler	Bumbugler
+jarodsmartin	Jarodsmartin
+Knots	knots
+sokolovic	Sokolovic
+Killertomatoes	killertomatoes
+CHIRZ	chirz
+NOTSteve	NotSTEVE
