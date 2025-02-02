@@ -158,8 +158,9 @@ function searchHistory() {
 	playerVersus = {};
 	tiersPlayed = {};
 	const notPlayers = ["games_nondrop","losses","losses_nondrop","wins","wins_nondrop"];
+	var addCurrent = inCurrent && !(`s${currentSeason.season}` in leagueHist);
 	
-	if (inCurrent && !(`s${currentSeason.season}` in leagueHist)) {
+	if (addCurrent) {
 		let season = currentSeason.season;
 		let division = currentSeason.players[playerKey].division;
 		let title = `<a href="current_standings?div=${division}"> S${season}</a> ${division} Division`;
@@ -333,7 +334,7 @@ function searchHistory() {
 		addToDiv(playerDiv, `${champions.players[playerKey].length} x League Champion`, "p", "champion-information");
 	}
 	// ---Seasons played
-	playedString = `Seasons played: ${players[playerKey] ? players[playerKey].seasons.length + inCurrent : 1} (`
+	playedString = `Seasons played: ${players[playerKey] ? players[playerKey].seasons.length + addCurrent : 1} (`
 	for (let t of selectedTiers) {
 		playedString += `${t}: ${tiersPlayed[t].count}, `;
 	}

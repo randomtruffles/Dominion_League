@@ -204,5 +204,7 @@ out['nondem-streak'] = allStreaks.nondem.sort((a,b) => b.streak.count - a.streak
 
 out['champions'] = Object.keys(champions.players).map(key => {return {"player": players[key].name, "seasons": champions.players[key]}});
 
+out['thruSeason'] = currentSeason;
+
 fs.writeFileSync("outputs/hall_of_fame.json", JSON.stringify(out));
 
