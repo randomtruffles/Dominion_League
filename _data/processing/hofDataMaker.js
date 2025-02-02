@@ -4,7 +4,7 @@ var players = JSON.parse(fs.readFileSync("../player_seasons.json"));
 var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
 
-const currentSeason = 66;
+const currentSeason = 67;
 const thresholdForOverallPct = 10;
 const thresholdForTierPct = 3;
 var oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]},"51":{"J":["H",null]}, "62":{"G":["G","I"], "H":["H","J"], "I":["J",null]}};
@@ -203,6 +203,8 @@ out['promote-streak'] = allStreaks.promote.sort((a,b) => b.streak.count - a.stre
 out['nondem-streak'] = allStreaks.nondem.sort((a,b) => b.streak.count - a.streak.count).slice(0,30);
 
 out['champions'] = Object.keys(champions.players).map(key => {return {"player": players[key].name, "seasons": champions.players[key]}});
+
+out['thruSeason'] = currentSeason;
 
 fs.writeFileSync("outputs/hall_of_fame.json", JSON.stringify(out));
 

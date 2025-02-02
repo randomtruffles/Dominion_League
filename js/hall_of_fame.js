@@ -2,7 +2,6 @@
 ---
 
 var hof = {{ site.data.hall_of_fame | jsonify }};
-var lastSeason = {{ site.data.season.number }} - 1;
 
 function dbLink(name) {
 	if (name.search('~') == -1) {
@@ -129,7 +128,7 @@ function addStrRow(table, rank, data, extra = false) {
 	}
 	row.appendChild(p);
 	let n = document.createElement('td');
-	n.appendChild(document.createTextNode(data.streak.count + ((data.streak.end >= lastSeason) ? "*" : "")));
+	n.appendChild(document.createTextNode(data.streak.count + ((data.streak.end >= hof.thruSeason) ? "*" : "")));
 	row.appendChild(n);
 	table.appendChild(row);
 }

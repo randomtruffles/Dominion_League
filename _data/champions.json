@@ -65,7 +65,8 @@
     "63": "yurikamome",
     "64": "yurikamome",
     "65": "mic qsenoch",
-    "66": "mic qsenoch"
+    "66": "mic qsenoch",
+    "67": "fircoal"
   },
   "runner_ups": {
     "1": "stef",
@@ -133,7 +134,8 @@
     "63": "vrsmith",
     "64": "mic qsenoch",
     "65": "yurikamome",
-    "66": "hakha3"
+    "66": "hakha3",
+    "67": "jnails"
   },
   "players": {
     "mic qsenoch": [
@@ -233,6 +235,9 @@
     "yurikamome": [
       "63",
       "64"
+    ],
+    "fircoal": [
+      "67"
     ]
   },
   "players_runner_ups": {
@@ -331,7 +336,8 @@
 	],
 	"jnails": [
 	  "47",
-	  "55"
+	  "55",
+    "67"
 	],
 	"same": [
 	  "50"
