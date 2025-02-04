@@ -352,6 +352,14 @@ See [free promotions](/rules#5.5).
 
 See [standings](/rules#5.1) and [tiebreakers](/rules#5.2).
 
+#### What are the Tier Championships?
+
+Within the Dominion League structure, there is a Championship match each season, played between the top two finishers in A Tier.
+
+The League doesn't run Championship matches for players in other tiers. However, there is an optional and unofficial tournament for top finishers in other tiers called Tier Championships. This tournament is run by a different team of moderators, and participation is not mandatory, but it may be a fun way to cap off a winning League season. Participation in this tournament will not affect your League standings in any way.
+
+You can see a list of past Tier Championships winners in the tournament's [Hall of Fame](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjX8RFvFhzBmprtZQQ_CQr1omQnF2S1gIb5bBAyQvvqfOgBcBu1dCJtHPtO21Hc6yTvzhIQbdSQAKx/pubhtml?gid=0).
+
 ## 7. Miscellaneous
 
 #### What are the rules on etiquette?
