@@ -53,7 +53,7 @@ If you are playing in the current season and would like to join the next season,
 
 ### <a name="1.4"></a>1.4. Hiatus
 
-Depending on the number of seasons since you last participated in the League, you may retain your previous tier placement, or you may be placed as a new player. See Tier Placement ([2.4](#2.4)) and Flex Divisions ([2.5](#2.5)) for details.
+The number of seasons since you last participated in the League determines your eligibility to retain your previous tier placement. See Tier Placement ([2.4](#2.4)) and Flex Divisions ([2.5](#2.5)) for details.
 
 <a name="1.4.1"></a>1.4.1. A short break is a break of up to 2 consecutive seasons.
 
