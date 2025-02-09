@@ -17,10 +17,10 @@ Both our feedback form poll and town hall last season focused on scheduling, par
    - Identify who in your division will be the most difficult for you to schedule with and try to figure out when you will play early in the season. This could be someone who is far away in time zone or someone who posts availability in their check-in message that does not align with yours. Often you will need to schedule ahead with those players, so leaving those matches to the last weekend does not work.
    - Be attentive to what is happening in your division channel. If you have not done so, download the Discord mobile app. This way, you should get notifications when people are trying to reach you; be sure to @ either the division role or individual players so they get those notifications too.
 
-Note that Daylight Savings time starts in North America on March 9th - your UTC offset will change then.
+Note that Daylight Savings time starts in North America on March 9th - your UTC offset will change then. In Europe the spring clock change does not happen until after the end of the season, so the difference between American and European time zones will be one hour narrower than usual in the later part of the season.
 
 **Breaks Rules Changes**
 
-In an effort to improve division balance, all players who are returning from a break will have their previous position in league taken into consideration. While players will not be able to return to the tier they left indefinitely, no longer should there be players who have proven themselves in upper tiers returning to the lower ones. More details to come in the official rules changelog.
+In an effort to improve division balance, all players who are returning from a break will have their previous position in league taken into consideration. While places will not be guaranteed any longer than they are currently and players will not be able to return to the tier they left indefinitely, no longer should there be players who have proven themselves in upper tiers returning to the lower ones. More details to come in the official rules changelog.
 
 Best of luck to all this upcoming season!
