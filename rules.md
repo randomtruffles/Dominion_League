@@ -324,19 +324,21 @@ There are several types of matches ([adjustment](#5.6.3), [play-in](#5.5), and [
 
 <a name="4.16.1"></a>4.16.1. Adjustment and two-player tiebreaker matches are 2-game matches with each player starting one of the games. You and your opponent may play a 4- or 6-game match instead by mutual agreement.
 
-<a name="4.16.2"></a>4.16.2. Play-in matches are 6-game matches.
+<a name="4.16.2"></a>4.16.2. Three-player tiebreaker matches are a set of three 3-game matches between each combination of players. Players rotate being starting player in game 1 of a match, such that each player is starting player in half the games played across their two matches.
 
-<a name="4.16.3"></a>4.16.3. If one player reaches 2.5 or more wins in a 4-game match, or 3.5 or more wins in a 6-game match, they win the match, and there is no need to complete any remaining games.
+<a name="4.16.3"></a>4.16.3. Play-in matches are 6-game matches.
 
-<a name="4.16.4"></a>4.16.4. If the players are tied after completing all games per [4.16.1](#4.16.1) or [4.16.2](#4.16.2), they play one final game with a random player starting.
+<a name="4.16.4"></a>4.16.4. If one player reaches 2.5 or more wins in a 4-game match, or 3.5 or more wins in a 6-game match, they win the match, and there is no need to complete any remaining games.
 
-<a name="4.16.5"></a>4.16.5. If there is still a tie, the player that went second in the last game wins.
+<a name="4.16.5"></a>4.16.5. If the players are tied after completing all games per [4.16.1](#4.16.1) or [4.16.3](#4.16.3), they play one final game with a random player starting. If there is still a tie, the player that went second in the final game wins.
 
-<a name="4.16.6"></a>4.16.6. A player who does not wish to play one of these matches may concede.
+<a name="4.16.6"></a>4.16.6. If the players are tied after completing all games per [4.16.2](#4.16.2), the moderators will break the tie randomly.
 
-<a name="4.16.7"></a>4.16.7. If one player fails to respond promptly or is unable to play, that player concedes by default.
+<a name="4.16.7"></a>4.16.7. A player who does not wish to play one of these matches may concede.
 
-<a name="4.16.8"></a>4.16.8. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
+<a name="4.16.8"></a>4.16.8. If one player fails to respond promptly or is unable to play, that player concedes by default.
+
+<a name="4.16.9"></a>4.16.9. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
 ## <a name="5"></a>5. Standings
 
