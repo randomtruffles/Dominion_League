@@ -107,6 +107,8 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.5"></a>2.4.5. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
 
+<a name="2.4.6"></a>2.4.6. Occasionally, the League's tier structure will need to be adjusted to accommodate changes in the number of players or the distribution of skill. This may involving adding or removing tiers, or changing the relative size of existing tiers. When this occurs, the League will publish a transition scheme detailing the movement of players between the pre- and post-transition seasons. Players who take breaks across these transitions will have their tier placements adjusted according to any such schemes upon their return.
+
 ### <a name="2.5"></a>2.5. Flex Divisions
 
 Divisions usually have a maximum of 6 players. However, divisions may "flex" up to a size of 7 players in order to accommodate players returning from a short break ([1.4](#1.4), [2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.4](#2.4.4)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
