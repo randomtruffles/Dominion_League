@@ -57,9 +57,7 @@ The number of seasons since you last participated in the League determines your 
 
 <a name="1.4.1"></a>1.4.1. A short break is a break of up to 2 consecutive seasons.
 
-<a name="1.4.2"></a>1.4.2. A medium break is a break of between 3 and 5 consecutive seasons.
-
-<a name="1.4.3"></a>1.4.3. A long break is a break of 6 or more consecutive seasons.
+<a name="1.4.2"></a>1.4.2. A long break is a break of 3 or more consecutive seasons.
 
 ### <a name="1.5"></a>1.5. Accounts
 
