@@ -111,7 +111,7 @@ Players are placed into tiers using the following criteria, in order:
 
 ### <a name="2.5"></a>2.5. Flex Divisions
 
-Divisions usually have a maximum of 6 players. However, divisions may "flex" up to a size of 7 players in order to accommodate players returning from a short break ([1.4](#1.4), [2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.4](#2.4.4)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
+Divisions usually have a maximum of 6 players. However, divisions may "flex" up to a size of 7 players in order to accommodate players returning from a short break ([1.4.1](#1.4.1), [2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.4](#2.4.4)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
 
 ### <a name="2.6"></a>2.6. Seeding
 
