@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2024-06-09
+date: 2025-02-09
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -53,13 +53,11 @@ If you are playing in the current season and would like to join the next season,
 
 ### <a name="1.4"></a>1.4. Hiatus
 
-Depending on the number of seasons since you last participated in the League, you may retain your previous tier placement, or you may be placed as a new player. See Tier Placement ([2.4](#2.4)) and Flex Divisions ([2.5](#2.5)) for details.
+The number of seasons since you last participated in the League determines your eligibility to retain your previous tier placement. See Tier Placement ([2.4](#2.4)) and Flex Divisions ([2.5](#2.5)) for details.
 
 <a name="1.4.1"></a>1.4.1. A short break is a break of up to 2 consecutive seasons.
 
-<a name="1.4.2"></a>1.4.2. A medium break is a break of between 3 and 5 consecutive seasons.
-
-<a name="1.4.3"></a>1.4.3. A long break is a break of 6 or more consecutive seasons.
+<a name="1.4.2"></a>1.4.2. A long break is a break of 3 or more consecutive seasons.
 
 ### <a name="1.5"></a>1.5. Accounts
 
@@ -97,15 +95,23 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.2"></a>2.4.2. Players returning to the League after a short break ([1.4.1](#1.4.1)) are placed into the tier they would have most recently returned to, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)). If there is insufficient space in a tier to accommodate players returning from a short break, one or more flex divisions ([2.5](#2.5)) will be created.
 
-<a name="2.4.3"></a>2.4.3. Players returning to the League after a medium break ([1.4.2](#1.4.2)) are placed into the tier they would have most recently returned to, or the tier they would be placed into as a new player ([2.4.4](#2.4.4)), whichever is higher. Slots are filled starting with A tier and working downward. If there is insufficient space in a given tier to accommodate players returning from a medium break, they will be placed in the highest possible tier below that tier that can accommodate them without needing a flex division to do so, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)).
+<a name="2.4.3"></a>2.4.3. Players returning to the League after a long break ([1.4.2](#1.4.2)) are placed into the tier they would have most recently returned to, modified by a break adjustment, or into a tier based on their Dominion Online level, whichever placement would be higher.
 
-<a name="2.4.4"></a>2.4.4. Players returning to the League after a long break ([1.4.3](#1.4.3)), and players joining the League for the first time, are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups). If there is insufficient space in a tier to accommodate players exceeding the strict level cutoff, one or more flex divisions ([2.5](#2.5)) will be created.
+<a name="2.4.3.1"></a>2.4.3.1. Players returning from a long break will have their Dominion Online level assessed in the same manner as if they were joining the League for the first time (see [2.4.4](#2.4.4)).
+
+<a name="2.4.3.2"></a>2.4.3.2. A break adjustment consists of a reduction by 1 tier for every 6 full seasons off, up to a maximum reduction of 3 tiers. For example, a player who would have returned to C will have a break-adjusted tier of C after a break lasting up to 5 seasons, D after a break lasting 6-11 seasons, E after a break lasting 12-17 seasons, and F after a break lasting 18+ seasons. A player's break-adjusted tier cannot fall below the League's lowest tier (see [2.3](#2.3)).
+
+<a name="2.4.3.3"></a>2.4.3.3. When placing players based on break-adjusted tiers, slots are filled starting with A tier and working downward. If there is insufficient space in a given tier to accommodate such players, they will be placed in the highest possible tier below that tier that can accommodate them without needing a flex division to do so, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)).
+
+<a name="2.4.4"></a>2.4.4. Players joining the League for the first time are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups). If there is insufficient space in a tier to accommodate players exceeding the strict level cutoff, one or more flex divisions ([2.5](#2.5)) will be created.
 
 <a name="2.4.5"></a>2.4.5. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
 
+<a name="2.4.6"></a>2.4.6. Occasionally, the League's tier structure will need to be adjusted to accommodate changes in the number of players or the distribution of skill. This may involving adding or removing tiers, or changing the relative size of existing tiers. When this occurs, the League will publish a transition scheme detailing the movement of players between the pre- and post-transition seasons. Players who take breaks across these transitions will have their tier placements adjusted according to any such schemes upon their return.
+
 ### <a name="2.5"></a>2.5. Flex Divisions
 
-Divisions usually have a maximum of 6 players. However, divisions may "flex" up to a size of 7 players in order to accommodate players returning from a short break ([1.4](#1.4), [2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.4](#2.4.4)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
+Divisions usually have a maximum of 6 players. However, divisions may "flex" up to a size of 7 players in order to accommodate players returning from a short break ([1.4.1](#1.4.1), [2.4.2](#2.4.2)) or particularly highly-rated players ([2.4.4](#2.4.4)). Free promotions ([5.5](#5.5)) are only used to fill divisions up to the normal maximum of 6 players.
 
 ### <a name="2.6"></a>2.6. Seeding
 
@@ -316,21 +322,23 @@ In the case of a disputed rules infraction during a Dominion League game, you sh
 
 There are several types of matches ([adjustment](#5.6.3), [play-in](#5.5), and [tiebreaker](#5.2)) that take place outside of the normal league season, and differ from standard league matches in various ways. In all respects but those listed below, they follow the standard league match format.
 
-<a name="4.16.1"></a>4.16.1. Adjustment and tiebreaker matches are 2-game matches with each player starting one of the games. You and your opponent may play a 4- or 6-game match instead by mutual agreement.
+<a name="4.16.1"></a>4.16.1. Adjustment and two-player tiebreaker matches are 2-game matches with each player starting one of the games. You and your opponent may play a 4- or 6-game match instead by mutual agreement.
 
-<a name="4.16.2"></a>4.16.2. Play-in matches are 6-game matches.
+<a name="4.16.2"></a>4.16.2. Three-player tiebreaker matches are a set of three 3-game matches between each combination of players. Players rotate being starting player in game 1 of a match, such that each player is starting player in half the games played across their two matches.
 
-<a name="4.16.3"></a>4.16.3. If one player reaches 2.5 or more wins in a 4-game match, or 3.5 or more wins in a 6-game match, they win the match, and there is no need to complete any remaining games.
+<a name="4.16.3"></a>4.16.3. Play-in matches are 6-game matches.
 
-<a name="4.16.4"></a>4.16.4. If the players are tied after completing all games per [4.16.1](#4.16.1) or [4.16.2](#4.16.2), they play one final game with a random player starting.
+<a name="4.16.4"></a>4.16.4. If one player reaches 2.5 or more wins in a 4-game match, or 3.5 or more wins in a 6-game match, they win the match, and there is no need to complete any remaining games.
 
-<a name="4.16.5"></a>4.16.5. If there is still a tie, the player that went second in the last game wins.
+<a name="4.16.5"></a>4.16.5. If the players are tied after completing all games per [4.16.1](#4.16.1) or [4.16.3](#4.16.3), they play one final game with a random player starting. If there is still a tie, the player that went second in the final game wins.
 
-<a name="4.16.6"></a>4.16.6. A player who does not wish to play one of these matches may concede.
+<a name="4.16.6"></a>4.16.6. If the players are tied after completing all games per [4.16.2](#4.16.2), the moderators will break the tie randomly.
 
-<a name="4.16.7"></a>4.16.7. If one player fails to respond promptly or is unable to play, that player concedes by default.
+<a name="4.16.7"></a>4.16.7. A player who does not wish to play one of these matches may concede.
 
-<a name="4.16.8"></a>4.16.8. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
+<a name="4.16.8"></a>4.16.8. If one player fails to respond promptly or is unable to play, that player concedes by default.
+
+<a name="4.16.9"></a>4.16.9. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
 ## <a name="5"></a>5. Standings
 
@@ -352,9 +360,11 @@ If there is a tie within a division, a head-to-head tiebreaker is applied. If th
 
 <a name="5.2.2.1"></a>5.2.2.1. If an unbroken two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.16](#4.16).
 
-<a name="5.2.2.2"></a>5.2.2.2. If an unbroken three (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
+<a name="5.2.2.2"></a>5.2.2.2. If an unbroken three-way tie affects promotions, demotions, or entry into the Championship Match, the moderators will offer each player involved the opportunity to play in a round-robin tiebreaker, using the format specified in [4.16](#4.16). If any of the players involved declines to participate, the moderators will randomly break the tie.
 
-<a name="5.2.2.3"></a>5.2.2.3. Otherwise, all players share the rank of the best tied place.
+<a name="5.2.2.3"></a>5.2.2.3. If an unbroken four (or more) way tie affects promotions, demotions, or entry into the Championship Match, the moderators will randomly break the tie.
+
+<a name="5.2.2.4"></a>5.2.2.4. Otherwise, all players share the rank of the best tied place.
 
 ### <a name="5.3"></a>5.3. Promotions and demotions
 
