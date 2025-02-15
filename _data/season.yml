@@ -15,11 +15,11 @@ tiers:
     demoters: 2
   D:
     divisions: 5
-    promoters: 2
+    promoters: 1
     demoters: 2
   E:
     divisions: 7
-    promoters: 1
+    promoters: 2
     demoters: 2
   F:
     divisions: 8
