@@ -29,7 +29,7 @@ var statStore = null;
 loadPage();
 
 function makeButtons(div) {
-	var tiers = [..."ABCDEFGHIJP"];
+	var tiers = [..."ABCDEFGHIJKP"];
 	var container = document.getElementById("myBtnContainer");
 	for (let t of tiers) {
 		let butt = document.createElement("button");
