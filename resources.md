@@ -148,6 +148,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 
   * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs even though they will do nothing.
   * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should then stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
+* **Survivors**: If you only reveal 1 card, you must discard it.
 * **Treasure Map**: The two Treasure Maps should be trashed simultaneously, but are trashed one at a time. For example, if you play a Treasure Map and trash it, you can resolve "when you trash" abilities before trashing another Treasure Map from your hand.
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically begins. This can matter with Possession or Flourishing Trade.
