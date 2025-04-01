@@ -21,9 +21,10 @@ manchild69	stonedmason
 shaiyacat	TrinaCat
 grand market	crude
 Phtevenjohnsonxx	Phtevenj
-Seprix	juniper.sona
-h.exe	juniper.sona
-Ketyri	juniper.sona
+Seprix	Junipersona
+h\.exe	Junipersona
+Ketyri	Junipersona
+juniper\.sona	Junipersona
 turbobaseball	SSounder
 sequoiac	catmom
 ravi vasudevan	ravivas
@@ -81,6 +82,8 @@ tserridge	Tiago84
 VickySWE	MountainsAndOceans
 cfred	Resuscitate Me
 crbland	LordVoldemoat
+popsofctown	Setsuki
+Bienchen1	The Bee
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -144,3 +147,6 @@ sokolovic	Sokolovic
 Killertomatoes	killertomatoes
 CHIRZ	chirz
 NOTSteve	NotSTEVE
+DrRyuzakilove	DrRyuzakilove
+Gingerbowtie	Gingerbowtie
+rizzymoe	Rizzymoe
