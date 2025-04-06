@@ -20,6 +20,6 @@ While moderator applications are always open, I wanted to provide a reminder tha
 
 **Form Access**
 
-There have been some changes in the way our forms' permission structures work, and we are still in the process of ironing out processes for handling these. If you are unable to access a form (Check-in, Results, Returning, Signup), please contact the moderator team immediately, either using [the hotline](https://docs.google.com/forms/d/e/1FAIpQLSf2NR9VkDRAU-lTTKJdyQOiUuFyCjMbh9Xf7HoANX-jakAFRw/viewform) or by typing `@League Mod` into Discord. **_You should never need to request personal access to anything for League_**, so please do not and let us know if something is asking you to do so.
+There have been some changes in the way our forms' permission structures work, and we are still in the process of ironing out processes for handling these. If you are unable to access a form (Check-in, Results, Returning, Signup), please contact the moderator team immediately, either using [the hotline](https://docs.google.com/forms/d/e/1FAIpQLSf2NR9VkDRAU-lTTKJdyQOiUuFyCjMbh9Xf7HoANX-jakAFRw/viewform) or by typing `@League Mod` into Discord. **_You should never need to request personal access to anything for League_**, so let us know if something is asking you to do so.
 
 As always, best of luck this upcoming season, and we hope to continue providing a positive experience in the seasons to come.
