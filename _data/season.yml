@@ -1,4 +1,4 @@
-number: 68
+number: 69
 
 tiers:
   A:
@@ -14,7 +14,7 @@ tiers:
     promoters: 1
     demoters: 2
   D:
-    divisions: 5
+    divisions: 6
     promoters: 1
     demoters: 2
   E:
@@ -34,7 +34,7 @@ tiers:
     promoters: 2
     demoters: 2
   I:
-    divisions: 8
+    divisions: 6
     promoters: 2
     demoters: 2
   J:
@@ -42,7 +42,7 @@ tiers:
     promoters: 2
     demoters: 2
   K:
-    divisions: 7
+    divisions: 6
     promoters: 2
     demoters: 0
 
