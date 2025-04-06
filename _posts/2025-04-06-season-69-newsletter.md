@@ -6,7 +6,7 @@ layout: post
 categories:
   - newsletters
 ---
-Welcome to season 69 of the Dominion League! There are no major announcements for this upcoming season but a couple of quick items:
+Welcome to season 69 of the Dominion League! There are no major announcements for this upcoming season, but there are a couple of items we would like to highlight.
 
 **Feedback Summary**
 
