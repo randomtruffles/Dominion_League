@@ -469,7 +469,7 @@ function makeVersus(init = false) {
 	versusTotal = {"games": 0, "wins": 0, "losses": 0, "tiers": []}
 	for (let i=0; i<nopps; i++) {
 		let opp = playerVersus[opps[i]];
-		if (excludePlayers.includes(opp.toLowerCase())) {continue;}
+		if (excludePlayers.includes(opps[i].toLowerCase())) {continue;}
 		let filtered = {"player": opps[i], "games": 0, "wins": 0, "losses": 0, "tiers": [], "seasons": []};
 		for (let j=0; j<opp.length; j++) {
 			if ((opp[j].season >= seasonRange[0]) && (opp[j].season <= seasonRange[1]) && selectedTiers.includes(opp[j].tier)) {
