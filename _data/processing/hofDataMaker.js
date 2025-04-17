@@ -3,6 +3,7 @@ var fs = require('fs')
 var players = JSON.parse(fs.readFileSync("../player_seasons.json"));
 var leagueHist = JSON.parse(fs.readFileSync("../league_history.json"));
 var champions = JSON.parse(fs.readFileSync("../champions.json"));
+const excludePlayers = JSON.parse(fs.readFileSync("../exclude_players.json"));
 
 const currentSeason = 68;
 const thresholdForOverallPct = 10;
@@ -33,8 +34,6 @@ var allStats = [];
 var matchups = [];
 var allStreaks = {"played": [], "nondem": [], "promote": []};
 const notPlayers = ["games_nondrop","losses","losses_nondrop","wins","wins_nondrop"];
-
-const excludePlayers = ["dean corso", "xen0m0rph", "eni9ma", "predat0r", "bud fox"];
 
 function decompactDivision(name, cDiv) {
 	var out = {"name": name, "tier": name.charAt(0), "complete?": "Yes", "late drops": cDiv.drops, "members": {}, "by_player": {}};
