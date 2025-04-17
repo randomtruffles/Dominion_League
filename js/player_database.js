@@ -10,6 +10,7 @@ var sheetsLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
 //var championshipVideos = {{ site.data.championship_videos | jsonify }};
 var youtubeChannels = {{ site.data.youtube_channels | jsonify }};
+excludePlayers = {{ site.data.exclude_players | jsonify }};
 noLink = true;
 
 var loadingDiv = document.getElementById("loading");
@@ -120,7 +121,21 @@ function searchHistory() {
 	statsDiv.innerHTML = "";
 	versusDiv.innerHTML = "";
 	
-	if (currentSeason.players[playerKey]) {
+	if (excludePlayers.includes(playerKey)) {
+		let errHeader = document.createElement('h4');
+		errHeader.appendChild(document.createTextNode("Error: Player Is Hidden"));
+		playerDiv.appendChild(errHeader);
+		let errDesc = document.createElement('p');
+		let pname = document.createElement('span');
+		pname.style.fontWeight = "bold";
+		pname.appendChild(document.createTextNode(players[playerKey].name));
+		errDesc.appendChild(pname);
+		errDesc.appendChild(document.createTextNode(" is banned for results manipulation."));
+		playerDiv.appendChild(errDesc);
+		document.getElementById("content-controls").style.display = "none";
+		loadingDiv.style.display = "none";
+		return;
+	} else if (currentSeason.players[playerKey]) {
 		inCurrent = true;
 		player = currentSeason.players[playerKey].name;
 		playerInput.value = player;
@@ -454,6 +469,7 @@ function makeVersus(init = false) {
 	versusTotal = {"games": 0, "wins": 0, "losses": 0, "tiers": []}
 	for (let i=0; i<nopps; i++) {
 		let opp = playerVersus[opps[i]];
+		if (excludePlayers.includes(opp.toLowerCase())) {continue;}
 		let filtered = {"player": opps[i], "games": 0, "wins": 0, "losses": 0, "tiers": [], "seasons": []};
 		for (let j=0; j<opp.length; j++) {
 			if ((opp[j].season >= seasonRange[0]) && (opp[j].season <= seasonRange[1]) && selectedTiers.includes(opp[j].tier)) {
@@ -873,7 +889,7 @@ input_player_search.addEventListener("keyup", function(event) {
 });
 
 /*An array containing all the player names*/
-var playersList = [...new Set(Object.keys(players).sort((a,b) => players[b].seasons.length - players[a].seasons.length).map(key => players[key].name).concat(Object.keys(currentSeason.players).map(key => currentSeason.players[key].name)))];
+var playersList = [...new Set(Object.keys(players).filter(x => !excludePlayers.includes(x)).sort((a,b) => players[b].seasons.length - players[a].seasons.length).map(key => players[key].name).concat(Object.keys(currentSeason.players).map(key => currentSeason.players[key].name)))];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("input_player_search"), playersList);

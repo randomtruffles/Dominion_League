@@ -3,6 +3,7 @@
 
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
+excludePlayers = {{ site.data.exclude_players | jsonify }};
 
 function makeButtons(div) {
 	var tiers = [...new Set(Object.keys(sheetLinks).map(x => x.charAt(0)))].sort();

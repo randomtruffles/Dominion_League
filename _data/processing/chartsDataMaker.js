@@ -4,6 +4,7 @@ var fs = require('fs');
 const fullHist = JSON.parse(fs.readFileSync("../league_history.json"));
 const champs = JSON.parse(fs.readFileSync("../champions.json"));
 const oldData = JSON.parse(fs.readFileSync("../chart_data.json"));
+const excludePlayers = JSON.parse(fs.readFileSync("../exclude_players.json"));
 
 var players = {};
 var divisions = {};
@@ -54,6 +55,7 @@ for (let s in fullHist) {
 		
 		for (let pl in divisionData.members) {
 			let plkey = pl.toLowerCase();
+			if (excludePlayers.includes(plkey)) {continue;}
 			if (plkey in players) {
 				players[plkey].seasons.push(Number(sn));
 				players[plkey].divs.push(div);

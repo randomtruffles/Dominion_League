@@ -1,7 +1,8 @@
 var champ = "";
 var promoteIcon = "&#9651;";
 var demoteIcon = "&#9661;";
-var playerQuery = ""
+var playerQuery = "";
+var excludePlayers = [];
 var noLink = false;
 var plusMinus = false;
 var oddSchemes = {"38":{"D":["C","F"],"E":["E","G"],"F":["G",null]},"40":{"G":["F","I"],"H":["H",null]},"51":{"J":["H",null]}, "62":{"G":["G","I"], "H":["H","J"], "I":["J",null]}};
@@ -36,12 +37,13 @@ function decompactDivision(name, cDiv) {
 
 function formatDbLink(playerName, className, drop = "No"){
 	var champion_sym = " <img src=\"/img/icons/vp_with_trophy.png\" class=\"champion-trophy\" title=\"Championship Match between top 2 A division finishers\">";
-	var link = noLink ? `<span class = "${className}">${playerName}</span>`: `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`;
+	var playerKey = playerName.toLowerCase();
+	var link = excludePlayers.includes(playerKey) ? `<span>${playerName}</span>`: (noLink ? `<span class = "${className}">${playerName}</span>`: `<a class="${className}" href="/player_database?player=${playerName.replace(/ /g, "%20")}">${playerName}</a>`);
 	link = (drop == "Yes") ? `<s>${link}</s>` : link;
-	if (playerName.toLowerCase() == champ) {
+	if (playerKey == champ) {
 		link += champion_sym;
 	}
-	if (playerName.toLowerCase() == playerQuery){
+	if (playerKey == playerQuery){
 		link = `<b>${link}</b>`;
 	}
 	return link;

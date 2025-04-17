@@ -1340,6 +1340,10 @@ tbody {
 	content: "J";
 }
 
+.dbSelector.singleFilter.Ktier:before {
+  content: "K";
+}
+
 .dbSelector.singleFilter.Ptier:before {
 	content: "P";
 }
