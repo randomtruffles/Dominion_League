@@ -7,6 +7,7 @@ var players = {{ site.data.player_seasons | jsonify }};
 var leagueHist = {{ site.data.league_history | jsonify }};
 var sheetsLinks = {{ site.data.sheet_links | jsonify }};
 var champions = {{ site.data.champions | jsonify }};
+excludePlayers = {{ site.data.exclude_players | jsonify }};
 
 var loadingDiv = document.getElementById("loading");
 var divisionsDiv = document.getElementById("standings");
@@ -202,6 +203,7 @@ function loadTier() {
 					loadDivision(divisionsDiv, divisionData, sheetsLinks[String(season)][division], division, String(season), params);
 					for (let player in divisionData.by_player) {
 						let playerKey = player.toLowerCase();
+						if (excludePlayers.includes(playerKey)) {continue;}
 						let winpct = divisionData.by_player[player].wins/(divisionData.by_player[player].wins + divisionData.by_player[player].losses);
 						let status = (tierKey == 'A' && champions.seasons[season] == playerKey) ? 'p' : ((season in oddSchemes) && (tierKey in oddSchemes[season])) ? (divisionData.members[player]['next tier'] == oddSchemes[season][tierKey][0] ? 'p' : (divisionData.members[player]['next tier'] == oddSchemes[season][tierKey][1] ? 'd' : 'o')) : (divisionData.members[player]['next tier'] > tierKey ? 'd' : (divisionData.members[player]['next tier'] < tierKey ? 'p' : 'o'));
 						if (player in overallStands) {
