@@ -39,5 +39,5 @@ Sign-ups and Counts are listed below (it may take a few seconds to load).
 Tiers are tentative. Counts for returning players may be a bit off before the season ends.
 
 <div class="sheets">
-  <iframe src="https://docs.google.com/spreadsheets/d/1vvkq0mC73FotAoXcWce5xzylCCvP1IKPzcue5msEVWY/pubhtml" height="500" width="100%">Loading...</iframe>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ88w1-gIyE5Dv27x0Hb0LRxiVsqqd4bsYtDZbxoXQx_hV76mqMCXTEKEvEO9bMOD0w8cXj2DG2u6wv/pubhtml" height="500" width="100%">Loading...</iframe>
 </div>
