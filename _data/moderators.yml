@@ -9,9 +9,6 @@
   discord: alibby1152#4103
   image: alibby
   chair: Setup
-- name: amoffett11
-  discord: amoffett11#8778
-  image: amoffett11
 - name: bobbydj18
   discord: bobbydj18
   image: bobbydj18
@@ -33,21 +30,18 @@
   discord: Earl#3402
   image: earl
   chair: Issues
-- name: Gazbag
-  discord: Gazbag#6485
-  image: gazbag
-- name: LeagueLackey
-  discord: LeagueLackey#6269
-  image: lackey
+- name: GaryOfPgh2
+  discord: garyofpgh
+  image: garyofpgh2
+#- name: LeagueLackey
+#  discord: LeagueLackey#6269
+#  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
 - name: Naesala
   discord: naesala.
   image: naesala
-- name: nottoobad
-  discord: nottoobad#9595
-  image: nottoobad
 - name: Ruapadi
   discord: ruapadi
   image: ruapadi
@@ -63,9 +57,6 @@
 - name: singletee
   discord: singletee#0905
   image: singletee
-- name: snowbz
-  discord: snowbz#9320
-  image: snowbz
 - name: TeamOkay
   discord: teamokay
   image: teamokay
