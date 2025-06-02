@@ -1,17 +1,17 @@
 ---
 title: Season 70 - Signups
-subtitle: Signups are now open!
+subtitle: Signups are now closed but you can still join the waiting list!
 date: 2025-04-20
 author: tracer
 layout: simple_post
 categories: signups
 ---
-**Season 70** will run from Monday, June 9, until Sunday, July 20, and you can sign up until **Sunday, June 1 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
+**Season 70** will run from Monday, June 9 until Sunday, July 20 and ~~you can sign up until Sunday, June 1 at 23:59 UTC~~. **Signups are now officially closed**, but you can still sign up below to join the waiting list until **Thursday, June 19 at 23:59 UTC**. If there is a space suitable for you, you will be added to fill all divisions up to 6 players each.
 
 You will need the following in order to sign up:
 
 1. A [Dominion Online](https://dominion.games) account with 10 or more rated 2-player games.
-   - These rated games need to be played by Sunday, June 1 at 23:59 UTC. If you do not reach 10 rated games by the deadline, your sign up will be removed.
+   - If you are joining the waiting list, these rated games need to be played before we can offer you a place. If a suitable space is available but you have not reached 10 rated games, the space may be offered to someone below you on the waiting list.
 2. An account on the [Dominion Discord](https://discord.gg/vMmmMBu).
    - All League communications will take place by default over Discord.
 3. *(Optional)* An email address.
@@ -23,7 +23,7 @@ A moderator will contact you on Discord to confirm your participation. You must 
 
 #### Sign up using this Google Form:
 
-**NOTE:** Season 69 players should **not** use this signup form and should instead fill out the Returning Form which is posted in their division channel on Discord.
+**NOTE:** Season 69 players should **not** use this signup form and should instead contact a moderator for further instructions.
 <br>
 
 <div class="sheets">
