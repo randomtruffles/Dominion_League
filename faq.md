@@ -278,7 +278,7 @@ The default is to respect the disliked and banned cardlists, and to use no other
 
 #### What are cardlists?
 
-Everyone gets 3 cardlists, and each one can have up to 5 Kingdom cards and up to 3 landscapes (Allies, Events, Landmarks, Projects, Ways). Putting things on these lists can change the likelihood they show up in your games:
+Everyone gets 3 cardlists, and each one can have up to 5 Kingdom cards and up to 3 landscapes (Allies, Events, Landmarks, Projects, Prophecies, Traits, Ways). Putting things on these lists can change the likelihood they show up in your games:
 
 * Liked list: these things show up twice as often
 * Disliked list: these things show up half as often
