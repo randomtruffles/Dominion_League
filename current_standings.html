@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Current standings of divisions in Season 69
+title: Current standings of divisions in Season 70
 ---
 
 <div class="home">
   <div class="container-centered">
 
     <h3><a style="text-decoration: none" href="past_standings/season{{ site.data.season.number | minus: 1 }}.html">&nbsp;<b><</b>&nbsp;</a>Season {{ site.data.season.number }} Standings&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-	<h5>2025-04-07 to 2025-05-18</h5>
+	<h5>2025-06-09 to 2025-07-20</h5>
     <h5><a href="{{site.baseurl}}/past_standings">Past Seasons</a> • <a href="{{site.baseurl}}/player_database">Player Database</a></h5>
     <p> Standings for the current season. Forecasts by markus can be found <a href="https://docs.google.com/spreadsheets/d/1ZgimtlIsDx1B6SRNSxV0NyXeKubQe0KYITUjjaJ-7b8/">here</a>.
 	  <br>All displayed dates and times are UTC
-	  <br>Season {{ site.data.season.number | plus: 1}} starts 2025-06-09</p>
+	  <br>Season {{ site.data.season.number | plus: 1}} starts 2025-08-04</p>
     <!-- Filter buttons -->
     <div id="myBtnContainer"></div>
     <div class="spacing"></div>
@@ -29,7 +29,7 @@ var tierParams = {{ site.data.season.tiers | jsonify }};
 var divisions = {{ site.data.current_season | jsonify }};
 var sheetLinks = {{ site.data.sheet_links | jsonify }};
 sheetLinks = sheetLinks[cur_season];
-var champion = "jnails";
+var champion = "";
 loadPage();
 
 function singleDivision(division) {
