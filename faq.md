@@ -304,6 +304,10 @@ This setting can also be changed during a game.
 
 ![faq_images](/img/faq/spec_chat_in_game.PNG)
 
+You will otherwise generally use the default settings (see [table settings](/rules#4.5) and [table settings reference](/rules#4.6) for more information), though note that the two landscape slots might not be included by default if your automatch card pool level is set below 10. The image below shows what your table settings should look like under normal circumstances.
+
+![faq_images](/img/faq/OtherSettings.PNG)
+
 #### Some settings depend on whether my game has expansions. How can I tell?
 
 One of the introductory posts in your division channel lists the subscription status of the players in your division. You can also see your subscription information on the Account tab of the Dominion Online website. If neither player has access to any expansions, the game will be base-only.
