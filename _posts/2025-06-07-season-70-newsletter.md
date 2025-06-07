@@ -11,7 +11,7 @@ Welcome to season 70 of the Dominion League!
 
 **Moderator Turnover**
 
-As we move into season 70, we say goodbye to 4 longtime moderators: amoffett11, Gazbag, nottoobad, and snowbz. Combined they had served as moderators for over 20 years and no doubt had impacted hundreds of players with their division moderation, assistance with onboarding, and behind the scenes work. The Dominion League could not be what it is today without the work of all of its moderators, and they were no exception.
+As we move into season 70, we say goodbye to 4 longtime moderators: amoffett11, Gazbag, nottoobad, and snowbz. Combined they served as moderators for over 20 years and impacted hundreds of players with their division moderation, assistance with onboarding, and behind the scenes work. The Dominion League could not be what it is today without the work of all of its moderators, and they were no exception.
 
 We also say hello to a new moderator, GaryOfPgh2, who brings to the team 40 seasons of experience as a player. Some of you may have already met Gary during your onboarding, and I hope many more of you get to in your divisions over the coming seasons.
 
