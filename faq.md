@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-02-09
+date: 2025-06-06
 categories: pinned faq
 ---
 #### Contents
@@ -342,7 +342,7 @@ The same places promote and demote as normal. If a place that would demote is va
 
 #### If I take a break from the League, what tier do I return to?
 
-Generally speaking, you will be able to return to your previous turn if your break is no more than 5 seasons, but there may not always be space for players in higher tiers to do so. If your break lasts 6 or more seasons, you will be placed as a new player. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
+Generally speaking, you will be able to return to your previous tier if your break is no more than 5 seasons, but there may not always be space for players in higher tiers to do so. If your break lasts 6 or more seasons, you will be placed as a new player. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
 
 #### How are play-in matches and free promotions determined?
 
