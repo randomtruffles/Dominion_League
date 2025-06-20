@@ -45,22 +45,30 @@ fs.writeFileSync("outputs/league_history.json", hist);
 hist = JSON.parse(hist);
 
 var players = {};
+var compactPlace = {};
 
 for (const seasonKey in hist) {
+	let season = seasonKey.slice(1)
 	for (const div in hist[seasonKey]) {
 		if (div == "season") {continue;}
 		for (const player of hist[seasonKey][div].members) {
 			if (players[player.toLowerCase()]) {
-				players[player.toLowerCase()].seasons.push(seasonKey.slice(1));
+				players[player.toLowerCase()].seasons.push(season);
 				players[player.toLowerCase()].divisions.push(div);
 			} else {
 				players[player.toLowerCase()] = {"name": player, "seasons": [seasonKey.slice(1)], "divisions": [div]};
 			}
+			if (!compactPlace[player]) {
+				compactPlace[player] = {};
+			}
+			compactPlace[player][season] = `${div.charAt(0)}${hist[seasonKey][div].ranks[hist[seasonKey][div].members.indexOf(player)]}`;
+			if (hist[seasonKey][div].members.length > 6) {compactPlace[player][season] += '*';}
 		}
 	}
 }
 
 fs.writeFileSync("outputs/player_seasons.json", JSON.stringify(players));
+fs.writeFileSync("outputs/compact_place_history.json", JSON.stringify(compactPlace));
 
 //old sims: 29
 //new sims: 42
