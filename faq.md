@@ -325,7 +325,7 @@ First, make sure you have the game id. If you're still in still in the game, you
 There are a number of advantages that dominion.games offers over the TGG app for Dominion League play. These include:
 
 - Players can access the site from any device with a web browser
-- Games are hosted on a dedicated server, which provides increased security
+- Games are hosted on a dedicated server, which provides increased security and reliability
 - Spectating games is an important part of the Dominion League community experience
 - In-game chat is important for players and a critical part of the spectator experience
 - Games can be reloaded in case of connection issues or irl emergencies
