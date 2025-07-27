@@ -316,9 +316,23 @@ One of the introductory posts in your division channel lists the subscription st
 
 See [suspending games](/rules#4.11).
 
+#### How do I reload a suspended game?
+
+First, make sure you have the game id. If you're still in still in the game, you can find the game id at the top of both the game log and the game chat. If not, you can use DomBot to retrieve the game id.
+
 #### Why can't I play my League matches on the Temple Gate Games app?
 
-There are a number of advantages that dominion.games offers over the TGG app for Dominion League play. These include being accessible from any device with a web browser, server-side game hosting, the ability to spectate, and in-game chat for players and spectators. Additionally, the Dominion League has read-only access to dominion.games game data, which enables valuable automation that helps keep the League running smoothly. We also want to keep the Dominion League experience as fair and straightforward as possible, and we believe that using a single platform is the best way to accomplish these objectives.
+There are a number of advantages that dominion.games offers over the TGG app for Dominion League play. These include:
+
+- Players can access the site from any device with a web browser
+- Games are hosted on a dedicated server, which provides increased security
+- Spectating games is an important part of the Dominion League community experience
+- In-game chat is important for players and a critical part of the spectator experience
+- Games can be reloaded in case of connection issues or irl emergencies
+- Moderators can join games in progress or reload games to help resolve questions and disputes
+- The Dominion League has read-only access to dominion.games game data, which enables easy verification of results, and a number of other valuable automated tools that keep the League running smoothly
+
+Additionally, we want to keep the Dominion League experience as fair and straightforward as possible. We believe that using a single platform is the best way to accomplish these objectives: players do not need to learn to play on two different platforms, or negotiate regarding which platform to use.
 
 ## 6. Details and backend
 
