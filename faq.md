@@ -316,6 +316,10 @@ One of the introductory posts in your division channel lists the subscription st
 
 See [suspending games](/rules#4.11).
 
+#### Why can't I play my League matches on the Temple Gate Games app?
+
+There are a number of advantages that dominion.games offers over the TGG app for Dominion League play. These include being accessible from any device with a web browser, server-side game hosting, the ability to spectate, and in-game chat for players and spectators. Additionally, the Dominion League has read-only access to dominion.games game data, which enables valuable automation that helps keep the League running smoothly. We also want to keep the Dominion League experience as fair and straightforward as possible, and we believe that using a single platform is the best way to accomplish these objectives.
+
 ## 6. Details and backend
 
 #### How do the moderators determine players' tiers (A, B, C, etc.)?
