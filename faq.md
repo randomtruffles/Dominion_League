@@ -331,7 +331,7 @@ Next, if you're still in the game, make sure you resign the game, rather than ju
 
 Once you're ready to reload the game, click the "Load Old Game" button.
 
-<img src="/img/faq/loadOldGameButton.PNG" height="200">
+<img src="/img/faq/loadOldGameButton.PNG" height="400">
 
 #### Why can't I play my League matches on the Temple Gate Games app?
 
