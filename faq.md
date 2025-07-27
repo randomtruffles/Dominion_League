@@ -318,7 +318,11 @@ See [suspending games](/rules#4.11).
 
 #### How do I reload a suspended game?
 
-First, make sure you have the game id. If you're still in still in the game, you can find the game id at the top of both the game log and the game chat. If not, you can use DomBot to retrieve the game id.
+First, make sure you have the game id. If you're still in still in the game, you can find the game id at the top of both the game log and the game chat. If not, you can use DomBot to retrieve the game id. There are a number of ways to retrieve the game id via DomBot - if you need help, don't hesitate to reach out to the moderators on Discord.
+
+![faq_images](/img/faq/gameIdFromLog.PNG)
+![faq_images](/img/faq/gameIdFromChat.PNG)
+![faq_images](/img/faq/gameIdFromDomBot.PNG)
 
 #### Why can't I play my League matches on the Temple Gate Games app?
 
