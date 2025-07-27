@@ -320,13 +320,18 @@ See [suspending games](/rules#4.11).
 
 First, make sure you have the game id. If you're still in still in the game, you can find the game id at the top of both the game log and the game chat.
 
-![faq_images](/img/faq/gameIdFromLog.PNG)
-
-![faq_images](/img/faq/gameIdFromChat.PNG)
+<img src="/img/faq/gameIdFromLog.PNG" height="200">
+<img src="/img/faq/gameIdFromChat.PNG" height="200">
 
 If not, you can use DomBot to retrieve the game id. There are a number of ways to retrieve the game id via DomBot - if you need help, don't hesitate to reach out to the moderators on Discord.
 
-![faq_images](/img/faq/gameIdFromDomBot.PNG)
+<img src="/img/faq/gameIdFromDomBot.PNG" height="200">
+
+Next, if you're still in the game, make sure you resign the game, rather than just exiting it. If neither player resigns, the game may never be marked as completed in the database, and you won't be able to reload it.
+
+Once you're ready to reload the game, click the "Load Old Game" button.
+
+<img src="/img/faq/loadOldGameButton.PNG" height="200">
 
 #### Why can't I play my League matches on the Temple Gate Games app?
 
