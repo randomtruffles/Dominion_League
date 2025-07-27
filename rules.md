@@ -402,7 +402,7 @@ In order to fill open spots in a tier created by players leaving the League betw
 
 <a name="5.5.1"></a>5.5.1. Players are divided into prioritized groups based on their results from the previous season. In descending order of priority, these are: second place finishers (from the tier below), fifth place finishers (from the target tier), and third place finishers (from the tier below, only eligible if the tier below promoted second place finishers).
 
-<a name="5.5.2"></a>5.5.2. Players who tied are considered to have finished in the best tied place for free promotion eligibility.
+<a name="5.5.2"></a>5.5.2. Players who tied by winning percentage are considered to have finished in the best tied place for free promotion eligibility.
 
 <a name="5.5.3"></a>5.5.3. If there are at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
 
