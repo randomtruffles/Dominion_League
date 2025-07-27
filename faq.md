@@ -341,7 +341,7 @@ There are a number of advantages that dominion.games offers over the TGG app for
 - Games are hosted on a dedicated server, which provides increased security and reliability
 - Spectating games is an important part of the Dominion League community experience
 - In-game chat is important for players and a critical part of the spectator experience
-- Games can be reloaded in case of connection issues or emergencies
+- Games can be reloaded in case of connection issues or other interruptions
 - Moderators can join games in progress or reload games to help resolve questions and disputes
 - The Dominion League has read-only access to dominion.games game data, which enables easy verification of results, and a number of other valuable automated tools that keep the League running smoothly
 
