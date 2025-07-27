@@ -335,7 +335,11 @@ Once you're ready to reload the game, click "Load Old Game".
 
 Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0.
 
-<img src="/img/faq/loadFromEndButton.PNG" height="400">
+<img src="/img/faq/loadFromEndButton.PNG" height="200">
+
+Make sure each player is assigned correctly.
+
+<img src="/img/faq/reloadPlayerOrder.PNG" height="200">
 
 #### Why can't I play my League matches on the Temple Gate Games app?
 
