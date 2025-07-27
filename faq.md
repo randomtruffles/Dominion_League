@@ -329,9 +329,13 @@ If not, you can use DomBot to retrieve the game id. There are a number of ways t
 
 Next, if you're still in the game, make sure you resign the game, rather than just exiting it. If neither player resigns, the game may never be marked as completed in the database, and you won't be able to reload it.
 
-Once you're ready to reload the game, click the "Load Old Game" button.
+Once you're ready to reload the game, click "Load Old Game".
 
 <img src="/img/faq/loadOldGameButton.PNG" height="400">
+
+Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0.
+
+<img src="/img/faq/loadFromEndButton.PNG" height="400">
 
 #### Why can't I play my League matches on the Temple Gate Games app?
 
