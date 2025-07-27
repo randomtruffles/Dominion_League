@@ -337,9 +337,11 @@ Enter the game id and click "Load From End" to resume the game from where you le
 
 <img src="/img/faq/loadFromEndButton.PNG" height="200">
 
-Make sure each player is assigned correctly.
+Make sure the player order is set correctly. You'll see the original player order in gray.
 
 <img src="/img/faq/reloadPlayerOrder.PNG" height="200">
+
+Now you're ready to play!
 
 #### Why can't I play my League matches on the Temple Gate Games app?
 
