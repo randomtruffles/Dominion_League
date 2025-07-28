@@ -329,11 +329,11 @@ If not, you can use DomBot to retrieve the game id. There are a number of ways t
 
 Next, if you're still in the game, make sure you resign the game, rather than just exiting it. If neither player resigns, the game may never be marked as completed in the database, and you won't be able to reload it.
 
-Once you're ready to reload the game, click "Load Old Game".
+Once you're ready to reload the game, create a new table, have your opponent join, then click "Load Old Game".
 
 <img src="/img/faq/loadOldGameButton.PNG" height="400">
 
-Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0.
+Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0. If you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
 
 <img src="/img/faq/loadFromEndButton.PNG" height="200">
 
@@ -341,7 +341,7 @@ Make sure the player order is set correctly. You'll see the original player orde
 
 <img src="/img/faq/reloadPlayerOrder.PNG" height="200">
 
-Now you're ready to play!
+Now you're ready to play! Both you and your opponent should click "Ready", as you normally would, to start the game.
 
 #### Why can't I play my League matches on the Temple Gate Games app?
 
