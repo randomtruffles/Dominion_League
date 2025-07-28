@@ -318,7 +318,7 @@ See [suspending games](/rules#4.11).
 
 #### How do I reload a suspended game?
 
-First, make sure you have the game id. If you're still in still in the game, you can find the game id at the top of both the game log and the game chat.
+First, make sure you have the game id. If you're still in the game, you can find the game id at the top of both the game log and the game chat.
 
 <img src="/img/faq/gameIdFromLog.PNG" height="200">
 <img src="/img/faq/gameIdFromChat.PNG" height="200">
