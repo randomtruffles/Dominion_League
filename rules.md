@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-04-07
+date: 2025-08-01
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -348,7 +348,7 @@ The players in each division are ranked by their win rates. This is updated when
 
 ### <a name="5.2"></a>5.2. Tiebreakers
 
-If there is a tie within a division, a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
+If there is a tie within a division that affects promotion, demotion, or entry into the [Championship match](/rules#5.7), a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
 
 #### <a name="5.2.1"></a>5.2.1. Head-to-head tiebreaker
 
@@ -356,7 +356,7 @@ If there is a tie within a division, a head-to-head tiebreaker is applied. If th
 
 <a name="5.2.1.2"></a>5.2.1.2. Break any ties in total head-to-head wins by the total head-to-head wins each player earned from the matches involving only this new group of tied players.
 
-#### <a name="5.2.2"></a>5.2.2. Promotion or demotion implications
+#### <a name="5.2.2"></a>5.2.2. Unbroken ties
 
 <a name="5.2.2.1"></a>5.2.2.1. If an unbroken two-way tie affects promotions, demotions, or entry into the Championship Match, the players play a tiebreaker match. The format for this match is specified in [4.16](#4.16).
 
@@ -402,7 +402,7 @@ In order to fill open spots in a tier created by players leaving the League betw
 
 <a name="5.5.1"></a>5.5.1. Players are divided into prioritized groups based on their results from the previous season. In descending order of priority, these are: second place finishers (from the tier below), fifth place finishers (from the target tier), and third place finishers (from the tier below, only eligible if the tier below promoted second place finishers).
 
-<a name="5.5.2"></a>5.5.2. Players who tied are considered to have finished in the best tied place for free promotion eligibility.
+<a name="5.5.2"></a>5.5.2. Players who tied by winning percentage are considered to have finished in the best tied place for free promotion eligibility.
 
 <a name="5.5.3"></a>5.5.3. If there are at least as many open slots in the target tier as eligible players in the highest priority group remaining, all players in this group receive a free promotion. The remaining slots are filled by the next highest priority group.
 
