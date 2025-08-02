@@ -10,17 +10,17 @@ Welcome to Season 71 of the Dominion League. There are a number of announcements
 
 **Play Speed Surveying**
 
-Over the years we have received a large amount of feedback with respect to pace of play in the Dominion League, and our hope is to address in the coming seasons. To start with, we are looking for more targeted feedback from players this season, which will come in three forms:
+Over the years we have received a large amount of feedback with respect to pace of play in the Dominion League, and our hope is to address this in the coming seasons. To start with, we are looking for more targeted feedback from players this season, which will come in three forms:
 
    - Additional short sections on the check-in form this season asking players to reflect on their last two seasons for any matches which they felt were unpleasant due to opponents' pace of play
-   - An instant feedback form for matches played this season that you feel were unpleasant due to pace ~~(link - is this ready?)~~
+   - An instant feedback form for matches played this season that you feel were unpleasant due to pace, [accessible here](https://docs.google.com/forms/d/e/1FAIpQLSfTiMkzOI_awk_f4PEjK7g1RpjuyQ2poAOFjzGAa9hvJUXEEQ/viewform).
    - A town hall towards the end of this season that will go over some (anonymized) results from this feedback and ask players to consider some possible next steps
 
 Our hope is to make the league a better experience for all players, and we will need your help to do so.
 
 **Minor Standings Change**
 
-We have made a small rules change regarding ties in division standings: we will no longer be applying the head-to-head tiebreaker in cases where promotion and demotion are not affected. For example, this means that two players both finishing with the lowest number of wins in a 6-player division will both be considered as having finished in 5th place. While in general this will not affect anything but bookkeeping, in some cases it may make more players eligible for free non-demotions or play-in matches.
+We have made a small rules change regarding ties in division standings: we will no longer be applying the head-to-head tiebreaker in cases where promotion and demotion are not affected. For example, this means that two players both finishing with the lowest number of wins in a 6-player division (and so both demoting) will both be considered as having finished in 5th place regardless of their head-to-head result. While in general this will not affect anything but bookkeeping, in some cases it may make more players eligible for free non-demotions or play-in matches.
 
 **Possible Tier Contraction**
 
