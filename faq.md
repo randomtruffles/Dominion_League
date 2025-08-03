@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-06-06
+date: 2025-08-01
 categories: pinned faq
 ---
 #### Contents
@@ -298,11 +298,11 @@ To have the starting player determined randomly for the first game of a match, c
 
 You should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 
-![faq_images](/img/faq/table_settings.PNG)
+<img src="/img/faq/table_settings.PNG" height="300">
 
 This setting can also be changed during a game.
 
-![faq_images](/img/faq/spec_chat_in_game.PNG)
+<img src="/img/faq/spec_chat_in_game.PNG" height="300">
 
 You will otherwise use the default settings (see [table settings](/rules#4.5) and [table settings reference](/rules#4.6) for more information), though note that the two landscape slots might not be included by default if your automatch card pool level is set below 10. The image below shows what your table settings should look like.
 
@@ -315,6 +315,47 @@ One of the introductory posts in your division channel lists the subscription st
 #### What do I do if I have connection issues or other technical problems during a game?
 
 See [suspending games](/rules#4.11).
+
+#### How do I reload a suspended game?
+
+First, make sure you have the game id. If you're still in the game, you can find the game id at the top of both the game log and the game chat.
+
+<img src="/img/faq/gameIdFromLog.PNG" height="200">
+<img src="/img/faq/gameIdFromChat.PNG" height="200">
+
+If not, you can use DomBot to retrieve the game id. There are a number of ways to retrieve the game id via DomBot - if you need help, don't hesitate to reach out to the moderators on Discord.
+
+<img src="/img/faq/gameIdFromDomBot.PNG" height="200">
+
+Next, if you're still in the game, make sure you resign the game, rather than just exiting it. If neither player resigns, the game may never be marked as completed in the database, and you won't be able to reload it.
+
+Once you're ready to reload the game, create a new table, have your opponent join, then click "Load Old Game".
+
+<img src="/img/faq/loadOldGameButton.PNG" height="400">
+
+Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0. If you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
+
+<img src="/img/faq/loadFromEndButton.PNG" height="200">
+
+Make sure the player order is set correctly. You'll see the original player order in gray.
+
+<img src="/img/faq/reloadPlayerOrder.PNG" height="200">
+
+Now you're ready to play! Both you and your opponent should click "Ready", as you normally would, to start the game.
+
+#### Why can't I play my League matches on the Temple Gate Games app?
+
+There are a number of advantages that dominion.games offers over the TGG app for Dominion League play. These include:
+
+- Players can access the site from any device with a web browser
+- Games are hosted on a dedicated server, which provides increased security and reliability
+- Spectating games is an important part of the Dominion League community experience
+- In-game chat is important for players and a critical part of the spectator experience
+- Games can be reloaded in case of connection issues or other interruptions
+- Moderators can join games in progress or reload games to help resolve questions and disputes
+- The Dominion League has read-only access to dominion.games game data, which enables easy verification of results, and a number of other valuable automated tools that keep the League running smoothly
+
+Additionally, we want to keep the Dominion League experience as fair and straightforward as possible. We believe that using a single platform is the best way to accomplish these objectives: players do not need to learn to play on two different platforms, or negotiate regarding which platform to use.
 
 ## 6. Details and backend
 
