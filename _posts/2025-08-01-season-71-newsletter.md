@@ -26,7 +26,7 @@ We have made a small rules change regarding ties in division standings: we will 
 
 There is a possibility that we will be eliminating K tier for season 72. Although the league as a whole remains with enough players to support 11 tiers, our skill distribution among those players has shifted such that we are only able to reasonably support 5 divisions in K tier this season, below our established minimum.
 
-~~(Possibly eliminate) In an effort to retain K tier, we will be only be promoting 1 player from each of the K divisions to J this season (Possibly eliminate)~~. If we remain without enough players to support at least 6 K divisions, we will move all current K players into J for next season and provide additional free promotions in J and I tiers to smooth out the skill differences. If you are in one of these tiers, please make your voice heard so that we can respond appropriately to this shift.
+In an effort to retain K tier, we will only be guaranteeing promotion of 1 player from each of the K divisions to J this season. Our current plan is that if we remain without enough players to support at least 6 K divisions, we will move all current K players into J for next season and provide additional free promotions in J and I tiers to smooth out the skill differences. That said, we intend to solicit feedback in the K divisions on keeping K tier long term and may change this plan depending on the feedback received.
 
 **Extended Break**
 
