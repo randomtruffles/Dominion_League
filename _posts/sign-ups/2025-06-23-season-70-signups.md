@@ -1,6 +1,7 @@
 ---
 title: Season 71 - Signups
-subtitle: Spots are still available on the waiting list
+subtitle: Signups for season 71 are now closed. You can still sign up for a
+  future season!
 date: 2025-06-22
 author: tracer
 layout: simple_post
