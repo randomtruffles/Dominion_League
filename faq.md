@@ -120,7 +120,7 @@ It is very beneficial to schedule matches in advance, instead of hoping someone 
 
 #### <a name="what-is-the-calendar-form"></a> What is the calendar form?
 
-The [League calendar form](/calendar/form) allows you to add your scheduled matches to the league calendar. The calendar is visible on the [matches](/matches) page, which also contains a link to the form. There will also be a link to the form in the pinned posts in your division channel.
+The [League calendar form](/calendar/form) allows you to add your scheduled matches to the league calendar. The calendar is visible on the [match calendar](/match-calendar), which also contains a link to the form. There will also be a link to the form in the pinned posts in your division channel.
 
 Adding your matches to the calendar causes them to be automatically announced on Discord in both the #matches channel and your division channel. In the #matches channel, upcoming matches are summarized once per day, and are also announced an hour in advance, and again when they are starting. In your division channel, matches are announced when they are added to the calendar, and again when they are starting.
 
