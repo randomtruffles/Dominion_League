@@ -85,6 +85,7 @@ crbland	LordVoldemoat
 popsofctown	Setsuki
 Bienchen1	The Bee
 Billy Bigalow	WildwoodLou
+CraigP	UlyssesMN
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -151,3 +152,4 @@ NOTSteve	NotSTEVE
 DrRyuzakilove	DrRyuzakilove
 Gingerbowtie	Gingerbowtie
 rizzymoe	Rizzymoe
+deebagger	DeeBagger
