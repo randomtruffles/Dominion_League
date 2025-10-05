@@ -544,7 +544,7 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
-<a name="7.2.3"></a>7.2.3. The default suspension for excessive play speed warnings (see [3.5](#3.5)) is one season.
+<a name="7.2.3"></a>7.2.3. The default suspension for excessive play speed warnings (see [3.5](#3.5)) is 1 season.
 
 <a name="7.2.4"></a>7.2.4. Other types of misconduct (see [3.7](#3.7) and [6.4.4](#6.4.4)) will be subject to a warning or suspension per discretion of the moderator team.
 
