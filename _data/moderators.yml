@@ -12,9 +12,6 @@
 - name: bobbydj18
   discord: bobbydj18
   image: bobbydj18
-- name: breppert
-  discord: breppert
-  image: breppert
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -22,7 +19,6 @@
 - name: crlundy
   discord: crlundy#0018
   image: crlundy
-  chair: Sheets
 #- name: DomBot
 #  discord: DomBot#0234
 #  image: dombot
@@ -33,23 +29,23 @@
 - name: GaryOfPgh2
   discord: garyofpgh
   image: garyofpgh2
-#- name: LeagueLackey
-#  discord: LeagueLackey#6269
-#  image: lackey
+- name: LeagueLackey
+  discord: LeagueLackey#6269
+  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
-- name: Naesala
-  discord: naesala.
-  image: naesala
+- name: Rozyroz
+  discord: rozyroz
+  image: rozyroz
 - name: Ruapadi
   discord: ruapadi
   image: ruapadi
-  chair: Feedback
+  chair: Onboarding, Feedback
 - name: saltroza
   discord: ejd#7555
   image: saltroza
-  chair: Onboarding
+  chair: Sheets
 - name: Sharur
   discord: Sharur#7043
   image: sharur
@@ -60,7 +56,6 @@
 - name: TeamOkay
   discord: teamokay
   image: teamokay
-  chair: Recruiting
 - name: tracer
   discord: tracer#2575
   image: tracer
