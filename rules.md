@@ -540,7 +540,7 @@ Players may be dropped from the League during the season. All drops are subject 
 
 All suspensions occur, and may be waived, at the discretion of the moderator team. Players who are suspended may not participate in the Dominion League for the duration of their suspension.
 
-<a name="7.2.1"></a>7.2.1. Suspension durations refer to future seasons. A 1 season suspension assigned during season 40 would mean that the suspended player could play again during season 42. Likewise, a suspension assigned after season 40 but before season 41 would also mean that the suspended player could play again during season 42.
+<a name="7.2.1"></a>7.2.1. Suspension durations refer to future seasons. A 1 season suspension assigned during season 40 would mean that the suspended player could play again during season 42. Likewise, a 1 season suspension assigned after season 40 but before season 41 would also mean that the suspended player could play again during season 42.
 
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
