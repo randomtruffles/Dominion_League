@@ -153,11 +153,25 @@ Always play your matches as competitively as possible. Even if your promotion or
 
 <a name="3.4.3"></a>3.4.3. You may not collude with other players or otherwise compromise the competitive integrity of your matches.
 
-### <a name="3.5"></a>3.5. Dominion Online Terms of Service
+### <a name="3.5"></a>3.5. Play speed
+
+You are allowed to play at a relaxed pace, but are nonetheless expected to meet a minimum threshold of play speed, out of consideration for your opponents.
+
+<a name="3.5.1"></a>3.5.1. Play speed within a match is evaluated via adjusted excess time. Your adjusted excess time is calculated by averaging the number of decisions that you and your opponent made during a match, multiplying the result by your average time per decision, doing the same for your opponent, then subtracting your opponent's value from your value. For example, if you took 5 seconds per decision over 450 decisions, and your opponent took 4 seconds per decision over 550 decisions, the average decision count would be `(450+550)/2 = 500`, your adjusted time would be `5s*500 = 2500s`, your opponent's adjusted time would be `4s*500 = 2000s`, and your adjusted excess time would be `2500s-2000s = 500s = 8.33m`, i.e. 8 1/3 minutes.
+
+<a name="3.5.2"></a>3.5.2. When calculating adjusted excess time, if your opponent's average time per decision is less than 3.5 seconds, a value of 3.5 seconds is used instead. This value was determined by rounding up the league median decision time over a sample of several seasons to the nearest 0.5 seconds. This is meant to avoid flagging players as especially slow merely due to having especially fast opponents.
+
+<a name="3.5.3"></a>3.5.3. You are expected to keep your adjusted excess time under 45 minutes. Based on data the League collected over several seasons, this is a very generous threshold that only the very slowest players are at risk of crossing.
+
+<a name="3.5.4"></a>3.5.4. You receive a play speeding warning for any match in which your adjusted excess time crosses the threshold established in [3.5.3](#3.5.3).
+
+<a name="3.5.5"></a>3.5.5. If you receive multiple play speed warnings in consecutive seasons, or in three out of five consecutive seasons, you receive a suspension (see [7.2.3](#7.2.3)).
+
+### <a name="3.6"></a>3.6. Dominion Online Terms of Service
 
 In addition to following Dominion League conduct guidelines, you are expected to adhere to the Dominion Online [Terms of Service](https://dominion.games/terms-of-service.html).
 
-### <a name="3.6"></a>3.6. Misconduct
+### <a name="3.7"></a>3.7. Misconduct
 
 If you witness or experience any misconduct, including but not limited to the examples listed in [3.1](#3.1), please alert a moderator immediately and share any screenshot evidence you have. Depending on the severity of the misconduct, the offending player may be warned or suspended per [7.2](#7.2).
 
@@ -520,7 +534,7 @@ Players may be dropped from the League during the season. All drops are subject 
 
 <a name="7.1.1"></a>7.1.1. If you are unable to complete your League season for any reason, contact your division moderator for a voluntary drop. Your reason(s) for needing to drop will be considered by the moderator team when deciding whether to apply a suspension.
 
-<a name="7.1.2"></a>7.1.2. Players may be involuntarily dropped due to unresponsiveness, failure to play matches in a timely manner, or misconduct (see [3.6](#3.6)).
+<a name="7.1.2"></a>7.1.2. Players may be involuntarily dropped due to unresponsiveness, failure to play matches in a timely manner, or misconduct (see [3.7](#3.7)).
 
 ### <a name="7.2"></a>7.2. Suspensions
 
@@ -530,7 +544,7 @@ All suspensions occur, and may be waived, at the discretion of the moderator tea
 
 <a name="7.2.2."></a>7.2.2. The default suspension duration for dropping out of a League season (see [7.1](#7.1)) is 2 seasons. In addition, players who are dropped for being unresponsive must explain their inactivity to a moderator before they may sign up for the League again.
 
-<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.6](#3.6) and [6.4.4](#6.4.4)) will be subject to a warning or suspension per discretion of the moderator team.
+<a name="7.2.3"></a>7.2.3. Other types of misconduct (see [3.7](#3.7) and [6.4.4](#6.4.4)) will be subject to a warning or suspension per discretion of the moderator team.
 
 ## <a name="8"></a>8. Moderation
 
