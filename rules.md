@@ -83,7 +83,7 @@ Divisions ([2.2](#2.2)) are grouped into tiers. The Dominion League has 11 tiers
 
 <a name="2.3.3"></a>2.3.3. Tiers F through J have a minimum of 6 divisions each. If there are not enough players to meet this requirement, tiers will be eliminated as necessary.
 
-<a name="2.3.4"></a>2.3.4. Tier K has a minimum of 6 divisions. If Tier K falls below 6 divisions for two consecutive seasons, it will be eliminated after the second such season.
+<a name="2.3.4"></a>2.3.4. Tier K has a minimum of 6 divisions. If Tier K falls below 6 divisions for 2 consecutive seasons, it will be eliminated after the second such season.
 
 <a name="2.3.5"></a>2.3.5. A tier can have no more than twice as many divisions as the tier above it. If there are too many players to meet this requirement, tiers will be added as necessary.
 
