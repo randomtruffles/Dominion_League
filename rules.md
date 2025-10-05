@@ -81,11 +81,13 @@ Divisions ([2.2](#2.2)) are grouped into tiers. The Dominion League has 11 tiers
 
 <a name="2.3.2"></a>2.3.2. Tiers D and E have a minimum of 4 divisions each.
 
-<a name="2.3.3"></a>2.3.3. Tiers F through K have a minimum of 6 divisions each. If there are not enough players to meet this requirement, tiers will be eliminated as necessary.
+<a name="2.3.3"></a>2.3.3. Tiers F through J have a minimum of 6 divisions each. If there are not enough players to meet this requirement, tiers will be eliminated as necessary.
 
-<a name="2.3.4"></a>2.3.4. A tier can have no more than twice as many divisions as the tier above it. If there are too many players to meet this requirement, tiers will be added as necessary.
+<a name="2.3.4"></a>2.3.4. Tier K has a minimum of 6 divisions. If Tier K falls below 6 divisions for two consecutive seasons, it will be eliminated after the second such season.
 
-<a name="2.3.5"></a>2.3.5. Excluding the bottom tier, a tier must have at least as many divisions as the tier above it, minus one.
+<a name="2.3.5"></a>2.3.5. A tier can have no more than twice as many divisions as the tier above it. If there are too many players to meet this requirement, tiers will be added as necessary.
+
+<a name="2.3.6"></a>2.3.6. Excluding the bottom tier, a tier must have at least as many divisions as the tier above it, minus one.
 
 ### <a name="2.4"></a>2.4. Tier Placement
 
@@ -378,7 +380,7 @@ You promote by finishing in first or second place, except under the following ci
 
 <a name="5.3.2.1"></a>5.3.2.1. Your tier has at least 1.5 times as many divisions as the tier directly above yours
 
-<a name="5.3.2.2"></a>5.3.2.2. Promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.4](#2.3.4)). Note that divisions are considered to be filled at 6 players, i.e. not flexed ([2.5](#2.5)), for the purpose of determining when a tier would exceed its maximum size.
+<a name="5.3.2.2"></a>5.3.2.2. Promoting two players from each division in your tier would cause the tier above it to exceed its maximum size (see [2.3.1](#2.3.1) and [2.3.5](#2.3.5)). Note that divisions are considered to be filled at 6 players, i.e. not flexed ([2.5](#2.5)), for the purpose of determining when a tier would exceed its maximum size.
 
 <a name="5.3.3"></a>5.3.3. If your division has seven players, and no players dropped before playing any games, you demote by finishing in sixth or seventh place. Otherwise, you demote by finishing in fifth place or sixth place.
 
