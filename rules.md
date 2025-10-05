@@ -165,7 +165,7 @@ You are allowed to play at a relaxed pace, but are nonetheless expected to meet 
 
 <a name="3.5.4"></a>3.5.4. You receive a play speeding warning for any match in which your adjusted excess time crosses the threshold established in [3.5.3](#3.5.3).
 
-<a name="3.5.5"></a>3.5.5. If you receive multiple play speed warnings in consecutive seasons, or in 3 out of 5 consecutive seasons, you receive a suspension (see [7.2.3](#7.2.3)).
+<a name="3.5.5"></a>3.5.5. If you receive multiple play speed warnings in 2 consecutive seasons, or in 3 out of 5 consecutive seasons, you receive a suspension (see [7.2.3](#7.2.3)).
 
 ### <a name="3.6"></a>3.6. Dominion Online Terms of Service
 
