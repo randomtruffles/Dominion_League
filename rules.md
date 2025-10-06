@@ -163,7 +163,7 @@ You are allowed to play at a relaxed pace, but are nonetheless expected to meet 
 
 <a name="3.5.3"></a>3.5.3. You are expected to keep your adjusted excess time under 45 minutes. Based on data the League collected over several seasons, this is a very generous threshold that only the very slowest players are at risk of crossing.
 
-<a name="3.5.4"></a>3.5.4. You receive a play speeding warning for any match in which your adjusted excess time crosses the threshold established in [3.5.3](#3.5.3).
+<a name="3.5.4"></a>3.5.4. You receive a play speed warning for any match in which your adjusted excess time crosses the threshold established in [3.5.3](#3.5.3).
 
 <a name="3.5.5"></a>3.5.5. If you receive multiple play speed warnings in 2 consecutive seasons, or in 3 out of 5 consecutive seasons, you receive a suspension (see [7.2.3](#7.2.3)).
 
