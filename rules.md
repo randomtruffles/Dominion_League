@@ -161,7 +161,7 @@ Games in the Dominion League do not use an in-game timer. You are allowed to pla
 
 <a name="3.5.2"></a>3.5.2. When calculating Adjusted Excess Time, if your opponent's average time per decision is less than 3.5 seconds, a value of 3.5 seconds is used instead. This value was determined by rounding up the League median decision time over a sample of several seasons to the nearest 0.5 seconds. This is meant to avoid flagging players as especially slow merely due to having especially fast opponents.
 
-<a name="3.5.3"></a>3.5.3. You are expected to keep your Adjusted Excess Time under 45 minutes. Based on data the League collected over several seasons, this is a very generous threshold that only the very slowest players are at risk of crossing.
+<a name="3.5.3"></a>3.5.3. You are expected to keep your Adjusted Excess Time under 45 minutes.
 
 <a name="3.5.4"></a>3.5.4. You receive a play speed warning for any match in which your Adjusted Excess Time crosses the threshold established in [3.5.3](#3.5.3).
 
