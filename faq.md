@@ -411,6 +411,14 @@ The League doesn't run Championship matches for players in other tiers. However,
 
 You can see a list of past Tier Championships winners in the tournament's [Hall of Fame](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjX8RFvFhzBmprtZQQ_CQr1omQnF2S1gIb5bBAyQvvqfOgBcBu1dCJtHPtO21Hc6yTvzhIQbdSQAKx/pubhtml?gid=0).
 
+#### How were the numeric values for the [play speed rules](/rules#3.5) chosen?
+
+The League collected play speed data across all matches from seasons 67 through 69, and used that data to inform the design of the play speed rules.
+
+The median time per decision across the League during that period was 3.??? seconds, which was rounded up to 3.5 seconds for simplicity.
+
+The 45 minute Adjusted Excess Time threshold was chosen in order to minimize the impact of the play speed rules. We believe that the vast majority of League matches are played at a reasonable pace, and only want to speed up the most extreme cases of slow play. A 45 minute Adjusted Excess Time threshold would have triggered play speed warnings for ??% of matches from seasons 67 through 69.
+
 ## 7. Miscellaneous
 
 #### What are the rules on etiquette?
