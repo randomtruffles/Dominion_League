@@ -166,7 +166,7 @@ See [matches](/rules#4.1).
 
 #### How long is a match?
 
-Most players play a 6-game match in a single playing session lasting about 2 hours, without breaks. As a courtesy to your opponents, you may want to adjust your play speed if you find your games are considerably longer than this.
+Most players play a 6-game match in a single playing session lasting about 2 hours, without breaks. As a courtesy to your opponents, you may want to adjust your play speed if you find your matches are considerably longer than this.
 
 #### Do I have to play all 6 games at once?
 
