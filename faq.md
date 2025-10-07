@@ -250,7 +250,9 @@ See [play to the best of your ability](/rules#3.4).
 
 #### What can I do if my opponent is playing slowly?
 
-League games do not use a timer. However, the League does require players to maintain a minimum pace of play (see [play speed](/rules#3.5)).
+Games in the Dominion League do not use an in-game timer. You are allowed to play at a relaxed pace, and you can expect some of your opponents to do so.
+
+However, out of consideration for your opponents, the League requires that you maintain a minimum pace of play (see [play speed](/rules#3.5)). If you feel that your opponent is playing particularly slowly, you can consider politely requesting that they play a bit faster. The League automatically collects play speed data for all matches, and if they are failing to meet the minimum pace, they will receive a play speed warning after the match.
 
 ## 5. Dominion Online (<http://dominion.games>)
 
