@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-08-01
+date: 2025-10-07
 categories: pinned faq
 ---
 #### Contents
@@ -248,6 +248,10 @@ See [outside help](/rules#4.3).
 
 See [play to the best of your ability](/rules#3.4).
 
+#### What can I do if my opponent is playing slowly?
+
+League games do not use a timer. However, the League does require players to maintain a minimum pace of play (see [play speed](/rules#3.5)).
+
 ## 5. Dominion Online (<http://dominion.games>)
 
 #### How do I add someone from my division as a friend on Dominion Online?
@@ -409,7 +413,7 @@ You can see a list of past Tier Championships winners in the tournament's [Hall 
 
 #### What are the rules on etiquette?
 
-See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.6).
+See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.7).
 
 #### What do I do if there is a player with an offensive username?
 
