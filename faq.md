@@ -254,6 +254,12 @@ Games in the Dominion League do not use an in-game timer. You are allowed to pla
 
 However, out of consideration for your opponents, the League requires that you maintain a minimum pace of play (see [play speed](/rules#3.5)). The League automatically collects play speed data for all matches, and if your opponent fails to meet the minimum pace, they will receive a play speed warning after the match. During a match, if you feel that your opponent is playing particularly slowly, you can consider politely requesting that they play a bit faster.
 
+#### Why does the League monitor play speed?
+
+Prior to implementing any play speed policies, especially slow opponent play speed was a source of frustration for a significant number of League players, and was cited by a significant number of former players as the reason they stopped playing in the League. In order to address this, the League collected play speed data for seasons 67 through 70, collected survey data on play speed at the start of season 71, and correlated the two data sets to get a picture of what players considered to be too slow.
+
+According to this data, almost all play speed complaints were the result of players playing against a handful of the very slowest players. Thus, the League adopted [play speed rules](/rules#3.5) designed to encourage that small group of very slow players to speed up enough that their opponents no longer find it painful to play against them. These rules are meant to have as little impact on the typical League experience as possible, as we believe that the vast majority of League matches are played at speeds that are acceptable to both players.
+
 ## 5. Dominion Online (<http://dominion.games>)
 
 #### How do I add someone from my division as a friend on Dominion Online?
@@ -413,11 +419,11 @@ You can see a list of past Tier Championships winners in the tournament's [Hall 
 
 #### How were the numeric values for the [play speed rules](/rules#3.5) chosen?
 
-The League collected play speed data across all matches from seasons 67 through 69, and used that data to inform the design of the play speed rules.
+The League collected play speed data across all matches from seasons 67 through 70, and used that data to inform the design of the play speed rules.
 
 The median time per decision across the League during that period was 3.??? seconds, which was rounded up to 3.5 seconds for simplicity.
 
-The 45 minute Adjusted Excess Time threshold was chosen in order to minimize the impact of the play speed rules. We believe that the vast majority of League matches are played at a reasonable pace, and only want to speed up the most extreme cases of slow play. A 45 minute Adjusted Excess Time threshold would have triggered play speed warnings for ??% of matches from seasons 67 through 69.
+The 45 minute Adjusted Excess Time threshold was chosen in order to minimize the impact of the play speed rules. We believe that the vast majority of League matches are played at a reasonable pace, and only want to speed up the most extreme cases of slow play. A 45 minute Adjusted Excess Time threshold would have triggered play speed warnings for ??% of matches from seasons 67 through 70.
 
 ## 7. Miscellaneous
 
