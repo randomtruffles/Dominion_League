@@ -258,7 +258,7 @@ However, out of consideration for your opponents, the League requires that you m
 
 Prior to implementing any play speed policies, especially slow opponent play speed was a source of frustration for a significant number of League players, and was cited by a significant number of former players as the reason they stopped playing in the League. In order to address this, the League collected play speed data for seasons 67 through 70, collected survey data on play speed at the start of season 71, and correlated the two data sets to get a picture of what players considered to be too slow.
 
-According to this data, almost all play speed complaints were the result of players playing against a handful of the very slowest players. Thus, the League adopted [play speed rules](/rules#3.5) designed to encourage that small group of very slow players to speed up enough that their opponents no longer find it painful to play against them. These rules are meant to have as little impact on the typical League experience as possible, as we believe that the vast majority of League matches are played at speeds that are acceptable to both players.
+According to this data, almost all play speed complaints were the result of playing against a handful of the very slowest players. Thus, the League adopted [play speed rules](/rules#3.5) designed to encourage that small group of very slow players to speed up enough that their opponents no longer find it painful to play against them. These rules are meant to have as little impact on the typical League experience as possible, as we believe that the vast majority of League matches are played at speeds that are acceptable to both players.
 
 ## 5. Dominion Online (<http://dominion.games>)
 
