@@ -260,13 +260,13 @@ Prior to implementing any play speed policies, especially slow opponent play spe
 
 According to this data, almost all play speed complaints were the result of playing against a handful of the very slowest players. Thus, the League adopted [play speed rules](/rules#3.5) designed to encourage that small group of very slow players to speed up enough that their opponents no longer find it painful to play against them. These rules are meant to have as little impact on the typical League experience as possible, as we believe that the vast majority of League matches are played at speeds that are acceptable to both players.
 
-#### What is Adjusted Excess Time? How is it calculated?
-
-See [play speed](/rules#3.5), and in particular, [3.5.1](/rules#3.5.1) and [3.5.2](/rules#3.5.2).
-
 #### How can I tell whether I'm meeting the play speed requirements?
 
 When your match results data is automatically posted to your division channel, it will include timing data. You can see your Adjusted Excess Time there.
+
+#### What is Adjusted Excess Time? How is it calculated?
+
+See [play speed](/rules#3.5), and in particular, [3.5.1](/rules#3.5.1) and [3.5.2](/rules#3.5.2).
 
 #### I've received a play speed warning. What does this mean?
 
