@@ -262,7 +262,7 @@ According to this data, almost all play speed complaints were the result of play
 
 #### How can I tell whether I'm meeting the play speed requirements?
 
-When your match results data is automatically posted to your division channel, it will include timing data. You can see your Adjusted Excess Time there.
+When your match results data is automatically posted to your division channel, it will include timing data. You can see your Adjusted Excess Time there. If your Adjusted Excess Time is consistently below 45 minutes, you are meeting the requirements. Most players are consistently well below this threshold.
 
 #### What is Adjusted Excess Time? How is it calculated?
 
