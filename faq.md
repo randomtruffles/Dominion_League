@@ -270,7 +270,7 @@ See [play speed](/rules#3.5), and in particular, [3.5.1](/rules#3.5.1) and [3.5.
 
 #### I've received a play speed warning. What does this mean?
 
-A single play speed warning is not necessarily a cause for alarm, as some players may receive a warning due to an anomalously slow match, without being at significant risk of accruing further warnings. However, it may be an indication that you should try to play faster in the future. This is more likely if the match that triggered the warning was a typical match for you. If you're not sure, we encourage you to reach out to a moderator - we're happy to help!
+A single play speed warning is not necessarily a cause for alarm, as some players may receive a warning due to an anomalously slow match, without being at significant risk of accruing further warnings. However, it may be an indication that you should try to play faster in the future. This is more likely if the match that triggered the warning was a typical match for you. If you're not sure, we encourage you to reach out to a moderator - we're happy to help you understand the situation, and figure out whether and how you should adjust your play speed.
 
 ## 5. Dominion Online (<http://dominion.games>)
 
