@@ -435,7 +435,7 @@ The League collected play speed data across all matches from seasons 67 through 
 
 The median time per decision across the League during that period was 3.33 seconds, while the median player average time per decision was 3.46. These values were both rounded up to 3.5 seconds for simplicity.
 
-The 45 minute Adjusted Excess Time threshold was chosen in order to minimize the impact of the play speed rules. We believe that the vast majority of League matches are played at a reasonable pace, and only want to speed up the most extreme cases of slow play. A 45 minute Adjusted Excess Time threshold would have triggered play speed warnings for ??% of matches from seasons 67 through 70.
+The 45 minute Adjusted Excess Time threshold was chosen in order to minimize the impact of the play speed rules. We believe that the vast majority of League matches are played at a reasonable pace, and only want to speed up the most extreme cases of slow play. A 45 minute Adjusted Excess Time threshold would have triggered play speed warnings for 0.8% of player matches from seasons 67 through 70.
 
 ## 7. Miscellaneous
 
