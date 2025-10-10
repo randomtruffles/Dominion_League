@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-10-07
+date: 2025-10-10
 categories: pinned faq
 ---
 #### Contents
