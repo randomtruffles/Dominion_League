@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-08-01
+date: 2025-10-10
 categories: pinned faq
 ---
 #### Contents
@@ -166,7 +166,7 @@ See [matches](/rules#4.1).
 
 #### How long is a match?
 
-Most players play a 6-game match in a single playing session lasting about 2 hours, without breaks. As a courtesy to your opponents, you may want to adjust your play speed if you find your games are considerably longer than this.
+Most players play a 6-game match in a single playing session lasting about 2 hours, without breaks. As a courtesy to your opponents, you may want to adjust your play speed if you find your matches are considerably longer than this.
 
 #### Do I have to play all 6 games at once?
 
@@ -247,6 +247,30 @@ See [outside help](/rules#4.3).
 #### Can I resign or forfeit a match?
 
 See [play to the best of your ability](/rules#3.4).
+
+#### What can I do if my opponent is playing slowly?
+
+Games in the Dominion League do not use an in-game timer. Players are allowed to play at a relaxed pace, and you can expect some of your opponents to do so.
+
+However, out of consideration for your everyone's time and patience, the League requires that all players maintain a reasonable minimum pace of play (see [play speed](/rules#3.5)). The League automatically collects play speed data for all matches, and if your opponent fails to meet the minimum pace, they will receive a play speed warning after the match. A player who repeatedly receives these warnings will receive a suspension. We hope that these measures mean that you will very rarely encounter a match where the pace of play is unreasonably slow. During a match, if you feel that your opponent is playing excessively slowly, you can consider politely requesting that they play a bit faster.
+
+#### Why does the League monitor play speed?
+
+Prior to implementing any play speed policies, especially slow opponent play speed was a source of frustration for a significant number of League players, and was cited by a significant number of former players as the reason they stopped playing in the League. In order to address this, the League collected play speed data for seasons 67 through 70, collected survey data on play speed at the start of season 71, and correlated the two data sets to get a picture of what players considered to be too slow.
+
+According to this data, almost all play speed complaints were the result of playing against a handful of the very slowest players. Thus, the League adopted [play speed rules](/rules#3.5) designed to encourage that small group of very slow players to speed up enough that their opponents no longer find it painful to play against them. These rules are meant to have as little impact on the typical League experience as possible, as we believe that the vast majority of League matches are played at speeds that are acceptable to both players.
+
+#### How can I tell whether I'm meeting the play speed requirements?
+
+When your match results data is automatically posted to your division channel, it will include timing data. You can see your Adjusted Excess Time there. If your Adjusted Excess Time is consistently below 45 minutes, you are meeting the requirements. Most players are consistently well below this threshold.
+
+#### What is Adjusted Excess Time? How is it calculated?
+
+See [play speed](/rules#3.5), and in particular, [3.5.1](/rules#3.5.1) and [3.5.2](/rules#3.5.2).
+
+#### I've received a play speed warning. What does this mean?
+
+A single play speed warning is not necessarily a cause for alarm, as some players may receive a warning due to an anomalously slow match, without being at significant risk of accruing further warnings. However, it may be an indication that you should try to play faster in the future. This is more likely if the match that triggered the warning was a typical match for you. If you're not sure, we encourage you to reach out to a moderator - we're happy to help you understand the situation, and figure out whether and how you should adjust your play speed.
 
 ## 5. Dominion Online (<http://dominion.games>)
 
@@ -343,7 +367,7 @@ Make sure the player order is set correctly. You'll see the original player orde
 
 Now you're ready to play! Both you and your opponent should click "Ready", as you normally would, to start the game.
 
-#### Why can't I play my League matches on the Temple Gate Games app?
+#### Why can't I play my League matches on the Temple Gates Games app?
 
 There are a number of advantages that dominion.games offers over the TGG app for Dominion League play. These include:
 
@@ -405,11 +429,19 @@ The League doesn't run Championship matches for players in other tiers. However,
 
 You can see a list of past Tier Championships winners in the tournament's [Hall of Fame](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjX8RFvFhzBmprtZQQ_CQr1omQnF2S1gIb5bBAyQvvqfOgBcBu1dCJtHPtO21Hc6yTvzhIQbdSQAKx/pubhtml?gid=0).
 
+#### How were the numeric values for the [play speed rules](/rules#3.5) chosen?
+
+The League collected play speed data across all matches from seasons 67 through 70, and used that data to inform the design of the play speed rules.
+
+The median time per decision across the League during that period was 3.33 seconds, while the median player average time per decision was 3.46. These values were both rounded up to 3.5 seconds for simplicity.
+
+The 45 minute Adjusted Excess Time threshold was chosen in order to minimize the impact of the play speed rules. We believe that the vast majority of League matches are played at a reasonable pace, and only want to speed up the most extreme cases of slow play. A 45 minute Adjusted Excess Time threshold would have triggered play speed warnings for 0.8% of player matches from seasons 67 through 70.
+
 ## 7. Miscellaneous
 
 #### What are the rules on etiquette?
 
-See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.6).
+See [conduct](/rules#3), and in particular, [behavior](/rules#3.1) and [misconduct](/rules#3.7).
 
 #### What do I do if there is a player with an offensive username?
 
