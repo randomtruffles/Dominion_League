@@ -1,4 +1,4 @@
-number: 71
+number: 72
 
 tiers:
   A:
@@ -22,15 +22,15 @@ tiers:
     promoters: 2
     demoters: 2
   F:
-    divisions: 7
-    promoters: 2
-    demoters: 2
-  G:
     divisions: 8
     promoters: 2
     demoters: 2
-  H:
+  G:
     divisions: 7
+    promoters: 2
+    demoters: 2
+  H:
+    divisions: 8
     promoters: 2
     demoters: 2
   I:
@@ -38,12 +38,12 @@ tiers:
     promoters: 2
     demoters: 2
   J:
-    divisions: 6
+    divisions: 7
     promoters: 2
     demoters: 2
   K:
-    divisions: 5
-    promoters: 1
+    divisions: 6
+    promoters: 2
     demoters: 0
 
 #these are old (s44), won't be using them afaik
