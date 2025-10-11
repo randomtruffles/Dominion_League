@@ -16,11 +16,12 @@ I am happy to announce the return of Rozyroz to the moderator team, who had prev
 
 **Play Speed Enforcement**
 
-Based on feedback received during our town hall, we will be starting automatic play speed enforcement this season. As a moderator team, we believe this is a strong step towards reducing one of the major reasons many players end up leaving the league and a point of frustration for many who stay.
+Based on feedback received during our town hall, we will be starting automatic play speed enforcement this season. As a moderator team, we believe this is a strong step towards reducing one of the major reasons many players end up leaving the league and a point of frustration for many who stay. 
 
-For most players, the only change you will experience is an additional couple lines in the !match output for your division detailing pace, and no players will be suspended this season. That said, please review the official rules here and feel free to ask any questions that arise:
-
-**Other feedback**
+For most players, the only change you will experience is an additional couple lines in the !match output for your division detailing pace, and no players will be suspended this season. That said, please review the official rules here and feel free to ask any questions that arise: [https://dominionleague.org/rules#3.5](https://dominionleague.org/rules#3.5)
 
 **End of Summer Time**
 
+During this season European Summer Time will end on October 26th and North American Daylight Savings Time a week later on November 2nd. Please keep this in mind when scheduling using UTC - your offset will be changing if you are in an affected time zone.
+
+Best of luck this coming season!
