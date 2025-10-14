@@ -270,7 +270,7 @@ See [play speed](/rules#3.5), and in particular, [3.5.1](/rules#3.5.1) and [3.5.
 
 #### The Adjusted Excess Time calculation mentions time per decision. What counts as a decision?
 
-Any time you interact with the game by clicking your mouse, that's a decision. Anything that the game automatically resolves for you is not a decision.
+Any time you change the game state by clicking, that's a decision. Changes to the game state that the game automatically resolves for you are not decisions.
 
 #### I've received a play speed warning. What does this mean?
 
