@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-10-10
+date: 2025-10-15
 categories: pinned faq
 ---
 #### Contents
@@ -267,6 +267,10 @@ When your match results data is automatically posted to your division channel, i
 #### What is Adjusted Excess Time? How is it calculated?
 
 See [play speed](/rules#3.5), and in particular, [3.5.1](/rules#3.5.1) and [3.5.2](/rules#3.5.2).
+
+#### The Adjusted Excess Time calculation mentions time per decision. What counts as a decision?
+
+Any time you change the game state by clicking, that's a decision. Changes to the game state that the game automatically resolves for you are not decisions.
 
 #### I've received a play speed warning. What does this mean?
 
