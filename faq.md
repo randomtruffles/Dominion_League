@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-10-15
+date: 2025-10-17
 categories: pinned faq
 ---
 #### Contents
@@ -262,7 +262,7 @@ According to this data, almost all play speed complaints were the result of play
 
 #### How can I tell whether I'm meeting the play speed requirements?
 
-When your match results data is automatically posted to your division channel, it will include timing data. You can see your Adjusted Excess Time there. If your Adjusted Excess Time is consistently below 45 minutes, you are meeting the requirements. Most players are consistently well below this threshold.
+When your match results data is automatically posted to your division channel, it will include timing data. If your Adjusted Excess Time is consistently below 45 minutes, you are meeting the requirements. Most players are consistently well below this threshold. Note that Adjusted Excess Time values are only displayed if they are positive, i.e. if you have any excess time.
 
 #### What is Adjusted Excess Time? How is it calculated?
 
