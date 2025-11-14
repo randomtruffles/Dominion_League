@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-10-17
+date: 2025-11-14
 categories: pinned faq
 ---
 #### Contents
@@ -431,7 +431,7 @@ Within the Dominion League structure, there is a Championship match each season,
 
 The League doesn't run Championship matches for players in other tiers. However, there is an optional and unofficial tournament for top finishers in other tiers called Tier Championships. This tournament is run by a different team of moderators, and participation is not mandatory, but it may be a fun way to cap off a winning League season. Participation in this tournament will not affect your League standings in any way.
 
-You can see a list of past Tier Championships winners in the tournament's [Hall of Fame](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjX8RFvFhzBmprtZQQ_CQr1omQnF2S1gIb5bBAyQvvqfOgBcBu1dCJtHPtO21Hc6yTvzhIQbdSQAKx/pubhtml?gid=0).
+You can get more information about the Tier Championships from the tournament's [rules](https://docs.google.com/document/d/e/2PACX-1vQLrO2lSUSc0--WsUym8n_db4GrPfm1PWgijVZbrUD6O8a_Xqk6_7kx0q44XlustJr-M00sXxIGB2U1/pub), and see a list of past in the tournament's [Hall of Fame](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjX8RFvFhzBmprtZQQ_CQr1omQnF2S1gIb5bBAyQvvqfOgBcBu1dCJtHPtO21Hc6yTvzhIQbdSQAKx/pubhtml?gid=0).
 
 #### How were the numeric values for the [play speed rules](/rules#3.5) chosen?
 
