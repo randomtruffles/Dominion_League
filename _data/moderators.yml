@@ -9,9 +9,6 @@
   discord: alibby1152#4103
   image: alibby
   chair: Setup
-- name: bobbydj18
-  discord: bobbydj18
-  image: bobbydj18
 - name: Cave-o-Sapien
   discord: Cave-o-Sapien#6830
   image: cave
@@ -29,9 +26,9 @@
 - name: GaryOfPgh2
   discord: garyofpgh
   image: garyofpgh2
-- name: LeagueLackey
-  discord: LeagueLackey#6269
-  image: lackey
+#- name: LeagueLackey
+#  discord: LeagueLackey#6269
+#  image: lackey
 - name: Lemonspawn
   discord: Lemonspawn#2571
   image: lemonspawn
@@ -50,9 +47,6 @@
   discord: Sharur#7043
   image: sharur
   chair: Rules
-- name: singletee
-  discord: singletee#0905
-  image: singletee
 - name: TeamOkay
   discord: teamokay
   image: teamokay
