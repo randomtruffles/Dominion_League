@@ -17,9 +17,9 @@ As a result, we are looking to add moderators for season 74 to help us moderate 
 
 **Increased Benchmark Messaging**
 
-As a moderator team we feel that players have too often been running into the benchmark weeks without warning. The benchmarks are intended to be the bare minimum pace to not be dropped from the league; our true expectation is that players schedule at a one match per week pace throughout the season.
+Players will be aware that there are a series of deadlines throughout the season regarding progress with playing and scheduling matches. These benchmark deadlines are intended to represent the bare minimum pace to avoid being dropped from the league; our expectation is that players schedule at a pace of one match per week throughout the season. As a moderator team, we feel that players have too often been running into a week where they need to meet a benchmark deadline without warning.
 
-This season we will begin pinging players the week they are at risk of needing to schedule multiple matches in any single week the remainder of the season. Additionally, the bot messages on the benchmark weeks will direct you to take action in the division channel - you will be required to follow these instructions to avoid being dropped.
+This season we will begin pinging players the week they fall behind the expected pace (when they are at risk of needing to schedule multiple matches in any single week in the remainder of the season). Additionally, the bot messages on the benchmark weeks will direct you to take action in the division channel - you will be required to follow these instructions to avoid being dropped.
 
 **Holiday Season**
 
