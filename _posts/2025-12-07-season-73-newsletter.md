@@ -7,7 +7,7 @@ layout: post
 categories:
   - newsletters
 ---
-Welcome to Season 73 of the Dominion League!
+Welcome to Season 73 of the Dominion League.
 
 **Moderator Turnover**
 
