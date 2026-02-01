@@ -71,7 +71,8 @@
     "69": "jnails",
     "70": "breppert",
     "71": "jnails",
-    "72": "tracer"
+    "72": "tracer",
+    "73": "fircoal"
   },
   "runner_ups": {
     "1": "stef",
@@ -145,7 +146,8 @@
     "69": "yurikamome",
     "70": "hakha3",
     "71": "tracer",
-    "72": "jnails"
+    "72": "jnails",
+    "73": "agoo03"
   },
   "players": {
     "mic qsenoch": [
@@ -248,7 +250,8 @@
       "64"
     ],
     "fircoal": [
-      "67"
+      "67",
+      "73"
     ],
     "zanderg": [
       "68"
@@ -385,6 +388,9 @@
 	],
   "neqativ": [
     "61"
+  ],
+  "agoo03": [
+    "73"
   ]
   }
 }
