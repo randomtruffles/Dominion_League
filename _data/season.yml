@@ -1,4 +1,4 @@
-number: 73
+number: 74
 
 tiers:
   A:
@@ -26,7 +26,7 @@ tiers:
     promoters: 2
     demoters: 2
   G:
-    divisions: 7
+    divisions: 8
     promoters: 2
     demoters: 2
   H:
@@ -34,7 +34,7 @@ tiers:
     promoters: 2
     demoters: 2
   I:
-    divisions: 7
+    divisions: 8
     promoters: 2
     demoters: 2
   J:
@@ -42,7 +42,7 @@ tiers:
     promoters: 2
     demoters: 2
   K:
-    divisions: 6
+    divisions: 5
     promoters: 2
     demoters: 0
 
