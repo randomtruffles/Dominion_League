@@ -419,7 +419,7 @@ The same places promote and demote as normal. If a place that would demote is va
 
 #### If I take a break from the League, what tier do I return to?
 
-You will be able to return to your previous tier if your break is no more than 2 seasons. If your break lasts 3 or more seasons, your previous tier will be modified by a break adjustment, and compared with where you would be placed as a new player based on your rating. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
+You will be able to return to your previously earned tier if your break is no more than 2 seasons. If your break lasts 3 or more seasons, your previously earned tier will be modified by a break adjustment, and compared with where you would be placed as a new player based on your rating. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
 
 #### How are play-in matches and free promotions determined?
 
