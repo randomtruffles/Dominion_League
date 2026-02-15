@@ -158,6 +158,10 @@ Notify your moderator as soon as possible, and they may be able to grant you an 
 
 Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the suspension if appropriate.
 
+#### Why don't partial matches count toward scheduling benchmarks?
+
+While it can be more difficult to schedule to play more games, it isn't proportionally more difficult - e.g., scheduling for six games isn't twice as difficult as scheduling for three games. And we have found that the main metric for how much more scheduling work a player has left is how many opponents they have left, i.e. the number of people they need to coordinate with on finding a mutually agreeable time to play.
+
 ## 4. Playing matches
 
 #### What is a match? Is it the same as a game?
