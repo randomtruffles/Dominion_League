@@ -160,7 +160,7 @@ Notify your moderator as soon as possible and explain your situation. The modera
 
 #### Why don't partial matches count toward scheduling benchmarks?
 
-While it can be more difficult to schedule to play more games, it isn't proportionally more difficult - e.g., scheduling for six games isn't twice as difficult as scheduling for three games. We have found that the main metric for how much more scheduling work a player has left is how many opponents they have left, i.e. the number of people they need to coordinate with on finding a mutually agreeable time to play.
+While scheduling enough time to play a full match can be more difficult than scheduling a partial match, it isn't proportionally more difficult - e.g., scheduling for six games isn't twice as difficult as scheduling for three games. We have found that the main metric for how much more scheduling work a player has left is how many opponents they have left, i.e. the number of people they need to coordinate with on finding a mutually agreeable time to play.
 
 ## 4. Playing matches
 
