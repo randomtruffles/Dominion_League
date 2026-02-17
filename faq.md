@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-11-14
+date: 2026-02-17
 categories: pinned faq
 ---
 #### Contents
@@ -157,6 +157,10 @@ Notify your moderator as soon as possible, and they may be able to grant you an 
 #### What do I do if I can't finish the season due to unforeseen circumstances?
 
 Notify your moderator as soon as possible and explain your situation. The moderator can remove you if necessary, and can waive the suspension if appropriate.
+
+#### Why don't partial matches count toward scheduling benchmarks?
+
+While scheduling enough time to play a full match can be more difficult than scheduling a partial match, it isn't proportionally more difficult - e.g., scheduling for six games isn't twice as difficult as scheduling for three games. We have found that the main metric for how much more scheduling work a player has left is how many opponents they have left, i.e. the number of people they need to coordinate with on finding a mutually agreeable time to play.
 
 ## 4. Playing matches
 
@@ -415,7 +419,7 @@ The same places promote and demote as normal. If a place that would demote is va
 
 #### If I take a break from the League, what tier do I return to?
 
-Generally speaking, you will be able to return to your previous tier if your break is no more than 5 seasons, but there may not always be space for players in higher tiers to do so. If your break lasts 6 or more seasons, you will be placed as a new player. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
+You will be able to return to your previously earned tier if your break is no more than 2 seasons. If your break lasts 3 or more seasons, your previously earned tier will be modified by a break adjustment, and compared with where you would be placed as a new player based on your rating. See [hiatus](/rules#1.4), [tier placement](/rules#2.4), and [flex divisions](/rules#2.5) for more details.
 
 #### How are play-in matches and free promotions determined?
 
