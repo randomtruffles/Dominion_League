@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2025-10-10
+date: 2026-02-24
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -97,7 +97,7 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.2"></a>2.4.2. Players returning to the League after a short break ([1.4.1](#1.4.1)) are placed into the tier they would have most recently returned to, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)). If there is insufficient space in a tier to accommodate players returning from a short break, one or more flex divisions ([2.5](#2.5)) will be created.
 
-<a name="2.4.3"></a>2.4.3. Players returning to the League after a long break ([1.4.2](#1.4.2)) are placed into the tier they would have most recently returned to, modified by a break adjustment, or into a tier based on their Dominion Online level, whichever placement would be higher.
+<a name="2.4.3"></a>2.4.3. Players returning to the League after a long break ([1.4.2](#1.4.2)) are placed into the tier they would have most recently returned to, modified by a break adjustment, or into a tier based on their Dominion Online 2P Standard level, whichever placement would be higher.
 
 <a name="2.4.3.1"></a>2.4.3.1. Players returning from a long break will have their Dominion Online level assessed in the same manner as if they were joining the League for the first time (see [2.4.4](#2.4.4)).
 
@@ -105,7 +105,7 @@ Players are placed into tiers using the following criteria, in order:
 
 <a name="2.4.3.3"></a>2.4.3.3. When placing players based on break-adjusted tiers, slots are filled starting with A tier and working downward. If there is insufficient space in a given tier to accommodate such players, they will be placed in the highest possible tier below that tier that can accommodate them without needing a flex division to do so, starting with the players who played most recently, and with ties broken by seeding ([2.6](#2.6)).
 
-<a name="2.4.4"></a>2.4.4. Players joining the League for the first time are placed into tiers based on their Dominion Online level. Levels will be collected at a time specified on the [sign-up page](/sign-ups). If there is insufficient space in a tier to accommodate players exceeding the strict level cutoff, one or more flex divisions ([2.5](#2.5)) will be created.
+<a name="2.4.4"></a>2.4.4. Players joining the League for the first time are placed into tiers based on their Dominion Online 2P Standard level. Levels will be collected at a time specified on the [sign-up page](/sign-ups). If there is insufficient space in a tier to accommodate players exceeding the strict level cutoff, one or more flex divisions ([2.5](#2.5)) will be created.
 
 <a name="2.4.5"></a>2.4.5. If there are still open spots in a tier, players in the tier below may receive free promotions to fill them. See [5.5](#5.5) for details.
 
