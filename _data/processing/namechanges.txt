@@ -92,6 +92,7 @@ royce4	Royce5
 rldepencier	verdant_knight
 turbalence	disturba
 til_lo	WinnieAndFerguson
+CaptainHorizons	CaptainHorizons23
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
