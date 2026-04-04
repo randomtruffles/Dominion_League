@@ -26,4 +26,11 @@ Starting this season, we are changing the check-in form's availability section t
 
 We recognize that some players have irregular schedules that may make answering some of these fields difficult. If you feel that the form is overly restrictive, please consult your moderator and we will work with you to develop the best responses.
 
+**Elimination of K tier**
+
+Due to changes in the skill distribution of players in league, this season represents the second straight season that K tier has fallen below 6 divisions. By rule, we will be collapsing K tier into J tier this season, which requires changes in our promotions and demotions for the upcoming season:
+- From I divisions, only the 6th-placed player will demote
+- From J divisions, no players will demote
+- From K divisions, the 1st-placed player will promote to I tier, and remaining players will move to J tier
+
 Best of luck and we hope you enjoy this upcoming season!
