@@ -14,9 +14,11 @@ I am thrilled to announce the addition of strumphf to our moderator team. strump
 
 **Timer Settings and Town Hall**
 
-As announced in the middle of last season, there will be a league town hall regarding timer use this season, scheduled for Saturday, May 2nd, starting at 16 UTC.
+As announced in the middle of last season, there will be a league town hall regarding timer use this season, scheduled for Saturday, May 9th, starting at 16 UTC.
 
 To ensure players enter the town hall informed, we are making a process change regarding timer use this season. By default, you should set the timer table setting to Patient for your matches, though you still may not force your opponent to resign and count it as a loss for them. Either player in a match may request that the timer is deactivated, and their request should be granted. You may not use any faster timer settings.
+
+Please experiment with the timer visibility settings, especially if you find it distracting. You may wish to hide the fast-moving central component (the decision timer), or hide the timer from view altogether. You can change the visibility settings during games by bringing up the settings menu via the gear icon in the lower right.
 
 Our hope is that this default allows players to feel what the current Patient timer would do under the same conditions they play league matches. If you find it uncomfortable, you should request that it is deactivated. Regardless of use, the Adjusted Excess Time enforcement will remain in place.
 
