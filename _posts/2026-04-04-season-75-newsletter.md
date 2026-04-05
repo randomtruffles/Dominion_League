@@ -1,6 +1,6 @@
 ---
 title: Season 75 - Newsletter
-date: 2026-04-04
+date: 2026-04-05
 author: tracer
 layout: post
 categories:
