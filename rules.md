@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2026-02-24
+date: 2026-04-05
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -75,15 +75,15 @@ A division is a group of typically 6 players who will play each other during a s
 
 ### <a name="2.3"></a>2.3. Tiers
 
-Divisions ([2.2](#2.2)) are grouped into tiers. The Dominion League has 11 tiers, identified by letters A through K.
+Divisions ([2.2](#2.2)) are grouped into tiers. The Dominion League has 10 tiers, identified by letters A through J.
 
 <a name="2.3.1"></a>2.3.1. Tiers A through C always have exactly 1, 2, and 4 divisions respectively.
 
 <a name="2.3.2"></a>2.3.2. Tiers D and E have a minimum of 4 divisions each.
 
-<a name="2.3.3"></a>2.3.3. Tiers F through J have a minimum of 6 divisions each. If there are not enough players to meet this requirement, tiers will be eliminated as necessary.
+<a name="2.3.3"></a>2.3.3. Tiers F through I have a minimum of 6 divisions each. If there are not enough players to meet this requirement, tiers will be eliminated as necessary.
 
-<a name="2.3.4"></a>2.3.4. If Tier K falls below 6 divisions for 2 consecutive seasons, it will be eliminated after the second such season.
+<a name="2.3.4"></a>2.3.4. If Tier J falls below 6 divisions for 2 consecutive seasons, it will be eliminated after the second such season.
 
 <a name="2.3.5"></a>2.3.5. A tier can have no more than twice as many divisions as the tier above it. If there are too many players to meet this requirement, tiers will be added as necessary.
 
