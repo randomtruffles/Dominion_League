@@ -12,7 +12,7 @@ Welcome to season 75 of the Dominion League! We have a few process changes this 
 
 I am thrilled to announce the addition of strumphf to our moderator team. strumphf is a longtime Dominion community member who I am certain many of you have enjoyed getting to meet over the past several years, and hopefully many more of you will soon as she moderates your divisions in the time to come.
 
-**Timer Change and Town Hall**
+**Timer Settings and Town Hall**
 
 As announced in the middle of last season, there will be a league town hall regarding timer use this season, scheduled for Saturday, May 2nd, starting at 16 UTC.
 
@@ -28,7 +28,7 @@ We recognize that some players have irregular schedules that may make answering 
 
 **Elimination of K tier**
 
-Due to changes in the skill distribution of players in league, this season represents the second straight season that K tier has fallen below 6 divisions. By rule, we will be collapsing K tier into J tier this season, which requires changes in our promotions and demotions for the upcoming season:
+Due to changes in the skill distribution of players in league, this season represents the second consecutive season that K tier has fallen below 6 divisions. By rule, we will be collapsing K tier into J tier this season, which requires changes in our promotions and demotions for the upcoming season:
 - From I divisions, only the 6th-placed player will demote
 - From J divisions, no players will demote
 - From K divisions, the 1st-placed player will promote to I tier, and remaining players will move to J tier
