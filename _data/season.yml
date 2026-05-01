@@ -36,7 +36,7 @@ tiers:
   I:
     divisions: 7
     promoters: 2
-    demoters: 7
+    demoters: 1
   J:
     divisions: 6
     promoters: 2
