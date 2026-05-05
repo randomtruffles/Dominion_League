@@ -1,7 +1,7 @@
 ---
 title: League Resources
 subtitle: Allowable Resources in the Dominion League
-date: 2023-12-02
+date: 2026-05-04
 categories: pinned
 layout: rules_faq
 ---
@@ -18,22 +18,22 @@ These resources may be consulted at any time, including during a League game.
 
 The current rulebooks for each Dominion set are linked below. See below for some changes that were made but not yet incorporated into the official rulebooks.
 
-* [Dominion (2nd Edition)](/img/uploads/00-dominion-rulebook.pdf)
-* [Dominion: Intrigue (2nd Edition)](/img/uploads/01-intrigue-rulebook.pdf)
-* [Dominion: Seaside (2nd Edition)](/img/uploads/02-seaside-rulebook.pdf)
-* [Dominion: Alchemy](/img/uploads/03-alchemy-rulebook.pdf)
-* [Dominion: Prosperity (2nd Edition)](/img/uploads/04-prosperity-rulebook.pdf)
-* [Dominion: Hinterlands (2nd Edition)](/img/uploads/06-hinterlands-rulebook.pdf)
-* [Dominion: Dark Ages](/img/uploads/07-dark-ages-rulebook.pdf)
-* [Dominion: Cornucopia & Guilds (2nd Edition)](/img/uploads/05-cornucopia-and-08-guilds-rulebook.pdf)
-* [Dominion: Adventures](/img/uploads/09-adventures-rulebook.pdf)
-* [Dominion: Empires](/img/uploads/10-empires-rulebook.pdf)
-* [Dominion: Nocturne](/img/uploads/11-nocturne-rulebook.pdf)
-* [Dominion: Renaissance](/img/uploads/12-renaissance-rulebook.pdf)
-* [Dominion: Menagerie](/img/uploads/13-menagerie-rulebook.pdf)
-* [Dominion: Allies](/img/uploads/14-allies-rulebook.pdf)
-* [Dominion: Plunder](/img/uploads/15-plunder-rulebook.pdf)
-* [Dominion: Rising Sun](/img/uploads/16-rising-sun-rulebook.pdf)
+1. [Dominion (2nd Edition)](/img/uploads/00-dominion-rulebook.pdf)
+2. [Dominion: Intrigue (2nd Edition)](/img/uploads/01-intrigue-rulebook.pdf)
+3. [Dominion: Seaside (2nd Edition)](/img/uploads/02-seaside-rulebook.pdf)
+4. [Dominion: Alchemy](/img/uploads/03-alchemy-rulebook.pdf)
+5. [Dominion: Prosperity (2nd Edition)](/img/uploads/04-prosperity-rulebook.pdf)
+6. [Dominion: Hinterlands (2nd Edition)](/img/uploads/06-hinterlands-rulebook.pdf)
+7. [Dominion: Dark Ages](/img/uploads/07-dark-ages-rulebook.pdf)
+8. [Dominion: Cornucopia & Guilds (2nd Edition)](/img/uploads/05-cornucopia-and-08-guilds-rulebook.pdf)
+9. [Dominion: Adventures](/img/uploads/09-adventures-rulebook.pdf)
+10. [Dominion: Empires](/img/uploads/10-empires-rulebook.pdf)
+11. [Dominion: Nocturne](/img/uploads/11-nocturne-rulebook.pdf)
+12. [Dominion: Renaissance](/img/uploads/12-renaissance-rulebook.pdf)
+13. [Dominion: Menagerie](/img/uploads/13-menagerie-rulebook.pdf)
+14. [Dominion: Allies](/img/uploads/14-allies-rulebook.pdf)
+15. [Dominion: Plunder](/img/uploads/15-plunder-rulebook.pdf)
+16. [Dominion: Rising Sun](/img/uploads/16-rising-sun-rulebook.pdf)
 
 There is no official rulebook for the promo cards (Envoy, Black Market, Stash, Walled Village, Governor, Prince, Summon, Sauna/Avanto, Dismantle, Church, Captain, and Marchland).
 
@@ -55,6 +55,8 @@ The abilities of these cards have changed since the rulebooks were last printed.
 * **Overlord**: Action - Command, 8 Debt *(Dominion: Empires)*<br>Play a non-Command Action card from the Supply costing up to $5, leaving it there.
 * **Patron**: Action - Reaction, $4 *(Dominion: Renaissance)*<br>**+1 Villager**<br>**+$2**<br>––––––––––––––––––––<br>When something causes you to reveal this (using the word "reveal") in an Action phase, **+1 Coffers**.
 * **Possession**: Action, $6 Potion *(Dominion: Alchemy)*<br>The player to your left takes an extra turn after this one (but not a 2nd extra turn in a row), in which you can see all cards they can and make all decisions for them. Any cards or Debt they would gain on that turn, you gain instead; any cards of theirs that are trashed are set aside and put in their discard pile at end of turn.
+* **Royal Galley**: Action - Duration, $4 *(Dominion: Allies)*<br>**+1 Card**<br>You may play a non-Duration Action card from your hand. Don't discard it in Clean-up until your next turn. At the start of your next turn, if it's still in play, replay it.
+* **Treasury**: Action, $5 *(Dominion: Seaside)*<br>**+1 Card**<br>**+1 Action**<br>**+$1**<br>––––––––––––––––––––<br>When you discard this from play, if you didn't gain any Victory cards in your Buy phase this turn, you may put this onto your deck.
 * **Voyage**: Action - Duration - Odyssey, $4 *(Dominion: Allies)*<br>**+1 Action**<br>Take an extra turn after this one (but not a 3rd turn in a row), during which you can only play 3 cards from your hand.
 
 Additionally, three cards intentionally work differently online than what their texts say:
@@ -62,6 +64,10 @@ Additionally, three cards intentionally work differently online than what their 
 * **Black Market**: The Black Market deck is made up of exactly 60 unused Kingdom cards that do not have any setup. The Black Market deck will also not have cards that require setup not already required by other Kingdom cards. For example, it will not have cards that require Potion or Ruins unless another card in the Kingdom already needs those things. Players do not get to know what cards start in the Black Market deck. When you play Black Market, the un-bought cards are put back in a random order, and the Black Market deck is shuffled once all the cards from it have been revealed once.
 * **Way of the Mouse**: Way of the Mouse will not set aside cards with setup or cards that when played using Way of the Mouse would be as useful or less useful than other Ways (e.g. Moat).
 * **Riverboat**: Riverboat will not set aside cards that are useless or confusing (e.g. Small Castle).
+
+### Duration rules
+
+Duration cards are not discarded in Clean-up if they have something left to do on a future turn; they stay in play until the Clean-up of the last turn that they do something. If a Duration card leaves play somehow, it stops doing things on future turns. Additionally, if a Duration card is played extra times by a card such as Mastermind, that card also stays in play until the Duration card is discarded, to track the fact that the Duration card was played extra times; and that effect also ends if that card somehow leaves play.
 
 ## Previous errata
 
@@ -137,22 +143,21 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
 * **Reckless**:
+
   * See **Highwayman** above.
   * **Way of the Chameleon**: If you play a Reckless card using Way of the Chameleon, Reckless applies but Way of the Chameleon does not.
 * **Royal Carriage**:
 
   * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
   * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
-* **Small Castle**: When you play Small Castle and have no other Castles in hand, you are forced to trash the Small Castle from play.
 * **Sleigh**:
 
   * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs even though they will do nothing.
   * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should then stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
-* **Survivors**: If you only reveal 1 card, you must discard it.
-* **Treasure Map**: The two Treasure Maps should be trashed simultaneously, but are trashed one at a time. For example, if you play a Treasure Map and trash it, you can resolve "when you trash" abilities before trashing another Treasure Map from your hand.
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically begins. This can matter with Possession or Flourishing Trade.
 * **Way of the Chameleon**:
+
   * See **–$1 token** above.
   * See **Highwayman** above.
   * See **Priest** above.
@@ -160,12 +165,10 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 
 ### Bugs during another player's turn
 
-*These bugs may have been fixed, but are pending a thorough re-testing in early 2025.*
+*These bugs may have been fixed, but are pending a thorough re-testing.*
 
 * If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
-
 * Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
-
 * If it is not your turn and you play 2 or more Action cards and then Conspirator, you will not get +1 Card and +1 Action.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the [\#rules-help](https://discord.com/channels/212660788786102272/285903840660946954) channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
