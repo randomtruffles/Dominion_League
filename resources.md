@@ -130,11 +130,12 @@ You may pay off Debt at any time on your turn.
 Below is a list of cards and situations where the game rules aren't followed. This list does not include bugs with removed cards, confusing or incorrect interface issues, or problems with the Lord Rattington bot. Bugs due to using abilities during another player's turn are in a separate section below.
 
 * **–$1 token + Way of the Chameleon**: If you have your –$1 token and play a card using Way of the Chameleon that would give you +Cards, you draw 1 fewer card. (The token is applied correctly, but Way of the Chameleon should change the bonus to +$.)
-* **Cargo Ship**: You cannot choose which copy of Cargo Ship (or card that played a Cargo Ship, leaving it there) to set aside a gained card on. This can matter with Throne Room, Way of the Mouse setting aside Cargo Ship, etc.
+* **Cargo Ship**: You cannot choose which copy of Cargo Ship to set aside a gained card on. For example, this can matter with Throne Room.
 * **Cavalry, Continue, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
 * **Continue**: See **Cavalry** above.
 * **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
 * **Flourishing Trade**: See **Villagers** below.
+* **Harbor Village**: After you play the next Action card, if you have another ability with the same timing (for example, Inspiring) and that ability somehow makes the Action card give you +$, Harbor Village does not give you the bonus.
 * **Highwayman**:
 
   * **Reckless**: If you play a Reckless Highwayman, then when you discard it from play at the start of your next turn, it is not returned to its pile.
