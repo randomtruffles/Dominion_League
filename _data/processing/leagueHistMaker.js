@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var hist = {};
 
-for (let s=1; s<=74; s++) {
+for (let s=1; s<=75; s++) {
 	let bigHist = JSON.parse(fs.readFileSync(`Seasons/s${s}.json`));
 	let smallHist = {"season": s};
 	for (const div in bigHist) {
