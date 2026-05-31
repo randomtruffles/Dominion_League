@@ -93,6 +93,7 @@ rldepencier	verdant_knight
 turbalence	disturba
 til_lo	WinnieAndFerguson
 CaptainHorizons	CaptainHorizons23
+gamegirl93	bad2titone
 Dan Brooks	Dan Brooks
 ceviri	ceviri
 squirezucco	squirezucco
@@ -162,3 +163,4 @@ rizzymoe	Rizzymoe
 deebagger	DeeBagger
 ErinMolly_	ErinMolly_
 Bucboom55	Bucboom55
+Indbg	Indbg
