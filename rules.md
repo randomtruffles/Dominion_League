@@ -229,7 +229,7 @@ Games should use the default League Match table settings provided by the [Domini
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
-The following settings are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
+The following settings are set by default when you create a new table on [Dominion Online](https://dominion.games/). Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
 
 <a name="4.6.1"></a>4.6.1. "Allow spectators" should be set to Yes.
 
