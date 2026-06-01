@@ -302,11 +302,11 @@ No. All of the cards that you and your opponent have access to will be available
 
 #### Do we play rated or unrated games?
 
-League games are unrated. One reason for this is that rated games do not allow specifying the starting player.
+All custom table games, including League games, are unrated.
 
 #### Which cardlists do we play with?
 
-The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Plunder"). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
+The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Plunder"). These are also the default settings for a table on Dominion Online. Players can agree to make certain changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
 
 #### What are cardlists?
 
