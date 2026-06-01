@@ -203,7 +203,7 @@ During games, you may not attempt to gain a competitive advantage by using tools
 
 ### <a name="4.4"></a>4.4. Starting player
 
-Each player should go first 3 times in a 6 game match. This is automatically handled by the "League Match" table setting (see [Table settings](/rules#4.5)). In the rare event that you can't use the League Match settings, it is each player's responsibility to ensure that they get 3 starts in a match.
+Each player should go first 3 times in a 6 game match. This is automatically handled by the "League Match" table setting (see [Table settings](#4.5)). In the rare event that you can't use the League Match settings, it is each player's responsibility to ensure that they get 3 starts in a match.
 
 <a name="4.4.1"></a>4.4.1. The first game of a match should have a random starting player. This is the default setting when creating a new table on [Dominion Online](https://dominion.games/), and when using the League Match table setting.
 
@@ -364,7 +364,7 @@ The players in each division are ranked by their win rates. This is updated when
 
 ### <a name="5.2"></a>5.2. Tiebreakers
 
-If there is a tie within a division that affects promotion, demotion, or entry into the [Championship match](/rules#5.7), a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
+If there is a tie within a division that affects promotion, demotion, or entry into the [Championship match](#5.7), a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
 
 #### <a name="5.2.1"></a>5.2.1. Head-to-head tiebreaker
 
