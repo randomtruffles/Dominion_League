@@ -265,7 +265,7 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 ### <a name="4.8"></a>4.8. New cards
 
-Per [4.6.6](#4.6.6), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
+Per [4.6.5](#4.6.5), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
 
 <a name="4.8.1"></a>4.8.1. An expansion is considered new if its initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
 
