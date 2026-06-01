@@ -580,7 +580,7 @@ The moderator team follows this process to recruit new moderators:
 
 These rules may be amended by a majority vote of the moderators.
 
-<a name="9.1.1"></a>9.1.1. Moderators may vote “no opinion”, in which case their vote doesn't count towards establishing or preventing a majority. This also applies to other moderator votes, including rulings on protested games ([4.15](#4.15)).
+<a name="9.1.1"></a>9.1.1. Moderators may vote "no opinion", in which case their vote doesn't count towards establishing or preventing a majority. This also applies to other moderator votes, including rulings on protested games ([4.15](#4.15)).
 
 <a name="9.1.2"></a>9.1.2. Major changes, such as those affecting promotion and demotion, will never be made mid-season.
 
