@@ -562,17 +562,17 @@ Moderators are allowed, but not required, to play in the League.
 
 <a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.15](#4.15)).
 
-### <a name="8.5"></a>8.5. Recruiting new moderators
+### <a name="8.4"></a>8.4. Recruiting new moderators
 
 The moderator team follows this process to recruit new moderators:
 
-<a name="8.5.1"></a>8.5.1. The [moderator application](/moderators/apply) is always open.
+<a name="8.4.1"></a>8.4.1. The [moderator application](/moderators/apply) is always open.
 
-<a name="8.5.2"></a>8.5.2. The existing moderator team reviews applications during week 2 of the season.
+<a name="8.4.2"></a>8.4.2. The existing moderator team reviews applications during week 2 of the season.
 
-<a name="8.5.3"></a>8.5.3. The moderators may accept none, some, or all of the applicants.
+<a name="8.4.3"></a>8.4.3. The moderators may accept none, some, or all of the applicants.
 
-<a name="8.5.4"></a>8.5.4. Onboarding/shadowing of new moderators begins during week 3 of the season.
+<a name="8.4.4"></a>8.4.4. Onboarding/shadowing of new moderators begins during week 3 of the season.
 
 ## <a name="9"></a>9. Amendments
 
