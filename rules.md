@@ -241,7 +241,7 @@ The following settings are set by default when you create a new table on [Domini
 
 <a name="4.6.4"></a>4.6.4. "Show VP counter" should be on.
 
-<a name="4.6.5"></a>4.6.5. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies and Prophecies are not considered landscapes, so this can result in kingdoms with up to two landscapes, plus an Ally if a Liaison is present, and/or a Prophecy if an Omen is present. Note that the two landscape slots might not be included by default if your automatch card pool level is set below 10 (see [4.5.3](#4.5.3)).
+<a name="4.6.5"></a>4.6.5. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies and Prophecies are not considered landscapes, so this can result in kingdoms with up to two landscapes, plus an Ally if a Liaison is present, and/or a Prophecy if an Omen is present. Note that the two landscape slots might not be included by default if your automatch card pool level is set below 10 (see [4.5.4](#4.5.4)).
 
 <a name="4.6.6"></a>4.6.6. "Players can see spectator chat" should be off. This is automatically handled by the "League Match" table setting.
 
