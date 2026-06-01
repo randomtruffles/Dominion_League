@@ -350,6 +350,8 @@ There are several types of matches ([adjustment](#5.6.3), [play-in](#5.5), and [
 
 <a name="4.16.9"></a>4.16.9. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
+<a name="4.16.10"></a>4.16.10. The "League Match" table setting does not support tiebreaker or adjustment matches. Some settings for these matches will need to be set manually per [4.5](#4.5).
+
 ## <a name="5"></a>5. Standings
 
 ### <a name="5.1"></a>5.1. Standings
