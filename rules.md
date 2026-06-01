@@ -219,13 +219,15 @@ Each player should go first 3 times in a 6 game match. This is automatically han
 
 Games should use the default League Match table settings provided by the [Dominion Online](https://dominion.games/) client. Click the "League Match" button to enable these settings. In the rare event that you can't use the League Match settings, you should use the general default table settings, with the following exceptions:
 
-<a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
+<a name="4.5.1"></a>4.5.1. "Players can see spectator chat" should be off.
 
 <a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.5.3"></a>4.5.3. "Card Pool Level" should be set to 10, and there should be two landscape slots. (You will only need to change these settings if your automatch card pool settings are different.)
+<a name="4.5.3"></a>4.5.3. "Timer" should be set to "League".
 
-<a name="4.5.4"></a>4.5.4. If neither player has a subscription, the "Disliked" and "Banned" options for "Respected Cards" should be off.
+<a name="4.5.4"></a>4.5.4. "Card Pool Level" should be set to 10, and there should be two landscape slots. (You will only need to change these settings if your automatch card pool settings are different.)
+
+<a name="4.5.5"></a>4.5.5. If neither player has a subscription, the "Disliked" and "Banned" options for "Respected Cards" should be off.
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
