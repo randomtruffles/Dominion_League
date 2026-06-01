@@ -288,7 +288,7 @@ Click the "Friend List" tab in the lobby, enter your opponent's username, and cl
 
 #### How do I make a table?
 
-Click the "New Table" tab or the "Create Table" button in the lobby.
+Click the "New Table" tab or the "Create Table" button in the lobby. Once you've created the table, you will usually want to click the "League Match" button to enable the appropriate table settings.
 
 #### How do I find my opponent's table?
 
