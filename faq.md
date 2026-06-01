@@ -472,4 +472,4 @@ You can choose any of these methods you prefer:
 
 #### How are moderators chosen?
 
-See [recruiting new moderators](/rules#8.5).
+See [recruiting new moderators](/rules#8.4).
