@@ -251,17 +251,9 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.7.1"></a>4.7.1. You may enable the option to increase the frequency of recent card releases (e.g. "Extra 2nd Edition" or "Extra Plunder").
 
-<a name="4.7.2"></a>4.7.2. You may use the expansion toggles to exclude certain expansions. If you only play with a single expansion, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
-
-<a name="4.7.3"></a>4.7.3. You may use the card buttons at the top to require cards from certain expansions.
-
-<a name="4.7.4"></a>4.7.4. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
-
-<a name="4.7.5"></a>4.7.5. You may change the Card Pool Level. If you set the Card Pool Level to 1, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
+<a name="4.7.2"></a>4.7.2. You may lower the Card Pool Level. If you set the Card Pool Level to 1, and you are not using the "League Match" table setting, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
 
 <a name="4.7.6"></a>4.7.6. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
-
-<a name="4.7.7"></a>4.7.7. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
 
 ### <a name="4.8"></a>4.8. New cards
 
