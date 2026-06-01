@@ -562,10 +562,6 @@ Moderators are allowed, but not required, to play in the League.
 
 <a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.15](#4.15)).
 
-### <a name="8.4"></a>8.4. Meeting minutes
-
-Whenever the moderators gather for an official meeting at which rules may change, the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting. This will happen at least once per season.
-
 ### <a name="8.5"></a>8.5. Recruiting new moderators
 
 The moderator team follows this process to recruit new moderators:
