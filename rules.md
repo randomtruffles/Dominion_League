@@ -207,7 +207,7 @@ Each player should go first 3 times in a 6 game match. This is automatically han
 
 <a name="4.4.1"></a>4.4.1. The first game of a match should have a random starting player. This is the default setting when creating a new table on [Dominion Online](https://dominion.games/), and when using the League Match table setting.
 
-<a name="4.4.2"></a>4.4.2. Starting player should alternate for the remaining games.
+<a name="4.4.2"></a>4.4.2. Starting player should alternate for the remaining games. This is automatically handled by the League Match table setting.
 
 <a name="4.4.3"></a>4.4.3. If the table host makes a mistake in setting starting player, future games should be used to correct the discrepancy as quickly as possible. For example, if player A starts games 1 and 2, player B should start games 3 and 4. This should be done even if it is not possible for one of the players to receive 3 starts. For example, if player A starts games 1 through 4, player B should start games 5 and 6.
 
