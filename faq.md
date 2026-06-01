@@ -324,11 +324,11 @@ You can find the "Respected Cards" setting under "Kingdom Options". The "Respect
 
 #### How do I set the starting player at my table?
 
-To have the starting player determined randomly for the first game of a match, check that "Randomized Player Order" in the "Players" box in the upper right is enabled. To set the starting player in subsequent games, turn off "Randomized Player Order". You can change the player order by dragging and dropping, or by using the up and down arrows next to the players' names. Note the username of the player who went first during a game is colored red in the game log and chat box.
+You do not need to set starting player if you are using the "League Match" setting. In the rare event that you aren't able to use the "League Match" setting, to have the starting player determined randomly for the first game of a match, check that "Randomized Player Order" in the "Players" box in the upper right is enabled. To set the starting player in subsequent games, turn off "Randomized Player Order". You can change the player order by dragging and dropping, or by using the up and down arrows next to the players' names. Note the username of the player who went first during a game is colored red in the game log and chat box.
 
 #### What other settings should I be aware of?
 
-You should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
+In the rare event that you aren't able to use the "League Match" setting, you should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 
 <img src="/img/faq/table_settings.PNG" height="300">
 
