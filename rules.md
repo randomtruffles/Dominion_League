@@ -278,11 +278,11 @@ Players may have different opinions on which undos should be allowed, if any.
 <a name="4.9.2"></a>4.9.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
 
 ### <a name="4.10"></a>4.10. Timers
-Games in the Dominion League do not use a timer.
+Games in the Dominion League do not use a timer to enforce play speed. Currently, we are collecting data that will be used to inform changes to the League's timer policy.
 
-<a name="4.10.1"></a>4.10.1. The "Make (opponent) Resign?" prompt in [Dominion Online](https://dominion.games/) should only be used to address connection issues and other technical difficulties (see [4.11](#4.11)). It should not be used to enforce speed of play on your opponent.
+<a name="4.10.1"></a>4.10.1. Games should be played using the "League" timer setting. This is included automatically when using the "League Match" table setting.
 
-<a name="4.10.2"></a>4.10.2. If you feel that an opponent is playing especially slowly, consider politely requesting that they play more quickly, or reaching out to a moderator.
+<a name="4.10.2"></a>4.10.2. The "Make (opponent) Resign?" prompt in [Dominion Online](https://dominion.games/) should only be used to address connection issues and other technical difficulties (see [4.11](#4.11)). It should not be used to enforce speed of play on your opponent.
 
 ### <a name="4.11"></a>4.11. Suspending games
 
