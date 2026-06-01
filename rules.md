@@ -203,7 +203,7 @@ During games, you may not attempt to gain a competitive advantage by using tools
 
 ### <a name="4.4"></a>4.4. Starting player
 
-Each player should go first 3 times in a 6 game match. It is each player's responsibility to ensure that they get 3 starts in a match.
+Each player should go first 3 times in a 6 game match. This is automatically handled by the "League Match" table setting (see [Table settings](/rules#4.5)). In the rare event that you can't use the League Match settings, it is each player's responsibility to ensure that they get 3 starts in a match.
 
 <a name="4.4.1"></a>4.4.1. The first game of a match should have a random starting player. This is the default setting when creating a new table on [Dominion Online](https://dominion.games/).
 
