@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2026-06-01
+date: 2026-06-02
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -259,17 +259,15 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 ### <a name="4.8"></a>4.8. New cards
 
-Per [4.6.5](#4.6.5), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
+Per [4.6.5](#4.6.5), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new cards from Kingdom generation.
 
-<a name="4.8.1"></a>4.8.1. An expansion is considered new if its initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
+<a name="4.8.1"></a>4.8.1. Cards are considered new if their initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
 
-<a name="4.8.2"></a>4.8.2. Previews of expansions are always considered new.
+<a name="4.8.2"></a>4.8.2. Previews are always considered new.
 
-<a name="4.8.3"></a>4.8.3. An expansion is *not* considered new when a new edition is released, even if that edition adds or removes cards.
+<a name="4.8.3"></a>4.8.3. An expansion is not considered new when a new edition is released. Only the cards newly added to that expansion are considered new. Similarly, new promotional cards are considered new, but do not affect the status of previously released promotional cards.
 
-<a name="4.8.4"></a>4.8.4. Promotional cards are not considered new expansions.
-
-<a name="4.8.5"></a>4.8.5. Rules changes, wording changes, new card errata, etc., do not cause cards or expansions to be treated as new.
+<a name="4.8.4"></a>4.8.4. Rules changes, wording changes, new card errata, etc., do not cause cards or expansions to be treated as new.
 
 ### <a name="4.9"></a>4.9. Undos
 
