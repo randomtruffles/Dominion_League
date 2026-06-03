@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2026-06-02
+date: 2026-06-03
 categories: pinned faq
 ---
 #### Contents
@@ -279,6 +279,10 @@ Any time you change the game state by clicking, that's a decision. Changes to th
 #### I've received a play speed warning. What does this mean?
 
 A single play speed warning is not necessarily a cause for alarm, as some players may receive a warning due to an anomalously slow match, without being at significant risk of accruing further warnings. However, it may be an indication that you should try to play faster in the future. This is more likely if the match that triggered the warning was a typical match for you. If you're not sure, we encourage you to reach out to a moderator - we're happy to help you understand the situation, and figure out whether and how you should adjust your play speed.
+
+#### What is the League timer setting?
+
+The League timer setting is similar to Patient. Compared to Patient, it provides 15 additional seconds at the start of your turn, and increases the start of turn minimum time by 30 seconds. The League timer setting may be tweaked going forward based on data and feedback the League collects. Currently, the timer is being used for data collection only, and is not used to enforce play speed.
 
 ## 5. Dominion Online (<http://dominion.games>)
 
