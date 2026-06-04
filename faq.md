@@ -375,11 +375,11 @@ Once you're ready to reload the game, create a new table.
 
 If you were using the "League Match" setting, enable it again, then click Resume to continue your match. Note that this will NOT work if you're trying to resume the sixth game of the match - in that case, skip this step.
 
-<img src="/img/faq/ResumeLeagueTable.png" height="300">
+<img src="/img/faq/ResumeLeagueTable.png" height="125">
 
 Have your opponent join, then click "Load Old Game".
 
-<img src="/img/faq/loadOldGameButton.PNG" height="400">
+<img src="/img/faq/LoadOldGame.png" height="300">
 
 Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0. If you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
 
