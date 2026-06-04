@@ -294,7 +294,7 @@ Click the "Friend List" tab in the lobby, enter your opponent's username, and cl
 
 Click the "New Table" tab or the "Create Table" button in the lobby. Once you've created the table, you will usually want to click the "League Match" button to enable the appropriate table settings.
 
-<img src="/img/faq/LeagueMatchButton.png" height="300">
+<img src="/img/faq/LeagueMatchButton.png" height="400">
 
 #### How do I find my opponent's table?
 
@@ -336,7 +336,7 @@ You do not need to set starting player if you are using the "League Match" setti
 
 Usually, most table settings will be handled for you once you enable the "League Match" setting. These options will no longer be interactive.
 
-<img src="/img/faq/LeagueTableReady.png" height="300">
+<img src="/img/faq/LeagueTableReady.png" height="400">
 
 In the rare event that you aren't able to use the "League Match" setting, you should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 
@@ -348,7 +348,7 @@ This setting can also be changed during a game.
 
 You will otherwise use the default settings (see [table settings](/rules#4.5) and [table settings reference](/rules#4.6) for more information), though note that the two landscape slots might not be included by default if your automatch card pool level is set below 10. The image below shows what your table settings should look like.
 
-![faq_images](/img/faq/OtherSettings.png)
+<img src="/img/faq/OtherSettings.png" height="400">
 
 #### Some settings depend on whether my game has expansions. How can I tell?
 
@@ -381,13 +381,13 @@ Have your opponent join, then click "Load Old Game".
 
 <img src="/img/faq/LoadOldGame.png" height="300">
 
-Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0. If you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
+Enter the game id and click "Load From End" to resume the game from where you left off. If you aren't using the "League Match" setting, you should now see a Decision Index that is greater than 0. If you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
 
-<img src="/img/faq/loadFromEndButton.PNG" height="200">
+<img src="/img/faq/LoadFromEnd.png" height="125">
 
 Make sure the player order is set correctly. You'll see the original player order in gray.
 
-<img src="/img/faq/reloadPlayerOrder.PNG" height="200">
+<img src="/img/faq/reloadPlayerOrder.PNG" height="150">
 
 Now you're ready to play! Both you and your opponent should click "Ready", as you normally would, to start the game.
 
