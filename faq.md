@@ -31,7 +31,7 @@ See [membership requirements](/rules#1.1).
 
 In [Dominion Online](http://dominion.games), click the **Automatch** tab. In the Automatch options, make sure **Player count** is set to **2P** and **Rated games** is set to **Rated**.
 
-![faq_images](/img/faq/PlayRated.png)
+<img src="/img/faq/PlayRated.png" height="300">
 
 #### I didn't respond in time to the Discord message to confirm my signup. Can I sign up again?
 
