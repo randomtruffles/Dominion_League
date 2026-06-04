@@ -334,6 +334,10 @@ You do not need to set starting player if you are using the "League Match" setti
 
 #### What other settings should I be aware of?
 
+Usually, most table settings will be handled for you once you enable the "League Match" setting. These options will no longer be interactive.
+
+<img src="/img/faq/LeagueTableReady.png" height="300">
+
 In the rare event that you aren't able to use the "League Match" setting, you should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 
 <img src="/img/faq/table_settings.PNG" height="300">
@@ -344,7 +348,7 @@ This setting can also be changed during a game.
 
 You will otherwise use the default settings (see [table settings](/rules#4.5) and [table settings reference](/rules#4.6) for more information), though note that the two landscape slots might not be included by default if your automatch card pool level is set below 10. The image below shows what your table settings should look like.
 
-![faq_images](/img/faq/OtherSettings.PNG)
+![faq_images](/img/faq/OtherSettings.png)
 
 #### Some settings depend on whether my game has expansions. How can I tell?
 
@@ -367,7 +371,13 @@ If not, you can use DomBot to retrieve the game id. There are a number of ways t
 
 Next, if you're still in the game, make sure you resign the game, rather than just exiting it. If neither player resigns, the game may never be marked as completed in the database, and you won't be able to reload it.
 
-Once you're ready to reload the game, create a new table, have your opponent join, then click "Load Old Game".
+Once you're ready to reload the game, create a new table.
+
+If you were using the "League Match" setting, enable it again, then click Resume to continue your match. Note that this will NOT work if you're trying to resume the sixth game of the match - in that case, skip this step.
+
+<img src="/img/faq/ResumeLeagueTable.png" height="300">
+
+Have your opponent join, then click "Load Old Game".
 
 <img src="/img/faq/loadOldGameButton.PNG" height="400">
 
