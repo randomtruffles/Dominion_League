@@ -294,6 +294,8 @@ Click the "Friend List" tab in the lobby, enter your opponent's username, and cl
 
 Click the "New Table" tab or the "Create Table" button in the lobby. Once you've created the table, you will usually want to click the "League Match" button to enable the appropriate table settings.
 
+<img src="/img/faq/LeagueMatchButton.png" height="300">
+
 #### How do I find my opponent's table?
 
 The easiest way is to add your opponent as a friend, using the "Friend List" tab. Then, go back to the "Automatch" tab, and click "join" next to their username in the Friends list on the right side. They do not need to add you as a friend unless they have "Followers see your activity" set to OFF.
