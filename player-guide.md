@@ -49,7 +49,7 @@ categories: pinned
 ### Need Help?
 
 * If you need a moderator's attention urgently, use one of these contact methods:
-   * Tag `@League Mod` in your division channel. Please tag the role for urgent matters; do not wait for your division moderator.
+   * Tag `@LeagueMod` in your division channel. Please tag the role for urgent matters; do not wait for your division moderator.
    * Send a message to the [Dominion League Hotline](https://docs.google.com/forms/d/e/1FAIpQLSf2NR9VkDRAU-lTTKJdyQOiUuFyCjMbh9Xf7HoANX-jakAFRw/viewform).
 * If you have a non-urgent question or problem, you can:
    * Check the [Rules](https://dominionleague.org/rules) and/or [FAQ](https://dominionleague.org/faq) to see if they help with answering your question.
