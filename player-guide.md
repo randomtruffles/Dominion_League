@@ -1,6 +1,7 @@
 ---
 title: Player Guide
-subtitle: Reminders for New and Returning Players of the <a href="about.html">Dominion League</a>
+subtitle: Reminders for New and Returning Players of the <a
+  href="about.html">Dominion League</a>
 layout: rules_faq
 date: 2024-10-10
 categories: pinned
@@ -25,10 +26,7 @@ categories: pinned
 ### Playing Matches
 
 * Create a new table on dominion.games, or find your opponent's table by adding them to your friend list and then clicking Join next to their name on the Automatch tab. It is also possible to search through the list of tables, but remember that usernames are case-sensitive.
-* Check that the table settings are correct (see [Section 4.5 of the rules](https://dominionleague.org/rules#4.5)). Generally, as long as you created a new table rather than re-using an existing one, this just means you need to:
-   * Turn off "Players can see spectator chat".
-   * Check that the Card Pool Level is set to 10 and that there are two landscape slots.
-   * If neither player has a subscription, turn off the "Disliked" and "Banned" lists. Otherwise, leave these turned on.
+* Check that the table settings are correct (see [Section 4.5 of the rules](https://dominionleague.org/rules#4.5)). Generally, this just requires enabling the "League Match" option, but you may need to tweak other settings if you are unable to use the "League Match" option.
 * If you and your opponent both want to, you can change certain other table settings (see [Section 4.7 of the rules](https://dominionleague.org/rules#4.7)).
 * Each match consists of six games.
 * After the first game, turn off "Random player order" and set the player order manually each game so that you alternate who goes first.
