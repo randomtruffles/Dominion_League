@@ -18,7 +18,7 @@ categories: pinned
 
 ### Scheduling Matches
 
-* Be proactive about scheduling! Asking if someone is online to play spontaneously does not often work well, so you should regularly post your upcoming availability in your division channel (make sure to tag the division or specific players). If you decline an opponent's suggestion for a time to play, offer another in response.
+* Be proactive about scheduling! Asking if someone is online to play spontaneously does not often work well, so you should regularly post your upcoming availability in your division channel - make sure to tag the division or specific players. If you decline an opponent's suggestion for a time to play, offer another in response.
 * Once you've arranged a time with an opponent, add your match to the matches calendar using the Calendar form pinned in your division channel. This helps your moderator to keep track of scheduling progress and additionally allows for spectators; they might be willing to share their discussions from the game chat afterwards to help you learn and improve.
 * For answers to questions about scheduling, see [Section 3 of the FAQ](https://dominionleague.org/faq#3-scheduling-matches).
 
