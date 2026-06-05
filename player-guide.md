@@ -13,7 +13,7 @@ categories: pinned
 * Use your division channel to start contacting your opponents to arrange your matches. Tag the whole division so that all your opponents will get a notification. Example post:
 
 ![Ruapadi being a fantastic scheduler](/img/uploads/schedulingpost.png "Example Scheduling Post")
-* Don't forget to check for and respond to posts from your opponents too.
+* Don't forget to check for and respond to posts from your opponents.
 * If you're unsure about anything or have a question, contact your moderator.
 
 ### Scheduling Matches
