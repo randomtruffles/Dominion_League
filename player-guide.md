@@ -26,11 +26,11 @@ categories: pinned
 ### Playing Matches
 
 * Create a new table on dominion.games, or find your opponent's table by adding them to your friend list and then clicking Join next to their name on the Automatch tab. It is also possible to search through the list of tables, but remember that usernames are case-sensitive.
-* Check that the table settings are correct (see [Section 4.5 of the rules](https://dominionleague.org/rules#4.5)). Generally, this just requires enabling the "League Match" option, but you may need to tweak other settings if you are unable to use the "League Match" option.
+* If you created the table, in most cases you just need to enable the "League Match" option, and you'll be ready to play. If you are playing an extra/non-standard match (i.e. a tiebreaker), or are unable to use the "League Match" option for any reason, you'll need to tweak other settings. See [Section 4.5 of the rules](https://dominionleague.org/rules#4.5) for more information.
 * If you and your opponent both want to, you can change certain other table settings (see [Section 4.7 of the rules](https://dominionleague.org/rules#4.7)).
 * Each match consists of six games.
 * After the first game, turn off "Random player order" and set the player order manually each game so that you alternate who goes first.
-* Immediately after you've finished a playing session, report the results using the Results form (pinned in your division channel). Only one player should report the results; typically the winner does this, unless you agree otherwise. Report the games you've just played even if the match is not complete. Later, when you’ve played the remaining games, only report the new games; the system will add everything together.
+* Immediately after you've finished a playing session, report the results using the Results form (pinned in your division channel). Only one player should report the results; typically the winner does this, unless you agree otherwise. Report the games you've just played even if the match is not complete. Later, when you've played the remaining games, only report the new games; the system will add everything together.
 * For answers to questions about playing matches, see [Section 4 of the FAQ](https://dominionleague.org/faq#4-playing-matches).
 
 ### Using DomBot
