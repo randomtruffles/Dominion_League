@@ -14,7 +14,7 @@ categories: pinned
 
 ![Ruapadi being a fantastic scheduler](/img/uploads/schedulingpost.png "Example Scheduling Post")
 * Don't forget to check for and respond to posts from your opponents.
-* If you're unsure about anything or have a question, contact your moderator.
+* If you're unsure about anything, or have a question, contact your moderator.
 
 ### Scheduling Matches
 
