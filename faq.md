@@ -387,7 +387,7 @@ If you're using the "League Match" setting, select the game id from the buttons.
 
 If you aren't using the "League Match" setting, enter the game id in the text box and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0.
 
-<img src="/img/faq/LoadFromEnd.png" height="150">
+<img src="/img/faq/LoadFromEnd.png" height="125">
 
 In either case, if you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
 
