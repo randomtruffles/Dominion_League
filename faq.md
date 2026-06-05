@@ -391,7 +391,7 @@ If you aren't using the "League Match" setting, enter the game id in the text bo
 
 In either case, if you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
 
-Make sure the player order is set correctly. You'll see the original player order in gray.
+Otherwise, make sure the player order is set correctly. You'll see the original player order in gray.
 
 <img src="/img/faq/reloadPlayerOrder.PNG" height="150">
 
