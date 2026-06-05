@@ -1,8 +1,28 @@
 ---
 layout: default
-title: Current Season
+title: Dominion League Season 75 Standings
 ---
+
+<div class="home">
+  <div class="container-centered">
+    <h3><a style="text-decoration: none" href="season74.html">&nbsp;<b><</b>&nbsp;</a>Season 75 Standings<a style="text-decoration: none" href="season76.html">&nbsp;<b>></b>&nbsp;</a></h3>
+    <h5>2026-04-06 to 2026-05-17</h5>
+    <h5><a href="{{site.baseurl}}/past_standings.html">All Past Season Standings</a></h5>
+    <h5><a href="{{site.baseurl}}/player_database.html">Player Database</a></h5>
+    <!-- Filter buttons -->
+    <div id="myBtnContainer">
+    </div>
+    <div class="spacing"></div>
+    <div id="single-division"></div>
+    <div id="all-divisions"></div>
+    <div class="spacing"></div>
+  </div>
+</div>
+
+<script src="/js/generatingTables.js"></script>
+<script src="/js/standingsUtils.js"></script>
+<script src="/js/past_standings.js"></script>
 <script>
-  let url = "{{site.baseurl}}/current_standings.html" + window.location.search;
-  window.location.href = url;
+divisions = {{ site.data.league_history.s75 | jsonify }}
+loadPage("75");
 </script>
