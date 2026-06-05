@@ -381,7 +381,15 @@ Have your opponent join, then click "Load Old Game".
 
 <img src="/img/faq/LoadOldGame.png" height="300">
 
-Enter the game id and click "Load From End" to resume the game from where you left off. If you aren't using the "League Match" setting, you should now see a Decision Index that is greater than 0. If you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
+If you're using the "League Match" setting, select the game id from the buttons. You'll see your selection in the text box.
+
+<img src="/img/faq/LoadOldGameSelectGameId.png" height="150">
+
+<img src="/img/faq/LoadOldGameGameIdSelected.png" height="150">
+
+If you aren't using the "League Match" setting, enter the game id in the text box and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0.
+
+In either case, if you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
 
 <img src="/img/faq/LoadFromEnd.png" height="125">
 
