@@ -27,6 +27,7 @@ categories: pinned
 * Create a new table on dominion.games, or find your opponent's table by adding them to your friend list and then clicking Join next to their name on the Automatch tab. It is also possible to search through the list of tables, but remember that usernames are case-sensitive.
 * If you created the table, in most cases you just need to enable the "League Match" option, and you'll be ready to play. If you are playing an extra/non-standard match (i.e. a tiebreaker), or are unable to use the "League Match" option for any reason, you'll need to tweak a few other settings:
   * Set the timer to "League"
+    * This season, the timer is being used for data collection purposes only
   * Turn off "Players can see spectator chat"
   * Check that the Card Pool Level is set to 10 and that there are two landscape slots
   * If neither player has a subscription, turn off the "Disliked" and "Banned" lists. Otherwise, leave these on.
