@@ -6,7 +6,6 @@ layout: rules_faq
 date: 2026-06-05
 categories: pinned
 ---
-
 ### Getting Started
 
 * Read through all the information posted at the top of your division channel. It provides details on your opponents, your moderator, and deadlines for the season, as well as handy links to resources you'll need.
