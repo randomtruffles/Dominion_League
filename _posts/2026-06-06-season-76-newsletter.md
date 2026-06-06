@@ -11,7 +11,7 @@ Welcome to Season 76! The Dominion Online website has some new features that sho
 
 **League Table Setting**
 
-When creating a table, there is now a selection called "League Match" that should be selected for playing your matches - try to make this a habit: in future seasons, we may not count games played without this setting enabled. See it's location in the table setup screen below:
+When creating a table, there is now a selection called "League Match" that should be selected for playing your matches. Try to make selecting this button a habit - in future seasons, we may not count games played without this setting enabled. See its location in the table setup screen below:
 
 <img src="/img/faq/LeagueMatchButton.png" height="400">
 
