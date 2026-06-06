@@ -25,14 +25,7 @@ categories: pinned
 ### Playing Matches
 
 * Create a new table on dominion.games, or find your opponent's table by adding them to your friend list and then clicking Join next to their name on the Automatch tab. It is also possible to search through the list of tables, but remember that usernames are case-sensitive.
-* If you created the table, in most cases you just need to enable the "League Match" option, and you'll be ready to play. If you are playing an extra/non-standard match (i.e. a tiebreaker), or are unable to use the "League Match" option for any reason, you'll need to tweak a few other settings:
-  * Set the timer to "League"
-    * This season, the timer is being used for data collection purposes only
-  * Turn off "Players can see spectator chat"
-  * Check that the Card Pool Level is set to 10 and that there are two landscape slots
-  * If neither player has a subscription, turn off the "Disliked" and "Banned" lists. Otherwise, leave these on.
-
-  See [Section 4.5 of the rules](https://dominionleague.org/rules#4.5) for more information.
+* If you created the table, in most cases you just need to enable the "League Match" option, and you'll be ready to play. If you are playing an extra/non-standard match (i.e. a tiebreaker), or are unable to use the "League Match" option for any reason, you'll need to tweak a few other settings. See [Section 4.5 of the rules](https://dominionleague.org/rules#4.5) for more information.
 * If you and your opponent both want to, you can change certain other table settings (see [Section 4.7 of the rules](https://dominionleague.org/rules#4.7)).
 * Each match consists of six games.
 * After the first game, if you aren't using the "League Match" option, turn off "Random player order" and set the player order manually each game so that you alternate who goes first.
