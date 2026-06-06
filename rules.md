@@ -2,7 +2,7 @@
 title: League Rules
 subtitle: Official Rules of the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2026-04-05
+date: 2026-06-06
 categories: pinned rules
 ---
 The changelog for the Rules and Regulations can be found [here](/rules-changelog).
@@ -155,7 +155,7 @@ Always play your matches as competitively as possible. Even if your promotion or
 
 ### <a name="3.5"></a>3.5. Play speed
 
-Games in the Dominion League do not use an in-game timer. You are allowed to play at a relaxed pace, but out of consideration for your opponents, the League requires that you maintain a reasonable minimum play speed. This means that you should not regularly exceed your opponent's decision time over the course of a match by an excessive amount. An excessive amount of excess time is considered to be approximately 45 minutes for a six-game match. We evaluate this using a metric that accounts for differences in number of decisions made by each player and the possibility that your opponent is playing unusually quickly.
+Games in the Dominion League do not enforce play speed using the in-game timer (see [Timers](#4.10) for more information). You are allowed to play at a relaxed pace, but out of consideration for your opponents, the League requires that you maintain a reasonable minimum play speed. This means that you should not regularly exceed your opponent's decision time over the course of a match by an excessive amount. An excessive amount of excess time is considered to be approximately 45 minutes for a six-game match. We evaluate this using a metric that accounts for differences in number of decisions made by each player and the possibility that your opponent is playing unusually quickly.
 
 <a name="3.5.1"></a>3.5.1. Play speed within a match is evaluated via Adjusted Excess Time. Your Adjusted Excess Time is calculated by averaging the number of decisions that you and your opponent made during a match, multiplying the result by your average time per decision, doing the same for your opponent, then subtracting your opponent's value from your value. For example, if you took 5 seconds per decision over 450 decisions, and your opponent took 4 seconds per decision over 550 decisions, the average decision count would be `(450+550)/2 = 500`, your Adjusted Time would be `5s*500 = 2500s`, your opponent's Adjusted Time would be `4s*500 = 2000s`, and your Adjusted Excess Time would be `2500s-2000s = 500s = 8m20s`, i.e. 8 minutes and 20 seconds.
 
@@ -203,33 +203,35 @@ During games, you may not attempt to gain a competitive advantage by using tools
 
 ### <a name="4.4"></a>4.4. Starting player
 
-Each player should go first 3 times in a 6 game match. It is each player's responsibility to ensure that they get 3 starts in a match.
+Each player should go first 3 times in a 6 game match. This is automatically handled by the "League Match" table setting (see [Table settings](#4.5)). In the rare event that you can't use the League Match settings, it is each player's responsibility to ensure that they get 3 starts in a match.
 
-<a name="4.4.1"></a>4.4.1. The first game of a match should have a random starting player. This is the default setting when creating a new table on Dominion Online.
+<a name="4.4.1"></a>4.4.1. The first game of a match should have a random starting player. This is the default setting when creating a new table on [Dominion Online](https://dominion.games/), and when using the League Match table setting.
 
-<a name="4.4.2"></a>4.4.2. Starting player should alternate for the remaining games.
+<a name="4.4.2"></a>4.4.2. Starting player should alternate for the remaining games. This is automatically handled by the League Match table setting.
 
-<a name="4.4.3"></a>4.4.3. If the table host makes a mistake in setting starting player, future games should be used to correct the discrepancy as quickly as possible. For example, if player A starts games 1 and 2, player B should start games 3 and 4. This should be done even if it is not possible for one of the players to receive 3 starts. For example, if player A starts games 1 through 4, player B should start games 5 and 6.
+<a name="4.4.3"></a>4.4.3. If you are unable to use the League Match table setting, and the table host makes a mistake in setting starting player, future games should be used to correct the discrepancy as quickly as possible. For example, if player A starts games 1 and 2, player B should start games 3 and 4. This should be done even if it is not possible for one of the players to receive 3 starts. For example, if player A starts games 1 through 4, player B should start games 5 and 6.
 
-<a name="4.4.4"></a>4.4.4. If the table host makes a mistake in setting starting player which is caught during an ongoing game that has not reached turn 2, and if one player cannot reach 3 starts using future games per [4.4.3](#4.4.3), either player may request that the game be abandoned. Otherwise, the game must be played out normally.
+<a name="4.4.4"></a>4.4.4. If you are unable to use the League Match table setting, either player may request that a game with an incorrect starting player be abandoned if the mistake is caught during an ongoing game that has not reached turn 2, and one player can't reach 3 starts using future games per [4.4.3](#4.4.3). Otherwise, the game must be played out normally.
 
 <a name="4.4.5"></a>4.4.5. Games cannot be voided after the fact due to a mismatch in starting player counts.
 
 ### <a name="4.5"></a>4.5. Table settings
 
-Games should use the default table settings provided by the [Dominion Online](https://dominion.games/) client, with the following exceptions:
+Games should use the default League Match table settings provided by the [Dominion Online](https://dominion.games/) client. Click the "League Match" button to enable these settings. In the rare event that you can't use the League Match settings, you should use the general default table settings, with the following exceptions:
 
-<a name="4.5.1"></a>4.5.1. “Players can see spectator chat” should be off.
+<a name="4.5.1"></a>4.5.1. "Players can see spectator chat" should be off.
 
 <a name="4.5.2"></a>4.5.2. The player order should be set per [4.4](#4.4).
 
-<a name="4.5.3"></a>4.5.3. "Card Pool Level" should be set to 10, and there should be two landscape slots. (You will only need to change these settings if your automatch card pool settings are different.)
+<a name="4.5.3"></a>4.5.3. "Timer" should be set to "League".
 
-<a name="4.5.4"></a>4.5.4. If neither player has a subscription, the "Disliked" and "Banned" options for "Respected Cards" should be off.
+<a name="4.5.4"></a>4.5.4. "Card Pool Level" should be set to 10, and there should be two landscape slots. (You will only need to change these settings if your automatch card pool settings are different.)
+
+<a name="4.5.5"></a>4.5.5. If neither player has a subscription, the "Disliked" and "Banned" options for "Respected Cards" should be off.
 
 ### <a name="4.6"></a>4.6 Table settings reference
 
-The following settings are set by default when you create a new table on Dominion Online. Per [4.5](#4.5), you should use these settings, but you do not need to set them directly. They are listed here for your information and reference.
+The following settings are set by default when you create a new table on [Dominion Online](https://dominion.games/). Per [4.5](#4.5), you should use these settings. You do not need to set them directly, unless you are unable to use the "League Match" setting, in which case you will need to set [4.6.6](#4.6.6) and [4.6.7](#4.6.7) manually. They are listed here for your information and reference.
 
 <a name="4.6.1"></a>4.6.1. "Allow spectators" should be set to Yes.
 
@@ -237,11 +239,13 @@ The following settings are set by default when you create a new table on Dominio
 
 <a name="4.6.3"></a>4.6.3. Options for increasing the frequency of recent card releases (e.g. "Extra 2nd Edition" or "Extra Plunder") should be off.
 
-<a name="4.6.4"></a>4.6.4. "Rated game" should be off.
+<a name="4.6.4"></a>4.6.4. "Show VP counter" should be on.
 
-<a name="4.6.5"></a>4.6.5. "Show VP counter" should be on.
+<a name="4.6.5"></a>4.6.5. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies and Prophecies are not considered landscapes, so this can result in kingdoms with up to two landscapes, plus an Ally if a Liaison is present, and/or a Prophecy if an Omen is present. Note that the two landscape slots might not be included by default if your automatch card pool level is set below 10 (see [4.5.4](#4.5.4)).
 
-<a name="4.6.6"></a>4.6.6. Under "Kingdom Options", no particular cards, landscapes, landscape types, or expansions should be selected or excluded. Colonies and Shelters should be set to random. This will result in a randomly-generated kingdom using all cards that either player has access to, with zero to two landscapes and a maximum of one Way. Note that Allies and Prophecies are not considered landscapes, so this can result in kingdoms with up to two landscapes, plus an Ally if a Liaison is present, and/or a Prophecy if an Omen is present. Note that the two landscape slots might not be included by default if your automatch card pool level is set below 10 (see [4.5.3](#4.5.3)).
+<a name="4.6.6"></a>4.6.6. "Players can see spectator chat" should be off. This is automatically turned off by the "League Match" table setting once the match starts.
+
+<a name="4.6.7"></a>4.6.7. "Timer" should be set to "League". This is automatically handled by the "League Match" table setting.
 
 ### <a name="4.7"></a>4.7. Modifying table settings
 
@@ -249,31 +253,21 @@ By mutual agreement, you and your opponent may change the table settings specifi
 
 <a name="4.7.1"></a>4.7.1. You may enable the option to increase the frequency of recent card releases (e.g. "Extra 2nd Edition" or "Extra Plunder").
 
-<a name="4.7.2"></a>4.7.2. You may use the expansion toggles to exclude certain expansions. If you only play with a single expansion, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
-
-<a name="4.7.3"></a>4.7.3. You may use the card buttons at the top to require cards from certain expansions.
-
-<a name="4.7.4"></a>4.7.4. You may specify a maximum of either one card or one landscape. You cannot agree to use deprecated cards or landscapes.
-
-<a name="4.7.5"></a>4.7.5. You may change the Card Pool Level. If you set the Card Pool Level to 1, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
+<a name="4.7.2"></a>4.7.2. You may lower the Card Pool Level. If you set the Card Pool Level to 1, and you are not using the "League Match" table setting, you must turn off all options for "Respected Cards" ("Banned", "Disliked", and "Liked").
 
 <a name="4.7.6"></a>4.7.6. For games using expansions and a Card Pool Level of 2 or higher, you may agree to turn on the "Liked" option for "Respected Cards".
 
-<a name="4.7.7"></a>4.7.7. You may agree to generate a full kingdom using a public 3rd-party kingdom generator, such as the !mix command in Discord. You may not agree to use private 3rd-party kingdom generators, such as phone apps.
-
 ### <a name="4.8"></a>4.8. New cards
 
-Per [4.6.6](#4.6.6), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new expansions from Kingdom generation.
+Per [4.6.5](#4.6.5), the default card pool for Kingdom generation each season includes all cards. However, either player may opt to remove new cards from Kingdom generation.
 
-<a name="4.8.1"></a>4.8.1. An expansion is considered new if its initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
+<a name="4.8.1"></a>4.8.1. Cards are considered new if their initial version was released after the end of the previous Dominion League season. For example, Allies, which was released in the final week of season 50, would be considered new for season 50, but not for season 51.
 
-<a name="4.8.2"></a>4.8.2. Previews of expansions are always considered new.
+<a name="4.8.2"></a>4.8.2. Previews are always considered new.
 
-<a name="4.8.3"></a>4.8.3. An expansion is *not* considered new when a new edition is released, even if that edition adds or removes cards.
+<a name="4.8.3"></a>4.8.3. An expansion is not considered new when a new edition is released. Only the cards newly added to that expansion are considered new. Similarly, new promotional cards are considered new, but do not affect the status of previously released promotional cards.
 
-<a name="4.8.4"></a>4.8.4. Promotional cards are not considered new expansions.
-
-<a name="4.8.5"></a>4.8.5. Rules changes, wording changes, new card errata, etc., do not cause cards or expansions to be treated as new.
+<a name="4.8.4"></a>4.8.4. Rules changes, wording changes, new card errata, etc., do not cause cards or expansions to be treated as new.
 
 ### <a name="4.9"></a>4.9. Undos
 
@@ -284,11 +278,11 @@ Players may have different opinions on which undos should be allowed, if any.
 <a name="4.9.2"></a>4.9.2. You may choose a different policy regarding which undos you will allow, so long as you announce it to your opponent before the game.
 
 ### <a name="4.10"></a>4.10. Timers
-Games in the Dominion League do not use a timer.
+Games in the Dominion League do not use a timer to enforce play speed. Currently, we are collecting data that will be used to inform changes to the League's timer policy.
 
-<a name="4.10.1"></a>4.10.1. The "Make (opponent) Resign?" prompt in Dominion Online should only be used to address connection issues and other technical difficulties (see [4.11](#4.11)). It should not be used to enforce speed of play on your opponent.
+<a name="4.10.1"></a>4.10.1. Games should be played using the "League" timer setting. This is included automatically when using the "League Match" table setting.
 
-<a name="4.10.2"></a>4.10.2. If you feel that an opponent is playing especially slowly, consider politely requesting that they play more quickly, or reaching out to a moderator.
+<a name="4.10.2"></a>4.10.2. The "Make (opponent) Resign?" prompt in [Dominion Online](https://dominion.games/) should only be used to address connection issues and other technical difficulties (see [4.11](#4.11)). It should not be used to enforce speed of play on your opponent.
 
 ### <a name="4.11"></a>4.11. Suspending games
 
@@ -356,6 +350,8 @@ There are several types of matches ([adjustment](#5.6.3), [play-in](#5.5), and [
 
 <a name="4.16.9"></a>4.16.9. If neither player responds promptly or both respond but cannot arrange the match in the required time, the moderators will randomly choose a winner.
 
+<a name="4.16.10"></a>4.16.10. The "League Match" table setting does not support tiebreaker or adjustment matches. Some settings for these matches will need to be set manually per [4.5](#4.5).
+
 ## <a name="5"></a>5. Standings
 
 ### <a name="5.1"></a>5.1. Standings
@@ -364,7 +360,7 @@ The players in each division are ranked by their win rates. This is updated when
 
 ### <a name="5.2"></a>5.2. Tiebreakers
 
-If there is a tie within a division that affects promotion, demotion, or entry into the [Championship match](/rules#5.7), a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
+If there is a tie within a division that affects promotion, demotion, or entry into the [Championship match](#5.7), a head-to-head tiebreaker is applied. If there is still a tie, a tiebreaker match may be required.
 
 #### <a name="5.2.1"></a>5.2.1. Head-to-head tiebreaker
 
@@ -564,21 +560,17 @@ Moderators are allowed, but not required, to play in the League.
 
 <a name="8.3.2"></a>8.3.2. Moderators are responsible for adjudicating any disputed rules infractions, including ruling on protested games (see [4.15](#4.15)).
 
-### <a name="8.4"></a>8.4. Meeting minutes
-
-Whenever the moderators gather for an official meeting at which rules may change, the agenda of the meeting and the outcome of any votes, including the number dissenting, will be made public within a week of the meeting. This will happen at least once per season.
-
-### <a name="8.5"></a>8.5. Recruiting new moderators
+### <a name="8.4"></a>8.4. Recruiting new moderators
 
 The moderator team follows this process to recruit new moderators:
 
-<a name="8.5.1"></a>8.5.1. The [moderator application](/moderators/apply) is always open.
+<a name="8.4.1"></a>8.4.1. The [moderator application](/moderators/apply) is always open.
 
-<a name="8.5.2"></a>8.5.2. The existing moderator team reviews applications during week 2 of the season.
+<a name="8.4.2"></a>8.4.2. The existing moderator team reviews applications during week 2 of the season.
 
-<a name="8.5.3"></a>8.5.3. The moderators may accept none, some, or all of the applicants.
+<a name="8.4.3"></a>8.4.3. The moderators may accept none, some, or all of the applicants.
 
-<a name="8.5.4"></a>8.5.4. Onboarding/shadowing of new moderators begins during week 3 of the season.
+<a name="8.4.4"></a>8.4.4. Onboarding/shadowing of new moderators begins during week 3 of the season.
 
 ## <a name="9"></a>9. Amendments
 
@@ -586,7 +578,7 @@ The moderator team follows this process to recruit new moderators:
 
 These rules may be amended by a majority vote of the moderators.
 
-<a name="9.1.1"></a>9.1.1. Moderators may vote “no opinion”, in which case their vote doesn't count towards establishing or preventing a majority. This also applies to other moderator votes, including rulings on protested games ([4.15](#4.15)).
+<a name="9.1.1"></a>9.1.1. Moderators may vote "no opinion", in which case their vote doesn't count towards establishing or preventing a majority. This also applies to other moderator votes, including rulings on protested games ([4.15](#4.15)).
 
 <a name="9.1.2"></a>9.1.2. Major changes, such as those affecting promotion and demotion, will never be made mid-season.
 
