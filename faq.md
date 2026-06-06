@@ -2,7 +2,7 @@
 title: Dominion League FAQ
 subtitle: Frequently Asked Questions for the <a href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2026-02-17
+date: 2026-06-06
 categories: pinned faq
 ---
 #### Contents
@@ -31,7 +31,7 @@ See [membership requirements](/rules#1.1).
 
 In [Dominion Online](http://dominion.games), click the **Automatch** tab. In the Automatch options, make sure **Player count** is set to **2P** and **Rated games** is set to **Rated**.
 
-![faq_images](/img/faq/Capture_Ranked.PNG)
+<img src="/img/faq/PlayRated.png" height="300">
 
 #### I didn't respond in time to the Discord message to confirm my signup. Can I sign up again?
 
@@ -182,7 +182,7 @@ See [starting player](/rules#4.4).
 
 #### Which cards do we play with?
 
-Per [4.5.3](/rules#4.5.3) and [4.6.6](/rules#4.6.6), the default is to play with all the cards that you and/or your opponent have access to. If you have a subscription, you get to play with all of the expansions you have. If you do not have a subscription, but your opponent does, you may need to learn some new cards.
+Per [4.5.4](/rules#4.5.4) and [4.6.5](/rules#4.6.5), the default is to play with all the cards that you and/or your opponent have access to. If you have a subscription, you get to play with all of the expansions you have. If you do not have a subscription, but your opponent does, you may need to learn some new cards.
 
 #### Can I request an undo? Do I need to grant an undo?
 
@@ -254,7 +254,7 @@ See [play to the best of your ability](/rules#3.4).
 
 #### What can I do if my opponent is playing slowly?
 
-Games in the Dominion League do not use an in-game timer. Players are allowed to play at a relaxed pace, and you can expect some of your opponents to do so.
+Games in the Dominion League do not use an in-game timer to enforce play speed (we are currently using the timer to collect data which will be used to inform updates to our play speed policies). Players are allowed to play at a relaxed pace, and you can expect some of your opponents to do so.
 
 However, out of consideration for your everyone's time and patience, the League requires that all players maintain a reasonable minimum pace of play (see [play speed](/rules#3.5)). The League automatically collects play speed data for all matches, and if your opponent fails to meet the minimum pace, they will receive a play speed warning after the match. A player who repeatedly receives these warnings will receive a suspension. We hope that these measures mean that you will very rarely encounter a match where the pace of play is unreasonably slow. During a match, if you feel that your opponent is playing excessively slowly, you can consider politely requesting that they play a bit faster.
 
@@ -280,6 +280,10 @@ Any time you change the game state by clicking, that's a decision. Changes to th
 
 A single play speed warning is not necessarily a cause for alarm, as some players may receive a warning due to an anomalously slow match, without being at significant risk of accruing further warnings. However, it may be an indication that you should try to play faster in the future. This is more likely if the match that triggered the warning was a typical match for you. If you're not sure, we encourage you to reach out to a moderator - we're happy to help you understand the situation, and figure out whether and how you should adjust your play speed.
 
+#### What is the League timer setting?
+
+The League timer setting is similar to Patient. Compared to Patient, it provides 15 additional seconds at the start of your turn, and increases the start of turn minimum time by 30 seconds. The League timer setting may be tweaked going forward based on data and feedback the League collects. Currently, the timer is being used for data collection only, and is not used to enforce play speed.
+
 ## 5. Dominion Online (<http://dominion.games>)
 
 #### How do I add someone from my division as a friend on Dominion Online?
@@ -288,7 +292,9 @@ Click the "Friend List" tab in the lobby, enter your opponent's username, and cl
 
 #### How do I make a table?
 
-Click the "New Table" tab or the "Create Table" button in the lobby.
+Click the "New Table" tab or the "Create Table" button in the lobby. Once you've created the table, you will usually want to click the "League Match" button to enable the appropriate table settings.
+
+<img src="/img/faq/LeagueMatchButton.png" height="400">
 
 #### How do I find my opponent's table?
 
@@ -302,11 +308,11 @@ No. All of the cards that you and your opponent have access to will be available
 
 #### Do we play rated or unrated games?
 
-League games are unrated. One reason for this is that rated games do not allow specifying the starting player.
+All custom table games, including League games, are unrated.
 
 #### Which cardlists do we play with?
 
-The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Plunder"). These are also the default settings for a table on Dominion Online. Players can agree to make changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
+The default is to respect the disliked and banned cardlists, and to use no other special rules (such as "Extra Plunder"). These are also the default settings for a table on Dominion Online. Players can agree to make certain changes to this, such as respecting the liked cardlist. See [table settings](/rules#4.5), [table settings reference](/rules#4.6), and [modifying table settings](/rules#4.7) for more information.
 
 #### What are cardlists?
 
@@ -324,11 +330,15 @@ You can find the "Respected Cards" setting under "Kingdom Options". The "Respect
 
 #### How do I set the starting player at my table?
 
-To have the starting player determined randomly for the first game of a match, check that "Randomized Player Order" in the "Players" box in the upper right is enabled. To set the starting player in subsequent games, turn off "Randomized Player Order". You can change the player order by dragging and dropping, or by using the up and down arrows next to the players' names. Note the username of the player who went first during a game is colored red in the game log and chat box.
+You do not need to set starting player if you are using the "League Match" setting. In the rare event that you aren't able to use the "League Match" setting, to have the starting player determined randomly for the first game of a match, check that "Randomized Player Order" in the "Players" box in the upper right is enabled. To set the starting player in subsequent games, turn off "Randomized Player Order". You can change the player order by dragging and dropping, or by using the up and down arrows next to the players' names. Note the username of the player who went first during a game is colored red in the game log and chat box.
 
 #### What other settings should I be aware of?
 
-You should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
+Usually, most table settings will be handled for you once you enable the "League Match" setting. These options will no longer be interactive.
+
+<img src="/img/faq/LeagueTableReady.png" height="400">
+
+In the rare event that you aren't able to use the "League Match" setting, you should uncheck "Players can see spectator chat" so that spectators can discuss the game with each other. They are usually willing to share their insights with you after the game.
 
 <img src="/img/faq/table_settings.PNG" height="300">
 
@@ -338,7 +348,7 @@ This setting can also be changed during a game.
 
 You will otherwise use the default settings (see [table settings](/rules#4.5) and [table settings reference](/rules#4.6) for more information), though note that the two landscape slots might not be included by default if your automatch card pool level is set below 10. The image below shows what your table settings should look like.
 
-![faq_images](/img/faq/OtherSettings.PNG)
+<img src="/img/faq/OtherSettings.png" height="400">
 
 #### Some settings depend on whether my game has expansions. How can I tell?
 
@@ -361,17 +371,29 @@ If not, you can use DomBot to retrieve the game id. There are a number of ways t
 
 Next, if you're still in the game, make sure you resign the game, rather than just exiting it. If neither player resigns, the game may never be marked as completed in the database, and you won't be able to reload it.
 
-Once you're ready to reload the game, create a new table, have your opponent join, then click "Load Old Game".
+Once you're ready to reload the game, create a new table.
 
-<img src="/img/faq/loadOldGameButton.PNG" height="400">
+If you were using the "League Match" setting, enable it again, then click Resume to continue your match. Note that this will NOT work if you're trying to resume the sixth game of the match - in that case, skip this step.
 
-Enter the game id and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0. If you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
+<img src="/img/faq/ResumeLeagueTable.png" height="125">
 
-<img src="/img/faq/loadFromEndButton.PNG" height="200">
+Have your opponent join, then click "Load Old Game".
 
-Make sure the player order is set correctly. You'll see the original player order in gray.
+<img src="/img/faq/LoadOldGame.png" height="300">
 
-<img src="/img/faq/reloadPlayerOrder.PNG" height="200">
+If you're using the "League Match" setting, select the game id from the buttons. You'll see your selection in the text box.
+
+<img src="/img/faq/LoadById.png" height="150">
+
+If you aren't using the "League Match" setting, enter the game id in the text box and click "Load From End" to resume the game from where you left off. You should now see a Decision Index that is greater than 0.
+
+<img src="/img/faq/LoadFromEnd.png" height="150">
+
+In either case, if you see a message about an Internal Error at this point, then unfortunately the game cannot be continued.
+
+Otherwise, make sure the player order is set correctly. You'll see the original player order in gray.
+
+<img src="/img/faq/reloadPlayerOrder.PNG" height="150">
 
 Now you're ready to play! Both you and your opponent should click "Ready", as you normally would, to start the game.
 
@@ -472,4 +494,4 @@ You can choose any of these methods you prefer:
 
 #### How are moderators chosen?
 
-See [recruiting new moderators](/rules#8.5).
+See [recruiting new moderators](/rules#8.4).
