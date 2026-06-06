@@ -397,6 +397,18 @@ Otherwise, make sure the player order is set correctly. You'll see the original 
 
 Now you're ready to play! Both you and your opponent should click "Ready", as you normally would, to start the game.
 
+#### I find the timer distracting. Can I turn it off?
+
+All League matches should be played using the League timer setting. However, you can change how the timer is displayed in the client using "Timer Options" in the options menu, which is accessible both during a game and in the lobby via the gear icon.
+
+These options include:
+- You can make the timer visible in the player bar, the status bar, both, or neither
+- You can make the timer visible only when your time is low
+- You can hide the free decision timer (this is the white timer that indicates how much time you have before your main time bank starts ticking)
+- You can disable the pulsing animation that plays when your timer crosses certain time thresholds
+
+Additionally, you can enable or disable sounds associated with crossing certain timer thresholds under "Play Notification Sounds".
+
 #### Why can't I play my League matches on the Temple Gates Games app?
 
 There are a number of advantages that dominion.games offers over the TGG app for Dominion League play. These include:
