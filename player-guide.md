@@ -3,7 +3,7 @@ title: Player Guide
 subtitle: Reminders for New and Returning Players of the <a
   href="about.html">Dominion League</a>
 layout: rules_faq
-date: 2026-06-05
+date: 2026-06-06
 categories: pinned
 ---
 ### Getting Started
