@@ -133,24 +133,15 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship to set aside a gained card on. For example, this can matter with Throne Room.
 * **Cavalry, Continue, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
 * **Continue**: See **Cavalry** above.
-* **Ducat + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats in your hand will be played.
+* **Ducat, Fool's Gold + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats and Fool's Golds in your hand will be played.
 * **Flourishing Trade**: See **Villagers** below.
+* **Fool's Gold**: See **Ducat** above.
 * **Harbor Village**: After you play the next Action card, if you have another ability with the same timing (for example, Inspiring) and that ability somehow makes the Action card give you +$, Harbor Village does not give you the bonus.
-* **Highwayman**:
-
-  * **Reckless**: If you play a Reckless Highwayman, then when you discard it from play at the start of your next turn, it is not returned to its pile.
-  * **Way of the Chameleon**: If you are affected by Highwayman's attack and the first Treasure you play in a turn is also an Action, then playing it using Way of the Chameleon will override Highwayman's attack. (Highwayman should make the Treasure do nothing, regardless of how it's played.) 
+* **Highwayman + Way of the Chameleon**: If you are affected by Highwayman's attack and the first Treasure you play in a turn is also an Action, then playing it using Way of the Chameleon will override Highwayman's attack. (Highwayman should make the Treasure do nothing, regardless of how it's played.) 
 * **Possession**: See **Villagers** below.
 * **Priest + Way of the Chameleon**: If you play multiple Priests in a turn, some using Way of the Chameleon and some not, then when you trash a card, you will either get all +Cards or all +$ (depending on how you played the first Priest).
 * **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
-* **Reckless**:
-
-  * See **Highwayman** above.
-  * **Way of the Chameleon**: If you play a Reckless card using Way of the Chameleon, Reckless applies but Way of the Chameleon does not.
-* **Royal Carriage**:
-
-  * **Various cards**: Sometimes, when a card plays another card, you cannot call a Royal Carriage on the first card. This bug is uncommon and the circumstances that cause it are unknown.
-  * **Various cards/landscapes**: If you play a card multiple times and it doesn't leave play at least one of those times, but then does leave play a later time, you may be able to call a Royal Carriage to replay it.
+* **Reckless + Way of the Chameleon**: If you play a Reckless card using Way of the Chameleon, Reckless applies but Way of the Chameleon does not.
 * **Sleigh**:
 
   * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs even though they will do nothing.
@@ -160,7 +151,6 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Way of the Chameleon**:
 
   * See **–$1 token** above.
-  * See **Highwayman** above.
   * See **Priest** above.
   * See **Reckless** above.
 
