@@ -133,9 +133,7 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Cargo Ship**: You cannot choose which copy of Cargo Ship to set aside a gained card on. For example, this can matter with Throne Room.
 * **Cavalry, Continue, Villa**: If you change phases while resolving a card or gaining multiple cards at once (such as via overpaying for Stonemason), you do not return to your Action phase until you have finished resolving the card or gaining all the cards.
 * **Continue**: See **Cavalry** above.
-* **Ducat, Fool's Gold + Debt**: If it's your Buy phase and you haven't bought anything and you have more Debt than you can pay off, then when you pay off any amount of it, all the Ducats and Fool's Golds in your hand will be played.
 * **Flourishing Trade**: See **Villagers** below.
-* **Fool's Gold**: See **Ducat** above.
 * **Harbor Village**: After you play the next Action card, if you have another ability with the same timing (for example, Inspiring) and that ability somehow makes the Action card give you +$, Harbor Village does not give you the bonus.
 * **Highwayman + Way of the Chameleon**: If you are affected by Highwayman's attack and the first Treasure you play in a turn is also an Action, then playing it using Way of the Chameleon will override Highwayman's attack. (Highwayman should make the Treasure do nothing, regardless of how it's played.) 
 * **Possession**: See **Villagers** below.
@@ -143,23 +141,18 @@ Below is a list of cards and situations where the game rules aren't followed. Th
 * **Quartermaster**: When you have multiple Quartermasters and none of them have cards set aside, then at the start of your turn, you can't tell which Quartermaster you're gaining cards for. This can matter when some of the Quartermasters are played multiple times.
 * **Reckless + Way of the Chameleon**: If you play a Reckless card using Way of the Chameleon, Reckless applies but Way of the Chameleon does not.
 * **Sleigh**:
-
   * When you gain a card, you can only react with one Sleigh from your hand. However, you should be able to react with additional Sleighs even though they will do nothing.
   * When you gain a Sleigh, you can react with a second Sleigh from your hand to put the first Sleigh into your hand; the second Sleigh moves to your discard pile, and should then stop moving. However, you can react with the first Sleigh, now in your hand, to move the second Sleigh again. Furthermore, you can continue to react with each Sleigh to put the other into your hand in an infinite loop.
 * **Villa**: See **Cavalry** above.
 * **Villagers**: During your Action phase, if the only thing you can do is spend Villagers, you are not given a chance to spend them and instead your Buy phase automatically begins. This can matter with Possession or Flourishing Trade.
 * **Way of the Chameleon**:
-
   * See **–$1 token** above.
   * See **Priest** above.
   * See **Reckless** above.
 
 ### Bugs during another player's turn
 
-*These bugs may have been fixed, but are pending a thorough re-testing.*
-
-* If you set up an ability during another player's turn that happens at the start of Clean-up, it will resolve at the start of your next Clean-up, instead of the next Clean-up of any player. This includes abilities from cards (such as playing Improve during another player's turn) and returning Boons that say "keep this until Clean-up" (such as receiving the Field's Gift during another player's turn).
-* Abilities that happen when you discard a card from play will not happen if you discard it from play during another player's turn.
+* If you gain a Boon during another player's turn that says "keep this until Clean-up" (such as Field's Gift), it will be discarded at the start of your next Clean-up, instead of the next Clean-up of that player.
 * If it is not your turn and you play 2 or more Action cards and then Conspirator, you will not get +1 Card and +1 Action.
 
 If you encounter a bug not listed here, please confirm it is indeed a bug in the [\#rules-help](https://discord.com/channels/212660788786102272/285903840660946954) channel of the Dominion (by Donald X Vaccarino) Discord server, and then tag a League moderator.
