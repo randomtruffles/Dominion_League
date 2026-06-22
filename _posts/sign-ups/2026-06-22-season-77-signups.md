@@ -3,7 +3,8 @@ title: Season 77 - Signups
 subtitle: Signups are now open!
 date: 2026-06-21
 author: tracer
-layout: post
+layout: simple_post
+categories: signups
 ---
 **Season 77** will run from Monday, August 3, until Sunday, September 13, and you can sign up until **Sunday, July 26 at 23:59 UTC** by filling out the [Google form](#sign-up-using-this-google-form) below.
 
