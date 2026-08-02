@@ -2,9 +2,6 @@
 #- name: truffles
 #  discord: truffles#1234
 #  image: truffles_picture_png_file_prefix
-- name: AJL828
-  discord: AJL828#2101
-  image: ajl828
 - name: alibby1152
   discord: alibby1152#4103
   image: alibby
@@ -51,9 +48,6 @@
 - name: strumphf
   discord: strumphf
   image: strumphf
-- name: swaggner
-  discord: swagner
-  image: swaggner
 - name: TeamOkay
   discord: teamokay
   image: teamokay

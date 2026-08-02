@@ -1,4 +1,4 @@
-number: 76
+number: 77
 
 tiers:
   A:
@@ -14,11 +14,11 @@ tiers:
     promoters: 1
     demoters: 2
   D:
-    divisions: 6
+    divisions: 8
     promoters: 1
     demoters: 2
   E:
-    divisions: 8
+    divisions: 7
     promoters: 2
     demoters: 2
   F:
@@ -34,7 +34,7 @@ tiers:
     promoters: 2
     demoters: 2
   I:
-    divisions: 9
+    divisions: 8
     promoters: 2
     demoters: 2
   J:
