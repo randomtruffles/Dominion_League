@@ -50,6 +50,13 @@ permalink: calendar/form
 		</select>
 		<p id="time-verify" style="color:red;"></p>
 	</div>
+	<div class = "form-option" id="duplicate-detected" style="display:none;">
+		<p>A match between these two players is already on the calendar for <span id="match-time"></span> UTC. Would you like to reschedule it?</p>
+		<label for="replace" class="chartInput inline">
+			<input type="checkbox" name="replace" id="replace" class="chartInput chartCheck">
+			<span>Reschedule existing match</span>
+		</label>
+	</div>
 	<div class="form-option">
 		<div></div>
 		<p>If all fields are filled you may add to the calendar directly by clicking "Add to Calendar." Clicking "More Options" will bring you to a longer form pre-filled with the information above where you will have options such as using a different time zone, requesting commentary, and leaving additional comments.</p>
@@ -64,18 +71,21 @@ permalink: calendar/form
 <script>
 const divisions = {{ site.data.current_season | jsonify }};
 const override = null;
-var formURL = "https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/substituteme?entry.1760809337=League";
-var division = document.getElementById("division");
-var user1 = document.getElementById("user1");
-var user2 = document.getElementById("user2");
-var date = document.getElementById("date");
-var hours = document.getElementById("hour");
-var minutes = document.getElementById("minute");
-var ampm = document.getElementById("ampm");
+const formURL = "https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/substituteme?entry.1760809337=League";
+const division = document.getElementById("division");
+const user1 = document.getElementById("user1");
+const user2 = document.getElementById("user2");
+const date = document.getElementById("date");
+const hours = document.getElementById("hour");
+const minutes = document.getElementById("minute");
+const ampm = document.getElementById("ampm");
 ampm.value = "";
-var localTime = document.getElementById("localTime");
-var timeMessage = document.getElementById("time-verify");
-var submitMessage = document.getElementById("submit-verify");
+const localTime = document.getElementById("localTime");
+const replace = document.getElementById("replace");
+const timeMessage = document.getElementById("time-verify");
+const submitMessage = document.getElementById("submit-verify");
+const replaceDiv = document.getElementById("duplicate-detected");
+const matchTime = document.getElementById("match-time")
 
 loadPage();
 
@@ -120,10 +130,12 @@ function loadPage() {
 	
 	user1.addEventListener('change', function(ev) {
 		updateUrl();
+		checkDuplicate();
 	});
 	
 	user2.addEventListener('change', function(ev) {
 		updateUrl();
+		checkDuplicate();
 	});
 	
 	let utcOffset = (new Date()).getTimezoneOffset();
@@ -178,6 +190,8 @@ function loadPage() {
 		}
 		updateUrl();
 	});
+
+	replace.onclick = updateUrl;
 	
 	document.getElementById("prefill-anchor").href = formURL.replace("substituteme", "viewform");
 	
@@ -200,6 +214,9 @@ function loadPage() {
 
 function updateUrl() {
 	let out = formURL;
+	if (replace.checked) {
+		out += '&entry.580511610=Replace';
+	}
 	if (user1.value) {
 		out += `&entry.665962030=${user1.value.replace(/ /g, "+")}`;
 	}
@@ -244,7 +261,24 @@ function updateUrl() {
 	} else {
 		pushout.appendChild(addButton);
 	}
-}	
+}
+
+function checkDuplicate() {
+	let found = false;
+	if (user1.value && user2.value) {
+		let divCal = divisions.calendar[division.value];
+		if ((user1.value in divCal) && user2.value in divCal[user1.value]) {
+			found = true;
+		}
+	}
+	if (found) {
+		let mt = divisions.calendar[division.value][user1.value][user2.value];
+		matchTime.innerText = mt.day + " at " + mt.time;
+		replaceDiv.style.display = 'block';
+	} else {
+		replaceDiv.style.display = 'none';
+	}
+}
 	
 function updatePlayers(division) {
 	var members = override ? ((division in override) ? override[division] : []) : ((division in divisions) ? Object.keys(divisions[division].members) : []);
