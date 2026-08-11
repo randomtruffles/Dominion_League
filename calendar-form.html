@@ -50,11 +50,11 @@ permalink: calendar/form
 		</select>
 		<p id="time-verify" style="color:red;"></p>
 	</div>
-	<div class = "form-option" id="duplicate-detected" style="display:none;">
-		<p>A match between these two players is already on the calendar for <span id="match-time"></span> UTC. Would you like to reschedule it?</p>
+	<div class = "form-option">
+		<p>Would you like to replace any future instances of this match already on the calendar?</p>
 		<label for="replace" class="chartInput inline">
 			<input type="checkbox" name="replace" id="replace" class="chartInput chartCheck">
-			<span>Reschedule existing match</span>
+			<span>Reschedule existing match<span id="duplicate-detected" style="display:none;top:0"> on <span id="match-time"></span> UTC</span></span>
 		</label>
 	</div>
 	<div class="form-option">
@@ -274,7 +274,7 @@ function checkDuplicate() {
 	if (found) {
 		let mt = divisions.calendar[division.value][user1.value][user2.value];
 		matchTime.innerText = mt.day + " at " + mt.time;
-		replaceDiv.style.display = 'block';
+		replaceDiv.style.display = 'inline';
 	} else {
 		replaceDiv.style.display = 'none';
 	}
