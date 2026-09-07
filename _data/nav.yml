@@ -36,8 +36,6 @@
   path: featured-matches
   section_id: matches
   children:
-    - name: Featured Reports
-      path: featured-matches
     - name: Match Calendar
       path: match-calendar
     - name: League Calendar Form
