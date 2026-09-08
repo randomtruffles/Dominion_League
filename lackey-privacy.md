@@ -1,5 +1,5 @@
 ---
-title: League Lackey Privacy Policy
+title: LeagueLackey Privacy Policy
 layout: rules_faq
 date: 2026-09-08
 ---
