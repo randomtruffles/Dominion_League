@@ -1,7 +1,7 @@
 ---
 title: League Timer Specification
 layout: rules_faq
-date: 2029-09-08
+date: 2026-10-04
 ---
 The league table setting uses an experimental timer that is being evaluated for future use in ensuring reasonable pace of play. Currently, it has the following specification:
 - Players start their first turn with 4 minutes on their timer
