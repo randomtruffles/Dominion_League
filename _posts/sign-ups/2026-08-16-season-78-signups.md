@@ -1,6 +1,6 @@
 ---
 title: Season 78 - Signups
-subtitle: Signups are now open!
+subtitle: Waiting list spots still available!
 date: 2026-08-16
 author: tracer
 layout: simple_post
