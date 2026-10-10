@@ -15,7 +15,7 @@ Last season we asked for new moderators and received a number of applications. F
 
 **Timer Update**
 
-We are continuing to experiment with different timer parameters as we approach one that we feel comfortable enforcing. At this point we feel that we are getting close, but need to shift around where during games players get more time - this season's timer is intended to give less time towards the start of games and more time towards the end of them. [Read the full specification here.](https://dominionleague.org/timer-spec)
+We are continuing to experiment with different timer parameters as we approach one that we feel comfortable enforcing. At this point we feel that we are getting close, but need to shift around where during games players get more time - this season's timer is intended to give less time towards the start of games and more time towards the end of them. [Read the full specification here](https://dominionleague.org/timer-spec).
 
 **Season Schedule Change**
 
