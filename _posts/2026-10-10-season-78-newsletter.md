@@ -21,10 +21,10 @@ We are continuing to experiment with different timer parameters as we approach o
 
 While the length of League seasons is not changing, the breaks between them are being adjusted to accommodate a planned major tournament in March: the Reckless Dominion Online Championship. You can now expect that most seasons will start 2 weeks after the end of the previous season, with the exception of the seasons ending in September and March, which will have their next season starting 4 weeks after instead (and so usually in October and April).
 
-As a reminder, you can the planned durations of the next three seasons at the bottom of our [Past Standings Page](https://dominionleague.org/past_standings), and this described change is reflected in the gap between Seasons 79 and 80 now being 2 weeks (down from 3) and the gap between seasons 80 and 81 now being 4 weeks (up from 2).
+As a reminder, you can check the planned schedules of the next three seasons at the bottom of our [Past Standings Page](https://dominionleague.org/past_standings), and this described change is reflected in the gap between Seasons 79 and 80 now being 2 weeks (down from 3) and the gap between seasons 80 and 81 now being 4 weeks (up from 2).
 
 **End of Summer Time**
 
-Partway through this season, Summer time (Daylight Savings Time in some locations) will be ending. Please be aware of this change if scheduling across timezones, particularly if using UTC as many people's offsets will change. Be extra careful if scheduling across continents: in Europe, the clocks will change on October 25th while in North America the change will happen November 1st.
+Partway through this season, Summer time (Daylight Savings Time in some locations) will be ending in the northern hemisphere. Please be aware of this change if scheduling across timezones, particularly if using UTC as many people's offsets will change. Be extra careful if scheduling across continents: in Europe, the clocks will change on October 25th while in North America the change will happen November 1st.
 
 It is likely that this newsletter is the last one I write before the job is passed on to a different team member. So, for what I expect will be the last time, best of luck this upcoming season!
