@@ -50,6 +50,12 @@ permalink: calendar/form
 		</select>
 		<p id="time-verify" style="color:red;"></p>
 	</div>
+		<div class = "form-option">
+		<label for="commentary" class="chartInput inline">
+			<input type="checkbox" name="commentary" id="commentary" class="chartInput chartCheck">
+			<span>Request commentary for this match</span>
+		</label>
+	</div>
 	<div class = "form-option">
 		<p>Would you like to replace any future instances of this match already on the calendar?</p>
 		<label for="replace" class="chartInput inline">
@@ -59,13 +65,8 @@ permalink: calendar/form
 	</div>
 	<div class="form-option">
 		<div></div>
-		<p>If all fields are filled you may add to the calendar directly by clicking "Add to Calendar." Clicking "More Options" will bring you to a longer form pre-filled with the information above where you will have options such as using a different time zone, requesting commentary, and leaving additional comments.</p>
 		<div id="pushout" class="inline" style="display:inline-block;"><button>Add to Calendar</button></div>
-		<div class="inline" style="display:inline-block;"><a id="prefill-anchor" target="_blank"><div><button id="prefill">More Options</button></div></a></div>
 		<p id="submit-verify" style="color:red;"></p>
-	</div>
-	<div>
-		<p>If you are having trouble with these buttons, please go to the <a href="https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/viewform?entry.1760809337=League">general calendar form here</a>.</p>
 	</div>
 </div>
 <script>
@@ -85,8 +86,8 @@ const replace = document.getElementById("replace");
 const timeMessage = document.getElementById("time-verify");
 const submitMessage = document.getElementById("submit-verify");
 const replaceDiv = document.getElementById("duplicate-detected");
-const matchTime = document.getElementById("match-time")
-
+const matchTime = document.getElementById("match-time");
+const commentary = document.getElementById("commentary");
 loadPage();
 
 function loadPage() {
@@ -138,11 +139,12 @@ function loadPage() {
 		checkDuplicate();
 	});
 	
+	let tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
 	let utcOffset = (new Date()).getTimezoneOffset();
 	let offsetHours = String(Math.floor(Math.abs(utcOffset)/60));
 	let offsetMinutes = String(Math.abs(utcOffset)%60);
 	
-	document.getElementById("localTimeZone").innerHTML = "Local Time (UTC" + (utcOffset > 0 ? "\u2212" : "+") + offsetHours + ":" + "0".repeat(2-offsetMinutes.length) + offsetMinutes +")";
+	document.getElementById("localTimeZone").innerHTML = "Local Time (" + tz + ", currently UTC" + (utcOffset > 0 ? "\u2212" : "+") + offsetHours + ":" + "0".repeat(2-offsetMinutes.length) + offsetMinutes +")";
 	
 	date.oninput = updateUrl;
 	date.onblur = updateUrl;
@@ -172,6 +174,7 @@ function loadPage() {
 	
 	document.getElementById("UTC").onclick = function() {
 		ampm.style.display = "none";
+		ampm.value = "";
 		updateUrl();
 	}
 	
@@ -192,8 +195,8 @@ function loadPage() {
 	});
 
 	replace.onclick = updateUrl;
-	
-	document.getElementById("prefill-anchor").href = formURL.replace("substituteme", "viewform");
+
+	commentary.onclick = updateUrl;
 	
 	document.getElementById("pushout").onclick = function() {
 		var fields = [user1, user2, date, hours];
@@ -214,7 +217,9 @@ function loadPage() {
 
 function updateUrl() {
 	let out = formURL;
+	let buttonText = "Add to Calendar";
 	if (replace.checked) {
+		buttonText = "Replace on Calendar";
 		out += '&entry.580511610=Replace';
 	}
 	if (user1.value) {
@@ -225,29 +230,26 @@ function updateUrl() {
 	}
 	if (date.value && hours.value) {
 		if (localTime.checked) {
-			let ampmadj = hours.value == 12 ? (ampm.value == "AM" ? -12 : 0) : (ampm.value == "PM" ? 12 : 0)
-			out += `&entry.1984692058=${utcFormString(new Date(date.value + " " + (Number(hours.value) + ampmadj) + ":" + minutes.value))}`;
+			let ampmadj = String(Number(hours.value) + (hours.value == 12 ? (ampm.value == "AM" ? -12 : 0) : (ampm.value == "PM" ? 12 : 0)));
+			out += `&entry.1930986713=${Intl.DateTimeFormat().resolvedOptions().timeZone}&entry.1984692058=${date.value}+${"0".repeat(2 - ampmadj.length) + ampmadj}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
 		} else {
 			out += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
 		}
 	}
-	out += "&entry.797613395=02:00:00";
 	
 	if (override) {
 		out += '&entry.894817070=__other_option__&entry.894817070.other_option_response=' + (division.value == 'A1' ? 'A' : division.value);
 	}
 	
-	if (division.value == 'A1') {
+	if ((division.value == 'A1') || (commentary.checked)) {
 		out += '&entry.775049264=Yes';
 	}
-	
-	document.getElementById("prefill-anchor").href = out.replace("substituteme", "viewform");
 	
 	var fields = [user1, user2, date, hours];
 	let unfilled = fields.filter(x => x.value == "").map(x => x.name);
 	let unfilledCount = unfilled.length;
 	let addButton = document.createElement("button");
-	addButton.appendChild(document.createTextNode("Add to Calendar"));
+	addButton.appendChild(document.createTextNode(buttonText));
 	let pushout = document.getElementById("pushout");
 	pushout.innerHTML = "";
 	if (unfilledCount == 0) {
@@ -297,16 +299,4 @@ function updatePlayers(division) {
 	}
 }
 
-function utcFormString(local) {
-	let utcString = local.getUTCFullYear();
-	let utcMonth = String(local.getUTCMonth() + 1);
-	utcString += "-" + "0".repeat(2-utcMonth.length) + utcMonth;
-	let utcDay = String(local.getUTCDate());
-	utcString += "-" + "0".repeat(2-utcDay.length) + utcDay;
-	let utcHour = String(local.getUTCHours());
-	utcString += "+" + "0".repeat(2-utcHour.length) + utcHour;
-	let utcMinute = String(local.getUTCMinutes());
-	utcString += ":" + "0".repeat(2-utcMinute.length) + utcMinute;
-	return utcString;
-}
 </script>
