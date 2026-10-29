@@ -304,10 +304,10 @@ function selectTab(btn) {
 
 	// Open the right table and hide others
 	var children = parent.children;
-	if (tab.toLowerCase() == "matches" || tab.toLowerCase() == "sims"){
-		parent.style.overflow = "auto";
-	} else {
+	if (tab.toLowerCase() == "standings"){
 		parent.style.overflow = "visible";
+	} else {
+		parent.style.overflow = "auto";
 	}
 
 	for (var i = 0; i < children.length; i++) {
@@ -833,7 +833,7 @@ function genMatches(data, drops, sorted, calendar) {
 	return table;
 }
 
-function genGrid(data, drops, sorted) {
+function genGrid(data, drops, sorted, calendar) {
 	if (testing) console.log("Generating grid...");
 	var table = document.createElement("table");
 	table.classList.add('grid-table');
@@ -873,6 +873,7 @@ function genGrid(data, drops, sorted) {
 			var cell = document.createElement("td");
 			cell.innerHTML = "";
 			cell.style.backgroundColor = "lightgrey";
+			cell.style.textAlign = "center";
 			if (playerName == opponent) {
 				cell.style.backgroundColor = "gray";
 			} else if (opponent in data[playerName]){
@@ -882,7 +883,11 @@ function genGrid(data, drops, sorted) {
 				//cell.classList.add("crossed");
 			} else if (drops.includes(playerName)) {
 				//cell.classList.add("crossed");
-			} else {
+			} else if (calendar && calendar[playerName] && calendar[playerName][opponent]) {
+				cell.innerHTML = calendar[playerName][opponent].day + "<br>" + calendar[playerName][opponent].time;
+				cell.style.backgroundColor = "#FFFFFF";
+				cell.style.padding = "0";
+				cell.style.lineHeight = "1";
 			}
 			row.append(cell);
 		}
@@ -1127,7 +1132,7 @@ function loadDivision(divisionDiv, divisionData, link, division, season, params,
 		standingsDiv.classList.add(`filterDiv`);
 		standingsDiv.classList.add(`div${tier}`);
 	}
-	var gridTable = genGrid(players, drops, sorted);
+	var gridTable = genGrid(players, drops, sorted, divisionCalendar);
 	var matchesTable = genMatches(players, drops, sorted, divisionCalendar);
 	standingsDiv.appendChild(header);
 	standingsDiv.appendChild(standingsTable);
