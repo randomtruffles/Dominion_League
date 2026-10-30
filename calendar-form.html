@@ -297,7 +297,7 @@ function refreshButton(divid, url, addon = "") {
 function checkDuplicate() {
 	let found = false;
 	if (user1.value && user2.value) {
-		let divCal = divisions.calendar[division.value];
+		let divCal = divisions.calendar[division.value] || {};
 		if ((user1.value in divCal) && (user2.value in divCal[user1.value])) {
 			found = true;
 		}
