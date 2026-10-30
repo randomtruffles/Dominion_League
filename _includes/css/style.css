@@ -2945,3 +2945,11 @@ img.hof-champion-trophy {
 	position: relative;
 	top: -1px;
 }
+
+.form-button {
+  margin: 4px 0px;
+}
+
+.form-button a {
+  color: #000;
+}

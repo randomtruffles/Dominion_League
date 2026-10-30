@@ -56,23 +56,18 @@ permalink: calendar/form
 			<span>Request commentary for this match</span>
 		</label>
 	</div>
-	<div class = "form-option">
-		<p>Would you like to replace any future instances of this match already on the calendar?</p>
-		<label for="replace" class="chartInput inline">
-			<input type="checkbox" name="replace" id="replace" class="chartInput chartCheck">
-			<span>Reschedule existing match<span id="duplicate-detected" style="display:none;top:0"> on <span id="match-time"></span> UTC</span></span>
-		</label>
-	</div>
 	<div class="form-option">
 		<div></div>
-		<div id="pushout" class="inline" style="display:inline-block;"><button>Add to Calendar</button></div>
+		<div id="pushout" class="form-button"><button>Add to Calendar</button></div>
+		<div id="reschedule" class="form-button"><button>Reschedule Existing Match</button></div>
+		<div id="remove" class="form-button"><button>Remove Match at Time Above</button></div>
 		<p id="submit-verify" style="color:red;"></p>
 	</div>
 </div>
 <script>
 const divisions = {{ site.data.current_season | jsonify }};
 const override = null;
-const formURL = "https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/substituteme?entry.1760809337=League";
+const formURL = "https://docs.google.com/forms/d/e/1FAIpQLScw-U_gquzImZfwVoVmJVNbYr_oqK9gD9l2X11Hbf9J9lvuNw/formResponse?entry.1760809337=League";
 const division = document.getElementById("division");
 const user1 = document.getElementById("user1");
 const user2 = document.getElementById("user2");
@@ -82,12 +77,20 @@ const minutes = document.getElementById("minute");
 const ampm = document.getElementById("ampm");
 ampm.value = "";
 const localTime = document.getElementById("localTime");
-const replace = document.getElementById("replace");
 const timeMessage = document.getElementById("time-verify");
 const submitMessage = document.getElementById("submit-verify");
-const replaceDiv = document.getElementById("duplicate-detected");
 const matchTime = document.getElementById("match-time");
 const commentary = document.getElementById("commentary");
+const buttonText = {
+	"pushout": "Add to Calendar",
+	"reschedule": "Reschedule Existing Match",
+	"remove": "Remove Match"
+};
+const rrEntry = {
+	"pushout": "",
+	"reschedule": "&entry.580511610=Replace",
+	"remove": "&entry.580511610=Remove"
+};
 loadPage();
 
 function loadPage() {
@@ -131,12 +134,10 @@ function loadPage() {
 	
 	user1.addEventListener('change', function(ev) {
 		updateUrl();
-		checkDuplicate();
 	});
 	
 	user2.addEventListener('change', function(ev) {
 		updateUrl();
-		checkDuplicate();
 	});
 	
 	let tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -194,34 +195,41 @@ function loadPage() {
 		updateUrl();
 	});
 
-	replace.onclick = updateUrl;
-
 	commentary.onclick = updateUrl;
 	
-	document.getElementById("pushout").onclick = function() {
-		var fields = [user1, user2, date, hours];
-		let unfilled = fields.filter(x => x.value == "").map(x => x.name);
-		let unfilledCount = unfilled.length;
-		if (unfilledCount > 0) {
-			if (unfilledCount > 2) {
-				unfilled[unfilledCount - 1] = "and " + unfilled[unfilledCount - 1];
-				submitMessage.innerHTML = unfilled.join(", ") + " have not been filled."
-			} else if (unfilledCount == 2) {
-				submitMessage.innerHTML = unfilled.join(" and ") + " have not been filled."
-			} else {
-				submitMessage.innerHTML = unfilled[0] + " has not been filled."
+	document.getElementById("pushout").onclick = displayUnfilled;
+
+	document.getElementById("reschedule").onclick = displayUnfilled;
+
+	document.getElementById("remove").onclick = function() {
+		if (user1.value && user2.value) {
+			if (checkDuplicate()) {
+				return;
 			}
 		}
+		displayUnfilled();
 	};
+}
+
+function displayUnfilled() {
+	const fields = [user1, user2, date, hours];
+	let unfilled = fields.filter(x => x.value == "").map(x => x.name);
+	let unfilledCount = unfilled.length;
+	if (unfilledCount > 0) {
+		if (unfilledCount > 2) {
+			unfilled[unfilledCount - 1] = "and " + unfilled[unfilledCount - 1];
+			submitMessage.innerHTML = unfilled.join(", ") + " have not been filled."
+		} else if (unfilledCount == 2) {
+			submitMessage.innerHTML = unfilled.join(" and ") + " have not been filled."
+		} else {
+			submitMessage.innerHTML = unfilled[0] + " has not been filled."
+		}
+	}
 }
 
 function updateUrl() {
 	let out = formURL;
-	let buttonText = "Add to Calendar";
-	if (replace.checked) {
-		buttonText = "Replace on Calendar";
-		out += '&entry.580511610=Replace';
-	}
+
 	if (user1.value) {
 		out += `&entry.665962030=${user1.value.replace(/ /g, "+")}`;
 	}
@@ -231,9 +239,9 @@ function updateUrl() {
 	if (date.value && hours.value) {
 		if (localTime.checked) {
 			let ampmadj = String(Number(hours.value) + (hours.value == 12 ? (ampm.value == "AM" ? -12 : 0) : (ampm.value == "PM" ? 12 : 0)));
-			out += `&entry.1930986713=${Intl.DateTimeFormat().resolvedOptions().timeZone}&entry.1984692058=${date.value}+${"0".repeat(2 - ampmadj.length) + ampmadj}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
+			out += `&entry.1930986713=${Intl.DateTimeFormat().resolvedOptions().timeZone}&entry.1984692058=${date.value}+${ampmadj.padStart(2, "0")}:${minutes.value.padStart(2, "0")}`;
 		} else {
-			out += `&entry.1984692058=${date.value}+${"0".repeat(2 - hours.value.length) + hours.value}:${"0".repeat(2 - minutes.value.length) + minutes.value}`;
+			out += `&entry.1984692058=${date.value}+${hours.value.padStart(2, "0")}:${minutes.value.padStart(2, "0")}`;
 		}
 	}
 	
@@ -244,24 +252,45 @@ function updateUrl() {
 	if ((division.value == 'A1') || (commentary.checked)) {
 		out += '&entry.775049264=Yes';
 	}
-	
-	var fields = [user1, user2, date, hours];
+
+	const fields = [user1, user2, date, hours];
 	let unfilled = fields.filter(x => x.value == "").map(x => x.name);
 	let unfilledCount = unfilled.length;
-	let addButton = document.createElement("button");
-	addButton.appendChild(document.createTextNode(buttonText));
-	let pushout = document.getElementById("pushout");
-	pushout.innerHTML = "";
-	if (unfilledCount == 0) {
+	const duplicateEntry = checkDuplicate();
+	const isDuplicateEntry = "day" in duplicateEntry;
+	const duplicateText = isDuplicateEntry ? ` on ${duplicateEntry.day} at ${duplicateEntry.time} UTC` : "";
+	for (let divid of ["pushout", "reschedule", "remove"]) {
+		if (unfilledCount == 0) {
+			refreshButton(divid, out, divid == "reschedule" ? duplicateText : (divid == "remove" ? " at Time Above" : ""));
+		} else if (divid == "remove") {
+			if (isDuplicateEntry && unfilled.includes("Date") && unfilled.includes("Hours")) {
+				const now = new Date();
+				const ty = new Date(`${now.getFullYear()}-${duplicateEntry.day.padStart(5, "0")}T${duplicateEntry.time.padStart(5, "0")}:00Z`);
+				refreshButton(divid, out + `&entry.1984692058=${now.getFullYear() + (ty < now ? 1 : 0)}-${duplicateEntry.day.padStart(5, "0")}+${duplicateEntry.time.padStart(5, "0")}`, duplicateText);
+			} else {
+				refreshButton(divid, "", " at Time Above");
+			}
+		} else {
+			refreshButton(divid, "", divid == "reschedule" ? duplicateText : "");
+		}
+	}
+}
+
+function refreshButton(divid, url, addon = "") {
+	let outerdiv = document.getElementById(divid);
+	outerdiv.innerHTML = "";
+	let button = document.createElement("button");
+	button.appendChild(document.createTextNode(buttonText[divid] + addon));
+	if (url) {
 		let buttonDiv = document.createElement("div");
-		buttonDiv.appendChild(addButton);
+		buttonDiv.appendChild(button);
 		let buttonLink = document.createElement("a");
 		buttonLink.target = "_blank";
-		buttonLink.href = out.replace("substituteme", "formResponse") + "&submit=Submit";
+		buttonLink.href = url + rrEntry[divid] +"&submit=Submit";
 		buttonLink.appendChild(buttonDiv);
-		pushout.appendChild(buttonLink);
+		outerdiv.appendChild(buttonLink);
 	} else {
-		pushout.appendChild(addButton);
+		outerdiv.appendChild(button);
 	}
 }
 
@@ -269,16 +298,14 @@ function checkDuplicate() {
 	let found = false;
 	if (user1.value && user2.value) {
 		let divCal = divisions.calendar[division.value];
-		if ((user1.value in divCal) && user2.value in divCal[user1.value]) {
+		if ((user1.value in divCal) && (user2.value in divCal[user1.value])) {
 			found = true;
 		}
 	}
 	if (found) {
-		let mt = divisions.calendar[division.value][user1.value][user2.value];
-		matchTime.innerText = mt.day + " at " + mt.time;
-		replaceDiv.style.display = 'inline';
+		return divisions.calendar[division.value][user1.value][user2.value];
 	} else {
-		replaceDiv.style.display = 'none';
+		return {};
 	}
 }
 	
