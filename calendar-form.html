@@ -282,12 +282,10 @@ function refreshButton(divid, url, addon = "") {
 	let button = document.createElement("button");
 	button.appendChild(document.createTextNode(buttonText[divid] + addon));
 	if (url) {
-		let buttonDiv = document.createElement("div");
-		buttonDiv.appendChild(button);
 		let buttonLink = document.createElement("a");
 		buttonLink.target = "_blank";
 		buttonLink.href = url + rrEntry[divid] +"&submit=Submit";
-		buttonLink.appendChild(buttonDiv);
+		buttonLink.appendChild(button);
 		outerdiv.appendChild(buttonLink);
 	} else {
 		outerdiv.appendChild(button);
