@@ -954,7 +954,7 @@ function tableToPct(divTable, divisionData) {
 		let rowcells = [...gridrows[i].children].slice(1);
 		let byplayer = divisionData['by_player'][alphsorted[i]]
 		for (let j=0; j<rowcells.length; j++) {
-			if (rowcells[j].innerText !== '') {
+			if ((rowcells[j].innerText !== '') && (!/\d-\d/.test(rowcells[j].innerText))) {
 				rowcells[j].innerHTML = byplayer[alphsorted[j]]['wins'];
 			}
 		}
@@ -1023,7 +1023,7 @@ function tableToPM(divTable, divisionData) {
 		let rowcells = [...gridrows[i].children].slice(1);
 		let byplayer = divisionData['by_player'][alphsorted[i]]
 		for (let j=0; j<rowcells.length; j++) {
-			if (rowcells[j].innerText !== '') {
+			if ((rowcells[j].innerText !== '') && (!/\d-\d/.test(rowcells[j].innerText))) {
 				let cellinfo = byplayer[alphsorted[j]];
 				let pm = cellinfo['wins'] - (cellinfo['wins'] + cellinfo['losses'])/2;
 				rowcells[j].innerText = (pm > 0 ? '+' : (pm < 0 ? '−': '')) + Math.abs(pm);
